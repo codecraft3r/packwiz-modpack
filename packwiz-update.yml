@@ -1,0 +1,34 @@
+name: Packwiz Auto-Update
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+        
+      - name: Build installer
+        run: |
+          git clone https://github.com/packwiz/packwiz-installer
+          cd packwiz-installer
+          go build -o packwiz-installer.jar
+          
+      - name: Create Modrinth export
+        run: |
+          packwiz modrinth export --output ../dist/
+          
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*.mrpack
+          generate_release_notes: true
