@@ -1,0 +1,9 @@
+[[mods]]
+filename = "appleskin-neoforge-mc1.21-3.0.8.jar"
+name = "appleskin-neoforge-mc1.21-3.0.8"
+side = "both"
+
+[mods.download]
+hash = "32be58815905e472016b6413175a27e6cbf05b90"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/EsAfCjCV/versions/8X2x5cPC/appleskin-neoforge-mc1.21-3.0.8.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "create_hypertube-0.4.0-NEOFORGE.jar"
+name = "create_hypertube-0.4.0-NEOFORGE"
+side = "both"
+
+[mods.download]
+hash = "aa5da2269d02e8bb1c1abc260af242b09ceae5ea"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/ATDdrG1y/versions/8Tm1FSFi/create_hypertube-0.4.0-NEOFORGE.jar"

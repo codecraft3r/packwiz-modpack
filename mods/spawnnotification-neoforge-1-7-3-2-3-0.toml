@@ -1,0 +1,9 @@
+[[mods]]
+filename = "spawnnotification-neoforge-1.7.3-2.3.0.jar"
+name = "spawnnotification-neoforge-1.7.3-2.3.0"
+side = "both"
+
+[mods.download]
+hash = "08055af44dec329d03dc10f3a93af25f2167567b"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/LPuJjiQz/versions/c1PTZDb2/spawnnotification-neoforge-1.7.3-2.3.0.jar"

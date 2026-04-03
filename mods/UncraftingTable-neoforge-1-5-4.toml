@@ -1,0 +1,9 @@
+[[mods]]
+filename = "UncraftingTable-neoforge-1.5.4.jar"
+name = "UncraftingTable-neoforge-1.5.4"
+side = "both"
+
+[mods.download]
+hash = "26142cc4d190e3a352713adea96166cc3631adc8"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/d0f1a75r/versions/NhIBTWNp/UncraftingTable-neoforge-1.5.4.jar"

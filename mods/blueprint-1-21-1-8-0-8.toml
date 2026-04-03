@@ -1,0 +1,9 @@
+[[mods]]
+filename = "blueprint-1.21.1-8.0.8.jar"
+name = "blueprint-1.21.1-8.0.8"
+side = "both"
+
+[mods.download]
+hash = "9f9549cecaee3f4cb03d9c829b148a110a0efb54"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/VsM5EDoI/versions/YSWV62mG/blueprint-1.21.1-8.0.8.jar"

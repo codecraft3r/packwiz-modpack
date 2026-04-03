@@ -1,0 +1,9 @@
+[[mods]]
+filename = "bookshelfinspector-neoforge-2.1+1.21.1.jar"
+name = "bookshelfinspector-neoforge-2.1+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "671fea0085f4c03c9763e9873c4664dc41c99b05"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/rOrXjyPb/versions/U7JA8ltl/bookshelfinspector-neoforge-2.1%2B1.21.1.jar"

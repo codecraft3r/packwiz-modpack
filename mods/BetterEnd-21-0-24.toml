@@ -1,0 +1,9 @@
+[[mods]]
+filename = "BetterEnd-21.0.24.jar"
+name = "BetterEnd-21.0.24"
+side = "both"
+
+[mods.download]
+hash = "a4344efa302c04ab11fa5313032836c662fb540c"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/IcERKldh/versions/QWW9Gwwf/BetterEnd-21.0.24.jar"

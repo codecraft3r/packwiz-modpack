@@ -1,0 +1,9 @@
+[[mods]]
+filename = "GlitchCore-neoforge-1.21.1-2.1.0.0.jar"
+name = "GlitchCore-neoforge-1.21.1-2.1.0.0"
+side = "both"
+
+[mods.download]
+hash = "b95318c14ef20bd24886480d7640a5eca6aa6cec"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/s3dmwKy5/versions/8wmCpbQ2/GlitchCore-neoforge-1.21.1-2.1.0.0.jar"

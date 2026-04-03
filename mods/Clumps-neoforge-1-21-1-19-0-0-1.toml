@@ -1,0 +1,9 @@
+[[mods]]
+filename = "Clumps-neoforge-1.21.1-19.0.0.1.jar"
+name = "Clumps-neoforge-1.21.1-19.0.0.1"
+side = "both"
+
+[mods.download]
+hash = "fa2576297c7bd12b28aa7070e8141792bd66da4c"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/Wnxd13zP/versions/jo7lDoK4/Clumps-neoforge-1.21.1-19.0.0.1.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "midnightlib-neoforge-1.9.2+1.21.1.jar"
+name = "midnightlib-neoforge-1.9.2+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "5a8b19663e5c042cc2755f671d04b789a8b6f9df"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/codAaoxh/versions/Puk24qHu/midnightlib-neoforge-1.9.2%2B1.21.1.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "mcw-bridges-3.1.2-mc1.21.1neoforge.jar"
+name = "mcw-bridges-3.1.2-mc1.21.1neoforge"
+side = "both"
+
+[mods.download]
+hash = "71ece28129789a2123cf07e79938f488d8675bb2"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/GURcjz8O/versions/aQ7rY7ng/mcw-bridges-3.1.2-mc1.21.1neoforge.jar"

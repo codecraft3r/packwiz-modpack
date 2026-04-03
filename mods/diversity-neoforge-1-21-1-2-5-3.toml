@@ -1,0 +1,9 @@
+[[mods]]
+filename = "diversity-neoforge-1.21.1-2.5.3.jar"
+name = "diversity-neoforge-1.21.1-2.5.3"
+side = "both"
+
+[mods.download]
+hash = "6ec082811b561861c92419ee41daac1575d68745"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/31qnTHav/versions/5Z0d6gj0/diversity-neoforge-1.21.1-2.5.3.jar"

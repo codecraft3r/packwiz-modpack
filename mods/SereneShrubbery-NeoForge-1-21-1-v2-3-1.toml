@@ -1,0 +1,9 @@
+[[mods]]
+filename = "SereneShrubbery-NeoForge-1.21.1-v2.3.1.jar"
+name = "SereneShrubbery-NeoForge-1.21.1-v2.3.1"
+side = "both"
+
+[mods.download]
+hash = "066a063abf1f297a75394d6a7ed0eef2ed6c3722"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/8nNCA6Vy/versions/MmvD0Rr8/SereneShrubbery-NeoForge-1.21.1-v2.3.1.jar"

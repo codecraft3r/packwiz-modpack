@@ -1,0 +1,9 @@
+[[mods]]
+filename = "smoothswapping-0.9.3.2-1.21.1-neoforge.jar"
+name = "smoothswapping-0.9.3.2-1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "00338f16b360d6b24b53fc8f92b76256729aee75"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/ydZic5r4/versions/tnvwgXE6/smoothswapping-0.9.3.2-1.21.1-neoforge.jar"

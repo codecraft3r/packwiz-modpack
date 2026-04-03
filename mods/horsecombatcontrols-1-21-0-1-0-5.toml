@@ -1,0 +1,9 @@
+[[mods]]
+filename = "horsecombatcontrols-1.21.0-1.0.5.jar"
+name = "horsecombatcontrols-1.21.0-1.0.5"
+side = "both"
+
+[mods.download]
+hash = "ef0ca3fe58e0be1944784f155e7eaa21502825ad"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/Ye73E82r/versions/nRj8AIPK/horsecombatcontrols-1.21.0-1.0.5.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "rightclickharvest-neoforge-4.6.1+1.21.1.jar"
+name = "rightclickharvest-neoforge-4.6.1+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "473b960c0cae751b7752a43df4756010e30988fa"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/Cnejf5xM/versions/djt0zS53/rightclickharvest-neoforge-4.6.1%2B1.21.1.jar"

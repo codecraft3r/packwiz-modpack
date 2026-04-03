@@ -1,0 +1,9 @@
+[[mods]]
+filename = "cobblenav-neoforge-2.3.2.jar"
+name = "cobblenav-neoforge-2.3.2"
+side = "both"
+
+[mods.download]
+hash = "f284be7129231ce4e36cdb0fa576475f9155cf63"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/bI8Nt3uA/versions/OMsYBNWp/cobblenav-neoforge-2.3.2.jar"

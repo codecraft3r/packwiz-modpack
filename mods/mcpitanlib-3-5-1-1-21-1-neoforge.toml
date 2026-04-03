@@ -1,0 +1,9 @@
+[[mods]]
+filename = "mcpitanlib-3.5.1-1.21.1-neoforge.jar"
+name = "mcpitanlib-3.5.1-1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "e1003c21b0a64f65f17183c114f2e3ae74c7dd11"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/uNRoUnGT/versions/w0WsZ5yx/mcpitanlib-3.5.1-1.21.1-neoforge.jar"

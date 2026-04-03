@@ -1,0 +1,9 @@
+[[mods]]
+filename = "zamega-neoforge-1.7.1.jar"
+name = "zamega-neoforge-1.7.1"
+side = "both"
+
+[mods.download]
+hash = "937a9999f9ca1efd35f00fd915d0dd6db382ff0d"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/2V1Y86sc/versions/ihX1hD7Z/zamega-neoforge-1.7.1.jar"

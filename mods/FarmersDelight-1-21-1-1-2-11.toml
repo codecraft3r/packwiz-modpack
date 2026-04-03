@@ -1,0 +1,9 @@
+[[mods]]
+filename = "FarmersDelight-1.21.1-1.2.11.jar"
+name = "FarmersDelight-1.21.1-1.2.11"
+side = "both"
+
+[mods.download]
+hash = "2415b91d6437977e676985b4a2ef877208d202e1"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/R2OftAxM/versions/cYqC3svy/FarmersDelight-1.21.1-1.2.11.jar"

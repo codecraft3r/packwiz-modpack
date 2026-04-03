@@ -1,0 +1,7 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"protection_pixel:steamectoskeleton"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"protection_pixel:chestplatelining"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"oritech:nuke"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"oritech:low_yield_nuke"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

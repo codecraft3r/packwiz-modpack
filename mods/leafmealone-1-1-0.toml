@@ -1,0 +1,9 @@
+[[mods]]
+filename = "leafmealone-1.1.0.jar"
+name = "leafmealone-1.1.0"
+side = "both"
+
+[mods.download]
+hash = "809bbf3a36a15916f66997ad09df6130c6f63e5a"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/ppMUvsIg/versions/XKudEdyS/leafmealone-1.1.0.jar"

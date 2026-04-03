@@ -1,0 +1,9 @@
+[[mods]]
+filename = "escalated-1.2.1+create.6.0.8-mc.1.21.1-neoforge.jar"
+name = "escalated-1.2.1+create.6.0.8-mc.1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "c0c2a66ecf4204972920bfd4d62314aea83dc64e"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/LyOBYG8Q/versions/6DNGSw3t/escalated-1.2.1%2Bcreate.6.0.8-mc.1.21.1-neoforge.jar"

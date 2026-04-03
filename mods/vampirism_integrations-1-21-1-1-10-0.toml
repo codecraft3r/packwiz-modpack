@@ -1,0 +1,9 @@
+[[mods]]
+filename = "vampirism_integrations-1.21.1-1.10.0.jar"
+name = "vampirism_integrations-1.21.1-1.10.0"
+side = "both"
+
+[mods.download]
+hash = "5e55fdc1a6ceb3864c19ddc84452d817571f02b9"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/ygTFuViO/versions/lUZ3VFxN/vampirism_integrations-1.21.1-1.10.0.jar"

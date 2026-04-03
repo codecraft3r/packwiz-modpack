@@ -1,0 +1,9 @@
+[[mods]]
+filename = "particlerain-4.0.0-beta.8+1.21.1-neoforge.jar"
+name = "particlerain-4.0.0-beta.8+1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "1e60bd5686446b12e136f12506680562329a0aae"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/nrikgvxm/versions/F8VbK5pu/particlerain-4.0.0-beta.8%2B1.21.1-neoforge.jar"

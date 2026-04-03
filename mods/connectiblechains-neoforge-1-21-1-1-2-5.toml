@@ -1,0 +1,9 @@
+[[mods]]
+filename = "connectiblechains-neoforge-1.21.1-1.2.5.jar"
+name = "connectiblechains-neoforge-1.21.1-1.2.5"
+side = "both"
+
+[mods.download]
+hash = "874fac90a314f80c28e1564abc7070ca4bc3890a"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/5pzBXDS3/versions/haHsKT7H/connectiblechains-neoforge-1.21.1-1.2.5.jar"

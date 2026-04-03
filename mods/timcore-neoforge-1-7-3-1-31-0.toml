@@ -1,0 +1,9 @@
+[[mods]]
+filename = "timcore-neoforge-1.7.3-1.31.0.jar"
+name = "timcore-neoforge-1.7.3-1.31.0"
+side = "both"
+
+[mods.download]
+hash = "0ee7e9c7fec9185d9ee6065582a59dce38d938ca"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/lVP9aUaY/versions/OrncUkpj/timcore-neoforge-1.7.3-1.31.0.jar"

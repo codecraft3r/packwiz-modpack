@@ -1,0 +1,9 @@
+[[mods]]
+filename = "unusual_adventures-1.1.0b-neoforge-1.21.1.jar"
+name = "unusual_adventures-1.1.0b-neoforge-1.21.1"
+side = "both"
+
+[mods.download]
+hash = "ef5c63f1c2228217025f8c6f62a5e681993bb968"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/k2byGYgN/versions/uvjAbGV2/unusual_adventures-1.1.0b-neoforge-1.21.1.jar"

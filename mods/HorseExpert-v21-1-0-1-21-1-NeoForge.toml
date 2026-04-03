@@ -1,0 +1,9 @@
+[[mods]]
+filename = "HorseExpert-v21.1.0-1.21.1-NeoForge.jar"
+name = "HorseExpert-v21.1.0-1.21.1-NeoForge"
+side = "both"
+
+[mods.download]
+hash = "df0116952a6c0fd2b6b07f30f25a394d62817bca"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/24CSPS1E/versions/Li2vsMel/HorseExpert-v21.1.0-1.21.1-NeoForge.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar"
+name = "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "fe270c9f6e0a8142cf316944087f5109cef08bbb"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/1eAoo2KR/versions/7TVdVtxF/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar"

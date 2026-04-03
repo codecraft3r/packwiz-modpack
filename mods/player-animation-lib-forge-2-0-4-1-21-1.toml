@@ -1,0 +1,9 @@
+[[mods]]
+filename = "player-animation-lib-forge-2.0.4+1.21.1.jar"
+name = "player-animation-lib-forge-2.0.4+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "05be8ddcc78532b9a5520c718edc6c971cd0057c"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/gedNE4y2/versions/HJZB6bmA/player-animation-lib-forge-2.0.4%2B1.21.1.jar"

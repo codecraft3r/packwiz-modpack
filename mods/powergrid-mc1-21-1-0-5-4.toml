@@ -1,0 +1,9 @@
+[[mods]]
+filename = "powergrid-mc1.21.1-0.5.4.jar"
+name = "powergrid-mc1.21.1-0.5.4"
+side = "both"
+
+[mods.download]
+hash = "7ffcaa416b5e5e8dcbb70bc6909e0b1775811da7"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/eWiBLJ9R/versions/bli22EIb/powergrid-mc1.21.1-0.5.4.jar"

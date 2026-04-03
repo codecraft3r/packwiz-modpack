@@ -1,0 +1,9 @@
+[[mods]]
+filename = "ferritecore-7.0.3-neoforge.jar"
+name = "ferritecore-7.0.3-neoforge"
+side = "both"
+
+[mods.download]
+hash = "9563692efb708b6b568df27a01ec52f6311928ef"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar"

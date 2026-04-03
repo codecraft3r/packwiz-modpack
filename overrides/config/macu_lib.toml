@@ -1,0 +1,6 @@
+# Config for the supporter perks
+[supporters]
+	# The amount of minutes to fetch changes in the role versions
+	# if the value is negative or 0 it only checks at startup
+	# default: 720
+	roleCheckerMinutesInterval = 720

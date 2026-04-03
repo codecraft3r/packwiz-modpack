@@ -1,0 +1,9 @@
+[[mods]]
+filename = "mcw-doors-1.1.5-mc1.21.1neoforge.jar"
+name = "mcw-doors-1.1.5-mc1.21.1neoforge"
+side = "both"
+
+[mods.download]
+hash = "c127904f23db1a641dd9e065ec51c5c177cb4cd7"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/kNxa8z3e/versions/u7BRX44F/mcw-doors-1.1.5-mc1.21.1neoforge.jar"

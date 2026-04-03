@@ -1,0 +1,9 @@
+[[mods]]
+filename = "betterskies-1.0.2-neoforge-1.21.1.jar"
+name = "betterskies-1.0.2-neoforge-1.21.1"
+side = "both"
+
+[mods.download]
+hash = "6a1f63d3fb85e6133fe9ba11bf64c09b6fab13ef"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/K9Uiw3me/versions/NF9QxgBj/betterskies-1.0.2-neoforge-1.21.1.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "Controlling-neoforge-1.21.1-19.0.5.jar"
+name = "Controlling-neoforge-1.21.1-19.0.5"
+side = "both"
+
+[mods.download]
+hash = "8a34424fc1428778be2fdbfa4da67b21b70bcbfe"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/xv94TkTM/versions/FaNppCJJ/Controlling-neoforge-1.21.1-19.0.5.jar"

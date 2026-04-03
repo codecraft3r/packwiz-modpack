@@ -1,0 +1,9 @@
+[[mods]]
+filename = "dye_the_world-2.1.1.jar"
+name = "dye_the_world-2.1.1"
+side = "both"
+
+[mods.download]
+hash = "1e09d4baf92e6fe188129e3030b3a1fdd7d61a7b"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/naUMeOvG/versions/8hFupvAV/dye_the_world-2.1.1.jar"

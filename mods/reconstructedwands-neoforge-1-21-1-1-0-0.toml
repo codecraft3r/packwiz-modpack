@@ -1,0 +1,9 @@
+[[mods]]
+filename = "reconstructedwands-neoforge-1.21.1-1.0.0.jar"
+name = "reconstructedwands-neoforge-1.21.1-1.0.0"
+side = "both"
+
+[mods.download]
+hash = "ee67247e85711af07029bf723b13386139b986eb"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/zj6ZBpmY/versions/JEkqCnZf/reconstructedwands-neoforge-1.21.1-1.0.0.jar"

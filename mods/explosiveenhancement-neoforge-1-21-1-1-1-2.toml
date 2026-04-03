@@ -1,0 +1,9 @@
+[[mods]]
+filename = "explosiveenhancement-neoforge-1.21.1-1.1.2.jar"
+name = "explosiveenhancement-neoforge-1.21.1-1.1.2"
+side = "both"
+
+[mods.download]
+hash = "fee0be3ffe494189733ceaeb7163a38b03098ea5"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/r0camchr/versions/XVYkZnNg/explosiveenhancement-neoforge-1.21.1-1.1.2.jar"

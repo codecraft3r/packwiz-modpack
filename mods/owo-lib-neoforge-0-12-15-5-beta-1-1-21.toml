@@ -1,0 +1,9 @@
+[[mods]]
+filename = "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar"
+name = "owo-lib-neoforge-0.12.15.5-beta.1+1.21"
+side = "both"
+
+[mods.download]
+hash = "48dda11a6710591cf162bdbedf982ea21dd1f2ed"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/ccKDOlHs/versions/NMCHU6DZ/owo-lib-neoforge-0.12.15.5-beta.1%2B1.21.jar"

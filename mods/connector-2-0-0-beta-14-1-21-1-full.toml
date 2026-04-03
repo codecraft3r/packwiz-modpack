@@ -1,0 +1,9 @@
+[[mods]]
+filename = "connector-2.0.0-beta.14+1.21.1-full.jar"
+name = "connector-2.0.0-beta.14+1.21.1-full"
+side = "both"
+
+[mods.download]
+hash = "930067497b5c1249e51b3e33620ab4e72dc92f4c"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/u58R1TMW/versions/1i8teo7m/connector-2.0.0-beta.14%2B1.21.1-full.jar"

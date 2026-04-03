@@ -1,0 +1,9 @@
+[[mods]]
+filename = "MyNethersDelight-1.21.1-1.9.jar"
+name = "MyNethersDelight-1.21.1-1.9"
+side = "both"
+
+[mods.download]
+hash = "146bc38650e09875c678a78014a3ed55d2fd4ca9"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/O53VhQoZ/versions/n2vJCdff/MyNethersDelight-1.21.1-1.9.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "mcqoy-0.4.1+neo-1.21.jar"
+name = "mcqoy-0.4.1+neo-1.21"
+side = "both"
+
+[mods.download]
+hash = "98a771b14c1f4ead12ffcd99a90b1c91b25cca8d"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/tNmWwdI2/versions/nfqfeKsL/mcqoy-0.4.1%2Bneo-1.21.jar"

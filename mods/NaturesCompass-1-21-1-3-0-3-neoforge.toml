@@ -1,0 +1,9 @@
+[[mods]]
+filename = "NaturesCompass-1.21.1-3.0.3-neoforge.jar"
+name = "NaturesCompass-1.21.1-3.0.3-neoforge"
+side = "both"
+
+[mods.download]
+hash = "4a91af947622a2bb2c0381db249cc6f06c1f1843"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/fPetb5Kh/versions/AqEmYPpi/NaturesCompass-1.21.1-3.0.3-neoforge.jar"

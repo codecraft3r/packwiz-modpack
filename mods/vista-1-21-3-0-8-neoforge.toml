@@ -1,0 +1,9 @@
+[[mods]]
+filename = "vista-1.21-3.0.8-neoforge.jar"
+name = "vista-1.21-3.0.8-neoforge"
+side = "both"
+
+[mods.download]
+hash = "f27649adeb65ebdd14f6f2b926d969ef4045cbb1"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/zuARv1N7/versions/apaPNtaL/vista-1.21-3.0.8-neoforge.jar"

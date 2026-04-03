@@ -1,0 +1,9 @@
+[[mods]]
+filename = "trajectory_estimation-neoforge-1.0.3.1-1.21.x.jar"
+name = "trajectory_estimation-neoforge-1.0.3.1-1.21.x"
+side = "both"
+
+[mods.download]
+hash = "a1174cbec462c0a393af91d005658150d95588fb"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/7c13Zjk8/versions/k1GPyitu/trajectory_estimation-neoforge-1.0.3.1-1.21.x.jar"

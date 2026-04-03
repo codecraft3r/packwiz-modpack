@@ -1,0 +1,9 @@
+[[mods]]
+filename = "athena-neoforge-1.21-4.0.2.jar"
+name = "athena-neoforge-1.21-4.0.2"
+side = "both"
+
+[mods.download]
+hash = "069f397f1b3a30b3d5f5a98cac76304dfe345d76"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/SVhR1m5N/athena-neoforge-1.21-4.0.2.jar"

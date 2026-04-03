@@ -1,0 +1,9 @@
+[[mods]]
+filename = "firstperson-neoforge-2.6.3-mc1.21.1.jar"
+name = "firstperson-neoforge-2.6.3-mc1.21.1"
+side = "both"
+
+[mods.download]
+hash = "c09ed12658cbfe95187774b6cbecca641140187a"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/H5XMjpHi/versions/MnVMPnK7/firstperson-neoforge-2.6.3-mc1.21.1.jar"

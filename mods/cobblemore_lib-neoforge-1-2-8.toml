@@ -1,0 +1,9 @@
+[[mods]]
+filename = "cobblemore_lib-neoforge-1.2.8.jar"
+name = "cobblemore_lib-neoforge-1.2.8"
+side = "both"
+
+[mods.download]
+hash = "2bd30936d33f7a45d0f6bc4df4d67412f0008674"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/VYP2vmDS/versions/MXul25qY/cobblemore_lib-neoforge-1.2.8.jar"

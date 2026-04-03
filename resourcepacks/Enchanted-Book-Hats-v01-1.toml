@@ -1,0 +1,9 @@
+[[mods]]
+filename = "Enchanted Book Hats v01.1.zip"
+name = "Enchanted Book Hats v01.1"
+side = "both"
+
+[mods.download]
+hash = "0b36457c9e54d068369e58166a5e8b0984bdb7a1"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/6iZmF5Mn/versions/PpMHeiyh/Enchanted%20Book%20Hats%20v01.1.zip"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "astikorcartsredux-1.2.2.jar"
+name = "astikorcartsredux-1.2.2"
+side = "both"
+
+[mods.download]
+hash = "a120524992f6010de34a5f36f8789d7ab95f99db"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/mnLFouB0/versions/6t5FXuOX/astikorcartsredux-1.2.2.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "trimmed-neo-1.21-3.0.0.jar"
+name = "trimmed-neo-1.21-3.0.0"
+side = "both"
+
+[mods.download]
+hash = "c1ee534f00f4ee476e868f4db4dea99c7d41570d"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/q8k4zHw5/versions/wqxXFq0d/trimmed-neo-1.21-3.0.0.jar"

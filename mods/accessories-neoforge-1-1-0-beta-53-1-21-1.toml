@@ -1,0 +1,9 @@
+[[mods]]
+filename = "accessories-neoforge-1.1.0-beta.53+1.21.1.jar"
+name = "accessories-neoforge-1.1.0-beta.53+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "77d75c2e13cfdf56a45cdd29806c1c97c3d250fc"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/jtmvUHXj/versions/Fb55Fgjz/accessories-neoforge-1.1.0-beta.53%2B1.21.1.jar"

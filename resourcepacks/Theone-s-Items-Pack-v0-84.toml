@@ -1,0 +1,9 @@
+[[mods]]
+filename = "Theone's Items Pack v0.84.zip"
+name = "Theone's Items Pack v0.84"
+side = "both"
+
+[mods.download]
+hash = "4f7e0ef10998d1540e5d8a7492d2e163fb3c6815"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/5gU0lpwH/versions/9prdPB8e/Theone%27s%20Items%20Pack%20v0.84.zip"

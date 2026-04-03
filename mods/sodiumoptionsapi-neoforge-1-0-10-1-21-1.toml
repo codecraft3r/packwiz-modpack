@@ -1,0 +1,9 @@
+[[mods]]
+filename = "sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"
+name = "sodiumoptionsapi-neoforge-1.0.10-1.21.1"
+side = "both"
+
+[mods.download]
+hash = "5d014d031fa77ab600e07835b032ef4dcb79b442"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/Es5v4eyq/versions/lrsX3TMS/sodiumoptionsapi-neoforge-1.0.10-1.21.1.jar"

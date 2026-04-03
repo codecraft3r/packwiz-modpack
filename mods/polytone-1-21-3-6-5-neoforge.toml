@@ -1,0 +1,9 @@
+[[mods]]
+filename = "polytone-1.21-3.6.5-neoforge.jar"
+name = "polytone-1.21-3.6.5-neoforge"
+side = "both"
+
+[mods.download]
+hash = "3876e88cab5e741396a930bfaf9c433e592c841b"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/3qAYkBMB/versions/Re4fSru9/polytone-1.21-3.6.5-neoforge.jar"

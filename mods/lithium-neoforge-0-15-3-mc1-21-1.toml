@@ -1,0 +1,9 @@
+[[mods]]
+filename = "lithium-neoforge-0.15.3+mc1.21.1.jar"
+name = "lithium-neoforge-0.15.3+mc1.21.1"
+side = "both"
+
+[mods.download]
+hash = "9fd5fa9076044180ae7f51672de74669196ec72e"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/RXHf27Wv/lithium-neoforge-0.15.3%2Bmc1.21.1.jar"

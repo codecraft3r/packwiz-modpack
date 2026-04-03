@@ -1,0 +1,9 @@
+[[mods]]
+filename = "CreativeCore_NEOFORGE_v2.13.36_mc1.21.1.jar"
+name = "CreativeCore_NEOFORGE_v2.13.36_mc1.21.1"
+side = "both"
+
+[mods.download]
+hash = "83af278fd8da376480d7847204c3e124bda94add"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/OsZiaDHq/versions/tXZudQfR/CreativeCore_NEOFORGE_v2.13.36_mc1.21.1.jar"

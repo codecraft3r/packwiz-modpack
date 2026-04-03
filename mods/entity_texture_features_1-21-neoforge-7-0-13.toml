@@ -1,0 +1,9 @@
+[[mods]]
+filename = "entity_texture_features_1.21-neoforge-7.0.13.jar"
+name = "entity_texture_features_1.21-neoforge-7.0.13"
+side = "both"
+
+[mods.download]
+hash = "22d148a6fc6d0df294ff38b957b7399fbdb95048"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/BVzZfTc1/versions/njTVIXr7/entity_texture_features_1.21-neoforge-7.0.13.jar"

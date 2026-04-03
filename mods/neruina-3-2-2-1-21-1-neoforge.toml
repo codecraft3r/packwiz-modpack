@@ -1,0 +1,9 @@
+[[mods]]
+filename = "neruina-3.2.2+1.21.1-neoforge.jar"
+name = "neruina-3.2.2+1.21.1-neoforge"
+side = "both"
+
+[mods.download]
+hash = "a1283af4abda12fe8e455a9cf480008ad554f88f"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/1s5x833P/versions/OxKKVPvK/neruina-3.2.2%2B1.21.1-neoforge.jar"

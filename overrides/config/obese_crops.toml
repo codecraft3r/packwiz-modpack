@@ -1,0 +1,11 @@
+# Whether double crops defined on the obese_crops:double_obese_crops tag should be double.
+# default: true
+doubleTallCrops = true
+# Whether rooted dirt should appear under newly spawned obese crops.
+# default: true
+rootedDirtUnderCrops = true
+
+[fabricOnly]
+	# Whether apple/flowering oak trees should spawn naturally.
+	# default: true
+	floweringOakSpawn = true

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "cullleaves-neoforge-4.1.1+1.21.1.jar"
+name = "cullleaves-neoforge-4.1.1+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "0ea35e716f486a0607e01db8928ff7bea8148b39"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/GNxdLCoP/versions/V7PU4g8I/cullleaves-neoforge-4.1.1%2B1.21.1.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "cropsloverain-3.2.1.jar"
+name = "cropsloverain-3.2.1"
+side = "both"
+
+[mods.download]
+hash = "43c8ac81b90089d1b7825d7ab9465d440996fc95"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/cRci7UZp/versions/bmqftD2D/cropsloverain-3.2.1.jar"

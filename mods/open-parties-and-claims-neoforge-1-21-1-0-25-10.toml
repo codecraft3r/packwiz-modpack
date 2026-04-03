@@ -1,0 +1,9 @@
+[[mods]]
+filename = "open-parties-and-claims-neoforge-1.21.1-0.25.10.jar"
+name = "open-parties-and-claims-neoforge-1.21.1-0.25.10"
+side = "both"
+
+[mods.download]
+hash = "bbd78fbeb076473bc19b247491490c4ac0139dd3"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/gF3BGWvG/versions/g5OOSal5/open-parties-and-claims-neoforge-1.21.1-0.25.10.jar"

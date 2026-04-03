@@ -1,0 +1,9 @@
+[[mods]]
+filename = "bedspreads-neoforge-7.0.0+1.21.1.jar"
+name = "bedspreads-neoforge-7.0.0+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "ab8e9a08845272bda49c516826af51af09fd957f"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/vNNL5mc7/versions/KA38FGwj/bedspreads-neoforge-7.0.0%2B1.21.1.jar"

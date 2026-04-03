@@ -1,0 +1,9 @@
+[[mods]]
+filename = "dye_depot-2.0.2-neoforge.jar"
+name = "dye_depot-2.0.2-neoforge"
+side = "both"
+
+[mods.download]
+hash = "6157db3c60737cdf1b5d74e047c36c97d3ee81fc"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/dl88rsIq/versions/LcGfPPua/dye_depot-2.0.2-neoforge.jar"

@@ -1,0 +1,9 @@
+[[mods]]
+filename = "visualoverhaul-neoforge-5.2.1.jar"
+name = "visualoverhaul-neoforge-5.2.1"
+side = "both"
+
+[mods.download]
+hash = "7620025151d8804347312bccb9464fe644d9ac84"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/YQnwl5Vv/versions/TMOdQHDi/visualoverhaul-neoforge-5.2.1.jar"

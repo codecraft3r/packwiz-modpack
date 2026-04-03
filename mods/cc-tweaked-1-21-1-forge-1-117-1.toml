@@ -1,0 +1,9 @@
+[[mods]]
+filename = "cc-tweaked-1.21.1-forge-1.117.1.jar"
+name = "cc-tweaked-1.21.1-forge-1.117.1"
+side = "both"
+
+[mods.download]
+hash = "aaf6233b23e1ff01ed286824ba359aaa5eed0918"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/gu7yAYhd/versions/ZlZHN512/cc-tweaked-1.21.1-forge-1.117.1.jar"

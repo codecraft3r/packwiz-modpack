@@ -1,0 +1,9 @@
+[[mods]]
+filename = "bits_n_bobs-0.0.44.jar"
+name = "bits_n_bobs-0.0.44"
+side = "both"
+
+[mods.download]
+hash = "2d577eb7e47b860fc32e4ebd33405715252c5072"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/T8bvmqVZ/versions/XKDQlGJW/bits_n_bobs-0.0.44.jar"

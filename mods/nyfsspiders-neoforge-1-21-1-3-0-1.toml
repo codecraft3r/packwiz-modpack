@@ -1,0 +1,9 @@
+[[mods]]
+filename = "nyfsspiders-neoforge-1.21.1-3.0.1.jar"
+name = "nyfsspiders-neoforge-1.21.1-3.0.1"
+side = "both"
+
+[mods.download]
+hash = "97a3b90f3566b4870c395a463f04961e2a6fa383"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/dOGM7ccu/versions/pjXVTyLu/nyfsspiders-neoforge-1.21.1-3.0.1.jar"

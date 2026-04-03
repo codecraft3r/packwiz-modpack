@@ -1,0 +1,9 @@
+[[mods]]
+filename = "utility-belt-neoforge-3.0.1+1.21.1.jar"
+name = "utility-belt-neoforge-3.0.1+1.21.1"
+side = "both"
+
+[mods.download]
+hash = "d0c8c97fe1aa70c4780300fe11aba7d11e1bc34b"
+hash-format = "sha1"
+url = "https://cdn.modrinth.com/data/9ewe2JHJ/versions/Cf35DsLZ/utility-belt-neoforge-3.0.1%2B1.21.1.jar"
