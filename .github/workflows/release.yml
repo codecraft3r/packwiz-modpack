@@ -20,11 +20,6 @@ jobs:
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: Set up Go modules cache
-        uses: actions/cache@v4
-        with:
-          go-modules-cache: true
-
       - name: Refresh index
         run: packwiz refresh
 
