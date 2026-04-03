@@ -24,15 +24,67 @@ jobs:
         run: packwiz refresh
 
       - name: Build Modrinth pack
-        id: build
         run: |
           packwiz modrinth export -o .
-          echo "filename=$(ls *.mrpack)" >> $GITHUB_OUTPUT
+          ls -la *.mrpack
 
-      - name: Create Release
+      - name: Create MultiMC instance package
+        run: |
+          # Download packwiz-installer-bootstrap
+          curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o packwiz-installer-bootstrap.jar
+          
+          # Create instance folder structure
+          mkdir -p "TBD.multimc-instance/.minecraft"
+          cp packwiz-installer-bootstrap.jar "TBD.multimc-instance/.minecraft/"
+          
+          # Create instance config
+          cat > "TBD.multimc-instance"/instance.cfg << 'CFGs'
+name=TBD
+iconName=Default
+notes=Auto-updating modpack via packwiz
+MCVersion=1.21.1
+ForgeVersion=21.1.219
+LWJGLVersion=3.3.4
+javaArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch
+CFGs
+          
+          # Create pack.json for packwiz
+          cat > "TBD.multimc-instance"/pack.json << 'PKG'
+{
+    "packLocation": {
+        "url": "https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/master/pack.toml"
+    }
+}
+PKG
+          
+          # Create README
+          cat > "TBD.multimc-instance"/README.txt << 'RDT'
+TBD MultiMC Instance
+====================
+
+HOW TO USE:
+1. Install MultiMC from https://multimc.org/
+2. Create new instance → Name: "TBD" → Minecraft: 1.21.1 → NeoForge: 21.1.219
+3. This instance folder IS the pack - you can import it directly or:
+4. Just launch and the packwiz-installer will auto-download mods!
+RDT
+          
+          # Zip it up
+          zip -r "TBD.multimc.instance.zip" "TBD.multimc-instance"
+          ls -la *.zip
+
+      - name: Upload Modrinth pack
         uses: softprops/action-gh-release@v2
         with:
-          files: ${{ steps.build.outputs.filename }}
-          generate_release_notes: true
+          files: '*.mrpack'
+          asset_name: TBD.mrpack
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MultiMC instance
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.zip'
+          asset_name: TBD-MultiMC-Instance.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: tbd-minecraft
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "FORGE"
+      FORGEVERSION: "21.1.219"
+      MINECRAFT_VERSION: "1.21.1"
+      PACKWIZ_URL: "https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/master/pack.toml"
+      # Optional: Server settings
+      SERVER_NAME: "TBD Server"
+      MEMORY: "4G"
+    volumes:
+      - mc-data:/data
+
+volumes:
+  mc-data:
