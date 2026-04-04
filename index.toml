@@ -402,6 +402,11 @@ hash = "6d28302ca70c74c861fcf4cabd03832dcbf48f9de583538e2f2e5d10e989576e"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-smartphone.pw.toml"
+hash = "a983b8e705e5470ac351f2b83558b0f8fe342acd215836bf0bf67acd3dff2da0"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon_industries-neoforge-1-3-2.pw.toml"
 hash = "3e1afe1bd3c566c71ff5ba33b2f9da1ed292f600501c128e774848b4fd065688"
 metafile = true
@@ -414,6 +419,11 @@ metafile = true
 [[files]]
 file = "mods/cobblenav-neoforge-2-3-2.pw.toml"
 hash = "e4f51ce3515a54e4b796cbe63eff0190529a10653576a9fbae7ef8d0259a4132"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "cde21d14fcaf9495f0f5b3d8fb298dd60cb12badc21a27414c25ebf11dfb3fe1"
 metafile = true
 
 [[files]]
@@ -974,6 +984,11 @@ metafile = true
 [[files]]
 file = "mods/spawnnotification-neoforge-1-7-3-2-3-0.pw.toml"
 hash = "0590c77aeea30df130753603465a7667fc6789a5a48af2a72a2c2ea8a6623a47"
+metafile = true
+
+[[files]]
+file = "mods/starter-kit.pw.toml"
+hash = "ea33d99764a8bae0618db5fc2eebec624f72f49bd6189b9818eb214687f71a82"
 metafile = true
 
 [[files]]

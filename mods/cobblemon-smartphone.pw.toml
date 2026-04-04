@@ -1,0 +1,13 @@
+name = "Cobblemon Smartphone"
+filename = "cobblemon_smartphone-neoforge-1.0.6.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/n2f1HbK8/versions/wiRSLBQB/cobblemon_smartphone-neoforge-1.0.6.jar"
+hash-format = "sha512"
+hash = "8070121ac9e134506b1efd171211096965329abd0586873c1e356d75dd5f5cefeda165cddb3d94603d50b068826adcfd4b233d963cd116e28b8dd5e335d37792"
+
+[update]
+[update.modrinth]
+mod-id = "n2f1HbK8"
+version = "wiRSLBQB"
