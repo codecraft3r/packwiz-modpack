@@ -1,9 +1,8 @@
-[[mods]]
-filename = "immersivehotbar-1.1.1-neoforge-1.21-1.21.1.jar"
 name = "immersivehotbar-1.1.1-neoforge-1.21-1.21.1"
-side = "both"
+filename = "immersivehotbar-1.1.1-neoforge-1.21-1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "4f4a939b4dfc3664add2659e5981390c1ba199fc"
+[download]
 hash-format = "sha1"
+hash = "4f4a939b4dfc3664add2659e5981390c1ba199fc"
 url = "https://cdn.modrinth.com/data/hsPB5xMD/versions/qJHPvUyX/immersivehotbar-1.1.1-neoforge-1.21-1.21.1.jar"

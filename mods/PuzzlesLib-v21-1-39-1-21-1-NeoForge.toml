@@ -1,9 +1,8 @@
-[[mods]]
-filename = "PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar"
 name = "PuzzlesLib-v21.1.39-1.21.1-NeoForge"
+filename = "PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar"
 side = "both"
 
-[mods.download]
-hash = "bcc0900fbbf6d6fc5ca05039cd5725e6145225f2"
+[download]
 hash-format = "sha1"
+hash = "bcc0900fbbf6d6fc5ca05039cd5725e6145225f2"
 url = "https://cdn.modrinth.com/data/QAGBst4M/versions/EgWWSAhJ/PuzzlesLib-v21.1.39-1.21.1-NeoForge.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "worldweaver-21.0.19.jar"
 name = "worldweaver-21.0.19"
+filename = "worldweaver-21.0.19.jar"
 side = "both"
 
-[mods.download]
-hash = "09e1803fe6a85292ced6b64eb2cd53cafbbb6df6"
+[download]
 hash-format = "sha1"
+hash = "09e1803fe6a85292ced6b64eb2cd53cafbbb6df6"
 url = "https://cdn.modrinth.com/data/R8uGDQpB/versions/CPsdGopd/worldweaver-21.0.19.jar"

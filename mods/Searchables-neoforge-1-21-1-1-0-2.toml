@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Searchables-neoforge-1.21.1-1.0.2.jar"
 name = "Searchables-neoforge-1.21.1-1.0.2"
-side = "both"
+filename = "Searchables-neoforge-1.21.1-1.0.2.jar"
+side = "client"
 
-[mods.download]
-hash = "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+[download]
 hash-format = "sha1"
+hash = "5b8a0b43a474c066371b2e16f9bfb88622552a74"
 url = "https://cdn.modrinth.com/data/fuuu3xnx/versions/iEE85X0w/Searchables-neoforge-1.21.1-1.0.2.jar"

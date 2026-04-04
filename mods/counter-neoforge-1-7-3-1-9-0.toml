@@ -1,9 +1,8 @@
-[[mods]]
-filename = "counter-neoforge-1.7.3-1.9.0.jar"
 name = "counter-neoforge-1.7.3-1.9.0"
+filename = "counter-neoforge-1.7.3-1.9.0.jar"
 side = "both"
 
-[mods.download]
-hash = "77e7605ac31ee3b261d100fb54da25cae1896707"
+[download]
 hash-format = "sha1"
+hash = "77e7605ac31ee3b261d100fb54da25cae1896707"
 url = "https://cdn.modrinth.com/data/rj8uLYP4/versions/aJArPPZ7/counter-neoforge-1.7.3-1.9.0.jar"

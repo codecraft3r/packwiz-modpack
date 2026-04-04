@@ -1,9 +1,8 @@
-[[mods]]
-filename = "chat_heads-0.15.0-neoforge-1.21.jar"
 name = "chat_heads-0.15.0-neoforge-1.21"
-side = "both"
+filename = "chat_heads-0.15.0-neoforge-1.21.jar"
+side = "client"
 
-[mods.download]
-hash = "a2c3744ededab5614bb8ecb71e058fdd3ba24638"
+[download]
 hash-format = "sha1"
+hash = "a2c3744ededab5614bb8ecb71e058fdd3ba24638"
 url = "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/JsI8Calw/chat_heads-0.15.0-neoforge-1.21.jar"

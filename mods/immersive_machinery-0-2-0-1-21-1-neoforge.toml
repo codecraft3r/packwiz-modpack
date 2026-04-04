@@ -1,9 +1,8 @@
-[[mods]]
-filename = "immersive_machinery-0.2.0+1.21.1-neoforge.jar"
 name = "immersive_machinery-0.2.0+1.21.1-neoforge"
+filename = "immersive_machinery-0.2.0+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "479c940b7e869dc4637a7f1d291ef310e8749c7f"
+[download]
 hash-format = "sha1"
+hash = "479c940b7e869dc4637a7f1d291ef310e8749c7f"
 url = "https://cdn.modrinth.com/data/kGP3J2TW/versions/I0rFojKK/immersive_machinery-0.2.0%2B1.21.1-neoforge.jar"

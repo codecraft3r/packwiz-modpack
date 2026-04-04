@@ -1,9 +1,8 @@
-[[mods]]
-filename = "immersive_furniture-neoforge-0.1.3+1.21.1.jar"
 name = "immersive_furniture-neoforge-0.1.3+1.21.1"
+filename = "immersive_furniture-neoforge-0.1.3+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "1c46b1735ce286f55170e7e78252519e41c1c340"
+[download]
 hash-format = "sha1"
+hash = "1c46b1735ce286f55170e7e78252519e41c1c340"
 url = "https://cdn.modrinth.com/data/SvN6UGeF/versions/XTNZ9gTS/immersive_furniture-neoforge-0.1.3%2B1.21.1.jar"

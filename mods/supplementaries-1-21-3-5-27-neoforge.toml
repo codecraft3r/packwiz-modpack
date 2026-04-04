@@ -1,9 +1,8 @@
-[[mods]]
-filename = "supplementaries-1.21-3.5.27-neoforge.jar"
 name = "supplementaries-1.21-3.5.27-neoforge"
+filename = "supplementaries-1.21-3.5.27-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "ddc7007ca224ec367d9ffe0516d0f9978c0e6d18"
+[download]
 hash-format = "sha1"
+hash = "ddc7007ca224ec367d9ffe0516d0f9978c0e6d18"
 url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/B4k8qIJB/supplementaries-1.21-3.5.27-neoforge.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "create-enchantment-industry-2.3.0.jar"
 name = "create-enchantment-industry-2.3.0"
+filename = "create-enchantment-industry-2.3.0.jar"
 side = "both"
 
-[mods.download]
-hash = "d9cef051c5318d27c634184bfb1ef35550b96789"
+[download]
 hash-format = "sha1"
+hash = "d9cef051c5318d27c634184bfb1ef35550b96789"
 url = "https://cdn.modrinth.com/data/JWGBpFUP/versions/o56ltpU3/create-enchantment-industry-2.3.0.jar"

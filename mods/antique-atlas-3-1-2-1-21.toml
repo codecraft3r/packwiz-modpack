@@ -1,9 +1,8 @@
-[[mods]]
-filename = "antique-atlas-3.1.2+1.21.jar"
 name = "antique-atlas-3.1.2+1.21"
-side = "both"
+filename = "antique-atlas-3.1.2+1.21.jar"
+side = "client"
 
-[mods.download]
-hash = "97b7c41cbcfcfb86e8ba80b316b1133ff1903e72"
+[download]
 hash-format = "sha1"
+hash = "97b7c41cbcfcfb86e8ba80b316b1133ff1903e72"
 url = "https://cdn.modrinth.com/data/Y5Ve4Ui4/versions/2sDsTAId/antique-atlas-3.1.2%2B1.21.jar"

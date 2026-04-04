@@ -1,9 +1,8 @@
-[[mods]]
-filename = "via_romana-2.2.2+1.21.1-neoforge.jar"
 name = "via_romana-2.2.2+1.21.1-neoforge"
+filename = "via_romana-2.2.2+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "e25ffefdcfa2b5657cd048f9ba186f87f30475f4"
+[download]
 hash-format = "sha1"
+hash = "e25ffefdcfa2b5657cd048f9ba186f87f30475f4"
 url = "https://cdn.modrinth.com/data/FVToiKwr/versions/7sf8VbzB/via_romana-2.2.2%2B1.21.1-neoforge.jar"

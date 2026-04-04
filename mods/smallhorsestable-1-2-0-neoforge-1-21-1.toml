@@ -1,9 +1,8 @@
-[[mods]]
-filename = "smallhorsestable-1.2.0-neoforge-1.21.1.jar"
 name = "smallhorsestable-1.2.0-neoforge-1.21.1"
+filename = "smallhorsestable-1.2.0-neoforge-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "7e76295dba808a569e4128269c4cc44bcd31396f"
+[download]
 hash-format = "sha1"
+hash = "7e76295dba808a569e4128269c4cc44bcd31396f"
 url = "https://cdn.modrinth.com/data/gfyIZI0R/versions/Z36CfAVU/smallhorsestable-1.2.0-neoforge-1.21.1.jar"

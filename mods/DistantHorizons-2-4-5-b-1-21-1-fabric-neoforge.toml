@@ -1,9 +1,8 @@
-[[mods]]
-filename = "DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar"
 name = "DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge"
+filename = "DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "2a1243b18ccc117dee0fae5e976a494d8234e8be"
+[download]
 hash-format = "sha1"
+hash = "2a1243b18ccc117dee0fae5e976a494d8234e8be"
 url = "https://cdn.modrinth.com/data/uCdwusMi/versions/bLPLghy9/DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar"

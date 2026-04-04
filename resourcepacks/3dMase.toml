@@ -1,9 +1,8 @@
-[[mods]]
-filename = "3dMase.zip"
 name = "3dMase"
+filename = "3dMase.zip"
 side = "both"
 
-[mods.download]
-hash = "edd08f6e5b45fb6d89af3a1f7bc0a67195009cfa"
+[download]
 hash-format = "sha1"
+hash = "edd08f6e5b45fb6d89af3a1f7bc0a67195009cfa"
 url = "https://cdn.modrinth.com/data/1K3EfTy7/versions/pjeYkThK/3dMase.zip"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "bloxyskills-1.0.0-neoforge-1.21.1.jar"
 name = "bloxyskills-1.0.0-neoforge-1.21.1"
+filename = "bloxyskills-1.0.0-neoforge-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "90c84ae1d1bfae306241ca674ee387c385348814"
+[download]
 hash-format = "sha1"
+hash = "90c84ae1d1bfae306241ca674ee387c385348814"
 url = "https://cdn.modrinth.com/data/UOWlS82K/versions/LavmGVmU/bloxyskills-1.0.0-neoforge-1.21.1.jar"

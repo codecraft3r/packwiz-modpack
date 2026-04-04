@@ -1,9 +1,8 @@
-[[mods]]
-filename = "BetterF3-11.0.3-NeoForge-1.21.1.jar"
 name = "BetterF3-11.0.3-NeoForge-1.21.1"
-side = "both"
+filename = "BetterF3-11.0.3-NeoForge-1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "8fa17df26d3650416bc124be7a264bc1566a3b26"
+[download]
 hash-format = "sha1"
+hash = "8fa17df26d3650416bc124be7a264bc1566a3b26"
 url = "https://cdn.modrinth.com/data/8shC1gFX/versions/maXNB1dn/BetterF3-11.0.3-NeoForge-1.21.1.jar"

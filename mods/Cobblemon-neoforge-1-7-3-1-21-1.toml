@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Cobblemon-neoforge-1.7.3+1.21.1.jar"
 name = "Cobblemon-neoforge-1.7.3+1.21.1"
+filename = "Cobblemon-neoforge-1.7.3+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "580ea363bbc391c98e548962a47c683155522f38"
+[download]
 hash-format = "sha1"
+hash = "580ea363bbc391c98e548962a47c683155522f38"
 url = "https://cdn.modrinth.com/data/MdwFAVRL/versions/S1TrAn8c/Cobblemon-neoforge-1.7.3%2B1.21.1.jar"

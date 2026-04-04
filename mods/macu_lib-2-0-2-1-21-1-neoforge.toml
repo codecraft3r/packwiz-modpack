@@ -1,9 +1,8 @@
-[[mods]]
-filename = "macu_lib-2.0.2+1.21.1-neoforge.jar"
 name = "macu_lib-2.0.2+1.21.1-neoforge"
+filename = "macu_lib-2.0.2+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "33357bea285a2c8371b1c77c955bfa431599800b"
+[download]
 hash-format = "sha1"
+hash = "33357bea285a2c8371b1c77c955bfa431599800b"
 url = "https://cdn.modrinth.com/data/XnLNz8og/versions/LDhxOoqS/macu_lib-2.0.2%2B1.21.1-neoforge.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "visuality-forge-2.1.0.jar"
 name = "visuality-forge-2.1.0"
-side = "both"
+filename = "visuality-forge-2.1.0.jar"
+side = "client"
 
-[mods.download]
-hash = "b400034ca8affe8f30b21935ae4ef74b1cf2fa29"
+[download]
 hash-format = "sha1"
+hash = "b400034ca8affe8f30b21935ae4ef74b1cf2fa29"
 url = "https://cdn.modrinth.com/data/z13R7Et1/versions/ZBidwV02/visuality-forge-2.1.0.jar"

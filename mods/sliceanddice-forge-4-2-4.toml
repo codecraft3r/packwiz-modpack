@@ -1,9 +1,8 @@
-[[mods]]
-filename = "sliceanddice-forge-4.2.4.jar"
 name = "sliceanddice-forge-4.2.4"
+filename = "sliceanddice-forge-4.2.4.jar"
 side = "both"
 
-[mods.download]
-hash = "13d8835813b3851d4818c59ec8f7124e4a826c14"
+[download]
 hash-format = "sha1"
+hash = "13d8835813b3851d4818c59ec8f7124e4a826c14"
 url = "https://cdn.modrinth.com/data/GmjmRQ0A/versions/tyVnEa75/sliceanddice-forge-4.2.4.jar"

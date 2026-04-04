@@ -1,9 +1,8 @@
-[[mods]]
-filename = "FreshAnimations_v1.10.4.zip"
 name = "FreshAnimations_v1.10.4"
+filename = "FreshAnimations_v1.10.4.zip"
 side = "both"
 
-[mods.download]
-hash = "73db740a6868e043c5e615c036fca2c912615b6e"
+[download]
 hash-format = "sha1"
+hash = "73db740a6868e043c5e615c036fca2c912615b6e"
 url = "https://cdn.modrinth.com/data/50dA9Sha/versions/xN57JJts/FreshAnimations_v1.10.4.zip"

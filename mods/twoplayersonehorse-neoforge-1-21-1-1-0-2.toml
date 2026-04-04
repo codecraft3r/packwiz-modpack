@@ -1,9 +1,8 @@
-[[mods]]
-filename = "twoplayersonehorse-neoforge-1.21.1-1.0.2.jar"
 name = "twoplayersonehorse-neoforge-1.21.1-1.0.2"
+filename = "twoplayersonehorse-neoforge-1.21.1-1.0.2.jar"
 side = "both"
 
-[mods.download]
-hash = "c4256096b78ef3e1d90e70d392efede6e0fa3ea1"
+[download]
 hash-format = "sha1"
+hash = "c4256096b78ef3e1d90e70d392efede6e0fa3ea1"
 url = "https://cdn.modrinth.com/data/c89BhsB1/versions/cTpecyBB/twoplayersonehorse-neoforge-1.21.1-1.0.2.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "puddleflood-1.1.2+1.21.1-neoforge.jar"
 name = "puddleflood-1.1.2+1.21.1-neoforge"
+filename = "puddleflood-1.1.2+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "c03ed5d88c8e8fe75343587ec6ff53030682fa3d"
+[download]
 hash-format = "sha1"
+hash = "c03ed5d88c8e8fe75343587ec6ff53030682fa3d"
 url = "https://cdn.modrinth.com/data/xeRVd78z/versions/R17IwChb/puddleflood-1.1.2%2B1.21.1-neoforge.jar"

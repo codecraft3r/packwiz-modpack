@@ -1,9 +1,8 @@
-[[mods]]
-filename = "carryon-neoforge-1.21.1-2.2.4.4.jar"
 name = "carryon-neoforge-1.21.1-2.2.4.4"
+filename = "carryon-neoforge-1.21.1-2.2.4.4.jar"
 side = "both"
 
-[mods.download]
-hash = "774bf57a199784c35e74f2d619d6001c87185a11"
+[download]
 hash-format = "sha1"
+hash = "774bf57a199784c35e74f2d619d6001c87185a11"
 url = "https://cdn.modrinth.com/data/joEfVgkn/versions/cgZi7nC7/carryon-neoforge-1.21.1-2.2.4.4.jar"

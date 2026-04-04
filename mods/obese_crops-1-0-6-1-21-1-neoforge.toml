@@ -1,9 +1,8 @@
-[[mods]]
-filename = "obese_crops-1.0.6+1.21.1-neoforge.jar"
 name = "obese_crops-1.0.6+1.21.1-neoforge"
+filename = "obese_crops-1.0.6+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "28b405fe9d0cf4b3e0b2f6c8df61ce1ceebceab5"
+[download]
 hash-format = "sha1"
+hash = "28b405fe9d0cf4b3e0b2f6c8df61ce1ceebceab5"
 url = "https://cdn.modrinth.com/data/1AIR4y6L/versions/aUyXtMFK/obese_crops-1.0.6%2B1.21.1-neoforge.jar"

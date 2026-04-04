@@ -1,9 +1,8 @@
-[[mods]]
-filename = "configurable-3.3.2+1.21.1-neoforge.jar"
 name = "configurable-3.3.2+1.21.1-neoforge"
+filename = "configurable-3.3.2+1.21.1-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "929a459057de433809c3251c102401d2985a79d8"
+[download]
 hash-format = "sha1"
+hash = "929a459057de433809c3251c102401d2985a79d8"
 url = "https://cdn.modrinth.com/data/lGffrQ3O/versions/orsct6Yu/configurable-3.3.2%2B1.21.1-neoforge.jar"

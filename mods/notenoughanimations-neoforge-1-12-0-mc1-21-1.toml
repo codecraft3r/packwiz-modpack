@@ -1,9 +1,8 @@
-[[mods]]
-filename = "notenoughanimations-neoforge-1.12.0-mc1.21.1.jar"
 name = "notenoughanimations-neoforge-1.12.0-mc1.21.1"
-side = "both"
+filename = "notenoughanimations-neoforge-1.12.0-mc1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "98ad737aae797120f88e92824cc6e91b9e6215a4"
+[download]
 hash-format = "sha1"
+hash = "98ad737aae797120f88e92824cc6e91b9e6215a4"
 url = "https://cdn.modrinth.com/data/MPCX6s5C/versions/8MOP3TGm/notenoughanimations-neoforge-1.12.0-mc1.21.1.jar"

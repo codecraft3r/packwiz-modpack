@@ -1,9 +1,8 @@
-[[mods]]
-filename = "personality-1.21.1-5.0.1.jar"
 name = "personality-1.21.1-5.0.1"
+filename = "personality-1.21.1-5.0.1.jar"
 side = "both"
 
-[mods.download]
-hash = "c9b6223d8a302a586860c65a97f48e4fdee3bd64"
+[download]
 hash-format = "sha1"
+hash = "c9b6223d8a302a586860c65a97f48e4fdee3bd64"
 url = "https://cdn.modrinth.com/data/zrAMu1nt/versions/Mhze6fVw/personality-1.21.1-5.0.1.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "notenoughcrashes-neoforge-4.4.9+1.21.1.jar"
 name = "notenoughcrashes-neoforge-4.4.9+1.21.1"
+filename = "notenoughcrashes-neoforge-4.4.9+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "4108c653e3e0d54a6df3c5354a752ea0ea801ffe"
+[download]
 hash-format = "sha1"
+hash = "4108c653e3e0d54a6df3c5354a752ea0ea801ffe"
 url = "https://cdn.modrinth.com/data/yM94ont6/versions/alR8L7vF/notenoughcrashes-neoforge-4.4.9%2B1.21.1.jar"

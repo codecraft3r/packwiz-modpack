@@ -1,9 +1,8 @@
-[[mods]]
-filename = "musketmod-1.21.1-neoforge-1.5.4.jar"
 name = "musketmod-1.21.1-neoforge-1.5.4"
+filename = "musketmod-1.21.1-neoforge-1.5.4.jar"
 side = "both"
 
-[mods.download]
-hash = "1ba2e36a016afa739eae4e036f24791fd0f91cd3"
+[download]
 hash-format = "sha1"
+hash = "1ba2e36a016afa739eae4e036f24791fd0f91cd3"
 url = "https://cdn.modrinth.com/data/967vM4zw/versions/hro6S6DK/musketmod-1.21.1-neoforge-1.5.4.jar"

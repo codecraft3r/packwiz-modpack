@@ -1,9 +1,8 @@
-[[mods]]
-filename = "exposure-neoforge-1.21.1-1.9.15.jar"
 name = "exposure-neoforge-1.21.1-1.9.15"
+filename = "exposure-neoforge-1.21.1-1.9.15.jar"
 side = "both"
 
-[mods.download]
-hash = "0d04c6df8cb1780512f19fe5ac8c250150f3d8a2"
+[download]
 hash-format = "sha1"
+hash = "0d04c6df8cb1780512f19fe5ac8c250150f3d8a2"
 url = "https://cdn.modrinth.com/data/hB899VmG/versions/ndW1sXER/exposure-neoforge-1.21.1-1.9.15.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "sootychimneys-neoforge-1.3.4.jar"
 name = "sootychimneys-neoforge-1.3.4"
+filename = "sootychimneys-neoforge-1.3.4.jar"
 side = "both"
 
-[mods.download]
-hash = "84f1ed36006d8ea77d6c7df1be3f6a8779a09779"
+[download]
 hash-format = "sha1"
+hash = "84f1ed36006d8ea77d6c7df1be3f6a8779a09779"
 url = "https://cdn.modrinth.com/data/b3w1XM9H/versions/a2airxdB/sootychimneys-neoforge-1.3.4.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "unchained-neoforge-1.7.3-1.7.1.jar"
 name = "unchained-neoforge-1.7.3-1.7.1"
-side = "both"
+filename = "unchained-neoforge-1.7.3-1.7.1.jar"
+side = "server"
 
-[mods.download]
-hash = "f4dd3e6e814d6ec08c2969f417deef73e418f55b"
+[download]
 hash-format = "sha1"
+hash = "f4dd3e6e814d6ec08c2969f417deef73e418f55b"
 url = "https://cdn.modrinth.com/data/wh0wnzrT/versions/I5oNveU5/unchained-neoforge-1.7.3-1.7.1.jar"

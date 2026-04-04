@@ -1,9 +1,8 @@
-[[mods]]
-filename = "RAYs_3D_Rails_v3.0.zip"
 name = "RAYs_3D_Rails_v3.0"
+filename = "RAYs_3D_Rails_v3.0.zip"
 side = "both"
 
-[mods.download]
-hash = "eea985cab2ba80153647ca419cd3982855cbc188"
+[download]
 hash-format = "sha1"
+hash = "eea985cab2ba80153647ca419cd3982855cbc188"
 url = "https://cdn.modrinth.com/data/jKa9Ievs/versions/HZjq6uZs/RAYs_3D_Rails_v3.0.zip"

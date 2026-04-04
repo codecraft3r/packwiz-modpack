@@ -1,9 +1,8 @@
-[[mods]]
-filename = "fixedstarterivs-neoforge-1.7.3-1.1.0.jar"
 name = "fixedstarterivs-neoforge-1.7.3-1.1.0"
-side = "both"
+filename = "fixedstarterivs-neoforge-1.7.3-1.1.0.jar"
+side = "server"
 
-[mods.download]
-hash = "aae55f9b861b36a40261a4159fce644384c67483"
+[download]
 hash-format = "sha1"
+hash = "aae55f9b861b36a40261a4159fce644384c67483"
 url = "https://cdn.modrinth.com/data/dwxBClup/versions/jijT94os/fixedstarterivs-neoforge-1.7.3-1.1.0.jar"

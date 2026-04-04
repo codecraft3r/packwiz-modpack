@@ -1,9 +1,8 @@
-[[mods]]
-filename = "cluttered-[NeoForge]-3.0.3-1.21.1.jar"
 name = "cluttered-[NeoForge]-3.0.3-1.21.1"
+filename = "cluttered-[NeoForge]-3.0.3-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "ae644104c83cdce103f536fb42d500c282cf1b35"
+[download]
 hash-format = "sha1"
+hash = "ae644104c83cdce103f536fb42d500c282cf1b35"
 url = "https://cdn.modrinth.com/data/UnAEo77V/versions/xzERbfOO/cluttered-%5BNeoForge%5D-3.0.3-1.21.1.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "cloth-config-15.0.140-neoforge.jar"
 name = "cloth-config-15.0.140-neoforge"
+filename = "cloth-config-15.0.140-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "c3e5733ba4503b102589a026000fd5ce0212f6f2"
+[download]
 hash-format = "sha1"
+hash = "c3e5733ba4503b102589a026000fd5ce0212f6f2"
 url = "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Geophilic v3.4.6.mod.jar"
 name = "Geophilic v3.4.6.mod"
+filename = "Geophilic v3.4.6.mod.jar"
 side = "both"
 
-[mods.download]
-hash = "cea812a101e7dd130d130ca43d7ee4d1a227cbd5"
+[download]
 hash-format = "sha1"
+hash = "cea812a101e7dd130d130ca43d7ee4d1a227cbd5"
 url = "https://cdn.modrinth.com/data/hl5OLM95/versions/Vk4cYx6F/Geophilic%20v3.4.6.mod.jar"

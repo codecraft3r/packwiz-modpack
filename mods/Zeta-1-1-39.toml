@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Zeta-1.1-39.jar"
 name = "Zeta-1.1-39"
+filename = "Zeta-1.1-39.jar"
 side = "both"
 
-[mods.download]
-hash = "ef6f2e1a625a9f8770a33576b682a228e441747a"
+[download]
 hash-format = "sha1"
+hash = "ef6f2e1a625a9f8770a33576b682a228e441747a"
 url = "https://cdn.modrinth.com/data/MVARlG2f/versions/iyNxYFme/Zeta-1.1-39.jar"

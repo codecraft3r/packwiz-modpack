@@ -1,9 +1,8 @@
-[[mods]]
-filename = "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
 name = "SereneSeasons-neoforge-1.21.1-10.1.0.3"
+filename = "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"
 side = "both"
 
-[mods.download]
-hash = "127e4a3e699dafebc512e1fa7983f245b49cb420"
+[download]
 hash-format = "sha1"
+hash = "127e4a3e699dafebc512e1fa7983f245b49cb420"
 url = "https://cdn.modrinth.com/data/e0bNACJD/versions/SPj5bJoM/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar"

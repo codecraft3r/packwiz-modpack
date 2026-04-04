@@ -1,9 +1,8 @@
-[[mods]]
-filename = "comforts-neoforge-9.0.5+1.21.1.jar"
 name = "comforts-neoforge-9.0.5+1.21.1"
+filename = "comforts-neoforge-9.0.5+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "21d6bee3821d62fe3356c51fb1d697871a3087ff"
+[download]
 hash-format = "sha1"
+hash = "21d6bee3821d62fe3356c51fb1d697871a3087ff"
 url = "https://cdn.modrinth.com/data/SaCpeal4/versions/3kpPjcTc/comforts-neoforge-9.0.5%2B1.21.1.jar"

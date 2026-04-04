@@ -1,9 +1,8 @@
-[[mods]]
-filename = "hauntedharvest-1.21-3.3.9-neoforge.jar"
 name = "hauntedharvest-1.21-3.3.9-neoforge"
+filename = "hauntedharvest-1.21-3.3.9-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "f7853293553668f4c5a924f112f2669d89e21313"
+[download]
 hash-format = "sha1"
+hash = "f7853293553668f4c5a924f112f2669d89e21313"
 url = "https://cdn.modrinth.com/data/a378ICDH/versions/W3GQrLju/hauntedharvest-1.21-3.3.9-neoforge.jar"

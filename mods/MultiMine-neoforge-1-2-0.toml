@@ -1,9 +1,8 @@
-[[mods]]
-filename = "MultiMine-neoforge-1.2.0.jar"
 name = "MultiMine-neoforge-1.2.0"
+filename = "MultiMine-neoforge-1.2.0.jar"
 side = "both"
 
-[mods.download]
-hash = "c29257bebb758311b3288489cb9d015571ff6c00"
+[download]
 hash-format = "sha1"
+hash = "c29257bebb758311b3288489cb9d015571ff6c00"
 url = "https://cdn.modrinth.com/data/fJ90SEuf/versions/GHqvfasB/MultiMine-neoforge-1.2.0.jar"

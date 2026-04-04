@@ -1,9 +1,8 @@
-[[mods]]
-filename = "fusion-1.2.12-neoforge-mc1.21.1.jar"
 name = "fusion-1.2.12-neoforge-mc1.21.1"
-side = "both"
+filename = "fusion-1.2.12-neoforge-mc1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "d86f641b67d4b01d99da8424ba2a3edc0e6690b6"
+[download]
 hash-format = "sha1"
+hash = "d86f641b67d4b01d99da8424ba2a3edc0e6690b6"
 url = "https://cdn.modrinth.com/data/p19vrgc2/versions/h2GrA0Ku/fusion-1.2.12-neoforge-mc1.21.1.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "chatanimation-neoforge-1.21.1-1.1.3.jar"
 name = "chatanimation-neoforge-1.21.1-1.1.3"
-side = "both"
+filename = "chatanimation-neoforge-1.21.1-1.1.3.jar"
+side = "client"
 
-[mods.download]
-hash = "a56aae316e52564a7e49b0aadc6c49441ef9f62d"
+[download]
 hash-format = "sha1"
+hash = "a56aae316e52564a7e49b0aadc6c49441ef9f62d"
 url = "https://cdn.modrinth.com/data/DnNYdJsx/versions/fo7IaI89/chatanimation-neoforge-1.21.1-1.1.3.jar"

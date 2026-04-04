@@ -1,9 +1,8 @@
-[[mods]]
-filename = "coalexplosion-neoforge-1.21.1-1.12.1.jar"
 name = "coalexplosion-neoforge-1.21.1-1.12.1"
+filename = "coalexplosion-neoforge-1.21.1-1.12.1.jar"
 side = "both"
 
-[mods.download]
-hash = "693f746ecc41d932ffc727080935dd6b6016561c"
+[download]
 hash-format = "sha1"
+hash = "693f746ecc41d932ffc727080935dd6b6016561c"
 url = "https://cdn.modrinth.com/data/6pcjc08X/versions/rqB8YXCy/coalexplosion-neoforge-1.21.1-1.12.1.jar"

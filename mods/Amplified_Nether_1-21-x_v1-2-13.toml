@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Amplified_Nether_1.21.x_v1.2.13.jar"
 name = "Amplified_Nether_1.21.x_v1.2.13"
+filename = "Amplified_Nether_1.21.x_v1.2.13.jar"
 side = "both"
 
-[mods.download]
-hash = "ef86ba786d7e836047c482be388e5b2ecc640594"
+[download]
 hash-format = "sha1"
+hash = "ef86ba786d7e836047c482be388e5b2ecc640594"
 url = "https://cdn.modrinth.com/data/wXiGiyGX/versions/p0JyGVwi/Amplified_Nether_1.21.x_v1.2.13.jar"

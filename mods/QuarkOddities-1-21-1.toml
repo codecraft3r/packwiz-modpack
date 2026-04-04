@@ -1,9 +1,8 @@
-[[mods]]
-filename = "QuarkOddities-1.21.1.jar"
 name = "QuarkOddities-1.21.1"
+filename = "QuarkOddities-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "45ed64b315f2cd3e1ef103b53faded6d45ec7117"
+[download]
 hash-format = "sha1"
+hash = "45ed64b315f2cd3e1ef103b53faded6d45ec7117"
 url = "https://cdn.modrinth.com/data/qeEEslrN/versions/GKlsdzEg/QuarkOddities-1.21.1.jar"

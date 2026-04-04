@@ -1,9 +1,8 @@
-[[mods]]
-filename = "bclib-21.0.20.jar"
 name = "bclib-21.0.20"
+filename = "bclib-21.0.20.jar"
 side = "both"
 
-[mods.download]
-hash = "ddeb239d00fe5ece6352778726e4f599c7f20b49"
+[download]
 hash-format = "sha1"
+hash = "ddeb239d00fe5ece6352778726e4f599c7f20b49"
 url = "https://cdn.modrinth.com/data/7bdKEtKC/versions/sH6onskf/bclib-21.0.20.jar"

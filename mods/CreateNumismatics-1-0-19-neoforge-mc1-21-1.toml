@@ -1,9 +1,8 @@
-[[mods]]
-filename = "CreateNumismatics-1.0.19+neoforge-mc1.21.1.jar"
 name = "CreateNumismatics-1.0.19+neoforge-mc1.21.1"
+filename = "CreateNumismatics-1.0.19+neoforge-mc1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "cfc4b7dd2b715658b513671df871a394ee67cd01"
+[download]
 hash-format = "sha1"
+hash = "cfc4b7dd2b715658b513671df871a394ee67cd01"
 url = "https://cdn.modrinth.com/data/Jdbbtt0i/versions/KMFhYqZ9/CreateNumismatics-1.0.19%2Bneoforge-mc1.21.1.jar"

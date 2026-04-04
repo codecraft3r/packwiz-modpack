@@ -1,9 +1,8 @@
-[[mods]]
-filename = "createoreexcavation-1.21-1.6.8.jar"
 name = "createoreexcavation-1.21-1.6.8"
+filename = "createoreexcavation-1.21-1.6.8.jar"
 side = "both"
 
-[mods.download]
-hash = "9a76b86ec7470d4bd7332f22d6e50a3693098c10"
+[download]
 hash-format = "sha1"
+hash = "9a76b86ec7470d4bd7332f22d6e50a3693098c10"
 url = "https://cdn.modrinth.com/data/ResbpANg/versions/tivxiPTo/createoreexcavation-1.21-1.6.8.jar"

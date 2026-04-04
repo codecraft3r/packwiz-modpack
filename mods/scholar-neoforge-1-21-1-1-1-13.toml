@@ -1,9 +1,8 @@
-[[mods]]
-filename = "scholar-neoforge-1.21.1-1.1.13.jar"
 name = "scholar-neoforge-1.21.1-1.1.13"
+filename = "scholar-neoforge-1.21.1-1.1.13.jar"
 side = "both"
 
-[mods.download]
-hash = "2974d5eedb06b69d54b0405f18a5b35ccb0eacb8"
+[download]
 hash-format = "sha1"
+hash = "2974d5eedb06b69d54b0405f18a5b35ccb0eacb8"
 url = "https://cdn.modrinth.com/data/fX4dIQCo/versions/t5aJhKGV/scholar-neoforge-1.21.1-1.1.13.jar"

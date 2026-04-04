@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Spice of Life Onion_NEOFORGE_v1.5.6_mc1.21.1.jar"
 name = "Spice of Life Onion_NEOFORGE_v1.5.6_mc1.21.1"
+filename = "Spice of Life Onion_NEOFORGE_v1.5.6_mc1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "93f9d02022ef2804cc24c23fe27fa392c467e99c"
+[download]
 hash-format = "sha1"
+hash = "93f9d02022ef2804cc24c23fe27fa392c467e99c"
 url = "https://cdn.modrinth.com/data/eHGYGKJz/versions/4YRKCovn/Spice%20of%20Life%20Onion_NEOFORGE_v1.5.6_mc1.21.1.jar"

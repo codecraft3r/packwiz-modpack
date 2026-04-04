@@ -1,9 +1,8 @@
-[[mods]]
-filename = "jei-1.21.1-neoforge-19.27.0.340.jar"
 name = "jei-1.21.1-neoforge-19.27.0.340"
+filename = "jei-1.21.1-neoforge-19.27.0.340.jar"
 side = "both"
 
-[mods.download]
-hash = "27d0d85e7e32e926fc3664ab6815df5cdabb7941"
+[download]
 hash-format = "sha1"
+hash = "27d0d85e7e32e926fc3664ab6815df5cdabb7941"
 url = "https://cdn.modrinth.com/data/u6dRKJwZ/versions/YAcQ6elZ/jei-1.21.1-neoforge-19.27.0.340.jar"

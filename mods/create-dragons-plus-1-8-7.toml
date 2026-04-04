@@ -1,9 +1,8 @@
-[[mods]]
-filename = "create-dragons-plus-1.8.7.jar"
 name = "create-dragons-plus-1.8.7"
+filename = "create-dragons-plus-1.8.7.jar"
 side = "both"
 
-[mods.download]
-hash = "3e53b26e850f9d2a995868b0d7c012ba8e9d373b"
+[download]
 hash-format = "sha1"
+hash = "3e53b26e850f9d2a995868b0d7c012ba8e9d373b"
 url = "https://cdn.modrinth.com/data/dzb1a5WV/versions/C1pFgdCC/create-dragons-plus-1.8.7.jar"

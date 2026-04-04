@@ -1,9 +1,8 @@
-[[mods]]
-filename = "wunderlib-21.0.10.jar"
 name = "wunderlib-21.0.10"
+filename = "wunderlib-21.0.10.jar"
 side = "both"
 
-[mods.download]
-hash = "330ab9d6d8d92a9337e97ef22e64f83fe2d4bf2a"
+[download]
 hash-format = "sha1"
+hash = "330ab9d6d8d92a9337e97ef22e64f83fe2d4bf2a"
 url = "https://cdn.modrinth.com/data/HZmhgdJk/versions/5db3GZzg/wunderlib-21.0.10.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "SimpleTMs-neoforge-2.3.3.jar"
 name = "SimpleTMs-neoforge-2.3.3"
+filename = "SimpleTMs-neoforge-2.3.3.jar"
 side = "both"
 
-[mods.download]
-hash = "f30723c57a72ff9c9f4b54fe1652430273355607"
+[download]
 hash-format = "sha1"
+hash = "f30723c57a72ff9c9f4b54fe1652430273355607"
 url = "https://cdn.modrinth.com/data/yFqR0DNc/versions/uaKfPMYS/SimpleTMs-neoforge-2.3.3.jar"

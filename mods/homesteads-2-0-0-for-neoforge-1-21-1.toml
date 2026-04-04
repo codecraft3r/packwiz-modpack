@@ -1,9 +1,8 @@
-[[mods]]
-filename = "homesteads-2.0.0-for-neoforge-1.21.1.jar"
 name = "homesteads-2.0.0-for-neoforge-1.21.1"
+filename = "homesteads-2.0.0-for-neoforge-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "cbdb902a144d8e8eeec4cb87e08360e79eb262a1"
+[download]
 hash-format = "sha1"
+hash = "cbdb902a144d8e8eeec4cb87e08360e79eb262a1"
 url = "https://cdn.modrinth.com/data/6ItsEKMh/versions/XknGijgC/homesteads-2.0.0-for-neoforge-1.21.1.jar"

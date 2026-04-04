@@ -1,9 +1,8 @@
-[[mods]]
-filename = "smoothgui-neoforge-1.21.1-1.1.0.jar"
 name = "smoothgui-neoforge-1.21.1-1.1.0"
-side = "both"
+filename = "smoothgui-neoforge-1.21.1-1.1.0.jar"
+side = "client"
 
-[mods.download]
-hash = "7f92bfc79f754b68855770610ad79a3934703c25"
+[download]
 hash-format = "sha1"
+hash = "7f92bfc79f754b68855770610ad79a3934703c25"
 url = "https://cdn.modrinth.com/data/j6yrZogB/versions/WVSpzVhZ/smoothgui-neoforge-1.21.1-1.1.0.jar"

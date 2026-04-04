@@ -1,9 +1,8 @@
-[[mods]]
-filename = "common-networking-neoforge-1.0.21-1.21.1.jar"
 name = "common-networking-neoforge-1.0.21-1.21.1"
+filename = "common-networking-neoforge-1.0.21-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "f55722a4278997e7ef278f4390a31e848f7beea7"
+[download]
 hash-format = "sha1"
+hash = "f55722a4278997e7ef278f4390a31e848f7beea7"
 url = "https://cdn.modrinth.com/data/HIuqnQpi/versions/pR7AeZk3/common-networking-neoforge-1.0.21-1.21.1.jar"

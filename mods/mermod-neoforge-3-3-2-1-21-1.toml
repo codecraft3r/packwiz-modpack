@@ -1,9 +1,8 @@
-[[mods]]
-filename = "mermod-neoforge-3.3.2+1.21.1.jar"
 name = "mermod-neoforge-3.3.2+1.21.1"
+filename = "mermod-neoforge-3.3.2+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "87e45e6a0b09133a5bc4b19b6fe71f42e279ba1b"
+[download]
 hash-format = "sha1"
+hash = "87e45e6a0b09133a5bc4b19b6fe71f42e279ba1b"
 url = "https://cdn.modrinth.com/data/ORiydwz3/versions/MyXSxEZm/mermod-neoforge-3.3.2%2B1.21.1.jar"

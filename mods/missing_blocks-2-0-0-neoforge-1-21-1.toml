@@ -1,9 +1,8 @@
-[[mods]]
-filename = "missing_blocks-2.0.0-neoforge-1.21.1.jar"
 name = "missing_blocks-2.0.0-neoforge-1.21.1"
+filename = "missing_blocks-2.0.0-neoforge-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "161d4b32cc5922a04c48bb0c5db53027e3813a52"
+[download]
 hash-format = "sha1"
+hash = "161d4b32cc5922a04c48bb0c5db53027e3813a52"
 url = "https://cdn.modrinth.com/data/CrHjhgrO/versions/RnQC1eY5/missing_blocks-2.0.0-neoforge-1.21.1.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "hologenica-1.0.2-neoforge-1.21.1.jar"
 name = "hologenica-1.0.2-neoforge-1.21.1"
+filename = "hologenica-1.0.2-neoforge-1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "f4ef977f11ffd1d2c534644eb7c3ed0a15a69d31"
+[download]
 hash-format = "sha1"
+hash = "f4ef977f11ffd1d2c534644eb7c3ed0a15a69d31"
 url = "https://cdn.modrinth.com/data/huOhn9zP/versions/ZcZ8jcmi/hologenica-1.0.2-neoforge-1.21.1.jar"

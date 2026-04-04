@@ -1,9 +1,8 @@
-[[mods]]
-filename = "architectury-13.0.8-neoforge.jar"
 name = "architectury-13.0.8-neoforge"
+filename = "architectury-13.0.8-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "6ca11d3cc136bf69bb8f4d56982481eb85b5100b"
+[download]
 hash-format = "sha1"
+hash = "6ca11d3cc136bf69bb8f4d56982481eb85b5100b"
 url = "https://cdn.modrinth.com/data/lhGA9TYQ/versions/ZxYGwlk0/architectury-13.0.8-neoforge.jar"

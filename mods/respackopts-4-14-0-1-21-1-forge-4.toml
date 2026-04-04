@@ -1,9 +1,8 @@
-[[mods]]
-filename = "respackopts-4.14.0+1.21.1.forge.4.jar"
 name = "respackopts-4.14.0+1.21.1.forge.4"
+filename = "respackopts-4.14.0+1.21.1.forge.4.jar"
 side = "both"
 
-[mods.download]
-hash = "0ba3779fc9e456d81dc96dca762ec74d336e317f"
+[download]
 hash-format = "sha1"
+hash = "0ba3779fc9e456d81dc96dca762ec74d336e317f"
 url = "https://cdn.modrinth.com/data/TiF5QWZY/versions/zVaOQTh5/respackopts-4.14.0%2B1.21.1.forge.4.jar"

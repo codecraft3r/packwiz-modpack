@@ -1,9 +1,8 @@
-[[mods]]
-filename = "zombieawareness-neoforge-1.21.0-1.13.2.jar"
 name = "zombieawareness-neoforge-1.21.0-1.13.2"
+filename = "zombieawareness-neoforge-1.21.0-1.13.2.jar"
 side = "both"
 
-[mods.download]
-hash = "266a95f6fcdb7a629ed6e95d7b3d2b35724dc6a7"
+[download]
 hash-format = "sha1"
+hash = "266a95f6fcdb7a629ed6e95d7b3d2b35724dc6a7"
 url = "https://cdn.modrinth.com/data/mMTOWOaA/versions/KNtnADP6/zombieawareness-neoforge-1.21.0-1.13.2.jar"

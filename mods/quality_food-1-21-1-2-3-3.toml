@@ -1,9 +1,8 @@
-[[mods]]
-filename = "quality_food-1.21.1-2.3.3.jar"
 name = "quality_food-1.21.1-2.3.3"
+filename = "quality_food-1.21.1-2.3.3.jar"
 side = "both"
 
-[mods.download]
-hash = "2086e0560fcf6959f00e91c63b102dbe79b3f84d"
+[download]
 hash-format = "sha1"
+hash = "2086e0560fcf6959f00e91c63b102dbe79b3f84d"
 url = "https://cdn.modrinth.com/data/Ahdn1OE0/versions/vLFBpk1n/quality_food-1.21.1-2.3.3.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar"
 name = "ImmediatelyFast-NeoForge-1.6.10+1.21.1"
-side = "both"
+filename = "ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "f1f5cccd7cb59d875f44566b2e557ccecc8c33fb"
+[download]
 hash-format = "sha1"
+hash = "f1f5cccd7cb59d875f44566b2e557ccecc8c33fb"
 url = "https://cdn.modrinth.com/data/5ZwdcRci/versions/PhxY0iHw/ImmediatelyFast-NeoForge-1.6.10%2B1.21.1.jar"

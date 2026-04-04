@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Sparkweave-NeoForge-0.510.0.jar"
 name = "Sparkweave-NeoForge-0.510.0"
+filename = "Sparkweave-NeoForge-0.510.0.jar"
 side = "both"
 
-[mods.download]
-hash = "012d4308400c2c467374c5b36b86bb0c55582496"
+[download]
 hash-format = "sha1"
+hash = "012d4308400c2c467374c5b36b86bb0c55582496"
 url = "https://cdn.modrinth.com/data/nf68xfAw/versions/j8reYKe3/Sparkweave-NeoForge-0.510.0.jar"

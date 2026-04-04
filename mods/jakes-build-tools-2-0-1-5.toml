@@ -1,9 +1,8 @@
-[[mods]]
-filename = "jakes-build-tools-2.0.1.5.jar"
 name = "jakes-build-tools-2.0.1.5"
+filename = "jakes-build-tools-2.0.1.5.jar"
 side = "both"
 
-[mods.download]
-hash = "8e1ee89ede04f60aa758e7f0638592836be721c7"
+[download]
 hash-format = "sha1"
+hash = "8e1ee89ede04f60aa758e7f0638592836be721c7"
 url = "https://cdn.modrinth.com/data/DosZdmJF/versions/nbAk9UTH/jakes-build-tools-2.0.1.5.jar"

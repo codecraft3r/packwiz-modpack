@@ -1,9 +1,8 @@
-[[mods]]
-filename = "moonlight-1.21-2.29.20-neoforge.jar"
 name = "moonlight-1.21-2.29.20-neoforge"
+filename = "moonlight-1.21-2.29.20-neoforge.jar"
 side = "both"
 
-[mods.download]
-hash = "99f9973f69460a772a4e8beccb9ca3f69e0a1291"
+[download]
 hash-format = "sha1"
+hash = "99f9973f69460a772a4e8beccb9ca3f69e0a1291"
 url = "https://cdn.modrinth.com/data/twkfQtEc/versions/X7j32itX/moonlight-1.21-2.29.20-neoforge.jar"

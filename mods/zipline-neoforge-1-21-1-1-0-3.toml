@@ -1,9 +1,8 @@
-[[mods]]
-filename = "zipline-neoforge-1.21.1-1.0.3.jar"
 name = "zipline-neoforge-1.21.1-1.0.3"
+filename = "zipline-neoforge-1.21.1-1.0.3.jar"
 side = "both"
 
-[mods.download]
-hash = "6571acc7fc3abf4a16f85a8b37d1ff16751d97e7"
+[download]
 hash-format = "sha1"
+hash = "6571acc7fc3abf4a16f85a8b37d1ff16751d97e7"
 url = "https://cdn.modrinth.com/data/C1MoWQlb/versions/EezeLHnd/zipline-neoforge-1.21.1-1.0.3.jar"

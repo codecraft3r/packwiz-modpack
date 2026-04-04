@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Data_Anchor-neoforge-1.21.1-2.0.0.13.jar"
 name = "Data_Anchor-neoforge-1.21.1-2.0.0.13"
+filename = "Data_Anchor-neoforge-1.21.1-2.0.0.13.jar"
 side = "both"
 
-[mods.download]
-hash = "6382fb38974844a0508b47330935577f2943de3d"
+[download]
 hash-format = "sha1"
+hash = "6382fb38974844a0508b47330935577f2943de3d"
 url = "https://cdn.modrinth.com/data/z2XEADmE/versions/izauCsh5/Data_Anchor-neoforge-1.21.1-2.0.0.13.jar"

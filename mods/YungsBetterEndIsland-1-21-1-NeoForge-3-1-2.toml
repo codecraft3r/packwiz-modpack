@@ -1,9 +1,8 @@
-[[mods]]
-filename = "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
 name = "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2"
-side = "both"
+filename = "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"
+side = "server"
 
-[mods.download]
-hash = "832f2c17425debe74a9f267f4136f1a0f0221d19"
+[download]
 hash-format = "sha1"
+hash = "832f2c17425debe74a9f267f4136f1a0f0221d19"
 url = "https://cdn.modrinth.com/data/2BwBOmBQ/versions/I52NZ1qK/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar"

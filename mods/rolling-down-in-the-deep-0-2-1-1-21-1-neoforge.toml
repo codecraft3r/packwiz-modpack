@@ -1,9 +1,8 @@
-[[mods]]
-filename = "rolling-down-in-the-deep-0.2.1+1.21.1-neoforge.jar"
 name = "rolling-down-in-the-deep-0.2.1+1.21.1-neoforge"
-side = "both"
+filename = "rolling-down-in-the-deep-0.2.1+1.21.1-neoforge.jar"
+side = "client"
 
-[mods.download]
-hash = "1731eca2e3c4a0a5fbcc4f486f5b5418f0eef749"
+[download]
 hash-format = "sha1"
+hash = "1731eca2e3c4a0a5fbcc4f486f5b5418f0eef749"
 url = "https://cdn.modrinth.com/data/zQqsEeqy/versions/EAZy6MA3/rolling-down-in-the-deep-0.2.1%2B1.21.1-neoforge.jar"

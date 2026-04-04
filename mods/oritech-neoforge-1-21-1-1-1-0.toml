@@ -1,9 +1,8 @@
-[[mods]]
-filename = "oritech-neoforge-1.21.1-1.1.0.jar"
 name = "oritech-neoforge-1.21.1-1.1.0"
+filename = "oritech-neoforge-1.21.1-1.1.0.jar"
 side = "both"
 
-[mods.download]
-hash = "fe04966ff230c307dd2ea2259f90468b77147e8d"
+[download]
 hash-format = "sha1"
+hash = "fe04966ff230c307dd2ea2259f90468b77147e8d"
 url = "https://cdn.modrinth.com/data/4sYI62kA/versions/bhUtMn9S/oritech-neoforge-1.21.1-1.1.0.jar"

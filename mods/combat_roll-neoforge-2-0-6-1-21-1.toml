@@ -1,9 +1,8 @@
-[[mods]]
-filename = "combat_roll-neoforge-2.0.6+1.21.1.jar"
 name = "combat_roll-neoforge-2.0.6+1.21.1"
+filename = "combat_roll-neoforge-2.0.6+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "8b9676996e2b49520ac29d92e6068089c5f40baa"
+[download]
 hash-format = "sha1"
+hash = "8b9676996e2b49520ac29d92e6068089c5f40baa"
 url = "https://cdn.modrinth.com/data/wGKYL7st/versions/FT7t1n1a/combat_roll-neoforge-2.0.6%2B1.21.1.jar"

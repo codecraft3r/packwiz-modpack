@@ -1,9 +1,8 @@
-[[mods]]
-filename = "particular-1.21.1-NeoForge-1.1.7.jar"
 name = "particular-1.21.1-NeoForge-1.1.7"
-side = "both"
+filename = "particular-1.21.1-NeoForge-1.1.7.jar"
+side = "client"
 
-[mods.download]
-hash = "39d2fa3c396bf75a00078922dd6c2a7bf9f63f46"
+[download]
 hash-format = "sha1"
+hash = "39d2fa3c396bf75a00078922dd6c2a7bf9f63f46"
 url = "https://cdn.modrinth.com/data/pYFUU6cq/versions/QmW99EbW/particular-1.21.1-NeoForge-1.1.7.jar"

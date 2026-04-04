@@ -1,9 +1,8 @@
-[[mods]]
-filename = "envelope-neoforge-1.21.1-0.5.2.jar"
 name = "envelope-neoforge-1.21.1-0.5.2"
+filename = "envelope-neoforge-1.21.1-0.5.2.jar"
 side = "both"
 
-[mods.download]
-hash = "e4b90b114bba475d39185a1d14cbc553e15b66a3"
+[download]
 hash-format = "sha1"
+hash = "e4b90b114bba475d39185a1d14cbc553e15b66a3"
 url = "https://cdn.modrinth.com/data/bINSbhYK/versions/1X04oyJ2/envelope-neoforge-1.21.1-0.5.2.jar"

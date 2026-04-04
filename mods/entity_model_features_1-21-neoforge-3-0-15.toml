@@ -1,9 +1,8 @@
-[[mods]]
-filename = "entity_model_features_1.21-neoforge-3.0.15.jar"
 name = "entity_model_features_1.21-neoforge-3.0.15"
-side = "both"
+filename = "entity_model_features_1.21-neoforge-3.0.15.jar"
+side = "client"
 
-[mods.download]
-hash = "18259eac8825669ec245839b459ec72fc171d3c8"
+[download]
 hash-format = "sha1"
+hash = "18259eac8825669ec245839b459ec72fc171d3c8"
 url = "https://cdn.modrinth.com/data/4I1XuqiY/versions/QyWGDHt9/entity_model_features_1.21-neoforge-3.0.15.jar"

@@ -1,9 +1,8 @@
-[[mods]]
-filename = "dawnoftimebuilder-neoforge-1.21.1-1.6.4.jar"
 name = "dawnoftimebuilder-neoforge-1.21.1-1.6.4"
+filename = "dawnoftimebuilder-neoforge-1.21.1-1.6.4.jar"
 side = "both"
 
-[mods.download]
-hash = "34b9119554d8ca8350668a2bfcdd5db2265395c3"
+[download]
 hash-format = "sha1"
+hash = "34b9119554d8ca8350668a2bfcdd5db2265395c3"
 url = "https://cdn.modrinth.com/data/RgWXq0La/versions/GzjWpt0P/dawnoftimebuilder-neoforge-1.21.1-1.6.4.jar"

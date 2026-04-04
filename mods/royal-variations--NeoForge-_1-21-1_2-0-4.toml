@@ -1,9 +1,8 @@
-[[mods]]
-filename = "royal-variations-[NeoForge]_1.21.1_2.0.4.jar"
 name = "royal-variations-[NeoForge]_1.21.1_2.0.4"
+filename = "royal-variations-[NeoForge]_1.21.1_2.0.4.jar"
 side = "both"
 
-[mods.download]
-hash = "016ef3fb997b36e7930bd7d2424dd4335f9671ba"
+[download]
 hash-format = "sha1"
+hash = "016ef3fb997b36e7930bd7d2424dd4335f9671ba"
 url = "https://cdn.modrinth.com/data/n2G0Tyys/versions/uIrA446U/royal-variations-%5BNeoForge%5D_1.21.1_2.0.4.jar"

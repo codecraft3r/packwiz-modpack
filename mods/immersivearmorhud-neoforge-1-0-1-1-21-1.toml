@@ -1,9 +1,8 @@
-[[mods]]
-filename = "immersivearmorhud-neoforge-1.0.1-1.21.1.jar"
 name = "immersivearmorhud-neoforge-1.0.1-1.21.1"
-side = "both"
+filename = "immersivearmorhud-neoforge-1.0.1-1.21.1.jar"
+side = "client"
 
-[mods.download]
-hash = "8c16fb24c20330b19deb78d46dfddf7d3b00885b"
+[download]
 hash-format = "sha1"
+hash = "8c16fb24c20330b19deb78d46dfddf7d3b00885b"
 url = "https://cdn.modrinth.com/data/EyJFr6Vw/versions/mRwKN5DQ/immersivearmorhud-neoforge-1.0.1-1.21.1.jar"

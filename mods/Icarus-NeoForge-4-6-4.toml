@@ -1,9 +1,8 @@
-[[mods]]
-filename = "Icarus-NeoForge-4.6.4.jar"
 name = "Icarus-NeoForge-4.6.4"
+filename = "Icarus-NeoForge-4.6.4.jar"
 side = "both"
 
-[mods.download]
-hash = "1915de6d6b239f66c27629c66ebd889ba84480f5"
+[download]
 hash-format = "sha1"
+hash = "1915de6d6b239f66c27629c66ebd889ba84480f5"
 url = "https://cdn.modrinth.com/data/Dw7M6XKW/versions/73gOaTU5/Icarus-NeoForge-4.6.4.jar"

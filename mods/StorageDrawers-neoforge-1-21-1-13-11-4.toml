@@ -1,9 +1,8 @@
-[[mods]]
-filename = "StorageDrawers-neoforge-1.21.1-13.11.4.jar"
 name = "StorageDrawers-neoforge-1.21.1-13.11.4"
+filename = "StorageDrawers-neoforge-1.21.1-13.11.4.jar"
 side = "both"
 
-[mods.download]
-hash = "b8e11e3d1fd63fd1a0d9277ec3f966c7e5cff385"
+[download]
 hash-format = "sha1"
+hash = "b8e11e3d1fd63fd1a0d9277ec3f966c7e5cff385"
 url = "https://cdn.modrinth.com/data/guitPqEi/versions/px0CCB06/StorageDrawers-neoforge-1.21.1-13.11.4.jar"

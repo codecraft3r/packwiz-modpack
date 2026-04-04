@@ -1,9 +1,8 @@
-[[mods]]
-filename = "mega_showdown-neoforge-1.7.3+1.7.3+1.21.1.jar"
 name = "mega_showdown-neoforge-1.7.3+1.7.3+1.21.1"
+filename = "mega_showdown-neoforge-1.7.3+1.7.3+1.21.1.jar"
 side = "both"
 
-[mods.download]
-hash = "16667ebc282ef083c45abba530e874daf43944a8"
+[download]
 hash-format = "sha1"
+hash = "16667ebc282ef083c45abba530e874daf43944a8"
 url = "https://cdn.modrinth.com/data/SszvX85I/versions/4qtY9Hjl/mega_showdown-neoforge-1.7.3%2B1.7.3%2B1.21.1.jar"

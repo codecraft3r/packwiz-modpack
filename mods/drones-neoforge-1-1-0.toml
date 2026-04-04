@@ -1,9 +1,8 @@
-[[mods]]
-filename = "drones-neoforge-1.1.0.jar"
 name = "drones-neoforge-1.1.0"
+filename = "drones-neoforge-1.1.0.jar"
 side = "both"
 
-[mods.download]
-hash = "12512c4ea8ebf7ab81587cc2fc12f7913af87273"
+[download]
 hash-format = "sha1"
+hash = "12512c4ea8ebf7ab81587cc2fc12f7913af87273"
 url = "https://cdn.modrinth.com/data/5NYdYLm1/versions/EfH1X1Lo/drones-neoforge-1.1.0.jar"
