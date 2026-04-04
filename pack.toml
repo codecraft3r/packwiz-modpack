@@ -1,4 +1,4 @@
-name = "TBD"
+name = "Poiesis Modded"
 author = "Converted"
 version = "1.2"
 pack-format = "packwiz:1.1.0"
@@ -6,7 +6,7 @@ pack-format = "packwiz:1.1.0"
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7b81c9e9d9e6e21a9865a2dded0dfd77e7683d679b98fe5b0114eaed9a31f17e"
+hash = "3b136db1b59997ded470dc44e7f910d8163d60c43396d59342024ef64dd412c9"
 
 [versions]
 minecraft = "1.21.1"
