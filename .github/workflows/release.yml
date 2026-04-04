@@ -17,7 +17,7 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: '1.23'
 
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
@@ -34,36 +34,9 @@ jobs:
         run: |
           mkdir -p "Poiesis Modded.multimc-instance/.minecraft"
           curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o "Poiesis Modded.multimc-instance/.minecraft/packwiz-installer-bootstrap.jar"
-          
-          cat > "Poiesis Modded.multimc-instance"/instance.cfg << 'CFGs'
-name=Poiesis Modded
-iconName=Default
-notes=Auto-updating modpack via packwiz
-MCVersion=1.21.1
-ForgeVersion=21.1.219
-LWJGLVersion=3.3.4
-javaArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch
-CFGs
-          
-          cat > "Poiesis Modded.multimc-instance"/pack.json << 'PKG'
-{
-    "packLocation": {
-        "url": "https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/master/pack.toml"
-    }
-}
-PKG
-          
-          cat > "Poiesis Modded.multimc-instance"/README.txt << 'RDT'
-Poiesis Modded MultiMC Instance
-====================
-
-HOW TO USE:
-1. Install MultiMC from https://multimc.org/
-2. Create new instance → Name: "Poiesis Modded" → Minecraft: 1.21.1 → NeoForge: 21.1.219
-3. This instance folder IS the pack - you can import it directly or:
-4. Just launch and the packwiz-installer will auto-download mods!
-RDT
-          
+          printf 'name=Poiesis Modded\niconName=Default\nnotes=Auto-updating modpack via packwiz\nMCVersion=1.21.1\nForgeVersion=21.1.219\nLWJGLVersion=3.3.4\njavaArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch\n' > "Poiesis Modded.multimc-instance/instance.cfg"
+          printf '{\n    "packLocation": {\n        "url": "https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/master/pack.toml"\n    }\n}\n' > "Poiesis Modded.multimc-instance/pack.json"
+          printf 'Poiesis Modded MultiMC Instance\n====================\n\nHOW TO USE:\n1. Install MultiMC from https://multimc.org/\n2. Create new instance → Name: "Poiesis Modded" → Minecraft: 1.21.1 → NeoForge: 21.1.219\n3. This instance folder IS the pack - you can import it directly or:\n4. Just launch and the packwiz-installer will auto-download mods!\n' > "Poiesis Modded.multimc-instance/README.txt"
           zip -r "Poiesis Modded-MultiMC-Instance.zip" "Poiesis Modded.multimc-instance"
           ls -la *.zip
 
