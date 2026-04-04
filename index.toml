@@ -2,11 +2,11 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/packwiz-update.yml"
-hash = "b9f20d827fc7080a686c80de803d5de2d638aa31e720f819c7fd53b73e9b3f95"
+hash = "dbaef3dedcb1c5f9aeb754f758b304c76d6c44169745576bb68bb9eea65e64f5"
 
 [[files]]
 file = ".github/workflows/release.yml"
-hash = "4f5ff99af47e9a789814423f255c816e622ed84c01ec7e91938ece77225b9f65"
+hash = "047ae955134755ce03a798e2b8c2561230d01c8ed2f298854422b6162cebac66"
 
 [[files]]
 file = "README.md"
@@ -14,7 +14,7 @@ hash = "4279a4ae3015d2ba12313bad419da25c407a466677f4e0a86687adee0f50d8cf"
 
 [[files]]
 file = "docker-compose.yml"
-hash = "80d4c0e00f2bee068718e9e243eab4eb33eb7e62900e0933b710d48eb390d43d"
+hash = "2c2fb7e44518ab812612bb3260017b1469c000037c000ed1b1bd9544ab652586"
 
 [[files]]
 file = "mods/AmbientSounds_NEOFORGE_v6-3-3_mc1-21-1.toml"
