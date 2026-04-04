@@ -17,18 +17,18 @@ jobs:
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
         
-      - name: Build installer
-        run: |
-          git clone https://github.com/packwiz/packwiz-installer
-          cd packwiz-installer
-          go build -o packwiz-installer.jar
-          
+      - name: Refresh index
+        run: packwiz refresh
+        
       - name: Create Modrinth export
         run: |
-          packwiz modrinth export --output ../dist/
+          mkdir -p dist
+          packwiz modrinth export --output ./dist/
           
       - name: Upload release asset
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: dist/*.mrpack
           generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
