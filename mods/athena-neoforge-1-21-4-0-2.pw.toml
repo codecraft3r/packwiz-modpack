@@ -1,6 +1,6 @@
 name = "athena-neoforge-1.21-4.0.2"
 filename = "athena-neoforge-1.21-4.0.2.jar"
-side = "client"
+side = "both"
 
 [download]
 hash-format = "sha1"
