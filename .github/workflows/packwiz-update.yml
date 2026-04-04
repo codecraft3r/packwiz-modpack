@@ -22,8 +22,8 @@ jobs:
         
       - name: Create Modrinth export
         run: |
-          mkdir -p dist
-          packwiz modrinth export --output ./dist/
+          packwiz modrinth export -o dist/
+          ls -la dist/
           
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
