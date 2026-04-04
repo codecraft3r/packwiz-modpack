@@ -14,7 +14,7 @@ hash = "4279a4ae3015d2ba12313bad419da25c407a466677f4e0a86687adee0f50d8cf"
 
 [[files]]
 file = "docker-compose.yml"
-hash = "2c2fb7e44518ab812612bb3260017b1469c000037c000ed1b1bd9544ab652586"
+hash = "7f91d7e21998f1be5596d7432b25de27edc11759e32747bf3be407e1c1aa2710"
 
 [[files]]
 file = "mods/AmbientSounds_NEOFORGE_v6-3-3_mc1-21-1.pw.toml"
