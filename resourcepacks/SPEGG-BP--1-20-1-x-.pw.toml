@@ -1,0 +1,8 @@
+name = "SPEGG BP [1.20-1.x]"
+filename = "SPEGG BP [1.20-1.x].zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "9b193640ccf3758ce9f0db0644ec025776486670"
+url = "https://cdn.modrinth.com/data/HTcZCflj/versions/TUZMe9HH/SPEGG%20BP%20%5B1.20-1.x%5D.zip"

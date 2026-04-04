@@ -1,0 +1,8 @@
+name = "RAYs_3D_Ladders_v2.0"
+filename = "RAYs_3D_Ladders_v2.0.zip"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "a81c75f9c4336a016fe3921f0c9d5f2ac9ffe70f"
+url = "https://cdn.modrinth.com/data/Uupo7yGf/versions/KEPsTS4k/RAYs_3D_Ladders_v2.0.zip"

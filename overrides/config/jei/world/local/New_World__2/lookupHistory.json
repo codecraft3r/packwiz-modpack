@@ -1,7 +1,0 @@
-[
-  {"version":1},
-  {"ingredient":{"id":"minecraft:oak_log"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"protection_pixel:steamectoskeleton"},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"protection_pixel:steamectoskeleton","components":{"minecraft:custom_data":{"chest":0,"updatenum":0.0,"leg":1}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
-  {"ingredient":{"id":"create:cogwheel"},"type":"item_stack","bookmarkType":"INGREDIENT"}
-]

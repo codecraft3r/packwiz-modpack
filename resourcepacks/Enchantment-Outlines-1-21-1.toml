@@ -1,8 +1,0 @@
-name = "Enchantment Outlines 1.21.1"
-filename = "Enchantment Outlines 1.21.1.zip"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "8800f340ea874977b1c882f23a6a9a0a7aebb1b5"
-url = "https://cdn.modrinth.com/data/A32gwfe8/versions/2ldNvURF/Enchantment%20Outlines%201.21.1.zip"
