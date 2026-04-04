@@ -22,6 +22,7 @@ jobs:
         
       - name: Create Modrinth export
         run: |
+          mkdir -p dist
           packwiz modrinth export -o dist/pack.mrpack
           ls -la dist/
           
