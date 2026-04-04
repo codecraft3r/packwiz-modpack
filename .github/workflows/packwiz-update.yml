@@ -22,7 +22,7 @@ jobs:
         
       - name: Create Modrinth export
         run: |
-          packwiz modrinth export -o dist/
+          packwiz modrinth export -o dist/pack.mrpack
           ls -la dist/
           
       - name: Upload release asset
