@@ -3,6 +3,9 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -24,12 +27,10 @@ jobs:
         run: |
           mkdir -p dist
           packwiz modrinth export -o dist/pack.mrpack
-          ls -la dist/
           
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
         with:
           files: dist/*.mrpack
-          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
