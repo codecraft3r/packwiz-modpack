@@ -6,6 +6,9 @@ on:
       - '**'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,19 +28,14 @@ jobs:
 
       - name: Build Modrinth pack
         run: |
-          packwiz modrinth export -o .
+          packwiz modrinth export -o "Poiesis Modded.mrpack"
           ls -la *.mrpack
 
       - name: Create MultiMC instance package
         run: |
-          # Download packwiz-installer-bootstrap
-          curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o packwiz-installer-bootstrap.jar
-          
-          # Create instance folder structure
           mkdir -p "Poiesis Modded.multimc-instance/.minecraft"
-          curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o "Poiesis Modded.multimc-instance/.minecraft/"
+          curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o "Poiesis Modded.multimc-instance/.minecraft/packwiz-installer-bootstrap.jar"
           
-          # Create instance config
           cat > "Poiesis Modded.multimc-instance"/instance.cfg << 'CFGs'
 name=Poiesis Modded
 iconName=Default
@@ -48,7 +46,6 @@ LWJGLVersion=3.3.4
 javaArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch
 CFGs
           
-          # Create pack.json for packwiz
           cat > "Poiesis Modded.multimc-instance"/pack.json << 'PKG'
 {
     "packLocation": {
@@ -57,7 +54,6 @@ CFGs
 }
 PKG
           
-          # Create README
           cat > "Poiesis Modded.multimc-instance"/README.txt << 'RDT'
 Poiesis Modded MultiMC Instance
 ====================
@@ -69,15 +65,13 @@ HOW TO USE:
 4. Just launch and the packwiz-installer will auto-download mods!
 RDT
           
-          # Zip it up
-          zip -r "Poiesis Modded.multimc.instance.zip" "Poiesis Modded.multimc-instance"
+          zip -r "Poiesis Modded-MultiMC-Instance.zip" "Poiesis Modded.multimc-instance"
           ls -la *.zip
 
       - name: Upload Modrinth pack
         uses: softprops/action-gh-release@v2
         with:
           files: '*.mrpack'
-          asset_name: Poiesis Modded.mrpack
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -85,6 +79,5 @@ RDT
         uses: softprops/action-gh-release@v2
         with:
           files: '*.zip'
-          asset_name: Poiesis Modded-MultiMC-Instance.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
