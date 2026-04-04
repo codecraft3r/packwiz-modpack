@@ -582,6 +582,11 @@ hash = "8da682616aa3f5edd75aea2d666b3a9877318c873cf8a8aa938c1a3b655d2d32"
 metafile = true
 
 [[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "de5ea0b6d6c303af3788a178996c39f46d260cd15a86121b1246b3591913d256"
+metafile = true
+
+[[files]]
 file = "mods/explosiveenhancement-neoforge-1-21-1-1-1-2.pw.toml"
 hash = "77c63e0b6ccd33c01a5986c4d0ab729bf6c1add5520c563eb7947e7f3b5f8471"
 metafile = true
@@ -799,6 +804,11 @@ metafile = true
 [[files]]
 file = "mods/musketmod-1-21-1-neoforge-1-5-4.pw.toml"
 hash = "28af50ba54dfbd341cb0775e97c0409950308dc7e3dea820ca21416019c14b59"
+metafile = true
+
+[[files]]
+file = "mods/natures-compass.pw.toml"
+hash = "abfc8909de1c851ccf4ef296e05d1017332a21fef76fd1f938828fcff925115b"
 metafile = true
 
 [[files]]
