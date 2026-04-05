@@ -1,0 +1,13 @@
+name = "Cobblemon - Let Me Spawn"
+filename = "let_me_spawn-neoforge-1.2.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/jQAWLKxe/versions/JPp8QT7s/let_me_spawn-neoforge-1.2.0.jar"
+hash-format = "sha512"
+hash = "3d73066d9252972519778221166b90f1557f674ac0b576e941d64b766c088173049a5a7079c99fea9b5eaba3544fdb30e4e4b65ed46aa95dedfa7f6ce2926fac"
+
+[update]
+[update.modrinth]
+mod-id = "jQAWLKxe"
+version = "JPp8QT7s"
