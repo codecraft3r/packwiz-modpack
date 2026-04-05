@@ -937,11 +937,6 @@ hash = "3285fe321d6e14c597aedc1da88d81d21325a1e8f61f67e11d0ad20bd60afd21"
 metafile = true
 
 [[files]]
-file = "mods/protection-pixel.pw.toml"
-hash = "34cd5811ecc59af578b9ec108b9b379a6c60046477182305608312240847ee2b"
-metafile = true
-
-[[files]]
 file = "mods/puddleflood-1-1-2-1-21-1-neoforge.pw.toml"
 hash = "e667a13cdc5271da91a43b33be0a4e4d0a709afaf4c3643d7376c19d45fe6125"
 metafile = true
