@@ -1,6 +1,6 @@
 name = "spawnnotification-neoforge-1.7.3-2.3.0"
 filename = "spawnnotification-neoforge-1.7.3-2.3.0.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"
