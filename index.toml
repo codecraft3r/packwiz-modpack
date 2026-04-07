@@ -917,6 +917,11 @@ hash = "b8f7330cf1dd87c88677103a571943eaadc3f29545e2ced2bedd20c929570828"
 metafile = true
 
 [[files]]
+file = "mods/overflowing-bars.pw.toml"
+hash = "cb40fc0e1e0a3338d57b34a5ba2612ae9a9f0e32619695c4da637a98b4e52cf3"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib-neoforge-0-12-15-5-beta-1-1-21.pw.toml"
 hash = "098f433edbf22fa7a7a166b96aed1f50bf4352a931b6a24c64638e2218383f96"
 metafile = true
