@@ -302,11 +302,6 @@ hash = "423ec1aaed8c29b919954f6c4a30ac39f8a805f169c9694dad35c0da8ce86e7f"
 metafile = true
 
 [[files]]
-file = "mods/backpacked.pw.toml"
-hash = "e0a479fef621fd91d0a022358046eb6af947fd5d4191b1286504f6b958605686"
-metafile = true
-
-[[files]]
 file = "mods/bclib-21-0-20.pw.toml"
 hash = "74ba451ce0daa9a09a87b6d0d4c9821b5021dd65805fee72384a8e76c1bffe76"
 metafile = true
@@ -542,6 +537,11 @@ hash = "281b303fce91efea95cf4d226a4449324d4e1e9585399facf7b2167bad0c847b"
 metafile = true
 
 [[files]]
+file = "mods/dis-enchanting-table.pw.toml"
+hash = "d71851407e388787d67281a0564f357bd6384316fa1e4c1984ac6c549acba68d"
+metafile = true
+
+[[files]]
 file = "mods/diversity-neoforge-1-21-1-2-5-3.pw.toml"
 hash = "5f278b567483485343274af9ca85aaff304b36e855e3cbd29c14ecaa816fa839"
 metafile = true
@@ -574,6 +574,11 @@ metafile = true
 [[files]]
 file = "mods/dye_the_world-2-1-1.pw.toml"
 hash = "d7a368361237f9499cee149bbc59b0ae67b7a6366a11dcd20de1876c214b899a"
+metafile = true
+
+[[files]]
+file = "mods/enchanting-infuser.pw.toml"
+hash = "d59b35ab8c8501db71b5c394fbfa9a76d9652171226018af255c886e64e2747f"
 metafile = true
 
 [[files]]
@@ -752,6 +757,11 @@ hash = "dcc4e1e3c86c72ef0460b11d7dd93ca36f28b0ce434931eab6268e8781a97404"
 metafile = true
 
 [[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "502d4ba2ca8c7f6f52830cfc43fc12b567023266f2b557ee2b8eea737b58f8ea"
+metafile = true
+
+[[files]]
 file = "mods/leafmealone-1-1-0.pw.toml"
 hash = "1a9d493a45d48fb6d4fed0bfb82450c9742433f58f0162c09f1952234213b5e9"
 metafile = true
@@ -802,6 +812,11 @@ hash = "354b99a3a06ecedd3bbf56a366c46ad2ff310bcf501e41d6312bf0bc89ff6762"
 metafile = true
 
 [[files]]
+file = "mods/mcqoy.pw.toml"
+hash = "604b7674b96d10b2c9f03e47a91ec50b448e8193de56f36fca93b5ff0f3132f6"
+metafile = true
+
+[[files]]
 file = "mods/mcw-bridges-3-1-2-mc1-21-1neoforge.pw.toml"
 hash = "fa211a4c2bf5f6183af673ef98244b9498fd5a185098ab45afd4343b977f79d6"
 metafile = true
@@ -847,6 +862,11 @@ hash = "18d1063ee2c00d232be90a4aa4ace7c7e8b916e7131ae347ff91a2e5ac2f57c3"
 metafile = true
 
 [[files]]
+file = "mods/monolib.pw.toml"
+hash = "4a40f089ec8944d5290ac5bb43037170603bda41de2d5af56a56a737f8341755"
+metafile = true
+
+[[files]]
 file = "mods/moonlight-1-21-2-29-20-neoforge.pw.toml"
 hash = "a6a1c5c3beaafa25aaa3a56765693988707cde2e336834a7b88a90f0176790bf"
 metafile = true
@@ -884,11 +904,6 @@ metafile = true
 [[files]]
 file = "mods/nyfsspiders-neoforge-1-21-1-3-0-1.pw.toml"
 hash = "c0d741d8e26a12d08a5fd5820d3fa00325dcd3f754bacbf8c5db2d0d028e6ee7"
-metafile = true
-
-[[files]]
-file = "mods/obese_crops-1-0-6-1-21-1-neoforge.pw.toml"
-hash = "15ec8778eceb0d92dbcc1328c889fc492855b4bb44e8f93237d7f04e7f377818"
 metafile = true
 
 [[files]]
@@ -947,6 +962,11 @@ hash = "e667a13cdc5271da91a43b33be0a4e4d0a709afaf4c3643d7376c19d45fe6125"
 metafile = true
 
 [[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "6812c3faa178cd48c65c5b8e7aeef50bc0b63d8e3b2117065d6179a43d8d3649"
+metafile = true
+
+[[files]]
 file = "mods/quality_food-1-21-1-2-3-3.pw.toml"
 hash = "222020ef0c416b3440e2f3f3b5df7a2c5da7af882944bdd36e3f13bc1c7854ca"
 metafile = true
@@ -992,11 +1012,6 @@ hash = "acb21c0eb6959a4e8d14072c8546a3079b9e975f053f57b1e233c927ae3fc2e6"
 metafile = true
 
 [[files]]
-file = "mods/rrls-5-0-10-mc1-21-1-forge.pw.toml"
-hash = "cc980214483ee94a64cfb591e231fb7c625d9e367ce293636f3f5b136f26f48f"
-metafile = true
-
-[[files]]
 file = "mods/scholar-neoforge-1-21-1-1-1-13.pw.toml"
 hash = "5aed5ab83c203607ebbcea0680b7aa8dc04582361a3df7a4daf8f0213619be8c"
 metafile = true
@@ -1032,11 +1047,6 @@ hash = "5d0a69d76d5facd573a430bd7ba2fa0c0991d13a61cb8128b2e7aec340304347"
 metafile = true
 
 [[files]]
-file = "mods/sodiumdynamiclights-neoforge-1-0-10-1-21-1.pw.toml"
-hash = "08a84fbdec6ba9b99c198cc90c5cb2ff35dc04f4ebffe8aea767b822143dd7d5"
-metafile = true
-
-[[files]]
 file = "mods/sodiumoptionsapi-neoforge-1-0-10-1-21-1.pw.toml"
 hash = "7d3b61be9ef5e640591a8e6cbe377b92b6419b0cece075fc50f4ecdc4ccddb6a"
 metafile = true
@@ -1044,6 +1054,16 @@ metafile = true
 [[files]]
 file = "mods/sootychimneys-neoforge-1-3-4.pw.toml"
 hash = "a2e2cbfa0e9fd0467127c49617f247948ab649d355230433d520ea4ef93ba897"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "482632cc6ef035e36e375578bb7b2fe969ff5d0b696221257f492b2609afa8be"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "8cbdbcaf8c6177eed436ca5d364e8fecc246e3420d168b7576050bd6593b4555"
 metafile = true
 
 [[files]]
@@ -1142,13 +1162,13 @@ hash = "5efd823f97a6e3378f923199441fad492e337a65530cb9ed3d4ea0f829fb3fde"
 metafile = true
 
 [[files]]
-file = "mods/visuality-forge-2-1-0.pw.toml"
-hash = "329cf88e11d44116817cf750cc8a88d54331c06b4335f0b014ba8910ec807485"
+file = "mods/visual-overhaul.pw.toml"
+hash = "509491e559046c720a32bc8d38d48ed6d14cf29378b6ec6083471dd99d790248"
 metafile = true
 
 [[files]]
-file = "mods/visualoverhaul-neoforge-5-2-1.pw.toml"
-hash = "0aed560036854939940d809a6a10008f12ff01b807aa7f1997bc3997f9106c5d"
+file = "mods/visuality-forge-2-1-0.pw.toml"
+hash = "329cf88e11d44116817cf750cc8a88d54331c06b4335f0b014ba8910ec807485"
 metafile = true
 
 [[files]]
@@ -1162,13 +1182,13 @@ hash = "30cdf7ea2cc4ac6cebc6b577395baf434e88159d913347812853b174101e28c0"
 metafile = true
 
 [[files]]
-file = "mods/xaerominimap-neoforge-1-21-1-25-3-10.pw.toml"
-hash = "ed38e82d1a811a8a82d9cc02b5b09c602acd98df184d9d7b964a11ac63bb4a50"
+file = "mods/xaeros-minimap.pw.toml"
+hash = "02e2acc15a8c1b7bbe44a64af68574d7e024f1c45504a6997568c9fcbab3846b"
 metafile = true
 
 [[files]]
-file = "mods/yet_another_config_lib_v3-3-8-2-1-21-1-neoforge.pw.toml"
-hash = "0f053ffb14c0f63c5bcdf1cf5b03ffd0c6c564c10b15d067a9d565854f0c7b43"
+file = "mods/yacl.pw.toml"
+hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
 
 [[files]]

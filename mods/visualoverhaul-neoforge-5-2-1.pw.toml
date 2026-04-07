@@ -1,8 +1,0 @@
-name = "visualoverhaul-neoforge-5.2.1"
-filename = "visualoverhaul-neoforge-5.2.1.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "7620025151d8804347312bccb9464fe644d9ac84"
-url = "https://cdn.modrinth.com/data/YQnwl5Vv/versions/TMOdQHDi/visualoverhaul-neoforge-5.2.1.jar"

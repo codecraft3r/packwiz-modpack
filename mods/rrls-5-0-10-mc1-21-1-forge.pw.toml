@@ -1,8 +1,0 @@
-name = "rrls-5.0.10+mc1.21.1-forge"
-filename = "rrls-5.0.10+mc1.21.1-forge.jar"
-side = "client"
-
-[download]
-hash-format = "sha1"
-hash = "4f02d745abde6d655d62ce2c3aafb2c8a14fcc27"
-url = "https://cdn.modrinth.com/data/ZP7xHXtw/versions/CSHa8VOm/rrls-5.0.10%2Bmc1.21.1-forge.jar"

@@ -1,0 +1,13 @@
+name = "Visual Overhaul"
+filename = "visualoverhaul-neoforge-5.2.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YQnwl5Vv/versions/TMOdQHDi/visualoverhaul-neoforge-5.2.1.jar"
+hash-format = "sha512"
+hash = "901604f51c6e4d0f7bdc681b5c2e109732a7b8e8add341d34ed1056f683317482025be2e247a316b2077aa8f03ed41e8e1750f9ed410271066877ef82679e771"
+
+[update]
+[update.modrinth]
+mod-id = "YQnwl5Vv"
+version = "TMOdQHDi"

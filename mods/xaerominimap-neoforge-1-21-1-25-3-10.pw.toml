@@ -1,8 +1,0 @@
-name = "xaerominimap-neoforge-1.21.1-25.3.10"
-filename = "xaerominimap-neoforge-1.21.1-25.3.10.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "d4828332dd831455429156b6cfa24aa9bd99dd77"
-url = "https://cdn.modrinth.com/data/1bokaNcj/versions/CatMvRfN/xaerominimap-neoforge-1.21.1-25.3.10.jar"
