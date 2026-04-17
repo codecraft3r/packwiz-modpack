@@ -707,6 +707,11 @@ hash = "46fd3a8062699383239729b7f4937fdd83177581492d3b12c8ad74dd52bfe05a"
 metafile = true
 
 [[files]]
+file = "mods/isskjs.pw.toml"
+hash = "57db227711481c9b6fbc89a5ea04f2810c9f27035baa7f33437a80a94ae9609f"
+metafile = true
+
+[[files]]
 file = "mods/jakes-build-tools-2-0-1-5.pw.toml"
 hash = "b7040f79e2dd80bbf9d2fa87997884b0233058eded195d604e6131fa36e94e36"
 metafile = true
@@ -749,6 +754,11 @@ metafile = true
 [[files]]
 file = "mods/lithium-neoforge-0-15-3-mc1-21-1.pw.toml"
 hash = "e8a59f5274e5de21b819e4933b376cb66f5cc3d0b0023ea0ed4686604b4e3122"
+metafile = true
+
+[[files]]
+file = "mods/lootjs.pw.toml"
+hash = "3b7b23c07ab60d818286d5767e59375a9eafdd52fbfb8d6e2e14fcc79df5a584"
 metafile = true
 
 [[files]]
@@ -929,6 +939,11 @@ metafile = true
 [[files]]
 file = "mods/powergrid-mc1-21-1-0-5-4.pw.toml"
 hash = "3285fe321d6e14c597aedc1da88d81d21325a1e8f61f67e11d0ad20bd60afd21"
+metafile = true
+
+[[files]]
+file = "mods/probejs.pw.toml"
+hash = "98bbba48eddf402b09107de563d7b4370d1ae70a1a6210054cd13065072a9d97"
 metafile = true
 
 [[files]]
