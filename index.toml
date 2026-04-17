@@ -727,6 +727,11 @@ hash = "dcc4e1e3c86c72ef0460b11d7dd93ca36f28b0ce434931eab6268e8781a97404"
 metafile = true
 
 [[files]]
+file = "mods/kubejs.pw.toml"
+hash = "e8c20c0c77e5df58d1386d8190ee16a957d78d62d361469db0b0c29458bf1e84"
+metafile = true
+
+[[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "502d4ba2ca8c7f6f52830cfc43fc12b567023266f2b557ee2b8eea737b58f8ea"
 metafile = true
@@ -969,6 +974,11 @@ metafile = true
 [[files]]
 file = "mods/respackopts-4-14-0-1-21-1-forge-4.pw.toml"
 hash = "c654ed9f8a061e79c0c554debf95aef8e5e71c5ae3a40b34bcd05e5769f21c7f"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "6b91f46291891e725189b0bd54d0db0f66925b1e785bdfa737592dfcf41a79a3"
 metafile = true
 
 [[files]]
