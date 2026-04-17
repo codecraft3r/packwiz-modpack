@@ -1,8 +1,0 @@
-name = "VampiresDelight-1.21.1-0.1.11b"
-filename = "VampiresDelight-1.21.1-0.1.11b.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "e032d75a9ebd1ffc543dac16f204b4fb4fd9e972"
-url = "https://cdn.modrinth.com/data/9Vo2deFq/versions/HX3GVV8o/VampiresDelight-1.21.1-0.1.11b.jar"

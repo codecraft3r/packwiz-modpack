@@ -1,8 +1,0 @@
-name = "Vampirism-1.21-1.10.9"
-filename = "Vampirism-1.21-1.10.9.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "5059de80690465876c47a86b094af383ec027c4c"
-url = "https://cdn.modrinth.com/data/jVZ0F1wn/versions/BMpl0c3k/Vampirism-1.21-1.10.9.jar"

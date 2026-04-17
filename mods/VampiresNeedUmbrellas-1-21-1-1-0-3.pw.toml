@@ -1,8 +1,0 @@
-name = "VampiresNeedUmbrellas-1.21.1-1.0.3"
-filename = "VampiresNeedUmbrellas-1.21.1-1.0.3.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "80b0bde4bb57fc3109585232df348e1820277d1b"
-url = "https://cdn.modrinth.com/data/FaUysFni/versions/gA6GeHzf/VampiresNeedUmbrellas-1.21.1-1.0.3.jar"

@@ -1,8 +1,0 @@
-name = "surveyor-1.2.1+1.21"
-filename = "surveyor-1.2.1+1.21.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "892e8facea99750150354c00981e99dd807baf47"
-url = "https://cdn.modrinth.com/data/4KjqhPc9/versions/6UH2PpaK/surveyor-1.2.1%2B1.21.jar"
