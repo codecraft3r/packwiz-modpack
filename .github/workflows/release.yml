@@ -47,6 +47,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Export CurseForge pack
+        run: packwiz curseforge export -o "Poiesis Modded-CurseForge.zip"
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_TOKEN }}
+
+      - name: Upload CurseForge pack
+        uses: softprops/action-gh-release@v2
+        with:
+          files: 'Poiesis Modded-CurseForge.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload MultiMC instance
         uses: softprops/action-gh-release@v2
         with:
