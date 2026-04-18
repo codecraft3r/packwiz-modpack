@@ -1137,11 +1137,6 @@ hash = "606f35f298e1cbc2fe586c1a81a4f823d4e662867704cef8b47133b429d8778a"
 metafile = true
 
 [[files]]
-file = "mods/unusual_adventures-1-1-0b-neoforge-1-21-1.pw.toml"
-hash = "b021a54fb9bd2f6307a9d998386c55470397225f66cb81c3910b1c63e7d669e7"
-metafile = true
-
-[[files]]
 file = "mods/utility-belt-neoforge-3-0-1-1-21-1.pw.toml"
 hash = "4240732c75738996459f7316da5ad69c15fecb76235d0cc7246dbbb31b4d2888"
 metafile = true
