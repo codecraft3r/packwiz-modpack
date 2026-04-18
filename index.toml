@@ -13,10 +13,6 @@ file = "README.md"
 hash = "4279a4ae3015d2ba12313bad419da25c407a466677f4e0a86687adee0f50d8cf"
 
 [[files]]
-file = "docker-compose.yml"
-hash = "7f91d7e21998f1be5596d7432b25de27edc11759e32747bf3be407e1c1aa2710"
-
-[[files]]
 file = "mods/AmbientSounds_NEOFORGE_v6-3-3_mc1-21-1.pw.toml"
 hash = "6243b46bc10ba1963af4c3a5531b59b9b9e5c5ea1b7fb6f2b02e43f43a3d202d"
 metafile = true
@@ -1245,11 +1241,3 @@ metafile = true
 file = "resourcepacks/Theone-s-Items-Pack-v0-84.pw.toml"
 hash = "db0d58ec0a8a714d7f2eb27ad96b2fd05a3571ab05a07ed879ba91546e6f0328"
 metafile = true
-
-[[files]]
-file = "update_sides.sh"
-hash = "f68a8b2b014b5399ff16d2305f470f958bd1ff2bbe727f5b5dc27c0cf6791ac9"
-
-[[files]]
-file = "update_sides_parallel.sh"
-hash = "323346d9c3d78a169f70f2587b0207f4f180b0afcd569624ce45c4e990078399"
