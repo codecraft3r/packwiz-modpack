@@ -6,7 +6,7 @@ hash = "e56510e7535f658cd5c210bda7da7b6179c72e3b659832d24dfed34de8bbfb40"
 
 [[files]]
 file = ".github/workflows/release.yml"
-hash = "ff706b5939c06147d860bff3118c8ec57c659974a8002796b6c382e12a6adc90"
+hash = "28f6815d5c0ecc688809828b49cf2a671b3c9bd04d46b7a7c1a270d31f245767"
 
 [[files]]
 file = "README.md"
@@ -440,11 +440,6 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "d2754c84f0e4770a5852543af08dd02029056d46b7eb751586f77f93af5a1811"
-metafile = true
-
-[[files]]
-file = "mods/create-big-cannons.pw.toml"
-hash = "c0ce5acc926fd747135f330cb3e53b847e5c05ed950b96f7cbe0d1159aefa285"
 metafile = true
 
 [[files]]
