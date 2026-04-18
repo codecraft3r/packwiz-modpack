@@ -767,11 +767,6 @@ hash = "5198452ae79ce7e5671dc49d2e0d09aa83cf5a1533b0cf53c54574e76806e723"
 metafile = true
 
 [[files]]
-file = "mods/man_of_many_planes-0-2-1-1-21-1-neoforge.pw.toml"
-hash = "e7ab0fe945fe42531acc5dfe411e95ab9a15708d4807f692f0e87be5964d096b"
-metafile = true
-
-[[files]]
 file = "mods/mcpitanlib-3-5-1-1-21-1-neoforge.pw.toml"
 hash = "c97ea8ebdf922fa8a0f9aa6dc864adc1df3f5f665a4ae3b201cfb124d2a95e60"
 metafile = true
