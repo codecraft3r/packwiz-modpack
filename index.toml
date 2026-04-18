@@ -447,6 +447,11 @@ hash = "d085dc84a3039461b738d9bc15c1e8b17b34e86cd10f49195ebd88050d519a75"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics.pw.toml"
+hash = "d2754c84f0e4770a5852543af08dd02029056d46b7eb751586f77f93af5a1811"
+metafile = true
+
+[[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "c0ce5acc926fd747135f330cb3e53b847e5c05ed950b96f7cbe0d1159aefa285"
 metafile = true
@@ -942,11 +947,6 @@ hash = "3285fe321d6e14c597aedc1da88d81d21325a1e8f61f67e11d0ad20bd60afd21"
 metafile = true
 
 [[files]]
-file = "mods/probejs.pw.toml"
-hash = "98bbba48eddf402b09107de563d7b4370d1ae70a1a6210054cd13065072a9d97"
-metafile = true
-
-[[files]]
 file = "mods/puddleflood-1-1-2-1-21-1-neoforge.pw.toml"
 hash = "e667a13cdc5271da91a43b33be0a4e4d0a709afaf4c3643d7376c19d45fe6125"
 metafile = true
@@ -1014,6 +1014,11 @@ metafile = true
 [[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
+metafile = true
+
+[[files]]
+file = "mods/sable.pw.toml"
+hash = "a827973337d288d5999ab6fa54c7476a25f98924e729712d3a85a01bc0e2032e"
 metafile = true
 
 [[files]]
