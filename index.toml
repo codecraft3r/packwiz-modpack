@@ -58,18 +58,8 @@ hash = "bf473030ba8f18f7f8d80285f967c5128d210b0c7db86d938c2361b7bddd525f"
 metafile = true
 
 [[files]]
-file = "mods/ExplorersCompass-1-21-1-3-0-3-neoforge.pw.toml"
-hash = "fdafda4213ee4598c0dabc35dc4e3e207bc2168ef8f44f201650f951a91aabde"
-metafile = true
-
-[[files]]
 file = "mods/FarmersDelight-1-21-1-1-2-11.pw.toml"
 hash = "1d05417e88c4d9ab5bf50c86a6429ac82a18c804ce5eaa314c5811e74ccf7410"
-metafile = true
-
-[[files]]
-file = "mods/FerriteCore_7.0.3_neoforge.pw.toml"
-hash = "f51729f7749a5a2cd70e0330f7cf3edd1cc0fa4275a53026cbf8c79f83d19df6"
 metafile = true
 
 [[files]]
@@ -133,18 +123,8 @@ hash = "d731caf2b5cd158be1fad56d808a81d11bbd9da7e227e6d261cbbbc838a1c873"
 metafile = true
 
 [[files]]
-file = "mods/NaturesCompass-1-21-1-3-0-3-neoforge.pw.toml"
-hash = "264576a97dca7f2be88c8369e5a96b349aaeeb3739449cb2d7204e86317ae866"
-metafile = true
-
-[[files]]
 file = "mods/Prism-1-21-1-neoforge-1-0-11.pw.toml"
 hash = "e2aa46044d572b3ed5a0626090c3ad4c2c366a8382636fb1078fe6c391186586"
-metafile = true
-
-[[files]]
-file = "mods/PuzzlesLib-v21-1-39-1-21-1-NeoForge.pw.toml"
-hash = "b90f4fbb290c09d50ace152f5ea0bc5b762b3f3278750dae5ce60d3c152341bf"
 metafile = true
 
 [[files]]
@@ -193,11 +173,6 @@ hash = "bf1fe3a2d1aa8da7a77096b66fdf31b1bd7e808dfde5c06247a49530f4f969d3"
 metafile = true
 
 [[files]]
-file = "mods/Zeta-1-1-39.pw.toml"
-hash = "10f8be6f9fc6551df000958529a789e1686f72d277219e0e66d400e6ab68f992"
-metafile = true
-
-[[files]]
 file = "mods/accessories-neoforge-1-1-0-beta-53-1-21-1.pw.toml"
 hash = "79294f96a2c0893672216c3e54c09e6547ac72bc0b0739f65a2724e93070f6fa"
 metafile = true
@@ -215,11 +190,6 @@ metafile = true
 [[files]]
 file = "mods/appleskin-neoforge-mc1-21-3-0-8.pw.toml"
 hash = "c7043eefc97fb4215303e7c7befc6aeecd92a501e621765032fb4152555463fa"
-metafile = true
-
-[[files]]
-file = "mods/architectury-13-0-8-neoforge.pw.toml"
-hash = "ff04e3680aae7b1f361bff85d7a5fa6c66788ddf02e6084c3798ba1f15075bbd"
 metafile = true
 
 [[files]]
@@ -763,11 +733,6 @@ hash = "c97ea8ebdf922fa8a0f9aa6dc864adc1df3f5f665a4ae3b201cfb124d2a95e60"
 metafile = true
 
 [[files]]
-file = "mods/mcqoy-0-4-1-neo-1-21.pw.toml"
-hash = "354b99a3a06ecedd3bbf56a366c46ad2ff310bcf501e41d6312bf0bc89ff6762"
-metafile = true
-
-[[files]]
 file = "mods/mcqoy.pw.toml"
 hash = "604b7674b96d10b2c9f03e47a91ec50b448e8193de56f36fca93b5ff0f3132f6"
 metafile = true
@@ -994,7 +959,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "a827973337d288d5999ab6fa54c7476a25f98924e729712d3a85a01bc0e2032e"
+hash = "a8ac5ced9cafa5cf53d9f4d0cb61df06729d1a7b66b88d6b5a2e609b1ca26fa0"
 metafile = true
 
 [[files]]

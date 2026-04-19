@@ -1,8 +1,0 @@
-name = "mcqoy-0.4.1+neo-1.21"
-filename = "mcqoy-0.4.1+neo-1.21.jar"
-side = "client"
-
-[download]
-hash-format = "sha1"
-hash = "98a771b14c1f4ead12ffcd99a90b1c91b25cca8d"
-url = "https://cdn.modrinth.com/data/tNmWwdI2/versions/nfqfeKsL/mcqoy-0.4.1%2Bneo-1.21.jar"
