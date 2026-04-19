@@ -863,11 +863,6 @@ hash = "e8100d935e20369ed13b31ea2423482eadd4c8ed123fd8e77320b12fa883dbb6"
 metafile = true
 
 [[files]]
-file = "mods/open-parties-and-claims-neoforge-1-21-1-0-25-10.pw.toml"
-hash = "9e515f57ea1d30a9a4d830d6b003ccc3fbc0a7a37f082683b07ab88ecdfdd8a2"
-metafile = true
-
-[[files]]
 file = "mods/oritech-neoforge-1-21-1-1-1-0.pw.toml"
 hash = "b8f7330cf1dd87c88677103a571943eaadc3f29545e2ced2bedd20c929570828"
 metafile = true
