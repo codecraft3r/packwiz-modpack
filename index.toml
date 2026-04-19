@@ -783,6 +783,11 @@ hash = "4a40f089ec8944d5290ac5bb43037170603bda41de2d5af56a56a737f8341755"
 metafile = true
 
 [[files]]
+file = "mods/moonlight.pw.toml"
+hash = "c05fa3fa9bc5700104d928b616b15e70d441085dd060c6501122747dc3805de1"
+metafile = true
+
+[[files]]
 file = "mods/multi-piston.pw.toml"
 hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
 metafile = true
