@@ -843,6 +843,11 @@ hash = "abfc8909de1c851ccf4ef296e05d1017332a21fef76fd1f938828fcff925115b"
 metafile = true
 
 [[files]]
+file = "mods/neruina.pw.toml"
+hash = "00fbbbb3eaad8978de7c6ac048ad8e3ba21dbb626ae00c1d471be2b2e8fe92da"
+metafile = true
+
+[[files]]
 file = "mods/notenoughanimations-neoforge-1-12-0-mc1-21-1.pw.toml"
 hash = "c4398d07d756e9dbb37e00e99555080e281538f40381bba03971b02ced6db815"
 metafile = true
