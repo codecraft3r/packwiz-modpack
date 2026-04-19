@@ -178,11 +178,6 @@ hash = "79294f96a2c0893672216c3e54c09e6547ac72bc0b0739f65a2724e93070f6fa"
 metafile = true
 
 [[files]]
-file = "mods/amendments-1-21-2-0-15-neoforge.pw.toml"
-hash = "b5332a0747b30e450816aa9b964e87de6884c58c65dc486059c09adf6ce9ad3d"
-metafile = true
-
-[[files]]
 file = "mods/animal_feeding_trough-1-1-2-1-21-neoforge.pw.toml"
 hash = "eb9e8edc45d3e9419a777feeab461e3005c93d26e3275eed87400d0bcd758452"
 metafile = true
@@ -788,11 +783,6 @@ hash = "4a40f089ec8944d5290ac5bb43037170603bda41de2d5af56a56a737f8341755"
 metafile = true
 
 [[files]]
-file = "mods/moonlight-1-21-2-29-20-neoforge.pw.toml"
-hash = "a6a1c5c3beaafa25aaa3a56765693988707cde2e336834a7b88a90f0176790bf"
-metafile = true
-
-[[files]]
 file = "mods/multi-piston.pw.toml"
 hash = "bc9449306cb2c32f16347779291d68e5fba67f85d7aca04b4b9cc1c033ec4083"
 metafile = true
@@ -1040,11 +1030,6 @@ metafile = true
 [[files]]
 file = "mods/structurize.pw.toml"
 hash = "0f403c213ec9ab08588d619ac516be1b615077ed5603083b0b1bb837739e309f"
-metafile = true
-
-[[files]]
-file = "mods/supplementaries-1-21-3-5-27-neoforge.pw.toml"
-hash = "beb8484d7a96f5dbfbf2d6b7c95f7f4bade782fae7775a67be21e9e114a8e1dd"
 metafile = true
 
 [[files]]
