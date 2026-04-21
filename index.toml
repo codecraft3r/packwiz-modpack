@@ -638,6 +638,11 @@ hash = "5d5e2b20433af5459ead99e8740c1dac3fdea74b3c8e1ceb320a7c289446817d"
 metafile = true
 
 [[files]]
+file = "mods/infinite-trading.pw.toml"
+hash = "e5a2b00a5a99de7ed4cf8184a60307afeecc4dce5ae0fb073cef29bef42e9826"
+metafile = true
+
+[[files]]
 file = "mods/iris-neoforge-1-8-12-mc1-21-1.pw.toml"
 hash = "3d67e9aec667e95b1b477790048c3c59cadf485571b2a533b6658f6cf2b777e7"
 metafile = true
