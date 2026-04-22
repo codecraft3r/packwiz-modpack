@@ -578,6 +578,11 @@ hash = "53af71a0af67aefe9db334b9a977c3c0dfc6bd773cd3f74da65293c2a0391f6f"
 metafile = true
 
 [[files]]
+file = "mods/flux-networks.pw.toml"
+hash = "ad8209e472d463c9fcd19ca708fcd9c1a4a1bc69c9f0ca22efeacb414e9ab7a8"
+metafile = true
+
+[[files]]
 file = "mods/forgified-fabric-api-0-116-7-2-2-4-1-21-1.pw.toml"
 hash = "4ff204b7f81bf465c50493852f29289f3a57b26a971756d6bc99c2ba66ac843f"
 metafile = true
