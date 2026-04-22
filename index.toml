@@ -183,6 +183,11 @@ hash = "ed45c352a49b65c7221e57d979d0c6935522dfef4968aa5b7421f4d3e670ce40"
 metafile = true
 
 [[files]]
+file = "mods/aeinfinitybooster.pw.toml"
+hash = "58b8a98530d56114926704b56285d7a691d2a974ace74e8fd7998893e48830d8"
+metafile = true
+
+[[files]]
 file = "mods/animal_feeding_trough-1-1-2-1-21-neoforge.pw.toml"
 hash = "eb9e8edc45d3e9419a777feeab461e3005c93d26e3275eed87400d0bcd758452"
 metafile = true
