@@ -883,6 +883,16 @@ hash = "3285fe321d6e14c597aedc1da88d81d21325a1e8f61f67e11d0ad20bd60afd21"
 metafile = true
 
 [[files]]
+file = "mods/project-expansion.pw.toml"
+hash = "ef0c68778d0e0ed3855fe43d6bf33450739a6129655d30db19abb58a18ae2991"
+metafile = true
+
+[[files]]
+file = "mods/projecte.pw.toml"
+hash = "bdca798ffe4124bf43ea13f1fa5f0593a7539762240edb56c47b1976b413ebc4"
+metafile = true
+
+[[files]]
 file = "mods/puddleflood-1-1-2-1-21-1-neoforge.pw.toml"
 hash = "e667a13cdc5271da91a43b33be0a4e4d0a709afaf4c3643d7376c19d45fe6125"
 metafile = true
