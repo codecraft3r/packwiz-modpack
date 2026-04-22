@@ -178,6 +178,11 @@ hash = "79294f96a2c0893672216c3e54c09e6547ac72bc0b0739f65a2724e93070f6fa"
 metafile = true
 
 [[files]]
+file = "mods/ae2.pw.toml"
+hash = "ed45c352a49b65c7221e57d979d0c6935522dfef4968aa5b7421f4d3e670ce40"
+metafile = true
+
+[[files]]
 file = "mods/animal_feeding_trough-1-1-2-1-21-neoforge.pw.toml"
 hash = "eb9e8edc45d3e9419a777feeab461e3005c93d26e3275eed87400d0bcd758452"
 metafile = true
@@ -600,6 +605,11 @@ metafile = true
 [[files]]
 file = "mods/geckolib.pw.toml"
 hash = "0521ed2becdf2b460511c92e80e2702a4b6e540c85c99fb571844e1c7c505724"
+metafile = true
+
+[[files]]
+file = "mods/guideme.pw.toml"
+hash = "b8aee2057378b6f054f94550684d9a3f41ded7cc47794c8b01c107c8c2115ceb"
 metafile = true
 
 [[files]]
