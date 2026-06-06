@@ -1,6 +1,6 @@
 name = "Rebind Narrator"
 filename = "rebind_narrator-1.21.1-neoforge-2025.12.23.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
