@@ -1,0 +1,13 @@
+name = "Cobblemon Ultra Wormholes"
+filename = "cobblemon_ultra_wormholes-neoforge-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "03fd8618057a7d775168539fd2b4cf7dec7b43bb"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7882625
+project-id = 1487245
