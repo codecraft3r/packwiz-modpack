@@ -1,0 +1,13 @@
+name = "Complete Cobblemon Collection Mod Version"
+filename = "complete-cobblemon-collection-myths-and-legends-compat-2.0.1 (1).jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7c9072cd5c3b63399531f369d388ba5d81a50e03"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7774060
+project-id = 1447622

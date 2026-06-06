@@ -1,8 +1,0 @@
-name = "Prism-1.21.1-neoforge-1.0.11"
-filename = "Prism-1.21.1-neoforge-1.0.11.jar"
-side = "client"
-
-[download]
-hash-format = "sha1"
-hash = "1ae6f7be2ba8f963344dbf27e552920a7bc7a35f"
-url = "https://cdn.modrinth.com/data/1OE8wbN0/versions/kMcz2lDj/Prism-1.21.1-neoforge-1.0.11.jar"

@@ -1,5 +1,11 @@
 *.jar
 *.class
 *.mrpack
+*.zip
 *.sh
 docker-compose.yml
+agents.md
+.git/
+.gitignore
+.gitattributes
+.packwizignore

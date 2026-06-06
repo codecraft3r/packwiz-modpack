@@ -1,0 +1,13 @@
+name = "Wild Battle API"
+filename = "wild_battle_api-neoforge-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "422e07b9748a6168b15d9fb5e3ccc6d8ac8df981"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7765020
+project-id = 1478863

@@ -1,8 +1,0 @@
-name = "polytone-1.21-3.6.5-neoforge"
-filename = "polytone-1.21-3.6.5-neoforge.jar"
-side = "client"
-
-[download]
-hash-format = "sha1"
-hash = "3876e88cab5e741396a930bfaf9c433e592c841b"
-url = "https://cdn.modrinth.com/data/3qAYkBMB/versions/Re4fSru9/polytone-1.21-3.6.5-neoforge.jar"

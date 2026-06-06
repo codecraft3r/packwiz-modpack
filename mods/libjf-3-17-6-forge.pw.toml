@@ -1,8 +1,0 @@
-name = "libjf-3.17.6+forge"
-filename = "libjf-3.17.6+forge.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "b6c4ffb3260f495344fa56ef3489c01e2b9552de"
-url = "https://cdn.modrinth.com/data/WKwQAwke/versions/U2XgYJpS/libjf-3.17.6%2Bforge.jar"

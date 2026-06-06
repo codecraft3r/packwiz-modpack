@@ -1,8 +1,0 @@
-name = "chestedcompanions-1.3.1-1.21-NEOFORGE"
-filename = "chestedcompanions-1.3.1-1.21-NEOFORGE.jar"
-side = "both"
-
-[download]
-hash-format = "sha1"
-hash = "51b6bc94acbae49970aa1b187a83a4b0f403b1e3"
-url = "https://cdn.modrinth.com/data/yCDkPh3W/versions/KbkOLh55/chestedcompanions-1.3.1-1.21-NEOFORGE.jar"

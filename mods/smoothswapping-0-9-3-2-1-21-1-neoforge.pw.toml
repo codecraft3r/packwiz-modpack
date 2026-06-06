@@ -1,8 +1,0 @@
-name = "smoothswapping-0.9.3.2-1.21.1-neoforge"
-filename = "smoothswapping-0.9.3.2-1.21.1-neoforge.jar"
-side = "client"
-
-[download]
-hash-format = "sha1"
-hash = "00338f16b360d6b24b53fc8f92b76256729aee75"
-url = "https://cdn.modrinth.com/data/ydZic5r4/versions/tnvwgXE6/smoothswapping-0.9.3.2-1.21.1-neoforge.jar"
