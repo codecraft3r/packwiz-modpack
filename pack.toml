@@ -1,0 +1,13 @@
+name = "All the Mons"
+author = "ATMTeam"
+version = "1.0.0-rc.6"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "ad8ffcc02d596f4d854db8fdb71efab24c004dd3593f1643f1bc5ae24a5f2c66"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.229"

@@ -1,0 +1,67 @@
+name: Release Modpack
+
+on:
+  push:
+    tags:
+      - '**'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Refresh index
+        run: packwiz refresh
+
+      - name: Build Modrinth pack
+        run: |
+          packwiz modrinth export -o "All the Mons.mrpack"
+          ls -la *.mrpack
+
+      - name: Create MultiMC instance package
+        run: |
+          mkdir -p "All the Mons.multimc-instance/.minecraft"
+          curl -sL https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar -o "All the Mons.multimc-instance/.minecraft/packwiz-installer-bootstrap.jar"
+          printf 'name=All the Mons\niconName=Default\nnotes=Auto-updating modpack via packwiz\nMCVersion=1.21.1\nForgeVersion=21.1.229\nLWJGLVersion=3.3.4\njavaArgs=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch\n' > "All the Mons.multimc-instance/instance.cfg"
+          printf '{\n    "packLocation": {\n        "url": "https://raw.githubusercontent.com/REPLACE_ME/all-the-mons-packwiz/main/pack.toml"\n    }\n}\n' > "All the Mons.multimc-instance/pack.json"
+          printf 'All the Mons MultiMC Instance\n=============================\n\nHOW TO USE:\n1. Install MultiMC from https://multimc.org/\n2. Create new instance -> Name: "All the Mons" -> Minecraft: 1.21.1 -> NeoForge: 21.1.229\n3. Replace the pack.toml URL placeholder after publishing this repository.\n4. Launch and the packwiz installer will auto-download the pack files.\n' > "All the Mons.multimc-instance/README.txt"
+          zip -r "All the Mons-MultiMC-Instance.zip" "All the Mons.multimc-instance"
+          ls -la *.zip
+
+      - name: Upload Modrinth pack
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.mrpack'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Export CurseForge pack
+        run: packwiz curseforge export -o "All the Mons-CurseForge.zip"
+        env:
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_TOKEN }}
+
+      - name: Upload CurseForge pack
+        uses: softprops/action-gh-release@v2
+        with:
+          files: 'All the Mons-CurseForge.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MultiMC instance
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.zip'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

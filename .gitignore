@@ -1,0 +1,7 @@
+*.jar
+*.class
+*.mrpack
+*.zip
+packwiz
+.cache/
+server-data/

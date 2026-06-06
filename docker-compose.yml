@@ -1,0 +1,20 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    container_name: all-the-mons-minecraft
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      NEOFORGE_VERSION: "21.1.229"
+      MINECRAFT_VERSION: "1.21.1"
+      PACKWIZ_URL: "https://raw.githubusercontent.com/REPLACE_ME/all-the-mons-packwiz/main/pack.toml"
+      SERVER_NAME: "All the Mons Server"
+      MEMORY: "8G"
+    volumes:
+      - server-data:/data
+
+volumes:
+  server-data:
