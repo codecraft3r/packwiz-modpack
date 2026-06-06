@@ -13177,8 +13177,8 @@ hash = "a445471ac6843bcf9fb76eabb4357de0357dfa7782be536a7827a26764fe45c1"
 metafile = true
 
 [[files]]
-file = "mods/bad-wither-no-cookie-reloaded.pw.toml"
-hash = "659cb9b5dd11ba095c87c3dc7d970ee93a3c2e86b8c5695c7c57c3b54a981f38"
+file = "mods/bad-wither-no-cookie.pw.toml"
+hash = "34752976272e3a7cb38857e24715bccdd7d2797ab824909277281f984dae3f65"
 metafile = true
 
 [[files]]
@@ -13343,7 +13343,7 @@ metafile = true
 
 [[files]]
 file = "mods/cobblemon-pokenav.pw.toml"
-hash = "ab3682c9f0cf6cf1c5a7a75d43cfd4f833eea57b0377fdf8cf0c41ec3f9faacb"
+hash = "6dc0747f249a105ef38d1a75a74736ec276bbf791a5bafd87a47a93a23b25b43"
 metafile = true
 
 [[files]]
@@ -13883,7 +13883,7 @@ metafile = true
 
 [[files]]
 file = "mods/im-fast.pw.toml"
-hash = "a7b43a5e9c934e22bebe3298ae5ec54bbf098f3506703a1581f901e6896797ff"
+hash = "474d64dba26d80c32a84ccdefc66d06dbf18503c17fe48927040fdf9026c5860"
 metafile = true
 
 [[files]]
@@ -14208,7 +14208,7 @@ metafile = true
 
 [[files]]
 file = "mods/more-overlays-updated.pw.toml"
-hash = "c315824dfe979035e9943c2d6c051cb865e5501c8e48ac96860289a8fb81a28d"
+hash = "a9b5d9fb791c757bcc59b20d0cf3b1fc42f026feb7514c7ce59ee43726f3366d"
 metafile = true
 
 [[files]]
@@ -14252,8 +14252,8 @@ hash = "2e9a8daaa0e0cc9cdfb67422e0f928f2db6a1f2984b8636eb2b5091c5fb23e29"
 metafile = true
 
 [[files]]
-file = "mods/navas-za-megas.pw.toml"
-hash = "074fc5e191a6bcc79da17ffb5f51107a6e0778591ff5f1381f9663615e0eb928"
+file = "mods/navas-zamega.pw.toml"
+hash = "c26813c0d001083592dd7f12a1bde79972c8d24a7ea2e9dbf59f84b52cae4da9"
 metafile = true
 
 [[files]]
@@ -14608,7 +14608,7 @@ metafile = true
 
 [[files]]
 file = "mods/simpletms-tms-and-trs-for-cobblemon.pw.toml"
-hash = "8d00e5d6c44ec2ebb13b2659225091a81c62e15b7093acbb1b37957be0465fed"
+hash = "307a39080394cbe930be57e67fb8dae37601e8f0842da10da10977d261dac07d"
 metafile = true
 
 [[files]]
@@ -14888,5 +14888,5 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/rct-trainer-textures-plus.pw.toml"
-hash = "167976902ffe13cabdd5f54f5773652bd3a6f15978b3775e0abcb3578cc5af36"
+hash = "a958030f95997d32191ffd80d656314b86747c46adfb16a3a128389d6a3ff6c9"
 metafile = true

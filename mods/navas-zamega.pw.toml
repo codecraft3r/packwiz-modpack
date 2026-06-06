@@ -1,0 +1,13 @@
+name = "Navas ZA Megas"
+filename = "zamega-neoforge-1.7.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2V1Y86sc/versions/8QRsAEga/zamega-neoforge-1.7.3.jar"
+hash-format = "sha512"
+hash = "ae2e113d2de58e92b38036394e576b4c3cd263f7be1c8bd3f84f6e5952b2d721b10467604c3971aed6493ee2aa6e90cdb0634ff8ea25f21ed8b50b2dfa4bc725"
+
+[update]
+[update.modrinth]
+mod-id = "2V1Y86sc"
+version = "8QRsAEga"
