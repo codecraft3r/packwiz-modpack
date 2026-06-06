@@ -1,0 +1,18 @@
+{
+  "cooldowns": {
+    "healButton": 5,
+    "pcButton": 5,
+    "cloudButton": 5,
+    "waystoneButton": 5,
+    "pokedexButton": 1
+  },
+  "features": {
+    "enableHeal": true,
+    "enablePC": true,
+    "enableCloud": true,
+    "enablePokenav": true,
+    "enableCobbleDollars": true,
+    "enableWaystone": true,
+    "enablePokedex": true
+  }
+}

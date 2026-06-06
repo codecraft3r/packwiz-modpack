@@ -204,6 +204,10 @@ file = "config/cobblemon_battle_tower/bp_shop_items.json"
 hash = "65cd0fb107d4b5f16e9e67fdfd1b0e98d438436b8d04928aa01f081a93b5452f"
 
 [[files]]
+file = "config/cobblemon_smartphone.json"
+hash = "9b00dee5fdc7dc1afd958f6a7d866769c98d02efd581a123e3355b84d4f0c04c"
+
+[[files]]
 file = "config/compactmachines-client.toml"
 hash = "ca010ac290185b46a05a402219db09f0ae4ccd1ca5565b4725969b35ca1e153d"
 
@@ -13347,6 +13351,11 @@ hash = "6dc0747f249a105ef38d1a75a74736ec276bbf791a5bafd87a47a93a23b25b43"
 metafile = true
 
 [[files]]
+file = "mods/cobblemon-smartphone.pw.toml"
+hash = "6111ba9325c3d25d045a9b0706f9ef1812eab5719fcba771bdfd5b4bad55346b"
+metafile = true
+
+[[files]]
 file = "mods/cobblemon-ultra-wormholes.pw.toml"
 hash = "32a7ef2ebb1a6e6ef06baf55844d091c2cad2c5e47fa4fc2f563b95102f51006"
 metafile = true
@@ -13384,6 +13393,11 @@ metafile = true
 [[files]]
 file = "mods/codechicken-lib-1-8.pw.toml"
 hash = "2bbc57f2edb0c4045b2b46f0126e109d9a8cf72153cd7084cb78f6e3311adb38"
+metafile = true
+
+[[files]]
+file = "mods/collective.pw.toml"
+hash = "540572ddb1d9c1de4d0c8c6b3cfbe9f8ceaddbf465523db39b007e547cf3ae01"
 metafile = true
 
 [[files]]
@@ -14682,6 +14696,11 @@ hash = "94b44bc9f6166eb4bb6bdb9a0e3b51f72c086b0bbdad0714acf3da8d752bdfbc"
 metafile = true
 
 [[files]]
+file = "mods/starter-kit.pw.toml"
+hash = "184c63d81d401e2e8b1e63d446afeaa577e4836cd29c147edff387a57f08f9e4"
+metafile = true
+
+[[files]]
 file = "mods/structureoverlapless.pw.toml"
 hash = "de471bb9ef11d81044794e2658f12abcf3ab10d953d2e4fdc8ef2d090d1a6e3a"
 metafile = true
@@ -14883,7 +14902,7 @@ metafile = true
 
 [[files]]
 file = "resourcepacks/journeymap-cobblemon-icons.pw.toml"
-hash = "7f02037d281a9e62bf3a577f977a930169146512458cc187787d402fa1fd981d"
+hash = "a1003b622c70c3af730f51223e8709b4adced3925299b67401884ab22c68ae16"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 name = "Maxi's JourneyMap Cobblemon Minimap Icons"
 filename = "Maxi's-JM+CM_Pixel-U11.zip"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
