@@ -6,7 +6,7 @@ hash = "deba3bce4c64547551f2b3db7dc47b7825261f9ec8029ee4bd59cb06567593a3"
 
 [[files]]
 file = ".github/workflows/release.yml"
-hash = "4e590318a9598ef53b43fc7228269c467b57f7f4f6a6234f96e994d88fb1f11c"
+hash = "727d66f9d4fcf30c639d44eaebc454ae48ffa52496af519b790a0f9b45c9f115"
 
 [[files]]
 file = "README.md"
@@ -14909,3 +14909,11 @@ metafile = true
 file = "resourcepacks/rct-trainer-textures-plus.pw.toml"
 hash = "a958030f95997d32191ffd80d656314b86747c46adfb16a3a128389d6a3ff6c9"
 metafile = true
+
+[[files]]
+file = "scripts/__pycache__/packwiz_helper.cpython-312.pyc"
+hash = "83d56b2a6d10a170f8d78bf2d29a963041eb380d51b90e92328b319d76744e47"
+
+[[files]]
+file = "scripts/packwiz_helper.py"
+hash = "3e42b91b465ec288308c589130a977c7e0dd7fb41eb840e3567b89493c38a61a"
