@@ -5,3 +5,6 @@
 packwiz
 .cache/
 server-data/
+__pycache__/
+*.pyc
+
