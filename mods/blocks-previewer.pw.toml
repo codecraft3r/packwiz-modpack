@@ -1,0 +1,13 @@
+name = "Blocks Previewer"
+filename = "blocks_previewer-2.1.1+1.21.1-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/W5CWgTWa/versions/pxv8UEom/blocks_previewer-2.1.1%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "4f3ce1c932e887a73c98bb0b18609c5d9177dc1a7eeb731a4b4536d22f2d43ab481c35791cfa26b3d317e19823dac2e7a0cb5a7436fc30216c4de33afe83af0e"
+
+[update]
+[update.modrinth]
+mod-id = "W5CWgTWa"
+version = "pxv8UEom"

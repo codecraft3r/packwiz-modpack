@@ -1,0 +1,13 @@
+name = "Enchanting Infuser: Add Treasure Enchantments"
+filename = "enchanting-infuser-add-treasure-enchantements-1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/u0YIG3pi/versions/WHUxM5Fn/enchanting-infuser-add-treasure-enchantements-1.jar"
+hash-format = "sha512"
+hash = "73ece965b2d29bab7df9a462d3e45818f5326646b1fbfac1b01f65f71747f121265c1fde486b2d1712a8a3b5f554a5d11aba30b585d486ddcbfb557c6f906905"
+
+[update]
+[update.modrinth]
+mod-id = "u0YIG3pi"
+version = "WHUxM5Fn"

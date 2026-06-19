@@ -1,0 +1,11 @@
+{
+  "activePresetId": "3f22054f-70bd-496f-90c8-ec5e9f830c36",
+  "presets": [
+    {
+      "id": "3f22054f-70bd-496f-90c8-ec5e9f830c36",
+      "name": "Default",
+      "scope": "DEFAULT",
+      "worldIds": []
+    }
+  ]
+}

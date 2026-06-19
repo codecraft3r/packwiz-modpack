@@ -1,0 +1,13 @@
+name = "Mineable/Minable AllTheModium Ores"
+filename = "matmores-1.0-SNAPSHOT(3).jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/JJPckjHQ/versions/AiB3vdV1/matmores-1.0-SNAPSHOT%283%29.jar"
+hash-format = "sha512"
+hash = "443d9841dac6f766cf4ec06bdae4d70af4987716d9f0e44909a2313ea37600737d15d201dad77ebecb279e1a58ba267233e739dbf0bb18e84d0caeb2f63e439b"
+
+[update]
+[update.modrinth]
+mod-id = "JJPckjHQ"
+version = "AiB3vdV1"

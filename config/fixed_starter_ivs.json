@@ -1,0 +1,28 @@
+{
+  "simple": {
+    "value": 31,
+    "enabled": false
+  },
+  "range": {
+    "range": {
+      "first": 0,
+      "last": 31,
+      "step": 1
+    },
+    "enabled": false
+  },
+  "capped": {
+    "count": 0,
+    "leaveRolledPerfects": true,
+    "enabled": false
+  },
+  "granular": {
+    "values": {},
+    "enabled": true
+  },
+  "granularRange": {
+    "ranges": {},
+    "enabled": false
+  },
+  "debug": false
+}

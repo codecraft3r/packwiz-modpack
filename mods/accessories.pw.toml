@@ -3,11 +3,11 @@ filename = "accessories-neoforge-1.1.0-beta.53+1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "77d75c2e13cfdf56a45cdd29806c1c97c3d250fc"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/jtmvUHXj/versions/Fb55Fgjz/accessories-neoforge-1.1.0-beta.53%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "baafa9a5e48c17c243d45b6260095ffef2ad00e4e970aafc5b1ca9ab5f4a542b18b0fb35d4584318791edbaf00a3c44806f62062513d991383192aca4df27a07"
 
 [update]
-[update.curseforge]
-file-id = 7583320
-project-id = 938917
+[update.modrinth]
+mod-id = "jtmvUHXj"
+version = "Fb55Fgjz"

@@ -1,0 +1,13 @@
+name = "Tree Physics"
+filename = "treephysics-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AlVH5pr8/versions/UX7neoBL/treephysics-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "02aa2e1cadc8bd6760cd9c96911629221fb996cb1230a8ca41d863baef0f0fb6bf9d20763973045e71859fc0ad23e50cc919f4400d52f1770c9521c2963cadee"
+
+[update]
+[update.modrinth]
+mod-id = "AlVH5pr8"
+version = "UX7neoBL"

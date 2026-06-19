@@ -9,8 +9,8 @@
   "ignore_custom_unique_recipe_ids": false,
   "startup_error_gui": true,
   "startup_error_report_url": "",
-  "creative_mode_tab_icon": {},
-  "creative_mode_tab_name": null,
   "remove_slot_limit": false,
-  "default_max_stack_size": 0
+  "default_max_stack_size": 0,
+  "creative_mode_tab_icon": {},
+  "creative_mode_tab_name": null
 }

@@ -1,0 +1,18 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"numismaticsutils:portable_bank_terminal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"numismaticsutils:bank_meter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"irons_spellbooks:chained_book"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"irons_spellbooks:chronicle"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"legendarymonuments:arc_phone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"allthemodium:alloy_trident"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon_utility:defsilvercap"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon_utility:goldencap"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:sculk_catalyst"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:sculk"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon:exp_candy_xs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon:exp_candy_s"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon:exp_candy_xl"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simpletms:tm_expandingforce"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cobblemon:exp_candy_m"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

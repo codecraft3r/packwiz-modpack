@@ -1,0 +1,13 @@
+name = "Create: Numismatics Utils"
+filename = "numismaticsutils-2.1-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8kRKVjUw/versions/vc4iGddU/numismaticsutils-2.1-1.21.1.jar"
+hash-format = "sha512"
+hash = "2412f71aa7701908e74e8e9eed08018ec6374ff13d4a639083bb959ec91c87ca8ba9330465a97974b2a50d0c167c0d2151a1637d78efa5258398fb4c0ce1f4cc"
+
+[update]
+[update.modrinth]
+mod-id = "8kRKVjUw"
+version = "vc4iGddU"

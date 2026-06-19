@@ -9,14 +9,15 @@
   "log_recipe_debug": false,
   "log_skipped_tags": false,
   "log_erroring_recipes": true,
-  "log_erroring_parsed_recipes": true,
+  "log_erroring_parsed_recipes": false,
   "log_invalid_recipe_handlers": true,
   "log_skipped_plugins": true,
   "log_generated_data": false,
-  "log_event_error_stack_trace": true,
+  "log_event_error_stack_trace": false,
   "log_changes_in_chat": false,
   "strict_tags": false,
-  "always_capture_errors": true,
+  "always_capture_errors": false,
   "reload_on_file_save": false,
-  "kubedex_sound": "entity.experience_orb.pickup"
+  "kubedex_sound": "entity.experience_orb.pickup",
+  "open_uri_format": "vscode"
 }

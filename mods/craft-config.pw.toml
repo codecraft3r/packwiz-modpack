@@ -1,0 +1,13 @@
+name = "Craft Config Lib"
+filename = "craft_config-1.1.10+1.21.1-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/pqvUbuK1/versions/3nVsSQvm/craft_config-1.1.10%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "9dd594bce592a989297ef3f19b93c69cc5843e72c2d16d6c0f17acd8909d7ff770360114f79eb956f84bb422bc153df13c3d382829b5532ddffc94791154ff2d"
+
+[update]
+[update.modrinth]
+mod-id = "pqvUbuK1"
+version = "3nVsSQvm"

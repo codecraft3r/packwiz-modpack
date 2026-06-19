@@ -10,6 +10,7 @@ import urllib.request
 import urllib.parse
 import subprocess
 import tempfile
+import time
 
 # Default CurseForge API key (Prism Launcher developer key)
 DEFAULT_CF_KEY = "$2a$10$bLgCcQ5OthzW3wfKDVYx5.sn9FMaNu8aCLdLO5qFiclZ/UMODUXT."
@@ -131,6 +132,7 @@ def get_modrinth_project_sides(project_id):
     """Retrieves client/server side support for a Modrinth project with caching."""
     if project_id in PROJECT_SIDE_CACHE:
         return PROJECT_SIDE_CACHE[project_id]
+    time.sleep(0.35)
     url = f"https://api.modrinth.com/v2/project/{project_id}"
     headers = {
         "User-Agent": "packwiz-modpack-helper/1.0 (contact@codecraft3r.com)"
@@ -148,15 +150,7 @@ def get_modrinth_project_sides(project_id):
 
 def determine_side(filename, modrinth_data=None, cf_data=None):
     """Deduces the correct side based on hosting metadata and filename heuristics."""
-    # Start with Modrinth metadata if available
-    if modrinth_data and "project_id" in modrinth_data:
-        client_side, server_side = get_modrinth_project_sides(modrinth_data["project_id"])
-        if client_side == "unsupported":
-            return "server"
-        if server_side == "unsupported":
-            return "client"
-            
-    # Apply keyword heuristics for override / verification
+    # Apply keyword heuristics first to avoid hitting Modrinth API rate limits
     filename_lower = filename.lower()
     for kw in CLIENT_SIDE_KEYWORDS:
         if re.search(kw, filename_lower):
@@ -164,6 +158,14 @@ def determine_side(filename, modrinth_data=None, cf_data=None):
     for kw in SERVER_SIDE_KEYWORDS:
         if re.search(kw, filename_lower):
             return "server"
+            
+    # Fallback to Modrinth metadata if available
+    if modrinth_data and "project_id" in modrinth_data:
+        client_side, server_side = get_modrinth_project_sides(modrinth_data["project_id"])
+        if client_side == "unsupported":
+            return "server"
+        if server_side == "unsupported":
+            return "client"
             
     return "both"
 
@@ -219,8 +221,8 @@ def set_pw_toml_side(toml_path, side):
 def run_command(args, cwd=None):
     """Helper to run system commands."""
     try:
-        res = subprocess.run(args, cwd=cwd, capture_output=True, text=True, check=True)
-        return res.stdout.strip()
+        res = subprocess.run(args, cwd=cwd, capture_output=True, text=True, encoding='utf-8', errors='ignore', check=True)
+        return (res.stdout or '').strip()
     except subprocess.CalledProcessError as e:
         print(f"Command {' '.join(args)} failed with exit code {e.returncode}:", file=sys.stderr)
         print(e.stderr, file=sys.stderr)
@@ -270,8 +272,11 @@ def import_raw_files(source_dir, workspace_dir, cf_key):
     # Check for .minecraft structure
     scan_root = source_dir
     dot_minecraft = os.path.join(source_dir, ".minecraft")
+    minecraft = os.path.join(source_dir, "minecraft")
     if os.path.exists(dot_minecraft) and os.path.isdir(dot_minecraft):
         scan_root = dot_minecraft
+    elif os.path.exists(minecraft) and os.path.isdir(minecraft):
+        scan_root = minecraft
         
     for root, dirs, files in os.walk(scan_root):
         rel_dir = os.path.relpath(root, scan_root)
@@ -557,7 +562,7 @@ def main():
                         import_type = "modrinth"
                     elif "manifest.json" in names:
                         import_type = "curseforge"
-                    elif any("instance.cfg" in n or ".minecraft/" in n for n in names):
+                    elif any("instance.cfg" in n or ".minecraft/" in n or "minecraft/" in n for n in names):
                         import_type = "raw"
                     else:
                         # Default fallback

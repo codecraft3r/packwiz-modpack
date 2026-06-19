@@ -3,11 +3,11 @@ filename = "ae2wtlib-19.5.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "de72e7f4d8d9d29dbe7f8790644b32f6c5b9655f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/pNabrMMw/versions/y9YgjcrO/ae2wtlib-19.5.0.jar"
+hash-format = "sha512"
+hash = "627ce404fe1c9aeb5dc6452084b7e1473b6f27c6d2fd246452ff4c0aca0d738d7d6c0dbab5a4f8979d63cfa35b9ea6ad1872bdc3b35641ad0ad0ffe297220f32"
 
 [update]
-[update.curseforge]
-file-id = 8048692
-project-id = 459929
+[update.modrinth]
+mod-id = "pNabrMMw"
+version = "y9YgjcrO"

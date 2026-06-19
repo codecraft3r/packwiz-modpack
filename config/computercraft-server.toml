@@ -146,19 +146,19 @@ disabled_generic_methods = []
 	[[http.rules]]
 		#The wildcard "*" rule matches all remaining hosts.
 		host = "*"
+		#The maximum size (in bytes) that a computer can upload in a single request. This
+		#includes headers and POST text.
+		max_upload = 4194304
 		#Allow all non-denied hosts.
 		action = "allow"
+		#Enable use of the HTTP/SOCKS proxy if it is configured.
+		use_proxy = false
+		#The maximum size (in bytes) that a computer can send or receive in one websocket packet.
+		max_websocket_message = 131072
 		#The maximum size (in bytes) that a computer can download in a single request.
 		#Note that responses may receive more data than allowed, but this data will not
 		#be returned to the client.
 		max_download = 16777216
-		#The maximum size (in bytes) that a computer can upload in a single request. This
-		#includes headers and POST text.
-		max_upload = 4194304
-		#The maximum size (in bytes) that a computer can send or receive in one websocket packet.
-		max_websocket_message = 131072
-		#Enable use of the HTTP/SOCKS proxy if it is configured.
-		use_proxy = false
 
 #Various options relating to peripherals.
 [peripheral]
@@ -218,27 +218,33 @@ disabled_generic_methods = []
 
 	#Terminal size of computers.
 	[term_sizes.computer]
+		#Width of computer terminal
 		# Default: 51
 		# Range: 1 ~ 255
 		width = 51
+		#Height of computer terminal
 		# Default: 19
 		# Range: 1 ~ 255
 		height = 19
 
 	#Terminal size of pocket computers.
 	[term_sizes.pocket_computer]
+		#Width of pocket computer terminal
 		# Default: 26
 		# Range: 1 ~ 255
 		width = 26
+		#Height of pocket computer terminal
 		# Default: 20
 		# Range: 1 ~ 255
 		height = 20
 
 	#Maximum size of monitors (in blocks).
 	[term_sizes.monitor]
+		#Maximum width of monitors
 		# Default: 8
 		# Range: 1 ~ 32
 		width = 8
+		#Maximum height of monitors
 		# Default: 6
 		# Range: 1 ~ 32
 		height = 6

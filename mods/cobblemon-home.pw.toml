@@ -1,0 +1,13 @@
+name = "Cobblemon Home"
+filename = "cobblemon_home-neoforge-2.5.9.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/P2iNPNZD/versions/ANyo7oSV/cobblemon_home-neoforge-2.5.9.jar"
+hash-format = "sha512"
+hash = "b8a3cba06848585fd1a03a925610893947d49a5d532c8d35d244410bae9ca66bc0474091bee1f4ae3cdb716b1fcf0d0aa56b3cecde60d2e19d2fd9cdf31bc07f"
+
+[update]
+[update.modrinth]
+mod-id = "P2iNPNZD"
+version = "ANyo7oSV"

@@ -1,9 +1,9 @@
 {
   "cooldowns": {
-    "healButton": 5,
-    "pcButton": 5,
-    "cloudButton": 5,
-    "waystoneButton": 5,
+    "healButton": 1,
+    "pcButton": 1,
+    "cloudButton": 1,
+    "waystoneButton": 1,
     "pokedexButton": 1
   },
   "features": {

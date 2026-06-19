@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"aeroworks:gyroscope"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:flywheel"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
