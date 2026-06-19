@@ -887,7 +887,7 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+hash = "d3f09520e471a838e8bb567b0308ea3b504516813658c03dd2b87c5db415b16d"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"

@@ -1,12 +1,12 @@
 name = "Poiesis 2"
 author = "ATMTeam"
-version = "2.0.0"
+version = "2.0.1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "25770d7e5e4edf0461925bc9d104b93a8e2db273d37ad1a18e9cbe65567727ba"
+hash = "33285563ad3ab7da9b534892b436b2c68a83e944afad258b61550a3bff106f39"
 
 [versions]
 minecraft = "1.21.1"
