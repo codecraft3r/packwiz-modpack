@@ -1,6 +1,6 @@
 name = "Cobblemon Spawn Notification"
 filename = "spawnnotification-neoforge-1.7.3-2.3.0.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/LPuJjiQz/versions/c1PTZDb2/spawnnotification-neoforge-1.7.3-2.3.0.jar"
