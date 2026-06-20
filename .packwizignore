@@ -9,3 +9,5 @@ agents.md
 .gitignore
 .gitattributes
 .packwizignore
+scripts/
+.github/

@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/packwiz-update.yml"
-hash = "deba3bce4c64547551f2b3db7dc47b7825261f9ec8029ee4bd59cb06567593a3"
-
-[[files]]
-file = ".github/workflows/release.yml"
-hash = "727d66f9d4fcf30c639d44eaebc454ae48ffa52496af519b790a0f9b45c9f115"
-
-[[files]]
 file = "README.md"
 hash = "5b90652222632aeec64f2dbafba28bc7bbb42ef2f6d5f23d2bc1539a791ca0db"
 
@@ -1601,11 +1593,3 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "66f85f7c21c70440f919d91a96190854c9af6b50f2214153ea0ab0a5c949ccdc"
 metafile = true
-
-[[files]]
-file = "scripts/__pycache__/packwiz_helper.cpython-312.pyc"
-hash = "83d56b2a6d10a170f8d78bf2d29a963041eb380d51b90e92328b319d76744e47"
-
-[[files]]
-file = "scripts/packwiz_helper.py"
-hash = "5d52abe9b5b9c6c8ac12baafc97aaacf6dcb06b786f8a57aa4fb12bb408313b9"
