@@ -1,6 +1,6 @@
 name = "FTB Backups 3"
 filename = "ftb-backups-3-21.1.5.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"
