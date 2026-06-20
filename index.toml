@@ -1238,8 +1238,18 @@ hash = "a830f9e0393be04dd0a8a3a845b27e90cd34961887403c800e296182283d9c3e"
 metafile = true
 
 [[files]]
+file = "mods/ftb-backups-3.pw.toml"
+hash = "7b9448ef62fcfec4cd298c354676642161f51dcf047e465a6132a8ba672c81a2"
+metafile = true
+
+[[files]]
 file = "mods/ftb-chunks-forge.pw.toml"
 hash = "ca3a278d045987c9e013604465ebfca96c17ebb128b9a8cb4954204943d72309"
+metafile = true
+
+[[files]]
+file = "mods/ftb-essentials.pw.toml"
+hash = "dd65584149326a9215b365e82d699c3fd25c1167a2629fcb4b12d2994e97c620"
 metafile = true
 
 [[files]]
