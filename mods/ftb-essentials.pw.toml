@@ -1,6 +1,6 @@
 name = "FTB Essentials (Forge & Fabric)"
 filename = "ftb-essentials-neoforge-2101.1.9.jar"
-side = "server"
+side = "both"
 
 [download]
 hash-format = "sha1"
