@@ -11,3 +11,4 @@ agents.md
 .packwizignore
 scripts/
 .github/
+CHANGELOG.md
