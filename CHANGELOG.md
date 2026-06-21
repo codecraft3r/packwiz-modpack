@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.0.12] - 2026-06-20
+
+### Changed
+- Moved the **AllTheMons [Cobblemon]** resourcepack (`allthemons.pw.toml`) from `resourcepacks/` to `global_packs/required_resources/`.
+- Configured the **AllTheMons [Cobblemon]** resourcepack as client-only (`side = "client"`).
+
 ## [2.0.11] - 2026-06-20
 
 ### Added
