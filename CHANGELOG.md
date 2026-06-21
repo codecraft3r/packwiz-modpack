@@ -2,6 +2,14 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.0.9] - 2026-06-20
+
+### Added
+- Added the **FTB Chunks x Xaero's Compat** mod (`ftbxaerocompat`).
+
+### Changed
+- Changed the side of **FTB Essentials** from `server` to `both`.
+
 ## [2.0.8] - 2026-06-20
 
 ### Changed
