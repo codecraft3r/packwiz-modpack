@@ -1220,6 +1220,11 @@ hash = "d60c27ac7e5ede6e4edcbd2581f758f2f31506539970e3a0838039d847a6ebbe"
 metafile = true
 
 [[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
 file = "mods/flux-networks.pw.toml"
 hash = "ad8209e472d463c9fcd19ca708fcd9c1a4a1bc69c9f0ca22efeacb414e9ab7a8"
 metafile = true
@@ -1402,6 +1407,11 @@ metafile = true
 [[files]]
 file = "mods/mineableminable-allthemodium-ores.pw.toml"
 hash = "849b8b31cc9dec76924f94d3a9b14cf8b197b0fafbab46c7d8c723ba2dc97d9d"
+metafile = true
+
+[[files]]
+file = "mods/modernfix.pw.toml"
+hash = "983d6ab9d9a7d40031f1789f5ae018cccb889832ac8ce741df60a9d8e5f42817"
 metafile = true
 
 [[files]]
