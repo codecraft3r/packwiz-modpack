@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.0.11] - 2026-06-20
+
+### Added
+- Added the **ModernFix** mod (`modernfix.pw.toml`) with side `both`.
+- Added the **FerriteCore** mod (`ferrite-core.pw.toml`) with side `both`.
+
 ## [2.0.10] - 2026-06-20
 
 ### Added
