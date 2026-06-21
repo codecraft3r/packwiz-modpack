@@ -1,6 +1,16 @@
 # Changelog
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
+## [2.0.13] - 2026-06-20
+
+### Changed
+- [Iron's Spells and Spellbooks / Server] - Configuration update
+    - **Alchemical Cauldron:** Always return ink from scrolls
+    - **Upgrade Orbs:** Increase limit from 3 to 6
+    - **Respawn Logic:** Have players respawn with their mana bar at 50% instead of 0%
+- [Cobblemon / Server] - Spawn configuration update
+    - Increase `ultra-rare` spawning odds from 0.2 to 0.5
+    - Decrease `common` spawning odds from 94.3 to 94
 
 ## [2.0.12] - 2026-06-20
 

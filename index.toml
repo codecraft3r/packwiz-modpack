@@ -166,7 +166,7 @@ hash = "58dd7cc884fb79320bfffa73fceb81e3337280766063cd37d5404cacd01e309a"
 
 [[files]]
 file = "config/cobblemon/spawning/best-spawner-config.json"
-hash = "e1dfdd976a38f7314e1656a7ed85048c8a952cbecb737638da27c8d44d61ae6d"
+hash = "f603c461fb34fc13dc563f7e430c883150aff6d9d3510243dc5926b330fe9492"
 
 [[files]]
 file = "config/cobblemon/starters.json"
@@ -446,7 +446,7 @@ hash = "6beb668c942a607fd602e65ebec4281939eb0122c4fff02f01336bb47d257963"
 
 [[files]]
 file = "config/irons_spellbooks-server.toml"
-hash = "60433b671b895f0de388c1baa7aeb7c1dcd2dbd93622e0f3d7128b77daf8be11"
+hash = "af51b95c1b56a8c3ca69a3c4312c318b6514c1a649fafa8d583066cbc64c18f2"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/global_config.json"
