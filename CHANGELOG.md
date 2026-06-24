@@ -1,6 +1,16 @@
 # Changelog
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
+
+## [2.1.0] - 2026-06-23
+
+### Added
+- Added the **Burnt Basic** mod (`burnt-basic.pw.toml`) with side `both`.
+- Added the **Create Cardan Shafts** mod (`create-cardan-shafts.pw.toml`) with side `both`.
+- Added the **Farmer's Delight** mod (`farmers-delight.pw.toml`) with side `both`.
+- Added the **Potions Master** mod (`potionsmaster.pw.toml`) with side `both`.
+- Added the **Tom's Simple Storage Mod** mod (`toms-storage.pw.toml`) with side `both`.
+
 ## [2.0.13] - 2026-06-20
 
 ### Changed

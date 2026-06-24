@@ -995,6 +995,11 @@ hash = "db22b5cae71ed842e4075fe42b9d1132779b399b57817e64761f647b29ffe5c4"
 metafile = true
 
 [[files]]
+file = "mods/burnt-basic.pw.toml"
+hash = "44302c0b9c5e79066d77346140e933c9bda958326ffdf679df98987622b2d4e4"
+metafile = true
+
+[[files]]
 file = "mods/carry-on.pw.toml"
 hash = "1825b381fdc21403a4b1b1e99d277f8e00454b51d4afa94e7b415e0f66fd0cb2"
 metafile = true
@@ -1145,6 +1150,11 @@ hash = "d0c305800eeb81be81b3be00c975252628032f51541e06eaafd18d250b158455"
 metafile = true
 
 [[files]]
+file = "mods/create-cardan-shafts.pw.toml"
+hash = "b6885c1deebb96c592047334c24851f35c9c3308eb2b58babd091fee6d06e8aa"
+metafile = true
+
+[[files]]
 file = "mods/create-central-kitchen.pw.toml"
 hash = "125fa69ac8e6e85c9d27a0ec13e575c09312c6e5fd2f97613fbcc85a19775a13"
 metafile = true
@@ -1222,6 +1232,11 @@ metafile = true
 [[files]]
 file = "mods/exposure.pw.toml"
 hash = "d60c27ac7e5ede6e4edcbd2581f758f2f31506539970e3a0838039d847a6ebbe"
+metafile = true
+
+[[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "9aab64fbec4cc794817026caf84e7d0dff14ba3892da94aa0e00d23c84560499"
 metafile = true
 
 [[files]]
@@ -1460,6 +1475,11 @@ hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
+file = "mods/potionsmaster.pw.toml"
+hash = "a5cd72e2985163b0b98ca833d6cf07e6dd15e054b3b2d2aaa2ab524765d7a8fb"
+metafile = true
+
+[[files]]
 file = "mods/powah.pw.toml"
 hash = "e22a6c065ad1a5e90e387dcd4cc885abb0d70238b1f13eded633ce2f042237f5"
 metafile = true
@@ -1567,6 +1587,11 @@ metafile = true
 [[files]]
 file = "mods/the-roads-more-travelled.pw.toml"
 hash = "93ed0e00b8820e25d16eb8e6d508c0cefd07e59b4bb620d0bdc0bac7ed8cad0f"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "0f67fdb37d6ef354f36a1da5805b5c083be21e7367868ec81d29426d94749609"
 metafile = true
 
 [[files]]
