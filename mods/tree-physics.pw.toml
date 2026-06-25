@@ -3,11 +3,11 @@ filename = "treephysics-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/AlVH5pr8/versions/UX7neoBL/treephysics-neoforge-1.21.1.jar"
+url = "https://cdn.modrinth.com/data/AlVH5pr8/versions/lWSUJlHs/treephysics-neoforge-1.21.1.jar"
 hash-format = "sha512"
-hash = "02aa2e1cadc8bd6760cd9c96911629221fb996cb1230a8ca41d863baef0f0fb6bf9d20763973045e71859fc0ad23e50cc919f4400d52f1770c9521c2963cadee"
+hash = "f8258231138bbae51beb2ccb3e2ae28c8020ac30c433a5baf6be3c158c8a04af84fbe5ec3fb061d7fbf3ad72b86e07715b0e1abea4c79be4a60bd5df0099f968"
 
 [update]
 [update.modrinth]
 mod-id = "AlVH5pr8"
-version = "UX7neoBL"
+version = "lWSUJlHs"

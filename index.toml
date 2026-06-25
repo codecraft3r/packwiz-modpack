@@ -1596,7 +1596,7 @@ metafile = true
 
 [[files]]
 file = "mods/tree-physics.pw.toml"
-hash = "8856752a5c8cec2922d384569de3f0117fa8ec59aa5e50469bcdb58991fc7e7c"
+hash = "1b7680323cbe0c27213606416ad85687fc5d77d3770913c1e3c380d31d54bed6"
 metafile = true
 
 [[files]]
