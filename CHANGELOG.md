@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.2.0] - 2026-06-25
+
+### Changed
+- Updated the **Tree Physics** mod (`tree-physics.pw.toml`) to the latest version `neoforge-2.2` (`lWSUJlHs`).
+- Verified that the **Sable** library mod and other dependencies are at their latest versions.
+
 ## [2.1.0] - 2026-06-23
 
 ### Added
