@@ -2,6 +2,11 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.2.1] - 2026-06-26
+
+### Added
+- Added the **Cubes Without Borders** mod (`cubes-without-borders.pw.toml`) with side `client`.
+
 ## [2.2.0] - 2026-06-25
 
 ### Changed
