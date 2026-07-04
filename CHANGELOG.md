@@ -2,6 +2,11 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.2.2] - 2026-07-04
+
+### Added
+- Added the **E19 - Cobblemon Minimap Icons** resourcepack (`e19_cobblemon_minimap_icons.pw.toml`) with side `client`.
+
 ## [2.2.1] - 2026-06-26
 
 ### Added
