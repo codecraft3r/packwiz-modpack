@@ -409,6 +409,26 @@ file = "config/ftblibrary-client.snbt"
 hash = "79261c26a2fd6ba3ee6b96ae3ae59587e334558037a4f62d701cf4af0826ea0f"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/a_blank_page.snbt"
+hash = "29f2daf29358048cc471bd9f3905eb1e3304cec4bcc825ebfce2c442e22569e0"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "6c162eb1945f59c6db2aacbfc2be44e5685981d0e3e9cd821f62c756cc8bf608"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us.snbt"
+hash = "1068388edb3bc1d9f15df9976969a51804ce3b422cee249031b23d4b5bc14e5a"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E1000.snbt"
+hash = "805d6da33360862107ab15464b39acc0bba9cea93d689b6743b53fc3ef09bd8c"
+
+[[files]]
 file = "config/ftbteams-server.snbt"
 hash = "2ef5e2dca3a653ced3f3981a85a32832fb3716caa5fa05e233f50ab16044a2c4"
 
@@ -714,7 +734,7 @@ hash = "290f6b832794b6876aba9da963b585ba4e99e5e6a972aebb52810e9a256e2f65"
 
 [[files]]
 file = "config/starterkit/descriptions/p_default.txt"
-hash = "704fd01a3e53e78509bb7cb34466bd4809e7e6a75c18db9988a686973e577213"
+hash = "c0f1de010ce0b13ead261057c2cd798db8cb9dc4e757892376235a809df77560"
 
 [[files]]
 file = "config/starterkit/kits/inactive/Archer.txt"
@@ -734,7 +754,7 @@ hash = "acf56d3d8e4737cf8fc0be14eab977a9eb266a57e004ed2e67c7882a249a62bb"
 
 [[files]]
 file = "config/starterkit/kits/p_default.txt"
-hash = "e9fc20afd33860d97e95467262f9183d1c3261bc3c11a9736cc86da6635e260c"
+hash = "da5d3bdcba9700671e9f06e4015fc449999b797caaacf7de388e751241be4638"
 
 [[files]]
 file = "config/tempad-client.jsonc"

@@ -1,0 +1,123 @@
+{
+	file.0000000000000001.title: "Poiesis: The Living Atlas"
+	chapter.1A0B1A4E5A9E0000.title: "00 · A Blank Page"
+	reward_table.1A0B1A4E5A9E1000.title: "Choose Tonight's Lens"
+
+	quest.1A0B1A4E5A9E0001.quest_desc: [
+		"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
+		"&6&lTHE INK IS READY. PROBABLY."
+		""
+		"&fYour field notes are complete and your witness has signed off. Click the checkmark below to stamp the first page before it develops legs."
+		""
+		"&eThen claim both rewards:"
+		"&f- &62 Bevels &7(16 Spurs; finite, one-time spending money)"
+		"&f- &d1 expedition lens &7(a silly cosmetic badge with no combat power)"
+		""
+		"&8If the page bites, notify management. Management is a Slowpoke."
+	]
+	quest.1A0B1A4E5A9E0001.quest_subtitle: "Three field notes in. One dramatic stamp out."
+	quest.1A0B1A4E5A9E0001.title: "&6&lSTAMP THE FIRST PAGE"
+
+	quest.1A0B1A4E5A9E0002.quest_desc: [
+		"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
+		"&e&lWELCOME, TINY CARTOGRAPHER"
+		""
+		"&fThis is a one-session expedition. You can do the three field routes in any order after clicking the checkmark below."
+		""
+		"&b1. &fCatch two wild Pokemon."
+		"&b2. &fStart one Cobblemon battle. The task ticks when the opening bell rings; winning is optional."
+		"&b3. &fReturn near world spawn with another real player and both click your own rally checkmark."
+		""
+		"&aGreen/checkmarked nodes are done. &7Dark nodes are waiting on a dependency. Follow the lines toward the big map."
+		""
+		"&8Estimated time: 30-60 minutes. Estimated dignity retained: variable."
+	]
+	quest.1A0B1A4E5A9E0002.quest_subtitle: "Read this once; become 73% less lost."
+	quest.1A0B1A4E5A9E0002.title: "&e&lSTART HERE: Read Me, Tiny Cartographer"
+
+	quest.1A0B1A4E5A9E0003.quest_desc: [
+		"{image:cobblemon:textures/item/poke_balls/poke_ball.png width:48 height:48 align:center}"
+		"&c&lACQUIRE TWO WEIRD LITTLE GUYS"
+		""
+		"&fCatch &e2 wild Pokemon&f. Any species and any ordinary Poke Ball count. The task reads Cobblemon's built-in lifetime capture statistic and updates automatically."
+		""
+		"&7Already caught some this season? Excellent. The Atlas respects prior paperwork and may complete this immediately."
+		""
+		"&8Please do not lick the Poke Balls. This warning exists because of an incident."
+	]
+	quest.1A0B1A4E5A9E0003.quest_subtitle: "Any two catches. No rarity contest. No grind ladder."
+	quest.1A0B1A4E5A9E0003.title: "&c&lCATCH 2: Pocket-Sized Research"
+
+	quest.1A0B1A4E5A9E0004.quest_desc: [
+		"{image:cobblemon:textures/gui/battle/battle_menu_fight.png width:64 height:32 align:center fit:true}"
+		"&b&lENTER ONE RESPECTFUL ARGUMENT"
+		""
+		"&fStart &e1 Cobblemon battle&f. Wild, NPC, or player battles are all fair game. This built-in statistic ticks when the battle starts; you do &nnot&r&f need to win."
+		""
+		"&aWhy participation counts:&f this is an icebreaker, not an arms race. A veteran cannot farm newer players for a better reward."
+		""
+		"&8Shake hands afterward. Pokemon may substitute a threatening chirp."
+	]
+	quest.1A0B1A4E5A9E0004.quest_subtitle: "Enter a battle. Victory is emotionally optional."
+	quest.1A0B1A4E5A9E0004.title: "&b&lSTART 1: A Polite Little Battle"
+
+	quest.1A0B1A4E5A9E0005.quest_desc: [
+		"{image:minecraft:textures/block/amethyst_cluster.png width:48 height:48 align:center}"
+		"&d&lBRING A WITNESS"
+		""
+		"&fMeet another non-spectator player near &eworld spawn / the Atlas archive&f. Stand together, perform whatever solemn ceremony feels appropriate, then &aclick the checkmark below&f."
+		""
+		"&6Important:&f this is intentionally an honor-system checkmark. If you arrived together, the page trusts you. A bold choice for a haunted book."
+		""
+		"&7Each player completes this step for their own personal FTB team. Late joiners are never locked out."
+		""
+		"&8Approved ceremonies include jumping, crouching, spinning, and saying 'behold, paperwork.'"
+	]
+	quest.1A0B1A4E5A9E0005.quest_subtitle: "Meet at spawn, then click. The book trusts you. Terrifying."
+	quest.1A0B1A4E5A9E0005.title: "&d&lMEET A BUDDY: Sign the Clause"
+
+	quest.1A0B1A4E5A9E0006.quest_desc: [
+		"{image:minecraft:textures/item/spyglass.png width:48 height:48 align:center}"
+		"&e&lBUTTONS! TERRIFYING!"
+		""
+		"&f- Open FTB Quests from the &ebook icon in your inventory&f."
+		"&f- Hover the &eleft edge&f to reveal chapters; pin it if it keeps fleeing."
+		"&f- Drag empty space to pan. Hold &eCtrl + mouse wheel&f to zoom."
+		"&f- Stat tasks complete automatically. A square tickbox means &eclick it yourself&f."
+		"&f- Finished quests can have unclaimed rewards. Open them and click every reward icon."
+		"&f- The lens reward asks you to choose exactly one role. They are equal-power cosmetics."
+		""
+		"&7This help node is optional. Click its checkmark when your fear of interfaces has subsided."
+	]
+	quest.1A0B1A4E5A9E0006.quest_subtitle: "A tiny manual for the violently curious."
+	quest.1A0B1A4E5A9E0006.title: "&eHOW TO USE THIS SILLY BOOK"
+
+	quest.1A0B1A4E5A9E0007.quest_desc: [
+		"{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}"
+		"&a&lNOW CAUSE PROBLEMS (COOPERATIVELY)"
+		""
+		"&fYou finished Session 00. Spend your Spurs on the path you actually enjoy: Pokemon, magic, machinery, building, or something deeply inadvisable."
+		""
+		"&bSuggested afterparty:&f show off your two catches, hold a tiny exhibition bracket, or help a late arrival finish their page. Bragging rights are permitted. Power prizes are not."
+		""
+		"&6Your lens is a roleplay prompt, not a class lock:&f"
+		"&cTrainer &7- bring a battle idea"
+		"&dArcanist &7- bring a magical complication"
+		"&6Engineer &7- bring an unnecessarily elaborate machine"
+		"&aScout &7- bring a place everyone should see"
+		""
+		"&8Click the checkmark when you have selected your preferred flavor of nonsense."
+	]
+	quest.1A0B1A4E5A9E0007.quest_subtitle: "The tutorial is over. The consequences begin."
+	quest.1A0B1A4E5A9E0007.title: "&aSession 00 Afterparty"
+
+	reward.1A0B1A4E5A9E0021.title: "&6Field Grant - 16 Spurs"
+	reward.1A0B1A4E5A9E0022.title: "&dChoose Your Expedition Lens"
+	task.1A0B1A4E5A9E0011.title: "Catch Two Wild Pokemon"
+	task.1A0B1A4E5A9E0012.title: "Start One Cobblemon Battle"
+	task.1A0B1A4E5A9E0013.title: "We Met at the Atlas - Sign Here"
+	task.1A0B1A4E5A9E0014.title: "I Read the Tiny Briefing"
+	task.1A0B1A4E5A9E0015.title: "STAMP IT"
+	task.1A0B1A4E5A9E0016.title: "I Now Understand Buttons"
+	task.1A0B1A4E5A9E0017.title: "I Chose My Flavor of Nonsense"
+}
