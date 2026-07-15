@@ -409,6 +409,38 @@ file = "config/ftblibrary-client.snbt"
 hash = "79261c26a2fd6ba3ee6b96ae3ae59587e334558037a4f62d701cf4af0826ea0f"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/a_blank_page.snbt"
+hash = "e8d6e4c433ec0a13178744ce9a1452b72bc84fe951c2c0555357ee1cecc30567"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "6c162eb1945f59c6db2aacbfc2be44e5685981d0e3e9cd821f62c756cc8bf608"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapter.snbt"
+hash = "882fba0689ffd72fb04bd142aca480f392289b95fe7902ffa3e1bf90d11b9a48"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/chapters/a_blank_page.snbt"
+hash = "2b64e3002ce388dd867581680b78a7df989c77d60b6d603c184fff029bd2dca8"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/file.snbt"
+hash = "d5cbcee5824b8db8725a2e0dba69f74f7935442dd6f867b980e81d7a5dba3a54"
+
+[[files]]
+file = "config/ftbquests/quests/lang/en_us/reward_table.snbt"
+hash = "d24fa31c51aa7cae3e483e9b47ae49a1b5abf14ccc6951bdc705bcc584321194"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E1000.snbt"
+hash = "805d6da33360862107ab15464b39acc0bba9cea93d689b6743b53fc3ef09bd8c"
+
+[[files]]
 file = "config/ftbteams-server.snbt"
 hash = "2ef5e2dca3a653ced3f3981a85a32832fb3716caa5fa05e233f50ab16044a2c4"
 
@@ -1277,6 +1309,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "5fb287ddb204cc2460dc51984099b0010462f781d00b2d6ed2a37046accf2560"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "d1cd2e49985872d923864aa44e4ff8b4d97e3ab9e78bf2c5fd57d2275a62901b"
 metafile = true
 
 [[files]]

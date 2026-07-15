@@ -1,0 +1,60 @@
+{
+	id: "1A0B1A4E5A9E1000"
+	loot_size: 1
+	order_index: 0
+	use_title: true
+	rewards: [
+		{
+			id: "1A0B1A4E5A9E1011"
+			item: {
+				components: {
+					"minecraft:custom_data": { poiesis_role: "trainer", poiesis_session: 0 }
+					"minecraft:custom_name": "{\"color\":\"red\",\"italic\":false,\"text\":\"Trainer Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "1A0B1A4E5A9E1012"
+			item: {
+				components: {
+					"minecraft:custom_data": { poiesis_role: "arcanist", poiesis_session: 0 }
+					"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Arcanist Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "1A0B1A4E5A9E1013"
+			item: {
+				components: {
+					"minecraft:custom_data": { poiesis_role: "engineer", poiesis_session: 0 }
+					"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Engineer Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "1A0B1A4E5A9E1014"
+			item: {
+				components: {
+					"minecraft:custom_data": { poiesis_role: "scout", poiesis_session: 0 }
+					"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Scout Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+	]
+}

@@ -1,0 +1,164 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "a_blank_page"
+	group: ""
+	icon: { id: "minecraft:filled_map" }
+	id: "1A0B1A4E5A9E0000"
+	images: [
+		{
+			height: 2.5d
+			image: "minecraft:textures/item/writable_book.png"
+			rotation: -8.0d
+			width: 2.5d
+			x: -5.0d
+			y: -1.25d
+		}
+		{
+			height: 2.25d
+			image: "cobblemon:textures/item/poke_balls/poke_ball.png"
+			rotation: 12.0d
+			width: 2.25d
+			x: -5.0d
+			y: 3.25d
+		}
+		{
+			height: 2.25d
+			image: "minecraft:textures/item/compass_16.png"
+			rotation: -10.0d
+			width: 2.25d
+			x: 5.0d
+			y: 3.25d
+		}
+		{
+			height: 2.5d
+			image: "minecraft:textures/block/amethyst_cluster.png"
+			rotation: 8.0d
+			width: 2.5d
+			x: 5.25d
+			y: 7.25d
+		}
+		{
+			height: 2.75d
+			image: "minecraft:textures/item/filled_map.png"
+			rotation: -6.0d
+			width: 2.75d
+			x: -5.25d
+			y: 7.25d
+		}
+	]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:writable_book" }
+			id: "1A0B1A4E5A9E0002"
+			min_width: 380
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{ id: "1A0B1A4E5A9E0014", type: "checkmark" }]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: { id: "minecraft:spyglass" }
+			id: "1A0B1A4E5A9E0006"
+			min_width: 360
+			optional: true
+			shape: "gear"
+			tasks: [{ id: "1A0B1A4E5A9E0016", type: "checkmark" }]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0002"]
+			icon: { id: "cobblemon:poke_ball" }
+			id: "1A0B1A4E5A9E0003"
+			min_width: 360
+			shape: "heart"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1A0B1A4E5A9E0011"
+					stat: "cobblemon:captured"
+					type: "stat"
+					value: 2
+				}
+			]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0002"]
+			icon: { id: "minecraft:iron_sword" }
+			id: "1A0B1A4E5A9E0004"
+			min_width: 360
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1A0B1A4E5A9E0012"
+					stat: "cobblemon:battles_total"
+					type: "stat"
+					value: 1
+				}
+			]
+			x: 0.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0002"]
+			icon: { id: "minecraft:amethyst_shard" }
+			id: "1A0B1A4E5A9E0005"
+			min_width: 360
+			shape: "heart"
+			size: 1.5d
+			tasks: [{ id: "1A0B1A4E5A9E0013", type: "checkmark" }]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1A0B1A4E5A9E0003"
+				"1A0B1A4E5A9E0004"
+				"1A0B1A4E5A9E0005"
+			]
+			icon: { id: "minecraft:filled_map" }
+			id: "1A0B1A4E5A9E0001"
+			min_width: 400
+			rewards: [
+				{
+					count: 2
+					id: "1A0B1A4E5A9E0021"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A0B1A4E5A9E0022"
+					table_id: 1876622593560023040L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{ id: "1A0B1A4E5A9E0015", type: "checkmark" }]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0001"]
+			icon: { id: "minecraft:firework_rocket" }
+			id: "1A0B1A4E5A9E0007"
+			min_width: 380
+			optional: true
+			shape: "octagon"
+			tasks: [{ id: "1A0B1A4E5A9E0017", type: "checkmark" }]
+			x: 0.0d
+			y: 10.0d
+		}
+	]
+}
