@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.3.0] - 2026-07-14
+
+### Added
+- Added the **FTB Quests** mod (`ftb-quests-forge.pw.toml`) with side `both`. Required for the Living Atlas quest system.
+- Imported **Living Atlas Quest 00 - A Blank Page** (`config/ftbquests/`): 1 chapter, 7 quests, 1 reward table. Server-side content only; clients receive quest data through FTB Quests sync.
+
 ## [2.2.2] - 2026-07-04
 
 ### Added
