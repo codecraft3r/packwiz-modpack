@@ -1,1 +1,1 @@
-You can edit this description in ./config/starterkit/description/p_default.txt!
+Your expedition kit contains food, Poke Balls, a phone, a bank terminal, and one suspiciously eager brown Quest Book. Open the book for Session 00: A Blank Page. Tiny paperwork. Real rewards.

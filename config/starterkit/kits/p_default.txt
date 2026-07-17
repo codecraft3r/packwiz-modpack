@@ -7,7 +7,7 @@
 1 : '',
 2 : '',
 3 : '',
-4 : '',
+4 : '{count:1,id:"ftbquests:book"}',
 5 : '{count:1,id:"numismaticsutils:portable_bank_terminal"}',
 6 : '{count:32,id:"minecraft:bread"}',
 7 : '{count:32,id:"cobblemon:poke_ball"}',

@@ -2,6 +2,17 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.3.1] - 2026-07-17
+
+### Added
+- Added **Living Atlas Quest 01 - The First Resonance**, a week-long chapter where players complete any three of five activity lenses for capped, choice-driven rewards.
+- Added the client-required **Living Atlas Art v1** resource pack for the chapter's original illustrated visuals.
+
+### Fixed
+- Restored the live-tested flat FTB Quests `lang/en_us.snbt` localization layout; the nested layout released in 2.3.0 loaded an empty translation table on FTB Quests 2101.1.27.
+- Restored the FTB Quest Book in the default StarterKit and its onboarding description.
+- Restored the tested Session 00 chapter layout and accurate Cobblemon battle-start wording.
+
 ## [2.3.0] - 2026-07-14
 
 ### Added
