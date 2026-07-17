@@ -434,7 +434,7 @@ hash = "805d6da33360862107ab15464b39acc0bba9cea93d689b6743b53fc3ef09bd8c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E2000.snbt"
-hash = "64d945b0038baab8ab03708386de5881fb9f3478376d6fb7c66b0522af95ae40"
+hash = "0de1c5f90d97e4b8e11baa545f08adbb2d77e4cac456ab557698821733760786"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
@@ -889,7 +889,7 @@ metafile = true
 
 [[files]]
 file = "global_packs/required_resources/poiesis_living_atlas_art.pw.toml"
-hash = "6d9934c5b56137117a60fb0b8a918f64f9e84d838600a25c0c577ee205647bc0"
+hash = "67a741424f5abe40cc0997c4ec39107a72a0cde86291906da4c603d2e203cc08"
 metafile = true
 
 [[files]]

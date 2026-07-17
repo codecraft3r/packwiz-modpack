@@ -18,7 +18,7 @@
 		}
 		{
 			id: "1A0B1A4E5A9E2014"
-			item: { count: 1, id: "explorerscompass:explorers_compass" }
+			item: { count: 1, id: "explorerscompass:explorerscompass" }
 		}
 	]
 }

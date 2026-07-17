@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.3.2] - 2026-07-17
+
+### Fixed
+- Corrected the Explorer's Compass choice reward to use the mod's registered item ID.
+- Repacked the required Living Atlas Art resource pack with valid forward-slash asset paths so both custom quest images load.
+
 ## [2.3.1] - 2026-07-17
 
 ### Added
