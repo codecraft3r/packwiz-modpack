@@ -1,0 +1,24 @@
+{
+	id: "1A0B1A4E5A9E2000"
+	loot_size: 1
+	order_index: 0
+	use_title: true
+	rewards: [
+		{
+			id: "1A0B1A4E5A9E2011"
+			item: { count: 12, id: "cobblemon:poke_ball" }
+		}
+		{
+			id: "1A0B1A4E5A9E2012"
+			item: { count: 12, id: "irons_spellbooks:arcane_essence" }
+		}
+		{
+			id: "1A0B1A4E5A9E2013"
+			item: { count: 8, id: "create:andesite_alloy" }
+		}
+		{
+			id: "1A0B1A4E5A9E2014"
+			item: { count: 1, id: "explorerscompass:explorers_compass" }
+		}
+	]
+}

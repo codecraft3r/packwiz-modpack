@@ -1,0 +1,342 @@
+{
+	autofocus_id: "1A0B1A4E5A9E0101"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "first_resonance"
+	group: ""
+	icon: { id: "minecraft:amethyst_shard" }
+	id: "1A0B1A4E5A9E0100"
+	images: [
+		{
+			alpha: 80
+			height: 8.6d
+			image: "poiesis:textures/questpics/first_resonance_key_art.png"
+			order: -40
+			rotation: 0.0d
+			width: 6.8d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			alpha: 110
+			height: 2.6d
+			image: "poiesis:textures/questpics/resonance_specimen_sheet.png"
+			order: -30
+			rotation: -4.0d
+			width: 2.6d
+			x: -6.0d
+			y: 3.7d
+		}
+	]
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:writable_book" }
+			id: "1A0B1A4E5A9E0101"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [{ id: "1A0B1A4E5A9E0111", type: "checkmark" }]
+			x: 0.0d
+			y: -4.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0101"]
+			icon: { id: "cobblemon:poke_ball" }
+			id: "1A0B1A4E5A9E0102"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0211"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "star", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Star-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The sky remembers every gentle capture.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0212"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "1A0B1A4E5A9E0121"
+					stat: "cobblemon:captured"
+					type: "stat"
+					value: 5
+				}
+				{
+					id: "1A0B1A4E5A9E0122"
+					stat: "cobblemon:battles_total"
+					type: "stat"
+					value: 3
+				}
+			]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0101"]
+			icon: { id: "irons_spellbooks:arcane_essence" }
+			id: "1A0B1A4E5A9E0103"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0231"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "cinder", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Cinder-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A quiet spark, carefully not set loose.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0232"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					count: 8
+					id: "1A0B1A4E5A9E0131"
+					item: { count: 1, id: "irons_spellbooks:arcane_essence" }
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A0B1A4E5A9E0132"
+					item: { count: 1, id: "minecraft:amethyst_shard" }
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0101"]
+			icon: { id: "create:andesite_alloy" }
+			id: "1A0B1A4E5A9E0104"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0251"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "brass", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Brass-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A machine is a spell that admits its gears.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0252"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					count: 8
+					id: "1A0B1A4E5A9E0141"
+					item: { count: 1, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A0B1A4E5A9E0142"
+					item: { count: 1, id: "create:cogwheel" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0101"]
+			icon: { id: "minecraft:filled_map" }
+			id: "1A0B1A4E5A9E0105"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0271"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "root", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Root-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The road was there before the map admitted it.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0272"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "heart"
+			size: 1.25d
+			tasks: [
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0151"
+					item: { count: 1, id: "minecraft:filled_map" }
+					type: "item"
+				}
+				{
+					count: 12
+					id: "1A0B1A4E5A9E0152"
+					item: { count: 1, id: "minecraft:amethyst_shard" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0101"]
+			icon: { id: "minecraft:amethyst_cluster" }
+			id: "1A0B1A4E5A9E0106"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0291"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "chorus", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"dark_aqua\",\"italic\":false,\"text\":\"Chorus-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A victory sounds better with witnesses.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0292"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "1A0B1A4E5A9E0161"
+					stat: "cobblemon:battles_total"
+					type: "stat"
+					value: 5
+				}
+				{ id: "1A0B1A4E5A9E0162", type: "checkmark" }
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1A0B1A4E5A9E0102"
+				"1A0B1A4E5A9E0103"
+				"1A0B1A4E5A9E0104"
+				"1A0B1A4E5A9E0105"
+				"1A0B1A4E5A9E0106"
+			]
+			icon: { id: "minecraft:amethyst_shard" }
+			id: "1A0B1A4E5A9E0107"
+			min_required_dependencies: 3
+			min_width: 300
+			rewards: [
+				{
+					count: 2
+					id: "1A0B1A4E5A9E02A1"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1A0B1A4E5A9E02A2"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_folio: "first_resonance", poiesis_session: 1 }
+							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Resonant Folio\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Three lenses, one page, no singular hero.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A0B1A4E5A9E02A3"
+					table_id: 1876622593560027136L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{ id: "1A0B1A4E5A9E0171", type: "checkmark" }]
+			x: 0.0d
+			y: 3.4d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0107"]
+			icon: { id: "minecraft:firework_star" }
+			id: "1A0B1A4E5A9E0108"
+			min_width: 270
+			optional: true
+			shape: "octagon"
+			size: 1.2d
+			tasks: [{ id: "1A0B1A4E5A9E0181", type: "checkmark" }]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}
