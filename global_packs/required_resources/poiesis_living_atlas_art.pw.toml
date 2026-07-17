@@ -1,0 +1,8 @@
+name = "Poiesis Living Atlas Art"
+filename = "poiesis-living-atlas-art-v1.zip"
+side = "client"
+
+[download]
+url = "https://github.com/codecraft3r/packwiz-modpack/releases/download/living-atlas-art-v1/poiesis-living-atlas-art-v1.zip"
+hash-format = "sha256"
+hash = "7a9ef7f96e56777dd5a98d2526d197e8b4a029c4eca77fbedc92010ffb2a6a0d"

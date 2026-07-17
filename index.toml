@@ -417,16 +417,24 @@ file = "config/ftbquests/quests/chapters/a_blank_page.snbt"
 hash = "29f2daf29358048cc471bd9f3905eb1e3304cec4bcc825ebfce2c442e22569e0"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/first_resonance.snbt"
+hash = "5b7fa18fd4d19151060cd1128990a815e5b5f2cdb999878f854fd91e7280d362"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "6c162eb1945f59c6db2aacbfc2be44e5685981d0e3e9cd821f62c756cc8bf608"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "1068388edb3bc1d9f15df9976969a51804ce3b422cee249031b23d4b5bc14e5a"
+hash = "6692797a8b37d3214582e2b2e7c6529b698aa5b9361d587fffc3745a00c3baaa"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E1000.snbt"
 hash = "805d6da33360862107ab15464b39acc0bba9cea93d689b6743b53fc3ef09bd8c"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E2000.snbt"
+hash = "64d945b0038baab8ab03708386de5881fb9f3478376d6fb7c66b0522af95ae40"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
@@ -877,6 +885,11 @@ metafile = true
 [[files]]
 file = "global_packs/required_resources/e19_cobblemon_minimap_icons.pw.toml"
 hash = "224356816f38b00457a54268435fc051f03b8f649cf9df099c676e5641f9b57f"
+metafile = true
+
+[[files]]
+file = "global_packs/required_resources/poiesis_living_atlas_art.pw.toml"
+hash = "6d9934c5b56137117a60fb0b8a918f64f9e84d838600a25c0c577ee205647bc0"
 metafile = true
 
 [[files]]

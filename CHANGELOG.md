@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.2.3] - 2026-07-17
+
+### Added
+- Added **Living Atlas: Quest 01 — The First Resonance**, a week-long, three-of-five-lenses FTB Quests chapter with capped rewards and no gameplay scripts.
+- Added the client-required **Living Atlas Art v1** resource pack for Quest 01's illustrated chapter visuals.
+
 ## [2.2.2] - 2026-07-04
 
 ### Added

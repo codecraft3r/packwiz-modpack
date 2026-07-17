@@ -120,4 +120,146 @@
 	task.1A0B1A4E5A9E0015.title: "STAMP IT"
 	task.1A0B1A4E5A9E0016.title: "I Now Understand Buttons"
 	task.1A0B1A4E5A9E0017.title: "I Chose My Flavor of Nonsense"
+
+	chapter.1A0B1A4E5A9E0100.title: "01 Ã‚Â· The First Resonance"
+	reward_table.1A0B1A4E5A9E2000.title: "Choose a Practical Favor"
+
+	quest.1A0B1A4E5A9E0101.quest_desc: [
+		"{image:poiesis:textures/questpics/first_resonance_key_art.png width:176 height:220 align:center}"
+		"&6&lTHE FIRST RESONANCE"
+		""
+		"&fThe Atlas has stopped pretending it is an ordinary book. For one week it is listening for &eany three&f kinds of fieldwork."
+		""
+		"&7Pick the lenses that sound fun. Catch things. Make something. Go somewhere. Do a little magic. Join a raid. There is no best route and no bonus for trying to speedrun all five before lunch."
+		""
+		"&dYour field marks are personal and one-time.&f The server's wider celebration happens when enough different people leave their own marks."
+		""
+		"&8A note in the margin reads: 'Please do not tune the book with a hammer.'"
+	]
+	quest.1A0B1A4E5A9E0101.quest_subtitle: "Choose any three lenses. Let someone else be good at the other things."
+	quest.1A0B1A4E5A9E0101.title: "&6&lOPEN THE RESONANCE PAGE"
+
+	quest.1A0B1A4E5A9E0102.quest_desc: [
+		"{image:cobblemon:textures/item/poke_balls/poke_ball.png width:48 height:48 align:center}"
+		"&b&lSTAR-LENS: LITTLE CONSTELLATIONS"
+		""
+		"&fCatch &e5 PokÃ©mon&f and begin &e3 Cobblemon battles&f. The Atlas does not grade species, rarity, win rate, IVs, or the emotional intensity of your nickname choices."
+		""
+		"&7These are lifetime statistics, so experienced trainers may finish immediately. That is intentional: the reward is a capped field mark, not a lead over anyone else."
+		""
+		"&8The illustrated star chart has one suspiciously round constellation labelled only 'friend-shaped.'"
+	]
+	quest.1A0B1A4E5A9E0102.quest_subtitle: "Capture five. Start three arguments. Keep the notes friendly."
+	quest.1A0B1A4E5A9E0102.title: "&b&lSTAR-LENS: CATCH & BATTLE"
+
+	quest.1A0B1A4E5A9E0103.quest_desc: [
+		"{image:irons_spellbooks:textures/item/arcane_essence.png width:48 height:48 align:center}"
+		"&d&lCINDER-LENS: A QUIET SPARK"
+		""
+		"&fCarry &e8 Arcane Essence&f and &e8 Amethyst Shards&f. The book is checking your inventory only; it will not eat your reagents."
+		""
+		"&7This is a modest signal that you have touched the magic side of the pack. Find, craft, trade, or receive help with itâ€”there is no purity test and no demand for a particular spell build."
+		""
+		"&8Do not store the smoke in a jar. The last scholar who did this is technically still arguing with it."
+	]
+	quest.1A0B1A4E5A9E0103.quest_subtitle: "Bring a small reagent bundle. Keep every finger you arrived with."
+	quest.1A0B1A4E5A9E0103.title: "&d&lCINDER-LENS: ARCANE REAGENTS"
+
+	quest.1A0B1A4E5A9E0104.quest_desc: [
+		"{image:create:textures/item/andesite_alloy.png width:48 height:48 align:center}"
+		"&6&lBRASS-LENS: REMEMBERED MOTION"
+		""
+		"&fCarry &e8 Andesite Alloy&f and &e4 Cogwheels&f. Nothing is consumed. The Atlas just wants proof that you have taught stone and metal to cooperate."
+		""
+		"&7A starter machine, a half-built belt line, or a gloriously unnecessary crank all count in spirit. This is an invitation into Create, not a factory inspection."
+		""
+		"&8The book's tiny gear drawing rotates when nobody is looking. Probably a printing defect."
+	]
+	quest.1A0B1A4E5A9E0104.quest_subtitle: "A little alloy. A few gears. One future maintenance problem."
+	quest.1A0B1A4E5A9E0104.title: "&6&lBRASS-LENS: CALIBRATE A MACHINE"
+
+	quest.1A0B1A4E5A9E0105.quest_desc: [
+		"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
+		"&a&lROOT-LENS: THE ROAD REMEMBERS"
+		""
+		"&fBring back one &eFilled Map&f and &e12 Amethyst Shards&f. The map must have actually been used; a blank one is a promise, not a field note."
+		""
+		"&7Anywhere is valid. Follow a river, find a view, mark a base route, visit a biome you have never seen, or map the inconvenient hill that keeps catching people on the way home."
+		""
+		"&8The Atlas deeply respects a map containing only the words 'probably bees.'"
+	]
+	quest.1A0B1A4E5A9E0105.quest_subtitle: "Use a map. Find a place. Make the world feel larger."
+	quest.1A0B1A4E5A9E0105.title: "&a&lROOT-LENS: MAKE A FIELD MAP"
+
+	quest.1A0B1A4E5A9E0106.quest_desc: [
+		"{image:minecraft:textures/block/amethyst_cluster.png width:48 height:48 align:center}"
+		"&3&lCHORUS-LENS: A VICTORY WITH WITNESSES"
+		""
+		"&fBegin &e5 Cobblemon battles&f, then tick the second task after you have joined or hosted a Raid Den outing with at least one other person."
+		""
+		"&7The battles are automatic. The raid check is deliberately trust-based because the interesting part is not the server log; it is having an excuse to show up for somebody else's strange plan."
+		""
+		"&8If the raid goes badly, record the disaster accurately. Future scholars deserve the warning."
+	]
+	quest.1A0B1A4E5A9E0106.quest_subtitle: "Five battles and one shared Raid Den story."
+	quest.1A0B1A4E5A9E0106.title: "&3&lCHORUS-LENS: RAID WITH COMPANY"
+
+	quest.1A0B1A4E5A9E0107.quest_desc: [
+		"{image:poiesis:textures/questpics/resonance_specimen_sheet.png width:156 height:156 align:center}"
+		"&6&lRESOLVE THE FIRST RESONANCE"
+		""
+		"&fComplete &eany 3 of the 5 lenses&f, then stamp this page. The Atlas needs different kinds of work, not one player doing every job."
+		""
+		"&dYour rewards:&f"
+		"&f- &62 Bevels&7, a small flexible grant"
+		"&f- &eResonant Folio&7, a non-power keepsake"
+		"&f- &bOne practical favor&7: PokÃ© Balls, Arcane Essence, Andesite Alloy, or an Explorer's Compass"
+		""
+		"&7The host may announce the server's shared page-opening when the group reaches 12 total lens completions. This chapter intentionally keeps that moment social rather than secretly automating it."
+		""
+		"&8Four specimens. Three marks. One book that is trying very hard not to glow."
+	]
+	quest.1A0B1A4E5A9E0107.quest_subtitle: "Any three lenses. One useful favor. No single hero required."
+	quest.1A0B1A4E5A9E0107.title: "&6&lTHE FIRST RESONANCE"
+
+	quest.1A0B1A4E5A9E0108.quest_desc: [
+		"{image:minecraft:textures/item/firework_star.png width:48 height:48 align:center}"
+		"&e&lAFTER THE GLOW"
+		""
+		"&fYou have resolved your own page. If you have time this week, the nicest possible next move is helping a late player find a lens that suits them."
+		""
+		"&7Trainer, mage, maker, scout, and raid companion are not classes. They are invitations to make the next server story slightly more interesting."
+		""
+		"&8The Atlas has begun drafting a second page in suspiciously enthusiastic handwriting."
+	]
+	quest.1A0B1A4E5A9E0108.quest_subtitle: "Your mark is in. Make room for another."
+	quest.1A0B1A4E5A9E0108.title: "&e&lLEAVE THE MARGIN WARM"
+
+	reward.1A0B1A4E5A9E0211.title: "&bStar-Lens Field Mark"
+	reward.1A0B1A4E5A9E0212.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0231.title: "&dCinder-Lens Field Mark"
+	reward.1A0B1A4E5A9E0232.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0251.title: "&6Brass-Lens Field Mark"
+	reward.1A0B1A4E5A9E0252.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0271.title: "&aRoot-Lens Field Mark"
+	reward.1A0B1A4E5A9E0272.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0291.title: "&3Chorus-Lens Field Mark"
+	reward.1A0B1A4E5A9E0292.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E02A1.title: "&6Atlas Grant â€” 2 Bevels"
+	reward.1A0B1A4E5A9E02A2.title: "&eResonant Folio"
+	reward.1A0B1A4E5A9E02A3.title: "&bChoose a Practical Favor"
+
+	task.1A0B1A4E5A9E0111.title: "I Am Ready to Leave a Mark"
+	task.1A0B1A4E5A9E0121.title: "Catch 5 PokÃ©mon"
+	task.1A0B1A4E5A9E0122.title: "Start 3 Cobblemon Battles"
+	task.1A0B1A4E5A9E0131.title: "Carry 8 Arcane Essence"
+	task.1A0B1A4E5A9E0132.title: "Carry 8 Amethyst Shards"
+	task.1A0B1A4E5A9E0141.title: "Carry 8 Andesite Alloy"
+	task.1A0B1A4E5A9E0142.title: "Carry 4 Cogwheels"
+	task.1A0B1A4E5A9E0151.title: "Carry One Used Map"
+	task.1A0B1A4E5A9E0152.title: "Carry 12 Amethyst Shards"
+	task.1A0B1A4E5A9E0161.title: "Start 5 Cobblemon Battles"
+	task.1A0B1A4E5A9E0162.title: "I Joined or Hosted a Raid Den Outing"
+	task.1A0B1A4E5A9E0171.title: "I Am Ready to Resolve My Page"
+	task.1A0B1A4E5A9E0181.title: "I Will Help Keep the Page Warm"
 }
