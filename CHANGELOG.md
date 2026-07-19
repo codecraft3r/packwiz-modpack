@@ -2,6 +2,13 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.4.0] - 2026-07-18
+
+### Added
+- Added **Living Atlas Quest 02 - The Weathered Ledger**, a week-long, five-route chapter tuned for the server's early Create and diamond-tool milestone. Players complete any three routes for capped horizontal utility rewards; diamond armor, brass, XP, enchantments, rare Pokemon, and factory skips are deliberately excluded.
+- Added **The Atlas Exchange**, a 7-day, small-team-safe Bevel sink. Physical Bevels can now be consumed for one shared, horizontal utility cache per offer, with rewards that support early Create, building, exploration, magic, and Cobblemon without creating a progression loop.
+- Added original Weathered Ledger quest art to the required Living Atlas resource pack.
+
 ## [2.3.2] - 2026-07-17
 
 ### Fixed

@@ -262,4 +262,273 @@
 	task.1A0B1A4E5A9E0162.title: "I Joined or Hosted a Raid Den Outing"
 	task.1A0B1A4E5A9E0171.title: "I Am Ready to Resolve My Page"
 	task.1A0B1A4E5A9E0181.title: "I Will Help Keep the Page Warm"
+
+	chapter.1A0B1A4E5A9E0300.title: "02 · The Weathered Ledger"
+	reward_table.1A0B1A4E5A9E3000.title: "Choose a Small, Useful Favor"
+
+	quest.1A0B1A4E5A9E0301.quest_desc: [
+		"{image:poiesis:textures/questpics/weathered_ledger_key_art.png width:176 height:220 align:center}"
+		"&6&lTHE WEATHERED LEDGER"
+		""
+		"&fThis page was once kept by someone who understood that a settlement begins long before it has walls. A turning sail. A borrowed tool. A lamp left on for the person who is late."
+		""
+		"&7You have diamond tools, but no diamond-armor arms race. You have a first windmill, not an empire. That is exactly where this page belongs."
+		""
+		"&eFor this week, complete any 3 of 5 field routes.&f Each is a small proof that the server is becoming easier to live in together, not a demand that anyone grind ahead."
+		""
+		"&8Someone has written in the margin: 'A workshop is only impressive when a tired friend can use it.'"
+	]
+	quest.1A0B1A4E5A9E0301.quest_subtitle: "Five small routes. Pick three. Leave the heavy lifting for the machines."
+	quest.1A0B1A4E5A9E0301.title: "&6&lOPEN THE WEATHERED LEDGER"
+
+	quest.1A0B1A4E5A9E0302.quest_desc: [
+		"{image:create:textures/block/windmill_bearing_side.png width:48 height:48 align:center}"
+		"&b&lWIND-LENS: THE CURRENT IS SHARED"
+		""
+		"&fVisit, help improve, or simply learn from the server's working windmill with another player. Then tick the honest checkmark."
+		""
+		"&7This is deliberately not a build-detection task. The first person to finish a windmill does not get to own the entire chapter. The point is that somebody opened the door, and somebody else walked through it."
+		""
+		"&8If the sails are crooked, they are merely expressing local weather conditions."
+	]
+	quest.1A0B1A4E5A9E0302.quest_subtitle: "See the first current together. Helping counts; being first does not."
+	quest.1A0B1A4E5A9E0302.title: "&b&lWIND-LENS: VISIT THE CURRENT"
+
+	quest.1A0B1A4E5A9E0303.quest_desc: [
+		"{image:create:textures/item/andesite_alloy.png width:48 height:48 align:center}"
+		"&6&lPRESS-LENS: ONE GOOD CLUNK"
+		""
+		"&fCraft a &eMechanical Press&f. The Ledger watches Create's own advancement, so it completes automatically after the little machine exists."
+		""
+		"&7A press is intentionally the target: it is an early shared convenience, not a brass gate or a factory race. Make one for your own bench, or make one the next player can borrow."
+		""
+		"&8The ledger does not care what you press first. It is trying very hard not to suggest a commemorative spoon."
+	]
+	quest.1A0B1A4E5A9E0303.quest_subtitle: "A first machine that makes the next little job less annoying."
+	quest.1A0B1A4E5A9E0303.title: "&6&lPRESS-LENS: A USEFUL CLUNK"
+
+	quest.1A0B1A4E5A9E0304.quest_desc: [
+		"{image:minecraft:textures/item/diamond_pickaxe.png width:48 height:48 align:center}"
+		"&9&lBLUE-LENS: A TOOL, NOT A CROWN"
+		""
+		"&fMine your first Diamond. This is Minecraft's normal diamond advancement, so players already carrying diamond tools may see it complete immediately."
+		""
+		"&7That is intentional. Diamond tools are the current horizon; diamond armor is not a requirement, a prize, or a reason to leave someone behind. This route records a threshold without turning it into a podium."
+		""
+		"&8The blue ink has been smudged by a thumbprint and what may be pickaxe dust."
+	]
+	quest.1A0B1A4E5A9E0304.quest_subtitle: "Reach the tool threshold. Do not make it a throne."
+	quest.1A0B1A4E5A9E0304.title: "&9&lBLUE-LENS: FIRST DIAMOND"
+
+	quest.1A0B1A4E5A9E0305.quest_desc: [
+		"{image:irons_spellbooks:textures/item/arcane_essence.png width:48 height:48 align:center}"
+		"&d&lCINDER-LENS: A PLACE TO BEGIN"
+		""
+		"&fCraft an &eInscription Table&f. The check completes from Iron's Spellbooks' own advancement."
+		""
+		"&7This is a gentle doorway, not a spell build. The table is where a curious player can start asking questions, where an experienced mage can leave a note, and where nobody is expected to already know the answers."
+		""
+		"&8The page has a coffee ring around the word 'carefully.' It feels earned."
+	]
+	quest.1A0B1A4E5A9E0305.quest_subtitle: "Put down a first table. Let the complicated part wait."
+	quest.1A0B1A4E5A9E0305.title: "&d&lCINDER-LENS: INSCRIBE A BEGINNING"
+
+	quest.1A0B1A4E5A9E0306.quest_desc: [
+		"{image:cobblemon:textures/gui/battle/battle_menu_fight.png width:64 height:32 align:center fit:true}"
+		"&3&lCHORUS-LENS: ANOTHER CHAIR AT THE TABLE"
+		""
+		"&fReach &e8 Pokemon caught&f and &e8 Cobblemon battles started&f, then tick the final box after joining or hosting a Raid Den outing with another person."
+		""
+		"&7The two numbers are lifetime statistics: if you were already active, they may be partly done. The fresh part is the shared outing. A raid win is lovely; a story about a spectacular loss is equally valid."
+		""
+		"&8Please allow the smallest Pokemon to make at least one tactical recommendation."
+	]
+	quest.1A0B1A4E5A9E0306.quest_subtitle: "A few more field notes, one Raid Den story, at least two witnesses."
+	quest.1A0B1A4E5A9E0306.title: "&3&lCHORUS-LENS: MAKE ROOM"
+
+	quest.1A0B1A4E5A9E0307.quest_desc: [
+		"{image:poiesis:textures/questpics/weathered_ledger_key_art.png width:132 height:165 align:center}"
+		"&6&lCLOSE THE WEATHERED LEDGER"
+		""
+		"&fComplete &eany 3 of the 5 lenses&f, then stamp the page. Three different kinds of ordinary work are enough to make a place feel inhabited."
+		""
+		"&dYour capped rewards:&f"
+		"&f- &62 Bevels&7, bringing an any-three completion to 5 Bevels total"
+		"&f- &eWeathered Folio&7, a keepsake with no combat power"
+		"&f- &bOne useful favor&7: goggles, a Nature's Compass, Poke Balls, or Arcane Essence"
+		""
+		"&7No armor, diamonds, XP, enchantments, rare Pokemon, brass, or factory skip hides behind this page. It should shorten a small annoyance, not manufacture a winner."
+	]
+	quest.1A0B1A4E5A9E0307.quest_subtitle: "Any three routes. One modest favor. A little more room for everyone."
+	quest.1A0B1A4E5A9E0307.title: "&6&lSEAL THE LEDGER"
+
+	quest.1A0B1A4E5A9E0308.quest_desc: [
+		"{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}"
+		"&e&lLEAVE A LANTERN ON"
+		""
+		"&fIf you have fifteen minutes left this week, help somebody begin one very small job: point out the windmill, lend a press, walk them to diamonds, host a Raid Den, or stand nearby while their first spell goes wrong."
+		""
+		"&7There is no reward because the entire point is that the server still feels worth returning to after one person gets busy."
+		""
+		"&8The lantern in the illustration is not magical. It is just on. That matters."
+	]
+	quest.1A0B1A4E5A9E0308.quest_subtitle: "A small invitation is better than a grand announcement."
+	quest.1A0B1A4E5A9E0308.title: "&e&lAFTER THE ENTRY"
+
+	reward.1A0B1A4E5A9E0411.title: "&bWind-Lens Field Mark"
+	reward.1A0B1A4E5A9E0412.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0431.title: "&6Press-Lens Field Mark"
+	reward.1A0B1A4E5A9E0432.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0451.title: "&9Blue-Lens Field Mark"
+	reward.1A0B1A4E5A9E0452.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0471.title: "&dCinder-Lens Field Mark"
+	reward.1A0B1A4E5A9E0472.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E0491.title: "&3Chorus-Lens Field Mark"
+	reward.1A0B1A4E5A9E0492.title: "&6One Bevel"
+	reward.1A0B1A4E5A9E04A1.title: "&6Ledger Grant - 2 Bevels"
+	reward.1A0B1A4E5A9E04A2.title: "&eWeathered Folio"
+	reward.1A0B1A4E5A9E04A3.title: "&bChoose a Small, Useful Favor"
+	reward.1A0B1A4E5A9E3011.title: "&6Goggles for the Curious"
+	reward.1A0B1A4E5A9E3012.title: "&aNature's Compass"
+	reward.1A0B1A4E5A9E3013.title: "&b12 Poke Balls"
+	reward.1A0B1A4E5A9E3014.title: "&d12 Arcane Essence"
+
+	task.1A0B1A4E5A9E0311.title: "Open the Ledger"
+	task.1A0B1A4E5A9E0321.title: "I Visited or Helped With the Working Windmill"
+	task.1A0B1A4E5A9E0331.title: "Craft a Mechanical Press"
+	task.1A0B1A4E5A9E0341.title: "Mine Your First Diamond"
+	task.1A0B1A4E5A9E0351.title: "Craft an Inscription Table"
+	task.1A0B1A4E5A9E0361.title: "Catch 8 Pokemon"
+	task.1A0B1A4E5A9E0362.title: "Start 8 Cobblemon Battles"
+	task.1A0B1A4E5A9E0363.title: "I Joined or Hosted a Raid Den Outing"
+	task.1A0B1A4E5A9E0371.title: "Seal the Entry"
+	task.1A0B1A4E5A9E0381.title: "I Helped Someone Begin a Small Job"
+
+	chapter.1A0B1A4E5A9E0400.title: "The Atlas Exchange"
+
+	quest.1A0B1A4E5A9E0401.quest_desc: [
+		"{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}"
+		"&6&lTHE EXCHANGE WINDOW IS OPEN"
+		""
+		"&fBevels are no longer decorative. &e1 Bevel is 8 Spurs&f, and this page turns physical Bevels into deliberate early-game help."
+		""
+		"&eHow it works:&f keep the Bevels in your inventory, open an offer, and click its gold Bevel task to submit the exact payment. Carrying coins alone does not complete the purchase."
+		""
+		"&cSmall-team rule:&f FTB Quest progress is shared by FTB team. Each offer issues exactly &eone team cache&f to the player who claims it, then renews &e7 days after claim&f. Agree on the buyer and handoff first."
+		""
+		"&7No offer pays currency back, sells diamond gear, skips brass, or generates a loop. Spend for a useful nudge, not an advantage that makes other people stop playing."
+	]
+	quest.1A0B1A4E5A9E0401.quest_subtitle: "A real sink for Bevels: modest, team-safe, and intentionally finite."
+	quest.1A0B1A4E5A9E0401.title: "&6&lREAD THE EXCHANGE TERMS"
+
+	quest.1A0B1A4E5A9E0402.quest_desc: [
+		"{image:create:textures/item/andesite_alloy.png width:48 height:48 align:center}"
+		"&6&lKINETIC CACHE - 2 BEVELS"
+		""
+		"&fSubmit &e2 Bevels&f for one shared cache: &e4 Andesite Alloy, 8 Shafts, and 4 Cogwheels.&f"
+		""
+		"&7This starts a small machine job without handing out a power source, brass, or a factory. Put it where the next person can use it."
+		""
+		"&8Renews seven days after the cache is claimed."
+	]
+	quest.1A0B1A4E5A9E0402.quest_subtitle: "Two coins for the boring parts that make a first machine possible."
+	quest.1A0B1A4E5A9E0402.title: "&6&lEXCHANGE: KINETIC CACHE"
+
+	quest.1A0B1A4E5A9E0403.quest_desc: [
+		"{image:create:textures/block/axis.png width:48 height:48 align:center}"
+		"&e&lPUBLIC-WORKS PRESS - 3 BEVELS"
+		""
+		"&fSubmit &e3 Bevels&f for one &eMechanical Press and Basin.&f"
+		""
+		"&7This is the deliberately big early offer. It is a shared-workshop purchase, not private armor or a tech-tier skip: somebody still needs to power it, learn it, and leave room around it."
+		""
+		"&8Claim beside a shared chest or the intended builder. Only one team cache exists."
+	]
+	quest.1A0B1A4E5A9E0403.quest_subtitle: "Three coins for a public tool, not a personal lead."
+	quest.1A0B1A4E5A9E0403.title: "&e&lEXCHANGE: PUBLIC-WORKS PRESS"
+
+	quest.1A0B1A4E5A9E0404.quest_desc: [
+		"{image:create:textures/item/super_glue.png width:48 height:48 align:center}"
+		"&a&lBUILDER'S GLUE - 1 BEVEL"
+		""
+		"&fSubmit &e1 Bevel&f for &e8 Super Glue.&f"
+		""
+		"&7This is pure utility: a modest construction helper for the windmill, a bridge, a silly moving sign, or the kind of compact build that only makes sense once you are halfway through it."
+		""
+		"&8No combustion-based adhesive incidents are covered by the Ledger."
+	]
+	quest.1A0B1A4E5A9E0404.quest_subtitle: "One coin for better connections, mechanical and otherwise."
+	quest.1A0B1A4E5A9E0404.title: "&a&lEXCHANGE: BUILDER'S GLUE"
+
+	quest.1A0B1A4E5A9E0405.quest_desc: [
+		"{image:minecraft:textures/item/compass_16.png width:48 height:48 align:center}"
+		"&b&lSURVEY WARRANT - 3 BEVELS"
+		""
+		"&fSubmit &e3 Bevels&f for an &eExplorer's Compass.&f"
+		""
+		"&7It finds structures; it does not find courage, food, safe routes home, or friends willing to retrieve your backpack. That makes it valuable without being a power leap."
+		""
+		"&8The paperwork says 'Expedition approved.' The margin says 'probably bees.'"
+	]
+	quest.1A0B1A4E5A9E0405.quest_subtitle: "Spend three coins to make exploration more intentional."
+	quest.1A0B1A4E5A9E0405.title: "&b&lEXCHANGE: SURVEY WARRANT"
+
+	quest.1A0B1A4E5A9E0406.quest_desc: [
+		"{image:irons_spellbooks:textures/item/arcane_essence.png width:48 height:48 align:center}"
+		"&d&lCINDER REAGENT KIT - 2 BEVELS"
+		""
+		"&fSubmit &e2 Bevels&f for &e8 Arcane Essence and 8 Amethyst Shards.&f"
+		""
+		"&7A starting nudge for the person who wants to try magic without being told that they must commit their whole week to it. It does not contain a spellbook, a build, or a superiority complex."
+		""
+		"&8Please label the jar before it begins to hum."
+	]
+	quest.1A0B1A4E5A9E0406.quest_subtitle: "Two coins for a curiosity, not a class choice."
+	quest.1A0B1A4E5A9E0406.title: "&d&lEXCHANGE: CINDER REAGENT KIT"
+
+	quest.1A0B1A4E5A9E0407.quest_desc: [
+		"{image:cobblemon:textures/item/poke_balls/great_ball.png width:48 height:48 align:center}"
+		"&9&lTRAINER'S SATCHEL - 2 BEVELS"
+		""
+		"&fSubmit &e2 Bevels&f for &e4 Great Balls.&f"
+		""
+		"&7This is a little more interesting than another stack of ordinary Poke Balls, but it is not a rare-Pokemon shortcut. Take the friend who is behind on catches with you."
+		""
+		"&8The satchel smells faintly of apricorns and impossible confidence."
+	]
+	quest.1A0B1A4E5A9E0407.quest_subtitle: "Two coins for a better chance, never a guaranteed story."
+	quest.1A0B1A4E5A9E0407.title: "&9&lEXCHANGE: TRAINER'S SATCHEL"
+
+	quest.1A0B1A4E5A9E0408.quest_desc: [
+		"{image:minecraft:textures/item/book.png width:48 height:48 align:center}"
+		"&e&lTHE LEDGER'S SHORT VERSION"
+		""
+		"&fSpend Bevels on horizontal utility. Choose a tool that makes the next shared evening smoother. Let the offer renew next week instead of trying to spend your whole balance tonight."
+		""
+		"&7If the group later wants a physical spawn market, a host can build Numismatics vendors. This page exists now so the coins already in circulation are useful before that project happens."
+		""
+		"&8A currency without a choice is just a very shiny reminder."
+	]
+	quest.1A0B1A4E5A9E0408.quest_subtitle: "Spend with intent. Make the next session easier to join."
+	quest.1A0B1A4E5A9E0408.title: "&e&lMARK THE TERMS UNDERSTOOD"
+
+	reward.1A0B1A4E5A9E0611.title: "&6Kinetic Cache: 4 Andesite Alloy"
+	reward.1A0B1A4E5A9E0612.title: "&6Kinetic Cache: 8 Shafts"
+	reward.1A0B1A4E5A9E0613.title: "&6Kinetic Cache: 4 Cogwheels"
+	reward.1A0B1A4E5A9E0631.title: "&ePublic-Works Mechanical Press"
+	reward.1A0B1A4E5A9E0632.title: "&ePublic-Works Basin"
+	reward.1A0B1A4E5A9E0641.title: "&aBuilder's Glue: 8 Super Glue"
+	reward.1A0B1A4E5A9E0651.title: "&bSurvey Warrant: Explorer's Compass"
+	reward.1A0B1A4E5A9E0661.title: "&dCinder Reagent Kit: 8 Arcane Essence"
+	reward.1A0B1A4E5A9E0662.title: "&dCinder Reagent Kit: 8 Amethyst Shards"
+	reward.1A0B1A4E5A9E0671.title: "&9Trainer's Satchel: 4 Great Balls"
+
+	task.1A0B1A4E5A9E0511.title: "I Understand the Exchange Rules"
+	task.1A0B1A4E5A9E0521.title: "Submit 2 Bevels"
+	task.1A0B1A4E5A9E0531.title: "Submit 3 Bevels"
+	task.1A0B1A4E5A9E0541.title: "Submit 1 Bevel"
+	task.1A0B1A4E5A9E0551.title: "Submit 3 Bevels"
+	task.1A0B1A4E5A9E0561.title: "Submit 2 Bevels"
+	task.1A0B1A4E5A9E0571.title: "Submit 2 Bevels"
+	task.1A0B1A4E5A9E0581.title: "I Understand One Team Cache Means One Claim"
 }
