@@ -1,550 +1,425 @@
-# VvH Implementation Plan
+# VvH (Vampires vs Hunters) Implementation Plan
 
-> **Source:** Review of `~/Downloads/server-plan.txt` (Vampires vs Hunters pitch by H.)
-> **Loader / version:** NeoForge 1.21.1
-> **Population target:** 4–6 trusted friend players, always exactly 2 factions
-> **Status:** Design phase, NOT implementation. Do not implement before verification items at the bottom of this doc are resolved.
+**Status:** Design Phase — **DO NOT IMPLEMENT** before resolving the verification items in [Section 10: Pre-Implementation Verification](#10-pre-implementation-verification).
 
----
-
-## 1. Philosophy
-
-The user's standing constraints (from `~/.claude/memory`):
-- KISS by default for all technical implementation.
-- Two exceptions: (a) prefer enforceable tech over social rules for **hard** rules, (b) accept complexity to reduce end-user headache.
-- Server is run by a primary admin/coordinator (the user). Players are trusted friends.
-
-The friend's pitch is mostly-correct in direction but mixes soft rules and hard rules. The job of this plan is to sort each rule into the correct layer and propose a tech-backed replacement for any hard rule that the pitch treats as social.
+| Parameter | Specification |
+| :--- | :--- |
+| **Source** | Review of `~/Downloads/server-plan.txt` (Vampires vs Hunters pitch by H.) |
+| **Target Loader / Version** | NeoForge 1.21.1 |
+| **Target Population** | 4–6 trusted friends across 2 fixed factions |
+| **Enforcement Model** | Two-layer hybrid (Mod-enforced hard bounds + Social soft rules) |
 
 ---
 
-## 2. Two-Layer Enforcement (Summary)
+## 1. Core Philosophy
 
-Every rule in the design lands in one of two layers. A rule in the wrong layer is the design's biggest failure mode.
+The implementation adheres strictly to the user's standing constraints:
 
-### Layer 1 — Hard rules (mod-enforced, automatic)
+1. **KISS by Default:** Keep technical implementations as simple as possible.
+2. **Two Exceptions to KISS:**
+   - **Hard Rules:** Prefer technical/mod enforcement over social rules for non-negotiable boundaries.
+   - **User Experience:** Accept internal script/config complexity if it reduces end-user headache.
+3. **Trust Model:** The server is operated by a primary admin/coordinator (the user) for a small group of trusted friends.
 
-Rule-breaking should be technically impossible or unrewarding without admin action.
-
-Examples: claim borders, block logging, structure detection, faction-flip cooldown, anti-AFK.
-
-### Layer 2 — Soft rules (friend-trust, optional admin arbitration)
-
-Rule-breaking has social consequences within the player base.
-
-Examples: "harmless pranks," mercenary-for-hire dynamics, skirmish timing, faction roleplay.
-
-### Litmus test
-
-> Is this rule **pretending to be enforced by a system**, or **actually enforced by a system**?
-
-If pretending: rewrite or move to layer 2. If actually enforcing: keep, document, ship.
+*Note: The original pitch mixed social rules and hard rules. This plan categorizes every requirement into its proper layer and introduces technical mechanisms for hard boundaries previously framed as social rules.*
 
 ---
 
-## 3. Final Map of Pitch Elements
+## 2. Two-Layer Enforcement Model
 
-| Pitch element | Final layer | Mechanism | Notes |
-|---|---|---|---|
-| Faction join incentive | Hard | FTB Quests reward tables keyed to scoreboard | Tier chosen by server, applied equally to both factions |
-| Cross-faction territory | Hard | FTB Chunks per-team mode + server-wide 1/2 cap divided across 2 factions + outside-border unclaimable | Solo: 8 claim, 0 force-load. Per-faction claim: floor(in_border/4) = (1/2 server cap) / 2 factions, 16 force-load. See §7 |
-| Grief / theft disputes | Soft-tool + ops | GriefLogger (logging only) + scheduled world snapshots | **No rollback on NeoForge 1.21.1.** Logs are positive-confirmation only; severe grief restore from snapshot (covers *all* modded inventories because they're world state); minor grief via social/manual restoration. Inventory-snapshot tools deliberately excluded — see §6. |
-| Faction-flip cooldown | Soft (no cooldown by design) | Friend-trust | See §7 for the no-cooldown rationale |
-| Skirmishes (admin-overseen) | Soft | Friend-trust + admin scheduling | Escalation path documented; no in-game enforcement |
-| Pranks (non-destructive) | Soft | Friend-trust | Hard-enforce "no pranks in claimed zones" instead of policing harmfulness |
-| Mercenary / bribery economy | Soft | Friend-trust | Player-driven; no admin rules |
-| Neutrals as spies / mediators | Soft | Friend-trust | No policy |
-| Milestones with depleting rewards | Hard | FTB Quests reward tiers | Use objective-detection where possible; admin-judged for creative ones (see §9) |
-| Island + world border | Hard | Vanilla `worldborder` | Set once; see §8 for per-dimension reset policy |
-| Active player definition | Hard (data) | Vanilla playtime scoreboard | See §5 |
-
----
-
-## 4. Faction Join Incentive — Math
-
-### Goal
-
-Incentivise players to join a faction. Don't care which side. Don't penalise solo beyond a flat baseline. Don't trigger migration pressure.
-
-### Formula
+Every rule in the server design lands in one of two distinct layers. Assigning a rule to the wrong layer is the primary design failure mode.
 
 ```
-active_factioned     = count(players who are active AND in any faction)
-mean_size            = floor(active_factioned / 2)        # always 2 factions
-reward_tier          = tier_table[mean_size]              # stepped at integer mean
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           SERVER DESIGN LAYERS                          │
+├───────────────────────────────────┬─────────────────────────────────────┤
+│  LAYER 1: Hard Rules (Mod-System) │  LAYER 2: Soft Rules (Friend-Trust) │
+│                                   │                                     │
+│  - System-enforced & automated    │  - Socially negotiated              │
+│  - Cheating/griefing impossible   │  - Admin arbitration fallback       │
+│  - Claims, borders, scoreboards   │  - Pranks, skirmishes, roleplay     │
+└───────────────────────────────────┴─────────────────────────────────────┘
 ```
 
-**Solo players** are excluded from `active_factioned_count` while solo. Their playtime is still tracked, so when they join a faction their history is immediately included.
+* **Layer 1 — Hard Rules (Mod-Enforced):** Violations are technically impossible or unrewarding without admin intervention.  
+  *Examples:* Claim protection, world borders, quest rewards, faction-flip tracking, playtime scoreboards.
+* **Layer 2 — Soft Rules (Friend-Trust):** Violations carry social consequences among friends; admin acts only as an arbitrator of last resort.  
+  *Examples:* Harmless pranks, mercenary contracts, skirmish scheduling, roleplay dynamics.
 
-### Tier table (stepped at integer mean)
+> **The Enforcement Litmus Test:**  
+> *Is this rule **pretending to be enforced by a system**, or **actually enforced by a system**?*  
+> If it pretends, rewrite it or move it to Layer 2. If it actually enforces, keep, document, and ship it.
 
-| mean_size | tier | quest reward mult |
-|-----------|------|-------------------|
-| 0 (zero factioned) | 0 | 1.00× |
-| 1 | 0 | 1.00× |
-| 2 | 1 | 1.25× |
-| 3 | 1 | 1.25× |
-| 4 | 2 | 1.50× |
-| 5 | 2 | 1.50× |
-| 6 | 3 | 1.75× |
-| ≥ 7 | 3 | 1.75× (capped) |
+---
 
-mean_size 6 (= 6 active factioned players, 3/3 split) is the practical maximum for a 6-player cap. Any server beyond ~8 players is out of scope. The cap-row at mean ≥ 7 prevents unbounded growth; the design doesn't need finer tiers above 1.75×.
+## 3. Master Rule & Feature Mapping
 
-### Worked scenarios for a 6-player cap
+| Pitch Element | Layer | Mechanism | Notes & Architectural Rationale |
+| :--- | :---: | :--- | :--- |
+| **Faction Join Incentive** | **Hard** | FTB Quests reward tables + scoreboards | Tier set server-wide, applied equally to both factions. |
+| **Territory & Claims** | **Hard** | FTB Chunks per-team limits + unclaimable wilderness | Solos: 8 claims (0 force-load). Factions: `floor(in_border / 4)` claims (16 force-load). See §7. |
+| **Grief & Theft Protection** | **Soft Tool + Admin** | GriefLogger + scheduled 6h world snapshots | **No rollback mod on NeoForge 1.21.1.** Severe grief restored via full snapshot; minor via social repair. |
+| **Faction-Flip Cooldown** | **Soft** | None (no cooldown by design) | Math prevents exploitation; switching is treated as narrative. See §7. |
+| **Sanctioned Skirmishes** | **Soft** | Admin scheduling + opt-in PvP toggle | Escalation path documented; no forced schedule mod. |
+| **Non-Destructive Pranks** | **Soft** | Hard claim boundaries + friend trust | Hard rule ("No pranks inside claimed territory") eliminates subjective policing. |
+| **Mercenary Economy** | **Soft** | Player agreement | Player-driven trading; zero admin code. |
+| **Neutrals & Mediators** | **Soft** | Social roleplay | Voluntary player roles. |
+| **Creative Milestones** | **Hard** | Rubric checklist + `/vvh reward` command | Objective checks where feasible; admin command triggers math-derived rewards. See §9. |
+| **Island World Border** | **Hard** | Vanilla `/worldborder` | Hard border set once at spawn island edge. See §8. |
+| **Active Player Definition** | **Hard** | Vanilla playtime scoreboard | 14-day rolling window, ≥ 1 hr threshold. See §5. |
 
-| Scenario | active_factioned | mean_size | tier | mult |
-|---|---|---|---|---|
-| 2/2 split, all active | 4 | 2 | 1 | 1.25× |
-| 3/3 split, all active | 6 | 3 | 2 | 1.50× |
-| 5/1 split, all active | 6 | 3 | 2 | 1.50× |
-| 4/2 split, all active | 6 | 3 | 2 | 1.50× |
-| 2/2 split, one on vacation | 3 (one drops below 1-hr threshold) | 1 | 0 | 1.00× |
-| 6/0 (entirely solo) | 0 | 0 | 0 | 1.00× |
-| 4/2 split, 1 solo | 5 | 2 | 1 | 1.25× |
+---
 
-### Properties
+## 4. Faction Join Incentive (Reward Scaling Math)
 
-1. **No migration pressure.** A 2/2 split and a 5/1 split (all 6 active) both produce mult=1.50×. Players don't optimise by joining the bigger side.
-2. **Solo is baseline, not penalty.** Solo players get 1.00×. They don't drag anyone else down.
-3. **Late joiners are welcomed.** Mean goes up; mult goes up; everyone benefits.
-4. **Floor on odd populations** documented and stable.
+### Objectives
+* Incentivize joining a faction without forcing players onto a specific side.
+* Baseline solo play without harsh penalties.
+* Eliminate migration pressure (players trying to join the larger team for better loot).
 
-### What was rejected
+### Mathematical Formula
 
-- Friend's original `1.5^n` compounding (a 6-player faction gets 7.59×). Breaks math, breaks cap, drives migration pressure.
-- Per-faction-size multipliers (`reward = f(this_faction_size)`). Triggers migration pressure automatically.
-- Negative penalty for imbalance (`-200%/excess-player`). Negative rewards are an arbitrary hard rule with no clean delivery.
-- Raw player count (online now). Wobbles between sessions; treats AFK as engaged.
+```
+active_factioned = count(players active AND in any faction)
+mean_size        = floor(active_factioned / 2)    # always 2 factions
+reward_tier      = tier_table[mean_size]
+```
+
+> **Solo Player Handling:** Solo players are excluded from `active_factioned`. Their playtime is tracked continuously, so if they later join a faction, their activity counts immediately. Solo quest completion defaults to Tier 0 (1.00×).
+
+### Stepped Tier Table
+
+| Mean Faction Size (`mean_size`) | Reward Tier | Quest Reward Multiplier |
+| :---: | :---: | :---: |
+| **0** (No factioned players) | Tier 0 | **1.00×** (Baseline) |
+| **1** | Tier 0 | **1.00×** |
+| **2** | Tier 1 | **1.25×** |
+| **3** | Tier 1 | **1.25×** |
+| **4** | Tier 2 | **1.50×** |
+| **5** | Tier 2 | **1.50×** |
+| **6** | Tier 3 | **1.75×** |
+| **≥ 7** | Tier 3 | **1.75×** (Capped) |
+
+### Worked Population Scenarios (6-Player Server Cap)
+
+| Faction Split | Active Players | `active_factioned` | `mean_size` | Tier | Reward Multiplier |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **2 vs 2** | 4 active | 4 | 2 | Tier 1 | **1.25×** |
+| **3 vs 3** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
+| **5 vs 1** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
+| **4 vs 2** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
+| **2 vs 2 (1 away)** | 3 active | 3 | 1 | Tier 0 | **1.00×** |
+| **0 vs 0 (All Solo)** | 6 active | 0 | 0 | Tier 0 | **1.00×** |
+| **4 vs 2 + 1 Solo** | 5 active factioned | 5 | 2 | Tier 1 | **1.25×** |
+
+### Mathematical Design Guarantees
+1. **Zero Migration Pressure:** A balanced 3 vs 3 split and an imbalanced 5 vs 1 split yield the exact same multiplier (**1.50×**). Players gain no benefit by piling onto the dominant faction.
+2. **Solo is Baseline:** Solo play grants standard 1.00× rewards without dragging down faction calculations.
+3. **Late-Joiner Friendly:** Adding new active faction members raises `mean_size` and unlocks higher tiers for everyone.
+4. **Stable Odd-Count Handling:** Floor division cleanly handles absent or uneven player counts.
+
+### Rejected Alternatives
+* ❌ **Exponential Compounding ($1.5^n$):** A 6-player team would get 7.59× rewards, destroying game balance and forcing everyone into one team.
+* ❌ **Per-Faction Multipliers ($f(\text{team\_size})$):** Directly incentivizes joining the largest team, as you take a pay cut by joining a smaller group.
+* ❌ **Imbalance Penalties (e.g. -200%):** Negative rewards are unrewarding and complex to deliver.
+* ❌ **Real-Time Online Count:** Causes multipliers to swing wildly between gaming sessions.
 
 ---
 
 ## 5. Active Population Definition
 
-### Policy
+A player is classified as **Active** if they have accumulated **≥ 1 hour of playtime in the last 14 days**.
 
-> **Active** = player has ≥ 1 hour cumulative playtime in the past 14 days.
+* **14-Day Rolling Window:** Prevents rewards from fluctuating mid-session; only the 14-day boundary shifts status.
+* **1-Hour Cumulative Floor:** Filters out players who logged in for 2 minutes to AFK or check a chest.
 
-Why:
-- 14-day window freezes the input; only the boundary moves. Players don't see their rewards wobble mid-session.
-- 1-hour floor prevents AFK-from-a-week-ago credit.
-- Cumulative, not "logged in at least once," because a player who logged in for 5 minutes 13 days ago has effectively abandoned the server.
+### Scoreboard Data Source
+* **Objective:** Vanilla scoreboard `minecraft.custom:minecraft.play_one_minute`.
+* **Tick Math:** Ticks once per in-game minute (20 seconds of real-world time).
+* **Threshold Value:** A score of `60` equals ~20 real-world minutes of playtime. For server purposes, this initial session threshold qualifies a player as active.
 
-### Data source (intended)
+### Server Lifecycle & Edge Cases
 
-Vanilla scoreboard objective: `minecraft.custom:minecraft.play_one_minute`.
+```
+                                  SERVER START (Day 1)
+                                           │
+                    ┌──────────────────────┴──────────────────────┐
+                    ▼                                             ▼
+        Playtime < 60 (~20 mins)                      Playtime ≥ 60 (~20 mins)
+                    │                                             │
+            Status: INACTIVE                              Status: ACTIVE
+                    │                                             │
+      (Excluded from active_factioned)              (Included in active_factioned)
+```
 
-- Ticks once per **in-game minute** the player is online (20-second real time, since one Minecraft day is 24000 ticks = 20 real minutes).
-- Score 60 corresponds to roughly **20 real minutes** of online time, NOT 60.
-- This means the "1-hour" threshold via this objective is actually closer to ~3 in-game hours / ~20 real minutes first session. Acceptable for our purposes: a player's first play session usually exceeds this.
-
-### Transition behaviour (first 14 days of server life)
-
-No player has 14 days of history on day 1. Default behaviour:
-
-- Players with `playtime < 60` are not active yet.
-- Players with `playtime ≥ 60` ARE active.
-
-No special day-1 fallback code. Players who play 20+ real minutes their first session are immediately classified as active. Players who log in once and leave stay inactive until they come back.
-
-The user accepted the "rising tide lifts all ships" effect: rewards grow with engagement in the first two weeks. Expected.
-
-### Solo player handling
-
-Solo players:
-- Have their playtime tracked (so history exists if they later join a faction).
-- Are **not counted** in `active_factioned`.
-- Get the 1.00× baseline reward for any quest they complete alone.
-
-### Why this population definition is right
-
-- It survives vacation, illness, lost-interest-for-a-week (which is the most common failure mode on friend servers).
-- It does not wobble between sessions, only at the 14-day boundary.
-- It does not require "online now" prediction, which a 4–6 player server can't reliably do.
-
-### Persistence requirement
-
-The playtime scoreboard MUST persist across server restart. Verify with `scoreboard objectives ... persistent: true` (or the equivalent in NeoForge 1.21.1). **This is a verify-before-implement item.** See §10.
+* **Day 1–14 Bootstrap:** No special catch-up code needed. Playing ≥ 20 minutes on day 1 activates the player immediately.
+* **Solo Players:** Playtime is continuously tracked in NBT/scoreboards. Solo players receive 1.00× rewards and are excluded from `active_factioned` until they join a faction.
+* **Absences & Vacations:** 14-day grace window ensures players taking a week off do not drop active status or hurt faction multipliers.
+* **Persistence Requirement:** Playtime scoreboards **MUST** persist across server restarts (`/scoreboard objectives ... persistent: true`). Verify in §10.
 
 ---
 
-## 6. Implementation Surface (What's Actually Going Into The Modpack)
+## 6. Architecture & Implementation Surface
 
-### Mods (added or already present)
+### Mod Manifest
 
-| Mod | Purpose | Layer | Mod-side complexity |
-|---|---|---|---|
-| **FTB Chunks** | Per-team land claims, load-and-forget | Hard | Low — config once |
-| **FTB Quests** | Task system, reward tiers, milestone tracking | Hard | Medium — content layer requires design later |
-| **GriefLogger** (or equivalent) | Block / container / entity log for grief **lookup only** — no rollback | Soft-tool | Low — load-and-forget, install + configure |
-| **KubeJS** (already present) | Tier computation, playtime tracking fallback if needed | Glue | Low–medium — see §9 |
+| Mod | Purpose | Layer | Configuration Scope |
+| :--- | :--- | :---: | :--- |
+| **FTB Chunks** | Land claims, team permissions, chunk loading | **Hard** | Claim limits, PvP rules, border restrictions |
+| **FTB Quests** | Milestone progression, quest delivery | **Hard** | Quest tree, reward hooks |
+| **GriefLogger** | Forensic event logging (block/container/kill) | **Soft Tool** | Logging filters, 30-day retention |
+| **KubeJS** *(Installed)* | Reward calculations, custom `/vvh` commands | **Glue** | Server scripts for tier & rubric logic |
 
-### Config files (intended, not yet authored)
+### File Surface Matrix
+* `config/ftbchunks-common.toml` — Team claim caps, claim protection settings, coordinate restrictions.
+* `config/ftbquests-common.toml` — Quest definitions and command reward execution.
+* `config/grieflogger-common.toml` — Forensic event tracking filters.
+* `kubejs/server_scripts/faction_rewards.js` — Scoreboard calculation, tier resolution, reward delivery.
+* `kubejs/server_scripts/vvh_commands.js` — `/vvh claim` and `/vvh reward` command registration.
 
-- `config/ftbchunks-common.toml` — per-team mode, claim block list, PvP in claims config.
-- `config/ftbquests-common.toml` — reward tiers (deferred until §10 verification).
-- `config/grieflogger-common.toml` (or relevant config path) — what to log, log retention window, query tool access.
+### Backup & Grief Restoration Architecture
 
-### Scripts (intended, not yet authored)
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        GRIEF PREVENTION & RESTORATION                       │
+├───────────────────┬───────────────────┬───────────────────┬─────────────────┤
+│    PREVENTION     │    FORENSICS      │   RESTORATION     │ MINOR DISPUTES  │
+│                   │                   │                   │                 │
+│  FTB Chunks       │  GriefLogger      │ 3-Hour Snapshots  │ Friend Trust    │
+│  Claims enforce   │  Logs event data  │ Full world revert │ Offender fixes  │
+│  hard protection  │  (No auto-revert) │ for severe grief  │ or admin steps  │
+└───────────────────┴───────────────────┴───────────────────┴─────────────────┘
+```
 
-- `kubejs/server_scripts/faction_rewards.js` — quest-completion hook, scoreboard lookup, reward tier application.
-- (Optional) `kubejs/server_scripts/playtime_decay.js` — 14-day window logic if we choose path B in §10.
+#### World Backups (Recovery & Grief Restoration)
 
-### Grief / Disputes: Logging Without Rollback
+On a modded server, a robust world backup system is not only useful for recovering from mod issues or data corruption, but also as the primary mechanism for reverting severe grief damage.
 
-NeoForge 1.21.1 has no good automatic-revert mods. GriefLogger provides **logging only** — block / container / entity / item events, but no rollback command. Modded internal state (machine connections, channel allocation, schematic ownership, AE2 quantum rings, mob AI memory, tamed-mob inventories, Curios slots, Iron's Spells spellbooks, etc.) lives outside blocks, so even a working block-rollback would restore visible chunks while scrambling the world's causal graph. This is a structural property of modded worlds, not a mod-quality issue. **Inventory-snapshot tools are not a workaround** — coverage of "every inventory a player can hold things in" is unbounded and integration breakage is silent: a snapshot that misses the Curios slot shows the items in place because the live inventory screen reads live state, not the snapshot.
+#### Why CoreProtect-Style Rollback Mods Aren't Viable
 
-**The grief-handling layer:**
+Attempting block-level rollbacks risks corrupting world state because doing so requires the rollback mod to have native awareness and support for every modded block, item, and entity state it restores—practically requiring custom-built integrations for every mod in existence.
 
-| Layer | Tool | Trust model | What it answers |
-|---|---|---|---|
-| Prevention | FTB Chunks per-team claims | Hard (mod-enforced) | "Can grief happen here?" → No, inside claims. |
-| Forensics | GriefLogger | Hard, positive-only | "Who did this?" → Reliable when logged. Absence is not meaningful. |
-| Restoration | Scheduled world snapshots (§ below) | Hard, atomic, file-level | "How do we undo severe grief?" → Restore from snapshot, accept partial progress loss. |
-| Minor incidents | Friend-trust + manual | Soft | "What about a few broken blocks?" → Offender fixes it, or admin acts on authority. |
+Inventory snapshots suffer a similar flaw: without explicit mod integration, they silently miss custom equipment slots (such as those from Curios or Accessories). Due to these fundamental limitations, CoreProtect-style rollback mods are not a viable option for modpacks.
 
-Outside-border grief is in renewable wilderness (§8) — rebuild cost is near-zero. In-claim grief is rare if claims are properly enforced. Disputes that reach the admin get GriefLogger evidence where available; admin judgment fills the rest. Restoration of griefed content is **manual** — the offender does it, or the admin does it.
+#### Limitations of Forensic Logging (GriefLogger)
 
-### Restore Mechanism: Scheduled World Snapshots
+GriefLogger and similar tools cannot log 100% of world events because custom mod logic frequently bypasses standard event hooks. Furthermore, automated machines—such as Create contraptions/deployers or Mekanism digital miners—operate using "fake player" profiles.
 
-A cron-style job (external to the MC server) snapshots the world directory every 6 hours. On severe grief, restore is from the most recent known-good snapshot — chosen by the admin, manually. Snapshots are atomic, file-level, version-coupled.
+Fake player actions obscure accountability in two key ways:
+* **Attribution Masking:** Actions are logged under the machine's fake player profile rather than the player who placed or powered it.
+* **Shared Identifiers:** Fake player UUIDs are often shared globally across a mod (e.g., all Create deployers on the server log actions under the exact same fake player identity).
 
-**Configuration defaults:**
+Despite these limitations, GriefLogger should provide sufficient data to investigate and resolve the vast majority of day-to-day disputes. While a determined griefer can certainly circumvent event logging, at that point you probably already know who to ban. 
 
-| Parameter | Default | Note |
-|---|---|---|
-| Frequency | Every 6 hours | ~6 hours of progress loss per restore. |
-| Retention | 24 hourly + 7 daily + 4 weekly | ~31 snapshots; 1 month of rolling history. |
-| Stored path | `~/server/backups/` or external volume | Off-disk recommended. |
-| Automation | Yes (cron) | Set-and-forget. |
-
-**Why not git?** Worlds are tens of thousands of regions; git isn't designed for binary tree diff. Filesystem snapshot tools do this better.
-
-**Why not grief logs?** Logs are forensic records, not world state. They don't restore the destroyed chunks; snapshot does.
-
-**Implementation tools** (verify availability on NeoForge 1.21.1 at implementation time):
-
-- **MCA Selector** — external, offline-mode, admin-triggered. Standard community tool.
-- **A Bukkit-like API plugin** — NeoForge's API exposes chunk data but not "regenerate chunk" natively. A small plugin / mod could implement it.
-- **A dedicated chunk-reset mod** — e.g., "Reset" or equivalent. Verify NeoForge 1.21.1 availability.
-
-The design is tool-agnostic. Pick whichever is available; if none, this becomes a v2 item — the rest of the design works without it.
+#### Scheduled World Snapshots
+* **Mechanism:** Host-level automated script (cron) backing up the world folder (via `rsync`).
+* **Cadence:** Every **3 hours**.
+* **Retention:** 224 3-hourly snapshots (4 weeks @ 3-hour cadence) + 16 weekly snapshots (~4 months history).
+* **Restoration:** Admin manually restores a full world backup upon severe grief or data corruption.
 
 ---
 
-## 7. Faction & Claim Configuration
+## 7. Faction & Territory Setup
 
-### Factions
+### Faction Structure
+* Exactly 2 core factions: **Vampires** and **Hunters** (managed via FTB Teams).
+* **One Party Per Player:** A player can belong to only one party at a time. Solo players form their own 1-person party. Faction players belong to the shared faction party.
 
-- Always exactly 2 factions: **vampires** and **hunters**.
-- Faction = FTB Teams team. Members granted by `/ftbteams join` or equivalent.
-- **One party per player.** A player cannot be in two parties. A solo player is the leader (and sole member) of their solo party. A faction player is a member of a faction party. Each party owns a single FTB Chunks team.
+### Territory & Claim Limits
 
-### Claims
+| Parameter | Solo Player | Vampire Faction | Hunter Faction |
+| :--- | :---: | :---: | :---: |
+| **Claim Cap** | **8 chunks** | `floor(chunks_in_border / 4)` | `floor(chunks_in_border / 4)` |
+| **Force-Load Cap** | **0 chunks** | **16 chunks** (Subset of claims) | **16 chunks** (Subset of claims) |
+| **Outside Border** | Unclaimable | Unclaimable | Unclaimable |
 
-- FTB Chunks per-team mode: each team's claim is its territory.
-- Inside claims: block break/place by non-members forbidden, PvP requires explicit opt-in, TNT off.
-- Outside claims: fair game. Pranks, skirmishes, mercenary activity all happen here.
-- **Outside the world border is unclaimable.** Configured at the FTB Chunks level (per-dimension / per-coordinate restriction). If players could claim there, the renewable wilderness property would erode over time as players permanently claimed what was meant to be wild.
-- **Starter zone (admin-claimed at launch):** small area around spawn pre-claimed so new players are protected while learning the claim system.
+**Claim Budget Math:**  
+To guarantee that **50% of the world remains unclaimed wilderness** for PvP and resource gathering, the total claim budget for all factions combined is capped at half of `chunks_within_border`. The general formula for each faction's claim cap is:
 
-### Claim budget
+```
+faction_claim_cap = floor(chunks_within_border / (total_factions * 2))
+```
 
-| Entity | Claim budget | Force-loading budget |
-|---|---|---|
-| Solo player | 8 chunks | 0 (cannot force-load) |
-| Vampire faction | `floor(in_border_chunks / 4)` | 16 chunks (subset of claimed) |
-| Hunter faction | `floor(in_border_chunks / 4)` | 16 chunks (subset of claimed) |
+For our 2-faction setup (`total_factions = 2`), this simplifies to `floor(chunks_within_border / 4)`.
 
-**Force-loading is a flag on a claimed chunk — never a separate budget.** A chunk must be claimed before the force-load flag can be set. Force-loadable ≤ claimable, always.
+*Example (1,000 in-border chunks):* Vampires get 250 chunks, Hunters get 250 chunks, and 500 chunks remain wild wilderness. Solo 8-chunk caps do not count against this cap due to their minimal overall footprint.
 
-**Team-swap mechanics (design policy — verify §10.3):**
+#### Why Solo Players Are Exempt From the 50% Server Cap
 
-- **Solo → faction:** solo party dissolves; its 8 claimed chunks transfer ownership to the joined faction party. Player is now a faction member with 0 personal claims.
-- **Faction → solo:** player leaves the faction (or last member leaves, faction party dissolves). The player is fresh solo — FTB Chunks auto-recreates a solo party with a fresh 8-chunk budget. *Previously-transferred claims do not return; they remain with the (now-empty or dissolved) faction party.*
-- **Faction → faction:** no claim transport. The player joins the new faction with 0 personal claims. Their old contributions stay with the old faction.
+Solo players are not counted against the 50% faction claim pool because their 8-chunk limit is negligible at the player counts this design is intended for. In a 1,000-chunk world, it would take at least **31 solo players** to equal the claiming power of a single faction ($31 \times 8 = 248\text{ chunks} \approx 250\text{ chunks}$), and at least **63 total solo players** to fully saturate the remaining 50% of wilderness ($63 \times 8 = 504\text{ chunks}$).
 
-### Allies mechanic
+This design isn't intended to support more than 10–15 total players before requiring major architectural overhauls (since the "trusted player" paradigm breaks down beyond that scale), and realistically the server will only ever see 4–8 players. Over-engineering claim-pooling rules that would only be applicable with server populations that this design can't handle would be pointless.
 
-The Allies system is a technical capability of FTB Chunks + FTB Teams. The design endorses it for **solo → faction resource sharing**, and forbids it as a personal-territory mechanism inside factions.
+### Force-Loading Rules
 
-**Mechanic:**
+```
+                      FORCE-LOADING CHUNK POLICY
+                      
+┌──────────────────────────────────┐  ┌──────────────────────────────────┐
+│          ALWAYS-TICK             │  │          PARTY-DYNAMIC           │
+├──────────────────────────────────┤  ├──────────────────────────────────┤
+│  - Ticks 24/7 (Online & Offline) │  │  - Ticks ONLY when team online   │
+│  - Power Generation              │  │  - Item & Mob Farms (prevents    │
+│  - Long-cycle Processing (AE2)   │  │    hopper jams & entity buildup) │
+└──────────────────────────────────┘  └──────────────────────────────────┘
+```
 
-- **Directional access.** Adding Party B as ally of Party A grants Party B's members ally access into Party A's claimed territory. The reverse is not automatic. Both directions require both sides' actions.
-- **Multiple allies fine.** A party can have as many allies as it wants.
-- **Two granularities.** Allies can be per-player (target a specific individual) or per-party (target whole team).
-- **Minimap location sync at any distance** between allies.
-- **Recommended access level:** full in-territory access (break/place/containers/interact), no claim or admin operations.
+### Team Transfer & Alliance Rules
 
-**Endorsed use cases:**
+#### Team Swapping Behavior
+* **Solo → Faction:** Solo party dissolves. The 8 solo claimed chunks transfer to the joined faction.
+* **Faction → Solo:** Player leaves faction. FTB Chunks generates a new solo party with 8 fresh claims. *Previously contributed claims remain with the faction.*
+* **Faction → Faction:** No claim transfer. Old claims stay with the original faction.
+* **Faction Flipping:** **No cooldown.** Switching is soft narrative roleplay; reward scaling (§4) prevents mechanical exploits.
 
-- Solo player allied into vampires (or hunters, or both): gains access to faction territory / machines and minimap visibility. Fine.
-- Faction-to-faction alliance: technically possible, no design rationale.
-
-**Forbidden use case:**
-
-- Personal territory inside a faction via Allies. A player joining a faction transfers all solo claims to the faction party, regardless of any Allies team. **One-party-per-player** is the mechanical reason this path is closed (a player in the vampires party cannot simultaneously lead a personal allied sub-party) — design policy reinforces it.
-
-**Reward tier is unaffected by Allies.** A solo player allied to vampires is still classified as solo for §4's reward tier purposes — they get tier 0.
-
-### §7.3 — Per-faction budget
-
-As we only have two factions, we can simplify the general per-faction-claim formula
-`floor(in_border_chunks / 2) / faction_count`
-to `floor(in_border_chunks / 4)`.
-
-The 1/2 server-wide cap (sum of faction claim budgets) is split evenly across the two main factions to ensure there remains a "wilderness" area between the two factions to be fought within and fought over. 
-
-If a third faction were added, each faction's budget would become `floor((in_border / 2) / 3) = floor(in_border / 6)` — the formula generalises; the 1/4 is a special case for N=2.
-
-**Sole exception: the 8-chunk solo budget.** This is a flat per-player constant, not derived from the 1/2 server cap. Solos are not part of the cap-divided-among-factions math because at our 1000+ chunk server scale, the 8-chunk solo budget is too small to make a meaningful difference as a total of 63 solo players would be needed to fully allocate a 1000-chunk world. If the solo population were to approach 31 active players, the threshold where solo chunk allocation would approach that of a single faction, we would need to reevaluate chunk allocation, though it's likely that the rest of the design would *also* need to be reevaluated at that point.
-
-**Scale check** (in_border_chunks = 1000):
-
-- Server cap (factions): 500 chunks = 2 × 250.
-- Each faction: 250 chunks.
-- Solo: 8 chunks each. With 4–6 players, full saturation is impossible.
-- Border expansion to 2000 chunks: each faction gets 500, server cap 1000. Headroom still ample.
-
-### §7.4 — Force-loading: party-dynamic by default, always-tick override
-
-Force-loaded chunks always tick. Default FTB Chunks behavior is "always tick, even when no players are online" — measurable server load for a modded modpack at 16 force-loaded chunks per faction.
-
-| Chunk type | Force-load behavior | Why |
-|---|---|---|
-| Base / spawn / hotel | Party-dynamic | Loads on demand; saves resources |
-| Item farms | Party-dynamic (or off) | Items pile offline; farm jams on next load |
-| Power generation | **Always-tick** | Continuous output expected; offline = no power |
-| Processing facilities (long-running modded cycles) | **Always-tick** | Cycle continuity matters |
-| Mob / XP farms | Party-dynamic | Mob ticking can wait |
-
-Two settings per chunk: `force-loaded` (default false; tick regardless of online state) and `force-load party-tied` (default true; tick when any party member is online, release when all offline — the usual mode).
-
-**Why item farms shouldn't always-tick:** items pile faster than players can collect offline. Chests fill, item entities spawn on the ground, hoppers jam. Party-dynamic loading avoids this — farm only runs while the team is online.
-
-**Caveat:** whether FTB Chunks exposes three distinct modes (off / party-dynamic / always-tick) or only a binary (on / off) depends on the version. Verify at implementation (§10.3). Binary is acceptable; less elegant, still solves the resource-cost problem.
-
-### Faction-flipping
-
-**No cooldown.** With the §4 reward math, switching factions produces no mathematical advantage. Faction-flipping is soft-story content — a player hopping vampires → hunters → vampires is a beat, not an exploit. Friend-trust handles the social consequences; no code needed.
+#### Allies System Guidelines
+* **Permitted:** Solo players allying with a faction to gain shared base/machine access and minimap visibility.
+* **Prohibited:** Creating personal sub-territories inside a faction using allies.
+* **Reward Impact:** Allies do not affect faction size math. An allied solo player remains Tier 0.
 
 ---
 
-## 8. World Border & Spawn
+## 8. World Border, Dimensions & Weekly Resets
 
-### Spawn
+### Spawn & Border Configuration
+* **Spawn:** Central island surrounded by ocean.
+* **Border:** Fixed circular/square border set via Vanilla command (`/worldborder set <radius>`).
 
-- Central island, surrounded by ocean. World border at island edge.
-- `worldborder set <radius>` once at world creation. Vanilla command, no mod dependency.
+### Dimensional Reset Matrix
 
-### Nether / End policy (launch-time)
+| Dimension | Scope | Policy | Reset Schedule |
+| :--- | :--- | :--- | :---: |
+| **Overworld** | In-Border | Main base territory, protected land | **Never** |
+| **Overworld** | Outside-Border | Renewable wilderness, resource farming | **Weekly** |
+| **Nether** | All | Permanent infrastructure & travel routes | **Never** |
+| **End** | Main Island | Dragon fight arena & central hub | **Never** |
+| **End** | Outer Islands | Elytra, Shulker shells, endgame resources | **Weekly** |
 
-**Policy (confirmed):**
+```
+                       OVERWORLD ZONING MAP
+      ┌────────────────────────────────────────────────────┐
+      │  WEEKLY RENEWABLE WILDERNESS (Outside Border)      │
+      │  - Unclaimable territory                           │
+      │  - Weekly chunk regeneration                       │
+      │  ┌──────────────────────────────────────────────┐  │
+      │  │  PERMANENT CLAIMABLE ZONE (Inside Border)    │  │
+      │  │  - Fixed bases & faction claims              │  │
+      │  │  - Spawn Protection Island                   │  │
+      │  └──────────────────────────────────────────────┘  │
+      └────────────────────────────────────────────────────┘
+```
 
-- **Stronghold within world border, before launch.** Locate the stronghold; if the natural seed doesn't place one inside the world border, pre-generate or regenerate until one is. Avoids the "End fight impossible" failure mode.
-- **Main End island is NOT reset.** Obsidian pillars, exit portal, dragon egg pedestal preserved indefinitely. End is a one-shot fight, then an endgame resource dimension (elytra, shulker shells).
-- **End outer islands ARE reset weekly.** Once the dragon is dead, chorus islands, end cities, elytra shrines, and the outer ring become renewable endgame resources. Main island is the single exempt zone in End.
-- **Nether reset:** none. Players build permanent infrastructure.
-- **Nether portals:** build anywhere. Outside-border (Overworld-side) portals are destroyed by the weekly reset, since resetting the chunk destroys everything in it. Inside-border portals survive.
-
-| Dimension | Behavior | Reset |
-|---|---|---|
-| Overworld (in-border) | Permanent base territory | No reset |
-| Overworld (outside-border) | Renewable wilderness | Weekly |
-| Nether | Permanent second base | No reset |
-| End (main island) | One-shot fight + preserved hub | No reset |
-| End (outer islands) | Renewable endgame resources | Weekly |
-
-The Overworld's main island and the End's main island are the two preservation zones; everything else resets weekly.
-
-### Automatic weekly reset of chunks outside the world border
-
-**Status:** *in-scope, designed as part of v1.*
-
-**Mechanism:** A scheduled KubeJS / datapack job that, on a weekly cadence (e.g., every Friday at off-hours), resets chunks outside the world border to their original generation state in the Overworld only.
-
-**What this solves:**
-
-1. **World border cutting off progression-required structures.** If a village, ancient city, shipwreck, or other valuable structure happens to spawn just outside the border, the players are locked out. Weekly reset shifts that — structures regen, players get a chance to discover them next week.
-2. **Forcing in-border sprawl.** Without outside-border regen, players eventually face a choice between "build outside the border (and lose it to resets)" or "build cramped in-border." Weekly reset makes outside-border essentially wilderness to explore, not territory to claim.
-3. **Resource exhaustion.** Outside-border is the renewable resource farm zone. Reset every week means new mines, new trees, new monuments. The in-border main island stays built-up; the exterior stays wild.
-
-**What stays safe:**
-
-- The Nether and End dimensions are NOT subject to this reset.
-- The main End island (where the dragon fight happens) is explicitly NOT reset.
-- Outside-border chunks in the Overworld **cannot be claimed** (FTB Chunks is configured to deny claims in outside-border coordinates). This is the reason: claiming would permanently exempt portions of the renewable ring from weekly regen, defeating the property. See §7 for the claim-policy rationale.
-
-**Implementation surface:**
-
-- KubeJS server-side weekly tick (`onEvent('server.tick')` with a date check, or `player.json` cron-like).
-- The actual chunk reset is the only non-trivial piece. Options:
-  - **Pre-existing tooling:** "MCA Selector" (external) is the standard community tool for this, but it's offline-mode / admin-triggered.
-  - **Bukkit-like API:** NeoForge's API doesn't natively expose "regenerate chunk" but does expose chunk data. A custom plugin / mod could implement this.
-  - **A small dedicated mod:** e.g., "Reset" mod or similar (verify availability on NeoForge 1.21.1 at implementation time).
-- **Caveat:** the actual regeneration mechanism is the implementation question, not the design question. Design accepts "some mechanism that resets outside-border chunks to vanilla default on a weekly schedule, excluding claimed chunks and excluding Nether/End."
-
-**Design rule:** weekly reset applies to **Overworld only, outside-border only, claimed chunks exempted**. Anything else is implementation flexibility.
+**Why Reset Outside-Border Chunks Weekly?**  
+1. Prevents world border generation from permanently cutting off essential structures (villages, ancient cities).  
+2. Provides infinite renewable resources without bloating world file sizes.  
+3. Ensures players build permanent structures inside the border while treating the exterior as wild wilderness.
 
 ---
 
-## 9. Creative Milestones — Admin Rubric + Command-Issued Rewards
+## 9. Creative Milestones (Admin Rubric & Commands)
 
-Most quests auto-detect through FTB Quests (kill X, place Y blocks, craft Z). But the pitch's "creative" content (build a house, build a vehicle, design a farm) cannot be auto-detected reliably. This is where the system bridges to soft judgement while keeping the reward math hard.
+While technical quests (kill mob, craft item) auto-detect via FTB Quests, creative objectives (build a base, design a vehicle) use an **Admin Rubric System** backed by automated reward math.
 
-### Rubric model
+### Workflow Sequence
 
-Each creative quest lists a checklist of structural requirements, e.g.:
+```
+ ┌──────────────┐     /vvh claim <id>     ┌──────────────────┐
+ │  Player      ├────────────────────────►│ KubeJS Checklist │
+ └──────────────┘                         └────────┬─────────┘
+                                                   │ Scan chunks
+                                                   ▼
+ ┌──────────────┐    /vvh reward <player> ┌──────────────────┐
+ │  Admin       │◄────────────────────────┤  PASS / FAIL     │
+ └──────┬───────┘    @admin notification  └──────────────────┘
+        │
+        ▼
+ ┌──────────────┐     Reads scoreboard    ┌──────────────────┐
+ │ Reward Multi │◄────────────────────────┤ Apply Mult Tier  │
+ └──────────────┘                         └──────────────────┘
+```
 
-> *Build a house* = enclosed structure with ≥ 4 walls, a roof, a floor, ≥ 1 chest, ≥ 1 crafting table.
-
-The rubric is **published and stable**. Players know exactly what they need to satisfy. No surprises.
-
-### Workflow
-
-1. Player claims completion via a chat command: `/vvh claim <milestone_id>` (e.g., `/vvh claim build_house`).
-2. The script scans the player's claim chunks for the rubric conditions, where computable (block counts, block types). Returns PASS or FAIL-with-reason.
-3. On PASS, a notification posts to admin chat: `@admin <player> has passed <milestone_id>. Issue reward?`
-4. Admin runs `/vvh reward <player> <milestone_id>`. The script **reads the current `active_factioned` scoreboard**, computes tier per §4, issues the appropriate reward. **No math on the admin side.**
-5. The script records the milestone as completed for that player in persistent data so it can't be claimed twice.
-
-### Where hard meets soft
-
-- **Rubric validation: hard.** Code runs the checklist, returns pass/fail.
-- **"Looks good enough" judgement: soft.** Admin can override a FAIL → reward (e.g., the rubric missed a creative interpretation the player found). Admin can refuse a PASS → no reward. Both are admin prerogative. The script just makes the common case zero-effort.
-- **Reward tier: hard.** Set by `floor(active_factioned / 2)` from §4. The admin's command can't pick a different tier — the system applies the rule.
-
-### Worked example
-
-Server state: 4 active factioned players (2/2 split). Mean = 2 → tier 1 → 1.25× reward.
-
-1. Sarah runs `/vvh claim build_house`.
-2. Script scans her claim chunks: 4 walls, 1 roof, 1 floor, 3 chests, 1 crafting table. PASS.
-3. Admin chat: `@admin Sarah passed build_house. Issue reward?`
-4. Admin runs `/vvh reward sarah build_house`.
-5. Script reads `active_factioned = 4`, computes tier = 1, awards the 1.25× reward set.
-6. Sarah has her reward. **Admin typed one command. Total time: ~10 seconds.**
-
-### Implementation surface
-
-- KubeJS server-side script: command registration (`/vvh claim <id>`, `/vvh reward <player> <id>`); block-count validation against rubric (scan claim chunk bounding box, count block types); reward tables keyed to tier index (4 tiers → 4 reward sets); per-player persistent tracking of completed milestones (prevents double-claim).
-- In-game book (admin-editable) documenting rubrics. **The book is the user's documentation surface** — they update rubrics without restarting the server.
-
-**Admin's recurring work:** write rubrics; define reward sets; run one `/vvh reward` per completion. The system computes tier automatically from §4's scoreboard, so no math on the admin's side.
+1. **Published Rubric:** Requirements are published in an in-game handbook (e.g., *House = 4 walls, roof, floor, bed, chest, crafting table*).
+2. **Player Claim:** Player runs `/vvh claim <milestone_id>`.
+3. **Automated Scan:** Script verifies computable block counts in player claims. Returns PASS or FAIL-with-reason.
+4. **Admin Alert:** Admin receives notification: `@admin Player passed build_house. Issue reward?`
+5. **Admin Approval:** Admin executes `/vvh reward <player> <milestone_id>`.
+6. **Automated Calculation:** Script queries `active_factioned`, determines multiplier tier from §4, and awards the items. **Zero manual math for admin.**
 
 ---
 
-## 10. Open Questions / Verify-Before-Implementing
+## 10. Pre-Implementation Verification Checklist
 
-Each item below must be resolved before any code is written.
+*Note: Every item in this checklist **MUST be tested and verified on a NeoForge 1.21.1 test server** before authoring modpack configs or KubeJS scripts.*
 
-### 1. Vanilla `play_one_minute` on NeoForge 1.21.1
+- [ ] **10.1 Scoreboard Playtime Tracking**  
+  *Task:* Verify `minecraft.custom:minecraft.play_one_minute` ticks on NeoForge 1.21.1.  
+  *Command:* `/scoreboard objectives add playtime minecraft.custom:minecraft.play_one_minute`  
+  *Fallback:* KubeJS player login/logout accumulator (~40 lines).
 
-- **Question:** Does the objective tick on NeoForge 1.21.1 servers as documented in vanilla?
-- **Verify:** Drop into a test world, run:
-  ```
-  /scoreboard objectives add playtime minecraft.custom:minecraft.play_one_minute
-  /scoreboard objectives setdisplay list playtime
-  ```
-  Log in, play 5 minutes, check `/scoreboard players get @p playtime`.
-- **Fallback if broken:** KubeJS accumulator pattern (log on/off events, sum to scoreboard). ~40 lines.
+- [ ] **10.2 14-Day Playtime Window Mechanics**  
+  *Task:* Confirm storage method for rolling 14-day active check.  
+  *Decision:* **Path A (Per-player NBT timestamp array)** is recommended over scoreboard decay timers.
 
-### 2. 14-day window mechanism
+- [ ] **10.3 FTB Chunks & Teams Feature Parity**  
+  *Task:* Verify FTB Chunks config parameters on 1.21.1:  
+  * Per-team claim limits (`floor(in_border / 4)`) and force-load limits (16).  
+  * Force-load sub-setting (chunk must be claimed to be force-loaded).  
+  * Coordinate-based claim denial outside world border.  
+  * Single-party membership enforcement.
 
-Three viable paths. **Choose one explicitly before implementing.**
+- [ ] **10.4 FTB Quests Reward Tier Hooks**  
+  *Task:* Test dynamic reward modification via KubeJS event hooks on quest completion.
 
-| Path | What it is | Surface area | Failure mode |
-|---|---|---|---|
-| A. Per-player NBT | Store `last_active_timestamps` in player persistent data; query on quest completion | Low if NBT fits; ~30 lines | NBT bloat if too many timestamps stored |
-| B. KubeJS scheduled task | Decay scoreboard every 14 in-game days | Medium; requires scheduled events | Timer drift if server restarts mid-window |
-| C. Approximate (recent-login yes/no) | Replace 1-hour cumulative with "logged in within last 14 days" | Lowest | Loses the "actually played" nuance; one-tap visit satisfies |
-
-**Recommendation:** Path A. It's the only one that exactly matches the stated policy.
-
-### 3. FTB Chunks per-team config
-
-§7's claim policy has to be enforced by the actual FTB Chunks version in the packwiz. Verify on a test world that:
-
-- Per-team claim limits (8 solo, `floor(in_border / 4)` per faction) and force-load limits (0 solo, 16 faction) can be set per-team via config or NBT.
-- Force-loadable chunks are a strict subset of claimed chunks (chunk must be claimed before the force-load flag applies).
-- The three force-load modes (off / party-dynamic / always-tick) are exposed per chunk. If the deployed version is binary only (on / off), fall back to that — less elegant, still solves the resource-cost problem.
-- Coordinate-based claim denial works (claims inside the world border are allowed; outside are denied). If not exposed, the chunk-reset mechanism (§8) must additionally force-unclaim outside-border claims on each weekly reset.
-- Per-team chunk limits apply globally across dimensions (Overworld + Nether + End) — confirm this is what the version defaults to.
-
-**One-party-per-player enforcement.** Critical design rule. Verify that the deployed FTB Teams fork does not allow multi-party membership. If it does, the reward-tier logic must classify players solely by their main-faction membership, ignoring allies.
-
-**Team-swap mechanics are design policy.** Solo → faction join: solo party dissolves, claims transfer to the joined party. Faction → solo leave: solo auto-recreates with fresh 8-chunk budget, prior claims do not return. Verify the deployed FTB Chunks + FTB Teams behaves this way. If not, KubeJS orchestration enforces it.
-
-### 4. FTB Quests reward tier structure
-
-- **Defer to content-design phase.** Structure first, reward tables later.
-- Open question: are rewards items (e.g., diamond gear), recipe unlocks (custom crafting table gates), or both?
-
-### 5. GriefLogger support on NeoForge 1.21.1
-
-Verify on test world:
-
-- GriefLogger is published for NeoForge 1.21.1 (or usable via Forgified Fabric API on this modpack).
-- It logs blocks, containers, entity-kills, item pickups (whatever the version covers is what we have for forensics).
-- Log retention is configurable (30 days default).
-
-If GriefLogger isn't available on this version, fall back to claims-only prevention plus manual-restoration dispute resolution. Acceptable on a friend server; the consequences are described in §6.
+- [ ] **10.5 GriefLogger Compatibility**  
+  *Task:* Confirm GriefLogger (or Forgified Fabric equivalent) installs cleanly on NeoForge 1.21.1 and logs block/container/entity events with configurable retention.
 
 ---
 
-## 11. Soft-Rule Notes
+## 11. Soft-Rule Guidelines (Friend-Trust Layer)
 
-The friend-trust layer governs the following. Admin arbitration is the escalation path; there is no in-game enforcement and the modpack does not encode these rules.
+The following guidelines are social conventions enforced by friend trust. Admin arbitration serves as the final resort; no mod code is written for these rules.
 
-### Pranks
-
-- Players can prank each other outside of claimed territory.
-- "Harmless / reversible" is descriptive, not prescriptive. The hard rule — "claims are inviolable" — provides the actual boundary.
-- Escalation: if a prank crosses a line, admin arbitrates. GriefLogger lookup supports the decision; the consequence is soft. Restoration is manual (offender or admin).
-
-### Skirmishes
-
-- PvP off by default. Sanctioned skirmishes are opt-in per event.
-- Admin announces start time in chat; players opt in via a flag.
-- After the event, all flags reset to default.
-- Implementation can be: FTB Teams per-team war-mode toggle, or a small KubeJS event-triggered script.
-- **Defer to the first need.**
-
-### Mercenaries / bribery
-
-- Player-driven economy. No admin rules.
-- If it becomes a drama source, the hard-layer solution is "you must be in a faction to take cross-faction jobs," not "admin mediates every deal."
-
-### Neutrals as spies / mediators
-
-- Soft social role. No policy.
+* **Prank Policy:** Pranks are allowed **only outside claimed territory**. Claims remain strictly inviolable. Disputes are resolved socially or via admin rollback using GriefLogger evidence.
+* **Sanctioned Skirmishes:** Opt-in PvP events scheduled by the admin. Outside of events, claim protection keeps PvP disabled.
+* **Mercenary Contracts:** Player-negotiated trades, hiring, and favors. Fully player-driven.
+* **Diplomacy & Mediators:** Player roleplay interactions without administrative interference.
 
 ---
 
-## 12. Implementation Order (When Ready)
+## 12. Phased Implementation Roadmap
 
-In rough dependency order:
+```
+ ┌─────────────────────────────────────────────────────────────────────────┐
+ │                       IMPLEMENTATION PHASES                             │
+ ├──────────────────┬──────────────────┬──────────────────┬────────────────┤
+ │ Phase 1: Test    │ Phase 2: Setup   │ Phase 3: Logic   │ Phase 4: World │
+ │ Verification     │ & Core Configs   │ & Commands       │ & Launch       │
+ │                  │                  │                  │                │
+ │ - §10 checklist  │ - FTB Chunks     │ - KubeJS Tier    │ - World border │
+ │ - Playtime tests │ - GriefLogger    │   Reward Script  │ - Spawn island │
+ │ - FTB caps test  │ - Snapshot cron  │ - `/vvh` claims  │ - Quest trees  │
+ └──────────────────┴──────────────────┴──────────────────┴────────────────┘
+```
 
-1. **Verify §10.1 and §10.2.** Without resolved data source and 14-day window mechanism, nothing downstream is well-defined.
-2. **FTB Chunks config.** Setup-side; happens before launch.
-3. **GriefLogger load.** Setup-side; happens before launch. Confirms what we can actually log.
-4. **External-world-snapshot cron job.** Setup-side; happens before launch. Note: this is host-level, not modpack-level.
-5. **KubeJS faction-tier reward script.** Reads `active_factioned`, computes tier, applies reward. Depends on §10.1.
-6. **KubeJS `/vvh claim` and `/vvh reward` commands.** Depends on §10.1 (uses the same scoreboard) and §4 (uses the same tier table).
-7. **World border + spawn island + Nether portal placement.** Setup-side.
-8. **Stronghold-in-border verification.** Admin-side check before launch.
-9. **FTB Quests auto-detected content** (kill X, craft Y, place Z). Tier-aware reward sets.
-10. **FTB Quests creative content** with rubrics (§9). The `/vvh claim` script handles this layer.
-11. **Chunk reset mechanism** for outside-border weekly reset. Verify the available tool (MCA Selector vs. mod vs. custom) before locking the design in.
-12. **Soft-rule escalation paths** (skirmishes, prank disputes). Defer until first need.
-
-A note on #10: the design accepts "some mechanism that resets outside-border chunks." The implementation is selectable based on what's available on NeoForge 1.21.1 at implementation time. If no suitable tool exists, this becomes a v2 item — the rest of the design works without it.
+1. **[ ] Phase 1 — Verification:** Complete all test items in [Section 10](#10-pre-implementation-verification).
+2. **[ ] Phase 2 — Base Configuration:**  
+   * Configure `config/ftbchunks-common.toml` (claim caps, wilderness protection).  
+   * Install and configure GriefLogger.  
+   * Deploy server-level 6-hour backup cron job.
+3. **[ ] Phase 3 — Scripting & Automation:**  
+   * Write `kubejs/server_scripts/faction_rewards.js` (tier formula & active player tracking).  
+   * Write `kubejs/server_scripts/vvh_commands.js` (`/vvh claim` and `/vvh reward`).
+4. **[ ] Phase 4 — World Preparation & Launch:**  
+   * Set world border and verify stronghold location inside border.  
+   * Build spawn island claim protection.  
+   * Populate FTB Quests trees and creative milestone rubrics.  
+   * Configure outside-border weekly reset script.
 
 ---
 
-## 13. Cross-References
+## 13. Reference Documents
 
-- Parent review: `~/Downloads/server-plan.txt` (the pitch)
-- User context: `~/.claude/memory` (KISS philosophy + Poiesis + mc1.poiesis.link)
-- Repo conventions: `agents.md` (packwiz CLI rules, file ignore patterns)
-- Design-review skill: `minecraft-server-design-review` (patterns used)
+* **Parent Pitch Review:** `~/Downloads/server-plan.txt`
+* **User System Context:** `~/.claude/memory`
+* **Repository Guidelines:** [AGENTS.md](file:///Users/nathanmitchell/packwiz-modpack/AGENTS.md)
+* **Design Pattern Skill:** `minecraft-server-design-review`
