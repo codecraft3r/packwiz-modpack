@@ -72,43 +72,50 @@ Every rule in the server design lands in one of two distinct layers. Assigning a
 ### Mathematical Formula
 
 ```
-active_factioned = count(players active AND in any faction)
-mean_size        = floor(active_factioned / 2)    # always 2 factions
-reward_tier      = tier_table[mean_size]
+active_factioned  = count(players active AND in any faction)
+reward_multiplier = min(2.00, 1.00 + (active_factioned * 0.167))
+reward_tier       = active_factioned
 ```
 
 > **Solo Player Handling:** Solo players are excluded from `active_factioned`. Their playtime is tracked continuously, so if they later join a faction, their activity counts immediately. Solo quest completion defaults to Tier 0 (1.00×).
 
+> **Rounding & Truncation:** Reward calculations **MUST ALWAYS round down (floor)** as minimally as possible to the smallest valid atomic unit of the reward type being dispensed:
+> * **Discrete Items (e.g., Diamonds, Ingots):** Round down to the nearest whole integer.  
+>   *Example:* $64 \text{ diamonds} \times 1.833 = 117.312 \rightarrow \mathbf{117\text{ diamonds}}$ (not 118, nor 117.312).
+> * **Divisible Quantities (e.g., Currency Mods):** Round down to the lowest common denominator unit (e.g., cents).  
+>   *Example:* $\$5.00 \times 1.833 = \$9.165 \rightarrow \mathbf{\$9.16}$ (not $\$9.17$, nor $\$9.165$).
+
 ### Stepped Tier Table
 
-| Mean Faction Size (`mean_size`) | Reward Tier | Quest Reward Multiplier |
+| Active Faction Players (`active_factioned`) | Reward Tier | Quest Reward Multiplier |
 | :---: | :---: | :---: |
-| **0** (No factioned players) | Tier 0 | **1.00×** (Baseline) |
-| **1** | Tier 0 | **1.00×** |
-| **2** | Tier 1 | **1.25×** |
-| **3** | Tier 1 | **1.25×** |
-| **4** | Tier 2 | **1.50×** |
-| **5** | Tier 2 | **1.50×** |
-| **6** | Tier 3 | **1.75×** |
-| **≥ 7** | Tier 3 | **1.75×** (Capped) |
+| **0** (No factioned players) | Tier 0 | **1.000×** (Baseline) |
+| **1** | Tier 1 | **1.167×** |
+| **2** | Tier 2 | **1.333×** |
+| **3** | Tier 3 | **1.500×** |
+| **4** | Tier 4 | **1.667×** |
+| **5** | Tier 5 | **1.833×** |
+| **6** | Tier 6 | **2.000×** |
+| **≥ 6** | Tier 6 | **2.000×** (Capped) |
 
 ### Worked Population Scenarios (6-Player Server Cap)
 
-| Faction Split | Active Players | `active_factioned` | `mean_size` | Tier | Reward Multiplier |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **2 vs 2** | 4 active | 4 | 2 | Tier 1 | **1.25×** |
-| **3 vs 3** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
-| **5 vs 1** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
-| **4 vs 2** | 6 active | 6 | 3 | Tier 2 | **1.50×** |
-| **2 vs 2 (1 away)** | 3 active | 3 | 1 | Tier 0 | **1.00×** |
-| **0 vs 0 (All Solo)** | 6 active | 0 | 0 | Tier 0 | **1.00×** |
-| **4 vs 2 + 1 Solo** | 5 active factioned | 5 | 2 | Tier 1 | **1.25×** |
+| Faction Split | Active Players | `active_factioned` | Tier | Reward Multiplier |
+| :---: | :---: | :---: | :---: | :---: |
+| **1 vs 1** | 2 active | 2 | Tier 2 | **1.333×** |
+| **2 vs 2** | 4 active | 4 | Tier 4 | **1.667×** |
+| **3 vs 3** | 6 active | 6 | Tier 6 | **2.000×** |
+| **5 vs 1** | 6 active | 6 | Tier 6 | **2.000×** |
+| **4 vs 2** | 6 active | 6 | Tier 6 | **2.000×** |
+| **2 vs 1 (1 away)** | 3 active | 3 | Tier 3 | **1.500×** |
+| **0 vs 0 (All Solo)** | 6 active | 0 | Tier 0 | **1.000×** |
+| **4 vs 1 + 1 Solo** | 5 active factioned | 5 | Tier 5 | **1.833×** |
 
 ### Mathematical Design Guarantees
-1. **Zero Migration Pressure:** A balanced 3 vs 3 split and an imbalanced 5 vs 1 split yield the exact same multiplier (**1.50×**). Players gain no benefit by piling onto the dominant faction.
-2. **Solo is Baseline:** Solo play grants standard 1.00× rewards without dragging down faction calculations.
-3. **Late-Joiner Friendly:** Adding new active faction members raises `mean_size` and unlocks higher tiers for everyone.
-4. **Stable Odd-Count Handling:** Floor division cleanly handles absent or uneven player counts.
+1. **Zero Migration Pressure:** A balanced 3 vs 3 split and an imbalanced 5 vs 1 split yield the exact same multiplier (**2.000×**). Players gain no benefit by piling onto the dominant faction.
+2. **Solo is Baseline:** Solo play grants standard 1.000× rewards without dragging down faction calculations.
+3. **Every Joined Player Counts:** Each additional active player who joins a faction directly increases the reward multiplier by **+0.167× (+16.7%)**, eliminating dead-zone plateaus.
+4. **Stable & Dynamic Scaling:** Simple linear scaling cleanly handles absent or uneven player counts up to the 2.000× cap.
 
 ### Rejected Alternatives
 * **Exponential Compounding ($1.5^n$):** A 6-player server would result in faction-aligned players getting a 7.59× reward multiplier, destroying game balance.
