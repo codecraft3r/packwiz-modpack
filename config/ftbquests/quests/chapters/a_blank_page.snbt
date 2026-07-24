@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1A0B1A4E5A9E0004"
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	filename: "a_blank_page"
@@ -7,44 +8,54 @@
 	id: "1A0B1A4E5A9E0000"
 	images: [
 		{
-			height: 2.5d
+			alpha: 150
+			height: 1.35d
 			image: "minecraft:textures/item/writable_book.png"
+			order: -20
 			rotation: -8.0d
-			width: 2.5d
-			x: -5.0d
-			y: -1.25d
+			width: 1.35d
+			x: -4.35d
+			y: -2.55d
 		}
 		{
-			height: 2.25d
+			alpha: 150
+			height: 1.25d
 			image: "cobblemon:textures/item/poke_balls/poke_ball.png"
-			rotation: 12.0d
-			width: 2.25d
-			x: -5.0d
-			y: 3.25d
+			order: -20
+			rotation: 10.0d
+			width: 1.25d
+			x: -4.25d
+			y: 0.0d
 		}
 		{
-			height: 2.25d
+			alpha: 150
+			height: 1.25d
 			image: "minecraft:textures/item/compass_16.png"
+			order: -20
 			rotation: -10.0d
-			width: 2.25d
-			x: 5.0d
-			y: 3.25d
+			width: 1.25d
+			x: 4.25d
+			y: 0.0d
 		}
 		{
-			height: 2.5d
+			alpha: 150
+			height: 1.35d
 			image: "minecraft:textures/block/amethyst_cluster.png"
+			order: -20
 			rotation: 8.0d
-			width: 2.5d
-			x: 5.25d
-			y: 7.25d
+			width: 1.35d
+			x: 4.25d
+			y: 2.65d
 		}
 		{
-			height: 2.75d
+			alpha: 150
+			height: 1.4d
 			image: "minecraft:textures/item/filled_map.png"
+			order: -20
 			rotation: -6.0d
-			width: 2.75d
-			x: -5.25d
-			y: 7.25d
+			width: 1.4d
+			x: -4.25d
+			y: 2.65d
 		}
 	]
 	order_index: 0
@@ -54,30 +65,30 @@
 		{
 			icon: { id: "minecraft:writable_book" }
 			id: "1A0B1A4E5A9E0002"
-			min_width: 380
+			min_width: 260
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.75d
 			tasks: [{ id: "1A0B1A4E5A9E0014", type: "checkmark" }]
 			x: 0.0d
-			y: 0.0d
+			y: -2.5d
 		}
 		{
 			icon: { id: "minecraft:spyglass" }
 			id: "1A0B1A4E5A9E0006"
-			min_width: 360
+			min_width: 260
 			optional: true
 			shape: "gear"
 			tasks: [{ id: "1A0B1A4E5A9E0016", type: "checkmark" }]
-			x: 3.5d
-			y: -0.5d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0002"]
 			icon: { id: "cobblemon:poke_ball" }
 			id: "1A0B1A4E5A9E0003"
-			min_width: 360
+			min_width: 260
 			shape: "heart"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					id: "1A0B1A4E5A9E0011"
@@ -86,16 +97,16 @@
 					value: 2
 				}
 			]
-			x: -3.0d
-			y: 3.0d
+			x: -2.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0002"]
 			icon: { id: "minecraft:iron_sword" }
 			id: "1A0B1A4E5A9E0004"
-			min_width: 360
+			min_width: 260
 			shape: "diamond"
-			size: 1.5d
+			size: 1.25d
 			tasks: [
 				{
 					id: "1A0B1A4E5A9E0012"
@@ -105,18 +116,18 @@
 				}
 			]
 			x: 0.0d
-			y: 3.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0002"]
 			icon: { id: "minecraft:amethyst_shard" }
 			id: "1A0B1A4E5A9E0005"
-			min_width: 360
+			min_width: 260
 			shape: "heart"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{ id: "1A0B1A4E5A9E0013", type: "checkmark" }]
-			x: 3.0d
-			y: 3.0d
+			x: 2.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -126,7 +137,7 @@
 			]
 			icon: { id: "minecraft:filled_map" }
 			id: "1A0B1A4E5A9E0001"
-			min_width: 400
+			min_width: 280
 			rewards: [
 				{
 					count: 2
@@ -144,21 +155,22 @@
 				}
 			]
 			shape: "hexagon"
-			size: 2.5d
+			size: 2.0d
 			tasks: [{ id: "1A0B1A4E5A9E0015", type: "checkmark" }]
 			x: 0.0d
-			y: 7.0d
+			y: 2.6d
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0001"]
 			icon: { id: "minecraft:firework_rocket" }
 			id: "1A0B1A4E5A9E0007"
-			min_width: 380
+			min_width: 260
 			optional: true
 			shape: "octagon"
+			size: 1.25d
 			tasks: [{ id: "1A0B1A4E5A9E0017", type: "checkmark" }]
 			x: 0.0d
-			y: 10.0d
+			y: 5.0d
 		}
 	]
 }

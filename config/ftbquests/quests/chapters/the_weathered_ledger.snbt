@@ -1,0 +1,307 @@
+{
+	autofocus_id: "1A0B1A4E5A9E0301"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "the_weathered_ledger"
+	group: ""
+	icon: { id: "create:windmill_bearing" }
+	id: "1A0B1A4E5A9E0300"
+	images: [
+		{
+			alpha: 84
+			height: 8.6d
+			image: "poiesis:textures/questpics/weathered_ledger_key_art.png"
+			order: -40
+			rotation: 0.0d
+			width: 6.8d
+			x: 0.0d
+			y: 1.0d
+		}
+	]
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: { id: "minecraft:writable_book" }
+			id: "1A0B1A4E5A9E0301"
+			min_width: 290
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [{ id: "1A0B1A4E5A9E0311", type: "checkmark" }]
+			x: 0.0d
+			y: -4.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0301"]
+			icon: { id: "create:windmill_bearing" }
+			id: "1A0B1A4E5A9E0302"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0411"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "wind", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Wind-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A current shared is a current multiplied.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0412"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.25d
+			tasks: [{ id: "1A0B1A4E5A9E0321", type: "checkmark" }]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0301"]
+			icon: { id: "create:mechanical_press" }
+			id: "1A0B1A4E5A9E0303"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0431"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "press", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Press-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Ordinary force, applied with uncommon patience.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0432"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "create:mechanical_press"
+					criterion: ""
+					id: "1A0B1A4E5A9E0331"
+					type: "advancement"
+				}
+			]
+			x: -3.0d
+			y: 0.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0301"]
+			icon: { id: "minecraft:diamond_pickaxe" }
+			id: "1A0B1A4E5A9E0304"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0451"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "blue", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"blue\",\"italic\":false,\"text\":\"Blue-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A tool is a promise, not a throne.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0452"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "minecraft:story/mine_diamond"
+					criterion: ""
+					id: "1A0B1A4E5A9E0341"
+					type: "advancement"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0301"]
+			icon: { id: "irons_spellbooks:arcane_essence" }
+			id: "1A0B1A4E5A9E0305"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0471"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "cinder", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Cinder-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A first table is an argument with possibility.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0472"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					advancement: "irons_spellbooks:irons_spellbooks/make_inscription_table"
+					criterion: ""
+					id: "1A0B1A4E5A9E0351"
+					type: "advancement"
+				}
+			]
+			x: 3.0d
+			y: 0.2d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0301"]
+			icon: { id: "cobblemon:poke_ball" }
+			id: "1A0B1A4E5A9E0306"
+			min_width: 250
+			rewards: [
+				{
+					id: "1A0B1A4E5A9E0491"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_lens: "chorus", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"dark_aqua\",\"italic\":false,\"text\":\"Chorus-Lens Field Mark\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A good story has at least one witness.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1A0B1A4E5A9E0492"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "1A0B1A4E5A9E0361"
+					stat: "cobblemon:captured"
+					type: "stat"
+					value: 8
+				}
+				{
+					id: "1A0B1A4E5A9E0362"
+					stat: "cobblemon:battles_total"
+					type: "stat"
+					value: 8
+				}
+				{ id: "1A0B1A4E5A9E0363", type: "checkmark" }
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1A0B1A4E5A9E0302"
+				"1A0B1A4E5A9E0303"
+				"1A0B1A4E5A9E0304"
+				"1A0B1A4E5A9E0305"
+				"1A0B1A4E5A9E0306"
+			]
+			icon: { id: "minecraft:lantern" }
+			id: "1A0B1A4E5A9E0307"
+			min_required_dependencies: 3
+			min_width: 310
+			rewards: [
+				{
+					count: 2
+					id: "1A0B1A4E5A9E04A1"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1A0B1A4E5A9E04A2"
+					item: {
+						components: {
+							"minecraft:custom_data": { poiesis_folio: "weathered_ledger", poiesis_session: 2 }
+							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Weathered Folio\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The useful things were never small to the people who needed them.\"}"]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1A0B1A4E5A9E04A3"
+					table_id: 1876622593560031232L
+					team_reward: false
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{ id: "1A0B1A4E5A9E0371", type: "checkmark" }]
+			x: 0.0d
+			y: 3.4d
+		}
+		{
+			dependencies: ["1A0B1A4E5A9E0307"]
+			icon: { id: "minecraft:lantern" }
+			id: "1A0B1A4E5A9E0308"
+			min_width: 280
+			optional: true
+			shape: "octagon"
+			size: 1.2d
+			tasks: [{ id: "1A0B1A4E5A9E0381", type: "checkmark" }]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+}

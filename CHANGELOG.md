@@ -2,6 +2,30 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [2.4.0] - 2026-07-18
+
+### Added
+- Added **Living Atlas Quest 02 - The Weathered Ledger**, a week-long, five-route chapter tuned for the server's early Create and diamond-tool milestone. Players complete any three routes for capped horizontal utility rewards; diamond armor, brass, XP, enchantments, rare Pokemon, and factory skips are deliberately excluded.
+- Added **The Atlas Exchange**, a 7-day, small-team-safe Bevel sink. Physical Bevels can now be consumed for one shared, horizontal utility cache per offer, with rewards that support early Create, building, exploration, magic, and Cobblemon without creating a progression loop.
+- Added original Weathered Ledger quest art to the required Living Atlas resource pack.
+
+## [2.3.2] - 2026-07-17
+
+### Fixed
+- Corrected the Explorer's Compass choice reward to use the mod's registered item ID.
+- Repacked the required Living Atlas Art resource pack with valid forward-slash asset paths so both custom quest images load.
+
+## [2.3.1] - 2026-07-17
+
+### Added
+- Added **Living Atlas Quest 01 - The First Resonance**, a week-long chapter where players complete any three of five activity lenses for capped, choice-driven rewards.
+- Added the client-required **Living Atlas Art v1** resource pack for the chapter's original illustrated visuals.
+
+### Fixed
+- Restored the live-tested flat FTB Quests `lang/en_us.snbt` localization layout; the nested layout released in 2.3.0 loaded an empty translation table on FTB Quests 2101.1.27.
+- Restored the FTB Quest Book in the default StarterKit and its onboarding description.
+- Restored the tested Session 00 chapter layout and accurate Cobblemon battle-start wording.
+
 ## [2.3.0] - 2026-07-14
 
 ### Added
