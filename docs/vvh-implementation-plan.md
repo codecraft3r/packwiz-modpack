@@ -313,17 +313,9 @@ These three layers complement each other. None alone is sufficient; together the
 
 | Entity | Claim budget | Force-loading budget |
 |---|---|---|
-| Solo player | 8 chunks (per design) | 0 chunks — solos cannot force-load |
-| Vampire faction | **`floor(in_border_chunks / 4)` of in-border area** (per user) | 16 chunks (subset of this faction's claimed chunks) |
-| Hunter faction | **`floor(in_border_chunks / 4)` of in-border area** (per user) | 16 chunks (subset of this faction's claimed chunks) |
-
-**Terminology clarifications to avoid confusion:**
-
-- "Per design" = the user (admin) chose this number explicitly when designing the system. It doesn't mean the number scales with design iteration; it's a constant for this modpack.
-- "Per user" = refers to the player base, not an increment. The 1/4 is the same whether 1 player joins or 6 do. It's a one-time budget per faction, not a per-player increment.
-- These two phrases are about *who decided* the number, not *how it scales*. They're metadata, not mathematical qualifiers.
-
-In particular, this is **not** compounding math. Faction claim budget does not increase per player. The 1/4 of in-border chunks is a flat ceiling per faction team, period.
+| Solo player | 8 chunks | 0 chunks — solos cannot force-load |
+| Vampire faction | `floor(in_border_chunks / 4)` | 16 chunks (subset of this faction's claimed chunks) |
+| Hunter faction | `floor(in_border_chunks / 4)` | 16 chunks (subset of this faction's claimed chunks) |
 
 **Team-swap mechanics — deliberate design policy:**
 
