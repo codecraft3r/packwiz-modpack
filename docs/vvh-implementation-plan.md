@@ -311,11 +311,19 @@ These three layers complement each other. None alone is sufficient; together the
 
 **A player is in exactly one party at a time.** This is the rule. Membership in a second party is not possible. A solo player is the leader (and sole member) of their solo party; a faction player is a member of a faction party.
 
-| Entity | Role | Claim budget | Force-loading budget |
-|---|---|---|---|
-| Solo player | Party leader (sole member) of solo party | 8 chunks claimable | 0 force-loadable |
-| Vampire faction | Multi-member party; shared budget | 16 force-loadable chunks (shared team budget) | (subset of claim) |
-| Hunter faction | Multi-member party; shared budget | 16 force-loadable chunks (shared team budget) | (subset of claim) |
+| Entity | Claim budget | Force-loading budget |
+|---|---|---|
+| Solo player | 8 chunks (per design) | 0 chunks — solos cannot force-load |
+| Vampire faction | **`floor(in_border_chunks / 4)` of in-border area** (per user) | 16 chunks (subset of this faction's claimed chunks) |
+| Hunter faction | **`floor(in_border_chunks / 4)` of in-border area** (per user) | 16 chunks (subset of this faction's claimed chunks) |
+
+**Terminology clarifications to avoid confusion:**
+
+- "Per design" = the user (admin) chose this number explicitly when designing the system. It doesn't mean the number scales with design iteration; it's a constant for this modpack.
+- "Per user" = refers to the player base, not an increment. The 1/4 is the same whether 1 player joins or 6 do. It's a one-time budget per faction, not a per-player increment.
+- These two phrases are about *who decided* the number, not *how it scales*. They're metadata, not mathematical qualifiers.
+
+In particular, this is **not** compounding math. Faction claim budget does not increase per player. The 1/4 of in-border chunks is a flat ceiling per faction team, period.
 
 **Team-swap mechanics — deliberate design policy:**
 
@@ -395,30 +403,48 @@ If the mod doesn't behave this way by default, configuration or KubeJS orchestra
 - 8 claimable, 0 force-loadable for solos is intentionally *more restrictive than factions across both dimensions.* Solo gets fewer chunks AND no server-load protection. This is a strong steer toward factions: not by penalty, but by offering strictly less.
 - The asymmetry reflects the broader design's stance: faction is the supported playstyle; solo is the resource-gathering / testing-the-server playstyle that exists as a step toward factioning up.
 
-### §7.3 — Server-wide claimable cap (≤ 1/2 of in-border area)
+### §7.3 — Per-faction claim budget = 1/4 of in-border; server-wide cap is emergent
 
-The sum of all claimed chunks across all teams (factions + solos) is capped at half the in-border world area:
+**Per-faction claim budget (per the user):**
 
 ```
-server_claimable_cap = floor(in_border_chunks / 2)
+max_chunks_per_main_faction = floor(in_border_chunks / 4)
 ```
 
-**Why this cap exists:**
+Each main faction — vampires, hunters — can claim up to 1/4 of the in-border world area. Solos have a separate per-team budget (8 chunks, see §7.2).
+
+**Server-wide cap (emergent from the per-faction budgets):**
+
+```
+server_claimable_cap = floor(in_border_chunks / 2)  # = 2 × (1/4)
+```
+
+This is **not a separate constraint** — it falls out of the per-faction 1/4 budgets. Two main factions × 1/4 = 1/2. The "1/2 server-wide cap" idea was the original framing in earlier doc drafts; it remains valid as a description of the maximum total claimable, but it's *derived* from per-faction budgets, not an independent rule.
+
+**Why per-faction limits are 1/4 each:**
 
 - The in-border world will be at least a thousand chunks (per user).
-- If all chunks were claimable, the island would fill with permanent bases and the renewable-in-anything-but-name area would vanish.
-- A 1/2 cap leaves **at least 500 chunks of force-unclaimable in-border wilderness** even on a small server. Players can still explore, gather, build transient outposts, run expeditions, and have scenic relief — none of which is sacrificed to faction sprawl.
-- FTB Chunks' claim limits apply *globally across all dimensions* by default (per FTB Chunks config). So the 1/2 cap applies to all dimension claims combined. This is checked at config-time: per-team limits + global dim-wide cap.
+- If factions had unlimited claim area (only server-capped at 1/2), one faction could claim up to 1/2 of the in-border. The other faction would then be artificially constrained to *less* than 1/4 if solos were present.
+- A 1/4-each rule gives each faction the *same* per-team territory regardless of how solos are playing.
+- Combined, factions can claim up to 1/2 of the in-border (a sum that matches the original "1/2 server cap" intuition). The remaining half is unclaimed in-border wilderness.
+- FTB Chunks' claim limits apply *globally across all dimensions* by default (per FTB Chunks config). So the 1/4 per-faction limit applies to claimed chunks *across all dimensions* (Overworld + Nether + End outer islands). Per-team budgets in FTB Chunks can be set per-team via config overrides — verify at implementation.
+
+**Why 8 chunks per solo on top of the 1/4 faction budgets:**
+
+- Solo = a fourth (or fifth, sixth) party that doesn't fit into the 1/2-of-faction-claim math.
+- Solo's budget is small enough that any number of solos fit *alongside* the 1/4-per-faction budget if there's headroom. If both factions are at their 1/4 limit AND every available chunk is taken, solos have to compete for any remaining headroom — which the design accepts as the consequence of saturating the island.
+- A solo player who can't find claim room because both factions have hit their caps faces a soft pressure: *faction territory is saturated; you have to faction up or accept no personal territory.* This is consistent with the broader design's nudge toward factioning.
 
 **Worked scale check** (assume in_border_chunks = 1000):
 
-- server_claimable_cap = 500.
-- 2 factions × 16 force-loadable = up to 32 chunks claimed.
-- Plus any solo players: e.g., 5 solos × 8 chunks = 40 chunks claimed.
-- Total claimed = ~72 chunks. **Server cap not binding.** 928 chunks of in-border wilderness preserved.
-- Bumping in-border to 2000 chunks (progression-driven border expansion): cap = 1000 chunks, headroom still ample.
+- Each faction can claim up to floor(1000 / 4) = 250 chunks.
+- Combined faction claim: 2 × 250 = 500 chunks. **Server-wide cap (emergent) = 500.**
+- Solo budget per player: 8 chunks.
+- Example scenario: 2 factions each claim 100 chunks (well under their 1/4 cap) + 5 solos each claim 8 (40 total) = 240 total claimed. 760 chunks of in-border wilderness preserved.
+- Even at saturation (2 factions × 250 + solos) — both factions at 1/4, solos claiming some of the remaining 500 — headroom exists unless solos are extremely numerous. With 4–6 players, full saturation is unlikely.
+- Bumping in-border to 2000 chunks (progression-driven border expansion): each faction gets 500-chunk budget; combined 1000 (cap still 1/2); headroom still ample.
 
-**Take-away:** the 1/2 cap is a *theoretical ceiling*, not the binding constraint for a 4–6 player server. The per-team limits are what matters day-to-day. The cap exists to bound worst-case behavior if the rule proves harder to enforce than expected, or if the population grows.
+**Take-away:** the per-faction 1/4 budgets (per the user) and the 8-chunk solo budget are the *explicit constraints*. The server-wide cap is the implicit consequence. Solos and faction claims coexist on the in-border island without explicit competition resolution; in practice, full saturation is rare on a 4–6 player server.
 
 ### §7.4 — Force-loading behavior: party-dynamic by default, always-tick override
 
@@ -630,7 +656,7 @@ Three viable paths. **Choose one explicitly before implementing.**
 Per §7's claim policy, there are **five** configuration parameters to verify in `config/ftbchunks-common.toml`:
 
 - **Per-team chunk limit (claim).** 8 chunks for solo players, separate limit for faction teams (the actual chunk-budget, separate from force-loading).
-- **Per-team force-loading limit.** 0 for solos, 16 for factions. **Force-loading is a separate dimension from claimability** in FTB Chunks — both are configured.
+- **Per-team force-loading limit.** 0 for solos, 16 for factions. **Force-loadable ≤ claimable — always.** Force-loading is a separate configuration dimension from claimability in FTB Chunks, but a chunk *must first be claimed* before the force-load flag can be set on it. The force-loadable budget is therefore a subset of the claimable budget; never separate or independent. Faction force-loadable chunks (16 max) are drawn from the faction's claimable pool.
 - **Force-loading mode per chunk.** Three states: off (no force-load), party-dynamic (tick when any team member online, release when all offline), always-tick (tick regardless of online state). Default per chunk type per §7.4. If FTB Chunks on NeoForge 1.21.1 doesn't expose party-dynamic as a distinct state, fall back to per-chunk binary (force-load on / off).
 - **Outside-border claim denial.** Verify the version exposes a per-dimension / per-coordinate restriction field. If it doesn't, the chunk-reset mechanism in §8.5 needs to *also* unclaim claims forcibly (defensive cleanup on reset).
 - **Server-wide claim cap (≤ 1/2 of in-border area).** Whether this is a config-level field or computed-and-enforced via an admin script depends on FTB Chunks' version capabilities. Per the user note: FTB Chunks claim limits apply *globally across all dimensions* by default, so the cap covers Overworld + Nether + End outer islands.
