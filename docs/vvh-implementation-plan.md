@@ -298,7 +298,7 @@ max_chunks_per_main_faction = (floor(in_border_chunks / 2)) / 2
 
 The 1/2 server-wide cap (sum of faction claim budgets) is split evenly across the two main factions. If a third faction were added, each faction's budget would become `floor((in_border / 2) / 3) = floor(in_border / 6)` — the formula generalises; the 1/4 is a special case for N=2.
 
-Sole exception is the solo budget of 8 chunks per solo player (separate from the 1/2 server cap; see §7.2). Solos are *not* part of the cap-divided-among-factions math.
+**Sole exception: the 8-chunk solo budget.** This is a flat per-player constant, not derived from the 1/2 server cap. Why not part of the cap-divided-among-factions math: at our 1000+ chunk server scale, the 8-chunk solo budget is too small to make a meaningful difference — 63 solo players would be needed to fully allocate a 1000-chunk world, which would already require the design to change for many other reasons first. A dynamic allocation scheme (proportional caps, percent-of-leftover, etc.) is unjustified until solo population approaches 30 active players — at which point the design should be revisited as a whole, not patched at the chunk-budget layer.
 
 If both factions hit 1/4 *and* the world is otherwise saturated, solos have no headroom. That's a soft pressure to faction up, consistent with the design's nudge.
 
