@@ -59,7 +59,7 @@ Every rule in the server design lands in one of two distinct layers. Assigning a
 | **Mercenary Economy** | **Soft** | Player agreement | Player-driven trading; zero admin code. |
 | **Neutrals & Mediators** | **Soft** | Social roleplay | Voluntary player roles. |
 | **Creative Milestones** | **Hard** | Rubric checklist + `/vvh reward` command | Objective checks where feasible; admin command triggers math-derived rewards. See §9. |
-| **Island World Border** | **Hard** | Vanilla `/worldborder` | Hard border set once at spawn island edge. See §8. |
+| **Territory Boundary & Resets** | **Hard / Script** | FTB Chunks zoning + weekly reset script | Permanent inner claim zone around spawn island; outer wilderness open for farming & reset weekly. See §8. |
 | **Active Player Definition** | **Hard** | Vanilla playtime scoreboard | 14-day rolling window, ≥ 1 hr threshold. See §5. |
 
 ## 4. Faction Join Incentive (Reward Scaling Math)
@@ -273,9 +273,10 @@ This design isn't intended to support more than 10–15 total players before req
 
 ## 8. World Border, Dimensions & Weekly Resets
 
-### Spawn & Border Configuration
+### Spawn & Boundary Configuration
 * **Spawn:** Central island surrounded by ocean.
-* **Border:** Fixed circular/square border set via Vanilla command (`/worldborder set <radius>`).
+* **Inner Claim Boundary:** Fixed coordinate radius configured in FTB Chunks / KubeJS (`claim_max_distance_from_spawn`). Territory inside is permanent and claimable.
+* **Outer Wilderness Zone:** World beyond the inner claim boundary. Land outside is strictly unclaimable (allowing full resource harvesting and PvP) and is reset weekly via automated region/chunk regeneration scripts.
 
 ### Dimensional Reset Matrix
 
@@ -302,9 +303,9 @@ This design isn't intended to support more than 10–15 total players before req
 ```
 
 **Why Reset Outside-Border Chunks Weekly?**  
-1. Prevents world border generation from permanently cutting off essential structures (villages, ancient cities).  
+1. Prevents static terrain boundaries from permanently cutting off essential structures (villages, ancient cities).  
 2. Provides infinite renewable resources without bloating world file sizes.  
-3. Ensures players build permanent structures inside the border while treating the exterior as wild wilderness.
+3. Ensures players build permanent structures inside the inner claim boundary while treating the exterior as wild wilderness.
 
 ## 9. Creative Milestones (Admin Rubric & Commands)
 
@@ -352,7 +353,7 @@ While technical quests (kill mob, craft item) auto-detect via FTB Quests, creati
   *Task:* Verify FTB Chunks config parameters on 1.21.1:  
   * Per-team claim limits (`floor(in_border / 4)`) and force-load limits (16).  
   * Force-load sub-setting (chunk must be claimed to be force-loaded).  
-  * Coordinate-based claim denial outside world border.  
+  * Coordinate-based claim denial outside inner claim boundary.  
   * Single-party membership enforcement.
 
 - [ ] **10.4 FTB Quests Reward Tier Hooks**  
@@ -379,7 +380,7 @@ The following guidelines are social conventions enforced by friend trust. Admin 
  │ Phase 1: Test    │ Phase 2: Setup   │ Phase 3: Logic   │ Phase 4: World │
  │ Verification     │ & Core Configs   │ & Commands       │ & Launch       │
  │                  │                  │                  │                │
- │ - §10 checklist  │ - FTB Chunks     │ - KubeJS Tier    │ - World border │
+ │ - §10 checklist  │ - FTB Chunks     │ - KubeJS Tier    │ - Custom border│
  │ - Playtime tests │ - GriefLogger    │   Reward Script  │ - Spawn island │
  │ - FTB caps test  │ - Snapshot cron  │ - `/vvh` claims  │ - Quest trees  │
  └──────────────────┴──────────────────┴──────────────────┴────────────────┘
@@ -394,7 +395,7 @@ The following guidelines are social conventions enforced by friend trust. Admin 
    * Write `kubejs/server_scripts/faction_rewards.js` (tier formula & active player tracking).  
    * Write `kubejs/server_scripts/vvh_commands.js` (`/vvh claim` and `/vvh reward`).
 4. **[ ] Phase 4 — World Preparation & Launch:**  
-   * Set world border and verify stronghold location inside border.  
+   * Set inner claim boundary radius and verify stronghold location inside claimable zone.  
    * Build spawn island claim protection.  
    * Populate FTB Quests trees and creative milestone rubrics.  
    * Configure outside-border weekly reset script.
