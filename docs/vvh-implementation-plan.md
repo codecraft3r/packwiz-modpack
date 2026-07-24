@@ -1,6 +1,6 @@
 # VvH (Vampires vs Hunters) Implementation Plan
 
-**Status:** Design Phase — **DO NOT IMPLEMENT** before resolving the verification items in [Section 10: Pre-Implementation Verification](#10-pre-implementation-verification).
+**Status:** Design Phase — **DO NOT IMPLEMENT** before resolving the verification items in **Section 10**.
 
 | Parameter | Specification |
 | :--- | :--- |
@@ -8,8 +8,6 @@
 | **Target Loader / Version** | NeoForge 1.21.1 |
 | **Target Population** | 4–6 trusted friends across 2 fixed factions |
 | **Enforcement Model** | Two-layer hybrid (Mod-enforced hard bounds + Social soft rules) |
-
----
 
 ## 1. Core Philosophy
 
@@ -22,8 +20,6 @@ The implementation adheres strictly to the user's standing constraints:
 3. **Trust Model:** The server is operated by a primary admin/coordinator (the user) for a small group of trusted friends.
 
 *Note: The original pitch mixed social rules and hard rules. This plan categorizes every requirement into its proper layer and introduces technical mechanisms for hard boundaries previously framed as social rules.*
-
----
 
 ## 2. Two-Layer Enforcement Model
 
@@ -50,8 +46,6 @@ Every rule in the server design lands in one of two distinct layers. Assigning a
 > *Is this rule **pretending to be enforced by a system**, or **actually enforced by a system**?*  
 > If it pretends, rewrite it or move it to Layer 2. If it actually enforces, keep, document, and ship it.
 
----
-
 ## 3. Master Rule & Feature Mapping
 
 | Pitch Element | Layer | Mechanism | Notes & Architectural Rationale |
@@ -67,8 +61,6 @@ Every rule in the server design lands in one of two distinct layers. Assigning a
 | **Creative Milestones** | **Hard** | Rubric checklist + `/vvh reward` command | Objective checks where feasible; admin command triggers math-derived rewards. See §9. |
 | **Island World Border** | **Hard** | Vanilla `/worldborder` | Hard border set once at spawn island edge. See §8. |
 | **Active Player Definition** | **Hard** | Vanilla playtime scoreboard | 14-day rolling window, ≥ 1 hr threshold. See §5. |
-
----
 
 ## 4. Faction Join Incentive (Reward Scaling Math)
 
@@ -119,12 +111,11 @@ reward_tier      = tier_table[mean_size]
 4. **Stable Odd-Count Handling:** Floor division cleanly handles absent or uneven player counts.
 
 ### Rejected Alternatives
-* ❌ **Exponential Compounding ($1.5^n$):** A 6-player team would get 7.59× rewards, destroying game balance and forcing everyone into one team.
-* ❌ **Per-Faction Multipliers ($f(\text{team\_size})$):** Directly incentivizes joining the largest team, as you take a pay cut by joining a smaller group.
-* ❌ **Imbalance Penalties (e.g. -200%):** Negative rewards are unrewarding and complex to deliver.
-* ❌ **Real-Time Online Count:** Causes multipliers to swing wildly between gaming sessions.
+* **Exponential Compounding ($1.5^n$):** A 6-player server would result in faction-aligned players getting a 7.59× reward multiplier, destroying game balance.
+* **Per-Faction Multipliers ($f(\text{faction\_size})$):** Calculating rewards based on individual faction sizes rather than the server average penalizes the smaller team. Players on the underdog team earn lower reward rates directly correlated with how far behind they are in player count, creating a compounding mechanical incentive to join the larger faction.
+* **Imbalance Penalties (e.g., -200%):** Negative rewards add unnecessary complexity for players and admins alike. Deductive reward logic is also bad UX—seeing `"150 - 50 points"` feels like a penalty compared to simply earning `"100 points"`, even though the net result is identical.
+* **Real-Time Online Count:** Causes multipliers to swing wildly between gaming sessions.
 
----
 
 ## 5. Active Population Definition
 
@@ -156,8 +147,6 @@ A player is classified as **Active** if they have accumulated **≥ 1 hour of pl
 * **Solo Players:** Playtime is continuously tracked in NBT/scoreboards. Solo players receive 1.00× rewards and are excluded from `active_factioned` until they join a faction.
 * **Absences & Vacations:** 14-day grace window ensures players taking a week off do not drop active status or hurt faction multipliers.
 * **Persistence Requirement:** Playtime scoreboards **MUST** persist across server restarts (`/scoreboard objectives ... persistent: true`). Verify in §10.
-
----
 
 ## 6. Architecture & Implementation Surface
 
@@ -217,8 +206,6 @@ Despite these limitations, GriefLogger should provide sufficient data to investi
 * **Retention:** 224 3-hourly snapshots (4 weeks @ 3-hour cadence) + 16 weekly snapshots (~4 months history).
 * **Restoration:** Admin manually restores a full world backup upon severe grief or data corruption.
 
----
-
 ## 7. Faction & Territory Setup
 
 ### Faction Structure
@@ -248,7 +235,7 @@ For our 2-faction setup (`total_factions = 2`), this simplifies to `floor(chunks
 
 Solo players are not counted against the 50% faction claim pool because their 8-chunk limit is negligible at the player counts this design is intended for. In a 1,000-chunk world, it would take at least **31 solo players** to equal the claiming power of a single faction ($31 \times 8 = 248\text{ chunks} \approx 250\text{ chunks}$), and at least **63 total solo players** to fully saturate the remaining 50% of wilderness ($63 \times 8 = 504\text{ chunks}$).
 
-This design isn't intended to support more than 10–15 total players before requiring major architectural overhauls (since the "trusted player" paradigm breaks down beyond that scale), and realistically the server will only ever see 4–8 players. Over-engineering claim-pooling rules that would only be applicable with server populations that this design can't handle would be pointless.
+This design isn't intended to support more than 10–15 total players before requiring major architectural overhauls (since the "trusted player" paradigm breaks down beyond that scale), and realistically the server will only ever see 4–8 players. Over-engineering claim-pooling rules that would only be applicable with server populations that exceed this design's scope would be pointless.
 
 ### Force-Loading Rules
 
@@ -276,8 +263,6 @@ This design isn't intended to support more than 10–15 total players before req
 * **Permitted:** Solo players allying with a faction to gain shared base/machine access and minimap visibility.
 * **Prohibited:** Creating personal sub-territories inside a faction using allies.
 * **Reward Impact:** Allies do not affect faction size math. An allied solo player remains Tier 0.
-
----
 
 ## 8. World Border, Dimensions & Weekly Resets
 
@@ -314,8 +299,6 @@ This design isn't intended to support more than 10–15 total players before req
 2. Provides infinite renewable resources without bloating world file sizes.  
 3. Ensures players build permanent structures inside the border while treating the exterior as wild wilderness.
 
----
-
 ## 9. Creative Milestones (Admin Rubric & Commands)
 
 While technical quests (kill mob, craft item) auto-detect via FTB Quests, creative objectives (build a base, design a vehicle) use an **Admin Rubric System** backed by automated reward math.
@@ -345,8 +328,6 @@ While technical quests (kill mob, craft item) auto-detect via FTB Quests, creati
 5. **Admin Approval:** Admin executes `/vvh reward <player> <milestone_id>`.
 6. **Automated Calculation:** Script queries `active_factioned`, determines multiplier tier from §4, and awards the items. **Zero manual math for admin.**
 
----
-
 ## 10. Pre-Implementation Verification Checklist
 
 *Note: Every item in this checklist **MUST be tested and verified on a NeoForge 1.21.1 test server** before authoring modpack configs or KubeJS scripts.*
@@ -373,8 +354,6 @@ While technical quests (kill mob, craft item) auto-detect via FTB Quests, creati
 - [ ] **10.5 GriefLogger Compatibility**  
   *Task:* Confirm GriefLogger (or Forgified Fabric equivalent) installs cleanly on NeoForge 1.21.1 and logs block/container/entity events with configurable retention.
 
----
-
 ## 11. Soft-Rule Guidelines (Friend-Trust Layer)
 
 The following guidelines are social conventions enforced by friend trust. Admin arbitration serves as the final resort; no mod code is written for these rules.
@@ -383,8 +362,6 @@ The following guidelines are social conventions enforced by friend trust. Admin 
 * **Sanctioned Skirmishes:** Opt-in PvP events scheduled by the admin. Outside of events, claim protection keeps PvP disabled.
 * **Mercenary Contracts:** Player-negotiated trades, hiring, and favors. Fully player-driven.
 * **Diplomacy & Mediators:** Player roleplay interactions without administrative interference.
-
----
 
 ## 12. Phased Implementation Roadmap
 
@@ -414,8 +391,6 @@ The following guidelines are social conventions enforced by friend trust. Admin 
    * Build spawn island claim protection.  
    * Populate FTB Quests trees and creative milestone rubrics.  
    * Configure outside-border weekly reset script.
-
----
 
 ## 13. Reference Documents
 
