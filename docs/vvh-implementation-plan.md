@@ -47,7 +47,7 @@ If pretending: rewrite or move to layer 2. If actually enforcing: keep, document
 | Pitch element | Final layer | Mechanism | Notes |
 |---|---|---|---|
 | Faction join incentive | Hard | FTB Quests reward tables keyed to scoreboard | Tier chosen by server, applied equally to both factions |
-| Cross-faction territory | Hard | FTB Chunks per-team mode + per-faction 1/4 budgets + outside-border unclaimable | Solo: 8 claim, 0 force-load. Per-faction claim: floor(in_border/4), 16 force-load. See §7 |
+| Cross-faction territory | Hard | FTB Chunks per-team mode + server-wide 1/2 cap divided across 2 factions + outside-border unclaimable | Solo: 8 claim, 0 force-load. Per-faction claim: floor(in_border/4) = (1/2 server cap) / 2 factions, 16 force-load. See §7 |
 | Grief / theft disputes | Soft-tool + ops | GriefLogger (logging only) + scheduled world snapshots | **No rollback on NeoForge 1.21.1.** Logs are positive-confirmation only; severe grief restore from snapshot (covers *all* modded inventories because they're world state); minor grief via social/manual restoration. Inventory-snapshot tools deliberately excluded — see §6. |
 | Faction-flip cooldown | Soft (no cooldown by design) | Friend-trust | See §7 for the no-cooldown rationale |
 | Skirmishes (admin-overseen) | Soft | Friend-trust + admin scheduling | Escalation path documented; no in-game enforcement |
@@ -287,17 +287,27 @@ The Allies system is a technical capability of FTB Chunks + FTB Teams. The desig
 
 **Reward tier is unaffected by Allies.** A solo player allied to vampires is still classified as solo for §4's reward tier purposes — they get tier 0.
 
-### §7.3 — Per-faction budget = 1/4; server cap is emergent
+### §7.3 — Per-faction budget = 1/4 (derives from 1/2 server cap over 2 factions)
 
-Each main faction gets 1/4 of the in-border world area. Two main factions × 1/4 = 1/2 = server-wide cap (emergent; not a separate rule). Solos have 8-chunk budget on top of this.
+The always-2-factions invariant drives the per-faction budget:
+
+```
+max_chunks_per_main_faction = (floor(in_border_chunks / 2)) / 2
+                           = floor(in_border_chunks / 4)
+```
+
+The 1/2 server-wide cap (sum of faction claim budgets) is split evenly across the two main factions. If a third faction were added, each faction's budget would become `floor((in_border / 2) / 3) = floor(in_border / 6)` — the formula generalises; the 1/4 is a special case for N=2.
+
+Sole exception is the solo budget of 8 chunks per solo player (separate from the 1/2 server cap; see §7.2). Solos are *not* part of the cap-divided-among-factions math.
 
 If both factions hit 1/4 *and* the world is otherwise saturated, solos have no headroom. That's a soft pressure to faction up, consistent with the design's nudge.
 
 **Scale check** (in_border_chunks = 1000):
 
-- Each faction: 250 chunks. Combined: 500 (the emergent cap).
+- Server cap (factions): 500 chunks = 2 × 250.
+- Each faction: 250 chunks.
 - Solo: 8 chunks each. With 4–6 players, full saturation is rare.
-- Border expansion to 2000 chunks: each faction gets 500, combined 1000. Headroom still ample.
+- Border expansion to 2000 chunks: each faction gets 500, server cap 1000. Headroom still ample.
 
 ### §7.4 — Force-loading: party-dynamic by default, always-tick override
 
