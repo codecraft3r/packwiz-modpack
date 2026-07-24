@@ -287,26 +287,23 @@ The Allies system is a technical capability of FTB Chunks + FTB Teams. The desig
 
 **Reward tier is unaffected by Allies.** A solo player allied to vampires is still classified as solo for §4's reward tier purposes — they get tier 0.
 
-### §7.3 — Per-faction budget = 1/4 (derives from 1/2 server cap over 2 factions)
+### §7.3 — Per-faction budget
 
-The always-2-factions invariant drives the per-faction budget:
+As we only have two factions, we can simplify the general per-faction-claim formula
+`floor(in_border_chunks / 2) / faction_count`
+to `floor(in_border_chunks / 4)`.
 
-```
-max_chunks_per_main_faction = (floor(in_border_chunks / 2)) / 2
-                           = floor(in_border_chunks / 4)
-```
+The 1/2 server-wide cap (sum of faction claim budgets) is split evenly across the two main factions to ensure there remains a "wilderness" area between the two factions to be fought within and fought over. 
 
-The 1/2 server-wide cap (sum of faction claim budgets) is split evenly across the two main factions. If a third faction were added, each faction's budget would become `floor((in_border / 2) / 3) = floor(in_border / 6)` — the formula generalises; the 1/4 is a special case for N=2.
+If a third faction were added, each faction's budget would become `floor((in_border / 2) / 3) = floor(in_border / 6)` — the formula generalises; the 1/4 is a special case for N=2.
 
-**Sole exception: the 8-chunk solo budget.** This is a flat per-player constant, not derived from the 1/2 server cap. Why not part of the cap-divided-among-factions math: at our 1000+ chunk server scale, the 8-chunk solo budget is too small to make a meaningful difference — 63 solo players would be needed to fully allocate a 1000-chunk world, which would already require the design to change for many other reasons first. A dynamic allocation scheme (proportional caps, percent-of-leftover, etc.) is unjustified until solo population approaches 30 active players — at which point the design should be revisited as a whole, not patched at the chunk-budget layer.
-
-If both factions hit 1/4 *and* the world is otherwise saturated, solos have no headroom. That's a soft pressure to faction up, consistent with the design's nudge.
+**Sole exception: the 8-chunk solo budget.** This is a flat per-player constant, not derived from the 1/2 server cap. Solos are not part of the cap-divided-among-factions math because at our 1000+ chunk server scale, the 8-chunk solo budget is too small to make a meaningful difference as a total of 63 solo players would be needed to fully allocate a 1000-chunk world. If the solo population were to approach 31 active players, the threshold where solo chunk allocation would approach that of a single faction, we would need to reevaluate chunk allocation, though it's likely that the rest of the design would *also* need to be reevaluated at that point.
 
 **Scale check** (in_border_chunks = 1000):
 
 - Server cap (factions): 500 chunks = 2 × 250.
 - Each faction: 250 chunks.
-- Solo: 8 chunks each. With 4–6 players, full saturation is rare.
+- Solo: 8 chunks each. With 4–6 players, full saturation is impossible.
 - Border expansion to 2000 chunks: each faction gets 500, server cap 1000. Headroom still ample.
 
 ### §7.4 — Force-loading: party-dynamic by default, always-tick override
