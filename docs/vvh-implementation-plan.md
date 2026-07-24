@@ -47,7 +47,7 @@ If pretending: rewrite or move to layer 2. If actually enforcing: keep, document
 | Pitch element | Final layer | Mechanism | Notes |
 |---|---|---|---|
 | Faction join incentive | Hard | FTB Quests reward tables keyed to scoreboard | Tier chosen by server, applied equally to both factions |
-| Cross-faction territory | Hard | FTB Chunks per-team mode | Bases inside claims are inviolable; outside is fair game |
+| Cross-faction territory | Hard | FTB Chunks per-team mode + per-team chunk limits + server-wide 1/2 cap + outside-border unclaimable | Solo: 8 claim, 0 force-load. Faction: 16 force-loadable (shared). Server cap = floor(in_border / 2). See §7 |
 | Grief / theft disputes | Soft-tool + ops | GriefLogger (logging only) + scheduled world snapshots | **No rollback on NeoForge 1.21.1.** Logs are positive-confirmation only; severe grief restore from snapshot (covers *all* modded inventories because they're world state); minor grief via social/manual restoration. Inventory-snapshot tools deliberately excluded — see §6. |
 | Faction-flip cooldown | Soft (no cooldown by design) | Friend-trust | See §7 for the no-cooldown rationale |
 | Skirmishes (admin-overseen) | Soft | Friend-trust + admin scheduling | Escalation path documented; no in-game enforcement |
@@ -301,7 +301,173 @@ These three layers complement each other. None alone is sufficient; together the
 - Inside claims: block break/place by non-members forbidden, PvP requires explicit opt-in, TNT off (default for safety).
 - Outside claims: fair game. Pranks, skirmishes, mercenary activity all happen here.
 - Players can't claim across the world border (set in §8).
+- **Outside the border is unclaimable.** FTB Chunks is configured to *deny* claims in chunks outside the world border (per-dimension, per-coordinate restriction). The previous "you can claim but it'll get reset" framing was wrong — claimability de-claws the renewal property of outside-border territory. If a player *can* claim, players *will* claim, and over time the renewable ring becomes a smattering of permanent bases. So: the mod enforces "don't invest here" rather than asking players to remember it.
+- **Per-faction claim budget.** Claim area is bounded per faction (and per solo player). This prevents one faction from sprawling across the whole island while the other keeps a single base. FTB Chunks exposes per-team chunk limits.
 - **Starter zone (admin-claimed at launch):** a small area around spawn is pre-claimed by both factions (or by the admin on behalf of any player) so new players have automatic protection while they learn the claim system. Without this, grief hits unprotected starter territory in week one, and GriefLogger can't undo it. The starter zone is a one-time admin setup at launch; not part of §6's per-day operation.
+
+### Claim budget formula
+
+**Players are organized as parties in FTB Teams (= FTB Chunks teams).** A solo player is the leader and only member of a solo party. A faction player is a member (not necessarily leader) of a faction party. Each party owns a single FTB Chunks team, and that team's claimed chunks are the party's territory.
+
+**A player is in exactly one party at a time.** This is the rule. Membership in a second party is not possible. A solo player is the leader (and sole member) of their solo party; a faction player is a member of a faction party.
+
+| Entity | Role | Claim budget | Force-loading budget |
+|---|---|---|---|
+| Solo player | Party leader (sole member) of solo party | 8 chunks claimable | 0 force-loadable |
+| Vampire faction | Multi-member party; shared budget | 16 force-loadable chunks (shared team budget) | (subset of claim) |
+| Hunter faction | Multi-member party; shared budget | 16 force-loadable chunks (shared team budget) | (subset of claim) |
+
+**Team-swap mechanics — deliberate design policy:**
+
+- **When a solo player joins a faction**, the solo party *dissolves*. Its claimed chunks *transfer ownership to the faction party*. The player is now a member of the faction party; the solo party no longer exists. The player has 0 personal claims after this transition; their previous 8 chunks of solo territory are now faction property.
+
+- **When a faction player leaves a faction** (or the last member leaves and the faction party dissolves), the player has 0 claims. They are *fresh solo again*: FTB Chunks auto-recreates a solo party for them, with a fresh 8-chunk budget. **The previously-transferred claims do not return to them.** Those chunks remain with the (now-empty or possibly dissolved) faction party.
+
+- **Switching factions** (vampires → hunters, for example) does *not* move claims from vampires to hunters. The chunks the player transferred to vampires on first join remain vampires' chunks until vampires dissolves or they get unclaimed. The player joins hunters with 0 personal claims.
+
+- **Allies system = resource-sharing affordance, not personal-territory affordance.** The Allies system is a technical capability of FTB Chunks + FTB Teams, and the design endorses its use as a *resource-sharing* mechanism for solo players — but **not** as a way to keep personal territory through a faction join. See §7.2.1 for the full Allies mechanic.
+
+### §7.2.1 — Allies mechanic, endorsed use case, and what it isn't
+
+**The Allies mechanic (from the user):**
+
+- **Directional access.** Adding Party B as an ally of Party A grants Party B's members ally access (configurable) into Party A's claimed territory. *It does not* grant Party A's members any access into Party B's territory. The relationship is one-way unless reciprocated.
+- **Both sides can add each other independently.** Either party can initiate. The result is a *pair* of single-directional grants: A→B and B→A. Access flows both ways only if both single-direction grants exist.
+- **Multiple allies are fine.** A party can have as many allies as it wants.
+- **Two granularities.** Allies can be configured per-player (target a specific individual) or per-party (target the whole team). The two modes are independent.
+- **Minimap location sync.** Allies also enables minimap location sync between parties at any distance. Coordinated groups see each other on the map regardless of where anyone is. This is a coordination affordance, not a territory affordance.
+
+**Use cases the design endorses:**
+
+- A solo player is allied into vampires (a vampires member adds the solo party as ally of vampires). Solo player gains access to vampires' territory / resources / machines — and minimap visibility of vampires members.
+- A solo player is allied into *both* vampires and hunters. They have access to both factions' territory and see both on the minimap. **This is fine.** Allies are consensual, additive, and per-inviter's discretion.
+- Faction A is allied to faction B. Both have mutual territory access and minimap visibility. This is technically possible but the design has no use case for it; players who try it get what they ask for. The Allies mechanic permits it; the design doesn't endorse it.
+
+**Recommended ally access level (per the user):**
+
+- Allies get *full access* to the inviting party's claimed territory — same as a party member, but they cannot claim new chunks in the inviting party's name or perform party administration (invite, kick, claim, unclaim). They can break/place blocks, open containers, use machines, interact with anything in the inviting party's claims.
+- **This is the default ally access for this design.** Restricting to "chests only" or "machine interaction only" would create a partial-access mode that's theatre more than utility — allies who can't actually use the infrastructure they're allied to. The friend-trust layer handles the rare mistreatment-via-alliance case.
+- Implementation: configure FTB Chunks ally permissions to grant block-break, block-place, container-open, entity-interact, but not claim-chunk or admin operations.
+
+**Build placement by allies:**
+
+- A solo player who builds a structure inside vampires' territory creates blocks *inside a vampires claim*. When (if) the alliance is revoked, the solo player loses break/place access — *but their blocks remain*. They are visible to vampires members, who can edit them.
+- Effectively: ally-built structures inside someone else's claim are conditionally owned. The solo player can edit them while allied; once de-allied, they belong to vampires.
+- This is standard FTB Chunks behavior, not a design policy — but it's worth naming so solo players don't treat faction territory as a permanent workshop. Persistent structures should go in solo's 8-chunk budget (protected by their solo claim) or in solo-built claims under their own party.
+
+**Use cases the design does *not* endorse (and §7 forbids):**
+
+- **Allies as personal territory inside a faction.** Joining a faction transfers all solo claims to the faction party — *regardless of any Allies team the player created*. The Allies layer does not preserve personal chunks through the join boundary; the design doesn't allow that path.
+- **"I want to be in vampires but keep my personal house private from other vampires."** The Allies system is sometimes used this way in pure FTB Chunks + Teams setups: a player maintains an allied sub-team that they don't join the faction party into, keeping personal chunks while the main party has access. **One-party-per-player rules this out** — a player who joins vampires is a member of the vampires party and cannot simultaneously lead a personal allied sub-party. So this path is closed by the player-membership rule, not by the Allies mechanic per se.
+
+**Why the design endorses Allies for solo resource access but not for faction-internal privacy:**
+
+- *Solo → faction* allies is an additive layering: solo player keeps their own classification, gains access to a faction's resources. No conflict with the binary solo/faction model.
+- *Faction-internal* allies (player ∈ faction party AND leads a personal allied sub-party) would create a third identity class — "faction member with personal territory" — which the binary model rejects.
+
+**Reward-tier calculation is unaffected by Allies.** A solo player allied to vampires is *still classified as solo* for §4's reward tier purposes. They get tier 0 rewards. Allies grant access to territory and minimap visibility, but they do not promote a player's reward classification. A solo player who is frustrated at low rewards and wants tier ≥1 still needs to join a faction.
+
+**Symmetry note for join/leave:**
+
+- Allies relationships aren't typically dissolved automatically on faction join. A solo player who is allied to vampires, joins vampires, and then later leaves vampires back to solo: Allies relationships can persist or dissolve based on admin/player behavior. The design doesn't manage this; players do.
+
+**Why this design policy:**
+
+- The whole-system pattern from the beginning has been that **soft affordances get gamed and broken.** Allies-as-personal-territory is exactly the kind of "soft affordance that becomes a hard bypass" the design has been avoiding. Disallowing it via the design's clarity — and reinforced by one-party-per-player — keeps the binary clean.
+
+- Switching costs matter. A solo player who joins a faction gives up personal territory. This makes the choice to join a real one: you give up solo's 8-chunk personal budget for the faction's 16-force-loadable shared budget and the reward-tier bonus.
+
+- Allies being a technical capability doesn't mean the design has to use it for everything. Players who already understand FTB Chunks + Teams will know how to use Allies for solo resource access. That's fine — the design endorses this use and treats Allies as a coordination layer, not a personal-territory layer.
+
+**Default FTB Chunks + Teams behavior, vs. design intent:**
+
+The user has stated this is the policy they want. Whether FTB Chunks + FTB Teams on NeoForge 1.21.1 implement this exactly by default is a verify item. The §10.3 verify list confirms:
+
+- The exact behavior on join (does solo party dissolve? Do claims transfer to the new party?).
+- The exact behavior on leave (does solo auto-recreate with a fresh budget?).
+- The exact behavior on faction-party dissolution (do claims unclaim or get orphaned?).
+
+If the mod doesn't behave this way by default, configuration or KubeJS orchestration makes it behave this way. The design is unambiguous about what it wants.
+
+**Why these numbers:**
+
+- 16 force-loadable chunks per faction leaves room for main base + farms + 1–2 staging areas + 1 mining outpost (depending on density). 16 is generous but bounded.
+- 8 claimable, 0 force-loadable for solos is intentionally *more restrictive than factions across both dimensions.* Solo gets fewer chunks AND no server-load protection. This is a strong steer toward factions: not by penalty, but by offering strictly less.
+- The asymmetry reflects the broader design's stance: faction is the supported playstyle; solo is the resource-gathering / testing-the-server playstyle that exists as a step toward factioning up.
+
+### §7.3 — Server-wide claimable cap (≤ 1/2 of in-border area)
+
+The sum of all claimed chunks across all teams (factions + solos) is capped at half the in-border world area:
+
+```
+server_claimable_cap = floor(in_border_chunks / 2)
+```
+
+**Why this cap exists:**
+
+- The in-border world will be at least a thousand chunks (per user).
+- If all chunks were claimable, the island would fill with permanent bases and the renewable-in-anything-but-name area would vanish.
+- A 1/2 cap leaves **at least 500 chunks of force-unclaimable in-border wilderness** even on a small server. Players can still explore, gather, build transient outposts, run expeditions, and have scenic relief — none of which is sacrificed to faction sprawl.
+- FTB Chunks' claim limits apply *globally across all dimensions* by default (per FTB Chunks config). So the 1/2 cap applies to all dimension claims combined. This is checked at config-time: per-team limits + global dim-wide cap.
+
+**Worked scale check** (assume in_border_chunks = 1000):
+
+- server_claimable_cap = 500.
+- 2 factions × 16 force-loadable = up to 32 chunks claimed.
+- Plus any solo players: e.g., 5 solos × 8 chunks = 40 chunks claimed.
+- Total claimed = ~72 chunks. **Server cap not binding.** 928 chunks of in-border wilderness preserved.
+- Bumping in-border to 2000 chunks (progression-driven border expansion): cap = 1000 chunks, headroom still ample.
+
+**Take-away:** the 1/2 cap is a *theoretical ceiling*, not the binding constraint for a 4–6 player server. The per-team limits are what matters day-to-day. The cap exists to bound worst-case behavior if the rule proves harder to enforce than expected, or if the population grows.
+
+### §7.4 — Force-loading behavior: party-dynamic by default, always-tick override
+
+Force-loaded chunks always tick. The default FTB Chunks behavior is "always tick, even when no players are online." For a 4–6 friend server, this matters because:
+
+- **Performance cost.** Every force-loaded chunk keeps entities, redstone, modded machinery ticked. 16 force-loadable × always-on × modded complexity = measurable server load.
+- **The "always-on" vs. "party-tied" distinction.**
+
+**Per-chunk default behaviors (recommended):**
+
+| Chunk type | Force-load behavior | Why |
+|---|---|---|
+| Base / spawn / hotel | Party-dynamic (tick when any party member online; release when all offline) | Loads on demand; saves resources |
+| Item farms | Party-dynamic (or off) | Items pile while offline; farm will jam on next load if chest overflows |
+| Power generation (Mekanism, AE2, etc.) | **Always-tick** | Continuous output expected; offline = no power |
+| Processing facilities (long-running modded cycles) | **Always-tick** | Cycle continuity matters |
+| Mob / XP farms | Party-dynamic | Mob ticking can wait |
+
+**Bypass option:** for power-gen and processing facilities, individual chunks can be flagged as *always-tick* (force-loaded all the time, regardless of party online state). This is the per-chunk override.
+
+**Why item farms should *not* always-tick:**
+
+Item farms produce items faster than players can collect them when online. Force-loading an item farm while offline:
+- Causes chests to fill, item entities to spawn on the ground.
+- On next load, the farm jams because storage is full and entities are blocking hoppers.
+- A party-dynamic load avoids the jam — chunks release when no players are online, the farm stops producing, chests stop filling, no jam.
+
+This is the standard lesson learned from item-farm design. Player builds an item farm, force-loads it, then can't figure out why it jammed overnight.
+
+**Implemented in two config settings per chunk:**
+
+- **Force-loaded flag** (default false): if true, chunk ticks regardless of party online state. Set per-chunk.
+- **Force-load party-tied flag** (default true): if both this and force-loaded are true, the chunk ticks when any party member is online, releases when all are offline. Set per-chunk; this is the *usual* mode.
+
+Operationally, a player building a power-gen facility sets the force-loaded flag on those chunks. A player building an item farm does not.
+
+**For the design intent:**
+
+- The 16 force-loadable chunks per faction (server-cost-budget view) is the count of chunks with `force-loaded = true`.
+- The party-dynamic load (the *common* case) is "team-budget-aware" — it tics, but only when party online.
+- This gives the faction a generous *effective* territory (party-dynamic on most chunks, always-tick on a few) without making the server run the whole base when nobody's playing.
+
+**Caveat for §7.4 to validate:**
+
+The "tick-when-party-online" semantics needs verification on FTB Chunks' actual behavior. FTB Chunks' options may include "force-load," "force-load-when-team-online," "off" — exact field naming and behavior should be confirmed at verify time. The doc assumes a behavior that *most* admin-friendly chunk-loader mods expose; if FTB Chunks on NeoForge 1.21.1 doesn't expose this exact split, the design falls back to a binary (force-load on / force-load off per chunk) and we lose party-dynamic behavior. This is acceptable: force-load on or off per chunk still solves the resource-cost problem, just less elegantly.
+
+### Starter zone
+
+See "Starter zone (admin-claimed at launch)" above for how new players get initial protection while learning the claim system. Starter zone is admin-managed, not subject to per-team budgets (admin claims don't burn into the faction budget; they sit on top of it).
 
 ### Faction-flipping
 
@@ -360,7 +526,7 @@ The "outside the main hub = renewable wilderness" rule is now consistent across 
 
 - The Nether and End dimensions are NOT subject to this reset.
 - The main End island (where the dragon fight happens) is explicitly NOT reset.
-- Chunks that are *claimed* by a faction (FTB Chunks) outside the border are NOT reset — claiming outside the border is permitted (encouraged, even), but claims reset on the same weekly cadence only if the player unclaims first.
+- Outside-border chunks in the Overworld **cannot be claimed** (FTB Chunks is configured to deny claims in outside-border coordinates). This is the reason: claiming would permanently exempt portions of the renewable ring from weekly regen, defeating the property. See §7 for the claim-policy rationale.
 
 **Implementation surface:**
 
@@ -461,9 +627,30 @@ Three viable paths. **Choose one explicitly before implementing.**
 
 ### 3. FTB Chunks per-team config
 
-- Verify claim block allow-list (no end-of-game items, no Dragon Egg, etc.).
-- Verify PvP-in-claim defaults.
-- Confirm: outside-claim is "anything goes," not "PVP-only-when-on."
+Per §7's claim policy, there are **five** configuration parameters to verify in `config/ftbchunks-common.toml`:
+
+- **Per-team chunk limit (claim).** 8 chunks for solo players, separate limit for faction teams (the actual chunk-budget, separate from force-loading).
+- **Per-team force-loading limit.** 0 for solos, 16 for factions. **Force-loading is a separate dimension from claimability** in FTB Chunks — both are configured.
+- **Force-loading mode per chunk.** Three states: off (no force-load), party-dynamic (tick when any team member online, release when all offline), always-tick (tick regardless of online state). Default per chunk type per §7.4. If FTB Chunks on NeoForge 1.21.1 doesn't expose party-dynamic as a distinct state, fall back to per-chunk binary (force-load on / off).
+- **Outside-border claim denial.** Verify the version exposes a per-dimension / per-coordinate restriction field. If it doesn't, the chunk-reset mechanism in §8.5 needs to *also* unclaim claims forcibly (defensive cleanup on reset).
+- **Server-wide claim cap (≤ 1/2 of in-border area).** Whether this is a config-level field or computed-and-enforced via an admin script depends on FTB Chunks' version capabilities. Per the user note: FTB Chunks claim limits apply *globally across all dimensions* by default, so the cap covers Overworld + Nether + End outer islands.
+- **PvP-in-claim defaults.** The PvP rules inside claim zones.
+- **Confirm: outside-claim is "anything goes," not "PVP-only-when-on."** Same intent as before; ensure config matches.
+
+Additional notes:
+
+- **Solo player team-count.** In FTB Chunks, a solo player creates (or is auto-assigned to) a one-person team. Verify the team's `chunksClaimedLimit` and `chunksForceLoadedLimit` can be set independently per solo team, separately from faction teams. FTB Chunks teams API may require per-team config overrides — verify the per-team config path; this is sometimes handled through NBT data on the team itself, not the global config.
+- **Team-swap mechanics are *design policy*, not default FTB Chunks + Teams behavior.** When a solo player joins a faction: solo party dissolves, claims transfer to the joined faction. When a faction player leaves: solo party auto-recreates with fresh 8-chunk budget; previously-transferred claims do *not* return. **Verify at implementation time** that the version of FTB Chunks + FTB Teams in the packwiz behaves this way. Some forks have configurable join-handling — if this server's fork doesn't, the design may need orchestration via KubeJS to enforce the desired behavior on join and on leave.
+- **One-party-per-player enforcement.** Players cannot be members of two parties simultaneously. Verify this is enforced in the deployed version. Some FTB Teams configurations allow multi-party membership; if this fork does, the reward-tier logic must be careful: a player with allies teams + faction party is *still classified by the design* as solo or faction based on their faction membership, *not* on whether they have additional allies.
+- **Fallback for un-outside-border-denial:** if the deployed version doesn't support coordinate-based denial, see the section below.
+
+If FTB Chunks on the deployed version does *not* support coordinate-based claim-denial, the unclaimable-property has to be enforced another way. Options:
+
+- **Forced unclaim on reset:** every weekly reset, claim protection is stripped from any chunk that just got reset. Acceptable but loses player trust ("I claimed it, then the server took it").
+- **Config-level block:** find or write a config file equivalent that prevents out-of-bounds claim creation in the first place. Cleaner if available.
+- **Accept partial drift:** claims outside the border still work; reset simply doesn't touch claimed chunks but does touch unclaimed ones. This is the *old* policy; documented as a fallback if the hard version isn't achievable.
+
+The verify call is which of these routes is feasible on NeoForge 1.21.1's FTB Chunks build.
 
 ### 4. FTB Quests reward tier structure
 
