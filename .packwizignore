@@ -13,3 +13,4 @@ scripts/
 .github/
 CHANGELOG.md
 docs/
+.githooks/
