@@ -78,7 +78,7 @@ If you want to manually modify the modpack (add mods, update versions, or tweak 
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/codecraft3r/packwiz-modpack.git
+   gh repo clone codecraft3r/packwiz-modpack -- -b dev
    cd packwiz-modpack
    ```
 2. **Setup Pre-commit Hooks (Required)**:
