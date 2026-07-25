@@ -1,0 +1,11 @@
+#!/bin/sh
+# pre-commit hook to ensure packwiz index is up to date
+
+echo "Running packwiz refresh..."
+packwiz refresh
+
+if [ -n "$(git status --porcelain index.toml)" ]; then
+    echo "Warning: index.toml was updated by packwiz refresh."
+    echo "Adding index.toml to the current commit."
+    git add index.toml
+fi

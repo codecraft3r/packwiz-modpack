@@ -1,0 +1,31 @@
+name: Validate Packwiz Index
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.26'
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Run packwiz refresh
+        run: packwiz refresh
+
+      - name: Check for uncommitted changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Error: packwiz index is out of date!"
+            echo "Please run 'packwiz refresh' locally and commit the resulting changes."
+            git status
+            git diff
+            exit 1
+          fi
