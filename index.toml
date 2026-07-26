@@ -5,10 +5,6 @@ file = "README.md"
 hash = "5b90652222632aeec64f2dbafba28bc7bbb42ef2f6d5f23d2bc1539a791ca0db"
 
 [[files]]
-file = "config/LegendaryMonuments/pedestals.json"
-hash = "23561ed753f88750d6ff797f5e495479d575b8747af263f60668dfd473221ae2"
-
-[[files]]
 file = "config/Mekanism/additions-client.toml"
 hash = "ea58e4998b6ad79626af3758814fc8e784b7a2f9047051c03a2f2d05cc888540"
 
@@ -161,18 +157,6 @@ file = "config/cobblemon-battle-extras.json"
 hash = "4953a2b2f608f27585a6565e1751ec915c81ae2a506e106238044256b06896db"
 
 [[files]]
-file = "config/cobblemon/main.json"
-hash = "58dd7cc884fb79320bfffa73fceb81e3337280766063cd37d5404cacd01e309a"
-
-[[files]]
-file = "config/cobblemon/spawning/best-spawner-config.json"
-hash = "f603c461fb34fc13dc563f7e430c883150aff6d9d3510243dc5926b330fe9492"
-
-[[files]]
-file = "config/cobblemon/starters.json"
-hash = "00258a00c2f3204edaff61fb74eb23ce6b2451aa0c4fabad90360da26c5bcbfc"
-
-[[files]]
 file = "config/cobblemon_home.json"
 hash = "2f4b3c0ca832612fbd5caa80e1eaddf2f361f94de09b9652bd3387a190f19fda"
 
@@ -183,54 +167,6 @@ hash = "f2a1a85840f1a6c972e71674f01ca28e6b3e8150ddf477413a7311a4582d1a17"
 [[files]]
 file = "config/cobblemonintegrations-common-1.toml.bak"
 hash = "d91362715ae654f13d549e7955fc4db336bfb4df1413f8f68ba6e539a99a00f0"
-
-[[files]]
-file = "config/cobblemonintegrations-common.toml"
-hash = "f9f19181d21113d19110a64cdf8d38fcc53c7c06a14cd67ff47c8319f27c7020"
-
-[[files]]
-file = "config/cobblemonraiddens/blacklist.json5"
-hash = "61245aa75e8e02952033ae2ac9e9da686d3d9f6a6a38fbab8c171f7826bf69dd"
-
-[[files]]
-file = "config/cobblemonraiddens/client.json5"
-hash = "3b30e36007d2165569247e9060ca1b6cbf597ad3c4802c493b89a91bdb8e3aa2"
-
-[[files]]
-file = "config/cobblemonraiddens/common.json5"
-hash = "47405d32961506d52758ec066dd50c1166efb04e57f6c8876514b5c15a162634"
-
-[[files]]
-file = "config/cobblemonraiddens/conditions.json5"
-hash = "ddc73b1a539e1f78e8daed69e4795734a19dc5fc511d5309e8b34b4585baed49"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_five.json5"
-hash = "c0dd6d209b0bc635e7d666594d4c05ae38461becb508f93f74d1bbb8e105d6cf"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_four.json5"
-hash = "ebad09590faa9a0ccdfcba6b07da047c9b884a8ecec1dcc28091da860d2aceea"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_one.json5"
-hash = "b2a13bfdacc0d7425d48f88536c5bd02c6ac78273d28aa330254e805a370b3fb"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_seven.json5"
-hash = "d31fb42732e4d70d2f09f6e27dc1f5d42f6f92e7445cc5f9c6e7548dbe936d96"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_six.json5"
-hash = "e68362b5a96fe6a37772e4769390e61e59d1c9679dccedd42d953979a4e1b077"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_three.json5"
-hash = "cf7ebffa649755ce00ff268ca021aeaa2bd665e8e668d915b63c2e38a0c585f3"
-
-[[files]]
-file = "config/cobblemonraiddens/tier_two.json5"
-hash = "638605b16600d3694ae4368816887f1498d7745d2ed76652ece27a30b0507edc"
 
 [[files]]
 file = "config/cobblenav/client-config.json"
@@ -885,21 +821,6 @@ file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "datapacks/allthemons.pw.toml"
-hash = "24e843ff2e04d8c59610a6ee195a394511806cfbad1aa0797b0a1e7ce8fe8a52"
-metafile = true
-
-[[files]]
-file = "global_packs/required_resources/allthemons.pw.toml"
-hash = "b20754301166def2d2a51e1749e0c46cee4378031f15ded43bdc81b0f1b85181"
-metafile = true
-
-[[files]]
-file = "global_packs/required_resources/e19_cobblemon_minimap_icons.pw.toml"
-hash = "224356816f38b00457a54268435fc051f03b8f649cf9df099c676e5641f9b57f"
-metafile = true
-
-[[files]]
 file = "global_packs/required_resources/poiesis_living_atlas_art.pw.toml"
 hash = "140869881c209c04a71243c09fe30fe76cd7263ead8c4dc6786b0b85e7339d28"
 metafile = true
@@ -1067,91 +988,6 @@ metafile = true
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
-metafile = true
-
-[[files]]
-file = "mods/cobblefurnies.pw.toml"
-hash = "9a882acc1902d51c177362abbfb5fe51dd06ee3de40297cd6d4ab58d971045ed"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-battle-extras.pw.toml"
-hash = "5a8017a0f259be9ac50ab7907290467b28e7c4efa4cfdea4967dd48c6f589e23"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-create-industries.pw.toml"
-hash = "0cf98482da51abd28dd23207c22769abb74ef3f695e53c84e73fa7c56deb420f"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-fixedstarterivs.pw.toml"
-hash = "5adee2e5c50542d032a0ea194839ba4911c82004449ed751048e47c67998b1d3"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-home.pw.toml"
-hash = "5bc984a52003099750fe9ad176c1c510c3881cfbfda0867f1393dad99969e128"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-integrations.pw.toml"
-hash = "649dd79300d6f9d663aa6aa3c5632b93628b4f221662816c37f7d7acc8024da9"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-let-me-spawn.pw.toml"
-hash = "d5da085e9ea0816ed841711f92c9061a5a8f6323543b14ac1d69d234f72ba52f"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-mega-showdown.pw.toml"
-hash = "0a70ce7ee038b278cbb4ea38d913694f64551dd6c804a2a7e18c591755d168a6"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-playerxp.pw.toml"
-hash = "3a7042cb7c052c9ebe7908b16f4c0f84ec432e0b0317fc371e2da90b612f11a1"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-pokenav.pw.toml"
-hash = "9e4aaf381f3cf48370a385e9ef5c0482a6fd62326ba9a1226e9724cd691130a8"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-smartphone.pw.toml"
-hash = "078c595fcc1b6b293fd7a5e462d426da78d6bf1627dfb1ec0be7a927a5995a90"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-spawn-notification.pw.toml"
-hash = "5040157557e38512b64d13395c4550950ad00acb40183cb63a9a2daba85c1b8e"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-tim-core.pw.toml"
-hash = "4211dd9eed65d9599cb1df61f5db373772ed090aa837a17f2fb7dc9c46a8aa2b"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon-utility+.pw.toml"
-hash = "16ef4de0644907ed5b4f4c7b45cd36e472a00fb7997c91cf562d4b5af694314d"
-metafile = true
-
-[[files]]
-file = "mods/cobblemon.pw.toml"
-hash = "bd0dd7ceb00c37cfaa945dfba23b5b2406e12be20709df8d9f82ba12a5a3a2be"
-metafile = true
-
-[[files]]
-file = "mods/cobblemonraiddens.pw.toml"
-hash = "7d0232a19dd3a12de01018fb220770bbb33288cf862f7b3ebf02a8ed1e86935e"
-metafile = true
-
-[[files]]
-file = "mods/cobblemore-library.pw.toml"
-hash = "b65f2b09d07b8db21de571c3353a8a2d3386aa0ee8b3f5abb00d736c3286910b"
 metafile = true
 
 [[files]]
@@ -1440,11 +1276,6 @@ hash = "5554dc0e228bb51557313dd1b0c9493c9e575390a6713a8f6415d3aede09cce0"
 metafile = true
 
 [[files]]
-file = "mods/legendary-monuments.pw.toml"
-hash = "27c6389833d9a13387e72a2462129bd4e9ff7664a772f977f1bf0e0b1b5b8665"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "08dc422d9c30fc19b569033f7cfd2abcd50134f618fe335b396b41dc6f5f3834"
 metafile = true
@@ -1452,11 +1283,6 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "988377a2fb2346223a83b6545ec52f5b22ebd0e26b63d141427ad389bedfe4f0"
-metafile = true
-
-[[files]]
-file = "mods/lootrmon.pw.toml"
-hash = "fe552b2ecb29d7cf215488a7506c2a0c3e1ed554658eaf758ccd3965143e7dfd"
 metafile = true
 
 [[files]]
@@ -1500,18 +1326,8 @@ hash = "ebca20d77b200ff48f7e431ccffac2c2db6844ef4f9304452a0201f5c0307008"
 metafile = true
 
 [[files]]
-file = "mods/more-cobblemon-tweaks.pw.toml"
-hash = "d456b9d7906d60c162847063fce8b92e1f7be6f484a806b4c37d8334cf0c1ca5"
-metafile = true
-
-[[files]]
 file = "mods/natures-compass.pw.toml"
 hash = "2d33555b1fd37949378fc7f2373ed2dd186dd41eef4367e4c52ad802cc02e99d"
-metafile = true
-
-[[files]]
-file = "mods/navas-zamega.pw.toml"
-hash = "ebb0e09ed5e297e8b5339da7e00cefe5353cb9d4082fbda78e2e6192f6d011e3"
 metafile = true
 
 [[files]]
@@ -1607,11 +1423,6 @@ metafile = true
 [[files]]
 file = "mods/shatterbyte-lib.pw.toml"
 hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
-metafile = true
-
-[[files]]
-file = "mods/simpletms-tms-and-trs-for-cobblemon.pw.toml"
-hash = "7f583e3f967bcb361445a257487550ec62d81e0af491b6cf3fc4f3bfc0bd21b2"
 metafile = true
 
 [[files]]
