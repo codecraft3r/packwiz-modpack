@@ -1333,11 +1333,6 @@ hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
-file = "mods/powah.pw.toml"
-hash = "e22a6c065ad1a5e90e387dcd4cc885abb0d70238b1f13eded633ce2f042237f5"
-metafile = true
-
-[[files]]
 file = "mods/power-grid.pw.toml"
 hash = "584386fd1eebd068754440510eba037c18525735107a0ece43f4f5a3c6d3faf6"
 metafile = true
@@ -1450,11 +1445,6 @@ metafile = true
 [[files]]
 file = "mods/the-roads-more-travelled.pw.toml"
 hash = "93ed0e00b8820e25d16eb8e6d508c0cefd07e59b4bb620d0bdc0bac7ed8cad0f"
-metafile = true
-
-[[files]]
-file = "mods/toms-storage.pw.toml"
-hash = "0f67fdb37d6ef354f36a1da5805b5c083be21e7367868ec81d29426d94749609"
 metafile = true
 
 [[files]]
