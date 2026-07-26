@@ -1492,6 +1492,11 @@ hash = "a9256c887a9fe0e5960066380c7743fe8906198172d43150bb332daaa4d8da96"
 metafile = true
 
 [[files]]
+file = "mods/vampires-delight.pw.toml"
+hash = "44af81a36776dafbb3bbd3e25a674f7d64afeeabb91ad2cef1d2ffa059e210d9"
+metafile = true
+
+[[files]]
 file = "mods/vampirism-integrations.pw.toml"
 hash = "fe1143f2dd40fc4720ba870a196b5e4f50cff6c358503ec34d85c20a9d4cd90f"
 metafile = true
