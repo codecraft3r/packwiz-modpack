@@ -996,6 +996,11 @@ hash = "686dc1a36e76dd057b512686da58596b72249fa9cc97c96d87d2c16b450058a2"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-transmission-linkage.pw.toml"
+hash = "aabc3d94ea527039798baa69d7c381cb679afa63f2d842c5357bb8d186792e5b"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
 metafile = true
@@ -1067,7 +1072,7 @@ metafile = true
 
 [[files]]
 file = "mods/double-slabs.pw.toml"
-hash = "338157d5e612fbed805211180fa1a32cd4b264db60a335c908cffd54f7aacf0b"
+hash = "5a630dcd99a833fb7c3d3f817ec9c1357ea6ae381b25e5147dba1d84fe842b63"
 metafile = true
 
 [[files]]
@@ -1288,6 +1293,11 @@ metafile = true
 [[files]]
 file = "mods/lootr.pw.toml"
 hash = "988377a2fb2346223a83b6545ec52f5b22ebd0e26b63d141427ad389bedfe4f0"
+metafile = true
+
+[[files]]
+file = "mods/mannequins.pw.toml"
+hash = "0c53ddaaa2d828c91ea4f5fe920bf3935b48b4ee2507f9145225775a64a88669"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "Mannequins"
+filename = "mannequins-3.0.0-rc.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/wfGzjtBG/versions/BTD20asX/mannequins-3.0.0-rc.1.jar"
+hash-format = "sha512"
+hash = "1b844a327605f26a4b87b8b5608c09620354b5d1a8c39573477e374f78f1ee4a27b11be605cf5a2f8d3339a715f2b373afcbba3f725bcf189b8e384f506f16e6"
+
+[update]
+[update.modrinth]
+mod-id = "wfGzjtBG"
+version = "BTD20asX"
