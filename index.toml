@@ -1173,6 +1173,11 @@ hash = "f35e6bf57b9bc6a91dbfd238837d65476efe122021e7001812ce9b694d62f7fc"
 metafile = true
 
 [[files]]
+file = "mods/godlyvampirism.pw.toml"
+hash = "2f1985faec475dad569f788bfdee6ddde65f90d3fd53e395a0a0b5586449102c"
+metafile = true
+
+[[files]]
 file = "mods/guideme.pw.toml"
 hash = "012e69931380a8d5b73776d255292d7d4c2cd12089273807dda56f944568eba0"
 metafile = true
@@ -1214,7 +1219,7 @@ metafile = true
 
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
-hash = "e53136ead606a4431a7d9f4e62337363cf8ccd0da122443c00d0ba2f375d364b"
+hash = "76f6ec0d8429c4e25430c356563bc3d51b6baf6fc500469f5ec75eb2ae7039a1"
 metafile = true
 
 [[files]]
@@ -1445,6 +1450,16 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "e6ef4cf01f5b048a810d28dbfb45f23b085299ac91afea719d2304ced7a0fd94"
+metafile = true
+
+[[files]]
+file = "mods/vampirism-irons-spells-compatibility.pw.toml"
+hash = "a4bb17b290b4966122029a17c1a21804945c52ec22af7b72c287a0d1a2eecf2a"
+metafile = true
+
+[[files]]
+file = "mods/vampirism.pw.toml"
+hash = "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
 metafile = true
 
 [[files]]

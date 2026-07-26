@@ -1,0 +1,13 @@
+name = "Godly Vampirism"
+filename = "godly_vampirism-1.21.1-1.10.0.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/pg5DWzmH/versions/iEJR1CsA/godly_vampirism-1.21.1-1.10.0.jar"
+hash-format = "sha512"
+hash = "9cab5be5ec27efc6c5d3c6c6ad9bc7ef37de59e566af8bc58b1fa1a296ccf0f2eded5bb5ca5cf99eaf8b5c4bb5388689831a892624bdff2afdff27bc9167b29c"
+
+[update]
+[update.modrinth]
+mod-id = "pg5DWzmH"
+version = "iEJR1CsA"
