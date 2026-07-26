@@ -1333,6 +1333,11 @@ hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
 metafile = true
 
 [[files]]
+file = "mods/powah.pw.toml"
+hash = "dc9fec9f7c8410ed73c1d9dec65df90b83af5a62a86e6a33b55dec5641f49f17"
+metafile = true
+
+[[files]]
 file = "mods/power-grid.pw.toml"
 hash = "584386fd1eebd068754440510eba037c18525735107a0ece43f4f5a3c6d3faf6"
 metafile = true
