@@ -1244,7 +1244,7 @@ metafile = true
 
 [[files]]
 file = "mods/irons-lib.pw.toml"
-hash = "ec000d411bc7cb81fb2a9723e57e8568209e2a67eb7ce2fc7f0e35e4daf14043"
+hash = "1b23f5a7defc103d67d16db0053ff2f6240436bb0d682f760865b590e3416a65"
 metafile = true
 
 [[files]]
