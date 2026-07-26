@@ -14,3 +14,4 @@ scripts/
 CHANGELOG.md
 docs/
 .githooks/
+temp_cache/
