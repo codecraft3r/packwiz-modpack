@@ -581,10 +581,6 @@ file = "config/powergrid-server.toml"
 hash = "9d58c62c1164f0e12a54f509139bf2ea40bc75a797a2b3a2ca67f542622f4cad"
 
 [[files]]
-file = "config/relics.yaml"
-hash = "3a06e656323ddfd8221469c3aebf0849e65638aa886d71ceb4cbf9e023b9787d"
-
-[[files]]
 file = "config/resourceful-config-web.json"
 hash = "f4b7f343fa4e0b5554519d126084029797c988d8257cc1c20eda32769236a49f"
 
@@ -1403,11 +1399,6 @@ metafile = true
 [[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "b4cb292255e46d058ef9c4a6bcdf562ae539489a31d0b4bea3718042d98e5c86"
-metafile = true
-
-[[files]]
-file = "mods/relics-mod.pw.toml"
-hash = "0cceec73433a0161076f7fb8c7e5400f0fef7ea319af011a4fb47e71ef3d384e"
 metafile = true
 
 [[files]]
