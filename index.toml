@@ -1023,6 +1023,11 @@ hash = "cab6f316cb4ef454bbfa18b32263c3fb7c246a0405a505611c1e36b5eabd48f0"
 metafile = true
 
 [[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "ff6a3d4bed914978aada4a059a16100cd2fd69a3cf19987c0d80160a7125e78b"
+metafile = true
+
+[[files]]
 file = "mods/create-numismatics-utils.pw.toml"
 hash = "a54d1e0d3f706dd69041b8c2b6c660d897376c1cf158fe6c873909f0cd0d9910"
 metafile = true
