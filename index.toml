@@ -1389,6 +1389,11 @@ hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
 metafile = true
 
 [[files]]
+file = "mods/sky-archipelago.pw.toml"
+hash = "4cd742ca570b426f60fd55445b152e0e79ed3002d8eba832b4b4e416c7b68a25"
+metafile = true
+
+[[files]]
 file = "mods/slice-and-dice.pw.toml"
 hash = "e540f816cf4597252869f8f8cf435d297c1f85a9b85ce7d81cd5c1b853018efc"
 metafile = true
