@@ -485,10 +485,6 @@ file = "config/mega_showdown/config.json"
 hash = "71311ed5308b402047ba91a4db10e5b0f565740f234c591068f79691eaaf47a2"
 
 [[files]]
-file = "config/midnightlib.json"
-hash = "b14c45c6447f9ee5474d70784a2ef96731abbeca1e92485b7599e76e9dce1444"
-
-[[files]]
 file = "config/moonlight-client.toml"
 hash = "3f252fefef0345f9aa8a8d3b7eff02f045b8bf565329eeba9ec50c7989a63457"
 
@@ -1290,11 +1286,6 @@ metafile = true
 [[files]]
 file = "mods/mekanism.pw.toml"
 hash = "42061fd570a0b7a8063c0860056c6391593190caa0f12d3b49105e52a56817fe"
-metafile = true
-
-[[files]]
-file = "mods/midnightlib.pw.toml"
-hash = "73aba17132f267dd76ff682aa84abfb7c09d25a93b9220ee261a1e25337bebc7"
 metafile = true
 
 [[files]]
