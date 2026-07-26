@@ -109,10 +109,6 @@ file = "config/aeroworks-common.toml"
 hash = "a4b9ecd676af36aa1b89831ac11860c14473acb6251ba46f5a4be1b836b44b3f"
 
 [[files]]
-file = "config/allthewizardgear-server.toml"
-hash = "ad071b2ec12fe9f14fdd12aff75662d8d16cdf56064ea954f1aa91a25bb702b5"
-
-[[files]]
 file = "config/artifacts/client.toml"
 hash = "3921700655db2af439702410ce0f4771955fa426b8b184ccb569721063da2a70"
 
@@ -713,14 +709,6 @@ file = "config/starterkit/kits/p_default.txt"
 hash = "da5d3bdcba9700671e9f06e4015fc449999b797caaacf7de388e751241be4638"
 
 [[files]]
-file = "config/tempad-client.jsonc"
-hash = "716f586f5aa629494ec8b72af20e75c5273baf9c685588be2d68f67ffa7389e8"
-
-[[files]]
-file = "config/tempad.jsonc"
-hash = "2c50f0c067ab8e1b057bccea3adf8504db0cc6e09b7f36a62bf4a6084fd283ca"
-
-[[files]]
 file = "config/tim_core.json"
 hash = "b9df2501147828abfb621991ab2c0fc5964650d443688870da803ab8d437443f"
 
@@ -921,16 +909,6 @@ hash = "89232465c6c491231d10541944cb4c40c14c8e74e177d11039b32f3d06081c4e"
 metafile = true
 
 [[files]]
-file = "mods/all-the-wizard-gear.pw.toml"
-hash = "dcb6f54735fab2f10e429204771be4e8b1ab98dca117f4bc6a84ccb2d6c4d160"
-metafile = true
-
-[[files]]
-file = "mods/allthemodium.pw.toml"
-hash = "56ef6b45f352d428e19d2332470e6b742dd677a2ba38ce7bf4e9c17f7355d9b1"
-metafile = true
-
-[[files]]
 file = "mods/applied-energistics-2-wireless-terminals.pw.toml"
 hash = "896d14f8df7c6d3ed5b6ca292220fa87c1c305f50cbdca43034a3f0414be72ca"
 metafile = true
@@ -948,11 +926,6 @@ metafile = true
 [[files]]
 file = "mods/athena-ctm.pw.toml"
 hash = "f54cf71372645810ce22b0ba68e706139565437150e4cfd22bde4c14606099c4"
-metafile = true
-
-[[files]]
-file = "mods/ato.pw.toml"
-hash = "2caa0a932f416d3a6d6dd2921840856395b56b04417292938ddb1796b72bf448"
 metafile = true
 
 [[files]]
@@ -1311,11 +1284,6 @@ hash = "73aba17132f267dd76ff682aa84abfb7c09d25a93b9220ee261a1e25337bebc7"
 metafile = true
 
 [[files]]
-file = "mods/mineableminable-allthemodium-ores.pw.toml"
-hash = "849b8b31cc9dec76924f94d3a9b14cf8b197b0fafbab46c7d8c723ba2dc97d9d"
-metafile = true
-
-[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "983d6ab9d9a7d40031f1789f5ae018cccb889832ac8ce741df60a9d8e5f42817"
 metafile = true
@@ -1348,11 +1316,6 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
-metafile = true
-
-[[files]]
-file = "mods/potionsmaster.pw.toml"
-hash = "a5cd72e2985163b0b98ca833d6cf07e6dd15e054b3b2d2aaa2ab524765d7a8fb"
 metafile = true
 
 [[files]]
@@ -1448,11 +1411,6 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "3c08d6331ca871abdfa7a185011d2a6349a1125cc6b2cf87f9c89ca4043dbe70"
-metafile = true
-
-[[files]]
-file = "mods/tempad.pw.toml"
-hash = "d651f09ba5054fb4f798ea38cb1566f3a338ce80885fb8b8b2516091088dd911"
 metafile = true
 
 [[files]]
