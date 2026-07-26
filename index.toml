@@ -912,6 +912,11 @@ hash = "f54cf71372645810ce22b0ba68e706139565437150e4cfd22bde4c14606099c4"
 metafile = true
 
 [[files]]
+file = "mods/atlas-lib.pw.toml"
+hash = "57d314558add15212267a2a73439def174a8d8179e3cbd6abf8926f23fbca2e5"
+metafile = true
+
+[[files]]
 file = "mods/bellsandwhistles.pw.toml"
 hash = "904407c261f70fd20bedccc8dbf788f527e87629feaa9a25ee9b1fe91e14a975"
 metafile = true
@@ -1454,6 +1459,11 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "3c08d6331ca871abdfa7a185011d2a6349a1125cc6b2cf87f9c89ca4043dbe70"
+metafile = true
+
+[[files]]
+file = "mods/the-hordes.pw.toml"
+hash = "52d0b29b965324ed296c84c2be6614d94bf029a8b653264ed22e3a672b83a217"
 metafile = true
 
 [[files]]
