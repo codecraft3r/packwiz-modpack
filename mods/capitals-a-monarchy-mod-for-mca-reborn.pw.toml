@@ -1,0 +1,13 @@
+name = "MCA Capitals | A Monarchy Mod for MCA Reborn"
+filename = "mcacapitals-1.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tHmppiXj/versions/WgyoKGoO/mcacapitals-1.1.0.jar"
+hash-format = "sha512"
+hash = "d520077bf9a328570366e4f4f8ad67ea8eb465e5e4d0d262007d169ad267d816eada64caf3a71a36db1a15445062164643eafb5238653368e70a1008fc8e2643"
+
+[update]
+[update.modrinth]
+mod-id = "tHmppiXj"
+version = "WgyoKGoO"

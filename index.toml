@@ -948,6 +948,16 @@ hash = "44302c0b9c5e79066d77346140e933c9bda958326ffdf679df98987622b2d4e4"
 metafile = true
 
 [[files]]
+file = "mods/caelus.pw.toml"
+hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
+metafile = true
+
+[[files]]
+file = "mods/capitals-a-monarchy-mod-for-mca-reborn.pw.toml"
+hash = "8152a52aea12e6180f55a840226f76a611ec270ea4202211f2db9be6776bbd19"
+metafile = true
+
+[[files]]
 file = "mods/carry-on.pw.toml"
 hash = "1825b381fdc21403a4b1b1e99d277f8e00454b51d4afa94e7b415e0f66fd0cb2"
 metafile = true
@@ -970,6 +980,11 @@ metafile = true
 [[files]]
 file = "mods/collective.pw.toml"
 hash = "5bd6815fb48b4aa3985e2a07bf00b7a66da24d9b289d58c9492da19d902b2e2a"
+metafile = true
+
+[[files]]
+file = "mods/common-network.pw.toml"
+hash = "cd8078f4d044e9fb548c2b792f2f1f1c04e1b80e1479446f67de3e8687dfbf67"
 metafile = true
 
 [[files]]
@@ -1059,7 +1074,7 @@ metafile = true
 
 [[files]]
 file = "mods/curios.pw.toml"
-hash = "f92e7a06645e41ea1934dc420eb2772edb1708c0d71cb427baef8cf753acb934"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
 metafile = true
 
 [[files]]
@@ -1110,6 +1125,11 @@ metafile = true
 [[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
+metafile = true
+
+[[files]]
+file = "mods/field-guide.pw.toml"
+hash = "0d69df1b8c28de6c42abef67331b8ef4ef811cd1bf3c4cafb9bd34993ab4ffa0"
 metafile = true
 
 [[files]]
@@ -1178,6 +1198,11 @@ hash = "2f1985faec475dad569f788bfdee6ddde65f90d3fd53e395a0a0b5586449102c"
 metafile = true
 
 [[files]]
+file = "mods/guide-api.pw.toml"
+hash = "d973a76275a2ed58cda27e322b6bebe217144f1083f5a3eb41074dd2785a4fd5"
+metafile = true
+
+[[files]]
 file = "mods/guideme.pw.toml"
 hash = "012e69931380a8d5b73776d255292d7d4c2cd12089273807dda56f944568eba0"
 metafile = true
@@ -1188,8 +1213,18 @@ hash = "9bea3782285e9dafcccd88d817ab4a6505400955b5343f1b6df16fa29122c410"
 metafile = true
 
 [[files]]
+file = "mods/icarus.pw.toml"
+hash = "692e776a8f05ad5c63f89db47873e30519ec2dc15beece151f9dc495ebe18b6b"
+metafile = true
+
+[[files]]
 file = "mods/immersive-furniture.pw.toml"
 hash = "56c2efa80b6af66cf79ce4d22982b75c68d7e3328882f2b5d26bf12ec8433482"
+metafile = true
+
+[[files]]
+file = "mods/immersive-overlays.pw.toml"
+hash = "4ce9a1521d439d393f79988859c97157a8ba4b5fcb38f4043adde2da48761560"
 metafile = true
 
 [[files]]
@@ -1220,6 +1255,11 @@ metafile = true
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
 hash = "76f6ec0d8429c4e25430c356563bc3d51b6baf6fc500469f5ec75eb2ae7039a1"
+metafile = true
+
+[[files]]
+file = "mods/item-descriptions.pw.toml"
+hash = "b902e2a8d9a070dec6136632ea901f2bcb7185c41554d08128f377a1825ed495"
 metafile = true
 
 [[files]]
@@ -1418,6 +1458,11 @@ hash = "10b8d11dfeee39fdcb836eedfa34cd3d3c741a5a3b76bae901052a345010d43a"
 metafile = true
 
 [[files]]
+file = "mods/sparkweave.pw.toml"
+hash = "fd2b9d3767476d9200521917dd71b8aeeba5e0e23f8160457bd864e96190d300"
+metafile = true
+
+[[files]]
 file = "mods/starter-kit.pw.toml"
 hash = "afe1935ad353cf8fe41d4baab75c29247451d79a2398cc412d98b033edb48f24"
 metafile = true
@@ -1450,6 +1495,11 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "e6ef4cf01f5b048a810d28dbfb45f23b085299ac91afea719d2304ced7a0fd94"
+metafile = true
+
+[[files]]
+file = "mods/underlay.pw.toml"
+hash = "a9256c887a9fe0e5960066380c7743fe8906198172d43150bb332daaa4d8da96"
 metafile = true
 
 [[files]]
