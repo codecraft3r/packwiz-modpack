@@ -513,6 +513,10 @@ file = "config/lootr-common.toml"
 hash = "cb848383f0abff383a96a6cbf59bb91135cce38cb71711f3ffe5baca20fabf9a"
 
 [[files]]
+file = "config/mca.json"
+hash = "517b49c5f7041d10e9f1f25bc6549b0a77eb856ba867aef865ed83bd75200545"
+
+[[files]]
 file = "config/mega_showdown/config.json"
 hash = "71311ed5308b402047ba91a4db10e5b0f565740f234c591068f79691eaaf47a2"
 
