@@ -1122,11 +1122,6 @@ hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
 
 [[files]]
-file = "mods/field-guide.pw.toml"
-hash = "0d69df1b8c28de6c42abef67331b8ef4ef811cd1bf3c4cafb9bd34993ab4ffa0"
-metafile = true
-
-[[files]]
 file = "mods/flux-networks.pw.toml"
 hash = "ad8209e472d463c9fcd19ca708fcd9c1a4a1bc69c9f0ca22efeacb414e9ab7a8"
 metafile = true
@@ -1217,11 +1212,6 @@ hash = "56c2efa80b6af66cf79ce4d22982b75c68d7e3328882f2b5d26bf12ec8433482"
 metafile = true
 
 [[files]]
-file = "mods/immersive-overlays.pw.toml"
-hash = "4ce9a1521d439d393f79988859c97157a8ba4b5fcb38f4043adde2da48761560"
-metafile = true
-
-[[files]]
 file = "mods/infinite-trading.pw.toml"
 hash = "746a6ae3d22331fdcdc354c3e20b140664d9192dc716ca6bba664cbc2529d2db"
 metafile = true
@@ -1249,11 +1239,6 @@ metafile = true
 [[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
 hash = "76f6ec0d8429c4e25430c356563bc3d51b6baf6fc500469f5ec75eb2ae7039a1"
-metafile = true
-
-[[files]]
-file = "mods/item-descriptions.pw.toml"
-hash = "b902e2a8d9a070dec6136632ea901f2bcb7185c41554d08128f377a1825ed495"
 metafile = true
 
 [[files]]
