@@ -109,18 +109,6 @@ file = "config/aeroworks-common.toml"
 hash = "a4b9ecd676af36aa1b89831ac11860c14473acb6251ba46f5a4be1b836b44b3f"
 
 [[files]]
-file = "config/artifacts/client.toml"
-hash = "3921700655db2af439702410ce0f4771955fa426b8b184ccb569721063da2a70"
-
-[[files]]
-file = "config/artifacts/general.toml"
-hash = "b73793e634d1a441c12ed1c3d02ec074b2f19a24766512f78ff0b9d83cf9768b"
-
-[[files]]
-file = "config/artifacts/items.toml"
-hash = "4ad2b5325a9ddd32792b0cca532ab88914ae0c85aef8f5f56db8f5e75609bc28"
-
-[[files]]
 file = "config/better-advanced-tooltips-client.toml"
 hash = "5b0da765c45397402cffe340f632544a8e740a767937f353a3a8206b6cdde0fa"
 
@@ -920,11 +908,6 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
-metafile = true
-
-[[files]]
-file = "mods/artifacts.pw.toml"
-hash = "f0430317c2b486e9266ab8977291cd07bd2436a320666c7262ad8e6357ddab76"
 metafile = true
 
 [[files]]
