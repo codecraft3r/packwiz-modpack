@@ -1054,6 +1054,11 @@ hash = "bd6e5a7a9e97014a895f1b4c2c93f277bfe9dda92e3386483ab46a1bd739362d"
 metafile = true
 
 [[files]]
+file = "mods/do-a-barrel-roll.pw.toml"
+hash = "fe88386ca7a7c34be094f10e3a012810cec23f21b580dbc1c908cf95a17bf6f8"
+metafile = true
+
+[[files]]
 file = "mods/double-slabs.pw.toml"
 hash = "5a630dcd99a833fb7c3d3f817ec9c1357ea6ae381b25e5147dba1d84fe842b63"
 metafile = true
