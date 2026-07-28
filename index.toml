@@ -1384,6 +1384,11 @@ hash = "b2c4d2aca182c98ad4564cba491e99b602ba3220b8bdf1b15ed9ee61d43efd9c"
 metafile = true
 
 [[files]]
+file = "mods/rolling-down-in-the-deep.pw.toml"
+hash = "63ac4106945a26cfc63a9a0c42f46dda6fafc9db63e09af7c302223870f250b6"
+metafile = true
+
+[[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
 metafile = true
