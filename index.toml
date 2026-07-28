@@ -1379,11 +1379,6 @@ hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
-file = "mods/roadweaver.pw.toml"
-hash = "b2c4d2aca182c98ad4564cba491e99b602ba3220b8bdf1b15ed9ee61d43efd9c"
-metafile = true
-
-[[files]]
 file = "mods/rolling-down-in-the-deep.pw.toml"
 hash = "63ac4106945a26cfc63a9a0c42f46dda6fafc9db63e09af7c302223870f250b6"
 metafile = true
