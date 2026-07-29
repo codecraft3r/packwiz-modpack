@@ -889,6 +889,11 @@ hash = "db22b5cae71ed842e4075fe42b9d1132779b399b57817e64761f647b29ffe5c4"
 metafile = true
 
 [[files]]
+file = "mods/bossesrise.pw.toml"
+hash = "d20e603af6e9156021a1b8db31edd187a089b2b21cd7f70fa7eb7507bf81dbf9"
+metafile = true
+
+[[files]]
 file = "mods/burnt-basic.pw.toml"
 hash = "44302c0b9c5e79066d77346140e933c9bda958326ffdf679df98987622b2d4e4"
 metafile = true
@@ -1041,6 +1046,11 @@ metafile = true
 [[files]]
 file = "mods/cubes-without-borders.pw.toml"
 hash = "8e5f6550359e71ecbea95705ec61fb03313550e6f481cabf48043929909aabae"
+metafile = true
+
+[[files]]
+file = "mods/cult-of-azazel.pw.toml"
+hash = "4eb7effdfacb7a19d6b2bf660813a17ec6ff413ad94668fe2df987b75a133528"
 metafile = true
 
 [[files]]
@@ -1261,6 +1271,16 @@ metafile = true
 [[files]]
 file = "mods/kubejs.pw.toml"
 hash = "5554dc0e228bb51557313dd1b0c9493c9e575390a6713a8f6415d3aede09cce0"
+metafile = true
+
+[[files]]
+file = "mods/l_enders-cataclysm.pw.toml"
+hash = "1adf24c4207f2e7c99be3b5d4aaef206fbc3725441c14e1f7ea77d2648fc10ee"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
 metafile = true
 
 [[files]]

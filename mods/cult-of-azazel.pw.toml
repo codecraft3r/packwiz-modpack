@@ -1,0 +1,13 @@
+name = "Cult of Azazel"
+filename = "cultofazazelneo-killfix.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tnd2BYam/versions/PhIGkkCZ/cultofazazelneo-killfix.jar"
+hash-format = "sha512"
+hash = "ce3db7e42f9f0b4199f79784725c1ba1b84d98e88d8e1159866a5ba0fe98ce111890962b6566fe35001c83c12afbd91a90430dfb2770d5c9757439e13d76b261"
+
+[update]
+[update.modrinth]
+mod-id = "tnd2BYam"
+version = "PhIGkkCZ"
