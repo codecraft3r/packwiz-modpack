@@ -1419,11 +1419,6 @@ hash = "22dde7441f5bd5d2b4699d00f0efed79f75664dade5a66a36f181a0a823c751c"
 metafile = true
 
 [[files]]
-file = "mods/ragdoll-reactions.pw.toml"
-hash = "f83d9b4b2d933a38d81a0b19ee07923eab5a544953e6900db8443abd41e5eb25"
-metafile = true
-
-[[files]]
 file = "mods/rechiseled.pw.toml"
 hash = "b4cb292255e46d058ef9c4a6bcdf562ae539489a31d0b4bea3718042d98e5c86"
 metafile = true
@@ -1451,11 +1446,6 @@ metafile = true
 [[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
-metafile = true
-
-[[files]]
-file = "mods/sable-ragdolls.pw.toml"
-hash = "fb2ad6119a9516ca3f65067ecae4516a49bce982bcd43597f714cb29958345e2"
 metafile = true
 
 [[files]]
