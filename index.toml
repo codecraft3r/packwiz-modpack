@@ -1574,6 +1574,11 @@ hash = "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
 metafile = true
 
 [[files]]
+file = "mods/vertical-scroll.pw.toml"
+hash = "23539ffba44555cc63de03611938a79d12acb4c737bcced0504949c6dc3fc473"
+metafile = true
+
+[[files]]
 file = "mods/via-romana.pw.toml"
 hash = "7a2479a0c1b8681006bbeaea23005fee2720357f86d30626364e12622642338d"
 metafile = true

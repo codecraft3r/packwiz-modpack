@@ -1,0 +1,13 @@
+name = "Vertical Scroll"
+filename = "verticalscroll-1.2.1+1.21.1-neoforge.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/alxGmgLe/versions/OFAp5D2x/verticalscroll-1.2.1%2B1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "32bc2d6813b3a021f1751f2d3a2d12f157d1c781f26f3f91a2226c5919a5e147eb4e40e63c4c3e916ac66f140e2a60d416085e44d676dcd1f34f63ddd6a6287f"
+
+[update]
+[update.modrinth]
+mod-id = "alxGmgLe"
+version = "OFAp5D2x"
