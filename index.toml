@@ -1449,6 +1449,11 @@ hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
+file = "mods/rolling-down-in-the-deep.pw.toml"
+hash = "63ac4106945a26cfc63a9a0c42f46dda6fafc9db63e09af7c302223870f250b6"
+metafile = true
+
+[[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
 metafile = true
@@ -1569,11 +1574,6 @@ hash = "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
 metafile = true
 
 [[files]]
-file = "mods/vertical-scroll.pw.toml"
-hash = "23539ffba44555cc63de03611938a79d12acb4c737bcced0504949c6dc3fc473"
-metafile = true
-
-[[files]]
 file = "mods/via-romana.pw.toml"
 hash = "7a2479a0c1b8681006bbeaea23005fee2720357f86d30626364e12622642338d"
 metafile = true
@@ -1605,5 +1605,5 @@ metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "9a89a97f142873b9ab62d2c7c807ac22e6f16c828282052b416a6f3f7f785a48"
+hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
