@@ -1134,11 +1134,6 @@ hash = "a830f9e0393be04dd0a8a3a845b27e90cd34961887403c800e296182283d9c3e"
 metafile = true
 
 [[files]]
-file = "mods/fragmentum.pw.toml"
-hash = "85ba6f016d7447b4ba0013eab45ecfffd4349e99acd892d46c16bf0d2411f8cc"
-metafile = true
-
-[[files]]
 file = "mods/ftb-chunks-forge.pw.toml"
 hash = "ca3a278d045987c9e013604465ebfca96c17ebb128b9a8cb4954204943d72309"
 metafile = true
@@ -1381,11 +1376,6 @@ metafile = true
 [[files]]
 file = "mods/numismatics.pw.toml"
 hash = "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f"
-metafile = true
-
-[[files]]
-file = "mods/obscure-tooltips.pw.toml"
-hash = "e59b9fe0cc9c1ef31a583f64eaf27738e2fe6b7dfcd0160615a9958b7159012e"
 metafile = true
 
 [[files]]
