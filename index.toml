@@ -1104,11 +1104,6 @@ hash = "ced904bbdd11832f60d6f6080f500008adab40b1014aef5c41a1537c5469b4ec"
 metafile = true
 
 [[files]]
-file = "mods/explosive-enhancement-forge.pw.toml"
-hash = "fc8948d1a8837b7a89a3b754335fd53086ba89c78af9c3d07fa899761c6a9e50"
-metafile = true
-
-[[files]]
 file = "mods/exposure.pw.toml"
 hash = "d60c27ac7e5ede6e4edcbd2581f758f2f31506539970e3a0838039d847a6ebbe"
 metafile = true
@@ -1209,11 +1204,6 @@ hash = "692e776a8f05ad5c63f89db47873e30519ec2dc15beece151f9dc495ebe18b6b"
 metafile = true
 
 [[files]]
-file = "mods/idens-decor.pw.toml"
-hash = "9cb463e7e3f8b3ddf0de0fcf4cf2764bf5ad0b9d26d56f2d1fd4a64da8ed2987"
-metafile = true
-
-[[files]]
 file = "mods/immersive-furniture.pw.toml"
 hash = "56c2efa80b6af66cf79ce4d22982b75c68d7e3328882f2b5d26bf12ec8433482"
 metafile = true
@@ -1309,11 +1299,6 @@ hash = "988377a2fb2346223a83b6545ec52f5b22ebd0e26b63d141427ad389bedfe4f0"
 metafile = true
 
 [[files]]
-file = "mods/lost-trinkets-renewed.pw.toml"
-hash = "7eb5a10afd2b41c7eead2ed72e7517aa39f24649da3e126579ca0c27dba1e406"
-metafile = true
-
-[[files]]
 file = "mods/mannequins.pw.toml"
 hash = "0c53ddaaa2d828c91ea4f5fe920bf3935b48b4ee2507f9145225775a64a88669"
 metafile = true
@@ -1386,11 +1371,6 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "5b30dafc9e96471978376ee010cec0ddf592377ac94192c9370cb37973e1e95f"
-metafile = true
-
-[[files]]
-file = "mods/potion-bar.pw.toml"
-hash = "4bb3ab7f7d0ce13b449011f13007f85e9519ab27cbfc7169c010115cc9f2cbcd"
 metafile = true
 
 [[files]]
