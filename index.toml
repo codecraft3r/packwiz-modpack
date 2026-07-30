@@ -859,6 +859,11 @@ hash = "19cbfb37dc29169b50599dfa328fe12a0ec9caaec8ac02627b5846f3bd9d1425"
 metafile = true
 
 [[files]]
+file = "mods/aces-spell-utils.pw.toml"
+hash = "3b03175ed1dc7f0810f7f7b10c463aec657c6243153efae59fe77b744f6cd830"
+metafile = true
+
+[[files]]
 file = "mods/amendments.pw.toml"
 hash = "793e70a07961b1670ba13dcdfe2c1cfb1379df52485adc2d3ba5db128e9536a6"
 metafile = true
@@ -876,6 +881,11 @@ metafile = true
 [[files]]
 file = "mods/atlas-lib.pw.toml"
 hash = "57d314558add15212267a2a73439def174a8d8179e3cbd6abf8926f23fbca2e5"
+metafile = true
+
+[[files]]
+file = "mods/azurelib.pw.toml"
+hash = "f9bc54d3fb8c268bec1f0e5d75818c825a1f83eaf26a6f90061cd4097a81c96f"
 metafile = true
 
 [[files]]
@@ -911,6 +921,11 @@ metafile = true
 [[files]]
 file = "mods/carry-on.pw.toml"
 hash = "1825b381fdc21403a4b1b1e99d277f8e00454b51d4afa94e7b415e0f66fd0cb2"
+metafile = true
+
+[[files]]
+file = "mods/cataclysm-spellbooks.pw.toml"
+hash = "d081b466ddf0c20397f7e282944dd0df7d359c0373eeaed8a390117a62bf838c"
 metafile = true
 
 [[files]]
@@ -1094,6 +1109,11 @@ hash = "d59b35ab8c8501db71b5c394fbfa9a76d9652171226018af255c886e64e2747f"
 metafile = true
 
 [[files]]
+file = "mods/epic-fight.pw.toml"
+hash = "8f25f6d5023d533e0d70b0375c36c176445251f431a9c8ebd63cf7f63e4c31da"
+metafile = true
+
+[[files]]
 file = "mods/escalated.pw.toml"
 hash = "f0c4de14fa08bebb33b21fc3f0e1525134ae53b79cdd08b85c761900e72b7510"
 metafile = true
@@ -1126,6 +1146,11 @@ metafile = true
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
 hash = "a830f9e0393be04dd0a8a3a845b27e90cd34961887403c800e296182283d9c3e"
+metafile = true
+
+[[files]]
+file = "mods/fragmentum.pw.toml"
+hash = "85ba6f016d7447b4ba0013eab45ecfffd4349e99acd892d46c16bf0d2411f8cc"
 metafile = true
 
 [[files]]
@@ -1366,6 +1391,11 @@ metafile = true
 [[files]]
 file = "mods/numismatics.pw.toml"
 hash = "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f"
+metafile = true
+
+[[files]]
+file = "mods/obscure-tooltips.pw.toml"
+hash = "e59b9fe0cc9c1ef31a583f64eaf27738e2fe6b7dfcd0160615a9958b7159012e"
 metafile = true
 
 [[files]]
