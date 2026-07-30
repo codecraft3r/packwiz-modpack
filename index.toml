@@ -1264,6 +1264,11 @@ hash = "0b598e65e9418cdc57e4e6b15c4baf780b53e351a0d9fd4f0972d8fc212fcd31"
 metafile = true
 
 [[files]]
+file = "mods/keybind-atlas.pw.toml"
+hash = "84914fc3e4a0dc029068bc402fcd23c9c2059108b57de31b0bc7bbe7b2b10fa8"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
 metafile = true
@@ -1334,6 +1339,11 @@ hash = "983d6ab9d9a7d40031f1789f5ae018cccb889832ac8ce741df60a9d8e5f42817"
 metafile = true
 
 [[files]]
+file = "mods/modmenu.pw.toml"
+hash = "4a33f888af603e0859359f44b068854e4148d4fba35ee0818bb977171236a805"
+metafile = true
+
+[[files]]
 file = "mods/moonlight.pw.toml"
 hash = "688a2fcd58d20df93c57e571b054b3c582932a795a255dc13c65b055dc1880b1"
 metafile = true
@@ -1371,6 +1381,11 @@ metafile = true
 [[files]]
 file = "mods/power-grid.pw.toml"
 hash = "584386fd1eebd068754440510eba037c18525735107a0ece43f4f5a3c6d3faf6"
+metafile = true
+
+[[files]]
+file = "mods/punchy-fpa.pw.toml"
+hash = "53981ef920b10c51bae6dc5360478e1d83782c154c2182121545619d157d609d"
 metafile = true
 
 [[files]]
@@ -1526,6 +1541,11 @@ metafile = true
 [[files]]
 file = "mods/vampirism.pw.toml"
 hash = "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
+metafile = true
+
+[[files]]
+file = "mods/vertical-scroll.pw.toml"
+hash = "23539ffba44555cc63de03611938a79d12acb4c737bcced0504949c6dc3fc473"
 metafile = true
 
 [[files]]
