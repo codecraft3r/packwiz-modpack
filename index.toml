@@ -1314,6 +1314,11 @@ hash = "988377a2fb2346223a83b6545ec52f5b22ebd0e26b63d141427ad389bedfe4f0"
 metafile = true
 
 [[files]]
+file = "mods/lost-trinkets-renewed.pw.toml"
+hash = "7eb5a10afd2b41c7eead2ed72e7517aa39f24649da3e126579ca0c27dba1e406"
+metafile = true
+
+[[files]]
 file = "mods/mannequins.pw.toml"
 hash = "0c53ddaaa2d828c91ea4f5fe920bf3935b48b4ee2507f9145225775a64a88669"
 metafile = true
