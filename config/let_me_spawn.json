@@ -1,9 +1,0 @@
-{
-  "enableSpawnMessages": true,
-  "permits": [
-    {
-      "bucket": "ultra-rare",
-      "type": "bucket"
-    }
-  ]
-}
