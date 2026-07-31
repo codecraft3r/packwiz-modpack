@@ -25,7 +25,7 @@
 	#Whether or not players can harm their own magic summons. Default: false
 	canAttackOwnSummons = false
 	#The maximum amount of times an applicable piece of equipment can be upgraded in the arcane anvil. Default: 3
-	maxUpgrades = 6
+	maxUpgrades = 4
 	#From 0-1, the percent of max mana a player respawns with. Default: 0.0
 	manaSpawnPercent = 0.5
 	#From 0-1, the percent chance for scrolls to be successfully recycled. Default: 0.5 (50%)
