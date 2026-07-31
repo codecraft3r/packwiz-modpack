@@ -22,7 +22,7 @@ hash = "41850b5f863ea3463cbaf2c194849c18f25971c548bb7ab469f16a3f07e63929"
 
 [[files]]
 file = "config/Mekanism/gear.toml"
-hash = "87c1277f6d6482fe60deea64e73b3de019c65c7b4b7d0ef08c79f0ab3db95173"
+hash = "37b95ad7fd20dc78598fd65b0730f59d6f44c8d6a5e27f11c97a67afd26df74a"
 
 [[files]]
 file = "config/Mekanism/general.toml"
@@ -111,34 +111,6 @@ hash = "865a366143df5f4d92941058c823ea48deb8445f6444b45e870331b16a444f0f"
 [[files]]
 file = "config/carryon-common.toml"
 hash = "80f73b76cea4c7947c0a750b9567b0af2f905bc32d310beaae4cdc63efcc473b"
-
-[[files]]
-file = "config/cobblemon-battle-extras-server.json"
-hash = "6e3f0ed5aa64ae9843c1bb36c63f2122b726dc884d98f78d70dbbbde38c219f9"
-
-[[files]]
-file = "config/cobblemon-battle-extras.json"
-hash = "4953a2b2f608f27585a6565e1751ec915c81ae2a506e106238044256b06896db"
-
-[[files]]
-file = "config/cobblemon_home.json"
-hash = "2f4b3c0ca832612fbd5caa80e1eaddf2f361f94de09b9652bd3387a190f19fda"
-
-[[files]]
-file = "config/cobblemon_smartphone.json"
-hash = "f2a1a85840f1a6c972e71674f01ca28e6b3e8150ddf477413a7311a4582d1a17"
-
-[[files]]
-file = "config/cobblemonintegrations-common-1.toml.bak"
-hash = "d91362715ae654f13d549e7955fc4db336bfb4df1413f8f68ba6e539a99a00f0"
-
-[[files]]
-file = "config/cobblenav/client-config.json"
-hash = "4640a6bc027d3e9c1275a7e07af656784d38d4d3664bb185f2d34acb7b4094d5"
-
-[[files]]
-file = "config/cobblenav/server-config.json"
-hash = "d9cdbe4c56f4f2099ba600319c833fe8b20d4eb52e060e5b4978bc2e6bf801f4"
 
 [[files]]
 file = "config/collective.json5"
@@ -269,10 +241,6 @@ file = "config/fabric/indigo-renderer.properties"
 hash = "be880eccaf64d8df903d28530ee7d8c68556713f810c35b9424965e43c61e9d2"
 
 [[files]]
-file = "config/fixed_starter_ivs.json"
-hash = "94e7617024cfe77f28e53c351286e0df4d87cfa9f048565cf057af8aa812eb15"
-
-[[files]]
 file = "config/fluxnetworks-client.toml"
 hash = "96ffd6fb2279808962876c9601ccbaf51ca6ea8b77451fa3ee1d2f0f5a0df7cb"
 
@@ -382,7 +350,7 @@ hash = "6beb668c942a607fd602e65ebec4281939eb0122c4fff02f01336bb47d257963"
 
 [[files]]
 file = "config/irons_spellbooks-server.toml"
-hash = "af51b95c1b56a8c3ca69a3c4312c318b6514c1a649fafa8d583066cbc64c18f2"
+hash = "c35b15f31ab53a407fe1d5e022c0a2dff880450799b7d4077353d92e19be9c5f"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/global_config.json"
@@ -461,10 +429,6 @@ file = "config/jei_mekanism_multiblocks-client.toml"
 hash = "b43c3d68a6ada30ad2e3864a00ba4b4cd7f94fe1bd1df20bf89c48d9ecde1b4c"
 
 [[files]]
-file = "config/let_me_spawn.json"
-hash = "7048a040ca9969c22e4129e08c18f074ab6720596dbd71310bf8311906e09b16"
-
-[[files]]
 file = "config/lithium.properties"
 hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
 
@@ -479,10 +443,6 @@ hash = "cb848383f0abff383a96a6cbf59bb91135cce38cb71711f3ffe5baca20fabf9a"
 [[files]]
 file = "config/mca.json"
 hash = "517b49c5f7041d10e9f1f25bc6549b0a77eb856ba867aef865ed83bd75200545"
-
-[[files]]
-file = "config/mega_showdown/config.json"
-hash = "71311ed5308b402047ba91a4db10e5b0f565740f234c591068f79691eaaf47a2"
 
 [[files]]
 file = "config/moonlight-client.toml"
@@ -1275,7 +1235,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "5367193d3f87b7bc5a81bcd64a5b96a843e76d4df7a83c8bb7e1911aa82dd52e"
+hash = "b5c564cf55a73d7c5118ecf841bffa18c148e025170ab6370112fdfa8b6b6ab9"
 metafile = true
 
 [[files]]
