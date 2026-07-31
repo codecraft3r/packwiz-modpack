@@ -2,6 +2,12 @@
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
+## [3.0.0-pre1] - 2026-07-30
+
+### Changed
+- Updated Mekanism Atomic Disassembler maximum damage from 20 to 10.
+- Updated Iron's Spells and Spellbooks max upgrades from 6 to 4.
+
 ## [2.4.0] - 2026-07-18
 
 ### Added
