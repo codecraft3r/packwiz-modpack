@@ -894,8 +894,13 @@ hash = "414a58bba157ca4e565529c006a8637660644de1b2347f5452e1d7906b41c225"
 metafile = true
 
 [[files]]
+file = "mods/cc-sable.pw.toml"
+hash = "9b8211d6db388c8f289d7134f584ed817b24a3ab202857e0f631a5c168972095"
+metafile = true
+
+[[files]]
 file = "mods/cc-tweaked.pw.toml"
-hash = "14f862ceab11545e0a446df8c91c95ae7434ca4975db1357ad2001b6ec321e45"
+hash = "76a175f859f5d051ffee34c3834925c637b762cc938c06d0655e378984e758f5"
 metafile = true
 
 [[files]]
@@ -1410,7 +1415,7 @@ metafile = true
 
 [[files]]
 file = "mods/sable.pw.toml"
-hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
+hash = "56c47f4f4732d86a144c8c86af80411238c3ea74f6b96b0bc5174d2f20073a98"
 metafile = true
 
 [[files]]
