@@ -1607,3 +1607,8 @@ metafile = true
 file = "mods/yacl.pw.toml"
 hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
+
+[[files]]
+file = "mods/yours-truly.pw.toml"
+hash = "b0778a7de3cdb9cdb85cebe04bacbae78a88c63b916ede1ed30e4e58e5c71797"
+metafile = true
