@@ -1,0 +1,5024 @@
+{
+  "chapters": [
+    {
+      "filename": "vvh_00_island_charter",
+      "icon": "minecraft:writable_book",
+      "id": "7A11C0DE10000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "poiesis:textures/questpics/vvh/season_one_crest.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        }
+      ],
+      "order": 0,
+      "quests": [
+        {
+          "dependencies": [],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lTHE ISLAND NEEDS A MEMORY",
+            "",
+            "&fThe server usually dies when progression finishes before the world becomes worth remembering.",
+            "&fSeason One reverses that with useful places, ridiculous rivalries, faction identity, public works, and records of what actually happened.",
+            "",
+            "&eRead the three reference clauses around this page, then sign the short charter below.&f They separate real hard protections from rules that only work because friends agree to honor them.",
+            "",
+            "&8Top gear is an ending. Municipal drama is renewable."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE10000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.75,
+          "subtitle": "Two minutes now; fewer arguments at 1:30 a.m.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Open the Charter",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "OPEN THE ISLAND CHARTER",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE10000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}",
+            "&a&lBUILD WHERE THE WORLD REMEMBERS",
+            "",
+            "&fHomes, faction halls, markets, roads, memorials, public machines, and lore sites belong only on land the host has explicitly confirmed permanent.",
+            "&fAny announced reset zone is an expedition site, not a place for irreplaceable work. Claims are hard boundaries only where the live FTB Chunks configuration really enforces them.",
+            "",
+            "&cNo prank, theft, faction stunt, or contract overrides another team's protected claim or explicit consent.",
+            "",
+            "&8If the reset eats your cathedral, the cathedral was camping."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE10000003",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Permanent work needs a boundary that actually means something.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100003",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Know the Permanent-Land and Claim Rule",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "LAND, CLAIMS, AND RESET ZONES",
+          "x": -4.6,
+          "y": -1.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE10000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lTHE FUNNY WAR CLAUSE",
+            "",
+            "&fVampires and Hunters may compete through banners, mascots, markets, races, scavenger hunts, public challenges, expeditions, propaganda, cooking, architecture, and reversible wilderness mischief.",
+            "&fNeutrals may trade, mediate, scout, judge, rescue, courier, host, or sell services to either side without becoming a consolation faction.",
+            "",
+            "&cNo claim intrusion, theft, spawn camping, targeted harassment, irreversible sabotage, or destruction wearing a comedy moustache.",
+            "&fCombat is a scheduled opt-in event only, with a host, backup, stop condition, protected noncombatants, and rebuild plan. Winning never grants progression power.",
+            "",
+            "&8A prank with a cleanup crew is a bit. A crater is an incident."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:firework_rocket",
+          "id": "7A11C0DE10000005",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "octagon",
+          "size": 1.2,
+          "subtitle": "Make stories, not support tickets.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100005",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Accept the Rivalry and Optional-Combat Boundary",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "RIVALRY, NEUTRALS, AND OPTIONAL COMBAT",
+          "x": 0,
+          "y": -0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE10000001"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}",
+            "&6&lONE BODY, ONE PARTY, TWO KINDS OF ALLEGIANCE",
+            "",
+            "&fVampirism now provides real Vampire and Hunter factions. FTB Teams provides shared quest progress and FTB Chunks ownership. Season One uses both, but it does not automatically synchronize them.",
+            "",
+            "&eA Vampirism advancement records that an event happened; it is not a live faction-state detector forever.",
+            "&fBefore a faction team claims shared foundation supplies, one teammate or the host confirms that the team is presently aligned with that faction.",
+            "&fAsk the host before joining, leaving, or switching an FTB party. Claims, storage, contracts, and quest history must be checked rather than guessed.",
+            "",
+            "&8The bureaucracy has developed fangs."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:vampire_fang",
+          "id": "7A11C0DE10000006",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Two faction systems exist. Do not pretend they are the same database.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100006",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Understand Vampirism Faction vs FTB Team State",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "VAMPIRISM, FTB TEAMS, AND SWITCHING",
+          "x": 4.6,
+          "y": -1.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE10000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lTHE FOUR-LINE VERSION",
+            "",
+            "&f1. Build irreplaceable work only on confirmed permanent land.",
+            "&f2. Claims and consent outrank rivalry, contracts, and bits.",
+            "&f3. Combat is optional, scheduled, supervised, and reversible.",
+            "&f4. Vampirism faction state and FTB team state are separate; switches need a quick host review.",
+            "",
+            "&eClick to sign.&f The reference clauses stay visible whenever somebody begins a sentence with 'technically'.",
+            "",
+            "&6Starter nudge:&f one Compass and eight Torches. Enough to leave spawn with a plan; not enough to delete the opening game."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE10000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE10200001",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "document": "island_charter",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Field Charter \\u2014 Season One\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Signed before choosing a banner; prestige, not power.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": false,
+              "title": "Field Charter",
+              "type": "item"
+            },
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE10200002",
+              "item": "minecraft:compass",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": false,
+              "title": "Personal Compass",
+              "type": "item"
+            },
+            {
+              "count": 8,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE10200003",
+              "item": "minecraft:torch",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": false,
+              "title": "Eight Travel Torches",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Four boundaries, one signature, useful travel supplies.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100008",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Sign the Island Charter",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SIGN THE CHARTER",
+          "x": 0,
+          "y": 3.8
+        }
+      ],
+      "title": "VvH 00 \u00b7 The Island Charter"
+    },
+    {
+      "filename": "vvh_01_three_invitations",
+      "icon": "minecraft:compass",
+      "id": "7A11C0DE11000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/garlic.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/filled_map.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        }
+      ],
+      "order": 1,
+      "quests": [
+        {
+          "dependencies": [],
+          "description": [
+            "{image:minecraft:textures/item/compass_16.png width:48 height:48 align:center}",
+            "&6&lTHREE LEGITIMATE WAYS TO BELONG",
+            "",
+            "&4Vampires&f gain a real supernatural progression and are asked to turn that identity into hospitality, ritual spaces, night infrastructure, and civic obligations.",
+            "&bHunters&f gain their own real progression and are asked to turn vigilance into safe roads, public knowledge, workshops, and reliable refuge.",
+            "&aNeutrals&f remain human/non-aligned and become the connective tissue: trade, contracts, mapping, MCA civic life, rescue, logistics, and arbitration.",
+            "",
+            "&eNothing here is permanent.&f Switching is allowed, but it creates social and claim bookkeeping. Pick the role you actually want to play this week, not the reward you think is numerically best.",
+            "",
+            "&8The Atlas has stopped pretending the word 'faction' is metaphorical."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:compass",
+          "id": "7A11C0DE11000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.75,
+          "subtitle": "Choose what kind of problem you want to become useful at.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Read All Three Invitations",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "READ THE THREE INVITATIONS",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE11000001"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}",
+            "&4&lTHE HOUSE OF NIGHT",
+            "",
+            "&fComplete Vampirism's &eBecome a Vampire&f advancement, then click the second task after your current faction choice and intended FTB team are clear to at least one other player or the host.",
+            "",
+            "&7The advancement is historical evidence, not a permanent live-state lock. If you later cure/switch, the old page remains part of your story rather than becoming a loophole for fresh foundation caches.",
+            "",
+            "&8Please file all immortality paperwork before sunrise."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:vampire_fang",
+          "id": "7A11C0DE11000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE11200017",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "allegiance": "vampire",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Crimson Invitation\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the House of Night; not proof of current faction state.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": false,
+              "title": "Crimson Invitation",
+              "type": "item"
+            }
+          ],
+          "shape": "heart",
+          "size": 1.45,
+          "subtitle": "Become a Vampire, then register the choice socially.",
+          "tasks": [
+            {
+              "advancement": "vampirism:vampire/become_vampire",
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Become a Vampire",
+              "type": "advancement",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100016",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Our Current Allegiance and FTB Team Are Clear",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "TAKE THE CRIMSON INVITATION",
+          "x": -5.0,
+          "y": -0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE11000001"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/garlic.png width:48 height:48 align:center}",
+            "&b&lTHE LANTERN ORDER",
+            "",
+            "&fComplete Vampirism's &eBecome a Hunter&f advancement, then click the second task after your current faction choice and intended FTB team are clear to at least one other player or the host.",
+            "",
+            "&7The advancement records that you joined at least once. Later betrayal/switching does not erase history, so shared caches still use peer/host confirmation of current allegiance.",
+            "",
+            "&8The official uniform is 'prepared'. The cape remains under committee review."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:garlic",
+          "id": "7A11C0DE11000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE11200021",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "allegiance": "hunter",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Lantern Oath\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the Lantern Order; not proof of current faction state.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": false,
+              "title": "Lantern Oath",
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.45,
+          "subtitle": "Become a Hunter, then register the choice socially.",
+          "tasks": [
+            {
+              "advancement": "vampirism:hunter/become_hunter",
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1110001F",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Become a Hunter",
+              "type": "advancement",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100020",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Our Current Allegiance and FTB Team Are Clear",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "TAKE THE LANTERN OATH",
+          "x": 0,
+          "y": 0.6
+        },
+        {
+          "dependencies": [
+            "7A11C0DE11000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}",
+            "&a&lTHE FREE COMPANIES",
+            "",
+            "&fRemain outside Vampire and Hunter alignment for now. Name one service you want to be known for: courier work, maps, market brokerage, MCA diplomacy, rescue, hospitality, construction, intelligence, or event hosting.",
+            "",
+            "&eClick after another player knows what service you offer.&f Neutrality is a playable civic role with its own foundation chapter, not a beige skip button.",
+            "",
+            "&8Somebody has to invoice the supernatural."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE11000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1120002B",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "allegiance": "neutral",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Free Company Writ\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"A licence to be useful without wearing either faction's problems.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": false,
+              "title": "Free Company Writ",
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.45,
+          "subtitle": "Stay neutral on purpose, not by forgetting to choose.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Registered a Neutral Service With Another Player",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SIGN THE FREE COMPANY REGISTER",
+          "x": 5.0,
+          "y": -0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE11000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/spyglass.png width:48 height:48 align:center}",
+            "&e&lONE ROLE, ZERO CLASS LOCKS",
+            "",
+            "&fClaim one cosmetic Trade Lens: Builder, Engineer, Pathfinder, Keeper, Arcanist, or Archivist. It grants no stats and does not restrict later quests.",
+            "",
+            "&7The purpose is social legibility. When a project stalls, people should have a rough idea who enjoys fixing which kind of problem.",
+            "",
+            "&8Multiclassing is permitted because this is literally paper."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:spyglass",
+          "id": "7A11C0DE11000005",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": true,
+              "id": "7A11C0DE11200034",
+              "item": null,
+              "item_data": null,
+              "table_id": "7A11C0DEF0000001",
+              "team_reward": false,
+              "title": "Choose a Personal Trade Lens",
+              "type": "choice"
+            }
+          ],
+          "shape": "octagon",
+          "size": 1.35,
+          "subtitle": "Faction answers who you stand with; this answers how you help.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE11100033",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Know What Kind of Work I Want First",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "CHOOSE YOUR PERSONAL TRADE LENS",
+          "x": 0,
+          "y": 4.4
+        }
+      ],
+      "title": "VvH 01 \u00b7 Three Invitations"
+    },
+    {
+      "filename": "vvh_02_house_of_night",
+      "icon": "vampirism:vampire_fang",
+      "id": "7A11C0DE12000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 2,
+      "quests": [
+        {
+          "dependencies": [],
+          "description": [
+            "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK, NOT A TECH TREE",
+            "",
+            "&fComplete any &e5 of 7&f foundation works. Every option leaves a useful place, supply, route, or institution behind; none exists merely to make an inventory number go up.",
+            "",
+            "&eShared-cache rule:&f before claiming the foundation cache, one teammate or the host confirms the FTB team presently represents this faction/company.",
+            "&fHistorical allegiance achievements do not entitle a switched team to duplicate supplies.",
+            "",
+            "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:vampire_fang",
+          "id": "7A11C0DE12000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Real vampire progression, followed by civic consequences.",
+          "tasks": [
+            {
+              "advancement": "vampirism:vampire/become_vampire",
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1210000B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "At Least One Teammate Has Become a Vampire",
+              "type": "advancement",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1210000C",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Vampire Alignment Confirmed for This FTB Team",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FOUND THE HOUSE OF NIGHT",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 1",
+            "",
+            "&fPlace at least one functional coffin in an accessible shared room, plus ordinary storage or seating for visitors. The point is a headquarters people return to, not a lone coffin abandoned in a cave.",
+            "&7REVIEW checks function, access, safety, story, and maintenance."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:coffin_red",
+          "id": "7A11C0DE12000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 bedrooms that make the faction's actual needs visible.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100015",
+              "item": "vampirism:coffin_red",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Red Coffin",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100016",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The House Has a Shared Sleeping/Recovery Space",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "BUILD THE COMMON COFFIN ROOM",
+          "x": -6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 2",
+            "",
+            "&fObtain an Altar of Inspiration and install it in a deliberate chamber with a safe approach and a sign/book explaining the room.",
+            "&fLeave enough space that teammates are not clipping through furniture during progression.",
+            "&8Ancient evil remains subject to fire code."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:altar_inspiration",
+          "id": "7A11C0DE12000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "Make the first faction ritual object part of a place, not a lawn ornament.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1210001F",
+              "item": "vampirism:altar_inspiration",
+              "optional": false,
+              "stat": null,
+              "title": "Carry an Altar of Inspiration",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100020",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Altar Has a Safe, Named Chamber",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "RAISE AN ALTAR CHAMBER",
+          "x": -4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 3",
+            "",
+            "&fCarry four Blood Bottles and establish a labelled shared pantry or processing corner. Do not consume the bottles for the quest; the task checks possession only.",
+            "&fLeave a written restock rule so a late player knows whether supplies are communal, reserved, or trade stock."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:blood_bottle",
+          "id": "7A11C0DE12000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "A faction resource should have a home before it becomes chest soup.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 4,
+              "criterion": "",
+              "id": "7A11C0DE12100029",
+              "item": "vampirism:blood_bottle",
+              "optional": false,
+              "stat": null,
+              "title": "Carry 4 Blood Bottles",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1210002A",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Labelled Shared Blood Pantry Exists",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "STOCK A BLOOD PANTRY",
+          "x": -2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 4",
+            "",
+            "&fUse Vampire's Delight or ordinary food infrastructure to make a small kitchen/serving area. Carry one Blood Pie as proof you touched the pack's vampire-food loop.",
+            "&fThe room passes when a guest can arrive, understand what is communal, and leave without raiding a progression chest."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampiresdelight:blood_pie",
+          "id": "7A11C0DE12000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.25,
+          "subtitle": "Hospitality is faction infrastructure too.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100033",
+              "item": "vampiresdelight:blood_pie",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Blood Pie",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100034",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Night Kitchen Can Host a Visitor",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "OPEN THE NIGHT KITCHEN",
+          "x": 0.0,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 5",
+            "",
+            "&fCreate or adopt a signed route between the House and one public destination: spawn, market, port, workshop, road, archive, or neutral office. Make hazards visible without flooding the whole island with random torches.",
+            "&7A route is infrastructure when somebody else can follow it alone."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE12000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "The House should improve travel, not merely occupy a basement.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1210003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Signed Night Route Connects Two Useful Places",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MARK A SAFE NIGHT ROUTE",
+          "x": 2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 6",
+            "",
+            "&fInvite at least one player who is not required to be a Vampire. Give them a tour, meal, trade, ceremony, archive reading, or ridiculous local custom.",
+            "&fNo PvP or feeding is required. The social event itself is the objective."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampiresdelight:spirit_lantern",
+          "id": "7A11C0DE12000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "Show that faction identity can create a scene without creating a corpse.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Two Players Visited the House for a Tour, Meal, Trade, or Ceremony",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "HOST A BLOODLESS VISIT",
+          "x": 4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&4&lFOUNDATION WORK 7",
+            "",
+            "&fBuild or adopt one Create machine that solves a real shared problem: processing, doors, storage movement, kitchen support, transport loading, or spectacle with an actual use.",
+            "&fCarry a Mechanical Press as a modest objective proof; the reviewed machine itself may use any appropriate Create components."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "create:mechanical_press",
+          "id": "7A11C0DE12000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "Immortality still benefits from logistics.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100051",
+              "item": "create:mechanical_press",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Mechanical Press",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100052",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Machine Serves a Shared Function",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "INSTALL ONE USEFUL MACHINE",
+          "x": 6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE12000002",
+            "7A11C0DE12000003",
+            "7A11C0DE12000004",
+            "7A11C0DE12000005",
+            "7A11C0DE12000006",
+            "7A11C0DE12000007",
+            "7A11C0DE12000008"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}",
+            "&4&lA PLACE WITH OBLIGATIONS",
+            "",
+            "&fFinish any five foundation works, then click the review task after the team confirms the current allegiance/company identity, names the headquarters, and records one maintenance owner or rotation.",
+            "",
+            "&eReward philosophy:&f each foundation gets the same horizontal construction cache: scaffolding and Super Glue. Faction flavor lives in what you built, not in getting a numerically better loot table.",
+            "",
+            "&7The keepsake is historical. Switching later does not make it a coupon."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:vampire_fang",
+          "id": "7A11C0DE1200000A",
+          "min_required_dependencies": 5,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE12200066",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "foundation": "vampire",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Charter of the House of Night\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works turned supernatural progression into a place with obligations.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Foundation Charter",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE12200067",
+              "item": "minecraft:scaffolding",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Scaffolding",
+              "type": "item"
+            },
+            {
+              "count": 4,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE12200068",
+              "item": "create:super_glue",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Four Super Glue",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Five useful works become a home people can actually rely on.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE12100065",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Identity Confirmed; Headquarters Named; Maintenance Owner Recorded",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "CHARTER THE HOUSE OF NIGHT",
+          "x": 0,
+          "y": 4.6
+        }
+      ],
+      "title": "VvH 02 \u00b7 House of Night"
+    },
+    {
+      "filename": "vvh_03_lantern_order",
+      "icon": "vampirism:garlic",
+      "id": "7A11C0DE13000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "vampirism:textures/item/garlic.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/garlic.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 3,
+      "quests": [
+        {
+          "dependencies": [],
+          "description": [
+            "{image:vampirism:textures/item/garlic.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK, NOT A TECH TREE",
+            "",
+            "&fComplete any &e5 of 7&f foundation works. Every option leaves a useful place, supply, route, or institution behind; none exists merely to make an inventory number go up.",
+            "",
+            "&eShared-cache rule:&f before claiming the foundation cache, one teammate or the host confirms the FTB team presently represents this faction/company.",
+            "&fHistorical allegiance achievements do not entitle a switched team to duplicate supplies.",
+            "",
+            "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:garlic",
+          "id": "7A11C0DE13000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Real hunter progression, followed by public responsibility.",
+          "tasks": [
+            {
+              "advancement": "vampirism:hunter/become_hunter",
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310000B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "At Least One Teammate Has Become a Hunter",
+              "type": "advancement",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310000C",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Hunter Alignment Confirmed for This FTB Team",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FOUND THE LANTERN ORDER",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/garlic.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 1",
+            "",
+            "&fBuild a small watchhouse, gatehouse, or civic room with public information: local hazards, routes, contacts, or shelter instructions. Private equipment can remain private; the public-facing service must be obvious.",
+            "&8A watchhouse with no information is just a suspicious shed."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE13000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 visible service before private arsenal.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Watchhouse Has Public Information and a Safe Guest Area",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "BUILD THE PUBLIC WATCHHOUSE",
+          "x": -6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 2",
+            "",
+            "&fObtain a Hunter Table and install it in a shared workshop with storage and enough room for somebody else to understand the station without excavating your bedroom.",
+            "&7This is progression infrastructure, not a requirement to sprint the hunter tech tree."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:hunter_table",
+          "id": "7A11C0DE13000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "Put the actual faction workstation somewhere teammates can use it.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310001F",
+              "item": "vampirism:hunter_table",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Hunter Table",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100020",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Hunter Table Is Installed in a Shared Workshop",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ESTABLISH THE HUNTER TABLE",
+          "x": -4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 3",
+            "",
+            "&fCarry eight Garlic and establish a labelled field-supply reserve. It can also contain food, maps, lanterns, spare tools, or first-response supplies.",
+            "&fDo not consume the Garlic for the quest. The point is a maintained shared reserve."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:garlic",
+          "id": "7A11C0DE13000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "Preparedness is funnier when it has labels.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 8,
+              "criterion": "",
+              "id": "7A11C0DE13100029",
+              "item": "vampirism:garlic",
+              "optional": false,
+              "stat": null,
+              "title": "Carry 8 Garlic",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310002A",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Labelled Shared Garlic/Field-Supply Reserve Exists",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "KEEP THE GARLIC RESERVE",
+          "x": -2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 4",
+            "",
+            "&fCarry four Stakes and make a tiny training or equipment area. It may be ceremonial or practical, but it needs a clear rule against using faction equipment as an excuse to harass unwilling players.",
+            "&7The quest does not require the hidden stake-kill advancement. Violence remains optional."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:stake",
+          "id": "7A11C0DE13000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.25,
+          "subtitle": "Tools become culture when people know the safety rules.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 4,
+              "criterion": "",
+              "id": "7A11C0DE13100033",
+              "item": "vampirism:stake",
+              "optional": false,
+              "stat": null,
+              "title": "Carry 4 Stakes",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100034",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Safe Training/Equipment Area Exists",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ASSEMBLE A STAKE DRILL KIT",
+          "x": 0.0,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 5",
+            "",
+            "&fObtain an Alchemical Cauldron and install it with labelled ingredient/storage space. The station should be usable without blocking a hallway or setting the meeting room on fire.",
+            "&8Chemistry is just potion-making wearing safety goggles."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:alchemical_cauldron",
+          "id": "7A11C0DE13000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "Make countermeasure tech legible to the team.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310003D",
+              "item": "vampirism:alchemical_cauldron",
+              "optional": false,
+              "stat": null,
+              "title": "Carry an Alchemical Cauldron",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1310003E",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Cauldron Has a Safe Shared Work Area",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "OPEN THE ALCHEMICAL BENCH",
+          "x": 2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 6",
+            "",
+            "&fCreate or adopt a readable route between the Order and one public destination. Mark turns, major hazards, and a safe fallback point rather than carpeting the island with torch spam.",
+            "&fA player unfamiliar with the route should be able to use it without voice chat."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE13000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "A Hunter faction earns trust by making retreat possible.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Signed, Lit Refuge Route Connects Two Useful Places",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "LIGHT A REFUGE ROUTE",
+          "x": 4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&b&lFOUNDATION WORK 7",
+            "",
+            "&fRun a short drill with another player: night escort, lost-player retrieval, route evacuation, Hordes shelter test, equipment demo, or emergency supply run.",
+            "&fNo combat is necessary. The output is one improvement to the route, instructions, or supplies discovered by the drill."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:shield",
+          "id": "7A11C0DE13000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "Preparation without a victim.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100051",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "At Least Two Players Completed a Safety/Rescue Drill",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "RUN ONE CIVILIAN SAFETY DRILL",
+          "x": 6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE13000002",
+            "7A11C0DE13000003",
+            "7A11C0DE13000004",
+            "7A11C0DE13000005",
+            "7A11C0DE13000006",
+            "7A11C0DE13000007",
+            "7A11C0DE13000008"
+          ],
+          "description": [
+            "{image:vampirism:textures/item/garlic.png width:48 height:48 align:center}",
+            "&b&lA PLACE WITH OBLIGATIONS",
+            "",
+            "&fFinish any five foundation works, then click the review task after the team confirms the current allegiance/company identity, names the headquarters, and records one maintenance owner or rotation.",
+            "",
+            "&eReward philosophy:&f each foundation gets the same horizontal construction cache: scaffolding and Super Glue. Faction flavor lives in what you built, not in getting a numerically better loot table.",
+            "",
+            "&7The keepsake is historical. Switching later does not make it a coupon."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:garlic",
+          "id": "7A11C0DE1300000A",
+          "min_required_dependencies": 5,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE13200066",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "foundation": "hunter",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Charter of the Lantern Order\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works turned vigilance into public service instead of an arms race.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Foundation Charter",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE13200067",
+              "item": "minecraft:scaffolding",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Scaffolding",
+              "type": "item"
+            },
+            {
+              "count": 4,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE13200068",
+              "item": "create:super_glue",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Four Super Glue",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Five useful works become a home people can actually rely on.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE13100065",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Identity Confirmed; Headquarters Named; Maintenance Owner Recorded",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "CHARTER THE LANTERN ORDER",
+          "x": 0,
+          "y": 4.6
+        }
+      ],
+      "title": "VvH 03 \u00b7 Lantern Order"
+    },
+    {
+      "filename": "vvh_04_free_companies",
+      "icon": "minecraft:filled_map",
+      "id": "7A11C0DE14000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/filled_map.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 4,
+      "quests": [
+        {
+          "dependencies": [],
+          "description": [
+            "{image:poiesis:textures/questpics/vvh/free_company_writ.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK, NOT A TECH TREE",
+            "",
+            "&fComplete any &e5 of 7&f foundation works. Every option leaves a useful place, supply, route, or institution behind; none exists merely to make an inventory number go up.",
+            "",
+            "&eShared-cache rule:&f before claiming the foundation cache, one teammate or the host confirms the FTB team presently represents this faction/company.",
+            "&fHistorical allegiance achievements do not entitle a switched team to duplicate supplies.",
+            "",
+            "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE14000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Neutrality becomes valuable when it has services, routes, and a place to meet.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1410000B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Neutral/Independent Status Confirmed With Another Player",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FOUND A FREE COMPANY",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 1",
+            "",
+            "&fBuild a board, desk, book, or mailbox where players can request services. Include at least three examples such as courier, mapping, construction, mediation, rescue, market procurement, escort, or event staffing.",
+            "&fPrices may be items, favors, Bevels, or negotiated nonsense. Terms must be understandable before acceptance."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE14000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 one visible place where people can ask for help.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Public Contract Board Has At Least 3 Clear Job Types",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "OPEN A CONTRACT BOARD",
+          "x": -6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 2",
+            "",
+            "&fCarry a Filled Map and publish one named route between useful locations. Include at least one navigation aid: signs, map markers, road, landmark, or written directions.",
+            "&7Fast travel is optional; shared knowledge is the actual infrastructure."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE14000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 turn a trip into shared knowledge.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1410001F",
+              "item": "minecraft:filled_map",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Filled Map",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100020",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Named Courier Route Connects Two Useful Places",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MARK A COURIER ROUTE",
+          "x": -4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 3",
+            "",
+            "&fCreate a market stall, exchange counter, or service desk with a visible offer. At least one trade should be useful to both factions or to a late joiner.",
+            "&fDo not design a closed-loop arbitrage machine around quest rewards."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:emerald",
+          "id": "7A11C0DE14000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 trade should create meetings, not spreadsheets.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Stall or Counter Lists Goods/Services and Contact Terms",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ESTABLISH A MARKET STALL",
+          "x": -2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 4",
+            "",
+            "&fBuild a small guesthouse, embassy room, tavern corner, or waystation with seating/sleeping, food access, and a clearly neutral meeting area.",
+            "&fThe space should be useful when Vampire and Hunter players need to talk without standing in somebody's storage room."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:white_bed",
+          "id": "7A11C0DE14000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 neutrality should be somewhere people can meet.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100033",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Neutral Guest/Meeting Space Can Host 2 Players",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MAKE A GUESTHOUSE OR WAYSTATION",
+          "x": 0.0,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 5",
+            "",
+            "&fUse books, signs, lecterns, or an archive chest to record at least three useful facts: contracts, route notes, faction agreements, public project owners, trade terms, or unresolved disputes.",
+            "&7The ledger is allowed to be funny. It is not allowed to be useless."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:book",
+          "id": "7A11C0DE14000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.25,
+          "subtitle": "REVIEW \u00b7 record agreements before memory becomes fan fiction.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1410003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Shared Ledger Records At Least 3 Contracts, Places, or Decisions",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "START THE CIVIC LEDGER",
+          "x": 2.0,
+          "y": -0.7
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 6",
+            "",
+            "&fUse Minecraft Comes Alive / Capitals, when available in the current world, to create one named civic connection: village liaison, household, public role, settlement story, ceremony, or negotiated relationship.",
+            "&fIf world conditions make MCA unavailable, the host may approve an equivalent player-run civic role instead."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bell",
+          "id": "7A11C0DE14000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.25,
+          "subtitle": "MCA is for people and places, not just furniture with dialogue boxes.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: We Used MCA/Civic Play to Create One Named Relationship or Place",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MAKE ONE MCA CIVIC CONNECTION",
+          "x": 4.0,
+          "y": 0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&a&lFOUNDATION WORK 7",
+            "",
+            "&fHelp resolve one real cross-player problem: lost gear retrieval, route confusion, disputed trade, transport failure, event scheduling, missing supplies, or a faction misunderstanding.",
+            "&fThe other player confirms completion. Manufactured arguments do not count; please do not optimize bureaucracy."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:recovery_compass",
+          "id": "7A11C0DE14000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.25,
+          "subtitle": "Solve one problem nobody owns by default.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100051",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Another Player Confirms the Mediation, Rescue, or Logistics Help",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "RUN A MEDIATION OR RESCUE",
+          "x": 6.0,
+          "y": -1.4
+        },
+        {
+          "dependencies": [
+            "7A11C0DE14000002",
+            "7A11C0DE14000003",
+            "7A11C0DE14000004",
+            "7A11C0DE14000005",
+            "7A11C0DE14000006",
+            "7A11C0DE14000007",
+            "7A11C0DE14000008"
+          ],
+          "description": [
+            "{image:poiesis:textures/questpics/vvh/free_company_writ.png width:48 height:48 align:center}",
+            "&a&lA PLACE WITH OBLIGATIONS",
+            "",
+            "&fFinish any five foundation works, then click the review task after the team confirms the current allegiance/company identity, names the headquarters, and records one maintenance owner or rotation.",
+            "",
+            "&eReward philosophy:&f each foundation gets the same horizontal construction cache: scaffolding and Super Glue. Faction flavor lives in what you built, not in getting a numerically better loot table.",
+            "",
+            "&7The keepsake is historical. Switching later does not make it a coupon."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE1400000A",
+          "min_required_dependencies": 5,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE14200066",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "foundation": "neutral",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Free Company Charter\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works made neutrality a service network rather than an absence of faction content.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Foundation Charter",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE14200067",
+              "item": "minecraft:scaffolding",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Scaffolding",
+              "type": "item"
+            },
+            {
+              "count": 4,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE14200068",
+              "item": "create:super_glue",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Four Super Glue",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Five useful works become a home people can actually rely on.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE14100065",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Current Identity Confirmed; Headquarters Named; Maintenance Owner Recorded",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "CHARTER THE FREE COMPANY",
+          "x": 0,
+          "y": 4.6
+        }
+      ],
+      "title": "VvH 04 \u00b7 Free Companies"
+    },
+    {
+      "filename": "vvh_05_work_each_hand_knows",
+      "icon": "minecraft:crafting_table",
+      "id": "7A11C0DE15000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/filled_map.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 5,
+      "quests": [
+        {
+          "dependencies": [
+            "7A11C0DE1200000A",
+            "7A11C0DE1300000A",
+            "7A11C0DE1400000A"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lSPECIALIZATION WITHOUT HOMEWORK",
+            "",
+            "&fAfter any one foundation is established, complete any &e3 of 8&f contribution routes. They overlap ordinary play and are designed so a Neutral, Vampire, or Hunter can finish the chapter without changing faction.",
+            "",
+            "&7A route passes when it leaves behind something reusable: a machine, service, guide, relationship, supply system, route, or documented technique. Pure inventory flexing is not a contribution.",
+            "",
+            "&8The Atlas has discovered comparative advantage and is being unbearable about it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:crafting_table",
+          "id": "7A11C0DE15000001",
+          "min_required_dependencies": 1,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Complete any three routes. Let somebody else be good at the other five.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Read the Eight Contribution Routes",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "THE WORK EACH HAND KNOWS",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fCarry eight Andesite Alloy, then build or improve a Create system used by at least one other player.",
+            "&fGood outputs include processing, loading, doors, elevators, workshop tooling, kitchen support, or moving spectacle that actually moves something useful.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "create:mechanical_press",
+          "id": "7A11C0DE15000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 8,
+              "criterion": "",
+              "id": "7A11C0DE15100015",
+              "item": "create:andesite_alloy",
+              "optional": false,
+              "stat": null,
+              "title": "Carry 8 Andesite Alloy",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100016",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Create System Solves a Shared Problem",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ENGINEER \u2014 MAKE MOTION USEFUL",
+          "x": -6,
+          "y": -1.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fCarry eight Arcane Essence and publish one practical Iron's Spells guide, labelled station, sample kit, or demonstration another player can reproduce.",
+            "&fThe quest rewards teaching the system, not owning the rarest spell.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "irons_spellbooks:arcane_essence",
+          "id": "7A11C0DE15000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 8,
+              "criterion": "",
+              "id": "7A11C0DE1510001F",
+              "item": "irons_spellbooks:arcane_essence",
+              "optional": false,
+              "stat": null,
+              "title": "Carry 8 Arcane Essence",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100020",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Spell/Ingredient/Upgrade Tip Is Published",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCANIST \u2014 MAKE MAGIC TEACHABLE",
+          "x": -4.2,
+          "y": 0.6
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fDocument or demonstrate one useful Vampirism mechanic, progression dependency, faction-specific workstation, safe countermeasure, or Vampire's Delight recipe.",
+            "&fA Neutral may complete this by interviewing/observing a faction player and publishing the result. No faction conversion is required.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:vampire_fang",
+          "id": "7A11C0DE15000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: I Taught or Documented One Vampirism Mechanic for Someone Else",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FACTION SPECIALIST \u2014 TRANSLATE THE SUPERNATURAL",
+          "x": -2.2,
+          "y": -0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fCarry one Create Propulsion Wing and contribute to an airframe, vehicle, dock, hangar, test stand, or transport prototype.",
+            "&fThe machine does not have to be a finished airship. A documented test that prevents the next person from repeating your crash counts.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "createpropulsion:wing",
+          "id": "7A11C0DE15000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100033",
+              "item": "createpropulsion:wing",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Propulsion Wing",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100034",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Vehicle/Airframe Test or Dock Improvement Was Documented",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "AERONAUT \u2014 BUILD TOWARD A VEHICLE",
+          "x": 0,
+          "y": 1.0
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fCreate or clarify one real agreement: trade terms, MCA/civic relationship, faction access rule, public-project ownership, event schedule, or dispute resolution.",
+            "&fWrite the result somewhere participants can find later. Diplomacy without a record is just vibes with a meeting time.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bell",
+          "id": "7A11C0DE15000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1510003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Another Player Confirms a Trade, MCA, Faction, or Civic Agreement",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "DIPLOMAT \u2014 MAKE A RELATIONSHIP LEGIBLE",
+          "x": 2.2,
+          "y": -0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fUse Farmer's Delight, Vampire's Delight, or ordinary food to run a shared meal, pantry, travel ration station, or event table for at least two players.",
+            "&fVampire-specific and human-friendly options can coexist; the point is hospitality without forcing anybody's diet or faction.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bread",
+          "id": "7A11C0DE15000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "circle",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Shared Meal or Supply Station Served At Least 2 Players",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "QUARTERMASTER \u2014 FEED A GROUP",
+          "x": 4.2,
+          "y": 0.6
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fCarry a Filled Map and publish a route to a biome, structure, settlement, public work, faction hall, or expedition point.",
+            "&fInclude signs, landmarks, map notes, Via Romana roadwork, or written directions so another person can follow it alone.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "naturescompass:naturescompass",
+          "id": "7A11C0DE15000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100051",
+              "item": "minecraft:filled_map",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Filled Map",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100052",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A New Route/Map Is Usable Without Voice Chat",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "PATHFINDER \u2014 TURN DISTANCE INTO A ROUTE",
+          "x": 6,
+          "y": -1.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lLEAVE SOMETHING BEHIND",
+            "",
+            "&fWrite down one failed machine, bad expedition, faction misunderstanding, Hordes incident, server bug workaround, or ridiculous accident and the lesson it produced.",
+            "&fThe archive should save the next player time or make the story worth retelling. Ideally both.",
+            "",
+            "&7Progress is personal within your current FTB quest team; reviewed output may be faction or server-wide."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE15000009",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1510005B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Failure, Fix, or Weird Event Was Archived With a Useful Lesson",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCHIVIST \u2014 PRESERVE ONE FAILURE",
+          "x": 0,
+          "y": 3.0
+        },
+        {
+          "dependencies": [
+            "7A11C0DE15000002",
+            "7A11C0DE15000003",
+            "7A11C0DE15000004",
+            "7A11C0DE15000005",
+            "7A11C0DE15000006",
+            "7A11C0DE15000007",
+            "7A11C0DE15000008",
+            "7A11C0DE15000009"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&6&lBREADTH WITHOUT COMPLETIONISM",
+            "",
+            "&fComplete any three contribution routes. You do not get a bonus for clearing all eight, because that would quietly turn choice into homework.",
+            "",
+            "&eClaim one practical favor:&f a small horizontal utility bundle. The strongest option shortens setup friction; none hands out faction rank, boss loot, rare gear, or a finished vehicle.",
+            "",
+            "&8Someone else is allowed to know things you don't. Horrifying."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:crafting_table",
+          "id": "7A11C0DE1500000A",
+          "min_required_dependencies": 3,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": true,
+              "id": "7A11C0DE15200066",
+              "item": null,
+              "item_data": null,
+              "table_id": "7A11C0DEF0000002",
+              "team_reward": false,
+              "title": "Choose a Practical Contribution Favor",
+              "type": "choice"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Choose one practical favor after contributing in three different ways.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE15100065",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Record Which Three Routes I Contributed",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "THREE HANDS' WORTH",
+          "x": 0,
+          "y": 5.4
+        }
+      ],
+      "title": "VvH 05 \u00b7 The Work Each Hand Knows"
+    },
+    {
+      "filename": "vvh_06_island_remembers",
+      "icon": "minecraft:lantern",
+      "id": "7A11C0DE16000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/filled_map.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/writable_book.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 6,
+      "quests": [
+        {
+          "dependencies": [
+            "7A11C0DE1500000A"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORKS ARE THE REAL ENDGAME",
+            "",
+            "&fComplete any &e4 of 8&f projects. Each must be public or clearly shared, named, and maintainable. Projects may be new builds or substantial upgrades to something players already care about.",
+            "",
+            "&7REVIEW uses function, access, safety, story, maintenance. A beautiful object nobody can use is art; good. It is simply not this particular quest.",
+            "",
+            "&8The road to endgame is now literally a road."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE16000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Complete any four public works. Build history into the commute.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Read the Public-Works Rubric",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "THE ISLAND REMEMBERS",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fCreate or upgrade a road, rail, path, sign system, or Via Romana route linking at least three useful locations.",
+            "&fIt needs readable navigation and a maintenance owner or faction/company responsibility.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:rail",
+          "id": "7A11C0DE16000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Named Route Links 3 Useful Places",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ROAD OR WAYFINDING SPINE",
+          "x": -6,
+          "y": -1.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fBuild or improve a public market with at least three useful offers, contract categories, or service desks.",
+            "&fInclude neutral access and clear rules for faction goods rather than creating a private chest mall with a dramatic roof.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:emerald",
+          "id": "7A11C0DE16000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1610001F",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Public Market/Contract Space Has At Least 3 Active Uses",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MARKET AND CONTRACT HALL",
+          "x": -4.2,
+          "y": 0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fCreate a workshop where players can access at least two useful capabilities such as Create processing, repair/build tools, enchanting support, storage, or safe experiment space.",
+            "&fLabel what is public versus personal before somebody 'borrows' the important gear forever.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "create:mechanical_press",
+          "id": "7A11C0DE16000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Public Workshop Exposes At Least 2 Useful Capabilities",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SHARED WORKSHOP",
+          "x": -2.2,
+          "y": -0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fBuild or expand an archive, museum, memorial, map room, newspaper office, or gallery preserving at least five real facts, events, failures, places, or people from this world.",
+            "&fFuture players should be able to infer that things happened here before they logged in.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lectern",
+          "id": "7A11C0DE16000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100033",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Archive Preserves At Least 5 Real Server Facts/Stories",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCHIVE AND MEMORIAL",
+          "x": 0,
+          "y": 1.0
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fBuild a public kitchen or pantry that supports ordinary food plus faction-specific needs where practical. Farmer's Delight and Vampire's Delight both count.",
+            "&fPublish what is communal, what should be restocked, and who gets yelled at when the last ration disappears.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bread",
+          "id": "7A11C0DE16000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1610003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Shared Kitchen/Pantry Supports Multiple Diets and Players",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "COMMUNITY KITCHEN",
+          "x": 2.2,
+          "y": -0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fBuild or improve a dock, hangar, test field, landing marker, vehicle depot, or loading platform for Create Aeronautics/Propulsion play.",
+            "&fIt can precede a fully working craft. Infrastructure that makes future vehicles easier is already valuable.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "createpropulsion:wing",
+          "id": "7A11C0DE16000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Dock, Hangar, Test Field, or Vehicle Station Is Publicly Usable",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "AIRSHIP / VEHICLE PORT",
+          "x": 4.2,
+          "y": 0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fBuild a refuge, fallback room, alarm point, lit retreat route, or emergency-supply station useful during The Hordes or other world threats.",
+            "&fTest the plan with another player and fix at least one issue found during the drill.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:iron_door",
+          "id": "7A11C0DE16000008",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE16100051",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: A Refuge/Alarm Plan Was Tested With Another Player",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "HORDE REFUGE",
+          "x": 6,
+          "y": -1.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lPUBLIC WORK",
+            "",
+            "&fCreate a meeting hall, public stage, council table, courtroom, chapel, tavern room, or outdoor forum and actually use it for one event.",
+            "&fA room becomes history when somebody can say what happened there.",
+            "",
+            "&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bell",
+          "id": "7A11C0DE16000009",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "octagon",
+          "size": 1.2,
+          "subtitle": "Server-wide creative milestone \u00b7 peer/host review.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1610005B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "REVIEW: The Space Hosted a Real Meeting, Ceremony, Performance, or Briefing",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MEETING HALL / PUBLIC STAGE",
+          "x": 0,
+          "y": 3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE16000002",
+            "7A11C0DE16000003",
+            "7A11C0DE16000004",
+            "7A11C0DE16000005",
+            "7A11C0DE16000006",
+            "7A11C0DE16000007",
+            "7A11C0DE16000008",
+            "7A11C0DE16000009"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lTHE PLACE IS STARTING TO HAVE A PAST",
+            "",
+            "&fFinish any four public works. Take one screenshot/map/book record of the finished set and place a copy in the archive or a public chest.",
+            "",
+            "&eTeam cache:&f lighting and scaffolding for maintenance. The reward funds upkeep rather than bypassing the next technology tier.",
+            "",
+            "&8Congratulations: you have invented municipal services in a game about punching trees."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE1600000B",
+          "min_required_dependencies": 4,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 16,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE16200070",
+              "item": "minecraft:lantern",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Sixteen Maintenance Lanterns",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE16200071",
+              "item": "minecraft:scaffolding",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Maintenance Scaffolding",
+              "type": "item"
+            },
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE16200072",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "document": "public_works",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Civic Works Docket\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Four public works survived long enough to become part of the island's story.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Civic Works Docket",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.0,
+          "subtitle": "Public work should still matter after everybody's inventory improves.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1610006F",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Archive One Record of the Four Public Works",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FOUR THINGS THE ISLAND KEEPS",
+          "x": 0,
+          "y": 5.5
+        }
+      ],
+      "title": "VvH 06 \u00b7 The Island Remembers"
+    },
+    {
+      "filename": "vvh_07_rivalry_without_ruin",
+      "icon": "minecraft:firework_rocket",
+      "id": "7A11C0DE17000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "minecraft:textures/item/firework_rocket.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/garlic.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/filled_map.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 7,
+      "quests": [
+        {
+          "dependencies": [
+            "7A11C0DE1500000A"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lTHE OBJECTIVE IS A STORY SOMEBODY RETELLS",
+            "",
+            "&fEvery challenge here is optional. Run any format that both sides understand, with a visible end condition and cleanup owner. Rewards are cosmetic/status or event supplies, never combat power.",
+            "",
+            "&cThe skirmish branch requires at least two noncombat rivalry activities first.&f If the factions cannot survive a mascot contest, they have not earned swords.",
+            "",
+            "&8Cold war, but the missiles are baked goods."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:firework_rocket",
+          "id": "7A11C0DE17000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Complete two noncombat formats before the skirmish even appears as a serious idea.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Read the Safe-Rivalry Rules",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "RIVALRY WITHOUT RUIN",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fEach participating side makes one reversible public propaganda piece, banner display, museum label, or dramatic accusation about the other.",
+            "&fNo placing inside protected claims without permission. Cleanup deadline required.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:painting",
+          "id": "7A11C0DE17000002",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Both Sides Displayed a Reversible Poster/Banner/Exhibit",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "PROPAGANDA EXCHANGE",
+          "x": -5,
+          "y": -1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fRun a themed food contest using Vampire's Delight, Farmer's Delight, garlic, blood-themed cuisine, or absurd neutral entries.",
+            "&fJudge presentation, story, taste-by-roleplay, logistics, or whatever criteria are agreed before the event. Nobody has to consume food their faction mechanics dislike.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampiresdelight:blood_pie",
+          "id": "7A11C0DE17000003",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1710001F",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "At Least 3 Players Judged or Attended the Cook-Off",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "BLOOD VS GARLIC COOK-OFF",
+          "x": -3,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fPlace a short clue chain in public or explicitly permitted wilderness space. Finish with a harmless trophy, message, location reveal, or public project tour.",
+            "&fArchive the best clue afterward; remove anything that became litter.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:compass",
+          "id": "7A11C0DE17000004",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "A Hunt Was Completed and Every Clue Was Removed/Archived",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SCAVENGER HUNT",
+          "x": -1,
+          "y": -0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fRun a foot, road, rail, boat, glider, or vehicle courier race. Publish the route, allowed transport, start/end, and one safety rule before launching.",
+            "&fReward a funny category as well as speed: best crash recovery, best courier uniform, most unnecessary engineering, etc.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "createpropulsion:wing",
+          "id": "7A11C0DE17000005",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100033",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "A Race Ran With a Published Route and Safety Rule",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "COURIER / VEHICLE RACE",
+          "x": 1,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fGive both sides the same time window and goal: procure a themed bundle, provide a service, attract customers, or solve a public shortage.",
+            "&fNo fake transactions, item duplication, or quest-reward resale loops. The interesting part is organization and negotiation.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:emerald",
+          "id": "7A11C0DE17000006",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1710003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "A Timed Trade/Service Challenge Ended With a Public Result",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MARKET CHALLENGE",
+          "x": 3,
+          "y": -0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&d&lSAFE RIVALRY FORMAT",
+            "",
+            "&fEach side presents a reversible mascot, mini-build, float, outfit, ceremonial object, or one-chunk display. Neutrals judge or enter an independent category.",
+            "&fThe server keeps the funniest result only if its owner wants it kept.",
+            "",
+            "&7Participation earns the story. Winning earns bragging rights, not better gear."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:armor_stand",
+          "id": "7A11C0DE17000007",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "octagon",
+          "size": 1.2,
+          "subtitle": "Optional social contest \u00b7 reversible by design.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Both Sides Presented a Mascot, Mini-Build, or Ceremonial Object",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "MASCOT / ARCHITECTURE SHOWDOWN",
+          "x": 5,
+          "y": -1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000002",
+            "7A11C0DE17000003",
+            "7A11C0DE17000004",
+            "7A11C0DE17000005",
+            "7A11C0DE17000006",
+            "7A11C0DE17000007"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/iron_sword.png width:48 height:48 align:center}",
+            "&c&lHOSTED, OPT-IN, BACKED UP",
+            "",
+            "&fOnly schedule this after at least two noncombat rivalry activities and when both factions actively want it.",
+            "&fBefore start: roster, loadout ceiling, arena, spectator protection, inventory-loss rule, backup, stop command, restore plan, and rebuild owner.",
+            "",
+            "&eCompletion means the event ended safely and the world was restored/rebuilt as agreed.&f No reward depends on kills or winning.",
+            "",
+            "&cIf live PvP controls and backup restoration have not been tested, this quest is 'requires runtime verification' and must remain unused."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "minecraft:shield",
+          "id": "7A11C0DE17000008",
+          "min_required_dependencies": 2,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.4,
+          "subtitle": "A release valve, not the campaign's central mechanic.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE17100051",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Host Confirms Consent, Backup, Controls, Stop Condition, and Safe End",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SANCTIONED SKIRMISH \u2014 ONLY IF EVERY BOX IS TRUE",
+          "x": 0,
+          "y": 3.1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE17000002",
+            "7A11C0DE17000003",
+            "7A11C0DE17000004",
+            "7A11C0DE17000005",
+            "7A11C0DE17000006",
+            "7A11C0DE17000007"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&d&lKEEP THE JOKE, DELETE THE LITTER",
+            "",
+            "&fAfter any two rivalry formats, archive the result: winner if relevant, funniest incident, cleanup status, and one thing to change next time.",
+            "",
+            "&eReward:&f a team festival bundle. It helps stage the next event but contains no weapons or faction progression.",
+            "",
+            "&8History is what remains after the temporary banners come down."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE17000009",
+          "min_required_dependencies": 2,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 16,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1720005C",
+              "item": "minecraft:firework_rocket",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Sixteen Firework Rockets",
+              "type": "item"
+            },
+            {
+              "count": 2,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1720005D",
+              "item": "minecraft:cake",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Two Cakes",
+              "type": "item"
+            },
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1720005E",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "document": "rivalry_night",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Rivalry Night Broadside\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"Proof that two factions can manufacture drama without manufacturing a crater.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Rivalry Night Broadside",
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 1.8,
+          "subtitle": "Two silly contests are enough to make the factions feel real.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1710005B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Archive the Rivalry Result and Confirm Cleanup",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCHIVE A RIVALRY NIGHT",
+          "x": 0,
+          "y": 5.4
+        }
+      ],
+      "title": "VvH 07 \u00b7 Rivalry Without Ruin"
+    },
+    {
+      "filename": "vvh_08_long_night_fair",
+      "icon": "minecraft:lantern",
+      "id": "7A11C0DE18000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/firework_rocket.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/vampire_fang.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "vampirism:textures/item/garlic.png",
+          "order": -30,
+          "rotation": -6.0,
+          "width": 1.55,
+          "x": 4.5,
+          "y": 5.0
+        }
+      ],
+      "order": 8,
+      "quests": [
+        {
+          "dependencies": [
+            "7A11C0DE1600000B"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lTHE SEASON ENDS WITH A PLACE FULL OF PEOPLE",
+            "",
+            "&fSchedule one public fair, tour night, festival, summit, or exhibition using infrastructure the server has actually built. Complete any &e4 of 6&f contribution categories.",
+            "",
+            "&7The event should expose unfinished hooks as well as achievements. A good finale creates reasons to log in next week instead of pretending the world is complete.",
+            "",
+            "&8Bring lanterns. Bring food. Bring the one machine everyone was told not to turn on indoors."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE18000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Any four contributions; no perfect attendance required.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE18100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Date, Location, and Public Invitation Are Posted",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "CALL THE LONG NIGHT FAIR",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fProvide a House contribution: Vampire's Delight table, faction tour, archive reading, ritual demonstration, night-route walk, or aesthetic exhibit.",
+            "&fGuests are not required to become Vampires, fight, or participate in feeding mechanics."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampiresdelight:blood_wine_bottle",
+          "id": "7A11C0DE18000002",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "heart",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE18100015",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Vampire-Themed Hospitality, Ritual, Tour, or Exhibit Was Hosted",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "HOUSE OF NIGHT HOSPITALITY",
+          "x": -5,
+          "y": -1.1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fProvide an Order contribution: safety demo, public route briefing, workstation tour, rescue drill, garlic-themed table, or countermeasure museum.",
+            "&fThe point is public service and faction character, not target practice on unwilling guests."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:garlic",
+          "id": "7A11C0DE18000003",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1810001F",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Hunter-Themed Safety, Craft, Route, or Public-Service Exhibit Was Hosted",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "LANTERN ORDER SERVICE",
+          "x": -3,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fRun a neutral contribution: trades, contracts, map desk, courier service, guesthouse, arbitration, MCA civic exhibit, or event logistics.",
+            "&fAt least one interaction should cross faction lines."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:emerald",
+          "id": "7A11C0DE18000004",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE18100029",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Neutral Market, Contract Desk, Mediation Table, or Courier Service Operated",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "FREE COMPANY MARKET",
+          "x": -1,
+          "y": -0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fDemonstrate a Create system, vehicle, airframe, dock, rail feature, workshop, or safely controlled engineering failure.",
+            "&fDesign the spectator area before discovering why propellers need spectator areas."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "createpropulsion:wing",
+          "id": "7A11C0DE18000005",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE18100033",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "A Machine, Vehicle, Dock, Workshop, or Controlled Test Was Demonstrated",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ENGINEERING / AERONAUTICS EXHIBITION",
+          "x": 1,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fProvide food, music/performance, mini-game, ceremony, awards, speeches, guided tour, or another contribution that gives players something to do together rather than merely inspect chests.",
+            "&fUse Farmer's Delight/Vampire's Delight if useful; ordinary Minecraft food is also valid."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bread",
+          "id": "7A11C0DE18000006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "circle",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1810003D",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "A Shared Meal, Performance, Game, or Ceremony Served the Event",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "PUBLIC FEAST / PERFORMANCE",
+          "x": 3,
+          "y": -0.2
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}",
+            "&6&lLONG NIGHT CONTRIBUTION",
+            "",
+            "&fBefore the event ends, archive at least five concrete pieces of history: faction changes, projects, rivalry results, failures, screenshots/maps, quotes, contracts, deaths worth remembering, or unfinished hooks.",
+            "&fFuture players should be able to reconstruct Season One without asking for a three-hour Discord oral history."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE18000007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "octagon",
+          "size": 1.2,
+          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE18100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "At Least 5 Season Facts, Images, Maps, Quotes, or Results Were Archived",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCHIVE THE SEASON",
+          "x": 5,
+          "y": -1.1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE18000002",
+            "7A11C0DE18000003",
+            "7A11C0DE18000004",
+            "7A11C0DE18000005",
+            "7A11C0DE18000006",
+            "7A11C0DE18000007"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}",
+            "&6&lAFTER THE BELLS",
+            "",
+            "&fComplete any four Fair contributions, then record one unresolved pressure or ambition that players genuinely want to continue.",
+            "&fExamples: faction politics, a vehicle project, settlement story, Hordes defense, public work, expedition, magic problem, or infrastructure failure.",
+            "",
+            "&eClaim a commemorative Seal and one horizontal favor.&f No boss loot, faction levels, rare weapons, netherite, or finished late-game machine is hidden here.",
+            "",
+            "&8A season is complete when it produces a sequel hook, not when the todo list reaches zero."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:firework_rocket",
+          "id": "7A11C0DE18000009",
+          "min_required_dependencies": 4,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1820005C",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "document": "season_one_seal",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Season One Seal \\u2014 Long Night Fair\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"The island became worth remembering before the gear made it easy.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": false,
+              "title": "Season One Seal",
+              "type": "item"
+            },
+            {
+              "count": 1,
+              "exclude_from_claim_all": true,
+              "id": "7A11C0DE1820005D",
+              "item": null,
+              "item_data": null,
+              "table_id": "7A11C0DEF0000003",
+              "team_reward": false,
+              "title": "Choose a Long Night Fair Favor",
+              "type": "choice"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 2.1,
+          "subtitle": "The reward is useful. The world you built is the actual progression.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1810005B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Archive the Fair and One Genuine Future Hook",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "SEAL SEASON ONE",
+          "x": 0,
+          "y": 5.2
+        }
+      ],
+      "title": "VvH 08 \u00b7 The Long Night Fair"
+    },
+    {
+      "filename": "vvh_09_after_the_bells",
+      "icon": "numismatics:bevel",
+      "id": "7A11C0DE19000000",
+      "images": [
+        {
+          "alpha": 80,
+          "height": 1.55,
+          "image": "numismatics:textures/item/coin/bevel.png",
+          "order": -30,
+          "rotation": -9.0,
+          "width": 1.55,
+          "x": -5.2,
+          "y": -1.2
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/lantern.png",
+          "order": -30,
+          "rotation": 8.0,
+          "width": 1.55,
+          "x": 5.2,
+          "y": 1.5
+        },
+        {
+          "alpha": 62,
+          "height": 1.55,
+          "image": "minecraft:textures/item/firework_rocket.png",
+          "order": -30,
+          "rotation": 5.0,
+          "width": 1.55,
+          "x": -4.5,
+          "y": 4.5
+        }
+      ],
+      "order": 9,
+      "quests": [
+        {
+          "dependencies": [
+            "7A11C0DE18000009"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lCIVIC REQUISITIONS",
+            "",
+            "&fThe season is over. These optional seven-day exchanges turn existing Bevels into small public-use caches for maintenance and events.",
+            "",
+            "&fPrices are visible, inputs are consumed, and no output creates Bevels, faction levels, weapons, blood, hunter tech, or another item that cheaply reproduces its own price.",
+            "",
+            "&eAgree on payer and destination before submitting.&f A team reward exists once per FTB progress container; it is not one cache per teammate.",
+            "",
+            "&8Postgame inflation remains undefeated by vibes."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "numismatics:bevel",
+          "id": "7A11C0DE19000001",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "hexagon",
+          "size": 1.7,
+          "subtitle": "Weekly convenience without a treadmill.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE19100001",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "Read the Civic Requisition Terms",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "AFTER THE BELLS",
+          "x": 0,
+          "y": -5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lWEEKLY TEAM CACHE",
+            "",
+            "&fReceive sixteen Lanterns and thirty-two Torches for a named public route, refuge, hall, or event.",
+            "",
+            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lantern",
+          "id": "7A11C0DE19000002",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "count": 16,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200016",
+              "item": "minecraft:lantern",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Sixteen Public Lanterns",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200017",
+              "item": "minecraft:torch",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Public Torches",
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Roads, halls, refuge routes, and events.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": true,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE19100015",
+              "item": "numismatics:bevel",
+              "optional": false,
+              "stat": null,
+              "title": "Submit 1 Bevel",
+              "type": "item",
+              "value": 1
+            }
+          ],
+          "title": "LIGHTING REQUISITION \u2014 1 BEVEL",
+          "x": -5,
+          "y": -1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lWEEKLY TEAM CACHE",
+            "",
+            "&fReceive thirty-two Rails and eight Powered Rails. Stations, redstone, route design, and locomotion remain your problem.",
+            "",
+            "&ePrice:&f 2 Bevels. &7Renews seven days after this FTB team claims it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:rail",
+          "id": "7A11C0DE19000003",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200020",
+              "item": "minecraft:rail",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Rails",
+              "type": "item"
+            },
+            {
+              "count": 8,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200021",
+              "item": "minecraft:powered_rail",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Eight Powered Rails",
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "A modest rail cache; still requires engineering.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": true,
+              "count": 2,
+              "criterion": "",
+              "id": "7A11C0DE1910001F",
+              "item": "numismatics:bevel",
+              "optional": false,
+              "stat": null,
+              "title": "Submit 2 Bevels",
+              "type": "item",
+              "value": 1
+            }
+          ],
+          "title": "TRANSIT REQUISITION \u2014 2 BEVELS",
+          "x": -2.5,
+          "y": 0.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lWEEKLY TEAM CACHE",
+            "",
+            "&fReceive sixteen Firework Rockets and two Cakes for a scheduled public event. Please do not turn fireworks into a server benchmark.",
+            "",
+            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:firework_rocket",
+          "id": "7A11C0DE19000004",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "count": 16,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1920002A",
+              "item": "minecraft:firework_rocket",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Sixteen Festival Rockets",
+              "type": "item"
+            },
+            {
+              "count": 2,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1920002B",
+              "item": "minecraft:cake",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Two Event Cakes",
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Consumable celebration with a cleanup owner.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": true,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE19100029",
+              "item": "numismatics:bevel",
+              "optional": false,
+              "stat": null,
+              "title": "Submit 1 Bevel",
+              "type": "item",
+              "value": 1
+            }
+          ],
+          "title": "FESTIVAL REQUISITION \u2014 1 BEVEL",
+          "x": 0,
+          "y": 0.8
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lWEEKLY TEAM CACHE",
+            "",
+            "&fReceive four Super Glue and thirty-two Scaffolding. Record which public work received the cache.",
+            "",
+            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "create:super_glue",
+          "id": "7A11C0DE19000005",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "count": 4,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200034",
+              "item": "create:super_glue",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Four Super Glue",
+              "type": "item"
+            },
+            {
+              "count": 32,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE19200035",
+              "item": "minecraft:scaffolding",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Thirty-Two Scaffolding",
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "For temporary access and moving parts.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": true,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE19100033",
+              "item": "numismatics:bevel",
+              "optional": false,
+              "stat": null,
+              "title": "Submit 1 Bevel",
+              "type": "item",
+              "value": 1
+            }
+          ],
+          "title": "REPAIR REQUISITION \u2014 1 BEVEL",
+          "x": 2.5,
+          "y": 0.3
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
+            "&6&lWEEKLY TEAM CACHE",
+            "",
+            "&fReceive sixteen Bread and eight Cooked Beef. Faction-specific cuisine remains player-crafted rather than quest-subsidized.",
+            "",
+            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:bread",
+          "id": "7A11C0DE19000006",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "count": 16,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1920003E",
+              "item": "minecraft:bread",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Sixteen Bread",
+              "type": "item"
+            },
+            {
+              "count": 8,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1920003F",
+              "item": "minecraft:cooked_beef",
+              "item_data": null,
+              "table_id": null,
+              "team_reward": true,
+              "title": "Eight Cooked Beef",
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.2,
+          "subtitle": "Meetings, late arrivals, fairs, and rescue runs.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": true,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1910003D",
+              "item": "numismatics:bevel",
+              "optional": false,
+              "stat": null,
+              "title": "Submit 1 Bevel",
+              "type": "item",
+              "value": 1
+            }
+          ],
+          "title": "HOSPITALITY REQUISITION \u2014 1 BEVEL",
+          "x": 5,
+          "y": -1
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
+            "&f&lTURN AN UNFINISHED THING INTO A HOOK",
+            "",
+            "&fWrite a short rumour tied to a real location, player ambition, faction dispute, settlement, threat, unfinished machine, public work, or mystery.",
+            "&fEnd with a question somebody could act on next session.",
+            "",
+            "&7This renews weekly and intentionally grants no item. The archive should create play, not currency."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:writable_book",
+          "id": "7A11C0DE19000007",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [],
+          "shape": "square",
+          "size": 1.2,
+          "subtitle": "One paragraph, one real place, one actionable question.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE19100047",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "I Added One Actionable Rumour",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "ARCHIVE A NEW RUMOUR",
+          "x": -2.5,
+          "y": 4.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DE19000001"
+          ],
+          "description": [
+            "{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}",
+            "&e&lNAME THE NEXT PRESSURE",
+            "",
+            "&fChoose one unresolved pressure worth a future season and record stakeholders plus evidence that people actually care about it.",
+            "&fGood candidates include Vampirism politics, a settlement story, an airship project, Hordes defense, border expansion, infrastructure failure, expedition, magical incident, or a rivalry that acquired consequences.",
+            "",
+            "&eTeam keepsake:&f one Unresolved Pressure Docket."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:filled_map",
+          "id": "7A11C0DE19000009",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "count": 1,
+              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1920005C",
+              "item": null,
+              "item_data": {
+                "components": {
+                  "minecraft:custom_data": {
+                    "document": "season_two_hook",
+                    "vvh_campaign": "season_one"
+                  },
+                  "minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Unresolved Pressure Docket\"}",
+                  "minecraft:enchantment_glint_override": true,
+                  "minecraft:lore": [
+                    "{\"color\":\"gray\",\"italic\":false,\"text\":\"A future season begins only when the world supplies evidence.\"}"
+                  ]
+                },
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "table_id": null,
+              "team_reward": true,
+              "title": "Unresolved Pressure Docket",
+              "type": "item"
+            }
+          ],
+          "shape": "heart",
+          "size": 1.2,
+          "subtitle": "Do not pre-author a sequel nobody wants yet.",
+          "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE1910005B",
+              "item": null,
+              "optional": false,
+              "stat": null,
+              "title": "We Recorded One Evidence-Based Season Two Hook",
+              "type": "checkmark",
+              "value": 1
+            }
+          ],
+          "title": "LEAVE A SEASON TWO PRESSURE",
+          "x": 2.5,
+          "y": 4.5
+        }
+      ],
+      "title": "VvH 09 \u00b7 After the Bells"
+    }
+  ],
+  "group_id": "7A11C0DE00000001",
+  "reward_tables": [
+    {
+      "id": "7A11C0DEF0000001",
+      "order_index": 10,
+      "rewards": [
+        {
+          "id": "7A11C0DEF0010001",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "builder",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Builder Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Improve the experience of places.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Builder Lens"
+        },
+        {
+          "id": "7A11C0DEF0010002",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "engineer",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Engineer Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Make motion, power, or logistics useful.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Engineer Lens"
+        },
+        {
+          "id": "7A11C0DEF0010003",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "pathfinder",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Pathfinder Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Turn distance into routes other people can follow.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Pathfinder Lens"
+        },
+        {
+          "id": "7A11C0DEF0010004",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "keeper",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Keeper Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Maintain food, hospitality, supplies, and continuity.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Keeper Lens"
+        },
+        {
+          "id": "7A11C0DEF0010005",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "arcanist",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Arcanist Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Make magic and supernatural systems understandable.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Arcanist Lens"
+        },
+        {
+          "id": "7A11C0DEF0010006",
+          "item_data": {
+            "components": {
+              "minecraft:custom_data": {
+                "role": "archivist",
+                "vvh_campaign": "season_one"
+              },
+              "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"text\":\"Archivist Lens\"}",
+              "minecraft:enchantment_glint_override": true,
+              "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"text\":\"Preserve guides, contracts, failures, and server memory.\"}"
+              ]
+            },
+            "count": 1,
+            "id": "minecraft:paper"
+          },
+          "title": "Archivist Lens"
+        }
+      ],
+      "title": "Choose a Personal Trade Lens"
+    },
+    {
+      "id": "7A11C0DEF0000002",
+      "order_index": 11,
+      "rewards": [
+        {
+          "count": 8,
+          "id": "7A11C0DEF0020001",
+          "item": "create:andesite_alloy",
+          "title": "Eight Andesite Alloy"
+        },
+        {
+          "count": 12,
+          "id": "7A11C0DEF0020002",
+          "item": "irons_spellbooks:arcane_essence",
+          "title": "Twelve Arcane Essence"
+        },
+        {
+          "count": 32,
+          "id": "7A11C0DEF0020003",
+          "item": "minecraft:scaffolding",
+          "title": "Thirty-Two Scaffolding"
+        },
+        {
+          "count": 8,
+          "id": "7A11C0DEF0020004",
+          "item": "create:super_glue",
+          "title": "Eight Super Glue"
+        }
+      ],
+      "title": "Choose a Practical Contribution Favor"
+    },
+    {
+      "id": "7A11C0DEF0000003",
+      "order_index": 12,
+      "rewards": [
+        {
+          "count": 1,
+          "id": "7A11C0DEF0030001",
+          "item": "create:goggles",
+          "title": "Create Goggles"
+        },
+        {
+          "count": 1,
+          "id": "7A11C0DEF0030002",
+          "item": "naturescompass:naturescompass",
+          "title": "Nature's Compass"
+        },
+        {
+          "count": 16,
+          "id": "7A11C0DEF0030003",
+          "item": "minecraft:lantern",
+          "title": "Sixteen Lanterns"
+        },
+        {
+          "count": 32,
+          "id": "7A11C0DEF0030004",
+          "item": "minecraft:rail",
+          "title": "Thirty-Two Rails"
+        }
+      ],
+      "title": "Choose a Long Night Fair Favor"
+    }
+  ],
+  "version": "2.0.0-dev.1"
+}

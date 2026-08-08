@@ -1,0 +1,330 @@
+{
+	autofocus_id: "7A11C0DE12000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_02_house_of_night"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "vampirism:vampire_fang"
+	}
+	id: "7A11C0DE12000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "vampirism:textures/item/vampire_fang.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/vampire_fang.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/lantern.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/writable_book.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+	]
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "vampirism:vampire_fang"
+			}
+			id: "7A11C0DE12000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE1210000B"
+					advancement: "vampirism:vampire/become_vampire"
+					criterion: ""
+					type: "advancement"
+				}
+				{
+					id: "7A11C0DE1210000C"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "vampirism:coffin_red"
+			}
+			id: "7A11C0DE12000002"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE12100015"
+					item: {
+						count: 1
+						id: "vampirism:coffin_red"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12100016"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: -1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "vampirism:altar_inspiration"
+			}
+			id: "7A11C0DE12000003"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1210001F"
+					item: {
+						count: 1
+						id: "vampirism:altar_inspiration"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12100020"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "vampirism:blood_bottle"
+			}
+			id: "7A11C0DE12000004"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE12100029"
+					count: 4
+					item: {
+						count: 1
+						id: "vampirism:blood_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1210002A"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -0.7d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "vampiresdelight:blood_pie"
+			}
+			id: "7A11C0DE12000005"
+			min_width: 280
+			shape: "heart"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE12100033"
+					item: {
+						count: 1
+						id: "vampiresdelight:blood_pie"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12100034"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE12000006"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1210003D"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -0.7d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "vampiresdelight:spirit_lantern"
+			}
+			id: "7A11C0DE12000007"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE12100047"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "create:mechanical_press"
+			}
+			id: "7A11C0DE12000008"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE12100051"
+					item: {
+						count: 1
+						id: "create:mechanical_press"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12100052"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000002"
+				"7A11C0DE12000003"
+				"7A11C0DE12000004"
+				"7A11C0DE12000005"
+				"7A11C0DE12000006"
+				"7A11C0DE12000007"
+				"7A11C0DE12000008"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "vampirism:vampire_fang"
+			}
+			id: "7A11C0DE1200000A"
+			min_required_dependencies: 5
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200066"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								vvh_campaign: "season_one"
+								foundation: "vampire"
+							}
+							"minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Charter of the House of Night\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works turned supernatural progression into a place with obligations.\"}"
+							]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12200067"
+					item: {
+						count: 32
+						id: "minecraft:scaffolding"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12200068"
+					item: {
+						count: 4
+						id: "create:super_glue"
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A11C0DE12100065"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 4.6d
+		}
+	]
+}

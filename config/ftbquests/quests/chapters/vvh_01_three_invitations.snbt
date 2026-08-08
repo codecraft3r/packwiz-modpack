@@ -1,0 +1,233 @@
+{
+	autofocus_id: "7A11C0DE11000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_01_three_invitations"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "minecraft:compass"
+	}
+	id: "7A11C0DE11000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "vampirism:textures/item/vampire_fang.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/garlic.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/filled_map.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+	]
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "minecraft:compass"
+			}
+			id: "7A11C0DE11000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [
+				{
+					id: "7A11C0DE11100001"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE11000001"
+			]
+			icon: {
+				id: "vampirism:vampire_fang"
+			}
+			id: "7A11C0DE11000002"
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE11200017"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								vvh_campaign: "season_one"
+								allegiance: "vampire"
+							}
+							"minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Crimson Invitation\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the House of Night; not proof of current faction state.\"}"
+							]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "heart"
+			size: 1.45d
+			tasks: [
+				{
+					id: "7A11C0DE11100015"
+					advancement: "vampirism:vampire/become_vampire"
+					criterion: ""
+					type: "advancement"
+				}
+				{
+					id: "7A11C0DE11100016"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE11000001"
+			]
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE11000003"
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE11200021"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								vvh_campaign: "season_one"
+								allegiance: "hunter"
+							}
+							"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Lantern Oath\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the Lantern Order; not proof of current faction state.\"}"
+							]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.45d
+			tasks: [
+				{
+					id: "7A11C0DE1110001F"
+					advancement: "vampirism:hunter/become_hunter"
+					criterion: ""
+					type: "advancement"
+				}
+				{
+					id: "7A11C0DE11100020"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 0.6d
+		}
+		{
+			dependencies: [
+				"7A11C0DE11000001"
+			]
+			icon: {
+				id: "minecraft:filled_map"
+			}
+			id: "7A11C0DE11000004"
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE1120002B"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								vvh_campaign: "season_one"
+								allegiance: "neutral"
+							}
+							"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Free Company Writ\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A licence to be useful without wearing either faction's problems.\"}"
+							]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.45d
+			tasks: [
+				{
+					id: "7A11C0DE11100029"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE11000001"
+			]
+			icon: {
+				id: "minecraft:spyglass"
+			}
+			id: "7A11C0DE11000005"
+			min_width: 280
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE11200034"
+					table_id: 8796023610973093889
+					team_reward: false
+					type: "choice"
+				}
+			]
+			shape: "octagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "7A11C0DE11100033"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 4.4d
+		}
+	]
+}

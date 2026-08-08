@@ -1,0 +1,323 @@
+{
+	autofocus_id: "7A11C0DE13000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_03_lantern_order"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "vampirism:garlic"
+	}
+	id: "7A11C0DE13000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "vampirism:textures/item/garlic.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/garlic.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/lantern.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/writable_book.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+	]
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE13000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE1310000B"
+					advancement: "vampirism:hunter/become_hunter"
+					criterion: ""
+					type: "advancement"
+				}
+				{
+					id: "7A11C0DE1310000C"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE13000002"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100015"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: -1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "vampirism:hunter_table"
+			}
+			id: "7A11C0DE13000003"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1310001F"
+					item: {
+						count: 1
+						id: "vampirism:hunter_table"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100020"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE13000004"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100029"
+					count: 8
+					item: {
+						count: 1
+						id: "vampirism:garlic"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1310002A"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -0.7d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "vampirism:stake"
+			}
+			id: "7A11C0DE13000005"
+			min_width: 280
+			shape: "heart"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100033"
+					count: 4
+					item: {
+						count: 1
+						id: "vampirism:stake"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100034"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "vampirism:alchemical_cauldron"
+			}
+			id: "7A11C0DE13000006"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1310003D"
+					item: {
+						count: 1
+						id: "vampirism:alchemical_cauldron"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1310003E"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -0.7d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE13000007"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100047"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7A11C0DE13000008"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100051"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000002"
+				"7A11C0DE13000003"
+				"7A11C0DE13000004"
+				"7A11C0DE13000005"
+				"7A11C0DE13000006"
+				"7A11C0DE13000007"
+				"7A11C0DE13000008"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE1300000A"
+			min_required_dependencies: 5
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE13200066"
+					item: {
+						components: {
+							"minecraft:custom_data": {
+								vvh_campaign: "season_one"
+								foundation: "hunter"
+							}
+							"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Charter of the Lantern Order\"}"
+							"minecraft:enchantment_glint_override": true
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works turned vigilance into public service instead of an arms race.\"}"
+							]
+						}
+						count: 1
+						id: "minecraft:paper"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13200067"
+					item: {
+						count: 32
+						id: "minecraft:scaffolding"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13200068"
+					item: {
+						count: 4
+						id: "create:super_glue"
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A11C0DE13100065"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 4.6d
+		}
+	]
+}

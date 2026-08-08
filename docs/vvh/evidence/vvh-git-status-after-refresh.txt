@@ -1,0 +1,31 @@
+ M CHANGELOG.md
+ M config/ftbquests/quests/chapter_groups.snbt
+ M config/ftbquests/quests/chapters/a_blank_page.snbt
+ M config/ftbquests/quests/chapters/atlas_exchange.snbt
+ M config/ftbquests/quests/chapters/first_resonance.snbt
+ M config/ftbquests/quests/chapters/the_weathered_ledger.snbt
+ M config/ftbquests/quests/lang/en_us.snbt
+ M config/ftbquests/quests/reward_tables/1A0B1A4E5A9E2000.snbt
+ M config/ftbquests/quests/reward_tables/1A0B1A4E5A9E3000.snbt
+ M index.toml
+ M pack.toml
+?? config/ftbquests/quests/chapters/vvh_00_island_charter.snbt
+?? config/ftbquests/quests/chapters/vvh_01_three_invitations.snbt
+?? config/ftbquests/quests/chapters/vvh_02_house_of_night.snbt
+?? config/ftbquests/quests/chapters/vvh_03_lantern_order.snbt
+?? config/ftbquests/quests/chapters/vvh_04_free_companies.snbt
+?? config/ftbquests/quests/chapters/vvh_05_work_each_hand_knows.snbt
+?? config/ftbquests/quests/chapters/vvh_06_island_remembers.snbt
+?? config/ftbquests/quests/chapters/vvh_07_rivalry_without_ruin.snbt
+?? config/ftbquests/quests/chapters/vvh_08_long_night_fair.snbt
+?? config/ftbquests/quests/chapters/vvh_09_after_the_bells.snbt
+?? config/ftbquests/quests/reward_tables/7A11C0DEF0000001.snbt
+?? config/ftbquests/quests/reward_tables/7A11C0DEF0000002.snbt
+?? config/ftbquests/quests/reward_tables/7A11C0DEF0000003.snbt
+?? docs/vvh/
+?? scripts/vvh_build.py
+?? scripts/vvh_discover.py
+?? scripts/vvh_package_dropin.py
+?? scripts/vvh_render_layouts.py
+?? scripts/vvh_server_smoke.sh
+?? scripts/vvh_validate.py

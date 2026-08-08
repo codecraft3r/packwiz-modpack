@@ -1,0 +1,116 @@
+{
+	id: "7A11C0DEF0000001"
+	loot_size: 1
+	order_index: 10
+	use_title: true
+	rewards: [
+		{
+			id: "7A11C0DEF0010001"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "builder"
+					}
+					"minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Builder Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Improve the experience of places.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "7A11C0DEF0010002"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "engineer"
+					}
+					"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Engineer Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Make motion, power, or logistics useful.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "7A11C0DEF0010003"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "pathfinder"
+					}
+					"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Pathfinder Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Turn distance into routes other people can follow.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "7A11C0DEF0010004"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "keeper"
+					}
+					"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Keeper Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Maintain food, hospitality, supplies, and continuity.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "7A11C0DEF0010005"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "arcanist"
+					}
+					"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Arcanist Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Make magic and supernatural systems understandable.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+		{
+			id: "7A11C0DEF0010006"
+			item: {
+				components: {
+					"minecraft:custom_data": {
+						vvh_campaign: "season_one"
+						role: "archivist"
+					}
+					"minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"text\":\"Archivist Lens\"}"
+					"minecraft:enchantment_glint_override": true
+					"minecraft:lore": [
+						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Preserve guides, contracts, failures, and server memory.\"}"
+					]
+				}
+				count: 1
+				id: "minecraft:paper"
+			}
+		}
+	]
+}

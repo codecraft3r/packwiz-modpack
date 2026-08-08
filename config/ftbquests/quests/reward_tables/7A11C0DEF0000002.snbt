@@ -1,0 +1,36 @@
+{
+	id: "7A11C0DEF0000002"
+	loot_size: 1
+	order_index: 11
+	use_title: true
+	rewards: [
+		{
+			id: "7A11C0DEF0020001"
+			item: {
+				count: 8
+				id: "create:andesite_alloy"
+			}
+		}
+		{
+			id: "7A11C0DEF0020002"
+			item: {
+				count: 12
+				id: "irons_spellbooks:arcane_essence"
+			}
+		}
+		{
+			id: "7A11C0DEF0020003"
+			item: {
+				count: 32
+				id: "minecraft:scaffolding"
+			}
+		}
+		{
+			id: "7A11C0DEF0020004"
+			item: {
+				count: 8
+				id: "create:super_glue"
+			}
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	id: "7A11C0DEF0000003"
+	loot_size: 1
+	order_index: 12
+	use_title: true
+	rewards: [
+		{
+			id: "7A11C0DEF0030001"
+			item: {
+				count: 1
+				id: "create:goggles"
+			}
+		}
+		{
+			id: "7A11C0DEF0030002"
+			item: {
+				count: 1
+				id: "naturescompass:naturescompass"
+			}
+		}
+		{
+			id: "7A11C0DEF0030003"
+			item: {
+				count: 16
+				id: "minecraft:lantern"
+			}
+		}
+		{
+			id: "7A11C0DEF0030004"
+			item: {
+				count: 32
+				id: "minecraft:rail"
+			}
+		}
+	]
+}

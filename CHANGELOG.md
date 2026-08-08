@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased] — VvH Season One dev-modlist retune
+
+- Retuned the ten-chapter, 82-quest Vampires vs Hunters campaign to the current `dev` modlist at `3e4842383dd1e029f054aedfe19940f0b53adbcd`. Vampire and Hunter routes now use the installed Vampirism 1.10.12 faction/progression surface, Vampire's Delight, Create/Aeronautics, MCA civic play, The Hordes, and the current transport/building stack.
+- Migrated existing Living Atlas quest/reward object IDs away from the removed Cobblemon namespace so old quest progress is preserved while new players receive valid current-pack objectives and rewards.
+- Kept Neutral/Free Company play mechanically viable, kept combat optional, preserved fixed horizontal rewards, and added no VvH KubeJS quest engine or dynamic faction reward multiplier.
+
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 
 ## [3.0.0-pre1] - 2026-07-30

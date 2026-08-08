@@ -195,7 +195,7 @@
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0301"]
-			icon: { id: "cobblemon:poke_ball" }
+			icon: { id: "vampirism:vampire_fang" }
 			id: "1A0B1A4E5A9E0306"
 			min_width: 250
 			rewards: [
@@ -226,16 +226,16 @@
 			size: 1.25d
 			tasks: [
 				{
+					advancement: "vampirism:main/vampire_forest"
+					criterion: ""
 					id: "1A0B1A4E5A9E0361"
-					stat: "cobblemon:captured"
-					type: "stat"
-					value: 8
+					type: "advancement"
 				}
 				{
+					count: 8
 					id: "1A0B1A4E5A9E0362"
-					stat: "cobblemon:battles_total"
-					type: "stat"
-					value: 8
+					item: { count: 1, id: "vampiresdelight:hardtack" }
+					type: "item"
 				}
 				{ id: "1A0B1A4E5A9E0363", type: "checkmark" }
 			]
