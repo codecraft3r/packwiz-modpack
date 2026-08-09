@@ -1,0 +1,154 @@
+Accessories
+Ace's Spell Utils
+Amendments
+Architectury API
+Athena
+Atlas Lib
+AzureLib
+Blocks Previewer
+Bosses'Rise
+Burnt Basic
+Caelus API
+Carry On
+Cataclysm: Spellbooks
+CBC: Compact Mount
+CC: Sable
+CC: Tweaked
+Chipped
+Chunky
+Chunky Border
+Cloth Config API
+Collective
+Common Network
+Configurable
+Controlling
+Craft Config Lib
+Create
+Create Aeronautics
+Create Aeronautics: Transmission & Linkage
+Create Big Cannons
+Create Cardan Shafts
+Create Deco
+Create Propulsion: Simulated
+Create Slice & Dice
+Create: Aeroworks
+Create: Avionics — ComputerCraft for Aeronautics
+Create: Bells & Whistles
+Create: Central Kitchen
+Create: Copycats+
+Create: Dragons Plus
+Create: Enchantment Industry
+Create: Escalated
+Create: Interiors
+Create: Numismatics
+Create: Numismatics Utils
+Create: Power Grid
+Cubes Without Borders
+Cult of Azazel
+Curios API
+Data Anchor
+Distant Horizons
+Do a Barrel Roll
+Double Slabs
+Drive-By-Wire with Sable
+Enchanting Infuser
+Enchanting Infuser: Add Treasure Enchantments
+Explorer's Compass
+Exposure
+Farmer's Delight
+FerriteCore
+Flux Networks
+Forgified Fabric API
+Fragmentum
+FTB Chunks (NeoForge)
+FTB Chunks x Xaero's Compat
+FTB Essentials (Forge & Fabric)
+FTB Library (NeoForge)
+FTB Quests (NeoForge)
+FTB Teams (NeoForge)
+FTB Ultimine (NeoForge)
+Fusion (Connected Textures)
+Geckolib
+Global Packs
+Godly Vampirism
+Guide-API VP
+GuideME
+Handcrafted
+Icarus
+Immersive Furniture
+Infinite Trading
+Iris Shaders
+Iron's Lib
+iron's spellbooks arcane essence blocks
+Iron's Spells 'n Spellbooks
+Jade Addons (Neo/Forge)
+Jade Sable Compat
+Jade 🔍
+Just Enough Items (JEI)
+Just Enough Mekanism Multiblocks
+Keybind Atlas
+Kotlin for Forge
+KubeJS
+L_Ender's Cataclysm
+Lionfish-API
+Lithium
+Lootr
+Lost Trinkets Renewed
+Mannequins
+MCA Capitals | A Monarchy Mod for MCA Reborn
+MCA Reborn
+Mekanism
+Mekanism Additions
+Mekanism Generators
+Mekanism Tools
+MidnightLib
+Mod Menu
+ModernFix
+Moonlight Lib
+Nature's Compass
+Neruina - Ticking Entity Fixer
+Obscure Tooltips
+oωo (owo-lib)
+playerAnimator
+Poiesis Living Atlas Art
+Powah!
+Puzzles Lib
+Rechiseled
+Resourceful Config
+Resourceful Lib
+Rhino
+Ritchie's Projectile Library
+Rolling Down in the Deep
+Sable
+Sable: Physics Compat
+Searchables
+ShatterLib | OctoLib
+Sinytra Connector
+Sizeable Foliage
+Sky Archipelago
+Sodium
+Sophisticated Backpacks
+Sophisticated Core
+Sparkweave Engine
+Starter Kit
+SuperMartijn642's Config Lib
+SuperMartijn642's Core Lib
+Supplementaries
+The Hordes
+The Roads More Travelled [TRMT]
+Tree Physics
+Trinkets
+Underlay
+Vampire's Delight
+Vampirism
+Vampirism Integrations
+Vampirism Iron's Spells Compatibility
+Vertical Scroll
+Via Romana: Infrastructure-Driven Fast Travel
+vista
+Vista Aeronautics Fix
+Xaero Zoomout
+Xaero's Minimap
+Xaero's World Map
+YetAnotherConfigLib (YACL)
+Yours Truly

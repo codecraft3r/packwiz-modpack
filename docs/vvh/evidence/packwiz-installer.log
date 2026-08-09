@@ -1,0 +1,385 @@
+Current version is: null
+New version is: v0.5.14
+Attempting to update...
+Update successful!
+Loading manifest file...
+Loading pack file...
+Loading MultiMC pack file...
+MultiMC not detected
+Checking local files...
+Modpack name: Poiesis 2
+Checking local files...
+Comparing new files...
+Side changed, invalidating all mods
+Validating existing files...
+Resolving CurseForge metadata...
+(1/369) Downloaded README.md
+(2/369) Downloaded client.toml
+(3/369) Downloaded general.toml
+(4/369) Downloaded additions-client.toml
+(5/369) Downloaded common.toml
+(6/369) Downloaded generators-gear.toml
+(7/369) Downloaded gear.toml
+(8/369) Downloaded generator-storage.toml
+(9/369) Downloaded additions.toml
+(10/369) Downloaded startup.toml
+(11/369) Downloaded generators.toml
+(12/369) Downloaded tiers.toml
+(13/369) Downloaded accessories.json5
+(14/369) Downloaded machine-storage.toml
+(15/369) Downloaded world.toml
+(16/369) Downloaded tools.toml
+(17/369) Downloaded aeroworks-client.toml
+(18/369) Downloaded cardinal-components-api.properties
+(19/369) Downloaded _presets.json
+(20/369) Downloaded aeronautics-server.toml
+(21/369) Downloaded default.json
+(22/369) Downloaded aeroworks-common.toml
+(23/369) Downloaded collective.json5
+(24/369) Downloaded computercraft-server.toml
+(25/369) Downloaded computercraft-client.toml
+(26/369) Downloaded better-advanced-tooltips-client.toml
+(27/369) Downloaded connector.json
+(28/369) Downloaded carryon-client.toml
+(29/369) Downloaded carryon-common.toml
+(30/369) Downloaded copycats-client.toml
+(31/369) Downloaded _presets.json
+(32/369) Downloaded copycats-common.toml
+(33/369) Downloaded default.json
+(34/369) Downloaded create-client.toml
+(35/369) Downloaded copycats-server.toml
+(36/369) Downloaded create-common.toml
+(37/369) Downloaded create_central_kitchen-client.toml
+(38/369) Downloaded create_dragons_plus-simulated-extension-server.toml
+(39/369) Downloaded createpropulsion-client.toml
+(40/369) Downloaded create_dragons_plus-common.toml
+(41/369) Downloaded create_central_kitchen-common.toml
+(42/369) Downloaded create_dragons_plus-server.toml
+(43/369) Downloaded curios-client.toml
+(44/369) Downloaded createpropulsion-common.toml
+(45/369) Downloaded create_dragons_plus-client.toml
+(46/369) Downloaded create-server.toml
+(47/369) Downloaded curios-common.toml
+(48/369) Downloaded drivebywire-common.toml
+(49/369) Downloaded curios-server.toml
+(50/369) Downloaded escalated-server.toml
+(51/369) Downloaded explorerscompass-common.toml
+(52/369) Downloaded indigo-renderer.properties
+(53/369) Downloaded enchantinginfuser-server.toml
+(54/369) Downloaded exposure-common.toml
+(55/369) Downloaded explorerscompass-client.toml
+(56/369) Downloaded flywheel-client.toml
+(57/369) Downloaded fluxnetworks-server.toml
+(58/369) Downloaded exposure-client.toml
+(59/369) Downloaded exposure-server.toml
+(60/369) Downloaded fml.toml
+(61/369) Downloaded fluxnetworks-client.toml
+(62/369) Downloaded ftblibrary-client.snbt
+(63/369) Downloaded fluxnetworks-common.toml
+(64/369) Downloaded chapter_groups.snbt
+(65/369) Downloaded ftbchunks-client.snbt
+(66/369) Downloaded a_blank_page.snbt
+(67/369) Downloaded atlas_exchange.snbt
+(68/369) Downloaded the_weathered_ledger.snbt
+(69/369) Downloaded ftbchunks-world.snbt
+(70/369) Downloaded first_resonance.snbt
+(71/369) Downloaded vvh_00_island_charter.snbt
+(72/369) Downloaded vvh_03_lantern_order.snbt
+(73/369) Downloaded vvh_04_free_companies.snbt
+(74/369) Downloaded vvh_02_house_of_night.snbt
+(75/369) Downloaded vvh_01_three_invitations.snbt
+(76/369) Downloaded vvh_05_work_each_hand_knows.snbt
+(77/369) Downloaded vvh_06_island_remembers.snbt
+(78/369) Downloaded vvh_09_after_the_bells.snbt
+(79/369) Downloaded vvh_07_rivalry_without_ruin.snbt
+(80/369) Downloaded data.snbt
+(81/369) Downloaded vvh_08_long_night_fair.snbt
+(82/369) Downloaded 1A0B1A4E5A9E2000.snbt
+(83/369) Downloaded 1A0B1A4E5A9E1000.snbt
+(84/369) Downloaded 1A0B1A4E5A9E3000.snbt
+(85/369) Downloaded en_us.snbt
+(86/369) Downloaded 7A11C0DEF0000002.snbt
+(87/369) Downloaded 7A11C0DEF0000001.snbt
+(88/369) Downloaded ftbteams-server.snbt
+(89/369) Downloaded 7A11C0DEF0000003.snbt
+(90/369) Downloaded ftbultimine-server.snbt
+(91/369) Downloaded ftbultimine-client.snbt
+(92/369) Downloaded global_packs.toml
+(93/369) Downloaded infinitetrading.json5
+(94/369) Downloaded iris-excluded.json
+(95/369) Downloaded guideme.toml
+(96/369) Downloaded iris.properties
+(97/369) Downloaded irons_spellbooks-client.toml
+(98/369) Downloaded global_config.json
+(99/369) Downloaded irons_spellbooks-server.toml
+(100/369) Downloaded hide-blocks.json
+(101/369) Downloaded hide-entities.json
+(102/369) Downloaded example.txt
+(103/369) Downloaded jade.json
+(104/369) Downloaded sort-order.json
+(105/369) Downloaded blacklist.json
+(106/369) Downloaded ingredient-list-mod-sort-order.ini
+(107/369) Downloaded jei-server.toml
+(108/369) Downloaded ingredient-list-type-sort-order.ini
+(109/369) Downloaded jei-client.ini
+(110/369) Downloaded plugins.json
+(111/369) Downloaded jei-debug.ini
+(112/369) Downloaded jei-colors.ini
+(113/369) Downloaded jei-mod-id-format.ini
+(114/369) Downloaded lookupHistory.json
+(115/369) Downloaded recipe-category-sort-order.ini
+(116/369) Downloaded lookupHistory.json
+(117/369) Downloaded jei_mekanism_multiblocks-client.toml
+(118/369) Downloaded lithium.properties
+(119/369) Downloaded lootr-client.toml
+(120/369) Downloaded lootr-common.toml
+(121/369) Downloaded moonlight-client.toml
+(122/369) Downloaded naturescompass-client.toml
+(123/369) Downloaded neoforge-common.toml
+(124/369) Downloaded moonlight-common.toml
+(125/369) Downloaded neoforge-server.toml
+(126/369) Downloaded naturescompass-common.toml
+(127/369) Downloaded neoforge-client.toml
+(128/369) Downloaded neruina.json5
+(129/369) Downloaded ponder-client.toml
+(130/369) Downloaded more_cobblemon_tweaks.json
+(131/369) Downloaded playerxp.json
+(132/369) Downloaded numismaticsutils-client.toml
+(133/369) Downloaded mca.json
+(134/369) Downloaded powergrid-common.toml
+(135/369) Downloaded powah.json5
+(136/369) Downloaded offroad-server.toml
+(137/369) Downloaded resourceful-config-web.json
+(138/369) Downloaded powergrid-client.toml
+(139/369) Downloaded powergrid-server.toml
+(140/369) Downloaded sable-client.toml
+(141/369) Downloaded sablejade-client.toml
+(142/369) Downloaded default_tr_moves.json
+(143/369) Downloaded default_tm_moves.json
+(144/369) Downloaded sable-common.toml
+(145/369) Downloaded excluded_moves_from_blank_learning.json
+(146/369) Downloaded main.json
+(147/369) Downloaded excluded_moves_from_pokemon_drops.json
+(148/369) Downloaded simulated-client.toml
+(149/369) Downloaded simulated-server.toml
+(150/369) Downloaded sliceanddice-client.toml
+(151/369) Downloaded sodium-mixins.properties
+(152/369) Downloaded sodium-fingerprint.json
+(153/369) Downloaded excluded_moves_from_tmtr_learning.json
+(154/369) Downloaded sliceanddice-common.toml
+(155/369) Downloaded spawn_notification.json
+(156/369) Downloaded sodium-options.json
+(157/369) Downloaded Default.txt
+(158/369) Downloaded Archer.txt
+(159/369) Downloaded Witch.txt
+(160/369) Downloaded Lumberjack.txt
+(161/369) Downloaded p_default.txt
+(162/369) Downloaded tim_core.json
+(163/369) Downloaded starterkit.json5
+(164/369) Downloaded Default.txt
+(165/369) Downloaded p_default.txt
+(166/369) Downloaded Archer.txt
+(167/369) Downloaded treephysics-common.toml
+(168/369) Downloaded treephysics-client.toml
+(169/369) Downloaded Witch.txt
+(170/369) Downloaded trmt-client.json
+(171/369) Downloaded trmt.json
+(172/369) Downloaded client.cfg
+(173/369) Downloaded Lumberjack.txt
+(174/369) Downloaded vista-client.toml
+(175/369) Downloaded vista-common.toml
+(176/369) Downloaded via_romana.json
+(177/369) Downloaded default.cfg
+(178/369) Downloaded client.cfg
+(179/369) Downloaded default_radar_categories_client.json
+(180/369) Downloaded common.cfg
+(181/369) Downloaded default.cfg
+(182/369) Downloaded common.cfg
+(183/369) Downloaded default_radar_categories_server.json
+(184/369) Downloaded default.cfg
+(185/369) Downloaded default.cfg
+(186/369) Downloaded default.cfg.txt
+(187/369) Downloaded default.cfg
+(188/369) Skipped Poiesis Living Atlas Art (wrong side)
+(189/369) Downloaded xaerohud.txt
+(190/369) Downloaded common.cfg
+(191/369) Downloaded client.cfg
+(192/369) Downloaded xaeropatreon.txt
+(193/369) Downloaded example_block.png
+(194/369) Downloaded README.txt
+(195/369) Downloaded example_item.png
+(196/369) Downloaded default.cfg
+(197/369) Downloaded main.js
+(198/369) Downloaded common.json
+(199/369) Downloaded web_server.json
+(200/369) Downloaded client.json
+(201/369) Downloaded crafting.js
+(202/369) Downloaded block_map.txt
+(203/369) Downloaded biome_map.txt
+(204/369) Downloaded main.js
+(205/369) Downloaded biome_map.txt
+(206/369) Downloaded dimensions.txt
+(207/369) Downloaded waypoints.json
+(208/369) Downloaded dimension.regions
+(209/369) Downloaded block_map.txt
+(210/369) Downloaded dimensions.txt
+(211/369) Downloaded dimension.regions
+(212/369) Skipped Athena (wrong side)
+(213/369) Downloaded dev.json
+(214/369) Downloaded waypoints.json
+(215/369) Downloaded Ace's Spell Utils
+(216/369) Skipped Blocks Previewer (wrong side)
+(217/369) Downloaded Atlas Lib
+(218/369) Downloaded Create: Bells & Whistles
+(219/369) Downloaded AzureLib
+(220/369) Downloaded Caelus API
+(221/369) Downloaded Accessories
+(222/369) Downloaded Architectury API
+(223/369) Downloaded Amendments
+(224/369) Downloaded CC: Sable
+(225/369) Downloaded Carry On
+(226/369) Downloaded MCA Capitals | A Monarchy Mod for MCA Reborn
+(227/369) Downloaded CBC: Compact Mount
+(228/369) Downloaded Cataclysm: Spellbooks
+(229/369) Downloaded tools-materials-startup.toml
+(230/369) Downloaded tools-client.toml
+(231/369) Downloaded machine-usage.toml
+(232/369) Downloaded Chunky
+(233/369) Downloaded Chunky Border
+(234/369) Skipped Controlling (wrong side)
+(235/369) Downloaded Common Network
+(236/369) Skipped Craft Config Lib (wrong side)
+(237/369) Downloaded Configurable
+(238/369) Downloaded Cloth Config API
+(239/369) Downloaded Collective
+(240/369) Downloaded CC: Tweaked
+(241/369) Downloaded Create Aeronautics: Transmission & Linkage
+(242/369) Downloaded Create Cardan Shafts
+(243/369) Downloaded Create: Aeroworks
+(244/369) Downloaded Create: Copycats+
+(245/369) Downloaded Create: Avionics — ComputerCraft for Aeronautics
+(246/369) Downloaded Create: Central Kitchen
+(247/369) Downloaded Sinytra Connector
+(248/369) Downloaded Create: Numismatics Utils
+(249/369) Downloaded Create: Dragons Plus
+(250/369) Skipped Cubes Without Borders (wrong side)
+(251/369) Downloaded Create Big Cannons
+(252/369) Downloaded Create: Enchantment Industry
+(253/369) Downloaded Create Deco
+(254/369) Downloaded Create Propulsion: Simulated
+(255/369) Downloaded Curios API
+(256/369) Downloaded Data Anchor
+(257/369) Downloaded Double Slabs
+(258/369) Downloaded Do a Barrel Roll
+(259/369) Downloaded Drive-By-Wire with Sable
+(260/369) Downloaded Enchanting Infuser: Add Treasure Enchantments
+(261/369) Downloaded Enchanting Infuser
+(262/369) Downloaded Chipped
+(263/369) Downloaded Explorer's Compass
+(264/369) Downloaded Create: Escalated
+(265/369) Downloaded Flux Networks
+(266/369) Downloaded FerriteCore
+(267/369) Downloaded Bosses'Rise
+(268/369) Downloaded Burnt Basic
+(269/369) Downloaded Exposure
+(270/369) Downloaded FTB Essentials (Forge & Fabric)
+(271/369) Downloaded FTB Chunks (NeoForge)
+(272/369) Downloaded Farmer's Delight
+(273/369) Downloaded FTB Teams (NeoForge)
+(274/369) Downloaded FTB Ultimine (NeoForge)
+(275/369) Skipped Fusion (Connected Textures) (wrong side)
+(276/369) Downloaded FTB Library (NeoForge)
+(277/369) Downloaded FTB Chunks x Xaero's Compat
+(278/369) Downloaded FTB Quests (NeoForge)
+(279/369) Downloaded Cult of Azazel
+(280/369) Downloaded Forgified Fabric API
+(281/369) Downloaded Godly Vampirism
+(282/369) Downloaded Global Packs
+(283/369) Downloaded Geckolib
+(284/369) Downloaded Fragmentum
+(285/369) Downloaded Guide-API VP
+(286/369) Skipped Iris Shaders (wrong side)
+(287/369) Downloaded Iron's Lib
+(288/369) Downloaded Create: Interiors
+(289/369) Downloaded Infinite Trading
+(290/369) Downloaded iron's spellbooks arcane essence blocks
+(291/369) Skipped Jade Sable Compat (wrong side)
+(292/369) Downloaded Immersive Furniture
+(293/369) Downloaded Create
+(294/369) Skipped Just Enough Mekanism Multiblocks (wrong side)
+(295/369) Skipped Keybind Atlas (wrong side)
+(296/369) Downloaded Jade Addons (Neo/Forge)
+(297/369) Downloaded Create Aeronautics
+(298/369) Downloaded Just Enough Items (JEI)
+(299/369) Downloaded Distant Horizons
+(300/369) Downloaded Jade 🔍
+(301/369) Downloaded GuideME
+(302/369) Downloaded Handcrafted
+(303/369) Downloaded Lionfish-API
+(304/369) Downloaded Icarus
+(305/369) Downloaded KubeJS
+(306/369) Downloaded Lithium
+(307/369) Downloaded Lootr
+(308/369) Downloaded Mannequins
+(309/369) Downloaded Mekanism Generators
+(310/369) Downloaded Kotlin for Forge
+(311/369) Skipped Mod Menu (wrong side)
+(312/369) Downloaded Lost Trinkets Renewed
+(313/369) Downloaded Mekanism Additions
+(314/369) Downloaded Mekanism Tools
+(315/369) Downloaded MidnightLib
+(316/369) Skipped Obscure Tooltips (wrong side)
+(317/369) Downloaded Iron's Spells 'n Spellbooks
+(318/369) Downloaded Neruina - Ticking Entity Fixer
+(319/369) Downloaded playerAnimator
+(320/369) Downloaded Nature's Compass
+(321/369) Downloaded ModernFix
+(322/369) Downloaded Moonlight Lib
+(323/369) Downloaded oωo (owo-lib)
+(324/369) Downloaded Puzzles Lib
+(325/369) Downloaded Mekanism
+(326/369) Skipped Rolling Down in the Deep (wrong side)
+(327/369) Downloaded Create: Numismatics
+(328/369) Downloaded Resourceful Config
+(329/369) Downloaded Resourceful Lib
+(330/369) Skipped Searchables (wrong side)
+(331/369) Downloaded Rhino
+(332/369) Downloaded Powah!
+(333/369) Downloaded Ritchie's Projectile Library
+(334/369) Downloaded MCA Reborn
+(335/369) Skipped Sodium (wrong side)
+(336/369) Downloaded Sable: Physics Compat
+(337/369) Downloaded ShatterLib | OctoLib
+(338/369) Downloaded Sizeable Foliage
+(339/369) Downloaded Sable
+(340/369) Downloaded Create: Power Grid
+(341/369) Downloaded Sophisticated Backpacks
+(342/369) Downloaded Rechiseled
+(343/369) Downloaded Sophisticated Core
+(344/369) Downloaded SuperMartijn642's Config Lib
+(345/369) Downloaded Sparkweave Engine
+(346/369) Downloaded Create Slice & Dice
+(347/369) Downloaded Starter Kit
+(348/369) Downloaded Sky Archipelago
+(349/369) Downloaded SuperMartijn642's Core Lib
+(350/369) Downloaded The Roads More Travelled [TRMT]
+(351/369) Downloaded Tree Physics
+(352/369) Downloaded Underlay
+(353/369) Skipped Vertical Scroll (wrong side)
+(354/369) Skipped Vista Aeronautics Fix (wrong side)
+(355/369) Downloaded The Hordes
+(356/369) Skipped Xaero Zoomout (wrong side)
+(357/369) Skipped Xaero's Minimap (wrong side)
+(358/369) Downloaded Xaero's World Map
+(359/369) Downloaded Vampirism Iron's Spells Compatibility
+(360/369) Downloaded Vampirism Integrations
+(361/369) Downloaded Trinkets
+(362/369) Downloaded Via Romana: Infrastructure-Driven Fast Travel
+(363/369) Downloaded Vampire's Delight
+(364/369) Downloaded Vampirism
+(365/369) Downloaded YetAnotherConfigLib (YACL)
+(366/369) Downloaded Yours Truly
+(367/369) Downloaded L_Ender's Cataclysm
+(368/369) Downloaded Supplementaries
+(369/369) Downloaded vista
+Finished successfully!

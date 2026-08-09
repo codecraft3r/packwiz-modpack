@@ -6,7 +6,7 @@
 	rewards: [
 		{
 			id: "1A0B1A4E5A9E2011"
-			item: { count: 12, id: "cobblemon:poke_ball" }
+			item: { count: 16, id: "vampiresdelight:hardtack" }
 		}
 		{
 			id: "1A0B1A4E5A9E2012"
