@@ -44,7 +44,7 @@
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0101"]
-			icon: { id: "cobblemon:poke_ball" }
+			icon: { id: "vampirism:vampire_fang" }
 			id: "1A0B1A4E5A9E0102"
 			min_width: 250
 			rewards: [
@@ -58,7 +58,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The sky remembers every gentle capture.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:spyglass"
 					}
 					team_reward: false
 					type: "item"
@@ -76,15 +76,14 @@
 			tasks: [
 				{
 					id: "1A0B1A4E5A9E0121"
-					stat: "cobblemon:captured"
-					type: "stat"
-					value: 5
+					item: { count: 1, id: "vampirism:vampire_fang" }
+					type: "item"
 				}
 				{
+					advancement: "vampirism:main/vampire_forest"
+					criterion: ""
 					id: "1A0B1A4E5A9E0122"
-					stat: "cobblemon:battles_total"
-					type: "stat"
-					value: 3
+					type: "advancement"
 				}
 			]
 			x: -6.0d
@@ -106,7 +105,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A quiet spark, carefully not set loose.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -154,7 +153,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A machine is a spell that admits its gears.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:spyglass"
 					}
 					team_reward: false
 					type: "item"
@@ -202,7 +201,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The road was there before the map admitted it.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -250,7 +249,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A victory sounds better with witnesses.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"
@@ -267,10 +266,10 @@
 			size: 1.25d
 			tasks: [
 				{
+					count: 8
 					id: "1A0B1A4E5A9E0161"
-					stat: "cobblemon:battles_total"
-					type: "stat"
-					value: 5
+					item: { count: 1, id: "minecraft:lantern" }
+					type: "item"
 				}
 				{ id: "1A0B1A4E5A9E0162", type: "checkmark" }
 			]
@@ -307,7 +306,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Three lenses, one page, no singular hero.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"

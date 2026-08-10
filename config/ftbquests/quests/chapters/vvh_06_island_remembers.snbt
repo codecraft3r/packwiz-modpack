@@ -1,0 +1,294 @@
+{
+	autofocus_id: "7A11C0DE16000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_06_island_remembers"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "minecraft:lantern"
+	}
+	id: "7A11C0DE16000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/island_remembers.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/filled_map.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/writable_book.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/lantern.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+	]
+	order_index: 6
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A11C0DE1500000A"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE16000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE16100001"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:rail"
+			}
+			id: "7A11C0DE16000002"
+			min_width: 280
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE16100015"
+					type: "checkmark"
+				}
+			]
+			x: -6
+			y: -1.3d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "7A11C0DE16000003"
+			min_width: 280
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1610001F"
+					type: "checkmark"
+				}
+			]
+			x: -4.2d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "create:mechanical_press"
+			}
+			id: "7A11C0DE16000004"
+			min_width: 280
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE16100029"
+					type: "checkmark"
+				}
+			]
+			x: -2.2d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:lectern"
+			}
+			id: "7A11C0DE16000005"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE16100033"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "7A11C0DE16000006"
+			min_width: 280
+			shape: "heart"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1610003D"
+					type: "checkmark"
+				}
+			]
+			x: 2.2d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "createpropulsion:wing"
+			}
+			id: "7A11C0DE16000007"
+			min_width: 280
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE16100047"
+					type: "checkmark"
+				}
+			]
+			x: 4.2d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:iron_door"
+			}
+			id: "7A11C0DE16000008"
+			min_width: 280
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE16100051"
+					type: "checkmark"
+				}
+			]
+			x: 6
+			y: -1.3d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "7A11C0DE16000009"
+			min_width: 280
+			shape: "octagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1610005B"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 3
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000002"
+				"7A11C0DE16000003"
+				"7A11C0DE16000004"
+				"7A11C0DE16000005"
+				"7A11C0DE16000006"
+				"7A11C0DE16000007"
+				"7A11C0DE16000008"
+				"7A11C0DE16000009"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE1600000B"
+			min_required_dependencies: 3
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE16200070"
+					item: {
+						count: 16
+						id: "minecraft:lantern"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE16200071"
+					item: {
+						count: 32
+						id: "minecraft:scaffolding"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE16200072"
+					table_id: 8796023610973093890
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A11C0DE1610006F"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 5.5d
+		}
+	]
+}

@@ -1,0 +1,287 @@
+{
+	autofocus_id: "7A11C0DE17000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_07_rivalry_without_ruin"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "minecraft:firework_rocket"
+	}
+	id: "7A11C0DE17000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/garlic.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/vampire_fang.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/filled_map.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+	]
+	order_index: 7
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A11C0DE1500000A"
+			]
+			icon: {
+				id: "minecraft:firework_rocket"
+			}
+			id: "7A11C0DE17000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE17100001"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "minecraft:painting"
+			}
+			id: "7A11C0DE17000002"
+			min_width: 280
+			optional: true
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE17100015"
+					type: "checkmark"
+				}
+			]
+			x: -5
+			y: -1
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "irons_spellbooks:holy_rune"
+			}
+			id: "7A11C0DE17000003"
+			min_width: 280
+			optional: true
+			shape: "heart"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1710001F"
+					type: "checkmark"
+				}
+			]
+			x: -3
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "minecraft:compass"
+			}
+			id: "7A11C0DE17000004"
+			min_width: 280
+			optional: true
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE17100029"
+					type: "checkmark"
+				}
+			]
+			x: -1
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "createpropulsion:wing"
+			}
+			id: "7A11C0DE17000005"
+			min_width: 280
+			optional: true
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE17100033"
+					type: "checkmark"
+				}
+			]
+			x: 1
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "7A11C0DE17000006"
+			min_width: 280
+			optional: true
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1710003D"
+					type: "checkmark"
+				}
+			]
+			x: 3
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000001"
+			]
+			icon: {
+				id: "minecraft:armor_stand"
+			}
+			id: "7A11C0DE17000007"
+			min_width: 280
+			optional: true
+			shape: "octagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE17100047"
+					type: "checkmark"
+				}
+			]
+			x: 5
+			y: -1
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000002"
+				"7A11C0DE17000003"
+				"7A11C0DE17000004"
+				"7A11C0DE17000005"
+				"7A11C0DE17000006"
+				"7A11C0DE17000007"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7A11C0DE17000008"
+			min_required_dependencies: 2
+			min_width: 280
+			optional: true
+			shape: "diamond"
+			size: 1.4d
+			tasks: [
+				{
+					id: "7A11C0DE17100051"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 3.1d
+		}
+		{
+			dependencies: [
+				"7A11C0DE17000002"
+				"7A11C0DE17000003"
+				"7A11C0DE17000004"
+				"7A11C0DE17000005"
+				"7A11C0DE17000006"
+				"7A11C0DE17000007"
+			]
+			hide_dependency_lines: true
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "7A11C0DE17000009"
+			min_required_dependencies: 2
+			min_width: 280
+			optional: true
+			rewards: [
+				{
+					id: "7A11C0DE1720005C"
+					item: {
+						count: 16
+						id: "minecraft:firework_rocket"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1720005D"
+					item: {
+						count: 8
+						id: "minecraft:lantern"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1720005E"
+					table_id: 8796023610973093890
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 1.8d
+			tasks: [
+				{
+					id: "7A11C0DE1710005B"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 5.4d
+		}
+	]
+}

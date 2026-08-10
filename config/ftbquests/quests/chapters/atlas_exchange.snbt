@@ -202,16 +202,16 @@
 		{
 			can_repeat: true
 			dependencies: ["1A0B1A4E5A9E0401"]
-			icon: { id: "cobblemon:great_ball" }
+			icon: { id: "vampiresdelight:hardtack" }
 			id: "1A0B1A4E5A9E0407"
 			min_width: 250
 			optional: true
 			repeat_cooldown: 604800
 			rewards: [
 				{
-					count: 4
+					count: 16
 					id: "1A0B1A4E5A9E0671"
-					item: { count: 1, id: "cobblemon:great_ball" }
+					item: { count: 1, id: "vampiresdelight:hardtack" }
 					team_reward: true
 					type: "item"
 				}

@@ -48,7 +48,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A current shared is a current multiplied.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:goggles"
 					}
 					team_reward: false
 					type: "item"
@@ -83,7 +83,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Ordinary force, applied with uncommon patience.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:andesite_alloy"
 					}
 					team_reward: false
 					type: "item"
@@ -125,7 +125,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A tool is a promise, not a throne.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:goggles"
 					}
 					team_reward: false
 					type: "item"
@@ -167,7 +167,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A first table is an argument with possibility.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -195,7 +195,7 @@
 		}
 		{
 			dependencies: ["1A0B1A4E5A9E0301"]
-			icon: { id: "cobblemon:poke_ball" }
+			icon: { id: "vampirism:vampire_fang" }
 			id: "1A0B1A4E5A9E0306"
 			min_width: 250
 			rewards: [
@@ -209,7 +209,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A good story has at least one witness.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"
@@ -226,16 +226,16 @@
 			size: 1.25d
 			tasks: [
 				{
+					advancement: "vampirism:main/vampire_forest"
+					criterion: ""
 					id: "1A0B1A4E5A9E0361"
-					stat: "cobblemon:captured"
-					type: "stat"
-					value: 8
+					type: "advancement"
 				}
 				{
+					count: 8
 					id: "1A0B1A4E5A9E0362"
-					stat: "cobblemon:battles_total"
-					type: "stat"
-					value: 8
+					item: { count: 1, id: "vampiresdelight:hardtack" }
+					type: "item"
 				}
 				{ id: "1A0B1A4E5A9E0363", type: "checkmark" }
 			]
@@ -272,7 +272,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The useful things were never small to the people who needed them.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"

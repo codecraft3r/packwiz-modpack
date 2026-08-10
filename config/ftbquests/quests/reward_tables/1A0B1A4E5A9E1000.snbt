@@ -14,7 +14,7 @@
 					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "vampirism:garlic"
 			}
 		}
 		{
@@ -27,7 +27,7 @@
 					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "irons_spellbooks:arcane_essence"
 			}
 		}
 		{
@@ -40,7 +40,7 @@
 					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "create:goggles"
 			}
 		}
 		{
@@ -53,7 +53,7 @@
 					"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Session 00 badge — prestige, not power\"}"]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "minecraft:spyglass"
 			}
 		}
 	]

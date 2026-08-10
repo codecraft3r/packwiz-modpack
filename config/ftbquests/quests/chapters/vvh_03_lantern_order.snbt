@@ -1,0 +1,422 @@
+{
+	autofocus_id: "7A11C0DE13000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_03_lantern_order"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "vampirism:garlic"
+	}
+	id: "7A11C0DE13000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/lantern_order.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/holy_public_ward.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/holy_school_crest.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/holy_rune.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/priest_chestplate.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/upgrade_orb_holy.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+	]
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE13000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE1310000B"
+					advancement: "vampirism:hunter/become_hunter"
+					criterion: ""
+					type: "advancement"
+				}
+				{
+					id: "7A11C0DE1310000C"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "7A11C0DE1300000C"
+			min_width: 280
+			shape: "gear"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE13100079"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -3.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE1300000D"
+			min_width: 280
+			shape: "square"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE13100083"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -1.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000D"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE13000002"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100015"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000C"
+			]
+			icon: {
+				id: "vampirism:hunter_table"
+			}
+			id: "7A11C0DE13000003"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1310001F"
+					item: {
+						count: 1
+						id: "vampirism:hunter_table"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100020"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000D"
+			]
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE13000004"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100029"
+					count: 8
+					item: {
+						count: 1
+						id: "vampirism:garlic"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1310002A"
+					type: "checkmark"
+				}
+			]
+			x: 3.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000C"
+			]
+			icon: {
+				id: "vampirism:stake"
+			}
+			id: "7A11C0DE13000005"
+			min_width: 280
+			shape: "heart"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100033"
+					count: 4
+					item: {
+						count: 1
+						id: "vampirism:stake"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100034"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000C"
+			]
+			icon: {
+				id: "vampirism:alchemical_cauldron"
+			}
+			id: "7A11C0DE13000006"
+			min_width: 280
+			shape: "gear"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1310003D"
+					item: {
+						count: 1
+						id: "vampirism:alchemical_cauldron"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1310003E"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000D"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE13000007"
+			min_width: 280
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100047"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000D"
+			]
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7A11C0DE13000008"
+			min_width: 280
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE13100051"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000C"
+			]
+			icon: {
+				id: "irons_spellbooks:holy_rune"
+			}
+			id: "7A11C0DE13000009"
+			min_width: 280
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1310005B"
+					item: {
+						count: 1
+						id: "irons_spellbooks:holy_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1310005C"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000002"
+				"7A11C0DE13000003"
+				"7A11C0DE13000004"
+				"7A11C0DE13000005"
+				"7A11C0DE13000006"
+				"7A11C0DE13000007"
+				"7A11C0DE13000008"
+				"7A11C0DE13000009"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE1300000A"
+			min_required_dependencies: 5
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE13200067"
+					item: {
+						count: 32
+						id: "minecraft:scaffolding"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13200068"
+					item: {
+						count: 4
+						id: "create:super_glue"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13200069"
+					item: {
+						count: 2
+						id: "irons_spellbooks:holy_rune"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1320006A"
+					table_id: 8796023610973093890
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A11C0DE13100065"
+					type: "checkmark"
+				}
+				{
+					id: "7A11C0DE13100066"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 4.6d
+		}
+	]
+}

@@ -1,0 +1,243 @@
+{
+	autofocus_id: "7A11C0DE18000001"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "vvh_08_long_night_fair"
+	group: "7A11C0DE00000001"
+	icon: {
+		id: "minecraft:lantern"
+	}
+	id: "7A11C0DE18000000"
+	images: [
+		{
+			alpha: 80
+			height: 1.55d
+			image: "poiesis:textures/questpics/vvh/long_night_fair.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "minecraft:textures/item/firework_rocket.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/vampire_fang.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "vampirism:textures/item/garlic.png"
+			order: -30
+			rotation: -6.0d
+			width: 1.55d
+			x: 4.5d
+			y: 5.0d
+		}
+	]
+	order_index: 8
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A11C0DE1600000B"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE18000001"
+			min_width: 280
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [
+				{
+					id: "7A11C0DE18100001"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "vampiresdelight:blood_wine_bottle"
+			}
+			id: "7A11C0DE18000002"
+			min_width: 280
+			shape: "heart"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE18100015"
+					type: "checkmark"
+				}
+			]
+			x: -5
+			y: -1.1d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "vampirism:garlic"
+			}
+			id: "7A11C0DE18000003"
+			min_width: 280
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1810001F"
+					type: "checkmark"
+				}
+			]
+			x: -3
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "minecraft:emerald"
+			}
+			id: "7A11C0DE18000004"
+			min_width: 280
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE18100029"
+					type: "checkmark"
+				}
+			]
+			x: -1
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "createpropulsion:wing"
+			}
+			id: "7A11C0DE18000005"
+			min_width: 280
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE18100033"
+					type: "checkmark"
+				}
+			]
+			x: 1
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "7A11C0DE18000006"
+			min_width: 280
+			shape: "circle"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE1810003D"
+					type: "checkmark"
+				}
+			]
+			x: 3
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000001"
+			]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "7A11C0DE18000007"
+			min_width: 280
+			shape: "octagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE18100047"
+					type: "checkmark"
+				}
+			]
+			x: 5
+			y: -1.1d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000002"
+				"7A11C0DE18000003"
+				"7A11C0DE18000004"
+				"7A11C0DE18000005"
+				"7A11C0DE18000006"
+				"7A11C0DE18000007"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:firework_rocket"
+			}
+			id: "7A11C0DE18000009"
+			min_required_dependencies: 3
+			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE1820005C"
+					item: {
+						count: 16
+						id: "minecraft:lantern"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1820005D"
+					table_id: 8796023610973093891
+					team_reward: false
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 2.1d
+			tasks: [
+				{
+					id: "7A11C0DE1810005B"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 5.2d
+		}
+	]
+}
