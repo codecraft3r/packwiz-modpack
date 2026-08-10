@@ -1,0 +1,6 @@
+		FTB Quests 2101.1.27 (ftbquests)
+[14:59:42] [main/INFO] [Moonlight/]: Regenerating Dynamic SERVER_DATA Resources Provider [amendments:generated_server_pack], requested by strategy REGEN_ON_EVERY_RELOAD
+[15:00:50] [Server thread/INFO] [FTB Quests/]: Loading quests from C:\Users\Windows\Documents\Codex\2026-07-10\goa\tmp\vvh-server-work-final4-20260808\server\config\ftbquests\quests
+[15:00:54] [Server thread/INFO] [FTB Quests/]: Loading quests from C:\Users\Windows\Documents\Codex\2026-07-10\goa\tmp\vvh-server-work-final4-20260808\server\config\ftbquests\quests
+[15:00:54] [Server thread/INFO] [minecraft/MinecraftServer]: Quest and progression data reloaded from file!
+[15:00:54] [Server thread/INFO] [minecraft/MinecraftServer]: Note: Quest reloading is a quest developer convenience tool and not recommended for use on live servers.

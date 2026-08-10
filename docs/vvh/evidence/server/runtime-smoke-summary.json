@@ -1,0 +1,16 @@
+{
+  "done_line": "[15:00:50] [Server thread/INFO] [minecraft/DedicatedServer]: Done (43.849s)! For help, type \"help\"",
+  "ftbquests_reload_command_sent": true,
+  "not_verified": [
+    "client quest-book rendering",
+    "player task completion and reward claiming",
+    "two-account team reward semantics",
+    "FTB Teams faction switching and FTB Chunks claim transfer",
+    "PvP/skirmish controls and backup restore"
+  ],
+  "reached_done": true,
+  "scope": "headless NeoForge dedicated-server startup and FTB Quests reload only",
+  "server_exit_code": 0,
+  "status": "pass",
+  "targeted_quest_error_count": 0
+}
