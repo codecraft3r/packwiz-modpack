@@ -22,7 +22,7 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "minecraft:textures/item/writable_book.png"
+			image: "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png"
 			order: -30
 			rotation: 8.0d
 			width: 1.55d
@@ -32,7 +32,7 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "minecraft:textures/item/filled_map.png"
+			image: "poiesis:textures/questpics/vvh/spell_translation_desk.png"
 			order: -30
 			rotation: 5.0d
 			width: 1.55d
@@ -42,12 +42,42 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "minecraft:textures/item/lantern.png"
+			image: "poiesis:textures/questpics/vvh/mediator_hybrid_crest.png"
 			order: -30
 			rotation: -6.0d
 			width: 1.55d
 			x: 4.5d
 			y: 5.0d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/arcane_rune.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/affinity_ring_blood.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/affinity_ring_holy.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
 		}
 	]
 	order_index: 4
@@ -76,6 +106,46 @@
 				"7A11C0DE14000001"
 			]
 			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "7A11C0DE1400000C"
+			min_width: 280
+			shape: "gear"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE14100079"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -3.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE1400000D"
+			min_width: 280
+			shape: "square"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE14100083"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -1.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1400000D"
+			]
+			icon: {
 				id: "minecraft:writable_book"
 			}
 			id: "7A11C0DE14000002"
@@ -88,12 +158,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
-			y: -1.4d
+			x: 1.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:filled_map"
@@ -116,12 +186,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
-			y: 0.2d
+			x: 3.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:emerald"
@@ -136,12 +206,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
-			y: -0.7d
+			x: 5.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:white_bed"
@@ -156,12 +226,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
+			x: 7.0d
 			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:book"
@@ -176,12 +246,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
-			y: -0.7d
+			x: 9.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:bell"
@@ -196,12 +266,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 0.2d
+			x: 11.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE14000001"
+				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:recovery_compass"
@@ -216,8 +286,37 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
-			y: -1.4d
+			x: 13.0d
+			y: 0.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1400000C"
+			]
+			icon: {
+				id: "irons_spellbooks:arcane_rune"
+			}
+			id: "7A11C0DE14000009"
+			min_width: 280
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1410005B"
+					count: 4
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1410005C"
+					type: "checkmark"
+				}
+			]
+			x: -7.0d
+			y: -0.2d
 		}
 		{
 			dependencies: [
@@ -228,6 +327,7 @@
 				"7A11C0DE14000006"
 				"7A11C0DE14000007"
 				"7A11C0DE14000008"
+				"7A11C0DE14000009"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -237,26 +337,6 @@
 			min_required_dependencies: 5
 			min_width: 280
 			rewards: [
-				{
-					id: "7A11C0DE14200066"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								foundation: "neutral"
-							}
-							"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Free Company Charter\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works made neutrality a service network rather than an absence of faction content.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
-					team_reward: true
-					type: "item"
-				}
 				{
 					id: "7A11C0DE14200067"
 					item: {
@@ -275,12 +355,32 @@
 					team_reward: true
 					type: "item"
 				}
+				{
+					id: "7A11C0DE14200069"
+					item: {
+						count: 8
+						id: "irons_spellbooks:arcane_essence"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1420006A"
+					table_id: 8796023610973093890
+					team_reward: true
+					type: "choice"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
 					id: "7A11C0DE14100065"
+					type: "checkmark"
+				}
+				{
+					id: "7A11C0DE14100066"
 					type: "checkmark"
 				}
 			]

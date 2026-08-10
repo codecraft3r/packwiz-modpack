@@ -74,19 +74,17 @@
 				{
 					id: "7A11C0DE11200017"
 					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								allegiance: "vampire"
-							}
-							"minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Crimson Invitation\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the House of Night; not proof of current faction state.\"}"
-							]
-						}
+						count: 2
+						id: "vampirism:blood_bottle"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C0DE11200018"
+					item: {
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:blood_rune"
 					}
 					team_reward: false
 					type: "item"
@@ -122,19 +120,17 @@
 				{
 					id: "7A11C0DE11200021"
 					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								allegiance: "hunter"
-							}
-							"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Lantern Oath\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A record of joining the Lantern Order; not proof of current faction state.\"}"
-							]
-						}
+						count: 4
+						id: "vampirism:garlic"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C0DE11200022"
+					item: {
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:holy_rune"
 					}
 					team_reward: false
 					type: "item"
@@ -170,19 +166,17 @@
 				{
 					id: "7A11C0DE1120002B"
 					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								allegiance: "neutral"
-							}
-							"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Free Company Writ\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A licence to be useful without wearing either faction's problems.\"}"
-							]
-						}
+						count: 4
+						id: "minecraft:emerald"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1120002C"
+					item: {
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_rune"
 					}
 					team_reward: false
 					type: "item"

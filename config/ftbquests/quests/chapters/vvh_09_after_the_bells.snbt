@@ -186,8 +186,8 @@
 				{
 					id: "7A11C0DE1920002B"
 					item: {
-						count: 2
-						id: "minecraft:cake"
+						count: 8
+						id: "minecraft:lantern"
 					}
 					team_reward: true
 					type: "item"
@@ -263,7 +263,7 @@
 				"7A11C0DE19000001"
 			]
 			icon: {
-				id: "minecraft:bread"
+				id: "minecraft:lantern"
 			}
 			id: "7A11C0DE19000006"
 			min_width: 280
@@ -273,8 +273,8 @@
 				{
 					id: "7A11C0DE1920003E"
 					item: {
-						count: 16
-						id: "minecraft:bread"
+						count: 8
+						id: "minecraft:book"
 					}
 					team_reward: true
 					type: "item"
@@ -283,7 +283,7 @@
 					id: "7A11C0DE1920003F"
 					item: {
 						count: 8
-						id: "minecraft:cooked_beef"
+						id: "minecraft:lantern"
 					}
 					team_reward: true
 					type: "item"
@@ -340,24 +340,11 @@
 			optional: true
 			rewards: [
 				{
+					exclude_from_claim_all: true
 					id: "7A11C0DE1920005C"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								document: "season_two_hook"
-							}
-							"minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Unresolved Pressure Docket\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"A future season begins only when the world supplies evidence.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
+					table_id: 8796023610973093890
 					team_reward: true
-					type: "item"
+					type: "choice"
 				}
 			]
 			shape: "heart"

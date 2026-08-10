@@ -23,6 +23,7 @@ ALLOWED_EXACT = {
     "config/ftbquests/quests/chapters/atlas_exchange.snbt",
     "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E2000.snbt",
     "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E3000.snbt",
+    "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E1000.snbt",
     "global_packs/required_resources/poiesis_living_atlas_art.pw.toml",
 }
 ALLOWED_PREFIXES = (
@@ -81,8 +82,9 @@ def main() -> int:
     root = args.root.resolve()
     paths = changed_paths(root, args.base)
     deleted = deleted_paths(root, args.base)
-    if deleted:
-        raise SystemExit(f"Refusing to package deletions: {deleted}")
+    unexpected_deletions = [p for p in deleted if not p.startswith("docs/vvh/evidence/")]
+    if unexpected_deletions:
+        raise SystemExit(f"Refusing to package deletions outside retired evidence: {unexpected_deletions}")
     if not paths:
         raise SystemExit("No changed files found")
 
@@ -105,6 +107,7 @@ def main() -> int:
         "config/ftbquests/quests/chapters/atlas_exchange.snbt",
         "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E2000.snbt",
         "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E3000.snbt",
+        "config/ftbquests/quests/reward_tables/1A0B1A4E5A9E1000.snbt",
         "docs/vvh/VALIDATION.md",
         "docs/vvh/VERIFICATION.md",
         "docs/vvh/UNRESOLVED.md",

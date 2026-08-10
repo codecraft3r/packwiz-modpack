@@ -1,9 +1,9 @@
 # VvH Original Asset Queue
 
-The campaign is fully loadable without the remaining wide key art. The accepted transparent emblems below are installed in the v4 art release; the other five prompts still use installed mod/vanilla art as legal temporary fallbacks.
+The campaign uses the current Poiesis art release for every VvH chapter panorama and the complete Blood/Holy/mediator support set.
 
 ## ASSET-001 — Season crest
-- Status: accepted, generated, reviewed, installed in living-atlas-art-v4
+- Status: accepted, generated, reviewed, installed in living-atlas-art-v5
 - Intended use: VvH chapter-group navigation identity / season announcement
 - Final output path: `assets/poiesis/textures/questpics/vvh/season_one_crest.png`
 - Canvas: 512x512 px
@@ -15,12 +15,12 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Generation prompt: Transparent heraldic crest for a small Minecraft-style social RPG campaign, hand-cut woodblock and illuminated-ledger aesthetic, circular seal, left crimson and bone vampire faction represented by abstract bat wings, fang and ceremonial vessel, right steel-blue and antique-gold hunter faction represented by garlic sprig, lantern and watchtower, lower parchment-green neutral contract/map knot bridging the sides, strong 2–4 px equivalent ink line, simplified shapes readable at 32 pixels, no words, no official game logo, slightly imperfect hand-printed texture
 - Negative prompt: text, letters, logos, photorealism, anime, gore, realistic blood, guns, crossbows dominating the image, tiny clutter, gradients that disappear at icon scale, watermark, copyrighted logo
 - Post-processing: chroma-key removal; alpha/fringe audit; nearest-neighbor resize to 512x512; test at 128/64/32 px; keep transparent margin; optimize PNG
-- Acceptance checks: all three roles readable; no side looks more powerful; recognizable at 32 px; clean alpha; no text; verified in v4 ZIP
-- Release asset: living-atlas-art-v4/poiesis-living-atlas-art-v4.zip
+- Acceptance checks: all three roles readable; no side looks more powerful; recognizable at 32 px; clean alpha; no text; verified in v5 ZIP
+- Release asset: vvh-season-one-art-20260809-253445c/poiesis-living-atlas-art-v5.zip
 - Temporary fallback: `minecraft:textures/item/compass_16.png`
 
 ## ASSET-002 — House of Night key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Vampire foundation chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/house_of_night.png`
 - Canvas: 1280x720 px
@@ -36,7 +36,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: Vampirism fang + vanilla lantern textures
 
 ## ASSET-003 — Lantern Order key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Hunter foundation chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/lantern_order.png`
 - Canvas: 1280x720 px
@@ -52,7 +52,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: Vampirism garlic + vanilla lantern textures
 
 ## ASSET-004 — Free Company writ crest
-- Status: accepted, generated, reviewed, installed in living-atlas-art-v4
+- Status: accepted, generated, reviewed, installed in living-atlas-art-v5
 - Intended use: Neutral foundation chapter icon/background motif
 - Final output path: `assets/poiesis/textures/questpics/vvh/free_company_writ.png`
 - Canvas: 512x512 px
@@ -64,12 +64,12 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Generation prompt: Transparent guild emblem for a neutral Free Company in a block-world fantasy server, woodcut ledger illustration, folded map and route line behind a sealed contract, small courier satchel, market awning and civic bell, parchment and moss-green palette with copper accents, chunky simple silhouette readable at 32 pixels, no text, no money pile, no weapon motif
 - Negative prompt: corporate logo, national flag, bank icon, realistic currency, sword, gun, tiny illegible writing, photorealism, watermark
 - Post-processing: chroma-key removal; alpha/fringe audit; nearest-neighbor resize to 512x512; simplify route marks; palette reduction; icon-scale tests
-- Acceptance checks: communicates trade/routes/mediation; equal status to faction crests; no text; verified in v4 ZIP
-- Release asset: living-atlas-art-v4/poiesis-living-atlas-art-v4.zip
+- Acceptance checks: communicates trade/routes/mediation; equal status to faction crests; no text; verified in v5 ZIP
+- Release asset: vvh-season-one-art-20260809-253445c/poiesis-living-atlas-art-v5.zip
 - Temporary fallback: `minecraft:textures/item/filled_map.png`
 
 ## ASSET-005 — Public works panorama
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: The Island Remembers chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/island_remembers.png`
 - Canvas: 1280x720 px
@@ -85,7 +85,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: vanilla lantern/rail/book imagery
 
 ## ASSET-006 — Rivalry without ruin woodcut
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: safe-rivalry chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/rivalry_without_ruin.png`
 - Canvas: 1024x576 px
@@ -94,14 +94,14 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Safe area: central 50% quiet
 - Visual continuity: satirical illuminated-manuscript marginalia; faction colors; warm parchment
 - Subject and composition: Vampire and Hunter teams at far edges presenting absurd food, mascots, banners and race contraptions; neutral referee at lower centre; scavenger clues and fireworks; no battle in focus
-- Generation prompt: Wide satirical woodcut illustration for harmless faction rivalry in a block-world fantasy server, crimson vampire team at far left and steel-blue hunter team at far right presenting absurd mascots, garlic-versus-blood themed cooking dishes, propaganda banners and overengineered race contraptions, parchment-green neutral referee with clipboard at lower centre, scavenger clues and fireworks in background, theatrical friendly tension, central area deliberately low-detail for quest nodes, aged manuscript texture, no text
+- Generation prompt: Wide satirical woodcut illustration for harmless faction rivalry in a block-world fantasy server, crimson vampire team at far left and steel-blue hunter team at far right presenting absurd mascots, Blood-versus-Holy ward demonstrations, propaganda banners and overengineered race contraptions, parchment-green neutral referee with clipboard at lower centre, scavenger clues and fireworks in background, theatrical friendly tension, central area deliberately low-detail for quest nodes, aged manuscript texture, no text
 - Negative prompt: warfare, gore, angry mob, griefed buildings, realistic weapons, text, official logos, photorealism, cluttered centre, watermark
 - Post-processing: reduce centre contrast; palette harmonize; vignette; PNG optimize
 - Acceptance checks: funny before threatening; multiple safe formats readable; no text
 - Temporary fallback: firework/garlic/fang/map textures
 
 ## ASSET-007 — Long Night Fair key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Season One capstone background and announcement
 - Final output path: `assets/poiesis/textures/questpics/vvh/long_night_fair.png`
 - Canvas: 1280x720 px

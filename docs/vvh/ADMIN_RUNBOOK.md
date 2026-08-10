@@ -1,12 +1,12 @@
-# VvH Administrator Runbook — dev retune
+# VvH Administrator Runbook
 
 ## Launch
 
 1. Back up world + FTB quest/team data.
-2. Verify the live pack commit matches the build's pinned dev revision or rerun the generator/validation against the newer dev head.
-3. Run `packwiz refresh`; an unexpected diff means the drop-in is stale or incompletely copied.
+2. Verify the live pack commit matches the release being deployed.
+3. Run `packwiz refresh`; an unexpected diff means the checkout is stale or incompletely copied.
 4. Launch a disposable server and inspect FTB Quests loading before touching the live world.
-5. Open all VvH and migrated Living Atlas pages on a client. Search the quest files for `cobblemon:`; there should be none.
+5. Open all VvH pages on a client and verify the current Poiesis art release is present.
 6. Publish the permanent-building boundary. Do not advertise automated resets until separately proven on disposable chunks.
 
 ## Faction onboarding
@@ -18,6 +18,7 @@ Vampirism and FTB Teams are separate systems.
 - Finish the personal Charter before joining a shared faction FTB party when practical.
 - House of Night and Lantern Order foundation caches require a second player/host to confirm the FTB team is presently aligned with the claimed Vampirism faction.
 - A past `become_vampire` / `become_hunter` advancement is historical evidence only; do not use it alone to approve a post-switch cache.
+- Blood and Holy materials reinforce the House and Order stories but remain usable by any player. Free Companies use the translation desk for limited cross-school utility; no KubeJS state bridge or hard school lock exists.
 - Free Companies use personal/neutral FTB parties unless the server intentionally creates a shared neutral company.
 
 ## Faction switch

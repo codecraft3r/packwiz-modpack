@@ -12,7 +12,7 @@
 		{
 			alpha: 80
 			height: 1.55d
-			image: "minecraft:textures/item/lantern.png"
+			image: "poiesis:textures/questpics/vvh/long_night_fair.png"
 			order: -30
 			rotation: -9.0d
 			width: 1.55d
@@ -159,7 +159,7 @@
 				"7A11C0DE18000001"
 			]
 			icon: {
-				id: "minecraft:bread"
+				id: "minecraft:bell"
 			}
 			id: "7A11C0DE18000006"
 			min_width: 280
@@ -208,27 +208,16 @@
 				id: "minecraft:firework_rocket"
 			}
 			id: "7A11C0DE18000009"
-			min_required_dependencies: 4
+			min_required_dependencies: 3
 			min_width: 280
 			rewards: [
 				{
 					id: "7A11C0DE1820005C"
 					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								document: "season_one_seal"
-							}
-							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Season One Seal \\u2014 Long Night Fair\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"The island became worth remembering before the gear made it easy.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
+						count: 16
+						id: "minecraft:lantern"
 					}
-					team_reward: false
+					team_reward: true
 					type: "item"
 				}
 				{

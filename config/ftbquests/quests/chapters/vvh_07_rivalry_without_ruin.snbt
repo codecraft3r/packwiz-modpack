@@ -12,7 +12,7 @@
 		{
 			alpha: 80
 			height: 1.55d
-			image: "minecraft:textures/item/firework_rocket.png"
+			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
 			order: -30
 			rotation: -9.0d
 			width: 1.55d
@@ -100,7 +100,7 @@
 				"7A11C0DE17000001"
 			]
 			icon: {
-				id: "vampiresdelight:blood_pie"
+				id: "irons_spellbooks:holy_rune"
 			}
 			id: "7A11C0DE17000003"
 			min_width: 280
@@ -258,31 +258,18 @@
 				{
 					id: "7A11C0DE1720005D"
 					item: {
-						count: 2
-						id: "minecraft:cake"
+						count: 8
+						id: "minecraft:lantern"
 					}
 					team_reward: true
 					type: "item"
 				}
 				{
+					exclude_from_claim_all: true
 					id: "7A11C0DE1720005E"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								document: "rivalry_night"
-							}
-							"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Rivalry Night Broadside\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Proof that two factions can manufacture drama without manufacturing a crater.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
+					table_id: 8796023610973093890
 					team_reward: true
-					type: "item"
+					type: "choice"
 				}
 			]
 			shape: "hexagon"

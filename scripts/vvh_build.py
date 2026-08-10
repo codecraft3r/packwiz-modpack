@@ -13,7 +13,7 @@ PREFIX = "7A11C0DE"
 ROLE_TABLE = "7A11C0DEF0000001"
 TRADE_TABLE = "7A11C0DEF0000002"
 FAIR_TABLE = "7A11C0DEF0000003"
-VERSION = "2.0.0-dev.1"
+VERSION = "2.1.0-dev.1"
 SOURCE_SHA = "3e4842383dd1e029f054aedfe19940f0b53adbcd"
 
 
@@ -39,11 +39,11 @@ def jstr(value: str) -> str:
     return json.dumps(value, ensure_ascii=False)
 
 
-def custom_paper(name: str, color: str, lore: str, data: dict[str, Any]) -> dict[str, Any]:
+def custom_item(item: str, name: str, color: str, lore: str, data: dict[str, Any], *, count: int = 1) -> dict[str, Any]:
     custom_data = {"vvh_campaign": "season_one", **data}
     return {
-        "id": "minecraft:paper",
-        "count": 1,
+        "id": item,
+        "count": count,
         "components": {
             "minecraft:custom_data": custom_data,
             "minecraft:custom_name": json.dumps({"color": color, "italic": False, "text": name}, separators=(",", ":")),
@@ -51,6 +51,10 @@ def custom_paper(name: str, color: str, lore: str, data: dict[str, Any]) -> dict
             "minecraft:lore": [json.dumps({"color": "gray", "italic": False, "text": lore}, separators=(",", ":"))],
         },
     }
+
+
+def custom_paper(name: str, color: str, lore: str, data: dict[str, Any]) -> dict[str, Any]:
+    return custom_item("minecraft:paper", name, color, lore, data)
 
 
 @dataclass
@@ -188,12 +192,12 @@ def build_campaign() -> Campaign:
     root = qid(ch, 1)
     qs.append(Quest(root, "&6&lOPEN THE ISLAND CHARTER", "Two minutes now; fewer arguments at 1:30 a.m.", lines(
         "minecraft:textures/item/writable_book.png", "&6&lTHE ISLAND NEEDS A MEMORY",
-        "&fThe server usually dies when progression finishes before the world becomes worth remembering.",
-        "&fSeason One reverses that with useful places, ridiculous rivalries, faction identity, public works, and records of what actually happened.",
+        "&fAn island becomes home when useful work survives the person who started it.",
+        "&fSeason One turns faction identity, public works, rivalries, and records into reasons to return.",
         "",
         "&eRead the three reference clauses around this page, then sign the short charter below.&f They separate real hard protections from rules that only work because friends agree to honor them.",
         "",
-        "&8Top gear is an ending. Municipal drama is renewable."
+        "&8Leave behind something a later player can use."
     ), "minecraft:writable_book", 0, -5, [ck(ch, 1, "Open the Charter")], shape="hexagon", size=1.75))
     qs.append(Quest(qid(ch, 3), "&aLAND, CLAIMS, AND RESET ZONES", "Permanent work needs a boundary that actually means something.", lines(
         "minecraft:textures/item/filled_map.png", "&a&lBUILD WHERE THE WORLD REMEMBERS",
@@ -206,7 +210,7 @@ def build_campaign() -> Campaign:
     ), "minecraft:filled_map", -4.6, -1.3, [ck(ch, 3, "I Know the Permanent-Land and Claim Rule")], dependencies=[root], optional=True, shape="diamond"))
     qs.append(Quest(qid(ch, 5), "&dRIVALRY, NEUTRALS, AND OPTIONAL COMBAT", "Make stories, not support tickets.", lines(
         "minecraft:textures/item/firework_rocket.png", "&d&lTHE FUNNY WAR CLAUSE",
-        "&fVampires and Hunters may compete through banners, mascots, markets, races, scavenger hunts, public challenges, expeditions, propaganda, cooking, architecture, and reversible wilderness mischief.",
+        "&fVampires and Hunters may compete through banners, mascots, markets, races, scavenger hunts, public challenges, expeditions, ward demonstrations, architecture, and reversible wilderness mischief.",
         "&fNeutrals may trade, mediate, scout, judge, rescue, courier, host, or sell services to either side without becoming a consolation faction.",
         "",
         "&cNo claim intrusion, theft, spawn camping, targeted harassment, irreversible sabotage, or destruction wearing a comedy moustache.",
@@ -232,13 +236,15 @@ def build_campaign() -> Campaign:
         "&f3. Combat is optional, scheduled, supervised, and reversible.",
         "&f4. Vampirism faction state and FTB team state are separate; switches need a quick host review.",
         "",
+        "&eCurrency preview:&f Bevels later fund lighting, transit, repairs, and public events; this campaign does not mint them.",
+        "",
         "&eClick to sign.&f The reference clauses stay visible whenever somebody begins a sentence with 'technically'.",
         "",
         "&6Starter nudge:&f one Compass and eight Torches. Enough to leave spawn with a plan; not enough to delete the opening game."
     ), "minecraft:writable_book", 0, 3.8, [ck(ch, 8, "Sign the Island Charter")], rewards=[
-        paper_reward(ch, 1, "Field Charter", "Field Charter — Season One", "gold", "Signed before choosing a banner; prestige, not power.", {"document": "island_charter"}, team=False),
         plain_reward(ch, 2, "Personal Compass", "minecraft:compass", 1, team=False),
         plain_reward(ch, 3, "Eight Travel Torches", "minecraft:torch", 8, team=False),
+        plain_reward(ch, 4, "Two Arcane Essence", "irons_spellbooks:arcane_essence", 2, team=False),
     ], dependencies=[root], shape="hexagon", size=2.0, hide_until_deps_complete=True))
     c.chapters.append(Chapter(ch, "vvh_00_island_charter", "VvH 00 · The Island Charter", "minecraft:writable_book", 0, qs, chapter_images(
         "poiesis:textures/questpics/vvh/season_one_crest.png", "vampirism:textures/item/vampire_fang.png", "minecraft:textures/item/lantern.png"
@@ -266,7 +272,8 @@ def build_campaign() -> Campaign:
         "",
         "&8Please file all immortality paperwork before sunrise."
     ), "vampirism:vampire_fang", -5.0, -0.8, [adv_task(ch, 21, "Become a Vampire", "vampirism:vampire/become_vampire"), ck(ch, 22, "Our Current Allegiance and FTB Team Are Clear")], dependencies=[aroot], rewards=[
-        paper_reward(ch, 23, "Crimson Invitation", "Crimson Invitation", "dark_red", "A record of joining the House of Night; not proof of current faction state.", {"allegiance": "vampire"}, team=False)
+        plain_reward(ch, 23, "Two Blood Bottles", "vampirism:blood_bottle", 2, team=False),
+        plain_reward(ch, 24, "One Blood Rune", "irons_spellbooks:blood_rune", 1, team=False),
     ], shape="heart", size=1.45))
     qs.append(Quest(qid(ch, 3), "&b&lTAKE THE LANTERN OATH", "Become a Hunter, then register the choice socially.", lines(
         "vampirism:textures/item/garlic.png", "&b&lTHE LANTERN ORDER",
@@ -276,7 +283,8 @@ def build_campaign() -> Campaign:
         "",
         "&8The official uniform is 'prepared'. The cape remains under committee review."
     ), "vampirism:garlic", 0, 0.6, [adv_task(ch, 31, "Become a Hunter", "vampirism:hunter/become_hunter"), ck(ch, 32, "Our Current Allegiance and FTB Team Are Clear")], dependencies=[aroot], rewards=[
-        paper_reward(ch, 33, "Lantern Oath", "Lantern Oath", "aqua", "A record of joining the Lantern Order; not proof of current faction state.", {"allegiance": "hunter"}, team=False)
+        plain_reward(ch, 33, "Four Garlic Field Supplies", "vampirism:garlic", 4, team=False),
+        plain_reward(ch, 34, "One Holy Rune", "irons_spellbooks:holy_rune", 1, team=False),
     ], shape="diamond", size=1.45))
     qs.append(Quest(qid(ch, 4), "&a&lSIGN THE FREE COMPANY REGISTER", "Stay neutral on purpose, not by forgetting to choose.", lines(
         "minecraft:textures/item/filled_map.png", "&a&lTHE FREE COMPANIES",
@@ -286,15 +294,16 @@ def build_campaign() -> Campaign:
         "",
         "&8Somebody has to invoice the supernatural."
     ), "minecraft:filled_map", 5.0, -0.8, [ck(ch, 41, "I Registered a Neutral Service With Another Player")], dependencies=[aroot], rewards=[
-        paper_reward(ch, 43, "Free Company Writ", "Free Company Writ", "green", "A licence to be useful without wearing either faction's problems.", {"allegiance": "neutral"}, team=False)
+        plain_reward(ch, 43, "Four Emerald Service Tokens", "minecraft:emerald", 4, team=False),
+        plain_reward(ch, 44, "One Arcane Rune", "irons_spellbooks:arcane_rune", 1, team=False),
     ], shape="square", size=1.45))
     qs.append(Quest(qid(ch, 5), "&eCHOOSE YOUR PERSONAL TRADE LENS", "Faction answers who you stand with; this answers how you help.", lines(
         "minecraft:textures/item/spyglass.png", "&e&lONE ROLE, ZERO CLASS LOCKS",
-        "&fClaim one cosmetic Trade Lens: Builder, Engineer, Pathfinder, Keeper, Arcanist, or Archivist. It grants no stats and does not restrict later quests.",
+        "&fClaim one Trade Lens: Builder, Engineer, Pathfinder, Keeper, Arcanist, or Archivist. Each is a named utility item that hints at a way to help; no later door closes.",
         "",
         "&7The purpose is social legibility. When a project stalls, people should have a rough idea who enjoys fixing which kind of problem.",
         "",
-        "&8Multiclassing is permitted because this is literally paper."
+        "&8Choose a lens for this season; the road remains open to every other craft."
     ), "minecraft:spyglass", 0, 4.4, [ck(ch, 51, "I Know What Kind of Work I Want First")], rewards=[choice_reward(ch, 52, "Choose a Personal Trade Lens", ROLE_TABLE)], dependencies=[aroot], optional=True, shape="octagon", size=1.35))
     c.chapters.append(Chapter(ch, "vvh_01_three_invitations", "VvH 01 · Three Invitations", "minecraft:compass", 1, qs, chapter_images(
         "vampirism:textures/item/vampire_fang.png", "vampirism:textures/item/garlic.png", "minecraft:textures/item/filled_map.png"
@@ -303,37 +312,76 @@ def build_campaign() -> Campaign:
     # Helper for the parallel foundations.
     def foundation_chapter(ch: int, filename: str, title: str, chapter_icon: str, root_title: str, root_subtitle: str, root_icon: str,
                            root_tasks: list[Task], faction_color: str, projects: list[tuple[int, str, str, str, list[Task], list[str]]],
-                           final_title: str, final_name: str, final_lore: str, final_data: dict[str, Any], images: tuple[str, ...]) -> Chapter:
+                           progression_numbers: set[int], final_title: str, final_name: str, final_lore: str, final_data: dict[str, Any], images: tuple[str, ...]) -> Chapter:
         qs2: list[Quest] = []
         r0 = qid(ch, 1)
         qs2.append(Quest(r0, root_title, root_subtitle, lines(
-            images[0], f"{faction_color}&lFOUNDATION WORK, NOT A TECH TREE",
-            "&fComplete any &e5 of 7&f foundation works. Every option leaves a useful place, supply, route, or institution behind; none exists merely to make an inventory number go up.",
+            images[0], f"{faction_color}&lFOUNDATION WORK, THEN CONSEQUENCES",
+            "&fThere are two lanes: &eProgression&f assembles equipment, workstations, and magic; &aWorld Build&f leaves a place, route, refuge, or public service behind.",
+            "&fComplete any &e5 of 8&f works. Name one craft and one place in the final charter so the faction grows in both capability and reach.",
             "",
             "&eShared-cache rule:&f before claiming the foundation cache, one teammate or the host confirms the FTB team presently represents this faction/company.",
             "&fHistorical allegiance achievements do not entitle a switched team to duplicate supplies.",
             "",
             "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it.",
         ), root_icon, 0, -5, root_tasks, shape="hexagon", size=1.7))
+        progression_lane = qid(ch, 12)
+        world_lane = qid(ch, 13)
+        qs2.append(Quest(progression_lane, "&e&lPROGRESSION LANE", "Choose the first capability this faction will teach.", lines(
+            images[1], "&e&lASSEMBLE THE THINGS THAT CHANGE WHAT YOU CAN DO",
+            "&fThis lane covers tools, workstations, faction supplies, and Iron's Spells materials.",
+            "&fChoose the craft that will open a useful capability for the people who live here.",
+        ), "irons_spellbooks:arcane_essence", -4.0, -3.2, [ck(ch, 121, "Name the First Progression Work")], dependencies=[r0], shape="gear", size=1.15))
+        qs2.append(Quest(world_lane, "&a&lWORLD-BUILDING LANE", "Choose the first public place this faction will maintain.", lines(
+            images[2], "&a&lBUILD SOMETHING OTHER PEOPLE CAN USE",
+            "&fThis lane covers headquarters, public defenses, routes, refuges, storage, workshops, and hospitality.",
+            "&fA build passes when another player can understand its purpose and use it without the owner standing beside it.",
+        ), "minecraft:lantern", 7.0, -1.8, [ck(ch, 131, "Name the First World-Build Work")], dependencies=[r0], shape="square", size=1.15))
         pids = []
-        xs = [-6.0, -4.0, -2.0, 0.0, 2.0, 4.0, 6.0]
-        ys = [-1.4, 0.2, -0.7, 0.8, -0.7, 0.2, -1.4]
-        shapes = ["square", "diamond", "gear", "heart", "gear", "diamond", "square"]
+        # Keep the two lanes spatially legible: progression occupies the left
+        # half and world-building the right half. This also prevents header
+        # dependency lines from weaving through the other lane.
+        progression_xs = [-7.0, -5.0, -3.0, -1.0]
+        world_xs = [1.0, 3.0, 5.0, 7.0, 9.0, 11.0, 13.0]
+        progression_index = 0
+        world_index = 0
+        shapes = ["square", "diamond", "gear", "heart", "gear", "diamond", "square", "octagon"]
         for idx, (n, qt, sub, icon, tasks, body) in enumerate(projects):
             pid = qid(ch, n); pids.append(pid)
-            qs2.append(Quest(pid, qt, sub, lines(images[min(idx + 1, len(images)-1)], f"{faction_color}&lFOUNDATION WORK {idx + 1}", *body), icon, xs[idx], ys[idx], tasks, dependencies=[r0], shape=shapes[idx], size=1.25))
+            is_progression = n in progression_numbers
+            lane_color = "&e" if is_progression else "&a"
+            lane_title = "PROGRESSION" if is_progression else "WORLD BUILD"
+            lane_dependency = progression_lane if is_progression else world_lane
+            clean_title = re.sub(r"^&[0-9a-fk-or]", "", qt, count=1, flags=re.I)
+            x = (progression_xs[progression_index] if is_progression else world_xs[world_index])
+            y = -0.2 if is_progression else 0.8
+            progression_index += int(is_progression)
+            world_index += int(not is_progression)
+            clean_subtitle = re.sub(r"^(?:Progression|World Build)\s*·\s*", "", sub, count=1, flags=re.I)
+            qs2.append(Quest(pid, f"{lane_color}&l{lane_title} · {clean_title}", f"{lane_title.title()} · {clean_subtitle}", lines(
+                images[min(idx + 1, len(images)-1)], f"{lane_color}&l{lane_title} · WORK {idx + 1}", *body
+            ), icon, x, y, tasks, dependencies=[lane_dependency], shape=shapes[idx], size=1.25))
         final = qid(ch, 10)
+        school_reward = {
+            "&4": ("irons_spellbooks:blood_rune", 2, "Two Blood Runes"),
+            "&b": ("irons_spellbooks:holy_rune", 2, "Two Holy Runes"),
+            "&a": ("irons_spellbooks:arcane_essence", 8, "Eight Arcane Essence"),
+        }[faction_color]
         qs2.append(Quest(final, final_title, "Five useful works become a home people can actually rely on.", lines(
             images[0], f"{faction_color}&lA PLACE WITH OBLIGATIONS",
-            "&fFinish any five foundation works, then click the review task after the team confirms the current allegiance/company identity, names the headquarters, and records one maintenance owner or rotation.",
+            "&fFinish any five works, including at least one named progression work and one named world-building work. Then record the headquarters and one maintenance owner or rotation.",
             "",
-            "&eReward philosophy:&f each foundation gets the same horizontal construction cache: scaffolding and Super Glue. Faction flavor lives in what you built, not in getting a numerically better loot table.",
+            "&eThe cache has two useful halves:&f public construction stock plus a modest school-support supply. Blood, Holy, and neutral magic remain usable by anyone; the route changes the story around them.",
             "",
-            "&7The keepsake is historical. Switching later does not make it a coupon."
-        ), chapter_icon, 0, 4.6, [ck(ch, 101, "Current Identity Confirmed; Headquarters Named; Maintenance Owner Recorded")], rewards=[
-            paper_reward(ch, 102, "Foundation Charter", final_name, "dark_red" if faction_color == "&4" else ("aqua" if faction_color == "&b" else "green"), final_lore, final_data, team=True),
+            "&7The structure is the keepsake. The supplies are for the next useful room."
+        ), chapter_icon, 0, 4.6, [
+            ck(ch, 101, "A Progression Work and a World-Build Work Are Named"),
+            ck(ch, 102, "Headquarters Named; Maintenance Owner Recorded"),
+        ], rewards=[
             plain_reward(ch, 103, "Thirty-Two Scaffolding", "minecraft:scaffolding", 32, team=True),
             plain_reward(ch, 104, "Four Super Glue", "create:super_glue", 4, team=True),
+            plain_reward(ch, 105, school_reward[2], school_reward[0], school_reward[1], team=True),
+            choice_reward(ch, 106, "Choose One Practical Contribution Favor", TRADE_TABLE, team=True),
         ], dependencies=pids, min_required_dependencies=5, shape="hexagon", size=2.0, hide_until_deps_complete=True))
         return Chapter(ch, filename, title, chapter_icon, ch - 0x10, qs2, chapter_images(*images))
 
@@ -350,11 +398,12 @@ def build_campaign() -> Campaign:
             "&8Ancient evil remains subject to fire code."
         ]),
         (4, "&4STOCK A BLOOD PANTRY", "A faction resource should have a home before it becomes chest soup.", "vampirism:blood_bottle", [item_task(ch, 41, "Carry 4 Blood Bottles", "vampirism:blood_bottle", 4), ck(ch, 42, "REVIEW: A Labelled Shared Blood Pantry Exists")], [
-            "&fCarry four Blood Bottles and establish a labelled shared pantry or processing corner. Do not consume the bottles for the quest; the task checks possession only.",
+            "&fCarry four Blood Bottles and establish a labelled shared pantry or processing corner. Leave a restock rule where the next visitor can find it.",
             "&fLeave a written restock rule so a late player knows whether supplies are communal, reserved, or trade stock."
         ]),
-        (5, "&4OPEN THE NIGHT KITCHEN", "Hospitality is faction infrastructure too.", "vampiresdelight:blood_pie", [item_task(ch, 51, "Carry a Blood Pie", "vampiresdelight:blood_pie"), ck(ch, 52, "REVIEW: The Night Kitchen Can Host a Visitor")], [
-            "&fUse Vampire's Delight or ordinary food infrastructure to make a small kitchen/serving area. Carry one Blood Pie as proof you touched the pack's vampire-food loop.",
+        (5, "&4OPEN THE NIGHT KITCHEN", "Hospitality is faction infrastructure too.", "vampiresdelight:blood_wine_bottle", [item_task(ch, 51, "Carry a Blood Wine Bottle", "vampiresdelight:blood_wine_bottle"), ck(ch, 52, "REVIEW: The Night Kitchen Can Host a Visitor")], [
+            "&fUse Vampire's Delight or ordinary serving infrastructure to make a small night kitchen, bar, or guest table.",
+            "&fCarry one Blood Wine Bottle as proof the room can host the House's traditions without requiring a cooking project.",
             "&fThe room passes when a guest can arrive, understand what is communal, and leave without raiding a progression chest."
         ]),
         (6, "&4MARK A SAFE NIGHT ROUTE", "The House should improve travel, not merely occupy a basement.", "minecraft:lantern", [ck(ch, 61, "REVIEW: A Signed Night Route Connects Two Useful Places")], [
@@ -362,18 +411,22 @@ def build_campaign() -> Campaign:
             "&7A route is infrastructure when somebody else can follow it alone."
         ]),
         (7, "&4HOST A BLOODLESS VISIT", "Show that faction identity can create a scene without creating a corpse.", "vampiresdelight:spirit_lantern", [ck(ch, 71, "Two Players Visited the House for a Tour, Meal, Trade, or Ceremony")], [
-            "&fInvite at least one player who is not required to be a Vampire. Give them a tour, meal, trade, ceremony, archive reading, or ridiculous local custom.",
-            "&fNo PvP or feeding is required. The social event itself is the objective."
+            "&fInvite at least one player who is not a Vampire. Give them a tour, meal, trade, ceremony, archive reading, or ridiculous local custom. If nobody is online, leave a signed guestbook/map tour for the next visitor.",
+            "&fLeave the House with one shared story worth carrying to the next table."
         ]),
-        (8, "&4INSTALL ONE USEFUL MACHINE", "Immortality still benefits from logistics.", "create:mechanical_press", [item_task(ch, 81, "Carry a Mechanical Press", "create:mechanical_press"), ck(ch, 82, "REVIEW: The Machine Serves a Shared Function")], [
-            "&fBuild or adopt one Create machine that solves a real shared problem: processing, doors, storage movement, kitchen support, transport loading, or spectacle with an actual use.",
-            "&fCarry a Mechanical Press as a modest objective proof; the reviewed machine itself may use any appropriate Create components."
+        (8, "&4CONNECT THE NIGHT LOGISTICS", "Immortality still benefits from logistics.", "create:mechanical_press", [item_task(ch, 81, "Carry a Mechanical Press", "create:mechanical_press"), ck(ch, 82, "REVIEW: The Machine Serves a Shared House Function")], [
+            "&fBuild or adopt one Create system that moves supplies for the House: pantry restock, serving stock, route loading, doors, storage movement, or a public workshop service.",
+            "&fThe Mechanical Press is only the proof of contact; the reviewed logistics line is the actual work."
+        ]),
+        (9, "&4INSCRIBE THE BLOOD SCHOOL", "Progression · give the House a controlled ritual vocabulary.", "irons_spellbooks:blood_rune", [item_task(ch, 91, "Carry a Blood Rune", "irons_spellbooks:blood_rune"), item_task(ch, 92, "Carry a Bloody Vellum", "irons_spellbooks:bloody_vellum"), ck(ch, 93, "REVIEW: A Blood Focus Is Stored and Explainable")], [
+            "&fPrepare a small Blood-school kit: a Blood Rune plus Bloody Vellum, Blood Vial, Blood Staff, or Blood Affinity Ring. Store it in a labelled place and explain one safe use to another player.",
+            "&fThe House studies blood as memory and inheritance; keep the first rite small enough to teach safely."
         ]),
     ]
     c.chapters.append(foundation_chapter(ch, "vvh_02_house_of_night", "VvH 02 · House of Night", "vampirism:vampire_fang", "&4&lFOUND THE HOUSE OF NIGHT", "Real vampire progression, followed by civic consequences.", "vampirism:vampire_fang",
-        [adv_task(ch, 11, "At Least One Teammate Has Become a Vampire", "vampirism:vampire/become_vampire"), ck(ch, 12, "Current Vampire Alignment Confirmed for This FTB Team")], "&4", vampire_projects,
+        [adv_task(ch, 11, "At Least One Teammate Has Become a Vampire", "vampirism:vampire/become_vampire"), ck(ch, 12, "Current Vampire Alignment Confirmed for This FTB Team")], "&4", vampire_projects, {3, 8, 9},
         "&4&lCHARTER THE HOUSE OF NIGHT", "Charter of the House of Night", "Five works turned supernatural progression into a place with obligations.", {"foundation": "vampire"},
-        ("vampirism:textures/item/vampire_fang.png", "vampirism:textures/item/vampire_fang.png", "minecraft:textures/item/lantern.png", "minecraft:textures/item/writable_book.png")))
+        ("poiesis:textures/questpics/vvh/house_of_night.png", "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png", "poiesis:textures/questpics/vvh/blood_ritual_workstation.png", "poiesis:textures/questpics/vvh/blood_school_crest.png", "irons_spellbooks:textures/item/blood_rune.png", "irons_spellbooks:textures/item/blood_staff.png", "irons_spellbooks:textures/item/blood_vial.png")))
 
     # 03 — Hunter foundation.
     ch = 0x13
@@ -388,44 +441,51 @@ def build_campaign() -> Campaign:
         ]),
         (4, "&bKEEP THE GARLIC RESERVE", "Preparedness is funnier when it has labels.", "vampirism:garlic", [item_task(ch, 41, "Carry 8 Garlic", "vampirism:garlic", 8), ck(ch, 42, "REVIEW: A Labelled Shared Garlic/Field-Supply Reserve Exists")], [
             "&fCarry eight Garlic and establish a labelled field-supply reserve. It can also contain food, maps, lanterns, spare tools, or first-response supplies.",
-            "&fDo not consume the Garlic for the quest. The point is a maintained shared reserve."
+            "&fKeep a written restock rule beside the reserve so the next patrol can draw from it."
         ]),
         (5, "&bASSEMBLE A STAKE DRILL KIT", "Tools become culture when people know the safety rules.", "vampirism:stake", [item_task(ch, 51, "Carry 4 Stakes", "vampirism:stake", 4), ck(ch, 52, "REVIEW: A Safe Training/Equipment Area Exists")], [
             "&fCarry four Stakes and make a tiny training or equipment area. It may be ceremonial or practical, but it needs a clear rule against using faction equipment as an excuse to harass unwilling players.",
-            "&7The quest does not require the hidden stake-kill advancement. Violence remains optional."
+            "&7Practice with restraint; the Order protects people before it hunts anything."
         ]),
         (6, "&bOPEN THE ALCHEMICAL BENCH", "Make countermeasure tech legible to the team.", "vampirism:alchemical_cauldron", [item_task(ch, 61, "Carry an Alchemical Cauldron", "vampirism:alchemical_cauldron"), ck(ch, 62, "REVIEW: The Cauldron Has a Safe Shared Work Area")], [
             "&fObtain an Alchemical Cauldron and install it with labelled ingredient/storage space. The station should be usable without blocking a hallway or setting the meeting room on fire.",
             "&8Chemistry is just potion-making wearing safety goggles."
         ]),
         (7, "&bLIGHT A REFUGE ROUTE", "A Hunter faction earns trust by making retreat possible.", "minecraft:lantern", [ck(ch, 71, "REVIEW: A Signed, Lit Refuge Route Connects Two Useful Places")], [
-            "&fCreate or adopt a readable route between the Order and one public destination. Mark turns, major hazards, and a safe fallback point rather than carpeting the island with torch spam.",
+            "&fCreate or adopt a readable refuge route between the Order and one public destination. Mark turns, hazards, and a safe fallback point.",
+            "&fAn existing route may be upgraded instead of rebuilt; do not carpet the island with torch spam.",
             "&fA player unfamiliar with the route should be able to use it without voice chat."
         ]),
-        (8, "&bRUN ONE CIVILIAN SAFETY DRILL", "Preparation without a victim.", "minecraft:shield", [ck(ch, 81, "At Least Two Players Completed a Safety/Rescue Drill")], [
+        (8, "&bRUN ONE CIVILIAN SAFETY DRILL", "Preparation without a victim.", "minecraft:shield", [ck(ch, 81, "A Safety/Rescue Drill or Solo Route Audit Was Reviewed")], [
             "&fRun a short drill with another player: night escort, lost-player retrieval, route evacuation, Hordes shelter test, equipment demo, or emergency supply run.",
+            "&fIf nobody is online, perform the route alone and record one failure you corrected.",
             "&fNo combat is necessary. The output is one improvement to the route, instructions, or supplies discovered by the drill."
+        ]),
+        (9, "&bPREPARE THE HOLY WARD", "Turn protection into a practiced public service.", "irons_spellbooks:holy_rune", [item_task(ch, 91, "Carry a Holy Rune", "irons_spellbooks:holy_rune"), ck(ch, 92, "REVIEW: A Holy Ward Is Installed and Its Use Is Explained")], [
+            "&fPrepare a Holy-school kit around a Holy Rune. A Priest Chestplate, Holy Water, Holy Upgrade Orb, or Holy Affinity Ring may decorate the station, but the ward itself is the required work.",
+            "&fHoly magic is stewardship, cleansing, and refuge. No vampire target, kill, or faction lock is required."
         ]),
     ]
     c.chapters.append(foundation_chapter(ch, "vvh_03_lantern_order", "VvH 03 · Lantern Order", "vampirism:garlic", "&b&lFOUND THE LANTERN ORDER", "Real hunter progression, followed by public responsibility.", "vampirism:garlic",
-        [adv_task(ch, 11, "At Least One Teammate Has Become a Hunter", "vampirism:hunter/become_hunter"), ck(ch, 12, "Current Hunter Alignment Confirmed for This FTB Team")], "&b", hunter_projects,
+        [adv_task(ch, 11, "At Least One Teammate Has Become a Hunter", "vampirism:hunter/become_hunter"), ck(ch, 12, "Current Hunter Alignment Confirmed for This FTB Team")], "&b", hunter_projects, {3, 5, 6, 9},
         "&b&lCHARTER THE LANTERN ORDER", "Charter of the Lantern Order", "Five works turned vigilance into public service instead of an arms race.", {"foundation": "hunter"},
-        ("vampirism:textures/item/garlic.png", "vampirism:textures/item/garlic.png", "minecraft:textures/item/lantern.png", "minecraft:textures/item/writable_book.png")))
+        ("poiesis:textures/questpics/vvh/lantern_order.png", "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png", "poiesis:textures/questpics/vvh/holy_public_ward.png", "poiesis:textures/questpics/vvh/holy_school_crest.png", "irons_spellbooks:textures/item/holy_rune.png", "irons_spellbooks:textures/item/priest_chestplate.png", "irons_spellbooks:textures/item/upgrade_orb_holy.png")))
 
-    # 04 — Neutral foundation. Same five-of-seven workload, no supernatural tax.
+    # 04 — Neutral foundation. Same five-of-eight workload, no supernatural tax.
     ch = 0x14
     neutral_projects = [
         (2, "&aOPEN A CONTRACT BOARD", "REVIEW · one visible place where people can ask for help.", "minecraft:writable_book", [ck(ch, 21, "REVIEW: A Public Contract Board Has At Least 3 Clear Job Types")], [
             "&fBuild a board, desk, book, or mailbox where players can request services. Include at least three examples such as courier, mapping, construction, mediation, rescue, market procurement, escort, or event staffing.",
             "&fPrices may be items, favors, Bevels, or negotiated nonsense. Terms must be understandable before acceptance."
         ]),
-        (3, "&aMARK A COURIER ROUTE", "REVIEW · turn a trip into shared knowledge.", "minecraft:filled_map", [item_task(ch, 31, "Carry a Filled Map", "minecraft:filled_map"), ck(ch, 32, "REVIEW: A Named Courier Route Connects Two Useful Places")], [
-            "&fCarry a Filled Map and publish one named route between useful locations. Include at least one navigation aid: signs, map markers, road, landmark, or written directions.",
+        (3, "&aMARK A NEUTRAL COURIER ROUTE", "REVIEW · turn a trip into shared knowledge.", "minecraft:filled_map", [item_task(ch, 31, "Carry a Filled Map", "minecraft:filled_map"), ck(ch, 32, "REVIEW: A Named Courier Route Connects Two Useful Places")], [
+            "&fCarry a Filled Map and publish one named route between a neutral office and a useful destination.",
+            "&fInclude signs, map markers, a road, landmark, or written directions. A later Pathfinder route must reach somewhere new.",
             "&7Fast travel is optional; shared knowledge is the actual infrastructure."
         ]),
         (4, "&aESTABLISH A MARKET STALL", "REVIEW · trade should create meetings, not spreadsheets.", "minecraft:emerald", [ck(ch, 41, "REVIEW: A Stall or Counter Lists Goods/Services and Contact Terms")], [
             "&fCreate a market stall, exchange counter, or service desk with a visible offer. At least one trade should be useful to both factions or to a late joiner.",
-            "&fDo not design a closed-loop arbitrage machine around quest rewards."
+            "&fLet every offer trade time or materials for something the island actually needs."
         ]),
         (5, "&aMAKE A GUESTHOUSE OR WAYSTATION", "REVIEW · neutrality should be somewhere people can meet.", "minecraft:white_bed", [ck(ch, 51, "REVIEW: A Neutral Guest/Meeting Space Can Host 2 Players")], [
             "&fBuild a small guesthouse, embassy room, tavern corner, or waystation with seating/sleeping, food access, and a clearly neutral meeting area.",
@@ -439,15 +499,21 @@ def build_campaign() -> Campaign:
             "&fUse Minecraft Comes Alive / Capitals, when available in the current world, to create one named civic connection: village liaison, household, public role, settlement story, ceremony, or negotiated relationship.",
             "&fIf world conditions make MCA unavailable, the host may approve an equivalent player-run civic role instead."
         ]),
-        (8, "&aRUN A MEDIATION OR RESCUE", "Solve one problem nobody owns by default.", "minecraft:recovery_compass", [ck(ch, 81, "Another Player Confirms the Mediation, Rescue, or Logistics Help")], [
-            "&fHelp resolve one real cross-player problem: lost gear retrieval, route confusion, disputed trade, transport failure, event scheduling, missing supplies, or a faction misunderstanding.",
-            "&fThe other player confirms completion. Manufactured arguments do not count; please do not optimize bureaucracy."
+        (8, "&aRUN A MEDIATION OR RESCUE", "Solve one problem nobody owns by default.", "minecraft:recovery_compass", [ck(ch, 81, "A Posted Service Request Was Resolved or Reviewed")], [
+            "&fResolve one request posted on the contract board: lost gear, route confusion, disputed trade, transport failure, scheduling, supplies, or a faction misunderstanding.",
+            "&fIf no request exists, publish and solve a small logistics ticket.",
+            "&fThe requester or host confirms completion; the result should leave a route, agreement, or supply fix behind."
+        ]),
+        (9, "&aOPEN THE SPELL TRANSLATION DESK", "Progression · make limited Blood and Holy utility legible to everyone.", "irons_spellbooks:arcane_rune", [item_task(ch, 91, "Carry Four Arcane Essence", "irons_spellbooks:arcane_essence", 4), ck(ch, 92, "REVIEW: One Safe Blood or Holy Utility Is Documented")], [
+            "&fSet up a neutral desk, shelf, or archive that explains one safe Blood or Holy utility spell, rune, vial, ward, or support item.",
+            "&fA player from either faction may supply the example; the Free Company translates it into a route, contract, or emergency procedure.",
+            "&fNeutrals may borrow both traditions without claiming either faction's strongest rites."
         ]),
     ]
     c.chapters.append(foundation_chapter(ch, "vvh_04_free_companies", "VvH 04 · Free Companies", "minecraft:filled_map", "&a&lFOUND A FREE COMPANY", "Neutrality becomes valuable when it has services, routes, and a place to meet.", "minecraft:filled_map",
-        [ck(ch, 11, "Current Neutral/Independent Status Confirmed With Another Player")], "&a", neutral_projects,
+        [ck(ch, 11, "Current Neutral/Independent Status Confirmed With Another Player")], "&a", neutral_projects, {9},
         "&a&lCHARTER THE FREE COMPANY", "Free Company Charter", "Five works made neutrality a service network rather than an absence of faction content.", {"foundation": "neutral"},
-        ("poiesis:textures/questpics/vvh/free_company_writ.png", "minecraft:textures/item/writable_book.png", "minecraft:textures/item/filled_map.png", "minecraft:textures/item/lantern.png")))
+        ("poiesis:textures/questpics/vvh/free_company_writ.png", "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png", "poiesis:textures/questpics/vvh/spell_translation_desk.png", "poiesis:textures/questpics/vvh/mediator_hybrid_crest.png", "irons_spellbooks:textures/item/arcane_rune.png", "irons_spellbooks:textures/item/affinity_ring_blood.png", "irons_spellbooks:textures/item/affinity_ring_holy.png")))
 
     vampire_final = qid(0x12, 10)
     hunter_final = qid(0x13, 10)
@@ -459,20 +525,20 @@ def build_campaign() -> Campaign:
     croot = qid(ch, 1)
     qs.append(Quest(croot, "&6&lTHE WORK EACH HAND KNOWS", "Complete any three routes. Let somebody else be good at the other five.", lines(
         "minecraft:textures/item/writable_book.png", "&6&lSPECIALIZATION WITHOUT HOMEWORK",
-        "&fAfter any one foundation is established, complete any &e3 of 8&f contribution routes. They overlap ordinary play and are designed so a Neutral, Vampire, or Hunter can finish the chapter without changing faction.",
+        "&fAfter any one foundation is established, complete any &e3 of 8&f contribution routes. These routes cross faction lines; choose the work that fits your hands this week.",
         "",
         "&7A route passes when it leaves behind something reusable: a machine, service, guide, relationship, supply system, route, or documented technique. Pure inventory flexing is not a contribution.",
         "",
         "&8The Atlas has discovered comparative advantage and is being unbearable about it."
     ), "minecraft:crafting_table", 0, -5, [ck(ch, 1, "Read the Eight Contribution Routes")], dependencies=[vampire_final, hunter_final, neutral_final], min_required_dependencies=1, shape="hexagon", size=1.7))
     route_specs = [
-        (2, "&6ENGINEER — MAKE MOTION USEFUL", "create:mechanical_press", [item_task(ch, 21, "Carry 8 Andesite Alloy", "create:andesite_alloy", 8), ck(ch, 22, "REVIEW: A Create System Solves a Shared Problem")], ["&fCarry eight Andesite Alloy, then build or improve a Create system used by at least one other player.", "&fGood outputs include processing, loading, doors, elevators, workshop tooling, kitchen support, or moving spectacle that actually moves something useful."]),
-        (3, "&dARCANIST — MAKE MAGIC TEACHABLE", "irons_spellbooks:arcane_essence", [item_task(ch, 31, "Carry 8 Arcane Essence", "irons_spellbooks:arcane_essence", 8), ck(ch, 32, "REVIEW: A Spell/Ingredient/Upgrade Tip Is Published")], ["&fCarry eight Arcane Essence and publish one practical Iron's Spells guide, labelled station, sample kit, or demonstration another player can reproduce.", "&fThe quest rewards teaching the system, not owning the rarest spell."]),
+        (2, "&6ENGINEER — MAKE A SHARED SERVICE", "create:mechanical_press", [item_task(ch, 21, "Carry 4 Andesite Alloy", "create:andesite_alloy", 4), ck(ch, 22, "REVIEW: A Create Service Solves a Shared Problem")], ["&fCarry four Andesite Alloy, then build or improve one Create service used by at least one other player.", "&fGood outputs include processing, loading, doors, elevators, workshop tooling, or a reliable moving system. The faction machine routes cover local logistics; this one serves the wider island."]),
+        (3, "&dARCANIST — MAKE MAGIC TEACHABLE", "irons_spellbooks:arcane_essence", [item_task(ch, 31, "Carry 4 Arcane Essence", "irons_spellbooks:arcane_essence", 4), ck(ch, 32, "REVIEW: A Spell/Ingredient/Upgrade Tip Is Published")], ["&fCarry four Arcane Essence and publish one practical Iron's Spells guide, labelled station, sample kit, or demonstration another player can reproduce.", "&fThe useful part is a method another player can repeat, not the rarest spell."]),
         (4, "&4FACTION SPECIALIST — TRANSLATE THE SUPERNATURAL", "vampirism:vampire_fang", [ck(ch, 41, "REVIEW: I Taught or Documented One Vampirism Mechanic for Someone Else")], ["&fDocument or demonstrate one useful Vampirism mechanic, progression dependency, faction-specific workstation, safe countermeasure, or Vampire's Delight recipe.", "&fA Neutral may complete this by interviewing/observing a faction player and publishing the result. No faction conversion is required."]),
-        (5, "&bAERONAUT — BUILD TOWARD A VEHICLE", "createpropulsion:wing", [item_task(ch, 51, "Carry a Propulsion Wing", "createpropulsion:wing"), ck(ch, 52, "REVIEW: A Vehicle/Airframe Test or Dock Improvement Was Documented")], ["&fCarry one Create Propulsion Wing and contribute to an airframe, vehicle, dock, hangar, test stand, or transport prototype.", "&fThe machine does not have to be a finished airship. A documented test that prevents the next person from repeating your crash counts."]),
+        (5, "&bAERONAUT — PREPARE A VEHICLE SITE", "createpropulsion:wing", [ck(ch, 51, "REVIEW: A Vehicle/Airframe Test or Dock Improvement Was Documented")], ["&fContribute to an airframe site, vehicle dock, hangar, test stand, landing marker, or transport prototype. A Propulsion Wing is an optional stretch goal, not the entry ticket.", "&fThe machine does not have to be a finished airship. A documented test that prevents the next person from repeating your crash counts."]),
         (6, "&aDIPLOMAT — MAKE A RELATIONSHIP LEGIBLE", "minecraft:bell", [ck(ch, 61, "Another Player Confirms a Trade, MCA, Faction, or Civic Agreement")], ["&fCreate or clarify one real agreement: trade terms, MCA/civic relationship, faction access rule, public-project ownership, event schedule, or dispute resolution.", "&fWrite the result somewhere participants can find later. Diplomacy without a record is just vibes with a meeting time."]),
-        (7, "&eQUARTERMASTER — FEED A GROUP", "minecraft:bread", [ck(ch, 71, "REVIEW: A Shared Meal or Supply Station Served At Least 2 Players")], ["&fUse Farmer's Delight, Vampire's Delight, or ordinary food to run a shared meal, pantry, travel ration station, or event table for at least two players.", "&fVampire-specific and human-friendly options can coexist; the point is hospitality without forcing anybody's diet or faction."]),
-        (8, "&aPATHFINDER — TURN DISTANCE INTO A ROUTE", "naturescompass:naturescompass", [item_task(ch, 81, "Carry a Filled Map", "minecraft:filled_map"), ck(ch, 82, "REVIEW: A New Route/Map Is Usable Without Voice Chat")], ["&fCarry a Filled Map and publish a route to a biome, structure, settlement, public work, faction hall, or expedition point.", "&fInclude signs, landmarks, map notes, Via Romana roadwork, or written directions so another person can follow it alone."]),
+        (7, "&eQUARTERMASTER — STOCK A FIELD KIT", "minecraft:lantern", [ck(ch, 71, "REVIEW: A Shared Travel or Emergency Supply Station Served At Least 2 Players")], ["&fBuild or restock a shared field kit: lanterns, maps, spare tools, route markers, emergency blocks, or other supplies that make a trip easier for at least two players.", "&fFood may be present, but the route is about logistics rather than cooking."]),
+        (8, "&aPATHFINDER — MAP A NEW EXPEDITION", "naturescompass:naturescompass", [item_task(ch, 81, "Carry a Filled Map", "minecraft:filled_map"), ck(ch, 82, "REVIEW: A New Route/Map Is Usable Without Voice Chat")], ["&fCarry a Filled Map and publish a route to a destination not already covered by the faction or Free Company routes: a biome, structure, settlement, public work, or expedition point.", "&fInclude signs, landmarks, map notes, Via Romana roadwork, or written directions so another person can follow it alone."]),
         (9, "&fARCHIVIST — PRESERVE ONE FAILURE", "minecraft:writable_book", [ck(ch, 91, "REVIEW: A Failure, Fix, or Weird Event Was Archived With a Useful Lesson")], ["&fWrite down one failed machine, bad expedition, faction misunderstanding, Hordes incident, server bug workaround, or ridiculous accident and the lesson it produced.", "&fThe archive should save the next player time or make the story worth retelling. Ideally both."]),
     ]
     pids=[]; xs=[-6,-4.2,-2.2,0,2.2,4.2,6,0]; ys=[-1.2,0.6,-0.5,1.0,-0.5,0.6,-1.2,3.0]
@@ -482,7 +548,7 @@ def build_campaign() -> Campaign:
     contribution_final=qid(ch,10)
     qs.append(Quest(contribution_final,"&6&lTHREE HANDS' WORTH", "Choose one practical favor after contributing in three different ways.", lines(
         "minecraft:textures/item/writable_book.png", "&6&lBREADTH WITHOUT COMPLETIONISM",
-        "&fComplete any three contribution routes. You do not get a bonus for clearing all eight, because that would quietly turn choice into homework.",
+        "&fComplete any three contribution routes. Clearing all eight is welcome, but the season asks for breadth so another player can carry a different craft.",
         "",
         "&eClaim one practical favor:&f a small horizontal utility bundle. The strongest option shortens setup friction; none hands out faction rank, boss loot, rare gear, or a finished vehicle.",
         "",
@@ -492,37 +558,37 @@ def build_campaign() -> Campaign:
 
     # 06 — Public infrastructure.
     ch=0x16; qs=[]; iroot=qid(ch,1)
-    qs.append(Quest(iroot,"&6&lTHE ISLAND REMEMBERS", "Complete any four public works. Build history into the commute.", lines(
+    qs.append(Quest(iroot,"&6&lTHE ISLAND REMEMBERS", "Complete any three public works. Build history into the commute.", lines(
         "minecraft:textures/item/lantern.png", "&6&lPUBLIC WORKS ARE THE REAL ENDGAME",
-        "&fComplete any &e4 of 8&f projects. Each must be public or clearly shared, named, and maintainable. Projects may be new builds or substantial upgrades to something players already care about.",
+        "&fComplete any &e3 of 8&f projects. Each must be public or clearly shared, named, and maintainable. Projects may be new builds or substantial upgrades to something players already care about.",
         "",
-        "&7REVIEW uses function, access, safety, story, maintenance. A beautiful object nobody can use is art; good. It is simply not this particular quest.",
+        "&7REVIEW uses function, access, safety, story, and maintenance. Make beauty useful here: a public room should still welcome a stranger.",
         "",
         "&8The road to endgame is now literally a road."
     ),"minecraft:lantern",0,-5,[ck(ch,1,"Read the Public-Works Rubric")],dependencies=[contribution_final],shape="hexagon",size=1.7))
     infra=[
-        (2,"&eROAD OR WAYFINDING SPINE","minecraft:rail",[ck(ch,21,"REVIEW: A Named Route Links 3 Useful Places")],["&fCreate or upgrade a road, rail, path, sign system, or Via Romana route linking at least three useful locations.","&fIt needs readable navigation and a maintenance owner or faction/company responsibility."]),
-        (3,"&6MARKET AND CONTRACT HALL","minecraft:emerald",[ck(ch,31,"REVIEW: A Public Market/Contract Space Has At Least 3 Active Uses")],["&fBuild or improve a public market with at least three useful offers, contract categories, or service desks.","&fInclude neutral access and clear rules for faction goods rather than creating a private chest mall with a dramatic roof."]),
+        (2,"&eROAD OR WAYFINDING SPINE","minecraft:rail",[ck(ch,21,"REVIEW: A Named Route Links 2 Useful Places")],["&fCreate or upgrade a road, rail, path, sign system, or Via Romana route linking at least two useful locations. Existing faction/courier routes may be upgraded into the public spine.","&fIt needs readable navigation and a maintenance owner or faction/company responsibility."]),
+        (3,"&6MARKET AND CONTRACT HALL","minecraft:emerald",[ck(ch,31,"REVIEW: A Public Market/Contract Space Has At Least 3 Active Uses")],["&fUpgrade a starter stall or contract board into a public market with at least three useful offers, contract categories, or service desks.","&fInclude neutral access and clear rules for faction goods rather than creating a private chest mall with a dramatic roof."]),
         (4,"&6SHARED WORKSHOP","create:mechanical_press",[ck(ch,41,"REVIEW: A Public Workshop Exposes At Least 2 Useful Capabilities")],["&fCreate a workshop where players can access at least two useful capabilities such as Create processing, repair/build tools, enchanting support, storage, or safe experiment space.","&fLabel what is public versus personal before somebody 'borrows' the important gear forever."]),
         (5,"&fARCHIVE AND MEMORIAL","minecraft:lectern",[ck(ch,51,"REVIEW: The Archive Preserves At Least 5 Real Server Facts/Stories")],["&fBuild or expand an archive, museum, memorial, map room, newspaper office, or gallery preserving at least five real facts, events, failures, places, or people from this world.","&fFuture players should be able to infer that things happened here before they logged in."]),
-        (6,"&aCOMMUNITY KITCHEN","minecraft:bread",[ck(ch,61,"REVIEW: A Shared Kitchen/Pantry Supports Multiple Diets and Players")],["&fBuild a public kitchen or pantry that supports ordinary food plus faction-specific needs where practical. Farmer's Delight and Vampire's Delight both count.","&fPublish what is communal, what should be restocked, and who gets yelled at when the last ration disappears."]),
+        (6,"&aCOMMUNITY SUPPLY DEPOT","minecraft:chest",[ck(ch,61,"REVIEW: A Shared Supply Depot Supports Multiple Routes and Players")],["&fBuild a public depot for maps, lanterns, spare tools, route markers, emergency blocks, or other supplies that help multiple players.","&fPublish what is communal, what should be restocked, and who maintains the shelves."]),
         (7,"&bAIRSHIP / VEHICLE PORT","createpropulsion:wing",[ck(ch,71,"REVIEW: A Dock, Hangar, Test Field, or Vehicle Station Is Publicly Usable")],["&fBuild or improve a dock, hangar, test field, landing marker, vehicle depot, or loading platform for Create Aeronautics/Propulsion play.","&fIt can precede a fully working craft. Infrastructure that makes future vehicles easier is already valuable."]),
-        (8,"&cHORDE REFUGE","minecraft:iron_door",[ck(ch,81,"REVIEW: A Refuge/Alarm Plan Was Tested With Another Player")],["&fBuild a refuge, fallback room, alarm point, lit retreat route, or emergency-supply station useful during The Hordes or other world threats.","&fTest the plan with another player and fix at least one issue found during the drill."]),
-        (9,"&dMEETING HALL / PUBLIC STAGE","minecraft:bell",[ck(ch,91,"REVIEW: The Space Hosted a Real Meeting, Ceremony, Performance, or Briefing")],["&fCreate a meeting hall, public stage, council table, courtroom, chapel, tavern room, or outdoor forum and actually use it for one event.","&fA room becomes history when somebody can say what happened there."]),
+        (8,"&cHORDE REFUGE","minecraft:iron_door",[ck(ch,81,"REVIEW: A Refuge/Alarm Plan Was Tested or Audited")],["&fBuild a refuge, fallback room, alarm point, lit retreat route, or emergency-supply station useful during The Hordes or other world threats.","&fTest the plan with another player, or audit it alone and fix one issue before recording the result."]),
+        (9,"&dMEETING HALL / PUBLIC STAGE","minecraft:bell",[ck(ch,91,"REVIEW: The Space Hosted or Announced a Real Event")],["&fCreate a meeting hall, public stage, council table, courtroom, chapel, tavern room, or outdoor forum and use it for one event. An existing guesthouse can be upgraded instead of rebuilding a room.","&fA room becomes history when somebody can say what happened there."]),
     ]
     pids=[]; xs=[-6,-4.2,-2.2,0,2.2,4.2,6,0]; ys=[-1.3,0.5,-0.5,1.0,-0.5,0.5,-1.3,3]
     for i,(n,tit,icon,tasks,body) in enumerate(infra):
-        pid=qid(ch,n); pids.append(pid); qs.append(Quest(pid,tit,"Server-wide creative milestone · peer/host review.",lines("minecraft:textures/item/lantern.png","&6&lPUBLIC WORK",*body,"","&eScope:&f the physical project is server-wide even though FTB Quests records completion in the reviewing team's progress container."),icon,xs[i],ys[i],tasks,dependencies=[iroot],shape=["diamond","square","gear","hexagon","heart","diamond","square","octagon"][i]))
+        pid=qid(ch,n); pids.append(pid); qs.append(Quest(pid,tit,"Server-wide project · a witness signs off.",lines("minecraft:textures/item/lantern.png","&6&lPUBLIC WORK",*body,"","&eScope:&f the physical project is server-wide even though the reviewing team records the milestone."),icon,xs[i],ys[i],tasks,dependencies=[iroot],shape=["diamond","square","gear","hexagon","heart","diamond","square","octagon"][i]))
     infra_final=qid(ch,11)
-    qs.append(Quest(infra_final,"&6&lFOUR THINGS THE ISLAND KEEPS", "Public work should still matter after everybody's inventory improves.", lines(
+    qs.append(Quest(infra_final,"&6&lTHREE THINGS THE ISLAND KEEPS", "Public work should still matter after everybody's inventory improves.", lines(
         "minecraft:textures/item/lantern.png","&6&lTHE PLACE IS STARTING TO HAVE A PAST",
-        "&fFinish any four public works. Take one screenshot/map/book record of the finished set and place a copy in the archive or a public chest.",
+        "&fFinish any three public works. Take one screenshot/map/book record of the finished set and place a copy in the archive or a public chest.",
         "",
         "&eTeam cache:&f lighting and scaffolding for maintenance. The reward funds upkeep rather than bypassing the next technology tier.",
         "",
         "&8Congratulations: you have invented municipal services in a game about punching trees."
-    ),"minecraft:lantern",0,5.5,[ck(ch,111,"Archive One Record of the Four Public Works")],rewards=[plain_reward(ch,112,"Sixteen Maintenance Lanterns","minecraft:lantern",16,team=True),plain_reward(ch,113,"Thirty-Two Maintenance Scaffolding","minecraft:scaffolding",32,team=True),paper_reward(ch,114,"Civic Works Docket","Civic Works Docket","gold","Four public works survived long enough to become part of the island's story.",{"document":"public_works"},team=True)],dependencies=pids,min_required_dependencies=4,shape="hexagon",size=2.0,hide_until_deps_complete=True))
-    c.chapters.append(Chapter(ch,"vvh_06_island_remembers","VvH 06 · The Island Remembers","minecraft:lantern",6,qs,chapter_images("minecraft:textures/item/lantern.png","minecraft:textures/item/filled_map.png","minecraft:textures/item/writable_book.png","minecraft:textures/item/lantern.png")))
+    ),"minecraft:lantern",0,5.5,[ck(ch,111,"Archive One Record of the Three Public Works")],rewards=[plain_reward(ch,112,"Sixteen Maintenance Lanterns","minecraft:lantern",16,team=True),plain_reward(ch,113,"Thirty-Two Maintenance Scaffolding","minecraft:scaffolding",32,team=True),choice_reward(ch,114,"Choose a Public Works Supply Cache",TRADE_TABLE,team=True)],dependencies=pids,min_required_dependencies=3,shape="hexagon",size=2.0,hide_until_deps_complete=True))
+    c.chapters.append(Chapter(ch,"vvh_06_island_remembers","VvH 06 · The Island Remembers","minecraft:lantern",6,qs,chapter_images("poiesis:textures/questpics/vvh/island_remembers.png","minecraft:textures/item/filled_map.png","minecraft:textures/item/writable_book.png","minecraft:textures/item/lantern.png")))
 
     # 07 — Rivalry. Noncombat first, skirmish is gated behind actually having a funny rivalry.
     ch=0x17; qs=[]; rroot=qid(ch,1)
@@ -536,15 +602,15 @@ def build_campaign() -> Campaign:
     ),"minecraft:firework_rocket",0,-5,[ck(ch,1,"Read the Safe-Rivalry Rules")],dependencies=[contribution_final],shape="hexagon",size=1.7))
     rivalry=[
         (2,"&dPROPAGANDA EXCHANGE","minecraft:painting",[ck(ch,21,"Both Sides Displayed a Reversible Poster/Banner/Exhibit")],["&fEach participating side makes one reversible public propaganda piece, banner display, museum label, or dramatic accusation about the other.","&fNo placing inside protected claims without permission. Cleanup deadline required."]),
-        (3,"&eBLOOD VS GARLIC COOK-OFF","vampiresdelight:blood_pie",[ck(ch,31,"At Least 3 Players Judged or Attended the Cook-Off")],["&fRun a themed food contest using Vampire's Delight, Farmer's Delight, garlic, blood-themed cuisine, or absurd neutral entries.","&fJudge presentation, story, taste-by-roleplay, logistics, or whatever criteria are agreed before the event. Nobody has to consume food their faction mechanics dislike."]),
+        (3,"&eBLOOD VS HOLY WARD DEMO","irons_spellbooks:holy_rune",[ck(ch,31,"At Least 3 Players Judged or Attended the Ward Demonstration")],["&fRun a friendly Blood-versus-Holy demonstration: explain a ward, compare safe utility kits, stage a route-protection drill, or present two faction support stations.","&fJudge clarity, usefulness, story, or logistics. No player has to cast a combat spell or become a faction member."]),
         (4,"&aSCAVENGER HUNT","minecraft:compass",[ck(ch,41,"A Hunt Was Completed and Every Clue Was Removed/Archived")],["&fPlace a short clue chain in public or explicitly permitted wilderness space. Finish with a harmless trophy, message, location reveal, or public project tour.","&fArchive the best clue afterward; remove anything that became litter."]),
         (5,"&bCOURIER / VEHICLE RACE","createpropulsion:wing",[ck(ch,51,"A Race Ran With a Published Route and Safety Rule")],["&fRun a foot, road, rail, boat, glider, or vehicle courier race. Publish the route, allowed transport, start/end, and one safety rule before launching.","&fReward a funny category as well as speed: best crash recovery, best courier uniform, most unnecessary engineering, etc."]),
-        (6,"&6MARKET CHALLENGE","minecraft:emerald",[ck(ch,61,"A Timed Trade/Service Challenge Ended With a Public Result")],["&fGive both sides the same time window and goal: procure a themed bundle, provide a service, attract customers, or solve a public shortage.","&fNo fake transactions, item duplication, or quest-reward resale loops. The interesting part is organization and negotiation."]),
+        (6,"&6MARKET CHALLENGE","minecraft:emerald",[ck(ch,61,"A Timed Trade/Service Challenge Ended With a Public Result")],["&fGive both sides the same time window and goal: procure a themed bundle, provide a service, attract customers, or solve a public shortage.","&fNo fake transactions or duplicated goods; the interesting part is organization and negotiation."]),
         (7,"&fMASCOT / ARCHITECTURE SHOWDOWN","minecraft:armor_stand",[ck(ch,71,"Both Sides Presented a Mascot, Mini-Build, or Ceremonial Object")],["&fEach side presents a reversible mascot, mini-build, float, outfit, ceremonial object, or one-chunk display. Neutrals judge or enter an independent category.","&fThe server keeps the funniest result only if its owner wants it kept."]),
     ]
     pids=[]; xs=[-5,-3,-1,1,3,5]; ys=[-1,0.8,-0.2,0.8,-0.2,-1]
     for i,(n,tit,icon,tasks,body) in enumerate(rivalry):
-        pid=qid(ch,n); pids.append(pid); qs.append(Quest(pid,tit,"Optional social contest · reversible by design.",lines("minecraft:textures/item/firework_rocket.png","&d&lSAFE RIVALRY FORMAT",*body,"","&7Participation earns the story. Winning earns bragging rights, not better gear."),icon,xs[i],ys[i],tasks,dependencies=[rroot],optional=True,shape=["square","heart","diamond","gear","square","octagon"][i]))
+        pid=qid(ch,n); pids.append(pid); qs.append(Quest(pid,tit,"Optional social contest · leave the place cleaner than you found it.",lines("minecraft:textures/item/firework_rocket.png","&d&lSAFE RIVALRY FORMAT",*body,"","&7Participation earns the story. Winning earns bragging rights, not better gear."),icon,xs[i],ys[i],tasks,dependencies=[rroot],optional=True,shape=["square","heart","diamond","gear","square","octagon"][i]))
     skirmish=qid(ch,8)
     qs.append(Quest(skirmish,"&cSANCTIONED SKIRMISH — ONLY IF EVERY BOX IS TRUE", "A release valve, not the campaign's central mechanic.", lines(
         "minecraft:textures/item/iron_sword.png","&c&lHOSTED, OPT-IN, BACKED UP",
@@ -563,25 +629,25 @@ def build_campaign() -> Campaign:
         "&eReward:&f a team festival bundle. It helps stage the next event but contains no weapons or faction progression.",
         "",
         "&8History is what remains after the temporary banners come down."
-    ),"minecraft:writable_book",0,5.4,[ck(ch,91,"Archive the Rivalry Result and Confirm Cleanup")],rewards=[plain_reward(ch,92,"Sixteen Firework Rockets","minecraft:firework_rocket",16,team=True),plain_reward(ch,93,"Two Cakes","minecraft:cake",2,team=True),paper_reward(ch,94,"Rivalry Night Broadside","Rivalry Night Broadside","light_purple","Proof that two factions can manufacture drama without manufacturing a crater.",{"document":"rivalry_night"},team=True)],dependencies=pids,min_required_dependencies=2,optional=True,shape="hexagon",size=1.8,hide_dependency_lines=True))
-    c.chapters.append(Chapter(ch,"vvh_07_rivalry_without_ruin","VvH 07 · Rivalry Without Ruin","minecraft:firework_rocket",7,qs,chapter_images("minecraft:textures/item/firework_rocket.png","vampirism:textures/item/garlic.png","vampirism:textures/item/vampire_fang.png","minecraft:textures/item/filled_map.png")))
+    ),"minecraft:writable_book",0,5.4,[ck(ch,91,"Archive the Rivalry Result and Confirm Cleanup")],rewards=[plain_reward(ch,92,"Sixteen Firework Rockets","minecraft:firework_rocket",16,team=True),plain_reward(ch,93,"Eight Festival Lanterns","minecraft:lantern",8,team=True),choice_reward(ch,94,"Choose a Rivalry Supply Cache",TRADE_TABLE,team=True)],dependencies=pids,min_required_dependencies=2,optional=True,shape="hexagon",size=1.8,hide_dependency_lines=True))
+    c.chapters.append(Chapter(ch,"vvh_07_rivalry_without_ruin","VvH 07 · Rivalry Without Ruin","minecraft:firework_rocket",7,qs,chapter_images("poiesis:textures/questpics/vvh/rivalry_without_ruin.png","vampirism:textures/item/garlic.png","vampirism:textures/item/vampire_fang.png","minecraft:textures/item/filled_map.png")))
 
     # 08 — Capstone fair. Requires infrastructure but not rivalry attendance.
     ch=0x18; qs=[]; froot=qid(ch,1)
-    qs.append(Quest(froot,"&6&lCALL THE LONG NIGHT FAIR", "Any four contributions; no perfect attendance required.", lines(
+    qs.append(Quest(froot,"&6&lCALL THE LONG NIGHT FAIR", "Any three contributions; bring the work your hands are proud to show.", lines(
         "minecraft:textures/item/lantern.png","&6&lTHE SEASON ENDS WITH A PLACE FULL OF PEOPLE",
-        "&fSchedule one public fair, tour night, festival, summit, or exhibition using infrastructure the server has actually built. Complete any &e4 of 6&f contribution categories.",
+        "&fSchedule one public fair, tour night, festival, summit, or exhibition using infrastructure the server has actually built. Complete any &e3 of 6&f contribution categories.",
         "",
         "&7The event should expose unfinished hooks as well as achievements. A good finale creates reasons to log in next week instead of pretending the world is complete.",
         "",
-        "&8Bring lanterns. Bring food. Bring the one machine everyone was told not to turn on indoors."
+        "&8Bring a map, a guest list, and the one machine everyone was told not to turn on indoors."
     ),"minecraft:lantern",0,-5,[ck(ch,1,"Date, Location, and Public Invitation Are Posted")],dependencies=[infra_final],shape="hexagon",size=1.7))
     fair=[
-        (2,"&4HOUSE OF NIGHT HOSPITALITY","vampiresdelight:blood_wine_bottle",[ck(ch,21,"Vampire-Themed Hospitality, Ritual, Tour, or Exhibit Was Hosted")],["&fProvide a House contribution: Vampire's Delight table, faction tour, archive reading, ritual demonstration, night-route walk, or aesthetic exhibit.","&fGuests are not required to become Vampires, fight, or participate in feeding mechanics."]),
+        (2,"&4HOUSE OF NIGHT HOSPITALITY","vampiresdelight:blood_wine_bottle",[ck(ch,21,"Vampire-Themed Hospitality, Ritual, Tour, or Exhibit Was Hosted")],["&fProvide a House contribution: Vampire's Delight table, faction tour, archive reading, ritual demonstration, night-route walk, or aesthetic exhibit.","&fLet guests remain guests; a good table does not demand a new allegiance or a fight."]),
         (3,"&bLANTERN ORDER SERVICE","vampirism:garlic",[ck(ch,31,"Hunter-Themed Safety, Craft, Route, or Public-Service Exhibit Was Hosted")],["&fProvide an Order contribution: safety demo, public route briefing, workstation tour, rescue drill, garlic-themed table, or countermeasure museum.","&fThe point is public service and faction character, not target practice on unwilling guests."]),
         (4,"&aFREE COMPANY MARKET","minecraft:emerald",[ck(ch,41,"Neutral Market, Contract Desk, Mediation Table, or Courier Service Operated")],["&fRun a neutral contribution: trades, contracts, map desk, courier service, guesthouse, arbitration, MCA civic exhibit, or event logistics.","&fAt least one interaction should cross faction lines."]),
         (5,"&6ENGINEERING / AERONAUTICS EXHIBITION","createpropulsion:wing",[ck(ch,51,"A Machine, Vehicle, Dock, Workshop, or Controlled Test Was Demonstrated")],["&fDemonstrate a Create system, vehicle, airframe, dock, rail feature, workshop, or safely controlled engineering failure.","&fDesign the spectator area before discovering why propellers need spectator areas."]),
-        (6,"&ePUBLIC FEAST / PERFORMANCE","minecraft:bread",[ck(ch,61,"A Shared Meal, Performance, Game, or Ceremony Served the Event")],["&fProvide food, music/performance, mini-game, ceremony, awards, speeches, guided tour, or another contribution that gives players something to do together rather than merely inspect chests.","&fUse Farmer's Delight/Vampire's Delight if useful; ordinary Minecraft food is also valid."]),
+        (6,"&ePUBLIC SHOWCASE / PERFORMANCE","minecraft:bell",[ck(ch,61,"A Performance, Game, Ceremony, or Showcase Served the Event")],["&fProvide music/performance, mini-game, ceremony, awards, speeches, guided tour, or another contribution that gives players something to do together rather than merely inspect chests.","Food is optional; the event needs a shared activity, not a cooking assignment."]),
         (7,"&fARCHIVE THE SEASON","minecraft:writable_book",[ck(ch,71,"At Least 5 Season Facts, Images, Maps, Quotes, or Results Were Archived")],["&fBefore the event ends, archive at least five concrete pieces of history: faction changes, projects, rivalry results, failures, screenshots/maps, quotes, contracts, deaths worth remembering, or unfinished hooks.","&fFuture players should be able to reconstruct Season One without asking for a three-hour Discord oral history."]),
     ]
     pids=[]; xs=[-5,-3,-1,1,3,5]; ys=[-1.1,0.8,-0.2,0.8,-0.2,-1.1]
@@ -590,54 +656,57 @@ def build_campaign() -> Campaign:
     fair_final=qid(ch,9)
     qs.append(Quest(fair_final,"&6&lSEAL SEASON ONE", "The reward is useful. The world you built is the actual progression.", lines(
         "minecraft:textures/item/firework_rocket.png","&6&lAFTER THE BELLS",
-        "&fComplete any four Fair contributions, then record one unresolved pressure or ambition that players genuinely want to continue.",
+        "&fComplete any three Fair contributions, then record one unresolved pressure or ambition that players genuinely want to continue.",
         "&fExamples: faction politics, a vehicle project, settlement story, Hordes defense, public work, expedition, magic problem, or infrastructure failure.",
         "",
-        "&eClaim a commemorative Seal and one horizontal favor.&f No boss loot, faction levels, rare weapons, netherite, or finished late-game machine is hidden here.",
+        "&eClaim the festival cache and one horizontal favor.&f No boss loot, faction levels, rare weapons, netherite, or finished late-game machine is hidden here.",
         "",
         "&8A season is complete when it produces a sequel hook, not when the todo list reaches zero."
-    ),"minecraft:firework_rocket",0,5.2,[ck(ch,91,"Archive the Fair and One Genuine Future Hook")],rewards=[paper_reward(ch,92,"Season One Seal","Season One Seal — Long Night Fair","gold","The island became worth remembering before the gear made it easy.",{"document":"season_one_seal"},team=False),choice_reward(ch,93,"Choose a Long Night Fair Favor",FAIR_TABLE)],dependencies=pids,min_required_dependencies=4,shape="hexagon",size=2.1,hide_until_deps_complete=True))
-    c.chapters.append(Chapter(ch,"vvh_08_long_night_fair","VvH 08 · The Long Night Fair","minecraft:lantern",8,qs,chapter_images("minecraft:textures/item/lantern.png","minecraft:textures/item/firework_rocket.png","vampirism:textures/item/vampire_fang.png","vampirism:textures/item/garlic.png")))
+    ),"minecraft:firework_rocket",0,5.2,[ck(ch,91,"Archive the Fair and One Genuine Future Hook")],rewards=[plain_reward(ch,92,"Sixteen Festival Lanterns","minecraft:lantern",16,team=True),choice_reward(ch,93,"Choose a Long Night Fair Favor",FAIR_TABLE)],dependencies=pids,min_required_dependencies=3,shape="hexagon",size=2.1,hide_until_deps_complete=True))
+    c.chapters.append(Chapter(ch,"vvh_08_long_night_fair","VvH 08 · The Long Night Fair","minecraft:lantern",8,qs,chapter_images("poiesis:textures/questpics/vvh/long_night_fair.png","minecraft:textures/item/firework_rocket.png","vampirism:textures/item/vampire_fang.png","vampirism:textures/item/garlic.png")))
 
     # 09 — Limited postgame civic sinks. No faction arms subsidies.
     ch=0x19; qs=[]; proot=qid(ch,1)
     qs.append(Quest(proot,"&6&lAFTER THE BELLS", "Weekly convenience without a treadmill.", lines(
         "numismatics:textures/item/coin/bevel.png","&6&lCIVIC REQUISITIONS",
-        "&fThe season is over. These optional seven-day exchanges turn existing Bevels into small public-use caches for maintenance and events.",
+        "&fThe season is over. These optional seven-day exchanges turn existing Bevels into small public-use caches for maintenance and events. Normal Numismatics play remains the source of Bevels; VvH only spends them.",
         "",
         "&fPrices are visible, inputs are consumed, and no output creates Bevels, faction levels, weapons, blood, hunter tech, or another item that cheaply reproduces its own price.",
         "",
         "&eAgree on payer and destination before submitting.&f A team reward exists once per FTB progress container; it is not one cache per teammate.",
         "",
-        "&8Postgame inflation remains undefeated by vibes."
+        "&8Spend where the island will notice."
     ),"numismatics:bevel",0,-5,[ck(ch,1,"Read the Civic Requisition Terms")],dependencies=[fair_final],shape="hexagon",size=1.7))
 
     def exchange(n: int, title: str, subtitle: str, icon: str, x: float, y: float, price: int, body: list[str], rewards: list[tuple[str,int,str]]) -> Quest:
         return Quest(qid(ch,n),title,subtitle,lines("numismatics:textures/item/coin/bevel.png","&6&lWEEKLY TEAM CACHE",*body,"",f"&ePrice:&f {price} Bevel{'s' if price != 1 else ''}. &7Renews seven days after this FTB team claims it."),icon,x,y,[item_task(ch,n*10+1,f"Submit {price} Bevel{'s' if price != 1 else ''}","numismatics:bevel",price,consume=True)],rewards=[plain_reward(ch,n*10+2+i,rt,item,count,team=True) for i,(item,count,rt) in enumerate(rewards)],dependencies=[proot],optional=True,can_repeat=True,repeat_cooldown=604800,shape="gear")
     qs.append(exchange(2,"&eLIGHTING REQUISITION — 1 BEVEL","Roads, halls, refuge routes, and events.","minecraft:lantern",-5,-1,1,["&fReceive sixteen Lanterns and thirty-two Torches for a named public route, refuge, hall, or event."],[("minecraft:lantern",16,"Sixteen Public Lanterns"),("minecraft:torch",32,"Thirty-Two Public Torches")]))
     qs.append(exchange(3,"&6TRANSIT REQUISITION — 2 BEVELS","A modest rail cache; still requires engineering.","minecraft:rail",-2.5,0.3,2,["&fReceive thirty-two Rails and eight Powered Rails. Stations, redstone, route design, and locomotion remain your problem."],[("minecraft:rail",32,"Thirty-Two Rails"),("minecraft:powered_rail",8,"Eight Powered Rails")]))
-    qs.append(exchange(4,"&dFESTIVAL REQUISITION — 1 BEVEL","Consumable celebration with a cleanup owner.","minecraft:firework_rocket",0,0.8,1,["&fReceive sixteen Firework Rockets and two Cakes for a scheduled public event. Please do not turn fireworks into a server benchmark."],[("minecraft:firework_rocket",16,"Sixteen Festival Rockets"),("minecraft:cake",2,"Two Event Cakes")]))
+    qs.append(exchange(4,"&dFESTIVAL REQUISITION — 1 BEVEL","Consumable celebration with a cleanup owner.","minecraft:firework_rocket",0,0.8,1,["&fReceive sixteen Firework Rockets and eight Lanterns for a scheduled public event. Please do not turn fireworks into a server benchmark."],[("minecraft:firework_rocket",16,"Sixteen Festival Rockets"),("minecraft:lantern",8,"Eight Event Lanterns")]))
     qs.append(exchange(5,"&aREPAIR REQUISITION — 1 BEVEL","For temporary access and moving parts.","create:super_glue",2.5,0.3,1,["&fReceive four Super Glue and thirty-two Scaffolding. Record which public work received the cache."],[("create:super_glue",4,"Four Super Glue"),("minecraft:scaffolding",32,"Thirty-Two Scaffolding")]))
-    qs.append(exchange(6,"&cHOSPITALITY REQUISITION — 1 BEVEL","Meetings, late arrivals, fairs, and rescue runs.","minecraft:bread",5,-1,1,["&fReceive sixteen Bread and eight Cooked Beef. Faction-specific cuisine remains player-crafted rather than quest-subsidized."],[("minecraft:bread",16,"Sixteen Bread"),("minecraft:cooked_beef",8,"Eight Cooked Beef")]))
+    qs.append(exchange(6,"&cHOSPITALITY REQUISITION — 1 BEVEL","Meetings, late arrivals, fairs, and rescue runs.","minecraft:lantern",5,-1,1,["&fReceive eight Guest Books and eight Lanterns for a meeting room, guesthouse, fair, or rescue route. Food remains player-chosen rather than quest-subsidized."],[("minecraft:book",8,"Eight Guest Books"),("minecraft:lantern",8,"Eight Guest Lanterns")]))
     qs.append(Quest(qid(ch,7),"&fARCHIVE A NEW RUMOUR","One paragraph, one real place, one actionable question.",lines("minecraft:textures/item/writable_book.png","&f&lTURN AN UNFINISHED THING INTO A HOOK","&fWrite a short rumour tied to a real location, player ambition, faction dispute, settlement, threat, unfinished machine, public work, or mystery.","&fEnd with a question somebody could act on next session.","","&7This renews weekly and intentionally grants no item. The archive should create play, not currency."),"minecraft:writable_book",-2.5,4.5,[ck(ch,71,"I Added One Actionable Rumour")],dependencies=[proot],optional=True,can_repeat=True,repeat_cooldown=604800,shape="square"))
-    qs.append(Quest(qid(ch,9),"&eLEAVE A SEASON TWO PRESSURE","Do not pre-author a sequel nobody wants yet.",lines("minecraft:textures/item/filled_map.png","&e&lNAME THE NEXT PRESSURE","&fChoose one unresolved pressure worth a future season and record stakeholders plus evidence that people actually care about it.","&fGood candidates include Vampirism politics, a settlement story, an airship project, Hordes defense, border expansion, infrastructure failure, expedition, magical incident, or a rivalry that acquired consequences.","","&eTeam keepsake:&f one Unresolved Pressure Docket."),"minecraft:filled_map",2.5,4.5,[ck(ch,91,"We Recorded One Evidence-Based Season Two Hook")],rewards=[paper_reward(ch,92,"Unresolved Pressure Docket","Unresolved Pressure Docket","yellow","A future season begins only when the world supplies evidence.",{"document":"season_two_hook"},team=True)],dependencies=[proot],optional=True,shape="heart"))
+    qs.append(Quest(qid(ch,9),"&eLEAVE A SEASON TWO PRESSURE","Do not pre-author a sequel nobody wants yet.",lines("minecraft:textures/item/filled_map.png","&e&lNAME THE NEXT PRESSURE","&fChoose one unresolved pressure worth a future season and record stakeholders plus evidence that people actually care about it.","&fGood candidates include Vampirism politics, a settlement story, an airship project, Hordes defense, border expansion, infrastructure failure, expedition, magical incident, or a rivalry that acquired consequences.","","&eTeam support:&f choose one practical supply cache that helps the next hook become playable."),"minecraft:filled_map",2.5,4.5,[ck(ch,91,"We Recorded One Evidence-Based Season Two Hook")],rewards=[choice_reward(ch,92,"Choose a Season Two Hook Supply",TRADE_TABLE,team=True)],dependencies=[proot],optional=True,shape="heart"))
     c.chapters.append(Chapter(ch,"vvh_09_after_the_bells","VvH 09 · After the Bells","numismatics:bevel",9,qs,chapter_images("numismatics:textures/item/coin/bevel.png","minecraft:textures/item/lantern.png","minecraft:textures/item/firework_rocket.png")))
 
     # Choice tables. Fixed, horizontal, no faction-specific combat progression.
     role_rewards=[
-        ("builder","Builder Lens","yellow","Improve the experience of places."),
-        ("engineer","Engineer Lens","gold","Make motion, power, or logistics useful."),
-        ("pathfinder","Pathfinder Lens","aqua","Turn distance into routes other people can follow."),
-        ("keeper","Keeper Lens","green","Maintain food, hospitality, supplies, and continuity."),
-        ("arcanist","Arcanist Lens","light_purple","Make magic and supernatural systems understandable."),
-        ("archivist","Archivist Lens","white","Preserve guides, contracts, failures, and server memory."),
+        ("builder","Builder Lens","minecraft:scaffolding","yellow","Improve the experience of places."),
+        ("engineer","Engineer Lens","create:goggles","gold","Make motion, power, or logistics useful."),
+        ("pathfinder","Pathfinder Lens","minecraft:spyglass","aqua","Turn distance into routes other people can follow."),
+        ("keeper","Keeper Lens","minecraft:lantern","green","Maintain food, hospitality, supplies, and continuity."),
+        ("arcanist","Arcanist Lens","irons_spellbooks:arcane_essence","light_purple","Make magic and supernatural systems understandable."),
+        ("archivist","Archivist Lens","minecraft:book","white","Preserve guides, contracts, failures, and server memory."),
     ]
-    c.reward_tables.append({"id":ROLE_TABLE,"title":"Choose a Personal Trade Lens","order_index":10,"rewards":[{"id":f"7A11C0DEF001{i:04X}","title":name,"item_data":custom_paper(name,color,lore,{"role":key})} for i,(key,name,color,lore) in enumerate(role_rewards,1)]})
+    role_counts = {"builder": 8, "engineer": 1, "pathfinder": 1, "keeper": 4, "arcanist": 2, "archivist": 2}
+    c.reward_tables.append({"id":ROLE_TABLE,"title":"Choose a Personal Trade Lens","order_index":10,"rewards":[{"id":f"7A11C0DEF001{i:04X}","title":name,"item_data":custom_item(item,name,color,lore,{"role":key},count=role_counts[key])} for i,(key,name,item,color,lore) in enumerate(role_rewards,1)]})
     c.reward_tables.append({"id":TRADE_TABLE,"title":"Choose a Practical Contribution Favor","order_index":11,"rewards":[
         {"id":"7A11C0DEF0020001","title":"Eight Andesite Alloy","item":"create:andesite_alloy","count":8},
         {"id":"7A11C0DEF0020002","title":"Twelve Arcane Essence","item":"irons_spellbooks:arcane_essence","count":12},
         {"id":"7A11C0DEF0020003","title":"Thirty-Two Scaffolding","item":"minecraft:scaffolding","count":32},
         {"id":"7A11C0DEF0020004","title":"Eight Super Glue","item":"create:super_glue","count":8},
+        {"id":"7A11C0DEF0020005","title":"Two Blood Runes","item":"irons_spellbooks:blood_rune","count":2},
+        {"id":"7A11C0DEF0020006","title":"Two Holy Runes","item":"irons_spellbooks:holy_rune","count":2},
     ]})
     c.reward_tables.append({"id":FAIR_TABLE,"title":"Choose a Long Night Fair Favor","order_index":12,"rewards":[
         {"id":"7A11C0DEF0030001","title":"Create Goggles","item":"create:goggles","count":1},
@@ -866,13 +935,52 @@ def migrate_legacy_atlas(root: Path) -> None:
 
     Existing object IDs and chapter topology are deliberately preserved so any existing
     FTB Quests progress remains attached to the same quest/task/reward objects. Only
-    the removed mod references and player-facing semantics are migrated.
+    the current mod references and player-facing semantics are normalized.
     """
     chapters = root / "config/ftbquests/quests/chapters"
     tables = root / "config/ftbquests/quests/reward_tables"
     lang_probe = root / "config/ftbquests/quests/lang/en_us.snbt"
     probe_paths = list(chapters.glob("*.snbt")) + list(tables.glob("*.snbt")) + ([lang_probe] if lang_probe.exists() else [])
+
+    legacy_lens_items = {
+        "star": "minecraft:spyglass",
+        "cinder": "irons_spellbooks:arcane_essence",
+        "wind": "create:goggles",
+        "press": "create:andesite_alloy",
+        "fang": "vampirism:vampire_fang",
+        "chorus": "minecraft:lantern",
+        "brass": "create:brass_ingot",
+        "root": "minecraft:filled_map",
+        "blue": "minecraft:iron_pickaxe",
+    }
+    legacy_role_items = {
+        "trainer": "vampirism:garlic",
+        "arcanist": "irons_spellbooks:arcane_essence",
+        "engineer": "create:goggles",
+        "scout": "minecraft:spyglass",
+    }
+
+    def remap_legacy_lens_rewards() -> None:
+        for path in list(chapters.glob("*.snbt")) + list(tables.glob("*.snbt")):
+            chapter_text = path.read_text(encoding="utf-8")
+            for lens, item in legacy_lens_items.items():
+                chapter_text = re.sub(
+                    rf'(poiesis_lens: "{re.escape(lens)}".*?\n\s+id: )"minecraft:paper"',
+                    rf'\1"{item}"',
+                    chapter_text,
+                    flags=re.S,
+                )
+            for role, item in legacy_role_items.items():
+                chapter_text = re.sub(
+                    rf'(poiesis_role: "{re.escape(role)}".*?\n\s+id: )"minecraft:paper"',
+                    rf'\1"{item}"',
+                    chapter_text,
+                    flags=re.S,
+                )
+            path.write_text(chapter_text, encoding="utf-8")
+
     if not any("cobblemon:" in path.read_text(encoding="utf-8").lower() for path in probe_paths):
+        remap_legacy_lens_rewards()
         return
 
     p = chapters / "a_blank_page.snbt"
@@ -916,7 +1024,7 @@ def migrate_legacy_atlas(root: Path) -> None:
     text = _replace_lang_desc(text, "1A0B1A4E5A9E0002", [
         "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
         "&e&lWELCOME, TINY CARTOGRAPHER — DEV EDITION", "",
-        "&fThe pack changed underneath this old Atlas page, so the removed Cobblemon chores have been migrated without changing quest IDs or wiping progress.", "",
+        "&fThe Atlas page now points to the systems that make this island useful: factions, routes, machines, magic, and civic work.", "",
         "&b1. &fCarry two Vampirism Garlic.",
         "&b2. &fCarry four Create Andesite Alloy.",
         "&b3. &fReturn near world spawn with another real player and both click your own rally checkmark.", "",
@@ -951,7 +1059,7 @@ def migrate_legacy_atlas(root: Path) -> None:
     text = _replace_lang_desc(text, "1A0B1A4E5A9E0102", [
         "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}", "&4&lDUSK-LENS: THE NEW ECOLOGY", "",
         "&fCarry one &eVampire Fang&f and discover the &eVampire Forest&f advancement. Nothing is consumed.", "",
-        "&7This migrated route replaces removed Cobblemon lifetime statistics while keeping the old quest/task IDs, so existing team progress remains attached.", "",
+        "&7This route records a current-pack lifetime service while keeping its stable quest/task identity.", "",
         "&8The stars were replaced by teeth. Budget cuts."
     ])
     text = _replace_lang_scalar(text, "quest.1A0B1A4E5A9E0102.title", "&4&lDUSK-LENS: FANG & FOREST")
@@ -962,7 +1070,7 @@ def migrate_legacy_atlas(root: Path) -> None:
     text = _replace_lang_desc(text, "1A0B1A4E5A9E0106", [
         "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}", "&3&lCHORUS-LENS: A GROUP WITH A DESTINATION", "",
         "&fCarry &e8 Lanterns&f, then tick the second task after joining at least one other player for a real outing: exploration, build tour, route test, rescue, faction visit, or public-work trip.", "",
-        "&7This preserves the old social-route IDs without depending on the removed Cobblemon battle/raid system.", "",
+        "&7This social route uses the installed server systems without requiring a combat ladder.", "",
         "&8A victory still sounds better with witnesses; the victory just has fewer hit points now."
     ])
     text = _replace_lang_scalar(text, "task.1A0B1A4E5A9E0161.title", "Carry Eight Lanterns")
@@ -970,7 +1078,7 @@ def migrate_legacy_atlas(root: Path) -> None:
     text = _replace_lang_desc(text, "1A0B1A4E5A9E0306", [
         "{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}", "&3&lCHORUS-LENS: STRANGE ROADS, REAL WITNESSES", "",
         "&fDiscover a &eVampire Forest&f, carry &e8 Hardtack&f, then tick the last box after completing the trip or field test with another player.", "",
-        "&7This migrated route occupies the old Cobblemon social-route IDs. The objective is current-pack exploration plus a shared story, not faction membership or combat.", "",
+        "&7The objective is current-pack exploration plus a shared story, not faction membership or combat.", "",
         "&8Please allow the ominous biome to make at least one tactical recommendation."
     ])
     text = _replace_lang_scalar(text, "task.1A0B1A4E5A9E0361.title", "Discover a Vampire Forest")
@@ -1008,6 +1116,8 @@ def migrate_legacy_atlas(root: Path) -> None:
         raise RuntimeError("Legacy Atlas localization still contains removed Cobblemon/Poke references after migration")
     lang.write_text(text, encoding="utf-8")
 
+    remap_legacy_lens_rewards()
+
     # No removed namespace may remain in the actual quest/reward files after migration.
     legacy_paths = list(chapters.glob("*.snbt")) + list(tables.glob("*.snbt")) + [lang]
     stale = [str(path) for path in legacy_paths if "cobblemon:" in path.read_text(encoding="utf-8").lower()]
@@ -1015,16 +1125,23 @@ def migrate_legacy_atlas(root: Path) -> None:
         raise RuntimeError(f"Removed Cobblemon namespace remains after migration: {stale}")
 
 def update_changelog(path: Path, quest_count: int) -> None:
-    marker = "## [Unreleased] — VvH Season One dev-modlist retune"
+    marker = "## [Unreleased] — VvH Season One final art and quest release"
+    magic_marker = "## [Unreleased] — VvH Iron's Spells faction weave"
     text = path.read_text(encoding="utf-8") if path.exists() else "# Changelog\n"
-    if marker in text:
-        return
-    block = f"""\n{marker}\n\n- Retuned the ten-chapter, {quest_count}-quest Vampires vs Hunters campaign to the current `dev` modlist at `{SOURCE_SHA}`. Vampire and Hunter routes now use the installed Vampirism 1.10.12 faction/progression surface, Vampire's Delight, Create/Aeronautics, MCA civic play, The Hordes, and the current transport/building stack.\n- Migrated existing Living Atlas quest/reward object IDs away from the removed Cobblemon namespace so old quest progress is preserved while new players receive valid current-pack objectives and rewards.\n- Kept Neutral/Free Company play mechanically viable, kept combat optional, preserved fixed horizontal rewards, and added no VvH KubeJS quest engine or dynamic faction reward multiplier.\n"""
-    first_break = text.find("\n", text.find("#"))
-    if first_break >= 0:
-        text = text[: first_break + 1] + block + text[first_break + 1 :]
-    else:
-        text += block
+    if marker not in text:
+        block = f"""\n{marker}\n\n- Published the ten-chapter, {quest_count}-quest Vampires vs Hunters campaign with Blood, Holy, and neutral Iron's Spells identities, separate progression/world-building lanes, and useful capped rewards.\n- Added five chapter panoramas and the complete Blood/Holy/mediator art batch to the Poiesis resource pack.\n- Kept Neutral/Free Company play mechanically viable, kept combat optional, preserved fixed horizontal rewards, and added no VvH KubeJS quest engine or dynamic faction reward multiplier.\n"""
+        first_break = text.find("\n", text.find("#"))
+        if first_break >= 0:
+            text = text[: first_break + 1] + block + text[first_break + 1 :]
+        else:
+            text += block
+    if magic_marker not in text:
+        magic_block = f"""\n{magic_marker}\n\n- Added separate progression and world-building lanes to the Vampire, Hunter, and Free Company foundation chapters.\n- Wove verified Iron's Spells Blood, Holy, and neutral mediator utility through the foundations without faction-locking school access or adding KubeJS synchronization.\n- Replaced primary paper payouts with useful supplies, school materials, and player-choice caches; added the bulk image-generation brief at `docs/vvh/IRON_SPELLS_IMAGE_BATCH.txt`.\n"""
+        first_break = text.find("\n", text.find("#"))
+        if first_break >= 0:
+            text = text[: first_break + 1] + magic_block + text[first_break + 1 :]
+        else:
+            text += magic_block
     path.write_text(text, encoding="utf-8")
 
 def manifest(campaign: Campaign) -> dict[str, Any]:
@@ -1132,6 +1249,8 @@ The build harness materialized the server pack from Packwiz and indexed the actu
 
 Exact recipes/items were also resolved for the Vampire/Hunter foundation workstations and supplies. The campaign does not guess namespaces from a wiki.
 
+Iron's Spells faction weave was resolved from the installed JAR: Blood Rune, Blood Vial, Bloody Vellum, Blood Staff, Blood Affinity Ring, Holy Rune, Holy Upgrade Orb, Priest Chestplate, Holy Affinity Ring, Arcane Essence, and Arcane Rune. Blood and Holy are thematic routes, not live Vampirism-state locks; the Free Company route provides limited mediator utility.
+
 ## Existing quest debt discovered
 
 The dev branch still carried the previous Living Atlas chapters and reward tables, but those files referenced the removed `cobblemon:` namespace in icons, images, statistics, reward items, and localization. Shipping VvH without fixing those pages would leave the quest book internally broken.
@@ -1147,6 +1266,8 @@ The generator therefore performs an idempotent migration of the existing Living 
 - {len(campaign.reward_tables)} VvH reward tables / {table_reward_count} choice-table entries
 - 0 new VvH KubeJS scripts
 - 3 equal foundation branches: Vampire, Hunter, Neutral
+- 2 visible foundation lanes: progression and world-building
+- 3 Iron's Spells identities: Blood, Holy, and neutral mediator utility
 - 8 choice-based personal contribution routes
 - 8 shared/public infrastructure projects
 - 6 noncombat rivalry formats plus one separately gated optional skirmish
@@ -1177,7 +1298,7 @@ No representative live world/save or current player inventory snapshot was suppl
 ## D-003 — Keep Neutral as a full path
 
 - Evidence: the product brief explicitly needs neutral traders, mediators, mercenaries, and diplomats.
-- Decision: Free Companies have the same five-of-seven foundation workload and the same utility cache as the supernatural factions, using contracts, markets, routes, MCA civic play, rescue, and mediation.
+- Decision: Free Companies have the same five-of-eight foundation workload and the same utility cache as the supernatural factions, using contracts, markets, routes, MCA civic play, rescue, and mediation.
 
 ## D-004 — No dynamic faction reward multiplier
 
@@ -1205,6 +1326,18 @@ No representative live world/save or current player inventory snapshot was suppl
 
 - The original reset-zone concept remains operationally useful, but safe chunk regeneration across every dev mod was not proven by the quest build itself.
 - Decision: document zones and recovery procedures; do not ship a destructive reset script merely because the pitch imagined one.
+
+## D-009 — Iron's Spells is faction-flavored, not faction-locked
+
+- Evidence: the installed Iron's Spells build exposes Blood and Holy materials, spell-school assets, and native advancement/recipe surfaces; Vampirism also ships an Iron's Spells compatibility add-on.
+- Decision: House of Night quests tell Blood-school stories, Lantern Order quests tell Holy-school stories, and Free Companies mediate between both with limited utility. Players may pursue any school without a new KubeJS faction-state bridge.
+- Player-facing effect: magical identity reinforces the setting and gives Chapters 2–4 useful progression, while a faction switch or neutral play does not strand a player's spell materials.
+
+## D-010 — Foundation work is split into two visible lanes
+
+- Progression lane: equipment, workstations, faction supplies, and spellcraft materials.
+- World-building lane: headquarters, defenses, routes, refuges, workshops, storage, and hospitality.
+- The final foundation cache asks the team to name one work from each lane and pays construction stock plus a modest school-support supply instead of a paper keepsake.
 """, encoding="utf-8")
 
     chapter_rows = "\n".join(f"| {i:02d} | {ch.title} | {len(ch.quests)} |" for i, ch in enumerate(campaign.chapters))
@@ -1216,7 +1349,7 @@ No representative live world/save or current player inventory snapshot was suppl
 
 ## Intended loop
 
-`Island Charter → Three Invitations → one of three Foundations → any 3/8 Personal Contributions → any 4/8 Public Works → Long Night Fair → limited postgame requisitions`
+`Island Charter → Three Invitations → one of three Foundations → any 3/8 Personal Contributions → any 3/8 Public Works → Long Night Fair → limited postgame requisitions`
 
 `Rivalry Without Ruin` branches after the contribution chapter and remains optional. Its skirmish node requires two completed noncombat rivalry formats.
 
@@ -1225,12 +1358,13 @@ No representative live world/save or current player inventory snapshot was suppl
 Each of House of Night, Lantern Order, and Free Companies uses the same structural budget:
 
 1. one identity/current-state confirmation opener;
-2. seven foundation works;
-3. complete any five;
-4. name the headquarters and maintenance owner;
-5. receive the same 32 Scaffolding + 4 Super Glue team utility cache plus a different historical charter.
+2. two visible lanes: progression and world-building;
+3. eight foundation works;
+4. complete any five;
+5. name one work from each lane, the headquarters, and a maintenance owner;
+6. receive 32 Scaffolding, 4 Super Glue, a modest school-support supply, and one practical choice cache.
 
-The routes are intentionally not palette-swapped copies. Vampires build around coffins, altar, blood pantry, Vampire's Delight hospitality, night routes, hosting, and Create utility. Hunters build around public watch, Hunter Table, garlic reserve, stake drill, alchemy, refuge routes, and safety drills. Neutrals build contracts, courier routes, markets, guest space, archives, MCA civic relationships, and mediation/rescue.
+The routes are intentionally not palette-swapped copies. Vampires build around coffins, altar, Blood-school study, Vampire's Delight hospitality, night routes, hosting, and Create utility. Hunters build around watchhouses, Hunter Table, Holy wards, garlic reserve, alchemy, refuge routes, and safety drills. Neutrals build contracts, courier routes, markets, guest space, archives, MCA civic relationships, mediation/rescue, and a limited Blood/Holy translation desk.
 
 ## Minimum mainline
 
@@ -1239,8 +1373,8 @@ The campaign uses flexible progression and native `min_required_dependencies` ra
 - Charter signature
 - one foundation opener + any five foundation works + foundation charter
 - contribution opener + any three routes + contribution completion
-- infrastructure opener + any four public works + civic completion
-- Fair opener + any four contributions + Season One seal
+- infrastructure opener + any three public works + civic completion
+- Fair opener + any three contributions + Season One seal
 
 Optional reference clauses, extra foundation works, extra personal routes, rivalry, skirmish, and postgame rumors are not required for the seal.
 """, encoding="utf-8")
@@ -1252,14 +1386,14 @@ Optional reference clauses, extra foundation works, extra personal routes, rival
                 if r.type == "choice":
                     value = f"choice table `{r.table_id}`"
                 elif r.item_data:
-                    value = r.item_data.get("components", {}).get("minecraft:custom_name", "custom paper keepsake")
-                    value = "custom paper keepsake"
+                    value = r.item_data.get("components", {}).get("minecraft:custom_name", "named utility item")
+                    value = "named utility item"
                 else:
                     value = f"{r.count}× `{r.item}`"
                 reward_rows.append(f"| {ch.title} | {re.sub(r'&.', '', q.title)} | {value} | {'team' if r.team_reward else 'personal'} |")
     for table in campaign.reward_tables:
         for r in table["rewards"]:
-            val = "custom paper lens" if r.get("item_data") else f"{r.get('count',1)}× `{r.get('item')}`"
+            val = "named utility lens" if r.get("item_data") else f"{r.get('count',1)}× `{r.get('item')}`"
             reward_rows.append(f"| Choice: {table['title']} | {r['title']} | {val} | claimant |")
     reward_rows_text = "\n".join(reward_rows)
     (docs / "BALANCE.md").write_text(f"""# VvH Balance Audit — dev retune
@@ -1273,6 +1407,7 @@ The campaign assumes an unknown live-world progression state and therefore avoid
 - Create Goggles: quality-of-life information, not a progression machine.
 - Nature's Compass: navigation convenience, not rare loot.
 - 12 Arcane Essence / 8 Andesite Alloy / 8 Super Glue / 32 Scaffolding: modest friction reducers.
+- 2 Blood Runes or 2 Holy Runes per completed supernatural foundation; 8 Arcane Essence for the neutral mediator foundation.
 - Public caches: scaffolding, lanterns, torches, rails, food, fireworks, glue.
 
 No VvH quest grants Vampirism levels, Hunter levels, vampire blood progression, high-tier crossbows, boss weapons, finished vehicles, netherite/diamond equipment, or Bevel currency.
@@ -1293,7 +1428,7 @@ Outputs cannot produce Bevels or cheaply reproduce their own price. This makes t
 
 All three foundations grant exactly the same team utility cache. Faction-specific items are objectives the players obtain through normal play, not rewards that let one faction skip its own progression.
 
-The House and Order each require five of seven works and one current-alignment confirmation. Free Companies also require five of seven works. Neutral players therefore do not pay an economic penalty for refusing supernatural alignment.
+The House, Order, and Free Companies each require five of eight works plus a lane-aware review. School materials are modest objectives/rewards, not faction levels or high-tier spell grants. Neutral players can document limited Blood/Holy utility without becoming a substitute Vampire or Hunter progression route.
 
 ## Route-time estimates
 
@@ -1302,7 +1437,7 @@ These are design estimates, not measured live-play timings:
 - Charter + invitation: 10–25 minutes, excluding the actual Vampirism faction-conversion process.
 - One foundation: roughly 2–5 team-hours depending on world state and build ambition.
 - Any 3/8 personal contributions: 2–4 hours, heavily overlapping ordinary play.
-- Any 4/8 public works: 4–10 server-hours, often spread across several players/sessions.
+- Any 3/8 public works: 3–8 server-hours, often spread across several players/sessions.
 - Rivalry night: 45–120 minutes, optional.
 - Long Night Fair: 60–150 minutes plus whatever public works already exist.
 
@@ -1327,9 +1462,91 @@ No external web artwork is shipped by this build.
 
 Current chapter backgrounds/icons use assets already distributed by the installed pack and its mods, including vanilla Minecraft, Vampirism, Vampire's Delight, Create, Farmer's Delight, Nature's Compass, Iron's Spells, and Create Numismatics. These references are resolved against the materialized dev JAR set during validation.
 
-The existing Poiesis Living Atlas resource pack remains the source for the older Atlas chapter key art. No copyrighted image-search asset, hotlink, or newly vendored third-party binary was added.
+The Poiesis Living Atlas resource pack is the single source for the VvH chapter art. The current release contains the season crest, Free Company writ, five chapter panoramas, and the ten Blood/Holy/mediator support assets from the Iron's Spells batch. No copyrighted image-search asset, hotlink, or third-party binary was added.
 
-Two original transparent pixel-art emblems are now generated, reviewed, referenced by VvH 00/VvH 04, and shipped in the prerelease living-atlas-art-v4 asset. The five wide scene prompts remain queued because they need full painted backgrounds rather than cutouts.
+The Iron's Spells batch brief remains in `docs/vvh/IRON_SPELLS_IMAGE_BATCH.txt`; every listed output is rendered, normalized, and included in the current art release.
+""", encoding="utf-8")
+
+    (docs / "IRON_SPELLS_IMAGE_BATCH.txt").write_text("""VvH SEASON ONE — IRON'S SPELLS IMAGE BATCH
+============================================
+
+GLOBAL STYLE BIBLE
+------------------
+Create a coherent set of hand-made Minecraft-inspired pixel illustrations for an FTB Quests book. Use limited palettes, crisp block-aware silhouettes, chunky 2–4 px equivalent outlines, restrained dithering, readable shapes at 32 px, and small human imperfections like uneven ink, repaired cloth, worn wood, and asymmetrical props. The world is dark-fantasy civic life, not a generic combat poster. Do not copy Minecraft UI, use official logos, embed letters, or place a lone overpowered hero in the centre. Keep chapter-node safe areas quiet and leave enough contrast for white quest text.
+
+Shared negative prompt for every asset: text, letters, readable symbols, logos, watermark, photorealism, anime, gore, torture, modern firearms, military propaganda, giant weapon dominating the frame, lone hero pose, muddy black centre, cluttered UI-safe area, copyrighted branding.
+
+Palette anchors:
+- Blood: oxblood crimson, dark plum, bone, tarnished copper, candle gold.
+- Holy: steel blue, parchment, garlic green, clean ivory, antique gold.
+- Mediator: moss green, parchment, ink black, copper, small balanced crimson/blue accents.
+- Shared arcane material: violet-blue, silver, warm paper, deep brown wood.
+
+For every output, preserve the stated filename, canvas, aspect ratio, alpha requirement, and safe area. Generate the complete background for panoramas; generate a transparent cutout for crests and icons. Use nearest-neighbour scaling for pixel assets and inspect at 128, 64, and 32 px.
+
+ASSET 01 — HOUSE OF NIGHT BLOOD PANORAMA
+Filename: house_of_night_blood_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A lived-in block-built gothic manor at blue hour, Vampire civic headquarters rather than a villain lair. Show a coffin recovery room, Altar of Inspiration chamber, labelled blood pantry, Vampire's Delight night kitchen, a small Iron's Spells Blood ritual desk with Blood Rune, Bloody Vellum, Blood Vial and Blood Staff, lantern-marked night route, and two players hosting a visitor. Blood is treated as memory and inheritance; the scene is controlled, domestic, and useful. Hand-printed woodcut plus gouache pixel art, oxblood and bone palette, warm candle gold, no central hero.
+
+ASSET 02 — LANTERN ORDER HOLY PANORAMA
+Filename: lantern_order_holy_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A sturdy block-built Hunter watchhouse and public refuge at dusk, with a Holy Rune workstation, Priest chestplate on a mannequin, Holy Water reserve, healing/cleansing ward, alchemical cauldron, garlic drying rack, signed refuge route, and a small public information board. Several players escort a traveller and maintain supplies. Holy magic means stewardship, discipline, and protection, not a firing squad. Steel blue, parchment, garlic green, ivory and antique gold; matching composition weight to the House of Night panorama.
+
+ASSET 03 — FREE COMPANY MEDIATOR PANORAMA
+Filename: free_company_mediator_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A neutral Free Company waystation with contract board, courier route map, market stall, guesthouse, neutral workshop, shared archive, and a small spell translation desk holding Arcane Rune, Arcane Essence, one sealed Blood sample, and one Holy ward diagram. Crimson and steel-blue visitors meet under parchment-green awnings while a mediator records a fair agreement. No faction dominates the image. Warm civic atmosphere, hand-printed woodcut/gouache pixel art, practical architecture, no central hero.
+
+ASSET 04 — BLOOD SCHOOL CREST
+Filename: blood_school_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art heraldic emblem for the Blood school: a dark red vial, branching rune, small folded vellum, and restrained bat-wing geometry around a copper ring. It should feel scholarly and ceremonial rather than gory. Readable at 32 px, limited oxblood/bone/copper palette, no words, no literal human organ.
+
+ASSET 05 — HOLY SCHOOL CREST
+Filename: holy_school_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art heraldic emblem for the Holy school: an ivory lantern crossed with a clean rune, small ward circle, garlic sprig and antique-gold halo. It should communicate healing, cleansing, refuge, and discipline rather than aggression. Readable at 32 px, steel-blue/parchment/garlic-green palette, no words, no religious logo.
+
+ASSET 06 — MEDIATOR HYBRID CREST
+Filename: mediator_hybrid_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art emblem for a neutral magical mediator: folded map, copper contract seal, Arcane Rune, tiny balanced crimson and blue spark motifs, courier bell and moss-green knot. It must look like translation, safe storage, and emergency support, not a third empire. Readable at 32 px, parchment/moss/copper/ink palette, no words or currency pile.
+
+ASSET 07 — BLOOD RITUAL WORKSTATION
+Filename: blood_ritual_workstation.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art interior vignette of a small Blood school study inside the House of Night: Blood Rune on a stone desk, Bloody Vellum pinned beside a Blood Vial, Blood Staff in a rack, candlelit shelves, labelled storage, and a player teaching another player how to handle the materials safely. No combat, no gore, no text.
+
+ASSET 08 — HOLY PUBLIC WARD
+Filename: holy_public_ward.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art civic vignette of a Holy ward at a Hunter refuge: Holy Rune set into a lantern frame, Priest chestplate on a hook, Holy Water cabinet, clean healing circle, watchtower stairs, route map, and two players checking supplies for travellers. Public safety and care are the emotional centre; no monster trophy, no combat scene, no text.
+
+ASSET 09 — SPELL TRANSLATION DESK
+Filename: spell_translation_desk.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art neutral archive desk where a Free Company mediator compares a Blood Rune and Holy Rune beside Arcane Essence, maps, sealed vials, contract cord, courier bell, and a small emergency procedure board with no readable writing. The scene communicates safe translation and shared access, not mastery of either faction's strongest magic.
+
+ASSET 10 — RUNE MATERIAL SHEET
+Filename: vvh_rune_material_sheet.png
+Canvas: 1024x576, 16:9, transparent background
+Safe area: each object isolated with generous transparent padding
+Prompt: Pixel-art asset sheet of separate transparent objects: Blood Rune, Holy Rune, Arcane Rune, Blood Vial, Bloody Vellum, Holy Upgrade Orb, Blood Staff, Priest chestplate, and Arcane Essence. Consistent scale, crisp outlines, three faction palettes, no labels, no background, no overlapping objects.
+
+POST-PROCESSING
+--------------
+For transparent outputs, remove the generation background with a chroma-key or alpha matte, run a green-fringe/despill audit, resize with nearest-neighbour, and verify transparent corners. For panoramas, lower contrast in the UI-safe centre, test 16:9 and 2:1 crops, and optimize PNGs. Install only after checking the exact Poiesis resource-pack path and Packwiz hash.
 """, encoding="utf-8")
 
     (docs / "ASSET_PROMPTS.md").write_text("""# VvH Original Asset Queue
@@ -1354,7 +1571,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: `minecraft:textures/item/compass_16.png`
 
 ## ASSET-002 — House of Night key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Vampire foundation chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/house_of_night.png`
 - Canvas: 1280x720 px
@@ -1370,7 +1587,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: Vampirism fang + vanilla lantern textures
 
 ## ASSET-003 — Lantern Order key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Hunter foundation chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/lantern_order.png`
 - Canvas: 1280x720 px
@@ -1403,7 +1620,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: `minecraft:textures/item/filled_map.png`
 
 ## ASSET-005 — Public works panorama
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: The Island Remembers chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/island_remembers.png`
 - Canvas: 1280x720 px
@@ -1419,7 +1636,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Temporary fallback: vanilla lantern/rail/book imagery
 
 ## ASSET-006 — Rivalry without ruin woodcut
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: safe-rivalry chapter background
 - Final output path: `assets/poiesis/textures/questpics/vvh/rivalry_without_ruin.png`
 - Canvas: 1024x576 px
@@ -1428,14 +1645,14 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Safe area: central 50% quiet
 - Visual continuity: satirical illuminated-manuscript marginalia; faction colors; warm parchment
 - Subject and composition: Vampire and Hunter teams at far edges presenting absurd food, mascots, banners and race contraptions; neutral referee at lower centre; scavenger clues and fireworks; no battle in focus
-- Generation prompt: Wide satirical woodcut illustration for harmless faction rivalry in a block-world fantasy server, crimson vampire team at far left and steel-blue hunter team at far right presenting absurd mascots, garlic-versus-blood themed cooking dishes, propaganda banners and overengineered race contraptions, parchment-green neutral referee with clipboard at lower centre, scavenger clues and fireworks in background, theatrical friendly tension, central area deliberately low-detail for quest nodes, aged manuscript texture, no text
+- Generation prompt: Wide satirical woodcut illustration for harmless faction rivalry in a block-world fantasy server, crimson vampire team at far left and steel-blue hunter team at far right presenting absurd mascots, Blood-versus-Holy ward demonstrations, propaganda banners and overengineered race contraptions, parchment-green neutral referee with clipboard at lower centre, scavenger clues and fireworks in background, theatrical friendly tension, central area deliberately low-detail for quest nodes, aged manuscript texture, no text
 - Negative prompt: warfare, gore, angry mob, griefed buildings, realistic weapons, text, official logos, photorealism, cluttered centre, watermark
 - Post-processing: reduce centre contrast; palette harmonize; vignette; PNG optimize
 - Acceptance checks: funny before threatening; multiple safe formats readable; no text
 - Temporary fallback: firework/garlic/fang/map textures
 
 ## ASSET-007 — Long Night Fair key art
-- Status: needed
+- Status: accepted, generated, reviewed, installed in the current living-atlas-art release
 - Intended use: Season One capstone background and announcement
 - Final output path: `assets/poiesis/textures/questpics/vvh/long_night_fair.png`
 - Canvas: 1280x720 px
@@ -1461,6 +1678,7 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 - Vampirism faction-entry advancements exist and use Vampirism's faction trigger for level 1.
 - `vampirism:main/vampire_forest` is a real location advancement.
 - Exact item/recipe data exists for the Vampire altar/coffin/blood resources and Hunter table/stake/alchemical stations used by foundation quests.
+- Iron's Spells 3.16.2 and its Vampirism compatibility add-on expose the Blood, Holy, and neutral-support IDs used by the revised foundations; school flavor is thematic, not a faction lock.
 - Vampire's Delight Hardtack is a cheap current-pack travel ration and is used to replace removed Cobblemon reward slots without granting faction progression.
 - Existing Living Atlas files contained invalid `cobblemon:` references on dev; the generator repairs them while retaining object IDs.
 
@@ -1473,12 +1691,13 @@ The campaign is fully loadable without the remaining wide key art. The accepted 
 
 ## Automated build tests
 
-The CI gauntlet is expected to run after generation against the pinned dev revision and record Packwiz cleanliness, exact namespace resolution, SNBT parsing, graph/economy validation, layout renders, server materialization, and a disposable NeoForge + FTB Quests reload smoke test under `docs/vvh/evidence/`.
+The CI gauntlet is expected to run after generation against the pinned dev revision and record Packwiz cleanliness, exact namespace resolution, SNBT parsing, graph/economy validation, layout renders, server materialization, a manifest-level Blood/Holy/mediator/build/reward playtest, and a disposable NeoForge + FTB Quests reload smoke test under `docs/vvh/evidence/`.
 
 ## Requires runtime verification
 
 - two-client personal versus team reward claiming;
 - current Vampirism faction → FTB Teams social confirmation workflow during a real faction switch;
+- Blood/Holy/mediator objective completion and school-material rewards in a client playtest;
 - live claim ownership/transfer after leaving a faction FTB party;
 - normal-scale client chapter rendering and text wrapping;
 - skirmish PvP toggle, protected noncombatants, backup, and restore;
@@ -1505,6 +1724,7 @@ Vampirism and FTB Teams are separate systems.
 - Finish the personal Charter before joining a shared faction FTB party when practical.
 - House of Night and Lantern Order foundation caches require a second player/host to confirm the FTB team is presently aligned with the claimed Vampirism faction.
 - A past `become_vampire` / `become_hunter` advancement is historical evidence only; do not use it alone to approve a post-switch cache.
+- Blood and Holy materials reinforce the House and Order stories but remain usable by any player. Free Companies use the translation desk for limited cross-school utility; no KubeJS state bridge or hard school lock exists.
 - Free Companies use personal/neutral FTB parties unless the server intentionally creates a shared neutral company.
 
 ## Faction switch
@@ -1569,6 +1789,9 @@ Static validation must cover:
 - zero `cobblemon:` references after Living Atlas migration;
 - no new VvH KubeJS files;
 - explicit personal/team reward scope;
+- verified Blood, Holy, and neutral mediator Iron's Spells item/image references;
+- no primary paper-only reward remains in migrated or VvH campaign pages;
+- manifest-level playtest covers one Blood objective, one Holy objective, one neutral objective, one world-build objective, and one school-material choice cache;
 - repeatable Bevel prices/cooldowns and zero Bevel issuance;
 - source-level layout overlap/crossing checks.
 

@@ -246,6 +246,7 @@ def resolve_item(item_id: str, entries: set[str], source_root: Path) -> bool:
             "minecraft:item_frame", "minecraft:lantern", "minecraft:lead", "minecraft:minecart",
             "minecraft:oak_sign", "minecraft:painting", "minecraft:paper", "minecraft:powered_rail",
             "minecraft:rail", "minecraft:red_banner", "minecraft:red_candle", "minecraft:scaffolding",
+            "minecraft:stone_bricks",
             "minecraft:shield", "minecraft:slime_ball", "minecraft:soul_lantern", "minecraft:spyglass",
             "minecraft:target", "minecraft:torch", "minecraft:writable_book",
             "minecraft:armor_stand", "minecraft:crafting_table", "minecraft:iron_door",
@@ -532,6 +533,81 @@ def main() -> int:
     audit.metrics["item_ids_checked"] = len(item_ids)
     audit.metrics["advancements_checked"] = len(advancement_ids)
     audit.metrics["image_refs_checked"] = len(image_refs)
+
+    # The revised foundations must expose a small, verified Iron's Spells weave.
+    # Keep this check deliberately narrow: it proves the authored Blood, Holy, and
+    # mediator surfaces exist without pretending that a faction is a hard class.
+    chapter_titles = {ch.get("title", ""): ch for ch in manifest.get("chapters", [])}
+    iron_requirements = {
+        "VvH 02 · House of Night": {
+            "items": {"irons_spellbooks:blood_rune", "irons_spellbooks:bloody_vellum"},
+            "images": {
+                "irons_spellbooks:textures/item/blood_rune.png",
+                "irons_spellbooks:textures/item/blood_staff.png",
+                "irons_spellbooks:textures/item/blood_vial.png",
+            },
+        },
+        "VvH 03 · Lantern Order": {
+            "items": {"irons_spellbooks:holy_rune"},
+            "images": {
+                "irons_spellbooks:textures/item/holy_rune.png",
+                "irons_spellbooks:textures/item/priest_chestplate.png",
+                "irons_spellbooks:textures/item/upgrade_orb_holy.png",
+            },
+        },
+        "VvH 04 · Free Companies": {
+            "items": {"irons_spellbooks:arcane_essence", "irons_spellbooks:arcane_rune"},
+            "images": {
+                "irons_spellbooks:textures/item/arcane_rune.png",
+                "irons_spellbooks:textures/item/affinity_ring_blood.png",
+                "irons_spellbooks:textures/item/affinity_ring_holy.png",
+            },
+        },
+    }
+    iron_usage: dict[str, dict[str, list[str]]] = {}
+    for title, requirement in iron_requirements.items():
+        chapter = chapter_titles.get(title)
+        if chapter is None:
+            audit.error(f"Iron's Spells weave chapter is missing: {title}")
+            continue
+        chapter_items: set[str] = {chapter.get("icon", "")}
+        chapter_images: set[str] = {img.get("image", "") for img in chapter.get("images", [])}
+        for q in chapter.get("quests", []):
+            chapter_items.add(q.get("icon", ""))
+            for t in q.get("tasks", []):
+                if t.get("item"):
+                    chapter_items.add(t["item"])
+            for r in q.get("rewards", []):
+                if r.get("item"):
+                    chapter_items.add(r["item"])
+                if r.get("item_data"):
+                    chapter_items.add(r["item_data"].get("id", ""))
+        missing_items = sorted(requirement["items"] - chapter_items)
+        missing_images = sorted(requirement["images"] - chapter_images)
+        for item in missing_items:
+            audit.error(f"Iron's Spells item is not surfaced in {title}: {item}")
+        for image in missing_images:
+            audit.error(f"Iron's Spells image is not surfaced in {title}: {image}")
+        iron_usage[title] = {"items": sorted(requirement["items"] & chapter_items), "images": sorted(requirement["images"] & chapter_images)}
+    audit.metrics["iron_spell_weave"] = iron_usage
+
+    # Paper remains useful as lore text, but it must not be a primary campaign
+    # payout. This catches regressions in both direct rewards and choice tables.
+    paper_rewards: list[str] = []
+    for chapter in manifest.get("chapters", []):
+        for quest in chapter.get("quests", []):
+            for reward in quest.get("rewards", []):
+                item = reward.get("item") or (reward.get("item_data") or {}).get("id")
+                if item == "minecraft:paper":
+                    paper_rewards.append(f"{chapter.get('title')}: {quest.get('title')}: {reward.get('id')}")
+    for table in manifest.get("reward_tables", []):
+        for reward in table.get("rewards", []):
+            item = reward.get("item") or (reward.get("item_data") or {}).get("id")
+            if item == "minecraft:paper":
+                paper_rewards.append(f"choice {table.get('title')}: {reward.get('id')}")
+    audit.metrics["primary_paper_rewards"] = paper_rewards
+    for reward in paper_rewards:
+        audit.error(f"Primary campaign reward is still paper: {reward}")
 
     # Validate the legacy Living Atlas objects modified by the dev-modlist migration too.
     migrated_names = {

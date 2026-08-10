@@ -1,10 +1,16 @@
 # Changelog
 
-## [Unreleased] — VvH Season One dev-modlist retune
+## [Unreleased] — VvH Iron's Spells faction weave
 
-- Retuned the ten-chapter, 82-quest Vampires vs Hunters campaign to the current `dev` modlist at `3e4842383dd1e029f054aedfe19940f0b53adbcd`. Vampire and Hunter routes now use the installed Vampirism 1.10.12 faction/progression surface, Vampire's Delight, Create/Aeronautics, MCA civic play, The Hordes, and the current transport/building stack.
-- Migrated existing Living Atlas quest/reward object IDs away from the removed Cobblemon namespace so old quest progress is preserved while new players receive valid current-pack objectives and rewards.
-- Kept Neutral/Free Company play mechanically viable, kept combat optional, preserved fixed horizontal rewards, and added no VvH KubeJS quest engine or dynamic faction reward multiplier.
+- Added separate progression and world-building lanes to the Vampire, Hunter, and Free Company foundation chapters.
+- Wove verified Iron's Spells Blood, Holy, and neutral mediator utility through the foundations without faction-locking school access or adding KubeJS synchronization.
+- Replaced primary paper payouts with useful supplies, school materials, and player-choice caches; added the bulk image-generation brief at `docs/vvh/IRON_SPELLS_IMAGE_BATCH.txt`.
+
+## [Unreleased] — VvH Season One final art and quest release
+
+- Added separate progression and world-building lanes to the Vampire, Hunter, and Free Company foundation chapters.
+- Wove verified Iron's Spells Blood, Holy, and neutral mediator utility through the foundations without faction-locking school access or adding KubeJS synchronization.
+- Replaced primary paper payouts with useful supplies, school materials, and player-choice caches; added the bulk image-generation brief at `docs/vvh/IRON_SPELLS_IMAGE_BATCH.txt`.
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.
 

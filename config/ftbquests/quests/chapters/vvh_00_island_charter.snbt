@@ -136,26 +136,6 @@
 			min_width: 280
 			rewards: [
 				{
-					id: "7A11C0DE10200001"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								document: "island_charter"
-							}
-							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Field Charter \\u2014 Season One\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Signed before choosing a banner; prestige, not power.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C0DE10200002"
 					item: {
 						count: 1
@@ -169,6 +149,15 @@
 					item: {
 						count: 8
 						id: "minecraft:torch"
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C0DE10200004"
+					item: {
+						count: 2
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"

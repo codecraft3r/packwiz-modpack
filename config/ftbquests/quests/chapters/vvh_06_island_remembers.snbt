@@ -12,7 +12,7 @@
 		{
 			alpha: 80
 			height: 1.55d
-			image: "minecraft:textures/item/lantern.png"
+			image: "poiesis:textures/questpics/vvh/island_remembers.png"
 			order: -30
 			rotation: -9.0d
 			width: 1.55d
@@ -159,7 +159,7 @@
 				"7A11C0DE16000001"
 			]
 			icon: {
-				id: "minecraft:bread"
+				id: "minecraft:chest"
 			}
 			id: "7A11C0DE16000006"
 			min_width: 280
@@ -250,7 +250,7 @@
 				id: "minecraft:lantern"
 			}
 			id: "7A11C0DE1600000B"
-			min_required_dependencies: 4
+			min_required_dependencies: 3
 			min_width: 280
 			rewards: [
 				{
@@ -272,24 +272,11 @@
 					type: "item"
 				}
 				{
+					exclude_from_claim_all: true
 					id: "7A11C0DE16200072"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								document: "public_works"
-							}
-							"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Civic Works Docket\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Four public works survived long enough to become part of the island's story.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
+					table_id: 8796023610973093890
 					team_reward: true
-					type: "item"
+					type: "choice"
 				}
 			]
 			shape: "hexagon"

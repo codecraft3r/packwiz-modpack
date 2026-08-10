@@ -48,7 +48,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A current shared is a current multiplied.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:goggles"
 					}
 					team_reward: false
 					type: "item"
@@ -83,7 +83,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Ordinary force, applied with uncommon patience.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:andesite_alloy"
 					}
 					team_reward: false
 					type: "item"
@@ -125,7 +125,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A tool is a promise, not a throne.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "create:goggles"
 					}
 					team_reward: false
 					type: "item"
@@ -167,7 +167,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A first table is an argument with possibility.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -209,7 +209,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A good story has at least one witness.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"
@@ -272,7 +272,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The useful things were never small to the people who needed them.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"

@@ -32,5 +32,19 @@
 				id: "create:super_glue"
 			}
 		}
+		{
+			id: "7A11C0DEF0020005"
+			item: {
+				count: 2
+				id: "irons_spellbooks:blood_rune"
+			}
+		}
+		{
+			id: "7A11C0DEF0020006"
+			item: {
+				count: 2
+				id: "irons_spellbooks:holy_rune"
+			}
+		}
 	]
 }

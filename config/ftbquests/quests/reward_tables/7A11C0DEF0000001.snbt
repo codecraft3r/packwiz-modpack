@@ -18,8 +18,8 @@
 						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Improve the experience of places.\"}"
 					]
 				}
-				count: 1
-				id: "minecraft:paper"
+				count: 8
+				id: "minecraft:scaffolding"
 			}
 		}
 		{
@@ -37,7 +37,7 @@
 					]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "create:goggles"
 			}
 		}
 		{
@@ -55,7 +55,7 @@
 					]
 				}
 				count: 1
-				id: "minecraft:paper"
+				id: "minecraft:spyglass"
 			}
 		}
 		{
@@ -72,8 +72,8 @@
 						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Maintain food, hospitality, supplies, and continuity.\"}"
 					]
 				}
-				count: 1
-				id: "minecraft:paper"
+				count: 4
+				id: "minecraft:lantern"
 			}
 		}
 		{
@@ -90,8 +90,8 @@
 						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Make magic and supernatural systems understandable.\"}"
 					]
 				}
-				count: 1
-				id: "minecraft:paper"
+				count: 2
+				id: "irons_spellbooks:arcane_essence"
 			}
 		}
 		{
@@ -108,8 +108,8 @@
 						"{\"color\":\"gray\",\"italic\":false,\"text\":\"Preserve guides, contracts, failures, and server memory.\"}"
 					]
 				}
-				count: 1
-				id: "minecraft:paper"
+				count: 2
+				id: "minecraft:book"
 			}
 		}
 	]

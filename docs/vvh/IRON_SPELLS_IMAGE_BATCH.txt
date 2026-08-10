@@ -1,0 +1,80 @@
+VvH SEASON ONE — IRON'S SPELLS IMAGE BATCH
+============================================
+
+GLOBAL STYLE BIBLE
+------------------
+Create a coherent set of hand-made Minecraft-inspired pixel illustrations for an FTB Quests book. Use limited palettes, crisp block-aware silhouettes, chunky 2–4 px equivalent outlines, restrained dithering, readable shapes at 32 px, and small human imperfections like uneven ink, repaired cloth, worn wood, and asymmetrical props. The world is dark-fantasy civic life, not a generic combat poster. Do not copy Minecraft UI, use official logos, embed letters, or place a lone overpowered hero in the centre. Keep chapter-node safe areas quiet and leave enough contrast for white quest text.
+
+Shared negative prompt for every asset: text, letters, readable symbols, logos, watermark, photorealism, anime, gore, torture, modern firearms, military propaganda, giant weapon dominating the frame, lone hero pose, muddy black centre, cluttered UI-safe area, copyrighted branding.
+
+Palette anchors:
+- Blood: oxblood crimson, dark plum, bone, tarnished copper, candle gold.
+- Holy: steel blue, parchment, garlic green, clean ivory, antique gold.
+- Mediator: moss green, parchment, ink black, copper, small balanced crimson/blue accents.
+- Shared arcane material: violet-blue, silver, warm paper, deep brown wood.
+
+For every output, preserve the stated filename, canvas, aspect ratio, alpha requirement, and safe area. Generate the complete background for panoramas; generate a transparent cutout for crests and icons. Use nearest-neighbour scaling for pixel assets and inspect at 128, 64, and 32 px.
+
+ASSET 01 — HOUSE OF NIGHT BLOOD PANORAMA
+Filename: house_of_night_blood_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A lived-in block-built gothic manor at blue hour, Vampire civic headquarters rather than a villain lair. Show a coffin recovery room, Altar of Inspiration chamber, labelled blood pantry, Vampire's Delight night kitchen, a small Iron's Spells Blood ritual desk with Blood Rune, Bloody Vellum, Blood Vial and Blood Staff, lantern-marked night route, and two players hosting a visitor. Blood is treated as memory and inheritance; the scene is controlled, domestic, and useful. Hand-printed woodcut plus gouache pixel art, oxblood and bone palette, warm candle gold, no central hero.
+
+ASSET 02 — LANTERN ORDER HOLY PANORAMA
+Filename: lantern_order_holy_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A sturdy block-built Hunter watchhouse and public refuge at dusk, with a Holy Rune workstation, Priest chestplate on a mannequin, Holy Water reserve, healing/cleansing ward, alchemical cauldron, garlic drying rack, signed refuge route, and a small public information board. Several players escort a traveller and maintain supplies. Holy magic means stewardship, discipline, and protection, not a firing squad. Steel blue, parchment, garlic green, ivory and antique gold; matching composition weight to the House of Night panorama.
+
+ASSET 03 — FREE COMPANY MEDIATOR PANORAMA
+Filename: free_company_mediator_panorama.png
+Canvas: 1280x720, 16:9, opaque background
+Safe area: central 46 percent low detail; strongest detail at edges and lower third
+Prompt: A neutral Free Company waystation with contract board, courier route map, market stall, guesthouse, neutral workshop, shared archive, and a small spell translation desk holding Arcane Rune, Arcane Essence, one sealed Blood sample, and one Holy ward diagram. Crimson and steel-blue visitors meet under parchment-green awnings while a mediator records a fair agreement. No faction dominates the image. Warm civic atmosphere, hand-printed woodcut/gouache pixel art, practical architecture, no central hero.
+
+ASSET 04 — BLOOD SCHOOL CREST
+Filename: blood_school_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art heraldic emblem for the Blood school: a dark red vial, branching rune, small folded vellum, and restrained bat-wing geometry around a copper ring. It should feel scholarly and ceremonial rather than gory. Readable at 32 px, limited oxblood/bone/copper palette, no words, no literal human organ.
+
+ASSET 05 — HOLY SCHOOL CREST
+Filename: holy_school_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art heraldic emblem for the Holy school: an ivory lantern crossed with a clean rune, small ward circle, garlic sprig and antique-gold halo. It should communicate healing, cleansing, refuge, and discipline rather than aggression. Readable at 32 px, steel-blue/parchment/garlic-green palette, no words, no religious logo.
+
+ASSET 06 — MEDIATOR HYBRID CREST
+Filename: mediator_hybrid_crest.png
+Canvas: 512x512, 1:1, transparent background
+Safe area: central 78 percent
+Prompt: Transparent pixel-art emblem for a neutral magical mediator: folded map, copper contract seal, Arcane Rune, tiny balanced crimson and blue spark motifs, courier bell and moss-green knot. It must look like translation, safe storage, and emergency support, not a third empire. Readable at 32 px, parchment/moss/copper/ink palette, no words or currency pile.
+
+ASSET 07 — BLOOD RITUAL WORKSTATION
+Filename: blood_ritual_workstation.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art interior vignette of a small Blood school study inside the House of Night: Blood Rune on a stone desk, Bloody Vellum pinned beside a Blood Vial, Blood Staff in a rack, candlelit shelves, labelled storage, and a player teaching another player how to handle the materials safely. No combat, no gore, no text.
+
+ASSET 08 — HOLY PUBLIC WARD
+Filename: holy_public_ward.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art civic vignette of a Holy ward at a Hunter refuge: Holy Rune set into a lantern frame, Priest chestplate on a hook, Holy Water cabinet, clean healing circle, watchtower stairs, route map, and two players checking supplies for travellers. Public safety and care are the emotional centre; no monster trophy, no combat scene, no text.
+
+ASSET 09 — SPELL TRANSLATION DESK
+Filename: spell_translation_desk.png
+Canvas: 768x768, 1:1, opaque background
+Safe area: central 42 percent quiet
+Prompt: Pixel-art neutral archive desk where a Free Company mediator compares a Blood Rune and Holy Rune beside Arcane Essence, maps, sealed vials, contract cord, courier bell, and a small emergency procedure board with no readable writing. The scene communicates safe translation and shared access, not mastery of either faction's strongest magic.
+
+ASSET 10 — RUNE MATERIAL SHEET
+Filename: vvh_rune_material_sheet.png
+Canvas: 1024x576, 16:9, transparent background
+Safe area: each object isolated with generous transparent padding
+Prompt: Pixel-art asset sheet of separate transparent objects: Blood Rune, Holy Rune, Arcane Rune, Blood Vial, Bloody Vellum, Holy Upgrade Orb, Blood Staff, Priest chestplate, and Arcane Essence. Consistent scale, crisp outlines, three faction palettes, no labels, no background, no overlapping objects.
+
+POST-PROCESSING
+--------------
+For transparent outputs, remove the generation background with a chroma-key or alpha matte, run a green-fringe/despill audit, resize with nearest-neighbour, and verify transparent corners. For panoramas, lower contrast in the UI-safe centre, test 16:9 and 2:1 crops, and optimize PNGs. Install only after checking the exact Poiesis resource-pack path and Packwiz hash.

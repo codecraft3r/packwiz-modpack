@@ -58,7 +58,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The sky remembers every gentle capture.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:spyglass"
 					}
 					team_reward: false
 					type: "item"
@@ -105,7 +105,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A quiet spark, carefully not set loose.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -153,7 +153,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A machine is a spell that admits its gears.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:spyglass"
 					}
 					team_reward: false
 					type: "item"
@@ -201,7 +201,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"The road was there before the map admitted it.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "irons_spellbooks:arcane_essence"
 					}
 					team_reward: false
 					type: "item"
@@ -249,7 +249,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"A victory sounds better with witnesses.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"
@@ -306,7 +306,7 @@
 							"minecraft:lore": ["{\"color\":\"gray\",\"italic\":false,\"text\":\"Three lenses, one page, no singular hero.\"}"]
 						}
 						count: 1
-						id: "minecraft:paper"
+						id: "minecraft:lantern"
 					}
 					team_reward: false
 					type: "item"

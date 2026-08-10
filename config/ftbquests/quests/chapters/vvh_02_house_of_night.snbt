@@ -12,7 +12,7 @@
 		{
 			alpha: 80
 			height: 1.55d
-			image: "vampirism:textures/item/vampire_fang.png"
+			image: "poiesis:textures/questpics/vvh/house_of_night.png"
 			order: -30
 			rotation: -9.0d
 			width: 1.55d
@@ -22,7 +22,7 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "vampirism:textures/item/vampire_fang.png"
+			image: "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png"
 			order: -30
 			rotation: 8.0d
 			width: 1.55d
@@ -32,7 +32,7 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "minecraft:textures/item/lantern.png"
+			image: "poiesis:textures/questpics/vvh/blood_ritual_workstation.png"
 			order: -30
 			rotation: 5.0d
 			width: 1.55d
@@ -42,12 +42,42 @@
 		{
 			alpha: 62
 			height: 1.55d
-			image: "minecraft:textures/item/writable_book.png"
+			image: "poiesis:textures/questpics/vvh/blood_school_crest.png"
 			order: -30
 			rotation: -6.0d
 			width: 1.55d
 			x: 4.5d
 			y: 5.0d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/blood_rune.png"
+			order: -30
+			rotation: -9.0d
+			width: 1.55d
+			x: -5.2d
+			y: -1.2d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/blood_staff.png"
+			order: -30
+			rotation: 8.0d
+			width: 1.55d
+			x: 5.2d
+			y: 1.5d
+		}
+		{
+			alpha: 62
+			height: 1.55d
+			image: "irons_spellbooks:textures/item/blood_vial.png"
+			order: -30
+			rotation: 5.0d
+			width: 1.55d
+			x: -4.5d
+			y: 4.5d
 		}
 	]
 	order_index: 2
@@ -82,6 +112,46 @@
 				"7A11C0DE12000001"
 			]
 			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "7A11C0DE1200000C"
+			min_width: 280
+			shape: "gear"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE12100079"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -3.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12000001"
+			]
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE1200000D"
+			min_width: 280
+			shape: "square"
+			size: 1.15d
+			tasks: [
+				{
+					id: "7A11C0DE12100083"
+					type: "checkmark"
+				}
+			]
+			x: 7.0d
+			y: -1.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1200000D"
+			]
+			icon: {
 				id: "vampirism:coffin_red"
 			}
 			id: "7A11C0DE12000002"
@@ -102,12 +172,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
-			y: -1.4d
+			x: 1.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000C"
 			]
 			icon: {
 				id: "vampirism:altar_inspiration"
@@ -130,12 +200,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
-			y: 0.2d
+			x: -7.0d
+			y: -0.2d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000D"
 			]
 			icon: {
 				id: "vampirism:blood_bottle"
@@ -159,15 +229,15 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
-			y: -0.7d
+			x: 3.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000D"
 			]
 			icon: {
-				id: "vampiresdelight:blood_pie"
+				id: "vampiresdelight:blood_wine_bottle"
 			}
 			id: "7A11C0DE12000005"
 			min_width: 280
@@ -178,7 +248,7 @@
 					id: "7A11C0DE12100033"
 					item: {
 						count: 1
-						id: "vampiresdelight:blood_pie"
+						id: "vampiresdelight:blood_wine_bottle"
 					}
 					type: "item"
 				}
@@ -187,12 +257,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
+			x: 5.0d
 			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000D"
 			]
 			icon: {
 				id: "minecraft:lantern"
@@ -207,12 +277,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
-			y: -0.7d
+			x: 7.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000D"
 			]
 			icon: {
 				id: "vampiresdelight:spirit_lantern"
@@ -227,12 +297,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 0.2d
+			x: 9.0d
+			y: 0.8d
 		}
 		{
 			dependencies: [
-				"7A11C0DE12000001"
+				"7A11C0DE1200000C"
 			]
 			icon: {
 				id: "create:mechanical_press"
@@ -255,8 +325,44 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.0d
-			y: -1.4d
+			x: -5.0d
+			y: -0.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1200000C"
+			]
+			icon: {
+				id: "irons_spellbooks:blood_rune"
+			}
+			id: "7A11C0DE12000009"
+			min_width: 280
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "7A11C0DE1210005B"
+					item: {
+						count: 1
+						id: "irons_spellbooks:blood_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1210005C"
+					item: {
+						count: 1
+						id: "irons_spellbooks:bloody_vellum"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1210005D"
+					type: "checkmark"
+				}
+			]
+			x: -3.0d
+			y: -0.2d
 		}
 		{
 			dependencies: [
@@ -267,6 +373,7 @@
 				"7A11C0DE12000006"
 				"7A11C0DE12000007"
 				"7A11C0DE12000008"
+				"7A11C0DE12000009"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -276,26 +383,6 @@
 			min_required_dependencies: 5
 			min_width: 280
 			rewards: [
-				{
-					id: "7A11C0DE12200066"
-					item: {
-						components: {
-							"minecraft:custom_data": {
-								vvh_campaign: "season_one"
-								foundation: "vampire"
-							}
-							"minecraft:custom_name": "{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Charter of the House of Night\"}"
-							"minecraft:enchantment_glint_override": true
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Five works turned supernatural progression into a place with obligations.\"}"
-							]
-						}
-						count: 1
-						id: "minecraft:paper"
-					}
-					team_reward: true
-					type: "item"
-				}
 				{
 					id: "7A11C0DE12200067"
 					item: {
@@ -314,12 +401,32 @@
 					team_reward: true
 					type: "item"
 				}
+				{
+					id: "7A11C0DE12200069"
+					item: {
+						count: 2
+						id: "irons_spellbooks:blood_rune"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1220006A"
+					table_id: 8796023610973093890
+					team_reward: true
+					type: "choice"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
 				{
 					id: "7A11C0DE12100065"
+					type: "checkmark"
+				}
+				{
+					id: "7A11C0DE12100066"
 					type: "checkmark"
 				}
 			]
