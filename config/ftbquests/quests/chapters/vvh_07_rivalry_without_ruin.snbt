@@ -92,8 +92,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5
-			y: -1
+			x: -4
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -113,8 +113,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -3
-			y: 0.8d
+			x: 0
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -134,12 +134,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -1
-			y: -0.2d
+			x: 4
+			y: -1.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000001"
+				"7A11C0DE17000004"
 			]
 			icon: {
 				id: "createpropulsion:wing"
@@ -155,12 +155,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 1
-			y: 0.8d
+			x: 4
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000001"
+				"7A11C0DE17000003"
 			]
 			icon: {
 				id: "minecraft:emerald"
@@ -176,12 +176,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 3
-			y: -0.2d
+			x: 0
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000001"
+				"7A11C0DE17000002"
 			]
 			icon: {
 				id: "minecraft:armor_stand"
@@ -197,24 +197,18 @@
 					type: "checkmark"
 				}
 			]
-			x: 5
-			y: -1
+			x: -4
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000002"
-				"7A11C0DE17000003"
-				"7A11C0DE17000004"
-				"7A11C0DE17000005"
-				"7A11C0DE17000006"
-				"7A11C0DE17000007"
+				"7A11C0DE17000009"
 			]
 			hide_dependency_lines: true
 			icon: {
 				id: "minecraft:shield"
 			}
 			id: "7A11C0DE17000008"
-			min_required_dependencies: 2
 			min_width: 280
 			optional: true
 			shape: "diamond"
@@ -225,8 +219,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 3.1d
+			x: 3.2d
+			y: 5.7d
 		}
 		{
 			dependencies: [
@@ -281,7 +275,7 @@
 				}
 			]
 			x: 0
-			y: 5.4d
+			y: 4.0d
 		}
 	]
 }

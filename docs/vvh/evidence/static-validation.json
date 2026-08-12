@@ -1,5 +1,27 @@
 {
-  "errors": [],
+  "errors": [
+    "Duplicate FTB object ID 7A11C0DE14100016: ['config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt', 'config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt']",
+    "Duplicate FTB object ID 7A11C0DE14100034: ['config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt', 'config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt']",
+    "Duplicate FTB object ID 7A11C0DE1410003E: ['config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt', 'config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt']",
+    "Duplicate FTB object ID 7A11C0DE14100048: ['config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt', 'config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_04_free_companies.snbt']",
+    "Duplicate FTB object ID 7A11C0DE1510005C: ['config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_05_work_each_hand_knows.snbt', 'config\\\\ftbquests\\\\quests\\\\chapters\\\\vvh_05_work_each_hand_knows.snbt']",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/blood_school_crest.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/free_company_writ.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/holy_public_ward.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/holy_school_crest.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/house_of_night.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/island_remembers.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/lantern_order.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/long_night_fair.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/mediator_hybrid_crest.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/season_one_crest.png",
+    "Unresolved image reference: poiesis:textures/questpics/vvh/spell_translation_desk.png"
+  ],
   "metrics": {
     "advancements_checked": 2,
     "bevel_personal_per_player": 0,
@@ -17,28 +39,63 @@
       "VvH 08 \u00b7 The Long Night Fair": 0,
       "VvH 09 \u00b7 After the Bells": 0
     },
-    "global_ftb_ids": 372,
-    "image_refs_checked": 12,
+    "global_ftb_ids": 438,
+    "image_refs_checked": 35,
+    "iron_spell_weave": {
+      "VvH 02 \u00b7 House of Night": {
+        "images": [
+          "irons_spellbooks:textures/item/blood_rune.png",
+          "irons_spellbooks:textures/item/blood_staff.png",
+          "irons_spellbooks:textures/item/blood_vial.png"
+        ],
+        "items": [
+          "irons_spellbooks:blood_rune",
+          "irons_spellbooks:bloody_vellum"
+        ]
+      },
+      "VvH 03 \u00b7 Lantern Order": {
+        "images": [
+          "irons_spellbooks:textures/item/holy_rune.png",
+          "irons_spellbooks:textures/item/priest_chestplate.png",
+          "irons_spellbooks:textures/item/upgrade_orb_holy.png"
+        ],
+        "items": [
+          "irons_spellbooks:holy_rune"
+        ]
+      },
+      "VvH 04 \u00b7 Free Companies": {
+        "images": [
+          "irons_spellbooks:textures/item/affinity_ring_blood.png",
+          "irons_spellbooks:textures/item/affinity_ring_holy.png",
+          "irons_spellbooks:textures/item/arcane_rune.png"
+        ],
+        "items": [
+          "irons_spellbooks:arcane_essence",
+          "irons_spellbooks:arcane_rune"
+        ]
+      }
+    },
     "item_ids_checked": 44,
-    "localization_keys_required": 410,
+    "localization_keys_required": 460,
     "long_description_lines": 0,
     "max_bevel_issuance_6_neutral_parties": 0,
     "max_bevel_issuance_6_players_2_faction_teams": 0,
     "migrated_legacy_advancement_ids_checked": 4,
     "migrated_legacy_item_ids_checked": 27,
     "minimum_intended_path_checkmark_tasks_including_charter": 26,
-    "minimum_intended_path_quest_count_including_charter": 26,
+    "minimum_intended_path_quest_count_including_charter": 25,
     "minimum_path_checkmark_tasks": 24,
-    "minimum_quest_count_to_season_seal": 24,
+    "minimum_quest_count_to_season_seal": 23,
     "new_vvh_kubejs_files": 0,
     "one_minimum_path_ids": [
       "7A11C0DE12000001",
       "7A11C0DE12000002",
-      "7A11C0DE12000003",
       "7A11C0DE12000004",
       "7A11C0DE12000005",
       "7A11C0DE12000006",
+      "7A11C0DE12000007",
       "7A11C0DE1200000A",
+      "7A11C0DE1200000D",
       "7A11C0DE15000001",
       "7A11C0DE15000002",
       "7A11C0DE15000003",
@@ -48,13 +105,11 @@
       "7A11C0DE16000002",
       "7A11C0DE16000003",
       "7A11C0DE16000004",
-      "7A11C0DE16000005",
       "7A11C0DE1600000B",
       "7A11C0DE18000001",
       "7A11C0DE18000002",
       "7A11C0DE18000003",
       "7A11C0DE18000004",
-      "7A11C0DE18000005",
       "7A11C0DE18000009"
     ],
     "optional_rewardless_leaf_review": [
@@ -75,6 +130,7 @@
         "title": "SANCTIONED SKIRMISH \u2014 ONLY IF EVERY BOX IS TRUE"
       }
     ],
+    "primary_paper_rewards": [],
     "removed_cobblemon_namespace_refs": 0,
     "repeatable_caches": [
       {
@@ -114,8 +170,8 @@
             16
           ],
           [
-            "minecraft:cake",
-            2
+            "minecraft:lantern",
+            8
           ]
         ]
       },
@@ -138,11 +194,11 @@
         "quest": "7A11C0DE19000006",
         "rewards": [
           [
-            "minecraft:bread",
-            16
+            "minecraft:book",
+            8
           ],
           [
-            "minecraft:cooked_beef",
+            "minecraft:lantern",
             8
           ]
         ]
@@ -161,7 +217,7 @@
       "7A11C0DE19000007"
     ],
     "vvh_chapters": 10,
-    "vvh_quests": 82
+    "vvh_quests": 91
   },
   "notes": [],
   "runtime_verification": [
@@ -171,6 +227,6 @@
     "requires runtime verification \u2014 FTB Teams join/leave/switch progress and FTB Chunks claim handling",
     "requires runtime verification \u2014 optional skirmish PvP controls and backup restore procedure"
   ],
-  "status": "pass",
+  "status": "fail",
   "warnings": []
 }
