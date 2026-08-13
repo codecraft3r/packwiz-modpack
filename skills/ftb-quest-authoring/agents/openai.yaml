@@ -1,4 +1,4 @@
 interface:
   display_name: "FTB Quest Authoring"
-  short_description: "Author, balance, validate, and release native FTB Quests chapters."
-  default_prompt: "Use $ftb-quest-authoring to inspect this modpack, revise its FTB Quests chapters, validate IDs/rewards/assets, and prepare a safe Packwiz release."
+  short_description: "Design balanced FTB Quests for any modpack"
+  default_prompt: "Use $ftb-quest-authoring to design, validate, and release a balanced FTB Quests chapter for this modpack."
