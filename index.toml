@@ -1629,15 +1629,3 @@ metafile = true
 file = "mods/yours-truly.pw.toml"
 hash = "b0778a7de3cdb9cdb85cebe04bacbae78a88c63b916ede1ed30e4e58e5c71797"
 metafile = true
-
-[[files]]
-file = "skills/ftb-quest-authoring/SKILL.md"
-hash = "16c0565580c8270d1bcde2c7139c8f1e07919caac0f77fe83f63a8726b308526"
-
-[[files]]
-file = "skills/ftb-quest-authoring/agents/openai.yaml"
-hash = "4a1b7bd9ed7b9072414ac07bd01ce4fc4b52c06c3abfc32a9f73cf59091452f2"
-
-[[files]]
-file = "skills/ftb-quest-authoring/references/ftb-quests-patterns.md"
-hash = "0f8661b1601679437f4ed398ec49dd38c90cf27a8783ca83d2c15cc2dd5d0eeb"
