@@ -79,7 +79,7 @@
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "create:mechanical_press"
@@ -108,7 +108,7 @@
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "irons_spellbooks:arcane_essence"
@@ -137,7 +137,7 @@
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "vampirism:vampire_fang"
@@ -151,13 +151,21 @@
 					id: "7A11C0DE15100029"
 					type: "checkmark"
 				}
+				{
+					id: "7A11C0DE1510002A"
+					item: {
+						count: 1
+						id: "vampirism:vampire_fang"
+					}
+					type: "item"
+				}
 			]
 			x: -2.2d
 			y: -0.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "createpropulsion:wing"
@@ -171,13 +179,21 @@
 					id: "7A11C0DE15100033"
 					type: "checkmark"
 				}
+				{
+					id: "7A11C0DE15100034"
+					item: {
+						count: 1
+						id: "createpropulsion:wing"
+					}
+					type: "item"
+				}
 			]
 			x: 0
 			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "minecraft:bell"
@@ -191,13 +207,21 @@
 					id: "7A11C0DE1510003D"
 					type: "checkmark"
 				}
+				{
+					id: "7A11C0DE1510003E"
+					item: {
+						count: 1
+						id: "minecraft:bell"
+					}
+					type: "item"
+				}
 			]
 			x: 2.2d
 			y: -0.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "minecraft:lantern"
@@ -211,13 +235,37 @@
 					id: "7A11C0DE15100047"
 					type: "checkmark"
 				}
+				{
+					id: "7A11C0DE15100048"
+					item: {
+						count: 2
+						id: "minecraft:barrel"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE15100049"
+					item: {
+						count: 16
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1510004A"
+					item: {
+						count: 32
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
 			]
 			x: 4.2d
 			y: 0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE15000001"
+				"7A11C0DE15000009"
 			]
 			icon: {
 				id: "naturescompass:naturescompass"
@@ -256,12 +304,28 @@
 			size: 1.2d
 			tasks: [
 				{
+					id: "7A11C0DE1510005C"
+					item: {
+						count: 1
+						id: "minecraft:writable_book"
+					}
+					type: "item"
+				}
+				{
 					id: "7A11C0DE1510005B"
 					type: "checkmark"
 				}
+				{
+					id: "7A11C0DE1510AA01"
+					item: {
+						count: 1
+						id: "minecraft:writable_book"
+					}
+					type: "item"
+				}
 			]
 			x: 0
-			y: 3.0d
+			y: -2.4d
 		}
 		{
 			dependencies: [
@@ -279,14 +343,14 @@
 				id: "minecraft:crafting_table"
 			}
 			id: "7A11C0DE1500000A"
-			min_required_dependencies: 3
+			min_required_dependencies: 4
 			min_width: 280
 			rewards: [
 				{
 					exclude_from_claim_all: true
 					id: "7A11C0DE15200066"
 					table_id: 8796023610973093890
-					team_reward: false
+					team_reward: true
 					type: "choice"
 				}
 			]
@@ -303,3 +367,6 @@
 		}
 	]
 }
+
+
+

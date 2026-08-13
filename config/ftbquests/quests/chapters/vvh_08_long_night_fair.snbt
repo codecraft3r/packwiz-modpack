@@ -91,8 +91,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5
-			y: -1.1d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -111,8 +111,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -3
-			y: 0.8d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -131,8 +131,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1
-			y: -0.2d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -151,8 +151,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1
-			y: 0.8d
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -163,6 +163,7 @@
 			}
 			id: "7A11C0DE18000006"
 			min_width: 280
+			optional: true
 			shape: "circle"
 			size: 1.2d
 			tasks: [
@@ -171,8 +172,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3
-			y: -0.2d
+			x: -2.2d
+			y: 1.2d
 		}
 		{
 			dependencies: [
@@ -183,6 +184,7 @@
 			}
 			id: "7A11C0DE18000007"
 			min_width: 280
+			optional: true
 			shape: "octagon"
 			size: 1.2d
 			tasks: [
@@ -191,8 +193,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5
-			y: -1.1d
+			x: 2.2d
+			y: 1.2d
 		}
 		{
 			dependencies: [
@@ -237,7 +239,7 @@
 				}
 			]
 			x: 0
-			y: 5.2d
+			y: 4.5d
 		}
 	]
 }
