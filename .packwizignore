@@ -5,6 +5,9 @@
 *.sh
 docker-compose.yml
 agents.md
+AGENTS.md
+.agents/
+agents/
 .git/
 .gitignore
 .gitattributes
@@ -16,3 +19,6 @@ CHANGELOG.md
 docs/
 .githooks/
 temp_cache/
+.gemini/
+.claude/
+
