@@ -10,6 +10,7 @@ agents.md
 .gitattributes
 .packwizignore
 scripts/
+skills/
 .github/
 CHANGELOG.md
 docs/
