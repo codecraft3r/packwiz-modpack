@@ -19,6 +19,8 @@ CHANGELOG.md
 docs/
 .githooks/
 temp_cache/
+tmp/
+tmp-*.json
+tools/
 .gemini/
 .claude/
-

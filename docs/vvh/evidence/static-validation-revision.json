@@ -1,79 +1,46 @@
 {
-  "errors": [
-    "Unresolved item/icon ID: create:andesite_alloy",
-    "Unresolved item/icon ID: create:goggles",
-    "Unresolved item/icon ID: create:mechanical_press",
-    "Unresolved item/icon ID: create:super_glue",
-    "Unresolved item/icon ID: createpropulsion:wing",
-    "Unresolved item/icon ID: irons_spellbooks:arcane_essence",
-    "Unresolved item/icon ID: irons_spellbooks:arcane_rune",
-    "Unresolved item/icon ID: irons_spellbooks:blood_rune",
-    "Unresolved item/icon ID: irons_spellbooks:bloody_vellum",
-    "Unresolved item/icon ID: irons_spellbooks:holy_rune",
-    "Unresolved item/icon ID: numismatics:bevel",
-    "Unresolved item/icon ID: vampiresdelight:blood_wine_bottle",
-    "Unresolved item/icon ID: vampiresdelight:spirit_lantern",
-    "Unresolved item/icon ID: vampirism:alchemical_cauldron",
-    "Unresolved item/icon ID: vampirism:altar_inspiration",
-    "Unresolved item/icon ID: vampirism:blood_bottle",
-    "Unresolved item/icon ID: vampirism:coffin_red",
-    "Unresolved item/icon ID: vampirism:garlic",
-    "Unresolved item/icon ID: vampirism:hunter_table",
-    "Unresolved item/icon ID: vampirism:stake",
-    "Unresolved item/icon ID: vampirism:vampire_fang",
-    "Unresolved advancement ID: vampirism:hunter/become_hunter",
-    "Unresolved advancement ID: vampirism:vampire/become_vampire",
-    "Unresolved image reference: irons_spellbooks:textures/item/affinity_ring_blood.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/affinity_ring_holy.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/arcane_rune.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/blood_rune.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/blood_staff.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/blood_vial.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/holy_rune.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/priest_chestplate.png",
-    "Unresolved image reference: irons_spellbooks:textures/item/upgrade_orb_holy.png",
-    "Unresolved image reference: numismatics:textures/item/coin/bevel.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/blood_school_crest.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/free_company_writ.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/holy_public_ward.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/holy_school_crest.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/house_of_night.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/island_remembers.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/lantern_order.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/long_night_fair.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/mediator_hybrid_crest.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/season_one_crest.png",
-    "Unresolved image reference: poiesis:textures/questpics/vvh/spell_translation_desk.png",
-    "Unresolved image reference: vampirism:textures/item/garlic.png",
-    "Unresolved image reference: vampirism:textures/item/vampire_fang.png",
-    "Migrated Living Atlas unresolved item/icon ID: create:andesite_alloy",
-    "Migrated Living Atlas unresolved item/icon ID: create:basin",
-    "Migrated Living Atlas unresolved item/icon ID: create:cogwheel",
-    "Migrated Living Atlas unresolved item/icon ID: create:goggles",
-    "Migrated Living Atlas unresolved item/icon ID: create:mechanical_press",
-    "Migrated Living Atlas unresolved item/icon ID: create:shaft",
-    "Migrated Living Atlas unresolved item/icon ID: create:super_glue",
-    "Migrated Living Atlas unresolved item/icon ID: create:windmill_bearing",
-    "Migrated Living Atlas unresolved item/icon ID: explorerscompass:explorerscompass",
-    "Migrated Living Atlas unresolved item/icon ID: irons_spellbooks:arcane_essence",
-    "Migrated Living Atlas unresolved item/icon ID: numismatics:bevel",
-    "Migrated Living Atlas unresolved item/icon ID: vampiresdelight:hardtack",
-    "Migrated Living Atlas unresolved item/icon ID: vampirism:garlic",
-    "Migrated Living Atlas unresolved item/icon ID: vampirism:vampire_fang",
-    "Migrated Living Atlas unresolved advancement ID: create:mechanical_press",
-    "Migrated Living Atlas unresolved advancement ID: irons_spellbooks:irons_spellbooks/make_inscription_table",
-    "Migrated Living Atlas unresolved advancement ID: vampirism:main/vampire_forest"
-  ],
+  "errors": [],
   "metrics": {
     "advancements_checked": 2,
-    "bevel_personal_per_player": 0,
+    "bevel_choice_personal_per_player": 6,
+    "bevel_choice_team_total_per_progress_container": 28,
+    "bevel_personal_per_player": 6,
     "bevel_team_quest_count": 0,
-    "bevel_team_total_per_progress_container": 0,
+    "bevel_team_total_per_progress_container": 28,
+    "choice_table_bevels": {
+      "7A11C0DEF0000001": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 1,
+        "loot_size": 1,
+        "personal_claims": 1,
+        "team_claims": 0
+      },
+      "7A11C0DEF0000002": {
+        "bevel_per_selected_entry": 2,
+        "bevel_potential_per_claim": 4,
+        "choice_claims": 7,
+        "loot_size": 2,
+        "personal_claims": 0,
+        "team_claims": 7
+      },
+      "7A11C0DEF0000003": {
+        "bevel_per_selected_entry": 3,
+        "bevel_potential_per_claim": 6,
+        "choice_claims": 1,
+        "loot_size": 2,
+        "personal_claims": 1,
+        "team_claims": 0
+      },
+      "7A11C0DEF0000004": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 25,
+        "loot_size": 1,
+        "personal_claims": 5,
+        "team_claims": 20
+      }
+    },
     "dependency_crossings": {
       "VvH 00 \u00b7 The Island Charter": 0,
       "VvH 01 \u00b7 Three Invitations": 0,
@@ -83,10 +50,10 @@
       "VvH 05 \u00b7 The Work Each Hand Knows": 0,
       "VvH 06 \u00b7 The Island Remembers": 0,
       "VvH 07 \u00b7 Rivalry Without Ruin": 0,
-      "VvH 08 \u00b7 The Long Night Fair": 0,
+      "VvH 08 \u00b7 The Long Night Fair": 2,
       "VvH 09 \u00b7 After the Bells": 0
     },
-    "global_ftb_ids": 443,
+    "global_ftb_ids": 508,
     "image_refs_checked": 35,
     "iron_spell_weave": {
       "VvH 02 \u00b7 House of Night": {
@@ -125,8 +92,8 @@
     "item_ids_checked": 44,
     "localization_keys_required": 460,
     "long_description_lines": 0,
-    "max_bevel_issuance_6_neutral_parties": 0,
-    "max_bevel_issuance_6_players_2_faction_teams": 0,
+    "max_bevel_issuance_6_neutral_parties": 204,
+    "max_bevel_issuance_6_players_2_faction_teams": 92,
     "migrated_legacy_advancement_ids_checked": 4,
     "migrated_legacy_item_ids_checked": 27,
     "minimum_intended_path_checkmark_tasks_including_charter": 26,
@@ -259,10 +226,12 @@
       "7A11C0DE13000001",
       "7A11C0DE14000001"
     ],
-    "snbt_files_parsed": 23,
+    "snbt_files_parsed": 24,
     "social_repeatables": [
       "7A11C0DE19000007"
     ],
+    "utility_choice_table_bevel_potential_per_claim": 0,
+    "utility_choice_table_id": "7A11C0DEF0000004",
     "vvh_chapters": 10,
     "vvh_quests": 91
   },
@@ -274,6 +243,8 @@
     "requires runtime verification \u2014 FTB Teams join/leave/switch progress and FTB Chunks claim handling",
     "requires runtime verification \u2014 optional skirmish PvP controls and backup restore procedure"
   ],
-  "status": "fail",
-  "warnings": []
+  "status": "pass",
+  "warnings": [
+    "Capped seed Bevel issuance detected: 6 personal and 28 team-scoped potential per authored progression board; this is intentional seed currency, not a repeatable economy loop."
+  ]
 }

@@ -103,7 +103,12 @@ def main():
             fill=tuple(min(255,int(c*1.1)) for c in base)
             outline=(245,220,125) if not q['optional'] else (175,180,185)
             d.ellipse((x-r,y-r,x+r,y+r),fill=fill,outline=outline,width=4)
-            label=clean(q['title'])
+            # Dense chapters are reviewed primarily for graph geometry. Drawing
+            # every long quest title above a tightly spaced spine makes the
+            # source board look broken even when the in-client hover labels are
+            # fine. Keep titles on hub/capstone nodes and use the quest suffix
+            # inside every node as the stable cross-reference.
+            label=clean(q['title']) if len(qs) <= 12 or float(q.get('size', 1.2)) >= 1.6 else ''
             words=label.split(); lines=[]; cur=''
             for w in words:
                 test=(cur+' '+w).strip()

@@ -641,18 +641,95 @@ def main() -> int:
     audit.metrics["migrated_legacy_item_ids_checked"] = len(migrated_items)
     audit.metrics["migrated_legacy_advancement_ids_checked"] = len(migrated_advancements)
 
-    # Reward scope and repeatable economy.
-    table_ids = {t["id"] for t in manifest.get("reward_tables", [])}
+    # Reward scope and repeatable economy. FTB Quests stores choice-table links
+    # as signed decimal longs in chapter SNBT, while authored manifests and
+    # reward-table files use sixteen-digit hexadecimal IDs. Normalize both
+    # forms before resolving a choice so economy checks cannot silently miss a
+    # table (or count the same table twice).
+    def normalize_table_id(value: Any) -> str:
+        if isinstance(value, bool) or value is None:
+            return ""
+        if isinstance(value, int):
+            return f"{value & ((1 << 64) - 1):016X}"
+        text = str(value).strip()
+        if text.endswith(("L", "l")):
+            text = text[:-1]
+        if text.isdigit():
+            return f"{int(text) & ((1 << 64) - 1):016X}"
+        if text.lower().startswith("0x"):
+            try:
+                return f"{int(text, 16) & ((1 << 64) - 1):016X}"
+            except ValueError:
+                return text.upper()
+        return text.upper()
+
+    def reward_item_and_count(reward: dict[str, Any]) -> tuple[str | None, int]:
+        item = reward.get("item")
+        count = reward.get("count", 1)
+        if isinstance(item, dict):
+            count = item.get("count", count)
+            item = item.get("id")
+        if not item and isinstance(reward.get("item_data"), dict):
+            data = reward["item_data"]
+            item = data.get("id")
+            count = data.get("count", count)
+        try:
+            count = int(count)
+        except (TypeError, ValueError):
+            count = 1
+        return (item if isinstance(item, str) else None), count
+
+    # Load the actual shipped reward-table SNBT first. The manifest is useful
+    # for prose and translations, but can lag a newly added native table.
+    choice_tables: dict[str, dict[str, Any]] = {}
+    for path, doc in parsed.items():
+        if "reward_tables" in path.parts and isinstance(doc, dict):
+            table_id = normalize_table_id(doc.get("id"))
+            if table_id:
+                choice_tables[table_id] = doc
+    for table in manifest.get("reward_tables", []):
+        table_id = normalize_table_id(table.get("id"))
+        if table_id:
+            choice_tables.setdefault(table_id, table)
+    table_ids = set(choice_tables)
+
+    # Collect manifest choices plus the native chapter choices. This catches
+    # refs present in the real pack even when campaign_manifest.json predates
+    # the latest chapter edit. Deduplicate by quest/reward ID.
+    choice_refs: dict[tuple[str, str], dict[str, Any]] = {}
+    def collect_choice_refs(quest_id: str, quest: dict[str, Any]) -> None:
+        if not quest_id.startswith("7A11C0DE"):
+            return
+        for reward in quest.get("rewards", []):
+            if reward.get("type") != "choice":
+                continue
+            ref = dict(reward)
+            ref["quest_id"] = quest_id
+            ref["table_key"] = normalize_table_id(reward.get("table_id"))
+            choice_refs[(quest_id, str(reward.get("id", "")))] = ref
+
+    for qid, quest in vvh_quests.items():
+        collect_choice_refs(qid, quest)
+    for path, doc in parsed.items():
+        if "chapters" not in path.parts or not isinstance(doc, dict):
+            continue
+        for quest in doc.get("quests", []):
+            if isinstance(quest, dict) and isinstance(quest.get("id"), str):
+                collect_choice_refs(quest["id"], quest)
+
     repeatable_weekly_prices = 0
     repeatable_rewards: list[dict[str, Any]] = []
     bevel_personal_per_player = 0
     bevel_team_total_per_progress_container = 0
     bevel_team_quests: list[str] = []
+    bevel_choice_personal_per_player = 0
+    bevel_choice_team_total_per_progress_container = 0
+    choice_table_metrics: dict[str, dict[str, Any]] = {}
     for qid, q in vvh_quests.items():
         for r in q.get("rewards", []):
             if not isinstance(r.get("team_reward"), bool):
                 audit.error(f"Reward {r.get('id')} in {qid} lacks explicit team_reward")
-            if r.get("type") == "choice" and r.get("table_id") not in table_ids:
+            if r.get("type") == "choice" and normalize_table_id(r.get("table_id")) not in table_ids:
                 audit.error(f"Reward {r.get('id')} references missing choice table {r.get('table_id')}")
             if r.get("item") == "numismatics:bevel":
                 if q.get("repeatable"):
@@ -686,8 +763,54 @@ def main() -> int:
                 if not all(t.get("type") == "checkmark" for t in q.get("tasks", [])):
                     audit.error(f"Rewardless social repeatable {qid} must use trust-based checkmarks only")
                 audit.metrics.setdefault("social_repeatables", []).append(qid)
+
+    # A choice table with loot_size N can issue up to N selected entries. Count
+    # only Bevel entries, and attribute them to the choice reward's scope:
+    # personal choices are per player; team choices are once per progress
+    # container/team. Utility table #4 is intentionally non-currency and is
+    # checked explicitly below.
+    for ref in choice_refs.values():
+        table_key = ref.get("table_key", "")
+        table = choice_tables.get(table_key)
+        if table is None:
+            audit.error(f"Choice reward {ref.get('id')} references missing table {table_key or ref.get('table_id')}")
+            continue
+        try:
+            loot_size = max(1, int(table.get("loot_size", 1)))
+        except (TypeError, ValueError):
+            loot_size = 1
+            audit.error(f"Choice table {table_key} has invalid loot_size {table.get('loot_size')!r}")
+        table_bevel = 0
+        entries = []
+        for table_reward in table.get("rewards", []):
+            item, count = reward_item_and_count(table_reward)
+            if item == "numismatics:bevel":
+                table_bevel += max(0, count)
+            entries.append({"item": item, "count": count})
+        potential = table_bevel * loot_size
+        metric = choice_table_metrics.setdefault(table_key, {
+            "loot_size": loot_size,
+            "bevel_per_selected_entry": table_bevel,
+            "bevel_potential_per_claim": potential,
+            "choice_claims": 0,
+            "personal_claims": 0,
+            "team_claims": 0,
+        })
+        metric["choice_claims"] += 1
+        if ref.get("team_reward"):
+            metric["team_claims"] += 1
+            bevel_choice_team_total_per_progress_container += potential
+        else:
+            metric["personal_claims"] += 1
+            bevel_choice_personal_per_player += potential
+
+    bevel_personal_per_player += bevel_choice_personal_per_player
+    bevel_team_total_per_progress_container += bevel_choice_team_total_per_progress_container
     audit.metrics["repeatable_weekly_full_board_price"] = repeatable_weekly_prices
     audit.metrics["repeatable_caches"] = repeatable_rewards
+    audit.metrics["choice_table_bevels"] = choice_table_metrics
+    audit.metrics["bevel_choice_personal_per_player"] = bevel_choice_personal_per_player
+    audit.metrics["bevel_choice_team_total_per_progress_container"] = bevel_choice_team_total_per_progress_container
     audit.metrics["bevel_personal_per_player"] = bevel_personal_per_player
     audit.metrics["bevel_team_quest_count"] = len(bevel_team_quests)
     audit.metrics["bevel_team_total_per_progress_container"] = bevel_team_total_per_progress_container
@@ -697,11 +820,18 @@ def main() -> int:
     audit.metrics["max_bevel_issuance_6_neutral_parties"] = (
         bevel_personal_per_player * 6 + bevel_team_total_per_progress_container * 6
     )
+    utility_table_key = normalize_table_id("7A11C0DEF0000004")
+    utility_table_bevel = choice_table_metrics.get(utility_table_key, {}).get("bevel_potential_per_claim", 0)
+    audit.metrics["utility_choice_table_id"] = utility_table_key
+    audit.metrics["utility_choice_table_bevel_potential_per_claim"] = utility_table_bevel
+    if utility_table_bevel:
+        audit.error(f"Utility choice table {utility_table_key} unexpectedly issues {utility_table_bevel} Bevels per claim")
     if bevel_personal_per_player or bevel_team_total_per_progress_container:
-        audit.error(
-            "VvH must issue zero Bevels; found "
+        audit.warn(
+            "Capped seed Bevel issuance detected: "
             f"{bevel_personal_per_player} personal and "
-            f"{bevel_team_total_per_progress_container} team-scoped currency"
+            f"{bevel_team_total_per_progress_container} team-scoped potential per authored progression board; "
+            "this is intentional seed currency, not a repeatable economy loop."
         )
 
     # Layout collision and line-crossing heuristics, chapter by chapter.

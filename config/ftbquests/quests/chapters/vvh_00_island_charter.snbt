@@ -70,6 +70,14 @@
 			}
 			id: "7A11C0DE10000003"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE10200011"
+					item: { count: 8, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -90,6 +98,14 @@
 			}
 			id: "7A11C0DE10000005"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE10200012"
+					item: { count: 8, id: "minecraft:firework_rocket" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.2d
 			tasks: [
@@ -110,6 +126,14 @@
 			}
 			id: "7A11C0DE10000006"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE10200013"
+					item: { count: 4, id: "vampirism:blood_bottle" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.2d
 			tasks: [

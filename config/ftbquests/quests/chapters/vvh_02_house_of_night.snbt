@@ -90,6 +90,14 @@
 			}
 			id: "7A11C0DE12000001"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200011"
+					item: { count: 4, id: "vampirism:blood_bottle" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.7d
 			tasks: [
@@ -144,7 +152,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
+			x: 0
 			y: -3.0d
 		}
 		{
@@ -156,6 +164,14 @@
 			}
 			id: "7A11C0DE12000002"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200012"
+					item: { count: 8, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 1.25d
 			tasks: [
@@ -181,8 +197,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
-			y: -0.5d
+			x: 0
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -193,6 +209,14 @@
 			}
 			id: "7A11C0DE12000003"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200013"
+					item: { count: 2, id: "irons_spellbooks:arcane_essence" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.25d
 			tasks: [
@@ -209,8 +233,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.0d
-			y: 0.0d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -221,6 +245,14 @@
 			}
 			id: "7A11C0DE12000004"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200018"
+					item: { count: 8, id: "minecraft:glass_bottle" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.25d
 			tasks: [
@@ -238,8 +270,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.0d
-			y: 2.0d
+			x: 0
+			y: 1.4d
 		}
 		{
 			dependencies: [
@@ -250,6 +282,14 @@
 			}
 			id: "7A11C0DE12000005"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200014"
+					item: { count: 8, id: "vampiresdelight:hardtack" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 1.25d
 			tasks: [
@@ -266,8 +306,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
-			y: 2.0d
+			x: 0
+			y: 3.8d
 		}
 		{
 			dependencies: [
@@ -278,6 +318,14 @@
 			}
 			id: "7A11C0DE12000006"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200019"
+					item: { count: 16, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.25d
 			tasks: [
@@ -286,8 +334,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
-			y: 2.0d
+			x: 0
+			y: 6.2d
 		}
 		{
 			dependencies: [
@@ -298,6 +346,14 @@
 			}
 			id: "7A11C0DE12000007"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE1220001A"
+					item: { count: 4, id: "vampiresdelight:hardtack" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.25d
 			tasks: [
@@ -306,8 +362,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
-			y: 2.0d
+			x: 0
+			y: 8.6d
 		}
 		{
 			dependencies: [
@@ -318,6 +374,20 @@
 			}
 			id: "7A11C0DE12000008"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200015"
+					item: { count: 4, id: "create:andesite_alloy" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12200016"
+					item: { count: 2, id: "create:super_glue" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 1.25d
 			tasks: [
@@ -335,7 +405,7 @@
 				}
 			]
 			x: 5.0d
-			y: 0.0d
+			y: 1.4d
 		}
 		{
 			dependencies: [
@@ -346,6 +416,14 @@
 			}
 			id: "7A11C0DE12000009"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE12200017"
+					item: { count: 2, id: "irons_spellbooks:arcane_essence" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [
@@ -370,8 +448,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.0d
-			y: 0.0d
+			x: 5.0d
+			y: 3.8d
 		}
 		{
 			dependencies: [
@@ -438,7 +516,7 @@
 				}
 			]
 			x: 0
-			y: 5.2d
+			y: 11.0d
 		}
 	]
 }
