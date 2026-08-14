@@ -83,6 +83,9 @@
 			}
 			id: "7A11C0DE16000002"
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE16210001", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -91,8 +94,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -1.5d
+			x: 0
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -103,6 +106,9 @@
 			}
 			id: "7A11C0DE16000003"
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE16210002", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -111,8 +117,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.5d
-			y: -1.5d
+			x: 0
+			y: 1.4d
 		}
 		{
 			dependencies: [
@@ -123,6 +129,9 @@
 			}
 			id: "7A11C0DE16000004"
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE16210003", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "gear"
 			size: 1.2d
 			tasks: [
@@ -131,8 +140,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: -1.5d
+			x: 0
+			y: 3.8d
 		}
 		{
 			dependencies: [
@@ -151,8 +160,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -1.5d
+			x: 0
+			y: 6.2d
 		}
 		{
 			dependencies: [
@@ -164,6 +173,9 @@
 			id: "7A11C0DE16000006"
 			min_width: 280
 			optional: true
+			rewards: [
+				{ id: "7A11C0DE16210004", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "heart"
 			size: 1.2d
 			tasks: [
@@ -172,8 +184,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.5d
-			y: 1.2d
+			x: 0
+			y: 8.6d
 		}
 		{
 			dependencies: [
@@ -185,6 +197,9 @@
 			id: "7A11C0DE16000007"
 			min_width: 280
 			optional: true
+			rewards: [
+				{ id: "7A11C0DE16210005", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -193,8 +208,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: 1.2d
+			x: 0
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -206,6 +221,9 @@
 			id: "7A11C0DE16000008"
 			min_width: 280
 			optional: true
+			rewards: [
+				{ id: "7A11C0DE16210006", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -214,8 +232,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: 1.2d
+			x: 0
+			y: 13.4d
 		}
 		{
 			dependencies: [
@@ -227,6 +245,9 @@
 			id: "7A11C0DE16000009"
 			min_width: 280
 			optional: true
+			rewards: [
+				{ id: "7A11C0DE16210007", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "octagon"
 			size: 1.2d
 			tasks: [
@@ -235,8 +256,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: 1.2d
+			x: 0
+			y: 15.8d
 		}
 		{
 			dependencies: [
@@ -288,7 +309,7 @@
 				}
 			]
 			x: 0
-			y: 4.5d
+			y: 18.2d
 		}
 	]
 }

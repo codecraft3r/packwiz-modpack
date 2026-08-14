@@ -15,6 +15,12 @@ python scripts/vvh_render_layouts.py `
 
 The renderer writes ten chapter PNGs, `contact_sheet.png`, and `render-metadata.json`. Metadata records the manifest and resource-pack SHA-256 values, identifies the artifact as non-runtime evidence, and lists unresolved namespaced images. Unresolved images appear as labelled placeholders; this is expected unless ZIPs containing vanilla and mod textures are also supplied with repeated `--resource-zip` arguments.
 
+## Current asset-path audit
+
+The VvH chapter files use forward-slash resource locations. The custom `poiesis:textures/questpics/vvh/` references were checked against `poiesis-living-atlas-art-v5.zip` (SHA-256 `d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a`); all 18 VvH custom images referenced by the chapters are present at the exact case-sensitive paths. The installed Iron's Spellbooks, Create Numismatics, and Vampirism JARs also contain the referenced item textures. Vanilla item textures are supplied by Minecraft's client JAR and are intentionally not embedded in the Poiesis ZIP.
+
+The source boards under `docs/vvh/evidence/layout-revision/` were regenerated with the Poiesis ZIP so custom art is rendered instead of placeholder boxes. These boards are review aids only: they do not prove that FTB Quests rendered the layout in a live client. In-client screenshots remain a required manual gate.
+
 Before visual review, regenerate `docs/vvh/campaign_manifest.json` through the repository's normal build workflow so its coordinates match the candidate SNBT. Do not use an old contact sheet to approve edited chapter files.
 
 Source-board checks for every chapter:

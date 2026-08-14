@@ -90,6 +90,14 @@
 			}
 			id: "7A11C0DE14000001"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200011"
+					item: { count: 16, id: "minecraft:scaffolding" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 1.7d
 			tasks: [
@@ -150,6 +158,14 @@
 			}
 			id: "7A11C0DE14000002"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200012"
+					item: { count: 2, id: "minecraft:emerald" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 1.25d
 			tasks: [
@@ -174,8 +190,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -0.5d
+			x: 0
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -186,6 +202,14 @@
 			}
 			id: "7A11C0DE14000003"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200013"
+					item: { count: 1, id: "minecraft:compass" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.25d
 			tasks: [
@@ -202,8 +226,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.0d
-			y: 1.3d
+			x: 0
+			y: 1.4d
 		}
 		{
 			dependencies: [
@@ -214,6 +238,14 @@
 			}
 			id: "7A11C0DE14000004"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200014"
+					item: { count: 8, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.25d
 			tasks: [
@@ -230,8 +262,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -0.5d
+			x: 0
+			y: 3.8d
 		}
 		{
 			dependencies: [
@@ -242,6 +274,20 @@
 			}
 			id: "7A11C0DE14000005"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200015"
+					item: { count: 16, id: "minecraft:scaffolding" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE14200016"
+					item: { count: 8, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "heart"
 			size: 1.25d
 			tasks: [
@@ -275,8 +321,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -0.5d
+			x: 0
+			y: 6.2d
 		}
 		{
 			dependencies: [
@@ -287,6 +333,14 @@
 			}
 			id: "7A11C0DE14000006"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200017"
+					item: { count: 2, id: "minecraft:writable_book" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 1.25d
 			tasks: [
@@ -311,8 +365,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 1.3d
+			x: 0
+			y: 8.6d
 		}
 		{
 			dependencies: [
@@ -323,6 +377,14 @@
 			}
 			id: "7A11C0DE14000007"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200018"
+					item: { count: 2, id: "minecraft:lead" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 1.25d
 			tasks: [
@@ -347,8 +409,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -0.5d
+			x: 0
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -359,6 +421,14 @@
 			}
 			id: "7A11C0DE14000008"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE14200019"
+					item: { count: 8, id: "minecraft:bread" }
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 1.25d
 			tasks: [
@@ -376,7 +446,7 @@
 				}
 			]
 			x: 0
-			y: 2.3d
+			y: 13.4d
 		}
 		{
 			dependencies: [
@@ -387,6 +457,14 @@
 			}
 			id: "7A11C0DE14000009"
 			min_width: 280
+			rewards: [
+				{
+					id: "7A11C0DE1420001A"
+					item: { count: 4, id: "irons_spellbooks:arcane_essence" }
+					team_reward: false
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.25d
 			tasks: [
@@ -405,7 +483,7 @@
 				}
 			]
 			x: 5.0d
-			y: -0.5d
+			y: 1.4d
 		}
 		{
 			dependencies: [
@@ -429,7 +507,7 @@
 				{
 					id: "7A11C0DE14200067"
 					item: {
-						count: 32
+						count: 16
 						id: "minecraft:scaffolding"
 					}
 					team_reward: true
@@ -494,7 +572,7 @@
 				}
 			]
 			x: 0
-			y: 4.6d
+			y: 15.8d
 		}
 	]
 }

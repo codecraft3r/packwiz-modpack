@@ -2,25 +2,17 @@
   "artifact_type": "source-level review board; not runtime or in-client evidence",
   "manifest": {
     "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack\\docs\\vvh\\campaign_manifest.json",
-    "sha256": "dd08787d0cbc6a9b45aa2047662ccc8d4cf4f0208c0c13a7799462841d9f0947"
+    "sha256": "5b28c4e1d8ffe6774d4c92f497cc24f890d8cdadd09086c673dc6313e06ed6c9"
   },
-  "resource_sources": [],
-  "resolved_resource_images": [],
-  "unresolved_references": [
-    "irons_spellbooks:textures/item/affinity_ring_blood.png",
-    "irons_spellbooks:textures/item/affinity_ring_holy.png",
-    "irons_spellbooks:textures/item/arcane_rune.png",
-    "irons_spellbooks:textures/item/blood_rune.png",
-    "irons_spellbooks:textures/item/blood_staff.png",
-    "irons_spellbooks:textures/item/blood_vial.png",
-    "irons_spellbooks:textures/item/holy_rune.png",
-    "irons_spellbooks:textures/item/priest_chestplate.png",
-    "irons_spellbooks:textures/item/upgrade_orb_holy.png",
-    "minecraft:textures/item/filled_map.png",
-    "minecraft:textures/item/firework_rocket.png",
-    "minecraft:textures/item/lantern.png",
-    "minecraft:textures/item/writable_book.png",
-    "numismatics:textures/item/coin/bevel.png",
+  "resource_sources": [
+    {
+      "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\poiesis-living-atlas-art-v5.zip",
+      "sha256": "d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a"
+    }
+  ],
+  "resolved_resource_images": [
+    "poiesis:textures/questpics/first_resonance_key_art.png",
+    "poiesis:textures/questpics/resonance_specimen_sheet.png",
     "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
     "poiesis:textures/questpics/vvh/blood_school_crest.png",
     "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
@@ -37,6 +29,24 @@
     "poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
     "poiesis:textures/questpics/vvh/season_one_crest.png",
     "poiesis:textures/questpics/vvh/spell_translation_desk.png",
+    "poiesis:textures/questpics/vvh/vvh_rune_material_sheet.png",
+    "poiesis:textures/questpics/weathered_ledger_key_art.png"
+  ],
+  "unresolved_references": [
+    "irons_spellbooks:textures/item/affinity_ring_blood.png",
+    "irons_spellbooks:textures/item/affinity_ring_holy.png",
+    "irons_spellbooks:textures/item/arcane_rune.png",
+    "irons_spellbooks:textures/item/blood_rune.png",
+    "irons_spellbooks:textures/item/blood_staff.png",
+    "irons_spellbooks:textures/item/blood_vial.png",
+    "irons_spellbooks:textures/item/holy_rune.png",
+    "irons_spellbooks:textures/item/priest_chestplate.png",
+    "irons_spellbooks:textures/item/upgrade_orb_holy.png",
+    "minecraft:textures/item/filled_map.png",
+    "minecraft:textures/item/firework_rocket.png",
+    "minecraft:textures/item/lantern.png",
+    "minecraft:textures/item/writable_book.png",
+    "numismatics:textures/item/coin/bevel.png",
     "vampirism:textures/item/garlic.png",
     "vampirism:textures/item/vampire_fang.png"
   ],

@@ -83,6 +83,7 @@
 			}
 			id: "7A11C0DE18000002"
 			min_width: 280
+			rewards: [ { id: "7A11C0DE18210001", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "heart"
 			size: 1.2d
 			tasks: [
@@ -103,6 +104,7 @@
 			}
 			id: "7A11C0DE18000003"
 			min_width: 280
+			rewards: [ { id: "7A11C0DE18210002", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -123,6 +125,7 @@
 			}
 			id: "7A11C0DE18000004"
 			min_width: 280
+			rewards: [ { id: "7A11C0DE18210003", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -143,6 +146,7 @@
 			}
 			id: "7A11C0DE18000005"
 			min_width: 280
+			rewards: [ { id: "7A11C0DE18210004", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "gear"
 			size: 1.2d
 			tasks: [
@@ -164,6 +168,7 @@
 			id: "7A11C0DE18000006"
 			min_width: 280
 			optional: true
+			rewards: [ { id: "7A11C0DE18210005", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "circle"
 			size: 1.2d
 			tasks: [
@@ -185,6 +190,7 @@
 			id: "7A11C0DE18000007"
 			min_width: 280
 			optional: true
+			rewards: [ { id: "7A11C0DE18210006", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
 			shape: "octagon"
 			size: 1.2d
 			tasks: [

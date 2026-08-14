@@ -78,8 +78,8 @@
             }
           ],
           "title": "OPEN THE ISLAND CHARTER",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -123,8 +123,8 @@
             }
           ],
           "title": "LAND, CLAIMS, AND RESET ZONES",
-          "x": -4.6,
-          "y": -1.3
+          "x": -5.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -169,8 +169,8 @@
             }
           ],
           "title": "RIVALRY, NEUTRALS, AND OPTIONAL COMBAT",
-          "x": 0,
-          "y": -0.2
+          "x": -5.5,
+          "y": 1.5
         },
         {
           "dependencies": [
@@ -215,8 +215,8 @@
             }
           ],
           "title": "VAMPIRISM, FTB TEAMS, AND SWITCHING",
-          "x": 4.6,
-          "y": -1.3
+          "x": 5.5,
+          "y": 0.0
         },
         {
           "dependencies": [
@@ -298,7 +298,7 @@
             }
           ],
           "title": "SIGN THE CHARTER",
-          "x": 0,
+          "x": 0.0,
           "y": 3.8
         }
       ],
@@ -383,8 +383,8 @@
             }
           ],
           "title": "READ THE THREE INVITATIONS",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -463,8 +463,8 @@
             }
           ],
           "title": "TAKE THE CRIMSON INVITATION",
-          "x": -5.0,
-          "y": -0.8
+          "x": -5.5,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -543,8 +543,8 @@
             }
           ],
           "title": "TAKE THE LANTERN OATH",
-          "x": 0,
-          "y": 0.6
+          "x": 5.5,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -610,8 +610,8 @@
             }
           ],
           "title": "SIGN THE FREE COMPANY REGISTER",
-          "x": 5.0,
-          "y": -0.8
+          "x": 5.5,
+          "y": 1.8
         },
         {
           "dependencies": [
@@ -666,8 +666,8 @@
             }
           ],
           "title": "CHOOSE YOUR PERSONAL TRADE LENS",
-          "x": 0,
-          "y": 4.4
+          "x": 0.0,
+          "y": 4.8
         }
       ],
       "title": "VvH 01 \u00b7 Three Invitations"
@@ -804,8 +804,8 @@
             }
           ],
           "title": "FOUND THE HOUSE OF NIGHT",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -845,8 +845,8 @@
             }
           ],
           "title": "PROGRESSION LANE",
-          "x": -4.0,
-          "y": -3.2
+          "x": 5.0,
+          "y": -3.0
         },
         {
           "dependencies": [
@@ -886,8 +886,8 @@
             }
           ],
           "title": "WORLD-BUILDING LANE",
-          "x": 7.0,
-          "y": -1.8
+          "x": 0.0,
+          "y": -3.0
         },
         {
           "dependencies": [
@@ -940,8 +940,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 BUILD THE COMMON COFFIN ROOM",
-          "x": 1.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -995,8 +995,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 RAISE AN ALTAR CHAMBER",
-          "x": -7.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -1049,8 +1049,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 STOCK A BLOOD PANTRY",
-          "x": 3.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -1104,8 +1104,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 OPEN THE NIGHT KITCHEN",
-          "x": 5.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -1145,8 +1145,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 MARK A SAFE NIGHT ROUTE",
-          "x": 7.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 6.2
         },
         {
           "dependencies": [
@@ -1186,8 +1186,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 HOST A BLOODLESS VISIT",
-          "x": 9.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 8.6
         },
         {
           "dependencies": [
@@ -1240,8 +1240,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 CONNECT THE NIGHT LOGISTICS",
-          "x": -5.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -1307,8 +1307,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 INSCRIBE THE BLOOD SCHOOL",
-          "x": -3.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -1416,8 +1416,8 @@
             }
           ],
           "title": "CHARTER THE HOUSE OF NIGHT",
-          "x": 0,
-          "y": 4.6
+          "x": 0.0,
+          "y": 11.0
         }
       ],
       "title": "VvH 02 \u00b7 House of Night"
@@ -1554,8 +1554,8 @@
             }
           ],
           "title": "FOUND THE LANTERN ORDER",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -1595,8 +1595,8 @@
             }
           ],
           "title": "PROGRESSION LANE",
-          "x": -4.0,
-          "y": -3.2
+          "x": 5.0,
+          "y": -3.0
         },
         {
           "dependencies": [
@@ -1636,8 +1636,8 @@
             }
           ],
           "title": "WORLD-BUILDING LANE",
-          "x": 7.0,
-          "y": -1.8
+          "x": 0.0,
+          "y": -3.0
         },
         {
           "dependencies": [
@@ -1677,8 +1677,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 BUILD THE PUBLIC WATCHHOUSE",
-          "x": 1.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -1731,8 +1731,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 ESTABLISH THE HUNTER TABLE",
-          "x": -7.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -1785,8 +1785,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 KEEP THE GARLIC RESERVE",
-          "x": 3.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -1839,8 +1839,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 ASSEMBLE A STAKE DRILL KIT",
-          "x": -5.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -1893,8 +1893,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 OPEN THE ALCHEMICAL BENCH",
-          "x": -3.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -1935,8 +1935,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 LIGHT A REFUGE ROUTE",
-          "x": 5.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -1977,8 +1977,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 RUN ONE CIVILIAN SAFETY DRILL",
-          "x": 7.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 6.2
         },
         {
           "dependencies": [
@@ -2031,8 +2031,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 PREPARE THE HOLY WARD",
-          "x": -1.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 6.2
         },
         {
           "dependencies": [
@@ -2140,8 +2140,8 @@
             }
           ],
           "title": "CHARTER THE LANTERN ORDER",
-          "x": 0,
-          "y": 4.6
+          "x": 0.0,
+          "y": 8.6
         }
       ],
       "title": "VvH 03 \u00b7 Lantern Order"
@@ -2265,8 +2265,8 @@
             }
           ],
           "title": "FOUND A FREE COMPANY",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -2306,7 +2306,7 @@
             }
           ],
           "title": "PROGRESSION LANE",
-          "x": -4.0,
+          "x": 5.0,
           "y": -3.2
         },
         {
@@ -2347,8 +2347,8 @@
             }
           ],
           "title": "WORLD-BUILDING LANE",
-          "x": 7.0,
-          "y": -1.8
+          "x": 0.0,
+          "y": -3.2
         },
         {
           "dependencies": [
@@ -2388,8 +2388,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 OPEN A CONTRACT BOARD",
-          "x": 1.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -2443,8 +2443,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 MARK A NEUTRAL COURIER ROUTE",
-          "x": 3.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -2484,8 +2484,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 ESTABLISH A MARKET STALL",
-          "x": 5.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -2525,8 +2525,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 MAKE A GUESTHOUSE OR WAYSTATION",
-          "x": 7.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 6.2
         },
         {
           "dependencies": [
@@ -2566,8 +2566,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 START THE CIVIC LEDGER",
-          "x": 9.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 8.6
         },
         {
           "dependencies": [
@@ -2607,8 +2607,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 MAKE ONE MCA CIVIC CONNECTION",
-          "x": 11.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 11.0
         },
         {
           "dependencies": [
@@ -2649,8 +2649,8 @@
             }
           ],
           "title": "WORLD BUILD \u00b7 RUN A MEDIATION OR RESCUE",
-          "x": 13.0,
-          "y": 0.8
+          "x": 0.0,
+          "y": 13.4
         },
         {
           "dependencies": [
@@ -2704,8 +2704,8 @@
             }
           ],
           "title": "PROGRESSION \u00b7 OPEN THE SPELL TRANSLATION DESK",
-          "x": -7.0,
-          "y": -0.2
+          "x": 5.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -2813,8 +2813,8 @@
             }
           ],
           "title": "CHARTER THE FREE COMPANY",
-          "x": 0,
-          "y": 4.6
+          "x": 0.0,
+          "y": 15.8
         }
       ],
       "title": "VvH 04 \u00b7 Free Companies"
@@ -2910,8 +2910,8 @@
             }
           ],
           "title": "THE WORK EACH HAND KNOWS",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -2966,7 +2966,7 @@
             }
           ],
           "title": "ENGINEER \u2014 MAKE A SHARED SERVICE",
-          "x": -6,
+          "x": -6.0,
           "y": -1.2
         },
         {
@@ -3108,7 +3108,7 @@
             }
           ],
           "title": "AERONAUT \u2014 PREPARE A VEHICLE SITE",
-          "x": 0,
+          "x": 0.0,
           "y": 1.0
         },
         {
@@ -3250,7 +3250,7 @@
             }
           ],
           "title": "PATHFINDER \u2014 MAP A NEW EXPEDITION",
-          "x": 6,
+          "x": 6.0,
           "y": -1.2
         },
         {
@@ -3293,8 +3293,8 @@
             }
           ],
           "title": "ARCHIVIST \u2014 PRESERVE ONE FAILURE",
-          "x": 0,
-          "y": 3.0
+          "x": 0.0,
+          "y": -2.4
         },
         {
           "dependencies": [
@@ -3356,7 +3356,7 @@
             }
           ],
           "title": "THREE HANDS' WORTH",
-          "x": 0,
+          "x": 0.0,
           "y": 5.4
         }
       ],
@@ -3451,8 +3451,8 @@
             }
           ],
           "title": "THE ISLAND REMEMBERS",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -3494,8 +3494,8 @@
             }
           ],
           "title": "ROAD OR WAYFINDING SPINE",
-          "x": -6,
-          "y": -1.3
+          "x": 0.0,
+          "y": -1.0
         },
         {
           "dependencies": [
@@ -3537,8 +3537,8 @@
             }
           ],
           "title": "MARKET AND CONTRACT HALL",
-          "x": -4.2,
-          "y": 0.5
+          "x": 0.0,
+          "y": 1.4
         },
         {
           "dependencies": [
@@ -3580,8 +3580,8 @@
             }
           ],
           "title": "SHARED WORKSHOP",
-          "x": -2.2,
-          "y": -0.5
+          "x": 0.0,
+          "y": 3.8
         },
         {
           "dependencies": [
@@ -3623,8 +3623,8 @@
             }
           ],
           "title": "ARCHIVE AND MEMORIAL",
-          "x": 0,
-          "y": 1.0
+          "x": 0.0,
+          "y": 6.2
         },
         {
           "dependencies": [
@@ -3666,8 +3666,8 @@
             }
           ],
           "title": "COMMUNITY SUPPLY DEPOT",
-          "x": 2.2,
-          "y": -0.5
+          "x": 0.0,
+          "y": 8.6
         },
         {
           "dependencies": [
@@ -3709,8 +3709,8 @@
             }
           ],
           "title": "AIRSHIP / VEHICLE PORT",
-          "x": 4.2,
-          "y": 0.5
+          "x": 0.0,
+          "y": 11.0
         },
         {
           "dependencies": [
@@ -3752,8 +3752,8 @@
             }
           ],
           "title": "HORDE REFUGE",
-          "x": 6,
-          "y": -1.3
+          "x": 0.0,
+          "y": 13.4
         },
         {
           "dependencies": [
@@ -3795,8 +3795,8 @@
             }
           ],
           "title": "MEETING HALL / PUBLIC STAGE",
-          "x": 0,
-          "y": 3
+          "x": 0.0,
+          "y": 15.8
         },
         {
           "dependencies": [
@@ -3880,8 +3880,8 @@
             }
           ],
           "title": "THREE THINGS THE ISLAND KEEPS",
-          "x": 0,
-          "y": 5.5
+          "x": 0.0,
+          "y": 18.2
         }
       ],
       "title": "VvH 06 \u00b7 The Island Remembers"
@@ -3975,8 +3975,8 @@
             }
           ],
           "title": "RIVALRY WITHOUT RUIN",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -4018,8 +4018,8 @@
             }
           ],
           "title": "PROPAGANDA EXCHANGE",
-          "x": -5,
-          "y": -1
+          "x": -4.0,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4061,8 +4061,8 @@
             }
           ],
           "title": "BLOOD VS HOLY WARD DEMO",
-          "x": -3,
-          "y": 0.8
+          "x": 0.0,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4104,8 +4104,8 @@
             }
           ],
           "title": "SCAVENGER HUNT",
-          "x": -1,
-          "y": -0.2
+          "x": 4.0,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4147,8 +4147,8 @@
             }
           ],
           "title": "COURIER / VEHICLE RACE",
-          "x": 1,
-          "y": 0.8
+          "x": 4.0,
+          "y": 1.0
         },
         {
           "dependencies": [
@@ -4190,8 +4190,8 @@
             }
           ],
           "title": "MARKET CHALLENGE",
-          "x": 3,
-          "y": -0.2
+          "x": 0.0,
+          "y": 1.0
         },
         {
           "dependencies": [
@@ -4233,8 +4233,8 @@
             }
           ],
           "title": "MASCOT / ARCHITECTURE SHOWDOWN",
-          "x": 5,
-          "y": -1
+          "x": -4.0,
+          "y": 1.0
         },
         {
           "dependencies": [
@@ -4283,8 +4283,8 @@
             }
           ],
           "title": "SANCTIONED SKIRMISH \u2014 ONLY IF EVERY BOX IS TRUE",
-          "x": 0,
-          "y": 3.1
+          "x": 3.2,
+          "y": 5.7
         },
         {
           "dependencies": [
@@ -4366,8 +4366,8 @@
             }
           ],
           "title": "ARCHIVE A RIVALRY NIGHT",
-          "x": 0,
-          "y": 5.4
+          "x": 0.0,
+          "y": 4.0
         }
       ],
       "title": "VvH 07 \u00b7 Rivalry Without Ruin"
@@ -4461,8 +4461,8 @@
             }
           ],
           "title": "CALL THE LONG NIGHT FAIR",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -4502,8 +4502,8 @@
             }
           ],
           "title": "HOUSE OF NIGHT HOSPITALITY",
-          "x": -5,
-          "y": -1.1
+          "x": -4.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4543,8 +4543,8 @@
             }
           ],
           "title": "LANTERN ORDER SERVICE",
-          "x": -3,
-          "y": 0.8
+          "x": -1.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4584,8 +4584,8 @@
             }
           ],
           "title": "FREE COMPANY MARKET",
-          "x": -1,
-          "y": -0.2
+          "x": 1.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4625,8 +4625,8 @@
             }
           ],
           "title": "ENGINEERING / AERONAUTICS EXHIBITION",
-          "x": 1,
-          "y": 0.8
+          "x": 4.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4666,8 +4666,8 @@
             }
           ],
           "title": "PUBLIC SHOWCASE / PERFORMANCE",
-          "x": 3,
-          "y": -0.2
+          "x": -2.2,
+          "y": 1.2
         },
         {
           "dependencies": [
@@ -4707,8 +4707,8 @@
             }
           ],
           "title": "ARCHIVE THE SEASON",
-          "x": 5,
-          "y": -1.1
+          "x": 2.2,
+          "y": 1.2
         },
         {
           "dependencies": [
@@ -4780,8 +4780,8 @@
             }
           ],
           "title": "SEAL SEASON ONE",
-          "x": 0,
-          "y": 5.2
+          "x": 0.0,
+          "y": 4.5
         }
       ],
       "title": "VvH 08 \u00b7 The Long Night Fair"
@@ -4867,8 +4867,8 @@
             }
           ],
           "title": "AFTER THE BELLS",
-          "x": 0,
-          "y": -5
+          "x": 0.0,
+          "y": -5.0
         },
         {
           "dependencies": [
@@ -4932,8 +4932,8 @@
             }
           ],
           "title": "LIGHTING REQUISITION \u2014 1 BEVEL",
-          "x": -5,
-          "y": -1
+          "x": -4.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -4997,8 +4997,8 @@
             }
           ],
           "title": "TRANSIT REQUISITION \u2014 2 BEVELS",
-          "x": -2.5,
-          "y": 0.3
+          "x": -2.25,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -5062,8 +5062,8 @@
             }
           ],
           "title": "FESTIVAL REQUISITION \u2014 1 BEVEL",
-          "x": 0,
-          "y": 0.8
+          "x": 0.0,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -5127,8 +5127,8 @@
             }
           ],
           "title": "REPAIR REQUISITION \u2014 1 BEVEL",
-          "x": 2.5,
-          "y": 0.3
+          "x": 2.25,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -5192,8 +5192,8 @@
             }
           ],
           "title": "HOSPITALITY REQUISITION \u2014 1 BEVEL",
-          "x": 5,
-          "y": -1
+          "x": 4.5,
+          "y": -1.5
         },
         {
           "dependencies": [
@@ -5235,8 +5235,8 @@
             }
           ],
           "title": "ARCHIVE A NEW RUMOUR",
-          "x": -2.5,
-          "y": 4.5
+          "x": -2.0,
+          "y": 2.0
         },
         {
           "dependencies": [
@@ -5290,8 +5290,8 @@
             }
           ],
           "title": "LEAVE A SEASON TWO PRESSURE",
-          "x": 2.5,
-          "y": 4.5
+          "x": 2.0,
+          "y": 2.0
         }
       ],
       "title": "VvH 09 \u00b7 After the Bells"
