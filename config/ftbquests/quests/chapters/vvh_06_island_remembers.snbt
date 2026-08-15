@@ -152,6 +152,9 @@
 			}
 			id: "7A11C0DE16000005"
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE16210008", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [
