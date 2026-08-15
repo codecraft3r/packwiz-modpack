@@ -66,6 +66,9 @@
 			id: "7A11C0DE15000001"
 			min_required_dependencies: 1
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE15207001", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+			]
 			shape: "hexagon"
 			size: 1.7d
 			tasks: [
@@ -86,7 +89,8 @@
 			}
 			id: "7A11C0DE15000002"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220001", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210001", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "gear"
@@ -118,7 +122,8 @@
 			}
 			id: "7A11C0DE15000003"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220002", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210002", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "hexagon"
@@ -150,7 +155,8 @@
 			}
 			id: "7A11C0DE15000004"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220006", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210006", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "heart"
@@ -181,7 +187,8 @@
 			}
 			id: "7A11C0DE15000005"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220007", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210007", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "diamond"
@@ -212,7 +219,8 @@
 			}
 			id: "7A11C0DE15000006"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220008", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210008", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "square"
@@ -243,7 +251,8 @@
 			}
 			id: "7A11C0DE15000007"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220003", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210003", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "circle"
@@ -290,7 +299,8 @@
 			}
 			id: "7A11C0DE15000008"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220004", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210004", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "diamond"
@@ -321,7 +331,8 @@
 			}
 			id: "7A11C0DE15000009"
 			min_width: 280
-			rewards: [
+				rewards: [
+				{ id: "7A11C0DE15220005", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{ id: "7A11C0DE15210005", table_id: 8796023610973093892, team_reward: false, type: "choice" }
 			]
 			shape: "square"
@@ -369,7 +380,8 @@
 			id: "7A11C0DE1500000A"
 			min_required_dependencies: 4
 			min_width: 280
-			rewards: [
+				rewards: [
+					{ id: "7A11C0DE1522000A", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
 					exclude_from_claim_all: true
 					id: "7A11C0DE15200066"

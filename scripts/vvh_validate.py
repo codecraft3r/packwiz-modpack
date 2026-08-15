@@ -242,6 +242,7 @@ def resolve_item(item_id: str, entries: set[str], source_root: Path) -> bool:
             "minecraft:chiseled_stone_bricks", "minecraft:clock", "minecraft:compass",
             "minecraft:cooked_beef", "minecraft:crossbow", "minecraft:dark_oak_door",
             "minecraft:emerald", "minecraft:fermented_spider_eye", "minecraft:filled_map",
+            "minecraft:glass_bottle", "minecraft:iron_ingot",
             "minecraft:firework_rocket", "minecraft:hay_block", "minecraft:iron_sword",
             "minecraft:item_frame", "minecraft:lantern", "minecraft:lead", "minecraft:minecart",
             "minecraft:oak_sign", "minecraft:painting", "minecraft:paper", "minecraft:powered_rail",
@@ -510,13 +511,17 @@ def main() -> int:
                     advancement_ids.add(t["advancement"])
             for r in q.get("rewards", []):
                 if r.get("item"):
-                    item_ids.add(r["item"])
+                    item_ref = r["item"].get("id") if isinstance(r["item"], dict) else r["item"]
+                    if item_ref:
+                        item_ids.add(item_ref)
                 if r.get("item_data"):
                     item_ids.add(r["item_data"]["id"])
     for table in manifest.get("reward_tables", []):
         for r in table.get("rewards", []):
             if r.get("item"):
-                item_ids.add(r["item"])
+                item_ref = r["item"].get("id") if isinstance(r["item"], dict) else r["item"]
+                if item_ref:
+                    item_ids.add(item_ref)
             if r.get("item_data"):
                 item_ids.add(r["item_data"]["id"])
     for item in sorted(item_ids):
@@ -578,7 +583,9 @@ def main() -> int:
                     chapter_items.add(t["item"])
             for r in q.get("rewards", []):
                 if r.get("item"):
-                    chapter_items.add(r["item"])
+                    item_ref = r["item"].get("id") if isinstance(r["item"], dict) else r["item"]
+                    if item_ref:
+                        chapter_items.add(item_ref)
                 if r.get("item_data"):
                     chapter_items.add(r["item_data"].get("id", ""))
         missing_items = sorted(requirement["items"] - chapter_items)
@@ -692,23 +699,40 @@ def main() -> int:
     bevel_choice_personal_per_player = 0
     bevel_choice_team_total_per_progress_container = 0
     choice_table_metrics: dict[str, dict[str, Any]] = {}
+    # Bevels are encoded as native item rewards with an embedded ``item``
+    # compound in the shipped SNBT.  Keep this extraction in one place so the
+    # economy audit cannot silently miss a nested item reward.
+    def direct_bevel_count(reward: dict[str, Any]) -> int:
+        item, count = reward_item_and_count(reward)
+        return count if item == "numismatics:bevel" else 0
+
+    fallback_id = "7A11C0DE19000007"
+    direct_bevel_quests: dict[str, int] = {}
+    repeatable_direct_bevel_issuers: list[str] = []
     for qid, q in vvh_quests.items():
+        direct_bevel_quests[qid] = sum(direct_bevel_count(r) for r in q.get("rewards", []) if isinstance(r, dict))
         for r in q.get("rewards", []):
+            if not isinstance(r, dict):
+                continue
             if not isinstance(r.get("team_reward"), bool):
                 audit.error(f"Reward {r.get('id')} in {qid} lacks explicit team_reward")
             if r.get("type") == "choice" and normalize_table_id(r.get("table_id")) not in table_ids:
                 audit.error(f"Reward {r.get('id')} references missing choice table {r.get('table_id')}")
-            if r.get("item") == "numismatics:bevel":
-                if q.get("repeatable"):
-                    audit.error(f"Repeatable quest {qid} issues Bevel currency")
+            if direct_bevel_count(r):
+                if q.get("can_repeat"):
+                    repeatable_direct_bevel_issuers.append(qid)
+                    if qid != fallback_id:
+                        audit.error(f"Repeatable quest {qid} issues Bevel currency; only {fallback_id} may mint the fallback")
                 elif r.get("team_reward"):
                     bevel_team_quests.append(qid)
-                    bevel_team_total_per_progress_container += int(r.get("count", 1))
+                    bevel_team_total_per_progress_container += direct_bevel_count(r)
                 else:
-                    bevel_personal_per_player += int(r.get("count", 1))
-        if q.get("repeatable"):
+                    bevel_personal_per_player += direct_bevel_count(r)
+        if q.get("can_repeat"):
             if q.get("repeat_cooldown") != 604800:
                 audit.error(f"Repeatable {qid} cooldown is {q.get('repeat_cooldown')}, expected 604800 seconds")
+            if qid == fallback_id:
+                continue
             pay = [t for t in q.get("tasks", []) if t.get("type") == "item" and t.get("item") == "numismatics:bevel" and t.get("consume")]
             rewards = q.get("rewards", [])
             if rewards:
@@ -721,7 +745,7 @@ def main() -> int:
                 for r in rewards:
                     if not r.get("team_reward"):
                         audit.error(f"Repeatable cache reward {r.get('id')} must be team_reward=true")
-                    if r.get("item") == "numismatics:bevel":
+                    if direct_bevel_count(r) and qid != fallback_id:
                         audit.error(f"Repeatable cache {qid} self-funds with Bevels")
                 repeatable_rewards.append({"quest": qid, "price": price, "rewards": [(r.get("item"), r.get("count")) for r in rewards]})
             else:
@@ -731,8 +755,10 @@ def main() -> int:
                     audit.error(f"Rewardless social repeatable {qid} must use trust-based checkmarks only")
                 audit.metrics.setdefault("social_repeatables", []).append(qid)
 
-    # A choice table with loot_size N can issue up to N selected entries. Count
-    # only Bevel entries, and attribute them to the choice reward's scope:
+    # A ChoiceReward presents one selected entry.  ``loot_size`` is metadata
+    # used by the table UI/version and must not be multiplied into currency
+    # exposure.  Count only Bevel entries, and attribute them to the choice
+    # reward's scope:
     # personal choices are per player; team choices are once per progress
     # container/team. Utility table #4 is intentionally non-currency and is
     # checked explicitly below.
@@ -754,7 +780,7 @@ def main() -> int:
             if item == "numismatics:bevel":
                 table_bevel += max(0, count)
             entries.append({"item": item, "count": count})
-        potential = table_bevel * loot_size
+        potential = table_bevel
         metric = choice_table_metrics.setdefault(table_key, {
             "loot_size": loot_size,
             "bevel_per_selected_entry": table_bevel,
@@ -801,6 +827,101 @@ def main() -> int:
             "this is intentional seed currency, not a repeatable economy loop."
         )
 
+    # Choice tables #2/#3/#4 are utility bundles.  A currency entry here would
+    # make the payout random and undermine the guaranteed Bevel progression
+    # policy.  This check inspects the actual table SNBT, not only references.
+    forbidden_bevel_tables = {
+        normalize_table_id("7A11C0DEF0000002"),
+        normalize_table_id("7A11C0DEF0000003"),
+        normalize_table_id("7A11C0DEF0000004"),
+    }
+    for table_id in sorted(forbidden_bevel_tables):
+        table = choice_tables.get(table_id)
+        if table is None:
+            audit.error(f"Required utility choice table is missing: {table_id}")
+            continue
+        bevel_entries = [
+            f"{reward.get('id')}: {reward_item_and_count(reward)[1]}"
+            for reward in table.get("rewards", [])
+            if isinstance(reward, dict) and reward_item_and_count(reward)[0] == "numismatics:bevel"
+        ]
+        if bevel_entries:
+            audit.error(f"Choice table {table_id} contains Bevel entries: {bevel_entries}")
+    audit.metrics["bevel_choice_semantics"] = "one selected table entry per claim; loot_size is not multiplied"
+
+    # The only repeatable currency source is the post-season, trust-based
+    # archive fallback.  It must be a one-Bevel team reward, weekly, and must
+    # not consume currency (unlike the requisition sinks).
+    fallback = vvh_quests.get(fallback_id)
+    if fallback is None:
+        audit.error(f"Missing repeatable Bevel fallback quest {fallback_id}")
+    else:
+        fallback_count = direct_bevel_quests.get(fallback_id, 0)
+        fallback_rewards = [r for r in fallback.get("rewards", []) if isinstance(r, dict)]
+        if not (fallback.get("can_repeat") or fallback.get("repeatable")):
+            audit.error(f"Bevel fallback {fallback_id} must be repeatable")
+        if fallback.get("repeat_cooldown") != 604800:
+            audit.error(f"Bevel fallback {fallback_id} cooldown is {fallback.get('repeat_cooldown')}, expected 604800 seconds")
+        if fallback_count != 1:
+            audit.error(f"Bevel fallback {fallback_id} must issue exactly 1 direct Bevel, found {fallback_count}")
+        if not fallback_rewards or any(not r.get("team_reward") for r in fallback_rewards):
+            audit.error(f"Bevel fallback {fallback_id} must scope every reward to the FTB team")
+        if not fallback.get("tasks") or not all(t.get("type") == "checkmark" for t in fallback.get("tasks", [])):
+            audit.error(f"Bevel fallback {fallback_id} must remain a trust-based checkmark")
+        if any(t.get("type") == "item" and t.get("item") == "numismatics:bevel" and t.get("consume") for t in fallback.get("tasks", [])):
+            audit.error(f"Bevel fallback {fallback_id} must not consume Bevels")
+    if set(repeatable_direct_bevel_issuers) != ({fallback_id} if fallback is not None else set()):
+        audit.error(f"Unexpected repeatable direct Bevel issuers: {sorted(repeatable_direct_bevel_issuers)}")
+    audit.metrics["repeatable_bevel_issuers"] = sorted(repeatable_direct_bevel_issuers)
+    audit.metrics["weekly_fallback_team_bevels"] = 1 if fallback is not None and direct_bevel_quests.get(fallback_id) == 1 else 0
+    audit.metrics["weekly_fallback_max_8_fragmented_teams"] = audit.metrics["weekly_fallback_team_bevels"] * 8
+    audit.metrics["weekly_requisition_board_price"] = repeatable_weekly_prices
+    if audit.metrics["weekly_fallback_team_bevels"] >= repeatable_weekly_prices and repeatable_weekly_prices:
+        audit.error("The weekly fallback can self-fund the full requisition board")
+
+    # Reward policy: chapters 1-4 substantive objectives get personal Bevels;
+    # chapter 5 specialties get two; capstones use two team Bevels.  The later
+    # civic/event chapters intentionally retain utility-only ordinary nodes.
+    def is_lane_or_intro(title: str) -> bool:
+        upper = title.upper()
+        markers = (
+            "OPEN THE ISLAND CHARTER", "READ THE THREE INVITATIONS", "FOUND THE ",
+            "PROGRESSION LANE", "WORLD-BUILDING LANE", "THE WORK EACH HAND KNOWS",
+            "THE ISLAND REMEMBERS", "RIVALRY WITHOUT RUIN", "CALL THE LONG NIGHT FAIR",
+            "AFTER THE BELLS",
+        )
+        return any(marker in upper for marker in markers)
+
+    policy_failures: list[str] = []
+    capstone_titles = {
+        "CHARTER THE HOUSE OF NIGHT", "CHARTER THE LANTERN ORDER", "CHARTER THE FREE COMPANY",
+        "THREE HANDS' WORTH", "THREE THINGS THE ISLAND KEEPS", "ARCHIVE A RIVALRY NIGHT",
+    }
+    personal_expected: dict[str, int] = {}
+    team_capstone_ids: list[str] = []
+    for ch_index, chapter in enumerate(manifest.get("chapters", [])):
+        for q in chapter.get("quests", []):
+            qid, title = q.get("id", ""), q.get("title", "")
+            upper = title.upper()
+            direct = direct_bevel_quests.get(qid, 0)
+            if title.upper() in capstone_titles:
+                if direct < 2 or not any(direct_bevel_count(r) and r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
+                    policy_failures.append(f"{qid} {title}: capstone needs at least 2 team Bevels")
+                team_capstone_ids.append(qid)
+            elif ch_index == 5 and not is_lane_or_intro(title) and not q.get("can_repeat"):
+                personal_expected[qid] = 2
+                if direct < 2 or not any(direct_bevel_count(r) and not r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
+                    policy_failures.append(f"{qid} {title}: Chapter 5 specialty needs 2 personal Bevels")
+            elif 1 <= ch_index <= 4 and not is_lane_or_intro(title) and not q.get("can_repeat"):
+                personal_expected[qid] = 1
+                if direct < 1 or not any(direct_bevel_count(r) and not r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
+                    policy_failures.append(f"{qid} {title}: substantive progression needs a personal Bevel")
+    for failure in policy_failures:
+        audit.error(failure)
+    audit.metrics["bevel_policy_failures"] = policy_failures
+    audit.metrics["bevel_personal_quest_count"] = len(personal_expected)
+    audit.metrics["bevel_team_capstone_quest_count"] = len(team_capstone_ids)
+
     # Layout collision and line-crossing heuristics, chapter by chapter.
     layout_issues: list[str] = []
     crossing_counts: dict[str, int] = {}
@@ -841,7 +962,7 @@ def main() -> int:
     # Dead-content heuristic: optional leaves with no reward and no repeatability.
     leaf_review: list[dict[str, str]] = []
     for qid, q in vvh_quests.items():
-        if q.get("optional") and not q.get("rewards") and not reverse.get(qid) and not q.get("repeatable"):
+        if q.get("optional") and not q.get("rewards") and not reverse.get(qid) and not q.get("can_repeat"):
             leaf_review.append({"id": qid, "title": q["title"]})
     audit.metrics["optional_rewardless_leaf_review"] = leaf_review
     if len(leaf_review) > 12:
@@ -868,6 +989,38 @@ def main() -> int:
                 sum(1 for t in vvh_quests[qid].get("tasks", []) if t.get("type") == "checkmark")
                 for qid in intended
             )
+            intended_personal = sum(
+                direct_bevel_count(r)
+                for qid in intended
+                for r in vvh_quests[qid].get("rewards", [])
+                if isinstance(r, dict) and not r.get("team_reward")
+            )
+            intended_team = sum(
+                direct_bevel_count(r)
+                for qid in intended
+                for r in vvh_quests[qid].get("rewards", [])
+                if isinstance(r, dict) and r.get("team_reward")
+            )
+            audit.metrics["minimum_intended_path_personal_bevels"] = intended_personal
+            audit.metrics["minimum_intended_path_team_bevels"] = intended_team
+            if not 17 <= intended_personal <= 24:
+                audit.error(
+                    "Normal intended path must grant 17-24 personal Bevels; "
+                    f"calculated {intended_personal}"
+                )
+            completionist_personal = sum(
+                direct_bevel_count(r)
+                for qid, quest in vvh_quests.items()
+                if not quest.get("can_repeat")
+                for r in quest.get("rewards", [])
+                if isinstance(r, dict) and not r.get("team_reward")
+            )
+            audit.metrics["completionist_one_time_personal_bevels"] = completionist_personal
+            if not 45 <= completionist_personal <= 51:
+                audit.error(
+                    "Completionist one-time issuance must be approximately 45-51 personal Bevels; "
+                    f"calculated {completionist_personal}"
+                )
         except Exception as exc:  # noqa: BLE001
             audit.error(f"Minimum-path simulation failed: {exc}")
     else:

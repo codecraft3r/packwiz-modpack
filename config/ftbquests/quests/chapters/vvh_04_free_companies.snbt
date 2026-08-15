@@ -90,11 +90,17 @@
 			}
 			id: "7A11C0DE14000001"
 			min_width: 280
-			rewards: [
+				rewards: [
 				{
 					id: "7A11C0DE14200011"
 					item: { count: 16, id: "minecraft:scaffolding" }
 					team_reward: true
+					 type: "item"
+				}
+				{
+					id: "7A11C0DE14207001"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
 					type: "item"
 				}
 			]
@@ -159,6 +165,7 @@
 			id: "7A11C0DE14000002"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200080", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200012"
 					item: { count: 2, id: "minecraft:emerald" }
@@ -203,6 +210,7 @@
 			id: "7A11C0DE14000003"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200081", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200013"
 					item: { count: 1, id: "minecraft:compass" }
@@ -239,6 +247,7 @@
 			id: "7A11C0DE14000004"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200082", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200014"
 					item: { count: 8, id: "minecraft:lantern" }
@@ -275,6 +284,7 @@
 			id: "7A11C0DE14000005"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200083", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200015"
 					item: { count: 16, id: "minecraft:scaffolding" }
@@ -334,6 +344,7 @@
 			id: "7A11C0DE14000006"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200084", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200017"
 					item: { count: 2, id: "minecraft:writable_book" }
@@ -378,6 +389,7 @@
 			id: "7A11C0DE14000007"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200085", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200018"
 					item: { count: 2, id: "minecraft:lead" }
@@ -422,6 +434,7 @@
 			id: "7A11C0DE14000008"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200086", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200019"
 					item: { count: 8, id: "minecraft:bread" }
@@ -458,6 +471,7 @@
 			id: "7A11C0DE14000009"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200087", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE1420001A"
 					item: { count: 4, id: "irons_spellbooks:arcane_essence" }
@@ -522,6 +536,7 @@
 					team_reward: true
 					type: "item"
 				}
+				{ id: "7A11C0DE1420008A", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
 					id: "7A11C0DE14200069"
 					item: {

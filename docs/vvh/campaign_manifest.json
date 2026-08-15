@@ -79,7 +79,8 @@
           ],
           "title": "OPEN THE ISLAND CHARTER",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -103,7 +104,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE10200011",
+              "item": {
+                "count": 8,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
           "subtitle": "Permanent work needs a boundary that actually means something.",
@@ -124,7 +135,8 @@
           ],
           "title": "LAND, CLAIMS, AND RESET ZONES",
           "x": -5.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -149,7 +161,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE10200012",
+              "item": {
+                "count": 8,
+                "id": "minecraft:firework_rocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "octagon",
           "size": 1.2,
           "subtitle": "Make stories, not support tickets.",
@@ -170,7 +192,8 @@
           ],
           "title": "RIVALRY, NEUTRALS, AND OPTIONAL COMBAT",
           "x": -5.5,
-          "y": 1.5
+          "y": 1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -195,7 +218,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE10200013",
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_bottle"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.2,
           "subtitle": "Two faction systems exist. Do not pretend they are the same database.",
@@ -216,7 +249,8 @@
           ],
           "title": "VAMPIRISM, FTB TEAMS, AND SWITCHING",
           "x": 5.5,
-          "y": 0.0
+          "y": 0.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -246,36 +280,30 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 1,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE10200002",
-              "item": "minecraft:compass",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 1,
+                "id": "minecraft:compass"
+              },
               "team_reward": false,
-              "title": "Personal Compass",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE10200003",
-              "item": "minecraft:torch",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:torch"
+              },
               "team_reward": false,
-              "title": "Eight Travel Torches",
               "type": "item"
             },
             {
-              "count": 2,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE10200004",
-              "item": "irons_spellbooks:arcane_essence",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:arcane_essence"
+              },
               "team_reward": false,
-              "title": "Two Arcane Essence",
               "type": "item"
             }
           ],
@@ -299,10 +327,11 @@
           ],
           "title": "SIGN THE CHARTER",
           "x": 0.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 00 \u00b7 The Island Charter"
+      "title": "VvH 00 \u00c2\u00b7 The Island Charter"
     },
     {
       "filename": "vvh_01_three_invitations",
@@ -384,7 +413,8 @@
           ],
           "title": "READ THE THREE INVITATIONS",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -409,25 +439,30 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 2,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE11200017",
-              "item": "vampirism:blood_bottle",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 2,
+                "id": "vampirism:blood_bottle"
+              },
               "team_reward": false,
-              "title": "Two Blood Bottles",
               "type": "item"
             },
             {
-              "count": 1,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE11200018",
-              "item": "irons_spellbooks:blood_rune",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:blood_rune"
+              },
               "team_reward": false,
-              "title": "One Blood Rune",
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE11200050",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
               "type": "item"
             }
           ],
@@ -464,7 +499,8 @@
           ],
           "title": "TAKE THE CRIMSON INVITATION",
           "x": -5.5,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -489,25 +525,30 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE11200021",
-              "item": "vampirism:garlic",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "vampirism:garlic"
+              },
               "team_reward": false,
-              "title": "Four Garlic Field Supplies",
               "type": "item"
             },
             {
-              "count": 1,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE11200022",
-              "item": "irons_spellbooks:holy_rune",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:holy_rune"
+              },
               "team_reward": false,
-              "title": "One Holy Rune",
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE11200051",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
               "type": "item"
             }
           ],
@@ -544,7 +585,8 @@
           ],
           "title": "TAKE THE LANTERN OATH",
           "x": 5.5,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -569,25 +611,30 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1120002B",
-              "item": "minecraft:emerald",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "minecraft:emerald"
+              },
               "team_reward": false,
-              "title": "Four Emerald Service Tokens",
               "type": "item"
             },
             {
-              "count": 1,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1120002C",
-              "item": "irons_spellbooks:arcane_rune",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:arcane_rune"
+              },
               "team_reward": false,
-              "title": "One Arcane Rune",
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE11200052",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
               "type": "item"
             }
           ],
@@ -611,7 +658,8 @@
           ],
           "title": "SIGN THE FREE COMPANY REGISTER",
           "x": 5.5,
-          "y": 1.8
+          "y": 1.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -636,15 +684,20 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE11200034",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000001",
+              "table_id": 8796023610973093889,
               "team_reward": false,
-              "title": "Choose a Personal Trade Lens",
               "type": "choice"
+            },
+            {
+              "id": "7A11C0DE11207005",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
             }
           ],
           "shape": "octagon",
@@ -667,10 +720,11 @@
           ],
           "title": "CHOOSE YOUR PERSONAL TRADE LENS",
           "x": 0.0,
-          "y": 4.8
+          "y": 4.8,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 01 \u00b7 Three Invitations"
+      "title": "VvH 01 \u00c2\u00b7 Three Invitations"
     },
     {
       "filename": "vvh_02_house_of_night",
@@ -771,7 +825,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200011",
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_bottle"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Real vampire progression, followed by civic consequences.",
@@ -805,7 +869,8 @@
           ],
           "title": "FOUND THE HOUSE OF NIGHT",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -846,7 +911,8 @@
           ],
           "title": "PROGRESSION LANE",
           "x": 5.0,
-          "y": -3.0
+          "y": -3.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -887,7 +953,8 @@
           ],
           "title": "WORLD-BUILDING LANE",
           "x": 0.0,
-          "y": -3.0
+          "y": -3.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -895,7 +962,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 1",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 1",
             "",
             "&fPlace at least one functional coffin in an accessible shared room, plus ordinary storage or seating for visitors. The point is a headquarters people return to, not a lone coffin abandoned in a cave.",
             "&7REVIEW checks function, access, safety, story, and maintenance."
@@ -907,10 +974,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200080",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200012",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 bedrooms that make the faction's actual needs visible.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 bedrooms that make the faction's actual needs visible.",
           "tasks": [
             {
               "advancement": null,
@@ -939,9 +1025,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 BUILD THE COMMON COFFIN ROOM",
+          "title": "WORLD BUILD \u00c2\u00b7 BUILD THE COMMON COFFIN ROOM",
           "x": 0.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -949,7 +1036,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/blood_ritual_workstation.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 2",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 2",
             "",
             "&fObtain an Altar of Inspiration and install it in a deliberate chamber with a safe approach and a sign/book explaining the room.",
             "&fLeave enough space that teammates are not clipping through furniture during progression.",
@@ -962,10 +1049,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200081",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200013",
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:arcane_essence"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Make the first faction ritual object part of a place, not a lawn ornament.",
+          "subtitle": "Progression \u00c2\u00b7 Make the first faction ritual object part of a place, not a lawn ornament.",
           "tasks": [
             {
               "advancement": null,
@@ -994,9 +1100,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 RAISE AN ALTAR CHAMBER",
+          "title": "PROGRESSION \u00c2\u00b7 RAISE AN ALTAR CHAMBER",
           "x": 5.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1004,7 +1111,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/blood_school_crest.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 3",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 3",
             "",
             "&fCarry four Blood Bottles and establish a labelled shared pantry or processing corner. Leave a restock rule where the next visitor can find it.",
             "&fLeave a written restock rule so a late player knows whether supplies are communal, reserved, or trade stock."
@@ -1016,10 +1123,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200082",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200018",
+              "item": {
+                "count": 8,
+                "id": "minecraft:glass_bottle"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 A faction resource should have a home before it becomes chest soup.",
+          "subtitle": "World Build \u00c2\u00b7 A faction resource should have a home before it becomes chest soup.",
           "tasks": [
             {
               "advancement": null,
@@ -1048,9 +1174,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 STOCK A BLOOD PANTRY",
+          "title": "WORLD BUILD \u00c2\u00b7 STOCK A BLOOD PANTRY",
           "x": 0.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1058,7 +1185,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/blood_rune.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 4",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 4",
             "",
             "&fUse Vampire's Delight or ordinary serving infrastructure to make a small night kitchen, bar, or guest table.",
             "&fCarry one Blood Wine Bottle as proof the room can host the House's traditions without requiring a cooking project.",
@@ -1071,10 +1198,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200083",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200014",
+              "item": {
+                "count": 8,
+                "id": "vampiresdelight:hardtack"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 Hospitality is faction infrastructure too.",
+          "subtitle": "World Build \u00c2\u00b7 Hospitality is faction infrastructure too.",
           "tasks": [
             {
               "advancement": null,
@@ -1103,9 +1249,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 OPEN THE NIGHT KITCHEN",
+          "title": "WORLD BUILD \u00c2\u00b7 OPEN THE NIGHT KITCHEN",
           "x": 0.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1113,7 +1260,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/blood_staff.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 5",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 5",
             "",
             "&fCreate or adopt a signed route between the House and one public destination: spawn, market, port, workshop, road, archive, or neutral office. Make hazards visible without flooding the whole island with random torches.",
             "&7A route is infrastructure when somebody else can follow it alone."
@@ -1125,10 +1272,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200084",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200019",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 The House should improve travel, not merely occupy a basement.",
+          "subtitle": "World Build \u00c2\u00b7 The House should improve travel, not merely occupy a basement.",
           "tasks": [
             {
               "advancement": null,
@@ -1144,9 +1310,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 MARK A SAFE NIGHT ROUTE",
+          "title": "WORLD BUILD \u00c2\u00b7 MARK A SAFE NIGHT ROUTE",
           "x": 0.0,
-          "y": 6.2
+          "y": 6.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1154,7 +1321,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/blood_vial.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 6",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 6",
             "",
             "&fInvite at least one player who is not a Vampire. Give them a tour, meal, trade, ceremony, archive reading, or ridiculous local custom. If nobody is online, leave a signed guestbook/map tour for the next visitor.",
             "&fLeave the House with one shared story worth carrying to the next table."
@@ -1166,10 +1333,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200085",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE1220001A",
+              "item": {
+                "count": 4,
+                "id": "vampiresdelight:hardtack"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 Show that faction identity can create a scene without creating a corpse.",
+          "subtitle": "World Build \u00c2\u00b7 Show that faction identity can create a scene without creating a corpse.",
           "tasks": [
             {
               "advancement": null,
@@ -1185,9 +1371,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 HOST A BLOODLESS VISIT",
+          "title": "WORLD BUILD \u00c2\u00b7 HOST A BLOODLESS VISIT",
           "x": 0.0,
-          "y": 8.6
+          "y": 8.6,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1195,7 +1382,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/blood_vial.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 7",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 7",
             "",
             "&fBuild or adopt one Create system that moves supplies for the House: pantry restock, serving stock, route loading, doors, storage movement, or a public workshop service.",
             "&fThe Mechanical Press is only the proof of contact; the reviewed logistics line is the actual work."
@@ -1207,10 +1394,38 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200015",
+              "item": {
+                "count": 4,
+                "id": "create:andesite_alloy"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200086",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200016",
+              "item": {
+                "count": 2,
+                "id": "create:super_glue"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Immortality still benefits from logistics.",
+          "subtitle": "Progression \u00c2\u00b7 Immortality still benefits from logistics.",
           "tasks": [
             {
               "advancement": null,
@@ -1239,9 +1454,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 CONNECT THE NIGHT LOGISTICS",
+          "title": "PROGRESSION \u00c2\u00b7 CONNECT THE NIGHT LOGISTICS",
           "x": 5.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1249,7 +1465,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/blood_vial.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 8",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 8",
             "",
             "&fPrepare a small Blood-school kit: a Blood Rune plus Bloody Vellum, Blood Vial, Blood Staff, or Blood Affinity Ring. Store it in a labelled place and explain one safe use to another player.",
             "&fThe House studies blood as memory and inheritance; keep the first rite small enough to teach safely."
@@ -1261,10 +1477,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE12200087",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE12200017",
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:arcane_essence"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 give the House a controlled ritual vocabulary.",
+          "subtitle": "Progression \u00c2\u00b7 give the House a controlled ritual vocabulary.",
           "tasks": [
             {
               "advancement": null,
@@ -1306,9 +1541,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 INSCRIBE THE BLOOD SCHOOL",
+          "title": "PROGRESSION \u00c2\u00b7 INSCRIBE THE BLOOD SCHOOL",
           "x": 5.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1340,47 +1576,46 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE12200067",
-              "item": "minecraft:scaffolding",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:scaffolding"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Scaffolding",
               "type": "item"
             },
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE12200068",
-              "item": "create:super_glue",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "create:super_glue"
+              },
               "team_reward": true,
-              "title": "Four Super Glue",
               "type": "item"
             },
             {
-              "count": 2,
-              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1220008A",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C0DE12200069",
-              "item": "irons_spellbooks:blood_rune",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:blood_rune"
+              },
               "team_reward": true,
-              "title": "Two Blood Runes",
               "type": "item"
             },
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1220006A",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose One Practical Contribution Favor",
               "type": "choice"
             }
           ],
@@ -1417,10 +1652,11 @@
           ],
           "title": "CHARTER THE HOUSE OF NIGHT",
           "x": 0.0,
-          "y": 11.0
+          "y": 11.0,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 02 \u00b7 House of Night"
+      "title": "VvH 02 \u00c2\u00b7 House of Night"
     },
     {
       "filename": "vvh_03_lantern_order",
@@ -1521,7 +1757,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200011",
+              "item": {
+                "count": 8,
+                "id": "vampirism:garlic"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Real hunter progression, followed by public responsibility.",
@@ -1555,7 +1801,8 @@
           ],
           "title": "FOUND THE LANTERN ORDER",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1596,7 +1843,8 @@
           ],
           "title": "PROGRESSION LANE",
           "x": 5.0,
-          "y": -3.0
+          "y": -3.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1637,7 +1885,8 @@
           ],
           "title": "WORLD-BUILDING LANE",
           "x": 0.0,
-          "y": -3.0
+          "y": -3.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1645,7 +1894,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 1",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 1",
             "",
             "&fBuild a small watchhouse, gatehouse, or civic room with public information: local hazards, routes, contacts, or shelter instructions. Private equipment can remain private; the public-facing service must be obvious.",
             "&8A watchhouse with no information is just a suspicious shed."
@@ -1657,10 +1906,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200080",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200012",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 visible service before private arsenal.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 visible service before private arsenal.",
           "tasks": [
             {
               "advancement": null,
@@ -1676,9 +1944,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 BUILD THE PUBLIC WATCHHOUSE",
+          "title": "WORLD BUILD \u00c2\u00b7 BUILD THE PUBLIC WATCHHOUSE",
           "x": 0.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1686,7 +1955,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/holy_public_ward.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 2",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 2",
             "",
             "&fObtain a Hunter Table and install it in a shared workshop with storage and enough room for somebody else to understand the station without excavating your bedroom.",
             "&7This is progression infrastructure, not a requirement to sprint the hunter tech tree."
@@ -1698,10 +1967,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200081",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200013",
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:holy_rune"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Put the actual faction workstation somewhere teammates can use it.",
+          "subtitle": "Progression \u00c2\u00b7 Put the actual faction workstation somewhere teammates can use it.",
           "tasks": [
             {
               "advancement": null,
@@ -1730,9 +2018,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 ESTABLISH THE HUNTER TABLE",
+          "title": "PROGRESSION \u00c2\u00b7 ESTABLISH THE HUNTER TABLE",
           "x": 5.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1740,7 +2029,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/holy_school_crest.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 3",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 3",
             "",
             "&fCarry eight Garlic and establish a labelled field-supply reserve. It can also contain food, maps, lanterns, spare tools, or first-response supplies.",
             "&fKeep a written restock rule beside the reserve so the next patrol can draw from it."
@@ -1752,10 +2041,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200082",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200017",
+              "item": {
+                "count": 4,
+                "id": "minecraft:bread"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 Preparedness is funnier when it has labels.",
+          "subtitle": "World Build \u00c2\u00b7 Preparedness is funnier when it has labels.",
           "tasks": [
             {
               "advancement": null,
@@ -1784,9 +2092,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 KEEP THE GARLIC RESERVE",
+          "title": "WORLD BUILD \u00c2\u00b7 KEEP THE GARLIC RESERVE",
           "x": 0.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1794,7 +2103,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/holy_rune.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 4",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 4",
             "",
             "&fCarry four Stakes and make a tiny training or equipment area. It may be ceremonial or practical, but it needs a clear rule against using faction equipment as an excuse to harass unwilling players.",
             "&7Practice with restraint; the Order protects people before it hunts anything."
@@ -1806,10 +2115,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200083",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200014",
+              "item": {
+                "count": 4,
+                "id": "minecraft:iron_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Tools become culture when people know the safety rules.",
+          "subtitle": "Progression \u00c2\u00b7 Tools become culture when people know the safety rules.",
           "tasks": [
             {
               "advancement": null,
@@ -1838,9 +2166,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 ASSEMBLE A STAKE DRILL KIT",
+          "title": "PROGRESSION \u00c2\u00b7 ASSEMBLE A STAKE DRILL KIT",
           "x": 5.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1848,7 +2177,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/priest_chestplate.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 5",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 5",
             "",
             "&fObtain an Alchemical Cauldron and install it with labelled ingredient/storage space. The station should be usable without blocking a hallway or setting the meeting room on fire.",
             "&8Chemistry is just potion-making wearing safety goggles."
@@ -1860,10 +2189,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200084",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200015",
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:holy_rune"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Make countermeasure tech legible to the team.",
+          "subtitle": "Progression \u00c2\u00b7 Make countermeasure tech legible to the team.",
           "tasks": [
             {
               "advancement": null,
@@ -1892,9 +2240,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 OPEN THE ALCHEMICAL BENCH",
+          "title": "PROGRESSION \u00c2\u00b7 OPEN THE ALCHEMICAL BENCH",
           "x": 5.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1902,7 +2251,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/upgrade_orb_holy.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 6",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 6",
             "",
             "&fCreate or adopt a readable refuge route between the Order and one public destination. Mark turns, hazards, and a safe fallback point.",
             "&fAn existing route may be upgraded instead of rebuilt; do not carpet the island with torch spam.",
@@ -1915,10 +2264,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200085",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200018",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 A Hunter faction earns trust by making retreat possible.",
+          "subtitle": "World Build \u00c2\u00b7 A Hunter faction earns trust by making retreat possible.",
           "tasks": [
             {
               "advancement": null,
@@ -1934,9 +2302,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 LIGHT A REFUGE ROUTE",
+          "title": "WORLD BUILD \u00c2\u00b7 LIGHT A REFUGE ROUTE",
           "x": 0.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1944,7 +2313,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/upgrade_orb_holy.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 7",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 7",
             "",
             "&fRun a short drill with another player: night escort, lost-player retrieval, route evacuation, Hordes shelter test, equipment demo, or emergency supply run.",
             "&fIf nobody is online, perform the route alone and record one failure you corrected.",
@@ -1957,10 +2326,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200086",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200019",
+              "item": {
+                "count": 8,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 Preparation without a victim.",
+          "subtitle": "World Build \u00c2\u00b7 Preparation without a victim.",
           "tasks": [
             {
               "advancement": null,
@@ -1976,9 +2364,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 RUN ONE CIVILIAN SAFETY DRILL",
+          "title": "WORLD BUILD \u00c2\u00b7 RUN ONE CIVILIAN SAFETY DRILL",
           "x": 0.0,
-          "y": 6.2
+          "y": 6.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -1986,7 +2375,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/upgrade_orb_holy.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 8",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 8",
             "",
             "&fPrepare a Holy-school kit around a Holy Rune. A Priest Chestplate, Holy Water, Holy Upgrade Orb, or Holy Affinity Ring may decorate the station, but the ward itself is the required work.",
             "&fHoly magic is stewardship, cleansing, and refuge. No vampire target, kill, or faction lock is required."
@@ -1998,10 +2387,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE13200087",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE13200016",
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:holy_rune"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 Turn protection into a practiced public service.",
+          "subtitle": "Progression \u00c2\u00b7 Turn protection into a practiced public service.",
           "tasks": [
             {
               "advancement": null,
@@ -2030,9 +2438,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 PREPARE THE HOLY WARD",
+          "title": "PROGRESSION \u00c2\u00b7 PREPARE THE HOLY WARD",
           "x": 5.0,
-          "y": 6.2
+          "y": 6.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2064,47 +2473,46 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE13200067",
-              "item": "minecraft:scaffolding",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:scaffolding"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Scaffolding",
               "type": "item"
             },
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE13200068",
-              "item": "create:super_glue",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "create:super_glue"
+              },
               "team_reward": true,
-              "title": "Four Super Glue",
               "type": "item"
             },
             {
-              "count": 2,
-              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1320008A",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C0DE13200069",
-              "item": "irons_spellbooks:holy_rune",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 2,
+                "id": "irons_spellbooks:holy_rune"
+              },
               "team_reward": true,
-              "title": "Two Holy Runes",
               "type": "item"
             },
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1320006A",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose One Practical Contribution Favor",
               "type": "choice"
             }
           ],
@@ -2141,10 +2549,11 @@
           ],
           "title": "CHARTER THE LANTERN ORDER",
           "x": 0.0,
-          "y": 8.6
+          "y": 8.6,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 03 \u00b7 Lantern Order"
+      "title": "VvH 03 \u00c2\u00b7 Lantern Order"
     },
     {
       "filename": "vvh_04_free_companies",
@@ -2245,7 +2654,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200011",
+              "item": {
+                "count": 16,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14207001",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Neutrality becomes valuable when it has services, routes, and a place to meet.",
@@ -2266,7 +2694,8 @@
           ],
           "title": "FOUND A FREE COMPANY",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2307,7 +2736,8 @@
           ],
           "title": "PROGRESSION LANE",
           "x": 5.0,
-          "y": -3.2
+          "y": -3.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2348,7 +2778,8 @@
           ],
           "title": "WORLD-BUILDING LANE",
           "x": 0.0,
-          "y": -3.2
+          "y": -3.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2356,7 +2787,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/free_company_mediator_panorama.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 1",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 1",
             "",
             "&fBuild a board, desk, book, or mailbox where players can request services. Include at least three examples such as courier, mapping, construction, mediation, rescue, market procurement, escort, or event staffing.",
             "&fPrices may be items, favors, Bevels, or negotiated nonsense. Terms must be understandable before acceptance."
@@ -2368,10 +2799,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200080",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200012",
+              "item": {
+                "count": 2,
+                "id": "minecraft:emerald"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 one visible place where people can ask for help.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 one visible place where people can ask for help.",
           "tasks": [
             {
               "advancement": null,
@@ -2387,9 +2837,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 OPEN A CONTRACT BOARD",
+          "title": "WORLD BUILD \u00c2\u00b7 OPEN A CONTRACT BOARD",
           "x": 0.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2397,7 +2848,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/spell_translation_desk.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 2",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 2",
             "",
             "&fCarry a Filled Map and publish one named route between a neutral office and a useful destination.",
             "&fInclude signs, map markers, a road, landmark, or written directions. A later Pathfinder route must reach somewhere new.",
@@ -2410,10 +2861,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200081",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200013",
+              "item": {
+                "count": 1,
+                "id": "minecraft:compass"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 turn a trip into shared knowledge.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 turn a trip into shared knowledge.",
           "tasks": [
             {
               "advancement": null,
@@ -2442,9 +2912,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 MARK A NEUTRAL COURIER ROUTE",
+          "title": "WORLD BUILD \u00c2\u00b7 MARK A NEUTRAL COURIER ROUTE",
           "x": 0.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2452,7 +2923,7 @@
           ],
           "description": [
             "{image:poiesis:textures/questpics/vvh/mediator_hybrid_crest.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 3",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 3",
             "",
             "&fCreate a market stall, exchange counter, or service desk with a visible offer. At least one trade should be useful to both factions or to a late joiner.",
             "&fLet every offer trade time or materials for something the island actually needs."
@@ -2464,10 +2935,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200082",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200014",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 trade should create meetings, not spreadsheets.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 trade should create meetings, not spreadsheets.",
           "tasks": [
             {
               "advancement": null,
@@ -2483,9 +2973,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 ESTABLISH A MARKET STALL",
+          "title": "WORLD BUILD \u00c2\u00b7 ESTABLISH A MARKET STALL",
           "x": 0.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2493,7 +2984,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/arcane_rune.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 4",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 4",
             "",
             "&fBuild a small guesthouse, embassy room, tavern corner, or waystation with seating/sleeping, food access, and a clearly neutral meeting area.",
             "&fThe space should be useful when Vampire and Hunter players need to talk without standing in somebody's storage room."
@@ -2505,10 +2996,38 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200083",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200015",
+              "item": {
+                "count": 16,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200016",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 neutrality should be somewhere people can meet.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 neutrality should be somewhere people can meet.",
           "tasks": [
             {
               "advancement": null,
@@ -2524,9 +3043,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 MAKE A GUESTHOUSE OR WAYSTATION",
+          "title": "WORLD BUILD \u00c2\u00b7 MAKE A GUESTHOUSE OR WAYSTATION",
           "x": 0.0,
-          "y": 6.2
+          "y": 6.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2534,7 +3054,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/affinity_ring_blood.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 5",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 5",
             "",
             "&fUse books, signs, lecterns, or an archive chest to record at least three useful facts: contracts, route notes, faction agreements, public project owners, trade terms, or unresolved disputes.",
             "&7The ledger is allowed to be funny. It is not allowed to be useless."
@@ -2546,10 +3066,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200084",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200017",
+              "item": {
+                "count": 2,
+                "id": "minecraft:writable_book"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 REVIEW \u00b7 record agreements before memory becomes fan fiction.",
+          "subtitle": "World Build \u00c2\u00b7 REVIEW \u00c2\u00b7 record agreements before memory becomes fan fiction.",
           "tasks": [
             {
               "advancement": null,
@@ -2565,9 +3104,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 START THE CIVIC LEDGER",
+          "title": "WORLD BUILD \u00c2\u00b7 START THE CIVIC LEDGER",
           "x": 0.0,
-          "y": 8.6
+          "y": 8.6,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2575,7 +3115,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/affinity_ring_holy.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 6",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 6",
             "",
             "&fUse Minecraft Comes Alive / Capitals, when available in the current world, to create one named civic connection: village liaison, household, public role, settlement story, ceremony, or negotiated relationship.",
             "&fIf world conditions make MCA unavailable, the host may approve an equivalent player-run civic role instead."
@@ -2587,10 +3127,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200085",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200018",
+              "item": {
+                "count": 2,
+                "id": "minecraft:lead"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 MCA is for people and places, not just furniture with dialogue boxes.",
+          "subtitle": "World Build \u00c2\u00b7 MCA is for people and places, not just furniture with dialogue boxes.",
           "tasks": [
             {
               "advancement": null,
@@ -2606,9 +3165,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 MAKE ONE MCA CIVIC CONNECTION",
+          "title": "WORLD BUILD \u00c2\u00b7 MAKE ONE MCA CIVIC CONNECTION",
           "x": 0.0,
-          "y": 11.0
+          "y": 11.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2616,7 +3176,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/affinity_ring_holy.png width:48 height:48 align:center}",
-            "&a&lWORLD BUILD \u00b7 WORK 7",
+            "&a&lWORLD BUILD \u00c2\u00b7 WORK 7",
             "",
             "&fResolve one request posted on the contract board: lost gear, route confusion, disputed trade, transport failure, scheduling, supplies, or a faction misunderstanding.",
             "&fIf no request exists, publish and solve a small logistics ticket.",
@@ -2629,10 +3189,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200086",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE14200019",
+              "item": {
+                "count": 8,
+                "id": "minecraft:bread"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build \u00b7 Solve one problem nobody owns by default.",
+          "subtitle": "World Build \u00c2\u00b7 Solve one problem nobody owns by default.",
           "tasks": [
             {
               "advancement": null,
@@ -2648,9 +3227,10 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD \u00b7 RUN A MEDIATION OR RESCUE",
+          "title": "WORLD BUILD \u00c2\u00b7 RUN A MEDIATION OR RESCUE",
           "x": 0.0,
-          "y": 13.4
+          "y": 13.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2658,7 +3238,7 @@
           ],
           "description": [
             "{image:irons_spellbooks:textures/item/affinity_ring_holy.png width:48 height:48 align:center}",
-            "&e&lPROGRESSION \u00b7 WORK 8",
+            "&e&lPROGRESSION \u00c2\u00b7 WORK 8",
             "",
             "&fSet up a neutral desk, shelf, or archive that explains one safe Blood or Holy utility spell, rune, vial, ward, or support item.",
             "&fA player from either faction may supply the example; the Free Company translates it into a route, contract, or emergency procedure.",
@@ -2671,10 +3251,29 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE14200087",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE1420001A",
+              "item": {
+                "count": 4,
+                "id": "irons_spellbooks:arcane_essence"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression \u00b7 make limited Blood and Holy utility legible to everyone.",
+          "subtitle": "Progression \u00c2\u00b7 make limited Blood and Holy utility legible to everyone.",
           "tasks": [
             {
               "advancement": null,
@@ -2703,9 +3302,10 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION \u00b7 OPEN THE SPELL TRANSLATION DESK",
+          "title": "PROGRESSION \u00c2\u00b7 OPEN THE SPELL TRANSLATION DESK",
           "x": 5.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2737,47 +3337,46 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE14200067",
-              "item": "minecraft:scaffolding",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 16,
+                "id": "minecraft:scaffolding"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Scaffolding",
               "type": "item"
             },
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE14200068",
-              "item": "create:super_glue",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "create:super_glue"
+              },
               "team_reward": true,
-              "title": "Four Super Glue",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1420008A",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C0DE14200069",
-              "item": "irons_spellbooks:arcane_essence",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "irons_spellbooks:arcane_essence"
+              },
               "team_reward": true,
-              "title": "Eight Arcane Essence",
               "type": "item"
             },
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1420006A",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose One Practical Contribution Favor",
               "type": "choice"
             }
           ],
@@ -2814,10 +3413,11 @@
           ],
           "title": "CHARTER THE FREE COMPANY",
           "x": 0.0,
-          "y": 15.8
+          "y": 15.8,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 04 \u00b7 Free Companies"
+      "title": "VvH 04 \u00c2\u00b7 Free Companies"
     },
     {
       "filename": "vvh_05_work_each_hand_knows",
@@ -2890,7 +3490,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15207001",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Complete any three routes. Let somebody else be good at the other five.",
@@ -2911,7 +3521,8 @@
           ],
           "title": "THE WORK EACH HAND KNOWS",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2933,10 +3544,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220001",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210001",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -2965,9 +3592,10 @@
               "value": 1
             }
           ],
-          "title": "ENGINEER \u2014 MAKE A SHARED SERVICE",
+          "title": "ENGINEER \u00e2\u20ac\u201d MAKE A SHARED SERVICE",
           "x": -6.0,
-          "y": -1.2
+          "y": -1.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -2989,10 +3617,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220002",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210002",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3021,9 +3665,10 @@
               "value": 1
             }
           ],
-          "title": "ARCANIST \u2014 MAKE MAGIC TEACHABLE",
+          "title": "ARCANIST \u00e2\u20ac\u201d MAKE MAGIC TEACHABLE",
           "x": -4.2,
-          "y": 0.6
+          "y": 0.6,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3045,10 +3690,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220006",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210006",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3064,9 +3725,10 @@
               "value": 1
             }
           ],
-          "title": "FACTION SPECIALIST \u2014 TRANSLATE THE SUPERNATURAL",
+          "title": "FACTION SPECIALIST \u00e2\u20ac\u201d TRANSLATE THE SUPERNATURAL",
           "x": -2.2,
-          "y": -0.5
+          "y": -0.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3088,10 +3750,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220007",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210007",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3107,9 +3785,10 @@
               "value": 1
             }
           ],
-          "title": "AERONAUT \u2014 PREPARE A VEHICLE SITE",
+          "title": "AERONAUT \u00e2\u20ac\u201d PREPARE A VEHICLE SITE",
           "x": 0.0,
-          "y": 1.0
+          "y": 1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3131,10 +3810,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220008",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210008",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3150,9 +3845,10 @@
               "value": 1
             }
           ],
-          "title": "DIPLOMAT \u2014 MAKE A RELATIONSHIP LEGIBLE",
+          "title": "DIPLOMAT \u00e2\u20ac\u201d MAKE A RELATIONSHIP LEGIBLE",
           "x": 2.2,
-          "y": -0.5
+          "y": -0.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3174,10 +3870,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220003",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210003",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "circle",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3193,9 +3905,10 @@
               "value": 1
             }
           ],
-          "title": "QUARTERMASTER \u2014 STOCK A FIELD KIT",
+          "title": "QUARTERMASTER \u00e2\u20ac\u201d STOCK A FIELD KIT",
           "x": 4.2,
-          "y": 0.6
+          "y": 0.6,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3217,10 +3930,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220004",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210004",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3249,9 +3978,10 @@
               "value": 1
             }
           ],
-          "title": "PATHFINDER \u2014 MAP A NEW EXPEDITION",
+          "title": "PATHFINDER \u00e2\u20ac\u201d MAP A NEW EXPEDITION",
           "x": 6.0,
-          "y": -1.2
+          "y": -1.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3273,10 +4003,26 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE15220005",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C0DE15210005",
+              "table_id": 8796023610973093892,
+              "team_reward": false,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Personal contribution \u00b7 useful output required.",
+          "subtitle": "Personal contribution \u00c2\u00b7 useful output required.",
           "tasks": [
             {
               "advancement": null,
@@ -3292,9 +4038,10 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVIST \u2014 PRESERVE ONE FAILURE",
+          "title": "ARCHIVIST \u00e2\u20ac\u201d PRESERVE ONE FAILURE",
           "x": 0.0,
-          "y": -2.4
+          "y": -2.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3326,14 +4073,19 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 1,
+              "id": "7A11C0DE1522000A",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "exclude_from_claim_all": true,
               "id": "7A11C0DE15200066",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
-              "team_reward": false,
-              "title": "Choose a Practical Contribution Favor",
+              "table_id": 8796023610973093890,
+              "team_reward": true,
               "type": "choice"
             }
           ],
@@ -3357,10 +4109,11 @@
           ],
           "title": "THREE HANDS' WORTH",
           "x": 0.0,
-          "y": 5.4
+          "y": 5.4,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 05 \u00b7 The Work Each Hand Knows"
+      "title": "VvH 05 \u00c2\u00b7 The Work Each Hand Knows"
     },
     {
       "filename": "vvh_06_island_remembers",
@@ -3431,7 +4184,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16207001",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Complete any three public works. Build history into the commute.",
@@ -3452,7 +4215,8 @@
           ],
           "title": "THE ISLAND REMEMBERS",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3474,10 +4238,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210001",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3495,7 +4266,8 @@
           ],
           "title": "ROAD OR WAYFINDING SPINE",
           "x": 0.0,
-          "y": -1.0
+          "y": -1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3517,10 +4289,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210002",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3538,7 +4317,8 @@
           ],
           "title": "MARKET AND CONTRACT HALL",
           "x": 0.0,
-          "y": 1.4
+          "y": 1.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3560,10 +4340,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210003",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3581,7 +4368,8 @@
           ],
           "title": "SHARED WORKSHOP",
           "x": 0.0,
-          "y": 3.8
+          "y": 3.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3603,10 +4391,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210008",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3624,7 +4419,8 @@
           ],
           "title": "ARCHIVE AND MEMORIAL",
           "x": 0.0,
-          "y": 6.2
+          "y": 6.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3646,10 +4442,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210004",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3667,7 +4470,8 @@
           ],
           "title": "COMMUNITY SUPPLY DEPOT",
           "x": 0.0,
-          "y": 8.6
+          "y": 8.6,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3689,10 +4493,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210005",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3710,7 +4521,8 @@
           ],
           "title": "AIRSHIP / VEHICLE PORT",
           "x": 0.0,
-          "y": 11.0
+          "y": 11.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3732,10 +4544,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210006",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3753,7 +4572,8 @@
           ],
           "title": "HORDE REFUGE",
           "x": 0.0,
-          "y": 13.4
+          "y": 13.4,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3775,10 +4595,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE16210007",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Server-wide project \u00b7 a witness signs off.",
+          "subtitle": "Server-wide project \u00c2\u00b7 a witness signs off.",
           "tasks": [
             {
               "advancement": null,
@@ -3796,7 +4623,8 @@
           ],
           "title": "MEETING HALL / PUBLIC STAGE",
           "x": 0.0,
-          "y": 15.8
+          "y": 15.8,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3828,36 +4656,37 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 16,
-              "exclude_from_claim_all": false,
+              "id": "7A11C0DE1622000B",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C0DE16200070",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
               "team_reward": true,
-              "title": "Sixteen Maintenance Lanterns",
               "type": "item"
             },
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE16200071",
-              "item": "minecraft:scaffolding",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:scaffolding"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Maintenance Scaffolding",
               "type": "item"
             },
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE16200072",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose a Public Works Supply Cache",
               "type": "choice"
             }
           ],
@@ -3881,10 +4710,11 @@
           ],
           "title": "THREE THINGS THE ISLAND KEEPS",
           "x": 0.0,
-          "y": 18.2
+          "y": 18.2,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 06 \u00b7 The Island Remembers"
+      "title": "VvH 06 \u00c2\u00b7 The Island Remembers"
     },
     {
       "filename": "vvh_07_rivalry_without_ruin",
@@ -3976,7 +4806,8 @@
           ],
           "title": "RIVALRY WITHOUT RUIN",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -3998,10 +4829,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210001",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4019,7 +4857,8 @@
           ],
           "title": "PROPAGANDA EXCHANGE",
           "x": -4.0,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4041,10 +4880,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210002",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4062,7 +4908,8 @@
           ],
           "title": "BLOOD VS HOLY WARD DEMO",
           "x": 0.0,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4084,10 +4931,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210003",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4105,7 +4959,8 @@
           ],
           "title": "SCAVENGER HUNT",
           "x": 4.0,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4127,10 +4982,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210004",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4148,7 +5010,8 @@
           ],
           "title": "COURIER / VEHICLE RACE",
           "x": 4.0,
-          "y": 1.0
+          "y": 1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4170,10 +5033,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210005",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4191,7 +5061,8 @@
           ],
           "title": "MARKET CHALLENGE",
           "x": 0.0,
-          "y": 1.0
+          "y": 1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4213,10 +5084,17 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210006",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Optional social contest \u00b7 leave the place cleaner than you found it.",
+          "subtitle": "Optional social contest \u00c2\u00b7 leave the place cleaner than you found it.",
           "tasks": [
             {
               "advancement": null,
@@ -4234,7 +5112,8 @@
           ],
           "title": "MASCOT / ARCHITECTURE SHOWDOWN",
           "x": -4.0,
-          "y": 1.0
+          "y": 1.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4263,7 +5142,14 @@
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE17210007",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.4,
           "subtitle": "A release valve, not the campaign's central mechanic.",
@@ -4282,9 +5168,10 @@
               "value": 1
             }
           ],
-          "title": "SANCTIONED SKIRMISH \u2014 ONLY IF EVERY BOX IS TRUE",
+          "title": "SANCTIONED SKIRMISH \u00e2\u20ac\u201d ONLY IF EVERY BOX IS TRUE",
           "x": 3.2,
-          "y": 5.7
+          "y": 5.7,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4314,36 +5201,37 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 16,
-              "exclude_from_claim_all": false,
+              "id": "7A11C0DE17220009",
+              "item": {
+                "count": 2,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C0DE1720005C",
-              "item": "minecraft:firework_rocket",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 16,
+                "id": "minecraft:firework_rocket"
+              },
               "team_reward": true,
-              "title": "Sixteen Firework Rockets",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1720005D",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
               "team_reward": true,
-              "title": "Eight Festival Lanterns",
               "type": "item"
             },
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1720005E",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose a Rivalry Supply Cache",
               "type": "choice"
             }
           ],
@@ -4367,10 +5255,11 @@
           ],
           "title": "ARCHIVE A RIVALRY NIGHT",
           "x": 0.0,
-          "y": 4.0
+          "y": 4.0,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 07 \u00b7 Rivalry Without Ruin"
+      "title": "VvH 07 \u00c2\u00b7 Rivalry Without Ruin"
     },
     {
       "filename": "vvh_08_long_night_fair",
@@ -4441,7 +5330,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE10207008",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
           "shape": "hexagon",
           "size": 1.7,
           "subtitle": "Any three contributions; bring the work your hands are proud to show.",
@@ -4462,7 +5361,8 @@
           ],
           "title": "CALL THE LONG NIGHT FAIR",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4482,10 +5382,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210001",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4503,7 +5410,8 @@
           ],
           "title": "HOUSE OF NIGHT HOSPITALITY",
           "x": -4.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4523,10 +5431,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210002",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4544,7 +5459,8 @@
           ],
           "title": "LANTERN ORDER SERVICE",
           "x": -1.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4564,10 +5480,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210003",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4585,7 +5508,8 @@
           ],
           "title": "FREE COMPANY MARKET",
           "x": 1.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4605,10 +5529,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210004",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4626,7 +5557,8 @@
           ],
           "title": "ENGINEERING / AERONAUTICS EXHIBITION",
           "x": 4.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4646,10 +5578,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210005",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "circle",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4667,7 +5606,8 @@
           ],
           "title": "PUBLIC SHOWCASE / PERFORMANCE",
           "x": -2.2,
-          "y": 1.2
+          "y": 1.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4687,10 +5627,17 @@
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE18210006",
+              "table_id": 8796023610973093892,
+              "team_reward": true,
+              "type": "choice"
+            }
+          ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Capstone contribution \u00b7 one real event output.",
+          "subtitle": "Capstone contribution \u00c2\u00b7 one real event output.",
           "tasks": [
             {
               "advancement": null,
@@ -4708,7 +5655,8 @@
           ],
           "title": "ARCHIVE THE SEASON",
           "x": 2.2,
-          "y": 1.2
+          "y": 1.2,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4739,25 +5687,28 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 16,
-              "exclude_from_claim_all": false,
-              "id": "7A11C0DE1820005C",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
-              "team_reward": true,
-              "title": "Sixteen Festival Lanterns",
+              "id": "7A11C0DE18220009",
+              "item": {
+                "count": 3,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": false,
               "type": "item"
             },
             {
-              "count": 1,
+              "id": "7A11C0DE1820005C",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1820005D",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000003",
+              "table_id": 8796023610973093891,
               "team_reward": false,
-              "title": "Choose a Long Night Fair Favor",
               "type": "choice"
             }
           ],
@@ -4781,10 +5732,11 @@
           ],
           "title": "SEAL SEASON ONE",
           "x": 0.0,
-          "y": 4.5
+          "y": 4.5,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 08 \u00b7 The Long Night Fair"
+      "title": "VvH 08 \u00c2\u00b7 The Long Night Fair"
     },
     {
       "filename": "vvh_09_after_the_bells",
@@ -4868,7 +5820,8 @@
           ],
           "title": "AFTER THE BELLS",
           "x": 0.0,
-          "y": -5.0
+          "y": -5.0,
+          "can_repeat": false
         },
         {
           "dependencies": [
@@ -4891,25 +5844,21 @@
           "repeatable": true,
           "rewards": [
             {
-              "count": 16,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200016",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
               "team_reward": true,
-              "title": "Sixteen Public Lanterns",
               "type": "item"
             },
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200017",
-              "item": "minecraft:torch",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:torch"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Public Torches",
               "type": "item"
             }
           ],
@@ -4931,9 +5880,10 @@
               "value": 1
             }
           ],
-          "title": "LIGHTING REQUISITION \u2014 1 BEVEL",
+          "title": "LIGHTING REQUISITION \u00e2\u20ac\u201d 1 BEVEL",
           "x": -4.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -4956,25 +5906,21 @@
           "repeatable": true,
           "rewards": [
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200020",
-              "item": "minecraft:rail",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:rail"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Rails",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200021",
-              "item": "minecraft:powered_rail",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:powered_rail"
+              },
               "team_reward": true,
-              "title": "Eight Powered Rails",
               "type": "item"
             }
           ],
@@ -4996,9 +5942,10 @@
               "value": 1
             }
           ],
-          "title": "TRANSIT REQUISITION \u2014 2 BEVELS",
+          "title": "TRANSIT REQUISITION \u00e2\u20ac\u201d 2 BEVELS",
           "x": -2.25,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -5021,25 +5968,21 @@
           "repeatable": true,
           "rewards": [
             {
-              "count": 16,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1920002A",
-              "item": "minecraft:firework_rocket",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 16,
+                "id": "minecraft:firework_rocket"
+              },
               "team_reward": true,
-              "title": "Sixteen Festival Rockets",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1920002B",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
               "team_reward": true,
-              "title": "Eight Event Lanterns",
               "type": "item"
             }
           ],
@@ -5061,9 +6004,10 @@
               "value": 1
             }
           ],
-          "title": "FESTIVAL REQUISITION \u2014 1 BEVEL",
+          "title": "FESTIVAL REQUISITION \u00e2\u20ac\u201d 1 BEVEL",
           "x": 0.0,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -5086,25 +6030,21 @@
           "repeatable": true,
           "rewards": [
             {
-              "count": 4,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200034",
-              "item": "create:super_glue",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 4,
+                "id": "create:super_glue"
+              },
               "team_reward": true,
-              "title": "Four Super Glue",
               "type": "item"
             },
             {
-              "count": 32,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE19200035",
-              "item": "minecraft:scaffolding",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 32,
+                "id": "minecraft:scaffolding"
+              },
               "team_reward": true,
-              "title": "Thirty-Two Scaffolding",
               "type": "item"
             }
           ],
@@ -5126,9 +6066,10 @@
               "value": 1
             }
           ],
-          "title": "REPAIR REQUISITION \u2014 1 BEVEL",
+          "title": "REPAIR REQUISITION \u00e2\u20ac\u201d 1 BEVEL",
           "x": 2.25,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -5151,25 +6092,21 @@
           "repeatable": true,
           "rewards": [
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1920003E",
-              "item": "minecraft:book",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:book"
+              },
               "team_reward": true,
-              "title": "Eight Guest Books",
               "type": "item"
             },
             {
-              "count": 8,
-              "exclude_from_claim_all": false,
               "id": "7A11C0DE1920003F",
-              "item": "minecraft:lantern",
-              "item_data": null,
-              "table_id": null,
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
               "team_reward": true,
-              "title": "Eight Guest Lanterns",
               "type": "item"
             }
           ],
@@ -5191,9 +6128,10 @@
               "value": 1
             }
           ],
-          "title": "HOSPITALITY REQUISITION \u2014 1 BEVEL",
+          "title": "HOSPITALITY REQUISITION \u00e2\u20ac\u201d 1 BEVEL",
           "x": 4.5,
-          "y": -1.5
+          "y": -1.5,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -5215,7 +6153,17 @@
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
-          "rewards": [],
+          "rewards": [
+            {
+              "id": "7A11C0DE19200048",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
           "shape": "square",
           "size": 1.2,
           "subtitle": "One paragraph, one real place, one actionable question.",
@@ -5236,7 +6184,8 @@
           ],
           "title": "ARCHIVE A NEW RUMOUR",
           "x": -2.0,
-          "y": 2.0
+          "y": 2.0,
+          "can_repeat": true
         },
         {
           "dependencies": [
@@ -5260,14 +6209,10 @@
           "repeatable": false,
           "rewards": [
             {
-              "count": 1,
               "exclude_from_claim_all": true,
               "id": "7A11C0DE1920005C",
-              "item": null,
-              "item_data": null,
-              "table_id": "7A11C0DEF0000002",
+              "table_id": 8796023610973093890,
               "team_reward": true,
-              "title": "Choose a Season Two Hook Supply",
               "type": "choice"
             }
           ],
@@ -5291,10 +6236,11 @@
           ],
           "title": "LEAVE A SEASON TWO PRESSURE",
           "x": 2.0,
-          "y": 2.0
+          "y": 2.0,
+          "can_repeat": false
         }
       ],
-      "title": "VvH 09 \u00b7 After the Bells"
+      "title": "VvH 09 \u00c2\u00b7 After the Bells"
     }
   ],
   "group_id": "7A11C0DE00000001",
@@ -5305,11 +6251,11 @@
       "rewards": [
         {
           "id": "7A11C0DEF0010001",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "builder",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "builder"
               },
               "minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Builder Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5319,16 +6265,15 @@
             },
             "count": 8,
             "id": "minecraft:scaffolding"
-          },
-          "title": "Builder Lens"
+          }
         },
         {
           "id": "7A11C0DEF0010002",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "engineer",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "engineer"
               },
               "minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Engineer Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5338,16 +6283,15 @@
             },
             "count": 1,
             "id": "create:goggles"
-          },
-          "title": "Engineer Lens"
+          }
         },
         {
           "id": "7A11C0DEF0010003",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "pathfinder",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "pathfinder"
               },
               "minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Pathfinder Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5357,16 +6301,15 @@
             },
             "count": 1,
             "id": "minecraft:spyglass"
-          },
-          "title": "Pathfinder Lens"
+          }
         },
         {
           "id": "7A11C0DEF0010004",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "keeper",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "keeper"
               },
               "minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Keeper Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5376,16 +6319,15 @@
             },
             "count": 4,
             "id": "minecraft:lantern"
-          },
-          "title": "Keeper Lens"
+          }
         },
         {
           "id": "7A11C0DEF0010005",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "arcanist",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "arcanist"
               },
               "minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Arcanist Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5395,16 +6337,15 @@
             },
             "count": 2,
             "id": "irons_spellbooks:arcane_essence"
-          },
-          "title": "Arcanist Lens"
+          }
         },
         {
           "id": "7A11C0DEF0010006",
-          "item_data": {
+          "item": {
             "components": {
               "minecraft:custom_data": {
-                "role": "archivist",
-                "vvh_campaign": "season_one"
+                "vvh_campaign": "season_one",
+                "role": "archivist"
               },
               "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"text\":\"Archivist Lens\"}",
               "minecraft:enchantment_glint_override": true,
@@ -5414,8 +6355,7 @@
             },
             "count": 2,
             "id": "minecraft:book"
-          },
-          "title": "Archivist Lens"
+          }
         }
       ],
       "title": "Choose a Personal Trade Lens"
@@ -5425,40 +6365,53 @@
       "order_index": 11,
       "rewards": [
         {
-          "count": 8,
           "id": "7A11C0DEF0020001",
-          "item": "create:andesite_alloy",
-          "title": "Eight Andesite Alloy"
+          "item": {
+            "count": 12,
+            "id": "create:andesite_alloy"
+          }
         },
         {
-          "count": 12,
           "id": "7A11C0DEF0020002",
-          "item": "irons_spellbooks:arcane_essence",
-          "title": "Twelve Arcane Essence"
+          "item": {
+            "count": 16,
+            "id": "irons_spellbooks:arcane_essence"
+          }
         },
         {
-          "count": 32,
           "id": "7A11C0DEF0020003",
-          "item": "minecraft:scaffolding",
-          "title": "Thirty-Two Scaffolding"
+          "item": {
+            "count": 48,
+            "id": "minecraft:scaffolding"
+          }
         },
         {
-          "count": 8,
           "id": "7A11C0DEF0020004",
-          "item": "create:super_glue",
-          "title": "Eight Super Glue"
+          "item": {
+            "count": 12,
+            "id": "create:super_glue"
+          }
         },
         {
-          "count": 2,
           "id": "7A11C0DEF0020005",
-          "item": "irons_spellbooks:blood_rune",
-          "title": "Two Blood Runes"
+          "item": {
+            "count": 3,
+            "id": "irons_spellbooks:blood_rune"
+          }
         },
         {
-          "count": 2,
           "id": "7A11C0DEF0020006",
-          "item": "irons_spellbooks:holy_rune",
-          "title": "Two Holy Runes"
+          "item": {
+            "count": 3,
+            "id": "irons_spellbooks:holy_rune"
+          }
+        },
+        {
+          "id": "7A11C0DEF0020007",
+          "item": {
+            "count": 24,
+            "id": "minecraft:lantern"
+          }
         }
       ],
       "title": "Choose a Practical Contribution Favor"
@@ -5468,28 +6421,46 @@
       "order_index": 12,
       "rewards": [
         {
-          "count": 1,
           "id": "7A11C0DEF0030001",
-          "item": "create:goggles",
-          "title": "Create Goggles"
+          "item": {
+            "count": 1,
+            "id": "create:goggles"
+          }
         },
         {
-          "count": 1,
           "id": "7A11C0DEF0030002",
-          "item": "naturescompass:naturescompass",
-          "title": "Nature's Compass"
+          "item": {
+            "count": 1,
+            "id": "naturescompass:naturescompass"
+          }
         },
         {
-          "count": 16,
           "id": "7A11C0DEF0030003",
-          "item": "minecraft:lantern",
-          "title": "Sixteen Lanterns"
+          "item": {
+            "count": 24,
+            "id": "minecraft:lantern"
+          }
         },
         {
-          "count": 32,
           "id": "7A11C0DEF0030004",
-          "item": "minecraft:rail",
-          "title": "Thirty-Two Rails"
+          "item": {
+            "count": 48,
+            "id": "minecraft:rail"
+          }
+        },
+        {
+          "id": "7A11C0DEF0030005",
+          "item": {
+            "count": 24,
+            "id": "minecraft:firework_rocket"
+          }
+        },
+        {
+          "id": "7A11C0DEF0030006",
+          "item": {
+            "count": 16,
+            "id": "minecraft:book"
+          }
         }
       ],
       "title": "Choose a Long Night Fair Favor"

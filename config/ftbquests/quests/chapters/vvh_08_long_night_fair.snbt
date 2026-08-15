@@ -63,6 +63,9 @@
 			}
 			id: "7A11C0DE18000001"
 			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE10207008", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+			]
 			shape: "hexagon"
 			size: 1.7d
 			tasks: [
@@ -219,6 +222,7 @@
 			min_required_dependencies: 3
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE18220009", item: { count: 3, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE1820005C"
 					item: {

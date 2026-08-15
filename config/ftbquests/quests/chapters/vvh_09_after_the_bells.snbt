@@ -317,6 +317,9 @@
 			min_width: 280
 			optional: true
 			repeat_cooldown: 604800
+			rewards: [
+				{ id: "7A11C0DE19200048", item: { count: 1, id: "numismatics:bevel" }, team_reward: true, type: "item" }
+			]
 			shape: "square"
 			size: 1.2d
 			tasks: [

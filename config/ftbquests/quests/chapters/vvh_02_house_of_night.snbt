@@ -165,11 +165,12 @@
 			id: "7A11C0DE12000002"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200080", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200012"
 					item: { count: 8, id: "minecraft:lantern" }
 					team_reward: true
-					type: "item"
+					 type: "item"
 				}
 			]
 			shape: "square"
@@ -210,6 +211,7 @@
 			id: "7A11C0DE12000003"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200081", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200013"
 					item: { count: 2, id: "irons_spellbooks:arcane_essence" }
@@ -246,6 +248,7 @@
 			id: "7A11C0DE12000004"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200082", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200018"
 					item: { count: 8, id: "minecraft:glass_bottle" }
@@ -283,6 +286,7 @@
 			id: "7A11C0DE12000005"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200083", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200014"
 					item: { count: 8, id: "vampiresdelight:hardtack" }
@@ -319,6 +323,7 @@
 			id: "7A11C0DE12000006"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200084", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200019"
 					item: { count: 16, id: "minecraft:lantern" }
@@ -347,6 +352,7 @@
 			id: "7A11C0DE12000007"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200085", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE1220001A"
 					item: { count: 4, id: "vampiresdelight:hardtack" }
@@ -381,6 +387,7 @@
 					team_reward: true
 					type: "item"
 				}
+				{ id: "7A11C0DE12200086", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200016"
 					item: { count: 2, id: "create:super_glue" }
@@ -417,6 +424,7 @@
 			id: "7A11C0DE12000009"
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE12200087", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE12200017"
 					item: { count: 2, id: "irons_spellbooks:arcane_essence" }
@@ -486,6 +494,7 @@
 					team_reward: true
 					type: "item"
 				}
+				{ id: "7A11C0DE1220008A", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
 					id: "7A11C0DE12200069"
 					item: {

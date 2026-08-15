@@ -247,6 +247,7 @@
 			min_width: 280
 			optional: true
 			rewards: [
+				{ id: "7A11C0DE17220009", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
 					id: "7A11C0DE1720005C"
 					item: {

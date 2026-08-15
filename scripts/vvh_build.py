@@ -13,6 +13,7 @@ PREFIX = "7A11C0DE"
 ROLE_TABLE = "7A11C0DEF0000001"
 TRADE_TABLE = "7A11C0DEF0000002"
 FAIR_TABLE = "7A11C0DEF0000003"
+BEVEL_ITEM = "numismatics:bevel"
 VERSION = "2.1.0-dev.1"
 SOURCE_SHA = "3e4842383dd1e029f054aedfe19940f0b53adbcd"
 
@@ -153,6 +154,16 @@ def plain_reward(ch: int, n: int, title: str, item: str, count: int, *, team: bo
     return Reward(rid(ch, n), title, item=item, count=count, team_reward=team)
 
 
+def bevel_reward(ch: int, n: int, count: int, *, team: bool, title: str | None = None) -> Reward:
+    """Guaranteed Bevel payout; thematic rewards remain separate.
+
+    Bevels are deliberately direct item rewards rather than choice-table
+    entries. This makes the primary progression payout deterministic and lets
+    the validator distinguish guaranteed currency from optional utility.
+    """
+    return plain_reward(ch, n, title or f"{count} Bevel{'s' if count != 1 else ''}", BEVEL_ITEM, count, team=team)
+
+
 def paper_reward(ch: int, n: int, title: str, name: str, color: str, lore: str, data: dict[str, Any], *, team: bool) -> Reward:
     return Reward(rid(ch, n), title, item_data=custom_paper(name, color, lore, data), team_reward=team)
 
@@ -236,7 +247,7 @@ def build_campaign() -> Campaign:
         "&f3. Combat is optional, scheduled, supervised, and reversible.",
         "&f4. Vampirism faction state and FTB team state are separate; switches need a quick host review.",
         "",
-        "&eCurrency preview:&f Bevels later fund lighting, transit, repairs, and public events; this campaign does not mint them.",
+        "&eCurrency preview:&f substantive progression pays Bevels alongside useful supplies. Bevels later fund lighting, transit, repairs, and public events.",
         "",
         "&eClick to sign.&f The reference clauses stay visible whenever somebody begins a sentence with 'technically'.",
         "",
@@ -659,7 +670,7 @@ def build_campaign() -> Campaign:
         "&fComplete any three Fair contributions, then record one unresolved pressure or ambition that players genuinely want to continue.",
         "&fExamples: faction politics, a vehicle project, settlement story, Hordes defense, public work, expedition, magic problem, or infrastructure failure.",
         "",
-        "&eClaim the festival cache and one horizontal favor.&f No boss loot, faction levels, rare weapons, netherite, or finished late-game machine is hidden here.",
+        "&eClaim the festival cache, three Bevels, and one horizontal favor.&f No boss loot, faction levels, rare weapons, netherite, or finished late-game machine is hidden here.",
         "",
         "&8A season is complete when it produces a sequel hook, not when the todo list reaches zero."
     ),"minecraft:firework_rocket",0,5.2,[ck(ch,91,"Archive the Fair and One Genuine Future Hook")],rewards=[plain_reward(ch,92,"Sixteen Festival Lanterns","minecraft:lantern",16,team=True),choice_reward(ch,93,"Choose a Long Night Fair Favor",FAIR_TABLE)],dependencies=pids,min_required_dependencies=3,shape="hexagon",size=2.1,hide_until_deps_complete=True))
@@ -669,7 +680,7 @@ def build_campaign() -> Campaign:
     ch=0x19; qs=[]; proot=qid(ch,1)
     qs.append(Quest(proot,"&6&lAFTER THE BELLS", "Weekly convenience without a treadmill.", lines(
         "numismatics:textures/item/coin/bevel.png","&6&lCIVIC REQUISITIONS",
-        "&fThe season is over. These optional seven-day exchanges turn existing Bevels into small public-use caches for maintenance and events. Normal Numismatics play remains the source of Bevels; VvH only spends them.",
+        "&fThe season is over. Progression is the fastest Bevel source; this optional seven-day civic service provides one slow team fallback for maintenance and events.",
         "",
         "&fPrices are visible, inputs are consumed, and no output creates Bevels, faction levels, weapons, blood, hunter tech, or another item that cheaply reproduces its own price.",
         "",
@@ -685,7 +696,10 @@ def build_campaign() -> Campaign:
     qs.append(exchange(4,"&dFESTIVAL REQUISITION — 1 BEVEL","Consumable celebration with a cleanup owner.","minecraft:firework_rocket",0,0.8,1,["&fReceive sixteen Firework Rockets and eight Lanterns for a scheduled public event. Please do not turn fireworks into a server benchmark."],[("minecraft:firework_rocket",16,"Sixteen Festival Rockets"),("minecraft:lantern",8,"Eight Event Lanterns")]))
     qs.append(exchange(5,"&aREPAIR REQUISITION — 1 BEVEL","For temporary access and moving parts.","create:super_glue",2.5,0.3,1,["&fReceive four Super Glue and thirty-two Scaffolding. Record which public work received the cache."],[("create:super_glue",4,"Four Super Glue"),("minecraft:scaffolding",32,"Thirty-Two Scaffolding")]))
     qs.append(exchange(6,"&cHOSPITALITY REQUISITION — 1 BEVEL","Meetings, late arrivals, fairs, and rescue runs.","minecraft:lantern",5,-1,1,["&fReceive eight Guest Books and eight Lanterns for a meeting room, guesthouse, fair, or rescue route. Food remains player-chosen rather than quest-subsidized."],[("minecraft:book",8,"Eight Guest Books"),("minecraft:lantern",8,"Eight Guest Lanterns")]))
-    qs.append(Quest(qid(ch,7),"&fARCHIVE A NEW RUMOUR","One paragraph, one real place, one actionable question.",lines("minecraft:textures/item/writable_book.png","&f&lTURN AN UNFINISHED THING INTO A HOOK","&fWrite a short rumour tied to a real location, player ambition, faction dispute, settlement, threat, unfinished machine, public work, or mystery.","&fEnd with a question somebody could act on next session.","","&7This renews weekly and intentionally grants no item. The archive should create play, not currency."),"minecraft:writable_book",-2.5,4.5,[ck(ch,71,"I Added One Actionable Rumour")],dependencies=[proot],optional=True,can_repeat=True,repeat_cooldown=604800,shape="square"))
+    # Keep the fallback's reward ID stable and human-auditable: chapter 09
+    # + reward kind 2 + local reward number 0x48 = ...19200048.
+    weekly_rumour_reward = bevel_reward(ch, 0x48, 1, team=True, title="Weekly Civic-Service Bevel")
+    qs.append(Quest(qid(ch,7),"&fARCHIVE A NEW RUMOUR","One paragraph, one real place, one actionable question.",lines("minecraft:textures/item/writable_book.png","&f&lTURN AN UNFINISHED THING INTO A HOOK","&fWrite a short rumour tied to a real location, player ambition, faction dispute, settlement, threat, unfinished machine, public work, or mystery.","&fEnd with a question somebody could act on next session.","","&7This renews weekly. The team receives one Bevel as a slow civic-service fallback; progression remains the fastest source."),"minecraft:writable_book",-2.5,4.5,[ck(ch,71,"I Added One Actionable Rumour")],rewards=[weekly_rumour_reward],dependencies=[proot],optional=True,can_repeat=True,repeat_cooldown=604800,shape="square"))
     qs.append(Quest(qid(ch,9),"&eLEAVE A SEASON TWO PRESSURE","Do not pre-author a sequel nobody wants yet.",lines("minecraft:textures/item/filled_map.png","&e&lNAME THE NEXT PRESSURE","&fChoose one unresolved pressure worth a future season and record stakeholders plus evidence that people actually care about it.","&fGood candidates include Vampirism politics, a settlement story, an airship project, Hordes defense, border expansion, infrastructure failure, expedition, magical incident, or a rivalry that acquired consequences.","","&eTeam support:&f choose one practical supply cache that helps the next hook become playable."),"minecraft:filled_map",2.5,4.5,[ck(ch,91,"We Recorded One Evidence-Based Season Two Hook")],rewards=[choice_reward(ch,92,"Choose a Season Two Hook Supply",TRADE_TABLE,team=True)],dependencies=[proot],optional=True,shape="heart"))
     c.chapters.append(Chapter(ch,"vvh_09_after_the_bells","VvH 09 · After the Bells","numismatics:bevel",9,qs,chapter_images("numismatics:textures/item/coin/bevel.png","minecraft:textures/item/lantern.png","minecraft:textures/item/firework_rocket.png")))
 
@@ -714,6 +728,53 @@ def build_campaign() -> Campaign:
         {"id":"7A11C0DEF0030003","title":"Sixteen Lanterns","item":"minecraft:lantern","count":16},
         {"id":"7A11C0DEF0030004","title":"Thirty-Two Rails","item":"minecraft:rail","count":32},
     ]})
+
+    # Currency is never a competing choice. Bevels are direct guarantees on
+    # substantive progression, while tables #2/#3 remain thematic utility.
+    for table in c.reward_tables:
+        if table["id"] not in {TRADE_TABLE, FAIR_TABLE}:
+            continue
+        assert all(reward.get("item") != BEVEL_ITEM for reward in table["rewards"]), (
+            f"{table['id']} must remain utility-only; Bevels belong in direct rewards"
+        )
+
+    # Bevel-first economy: direct currency is guaranteed on substantive work,
+    # while existing thematic/utility rewards remain alongside it. Trust-only
+    # public events and chapter headers stay utility-only by design.
+    # Substantive work receives one personal Bevel in addition to any
+    # thematic/material reward. Headers and trust/checkmark introductions are
+    # intentionally excluded; they may remain utility-only.
+    one_bevel = {
+        0x11: {2, 3, 4, 6},                    # faction/service selection
+        0x12: set(range(1, 10)),               # House roots + 8 reviewed works
+        0x13: set(range(1, 10)),               # Order roots + 8 reviewed works
+        0x14: set(range(2, 10)),               # 8 Free Company reviewed works
+    }
+    two_bevel = {0x15: set(range(2, 10))}
+    team_capstones = {(0x12, 10), (0x13, 10), (0x14, 10), (0x15, 10), (0x16, 11), (0x17, 9)}
+    for chapter in c.chapters:
+        for quest in chapter.quests:
+            if any(reward.item == "numismatics:bevel" for reward in quest.rewards):
+                continue
+            quest_number = int(quest.id[-5:], 16)
+            count = 0
+            team = False
+            if quest_number in one_bevel.get(chapter.code, set()):
+                count, team = 1, False
+            if quest_number in two_bevel.get(chapter.code, set()):
+                count, team = 2, False
+            if (chapter.code, quest_number) in team_capstones:
+                count, team = 2, True
+            if chapter.code == 0x18 and quest_number == 9:
+                count, team = 3, False
+            if count:
+                reward_id = 0x7000 + quest_number
+                quest.rewards.insert(0, bevel_reward(chapter.code, reward_id, count, team=team))
+    # Stable source-level invariants used by the economy validator and by
+    # humans auditing generated reward IDs.
+    assert weekly_rumour_reward.id == "7A11C0DE19200048"
+    assert weekly_rumour_reward.item == BEVEL_ITEM
+    assert weekly_rumour_reward.count == 1 and weekly_rumour_reward.team_reward
     return c
 
 def snbt_value(value: Any, indent: int = 0) -> str:
@@ -1216,11 +1277,11 @@ The campaign assumes an unknown live-world progression state and therefore avoid
 - 2 Blood Runes or 2 Holy Runes per completed supernatural foundation; 8 Arcane Essence for the neutral mediator foundation.
 - Public caches: scaffolding, lanterns, torches, rails, food, fireworks, glue.
 
-No VvH quest grants Vampirism levels, Hunter levels, vampire blood progression, high-tier crossbows, boss weapons, finished vehicles, netherite/diamond equipment, or Bevel currency.
+No VvH quest grants Vampirism levels, Hunter levels, vampire blood progression, high-tier crossbows, boss weapons, finished vehicles, or netherite/diamond equipment. Bevels are the guaranteed primary reward for substantive progression, while thematic supplies remain additional rewards.
 
 ## Currency
 
-VvH issues **0 Bevels**. Postgame exchanges consume a maximum of **6 Bevels per FTB progress container per full weekly board**:
+Progression is the fastest Bevel source. A normal route earns approximately 18–24 personal Bevels, with roughly 8 additional team-scoped capstone Bevels available across the shared campaign. Postgame exchanges consume a maximum of **6 Bevels per FTB progress container per full weekly board**:
 
 - lighting: 1
 - transit: 2
@@ -1598,7 +1659,9 @@ Static validation must cover:
 - verified Blood, Holy, and neutral mediator Iron's Spells item/image references;
 - no primary paper-only reward remains in migrated or VvH campaign pages;
 - manifest-level playtest covers one Blood objective, one Holy objective, one neutral objective, one world-build objective, and one school-material choice cache;
-- repeatable Bevel prices/cooldowns and zero Bevel issuance;
+- guaranteed direct Bevel rewards on substantive progression;
+- utility-only choice tables #2–#4 (no Bevel entries competing with guaranteed payouts);
+- one repeatable Bevel fallback: `ARCHIVE A NEW RUMOUR`, exactly 1 Bevel per FTB team every 7 days;
 - source-level layout overlap/crossing checks.
 
 The dedicated-server stage must materialize the exact Packwiz pack, launch NeoForge 21.1.233 in a disposable world, wait for startup, execute FTB Quests reload, and fail on targeted quest/config/missing-ID errors. Client visual tests and multi-account interaction tests remain distinct manual evidence; they are never described as completed merely because the server parsed the files.

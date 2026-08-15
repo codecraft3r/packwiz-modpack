@@ -53,12 +53,5 @@
 				id: "minecraft:lantern"
 			}
 		}
-		{
-			id: "7A11C0DEF0020008"
-			item: {
-				count: 2
-				id: "numismatics:bevel"
-			}
-		}
 	]
 }
