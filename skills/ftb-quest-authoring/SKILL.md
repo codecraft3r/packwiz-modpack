@@ -1,6 +1,6 @@
 ---
 name: ftb-quest-authoring
-description: Design, implement, balance, validate, and release FTB Quests chapters for any Minecraft modpack. Use when an agent must turn a modlist, player goals, progression state, economy, or art assets into playable quests; edit FTB Quests SNBT; add quest visuals; run static and in-game checks; or prepare a Packwiz/Git release. Treat the installed pack as the source of truth and avoid custom KubeJS by default.
+description: Design, implement, balance, validate, and release FTB Quests chapters for any Minecraft modpack. Use when an agent must turn a modlist, player goals, progression state, economy, or art assets into playable quests; edit or generate FTB Quests SNBT and localization; audit quest graphs, layouts, reward economies, or image paths; run static and in-game checks; or prepare a Packwiz/Git release. Treat the installed pack as the source of truth and avoid custom KubeJS by default.
 ---
 
 # FTB Quest Authoring
@@ -28,10 +28,11 @@ Use the repository and installed artifacts as the authority.
 
 1. Check git status and preserve unrelated work.
 2. Locate the modlist/version files (pack.toml, index.toml, launcher manifests, or equivalent) and list the installed mods. Prefer the pack's existing helper scripts and packwiz list; run packwiz refresh after edits when Packwiz is present.
-3. Read several existing FTB Quests chapters, reward tables, translations, and resource-pack definitions. Copy their SNBT shape, ID conventions, layout, and version-specific fields rather than inventing a new dialect.
-4. Resolve every proposed item, block, entity, advancement, statistic, recipe, currency, and reward from actual JARs, data packs, configs, recipe viewers, or authoritative mod docs. Never guess an ID because its display name looks plausible.
-5. Inspect kubejs/ only to understand available behavior. Do not add custom KubeJS for quest logic unless the user explicitly changes that requirement.
-6. Inventory image references and the JAR/resource-pack paths that can satisfy them. Keep resource paths POSIX-style (/) even when working on Windows.
+3. Identify the authoritative authoring representation before writing: live SNBT/localization, a generator, or another source model. Compare generated output with live files. Never run a whole-campaign generator over richer authored files merely because the generator exists; update it, generate into a scratch directory for review, or protect it behind an explicit overwrite flag.
+4. Read several existing FTB Quests chapters, reward tables, translations, and resource-pack definitions. Copy their SNBT shape, ID conventions, layout, and version-specific fields rather than inventing a new dialect.
+5. Resolve every proposed item, block, entity, advancement, statistic, recipe, currency, and reward from actual JARs, data packs, configs, recipe viewers, or authoritative mod docs. Never guess an ID because its display name looks plausible.
+6. Inspect kubejs/ only to understand available behavior. Do not add custom KubeJS for quest logic unless the user explicitly changes that requirement.
+7. Inventory image references and the JAR/resource-pack paths that can satisfy them. Keep resource paths POSIX-style (/) even when working on Windows.
 
 If the pack has no existing quest examples, use the FTB Quests version shipped by the pack and validate a tiny throwaway chapter before building the full one.
 
@@ -46,6 +47,13 @@ Translate the brief into a compact loop:
 
 Use dependencies and "complete any N of M" patterns to reward breadth without making attendance a prerequisite. Separate personal progression from server-wide milestones. Use honor-system checkmarks for social/build/showcase verification when no standard task detector exists.
 
+### Graph-truth rules
+
+- For a true any-N-of-M gate, attach all M alternatives to the same intended predecessor, make the capstone depend on all M, and set its minimum to N. Simulate the shortest path: a hidden shared prerequisite must not turn “any three” into “this mandatory quest plus three.”
+- Mark non-gating side quests with the installed schema's explicit optional flag when available. Being absent from the main capstone dependencies makes a quest mechanically optional, but may not communicate that in the UI.
+- Keep world-building, equipment/workstations, and mod progression as visibly separate lanes when they serve different player motivations. Do not disguise a build as an item tutorial.
+- Re-check reachability, dependency direction, minimum counts, and layout after every graph edit; a parseable acyclic graph can still express the wrong progression.
+
 Balance against the slowest regular player and the server's current state, not its most advanced outlier. Let questing make life meaningfully easier while preserving the value of ordinary play.
 
 ### Anti-runaway rules
@@ -56,6 +64,8 @@ Balance against the slowest regular player and the server's current state, not i
 - Prefer player choice over a single optimal reward and keep team rewards intentional. Decide whether progress and rewards are individual or team-scoped for every quest.
 - Give catch-up utility (tools, ingredients, transport, information) rather than a permanent power lead.
 - Budget the worst-case reward if every active player completes every repeatable quest.
+- Keep separate ledgers for one-time personal issuance, one-time team issuance, the minimum intended route, completionism, repeatable income, and paid sinks. Model team fragmentation as well as one shared team.
+- Treat a native choice claim as the number of entries the installed implementation actually grants. Do not multiply currency exposure by unrelated table metadata such as display/loot size without verifying the semantics.
 
 Write titles, descriptions, and lore in a specific human voice. Name the action, the reason it matters, and the next useful choice; do not pad the chapter with generic "collect X" text.
 
@@ -67,9 +77,13 @@ Copy a nearby working SNBT object and change the smallest possible surface area.
 - Use advancement tasks for mod progression; include the schema-required criterion field (an empty criterion commonly means the whole advancement, but verify against the installed version).
 - Use stat tasks only with a real statistic ID and text that matches its trigger (for example, a battle-start statistic should say "enter/start a battle," not "win").
 - Use checkmark tasks for trust-based completion, social verification, or a human-reviewed build rather than introducing a script.
-- For an any-of-many branch, set the installed schema's minimum dependency count and test both the minimum and maximum paths.
+- For a human-reviewed build, do not also consume a duplicate material bundle unless the quest is intentionally a donation. Placed blocks already cost resources; an extra consumed task can charge players twice. Use a non-consuming item preview, a checkmark, or a deliberate public-stock contribution.
+- For an any-of-many branch, set the installed schema's minimum dependency count and test the actual shortest and maximum paths.
+- Set an explicit optional quest flag for side stories when supported; do not rely only on the absence of downstream dependencies.
 - For a repeatable currency exchange, make the input an item task that consumes exactly the displayed price, set a deliberate cooldown, and set team_reward deliberately on every reward. A team-scoped task can let one payer unlock rewards for others if this is left implicit.
 - Use existing reward tables or native item/command/reputation rewards. Resolve every item component, count, and namespace before committing.
+
+When multiple agents author in parallel, assign exclusive chapter/file ownership and reserve non-overlapping quest, task, and reward ID ranges. Keep localization, manifests, indexes, and shared reward tables under one integration owner. Subtasks should not regenerate the campaign, commit, push, or revert another worker's edits unless explicitly assigned.
 
 Read references/ftb-quests-patterns.md for portable templates and an audit checklist. Treat examples there as patterns, not as pack-specific IDs.
 
@@ -81,23 +95,26 @@ Reuse the pack's existing resource-pack namespace, dimensions, typography, and n
 - Put files at the path the client actually loads; check case and extension.
 - Validate pack.mcmeta for the target Minecraft version and update hosted asset metadata/digests whenever a .pw.toml points to a new release.
 - Search every quest image reference across the JARs and resource-pack ZIPs; a visually polished chapter with one missing texture is not complete.
+- Distinguish an unresolved custom-resource reference from an unresolved built-in mod/Minecraft texture. A renderer given only a custom resource ZIP cannot prove native textures are missing; validate each namespace against the resource source that owns it.
 - Do not commit generated binaries that the pack's distribution rules exclude; publish large assets through the project's established release mechanism.
 
 ## 6. Validate before calling it done
 
 Run the narrowest useful checks, then expand them in proportion to risk:
 
-1. Repository/Packwiz: inspect the diff, run packwiz refresh and packwiz list when available, and confirm only intended files changed.
+1. Repository/Packwiz: inspect the diff, run packwiz refresh and packwiz list when available, then run refresh a second time and confirm the index hash is stable. Confirm only intended files changed.
 2. SNBT/schema: parse the edited files with the pack's parser or a supported FTB Quests loader. Check unique IDs, valid task/reward types, required fields, resolvable namespaces, dependency acyclicity, reachable quests, and translation keys.
-3. Economy: calculate the maximum weekly issuance and the maximum spend for every repeatable exchange. Test that no reward can be converted back into its price or into a stronger exchange path.
-4. Assets: resolve all icons and images against actual client resources, check ZIP entry separators, verify Packwiz hashes, and confirm no stale URL/digest remains.
-5. KubeJS boundary: confirm no custom quest logic was added. If existing scripts are involved, test them as-is and document the dependency.
-6. Small playtest: load a disposable world/server, open the chapter, claim the opener, complete one task from each task family used, trigger advancement/stat tasks, complete the minimum dependency path, run one repeatable exchange, and inspect the result as both a payer and a teammate. Check logs for parser, missing-ID, or reward errors.
-7. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened.
+3. Graph/layout: verify the advertised any-N-of-M minimum by simulation, not hand-counting. Render each edited chapter, detect node overlap and dependency-line crossings, and inspect the central spine, side-lane direction, labels, background contrast, and long text. A source render is review evidence, not an in-client screenshot.
+4. Economy: calculate minimum-route and completionist one-time issuance separately for personal and team rewards. Calculate worst-case repeatable issuance, fragmented-team issuance, and the cost of the complete sink board. Test that no reward can reproduce its input, self-fund the board, or dominate normal play. Count choice rewards using verified claim semantics.
+5. Assets: resolve all icons and images against actual client resources, check ZIP entry separators, verify Packwiz hashes, and confirm no stale URL/digest remains.
+6. Source synchronization: regenerate or synchronize derived manifests/localization/indexes from the chosen authority, run a check-only/idempotency pass, and prevent a stale generator from clobbering live content.
+7. KubeJS boundary: confirm no custom quest logic was added. If existing scripts are involved, test them as-is and document the dependency.
+8. Small playtest: load a disposable world/server, open the chapter, claim the opener, complete one task from each task family used, trigger advancement/stat tasks, complete the minimum dependency path, run one repeatable exchange, and inspect the result as both a payer and a teammate. Check logs for parser, missing-ID, or reward errors.
+9. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened. State separately whether static parsing, server loading, client visual inspection, and two-account reward testing passed or remain pending.
 
 ## 7. Ship safely
 
-Update translations, changelog/version metadata, Packwiz indexes, and hosted asset references only when the change requires them. Stage only the quest/art/release files in scope. Commit with a focused message, push the requested branch, and use a draft pull request unless the user explicitly asks for a merge. Preserve existing tags and unrelated user changes.
+Update translations, changelog/version metadata, Packwiz indexes, and hosted asset references only when the change requires them. Stage only the quest/art/release files in scope. Fetch the target branch before committing or pushing; if it advanced, inspect and integrate it without discarding unrelated work, then refresh Packwiz metadata again. Commit with a focused message, push the requested branch, and use a draft pull request unless the user explicitly asks for a merge. Preserve existing tags and unrelated user changes.
 
 ## 8. Hand off clearly
 
