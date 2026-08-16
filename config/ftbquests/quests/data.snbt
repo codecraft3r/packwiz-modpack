@@ -10,7 +10,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.65d
 	icon: { id: "minecraft:filled_map" }
-	lock_message: "The Atlas has not opened this page yet."
+	lock_message: "DEV REVIEW: visible now; complete dependencies to claim."
 	pause_game: false
 	progression_mode: "flexible"
 	show_lock_icons: true

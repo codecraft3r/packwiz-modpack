@@ -733,7 +733,7 @@
 				"7A11C0DE14000008"
 				"7A11C0DE14000009"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:filled_map"
 			}

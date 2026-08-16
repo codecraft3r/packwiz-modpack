@@ -67,6 +67,7 @@ def synchronize(root: Path) -> dict[str, Any]:
                     "dependencies": quest.get("dependencies", []),
                     "description": lang.get(f"quest.{quest_id}.quest_desc", []),
                     "hide_dependency_lines": bool(quest.get("hide_dependency_lines", False)),
+                    "hide_until_deps_complete": bool(quest.get("hide_until_deps_complete", False)),
                     "icon": item_id(quest.get("icon")),
                     "id": quest_id,
                     "min_required_dependencies": quest.get("min_required_dependencies", 0),

@@ -151,7 +151,7 @@
 				"7A11C0DE10000005"
 				"7A11C0DE10000006"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:writable_book"
 			}

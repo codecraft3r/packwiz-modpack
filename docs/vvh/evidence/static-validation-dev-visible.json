@@ -1,0 +1,328 @@
+{
+  "errors": [],
+  "metrics": {
+    "advancements_checked": 2,
+    "all_branches_one_time_team_bevels": 14,
+    "bevel_choice_personal_per_player": 0,
+    "bevel_choice_semantics": "one selected table entry per claim; loot_size is not multiplied",
+    "bevel_choice_team_total_per_progress_container": 0,
+    "bevel_personal_per_player": 50,
+    "bevel_personal_quest_count": 33,
+    "bevel_policy_failures": [],
+    "bevel_team_capstone_quest_count": 6,
+    "bevel_team_quest_count": 7,
+    "bevel_team_total_per_progress_container": 14,
+    "choice_table_bevels": {
+      "7A11C0DEF0000001": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 1,
+        "loot_size": 1,
+        "personal_claims": 1,
+        "team_claims": 0
+      },
+      "7A11C0DEF0000002": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 7,
+        "loot_size": 2,
+        "personal_claims": 0,
+        "team_claims": 7
+      },
+      "7A11C0DEF0000003": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 1,
+        "loot_size": 2,
+        "personal_claims": 1,
+        "team_claims": 0
+      },
+      "7A11C0DEF0000004": {
+        "bevel_per_selected_entry": 0,
+        "bevel_potential_per_claim": 0,
+        "choice_claims": 43,
+        "loot_size": 1,
+        "personal_claims": 8,
+        "team_claims": 35
+      }
+    },
+    "completionist_one_time_personal_bevels": 50,
+    "dependency_crossings": {
+      "VvH 00 \u00b7 The Island Charter": 1,
+      "VvH 01 \u00b7 Three Invitations": 0,
+      "VvH 02 \u00b7 House of Night": 0,
+      "VvH 03 \u00b7 Lantern Order": 0,
+      "VvH 04 \u00b7 Free Companies": 0,
+      "VvH 05 \u00b7 The Work Each Hand Knows": 0,
+      "VvH 06 \u00b7 The Island Remembers": 0,
+      "VvH 07 \u00b7 Rivalry Without Ruin": 0,
+      "VvH 08 \u00b7 The Long Night Fair": 0,
+      "VvH 09 \u00b7 After the Bells": 0
+    },
+    "global_ftb_ids": 495,
+    "hidden_until_dependencies": [],
+    "image_refs_checked": 37,
+    "iron_spell_weave": {
+      "VvH 02 \u00b7 House of Night": {
+        "images": [
+          "irons_spellbooks:textures/item/blood_rune.png",
+          "irons_spellbooks:textures/item/blood_staff.png",
+          "irons_spellbooks:textures/item/blood_vial.png"
+        ],
+        "items": [
+          "irons_spellbooks:blood_rune",
+          "irons_spellbooks:bloody_vellum"
+        ]
+      },
+      "VvH 03 \u00b7 Lantern Order": {
+        "images": [
+          "irons_spellbooks:textures/item/holy_rune.png",
+          "irons_spellbooks:textures/item/priest_chestplate.png",
+          "irons_spellbooks:textures/item/upgrade_orb_holy.png"
+        ],
+        "items": [
+          "irons_spellbooks:holy_rune"
+        ]
+      },
+      "VvH 04 \u00b7 Free Companies": {
+        "images": [
+          "irons_spellbooks:textures/item/affinity_ring_blood.png",
+          "irons_spellbooks:textures/item/affinity_ring_holy.png",
+          "irons_spellbooks:textures/item/arcane_rune.png"
+        ],
+        "items": [
+          "irons_spellbooks:arcane_essence",
+          "irons_spellbooks:arcane_rune"
+        ]
+      }
+    },
+    "item_ids_checked": 53,
+    "localization_keys_required": 705,
+    "long_description_lines": 0,
+    "max_bevel_issuance_6_neutral_parties": 384,
+    "max_bevel_issuance_6_players_2_faction_teams": 328,
+    "minimum_intended_path_checkmark_tasks_including_charter": 26,
+    "minimum_intended_path_personal_bevels": 18,
+    "minimum_intended_path_quest_count_including_charter": 25,
+    "minimum_intended_path_team_bevels": 6,
+    "minimum_path_checkmark_tasks": 24,
+    "minimum_quest_count_to_season_seal": 23,
+    "new_vvh_kubejs_files": 0,
+    "normal_route_team_bevels": 6,
+    "one_minimum_path_ids": [
+      "7A11C0DE12000001",
+      "7A11C0DE12000004",
+      "7A11C0DE12000005",
+      "7A11C0DE12000006",
+      "7A11C0DE12000007",
+      "7A11C0DE1200000A",
+      "7A11C0DE1200000D",
+      "7A11C0DE15000001",
+      "7A11C0DE15000002",
+      "7A11C0DE15000003",
+      "7A11C0DE15000004",
+      "7A11C0DE1500000A",
+      "7A11C0DE16000001",
+      "7A11C0DE16000002",
+      "7A11C0DE16000003",
+      "7A11C0DE16000004",
+      "7A11C0DE1600000B",
+      "7A11C0DE18000001",
+      "7A11C0DE18000002",
+      "7A11C0DE18000003",
+      "7A11C0DE18000004",
+      "7A11C0DE18000009",
+      "7A11C0DE18000101"
+    ],
+    "optional_rewardless_leaf_review": [],
+    "primary_paper_rewards": [],
+    "removed_cobblemon_namespace_refs": 0,
+    "repeatable_bevel_issuers": [
+      "7A11C0DE19000007"
+    ],
+    "repeatable_caches": [
+      {
+        "price": 1,
+        "quest": "7A11C0DE19000002",
+        "rewards": [
+          [
+            {
+              "count": 16,
+              "id": "minecraft:lantern"
+            },
+            null
+          ],
+          [
+            {
+              "count": 32,
+              "id": "minecraft:torch"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 2,
+        "quest": "7A11C0DE19000003",
+        "rewards": [
+          [
+            {
+              "count": 32,
+              "id": "minecraft:rail"
+            },
+            null
+          ],
+          [
+            {
+              "count": 8,
+              "id": "minecraft:powered_rail"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 1,
+        "quest": "7A11C0DE19000004",
+        "rewards": [
+          [
+            {
+              "count": 16,
+              "id": "minecraft:firework_rocket"
+            },
+            null
+          ],
+          [
+            {
+              "count": 8,
+              "id": "minecraft:lantern"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 1,
+        "quest": "7A11C0DE19000005",
+        "rewards": [
+          [
+            {
+              "count": 4,
+              "id": "create:super_glue"
+            },
+            null
+          ],
+          [
+            {
+              "count": 32,
+              "id": "minecraft:scaffolding"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 1,
+        "quest": "7A11C0DE19000006",
+        "rewards": [
+          [
+            {
+              "count": 8,
+              "id": "minecraft:book"
+            },
+            null
+          ],
+          [
+            {
+              "count": 8,
+              "id": "minecraft:lantern"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 2,
+        "quest": "7A11C0DE19000101",
+        "rewards": [
+          [
+            {
+              "count": 32,
+              "id": "minecraft:stone_bricks"
+            },
+            null
+          ],
+          [
+            {
+              "count": 16,
+              "id": "minecraft:scaffolding"
+            },
+            null
+          ],
+          [
+            {
+              "count": 8,
+              "id": "create:andesite_alloy"
+            },
+            null
+          ]
+        ]
+      },
+      {
+        "price": 2,
+        "quest": "7A11C0DE19000102",
+        "rewards": [
+          [
+            {
+              "count": 4,
+              "id": "irons_spellbooks:arcane_essence"
+            },
+            null
+          ],
+          [
+            {
+              "count": 2,
+              "id": "irons_spellbooks:blank_rune"
+            },
+            null
+          ],
+          [
+            {
+              "count": 8,
+              "id": "minecraft:amethyst_shard"
+            },
+            null
+          ]
+        ]
+      }
+    ],
+    "repeatable_weekly_full_board_price": 10,
+    "root_quests": [
+      "7A11C0DE10000001",
+      "7A11C0DE11000001",
+      "7A11C0DE12000001",
+      "7A11C0DE13000001",
+      "7A11C0DE14000001"
+    ],
+    "snbt_files_parsed": 17,
+    "utility_choice_table_bevel_potential_per_claim": 0,
+    "utility_choice_table_id": "7A11C0DEF0000004",
+    "vvh_chapters": 10,
+    "vvh_quests": 109,
+    "weekly_fallback_max_8_fragmented_teams": 8,
+    "weekly_fallback_team_bevels": 1,
+    "weekly_requisition_board_price": 10
+  },
+  "notes": [],
+  "runtime_verification": [
+    "requires runtime verification \u2014 exact FTB Quests loader acceptance and log cleanliness",
+    "requires runtime verification \u2014 normal-scale client chapter rendering, text wrapping, contrast, and image crop",
+    "requires runtime verification \u2014 two-account personal versus team reward claiming",
+    "requires runtime verification \u2014 FTB Teams join/leave/switch progress and FTB Chunks claim handling",
+    "requires runtime verification \u2014 optional skirmish PvP controls and backup restore procedure"
+  ],
+  "status": "pass",
+  "warnings": [
+    "Capped seed Bevel issuance detected: 50 personal and 14 team-scoped potential per authored progression board; this is intentional seed currency, not a repeatable economy loop."
+  ]
+}

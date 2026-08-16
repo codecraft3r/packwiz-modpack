@@ -276,7 +276,7 @@
 				"7A11C0DE16000008"
 				"7A11C0DE16000009"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:lantern"
 			}

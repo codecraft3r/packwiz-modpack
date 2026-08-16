@@ -238,7 +238,7 @@
 				"7A11C0DE18000006"
 				"7A11C0DE18000007"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:firework_rocket"
 			}

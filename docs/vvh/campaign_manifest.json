@@ -52,6 +52,7 @@
             "&8Leave behind something a later player can use."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE10000001",
           "min_required_dependencies": 0,
@@ -98,6 +99,7 @@
             "&8If the reset eats your cathedral, the cathedral was camping."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE10000003",
           "min_required_dependencies": 0,
@@ -155,6 +157,7 @@
             "&8A prank with a cleanup crew is a bit. A crater is an incident."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:firework_rocket",
           "id": "7A11C0DE10000005",
           "min_required_dependencies": 0,
@@ -212,6 +215,7 @@
             "&8The bureaucracy has developed fangs."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE10000006",
           "min_required_dependencies": 0,
@@ -274,6 +278,7 @@
             "&6Starter nudge:&f one Compass and eight Torches. Enough to leave spawn with a plan; not enough to delete the opening game."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE10000008",
           "min_required_dependencies": 3,
@@ -388,6 +393,7 @@
             "&8The Atlas has stopped pretending the word 'faction' is metaphorical."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:compass",
           "id": "7A11C0DE11000001",
           "min_required_dependencies": 0,
@@ -433,6 +439,7 @@
             "&8Please file all immortality paperwork before sunrise."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE11000002",
           "min_required_dependencies": 0,
@@ -519,6 +526,7 @@
             "&8The official uniform is 'prepared'. The cape remains under committee review."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:garlic",
           "id": "7A11C0DE11000003",
           "min_required_dependencies": 0,
@@ -605,6 +613,7 @@
             "&8Somebody has to invoice the supernatural."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE11000004",
           "min_required_dependencies": 0,
@@ -674,6 +683,7 @@
             "&fLay out eight lanterns, set aside sixteen loaves, and open one shared welcome point."
           ],
           "hide_dependency_lines": true,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE11000006",
           "min_required_dependencies": 1,
@@ -773,6 +783,7 @@
             "&8Choose a lens for this season; the road remains open to every other craft."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:spyglass",
           "id": "7A11C0DE11000005",
           "min_required_dependencies": 0,
@@ -916,6 +927,7 @@
             "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE12000001",
           "min_required_dependencies": 0,
@@ -981,6 +993,7 @@
             "&fChoose the craft that will open a useful capability for the people who live here."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DE1200000C",
           "min_required_dependencies": 0,
@@ -1023,6 +1036,7 @@
             "&fA build passes when another player can understand its purpose and use it without the owner standing beside it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE1200000D",
           "min_required_dependencies": 0,
@@ -1065,6 +1079,7 @@
             "&7REVIEW checks function, access, safety, story, and maintenance."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:coffin_red",
           "id": "7A11C0DE12000002",
           "min_required_dependencies": 0,
@@ -1153,6 +1168,7 @@
             "&8Ancient evil remains subject to fire code."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:altar_inspiration",
           "id": "7A11C0DE12000003",
           "min_required_dependencies": 0,
@@ -1227,6 +1243,7 @@
             "&fLeave a written restock rule so a late player knows whether supplies are communal, reserved, or trade stock."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:blood_bottle",
           "id": "7A11C0DE12000004",
           "min_required_dependencies": 0,
@@ -1302,6 +1319,7 @@
             "&fThe room passes when a guest can arrive, understand what is communal, and leave without raiding a progression chest."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampiresdelight:blood_wine_bottle",
           "id": "7A11C0DE12000005",
           "min_required_dependencies": 0,
@@ -1376,6 +1394,7 @@
             "&7A route is infrastructure when somebody else can follow it alone."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE12000006",
           "min_required_dependencies": 0,
@@ -1437,6 +1456,7 @@
             "&fLeave the House with one shared story worth carrying to the next table."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampiresdelight:spirit_lantern",
           "id": "7A11C0DE12000007",
           "min_required_dependencies": 0,
@@ -1489,6 +1509,7 @@
             "&fThe Mechanical Press is only the proof of contact; the reviewed logistics line is the actual work."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "create:mechanical_press",
           "id": "7A11C0DE12000008",
           "min_required_dependencies": 0,
@@ -1572,6 +1593,7 @@
             "&fThe House studies blood as memory and inheritance; keep the first rite small enough to teach safely."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:blood_rune",
           "id": "7A11C0DE12000009",
           "min_required_dependencies": 0,
@@ -1661,6 +1683,7 @@
             "&7A refuge is not a private trophy. A nervous guest should know where to rest, what may be borrowed, and how to leave without asking permission."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:white_bed",
           "id": "7A11C0DE12010101",
           "min_required_dependencies": 0,
@@ -1711,6 +1734,7 @@
             "&7Etiquette is a door, not a chain. The question stays open so the House remembers that inheritance can be disputed without being erased."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:book",
           "id": "7A11C0DE12010102",
           "min_required_dependencies": 0,
@@ -1776,6 +1800,7 @@
             "&7Blood remembers that a body can carry a history. The House answers by offering hospitality before asking what anyone inherits."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:blood_rune",
           "id": "7A11C0DE12010103",
           "min_required_dependencies": 0,
@@ -1846,6 +1871,7 @@
             "&7The structure is the keepsake. The supplies are for the next useful room."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE1200000A",
           "min_required_dependencies": 4,
@@ -2029,6 +2055,7 @@
             "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:garlic",
           "id": "7A11C0DE13000001",
           "min_required_dependencies": 0,
@@ -2094,6 +2121,7 @@
             "&fChoose the craft that will open a useful capability for the people who live here."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DE1300000C",
           "min_required_dependencies": 0,
@@ -2136,6 +2164,7 @@
             "&fA build passes when another player can understand its purpose and use it without the owner standing beside it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE1300000D",
           "min_required_dependencies": 0,
@@ -2178,6 +2207,7 @@
             "&8A watchhouse with no information is just a suspicious shed."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE13000002",
           "min_required_dependencies": 0,
@@ -2265,6 +2295,7 @@
             "&7This is progression infrastructure, not a requirement to sprint the hunter tech tree."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:hunter_table",
           "id": "7A11C0DE13000003",
           "min_required_dependencies": 0,
@@ -2339,6 +2370,7 @@
             "&fKeep a written restock rule beside the reserve so the next patrol can draw from it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:garlic",
           "id": "7A11C0DE13000004",
           "min_required_dependencies": 0,
@@ -2413,6 +2445,7 @@
             "&7Practice with restraint; the Order protects people before it hunts anything."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:stake",
           "id": "7A11C0DE13000005",
           "min_required_dependencies": 0,
@@ -2487,6 +2520,7 @@
             "&8Chemistry is just potion-making wearing safety goggles."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:alchemical_cauldron",
           "id": "7A11C0DE13000006",
           "min_required_dependencies": 0,
@@ -2562,6 +2596,7 @@
             "&fA player unfamiliar with the route should be able to use it without voice chat."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE13000007",
           "min_required_dependencies": 0,
@@ -2624,6 +2659,7 @@
             "&fNo combat is necessary. The output is one improvement to the route, instructions, or supplies discovered by the drill."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:shield",
           "id": "7A11C0DE13000008",
           "min_required_dependencies": 0,
@@ -2676,6 +2712,7 @@
             "&fHoly magic is stewardship, cleansing, and refuge. No vampire target, kill, or faction lock is required."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:holy_rune",
           "id": "7A11C0DE13000009",
           "min_required_dependencies": 0,
@@ -2758,6 +2795,7 @@
             "&7The structure is the keepsake. The supplies are for the next useful room."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:garlic",
           "id": "7A11C0DE1300000A",
           "min_required_dependencies": 4,
@@ -2857,6 +2895,7 @@
             "&7The lanterns are the supply check; the review asks whether a tired stranger can understand what the room is for."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE13000101",
           "min_required_dependencies": 0,
@@ -2920,6 +2959,7 @@
             "&7A ward earns trust when it tells people how to use it, not when it merely glows."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:holy_rune",
           "id": "7A11C0DE13000102",
           "min_required_dependencies": 0,
@@ -2983,6 +3023,7 @@
             "&7The Order's promise is measured by the stranger who can find help, not by the uniform at the door."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:shield",
           "id": "7A11C0DE13000103",
           "min_required_dependencies": 0,
@@ -3130,6 +3171,7 @@
             "&7Use the five-part creative rubric when a project says REVIEW: function, access, safety, story, maintenance. Two-player peer review or one host review passes it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE14000001",
           "min_required_dependencies": 0,
@@ -3182,6 +3224,7 @@
             "&fChoose the craft that will open a useful capability for the people who live here."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DE1400000C",
           "min_required_dependencies": 0,
@@ -3224,6 +3267,7 @@
             "&fA build passes when another player can understand its purpose and use it without the owner standing beside it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE1400000D",
           "min_required_dependencies": 0,
@@ -3266,6 +3310,7 @@
             "&fPrices may be items, favors, Bevels, or negotiated nonsense. Terms must be understandable before acceptance."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE14000002",
           "min_required_dependencies": 0,
@@ -3354,6 +3399,7 @@
             "&7Fast travel is optional; shared knowledge is the actual infrastructure."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE14000003",
           "min_required_dependencies": 0,
@@ -3428,6 +3474,7 @@
             "&fLet every offer trade time or materials for something the island actually needs."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:emerald",
           "id": "7A11C0DE14000004",
           "min_required_dependencies": 0,
@@ -3502,6 +3549,7 @@
             "&fThe space should be useful when Vampire and Hunter players need to talk without standing in somebody's storage room."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:white_bed",
           "id": "7A11C0DE14000005",
           "min_required_dependencies": 0,
@@ -3611,6 +3659,7 @@
             "&7The ledger is allowed to be funny. It is not allowed to be useless."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:book",
           "id": "7A11C0DE14000006",
           "min_required_dependencies": 0,
@@ -3698,6 +3747,7 @@
             "&fIf world conditions make MCA unavailable, the host may approve an equivalent player-run civic role instead."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE14000007",
           "min_required_dependencies": 0,
@@ -3786,6 +3836,7 @@
             "&fThe requester or host confirms completion; the result should leave a route, agreement, or supply fix behind."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:recovery_compass",
           "id": "7A11C0DE14000008",
           "min_required_dependencies": 0,
@@ -3852,6 +3903,7 @@
             "&fNeutrals may borrow both traditions without claiming either faction's strongest rites."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_rune",
           "id": "7A11C0DE14000009",
           "min_required_dependencies": 0,
@@ -3923,6 +3975,7 @@
             "&fContribute two chests, then establish public storage and a visible sign-in desk in the neutral hall."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:chest",
           "id": "7A11C0DE14000101",
           "min_required_dependencies": 0,
@@ -3983,6 +4036,7 @@
             "&fContribute four lanterns and light the hall's public approach, entrance, and departure route."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE14000102",
           "min_required_dependencies": 0,
@@ -4043,6 +4097,7 @@
             "&fContribute two beds and four lanterns, then establish a labelled recovery room open to every faction."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:white_bed",
           "id": "7A11C0DE14000103",
           "min_required_dependencies": 0,
@@ -4116,6 +4171,7 @@
             "&fContribute one Blood Rune and one Holy Rune, then record a sealed handoff through the neutral hall."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:holy_rune",
           "id": "7A11C0DE14000104",
           "min_required_dependencies": 0,
@@ -4189,6 +4245,7 @@
             "&fContribute scaffolding and Arcane Essence, then open a labelled public worktable for demonstrations, translation, and safe storage."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DE14000105",
           "min_required_dependencies": 0,
@@ -4275,6 +4332,7 @@
             "&7The structure is the keepsake. The supplies are for the next useful room."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE1400000A",
           "min_required_dependencies": 5,
@@ -4456,6 +4514,7 @@
             "&8The Atlas calls this comparative advantage. Everyone else calls it knowing who to ask."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:crafting_table",
           "id": "7A11C0DE15000001",
           "min_required_dependencies": 1,
@@ -4511,6 +4570,7 @@
             "&8A contraption earns a name after it survives contact with a second operator."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "create:mechanical_press",
           "id": "7A11C0DE15000002",
           "min_required_dependencies": 0,
@@ -4585,6 +4645,7 @@
             "&8If the instructions begin with 'simply acquire the forbidden codex,' try again."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DE15000003",
           "min_required_dependencies": 0,
@@ -4659,6 +4720,7 @@
             "&8The footnote concerning sunlight is, regrettably, load-bearing."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE15000004",
           "min_required_dependencies": 0,
@@ -4733,6 +4795,7 @@
             "&8The ground crew has requested that optimism be stored away from ignition sources."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "createpropulsion:wing",
           "id": "7A11C0DE15000005",
           "min_required_dependencies": 0,
@@ -4807,6 +4870,7 @@
             "&8Diplomacy without a record is just vibes with a meeting time."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE15000006",
           "min_required_dependencies": 0,
@@ -4881,6 +4945,7 @@
             "&8The emergency dirt is not glamorous. It has nevertheless saved more lives than the ceremonial sword."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE15000007",
           "min_required_dependencies": 0,
@@ -4981,6 +5046,7 @@
             "&8'Past the swamp, then vibes' is not cartography."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "naturescompass:naturescompass",
           "id": "7A11C0DE15000008",
           "min_required_dependencies": 0,
@@ -5055,6 +5121,7 @@
             "&8Minutes of the meeting may include the phrase 'and then the ceiling became outdoors.'"
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE15000009",
           "min_required_dependencies": 0,
@@ -5149,6 +5216,7 @@
             "&8Someone else is allowed to know things you don't. Horrifying."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:crafting_table",
           "id": "7A11C0DE1500000A",
           "min_required_dependencies": 3,
@@ -5205,6 +5273,7 @@
             "&fHost one short demonstration from a completed specialty. Leave the method understandable to a player who missed the original build."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lectern",
           "id": "7A11C0DE15000101",
           "min_required_dependencies": 0,
@@ -5251,6 +5320,7 @@
             "&fRecord the handoff and leave the shared method ready for its next operator."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:barrel",
           "id": "7A11C0DE15000102",
           "min_required_dependencies": 0,
@@ -5357,6 +5427,7 @@
             "&8The road to endgame is now literally a road."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE16000001",
           "min_required_dependencies": 0,
@@ -5411,6 +5482,7 @@
             "&aRoute standard:&f an unbriefed traveller can identify both endpoints, follow the navigation, and find the named maintenance owner. The reviewing team records a server-wide work."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:rail",
           "id": "7A11C0DE16000002",
           "min_required_dependencies": 0,
@@ -5462,6 +5534,7 @@
             "&aMarket standard:&f show at least three active offers or services, public terms, neutral access, and a named steward. The reviewing team records a server-wide work."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:emerald",
           "id": "7A11C0DE16000003",
           "min_required_dependencies": 0,
@@ -5513,6 +5586,7 @@
             "&aWorkshop standard:&f expose at least two working capabilities, label public and private stock, post basic operating rules, and name a maintainer."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "create:mechanical_press",
           "id": "7A11C0DE16000004",
           "min_required_dependencies": 0,
@@ -5564,6 +5638,7 @@
             "&aArchive standard:&f preserve at least five verifiable world facts or stories, organize them for browsing, and leave a way to add the sixth."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lectern",
           "id": "7A11C0DE16000005",
           "min_required_dependencies": 0,
@@ -5615,6 +5690,7 @@
             "&aDepot standard:&f multiple routes or players can reach it, withdrawal and restock rules are visible, and somebody owns maintenance."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:chest",
           "id": "7A11C0DE16000006",
           "min_required_dependencies": 0,
@@ -5666,6 +5742,7 @@
             "&aPort standard:&f mark safe approach and spectator zones, provide one useful dock/test/loading function, and post the next engineering step."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "createpropulsion:wing",
           "id": "7A11C0DE16000007",
           "min_required_dependencies": 0,
@@ -5717,6 +5794,7 @@
             "&aReadiness standard:&f the refuge or route is findable under pressure, supplies and exits are labelled, and a test or audit produced at least one recorded fix."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:iron_door",
           "id": "7A11C0DE16000008",
           "min_required_dependencies": 0,
@@ -5768,6 +5846,7 @@
             "&aVenue standard:&f announce and host one real gathering, make entry and participation clear, and record what occurred for the archive."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE16000009",
           "min_required_dependencies": 0,
@@ -5827,6 +5906,7 @@
             "&8Congratulations: you have invented municipal services in a game about punching trees."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE1600000B",
           "min_required_dependencies": 3,
@@ -5960,6 +6040,7 @@
             "&8Cold war, but the missiles are baked goods."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:firework_rocket",
           "id": "7A11C0DE17000001",
           "min_required_dependencies": 0,
@@ -6004,6 +6085,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:painting",
           "id": "7A11C0DE17000002",
           "min_required_dependencies": 0,
@@ -6055,6 +6137,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:holy_rune",
           "id": "7A11C0DE17000003",
           "min_required_dependencies": 0,
@@ -6106,6 +6189,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:compass",
           "id": "7A11C0DE17000004",
           "min_required_dependencies": 0,
@@ -6157,6 +6241,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "createpropulsion:wing",
           "id": "7A11C0DE17000005",
           "min_required_dependencies": 0,
@@ -6208,6 +6293,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:emerald",
           "id": "7A11C0DE17000006",
           "min_required_dependencies": 0,
@@ -6259,6 +6345,7 @@
             "&7Participation earns the story. Winning earns bragging rights, not better gear."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:armor_stand",
           "id": "7A11C0DE17000007",
           "min_required_dependencies": 0,
@@ -6317,6 +6404,7 @@
             "&cIf live PvP controls and backup restoration have not been tested, this quest is 'requires runtime verification' and must remain unused."
           ],
           "hide_dependency_lines": true,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:shield",
           "id": "7A11C0DE17000008",
           "min_required_dependencies": 2,
@@ -6374,6 +6462,7 @@
             "&8History is what remains after the temporary banners come down."
           ],
           "hide_dependency_lines": true,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE17000009",
           "min_required_dependencies": 2,
@@ -6505,6 +6594,7 @@
             "&8Bring a map, a guest list, and the one machine everyone was told not to turn on indoors."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE18000001",
           "min_required_dependencies": 0,
@@ -6554,6 +6644,7 @@
             "&fSet the hosting plan, mark the public route, and agree what each contribution will leave behind."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:crafting_table",
           "id": "7A11C0DE18000101",
           "min_required_dependencies": 0,
@@ -6613,6 +6704,7 @@
             "&aEvent standard:&f guests can participate safely, remain guests, and leave with one thing learned or remembered."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampiresdelight:blood_wine_bottle",
           "id": "7A11C0DE18000002",
           "min_required_dependencies": 0,
@@ -6663,6 +6755,7 @@
             "&aEvent standard:&f visitors receive a useful instruction or practice, with no unwilling target and a clearly controlled demonstration area."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "vampirism:garlic",
           "id": "7A11C0DE18000003",
           "min_required_dependencies": 0,
@@ -6712,6 +6805,7 @@
             "&aEvent standard:&f operate for a stated period, make terms visible, and complete at least one interaction across faction lines."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:emerald",
           "id": "7A11C0DE18000004",
           "min_required_dependencies": 0,
@@ -6761,6 +6855,7 @@
             "&aEvent standard:&f explain what visitors are seeing, mark operator and spectator zones, run one controlled demonstration, and record any failure worth fixing."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "createpropulsion:wing",
           "id": "7A11C0DE18000005",
           "min_required_dependencies": 0,
@@ -6810,6 +6905,7 @@
             "&aEvent standard:&f announce how to join, run the activity to a visible ending, and record one participant moment. Food is optional; shared action is not."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:bell",
           "id": "7A11C0DE18000006",
           "min_required_dependencies": 0,
@@ -6859,6 +6955,7 @@
             "&aArchive standard:&f preserve at least five concrete facts in a durable, browseable place and identify one unfinished thread. Future players should not need a three-hour oral history."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE18000007",
           "min_required_dependencies": 0,
@@ -6917,6 +7014,7 @@
             "&8A season is complete when it produces a sequel hook, not when the todo list reaches zero."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:firework_rocket",
           "id": "7A11C0DE18000009",
           "min_required_dependencies": 3,
@@ -6982,6 +7080,7 @@
             "&fPlace a written archive entry that names one contradiction, one success, and one promise for the next season."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE18000102",
           "min_required_dependencies": 0,
@@ -7090,6 +7189,7 @@
             "&8Spend where the island will notice."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "numismatics:bevel",
           "id": "7A11C0DE19000001",
           "min_required_dependencies": 0,
@@ -7133,6 +7233,7 @@
             "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE19000002",
           "min_required_dependencies": 0,
@@ -7195,6 +7296,7 @@
             "&ePrice:&f 2 Bevels. &7Renews seven days after this FTB team claims it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:rail",
           "id": "7A11C0DE19000003",
           "min_required_dependencies": 0,
@@ -7257,6 +7359,7 @@
             "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:firework_rocket",
           "id": "7A11C0DE19000004",
           "min_required_dependencies": 0,
@@ -7319,6 +7422,7 @@
             "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "create:super_glue",
           "id": "7A11C0DE19000005",
           "min_required_dependencies": 0,
@@ -7381,6 +7485,7 @@
             "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DE19000006",
           "min_required_dependencies": 0,
@@ -7444,6 +7549,7 @@
             "&7This renews weekly and intentionally grants no item. The archive should create play, not currency."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE19000007",
           "min_required_dependencies": 0,
@@ -7498,6 +7604,7 @@
             "&eTeam support:&f choose one practical supply cache that helps the next hook become playable."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE19000009",
           "min_required_dependencies": 0,
@@ -7548,6 +7655,7 @@
             "&7The crate supports construction; it does not replace the construction."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "create:andesite_alloy",
           "id": "7A11C0DE19000101",
           "min_required_dependencies": 0,
@@ -7618,6 +7726,7 @@
             "&7The kit contains no spellbook, spell, affinity, or upgrade orb."
           ],
           "hide_dependency_lines": false,
+          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:blank_rune",
           "id": "7A11C0DE19000102",
           "min_required_dependencies": 0,

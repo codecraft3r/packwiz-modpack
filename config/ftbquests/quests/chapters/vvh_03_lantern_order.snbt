@@ -454,7 +454,7 @@
 				"7A11C0DE13000007"
 				"7A11C0DE13000008"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "vampirism:garlic"
 			}
@@ -517,7 +517,7 @@
 			dependencies: [
 				"7A11C0DE1300000A"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:lantern"
 			}
@@ -557,7 +557,7 @@
 			dependencies: [
 				"7A11C0DE13000101"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "irons_spellbooks:holy_rune"
 			}
@@ -597,7 +597,7 @@
 			dependencies: [
 				"7A11C0DE13000102"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:shield"
 			}

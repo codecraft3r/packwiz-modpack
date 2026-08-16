@@ -336,6 +336,11 @@ def main() -> int:
         help="Unpacked resource-pack root(s), each containing assets/",
     )
     ap.add_argument("--report", type=Path)
+    ap.add_argument(
+        "--require-all-visible",
+        action="store_true",
+        help="Fail when any VvH quest hides itself until its dependencies are complete.",
+    )
     args = ap.parse_args()
     root = args.root.resolve()
     source_root = root
@@ -429,6 +434,17 @@ def main() -> int:
         visit(qid)
     audit.metrics["vvh_quests"] = len(vvh_quests)
     audit.metrics["vvh_chapters"] = len(manifest.get("chapters", []))
+    hidden_until_dependencies = sorted(
+        qid
+        for qid, quest in vvh_quests.items()
+        if quest.get("hide_until_deps_complete", False)
+    )
+    audit.metrics["hidden_until_dependencies"] = hidden_until_dependencies
+    if args.require_all_visible and hidden_until_dependencies:
+        audit.error(
+            "Dev all-visible mode still hides quests until dependencies complete: "
+            f"{hidden_until_dependencies}"
+        )
 
     roots = {qid for qid, q in vvh_quests.items() if not q.get("dependencies")}
     reverse: dict[str, set[str]] = defaultdict(set)

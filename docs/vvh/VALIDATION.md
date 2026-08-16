@@ -29,6 +29,13 @@ unpacked resource-pack roots. It must prove:
 - the full requisition board costs exactly ten Bevels per team per week and
   cannot be self-funded by the one-Bevel weekly fallback.
 
+The `dev` branch is an all-visible review build. Every quest is drawn from the
+start, but its native dependencies still gate completion and reward claims. Run
+the validator with `--require-all-visible` before pushing `dev`; a hidden VvH
+node is a validation failure. The in-game group title includes
+`[DEV · ALL NODES VISIBLE]`, and locked nodes explain that dependencies still
+need to be completed.
+
 ## Economy assertions
 
 The validator is intentionally strict against the live economy contract:

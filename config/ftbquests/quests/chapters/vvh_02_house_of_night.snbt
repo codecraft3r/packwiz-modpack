@@ -462,7 +462,7 @@
 			dependencies: [
 				"7A11C0DE1200000A"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:white_bed"
 			}
@@ -520,7 +520,7 @@
 				"7A11C0DE12010101"
 				"7A11C0DE12010102"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "irons_spellbooks:blood_rune"
 			}
@@ -558,7 +558,7 @@
 				"7A11C0DE12000007"
 				"7A11C0DE12000008"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "vampirism:vampire_fang"
 			}

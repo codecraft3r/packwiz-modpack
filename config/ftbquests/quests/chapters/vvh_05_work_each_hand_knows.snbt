@@ -373,7 +373,7 @@
 				"7A11C0DE15000008"
 				"7A11C0DE15000009"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:crafting_table"
 			}
@@ -405,7 +405,7 @@
 			dependencies: [
 				"7A11C0DE1500000A"
 			]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:lectern"
 			}
