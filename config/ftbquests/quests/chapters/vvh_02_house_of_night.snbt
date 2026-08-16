@@ -352,7 +352,6 @@
 			id: "7A11C0DE12000007"
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE12200085", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE1220001A"
 					item: { count: 4, id: "vampiresdelight:hardtack" }
@@ -458,6 +457,97 @@
 			]
 			x: 5.0d
 			y: 3.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1200000A"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:white_bed"
+			}
+			id: "7A11C0DE12010101"
+			optional: true
+			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE12210101", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
+			shape: "square"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE12110101"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 13.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12010101"
+			]
+			icon: {
+				id: "minecraft:book"
+			}
+			id: "7A11C0DE12010102"
+			optional: true
+			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE12210102", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE12110102"
+					item: {
+						count: 1
+						id: "minecraft:book"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12110103"
+					type: "checkmark"
+				}
+			]
+			x: 4.8d
+			y: 16.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE12010101"
+				"7A11C0DE12010102"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "irons_spellbooks:blood_rune"
+			}
+			id: "7A11C0DE12010103"
+			optional: true
+			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE12210103", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
+			shape: "hexagon"
+			size: 1.35d
+			tasks: [
+				{
+					id: "7A11C0DE12110104"
+					item: {
+						count: 1
+						id: "vampirism:blood_bottle"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE12110105"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 18.6d
 		}
 		{
 			dependencies: [

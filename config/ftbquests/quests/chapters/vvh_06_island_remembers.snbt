@@ -97,8 +97,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: -1.0d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -120,8 +120,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 1.4d
+			x: -6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -143,8 +143,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 3.8d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -166,12 +166,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 6.2d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE16000003"
+				"7A11C0DE16000001"
 			]
 			icon: {
 				id: "minecraft:chest"
@@ -190,12 +190,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 8.6d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE16000004"
+				"7A11C0DE16000001"
 			]
 			icon: {
 				id: "createpropulsion:wing"
@@ -214,12 +214,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 11.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE16000002"
+				"7A11C0DE16000001"
 			]
 			icon: {
 				id: "minecraft:iron_door"
@@ -238,12 +238,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 13.4d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE16000005"
+				"7A11C0DE16000001"
 			]
 			icon: {
 				id: "minecraft:bell"
@@ -262,8 +262,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 15.8d
+			x: 8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -271,6 +271,10 @@
 				"7A11C0DE16000003"
 				"7A11C0DE16000004"
 				"7A11C0DE16000005"
+				"7A11C0DE16000006"
+				"7A11C0DE16000007"
+				"7A11C0DE16000008"
+				"7A11C0DE16000009"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -316,7 +320,7 @@
 				}
 			]
 			x: 0
-			y: 18.2d
+			y: 7.0d
 		}
 	]
 }

@@ -361,5 +361,121 @@
 			x: 2.0d
 			y: 2.0d
 		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7A11C0DE19000001"
+			]
+			icon: {
+				id: "create:andesite_alloy"
+			}
+			id: "7A11C0DE19000101"
+			min_width: 280
+			optional: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C0DE19200101"
+					item: {
+						count: 32
+						id: "minecraft:stone_bricks"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE19200102"
+					item: {
+						count: 16
+						id: "minecraft:scaffolding"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE19200103"
+					item: {
+						count: 8
+						id: "create:andesite_alloy"
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE19100101"
+					consume_items: true
+					count: 2
+					item: {
+						count: 1
+						id: "numismatics:bevel"
+					}
+					type: "item"
+				}
+			]
+			x: 6.75d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"7A11C0DE19000001"
+			]
+			icon: {
+				id: "irons_spellbooks:blank_rune"
+			}
+			id: "7A11C0DE19000102"
+			min_width: 280
+			optional: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C0DE19200104"
+					item: {
+						count: 4
+						id: "irons_spellbooks:arcane_essence"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE19200105"
+					item: {
+						count: 2
+						id: "irons_spellbooks:blank_rune"
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C0DE19200106"
+					item: {
+						count: 8
+						id: "minecraft:amethyst_shard"
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "7A11C0DE19100102"
+					consume_items: true
+					count: 2
+					item: {
+						count: 1
+						id: "numismatics:bevel"
+					}
+					type: "item"
+				}
+			]
+			x: 6.75d
+			y: 2.75d
+		}
 	]
 }

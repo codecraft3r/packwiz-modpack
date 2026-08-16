@@ -887,7 +887,8 @@
 		"{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}"
 		"&d&lTHE OBJECTIVE IS A STORY SOMEBODY RETELLS"
 		""
-		"&fThis is a side lane: every challenge here is optional. Run any format that both sides understand, with participants, a visible end condition, and a cleanup owner. Rewards are cosmetic/status or event supplies, never combat power."
+		"&fThis is a side lane: every challenge here is optional. Run a format that both sides understand."
+		"&fName the participants, a visible end condition, and a cleanup owner. Rewards are event supplies or status, never combat power."
 		"&eEvent standard:&f publish the rules before play, let attendance count as participation where appropriate, record the result, and restore shared space afterward."
 		""
 		"&cThe skirmish branch requires at least two noncombat rivalry activities first.&f If the factions cannot survive a mascot contest, they have not earned swords."
@@ -980,7 +981,7 @@
 		""
 		"&cIf live PvP controls and backup restoration have not been tested, this quest is 'requires runtime verification' and must remain unused."
 	]
-	quest.7A11C0DE17000008.quest_subtitle: "A release valve, not the campaign's central mechanic."
+	quest.7A11C0DE17000008.quest_subtitle: "Optional hosted release valve · two safe formats first, consent and restoration required."
 	quest.7A11C0DE17000008.title: "&cSANCTIONED SKIRMISH — ONLY IF EVERY BOX IS TRUE"
 	task.7A11C0DE17100051.title: "Host Confirms Consent, Backup, Controls, Stop Condition, and Safe End"
 	quest.7A11C0DE17000009.quest_desc: [
@@ -993,7 +994,7 @@
 		""
 		"&8History is what remains after the temporary banners come down."
 	]
-	quest.7A11C0DE17000009.quest_subtitle: "Two silly contests are enough to make the factions feel real."
+	quest.7A11C0DE17000009.quest_subtitle: "After any two safe formats, leave a useful record for the next rivalry night."
 	quest.7A11C0DE17000009.title: "&d&lARCHIVE A RIVALRY NIGHT"
 	task.7A11C0DE1710005B.title: "Archive the Rivalry Result and Confirm Cleanup"
 	reward.7A11C0DE1720005C.title: "Sixteen Firework Rockets"
@@ -1204,6 +1205,11 @@
 	reward.7A11C0DE10200012.title: "Eight Festival Rockets"
 	reward.7A11C0DE10200013.title: "Four Bottles of Blood"
 	quest.7A11C0DE11000006.title: "&6&lTHREE INVITATIONS"
+	quest.7A11C0DE11000006.quest_subtitle: "One useful welcome proves the invitations lead somewhere real."
+	quest.7A11C0DE11000006.quest_desc: [
+		"&7Lore:&f The Atlas distrusts invitations that open only into private rooms. The first faction works begin with a door, supplies, and enough light for a guest to find the way back out."
+		"&fLay out eight lanterns, set aside sixteen loaves, and open one shared welcome point."
+	]
 	task.7A11C0DE1110003D.title: "Lay Out Eight Lanterns"
 	task.7A11C0DE1110003E.title: "Set Aside Sixteen Loaves"
 	task.7A11C0DE1110003F.title: "Open the Door to a Guest"
@@ -1331,7 +1337,6 @@
 	// END VvH SEASON ONE
 	reward.7A11C0DE10207008.title: "Charter Signing Bevel"
 	reward.7A11C0DE11207005.title: "Trade Lens Bevel"
-	reward.7A11C0DE14207001.title: "Free Company Bevel"
 	reward.7A11C0DE15207001.title: "Contribution Opening Bevel"
 	reward.7A11C0DE16207001.title: "Public Works Opening Bevel"
 	reward.7A11C0DE18207001.title: "Fair Opening Bevel"
@@ -1348,4 +1353,160 @@
 	reward.7A11C0DE18210004.title: "Long Night Event Bevel"
 	reward.7A11C0DE18210005.title: "Long Night Event Bevel"
 	reward.7A11C0DE18210006.title: "Long Night Event Bevel"
+
+	// VvH depth expansion — House of Night
+	quest.7A11C0DE12010101.quest_desc: [
+		"{image:poiesis:textures/questpics/vvh/house_of_night.png width:48 height:48 align:center}"
+		"&4&lA ROOM THAT ANSWERS"
+		""
+		"&fThe House has a place to sleep. Now make it answer when someone arrives after sunset."
+		"&fImprove the shared refuge with a visible entrance, a guest bed or quiet room, labelled emergency storage, and an obvious, well-lit exit."
+		""
+		"&7A refuge is not a private trophy. A nervous guest should know where to rest, what may be borrowed, and how to leave without asking permission."
+	]
+	quest.7A11C0DE12010101.quest_subtitle: "Optional world build · expand the refuge into a readable public service."
+	quest.7A11C0DE12010101.title: "&4&lWORLD BUILD · EXPAND THE NIGHT REFUGE"
+	task.7A11C0DE12110101.title: "REVIEW: Entrance, guest space, labelled supplies, and safe lighting are usable"
+	reward.7A11C0DE12210101.title: "Choose One House Utility Favor"
+	quest.7A11C0DE12010102.quest_desc: [
+		"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
+		"&4&lTHE HOUSE RULE IN RED INK"
+		""
+		"&fPlace a book at the House archive or lectern. Write one rule that lets a guest ask for shelter without owing allegiance, then add one question about inheritance that the House still cannot answer."
+		""
+		"&7Etiquette is a door, not a chain. The question stays open so the House remembers that inheritance can be disputed without being erased."
+	]
+	quest.7A11C0DE12010102.quest_subtitle: "Side Work · turn hospitality into a promise someone can read."
+	quest.7A11C0DE12010102.title: "&4&lSIDE WORK · WRITE THE HOUSE RULE"
+	task.7A11C0DE12110102.title: "Carry a Book for the House Archive"
+	task.7A11C0DE12110103.title: "REVIEW: One guest rule and one unresolved inheritance question are recorded"
+	reward.7A11C0DE12210102.title: "Choose One House Utility Favor"
+	quest.7A11C0DE12010103.quest_desc: [
+		"{image:irons_spellbooks:textures/item/blood_vial.png width:48 height:48 align:center}"
+		"&4&lTHE UNCLAIMED CUP"
+		""
+		"&fPrepare one Blood bottle, then host a small bloodless welcome in the improved refuge."
+		"&fInvite someone who need not be a vampire or Blood practitioner. Show them the shelter, the exit, and supplies they may use without promising allegiance."
+		""
+		"&7Blood remembers that a body can carry a history. The House answers by offering hospitality before asking what anyone inherits."
+	]
+	quest.7A11C0DE12010103.quest_subtitle: "Consequence · a Blood-aligned welcome that leaves room for another school."
+	quest.7A11C0DE12010103.title: "&4&lCONSEQUENCE · SERVE THE UNCLAIMED CUP"
+	task.7A11C0DE12110104.title: "Prepare a Blood Bottle"
+	task.7A11C0DE12110105.title: "REVIEW: Offer shelter, an exit, and no faction obligation"
+	reward.7A11C0DE12210103.title: "Choose One House Utility Favor"
+
+	// VvH depth expansion — Lantern Order
+	quest.7A11C0DE13000101.quest_desc: [
+		"{image:poiesis:textures/questpics/vvh/holy_public_ward.png width:48 height:48 align:center}"
+		"&a&lWORLD BUILD · REFIT THE WATCHHOUSE"
+		""
+		"&fReturn to the watchhouse or refuge and make it useful under pressure: add eight lanterns, then give it a visible public-service feature such as labelled medicine, route notices, a guest bed, or a safe handoff point."
+		"&7The lanterns are the supply check; the review asks whether a tired stranger can understand what the room is for."
+	]
+	quest.7A11C0DE13000101.quest_subtitle: "World Build · Make the refuge legible after dark."
+	quest.7A11C0DE13000101.title: "&a&lWORLD BUILD · REFIT THE WATCHHOUSE"
+	task.7A11C0DE13100101.title: "Supply 8 Lanterns"
+	task.7A11C0DE13100102.title: "REVIEW: The Watchhouse Has a Clear Public-Service Feature"
+	reward.7A11C0DE13200101.title: "Choose One Lantern Order Utility Cache"
+	quest.7A11C0DE13000102.quest_desc: [
+		"{image:irons_spellbooks:textures/item/holy_rune.png width:48 height:48 align:center}"
+		"&e&lPROGRESSION · CONSECRATE THE REFUGE"
+		""
+		"&fInstall one Holy Rune as part of a visible ward, medical station, cleansing point, or shelter practice. Explain its safe use beside the station so the service can outlive its builder."
+		"&7A ward earns trust when it tells people how to use it, not when it merely glows."
+	]
+	quest.7A11C0DE13000102.quest_subtitle: "Progression · Turn protection into a practiced service."
+	quest.7A11C0DE13000102.title: "&e&lPROGRESSION · CONSECRATE THE REFUGE"
+	task.7A11C0DE13100103.title: "Supply 1 Holy Rune"
+	task.7A11C0DE13100104.title: "REVIEW: The Holy Station Explains Its Safe Use"
+	reward.7A11C0DE13200102.title: "Choose One Consecrated Utility Cache"
+	quest.7A11C0DE13000103.quest_desc: [
+		"{image:poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png width:48 height:48 align:center}"
+		"&b&lPUBLIC SERVICE · KEEP A TREATY LIGHT"
+		""
+		"&fInvite someone outside the Order to use or review the refuge service, then record one practical handoff: who restocks it, where a visitor goes next, or what change the review prompted."
+		"&7The Order's promise is measured by the stranger who can find help, not by the uniform at the door."
+	]
+	quest.7A11C0DE13000103.quest_subtitle: "Public Service · Let the refuge work across faction lines."
+	quest.7A11C0DE13000103.title: "&b&lPUBLIC SERVICE · KEEP A TREATY LIGHT"
+	task.7A11C0DE13100105.title: "A Non-Order Player Reviews or Uses the Refuge Service"
+	task.7A11C0DE13100106.title: "REVIEW: Record One Practical Handoff or Improvement"
+	reward.7A11C0DE13200103.title: "Choose One Treaty Utility Cache"
+
+	// VvH depth expansion — Free Companies
+	quest.7A11C0DE14000101.title: "&a&lFURNISH THE CONTRACT HALL"
+	quest.7A11C0DE14000101.quest_subtitle: "World Build · Give public agreements a place to arrive and remain legible."
+	quest.7A11C0DE14000101.quest_desc: ["&7Lore:&f A contract left in a private chest is only a rumour with hinges." "&fContribute two chests, then establish public storage and a visible sign-in desk in the neutral hall."]
+	task.7A11C0DE14100101.title: "Contribute 2 Chests"
+	task.7A11C0DE14100102.title: "REVIEW: Public Storage and a Sign-In Desk Are Usable"
+	reward.7A11C0DE14200101.title: "Contract Hall Utility Requisition"
+	quest.7A11C0DE14000102.title: "&a&lHANG THE NIGHT LANTERNS"
+	quest.7A11C0DE14000102.quest_subtitle: "World Build · Make the neutral door readable after sunset."
+	quest.7A11C0DE14000102.quest_desc: ["&7Lore:&f Neutral ground fails when only its regulars can find the entrance." "&fContribute four lanterns and light the hall's public approach, entrance, and departure route."]
+	task.7A11C0DE14100103.title: "Contribute 4 Lanterns"
+	task.7A11C0DE14100104.title: "REVIEW: The Public Entrance and Exit Are Clearly Lit"
+	reward.7A11C0DE14200102.title: "Consecrated Hall Utility Requisition"
+	quest.7A11C0DE14000103.title: "&b&lA ROOM FOR RECOVERY"
+	quest.7A11C0DE14000103.quest_subtitle: "Treaty Service · A faction-neutral recovery room, distinct from private lodging."
+	quest.7A11C0DE14000103.quest_desc: ["&7Lore:&f The first neutral promise is a bed nobody has to earn by choosing a side." "&fContribute two beds and four lanterns, then establish a labelled recovery room open to every faction."]
+	task.7A11C0DE14100105.title: "Contribute 2 White Beds"
+	task.7A11C0DE14100106.title: "Contribute 4 Lanterns"
+	task.7A11C0DE14100107.title: "REVIEW: The Recovery Room Is Public and Clearly Labelled"
+	reward.7A11C0DE14200103.title: "Recovery Room Utility Requisition"
+	quest.7A11C0DE14000104.title: "&d&lCOURIER UNDER TWO SEALS"
+	quest.7A11C0DE14000104.quest_subtitle: "Treaty Service · Carry two traditions without claiming either one."
+	quest.7A11C0DE14000104.quest_desc: ["&7Lore:&f A courier is trusted because both parties know what arrived unchanged." "&fContribute one Blood Rune and one Holy Rune, then record a sealed handoff through the neutral hall."]
+	task.7A11C0DE14100108.title: "Contribute 1 Holy Rune"
+	task.7A11C0DE14100109.title: "Contribute 1 Blood Rune"
+	task.7A11C0DE1410010A.title: "REVIEW: Both Seals Reached a Recorded Neutral Handoff"
+	reward.7A11C0DE14200104.title: "Sealed Courier Utility Requisition"
+	quest.7A11C0DE14000105.title: "&d&lTHE PUBLIC SPELLWRIGHT"
+	quest.7A11C0DE14000105.quest_subtitle: "Treaty Service · Make low-tier magical work teachable in public."
+	quest.7A11C0DE14000105.quest_desc: ["&7Lore:&f Translation becomes civic work when the next person can repeat it safely." "&fContribute scaffolding and Arcane Essence, then open a labelled public worktable for demonstrations, translation, and safe storage."]
+	task.7A11C0DE1410010B.title: "Contribute 16 Scaffolding"
+	task.7A11C0DE1410010C.title: "Contribute 4 Arcane Essence"
+	task.7A11C0DE1410010D.title: "REVIEW: The Public Magical Worktable Is Labelled and Usable"
+	reward.7A11C0DE14200105.title: "Public Workshop Utility Requisition"
+
+	// VvH depth expansion — specialty mastery and fair
+	quest.7A11C0DE15000101.quest_desc: ["&7Lore:&f A craft becomes communal when another pair of hands can use it without its inventor standing over the shoulder." "&fHost one short demonstration from a completed specialty. Leave the method understandable to a player who missed the original build."]
+	quest.7A11C0DE15000101.quest_subtitle: "Mastery · any three specialties unlock this peer-teaching beat."
+	quest.7A11C0DE15000101.title: "&dTEACH THE HAND BESIDE YOU"
+	task.7A11C0DE15100101.title: "REVIEW: Another Player Can Repeat One Shared Service"
+	reward.7A11C0DE15210101.title: "Choose a Peer-Teaching Supply"
+	quest.7A11C0DE15000102.quest_desc: ["&7Lore:&f A useful trick is not a tradition until it has a place, a label, and somebody willing to notice when it stops working." "&fRecord the handoff and leave the shared method ready for its next operator."]
+	quest.7A11C0DE15000102.quest_subtitle: "Mastery · preserve one repeatable service for the settlement."
+	quest.7A11C0DE15000102.title: "&6LEAVE THE METHOD READY"
+	task.7A11C0DE15100102.title: "REVIEW: The Method Has a Home, Label, and Maintainer"
+	reward.7A11C0DE15210102.title: "Shared Scaffolding for the Method"
+	quest.7A11C0DE18000101.quest_desc: ["&7Lore:&f A fair begins when someone decides where a tired traveler can sit, where a dispute can cool, and who will carry the first crate." "&fSet the hosting plan, mark the public route, and agree what each contribution will leave behind."]
+	quest.7A11C0DE18000101.quest_subtitle: "Preparation · make the fair legible before the crowd arrives."
+	quest.7A11C0DE18000101.title: "&eSET THE TABLES"
+	task.7A11C0DE18100101.title: "REVIEW: Venue, Route, Rest Area, and Contribution Plan Are Posted"
+	reward.7A11C0DE18210101.title: "Choose a Fair-Preparation Supply"
+	reward.7A11C0DE18220101.title: "Three Bevels — Fair Preparation"
+	quest.7A11C0DE18000102.quest_desc: ["&7Lore:&f By morning, every faction tells the same night differently. That disagreement shows which promise each group thought it was keeping." "&fPlace a written archive entry that names one contradiction, one success, and one promise for the next season."]
+	quest.7A11C0DE18000102.quest_subtitle: "Aftermath · interpret the fair before memory smooths its edges."
+	quest.7A11C0DE18000102.title: "&fARCHIVE WHAT THE FAIR MEANT"
+	task.7A11C0DE18100102.title: "Carry a Written Archive Entry"
+	task.7A11C0DE18100103.title: "REVIEW: Record One Contradiction, Success, and Future Promise"
+	reward.7A11C0DE18210102.title: "Choose an Archive Aftermath Supply"
+
+	// VvH depth expansion — post-season sinks
+	quest.7A11C0DE19000101.quest_desc: ["{image:create:textures/item/andesite_alloy.png width:48 height:48 align:center}" "&6&lTHE COMMON WALL NEEDS HANDS" "" "&fRequest a compact crate for the public wall, landing, workshop bay, or route repair that is actually next." "&7The crate supports construction; it does not replace the construction."]
+	quest.7A11C0DE19000101.quest_subtitle: "A compact construction crate for a real shared project."
+	quest.7A11C0DE19000101.title: "&6PUBLIC WORKS REQUISITION — 2 BEVELS"
+	task.7A11C0DE19100101.title: "Submit 2 Bevels"
+	reward.7A11C0DE19200101.title: "Thirty-Two Stone Bricks"
+	reward.7A11C0DE19200102.title: "Sixteen Construction Scaffolding"
+	reward.7A11C0DE19200103.title: "Eight Andesite Alloy"
+	quest.7A11C0DE19000102.quest_desc: ["{image:irons_spellbooks:textures/item/blank_rune.png width:48 height:48 align:center}" "&d&lOPEN THE NEUTRAL WORKTABLE" "" "&fRequest a small stock of harmless reagents for the next demonstration, translation, or safe-storage experiment." "&7The kit contains no spellbook, spell, affinity, or upgrade orb."]
+	quest.7A11C0DE19000102.quest_subtitle: "Low-tier research supplies for a shared magical service."
+	quest.7A11C0DE19000102.title: "&dNEUTRAL ARCANE RESEARCH KIT — 2 BEVELS"
+	task.7A11C0DE19100102.title: "Submit 2 Bevels"
+	reward.7A11C0DE19200104.title: "Four Arcane Essence"
+	reward.7A11C0DE19200105.title: "Two Blank Runes"
+	reward.7A11C0DE19200106.title: "Eight Amethyst Shards"
+
 }

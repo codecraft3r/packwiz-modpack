@@ -97,12 +97,6 @@
 					team_reward: true
 					 type: "item"
 				}
-				{
-					id: "7A11C0DE14207001"
-					item: { count: 1, id: "numismatics:bevel" }
-					team_reward: false
-					type: "item"
-				}
 			]
 			shape: "hexagon"
 			size: 1.7d
@@ -434,7 +428,6 @@
 			id: "7A11C0DE14000008"
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE14200086", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200019"
 					item: { count: 8, id: "minecraft:bread" }
@@ -497,6 +490,236 @@
 				}
 			]
 			x: 5.0d
+			y: 1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000001"
+			]
+			icon: {
+				id: "minecraft:chest"
+			}
+			id: "7A11C0DE14000101"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE14200101"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "square"
+			size: 1.25d
+			tasks: [
+				{
+					count: 2
+					consume: true
+					id: "7A11C0DE14100101"
+					item: {
+						count: 1
+						id: "minecraft:chest"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE14100102"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -3.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000101"
+			]
+			icon: {
+				id: "minecraft:bell"
+			}
+			id: "7A11C0DE14000102"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE14200102"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "diamond"
+			size: 1.25d
+			tasks: [
+				{
+					count: 4
+					consume: true
+					id: "7A11C0DE14100103"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE14100104"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000102"
+			]
+			icon: {
+				id: "minecraft:white_bed"
+			}
+			id: "7A11C0DE14000103"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE14200103"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "heart"
+			size: 1.35d
+			tasks: [
+				{
+					count: 2
+					consume: true
+					id: "7A11C0DE14100105"
+					item: {
+						count: 1
+						id: "minecraft:white_bed"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					consume: true
+					id: "7A11C0DE14100106"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE14100107"
+					type: "checkmark"
+				}
+			]
+			x: -7.5d
+			y: 1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000102"
+			]
+			icon: {
+				id: "irons_spellbooks:holy_rune"
+			}
+			id: "7A11C0DE14000104"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE14200104"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "octagon"
+			size: 1.25d
+			tasks: [
+				{
+					count: 1
+					consume: true
+					id: "7A11C0DE14100108"
+					item: {
+						count: 1
+						id: "irons_spellbooks:holy_rune"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					consume: true
+					id: "7A11C0DE14100109"
+					item: {
+						count: 1
+						id: "irons_spellbooks:blood_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1410010A"
+					type: "checkmark"
+				}
+			]
+			x: -5.0d
+			y: 1.4d
+		}
+		{
+			dependencies: [
+				"7A11C0DE14000102"
+			]
+			icon: {
+				id: "irons_spellbooks:arcane_essence"
+			}
+			id: "7A11C0DE14000105"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE14200105"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "gear"
+			size: 1.35d
+			tasks: [
+				{
+					count: 16
+					consume: true
+					id: "7A11C0DE1410010B"
+					item: {
+						count: 1
+						id: "minecraft:scaffolding"
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					consume: true
+					id: "7A11C0DE1410010C"
+					item: {
+						count: 1
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1410010D"
+					type: "checkmark"
+				}
+			]
+			x: -2.5d
 			y: 1.4d
 		}
 		{

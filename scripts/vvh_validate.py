@@ -238,7 +238,7 @@ def resolve_item(item_id: str, entries: set[str], source_root: Path) -> bool:
         return item_id in {
             "minecraft:amethyst_shard", "minecraft:beetroot_soup", "minecraft:bell",
             "minecraft:book", "minecraft:bookshelf", "minecraft:bread", "minecraft:bricks",
-            "minecraft:bundle", "minecraft:cake", "minecraft:carved_pumpkin", "minecraft:chest",
+            "minecraft:barrel", "minecraft:bundle", "minecraft:cake", "minecraft:carved_pumpkin", "minecraft:chest",
             "minecraft:chiseled_stone_bricks", "minecraft:clock", "minecraft:compass",
             "minecraft:cooked_beef", "minecraft:crossbow", "minecraft:dark_oak_door",
             "minecraft:emerald", "minecraft:fermented_spider_eye", "minecraft:filled_map",
@@ -876,6 +876,11 @@ def main() -> int:
     audit.metrics["weekly_fallback_team_bevels"] = 1 if fallback is not None and direct_bevel_quests.get(fallback_id) == 1 else 0
     audit.metrics["weekly_fallback_max_8_fragmented_teams"] = audit.metrics["weekly_fallback_team_bevels"] * 8
     audit.metrics["weekly_requisition_board_price"] = repeatable_weekly_prices
+    if repeatable_weekly_prices != 10:
+        audit.error(
+            "The complete weekly requisition board must cost exactly 10 Bevels; "
+            f"calculated {repeatable_weekly_prices}"
+        )
     if audit.metrics["weekly_fallback_team_bevels"] >= repeatable_weekly_prices and repeatable_weekly_prices:
         audit.error("The weekly fallback can self-fund the full requisition board")
 
@@ -893,6 +898,14 @@ def main() -> int:
         return any(marker in upper for marker in markers)
 
     policy_failures: list[str] = []
+    utility_only_ids = {
+        "7A11C0DE12010101", "7A11C0DE12010102", "7A11C0DE12010103",
+        "7A11C0DE13000101", "7A11C0DE13000102", "7A11C0DE13000103",
+        "7A11C0DE12000007", "7A11C0DE13000008", "7A11C0DE14000008",
+        "7A11C0DE14000001", "7A11C0DE14000101", "7A11C0DE14000102",
+        "7A11C0DE14000103", "7A11C0DE14000104", "7A11C0DE14000105",
+        "7A11C0DE15000101", "7A11C0DE15000102",
+    }
     capstone_titles = {
         "CHARTER THE HOUSE OF NIGHT", "CHARTER THE LANTERN ORDER", "CHARTER THE FREE COMPANY",
         "THREE HANDS' WORTH", "THREE THINGS THE ISLAND KEEPS", "ARCHIVE A RIVALRY NIGHT",
@@ -904,7 +917,15 @@ def main() -> int:
             qid, title = q.get("id", ""), q.get("title", "")
             upper = title.upper()
             direct = direct_bevel_quests.get(qid, 0)
-            if title.upper() in capstone_titles:
+            if qid in utility_only_ids:
+                if direct:
+                    policy_failures.append(f"{qid} {title}: utility-only depth quest must not mint Bevels")
+                if not q.get("rewards"):
+                    policy_failures.append(f"{qid} {title}: utility-only depth quest needs a utility reward")
+            elif qid == "7A11C0DE11000006":
+                if direct < 2 or not any(direct_bevel_count(r) and r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
+                    policy_failures.append(f"{qid} {title}: invitation capstone needs 2 team Bevels")
+            elif title.upper() in capstone_titles:
                 if direct < 2 or not any(direct_bevel_count(r) and r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
                     policy_failures.append(f"{qid} {title}: capstone needs at least 2 team Bevels")
                 team_capstone_ids.append(qid)
@@ -1003,10 +1024,21 @@ def main() -> int:
             )
             audit.metrics["minimum_intended_path_personal_bevels"] = intended_personal
             audit.metrics["minimum_intended_path_team_bevels"] = intended_team
-            if not 17 <= intended_personal <= 24:
+            if not 18 <= intended_personal <= 24:
                 audit.error(
-                    "Normal intended path must grant 17-24 personal Bevels; "
+                    "Normal intended path must grant 18-24 personal Bevels; "
                     f"calculated {intended_personal}"
+                )
+            # The intended route selects one faction branch and its shared
+            # capstones.  The live route target is six team Bevels; the
+            # all-branches ceiling is calculated separately below so the
+            # validator cannot confuse normal play with completionist treasury
+            # accumulation.
+            audit.metrics["normal_route_team_bevels"] = intended_team
+            if intended_team != 6:
+                audit.error(
+                    "Normal intended route must grant exactly 6 team Bevels; "
+                    f"calculated {intended_team}"
                 )
             completionist_personal = sum(
                 direct_bevel_count(r)
@@ -1016,10 +1048,23 @@ def main() -> int:
                 if isinstance(r, dict) and not r.get("team_reward")
             )
             audit.metrics["completionist_one_time_personal_bevels"] = completionist_personal
-            if not 45 <= completionist_personal <= 51:
+            if not 45 <= completionist_personal <= 50:
                 audit.error(
-                    "Completionist one-time issuance must be approximately 45-51 personal Bevels; "
+                    "Completionist one-time issuance must be 45-50 personal Bevels; "
                     f"calculated {completionist_personal}"
+                )
+            completionist_team = sum(
+                direct_bevel_count(r)
+                for quest in vvh_quests.values()
+                if not quest.get("can_repeat")
+                for r in quest.get("rewards", [])
+                if isinstance(r, dict) and r.get("team_reward")
+            )
+            audit.metrics["all_branches_one_time_team_bevels"] = completionist_team
+            if completionist_team != 14:
+                audit.error(
+                    "All-branches one-time team treasury must be exactly 14 Bevels; "
+                    f"calculated {completionist_team}"
                 )
         except Exception as exc:  # noqa: BLE001
             audit.error(f"Minimum-path simulation failed: {exc}")

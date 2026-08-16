@@ -1703,9 +1703,21 @@ def install(root: Path) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Legacy full-campaign generator. The authored chapter SNBT is newer than this model."
+    )
     parser.add_argument("root", type=Path)
+    parser.add_argument(
+        "--overwrite-live",
+        action="store_true",
+        help="acknowledge that this rewrites every VvH chapter, localization, and generated document",
+    )
     args = parser.parse_args()
+    if not args.overwrite_live:
+        parser.error(
+            "refusing to overwrite the richer live questline; use vvh_sync_manifest.py "
+            "for normal authoring, or pass --overwrite-live only after reviewing a full diff"
+        )
     install(args.root.resolve())
     return 0
 

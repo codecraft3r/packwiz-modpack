@@ -390,7 +390,6 @@
 			id: "7A11C0DE13000008"
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE13200086", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE13200019"
 					item: { count: 8, id: "minecraft:scaffolding" }
@@ -513,6 +512,121 @@
 			]
 			x: 0
 			y: 8.6d
+		}
+		{
+			dependencies: [
+				"7A11C0DE1300000A"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:lantern"
+			}
+			id: "7A11C0DE13000101"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE13200101"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "square"
+			size: 1.3d
+			tasks: [
+				{
+					count: 8
+					id: "7A11C0DE13100101"
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100102"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 11.2d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000101"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "irons_spellbooks:holy_rune"
+			}
+			id: "7A11C0DE13000102"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE13200102"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "octagon"
+			size: 1.3d
+			tasks: [
+				{
+					count: 1
+					id: "7A11C0DE13100103"
+					item: {
+						count: 1
+						id: "irons_spellbooks:holy_rune"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE13100104"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 13.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE13000102"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				id: "minecraft:shield"
+			}
+			id: "7A11C0DE13000103"
+			optional: true
+			min_width: 280
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE13200103"
+					table_id: 8796023610973093892
+					team_reward: true
+					type: "choice"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					id: "7A11C0DE13100105"
+					type: "checkmark"
+				}
+				{
+					id: "7A11C0DE13100106"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: 13.8d
 		}
 	]
 }

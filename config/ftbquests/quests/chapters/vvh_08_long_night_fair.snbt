@@ -82,6 +82,30 @@
 				"7A11C0DE18000001"
 			]
 			icon: {
+				id: "minecraft:crafting_table"
+			}
+			id: "7A11C0DE18000101"
+			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE18220101", item: { count: 3, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE18210101", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
+			shape: "square"
+			size: 1.35d
+			tasks: [
+				{
+					id: "7A11C0DE18100101"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: -2.8d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000101"
+			]
+			icon: {
 				id: "vampiresdelight:blood_wine_bottle"
 			}
 			id: "7A11C0DE18000002"
@@ -95,12 +119,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.5d
-			y: -1.5d
+			x: -6.0d
+			y: 0
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000001"
+				"7A11C0DE18000101"
 			]
 			icon: {
 				id: "vampirism:garlic"
@@ -116,12 +140,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -1.5d
-			y: -1.5d
+			x: -3.6d
+			y: 1.4d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000001"
+				"7A11C0DE18000101"
 			]
 			icon: {
 				id: "minecraft:emerald"
@@ -137,12 +161,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: -1.5d
+			x: -1.2d
+			y: 2.3d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000001"
+				"7A11C0DE18000101"
 			]
 			icon: {
 				id: "createpropulsion:wing"
@@ -158,12 +182,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -1.5d
+			x: 1.2d
+			y: 2.3d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000001"
+				"7A11C0DE18000101"
 			]
 			icon: {
 				id: "minecraft:bell"
@@ -180,12 +204,12 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.2d
-			y: 1.2d
+			x: 3.6d
+			y: 1.4d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000001"
+				"7A11C0DE18000101"
 			]
 			icon: {
 				id: "minecraft:writable_book"
@@ -202,8 +226,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.2d
-			y: 1.2d
+			x: 6.0d
+			y: 0
 		}
 		{
 			dependencies: [
@@ -250,6 +274,38 @@
 			]
 			x: 0
 			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE18000009"
+			]
+			icon: {
+				id: "minecraft:writable_book"
+			}
+			id: "7A11C0DE18000102"
+			optional: true
+			min_width: 280
+			rewards: [
+				{ id: "7A11C0DE18210102", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+			]
+			shape: "book"
+			size: 1.35d
+			tasks: [
+				{
+					id: "7A11C0DE18100102"
+					item: {
+						count: 1
+						id: "minecraft:writable_book"
+					}
+					type: "item"
+				}
+				{
+					id: "7A11C0DE18100103"
+					type: "checkmark"
+				}
+			]
+			x: 0
+			y: 7.2d
 		}
 	]
 }
