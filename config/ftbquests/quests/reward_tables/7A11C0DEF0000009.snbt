@@ -1,0 +1,13 @@
+{
+	id: "7A11C0DEF0000009"
+	loot_size: 1
+	order_index: 17
+	use_title: true
+	rewards: [
+		{ id: "7A11C0DEF0090001", item: { count: 8, id: "minecraft:firework_rocket" } }
+		{ id: "7A11C0DEF0090002", item: { count: 1, id: "minecraft:bell" } }
+		{ id: "7A11C0DEF0090003", item: { count: 8, id: "minecraft:lantern" } }
+		{ id: "7A11C0DEF0090004", item: { count: 1, id: "minecraft:painting" } }
+		{ id: "7A11C0DEF0090005", item: { count: 1, id: "minecraft:armor_stand" } }
+	]
+}

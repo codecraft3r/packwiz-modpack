@@ -10,44 +10,14 @@
 	id: "7A11C0DE17000000"
 	images: [
 		{
-			alpha: 80
-			height: 1.55d
+			alpha: 30
+			height: 4.2d
 			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "vampirism:textures/item/garlic.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "vampirism:textures/item/vampire_fang.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "minecraft:textures/item/filled_map.png"
-			order: -30
-			rotation: -6.0d
-			width: 1.55d
-			x: 4.5d
-			y: 5.0d
+			order: -40
+			rotation: -4.0d
+			width: 7.2d
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	order_index: 7
@@ -84,7 +54,7 @@
 			id: "7A11C0DE17000002"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210001", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210001", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -93,8 +63,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4
-			y: -1.5d
+			x: -6.0d
+			y: -1.2d
 		}
 		{
 			dependencies: [
@@ -106,7 +76,7 @@
 			id: "7A11C0DE17000003"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210002", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210002", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "heart"
 			size: 1.2d
 			tasks: [
@@ -115,8 +85,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: -1.5d
+			x: -3.6d
+			y: -1.2d
 		}
 		{
 			dependencies: [
@@ -128,7 +98,7 @@
 			id: "7A11C0DE17000004"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210003", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210003", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -137,12 +107,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 4
-			y: -1.5d
+			x: -1.2d
+			y: -1.2d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000004"
+				"7A11C0DE17000001"
 			]
 			icon: {
 				id: "createpropulsion:wing"
@@ -150,7 +120,7 @@
 			id: "7A11C0DE17000005"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210004", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210004", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "gear"
 			size: 1.2d
 			tasks: [
@@ -159,12 +129,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 4
-			y: 1.0d
+			x: 1.2d
+			y: -1.2d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000003"
+				"7A11C0DE17000001"
 			]
 			icon: {
 				id: "minecraft:emerald"
@@ -172,7 +142,7 @@
 			id: "7A11C0DE17000006"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210005", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210005", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -181,12 +151,12 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 1.0d
+			x: 3.6d
+			y: -1.2d
 		}
 		{
 			dependencies: [
-				"7A11C0DE17000002"
+				"7A11C0DE17000001"
 			]
 			icon: {
 				id: "minecraft:armor_stand"
@@ -194,7 +164,7 @@
 			id: "7A11C0DE17000007"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210006", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210006", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "octagon"
 			size: 1.2d
 			tasks: [
@@ -203,8 +173,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4
-			y: 1.0d
+			x: 6.0d
+			y: -1.2d
 		}
 		{
 			dependencies: [
@@ -223,7 +193,7 @@
 			min_required_dependencies: 2
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE17210007", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE17210007", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "diamond"
 			size: 1.4d
 			tasks: [
@@ -232,8 +202,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.2d
-			y: 5.7d
+			x: 4.6d
+			y: 4.0d
 		}
 		{
 			dependencies: [

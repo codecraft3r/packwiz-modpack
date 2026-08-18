@@ -1,0 +1,13 @@
+{
+	id: "7A11C0DEF0000006"
+	loot_size: 1
+	order_index: 14
+	use_title: true
+	rewards: [
+		{ id: "7A11C0DEF0060001", item: { count: 4, id: "vampirism:garlic" } }
+		{ id: "7A11C0DEF0060002", item: { count: 1, id: "irons_spellbooks:holy_rune" } }
+		{ id: "7A11C0DEF0060003", item: { count: 1, id: "minecraft:shield" } }
+		{ id: "7A11C0DEF0060004", item: { count: 4, id: "minecraft:lantern" } }
+		{ id: "7A11C0DEF0060005", item: { count: 8, id: "minecraft:bread" } }
+	]
+}

@@ -10,74 +10,34 @@
 	id: "7A11C0DE12000000"
 	images: [
 		{
-			alpha: 80
-			height: 1.55d
+			alpha: 28
+			height: 7.0d
 			image: "poiesis:textures/questpics/vvh/house_of_night.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "poiesis:textures/questpics/vvh/blood_ritual_workstation.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "poiesis:textures/questpics/vvh/blood_school_crest.png"
-			order: -30
-			rotation: -6.0d
-			width: 1.55d
-			x: 4.5d
+			order: -40
+			rotation: -3.0d
+			width: 4.8d
+			x: -5.0d
 			y: 5.0d
 		}
 		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/blood_rune.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
+			alpha: 24
+			height: 7.0d
+			image: "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png"
+			order: -39
+			rotation: 3.0d
+			width: 4.8d
+			x: 11.0d
+			y: 5.0d
 		}
 		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/blood_staff.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/blood_vial.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
+			alpha: 30
+			height: 2.4d
+			image: "poiesis:textures/questpics/vvh/blood_school_crest.png"
+			order: -38
+			rotation: -2.0d
+			width: 2.4d
+			x: 11.0d
+			y: 14.0d
 		}
 	]
 	order_index: 2
@@ -88,6 +48,9 @@
 			icon: {
 				id: "vampirism:vampire_fang"
 			}
+			dependencies: [
+				"7A11C0DE11000002"
+			]
 			id: "7A11C0DE12000001"
 			min_width: 280
 			rewards: [
@@ -120,49 +83,11 @@
 				"7A11C0DE12000001"
 			]
 			icon: {
-				id: "irons_spellbooks:arcane_essence"
-			}
-			id: "7A11C0DE1200000C"
-			min_width: 280
-			shape: "gear"
-			size: 1.15d
-			tasks: [
-				{
-					id: "7A11C0DE12100079"
-					type: "checkmark"
-				}
-			]
-			x: 5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE12000001"
-			]
-			icon: {
-				id: "minecraft:lantern"
-			}
-			id: "7A11C0DE1200000D"
-			min_width: 280
-			shape: "square"
-			size: 1.15d
-			tasks: [
-				{
-					id: "7A11C0DE12100083"
-					type: "checkmark"
-				}
-			]
-			x: 0
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE1200000D"
-			]
-			icon: {
 				id: "vampirism:coffin_red"
 			}
 			id: "7A11C0DE12000002"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200080", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -203,12 +128,14 @@
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000C"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "vampirism:altar_inspiration"
 			}
 			id: "7A11C0DE12000003"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200081", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -224,6 +151,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE1210001F"
+					consume: false
 					item: {
 						count: 1
 						id: "vampirism:altar_inspiration"
@@ -235,17 +163,19 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.0d
+			x: 7.0d
 			y: -1.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000D"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "vampirism:blood_bottle"
 			}
 			id: "7A11C0DE12000004"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200082", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -274,16 +204,18 @@
 				}
 			]
 			x: 0
-			y: 1.4d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000D"
+				"7A11C0DE12000001"
 			]
 			icon: {
-				id: "vampiresdelight:blood_wine_bottle"
+				id: "vampirism:alchemical_cauldron"
 			}
 			id: "7A11C0DE12000005"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200083", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -299,9 +231,10 @@
 			tasks: [
 				{
 					id: "7A11C0DE12100033"
+					consume: false
 					item: {
 						count: 1
-						id: "vampiresdelight:blood_wine_bottle"
+						id: "vampirism:alchemical_cauldron"
 					}
 					type: "item"
 				}
@@ -310,17 +243,19 @@
 					type: "checkmark"
 				}
 			]
-			x: 0
-			y: 3.8d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000D"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "minecraft:lantern"
 			}
 			id: "7A11C0DE12000006"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200084", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -340,16 +275,18 @@
 				}
 			]
 			x: 0
-			y: 6.2d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000D"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "vampiresdelight:spirit_lantern"
 			}
 			id: "7A11C0DE12000007"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{
@@ -368,16 +305,18 @@
 				}
 			]
 			x: 0
-			y: 8.6d
+			y: 9.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000C"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "create:mechanical_press"
 			}
 			id: "7A11C0DE12000008"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{
@@ -399,6 +338,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE12100051"
+					consume: false
 					item: {
 						count: 1
 						id: "create:mechanical_press"
@@ -410,17 +350,19 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.0d
-			y: 1.4d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1200000C"
+				"7A11C0DE12000001"
 			]
 			icon: {
 				id: "irons_spellbooks:blood_rune"
 			}
 			id: "7A11C0DE12000009"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE12200087", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -436,6 +378,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE1210005B"
+					consume: false
 					item: {
 						count: 1
 						id: "irons_spellbooks:blood_rune"
@@ -444,6 +387,7 @@
 				}
 				{
 					id: "7A11C0DE1210005C"
+					consume: false
 					item: {
 						count: 1
 						id: "irons_spellbooks:bloody_vellum"
@@ -455,8 +399,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.0d
-			y: 3.8d
+			x: 7.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -470,7 +414,7 @@
 			optional: true
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE12210101", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE12210101", table_id: 8796023610973093893, team_reward: true, type: "choice" }
 			]
 			shape: "square"
 			size: 1.2d
@@ -481,7 +425,7 @@
 				}
 			]
 			x: 0
-			y: 13.8d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -494,7 +438,7 @@
 			optional: true
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE12210102", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE12210102", table_id: 8796023610973093893, team_reward: true, type: "choice" }
 			]
 			shape: "diamond"
 			size: 1.2d
@@ -512,8 +456,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.8d
-			y: 16.2d
+			x: 7.0d
+			y: 24.0d
 		}
 		{
 			dependencies: [
@@ -528,7 +472,7 @@
 			optional: true
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE12210103", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE12210103", table_id: 8796023610973093893, team_reward: true, type: "choice" }
 			]
 			shape: "hexagon"
 			size: 1.35d
@@ -547,23 +491,26 @@
 				}
 			]
 			x: 0
-			y: 18.6d
+			y: 29.0d
 		}
 		{
 			dependencies: [
+				"7A11C0DE12000002"
 				"7A11C0DE12000003"
 				"7A11C0DE12000004"
 				"7A11C0DE12000005"
 				"7A11C0DE12000006"
 				"7A11C0DE12000007"
 				"7A11C0DE12000008"
+				"7A11C0DE12000009"
 			]
 			hide_until_deps_complete: false
 			icon: {
 				id: "vampirism:vampire_fang"
 			}
 			id: "7A11C0DE1200000A"
-			min_required_dependencies: 4
+			hide_dependency_lines: true
+			min_required_dependencies: 5
 			min_width: 280
 			rewards: [
 				{
@@ -615,7 +562,7 @@
 				}
 			]
 			x: 0
-			y: 11.0d
+			y: 14.0d
 		}
 	]
 }

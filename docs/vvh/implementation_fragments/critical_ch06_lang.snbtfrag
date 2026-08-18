@@ -1,0 +1,125 @@
+# Critical Chapter 6 localization fragment
+# Merge into config/ftbquests/quests/lang/en_us.snbt only during the controlled
+# localization pass. This fragment is the source for the revised six-node copy.
+
+quest.7A11C0DE16000001.title: "&6&lTHE ISLAND REMEMBERS"
+quest.7A11C0DE16000001.quest_subtitle: "Link what already exists. Make one useful thing survive its first failure."
+quest.7A11C0DE16000001.quest_desc: [
+    "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}"
+    "&6&lLORE"
+    "&fGreybridge failed for practical reasons: routes had no owner, refuges had no honest capacity, and three records described the same disaster differently."
+    "&fNessa wants the island's existing works linked before contradiction becomes infrastructure. Mirelle calls a findable route the first rescue."
+    "&fElias calls a record that survives its author the first rescue."
+    ""
+    "&e&lOBJECTIVE"
+    "&fComplete any &e3 of 6&f public upgrades below. Upgrade, link, test, or maintain an existing work; a new build is welcome only when no equivalent exists."
+    ""
+    "&a&lSTANDARD"
+    "&fLeave the result usable by a stranger and record one owner, route, or corrective action. Solo logs and self-audits count."
+]
+
+quest.7A11C0DE16000002.title: "&eCONNECTED ROUTE"
+quest.7A11C0DE16000002.quest_subtitle: "Link two useful places and prove the link survives a wrong turn."
+quest.7A11C0DE16000002.quest_desc: [
+    "&6&lLORE"
+    "&fMirelle circles the map where two old roads nearly meet. She does not ask for another road; she asks for the missing sign, bridge, rail spur, or caretaker that makes the old one dependable."
+    ""
+    "&e&lOBJECTIVE"
+    "&fUpgrade or link an existing route, rail, path, or Via Romana line between two useful locations."
+    ""
+    "&a&lSTANDARD"
+    "&fAn unbriefed traveller can identify both endpoints, follow the signs, and find the maintenance owner. A solo player may log and correct one navigation failure."
+]
+task.7A11C0DE16100101.title: "Carry a rail marker or route token"
+task.7A11C0DE16100015.title: "REVIEW: Route survives a wrong turn and has a named caretaker"
+
+quest.7A11C0DE16000003.title: "&6MARKET AND CONTRACT HALL"
+quest.7A11C0DE16000003.quest_subtitle: "Turn an existing stall into a place where terms survive the seller."
+quest.7A11C0DE16000003.quest_desc: [
+    "&6&lLORE"
+    "&fElias finds Greybridge's oldest contract written on the back of a receipt. Mirelle calls it proof that markets need rules. Elias calls it proof that rules need somewhere public to be read."
+    ""
+    "&e&lOBJECTIVE"
+    "&fUpgrade an existing market, stall, contract board, or trade room into a public hall with three active offers, services, or contract categories."
+    ""
+    "&a&lSTANDARD"
+    "&fNeutral access, visible terms, and a named steward are present. A solo player may perform and log a test transaction or correct one confusing rule."
+]
+task.7A11C0DE16100102.title: "Place a market token for review"
+task.7A11C0DE1610001F.title: "REVIEW: Three active services and a readable public contract"
+
+quest.7A11C0DE16000004.title: "&6SHARED WORKSHOP AND DEPOT"
+quest.7A11C0DE16000004.quest_subtitle: "Make the useful tools reachable without making them mysteriously vanish."
+quest.7A11C0DE16000004.quest_desc: [
+    "&6&lLORE"
+    "&fThe workshop survived because somebody labelled one chest. The depot failed because nobody labelled the second."
+    "&fNessa asks for an upgrade joining machine access, repair stock, and a clear line between public and personal tools."
+    ""
+    "&e&lOBJECTIVE"
+    "&fSubstantially upgrade an existing workshop or depot so two useful capabilities and their public/private stock are obvious."
+    ""
+    "&a&lSTANDARD"
+    "&fTwo capabilities work, operating rules are visible, and a maintainer is named. A solo player may run a repair or processing test and record one corrected failure."
+]
+task.7A11C0DE16100103.title: "Bring an andesite-alloy workshop token"
+task.7A11C0DE16100029.title: "REVIEW: Two useful capabilities work and stock boundaries are clear"
+
+quest.7A11C0DE16000005.title: "&fARCHIVE AND MEMORIAL"
+quest.7A11C0DE16000005.quest_subtitle: "Leave the next witness more than your version of events."
+quest.7A11C0DE16000005.quest_desc: [
+    "&6&lLORE"
+    "&fGreybridge kept three accounts of the same night and trusted none. Elias wants five verifiable memories a later player can compare."
+    "&fMirelle insists the record must also admit what remains uncertain."
+    ""
+    "&e&lOBJECTIVE"
+    "&fUpgrade an existing archive, map room, memorial, museum, or gallery with five verifiable world facts and a place for the sixth."
+    ""
+    "&a&lSTANDARD"
+    "&fThe facts are browseable, dated or located, and include one uncertainty or correction. A solo player may audit one entry and add its source."
+]
+task.7A11C0DE16100104.title: "Bring a writable archive token"
+task.7A11C0DE16100033.title: "REVIEW: Five sourced memories and one correction are browseable"
+
+quest.7A11C0DE16000006.title: "&cTHREAT REFUGE AND READINESS"
+quest.7A11C0DE16000006.quest_subtitle: "Test the shelter before the island tests it for you."
+quest.7A11C0DE16000006.quest_desc: [
+    "&6&lLORE"
+    "&fGreybridge's refuge was large enough on paper and full enough in practice. Mirelle asks for capacity that can be counted, while Elias asks for an exit that can be found when the lamps are out."
+    ""
+    "&e&lOBJECTIVE"
+    "&fUpgrade an existing refuge, alarm point, lit retreat, or emergency station and test its capacity, supplies, and exit route."
+    ""
+    "&a&lSTANDARD"
+    "&fThe station is findable under pressure and one failure is corrected. A solo player may self-audit the route and sign the maintenance log."
+]
+task.7A11C0DE16100105.title: "Carry a readiness lantern"
+task.7A11C0DE1610003D.title: "REVIEW: Refuge capacity, exit route, and one corrected failure"
+
+quest.7A11C0DE16000007.title: "&bPUBLIC VENUE AND ARRIVAL WORKS"
+quest.7A11C0DE16000007.quest_subtitle: "Give arrivals somewhere to land, gather, and be remembered."
+quest.7A11C0DE16000007.quest_desc: [
+    "&6&lLORE"
+    "&fThe island's first public event ended at a locked door and a landing field with no safe edge."
+    "&fNessa treats arrival and gathering as one promise: people can reach it, use it, and tell what happened there."
+    ""
+    "&e&lOBJECTIVE"
+    "&fUpgrade an existing dock, hangar, vehicle depot, meeting room, stage, or event ground into one usable public arrival-and-gathering space."
+    ""
+    "&a&lSTANDARD"
+    "&fMark a safe approach, provide one useful vehicle or venue function, and host or self-audit one event/test with a recorded correction."
+]
+task.7A11C0DE16100106.title: "Bring a vehicle or venue token"
+task.7A11C0DE16100047.title: "REVIEW: Safe arrival and one usable public event/test"
+
+quest.7A11C0DE1600000B.title: "&6&lTHREE THINGS THE ISLAND KEEPS"
+quest.7A11C0DE1600000B.quest_subtitle: "Choose three upgrades. Make the choice legible."
+quest.7A11C0DE1600000B.quest_desc: [
+    "&6&lLORE"
+    "&fMirelle and Elias stop arguing when the first three works can be used without their builders present. Nessa files the result under Greybridge's missing reconciliation."
+    ""
+    "&e&lOBJECTIVE"
+    "&fComplete any three of the six public upgrades. Place one record of the finished set in the archive or public depot."
+    ""
+    "&a&lSTANDARD"
+    "&fEach chosen work is usable by a stranger and has a named route, steward, test, or correction. The team reward funds maintenance, not a technology skip."
+]

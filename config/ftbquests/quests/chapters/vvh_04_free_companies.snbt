@@ -10,74 +10,34 @@
 	id: "7A11C0DE14000000"
 	images: [
 		{
-			alpha: 80
-			height: 1.55d
+			alpha: 48
+			height: 3.8d
 			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
+			order: -40
+			rotation: -4.0d
+			width: 3.8d
+			x: -4.8d
+			y: -1.5d
 		}
 		{
-			alpha: 62
-			height: 1.55d
+			alpha: 34
+			height: 5.8d
 			image: "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "poiesis:textures/questpics/vvh/spell_translation_desk.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "poiesis:textures/questpics/vvh/mediator_hybrid_crest.png"
-			order: -30
-			rotation: -6.0d
-			width: 1.55d
-			x: 4.5d
+			order: -50
+			rotation: 0.0d
+			width: 9.0d
+			x: 0.0d
 			y: 5.0d
 		}
 		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/arcane_rune.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/affinity_ring_blood.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
+			alpha: 42
+			height: 3.2d
+			image: "poiesis:textures/questpics/vvh/spell_translation_desk.png"
+			order: -40
+			rotation: 3.0d
+			width: 3.2d
 			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "irons_spellbooks:textures/item/affinity_ring_holy.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
+			y: 4.0d
 		}
 	]
 	order_index: 4
@@ -85,6 +45,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"7A11C0DE11000004"
+			]
 			icon: {
 				id: "minecraft:filled_map"
 			}
@@ -107,56 +70,18 @@
 				}
 			]
 			x: 0
-			y: -5
+			y: -7
 		}
 		{
 			dependencies: [
 				"7A11C0DE14000001"
-			]
-			icon: {
-				id: "irons_spellbooks:arcane_essence"
-			}
-			id: "7A11C0DE1400000C"
-			min_width: 280
-			shape: "gear"
-			size: 1.15d
-			tasks: [
-				{
-					id: "7A11C0DE14100079"
-					type: "checkmark"
-				}
-			]
-			x: 5.0d
-			y: -3.2d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000001"
-			]
-			icon: {
-				id: "minecraft:lantern"
-			}
-			id: "7A11C0DE1400000D"
-			min_width: 280
-			shape: "square"
-			size: 1.15d
-			tasks: [
-				{
-					id: "7A11C0DE14100083"
-					type: "checkmark"
-				}
-			]
-			x: 0
-			y: -3.2d
-		}
-		{
-			dependencies: [
-				"7A11C0DE1400000D"
 			]
 			icon: {
 				id: "minecraft:writable_book"
 			}
 			id: "7A11C0DE14000002"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200080", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -182,26 +107,20 @@
 					id: "7A11C0DE14100015"
 					type: "checkmark"
 				}
-				{
-					id: "7A11C0DE14100017"
-					item: {
-						count: 3
-						id: "minecraft:writable_book"
-					}
-					type: "item"
-				}
 			]
 			x: 0
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
 				id: "minecraft:filled_map"
 			}
 			id: "7A11C0DE14000003"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200081", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -229,16 +148,18 @@
 				}
 			]
 			x: 0
-			y: 1.4d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
 				id: "minecraft:emerald"
 			}
 			id: "7A11C0DE14000004"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200082", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -266,16 +187,18 @@
 				}
 			]
 			x: 0
-			y: 3.8d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
 				id: "minecraft:white_bed"
 			}
 			id: "7A11C0DE14000005"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200083", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -309,14 +232,6 @@
 					type: "checkmark"
 				}
 				{
-					id: "7A11C0DE1410AA01"
-					item: {
-						count: 2
-						id: "minecraft:white_bed"
-					}
-					type: "item"
-				}
-				{
 					id: "7A11C0DE1410AA04"
 					item: {
 						count: 4
@@ -326,16 +241,18 @@
 				}
 			]
 			x: 0
-			y: 6.2d
+			y: 10.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
-				id: "minecraft:book"
+				id: "minecraft:filled_map"
 			}
 			id: "7A11C0DE14000006"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200084", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -353,7 +270,7 @@
 					id: "7A11C0DE1410003E"
 					item: {
 						count: 1
-						id: "minecraft:writable_book"
+						id: "minecraft:filled_map"
 					}
 					type: "item"
 				}
@@ -361,26 +278,20 @@
 					id: "7A11C0DE1410003D"
 					type: "checkmark"
 				}
-				{
-					id: "7A11C0DE1410AA02"
-					item: {
-						count: 3
-						id: "minecraft:writable_book"
-					}
-					type: "item"
-				}
 			]
-			x: 0
-			y: 8.6d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
-				id: "minecraft:bell"
+				id: "irons_spellbooks:arcane_essence"
 			}
 			id: "7A11C0DE14000007"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200085", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -397,8 +308,8 @@
 				{
 					id: "7A11C0DE14100048"
 					item: {
-						count: 1
-						id: "minecraft:bell"
+						count: 2
+						id: "irons_spellbooks:arcane_essence"
 					}
 					type: "item"
 				}
@@ -406,28 +317,23 @@
 					id: "7A11C0DE14100047"
 					type: "checkmark"
 				}
-				{
-					id: "7A11C0DE1410AA03"
-					item: {
-						count: 1
-						id: "minecraft:bell"
-					}
-					type: "item"
-				}
 			]
-			x: 0
-			y: 11.0d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000D"
+				"7A11C0DE14000001"
 			]
 			icon: {
 				id: "minecraft:recovery_compass"
 			}
 			id: "7A11C0DE14000008"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
+				{ id: "7A11C0DE14200086", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
 				{
 					id: "7A11C0DE14200019"
 					item: { count: 8, id: "minecraft:bread" }
@@ -451,17 +357,19 @@
 					type: "item"
 				}
 			]
-			x: 0
-			y: 13.4d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"7A11C0DE1400000C"
+				"7A11C0DE14000001"
 			]
 			icon: {
 				id: "irons_spellbooks:arcane_rune"
 			}
 			id: "7A11C0DE14000009"
+			optional: true
+			hide_dependency_lines: true
 			min_width: 280
 			rewards: [
 				{ id: "7A11C0DE14200087", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
@@ -489,238 +397,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 5.0d
-			y: 1.4d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000001"
-			]
-			icon: {
-				id: "minecraft:chest"
-			}
-			id: "7A11C0DE14000101"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A11C0DE14200101"
-					table_id: 8796023610973093892
-					team_reward: true
-					type: "choice"
-				}
-			]
-			shape: "square"
-			size: 1.25d
-			tasks: [
-				{
-					count: 2
-					consume: true
-					id: "7A11C0DE14100101"
-					item: {
-						count: 1
-						id: "minecraft:chest"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE14100102"
-					type: "checkmark"
-				}
-			]
-			x: -5.0d
-			y: -3.2d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000101"
-			]
-			icon: {
-				id: "minecraft:bell"
-			}
-			id: "7A11C0DE14000102"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A11C0DE14200102"
-					table_id: 8796023610973093892
-					team_reward: true
-					type: "choice"
-				}
-			]
-			shape: "diamond"
-			size: 1.25d
-			tasks: [
-				{
-					count: 4
-					consume: true
-					id: "7A11C0DE14100103"
-					item: {
-						count: 1
-						id: "minecraft:lantern"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE14100104"
-					type: "checkmark"
-				}
-			]
-			x: -5.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000102"
-			]
-			icon: {
-				id: "minecraft:white_bed"
-			}
-			id: "7A11C0DE14000103"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A11C0DE14200103"
-					table_id: 8796023610973093892
-					team_reward: true
-					type: "choice"
-				}
-			]
-			shape: "heart"
-			size: 1.35d
-			tasks: [
-				{
-					count: 2
-					consume: true
-					id: "7A11C0DE14100105"
-					item: {
-						count: 1
-						id: "minecraft:white_bed"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					consume: true
-					id: "7A11C0DE14100106"
-					item: {
-						count: 1
-						id: "minecraft:lantern"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE14100107"
-					type: "checkmark"
-				}
-			]
-			x: -7.5d
-			y: 1.4d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000102"
-			]
-			icon: {
-				id: "irons_spellbooks:holy_rune"
-			}
-			id: "7A11C0DE14000104"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A11C0DE14200104"
-					table_id: 8796023610973093892
-					team_reward: true
-					type: "choice"
-				}
-			]
-			shape: "octagon"
-			size: 1.25d
-			tasks: [
-				{
-					count: 1
-					consume: true
-					id: "7A11C0DE14100108"
-					item: {
-						count: 1
-						id: "irons_spellbooks:holy_rune"
-					}
-					type: "item"
-				}
-				{
-					count: 1
-					consume: true
-					id: "7A11C0DE14100109"
-					item: {
-						count: 1
-						id: "irons_spellbooks:blood_rune"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE1410010A"
-					type: "checkmark"
-				}
-			]
-			x: -5.0d
-			y: 1.4d
-		}
-		{
-			dependencies: [
-				"7A11C0DE14000102"
-			]
-			icon: {
-				id: "irons_spellbooks:arcane_essence"
-			}
-			id: "7A11C0DE14000105"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7A11C0DE14200105"
-					table_id: 8796023610973093892
-					team_reward: true
-					type: "choice"
-				}
-			]
-			shape: "gear"
-			size: 1.35d
-			tasks: [
-				{
-					count: 16
-					consume: true
-					id: "7A11C0DE1410010B"
-					item: {
-						count: 1
-						id: "minecraft:scaffolding"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					consume: true
-					id: "7A11C0DE1410010C"
-					item: {
-						count: 1
-						id: "irons_spellbooks:arcane_essence"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE1410010D"
-					type: "checkmark"
-				}
-			]
-			x: -2.5d
-			y: 1.4d
+			x: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -738,6 +416,7 @@
 				id: "minecraft:filled_map"
 			}
 			id: "7A11C0DE1400000A"
+			hide_dependency_lines: true
 			min_required_dependencies: 5
 			min_width: 280
 			rewards: [
@@ -776,6 +455,13 @@
 					team_reward: true
 					type: "choice"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "7A11C0DE1420006B"
+					table_id: 8796023610973093895
+					team_reward: true
+					type: "choice"
+				}
 			]
 			shape: "hexagon"
 			size: 2.0d
@@ -810,7 +496,7 @@
 				}
 			]
 			x: 0
-			y: 15.8d
+			y: 15.0d
 		}
 	]
 }

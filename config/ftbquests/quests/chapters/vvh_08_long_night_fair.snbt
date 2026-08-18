@@ -10,44 +10,14 @@
 	id: "7A11C0DE18000000"
 	images: [
 		{
-			alpha: 80
-			height: 1.55d
+			alpha: 30
+			height: 4.2d
 			image: "poiesis:textures/questpics/vvh/long_night_fair.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "minecraft:textures/item/firework_rocket.png"
-			order: -30
-			rotation: 8.0d
-			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "vampirism:textures/item/vampire_fang.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "vampirism:textures/item/garlic.png"
-			order: -30
-			rotation: -6.0d
-			width: 1.55d
-			x: 4.5d
-			y: 5.0d
+			order: -40
+			rotation: -4.0d
+			width: 7.2d
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	order_index: 8
@@ -82,35 +52,12 @@
 				"7A11C0DE18000001"
 			]
 			icon: {
-				id: "minecraft:crafting_table"
-			}
-			id: "7A11C0DE18000101"
-			min_width: 280
-			rewards: [
-				{ id: "7A11C0DE18220101", item: { count: 3, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE18210101", table_id: 8796023610973093892, team_reward: true, type: "choice" }
-			]
-			shape: "square"
-			size: 1.35d
-			tasks: [
-				{
-					id: "7A11C0DE18100101"
-					type: "checkmark"
-				}
-			]
-			x: 0
-			y: -2.8d
-		}
-		{
-			dependencies: [
-				"7A11C0DE18000101"
-			]
-			icon: {
 				id: "vampiresdelight:blood_wine_bottle"
 			}
 			id: "7A11C0DE18000002"
 			min_width: 280
-			rewards: [ { id: "7A11C0DE18210001", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			optional: true
+			rewards: [ { id: "7A11C0DE18210001", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "heart"
 			size: 1.2d
 			tasks: [
@@ -120,18 +67,19 @@
 				}
 			]
 			x: -6.0d
-			y: 0
+			y: -0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000101"
+				"7A11C0DE18000001"
 			]
 			icon: {
 				id: "vampirism:garlic"
 			}
 			id: "7A11C0DE18000003"
 			min_width: 280
-			rewards: [ { id: "7A11C0DE18210002", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			optional: true
+			rewards: [ { id: "7A11C0DE18210002", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
@@ -141,18 +89,19 @@
 				}
 			]
 			x: -3.6d
-			y: 1.4d
+			y: -0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000101"
+				"7A11C0DE18000001"
 			]
 			icon: {
 				id: "minecraft:emerald"
 			}
 			id: "7A11C0DE18000004"
 			min_width: 280
-			rewards: [ { id: "7A11C0DE18210003", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			optional: true
+			rewards: [ { id: "7A11C0DE18210003", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -162,18 +111,19 @@
 				}
 			]
 			x: -1.2d
-			y: 2.3d
+			y: -0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000101"
+				"7A11C0DE18000001"
 			]
 			icon: {
 				id: "createpropulsion:wing"
 			}
 			id: "7A11C0DE18000005"
 			min_width: 280
-			rewards: [ { id: "7A11C0DE18210004", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			optional: true
+			rewards: [ { id: "7A11C0DE18210004", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "gear"
 			size: 1.2d
 			tasks: [
@@ -183,11 +133,11 @@
 				}
 			]
 			x: 1.2d
-			y: 2.3d
+			y: -0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000101"
+				"7A11C0DE18000001"
 			]
 			icon: {
 				id: "minecraft:bell"
@@ -195,7 +145,7 @@
 			id: "7A11C0DE18000006"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE18210005", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE18210005", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "circle"
 			size: 1.2d
 			tasks: [
@@ -205,11 +155,11 @@
 				}
 			]
 			x: 3.6d
-			y: 1.4d
+			y: -0.6d
 		}
 		{
 			dependencies: [
-				"7A11C0DE18000101"
+				"7A11C0DE18000001"
 			]
 			icon: {
 				id: "minecraft:writable_book"
@@ -217,7 +167,7 @@
 			id: "7A11C0DE18000007"
 			min_width: 280
 			optional: true
-			rewards: [ { id: "7A11C0DE18210006", table_id: 8796023610973093892, team_reward: true, type: "choice" } ]
+			rewards: [ { id: "7A11C0DE18210006", table_id: 8796023610973093897, team_reward: true, type: "choice" } ]
 			shape: "octagon"
 			size: 1.2d
 			tasks: [
@@ -227,7 +177,7 @@
 				}
 			]
 			x: 6.0d
-			y: 0
+			y: -0.6d
 		}
 		{
 			dependencies: [
@@ -286,7 +236,7 @@
 			optional: true
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE18210102", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE18210102", table_id: 8796023610973093897, team_reward: true, type: "choice" }
 			]
 			shape: "book"
 			size: 1.35d

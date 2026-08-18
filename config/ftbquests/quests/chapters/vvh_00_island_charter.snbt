@@ -17,7 +17,7 @@
 			rotation: -9.0d
 			width: 1.55d
 			x: -5.2d
-			y: -1.2d
+			y: 1.7d
 		}
 		{
 			alpha: 62
@@ -27,7 +27,7 @@
 			rotation: 8.0d
 			width: 1.55d
 			x: 5.2d
-			y: 1.5d
+			y: 1.7d
 		}
 		{
 			alpha: 62
@@ -36,8 +36,8 @@
 			order: -30
 			rotation: 5.0d
 			width: 1.55d
-			x: -4.5d
-			y: 4.5d
+			x: 0
+			y: 1.7d
 		}
 	]
 	order_index: 0
@@ -87,7 +87,7 @@
 				}
 			]
 			x: -5.5d
-			y: -1.5d
+			y: 0
 		}
 		{
 			dependencies: [
@@ -114,8 +114,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
-			y: 1.5d
+			x: 0
+			y: 0
 		}
 		{
 			dependencies: [
@@ -196,7 +196,7 @@
 				}
 			]
 			x: 0
-			y: 3.8d
+			y: 4.5d
 		}
 	]
 }

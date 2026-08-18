@@ -46,6 +46,14 @@ exposure. The utility tables may offer player choice among building, travel,
 and spell-preparation supplies, but currency remains a separate guaranteed
 reward on substantive quests.
 
+The critical economy tables `7A11C0DEF0000005`–`7A11C0DEF000000A` are six
+additional one-choice utility caches: Blood preparation, Holy preparedness,
+neutral route work, specialty workshops, event staging, and civic maintenance.
+Each has four to six modest existing-pack item choices, `loot_size: 1`, and no
+Bevels or vertical progression skips. Table #1's former role labels are now
+honest starter supply kits; their custom names describe the kind of supplies,
+not a durable class identity or unlock.
+
 ## Route accounting
 
 The following accounting uses direct item rewards only. Personal rewards are
@@ -84,8 +92,9 @@ Bevels through a visible shared sink rather than minting more currency.
 It is a trust-based checkmark, remains gated behind the season seal, pays exactly
 one team-scoped Bevel, and has a seven-day cooldown. It does not consume Bevels.
 
-The seven Chapter 9 requisitions are team-scoped, consume Bevels, and each has a
-seven-day cooldown:
+The seven requisitions are team-scoped, consume Bevels, and each has a
+seven-day cooldown. Their nodes are placed across the integrated civic
+progression, but they share one weekly sink ledger:
 
 | Requisition | Price | Output purpose |
 |---|---:|---|

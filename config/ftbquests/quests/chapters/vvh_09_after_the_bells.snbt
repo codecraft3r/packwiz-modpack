@@ -64,103 +64,8 @@
 			x: 0
 			y: -5
 		}
-		{
-			can_repeat: true
-			dependencies: [
-				"7A11C0DE19000001"
-			]
-			icon: {
-				id: "minecraft:lantern"
-			}
-			id: "7A11C0DE19000002"
-			min_width: 280
-			optional: true
-			repeat_cooldown: 604800
-			rewards: [
-				{
-					id: "7A11C0DE19200016"
-					item: {
-						count: 16
-						id: "minecraft:lantern"
-					}
-					team_reward: true
-					type: "item"
-				}
-				{
-					id: "7A11C0DE19200017"
-					item: {
-						count: 32
-						id: "minecraft:torch"
-					}
-					team_reward: true
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.2d
-			tasks: [
-				{
-					id: "7A11C0DE19100015"
-					consume_items: true
-					item: {
-						count: 1
-						id: "numismatics:bevel"
-					}
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -1.5d
-		}
-		{
-			can_repeat: true
-			dependencies: [
-				"7A11C0DE19000001"
-			]
-			icon: {
-				id: "minecraft:rail"
-			}
-			id: "7A11C0DE19000003"
-			min_width: 280
-			optional: true
-			repeat_cooldown: 604800
-			rewards: [
-				{
-					id: "7A11C0DE19200020"
-					item: {
-						count: 32
-						id: "minecraft:rail"
-					}
-					team_reward: true
-					type: "item"
-				}
-				{
-					id: "7A11C0DE19200021"
-					item: {
-						count: 8
-						id: "minecraft:powered_rail"
-					}
-					team_reward: true
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.2d
-			tasks: [
-				{
-					id: "7A11C0DE1910001F"
-					consume_items: true
-					count: 2
-					item: {
-						count: 1
-						id: "numismatics:bevel"
-					}
-					type: "item"
-				}
-			]
-			x: -2.25d
-			y: -1.5d
-		}
+
+
 		{
 			can_repeat: true
 			dependencies: [
@@ -209,54 +114,7 @@
 			x: 0
 			y: -1.5d
 		}
-		{
-			can_repeat: true
-			dependencies: [
-				"7A11C0DE19000001"
-			]
-			icon: {
-				id: "create:super_glue"
-			}
-			id: "7A11C0DE19000005"
-			min_width: 280
-			optional: true
-			repeat_cooldown: 604800
-			rewards: [
-				{
-					id: "7A11C0DE19200034"
-					item: {
-						count: 4
-						id: "create:super_glue"
-					}
-					team_reward: true
-					type: "item"
-				}
-				{
-					id: "7A11C0DE19200035"
-					item: {
-						count: 32
-						id: "minecraft:scaffolding"
-					}
-					team_reward: true
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.2d
-			tasks: [
-				{
-					id: "7A11C0DE19100033"
-					consume_items: true
-					item: {
-						count: 1
-						id: "numismatics:bevel"
-					}
-					type: "item"
-				}
-			]
-			x: 2.25d
-			y: -1.5d
-		}
+
 		{
 			can_repeat: true
 			dependencies: [

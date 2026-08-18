@@ -35,76 +35,41 @@ class Token:
     offset: int
 
 
+TOKEN_RE = re.compile(
+    r'(?://[^\n]*|/\*.*?\*/|[\s,]+)'
+    r'|([{}\[\]:])'
+    r'|("(?:\\[\s\S]|[^"\\])*"|\'(?:\\[\s\S]|[^\'\\])*\')'
+    r'|([^ \t\r\n{}\[\]:,/]+|/(?![/*]))',
+    re.DOTALL
+)
+
+
 class Tokenizer:
     def __init__(self, text: str, source: str) -> None:
-        self.text = text
         self.source = source
-        self.i = 0
-        self.n = len(text)
-
-    def _skip(self) -> None:
-        while self.i < self.n:
-            if self.text[self.i].isspace() or self.text[self.i] == ',':
-                self.i += 1
-                continue
-            if self.text.startswith("//", self.i):
-                j = self.text.find("\n", self.i + 2)
-                self.i = self.n if j < 0 else j + 1
-                continue
-            if self.text.startswith("/*", self.i):
-                j = self.text.find("*/", self.i + 2)
-                if j < 0:
-                    raise SNBTError(f"{self.source}: unterminated block comment at {self.i}")
-                self.i = j + 2
-                continue
-            break
+        self.tokens: list[Token] = []
+        for match in TOKEN_RE.finditer(text):
+            if match.group(1):
+                self.tokens.append(Token(match.group(1), match.group(1), match.start(1)))
+            elif match.group(2):
+                raw = match.group(2)
+                if raw.startswith('"'):
+                    try:
+                        val = json.loads(raw)
+                    except json.JSONDecodeError as exc:
+                        raise SNBTError(f"{self.source}: bad quoted string at {match.start(2)}: {exc}") from exc
+                else:
+                    val = raw[1:-1].replace("\\'", "'").replace("\\\\", "\\")
+                self.tokens.append(Token("STRING", val, match.start(2)))
+            elif match.group(3):
+                self.tokens.append(Token("BARE", match.group(3), match.start(3)))
+        self.tokens.append(Token("EOF", "", len(text)))
+        self.idx = 0
 
     def next(self) -> Token:
-        self._skip()
-        if self.i >= self.n:
-            return Token("EOF", "", self.i)
-        start = self.i
-        c = self.text[self.i]
-        if c in "{}[]:":
-            self.i += 1
-            return Token(c, c, start)
-        if c in '"\'':
-            quote = c
-            self.i += 1
-            escaped = False
-            while self.i < self.n:
-                ch = self.text[self.i]
-                if escaped:
-                    escaped = False
-                    self.i += 1
-                    continue
-                if ch == "\\":
-                    escaped = True
-                    self.i += 1
-                    continue
-                if ch == quote:
-                    self.i += 1
-                    raw = self.text[start:self.i]
-                    if quote == '"':
-                        try:
-                            return Token("STRING", json.loads(raw), start)
-                        except json.JSONDecodeError as exc:
-                            raise SNBTError(f"{self.source}: bad quoted string at {start}: {exc}") from exc
-                    # Single-quoted strings are uncommon here; decode minimal escapes.
-                    body = raw[1:-1].replace("\\'", "'").replace("\\\\", "\\")
-                    return Token("STRING", body, start)
-                self.i += 1
-            raise SNBTError(f"{self.source}: unterminated string at {start}")
-        while self.i < self.n:
-            ch = self.text[self.i]
-            if ch.isspace() or ch in "{}[]:,":
-                break
-            if self.text.startswith("//", self.i) or self.text.startswith("/*", self.i):
-                break
-            self.i += 1
-        if self.i == start:
-            raise SNBTError(f"{self.source}: unexpected character {c!r} at {start}")
-        return Token("BARE", self.text[start:self.i], start)
+        tok = self.tokens[self.idx]
+        self.idx += 1
+        return tok
 
 
 class Parser:
@@ -226,7 +191,7 @@ def load_jar_entries(index_root: Path) -> set[str]:
     if not index_root.exists():
         return entries
     for path in index_root.glob("*.entries.txt"):
-        entries.update(line.strip() for line in path.read_text(encoding="utf-8", errors="replace").splitlines() if line.strip())
+        entries.update(path.read_text(encoding="utf-8", errors="replace").split())
     return entries
 
 
@@ -326,8 +291,8 @@ def minimum_completion_set(target: str, quests: dict[str, dict[str, Any]]) -> fr
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("root", type=Path)
-    ap.add_argument("--jar-index", type=Path, required=True)
+    ap.add_argument("root", type=Path, nargs="?", default=Path("."))
+    ap.add_argument("--jar-index", type=Path, default=None)
     ap.add_argument(
         "--asset-root",
         type=Path,
@@ -341,11 +306,38 @@ def main() -> int:
         action="store_true",
         help="Fail when any VvH quest hides itself until its dependencies are complete.",
     )
+    ap.add_argument("--json", action="store_true", help="Print full JSON report to stdout")
     args = ap.parse_args()
     root = args.root.resolve()
     source_root = root
+
+    jar_index = args.jar_index
+    if jar_index is None:
+        candidates = [
+            root / "tmp/release-discovery/jar-index",
+            root / "tmp/current-discovery/jar-index",
+            root / "tmp/jar-index",
+        ]
+        for c in candidates:
+            if c.exists():
+                jar_index = c
+                break
+        if jar_index is None:
+            jar_index = candidates[0]
+
     asset_roots = [path.resolve() for path in args.asset_root]
-    report_path = args.report or (root / "docs/vvh/evidence/static-validation.json")
+    if not asset_roots:
+        default_art = root / "tmp/poiesis-art-v5"
+        if default_art.exists():
+            asset_roots.append(default_art.resolve())
+
+    if args.report is None:
+        report_path = root / "docs/vvh/evidence/static-validation.json"
+    elif args.report.is_absolute():
+        report_path = args.report
+    else:
+        report_path = root / args.report
+    report_path = report_path.resolve()
     report_path.parent.mkdir(parents=True, exist_ok=True)
     audit = Audit()
 
@@ -463,6 +455,17 @@ def main() -> int:
     for missing in sorted(set(vvh_quests) - reachable):
         audit.error(f"Unreachable quest {missing} {vvh_quests[missing].get('title')}")
     audit.metrics["root_quests"] = sorted(roots)
+    # The integrated campaign has one onboarding root.  Founder quests are
+    # intentionally downstream of the charter/invitation junction; multiple
+    # roots make the advertised opening sequence misleading and let players
+    # skip the shared contract.
+    expected_root_title = "OPEN THE ISLAND CHARTER"
+    if len(roots) != 1 or next(iter(roots), None) is None or vvh_quests.get(next(iter(roots), ""), {}).get("title") != expected_root_title:
+        audit.error(
+            "VvH must have exactly one onboarding root named OPEN THE ISLAND CHARTER; "
+            f"found {len(roots)} roots: {sorted(roots)}"
+        )
+    audit.metrics["expected_single_onboarding_root"] = expected_root_title
 
     # Translation coverage.
     lang_path = quest_root / "lang/en_us.snbt"
@@ -508,7 +511,7 @@ def main() -> int:
     audit.metrics["long_description_lines"] = len(long_lines)
 
     # Exact item, advancement and image resolution.
-    entries = load_jar_entries(args.jar_index.resolve())
+    entries = load_jar_entries(jar_index.resolve())
     item_ids: set[str] = set()
     advancement_ids: set[str] = set()
     image_refs: set[str] = set()
@@ -540,6 +543,20 @@ def main() -> int:
                     item_ids.add(item_ref)
             if r.get("item_data"):
                 item_ids.add(r["item_data"]["id"])
+    # Include native reward-table files directly; critical-pass tables may not
+    # be present in a derived manifest until the integration owner syncs it.
+    for path, doc in parsed.items():
+        if "reward_tables" not in path.parts or not isinstance(doc, dict):
+            continue
+        for r in doc.get("rewards", []):
+            if not isinstance(r, dict):
+                continue
+            raw_item = r.get("item")
+            item_ref = raw_item.get("id") if isinstance(raw_item, dict) else raw_item
+            if item_ref:
+                item_ids.add(item_ref)
+            if isinstance(r.get("item_data"), dict) and r["item_data"].get("id"):
+                item_ids.add(r["item_data"]["id"])
     for item in sorted(item_ids):
         if not resolve_item(item, entries, source_root):
             audit.error(f"Unresolved item/icon ID: {item}")
@@ -562,25 +579,22 @@ def main() -> int:
         "VvH 02 · House of Night": {
             "items": {"irons_spellbooks:blood_rune", "irons_spellbooks:bloody_vellum"},
             "images": {
-                "irons_spellbooks:textures/item/blood_rune.png",
-                "irons_spellbooks:textures/item/blood_staff.png",
-                "irons_spellbooks:textures/item/blood_vial.png",
+                "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
+                "poiesis:textures/questpics/vvh/blood_school_crest.png",
             },
         },
         "VvH 03 · Lantern Order": {
             "items": {"irons_spellbooks:holy_rune"},
             "images": {
-                "irons_spellbooks:textures/item/holy_rune.png",
-                "irons_spellbooks:textures/item/priest_chestplate.png",
-                "irons_spellbooks:textures/item/upgrade_orb_holy.png",
+                "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
+                "poiesis:textures/questpics/vvh/holy_public_ward.png",
             },
         },
         "VvH 04 · Free Companies": {
             "items": {"irons_spellbooks:arcane_essence", "irons_spellbooks:arcane_rune"},
             "images": {
-                "irons_spellbooks:textures/item/arcane_rune.png",
-                "irons_spellbooks:textures/item/affinity_ring_blood.png",
-                "irons_spellbooks:textures/item/affinity_ring_holy.png",
+                "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
+                "poiesis:textures/questpics/vvh/spell_translation_desk.png",
             },
         },
     }
@@ -682,6 +696,51 @@ def main() -> int:
         if table_id:
             choice_tables.setdefault(table_id, table)
     table_ids = set(choice_tables)
+
+    # Critical-pass choice tables are native files even before their derived
+    # manifest/localization integration lands. Keep this check against the
+    # shipped SNBT so a stale manifest cannot hide malformed or missing tables.
+    critical_tables = {
+        "7A11C0DEF0000005": "Blood",
+        "7A11C0DEF0000006": "Holy",
+        "7A11C0DEF0000007": "Neutral",
+        "7A11C0DEF0000008": "Specialty",
+        "7A11C0DEF0000009": "Event",
+        "7A11C0DEF000000A": "Civic",
+    }
+    forbidden_choice_terms = ("spellbook", "upgrade orb", "boss", "netherite", "diamond armor", "faction level")
+    critical_table_metrics: dict[str, dict[str, Any]] = {}
+    for table_id, label in critical_tables.items():
+        table = choice_tables.get(table_id)
+        if table is None:
+            audit.error(f"Missing critical economy choice table {table_id} ({label})")
+            continue
+        rewards = table.get("rewards", [])
+        if int(table.get("loot_size", 0) or 0) != 1:
+            audit.error(f"Critical choice table {table_id} must use loot_size: 1")
+        if not 4 <= len(rewards) <= 6:
+            audit.error(f"Critical choice table {table_id} must contain 4-6 choices, found {len(rewards)}")
+        for reward in rewards:
+            raw_item = reward.get("item") if isinstance(reward, dict) else None
+            item = raw_item.get("id") if isinstance(raw_item, dict) else raw_item
+            if not item and isinstance(reward, dict) and isinstance(reward.get("item_data"), dict):
+                item = reward["item_data"].get("id")
+            if item == "numismatics:bevel":
+                audit.error(f"Critical choice table {table_id} contains a Bevel entry")
+            # Ignore the namespace when screening prohibited rewards: valid
+            # Iron's Spells materials intentionally use the
+            # ``irons_spellbooks`` namespace. Screen only authored copy and
+            # component payloads, plus the terminal item path itself.
+            text = json.dumps(
+                {k: v for k, v in reward.items() if k not in {"item", "item_data"}},
+                ensure_ascii=False,
+            ).lower()
+            if isinstance(item, str):
+                text += " " + item.split(":", 1)[-1].lower()
+            if any(term in text for term in forbidden_choice_terms):
+                audit.error(f"Critical choice table {table_id} contains forbidden power-skip copy/item")
+        critical_table_metrics[table_id] = {"title": label, "choices": len(rewards), "loot_size": table.get("loot_size")}
+    audit.metrics["critical_choice_tables"] = critical_table_metrics
 
     # Collect manifest choices plus the native chapter choices. This catches
     # refs present in the real pack even when campaign_manifest.json predates
@@ -900,64 +959,177 @@ def main() -> int:
     if audit.metrics["weekly_fallback_team_bevels"] >= repeatable_weekly_prices and repeatable_weekly_prices:
         audit.error("The weekly fallback can self-fund the full requisition board")
 
-    # Reward policy: chapters 1-4 substantive objectives get personal Bevels;
-    # chapter 5 specialties get two; capstones use two team Bevels.  The later
-    # civic/event chapters intentionally retain utility-only ordinary nodes.
-    def is_lane_or_intro(title: str) -> bool:
-        upper = title.upper()
-        markers = (
-            "OPEN THE ISLAND CHARTER", "READ THE THREE INVITATIONS", "FOUND THE ",
-            "PROGRESSION LANE", "WORLD-BUILDING LANE", "THE WORK EACH HAND KNOWS",
-            "THE ISLAND REMEMBERS", "RIVALRY WITHOUT RUIN", "CALL THE LONG NIGHT FAIR",
-            "AFTER THE BELLS",
-        )
-        return any(marker in upper for marker in markers)
-
+    # Reward policy uses stable IDs rather than player-facing titles. Titles are
+    # deliberately shortened during layout passes and must not silently change
+    # economy classification.
     policy_failures: list[str] = []
     utility_only_ids = {
         "7A11C0DE12010101", "7A11C0DE12010102", "7A11C0DE12010103",
         "7A11C0DE13000101", "7A11C0DE13000102", "7A11C0DE13000103",
-        "7A11C0DE12000007", "7A11C0DE13000008", "7A11C0DE14000008",
+        "7A11C0DE12000007", "7A11C0DE13000008",
         "7A11C0DE14000001", "7A11C0DE14000101", "7A11C0DE14000102",
         "7A11C0DE14000103", "7A11C0DE14000104", "7A11C0DE14000105",
         "7A11C0DE15000101", "7A11C0DE15000102",
     }
-    capstone_titles = {
-        "CHARTER THE HOUSE OF NIGHT", "CHARTER THE LANTERN ORDER", "CHARTER THE FREE COMPANY",
-        "THREE HANDS' WORTH", "THREE THINGS THE ISLAND KEEPS", "ARCHIVE A RIVALRY NIGHT",
+    personal_expected: dict[str, int] = {
+        **{qid: 1 for qid in (
+            "7A11C0DE11000002", "7A11C0DE11000003", "7A11C0DE11000004", "7A11C0DE11000006",
+            "7A11C0DE12000002", "7A11C0DE12000003", "7A11C0DE12000004", "7A11C0DE12000005",
+            "7A11C0DE12000006", "7A11C0DE12000008", "7A11C0DE12000009",
+            "7A11C0DE13000002", "7A11C0DE13000003", "7A11C0DE13000004", "7A11C0DE13000005",
+            "7A11C0DE13000006", "7A11C0DE13000007", "7A11C0DE13000009",
+            "7A11C0DE14000002", "7A11C0DE14000003", "7A11C0DE14000004", "7A11C0DE14000005",
+            "7A11C0DE14000006", "7A11C0DE14000007", "7A11C0DE14000008", "7A11C0DE14000009",
+            "7A11C0DE15000001", "7A11C0DE16000001", "7A11C0DE18000001",
+        )},
+        **{f"7A11C0DE1500000{suffix}": 2 for suffix in "23456789"},
+        "7A11C0DE18000009": 3,
     }
-    personal_expected: dict[str, int] = {}
+    team_capstone_expected = {
+        "7A11C0DE11000005": 2,
+        "7A11C0DE1200000A": 2,
+        "7A11C0DE1300000A": 2,
+        "7A11C0DE1400000A": 2,
+        "7A11C0DE1500000A": 2,
+        "7A11C0DE1600000B": 2,
+        "7A11C0DE17000009": 2,
+    }
     team_capstone_ids: list[str] = []
-    for ch_index, chapter in enumerate(manifest.get("chapters", [])):
-        for q in chapter.get("quests", []):
-            qid, title = q.get("id", ""), q.get("title", "")
-            upper = title.upper()
-            direct = direct_bevel_quests.get(qid, 0)
-            if qid in utility_only_ids:
-                if direct:
-                    policy_failures.append(f"{qid} {title}: utility-only depth quest must not mint Bevels")
-                if not q.get("rewards"):
-                    policy_failures.append(f"{qid} {title}: utility-only depth quest needs a utility reward")
-            elif qid == "7A11C0DE11000006":
-                if direct < 2 or not any(direct_bevel_count(r) and r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
-                    policy_failures.append(f"{qid} {title}: invitation capstone needs 2 team Bevels")
-            elif title.upper() in capstone_titles:
-                if direct < 2 or not any(direct_bevel_count(r) and r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
-                    policy_failures.append(f"{qid} {title}: capstone needs at least 2 team Bevels")
-                team_capstone_ids.append(qid)
-            elif ch_index == 5 and not is_lane_or_intro(title) and not q.get("can_repeat"):
-                personal_expected[qid] = 2
-                if direct < 2 or not any(direct_bevel_count(r) and not r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
-                    policy_failures.append(f"{qid} {title}: Chapter 5 specialty needs 2 personal Bevels")
-            elif 1 <= ch_index <= 4 and not is_lane_or_intro(title) and not q.get("can_repeat"):
-                personal_expected[qid] = 1
-                if direct < 1 or not any(direct_bevel_count(r) and not r.get("team_reward") for r in q.get("rewards", []) if isinstance(r, dict)):
-                    policy_failures.append(f"{qid} {title}: substantive progression needs a personal Bevel")
+    for qid in utility_only_ids:
+        q = vvh_quests.get(qid)
+        if q is None:
+            continue
+        direct = direct_bevel_quests.get(qid, 0)
+        if direct:
+            policy_failures.append(f"{qid} {q.get('title')}: utility-only depth quest must not mint Bevels")
+        if not q.get("rewards"):
+            policy_failures.append(f"{qid} {q.get('title')}: utility-only depth quest needs a utility reward")
+    for qid, expected in personal_expected.items():
+        q = vvh_quests.get(qid)
+        if q is None:
+            policy_failures.append(f"{qid}: required personal Bevel quest is missing")
+            continue
+        personal = sum(
+            direct_bevel_count(r)
+            for r in q.get("rewards", [])
+            if isinstance(r, dict) and not r.get("team_reward")
+        )
+        if personal != expected:
+            policy_failures.append(f"{qid} {q.get('title')}: expected {expected} personal Bevels, found {personal}")
+    for qid, expected in team_capstone_expected.items():
+        q = vvh_quests.get(qid)
+        if q is None:
+            policy_failures.append(f"{qid}: required team capstone is missing")
+            continue
+        team = sum(
+            direct_bevel_count(r)
+            for r in q.get("rewards", [])
+            if isinstance(r, dict) and r.get("team_reward")
+        )
+        if team != expected:
+            policy_failures.append(f"{qid} {q.get('title')}: expected {expected} team Bevels, found {team}")
+        team_capstone_ids.append(qid)
     for failure in policy_failures:
         audit.error(failure)
     audit.metrics["bevel_policy_failures"] = policy_failures
     audit.metrics["bevel_personal_quest_count"] = len(personal_expected)
     audit.metrics["bevel_team_capstone_quest_count"] = len(team_capstone_ids)
+
+    # Critical-pass graph contract uses stable IDs; titles are free to become
+    # concise enough for the graph without weakening validation.
+    gate_requirements = {
+        "CHARTER THE HOUSE OF NIGHT": ("7A11C0DE1200000A", 5, 8),
+        "CHARTER THE LANTERN ORDER": ("7A11C0DE1300000A", 5, 8),
+        "CHARTER THE FREE COMPANY": ("7A11C0DE1400000A", 5, 8),
+        "THREE HANDS' WORTH": ("7A11C0DE1500000A", 3, 8),
+        "THREE THINGS THE ISLAND KEEPS": ("7A11C0DE1600000B", 3, 6),
+        "SEAL SEASON ONE": ("7A11C0DE18000009", 3, 6),
+    }
+    faction_lane_contract = {
+        "7A11C0DE1200000A": {
+            "world": {"7A11C0DE12000002", "7A11C0DE12000004", "7A11C0DE12000006", "7A11C0DE12000007"},
+            "progression": {"7A11C0DE12000003", "7A11C0DE12000005", "7A11C0DE12000008", "7A11C0DE12000009"},
+        },
+        "7A11C0DE1300000A": {
+            "world": {"7A11C0DE13000002", "7A11C0DE13000004", "7A11C0DE13000007", "7A11C0DE13000008"},
+            "progression": {"7A11C0DE13000003", "7A11C0DE13000005", "7A11C0DE13000006", "7A11C0DE13000009"},
+        },
+        "7A11C0DE1400000A": {
+            "world": {"7A11C0DE14000002", "7A11C0DE14000003", "7A11C0DE14000004", "7A11C0DE14000005"},
+            "progression": {"7A11C0DE14000006", "7A11C0DE14000007", "7A11C0DE14000008", "7A11C0DE14000009"},
+        },
+    }
+    gate_metrics: dict[str, dict[str, Any]] = {}
+    for title, (qid, minimum, dependency_count) in gate_requirements.items():
+        quest = vvh_quests.get(qid)
+        if quest is None:
+            audit.error(f"Required breadth gate is missing: {title}")
+            continue
+        deps = list(quest.get("dependencies", []))
+        actual_min = int(quest.get("min_required_dependencies", 0) or 0)
+        gate_metrics[title] = {"minimum": actual_min, "dependencies": len(deps)}
+        if actual_min != minimum or len(deps) != dependency_count:
+            audit.error(
+                f"{title} must be any {minimum} of {dependency_count}; "
+                f"found any {actual_min} of {len(deps)}"
+            )
+        if title != "SEAL SEASON ONE" and any(not vvh_quests.get(dep, {}).get("optional") for dep in deps):
+            audit.error(f"{title} has an alternative branch without optional: true")
+        if title == "SEAL SEASON ONE" and any(not vvh_quests.get(dep, {}).get("optional") for dep in deps):
+            audit.error(f"{title} has a fair branch without optional: true")
+        if qid in faction_lane_contract:
+            contract = faction_lane_contract[qid]
+            progression = len(set(deps) & contract["progression"])
+            world = len(set(deps) & contract["world"])
+            gate_metrics[title].update({"progression_dependencies": progression, "world_dependencies": world})
+            if progression != 4 or world != 4 or set(deps) != contract["progression"] | contract["world"]:
+                audit.error(
+                    f"{title} must include exactly four progression and four world-building branches; "
+                    f"found {progression} progression and {world} world"
+                )
+    audit.metrics["breadth_gate_contract"] = gate_metrics
+
+    # Lane labels are orientation nodes, not empty placeholders. Duplicate
+    # same-item tasks in a single quest are also a common accidental double
+    # charge when a build review and donation task are merged.
+    empty_lane_labels: list[str] = []
+    duplicate_item_tasks: list[str] = []
+    aeronaut_mismatches: list[str] = []
+    false_bevel_copy: list[str] = []
+    false_phrases = ("does not mint", "only spends them", "grants no item")
+    for qid, quest in vvh_quests.items():
+        title = str(quest.get("title", ""))
+        if "LANE" in title.upper() and not quest.get("tasks"):
+            empty_lane_labels.append(qid)
+        seen_items: set[str] = set()
+        for task in quest.get("tasks", []):
+            raw_item = task.get("item")
+            item = raw_item.get("id") if isinstance(raw_item, dict) else raw_item
+            if item and item in seen_items:
+                duplicate_item_tasks.append(f"{qid} {title}: {item}")
+            if item:
+                seen_items.add(item)
+        desc_text = " ".join(str(line) for line in quest.get("description", []))
+        if "AERONAUT" in title.upper() and "OPTIONAL" in desc_text.upper():
+            for task in quest.get("tasks", []):
+                raw_item = task.get("item")
+                item = raw_item.get("id") if isinstance(raw_item, dict) else raw_item
+                if item == "createpropulsion:wing" and not task.get("optional"):
+                    aeronaut_mismatches.append(f"{qid}: copy says wing optional but task is mandatory")
+        if direct_bevel_quests.get(qid, 0) and any(phrase in desc_text.lower() for phrase in false_phrases):
+            false_bevel_copy.append(f"{qid} {title}")
+    for qid in empty_lane_labels:
+        audit.error(f"Lane-label quest has no task: {qid}")
+    for issue in duplicate_item_tasks:
+        audit.error(f"Quest has duplicate same-item tasks: {issue}")
+    for issue in aeronaut_mismatches:
+        audit.error(f"AERONAUT copy/task mismatch: {issue}")
+    for issue in false_bevel_copy:
+        audit.error(f"Bevel-reward quest contains stale economy copy: {issue}")
+    audit.metrics["empty_lane_labels"] = empty_lane_labels
+    audit.metrics["duplicate_item_tasks"] = duplicate_item_tasks
+    audit.metrics["aeronaut_copy_task_mismatches"] = aeronaut_mismatches
+    audit.metrics["false_bevel_economy_copy"] = false_bevel_copy
 
     # Layout collision and line-crossing heuristics, chapter by chapter.
     layout_issues: list[str] = []
@@ -1108,7 +1280,24 @@ def main() -> int:
         ],
     }
     report_path.write_text(json.dumps(report, indent=2, sort_keys=True), encoding="utf-8")
-    print(json.dumps(report, indent=2, sort_keys=True))
+    if args.json:
+        print(json.dumps(report, indent=2, sort_keys=True))
+    else:
+        status_str = "PASS" if not audit.errors else "FAIL"
+        print(f"[{status_str}] VvH Validation: {audit.metrics.get('vvh_quests', 0)} quests in {audit.metrics.get('vvh_chapters', 0)} chapters")
+        print(f"  * Economy: {audit.metrics.get('minimum_intended_path_personal_bevels', 0)} normal / {audit.metrics.get('completionist_one_time_personal_bevels', 0)} completionist personal Bevels | {audit.metrics.get('normal_route_team_bevels', 0)} normal / {audit.metrics.get('all_branches_one_time_team_bevels', 0)} all-branches team Bevels")
+        print(f"  * Global FTB IDs: {audit.metrics.get('global_ftb_ids', 0)} | Localization keys: {audit.metrics.get('localization_keys_required', 0)}")
+        print(f"  * Errors: {len(audit.errors)} | Warnings: {len(audit.warnings)}")
+        if audit.errors:
+            print("\nErrors:")
+            for err in audit.errors[:10]:
+                print(f"  [X] {err}")
+            if len(audit.errors) > 10:
+                print(f"  ... and {len(audit.errors) - 10} more (see {report_path.relative_to(root)})")
+        if audit.warnings:
+            for warn in audit.warnings:
+                print(f"  [!] {warn}")
+        print(f"Full report saved to {report_path.relative_to(root)}")
     return 0 if not audit.errors else 1
 
 

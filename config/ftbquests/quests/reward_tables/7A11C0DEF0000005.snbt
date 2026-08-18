@@ -1,0 +1,13 @@
+{
+	id: "7A11C0DEF0000005"
+	loot_size: 1
+	order_index: 13
+	use_title: true
+	rewards: [
+		{ id: "7A11C0DEF0050001", item: { count: 2, id: "vampirism:blood_bottle" } }
+		{ id: "7A11C0DEF0050002", item: { count: 1, id: "vampirism:vampire_fang" } }
+		{ id: "7A11C0DEF0050003", item: { count: 1, id: "irons_spellbooks:blood_rune" } }
+		{ id: "7A11C0DEF0050004", item: { count: 2, id: "irons_spellbooks:bloody_vellum" } }
+		{ id: "7A11C0DEF0050005", item: { count: 2, id: "minecraft:glass_bottle" } }
+	]
+}

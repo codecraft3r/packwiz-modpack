@@ -10,14 +10,14 @@
 	id: "7A11C0DE16000000"
 	images: [
 		{
-			alpha: 80
-			height: 1.55d
+			alpha: 28
+			height: 3.8d
 			image: "poiesis:textures/questpics/vvh/island_remembers.png"
-			order: -30
-			rotation: -9.0d
-			width: 1.55d
-			x: -5.2d
-			y: -1.2d
+			order: -40
+			rotation: -2.0d
+			width: 3.8d
+			x: 0
+			y: -2.8d
 		}
 		{
 			alpha: 62
@@ -26,18 +26,8 @@
 			order: -30
 			rotation: 8.0d
 			width: 1.55d
-			x: 5.2d
-			y: 1.5d
-		}
-		{
-			alpha: 62
-			height: 1.55d
-			image: "minecraft:textures/item/writable_book.png"
-			order: -30
-			rotation: 5.0d
-			width: 1.55d
-			x: -4.5d
-			y: 4.5d
+			x: -9.0d
+			y: 5.0d
 		}
 		{
 			alpha: 62
@@ -46,7 +36,7 @@
 			order: -30
 			rotation: -6.0d
 			width: 1.55d
-			x: 4.5d
+			x: 9.0d
 			y: 5.0d
 		}
 	]
@@ -86,37 +76,21 @@
 			}
 			id: "7A11C0DE16000002"
 			min_width: 280
+			optional: true
 			rewards: [
-				{ id: "7A11C0DE16210001", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE16210001", table_id: 8796023610973093898, team_reward: true, type: "choice" }
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
 				{
-					id: "7A11C0DE16100015"
-					type: "checkmark"
+					consume_items: false
+					id: "7A11C0DE16100101"
+					item: { count: 1, id: "minecraft:rail" }
+					type: "item"
 				}
-			]
-			x: -8.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE16000001"
-			]
-			icon: {
-				id: "minecraft:emerald"
-			}
-			id: "7A11C0DE16000003"
-			min_width: 280
-			rewards: [
-				{ id: "7A11C0DE16210002", table_id: 8796023610973093892, team_reward: true, type: "choice" }
-			]
-			shape: "square"
-			size: 1.2d
-			tasks: [
 				{
-					id: "7A11C0DE1610001F"
+					id: "7A11C0DE16100015"
 					type: "checkmark"
 				}
 			]
@@ -128,18 +102,25 @@
 				"7A11C0DE16000001"
 			]
 			icon: {
-				id: "create:mechanical_press"
+				id: "minecraft:emerald"
 			}
-			id: "7A11C0DE16000004"
+			id: "7A11C0DE16000003"
 			min_width: 280
+			optional: true
 			rewards: [
-				{ id: "7A11C0DE16210003", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE16210002", table_id: 8796023610973093898, team_reward: true, type: "choice" }
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.2d
 			tasks: [
 				{
-					id: "7A11C0DE16100029"
+					consume_items: false
+					id: "7A11C0DE16100102"
+					item: { count: 1, id: "minecraft:emerald" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE1610001F"
 					type: "checkmark"
 				}
 			]
@@ -151,22 +132,59 @@
 				"7A11C0DE16000001"
 			]
 			icon: {
+				id: "create:mechanical_press"
+			}
+			id: "7A11C0DE16000004"
+			min_width: 280
+			optional: true
+			rewards: [
+				{ id: "7A11C0DE16210003", table_id: 8796023610973093898, team_reward: true, type: "choice" }
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C0DE16100103"
+					item: { count: 1, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE16100029"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7A11C0DE16000001"
+			]
+			icon: {
 				id: "minecraft:lectern"
 			}
 			id: "7A11C0DE16000005"
 			min_width: 280
+			optional: true
 			rewards: [
-				{ id: "7A11C0DE16210008", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE16210008", table_id: 8796023610973093898, team_reward: true, type: "choice" }
 			]
 			shape: "hexagon"
 			size: 1.2d
 			tasks: [
 				{
+					consume_items: false
+					id: "7A11C0DE16100104"
+					item: { count: 1, id: "minecraft:writable_book" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE16100033"
 					type: "checkmark"
 				}
 			]
-			x: -2.0d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -180,17 +198,23 @@
 			min_width: 280
 			optional: true
 			rewards: [
-				{ id: "7A11C0DE16210004", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE16210004", table_id: 8796023610973093898, team_reward: true, type: "choice" }
 			]
 			shape: "heart"
 			size: 1.2d
 			tasks: [
 				{
+					consume_items: false
+					id: "7A11C0DE16100105"
+					item: { count: 1, id: "minecraft:lantern" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE1610003D"
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
+			x: 4.0d
 			y: 1.0d
 		}
 		{
@@ -204,65 +228,23 @@
 			min_width: 280
 			optional: true
 			rewards: [
-				{ id: "7A11C0DE16210005", table_id: 8796023610973093892, team_reward: true, type: "choice" }
+				{ id: "7A11C0DE16210005", table_id: 8796023610973093898, team_reward: true, type: "choice" }
 			]
 			shape: "diamond"
 			size: 1.2d
 			tasks: [
 				{
+					consume_items: false
+					id: "7A11C0DE16100106"
+					item: { count: 1, id: "createpropulsion:wing" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE16100047"
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE16000001"
-			]
-			icon: {
-				id: "minecraft:iron_door"
-			}
-			id: "7A11C0DE16000008"
-			min_width: 280
-			optional: true
-			rewards: [
-				{ id: "7A11C0DE16210006", table_id: 8796023610973093892, team_reward: true, type: "choice" }
-			]
-			shape: "square"
-			size: 1.2d
-			tasks: [
-				{
-					id: "7A11C0DE16100051"
-					type: "checkmark"
-				}
-			]
 			x: 6.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE16000001"
-			]
-			icon: {
-				id: "minecraft:bell"
-			}
-			id: "7A11C0DE16000009"
-			min_width: 280
-			optional: true
-			rewards: [
-				{ id: "7A11C0DE16210007", table_id: 8796023610973093892, team_reward: true, type: "choice" }
-			]
-			shape: "octagon"
-			size: 1.2d
-			tasks: [
-				{
-					id: "7A11C0DE1610005B"
-					type: "checkmark"
-				}
-			]
-			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -273,8 +255,6 @@
 				"7A11C0DE16000005"
 				"7A11C0DE16000006"
 				"7A11C0DE16000007"
-				"7A11C0DE16000008"
-				"7A11C0DE16000009"
 			]
 			hide_until_deps_complete: false
 			icon: {

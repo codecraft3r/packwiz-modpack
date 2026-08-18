@@ -1,0 +1,162 @@
+# Critical Chapter 2 localization fragment.
+# Merge these keys into config/ftbquests/quests/lang/en_us.snbt in the release pass.
+
+quest.7A11C0DE12000001.quest_desc: [
+	"&4&lLORE — THE HOUSE THAT MUST ANSWER"
+	"&fMirelle Voss still keeps the Greybridge truce in her throat. She failed to shelter people then; Nessa Quill carried the surviving guest list out by hand."
+	"&fMirelle cannot say whether the failure was cowardice, a false instruction, or a door she thought was safe. She can say what the next House will do."
+	""
+	"&eOBJECTIVE&f Choose the House of Night as your foundation after accepting the Crimson Invitation."
+	"&7BUILD STANDARD&f Name the headquarters. Record whether its guest rule begins with anonymous shelter or a named ledger."
+	"&fThe choice changes the House's first promise, not anyone's access to magic."
+]
+quest.7A11C0DE12000001.quest_subtitle: "A faction foundation with a promise Mirelle can keep."
+quest.7A11C0DE12000001.title: "&4&lFOUND THE HOUSE"
+task.7A11C0DE1210000B.title: "Accept the Crimson Invitation and become a vampire"
+task.7A11C0DE1210000C.title: "REVIEW: Record the House's first guest promise"
+
+quest.7A11C0DE12000002.quest_desc: [
+	"&a&lLORE — SLEEP WITHOUT EXPLANATION"
+	"&fNessa's list names people who needed a door, not a sermon. Give the House a room where a guest can sleep, put things down, and find the way out in the dark."
+	""
+	"&eOBJECTIVE&f Build the common coffin room."
+	"&7BUILD STANDARD&f Provide a usable guest space, labelled storage, and an obvious lit exit."
+]
+quest.7A11C0DE12000002.quest_subtitle: "World Build · a quiet room is a civic service."
+quest.7A11C0DE12000002.title: "&a&lWORLD BUILD · COMMON ROOM"
+
+quest.7A11C0DE12000003.quest_desc: [
+	"&e&lLORE — THE ALTAR IS A DESK"
+	"&fBlood practice begins with a place to prepare carefully. Mirelle wants the first altar kept where another person can ask what is being done before it is done."
+	""
+	"&eOBJECTIVE&f Place an Altar of Inspiration and demonstrate one safe preparation."
+	"&7BUILD STANDARD&f The altar is accessible, labelled, and not hidden inside a private combat room."
+]
+quest.7A11C0DE12000003.quest_subtitle: "Progression · prepare before power."
+quest.7A11C0DE12000003.title: "&e&lPROGRESSION · SET THE ALTAR"
+task.7A11C0DE1210001F.title: "Show an Altar of Inspiration"
+task.7A11C0DE12100020.title: "REVIEW: The first preparation is safe and explainable"
+
+quest.7A11C0DE12000004.quest_desc: [
+	"&a&lLORE — STOCK THAT DOES NOT SPOIL"
+	"&fThe pantry is the House's one hospitality work: blood bottles, glass, and a label that tells a late arrival what may be used. It is a store of trust, not a cooking assignment."
+	""
+	"&eOBJECTIVE&f Stock the Blood pantry."
+	"&7BUILD STANDARD&f Keep emergency bottles visible, labelled, and available to the shared refuge."
+]
+quest.7A11C0DE12000004.quest_subtitle: "World Build · one hospitality stockroom, clearly kept."
+quest.7A11C0DE12000004.title: "&a&lWORLD BUILD · BLOOD PANTRY"
+
+quest.7A11C0DE12000005.quest_desc: [
+	"&e&lLORE — THE CAULDRON AND THE QUESTION"
+	"&fNessa's list has gaps where preparation happened too quickly. The House answers with a workstation that can be inspected, taught, and stopped before hunger turns a lesson into a debt."
+	""
+	"&eOBJECTIVE&f Place an Alchemical Cauldron and demonstrate one controlled preparation."
+	"&7BUILD STANDARD&f Store its materials safely and let another player explain what the preparation is for."
+]
+quest.7A11C0DE12000005.quest_subtitle: "Progression · controlled preparation, not a kitchen lane."
+quest.7A11C0DE12000005.title: "&e&lPROGRESSION · PREPARE THE CAULDRON"
+task.7A11C0DE12100033.title: "Show an Alchemical Cauldron"
+task.7A11C0DE12100034.title: "REVIEW: A controlled preparation is stored and teachable"
+
+quest.7A11C0DE12000006.quest_desc: [
+	"&a&lLORE — A DARK ROAD IS STILL A ROAD"
+	"&fThe guest list records where people stopped being visible. Lanterns do not solve that history, but a marked night route gives the next traveller a chance to be found."
+	""
+	"&eOBJECTIVE&f Mark and light a safe route to the House."
+	"&7BUILD STANDARD&f The route has readable markers, a rest point, and enough lighting to follow home."
+]
+quest.7A11C0DE12000006.quest_subtitle: "World Build · make night travel legible."
+quest.7A11C0DE12000006.title: "&a&lWORLD BUILD · MARK THE NIGHT ROAD"
+
+quest.7A11C0DE12000007.quest_desc: [
+	"&a&lLORE — THE LANTERN LEFT ON"
+	"&fMirelle's old instructions ended at the threshold. Keep one light burning beyond it, with a spare place for someone who arrives late and does not know the House's manners yet."
+	""
+	"&eOBJECTIVE&f Establish the House's public refuge lighting."
+	"&7BUILD STANDARD&f Light the approach and guest area; leave a small, labelled emergency supply."
+]
+quest.7A11C0DE12000007.quest_subtitle: "World Build · a welcome that can be seen."
+quest.7A11C0DE12000007.title: "&a&lWORLD BUILD · LEAVE THE LIGHT ON"
+
+quest.7A11C0DE12000008.quest_desc: [
+	"&e&lLORE — IMMORTALITY STILL MOVES SUPPLIES"
+	"&fA refuge fails quietly when bottles, tools, and messages cannot reach it. Give the House one Create service that moves something useful and can be understood by the next pair of hands."
+	""
+	"&eOBJECTIVE&f Demonstrate a Mechanical Press in a shared logistics line."
+	"&7BUILD STANDARD&f The line serves a House function such as storage, route loading, or public workshop supply."
+]
+quest.7A11C0DE12000008.quest_subtitle: "Progression · move the work, not just the machine."
+quest.7A11C0DE12000008.title: "&e&lPROGRESSION · MOVE THE NIGHT STOCK"
+task.7A11C0DE12100051.title: "Show a Mechanical Press"
+task.7A11C0DE12100052.title: "REVIEW: Create logistics serve a shared House function"
+
+quest.7A11C0DE12000009.quest_desc: [
+	"&e&lLORE — INHERITANCE IS NOT INSTRUCTION"
+	"&fA Blood Rune and Bloody Vellum can preserve a method, but neither can tell a new practitioner when to stop. Keep the first focus small, labelled, and teachable."
+	""
+	"&eOBJECTIVE&f Prepare a Blood Rune and Bloody Vellum as the House's introductory school focus."
+	"&7BUILD STANDARD&f Store the focus safely and explain one controlled, non-escalating use to another player."
+]
+quest.7A11C0DE12000009.quest_subtitle: "Progression · give Blood magic a careful vocabulary."
+quest.7A11C0DE12000009.title: "&e&lPROGRESSION · INSCRIBE BLOOD"
+task.7A11C0DE1210005B.title: "Show a Blood Rune"
+task.7A11C0DE1210005C.title: "Show Bloody Vellum"
+task.7A11C0DE1210005D.title: "REVIEW: A Blood focus is stored and explainable"
+
+quest.7A11C0DE1200000A.quest_desc: [
+	"&4&lLORE — A HOUSE WITH OBLIGATIONS"
+	"&fMirelle will not call five works a repair of Greybridge. She will call them a place where the next decision can be made in public."
+	"&fNessa's surviving list stays beside the maintenance rota, so the House remembers who was welcomed and who was missed."
+	""
+	"&eOBJECTIVE&f Complete any 5 of the 8 works, including at least one progression work and one world-building work."
+	"&7BUILD STANDARD&f Name the headquarters and record one maintenance owner or rotation."
+	""
+	"&6CONSEQUENCE&f Choose whether the first shared rule is anonymous shelter or a named guest ledger; the optional House depth arc follows that decision."
+]
+quest.7A11C0DE1200000A.quest_subtitle: "Any 5 of 8 works, with both capability and place represented."
+quest.7A11C0DE1200000A.title: "&4&lCHARTER THE HOUSE"
+task.7A11C0DE12100065.title: "Complete 5 of 8 House works"
+task.7A11C0DE12100066.title: "Name the headquarters and maintenance rotation"
+
+quest.7A11C0DE12010101.quest_desc: [
+	"&4&lLORE — A ROOM THAT ANSWERS"
+	"&fNessa's list names people who needed a door, not a sermon. Improve the shared refuge so a guest can sleep, put things down, and find the way out after sunset."
+	""
+	"&eOBJECTIVE&f Improve the House refuge with a visible entrance, guest space, labelled emergency storage, and clear lighting."
+	"&7BUILD STANDARD&f The space is public, usable, and safe without requiring faction allegiance."
+	"&6DECISION&f Keep the supplies anonymous or add the first named guest to Nessa's surviving list. The choice changes the House's record, not the guest's access."
+]
+quest.7A11C0DE12010101.quest_subtitle: "Optional world work · make the refuge answer."
+quest.7A11C0DE12010101.title: "&4&lOPTIONAL · OPEN THE REFUGE"
+task.7A11C0DE12110101.title: "REVIEW: Public refuge, guest space, supplies, and safe lighting"
+reward.7A11C0DE12210101.title: "Choose One House Utility"
+
+quest.7A11C0DE12010102.quest_desc: [
+	"&4&lLORE — THE HOUSE RULE IN RED INK"
+	"&fMirelle knows a rule can protect a guest—or protect the steward from admitting uncertainty."
+	"&fWrite one rule that permits shelter without allegiance, and one inheritance question the House still cannot answer."
+	""
+	"&eOBJECTIVE&f Place a book at the House archive or lectern and record both lines."
+	"&7BUILD STANDARD&f The rule is readable and the unanswered question remains open rather than being presented as settled history."
+]
+quest.7A11C0DE12010102.quest_subtitle: "Optional side work · etiquette as a promise, not a chain."
+quest.7A11C0DE12010102.title: "&4&lOPTIONAL · WRITE THE HOUSE RULE"
+task.7A11C0DE12110102.title: "Carry a Book for the House Archive"
+task.7A11C0DE12110103.title: "REVIEW: Guest rule and inheritance question recorded"
+reward.7A11C0DE12210102.title: "Choose One House Utility"
+
+quest.7A11C0DE12010103.quest_desc: [
+	"&4&lLORE — THE UNCLAIMED CUP"
+	"&fThe first welcome after Greybridge is deliberately small. Blood is treated as memory and responsibility, not a badge."
+	"&fNessa's list is evidence of people carried through danger, not a claim on those who come next."
+	""
+	"&eOBJECTIVE&f Prepare a Blood Bottle and host a bloodless welcome for a guest who is not required to be a vampire or Blood-school user."
+	"&7BUILD STANDARD&f Show the shelter, the exit, and the supplies that may be used without a promise of allegiance."
+	"&6CONSEQUENCE&f Mirelle must choose whether to record the guest by name or preserve their anonymity. Honour the choice in the House ledger."
+]
+quest.7A11C0DE12010103.quest_subtitle: "Optional consequence · Blood-aligned hospitality with room for another school."
+quest.7A11C0DE12010103.title: "&4&lOPTIONAL · SERVE THE CUP"
+task.7A11C0DE12110104.title: "Show a Blood Bottle"
+task.7A11C0DE12110105.title: "REVIEW: Bloodless welcome offers shelter, exit, and no obligation"
+reward.7A11C0DE12210103.title: "Choose One House Utility"

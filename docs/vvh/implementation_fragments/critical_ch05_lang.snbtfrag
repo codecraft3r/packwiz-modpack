@@ -1,0 +1,100 @@
+// Critical Chapter 5 localization. Keep the visible graph titles short; the detail belongs in the three labeled lines.
+quest.7A11C0DE15000001.quest_desc: [
+  "&6Lore:&f After Greybridge, Nessa needs a machine understood after its builder leaves. Mirelle needs a ritual that does not rely on one keeper.",
+  "&fElias needs a ledger that says who can safely use what.",
+  "&fChoose any three specialty projects. The other five remain open choices, not a hidden eight-quest checklist.",
+  "&fStandard:&7 Work may be solo or shared. Record your own result and failure, or have another player demonstrate the service."
+]
+quest.7A11C0DE15000001.quest_subtitle: "Choose any three specialties"
+quest.7A11C0DE15000001.title: "&6&lWORK TOGETHER"
+
+quest.7A11C0DE15000002.quest_desc: [
+  "&6Lore:&f Nessa's Greybridge press jammed because nobody marked the order of operations. She wants a small service another person can restart without guessing.",
+  "&fObjective:&7 Present 4 Create Andesite Alloys, then demonstrate or solo-test one repeatable machine service and record its result.",
+  "&fStandard:&7 Another player may repeat the service; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000002.quest_subtitle: "Service · make a machine teachable"
+quest.7A11C0DE15000002.title: "&6ENGINEER"
+
+quest.7A11C0DE15000003.quest_desc: [
+  "&6Lore:&f Mirelle Voss translated a Greybridge ward from memory and reversed one line. The ward held, but it held the wrong doorway. She needs a method with a visible first step.",
+  "&fObjective:&7 Present 4 Arcane Essences, then demonstrate or solo-test one repeatable spell-preparation step and record its result.",
+  "&fStandard:&7 A partner may reproduce the step; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000003.quest_subtitle: "Service · make one spell step teachable"
+quest.7A11C0DE15000003.title: "&dARCANIST"
+
+quest.7A11C0DE15000004.quest_desc: [
+  "&6Lore:&f Elias Rook once called a night guest by the wrong title at Greybridge. The insult became a security problem.",
+  "&fHe now asks for one clear sign that tells strangers what a threshold means.",
+  "&fObjective:&7 Present 1 Vampire Fang, then demonstrate or solo-test one Blood or faction-facing procedure and record its result.",
+  "&fStandard:&7 Another player may follow the procedure; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000004.quest_subtitle: "Service · translate one night custom"
+quest.7A11C0DE15000004.title: "&4NIGHT SPECIALIST"
+
+quest.7A11C0DE15000005.quest_desc: [
+  "&6Lore:&f Nessa's Greybridge courier arrived with a working vehicle and no safe place to land. The first useful aeronautics contribution is a visible, low-tier landing site.",
+  "&fObjective:&7 Present 16 Scaffolding, then demonstrate or solo-test a safe vehicle-site procedure and record its result.",
+  "&fStandard:&7 Another player may inspect the test; solo players sign the result or failure. Players who want the later Wing project may pursue it elsewhere, but it is not required here."
+]
+quest.7A11C0DE15000005.quest_subtitle: "Service · make a landing site usable"
+quest.7A11C0DE15000005.title: "&bAERONAUT"
+
+quest.7A11C0DE15000006.quest_desc: [
+  "&6Lore:&f Mirelle Voss rang the Greybridge bell once for welcome and once for alarm. Nobody had written down which was which. She asks for a signal that two sides can read the same way.",
+  "&fObjective:&7 Present 1 Bell, then demonstrate or solo-test one public signal or mediation procedure and record its result.",
+  "&fStandard:&7 Another player may answer the signal; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000006.quest_subtitle: "Service · make one signal legible"
+quest.7A11C0DE15000006.title: "&aDIPLOMAT"
+
+quest.7A11C0DE15000007.quest_desc: [
+  "&6Lore:&f Elias Rook's Greybridge relief crate held food, torches, and no label. The right supplies reached the wrong hands. He asks for a field kit that can be checked at a glance.",
+  "&fObjective:&7 Present 2 Barrels, then demonstrate or solo-test one labelled public kit and record its result.",
+  "&fStandard:&7 Another player may use the kit; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000007.quest_subtitle: "Service · stock one field kit"
+quest.7A11C0DE15000007.title: "&eQUARTERMASTER"
+
+quest.7A11C0DE15000008.quest_desc: [
+  "&6Lore:&f Nessa's Greybridge map showed the destination and omitted the dangerous bridge. A route is only useful when the next person can survive following it.",
+  "&fObjective:&7 Present 1 Filled Map, then demonstrate or solo-test one route with its hazard and result recorded.",
+  "&fStandard:&7 Another player may follow the route; solo players sign the test with the observed result or failure."
+]
+quest.7A11C0DE15000008.quest_subtitle: "Service · publish one survivable route"
+quest.7A11C0DE15000008.title: "&aPATHFINDER"
+
+quest.7A11C0DE15000009.quest_desc: [
+  "&6Lore:&f Mirelle Voss remembers Greybridge's failure differently from Elias Rook, and both accounts leave out the moment the plan broke. The archive needs the gap, not a polished legend.",
+  "&fObjective:&7 Present 1 Writable Book, then demonstrate or solo-test one archive procedure and record the result or failure.",
+  "&fStandard:&7 Another player may review the record; solo players sign their own record and name what failed."
+]
+quest.7A11C0DE15000009.quest_subtitle: "Service · preserve one useful failure"
+quest.7A11C0DE15000009.title: "&fARCHIVIST"
+
+quest.7A11C0DE1500000A.quest_desc: [
+  "&6Lore:&f Three different crafts kept Greybridge from collapsing completely. Close the gate after any three are proven, then let the rest remain invitations rather than obligations.",
+  "&fObjective:&7 Complete any 3 of the 8 specialties, then review what the settlement can now do.",
+  "&fStandard:&7 A solo player may document the review; a team may have another player verify it."
+]
+quest.7A11C0DE1500000A.quest_subtitle: "Any three specialties unlock the handoff"
+quest.7A11C0DE1500000A.title: "&6&lTHREE HANDS"
+
+quest.7A11C0DE15000101.quest_desc: [
+  "&6Lore:&f A craft becomes communal only when its next operator can find the instructions and the first honest failure. Leave one key in the settlement after the three-hands review.",
+  "&fObjective:&7 Place 1 Writable Book containing the method, its result, and one failure or maintenance warning.",
+  "&fStandard:&7 Another player may sign the handoff; solo players sign it themselves and name the next test."
+]
+quest.7A11C0DE15000101.quest_subtitle: "Post-capstone handoff · leave one method ready"
+quest.7A11C0DE15000101.title: "&fPASS THE KEY"
+
+reward.7A11C0DE15210001.title: "Choose an Engineer Supply"
+reward.7A11C0DE15210002.title: "Choose an Arcanist Supply"
+reward.7A11C0DE15210003.title: "Choose a Quartermaster Supply"
+reward.7A11C0DE15210004.title: "Choose a Pathfinder Supply"
+reward.7A11C0DE15210005.title: "Choose an Archivist Supply"
+reward.7A11C0DE15210006.title: "Choose a Night Specialist Supply"
+reward.7A11C0DE15210007.title: "Choose an Aeronaut Supply"
+reward.7A11C0DE15210008.title: "Choose a Diplomat Supply"
+reward.7A11C0DE15210101.title: "Choose a Handoff Supply"

@@ -1,0 +1,94 @@
+# Critical Chapter 7–8 localization replacement fragment.
+# Merge these keys into the live language file during the integration pass.
+
+chapter.7A11C0DE17000000.title: "VvH 07 · Rivalry Without Ruin"
+quest.7A11C0DE17000001.title: "&d&lRIVALRY NIGHT"
+quest.7A11C0DE17000001.quest_subtitle: "Prepare the rules, then choose any two harmless formats."
+quest.7A11C0DE17000001.quest_desc: ["{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}" "&d&lLORE" "&fGreybridge broke during a public demonstration. Mirelle Voss remembers the bell as a warning; Elias Rook remembers it as permission. Nessa Quill filed both statements under the same date." "" "&e&lOBJECTIVE" "&fPublish a venue, participants, stop time, cleanup owner, and two formats that everyone can decline without penalty." "" "&a&lEVENT STANDARD" "&fUse reversible props, visible boundaries, and a written result. The ordinary path is two noncombat events; the skirmish is a separate, runtime-unverified option."]
+task.7A11C0DE17100001.title: "Publish the Rivalry Rules"
+
+quest.7A11C0DE17000002.title: "&dPROPAGANDA"
+quest.7A11C0DE17000002.quest_subtitle: "Make a reversible accusation that can survive daylight."
+quest.7A11C0DE17000002.quest_desc: ["&d&lLORE" "&fMirelle's copy of the Greybridge notice says: ‘Ring once, then wait.’ Elias's margin says the second ring saved them. The contradiction becomes a banner, not a verdict." "" "&e&lOBJECTIVE" "&fCreate one reversible poster, banner, exhibit, or museum label that quotes or paraphrases one side of the bell story." "" "&a&lEVENT STANDARD" "&fFor a group, both sides display a piece. For a solo audit, place one display beside a signed note naming the source and its removal time. Do not place it in another player's claim without permission."]
+task.7A11C0DE17100015.title: "Display One Reversible Bell Account"
+
+quest.7A11C0DE17000003.title: "&eWARD TEST"
+quest.7A11C0DE17000003.quest_subtitle: "Demonstrate protection without making a person the target."
+quest.7A11C0DE17000003.quest_desc: ["&e&lLORE" "&fElias remembers the demonstration failing because the ward was explained after it flashed. The Lantern Order insists the explanation is part of the ward." "" "&e&lOBJECTIVE" "&fStage a Blood-versus-Holy utility demonstration, route briefing, or support-station test against an environmental target or dummy space." "" "&a&lEVENT STANDARD" "&fFor a group, at least three people can judge or attend. For a solo audit, record the setup, expected result, observed result, and one safe adjustment. No unwilling target, combat spell, or faction change is required."]
+task.7A11C0DE1710001F.title: "Record a Safe Ward Test"
+
+quest.7A11C0DE17000004.title: "&aCLUE COURSE"
+quest.7A11C0DE17000004.quest_subtitle: "Leave a trail that teaches something when it ends."
+quest.7A11C0DE17000004.quest_desc: ["&a&lLORE" "&fNessa Quill found three copies of the same route with three different final bells. She kept the maps because the walk mattered more than the answer." "" "&e&lOBJECTIVE" "&fPlace a short clue course ending at a public project, harmless trophy, or location reveal, then remove or archive every clue." "" "&a&lEVENT STANDARD" "&fFor a group, participants solve the route. For a solo audit, run it against your own recorded time and one failure note. The final record names what was learned and where the clues went."]
+task.7A11C0DE17100029.title: "Run and Archive a Clue Course"
+
+quest.7A11C0DE17000005.title: "&bCOURIER RUN"
+quest.7A11C0DE17000005.quest_subtitle: "Publish the route before anyone starts moving."
+quest.7A11C0DE17000005.quest_desc: ["&b&lLORE" "&fThe old courier ledger has two arrival times for the same Greybridge crate. One is written in ink; the other is corrected in charcoal after the bell." "" "&e&lOBJECTIVE" "&fPublish a start, finish, allowed transport, route, and safety rule for a foot, rail, boat, glider, or vehicle run." "" "&a&lEVENT STANDARD" "&fFor a group, record the route and a visible finish. For a solo audit, run it twice, record the times and one failure/recovery, and leave the route usable for the next courier."]
+task.7A11C0DE17100033.title: "Publish and Run a Safe Courier Route"
+
+quest.7A11C0DE17000006.title: "&6MARKET TEST"
+quest.7A11C0DE17000006.quest_subtitle: "Measure a service without inventing a transaction."
+quest.7A11C0DE17000006.quest_desc: ["&6&lLORE" "&fNessa's archive calls the first Greybridge market a truce. Elias calls it a queue. Mirelle calls it the only hour nobody asked which side rang the bell." "" "&e&lOBJECTIVE" "&fSet a time window and procurement or service benchmark: gather a real bundle, fill a shortage, or complete a useful delivery." "" "&a&lEVENT STANDARD" "&fFor a group, publish the result and the terms. For a solo audit, record the target, inputs, elapsed time, and actual output. No fake trades, duplicated goods, or currency loop."]
+task.7A11C0DE1710003D.title: "Publish a Market Benchmark"
+
+quest.7A11C0DE17000007.title: "&fBUILD RUBRIC"
+quest.7A11C0DE17000007.quest_subtitle: "Judge a small object by a stated rule, not by power."
+quest.7A11C0DE17000007.quest_desc: ["&f&lLORE" "&fThe bell fragment is still displayed beside a half-built arch. Nessa wrote: ‘A structure can be wrong and still be honest if its maker leaves the measurements.’" "" "&e&lOBJECTIVE" "&fPresent a mascot, one-chunk build, ceremonial object, or public display with a three-line rubric: readable, reversible, and useful or memorable." "" "&a&lEVENT STANDARD" "&fFor a group, invite judges or independent categories. For a solo audit, sign your own score against the rubric and record one change you would make. Keep the object only with its owner's consent."]
+task.7A11C0DE17100047.title: "Submit a Rubric-Judged Build"
+
+quest.7A11C0DE17000008.title: "&cSANCTIONED SKIRMISH"
+quest.7A11C0DE17000008.quest_subtitle: "Optional hosted PvP; two safe formats first."
+quest.7A11C0DE17000008.quest_desc: ["&c&lLORE" "&fThe Greybridge demonstration did not end because anyone won. It ended because the crowd could not tell who had agreed to be in danger." "" "&e&lOBJECTIVE" "&fOnly after two noncombat formats, schedule a fully opt-in skirmish with a roster, loadout ceiling, arena, spectator protection, backup, stop command, and restoration owner." "" "&a&lEVENT STANDARD" "&fThis node is runtime unverified and must remain unused until controls are tested. Completion means a safe end and agreed restoration—not kills, victory, or faction power."]
+task.7A11C0DE17100051.title: "Confirm Consent, Backup, and Safe End"
+
+quest.7A11C0DE17000009.title: "&d&lARCHIVE THE NIGHT"
+quest.7A11C0DE17000009.quest_subtitle: "After any two safe formats, leave a useful record."
+quest.7A11C0DE17000009.quest_desc: ["&d&lLORE" "&fNessa Quill never corrected Mirelle or Elias. She placed both bell accounts in the same folder and left a blank page for the next witness." "" "&e&lOBJECTIVE" "&fArchive two event results, the cleanup status, one concrete moment, and one unresolved question or change for next time." "" "&a&lEVENT STANDARD" "&fUse a book, signs, map wall, or archive chest that a late player can find. The archive is reachable without the skirmish; no PvP result is required."]
+task.7A11C0DE1710005B.title: "Archive Two Results and One Open Question"
+
+chapter.7A11C0DE18000000.title: "VvH 08 · The Long Night Fair"
+quest.7A11C0DE18000001.title: "&6&lCALL THE FAIR"
+quest.7A11C0DE18000001.quest_subtitle: "Set one place, one time, and one unresolved history on the table."
+quest.7A11C0DE18000001.quest_desc: ["&6&lLORE" "&fGreybridge's truce collapsed during a public demonstration. Mirelle Voss and Elias Rook still describe the same bell differently; Nessa Quill archived both versions." "" "&e&lOBJECTIVE" "&fChoose a venue, post the invitation, name hosts and cleanup owners, and display the bell fragment, demonstration ledger, route map, or two witness notes without pretending the contradiction is solved." "" "&a&lEVENT STANDARD" "&fThe preferred fair has visitors and shared stations. A solo preparation audit may use a staged venue, signed hosting plan, and NPC-facing invitation. The six contributions are alternatives; any three complete the fair."]
+task.7A11C0DE18100001.title: "Post the Fair Plan and Evidence"
+
+quest.7A11C0DE18000002.title: "&4HOUSE HOSPITALITY"
+quest.7A11C0DE18000002.quest_subtitle: "Give the night a table without asking for allegiance."
+quest.7A11C0DE18000002.quest_desc: ["&4&lLORE" "&fMirelle's host book lists a bloodless toast beside the bell fragment: ‘We remember differently; sit anyway.’" "" "&e&lOBJECTIVE" "&fHost a Vampire's Delight table, night-route tour, ritual study, archive reading, or aesthetic exhibit." "" "&a&lEVENT STANDARD" "&fFor the fair, guests participate safely and leave with one remembered detail. For a solo audit, stage the table or exhibit, sign the guest protocol, and record the intended audience or NPC visitor."]
+task.7A11C0DE18100015.title: "Stage Hospitality and a Guest Record"
+
+quest.7A11C0DE18000003.title: "&bLANTERN SERVICE"
+quest.7A11C0DE18000003.quest_subtitle: "Explain a danger before it becomes a spectacle."
+quest.7A11C0DE18000003.quest_desc: ["&b&lLORE" "&fElias's margin note says the bell was safe only after somebody explained the exit. The Lantern Order turns that note into a public ward lesson." "" "&e&lOBJECTIVE" "&fHost a safety demonstration, route briefing, rescue drill, countermeasure museum, or support station." "" "&a&lEVENT STANDARD" "&fFor the fair, visitors can practice or learn without being targets. For a solo audit, stage the display against the environment and sign a test log with expected and observed results."]
+task.7A11C0DE1810001F.title: "Run a Public Safety Demonstration"
+
+quest.7A11C0DE18000004.title: "&aFREE COMPANY MARKET"
+quest.7A11C0DE18000004.quest_subtitle: "Make one neutral service actually useful."
+quest.7A11C0DE18000004.quest_desc: ["&a&lLORE" "&fNessa's archive calls the first neutral desk a place where both bell accounts could be delivered without changing hands." "" "&e&lOBJECTIVE" "&fOperate a market, contract desk, courier service, map desk, guesthouse, mediation table, or event logistics station." "" "&a&lEVENT STANDARD" "&fFor the fair, publish terms and complete one real interaction. For a solo audit, post the terms, complete a documented service or route test, and leave the desk ready for a visitor."]
+task.7A11C0DE18100029.title: "Operate One Neutral Service"
+
+quest.7A11C0DE18000005.title: "&6ENGINEERING EXHIBITION"
+quest.7A11C0DE18000005.quest_subtitle: "Let one machine explain itself before it moves."
+quest.7A11C0DE18000005.quest_desc: ["&6&lLORE" "&fThe demonstration ledger has a missing line where the bell should have been tested. The workshop fills that gap with an operator, a spectator line, and a failure note." "" "&e&lOBJECTIVE" "&fDemonstrate a Create system, vehicle, dock, rail feature, workshop, or controlled engineering test." "" "&a&lEVENT STANDARD" "&fFor the fair, explain the system and run it once with marked zones. For a solo audit, stage the display, run the test, and sign the expected result, observed result, and repair hook."]
+task.7A11C0DE18100033.title: "Run a Controlled Machine Demonstration"
+
+quest.7A11C0DE18000006.title: "&ePUBLIC SHOWCASE"
+quest.7A11C0DE18000006.quest_subtitle: "Give visitors a reason to participate."
+quest.7A11C0DE18000006.quest_desc: ["&e&lLORE" "&fA witness remembered the bell by the sound of the crowd afterward. The fair keeps that human detail: a game, ceremony, music cue, or guided tour that ends with someone taking part." "" "&e&lOBJECTIVE" "&fRun a performance, mini-game, ceremony, award, speech, guided tour, or other shared activity." "" "&a&lEVENT STANDARD" "&fFor the fair, announce how to join and show a visible ending. For a solo audit, stage the activity, write the joining instructions, and record a test run or NPC audience response."]
+task.7A11C0DE1810003D.title: "Run a Participatory Showcase"
+
+quest.7A11C0DE18000007.title: "&fARCHIVE THE SEASON"
+quest.7A11C0DE18000007.quest_subtitle: "Preserve five facts and leave one door open."
+quest.7A11C0DE18000007.quest_desc: ["&f&lLORE" "&fThe archive does not choose between Mirelle and Elias. It preserves the bell fragment, both witness notes, the demonstration ledger, and the route that led people home." "" "&e&lOBJECTIVE" "&fPreserve five concrete season facts, images, maps, quotes, results, or failures and identify one unfinished hook." "" "&a&lEVENT STANDARD" "&fFor the fair, make the record browseable for a late player. For a solo audit, sign and file the five entries in a durable archive with a clearly marked next page."]
+task.7A11C0DE18100047.title: "File Five Season Facts"
+
+quest.7A11C0DE18000009.title: "&6&lSEAL SEASON ONE"
+quest.7A11C0DE18000009.quest_subtitle: "Complete any three contributions, then name what remains unresolved."
+quest.7A11C0DE18000009.quest_desc: ["&6&lLORE" "&fAt the fair's last bell, Mirelle and Elias still disagree. Nessa's blank page is not an invitation to invent a clean answer; it is a promise that the next season may examine the evidence." "" "&e&lOBJECTIVE" "&fComplete any three fair contributions and record one unresolved pressure or ambition that players genuinely want to continue." "" "&a&lEVENT STANDARD" "&fThe preferred capstone is a real public gathering. A solo seal audit must point to three staged contribution records and one signed sequel hook; it does not pretend a crowd attended."]
+task.7A11C0DE1810005B.title: "Seal the Fair and Leave a Future Hook"
+
+quest.7A11C0DE18000102.title: "&fARCHIVE AFTERMATH"
+quest.7A11C0DE18000102.quest_subtitle: "Put the final record somewhere the next season can find it."
+quest.7A11C0DE18000102.quest_desc: ["&f&lLORE" "&fNessa's final note leaves the two bell accounts side by side. The fair is over; the disagreement is now part of the island's usable history." "" "&e&lOBJECTIVE" "&fPlace the fair record and one genuine future hook in the public archive, then leave a writable page or clearly marked place for the next entry." "" "&a&lEVENT STANDARD" "&fFor a group, announce where the record lives. For a solo audit, verify that a new player can find and understand it without an oral briefing."]
+task.7A11C0DE18100102.title: "File the Fair's Final Record"

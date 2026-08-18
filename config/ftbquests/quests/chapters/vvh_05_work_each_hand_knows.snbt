@@ -13,40 +13,40 @@
 			alpha: 80
 			height: 1.55d
 			image: "minecraft:textures/item/writable_book.png"
-			order: -30
+			order: -40
 			rotation: -9.0d
 			width: 1.55d
-			x: -5.2d
-			y: -1.2d
+			x: -11.0d
+			y: -3.0d
 		}
 		{
 			alpha: 62
 			height: 1.55d
 			image: "vampirism:textures/item/vampire_fang.png"
-			order: -30
+			order: -39
 			rotation: 8.0d
 			width: 1.55d
-			x: 5.2d
-			y: 1.5d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			alpha: 62
 			height: 1.55d
 			image: "minecraft:textures/item/filled_map.png"
-			order: -30
+			order: -38
 			rotation: 5.0d
 			width: 1.55d
-			x: -4.5d
-			y: 4.5d
+			x: -11.0d
+			y: 5.0d
 		}
 		{
 			alpha: 62
 			height: 1.55d
 			image: "minecraft:textures/item/writable_book.png"
-			order: -30
+			order: -37
 			rotation: -6.0d
 			width: 1.55d
-			x: 4.5d
+			x: 11.0d
 			y: 5.0d
 		}
 	]
@@ -88,10 +88,11 @@
 				id: "create:mechanical_press"
 			}
 			id: "7A11C0DE15000002"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220001", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210001", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210001", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "gear"
 			size: 1.2d
@@ -121,10 +122,11 @@
 				id: "irons_spellbooks:arcane_essence"
 			}
 			id: "7A11C0DE15000003"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220002", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210002", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210002", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "hexagon"
 			size: 1.2d
@@ -154,10 +156,11 @@
 				id: "vampirism:vampire_fang"
 			}
 			id: "7A11C0DE15000004"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220006", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210006", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210006", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "heart"
 			size: 1.2d
@@ -183,13 +186,14 @@
 				"7A11C0DE15000001"
 			]
 			icon: {
-				id: "createpropulsion:wing"
+				id: "minecraft:scaffolding"
 			}
 			id: "7A11C0DE15000005"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220007", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210007", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210007", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "diamond"
 			size: 1.2d
@@ -201,8 +205,8 @@
 				{
 					id: "7A11C0DE15100034"
 					item: {
-						count: 1
-						id: "createpropulsion:wing"
+						count: 16
+						id: "minecraft:scaffolding"
 					}
 					type: "item"
 				}
@@ -218,10 +222,11 @@
 				id: "minecraft:bell"
 			}
 			id: "7A11C0DE15000006"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220008", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210008", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210008", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "square"
 			size: 1.2d
@@ -250,10 +255,11 @@
 				id: "minecraft:lantern"
 			}
 			id: "7A11C0DE15000007"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220003", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210003", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210003", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "circle"
 			size: 1.2d
@@ -270,22 +276,6 @@
 					}
 					type: "item"
 				}
-				{
-					id: "7A11C0DE15100049"
-					item: {
-						count: 16
-						id: "minecraft:bread"
-					}
-					type: "item"
-				}
-				{
-					id: "7A11C0DE1510004A"
-					item: {
-						count: 32
-						id: "minecraft:torch"
-					}
-					type: "item"
-				}
 			]
 			x: 3.6d
 			y: 0
@@ -298,10 +288,11 @@
 				id: "naturescompass:naturescompass"
 			}
 			id: "7A11C0DE15000008"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220004", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210004", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210004", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "diamond"
 			size: 1.2d
@@ -330,10 +321,11 @@
 				id: "minecraft:writable_book"
 			}
 			id: "7A11C0DE15000009"
+			optional: true
 			min_width: 280
 				rewards: [
 				{ id: "7A11C0DE15220005", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
-				{ id: "7A11C0DE15210005", table_id: 8796023610973093892, team_reward: false, type: "choice" }
+				{ id: "7A11C0DE15210005", table_id: 8796023610973093896, team_reward: false, type: "choice" }
 			]
 			shape: "square"
 			size: 1.2d
@@ -349,14 +341,6 @@
 				{
 					id: "7A11C0DE1510005B"
 					type: "checkmark"
-				}
-				{
-					id: "7A11C0DE1510AA01"
-					item: {
-						count: 1
-						id: "minecraft:writable_book"
-					}
-					type: "item"
 				}
 			]
 			x: 8.4d
@@ -405,40 +389,15 @@
 			dependencies: [
 				"7A11C0DE1500000A"
 			]
-			hide_until_deps_complete: false
 			icon: {
-				id: "minecraft:lectern"
+				id: "minecraft:barrel"
 			}
 			id: "7A11C0DE15000101"
 			optional: true
 			min_width: 280
 			rewards: [
-				{ id: "7A11C0DE15210101", table_id: 8796023610973093892, team_reward: true, type: "choice" }
-			]
-			shape: "book"
-			size: 1.35d
-			tasks: [
 				{
-					id: "7A11C0DE15100101"
-					type: "checkmark"
-				}
-			]
-			x: 0
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"7A11C0DE15000101"
-			]
-			icon: {
-				id: "minecraft:barrel"
-			}
-			id: "7A11C0DE15000102"
-			optional: true
-			min_width: 280
-			rewards: [
-				{
-					id: "7A11C0DE15210102"
+					id: "7A11C0DE15210101"
 					item: {
 						count: 32
 						id: "minecraft:scaffolding"
@@ -451,8 +410,16 @@
 			size: 1.35d
 			tasks: [
 				{
-					id: "7A11C0DE15100102"
+					id: "7A11C0DE15100101"
 					type: "checkmark"
+				}
+				{
+					id: "7A11C0DE15100102"
+					item: {
+						count: 1
+						id: "minecraft:writable_book"
+					}
+					type: "item"
 				}
 			]
 			x: 0

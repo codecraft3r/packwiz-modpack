@@ -23,6 +23,17 @@ unpacked resource-pack roots. It must prove:
 - no primary paper-only reward remains on a substantive campaign objective;
 - choice tables `7A11C0DEF0000002`, `7A11C0DEF0000003`, and
   `7A11C0DEF0000004` contain zero Bevel entries;
+- critical tables `7A11C0DEF0000005`–`7A11C0DEF000000A` exist, parse, use
+  `loot_size: 1`, contain four to six distinct utility choices, and contain no
+  Bevels, armor tiers, spellbooks/spells, upgrade orbs, boss gear, faction
+  levels, or currency-generating inputs;
+- the onboarding graph has exactly one root, `OPEN THE ISLAND CHARTER`;
+- House/Lantern/Free Company gates are any five of eight, with Free Company
+  exposing at least four `PROGRESSION` and four `WORLD BUILD` alternatives;
+  specialty, civic, and fair gates are any three of eight/six/six respectively;
+- alternative branches are explicitly `optional: true`, lane labels have real
+  tasks, quests do not duplicate the same item task, and AERONAUT copy agrees
+  with whether its vehicle-wing task is optional;
 - `ARCHIVE A NEW RUMOUR` (`7A11C0DE19000007`) is the only repeatable Bevel
   issuer, is team-scoped, trust-checkmark based, and has a 604800-second
   cooldown;

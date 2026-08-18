@@ -278,43 +278,43 @@ hash = "759a5e015a9a1b68cc9fec67e5ff5ccc35be87e88b243efc295631b622dabe50"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_00_island_charter.snbt"
-hash = "e1ad2eed54a27d7fbc8ed8477d070e79d7e62c55145ff0943cf7294c81b6a887"
+hash = "a64c1e89f676bf3bfb592e56d65c50f19db3faec19895664c65c80c94c3f40a6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_01_three_invitations.snbt"
-hash = "a22314492e9efe94c69592760870401600cbfb42212640e20d2427b86fef8012"
+hash = "203aa2018192681c1bb9b2e7211ed9d57b08abb876270ee9cc351c3d162dbfa2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_02_house_of_night.snbt"
-hash = "be5584b7fc209dc184b23265d5556b74e68d900a72af31911ee16e185a69f95b"
+hash = "91d1b5a381e7abc5552bd0520374339eaa0e506501a56fb383496b8229b65a09"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_03_lantern_order.snbt"
-hash = "6ddba719e705cbc55253cc868fb00938965eefde63f4422b8d6c98729d692549"
+hash = "83b5daf5a57c3d9ae6159285ebcbdbff9650978c6ea0160f4d3e593c1fdf8f79"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_04_free_companies.snbt"
-hash = "401540ec7a69f97bcab755e09efb9c19c65404929dbe7add026532ce0382a8a6"
+hash = "6595a83c2b52a2586fb8c2a4e66cb259dde3646c45122d89e7d2d5e9ffc2ba3d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_05_work_each_hand_knows.snbt"
-hash = "af38e868d2cac03e9238d2016cb02a1485fd2019be06888fca6723ff200896af"
+hash = "242196503f57b32825a28e6ee10c6fcef6bfbe352924290533d35862866269ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_06_island_remembers.snbt"
-hash = "307da686bc5d960385a9655302fca18e30f6955fdf1b2db90d8cf32f1d6b6fe8"
+hash = "252d28bf166cab5ec63baef3cd0fbf3bdda9dd65867f42c3de95ce8a0983fc07"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_07_rivalry_without_ruin.snbt"
-hash = "edfab5749e3830595457da68511fbcb440ada002f2885e4c1e72e18b1eb7a218"
+hash = "bf077181daade2decf456ae075bf1baadadbbd1ba38bafa5cd80e5c54f3c2bd7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_08_long_night_fair.snbt"
-hash = "157362a622bbc3c8229fc42c98ce4c2f2a19c9b5f7be0371d5f4c023865a4ce7"
+hash = "5b7e982589aefc59199305a2b7c779baaa779f4ad42f3272523b901baaebb761"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_09_after_the_bells.snbt"
-hash = "564abff2da41219aaf47bb9d2fb4d21189d09f0c84b9e5002674e9ef68133d29"
+hash = "b60d366d78a9902fe0a34e890e7760c0a5c7425aaa8a5e7e5fa3efda4fa2a572"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -322,11 +322,11 @@ hash = "4fa4dc3ffbc7b576dd41f8dc64af65b6536be1c23dfdb44b9205d5c2a2f58b4f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "97da334fc5b29087482b6112ae16979aa22cbcbb32bb06ec376801cabd1901d0"
+hash = "ee2a317a5f6fbd3e43d1e0e4dab3f52c15f799e0b2860fe0e3ccc5e32ffca499"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000001.snbt"
-hash = "9e86f2b5f67ee477dbc51dac468dd38fe962be3c2de6935df94475b03abfd41b"
+hash = "6b508e1f433c295baf9b938ebdbfd159e1efd952bc90473a31b0cc62f83f5fd6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000002.snbt"
@@ -339,6 +339,30 @@ hash = "eca37490b98da76a96fd7dc77604c9b349c81b31bd32c08e3b94a17a054280fb"
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000004.snbt"
 hash = "7ffd42bcbe0cc486db601a2d6b064e0ef51be6d554ebe5a0b99ce50202994459"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000005.snbt"
+hash = "7e21498beb9731eacac872a5abfd2dfed65ea49d849d958dc001959c572dc3ae"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000006.snbt"
+hash = "7d7c76e089c05c0254e28590518e575cdde29d40724b6c2c3f80417e10935aa7"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000007.snbt"
+hash = "88595bdfd36c619efdfe0aabcb331b65e91fc388c4366539f1216d4b8f9eddf5"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000008.snbt"
+hash = "b5cbfcf500ba7ca32b4bd344ae563ec82ccf1a82c765922ed69977c4d252146b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000009.snbt"
+hash = "d67413f338a3d99e3157374be8c0bcdd8e89048d654a2882aab0e3d3a0d93af6"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/7A11C0DEF000000A.snbt"
+hash = "9e4269cd5326900193923cac1fb79d6df3bdba3b6e52c35fa002c5607a848fce"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
