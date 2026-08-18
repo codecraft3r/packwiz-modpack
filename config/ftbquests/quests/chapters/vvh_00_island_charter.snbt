@@ -70,6 +70,7 @@
 			}
 			id: "7A11C0DE10000003"
 			min_width: 280
+			optional: true
 			rewards: [
 				{
 					id: "7A11C0DE10200011"
@@ -98,6 +99,7 @@
 			}
 			id: "7A11C0DE10000005"
 			min_width: 280
+			optional: true
 			rewards: [
 				{
 					id: "7A11C0DE10200012"
@@ -126,6 +128,7 @@
 			}
 			id: "7A11C0DE10000006"
 			min_width: 280
+			optional: true
 			rewards: [
 				{
 					id: "7A11C0DE10200013"
@@ -147,16 +150,13 @@
 		}
 		{
 			dependencies: [
-				"7A11C0DE10000003"
-				"7A11C0DE10000005"
-				"7A11C0DE10000006"
+				"7A11C0DE10000001"
 			]
 			hide_until_deps_complete: false
 			icon: {
 				id: "minecraft:writable_book"
 			}
 			id: "7A11C0DE10000008"
-			min_required_dependencies: 3
 			min_width: 280
 			rewards: [
 				{
@@ -190,6 +190,16 @@
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
+				{
+					id: "7A11C0DE10100009"
+					consume_items: false
+					count: 1
+					item: {
+						count: 1
+						id: "minecraft:lantern"
+					}
+					type: "item"
+				}
 				{
 					id: "7A11C0DE10100008"
 					type: "checkmark"

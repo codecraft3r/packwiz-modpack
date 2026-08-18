@@ -6,75 +6,85 @@ quest.7A11C0DE14000001.quest_desc: [
     "&eObjective:&f Sign the Free Company register after completing the neutral register in Chapter 1.",
     "&7Build Standard:&f Name one contract steward and one place where a solo visitor can leave a request."
 ]
-quest.7A11C0DE14000001.quest_subtitle: "A neutral company needs a door, a witness, and a courier who remembers the mistakes."
-quest.7A11C0DE14000001.title: "&a&lFOUND A FREE COMPANY"
+quest.7A11C0DE14000001.quest_subtitle: "Charter · Solo-friendly"
+quest.7A11C0DE14000001.title: "[CHARTER] FOUND A FREE COMPANY"
 quest.7A11C0DE14000002.quest_desc: [
     "&fLore:&f Orra Vale lost a week to a contract board whose terms were written on both sides of the same page.",
     "&fNessa wants one public board showing who asked, what is owed, and when the promise expires.",
     "&eObjective:&f Build and stock a public contract board with three distinct job types.",
     "&7Build Standard:&f The board is reachable from the common route, has a named steward, and records three current offers."
 ]
-quest.7A11C0DE14000002.quest_subtitle: "World Build · a contract hall people can actually use."
-quest.7A11C0DE14000002.title: "&a&lWORLD BUILD · OPEN THE CONTRACT HALL"
+quest.7A11C0DE14000002.quest_subtitle: "World · Team-friendly"
+quest.7A11C0DE14000002.title: "[WORLD] OPEN THE CONTRACT HALL"
 quest.7A11C0DE14000003.quest_desc: [
     "&fLore:&f Nessa once delivered a sealed letter to the wrong watchtower because a route marker had been moved for a festival. The letter was harmless; the feud it interrupted was not.",
     "&eObjective:&f Mark a neutral courier route between two useful places with a filled map.",
     "&7Build Standard:&f Show the route, its destination, and one safe stopping point. Solo players may submit a signed route audit."
 ]
-quest.7A11C0DE14000003.quest_subtitle: "World Build · make a trip legible before someone has to guess."
-quest.7A11C0DE14000003.title: "&a&lWORLD BUILD · MARK A COURIER ROUTE"
+quest.7A11C0DE14000003.quest_subtitle: "World · Solo-friendly"
+quest.7A11C0DE14000003.title: "[WORLD] MARK A COURIER ROUTE"
 quest.7A11C0DE14000004.quest_desc: [
     "&fLore:&f The first neutral market failed when its Blood apothecary and Lantern carpenter arrived on different days.",
     "&fThey blamed each other for the empty stall. Nessa now keeps the opening hours in one visible place.",
     "&eObjective:&f Establish a public market stall or contract market with storage and lighting.",
     "&7Build Standard:&f Provide three active offers or services, public terms, neutral access, and a named steward."
 ]
-quest.7A11C0DE14000004.quest_subtitle: "World Build · trade should create meetings, not another locked chest."
-quest.7A11C0DE14000004.title: "&a&lWORLD BUILD · OPEN A NEUTRAL MARKET"
+quest.7A11C0DE14000004.quest_subtitle: "World · Team-friendly"
+quest.7A11C0DE14000004.title: "[WORLD] OPEN A NEUTRAL MARKET"
 quest.7A11C0DE14000005.quest_desc: [
     "&fLore:&f When the route record was altered, a tired courier slept beside the gate and missed its only witness.",
     "&fNessa is building a place where travellers can recover before they sign anything.",
     "&eObjective:&f Build a guesthouse or waystation on the neutral route.",
     "&7Build Standard:&f Include a bed, food, lighting, storage, and a clearly marked public entrance."
 ]
-quest.7A11C0DE14000005.quest_subtitle: "World Build · give visitors somewhere safe to stop."
-quest.7A11C0DE14000005.title: "&a&lWORLD BUILD · OPEN A WAYSTATION"
+quest.7A11C0DE14000005.quest_subtitle: "World · Team-friendly"
+quest.7A11C0DE14000005.title: "[WORLD] OPEN A WAYSTATION"
 quest.7A11C0DE14000006.quest_desc: [
     "&fLore:&f Nessa's ledger contains two versions of the Greybridge route. The names match; the dates do not. A courier learns faster when every delivery carries its own chain of custody.",
     "&eObjective:&f Carry a filled map and complete one courier delivery under two visible seals.",
     "&7Build Standard:&f Record the sender, destination, seal marks, and the correction made if the route was wrong. Solo players may submit a signed test log."
 ]
-quest.7A11C0DE14000006.quest_subtitle: "Progression · courier work is a skill, not another room to furnish."
-quest.7A11C0DE14000006.title: "&e&lPROGRESSION · COURIER UNDER TWO SEALS"
+quest.7A11C0DE14000006.quest_subtitle: "Progression · Solo-friendly"
+quest.7A11C0DE14000006.title: "[PROGRESSION] COURIER UNDER TWO SEALS"
 quest.7A11C0DE14000007.quest_desc: [
     "&fLore:&f Iven translated a Blood ward with a Holy glossary and left out the word for surrender.",
     "&fNobody was hurt, but the door stayed sealed for three days. The Free Company now publishes safe examples.",
-    "&eObjective:&f Prepare a neutral spellwright service with Arcane Essence and demonstrate one safe utility procedure.",
-    "&7Build Standard:&f Show the prepared material and a signed procedure. A solo player may self-audit the demonstration."
+    "&eObjective:&f Prepare a PUBLIC SPELLWRIGHT service with Arcane Essence and demonstrate one safe utility procedure.",
+    "&7Build Standard:&f Show the prepared material and a signed procedure. This is preparation and demonstration only; it is not Blood/Holy interpretation or a power skip."
+    "&fBorrowed, purchased, or received materials are valid without faction allegiance; solo players may self-audit."
 ]
-quest.7A11C0DE14000007.quest_subtitle: "Progression · make spell utility legible without claiming either faction's mastery."
-quest.7A11C0DE14000007.title: "&e&lPROGRESSION · PUBLIC SPELLWRIGHT"
+quest.7A11C0DE14000007.quest_subtitle: "Progression · Solo-friendly · preparation/demo"
+quest.7A11C0DE14000007.title: "[PROGRESSION] PUBLIC SPELLWRIGHT"
 quest.7A11C0DE14000008.quest_desc: [
     "&fLore:&f A Lantern patrol found a stranded traveller beside a Blood-marked bridge. Nessa sent bread first and questions second.",
     "&fThe rescue worked because someone had recorded who could help without starting a faction dispute.",
     "&eObjective:&f Run one mediation or rescue procedure and record the result.",
     "&7Build Standard:&f Name the problem, the neutral response, and the follow-up. Solo players may interact with an MCA resident or submit a self-audit."
 ]
-quest.7A11C0DE14000008.quest_subtitle: "Progression · resolve one real problem nobody owns by default."
-quest.7A11C0DE14000008.title: "&e&lPROGRESSION · MEDIATE OR RESCUE"
+quest.7A11C0DE14000008.quest_subtitle: "Progression · Team-friendly"
+quest.7A11C0DE14000008.title: "[PROGRESSION] MEDIATE OR RESCUE"
 quest.7A11C0DE14000009.quest_desc: [
     "&fLore:&f The translation desk began with a Blood rune, a Holy rune, and Nessa's refusal to copy either without a warning.",
     "&fIts first useful result was not a weapon; it was one safe instruction that both sides could read.",
-    "&eObjective:&f Open the spell translation desk with Arcane Essence and document one limited Blood or Holy utility.",
-    "&7Build Standard:&f Keep the example available to visitors and record its safety limit."
+    "&eObjective:&f Open the TRANSLATION DESK with Arcane Essence and document one limited Blood or Holy interpretation.",
+    "&7Build Standard:&f Keep the example available to visitors, record its safety limit, and do not prepare or cast it as a power skip."
+    "&fBorrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
 ]
-quest.7A11C0DE14000009.quest_subtitle: "Progression · translate utility, not allegiance."
-quest.7A11C0DE14000009.title: "&e&lPROGRESSION · OPEN THE SPELL TRANSLATION DESK"
+quest.7A11C0DE14000009.quest_subtitle: "Progression · Solo-friendly · interpretation/documentation"
+quest.7A11C0DE14000009.title: "[PROGRESSION] OPEN THE TRANSLATION DESK"
+task.7A11C0DE1410005B.title: "Carry 2 Arcane Essence"
 quest.7A11C0DE1400000A.quest_desc: [
     "&fLore:&f A charter is not a majority vote from one lane. Nessa will sign when five distinct works are standing.",
     "&fAt least one route, service, or spell procedure must answer a visitor's question.",
     "&eObjective:&f Complete any five of the eight Free Company works.",
     "&7Build Standard:&f The five must include at least one world-building work and one progression/service work."
 ]
-quest.7A11C0DE1400000A.quest_subtitle: "Five useful works make a neutral company people can rely on."
-quest.7A11C0DE1400000A.title: "&a&lCHARTER THE FREE COMPANY"
+quest.7A11C0DE1400000A.quest_subtitle: "Charter · Team-friendly · 5 of 8"
+quest.7A11C0DE1400000A.title: "[CHARTER] CHARTER THE FREE COMPANY"
+
+reward_table.7A11C0DEF0000007.title: "Choose One Neutral Route Utility"
+reward.7A11C0DEF0070001.title: "Compass — route finding"
+reward.7A11C0DEF0070002.title: "Filled Map — route record"
+reward.7A11C0DEF0070003.title: "Writable Books — contracts and logs"
+reward.7A11C0DEF0070004.title: "Leads — safe transport"
+reward.7A11C0DEF0070005.title: "Lanterns — public route lighting"

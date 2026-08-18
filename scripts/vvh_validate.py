@@ -1178,7 +1178,7 @@ def main() -> int:
         audit.warn(f"{len(leaf_review)} optional rewardless leaf quests need a deliberate dead-content review")
 
     # Minimum-path simulation to the season seal and After the Bells opener.
-    target = next((qid for qid, q in vvh_quests.items() if q.get("title") == "SEAL SEASON ONE"), None)
+    target = next((qid for qid, q in vvh_quests.items() if "SEAL SEASON ONE" in q.get("title", "")), None)
     if target:
         try:
             best = minimum_completion_set(target, vvh_quests)

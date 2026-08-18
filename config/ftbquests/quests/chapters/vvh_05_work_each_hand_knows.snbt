@@ -99,6 +99,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE15100015"
+					consume_items: false
 					count: 4
 					item: {
 						count: 1
@@ -133,6 +134,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE1510001F"
+					consume_items: false
 					count: 4
 					item: {
 						count: 1
@@ -171,6 +173,7 @@
 				}
 				{
 					id: "7A11C0DE1510002A"
+					consume_items: false
 					item: {
 						count: 1
 						id: "vampirism:vampire_fang"
@@ -204,6 +207,7 @@
 				}
 				{
 					id: "7A11C0DE15100034"
+					consume_items: false
 					item: {
 						count: 16
 						id: "minecraft:scaffolding"
@@ -237,6 +241,7 @@
 				}
 				{
 					id: "7A11C0DE1510003E"
+					consume_items: false
 					item: {
 						count: 1
 						id: "minecraft:bell"
@@ -270,6 +275,7 @@
 				}
 				{
 					id: "7A11C0DE15100048"
+					consume_items: false
 					item: {
 						count: 2
 						id: "minecraft:barrel"
@@ -299,6 +305,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE15100051"
+					consume_items: false
 					item: {
 						count: 1
 						id: "minecraft:filled_map"
@@ -332,6 +339,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE1510005C"
+					consume_items: false
 					item: {
 						count: 1
 						id: "minecraft:writable_book"
@@ -415,6 +423,7 @@
 				}
 				{
 					id: "7A11C0DE15100102"
+					consume_items: false
 					item: {
 						count: 1
 						id: "minecraft:writable_book"

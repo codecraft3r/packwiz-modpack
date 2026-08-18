@@ -7,88 +7,110 @@ quest.7A11C0DE13000001.quest_desc: [
 	""
 	"&6Lore:&f Warden Elias Rook got civilians out of Greybridge, then left a vampire refuge behind the flood line. He still calls it triage."
 	"&fNessa Quill's route record disputes the last safe turn. The Order begins with that uncertainty, not a clean legend."
-	"&eObjective:&f Complete five of eight works, including at least one Progression and one World-Building work."
+	"&eObjective:&f Complete five of eight works, including at least one [PROGRESSION] and one [WORLD] work."
 	"&fName the headquarters and record who keeps its doors, supplies, or route notes usable."
 	"&aBuild Standard:&f A host or two-player review confirms the work is findable, usable by a visitor, and assigned a maintenance handoff."
+	"&7[SUITABLE: STARTER TEAMS / REFUGE STEWARDS]"
 ]
-quest.7A11C0DE13000001.quest_subtitle: "A protective order learns from the route it failed to keep."
-quest.7A11C0DE13000001.title: "&b&lLANTERN OATH"
+quest.7A11C0DE13000001.quest_subtitle: "[CHARTER] A protective order learns from the route it failed to keep."
+quest.7A11C0DE13000001.title: "[CHARTER] &b&lLANTERN OATH"
 
-quest.7A11C0DE13000002.title: "&a&lWATCHHOUSE"
-quest.7A11C0DE13000003.title: "&e&lHUNTER TABLE"
-quest.7A11C0DE13000004.title: "&a&lFIELD CACHE"
-quest.7A11C0DE13000005.title: "&e&lSTAKE KIT"
-quest.7A11C0DE13000006.title: "&e&lALCHEMICAL BENCH"
-quest.7A11C0DE13000007.title: "&a&lREFUGE ROUTE"
-quest.7A11C0DE13000008.title: "&a&lRESPONSE DRILL"
-quest.7A11C0DE13000009.title: "&e&lHOLY WARD"
+quest.7A11C0DE13000002.title: "[WORLD] &a&lWATCHHOUSE"
+quest.7A11C0DE13000003.title: "[PROGRESSION] &e&lHUNTER TABLE"
+quest.7A11C0DE13000004.title: "[WORLD] &a&lFIELD CACHE"
+quest.7A11C0DE13000005.title: "[PROGRESSION] &e&lSTAKE KIT"
+quest.7A11C0DE13000006.title: "[PROGRESSION] &e&lALCHEMICAL BENCH"
+quest.7A11C0DE13000007.title: "[WORLD] &a&lREFUGE ROUTE"
+quest.7A11C0DE13000008.title: "[WORLD] &a&lRESPONSE DRILL"
+quest.7A11C0DE13000009.title: "[PROGRESSION] &e&lHOLY WARD"
 
 quest.7A11C0DE13000002.quest_desc: [
 	"&6Lore:&f Rook's old watchhouse had a bell, but no map for the people who needed it. Quill's contradictory record is pinned beside the new route notes."
-	"&eObjective:&f Build a small watchhouse, gatehouse, or civic room with public hazards, routes, contacts, and shelter instructions."
-	"&aBuild Standard:&f A visitor can identify the entrance, a safe guest area, and the next useful destination without its owner present."
+	"&eObjective:&f Build a starter watchhouse, gatehouse, or civic room for refuge and public safety, with hazards, routes, contacts, and shelter instructions. An existing building counts."
+	"&aBuild Standard:&f A visitor can identify the entrance, a safe guest area, and the next useful destination without its owner present; this is not an armor or combat check."
+	"&7[SUITABLE: STARTER / REFUGE / PUBLIC SAFETY; EXISTING BUILDINGS COUNT]"
 ]
+quest.7A11C0DE13000002.quest_subtitle: "[WORLD] A starter refuge and public-safety build; existing buildings count."
 quest.7A11C0DE13000003.quest_desc: [
 	"&6Lore:&f The Order's table is where field preparation becomes shared knowledge: one person remembers the recipe, another remembers who needs it."
 	"&eObjective:&f Place a Hunter Table in a shared workshop and demonstrate one real preparation or support use."
 	"&aBuild Standard:&f The station has labelled storage and enough access for a teammate to use it without moving private equipment."
+	"&7[SUITABLE: PROGRESSION / SHARED SUPPORT]"
 ]
+quest.7A11C0DE13000003.quest_subtitle: "[PROGRESSION] Prepare a shared support station."
 quest.7A11C0DE13000004.quest_desc: [
 	"&6Lore:&f Nessa's route notes mark three places where a patrol found people waiting with no food, light, or direction. The field cache is the Order's answer to one of them."
 	"&eObjective:&f Establish a labelled garlic and first-response reserve with a written restock handoff."
 	"&aBuild Standard:&f A non-builder can find the cache, understand what may be taken, and know who restores it."
+	"&7[SUITABLE: WORLD / LOGISTICS STEWARDS]"
 ]
+quest.7A11C0DE13000004.quest_subtitle: "[WORLD] Keep a public reserve findable and restocked."
 quest.7A11C0DE13000005.quest_desc: [
 	"&6Lore:&f A stake is a tool; the Order decides what it is for before it puts one in a trainee's hand."
 	"&eObjective:&f Assemble four stakes and run a controlled equipment or field-medicine demonstration."
 	"&aBuild Standard:&f The demonstration has a safe practice area and a clear rule that no player becomes a target without consent."
+	"&7[SUITABLE: PROGRESSION / TOOL PREPARATION]"
 ]
+quest.7A11C0DE13000005.quest_subtitle: "[PROGRESSION] Prepare tools for a controlled support drill."
 quest.7A11C0DE13000006.quest_desc: [
 	"&6Lore:&f Greybridge taught Rook that a countermeasure prepared too late is only a story about preparation."
 	"&eObjective:&f Install an Alchemical Cauldron with labelled ingredients and demonstrate one cleansing, medical, or support preparation."
 	"&aBuild Standard:&f The bench is accessible, its ingredients are readable, and the team can explain what the preparation is for."
+	"&7[SUITABLE: PROGRESSION / CARE SUPPORT]"
 ]
+quest.7A11C0DE13000006.quest_subtitle: "[PROGRESSION] Turn preparation into a readable care service."
 quest.7A11C0DE13000007.quest_desc: [
 	"&6Lore:&f Quill's route record ends at a turn Rook remembers as impassable. The Order keeps the route open long enough to find out which memory failed."
 	"&eObjective:&f Mark a lit refuge route between the Order and a useful public destination, including hazards and a fallback point."
 	"&aBuild Standard:&f Someone unfamiliar with the route can follow it without voice guidance."
+	"&7[SUITABLE: WORLD / NAVIGATION STEWARDS]"
 ]
+quest.7A11C0DE13000007.quest_subtitle: "[WORLD] Make a public refuge route legible at night."
 quest.7A11C0DE13000008.quest_desc: [
 	"&6Lore:&f The first response drill is deliberately uncomfortable: the Order must discover what its maps omit before a real traveller does."
 	"&eObjective:&f Run a night escort, lost-player retrieval, cleansing response, evacuation, or shelter test."
-	"&aBuild Standard:&f Another player reviews the result, or a solo test log names one failure and the fix applied."
+	"&aBuild Standard:&f Another player reviews the result, or a solo route audit logs one failure and the fix applied."
+	"&7[SUITABLE: WORLD / SOLO ROUTE AUDIT]"
 ]
+quest.7A11C0DE13000008.quest_subtitle: "[WORLD] Solo option available · test one response handoff."
+task.7A11C0DE13100051.title: "Solo option available: route audit; log one failure and apply one fix"
 quest.7A11C0DE13000009.quest_desc: [
 	"&6Lore:&f Holy practice is not a trophy for winning a hunt. It is the quiet work of keeping a room clean, a wound tended, and a frightened traveller inside the light."
-	"&eObjective:&f Install one Holy Rune in a visible ward, medical, cleansing, or shelter station and demonstrate its safe use."
-	"&aBuild Standard:&f The station explains what it does and how a visitor receives help; no vampire target or kill is required."
+	"&eObjective:&f Install one Holy Rune in one of three accepted public examples: a public ward, medical station, or shelter desk, and demonstrate its safe use."
+	"&aBuild Standard:&f The station explains what it does and how a visitor receives help; rune inspection is non-consuming, and no vampire target or kill is required."
+	"&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
 ]
+	quest.7A11C0DE13000009.quest_subtitle: "[PROGRESSION] Inspect a public Holy Rune service without consuming it."
 
 quest.7A11C0DE1300000A.quest_desc: [
 	"&6Lore:&f Rook calls the charter a correction. Quill calls it an admission. Both are written into the same ledger."
-	"&eObjective:&f Complete five works, including at least one Progression work and one World-Building work, then record the headquarters and its maintenance handoff."
+	"&eObjective:&f Complete five of eight works, including at least one [PROGRESSION] and one [WORLD] work, then record the headquarters and its maintenance handoff."
 	"&aBuild Standard:&f The review tasks name the completed works and confirm the Order serves people beyond its builders."
+	"&7[SUITABLE: CHARTER / ANY TEAM]"
 ]
-quest.7A11C0DE1300000A.title: "&b&lLANTERN CHARTER"
+quest.7A11C0DE1300000A.quest_subtitle: "[CHARTER] Five of eight works, with both lanes represented."
+quest.7A11C0DE1300000A.title: "[CHARTER] &b&lLANTERN CHARTER"
 
 quest.7A11C0DE13000101.quest_desc: [
 	"&6Lore:&f The watchhouse has a roof now. That is not the same thing as having a refuge."
 	"&eObjective:&f Add eight placed lanterns and one visible public-service feature: labelled medicine, route notices, a guest bed, or a safe handoff point."
 	"&aBuild Standard:&f A tired stranger can understand what the room is for and where to go next."
+	"&7[SUITABLE: WORLD / REFUGE REFIT]"
 ]
-quest.7A11C0DE13000101.quest_subtitle: "World Build · Make the refuge legible after dark."
-quest.7A11C0DE13000101.title: "&a&lREFIT THE WATCHHOUSE"
+quest.7A11C0DE13000101.quest_subtitle: "[WORLD] Make the refuge legible after dark."
+quest.7A11C0DE13000101.title: "[WORLD] &a&lREFIT THE WATCHHOUSE"
 task.7A11C0DE13100101.title: "Supply 8 Lanterns"
 task.7A11C0DE13100102.title: "REVIEW: Public-Service Feature Is Findable"
 reward.7A11C0DE13200101.title: "Choose One Lantern Utility Cache"
 
 quest.7A11C0DE13000102.quest_desc: [
 	"&6Lore:&f A Holy Rune is not a medal. It is a promise that the room will still help someone who arrives frightened, injured, or unable to explain what happened."
-	"&eObjective:&f Install one Holy Rune in a visible ward, medical, cleansing, or shelter station and demonstrate its safe use."
-	"&aBuild Standard:&f The station explains its purpose and the visitor's next step."
+	"&eObjective:&f Install one Holy Rune in one of three accepted public examples: a public ward, medical station, or shelter desk, and demonstrate its safe use."
+	"&aBuild Standard:&f Use one of three accepted public examples—public ward, medical station, or shelter desk. Rune inspection is non-consuming; explain the visitor's next step."
+	"&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
 ]
-quest.7A11C0DE13000102.quest_subtitle: "Progression · Turn protection into a practiced service."
-quest.7A11C0DE13000102.title: "&e&lCONSECRATE THE REFUGE"
+quest.7A11C0DE13000102.quest_subtitle: "[PROGRESSION] Turn protection into a practiced service."
+quest.7A11C0DE13000102.title: "[PROGRESSION] &e&lCONSECRATE THE REFUGE"
 task.7A11C0DE13100103.title: "Supply 1 Holy Rune"
 task.7A11C0DE13100104.title: "REVIEW: Holy Station Demonstrated"
 reward.7A11C0DE13200102.title: "Choose One Consecrated Utility Cache"
@@ -97,9 +119,10 @@ quest.7A11C0DE13000103.quest_desc: [
 	"&6Lore:&f Quill's record says the refuge failed because no one outside the Order knew the handoff. Rook has stopped arguing with that line."
 	"&eObjective:&f Invite someone outside the Order to use or review the refuge service, then record one practical handoff or improvement."
 	"&aBuild Standard:&f The service works across faction lines and names who restocks, guides, or repairs it."
+	"&7[SUITABLE: PROGRESSION / PUBLIC HANDOFF]"
 ]
-quest.7A11C0DE13000103.quest_subtitle: "Public Service · Let the refuge work across faction lines."
-quest.7A11C0DE13000103.title: "&b&lKEEP A TREATY LIGHT"
+quest.7A11C0DE13000103.quest_subtitle: "[PROGRESSION] Let the refuge work across faction lines."
+quest.7A11C0DE13000103.title: "[PROGRESSION] &b&lKEEP A TREATY LIGHT"
 task.7A11C0DE13100105.title: "Outside-Order Player Reviews or Uses the Service"
 task.7A11C0DE13100106.title: "REVIEW: Handoff or Improvement Recorded"
 reward.7A11C0DE13200103.title: "Choose One Treaty Utility Cache"

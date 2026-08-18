@@ -103,7 +103,7 @@
           "icon": "minecraft:filled_map",
           "id": "7A11C0DE10000003",
           "min_required_dependencies": 0,
-          "optional": false,
+          "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
           "rewards": [
@@ -119,7 +119,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Permanent work needs a boundary that actually means something.",
+          "subtitle": "[OPTIONAL REFERENCE] Permanent work needs a boundary that actually means something.",
           "tasks": [
             {
               "advancement": null,
@@ -161,7 +161,7 @@
           "icon": "minecraft:firework_rocket",
           "id": "7A11C0DE10000005",
           "min_required_dependencies": 0,
-          "optional": false,
+          "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
           "rewards": [
@@ -177,7 +177,7 @@
           ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Make stories, not support tickets.",
+          "subtitle": "[OPTIONAL REFERENCE] Make stories, not support tickets.",
           "tasks": [
             {
               "advancement": null,
@@ -219,7 +219,7 @@
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DE10000006",
           "min_required_dependencies": 0,
-          "optional": false,
+          "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
           "rewards": [
@@ -235,7 +235,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Two faction systems exist. Do not pretend they are the same database.",
+          "subtitle": "[OPTIONAL REFERENCE] Two faction systems exist. Do not pretend they are the same database.",
           "tasks": [
             {
               "advancement": null,
@@ -258,9 +258,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DE10000003",
-            "7A11C0DE10000005",
-            "7A11C0DE10000006"
+            "7A11C0DE10000001"
           ],
           "description": [
             "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
@@ -272,8 +270,8 @@
             "&f4. Vampirism faction state and FTB team state are separate; switches need a quick host review.",
             "",
             "&7Lore:&f Nessa Quill signs as courier because Greybridge taught her that an agreement nobody can find is only a rumour.",
-            "&eObjective:&f Sign the charter after reading the three boundary clauses.",
-            "&aStandard:&f VvH progression grants one-time Bevels. Lighting, transit, and repair requisitions become available after the invitation welcome point; the post-season rumour is only a slow weekly fallback.",
+            "&eObjective:&f Inspect one lantern, then sign the charter after reading the boundary clauses.",
+            "&aStandard:&f The lantern inspection is a non-consuming preview; the checkmark records the human review.",
             "",
             "&6Starter nudge:&f one Compass and eight Torches."
           ],
@@ -281,7 +279,7 @@
           "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DE10000008",
-          "min_required_dependencies": 3,
+          "min_required_dependencies": 0,
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
@@ -316,8 +314,21 @@
           ],
           "shape": "hexagon",
           "size": 2.0,
-          "subtitle": "Four boundaries, one signature, useful travel supplies.",
+          "subtitle": "Inspect one lantern, then sign the charter; claims remain dependency-locked.",
           "tasks": [
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE10100009",
+              "item": "minecraft:lantern",
+              "optional": false,
+              "stat": null,
+              "title": "Inspect One Lantern (Not Consumed)",
+              "type": "item",
+              "value": 1
+            },
             {
               "advancement": null,
               "consume": false,
@@ -327,7 +338,7 @@
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "Sign the Island Charter",
+              "title": "Human Review: Sign the Island Charter",
               "type": "checkmark",
               "value": 1
             }
@@ -338,7 +349,7 @@
           "can_repeat": false
         }
       ],
-      "title": "VvH 00 · The Island Charter"
+      "title": "VvH 00 · The Island Charter [DEV REVIEW]"
     },
     {
       "filename": "vvh_01_three_invitations",
@@ -776,9 +787,15 @@
             "7A11C0DE11000005"
           ],
           "description": [
-            "&7Lore:&f Nessa Quill sets six starter kits beside the welcome point. Each is a practical first contribution, not a permanent profession or locked class.",
-            "&fObjective:&f Choose the starter supply kit that best matches the work you want to try first.",
-            "&fStandard:&f Pick one kit after the welcome point is complete. Nothing prevents you from exploring the other specialties later."
+            "&7Lore:&f Nessa Quill sets six practical starter kits beside the welcome point. Each is a first contribution, not a permanent profession or locked class.",
+            "&fObjective:&f Preview the exact kit contents, then choose one:",
+            "&f• Builder — 8 minecraft:scaffolding",
+            "&f• Engineer — 1 create:goggles",
+            "&f• Pathfinder — 1 minecraft:spyglass",
+            "&f• Keeper — 4 minecraft:lantern",
+            "&f• Arcanist — 2 irons_spellbooks:arcane_essence",
+            "&f• Archivist — 2 minecraft:book",
+            "&fStandard:&f Pick one kit after the welcome point is complete. Nothing prevents exploring the other specialties later."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -1010,7 +1027,7 @@
           "can_repeat": true
         }
       ],
-      "title": "VvH 01 · Three Invitations"
+      "title": "VvH 01 · Three Invitations [DEV REVIEW]"
     },
     {
       "filename": "vvh_02_house_of_night",
@@ -1084,7 +1101,7 @@
           ],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "A faction foundation with a promise Mirelle can keep.",
+          "subtitle": "Starter · Solo-friendly",
           "tasks": [
             {
               "advancement": "vampirism:vampire/become_vampire",
@@ -1113,7 +1130,7 @@
               "value": 1
             }
           ],
-          "title": "FOUND THE HOUSE",
+          "title": "[CHARTER] FOUND THE HOUSE",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -1159,7 +1176,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build · a quiet room is a civic service.",
+          "subtitle": "Starter · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1201,7 +1218,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · COMMON ROOM",
+          "title": "[WORLD] COMMON ROOM",
           "x": 0,
           "y": -1.0,
           "can_repeat": false
@@ -1215,6 +1232,7 @@
             "&fBlood practice begins with a place to prepare carefully. Mirelle wants the first altar kept where another person can ask what is being done before it is done.",
             "",
             "&eOBJECTIVE&f Place an Altar of Inspiration and demonstrate one safe preparation.",
+            "&7PROOF&f Carry one Altar of Inspiration for inspection; this item proof is not consumed. Complete the review checkmark after the shared, visible preparation is demonstrated.",
             "&7BUILD STANDARD&f The altar is accessible, labelled, and not hidden inside a private combat room."
           ],
           "hide_dependency_lines": true,
@@ -1247,7 +1265,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "Progression · prepare before power.",
+          "subtitle": "Starter · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1258,7 +1276,7 @@
               "item": "vampirism:altar_inspiration",
               "optional": false,
               "stat": null,
-              "title": "Show an Altar of Inspiration",
+              "title": "Carry an Altar of Inspiration for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -1276,7 +1294,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · SET THE ALTAR",
+          "title": "[PROGRESSION] SET THE ALTAR",
           "x": 7.0,
           "y": -1.0,
           "can_repeat": false
@@ -1322,7 +1340,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build · one hospitality stockroom, clearly kept.",
+          "subtitle": "Workshop · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1351,7 +1369,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · BLOOD PANTRY",
+          "title": "[WORLD] BLOOD PANTRY",
           "x": 0,
           "y": 2.5,
           "can_repeat": false
@@ -1365,6 +1383,7 @@
             "&fNessa's list has gaps where preparation happened too quickly. The House answers with a workstation that can be inspected, taught, and stopped before hunger turns a lesson into a debt.",
             "",
             "&eOBJECTIVE&f Place an Alchemical Cauldron and demonstrate one controlled preparation.",
+            "&7PROOF&f Carry one Alchemical Cauldron for inspection; this item proof is not consumed. Complete the review checkmark after the controlled preparation is visible and teachable.",
             "&7BUILD STANDARD&f Store its materials safely and let another player explain what the preparation is for."
           ],
           "hide_dependency_lines": true,
@@ -1397,7 +1416,7 @@
           ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "Progression · controlled preparation, not a kitchen lane.",
+          "subtitle": "Workshop · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1408,7 +1427,7 @@
               "item": "vampirism:alchemical_cauldron",
               "optional": false,
               "stat": null,
-              "title": "Show an Alchemical Cauldron",
+              "title": "Carry an Alchemical Cauldron for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -1426,7 +1445,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · PREPARE THE CAULDRON",
+          "title": "[PROGRESSION] PREPARE THE CAULDRON",
           "x": 7.0,
           "y": 2.5,
           "can_repeat": false
@@ -1472,7 +1491,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build · make night travel legible.",
+          "subtitle": "Route · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1488,7 +1507,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · MARK THE NIGHT ROAD",
+          "title": "[WORLD] MARK THE NIGHT ROAD",
           "x": 0,
           "y": 6.0,
           "can_repeat": false
@@ -1525,7 +1544,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build · a welcome that can be seen.",
+          "subtitle": "Route · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1541,7 +1560,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · LEAVE THE LIGHT ON",
+          "title": "[WORLD] LEAVE THE LIGHT ON",
           "x": 0,
           "y": 9.5,
           "can_repeat": false
@@ -1555,6 +1574,7 @@
             "&fA refuge fails quietly when bottles, tools, and messages cannot reach it. Give the House one Create service that moves something useful and can be understood by the next pair of hands.",
             "",
             "&eOBJECTIVE&f Demonstrate a Mechanical Press in a shared logistics line.",
+            "&7PROOF&f Carry one Mechanical Press for inspection; this item proof is not consumed. Complete the review checkmark after the shared line moves a useful House supply.",
             "&7BUILD STANDARD&f The line serves a House function such as storage, route loading, or public workshop supply."
           ],
           "hide_dependency_lines": true,
@@ -1596,7 +1616,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "Progression · move the work, not just the machine.",
+          "subtitle": "Advanced · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1607,7 +1627,7 @@
               "item": "create:mechanical_press",
               "optional": false,
               "stat": null,
-              "title": "Show a Mechanical Press",
+              "title": "Carry a Mechanical Press for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -1625,7 +1645,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · MOVE THE NIGHT STOCK",
+          "title": "[PROGRESSION] MOVE THE NIGHT STOCK",
           "x": 7.0,
           "y": 6.0,
           "can_repeat": false
@@ -1639,6 +1659,7 @@
             "&fA Blood Rune and Bloody Vellum can preserve a method, but neither can tell a new practitioner when to stop. Keep the first focus small, labelled, and teachable.",
             "",
             "&eOBJECTIVE&f Prepare a Blood Rune and Bloody Vellum as the House's introductory school focus.",
+            "&7PROOF&f Carry one Blood Rune and one Bloody Vellum for inspection; neither item is consumed. Borrowed, purchased, or received Blood materials are valid. This proof does not alter Vampirism, faction, or rank, and does not grant a spell-tier skip.",
             "&7BUILD STANDARD&f Store the focus safely and explain one controlled, non-escalating use to another player."
           ],
           "hide_dependency_lines": true,
@@ -1671,7 +1692,7 @@
           ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression · give Blood magic a careful vocabulary.",
+          "subtitle": "Advanced · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1682,7 +1703,7 @@
               "item": "irons_spellbooks:blood_rune",
               "optional": false,
               "stat": null,
-              "title": "Show a Blood Rune",
+              "title": "Carry a Blood Rune for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -1695,7 +1716,7 @@
               "item": "irons_spellbooks:bloody_vellum",
               "optional": false,
               "stat": null,
-              "title": "Show Bloody Vellum",
+              "title": "Carry Bloody Vellum for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -1713,7 +1734,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · INSCRIBE BLOOD",
+          "title": "[PROGRESSION] INSCRIBE BLOOD",
           "x": 7.0,
           "y": 9.5,
           "can_repeat": false
@@ -1748,7 +1769,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Optional world work · make the refuge answer.",
+          "subtitle": "Route · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1764,7 +1785,7 @@
               "value": 1
             }
           ],
-          "title": "OPTIONAL · OPEN THE REFUGE",
+          "title": "[WORLD] OPEN THE REFUGE",
           "x": 0,
           "y": 19.0,
           "can_repeat": false
@@ -1799,7 +1820,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Optional side work · etiquette as a promise, not a chain.",
+          "subtitle": "Advanced · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1828,7 +1849,7 @@
               "value": 1
             }
           ],
-          "title": "OPTIONAL · WRITE THE HOUSE RULE",
+          "title": "[CHARTER] WRITE THE HOUSE RULE",
           "x": 7.0,
           "y": 24.0,
           "can_repeat": false
@@ -1865,7 +1886,7 @@
           ],
           "shape": "hexagon",
           "size": 1.35,
-          "subtitle": "Optional consequence · Blood-aligned hospitality with room for another school.",
+          "subtitle": "Workshop · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -1894,7 +1915,7 @@
               "value": 1
             }
           ],
-          "title": "OPTIONAL · SERVE THE CUP",
+          "title": "[CHARTER] SERVE THE CUP",
           "x": 0,
           "y": 29.0,
           "can_repeat": false
@@ -1975,7 +1996,7 @@
           ],
           "shape": "hexagon",
           "size": 2.0,
-          "subtitle": "Any 5 of 8 works, with both capability and place represented.",
+          "subtitle": "Advanced · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -2004,7 +2025,7 @@
               "value": 1
             }
           ],
-          "title": "CHARTER THE HOUSE",
+          "title": "[CHARTER] CHARTER THE HOUSE",
           "x": 0,
           "y": 14.0,
           "can_repeat": false
@@ -2050,9 +2071,10 @@
             "",
             "&6Lore:&f Warden Elias Rook got civilians out of Greybridge, then left a vampire refuge behind the flood line. He still calls it triage.",
             "&fNessa Quill's route record disputes the last safe turn. The Order begins with that uncertainty, not a clean legend.",
-            "&eObjective:&f Complete five of eight works, including at least one Progression and one World-Building work.",
+            "&eObjective:&f Complete five of eight works, including at least one [PROGRESSION] and one [WORLD] work.",
             "&fName the headquarters and record who keeps its doors, supplies, or route notes usable.",
-            "&aBuild Standard:&f A host or two-player review confirms the work is findable, usable by a visitor, and assigned a maintenance handoff."
+            "&aBuild Standard:&f A host or two-player review confirms the work is findable, usable by a visitor, and assigned a maintenance handoff.",
+            "&7[SUITABLE: STARTER TEAMS / REFUGE STEWARDS]"
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -2075,7 +2097,7 @@
           ],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "A protective order learns from the route it failed to keep.",
+          "subtitle": "[CHARTER] A protective order learns from the route it failed to keep.",
           "tasks": [
             {
               "advancement": "vampirism:hunter/become_hunter",
@@ -2104,7 +2126,7 @@
               "value": 1
             }
           ],
-          "title": "LANTERN OATH",
+          "title": "[CHARTER] LANTERN OATH",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -2115,8 +2137,9 @@
           ],
           "description": [
             "&6Lore:&f Rook's old watchhouse had a bell, but no map for the people who needed it. Quill's contradictory record is pinned beside the new route notes.",
-            "&eObjective:&f Build a small watchhouse, gatehouse, or civic room with public hazards, routes, contacts, and shelter instructions.",
-            "&aBuild Standard:&f A visitor can identify the entrance, a safe guest area, and the next useful destination without its owner present."
+            "&eObjective:&f Build a starter watchhouse, gatehouse, or civic room for refuge and public safety, with hazards, routes, contacts, and shelter instructions. An existing building counts.",
+            "&aBuild Standard:&f A visitor can identify the entrance, a safe guest area, and the next useful destination without its owner present; this is not an armor or combat check.",
+            "&7[SUITABLE: STARTER / REFUGE / PUBLIC SAFETY; EXISTING BUILDINGS COUNT]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2148,7 +2171,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build · REVIEW · visible service before private arsenal.",
+          "subtitle": "[WORLD] A starter refuge and public-safety build; existing buildings count.",
           "tasks": [
             {
               "advancement": null,
@@ -2190,7 +2213,7 @@
               "value": 1
             }
           ],
-          "title": "WATCHHOUSE",
+          "title": "[WORLD] WATCHHOUSE",
           "x": 0,
           "y": -1.0,
           "can_repeat": false
@@ -2202,7 +2225,8 @@
           "description": [
             "&6Lore:&f The Order's table is where field preparation becomes shared knowledge: one person remembers the recipe, another remembers who needs it.",
             "&eObjective:&f Place a Hunter Table in a shared workshop and demonstrate one real preparation or support use.",
-            "&aBuild Standard:&f The station has labelled storage and enough access for a teammate to use it without moving private equipment."
+            "&aBuild Standard:&f The station has labelled storage and enough access for a teammate to use it without moving private equipment.",
+            "&7[SUITABLE: PROGRESSION / SHARED SUPPORT]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2234,7 +2258,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "Progression · Put the actual faction workstation somewhere teammates can use it.",
+          "subtitle": "[PROGRESSION] Prepare a shared support station.",
           "tasks": [
             {
               "advancement": null,
@@ -2263,7 +2287,7 @@
               "value": 1
             }
           ],
-          "title": "HUNTER TABLE",
+          "title": "[PROGRESSION] HUNTER TABLE",
           "x": 7.0,
           "y": -1.0,
           "can_repeat": false
@@ -2275,7 +2299,8 @@
           "description": [
             "&6Lore:&f Nessa's route notes mark three places where a patrol found people waiting with no food, light, or direction. The field cache is the Order's answer to one of them.",
             "&eObjective:&f Establish a labelled garlic and first-response reserve with a written restock handoff.",
-            "&aBuild Standard:&f A non-builder can find the cache, understand what may be taken, and know who restores it."
+            "&aBuild Standard:&f A non-builder can find the cache, understand what may be taken, and know who restores it.",
+            "&7[SUITABLE: WORLD / LOGISTICS STEWARDS]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2307,7 +2332,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build · Preparedness is funnier when it has labels.",
+          "subtitle": "[WORLD] Keep a public reserve findable and restocked.",
           "tasks": [
             {
               "advancement": null,
@@ -2336,7 +2361,7 @@
               "value": 1
             }
           ],
-          "title": "FIELD CACHE",
+          "title": "[WORLD] FIELD CACHE",
           "x": 0,
           "y": 2.4,
           "can_repeat": false
@@ -2348,7 +2373,8 @@
           "description": [
             "&6Lore:&f A stake is a tool; the Order decides what it is for before it puts one in a trainee's hand.",
             "&eObjective:&f Assemble four stakes and run a controlled equipment or field-medicine demonstration.",
-            "&aBuild Standard:&f The demonstration has a safe practice area and a clear rule that no player becomes a target without consent."
+            "&aBuild Standard:&f The demonstration has a safe practice area and a clear rule that no player becomes a target without consent.",
+            "&7[SUITABLE: PROGRESSION / TOOL PREPARATION]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2380,7 +2406,7 @@
           ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "Progression · Tools become culture when people know the safety rules.",
+          "subtitle": "[PROGRESSION] Prepare tools for a controlled support drill.",
           "tasks": [
             {
               "advancement": null,
@@ -2409,7 +2435,7 @@
               "value": 1
             }
           ],
-          "title": "STAKE KIT",
+          "title": "[PROGRESSION] STAKE KIT",
           "x": 7.0,
           "y": 2.4,
           "can_repeat": false
@@ -2421,7 +2447,8 @@
           "description": [
             "&6Lore:&f Greybridge taught Rook that a countermeasure prepared too late is only a story about preparation.",
             "&eObjective:&f Install an Alchemical Cauldron with labelled ingredients and demonstrate one cleansing, medical, or support preparation.",
-            "&aBuild Standard:&f The bench is accessible, its ingredients are readable, and the team can explain what the preparation is for."
+            "&aBuild Standard:&f The bench is accessible, its ingredients are readable, and the team can explain what the preparation is for.",
+            "&7[SUITABLE: PROGRESSION / CARE SUPPORT]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2453,7 +2480,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "Progression · Make countermeasure tech legible to the team.",
+          "subtitle": "[PROGRESSION] Turn preparation into a readable care service.",
           "tasks": [
             {
               "advancement": null,
@@ -2482,7 +2509,7 @@
               "value": 1
             }
           ],
-          "title": "ALCHEMICAL BENCH",
+          "title": "[PROGRESSION] ALCHEMICAL BENCH",
           "x": 7.0,
           "y": 5.8,
           "can_repeat": false
@@ -2494,7 +2521,8 @@
           "description": [
             "&6Lore:&f Quill's route record ends at a turn Rook remembers as impassable. The Order keeps the route open long enough to find out which memory failed.",
             "&eObjective:&f Mark a lit refuge route between the Order and a useful public destination, including hazards and a fallback point.",
-            "&aBuild Standard:&f Someone unfamiliar with the route can follow it without voice guidance."
+            "&aBuild Standard:&f Someone unfamiliar with the route can follow it without voice guidance.",
+            "&7[SUITABLE: WORLD / NAVIGATION STEWARDS]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2526,7 +2554,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build · A Hunter faction earns trust by making retreat possible.",
+          "subtitle": "[WORLD] Make a public refuge route legible at night.",
           "tasks": [
             {
               "advancement": null,
@@ -2542,7 +2570,7 @@
               "value": 1
             }
           ],
-          "title": "REFUGE ROUTE",
+          "title": "[WORLD] REFUGE ROUTE",
           "x": 0,
           "y": 5.8,
           "can_repeat": false
@@ -2554,7 +2582,8 @@
           "description": [
             "&6Lore:&f The first response drill is deliberately uncomfortable: the Order must discover what its maps omit before a real traveller does.",
             "&eObjective:&f Run a night escort, lost-player retrieval, cleansing response, evacuation, or shelter test.",
-            "&aBuild Standard:&f Another player reviews the result, or a solo test log names one failure and the fix applied."
+            "&aBuild Standard:&f Another player reviews the result, or a solo route audit logs one failure and the fix applied.",
+            "&7[SUITABLE: WORLD / SOLO ROUTE AUDIT]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2577,7 +2606,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build · Preparation without a victim.",
+          "subtitle": "[WORLD] Solo option available · test one response handoff.",
           "tasks": [
             {
               "advancement": null,
@@ -2588,12 +2617,12 @@
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "A Safety/Rescue Drill or Solo Route Audit Was Reviewed",
+              "title": "Solo option available: route audit; log one failure and apply one fix",
               "type": "checkmark",
               "value": 1
             }
           ],
-          "title": "RESPONSE DRILL",
+          "title": "[WORLD] RESPONSE DRILL",
           "x": 0,
           "y": 9.2,
           "can_repeat": false
@@ -2604,8 +2633,9 @@
           ],
           "description": [
             "&6Lore:&f Holy practice is not a trophy for winning a hunt. It is the quiet work of keeping a room clean, a wound tended, and a frightened traveller inside the light.",
-            "&eObjective:&f Install one Holy Rune in a visible ward, medical, cleansing, or shelter station and demonstrate its safe use.",
-            "&aBuild Standard:&f The station explains what it does and how a visitor receives help; no vampire target or kill is required."
+            "&eObjective:&f Install one Holy Rune in one of three accepted public examples: a public ward, medical station, or shelter desk, and demonstrate its safe use.",
+            "&aBuild Standard:&f The station explains what it does and how a visitor receives help; rune inspection is non-consuming, and no vampire target or kill is required.",
+            "&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2637,7 +2667,7 @@
           ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression · Turn protection into a practiced public service.",
+          "subtitle": "[PROGRESSION] Inspect a public Holy Rune service without consuming it.",
           "tasks": [
             {
               "advancement": null,
@@ -2666,7 +2696,7 @@
               "value": 1
             }
           ],
-          "title": "HOLY WARD",
+          "title": "[PROGRESSION] HOLY WARD",
           "x": 7.0,
           "y": 9.2,
           "can_repeat": false
@@ -2684,8 +2714,9 @@
           ],
           "description": [
             "&6Lore:&f Rook calls the charter a correction. Quill calls it an admission. Both are written into the same ledger.",
-            "&eObjective:&f Complete five works, including at least one Progression work and one World-Building work, then record the headquarters and its maintenance handoff.",
-            "&aBuild Standard:&f The review tasks name the completed works and confirm the Order serves people beyond its builders."
+            "&eObjective:&f Complete five of eight works, including at least one [PROGRESSION] and one [WORLD] work, then record the headquarters and its maintenance handoff.",
+            "&aBuild Standard:&f The review tasks name the completed works and confirm the Order serves people beyond its builders.",
+            "&7[SUITABLE: CHARTER / ANY TEAM]"
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -2742,7 +2773,7 @@
           ],
           "shape": "hexagon",
           "size": 2.0,
-          "subtitle": "Five useful works become a home people can actually rely on.",
+          "subtitle": "[CHARTER] Five of eight works, with both lanes represented.",
           "tasks": [
             {
               "advancement": null,
@@ -2771,7 +2802,7 @@
               "value": 1
             }
           ],
-          "title": "LANTERN CHARTER",
+          "title": "[CHARTER] LANTERN CHARTER",
           "x": 0,
           "y": 13.0,
           "can_repeat": false
@@ -2783,7 +2814,8 @@
           "description": [
             "&6Lore:&f The watchhouse has a roof now. That is not the same thing as having a refuge.",
             "&eObjective:&f Add eight placed lanterns and one visible public-service feature: labelled medicine, route notices, a guest bed, or a safe handoff point.",
-            "&aBuild Standard:&f A tired stranger can understand what the room is for and where to go next."
+            "&aBuild Standard:&f A tired stranger can understand what the room is for and where to go next.",
+            "&7[SUITABLE: WORLD / REFUGE REFIT]"
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -2804,7 +2836,7 @@
           ],
           "shape": "square",
           "size": 1.3,
-          "subtitle": "World Build · Make the refuge legible after dark.",
+          "subtitle": "[WORLD] Make the refuge legible after dark.",
           "tasks": [
             {
               "advancement": null,
@@ -2833,7 +2865,7 @@
               "value": 1
             }
           ],
-          "title": "REFIT THE WATCHHOUSE",
+          "title": "[WORLD] REFIT THE WATCHHOUSE",
           "x": 0,
           "y": 16.4,
           "can_repeat": false
@@ -2844,8 +2876,9 @@
           ],
           "description": [
             "&6Lore:&f A Holy Rune is not a medal. It is a promise that the room will still help someone who arrives frightened, injured, or unable to explain what happened.",
-            "&eObjective:&f Install one Holy Rune in a visible ward, medical, cleansing, or shelter station and demonstrate its safe use.",
-            "&aBuild Standard:&f The station explains its purpose and the visitor's next step."
+            "&eObjective:&f Install one Holy Rune in one of three accepted public examples: a public ward, medical station, or shelter desk, and demonstrate its safe use.",
+            "&aBuild Standard:&f Use one of three accepted public examples—public ward, medical station, or shelter desk. Rune inspection is non-consuming; explain the visitor's next step.",
+            "&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -2866,7 +2899,7 @@
           ],
           "shape": "octagon",
           "size": 1.3,
-          "subtitle": "Progression · Turn protection into a practiced service.",
+          "subtitle": "[PROGRESSION] Turn protection into a practiced service.",
           "tasks": [
             {
               "advancement": null,
@@ -2895,7 +2928,7 @@
               "value": 1
             }
           ],
-          "title": "CONSECRATE THE REFUGE",
+          "title": "[PROGRESSION] CONSECRATE THE REFUGE",
           "x": 0,
           "y": 19.8,
           "can_repeat": false
@@ -2907,7 +2940,8 @@
           "description": [
             "&6Lore:&f Quill's record says the refuge failed because no one outside the Order knew the handoff. Rook has stopped arguing with that line.",
             "&eObjective:&f Invite someone outside the Order to use or review the refuge service, then record one practical handoff or improvement.",
-            "&aBuild Standard:&f The service works across faction lines and names who restocks, guides, or repairs it."
+            "&aBuild Standard:&f The service works across faction lines and names who restocks, guides, or repairs it.",
+            "&7[SUITABLE: PROGRESSION / PUBLIC HANDOFF]"
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -2928,7 +2962,7 @@
           ],
           "shape": "hexagon",
           "size": 1.3,
-          "subtitle": "Public Service · Let the refuge work across faction lines.",
+          "subtitle": "[PROGRESSION] Let the refuge work across faction lines.",
           "tasks": [
             {
               "advancement": null,
@@ -2957,7 +2991,7 @@
               "value": 1
             }
           ],
-          "title": "KEEP A TREATY LIGHT",
+          "title": "[PROGRESSION] KEEP A TREATY LIGHT",
           "x": 7.0,
           "y": 19.8,
           "can_repeat": false
@@ -3034,7 +3068,7 @@
           ],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "A neutral company needs a door, a witness, and a courier who remembers the mistakes.",
+          "subtitle": "Charter · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3050,7 +3084,7 @@
               "value": 1
             }
           ],
-          "title": "FOUND A FREE COMPANY",
+          "title": "[CHARTER] FOUND A FREE COMPANY",
           "x": 0,
           "y": -7,
           "can_repeat": false
@@ -3095,7 +3129,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "World Build · a contract hall people can actually use.",
+          "subtitle": "World · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3124,7 +3158,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · OPEN THE CONTRACT HALL",
+          "title": "[WORLD] OPEN THE CONTRACT HALL",
           "x": 0,
           "y": -2.0,
           "can_repeat": false
@@ -3168,7 +3202,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "World Build · make a trip legible before someone has to guess.",
+          "subtitle": "World · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3197,7 +3231,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · MARK A COURIER ROUTE",
+          "title": "[WORLD] MARK A COURIER ROUTE",
           "x": 0,
           "y": 2.0,
           "can_repeat": false
@@ -3242,7 +3276,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "World Build · trade should create meetings, not another locked chest.",
+          "subtitle": "World · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3271,7 +3305,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · OPEN A NEUTRAL MARKET",
+          "title": "[WORLD] OPEN A NEUTRAL MARKET",
           "x": 0,
           "y": 6.0,
           "can_repeat": false
@@ -3325,7 +3359,7 @@
           ],
           "shape": "heart",
           "size": 1.25,
-          "subtitle": "World Build · give visitors somewhere safe to stop.",
+          "subtitle": "World · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3367,7 +3401,7 @@
               "value": 1
             }
           ],
-          "title": "WORLD BUILD · OPEN A WAYSTATION",
+          "title": "[WORLD] OPEN A WAYSTATION",
           "x": 0,
           "y": 10.0,
           "can_repeat": false
@@ -3411,7 +3445,7 @@
           ],
           "shape": "gear",
           "size": 1.25,
-          "subtitle": "Progression · courier work is a skill, not another room to furnish.",
+          "subtitle": "Progression · Solo-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3440,7 +3474,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · COURIER UNDER TWO SEALS",
+          "title": "[PROGRESSION] COURIER UNDER TWO SEALS",
           "x": 7.0,
           "y": -2.0,
           "can_repeat": false
@@ -3452,8 +3486,8 @@
           "description": [
             "&fLore:&f Iven translated a Blood ward with a Holy glossary and left out the word for surrender.",
             "&fNobody was hurt, but the door stayed sealed for three days. The Free Company now publishes safe examples.",
-            "&eObjective:&f Prepare a neutral spellwright service with Arcane Essence and demonstrate one safe utility procedure.",
-            "&7Build Standard:&f Show the prepared material and a signed procedure. A solo player may self-audit the demonstration."
+            "&eObjective:&f Prepare a PUBLIC SPELLWRIGHT service with Arcane Essence and demonstrate one safe utility procedure.",
+            "&7Build Standard:&f Show the prepared material and a signed procedure. This is preparation and demonstration only, not Blood/Holy interpretation or a power skip. Borrowed, purchased, or received materials are valid without faction allegiance; a solo player may self-audit the demonstration."
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -3485,7 +3519,7 @@
           ],
           "shape": "diamond",
           "size": 1.25,
-          "subtitle": "Progression · make spell utility legible without claiming either faction's mastery.",
+          "subtitle": "Progression · Solo-friendly · preparation/demo",
           "tasks": [
             {
               "advancement": null,
@@ -3514,7 +3548,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · PUBLIC SPELLWRIGHT",
+          "title": "[PROGRESSION] PUBLIC SPELLWRIGHT",
           "x": 7.0,
           "y": 2.0,
           "can_repeat": false
@@ -3559,7 +3593,7 @@
           ],
           "shape": "square",
           "size": 1.25,
-          "subtitle": "Progression · resolve one real problem nobody owns by default.",
+          "subtitle": "Progression · Team-friendly",
           "tasks": [
             {
               "advancement": null,
@@ -3588,7 +3622,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · MEDIATE OR RESCUE",
+          "title": "[PROGRESSION] MEDIATE OR RESCUE",
           "x": 7.0,
           "y": 6.0,
           "can_repeat": false
@@ -3600,8 +3634,8 @@
           "description": [
             "&fLore:&f The translation desk began with a Blood rune, a Holy rune, and Nessa's refusal to copy either without a warning.",
             "&fIts first useful result was not a weapon; it was one safe instruction that both sides could read.",
-            "&eObjective:&f Open the spell translation desk with Arcane Essence and document one limited Blood or Holy utility.",
-            "&7Build Standard:&f Keep the example available to visitors and record its safety limit."
+            "&eObjective:&f Open the TRANSLATION DESK with Arcane Essence and document one limited Blood or Holy interpretation.",
+            "&7Build Standard:&f Keep the example available to visitors, record its safety limit, and do not prepare or cast it as a power skip. Borrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -3633,18 +3667,18 @@
           ],
           "shape": "octagon",
           "size": 1.25,
-          "subtitle": "Progression · translate utility, not allegiance.",
+          "subtitle": "Progression · Solo-friendly · interpretation/documentation",
           "tasks": [
             {
               "advancement": null,
               "consume": false,
-              "count": 4,
+              "count": 2,
               "criterion": "",
               "id": "7A11C0DE1410005B",
               "item": "irons_spellbooks:arcane_essence",
               "optional": false,
               "stat": null,
-              "title": "Carry Four Arcane Essence",
+              "title": "Carry 2 Arcane Essence",
               "type": "item",
               "value": 1
             },
@@ -3662,7 +3696,7 @@
               "value": 1
             }
           ],
-          "title": "PROGRESSION · OPEN THE SPELL TRANSLATION DESK",
+          "title": "[PROGRESSION] OPEN THE TRANSLATION DESK",
           "x": 7.0,
           "y": 10.0,
           "can_repeat": false
@@ -3746,7 +3780,7 @@
           ],
           "shape": "hexagon",
           "size": 2.0,
-          "subtitle": "Five useful works make a neutral company people can rely on.",
+          "subtitle": "Charter · Team-friendly · 5 of 8",
           "tasks": [
             {
               "advancement": null,
@@ -3801,7 +3835,7 @@
               "value": 1
             }
           ],
-          "title": "CHARTER THE FREE COMPANY",
+          "title": "[CHARTER] CHARTER THE FREE COMPANY",
           "x": 0,
           "y": 15.0,
           "can_repeat": false
@@ -3917,7 +3951,9 @@
           ],
           "description": [
             "&6Lore:&f Nessa's Greybridge press jammed because nobody marked the order of operations. She wants a small service another person can restart without guessing.",
-            "&fObjective:&7 Present 4 Create Andesite Alloys, then demonstrate or solo-test one repeatable machine service and record its result.",
+            "&bSuitability:&f [Workshop] [Technical] [Solo-friendly]",
+            "&fObjective:&7 Carry 4 Create Andesite Alloys for inspection; they are not consumed. Demonstrate or solo-test one repeatable machine service.",
+            "&fOutput:&7 Leave a labelled service card naming inputs, order, output, restart point, and one failure or maintenance note.",
             "&fStandard:&7 Another player may repeat the service; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -3947,7 +3983,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Service · make a machine teachable",
+          "subtitle": "[Workshop] [Technical] · make a machine teachable",
           "tasks": [
             {
               "advancement": null,
@@ -3958,7 +3994,7 @@
               "item": "create:andesite_alloy",
               "optional": false,
               "stat": null,
-              "title": "Carry 4 Andesite Alloy",
+              "title": "Carry 4 Andesite Alloys for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -3976,7 +4012,7 @@
               "value": 1
             }
           ],
-          "title": "ENGINEER",
+          "title": "[SPECIALTY] ENGINEER",
           "x": -8.4,
           "y": 0,
           "can_repeat": false
@@ -3987,7 +4023,9 @@
           ],
           "description": [
             "&6Lore:&f Mirelle Voss translated a Greybridge ward from memory and reversed one line. The ward held, but it held the wrong doorway. She needs a method with a visible first step.",
-            "&fObjective:&7 Present 4 Arcane Essences, then demonstrate or solo-test one repeatable spell-preparation step and record its result.",
+            "&bSuitability:&f [Magic] [Research] [Solo-friendly]",
+            "&fObjective:&7 Carry 4 Arcane Essences for inspection; they are not consumed. Demonstrate or solo-test one repeatable spell-preparation step.",
+            "&fOutput:&7 Leave a safe preparation card naming the first step, materials, expected result, and one limit or failure warning.",
             "&fStandard:&7 A partner may reproduce the step; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -4017,7 +4055,7 @@
           ],
           "shape": "hexagon",
           "size": 1.2,
-          "subtitle": "Service · make one spell step teachable",
+          "subtitle": "[Magic] [Research] · make one spell step teachable",
           "tasks": [
             {
               "advancement": null,
@@ -4028,7 +4066,7 @@
               "item": "irons_spellbooks:arcane_essence",
               "optional": false,
               "stat": null,
-              "title": "Carry 4 Arcane Essence",
+              "title": "Carry 4 Arcane Essences for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -4046,7 +4084,7 @@
               "value": 1
             }
           ],
-          "title": "ARCANIST",
+          "title": "[SPECIALTY] ARCANIST",
           "x": -6.0,
           "y": 0,
           "can_repeat": false
@@ -4058,7 +4096,9 @@
           "description": [
             "&6Lore:&f Elias Rook once called a night guest by the wrong title at Greybridge. The insult became a security problem.",
             "&fHe now asks for one clear sign that tells strangers what a threshold means.",
-            "&fObjective:&7 Present 1 Vampire Fang, then demonstrate or solo-test one Blood or faction-facing procedure and record its result.",
+            "&bSuitability:&f [Magic] [Faction] [Social]",
+            "&fObjective:&7 Carry 1 Vampire Fang for inspection; it is not consumed. Demonstrate or solo-test one Blood or faction-facing procedure.",
+            "&fOutput:&7 Publish one threshold sign or procedure card with the welcome rule, boundary, response, and escalation contact.",
             "&fStandard:&7 Another player may follow the procedure; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -4088,7 +4128,7 @@
           ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Service · translate one night custom",
+          "subtitle": "[Magic] [Faction] [Social] · translate one night custom",
           "tasks": [
             {
               "advancement": null,
@@ -4112,12 +4152,12 @@
               "item": "vampirism:vampire_fang",
               "optional": false,
               "stat": null,
-              "title": "Carry a Vampire Fang",
+              "title": "Carry 1 Vampire Fang for inspection (not consumed)",
               "type": "item",
               "value": 1
             }
           ],
-          "title": "NIGHT SPECIALIST",
+          "title": "[SPECIALTY] NIGHT SPECIALIST",
           "x": -3.6,
           "y": 0,
           "can_repeat": false
@@ -4128,7 +4168,9 @@
           ],
           "description": [
             "&6Lore:&f Nessa's Greybridge courier arrived with a working vehicle and no safe place to land. The first useful aeronautics contribution is a visible, low-tier landing site.",
-            "&fObjective:&7 Present 16 Scaffolding, then demonstrate or solo-test a safe vehicle-site procedure and record its result.",
+            "&bSuitability:&f [Build] [Workshop] [Route] [Solo-friendly]",
+            "&fObjective:&7 Carry 16 Scaffolding for inspection; it is not consumed. Demonstrate or solo-test a safe vehicle-site procedure.",
+            "&fOutput:&7 Mark one low-tier landing site with an approach, parking or tie-down point, safety boundary, and a written arrival test.",
             "&fStandard:&7 Another player may inspect the test; solo players sign the result or failure. Players who want the later Wing project may pursue it elsewhere, but it is not required here."
           ],
           "hide_dependency_lines": false,
@@ -4158,7 +4200,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Service · make a landing site usable",
+          "subtitle": "[Build] [Workshop] [Route] · make a landing site usable",
           "tasks": [
             {
               "advancement": null,
@@ -4182,12 +4224,12 @@
               "item": "minecraft:scaffolding",
               "optional": false,
               "stat": null,
-              "title": "Prepare a Vehicle Wing",
+              "title": "Carry 16 Scaffolding for inspection (not consumed)",
               "type": "item",
               "value": 1
             }
           ],
-          "title": "AERONAUT",
+          "title": "[SPECIALTY] AERONAUT",
           "x": -1.2,
           "y": 0,
           "can_repeat": false
@@ -4198,7 +4240,9 @@
           ],
           "description": [
             "&6Lore:&f Mirelle Voss rang the Greybridge bell once for welcome and once for alarm. Nobody had written down which was which. She asks for a signal that two sides can read the same way.",
-            "&fObjective:&7 Present 1 Bell, then demonstrate or solo-test one public signal or mediation procedure and record its result.",
+            "&bSuitability:&f [Build] [Social] [Faction] [Solo-friendly]",
+            "&fObjective:&7 Carry 1 Bell for inspection; it is not consumed. Demonstrate or solo-test one public signal or mediation procedure.",
+            "&fOutput:&7 Publish a two-state signal code (welcome and alarm) with its response, visible placement, and one recorded test.",
             "&fStandard:&7 Another player may answer the signal; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -4228,7 +4272,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Service · make one signal legible",
+          "subtitle": "[Build] [Social] [Faction] · make one signal legible",
           "tasks": [
             {
               "advancement": null,
@@ -4252,12 +4296,12 @@
               "item": "minecraft:bell",
               "optional": false,
               "stat": null,
-              "title": "Place a Specialty Bell",
+              "title": "Carry 1 Bell for inspection (not consumed)",
               "type": "item",
               "value": 1
             }
           ],
-          "title": "DIPLOMAT",
+          "title": "[SPECIALTY] DIPLOMAT",
           "x": 1.2,
           "y": 0,
           "can_repeat": false
@@ -4268,7 +4312,9 @@
           ],
           "description": [
             "&6Lore:&f Elias Rook's Greybridge relief crate held food, torches, and no label. The right supplies reached the wrong hands. He asks for a field kit that can be checked at a glance.",
-            "&fObjective:&7 Present 2 Barrels, then demonstrate or solo-test one labelled public kit and record its result.",
+            "&bSuitability:&f [Build] [Logistics] [Support] [Solo-friendly]",
+            "&fObjective:&7 Carry 2 Barrels for inspection; they are not consumed. Demonstrate or solo-test one labelled public kit.",
+            "&fOutput:&7 Stock and label one field kit with an inventory list, issue rule, restock owner, and one witnessed or self-audited use.",
             "&fStandard:&7 Another player may use the kit; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -4298,7 +4344,7 @@
           ],
           "shape": "circle",
           "size": 1.2,
-          "subtitle": "Service · stock one field kit",
+          "subtitle": "[Build] [Logistics] [Support] · stock one field kit",
           "tasks": [
             {
               "advancement": null,
@@ -4322,12 +4368,12 @@
               "item": "minecraft:barrel",
               "optional": false,
               "stat": null,
-              "title": "Stock Two Field Barrels",
+              "title": "Carry 2 Barrels for inspection (not consumed)",
               "type": "item",
               "value": 1
             }
           ],
-          "title": "QUARTERMASTER",
+          "title": "[SPECIALTY] QUARTERMASTER",
           "x": 3.6,
           "y": 0,
           "can_repeat": false
@@ -4338,7 +4384,9 @@
           ],
           "description": [
             "&6Lore:&f Nessa's Greybridge map showed the destination and omitted the dangerous bridge. A route is only useful when the next person can survive following it.",
-            "&fObjective:&7 Present 1 Filled Map, then demonstrate or solo-test one route with its hazard and result recorded.",
+            "&bSuitability:&f [Route] [Exploration] [Navigation] [Solo-friendly]",
+            "&fObjective:&7 Carry 1 Filled Map for inspection; it is not consumed. Demonstrate or solo-test one route with its hazard and result recorded.",
+            "&fOutput:&7 Publish a survivable route record naming both endpoints, one hazard, one safe stop, a caretaker, and the correction tested.",
             "&fStandard:&7 Another player may follow the route; solo players sign the test with the observed result or failure."
           ],
           "hide_dependency_lines": false,
@@ -4368,7 +4416,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Service · publish one survivable route",
+          "subtitle": "[Route] [Exploration] [Navigation] · publish one survivable route",
           "tasks": [
             {
               "advancement": null,
@@ -4379,7 +4427,7 @@
               "item": "minecraft:filled_map",
               "optional": false,
               "stat": null,
-              "title": "Carry a Filled Map",
+              "title": "Carry 1 Filled Map for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -4397,7 +4445,7 @@
               "value": 1
             }
           ],
-          "title": "PATHFINDER",
+          "title": "[SPECIALTY] PATHFINDER",
           "x": 6.0,
           "y": 0,
           "can_repeat": false
@@ -4408,7 +4456,9 @@
           ],
           "description": [
             "&6Lore:&f Mirelle Voss remembers Greybridge's failure differently from Elias Rook, and both accounts leave out the moment the plan broke. The archive needs the gap, not a polished legend.",
-            "&fObjective:&7 Present 1 Writable Book, then demonstrate or solo-test one archive procedure and record the result or failure.",
+            "&bSuitability:&f [Archive] [Research] [Solo-friendly]",
+            "&fObjective:&7 Carry 1 Writable Book for inspection; it is not consumed. Demonstrate or solo-test one archive procedure.",
+            "&fOutput:&7 File one archive entry naming the event, source, result, uncertainty or failure, and the next test another player should run.",
             "&fStandard:&7 Another player may review the record; solo players sign their own record and name what failed."
           ],
           "hide_dependency_lines": false,
@@ -4438,7 +4488,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Service · preserve one useful failure",
+          "subtitle": "[Archive] [Research] · preserve one useful failure",
           "tasks": [
             {
               "advancement": null,
@@ -4449,7 +4499,7 @@
               "item": "minecraft:writable_book",
               "optional": false,
               "stat": null,
-              "title": "Carry a Specialty Ledger",
+              "title": "Carry 1 Writable Book for inspection (not consumed)",
               "type": "item",
               "value": 1
             },
@@ -4467,7 +4517,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVIST",
+          "title": "[SPECIALTY] ARCHIVIST",
           "x": 8.4,
           "y": 0,
           "can_repeat": false
@@ -4543,7 +4593,7 @@
           ],
           "description": [
             "&6Lore:&f A craft becomes communal only when its next operator can find the instructions and the first honest failure. Leave one key in the settlement after the three-hands review.",
-            "&fObjective:&7 Place 1 Writable Book containing the method, its result, and one failure or maintenance warning.",
+            "&fObjective:&7 Carry 1 Writable Book for inspection; it is not consumed. Leave the method, its result, and one failure or maintenance warning in the settlement.",
             "&fStandard:&7 Another player may sign the handoff; solo players sign it themselves and name the next test."
           ],
           "hide_dependency_lines": false,
@@ -4591,7 +4641,7 @@
               "item": "minecraft:writable_book",
               "optional": false,
               "stat": null,
-              "title": "REVIEW: The Method Has a Home, Label, and Maintainer",
+              "title": "Carry 1 Writable Book for inspection (not consumed)",
               "type": "item",
               "value": 1
             }
@@ -4710,7 +4760,9 @@
             "&fMirelle circles the map where two old roads nearly meet. She does not ask for another road; she asks for the missing sign, bridge, rail spur, or caretaker that makes the old one dependable.",
             "",
             "&e&lOBJECTIVE",
-            "&fUpgrade or link an existing route, rail, path, or Via Romana line between two useful locations.",
+            "&fWALK-THROUGH: Upgrade, link, test, or maintain an existing route, rail, path, or Via Romana line between two useful locations; mark both endpoints and the signage.",
+            "&fEXISTING BUILDS COUNT: An existing road, bridge, rail spur, path, or Via Romana line counts when its endpoints, signs, and maintenance owner are made usable.",
+            "&fSOLO AUDIT: Walk endpoint-to-endpoint, take one deliberate wrong turn, verify the signs recover the route, and log the caretaker plus one correction.",
             "",
             "&a&lSTANDARD",
             "&fAn unbriefed traveller can identify both endpoints, follow the signs, and find the maintenance owner. A solo player may log and correct one navigation failure."
@@ -4776,7 +4828,9 @@
             "&fElias finds Greybridge's oldest contract written on the back of a receipt. Mirelle calls it proof that markets need rules. Elias calls it proof that rules need somewhere public to be read.",
             "",
             "&e&lOBJECTIVE",
-            "&fUpgrade an existing market, stall, contract board, or trade room into a public hall with three active offers, services, or contract categories.",
+            "&fLIVE SERVICE: Upgrade an existing market, stall, contract board, or trade room into a public hall with three active offers or services, visible terms, and one tested transaction.",
+            "&fEXISTING BUILDS COUNT: An existing market, stall, contract board, or trade room counts when neutral access, a steward, and readable terms are added or repaired.",
+            "&fSOLO AUDIT: Perform and log one transaction from a posted offer, including its price or terms, outcome, and one corrected rule or confusing sign.",
             "",
             "&a&lSTANDARD",
             "&fNeutral access, visible terms, and a named steward are present. A solo player may perform and log a test transaction or correct one confusing rule."
@@ -4843,7 +4897,9 @@
             "&fNessa asks for an upgrade joining machine access, repair stock, and a clear line between public and personal tools.",
             "",
             "&e&lOBJECTIVE",
-            "&fSubstantially upgrade an existing workshop or depot so two useful capabilities and their public/private stock are obvious.",
+            "&fMACHINE TEST: Substantially upgrade an existing workshop or depot so two useful capabilities, a process or repair test, and public/private stock boundaries are obvious.",
+            "&fEXISTING BUILDS COUNT: An existing workshop, machine room, tool wall, or depot counts when two capabilities and their public/private stock are labelled and maintained.",
+            "&fSOLO AUDIT: Run one processing or repair job start-to-finish, record the result or failure, and correct one broken step, label, or stock boundary.",
             "",
             "&a&lSTANDARD",
             "&fTwo capabilities work, operating rules are visible, and a maintainer is named. A solo player may run a repair or processing test and record one corrected failure."
@@ -4910,7 +4966,9 @@
             "&fMirelle insists the record must also admit what remains uncertain.",
             "",
             "&e&lOBJECTIVE",
-            "&fUpgrade an existing archive, map room, memorial, museum, or gallery with five verifiable world facts and a place for the sixth.",
+            "&fSOURCE CHECK: Upgrade an existing archive, map room, memorial, museum, or gallery with five verifiable world facts, their sources, and a place for the sixth.",
+            "&fEXISTING BUILDS COUNT: An existing archive, map room, memorial, museum, or gallery counts when its records are browseable, located or dated, and open to a source audit.",
+            "&fSOLO AUDIT: Select one entry, trace it to its source, record the fact and uncertainty or correction, and add the audit to the archive log.",
             "",
             "&a&lSTANDARD",
             "&fThe facts are browseable, dated or located, and include one uncertainty or correction. A solo player may audit one entry and add its source."
@@ -4976,7 +5034,9 @@
             "&fGreybridge's refuge was large enough on paper and full enough in practice. Mirelle asks for capacity that can be counted, while Elias asks for an exit that can be found when the lamps are out.",
             "",
             "&e&lOBJECTIVE",
-            "&fUpgrade an existing refuge, alarm point, lit retreat, or emergency station and test its capacity, supplies, and exit route.",
+            "&fDRILL: Upgrade an existing refuge, alarm point, lit retreat, or emergency station and run a capacity, exit, supplies, and evacuation test.",
+            "&fEXISTING BUILDS COUNT: An existing refuge, alarm point, lit retreat, or emergency station counts when its capacity is counted, supplies are ready, and an exit route is marked.",
+            "&fSOLO AUDIT: Start at the alarm point, time a simulated evacuation to the refuge and its exit, count usable places and supplies, then sign the maintenance log with one correction.",
             "",
             "&a&lSTANDARD",
             "&fThe station is findable under pressure and one failure is corrected. A solo player may self-audit the route and sign the maintenance log."
@@ -5043,7 +5103,9 @@
             "&fNessa treats arrival and gathering as one promise: people can reach it, use it, and tell what happened there.",
             "",
             "&e&lOBJECTIVE",
-            "&fUpgrade an existing dock, hangar, vehicle depot, meeting room, stage, or event ground into one usable public arrival-and-gathering space.",
+            "&fHOSTED TEST: Upgrade an existing dock, hangar, vehicle depot, meeting room, stage, or event ground into one usable public arrival-and-gathering space, then test arrival and one venue function.",
+            "&fEXISTING BUILDS COUNT: An existing dock, hangar, vehicle depot, meeting room, stage, or event ground counts when its safe approach and public function are marked and usable.",
+            "&fSOLO AUDIT: Arrive by the marked approach, run one event or venue function end-to-end, record the attendance or result, and correct one access or safety failure.",
             "",
             "&a&lSTANDARD",
             "&fMark a safe approach, provide one useful vehicle or venue function, and host or self-audit one event/test with a recorded correction."
@@ -5219,6 +5281,9 @@
             "&e&lOBJECTIVE",
             "&fPublish a venue, participants, stop time, cleanup owner, and two formats that everyone can decline without penalty.",
             "",
+            "&9&lSUITABILITY",
+            "&fSolo: rules audit | Group: host formats | Build: venue, boundaries, and cleanup station.",
+            "",
             "&a&lEVENT STANDARD",
             "&fUse reversible props, visible boundaries, and a written result. The ordinary path is two noncombat events; the skirmish is a separate, runtime-unverified option."
           ],
@@ -5233,7 +5298,7 @@
           "rewards": [],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "Prepare the rules, then choose any two harmless formats.",
+          "subtitle": "[EVENT] Prepare the rules, then choose any two harmless formats.",
           "tasks": [
             {
               "advancement": null,
@@ -5249,7 +5314,7 @@
               "value": 1
             }
           ],
-          "title": "RIVALRY NIGHT",
+          "title": "[EVENT] RIVALRY NIGHT",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -5264,6 +5329,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fCreate one reversible poster, banner, exhibit, or museum label that quotes or paraphrases one side of the bell story.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: display audit | Group: paired accounts | Build: reversible poster, banner, or exhibit.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, both sides display a piece. For a solo audit, place one display beside a signed note naming the source and its removal time. Do not place it in another player's claim without permission."
@@ -5286,7 +5354,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Make a reversible accusation that can survive daylight.",
+          "subtitle": "[EVENT] Make a reversible accusation that can survive daylight.",
           "tasks": [
             {
               "advancement": null,
@@ -5302,7 +5370,7 @@
               "value": 1
             }
           ],
-          "title": "PROPAGANDA",
+          "title": "[EVENT] PROPAGANDA",
           "x": -6.0,
           "y": -1.2,
           "can_repeat": false
@@ -5317,6 +5385,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fStage a Blood-versus-Holy utility demonstration, route briefing, or support-station test against an environmental target or dummy space.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: test log | Group: safety briefing | Build: support station or marked demo space.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, at least three people can judge or attend. For a solo audit, record the setup, expected result, observed result, and one safe adjustment. No unwilling target, combat spell, or faction change is required."
@@ -5339,7 +5410,7 @@
           ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Demonstrate protection without making a person the target.",
+          "subtitle": "[EVENT] Demonstrate protection without making a person the target.",
           "tasks": [
             {
               "advancement": null,
@@ -5355,7 +5426,7 @@
               "value": 1
             }
           ],
-          "title": "WARD TEST",
+          "title": "[EVENT] WARD TEST",
           "x": -3.6,
           "y": -1.2,
           "can_repeat": false
@@ -5370,6 +5441,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fPlace a short clue course ending at a public project, harmless trophy, or location reveal, then remove or archive every clue.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: timed route audit | Group: solve together | Build: clue trail with removable markers.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, participants solve the route. For a solo audit, run it against your own recorded time and one failure note. The final record names what was learned and where the clues went."
@@ -5392,7 +5466,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Leave a trail that teaches something when it ends.",
+          "subtitle": "[EVENT] Leave a trail that teaches something when it ends.",
           "tasks": [
             {
               "advancement": null,
@@ -5408,7 +5482,7 @@
               "value": 1
             }
           ],
-          "title": "CLUE COURSE",
+          "title": "[EVENT] CLUE COURSE",
           "x": -1.2,
           "y": -1.2,
           "can_repeat": false
@@ -5423,6 +5497,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fPublish a start, finish, allowed transport, route, and safety rule for a foot, rail, boat, glider, or vehicle run.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: repeat-run audit | Group: route relay | Build: marked route and finish.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, record the route and a visible finish. For a solo audit, run it twice, record the times and one failure/recovery, and leave the route usable for the next courier."
@@ -5445,7 +5522,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Publish the route before anyone starts moving.",
+          "subtitle": "[EVENT] Publish the route before anyone starts moving.",
           "tasks": [
             {
               "advancement": null,
@@ -5461,7 +5538,7 @@
               "value": 1
             }
           ],
-          "title": "COURIER RUN",
+          "title": "[EVENT] COURIER RUN",
           "x": 1.2,
           "y": -1.2,
           "can_repeat": false
@@ -5476,6 +5553,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fSet a time window and procurement or service benchmark: gather a real bundle, fill a shortage, or complete a useful delivery.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: service audit | Group: publish a benchmark | Build: neutral desk or delivery point.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, publish the result and the terms. For a solo audit, record the target, inputs, elapsed time, and actual output. No fake trades, duplicated goods, or currency loop."
@@ -5498,7 +5578,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Measure a service without inventing a transaction.",
+          "subtitle": "[EVENT] Measure a service without inventing a transaction.",
           "tasks": [
             {
               "advancement": null,
@@ -5514,7 +5594,7 @@
               "value": 1
             }
           ],
-          "title": "MARKET TEST",
+          "title": "[EVENT] MARKET TEST",
           "x": 3.6,
           "y": -1.2,
           "can_repeat": false
@@ -5529,6 +5609,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fPresent a mascot, one-chunk build, ceremonial object, or public display with a three-line rubric: readable, reversible, and useful or memorable.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: self-score | Group: independent judges | Build: mascot, one-chunk build, or public display.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, invite judges or independent categories. For a solo audit, sign your own score against the rubric and record one change you would make. Keep the object only with its owner's consent."
@@ -5551,7 +5634,7 @@
           ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Judge a small object by a stated rule, not by power.",
+          "subtitle": "[EVENT] Judge a small object by a stated rule, not by power.",
           "tasks": [
             {
               "advancement": null,
@@ -5567,7 +5650,7 @@
               "value": 1
             }
           ],
-          "title": "BUILD RUBRIC",
+          "title": "[EVENT] BUILD RUBRIC",
           "x": 6.0,
           "y": -1.2,
           "can_repeat": false
@@ -5587,6 +5670,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fOnly after two noncombat formats, schedule a fully opt-in skirmish with a roster, loadout ceiling, arena, spectator protection, backup, stop command, and restoration owner.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: checklist rehearsal only | Group: consented roster | Build: marked arena and restoration plan.",
             "",
             "&a&lEVENT STANDARD",
             "&fThis node is runtime unverified and must remain unused until controls are tested. Completion means a safe end and agreed restoration—not kills, victory, or faction power."
@@ -5609,7 +5695,7 @@
           ],
           "shape": "diamond",
           "size": 1.4,
-          "subtitle": "Optional hosted PvP; two safe formats first.",
+          "subtitle": "[PVP · CONSENT REQUIRED] Optional hosted PvP only after two noncombat formats; record consent, roster, safe stop, and restoration owner.",
           "tasks": [
             {
               "advancement": null,
@@ -5620,12 +5706,12 @@
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "Confirm Consent, Backup, and Safe End",
+              "title": "[PVP · CONSENT REQUIRED] Confirm consent, roster, safe stop, and restoration owner (or choose a noncombat alternative)",
               "type": "checkmark",
               "value": 1
             }
           ],
-          "title": "SANCTIONED SKIRMISH",
+          "title": "[PVP · CONSENT REQUIRED] SANCTIONED SKIRMISH",
           "x": 4.6,
           "y": 4.0,
           "can_repeat": false
@@ -5645,6 +5731,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fArchive two event results, the cleanup status, one concrete moment, and one unresolved question or change for next time.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: record audit | Group: shared archive | Build: book, signs, map wall, or archive chest.",
             "",
             "&a&lEVENT STANDARD",
             "&fUse a book, signs, map wall, or archive chest that a late player can find. The archive is reachable without the skirmish; no PvP result is required."
@@ -5695,7 +5784,7 @@
           ],
           "shape": "hexagon",
           "size": 1.8,
-          "subtitle": "After any two safe formats, leave a useful record.",
+          "subtitle": "[CAPSTONE] After any two safe formats, leave a useful record.",
           "tasks": [
             {
               "advancement": null,
@@ -5711,7 +5800,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVE THE NIGHT",
+          "title": "[CAPSTONE] ARCHIVE THE NIGHT",
           "x": 0,
           "y": 4.0,
           "can_repeat": false
@@ -5748,6 +5837,9 @@
             "&e&lOBJECTIVE",
             "&fChoose a venue, post the invitation, name hosts and cleanup owners, and display the bell fragment, demonstration ledger, route map, or two witness notes without pretending the contradiction is solved.",
             "",
+            "&9&lSUITABILITY",
+            "&fSolo: staged preparation audit | Group: host the fair | Build: venue, stations, and archive display.",
+            "",
             "&a&lEVENT STANDARD",
             "&fThe preferred fair has visitors and shared stations. A solo preparation audit may use a staged venue, signed hosting plan, and NPC-facing invitation. The six contributions are alternatives; any three complete the fair."
           ],
@@ -5772,7 +5864,7 @@
           ],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "Set one place, one time, and one unresolved history on the table.",
+          "subtitle": "[EVENT] Set one place, one time, and one unresolved history on the table.",
           "tasks": [
             {
               "advancement": null,
@@ -5788,7 +5880,7 @@
               "value": 1
             }
           ],
-          "title": "CALL THE FAIR",
+          "title": "[EVENT] CALL THE FAIR",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -5803,6 +5895,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fHost a Vampire's Delight table, night-route tour, ritual study, archive reading, or aesthetic exhibit.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: staged hospitality audit | Group: host guests | Build: table, exhibit, or route stop.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, guests participate safely and leave with one remembered detail. For a solo audit, stage the table or exhibit, sign the guest protocol, and record the intended audience or NPC visitor."
@@ -5825,7 +5920,7 @@
           ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Give the night a table without asking for allegiance.",
+          "subtitle": "[EVENT] Give the night a table without asking for allegiance.",
           "tasks": [
             {
               "advancement": null,
@@ -5841,7 +5936,7 @@
               "value": 1
             }
           ],
-          "title": "HOUSE HOSPITALITY",
+          "title": "[EVENT] HOUSE HOSPITALITY",
           "x": -6.0,
           "y": -0.6,
           "can_repeat": false
@@ -5856,6 +5951,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fHost a safety demonstration, route briefing, rescue drill, countermeasure museum, or support station.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: signed test log | Group: teach visitors | Build: support station or marked lesson space.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, visitors can practice or learn without being targets. For a solo audit, stage the display against the environment and sign a test log with expected and observed results."
@@ -5878,7 +5976,7 @@
           ],
           "shape": "diamond",
           "size": 1.2,
-          "subtitle": "Explain a danger before it becomes a spectacle.",
+          "subtitle": "[EVENT] Explain a danger before it becomes a spectacle.",
           "tasks": [
             {
               "advancement": null,
@@ -5894,7 +5992,7 @@
               "value": 1
             }
           ],
-          "title": "LANTERN SERVICE",
+          "title": "[EVENT] LANTERN SERVICE",
           "x": -3.6,
           "y": -0.6,
           "can_repeat": false
@@ -5909,6 +6007,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fOperate a market, contract desk, courier service, map desk, guesthouse, mediation table, or event logistics station.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: documented service test | Group: run one interaction | Build: neutral desk, guesthouse, or logistics station.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, publish terms and complete one real interaction. For a solo audit, post the terms, complete a documented service or route test, and leave the desk ready for a visitor."
@@ -5931,7 +6032,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "Make one neutral service actually useful.",
+          "subtitle": "[EVENT] Make one neutral service actually useful.",
           "tasks": [
             {
               "advancement": null,
@@ -5947,7 +6048,7 @@
               "value": 1
             }
           ],
-          "title": "FREE COMPANY MARKET",
+          "title": "[EVENT] FREE COMPANY MARKET",
           "x": -1.2,
           "y": -0.6,
           "can_repeat": false
@@ -5962,6 +6063,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fDemonstrate a Create system, vehicle, dock, rail feature, workshop, or controlled engineering test.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: controlled test log | Group: explain and run it | Build: marked workshop, dock, or machine exhibit.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, explain the system and run it once with marked zones. For a solo audit, stage the display, run the test, and sign the expected result, observed result, and repair hook."
@@ -5984,7 +6088,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Let one machine explain itself before it moves.",
+          "subtitle": "[EVENT] Let one machine explain itself before it moves.",
           "tasks": [
             {
               "advancement": null,
@@ -6000,7 +6104,7 @@
               "value": 1
             }
           ],
-          "title": "ENGINEERING EXHIBITION",
+          "title": "[EVENT] ENGINEERING EXHIBITION",
           "x": 1.2,
           "y": -0.6,
           "can_repeat": false
@@ -6015,6 +6119,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fRun a performance, mini-game, ceremony, award, speech, guided tour, or other shared activity.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: staged test run | Group: participate together | Build: stage, game lane, or tour route.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, announce how to join and show a visible ending. For a solo audit, stage the activity, write the joining instructions, and record a test run or NPC audience response."
@@ -6037,7 +6144,7 @@
           ],
           "shape": "circle",
           "size": 1.2,
-          "subtitle": "Give visitors a reason to participate.",
+          "subtitle": "[EVENT] Give visitors a reason to participate.",
           "tasks": [
             {
               "advancement": null,
@@ -6053,7 +6160,7 @@
               "value": 1
             }
           ],
-          "title": "PUBLIC SHOWCASE",
+          "title": "[EVENT] PUBLIC SHOWCASE",
           "x": 3.6,
           "y": -0.6,
           "can_repeat": false
@@ -6068,6 +6175,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fPreserve five concrete season facts, images, maps, quotes, results, or failures and identify one unfinished hook.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: signed archive audit | Group: browse and contribute | Build: durable archive with next-page marker.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor the fair, make the record browseable for a late player. For a solo audit, sign and file the five entries in a durable archive with a clearly marked next page."
@@ -6090,7 +6200,7 @@
           ],
           "shape": "octagon",
           "size": 1.2,
-          "subtitle": "Preserve five facts and leave one door open.",
+          "subtitle": "[EVENT] Preserve five facts and leave one door open.",
           "tasks": [
             {
               "advancement": null,
@@ -6106,7 +6216,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVE THE SEASON",
+          "title": "[EVENT] ARCHIVE THE SEASON",
           "x": 6.0,
           "y": -0.6,
           "can_repeat": false
@@ -6126,6 +6236,12 @@
             "",
             "&e&lOBJECTIVE",
             "&fComplete any three fair contributions and record one unresolved pressure or ambition that players genuinely want to continue.",
+            "",
+            "&6&lSEASON SEAL REWARDS",
+            "&f3 personal Bevels + personal fair favor + team festival support. No currency is added to reward table #9.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: staged seal audit | Group: gather at the fair | Build: capstone venue and sequel-hook archive.",
             "",
             "&a&lEVENT STANDARD",
             "&fThe preferred capstone is a real public gathering. A solo seal audit must point to three staged contribution records and one signed sequel hook; it does not pretend a crowd attended."
@@ -6167,7 +6283,7 @@
           ],
           "shape": "hexagon",
           "size": 2.1,
-          "subtitle": "Complete any three contributions, then name what remains unresolved.",
+          "subtitle": "[CAPSTONE] Complete any three contributions, then name what remains unresolved.",
           "tasks": [
             {
               "advancement": null,
@@ -6183,7 +6299,7 @@
               "value": 1
             }
           ],
-          "title": "SEAL SEASON ONE",
+          "title": "[CAPSTONE] SEAL SEASON ONE",
           "x": 0,
           "y": 4.5,
           "can_repeat": false
@@ -6198,6 +6314,9 @@
             "",
             "&e&lOBJECTIVE",
             "&fPlace the fair record and one genuine future hook in the public archive, then leave a writable page or clearly marked place for the next entry.",
+            "",
+            "&9&lSUITABILITY",
+            "&fSolo: findability audit | Group: announce the archive | Build: public record wall or writable archive.",
             "",
             "&a&lEVENT STANDARD",
             "&fFor a group, announce where the record lives. For a solo audit, verify that a new player can find and understand it without an oral briefing."
@@ -6220,7 +6339,7 @@
           ],
           "shape": "book",
           "size": 1.35,
-          "subtitle": "Put the final record somewhere the next season can find it.",
+          "subtitle": "[EVENT] Put the final record somewhere the next season can find it.",
           "tasks": [
             {
               "advancement": null,
@@ -6249,7 +6368,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVE AFTERMATH",
+          "title": "[EVENT] ARCHIVE AFTERMATH",
           "x": 0,
           "y": 7.2,
           "can_repeat": false
@@ -6301,12 +6420,11 @@
           ],
           "description": [
             "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
-            "&6&lAFTER THE BELLS",
+            "&6&lROUTE · DELIVERY · PUBLIC DESTINATION",
             "",
-            "&7Lore:&f The Atlas closes the season ledger after the seal. Nessa Quill keeps the post-season courier route open.",
-            "&fHer notes remember Greybridge as an earlier failed truce, not a destination the living island must visit.",
-            "&fObjective:&f Choose one public service for the team: a festival cache, a hospitality cache, a construction crate, or a neutral research kit.",
-            "&fStandard:&f Agree on a payer and a named destination before submitting the visible Bevel price. Each service renews after seven days."
+            "&7&lLORE:&f The Atlas closes the season ledger after the seal. Nessa Quill keeps the post-season courier route open, carrying useful caches to places the island already uses.",
+            "&e&lOBJECTIVE:&f Choose a public service, name its route and destination, and agree who will receive and place the team cache.",
+            "&a&lSTANDARD:&f Submit the visible Bevel price only after the payer, delivery route, public destination, and handoff owner are written down. Each paid service renews after seven days."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6319,7 +6437,7 @@
           "rewards": [],
           "shape": "hexagon",
           "size": 1.7,
-          "subtitle": "Post-season services for places the island actually uses.",
+          "subtitle": "Post-season services for routes and public destinations the island actually uses.",
           "tasks": [
             {
               "advancement": null,
@@ -6345,12 +6463,10 @@
             "7A11C0DE19000001"
           ],
           "description": [
-            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
-            "&6&lWEEKLY TEAM CACHE",
-            "",
-            "&fReceive sixteen Firework Rockets and eight Lanterns for a scheduled public event. Please do not turn fireworks into a server benchmark.",
-            "",
-            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+            "&7&lLORE:&f A festival works when the supplies reach the public square before the first bell, not when they remain in a private chest.",
+            "&e&lOBJECTIVE:&f Submit 1 Bevel for 16 Firework Rockets and 8 Lanterns.",
+            "&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]",
+            "&a&lSTANDARD:&f Name the event route, public destination, delivery owner, and safe handoff point before claiming the team cache."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6382,7 +6498,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Consumable celebration with a cleanup owner.",
+          "subtitle": "Fireworks and lanterns delivered to a named public event route.",
           "tasks": [
             {
               "advancement": null,
@@ -6398,7 +6514,7 @@
               "value": 1
             }
           ],
-          "title": "FESTIVAL REQUISITION — 1 BEVEL",
+          "title": "[DELIVERY] FESTIVAL CACHE — 1 BEVEL",
           "x": 0,
           "y": -1.5,
           "can_repeat": true
@@ -6408,12 +6524,10 @@
             "7A11C0DE19000001"
           ],
           "description": [
-            "{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}",
-            "&6&lWEEKLY TEAM CACHE",
-            "",
-            "&fReceive eight Guest Books and eight Lanterns for a meeting room, guesthouse, fair, or rescue route. Food remains player-chosen rather than quest-subsidized.",
-            "",
-            "&ePrice:&f 1 Bevel. &7Renews seven days after this FTB team claims it."
+            "&4&lLORE:&f The first welcome after Greybridge is deliberately ordinary: a guest needs a findable room, a readable promise, and enough light to leave safely.",
+            "&e&lOBJECTIVE:&f Submit 1 Bevel for 8 Books and 8 Lanterns.",
+            "&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]",
+            "&a&lSTANDARD:&f Name the public hall, guesthouse, archive, or refuge, then record the delivery owner and the route a visitor can follow to the handoff."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6445,7 +6559,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Meetings, late arrivals, fairs, and rescue runs.",
+          "subtitle": "Books and lanterns for a shared guest space or civic hall.",
           "tasks": [
             {
               "advancement": null,
@@ -6461,7 +6575,7 @@
               "value": 1
             }
           ],
-          "title": "HOSPITALITY REQUISITION — 1 BEVEL",
+          "title": "[PUBLIC DESTINATION] HOSPITALITY CACHE — 1 BEVEL",
           "x": 4.5,
           "y": -1.5,
           "can_repeat": true
@@ -6472,12 +6586,12 @@
           ],
           "description": [
             "{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}",
-            "&f&lARCHIVE A NEW RUMOUR",
+            "&f&lTRUST DISPATCH",
             "",
-            "&7Lore:&f Nessa Quill keeps a spare courier line for stories with a place to begin. Greybridge remains a past failure; the next rumour belongs to the island being built now.",
-            "&fObjective:&f Write a short rumour tied to one real location, ambition, dispute, settlement, threat, machine, public work, or mystery.",
-            "&fEnd it with one actionable question.",
-            "&fStandard:&f The entry is specific enough for another player to act on next session. This trust-based archive renews every seven days and grants exactly 1 team Bevel."
+            "&7&lLORE:&f Nessa Quill keeps a spare courier line for civic problems that have a place to begin. The dispatch must concern the island being built now, not a required return to Greybridge.",
+            "&e&lOBJECTIVE:&f File one short dispatch naming a real in-world location and the concrete problem found there.",
+            "&e&lACTION:&f State one useful action another player can take next session, then name the owner responsible for receiving or closing the dispatch.",
+            "&a&lSTANDARD:&f A trust checkmark is enough: the entry is specific, findable, and actionable. This renews every 604800 seconds and grants exactly 1 team Bevel; it consumes no Bevel."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6500,7 +6614,7 @@
           ],
           "shape": "square",
           "size": 1.2,
-          "subtitle": "One place, one actionable question, exactly one team Bevel weekly.",
+          "subtitle": "One real location, one problem, one action, one owner — exactly one team Bevel weekly.",
           "tasks": [
             {
               "advancement": null,
@@ -6516,7 +6630,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVE A NEW RUMOUR",
+          "title": "FILE A CIVIC DISPATCH",
           "x": -2.0,
           "y": 2.0,
           "can_repeat": true
@@ -6527,11 +6641,11 @@
           ],
           "description": [
             "{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}",
-            "&e&lLEAVE A SEASON TWO PRESSURE",
+            "&e&lPUBLIC DESTINATION FILE",
             "",
-            "&7Lore:&f Nessa will carry one pressure forward, but she will not invent a destination for people who have already moved on. The old Greybridge failure is context, not a required return trip.",
-            "&fObjective:&f Record one unresolved pressure, its stakeholders, and evidence that players care about it.",
-            "&fStandard:&f Add one practical supply cache that would make the chosen hook playable next season."
+            "&7&lLORE:&f Nessa will carry one pressure forward, but she will not invent a destination for people who have already moved on. The old Greybridge failure is context, not a live-world prerequisite.",
+            "&e&lOBJECTIVE:&f Record one unresolved pressure, its public destination, stakeholders, evidence, and the practical route by which players can inspect it.",
+            "&a&lSTANDARD:&f Add one concrete future action and a named owner or steward; keep the hook useful without inventing a required location."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6552,7 +6666,7 @@
           ],
           "shape": "heart",
           "size": 1.2,
-          "subtitle": "Leave a pressure with a place, people, and a reason to return.",
+          "subtitle": "Leave a public destination, stakeholders, and a reason to return.",
           "tasks": [
             {
               "advancement": null,
@@ -6568,7 +6682,7 @@
               "value": 1
             }
           ],
-          "title": "LEAVE A SEASON TWO PRESSURE",
+          "title": "[ROUTE] LEAVE A SEASON TWO PRESSURE",
           "x": 2.0,
           "y": 2.0,
           "can_repeat": false
@@ -6578,11 +6692,10 @@
             "7A11C0DE19000001"
           ],
           "description": [
-            "{image:create:textures/item/andesite_alloy.png width:48 height:48 align:center}",
-            "&6&lTHE COMMON WALL NEEDS HANDS",
-            "",
-            "&fRequest a compact crate for the public wall, landing, workshop bay, or route repair that is actually next.",
-            "&7The crate supports construction; it does not replace the construction."
+            "&a&lLORE:&f A construction crate matters only when it reaches the public work that needs it and remains legible after the builder leaves.",
+            "&e&lOBJECTIVE:&f Submit 2 Bevels for 32 Stone Bricks, 16 Scaffolding, and 8 Andesite Alloy.",
+            "&9&lUTILITY TAGS:&f [DELIVERY] [PUBLIC DESTINATION]",
+            "&a&lSTANDARD:&f Name the shared build, delivery route, handoff owner, and the public use the completed crate supports."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6623,7 +6736,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "A compact construction crate for a real shared project.",
+          "subtitle": "A modest build delivery for a shared civic work.",
           "tasks": [
             {
               "advancement": null,
@@ -6639,7 +6752,7 @@
               "value": 1
             }
           ],
-          "title": "PUBLIC WORKS REQUISITION — 2 BEVELS",
+          "title": "[PUBLIC DESTINATION] CONSTRUCTION CRATE — 2 BEVELS",
           "x": 6.75,
           "y": 0.0,
           "can_repeat": true
@@ -6649,11 +6762,10 @@
             "7A11C0DE19000001"
           ],
           "description": [
-            "{image:irons_spellbooks:textures/item/blank_rune.png width:48 height:48 align:center}",
-            "&d&lOPEN THE NEUTRAL WORKTABLE",
-            "",
-            "&fRequest a small stock of harmless reagents for the next demonstration, translation, or safe-storage experiment.",
-            "&7The kit contains no spellbook, spell, affinity, or upgrade orb."
+            "&d&lLORE:&f Research belongs in a place another player can find, inspect, and continue; the courier records the handoff instead of promising power.",
+            "&e&lOBJECTIVE:&f Submit 2 Bevels for 4 Arcane Essences, 2 Blank Runes, and 8 Amethyst Shards.",
+            "&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]",
+            "&a&lSTANDARD:&f Name the public study point, delivery route, handoff owner, and safe boundary for the neutral research cache."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
@@ -6694,7 +6806,7 @@
           ],
           "shape": "gear",
           "size": 1.2,
-          "subtitle": "Low-tier research supplies for a shared magical service.",
+          "subtitle": "Low-tier research supplies delivered to a named public study point.",
           "tasks": [
             {
               "advancement": null,
@@ -6710,7 +6822,7 @@
               "value": 1
             }
           ],
-          "title": "NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS",
+          "title": "[ROUTE] NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS",
           "x": 6.75,
           "y": 2.75,
           "can_repeat": true

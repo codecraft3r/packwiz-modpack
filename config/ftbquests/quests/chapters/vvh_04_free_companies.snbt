@@ -385,7 +385,7 @@
 			tasks: [
 				{
 					id: "7A11C0DE1410005B"
-					count: 4
+					count: 2
 					item: {
 						count: 1
 						id: "irons_spellbooks:arcane_essence"

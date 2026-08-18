@@ -274,11 +274,11 @@ hash = "79261c26a2fd6ba3ee6b96ae3ae59587e334558037a4f62d701cf4af0826ea0f"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "759a5e015a9a1b68cc9fec67e5ff5ccc35be87e88b243efc295631b622dabe50"
+hash = "7932a545f9df9f974c26c168f588033c315d343f9dd664a05eefe991be624d4c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_00_island_charter.snbt"
-hash = "a64c1e89f676bf3bfb592e56d65c50f19db3faec19895664c65c80c94c3f40a6"
+hash = "cab9105659937408e5f7a90b1042a6077e969b86e3c34968a6bb90713acef1a5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_01_three_invitations.snbt"
@@ -294,11 +294,11 @@ hash = "83b5daf5a57c3d9ae6159285ebcbdbff9650978c6ea0160f4d3e593c1fdf8f79"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_04_free_companies.snbt"
-hash = "6595a83c2b52a2586fb8c2a4e66cb259dde3646c45122d89e7d2d5e9ffc2ba3d"
+hash = "a82a1b6519b049631dac873886bc0619e4f81d2ba9cc5afc66fc1add35757999"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_05_work_each_hand_knows.snbt"
-hash = "242196503f57b32825a28e6ee10c6fcef6bfbe352924290533d35862866269ed"
+hash = "d6136d34298f8032feab93ec30cab30c066b7a3f1ab4cf4d88d549364ba14b16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/vvh_06_island_remembers.snbt"
@@ -318,15 +318,15 @@ hash = "b60d366d78a9902fe0a34e890e7760c0a5c7425aaa8a5e7e5fa3efda4fa2a572"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "4fa4dc3ffbc7b576dd41f8dc64af65b6536be1c23dfdb44b9205d5c2a2f58b4f"
+hash = "df058e23acd7ee90651de6bd379be7bdfb863f9f19386ba4ba8955715624b61f"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "ee2a317a5f6fbd3e43d1e0e4dab3f52c15f799e0b2860fe0e3ccc5e32ffca499"
+hash = "cbe2f59e891594d33c5ff358d0bbf6d20b1487868742b3a9d4c3e9458c946b25"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000001.snbt"
-hash = "6b508e1f433c295baf9b938ebdbfd159e1efd952bc90473a31b0cc62f83f5fd6"
+hash = "1b240beff1e0fa795861a3cad553159a16d0816cf474b0f30575f7c6d9886ac0"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000002.snbt"

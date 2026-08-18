@@ -1,0 +1,39 @@
+// Integration fragment: merge into config/ftbquests/quests/lang/en_us.snbt.
+// Onboarding is a DEV REVIEW board: every node is visible, while dependencies
+// still lock completion and reward claims.
+{
+	chapter.7A11C0DE10000000.title: "VvH 00 · The Island Charter [DEV REVIEW]"
+	chapter.7A11C0DE11000000.title: "VvH 01 · Three Invitations [DEV REVIEW]"
+	quest.7A11C0DE10000003.quest_subtitle: "[OPTIONAL REFERENCE] Permanent work needs a boundary that actually means something."
+	quest.7A11C0DE10000005.quest_subtitle: "[OPTIONAL REFERENCE] Make stories, not support tickets."
+	quest.7A11C0DE10000006.quest_subtitle: "[OPTIONAL REFERENCE] Two faction systems exist. Do not pretend they are the same database."
+	quest.7A11C0DE10000008.quest_desc: [
+		"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
+		"&6&lTHE FOUR-LINE VERSION"
+		""
+		"&f1. Build irreplaceable work only on confirmed permanent land."
+		"&f2. Claims and consent outrank rivalry, contracts, and bits."
+		"&f3. Combat is optional, scheduled, supervised, and reversible."
+		"&f4. Vampirism faction state and FTB team state are separate; switches need a quick host review."
+		""
+		"&7Lore:&f Nessa Quill signs as courier because Greybridge taught her that an agreement nobody can find is only a rumour."
+		"&eObjective:&f Inspect one lantern, then sign the charter after reading the boundary clauses."
+		"&aStandard:&f The lantern inspection is a non-consuming preview; the checkmark records the human review."
+		""
+		"&6Starter nudge:&f one Compass and eight Torches."
+	]
+	quest.7A11C0DE10000008.quest_subtitle: "Inspect one lantern, then sign the charter; claims remain dependency-locked."
+	task.7A11C0DE10100008.title: "Human Review: Sign the Island Charter"
+	task.7A11C0DE10100009.title: "Inspect One Lantern (Not Consumed)"
+	quest.7A11C0DE11000006.quest_desc: [
+		"&7Lore:&f Nessa Quill sets six practical starter kits beside the welcome point. Each is a first contribution, not a permanent profession or locked class."
+		"&fObjective:&f Preview the exact kit contents, then choose one:"
+		"&f• Builder — 8 minecraft:scaffolding"
+		"&f• Engineer — 1 create:goggles"
+		"&f• Pathfinder — 1 minecraft:spyglass"
+		"&f• Keeper — 4 minecraft:lantern"
+		"&f• Arcanist — 2 irons_spellbooks:arcane_essence"
+		"&f• Archivist — 2 minecraft:book"
+		"&fStandard:&f Pick one kit after the welcome point is complete. Nothing prevents exploring the other specialties later."
+	]
+}

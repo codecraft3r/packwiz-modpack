@@ -1,0 +1,75 @@
+# Critical Chapter 09 localization replacement fragment.
+# Merge these keys into the live language compound during integration.
+# Keys intentionally remain separate from critical_ch00_01_09_lang.snbtfrag.
+
+chapter.7A11C0DE19000000.title: "VvH 09 · After the Bells"
+
+quest.7A11C0DE19000001.title: "&6&lAFTER THE BELLS"
+quest.7A11C0DE19000001.quest_subtitle: "Post-season services for routes and public destinations the island actually uses."
+quest.7A11C0DE19000001.quest_desc: [
+	"{image:numismatics:textures/item/coin/bevel.png width:48 height:48 align:center}"
+	"&6&lROUTE · DELIVERY · PUBLIC DESTINATION"
+	""
+	"&7&lLORE:&f The Atlas closes the season ledger after the seal. Nessa Quill keeps the post-season courier route open, carrying useful caches to places the island already uses."
+	"&e&lOBJECTIVE:&f Choose a public service, name its route and destination, and agree who will receive and place the team cache."
+	"&a&lSTANDARD:&f Submit the visible Bevel price only after the payer, delivery route, public destination, and handoff owner are written down. Each paid service renews after seven days."
+]
+
+quest.7A11C0DE19000004.title: "&e[DELIVERY] FESTIVAL CACHE — 1 BEVEL"
+quest.7A11C0DE19000004.quest_subtitle: "Fireworks and lanterns delivered to a named public event route."
+quest.7A11C0DE19000004.quest_desc: [
+	"&7&lLORE:&f A festival works when the supplies reach the public square before the first bell, not when they remain in a private chest."
+	"&e&lOBJECTIVE:&f Submit 1 Bevel for 16 Firework Rockets and 8 Lanterns."
+	"&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]"
+	"&a&lSTANDARD:&f Name the event route, public destination, delivery owner, and safe handoff point before claiming the team cache."
+]
+
+quest.7A11C0DE19000006.title: "&4[PUBLIC DESTINATION] HOSPITALITY CACHE — 1 BEVEL"
+quest.7A11C0DE19000006.quest_subtitle: "Books and lanterns for a shared guest space or civic hall."
+quest.7A11C0DE19000006.quest_desc: [
+	"&4&lLORE:&f The first welcome after Greybridge is deliberately ordinary: a guest needs a findable room, a readable promise, and enough light to leave safely."
+	"&e&lOBJECTIVE:&f Submit 1 Bevel for 8 Books and 8 Lanterns."
+	"&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]"
+	"&a&lSTANDARD:&f Name the public hall, guesthouse, archive, or refuge, then record the delivery owner and the route a visitor can follow to the handoff."
+]
+
+quest.7A11C0DE19000007.title: "&f&lFILE A CIVIC DISPATCH"
+quest.7A11C0DE19000007.quest_subtitle: "One real location, one problem, one action, one owner — exactly one team Bevel weekly."
+quest.7A11C0DE19000007.quest_desc: [
+	"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
+	"&f&lTRUST DISPATCH"
+	""
+	"&7&lLORE:&f Nessa Quill keeps a spare courier line for civic problems that have a place to begin. The dispatch must concern the island being built now, not a required return to Greybridge."
+	"&e&lOBJECTIVE:&f File one short dispatch naming a real in-world location and the concrete problem found there."
+	"&e&lACTION:&f State one useful action another player can take next session, then name the owner responsible for receiving or closing the dispatch."
+	"&a&lSTANDARD:&f A trust checkmark is enough: the entry is specific, findable, and actionable. This renews every 604800 seconds and grants exactly 1 team Bevel; it consumes no Bevel."
+]
+
+quest.7A11C0DE19000009.title: "&e[ROUTE] LEAVE A SEASON TWO PRESSURE"
+quest.7A11C0DE19000009.quest_subtitle: "Leave a public destination, stakeholders, and a reason to return."
+quest.7A11C0DE19000009.quest_desc: [
+	"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
+	"&e&lPUBLIC DESTINATION FILE"
+	""
+	"&7&lLORE:&f Nessa will carry one pressure forward, but she will not invent a destination for people who have already moved on. The old Greybridge failure is context, not a live-world prerequisite."
+	"&e&lOBJECTIVE:&f Record one unresolved pressure, its public destination, stakeholders, evidence, and the practical route by which players can inspect it."
+	"&a&lSTANDARD:&f Add one concrete future action and a named owner or steward; keep the hook useful without inventing a required location."
+]
+
+quest.7A11C0DE19000101.title: "&a[PUBLIC DESTINATION] CONSTRUCTION CRATE — 2 BEVELS"
+quest.7A11C0DE19000101.quest_subtitle: "A modest build delivery for a shared civic work."
+quest.7A11C0DE19000101.quest_desc: [
+	"&a&lLORE:&f A construction crate matters only when it reaches the public work that needs it and remains legible after the builder leaves."
+	"&e&lOBJECTIVE:&f Submit 2 Bevels for 32 Stone Bricks, 16 Scaffolding, and 8 Andesite Alloy."
+	"&9&lUTILITY TAGS:&f [DELIVERY] [PUBLIC DESTINATION]"
+	"&a&lSTANDARD:&f Name the shared build, delivery route, handoff owner, and the public use the completed crate supports."
+]
+
+quest.7A11C0DE19000102.title: "&d[ROUTE] NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS"
+quest.7A11C0DE19000102.quest_subtitle: "Low-tier research supplies delivered to a named public study point."
+quest.7A11C0DE19000102.quest_desc: [
+	"&d&lLORE:&f Research belongs in a place another player can find, inspect, and continue; the courier records the handoff instead of promising power."
+	"&e&lOBJECTIVE:&f Submit 2 Bevels for 4 Arcane Essences, 2 Blank Runes, and 8 Amethyst Shards."
+	"&9&lUTILITY TAGS:&f [ROUTE] [DELIVERY] [PUBLIC DESTINATION]"
+	"&a&lSTANDARD:&f Name the public study point, delivery route, handoff owner, and safe boundary for the neutral research cache."
+]
