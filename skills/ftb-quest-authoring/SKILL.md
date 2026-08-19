@@ -22,6 +22,8 @@ Collect only the missing decisions that could change the design. Record:
 
 Do not repeat answers already present in the request. If a high-impact value is unknown, state a reasonable assumption and make it easy to revise.
 
+For standard multi-faction campaigns, organize starting progression into four foundational chapters: (1) Introduction & Rules (minimal closed-loop onboarding), (2) Choosing a Faction (core faction paths + protected neutral civic path), (3) Primary Faction A line, and (4) Primary Faction B line. Focus starting chapters on concrete collaborative tasks, building incentives, and playful rivalry rather than an elaborate prewritten story.
+
 Determine whether the world is persistent, seasonal, or event-based before framing the campaign. Do not imply a wipe, finale, or disposable "season" when the intended experience is a long-lived SMP; use civic milestones, evolving roles, maintenance, and future hooks instead.
 
 ## 2. Inspect the actual pack before writing
@@ -33,8 +35,10 @@ Use the repository and installed artifacts as the authority.
 3. Identify the authoritative authoring representation before writing: live SNBT/localization, a generator, or another source model. Compare generated output with live files. Never run a whole-campaign generator over richer authored files merely because the generator exists; update it, generate into a scratch directory for review, or protect it behind an explicit overwrite flag.
 4. Read several existing FTB Quests chapters, reward tables, translations, and resource-pack definitions. Copy their SNBT shape, ID conventions, layout, and version-specific fields rather than inventing a new dialect.
 5. Resolve every proposed item, block, entity, advancement, statistic, recipe, currency, and reward from actual JARs, data packs, configs, recipe viewers, or authoritative mod docs. Never guess an ID because its display name looks plausible.
-6. Inspect kubejs/ only to understand available behavior. Do not add custom KubeJS for quest logic unless the user explicitly changes that requirement.
-7. Inventory image references and the JAR/resource-pack paths that can satisfy them. Keep resource paths POSIX-style (/) even when working on Windows.
+6. Verify survival obtainability for every item and reward. Never assign internal, backend, or creative-only items (such as blank scrolls or debug items) in tasks or rewards.
+7. Keep domain-specific utility items in their intended mechanic lanes (for example, Create super glue belongs to Create/aerowork quests, not generic building or faction rewards).
+8. Inspect kubejs/ only to understand available behavior. Do not add custom KubeJS for quest logic unless the user explicitly changes that requirement.
+9. Inventory image references and the JAR/resource-pack paths that can satisfy them. Keep resource paths POSIX-style (/) even when working on Windows.
 
 If the pack has no existing quest examples, use the FTB Quests version shipped by the pack and validate a tiny throwaway chapter before building the full one.
 
@@ -57,6 +61,8 @@ Use dependencies and "complete any N of M" patterns to reward breadth without ma
 - Re-check reachability, dependency direction, minimum counts, and layout after every graph edit; a parseable acyclic graph can still express the wrong progression.
 - Use closed-loop topology for mandatory rules, safety policy, or required onboarding: every required clause must feed the final acknowledgement, and later chapters must depend on that terminal gate when the brief calls for a strict lock.
 - Use open branches for genuine choices such as factions or specialties, arrange equivalent choices symmetrically, and reconverge them through an explicit breadth gate rather than an arbitrary subjective review.
+- Focus faction progression on the pack's primary factions; discourage splinter factions outside the core design. Provide an explicit Neutral / Civic path for players who wish to opt out of conflict, giving practical survival jump-starts (full iron armor/tools, bed, food, currency) and protecting them from faction combat or pranking tasks.
+- Keep playful sabotage and conflict quests strictly claim-safe under FTB Chunks / FTB Teams protections. Replace untrackable griefing, mock duels, or territory invasions with tangible, survival-friendly mechanics (such as photography recon/propaganda via Exposure camera and film, harmless throwables, or craftable prank tools).
 
 Balance against the slowest regular player and the server's current state, not its most advanced outlier. Let questing make life meaningfully easier while preserving the value of ordinary play.
 
@@ -71,7 +77,11 @@ Balance against the slowest regular player and the server's current state, not i
 - Keep separate ledgers for one-time personal issuance, one-time team issuance, the minimum intended route, completionism, repeatable income, and paid sinks. Model team fragmentation as well as one shared team.
 - Treat a native choice claim as the number of entries the installed implementation actually grants. Do not multiply currency exposure by unrelated table metadata such as display/loot size without verifying the semantics.
 - When the pack has a central server-issued currency and real server sinks, make currency the default reward for substantive progress and combine it with useful thematic items. Currency without desirable sinks has no durable value.
+- Scale currency rewards dynamically with quest tree depth and milestone weight. Do not award flat starter pocket change (1-2 low coins) on late or deep milestone quests; increase coin volume or step up coin denominations (e.g., Bevel -> Sprocket -> Cog -> Crown) as progression deepens.
 - Set rewards near the most generous value justified by the verified challenge and current progression band. Pair currency with a useful thematic bundle on substantive quests unless the bundle would create a tier skip, duplication route, or faction advantage.
+- Follow the full-set threshold rule: when awarding specialized crafting materials (such as armor runes, portal obsidian, or weapon ingots), award enough to complete a full functional craft (e.g., 4 runes for a 4-piece armor set, 16 obsidian for a nether portal with corners, complete ingots/blocks for a weapon) rather than unusable single fragments.
+- Align rewards to stage utility: early rewards should solve immediate survival friction (armor, weapons, food, bedding, basic tools) rather than dormant high-tier materials. Mid-game quests should supply infrastructure solutions (such as leads, fences, and gates alongside blood altar/animal penning quests; brewing stands and potion ingredients for alchemy).
+- Provide meaningful consumable batches: avoid token scraps (such as 2 common ink, 1 stake, 4 emeralds). Award useful batches (such as 16 rare + 4 epic ink) and balanced early/mid utility or combat spells that exist in the pack.
 - Measure item rewards against recipe and gameplay thresholds. A loose component that cannot enable a craft, service, or meaningful next step is inventory clutter; award a usable bundle or currency/player-choice utility instead.
 - Keep adjacent item rewards distinct. Scale late-game rewards beyond repeated starter lighting, scaffolding, or token raw materials while still avoiding tier skips and faction imbalance.
 
@@ -90,9 +100,13 @@ Copy a nearby working SNBT object and change the smallest possible surface area.
 
 - Use item/block/entity tasks for observable inventory or world state.
 - Use advancement tasks for mod progression; include the schema-required criterion field (an empty criterion commonly means the whole advancement, but verify against the installed version).
+- Detect faction joining using native mod items and advancements (e.g., obtaining `vampirism:vampire_fang` + advancement `vampirism:vampire/become_vampire`; crafting/using `vampirism:injection_garlic` + advancement `vampirism:hunter/become_hunter`). Do not invent ungrounded lore rituals.
 - Use stat tasks only with a real statistic ID and text that matches its trigger (for example, a battle-start statistic should say "enter/start a battle," not "win").
 - Use checkmark tasks for trust-based completion, social verification, or a human-reviewed build rather than introducing a script.
 - Give substantive non-explanatory quests a hard, native criterion wherever the installed pack can verify one. A checkmark-only quest should usually be optional or explanatory; otherwise require meaningful prerequisites and keep its payout modest. Do not make server currency its primary reward by default.
+- Never require untrackable in-world construction, multiblock structures, or complex fluid piping setups.
+- Use the **Palette Quest pattern** for building incentives: require gathering a curated, accessible starter palette of thematic building blocks (favoring accessible items like normal lanterns/fences over tedious items like tinted glass/soul lanterns). Reward with abundant matching building blocks (2x-3x stock, stonecutters) plus substantial crafting materials (diamonds, iron, obsidian, andesite alloy). This enforces a coherent aesthetic theme, equips players with materials to build, and provides high-value completion incentives without untrackable block placement.
+- For multiblocks and progression stations (such as altars, inscription tables, hunter tables, and blood containers), base tasks strictly on acquiring/crafting the core item components and storage tanks in inventory, not on world assembly.
 - For a human-reviewed build, do not also consume a duplicate material bundle unless the quest is intentionally a donation. Placed blocks already cost resources; an extra consumed task can charge players twice. Use a non-consuming item preview, a checkmark, or a deliberate public-stock contribution.
 - For an any-of-many branch, set the installed schema's minimum dependency count and test the actual shortest and maximum paths.
 - Set an explicit optional quest flag for side stories when supported; do not rely only on the absence of downstream dependencies.
@@ -122,14 +136,15 @@ Reuse the pack's existing resource-pack namespace, dimensions, typography, and n
 Run the narrowest useful checks, then expand them in proportion to risk:
 
 1. Repository/Packwiz: inspect the diff, run packwiz refresh and packwiz list when available, then run refresh a second time and confirm the index hash is stable. Confirm only intended files changed.
-2. SNBT/schema: parse the edited files with the pack's parser or a supported FTB Quests loader. Check unique IDs, valid task/reward types, required fields, resolvable namespaces, dependency acyclicity, reachable quests, and translation keys.
+2. SNBT/schema: parse the edited files with the pack's parser or a supported FTB Quests loader. Check unique IDs, valid task/reward types, required fields, resolvable namespaces, survival obtainability (no backend/creative items), dependency acyclicity, reachable quests, and translation keys.
 3. Graph/layout: verify the advertised any-N-of-M minimum by simulation, not hand-counting. Render each edited chapter, detect node overlap and dependency-line crossings, and inspect the central spine, side-lane direction, labels, background contrast, and long text. A source render is review evidence, not an in-client screenshot.
-4. Economy: calculate minimum-route and completionist one-time issuance separately for personal and team rewards. Calculate worst-case repeatable issuance, fragmented-team issuance, and the cost of the complete sink board. Test that no reward can reproduce its input, self-fund the board, or dominate normal play. Count choice rewards using verified claim semantics. Verify each material bundle reaches a useful recipe/service threshold and adjacent quests do not repeat filler rewards.
-5. Assets: resolve all icons and images against actual client resources, check ZIP entry separators, verify Packwiz hashes, and confirm no stale URL/digest remains.
-6. Source synchronization: regenerate or synchronize derived manifests/localization/indexes from the chosen authority, run a check-only/idempotency pass, and prevent a stale generator from clobbering live content.
-7. KubeJS boundary: confirm no custom quest logic was added. If existing scripts are involved, test them as-is and document the dependency.
-8. Small playtest: load a disposable world/server, open the chapter, claim the opener, complete one task from each task family used, trigger advancement/stat tasks, complete the minimum dependency path, run one repeatable exchange, and inspect the result as both a payer and a teammate. Check logs for parser, missing-ID, or reward errors.
-9. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened. State separately whether static parsing, server loading, client visual inspection, and two-account reward testing passed or remain pending.
+4. Economy: calculate minimum-route and completionist one-time issuance separately for personal and team rewards. Calculate worst-case repeatable issuance, fragmented-team issuance, and the cost of the complete sink board. Test that no reward can reproduce its input, self-fund the board, or dominate normal play. Count choice rewards using verified claim semantics. Verify each material bundle reaches a useful recipe/service threshold, specialized items meet full-set crafting thresholds, currency scales with quest depth, and adjacent quests do not repeat filler rewards.
+5. Task verifiability & safety: verify that building quests use palette gathering rather than untrackable multiblock placement, multiblock stations check component acquisition, and conflict/prank tasks respect claim boundaries.
+6. Assets: resolve all icons and images against actual client resources, check ZIP entry separators, verify Packwiz hashes, and confirm no stale URL/digest remains.
+7. Source synchronization: regenerate or synchronize derived manifests/localization/indexes from the chosen authority, run a check-only/idempotency pass, and prevent a stale generator from clobbering live content.
+8. KubeJS boundary: confirm no custom quest logic was added. If existing scripts are involved, test them as-is and document the dependency.
+9. Small playtest: load a disposable world/server, open the chapter, claim the opener, complete one task from each task family used, trigger advancement/stat tasks, complete the minimum dependency path, run one repeatable exchange, and inspect the result as both a payer and a teammate. Check logs for parser, missing-ID, or reward errors.
+10. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened. State separately whether static parsing, server loading, client visual inspection, and two-account reward testing passed or remain pending.
 
 Also audit prose and completion clarity: no designer-facing claims in player text, no placeholder objectives, short graph titles, one coherent action per quest, hard criteria coverage for substantive progression, explicit consume/inspect/place semantics, and no currently visible quest that its audience cannot complete.
 
@@ -144,5 +159,6 @@ Report:
 - the chapter's player-facing loop and intended audience/progression band;
 - files changed and any new asset URLs/digests;
 - validation and playtest results, including what was not run;
-- economy guardrails and team-scope decisions;
+- economy guardrails, currency scaling, and team-scope decisions;
 - the branch/commit/PR or release link and the next safe playtest step.
+

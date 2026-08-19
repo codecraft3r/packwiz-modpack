@@ -55,12 +55,17 @@ Rules, safety policy, claims boundaries, team semantics, eligibility rules, and 
 
 Do not reward players for agreeing to unread rules. Rule acknowledgements may use checkmarks, but the dependencies must prove that all required reference nodes were traversed.
 
-### Open choice branches
+### Open choice branches and faction campaigns
 
 Factions, specialties, professions, and optional play styles may fan out:
 
+- For multi-faction packs, organize starting progression into four foundational chapters:
+  1. **Introduction & Rules:** Compact, closed-loop onboarding for rules and claim boundaries.
+  2. **Choosing a Faction:** Symmetrical presentation of the core factions alongside an explicit, protected Neutral / Civic path.
+  3. **Primary Faction A Line:** Core progression, palette builds, and claim-safe rivalry.
+  4. **Primary Faction B Line:** Symmetrical progression, palette builds, and claim-safe rivalry.
 - Place equivalent choices symmetrically around a clear center or spine.
-- Put the neutral/default route on the center axis when the visual logic is a three-way choice.
+- Put the neutral/default route on the center axis when the visual logic is a three-way choice. Give neutral players practical survival jump-starts (full iron armor and tools, bed, food, currency) rather than token items, and protect them from faction combat/pranking quests.
 - Re-converge parallel specialties at an explicit any-N-of-M breadth gate when cooperation or team composition matters.
 - Do not force every specialty merely because the graph reconnects.
 - Separate short-term starter/world tasks from longer workshop, progression, or charter milestones.
@@ -70,6 +75,17 @@ A graph can be acyclic and still lie about choice. Validate actual minimum paths
 ## 4. Completion criteria and immediate feedback
 
 Substantive progression should use a hard native criterion whenever possible: items, blocks, advancements, statistics, entities, recipes, or another task type confirmed in the installed FTB Quests version.
+
+Detect faction joining via native items and advancements (e.g. vampire fang / garlic injection + native mod advancements) rather than invented lore rituals.
+
+### Palette quests versus untrackable multiblock placement
+
+FTB Quests cannot reliably verify multi-block structures placed in the world. Rather than creating frustrating or impossible placement tasks:
+- Require gathering or crafting an accessible starter palette of thematic blocks (e.g. stone bricks, logs, fences, lanterns; avoiding tedious materials like tinted glass or soul lanterns in early/mid game).
+- Reward with abundant matching building blocks (2x-3x multiplier, stonecutter) plus high-value crafting materials (diamonds, iron, obsidian, andesite alloy).
+- This establishes a clear visual theme so players build authentic faction architecture instead of random sheds, provides ample stock to build, and provides genuine progression rewards.
+
+For workstations and progression altars, detect acquisition/crafting of the core item components and tanks in inventory, not world assembly.
 
 Use a trust-based checkmark only when native detection is unsuitable, especially for builds, social agreements, tours, demonstrations, or human review. A checkmark-only quest should normally satisfy all of these:
 
@@ -91,9 +107,12 @@ Advancement and faction triggers must be tested for late joins, team sync delay,
 
 Do not create progression tasks that auto-complete from rewards handed out immediately beforehand. Test a mod mechanic, crafted output, advancement, installed workstation, or later consequence rather than simple possession of the free prerequisite.
 
-## 5. Eligibility and anti-conditions
+## 5. Eligibility, claim safety, and anti-conditions
 
 Every visible quest must be completable by at least one intended player, and the UI must not present currently impossible work as ordinary active progression.
+
+- Keep playful conflict, sabotage, and reconnaissance quests strictly claim-safe under FTB Chunks / FTB Teams protections. Never mandate griefing, invasion of claimed chunks, or untrackable mock duels. Use tangible, survival-friendly mechanics (such as black-and-white photography via Exposure camera and film for recon/propaganda, harmless throwables, or craftable prank tools).
+- Respect neutrality: neutral players and civilian crafters are left alone unless they actively provoke conflict; do not target them in faction rivalry quests.
 
 When a quest requires a mutually exclusive faction/class/state:
 
@@ -110,21 +129,28 @@ Reward value is measured by what the player can do with it now, not by rarity or
 
 Be as generous as the verified challenge and current progression band safely allow. A reward should feel earned, immediately useful, non-compounding, and comparable across factions. Substantive quests should normally pair central currency with a useful thematic item or choice bundle; omit the item only when no safe bundle exists.
 
-### Central currency
+### Survival obtainability
+
+Verify that every task and reward item is obtainable in regular survival gameplay. Never award backend, internal, or creative-only items (such as blank scrolls or debug items). Keep domain-specific utility items in their intended lanes (e.g. Create super glue belongs to Create/aeronautics quests, not generic building or faction rewards).
+
+### Central currency and dynamic scaling
 
 When the pack/server has a central issued currency—such as Create: Numismatics Bevels—use it as the default reward for substantive one-time progression only when desirable server-controlled sinks exist.
 
 - Standard quest progression should be the fastest normal source.
 - The currency should let players choose what is valuable to them.
+- Scale currency rewards dynamically across the quest tree: do not pay flat starter pocket change (1-2 low coins) on deep milestone quests. Increase coin volume or step up coin denominations (e.g., Bevel -> Sprocket -> Cog -> Crown) as quests advance deeper.
 - The server must exchange it for useful goods, infrastructure, services, cosmetics/status, or capped progression support.
 - A currency with no sinks is decorative clutter.
 - Thematic items should usually supplement currency, not replace it with a weaker random object.
 
-### Usable bundle rule
+### Full-set threshold rule
 
 Inspect real recipes and the current progression band before choosing quantities. Award enough to cross a useful threshold: complete one relevant craft, start one meaningful service, operate a workstation, or make a visible contribution.
 
-For example, if a mod commonly consumes four runes for one item and eight for an upgrade, one loose rune is not a meaningful reward. Either grant a complete and balanced bundle at a deserving milestone, offer a player-choice kit, or pay currency/universal utility instead. Apply the same reasoning to essence, machine parts, building blocks, ammunition, food, transport supplies, and collection items.
+- **Full Gear Sets:** If awarding specialized materials (such as armor runes or portal obsidian), award enough to craft a full functional set (e.g. 4 runes for a 4-piece armor set, 16 obsidian for a nether portal with corners, 2 blood-infused iron + 2 iron blocks for a weapon) rather than a frustrating single fragment.
+- **Meaningful Consumables:** Provide consumables and crafting supplies in high-utility batches (e.g. 16 rare ink + 4 epic ink, animal leads + pen fencing alongside blood altars, brewing stands + potion supplies for alchemy) rather than token scraps (2 common ink, 1 stake, 4 emeralds).
+- **Practical Spells:** For magic mods (like Iron's Spells), award useful early/mid utility and combat spells (e.g., Heal, Smite, Recall, Spectral Hammer, Blood Slash) rather than non-existent or game-breaking spells.
 
 Do not scatter tiny amounts of future-tier materials through early onboarding. They occupy storage, advertise distant progression, and feel like speedrun bait without enabling play.
 
@@ -163,14 +189,19 @@ Before release, answer all of these with evidence:
 | Optional topology | Specialty/faction choices are symmetric, optional as advertised, and reconverge correctly |
 | Criteria | Substantive progression uses hard native checks where possible |
 | Trust checks | Optional/explanatory or modestly rewarded; explicit attestation; no default currency payout |
+| Palette quests | Building incentives use item gathering + stock multipliers/crafting rewards instead of untrackable multiblock placement |
+| Claim safety | Prank, conflict, and recon quests respect FTB Chunks protections (e.g. photography via Exposure) |
 | Task semantics | Inspect, consume, place, and contribute are unambiguous |
 | Functional feedback | No placeholder or unresponsive task; choice rewards actually deliver |
+| Survival check | All tasks and rewards verified obtainable in regular survival (no backend/creative items) |
 | Eligibility | No visible quest is impossible for its intended current audience |
+| Full-set threshold | Specialized crafting materials meet full-set requirements (e.g. 4 runes for armor, 16 obsidian for portal) |
 | Reward threshold | Every item bundle enables a real craft, service, or current-stage contribution |
 | Reward variety | Adjacent quests do not repeat filler; late milestones are not paid in starter scraps |
-| Currency | Progression issuance, sinks, repeatables, cooldowns, and team fragmentation are modeled |
+| Currency scaling | Progression issuance scales with quest depth; sinks, repeatables, cooldowns, and team fragmentation are modeled |
 | Autocomplete | A prerequisite reward cannot trivially complete the next progression test |
 | World lifetime | Finale language matches persistent versus seasonal intent |
 | Runtime | Edited task types, advancement/faction state, choice delivery, and visibility are tested in a disposable client/world |
 
 Record static, server, client, and multi-account evidence separately. A rendered source graph proves geometry and copy density, not runtime completion behavior.
+
