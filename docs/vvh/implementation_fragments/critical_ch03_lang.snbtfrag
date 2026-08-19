@@ -13,16 +13,16 @@ quest.7A11C0DE13000001.quest_desc: [
 	"&7[SUITABLE: STARTER TEAMS / REFUGE STEWARDS]"
 ]
 quest.7A11C0DE13000001.quest_subtitle: "[CHARTER] A protective order learns from the route it failed to keep."
-quest.7A11C0DE13000001.title: "[CHARTER] &b&lLANTERN OATH"
+quest.7A11C0DE13000001.title: "&b&lLANTERN OATH"
 
-quest.7A11C0DE13000002.title: "[WORLD] &a&lWATCHHOUSE"
-quest.7A11C0DE13000003.title: "[PROGRESSION] &e&lHUNTER TABLE"
-quest.7A11C0DE13000004.title: "[WORLD] &a&lFIELD CACHE"
-quest.7A11C0DE13000005.title: "[PROGRESSION] &e&lSTAKE KIT"
-quest.7A11C0DE13000006.title: "[PROGRESSION] &e&lALCHEMICAL BENCH"
-quest.7A11C0DE13000007.title: "[WORLD] &a&lREFUGE ROUTE"
-quest.7A11C0DE13000008.title: "[WORLD] &a&lRESPONSE DRILL"
-quest.7A11C0DE13000009.title: "[PROGRESSION] &e&lHOLY WARD"
+quest.7A11C0DE13000002.title: "&a&lWATCHHOUSE"
+quest.7A11C0DE13000003.title: "&e&lHUNTER TABLE"
+quest.7A11C0DE13000004.title: "&a&lFIELD CACHE"
+quest.7A11C0DE13000005.title: "&e&lSTAKE KIT"
+quest.7A11C0DE13000006.title: "&e&lALCHEMICAL BENCH"
+quest.7A11C0DE13000007.title: "&a&lREFUGE ROUTE"
+quest.7A11C0DE13000008.title: "&a&lRESPONSE DRILL"
+quest.7A11C0DE13000009.title: "&e&lHOLY WARD"
 
 quest.7A11C0DE13000002.quest_desc: [
 	"&6Lore:&f Rook's old watchhouse had a bell, but no map for the people who needed it. Quill's contradictory record is pinned beside the new route notes."
@@ -89,7 +89,7 @@ quest.7A11C0DE1300000A.quest_desc: [
 	"&7[SUITABLE: CHARTER / ANY TEAM]"
 ]
 quest.7A11C0DE1300000A.quest_subtitle: "[CHARTER] Five of eight works, with both lanes represented."
-quest.7A11C0DE1300000A.title: "[CHARTER] &b&lLANTERN CHARTER"
+quest.7A11C0DE1300000A.title: "&b&lLANTERN CHARTER"
 
 quest.7A11C0DE13000101.quest_desc: [
 	"&6Lore:&f The watchhouse has a roof now. That is not the same thing as having a refuge."
@@ -98,7 +98,7 @@ quest.7A11C0DE13000101.quest_desc: [
 	"&7[SUITABLE: WORLD / REFUGE REFIT]"
 ]
 quest.7A11C0DE13000101.quest_subtitle: "[WORLD] Make the refuge legible after dark."
-quest.7A11C0DE13000101.title: "[WORLD] &a&lREFIT THE WATCHHOUSE"
+quest.7A11C0DE13000101.title: "&a&lREFIT WATCHHOUSE"
 task.7A11C0DE13100101.title: "Supply 8 Lanterns"
 task.7A11C0DE13100102.title: "REVIEW: Public-Service Feature Is Findable"
 reward.7A11C0DE13200101.title: "Choose One Lantern Utility Cache"
@@ -110,7 +110,7 @@ quest.7A11C0DE13000102.quest_desc: [
 	"&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
 ]
 quest.7A11C0DE13000102.quest_subtitle: "[PROGRESSION] Turn protection into a practiced service."
-quest.7A11C0DE13000102.title: "[PROGRESSION] &e&lCONSECRATE THE REFUGE"
+quest.7A11C0DE13000102.title: "&e&lCONSECRATE REFUGE"
 task.7A11C0DE13100103.title: "Supply 1 Holy Rune"
 task.7A11C0DE13100104.title: "REVIEW: Holy Station Demonstrated"
 reward.7A11C0DE13200102.title: "Choose One Consecrated Utility Cache"
@@ -122,7 +122,7 @@ quest.7A11C0DE13000103.quest_desc: [
 	"&7[SUITABLE: PROGRESSION / PUBLIC HANDOFF]"
 ]
 quest.7A11C0DE13000103.quest_subtitle: "[PROGRESSION] Let the refuge work across faction lines."
-quest.7A11C0DE13000103.title: "[PROGRESSION] &b&lKEEP A TREATY LIGHT"
+quest.7A11C0DE13000103.title: "&b&lTREATY LIGHT"
 task.7A11C0DE13100105.title: "Outside-Order Player Reviews or Uses the Service"
 task.7A11C0DE13100106.title: "REVIEW: Handoff or Improvement Recorded"
 reward.7A11C0DE13200103.title: "Choose One Treaty Utility Cache"

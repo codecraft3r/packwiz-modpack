@@ -45,7 +45,7 @@
 		"&8Leave behind something a later player can use."
 	]
 	quest.7A11C0DE10000001.quest_subtitle: "Two minutes now; fewer arguments at 1:30 a.m."
-	quest.7A11C0DE10000001.title: "&6&lOPEN THE ISLAND CHARTER"
+	quest.7A11C0DE10000001.title: "&6&lISLAND CHARTER"
 	task.7A11C0DE10100001.title: "Open the Charter"
 	quest.7A11C0DE10000003.quest_desc: [
 		"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
@@ -59,7 +59,7 @@
 		"&8If the reset eats your cathedral, the cathedral was camping."
 	]
 	quest.7A11C0DE10000003.quest_subtitle: "[OPTIONAL REFERENCE] Permanent work needs a boundary that actually means something."
-	quest.7A11C0DE10000003.title: "&aLAND, CLAIMS, AND RESET ZONES"
+	quest.7A11C0DE10000003.title: "&aCLAIMS · RESET ZONES"
 	task.7A11C0DE10100003.title: "I Know the Permanent-Land and Claim Rule"
 	quest.7A11C0DE10000005.quest_desc: [
 		"{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}"
@@ -74,7 +74,7 @@
 		"&8A prank with a cleanup crew is a bit. A crater is an incident."
 	]
 	quest.7A11C0DE10000005.quest_subtitle: "[OPTIONAL REFERENCE] Make stories, not support tickets."
-	quest.7A11C0DE10000005.title: "&dRIVALRY, NEUTRALS, AND OPTIONAL COMBAT"
+	quest.7A11C0DE10000005.title: "&dRIVALRY · CONSENT"
 	task.7A11C0DE10100005.title: "I Accept the Rivalry and Optional-Combat Boundary"
 	quest.7A11C0DE10000006.quest_desc: [
 		"{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}"
@@ -89,7 +89,7 @@
 		"&8The bureaucracy has developed fangs."
 	]
 	quest.7A11C0DE10000006.quest_subtitle: "[OPTIONAL REFERENCE] Two faction systems exist. Do not pretend they are the same database."
-	quest.7A11C0DE10000006.title: "&6VAMPIRISM, FTB TEAMS, AND SWITCHING"
+	quest.7A11C0DE10000006.title: "&6TEAMS · SWITCHING"
 	task.7A11C0DE10100006.title: "I Understand Vampirism Faction vs FTB Team State"
 	quest.7A11C0DE10000008.quest_desc: [
 		"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
@@ -127,7 +127,7 @@
 		"&8The Atlas has stopped pretending the word 'faction' is metaphorical."
 	]
 	quest.7A11C0DE11000001.quest_subtitle: "Choose what kind of problem you want to become useful at."
-	quest.7A11C0DE11000001.title: "&6&lREAD THE THREE INVITATIONS"
+	quest.7A11C0DE11000001.title: "&6&lTHREE INVITATIONS"
 	task.7A11C0DE11100001.title: "Read All Three Invitations"
 	quest.7A11C0DE11000002.quest_desc: [
 		"{image:vampirism:textures/item/vampire_fang.png width:48 height:48 align:center}"
@@ -140,7 +140,7 @@
 		"&8Please file all immortality paperwork before sunrise."
 	]
 	quest.7A11C0DE11000002.quest_subtitle: "Become a Vampire, then register the choice socially."
-	quest.7A11C0DE11000002.title: "&4&lTAKE THE CRIMSON INVITATION"
+	quest.7A11C0DE11000002.title: "&4&lCRIMSON INVITATION"
 	task.7A11C0DE11100015.title: "Become a Vampire"
 	task.7A11C0DE11100016.title: "Our Current Allegiance and FTB Team Are Clear"
 	reward.7A11C0DE11200017.title: "Two Blood Bottles"
@@ -156,7 +156,7 @@
 		"&8The official uniform is 'prepared'. The cape remains under committee review."
 	]
 	quest.7A11C0DE11000003.quest_subtitle: "Become a Hunter, then register the choice socially."
-	quest.7A11C0DE11000003.title: "&b&lTAKE THE LANTERN OATH"
+	quest.7A11C0DE11000003.title: "&b&lLANTERN OATH"
 	task.7A11C0DE1110001F.title: "Become a Hunter"
 	task.7A11C0DE11100020.title: "Our Current Allegiance and FTB Team Are Clear"
 	reward.7A11C0DE11200021.title: "Four Garlic Field Supplies"
@@ -172,7 +172,7 @@
 		"&8Somebody has to invoice the supernatural."
 	]
 	quest.7A11C0DE11000004.quest_subtitle: "Stay neutral on purpose, not by forgetting to choose."
-	quest.7A11C0DE11000004.title: "&a&lSIGN THE FREE COMPANY REGISTER"
+	quest.7A11C0DE11000004.title: "&a&lCOMPANY REGISTER"
 	task.7A11C0DE11100029.title: "I Registered a Neutral Service With Another Player"
 	reward.7A11C0DE1120002B.title: "Four Emerald Service Tokens"
 	reward.7A11C0DE1120002C.title: "One Arcane Rune"
@@ -182,7 +182,7 @@
 		"&fStandard:&f The entrance is reachable, lit, stocked, and visibly open to a player who did not build it."
 	]
 	quest.7A11C0DE11000005.quest_subtitle: "Three invitations become one welcome a stranger can use."
-	quest.7A11C0DE11000005.title: "&6&lTHREE INVITATIONS"
+	quest.7A11C0DE11000005.title: "&6&lWELCOME POINT"
 	task.7A11C0DE11100033.title: "I Know What Kind of Work I Want First"
 	reward.7A11C0DE11200034.title: "Choose a Personal Starter Kit"
 	chapter.7A11C0DE12000000.title: "VvH 02 · House of Night"
@@ -196,7 +196,7 @@
 		"&fThe choice changes the House's first promise, not anyone's access to magic."
 	]
 	quest.7A11C0DE12000001.quest_subtitle: "Starter · Solo-friendly"
-	quest.7A11C0DE12000001.title: "[CHARTER] FOUND THE HOUSE"
+	quest.7A11C0DE12000001.title: "FOUND THE HOUSE"
 	task.7A11C0DE1210000B.title: "Accept the Crimson Invitation and become a vampire"
 	task.7A11C0DE1210000C.title: "REVIEW: Record the House's first guest promise"
 	quest.7A11C0DE12000002.quest_desc: [
@@ -207,7 +207,7 @@
 		"&7BUILD STANDARD&f Provide a usable guest space, labelled storage, and an obvious lit exit."
 	]
 	quest.7A11C0DE12000002.quest_subtitle: "Starter · Solo-friendly"
-	quest.7A11C0DE12000002.title: "[WORLD] COMMON ROOM"
+	quest.7A11C0DE12000002.title: "COMMON ROOM"
 	task.7A11C0DE12100015.title: "Carry a Red Coffin"
 	task.7A11C0DE12100016.title: "REVIEW: The House Has a Shared Sleeping/Recovery Space"
 	quest.7A11C0DE12000003.quest_desc: [
@@ -219,7 +219,7 @@
 		"&7BUILD STANDARD&f The altar is accessible, labelled, and not hidden inside a private combat room."
 	]
 	quest.7A11C0DE12000003.quest_subtitle: "Starter · Solo-friendly"
-	quest.7A11C0DE12000003.title: "[PROGRESSION] SET THE ALTAR"
+	quest.7A11C0DE12000003.title: "SET THE ALTAR"
 	task.7A11C0DE1210001F.title: "Carry an Altar of Inspiration for inspection (not consumed)"
 	task.7A11C0DE12100020.title: "REVIEW: The first preparation is safe and explainable"
 	quest.7A11C0DE12000004.quest_desc: [
@@ -230,7 +230,7 @@
 		"&7BUILD STANDARD&f Keep emergency bottles visible, labelled, and available to the shared refuge."
 	]
 	quest.7A11C0DE12000004.quest_subtitle: "Workshop · Team-friendly"
-	quest.7A11C0DE12000004.title: "[WORLD] BLOOD PANTRY"
+	quest.7A11C0DE12000004.title: "BLOOD PANTRY"
 	task.7A11C0DE12100029.title: "Carry 4 Blood Bottles"
 	task.7A11C0DE1210002A.title: "REVIEW: A Labelled Shared Blood Pantry Exists"
 	quest.7A11C0DE12000005.quest_desc: [
@@ -242,7 +242,7 @@
 		"&7BUILD STANDARD&f Store its materials safely and let another player explain what the preparation is for."
 	]
 	quest.7A11C0DE12000005.quest_subtitle: "Workshop · Team-friendly"
-	quest.7A11C0DE12000005.title: "[PROGRESSION] PREPARE THE CAULDRON"
+	quest.7A11C0DE12000005.title: "PREPARE CAULDRON"
 	task.7A11C0DE12100033.title: "Carry an Alchemical Cauldron for inspection (not consumed)"
 	task.7A11C0DE12100034.title: "REVIEW: A controlled preparation is stored and teachable"
 	quest.7A11C0DE12000006.quest_desc: [
@@ -253,7 +253,7 @@
 		"&7BUILD STANDARD&f The route has readable markers, a rest point, and enough lighting to follow home."
 	]
 	quest.7A11C0DE12000006.quest_subtitle: "Route · Solo-friendly"
-	quest.7A11C0DE12000006.title: "[WORLD] MARK THE NIGHT ROAD"
+	quest.7A11C0DE12000006.title: "NIGHT ROAD"
 	task.7A11C0DE1210003D.title: "REVIEW: A Signed Night Route Connects Two Useful Places"
 	quest.7A11C0DE12000007.quest_desc: [
 		"&a&lLORE — THE LANTERN LEFT ON"
@@ -263,7 +263,7 @@
 		"&7BUILD STANDARD&f Light the approach and guest area; leave a small, labelled emergency supply."
 	]
 	quest.7A11C0DE12000007.quest_subtitle: "Route · Team-friendly"
-	quest.7A11C0DE12000007.title: "[WORLD] LEAVE THE LIGHT ON"
+	quest.7A11C0DE12000007.title: "GUEST LIGHT"
 	task.7A11C0DE12100047.title: "Two Players Visited the House for a Tour, Meal, Trade, or Ceremony"
 	quest.7A11C0DE12000008.quest_desc: [
 		"&e&lLORE — IMMORTALITY STILL MOVES SUPPLIES"
@@ -274,7 +274,7 @@
 		"&7BUILD STANDARD&f The line serves a House function such as storage, route loading, or public workshop supply."
 	]
 	quest.7A11C0DE12000008.quest_subtitle: "Advanced · Team-friendly"
-	quest.7A11C0DE12000008.title: "[PROGRESSION] MOVE THE NIGHT STOCK"
+	quest.7A11C0DE12000008.title: "NIGHT STOCK"
 	task.7A11C0DE12100051.title: "Carry a Mechanical Press for inspection (not consumed)"
 	task.7A11C0DE12100052.title: "REVIEW: Create logistics serve a shared House function"
 	quest.7A11C0DE12000009.quest_desc: [
@@ -287,7 +287,7 @@
 		"&7BUILD STANDARD&f Store the focus safely and explain one controlled, non-escalating use to another player."
 	]
 	quest.7A11C0DE12000009.quest_subtitle: "Advanced · Solo-friendly"
-	quest.7A11C0DE12000009.title: "[PROGRESSION] INSCRIBE BLOOD"
+	quest.7A11C0DE12000009.title: "BLOOD INSCRIPTION"
 	task.7A11C0DE1210005B.title: "Carry a Blood Rune for inspection (not consumed)"
 	task.7A11C0DE1210005C.title: "Carry Bloody Vellum for inspection (not consumed)"
 	task.7A11C0DE1210005D.title: "REVIEW: A Blood focus is stored and explainable"
@@ -302,7 +302,7 @@
 		"&6CONSEQUENCE&f Choose whether the first shared rule is anonymous shelter or a named guest ledger; the optional House depth arc follows that decision."
 	]
 	quest.7A11C0DE1200000A.quest_subtitle: "Advanced · Team-friendly"
-	quest.7A11C0DE1200000A.title: "[CHARTER] CHARTER THE HOUSE"
+	quest.7A11C0DE1200000A.title: "HOUSE CHARTER"
 	task.7A11C0DE12100065.title: "Complete 5 of 8 House works"
 	task.7A11C0DE12100066.title: "Name the headquarters and maintenance rotation"
 	reward.7A11C0DE12200067.title: "Thirty-Two Scaffolding"
@@ -323,7 +323,7 @@
 		"&7[SUITABLE: STARTER TEAMS / REFUGE STEWARDS]"
 	]
 	quest.7A11C0DE13000001.quest_subtitle: "[CHARTER] A protective order learns from the route it failed to keep."
-	quest.7A11C0DE13000001.title: "[CHARTER] &b&lLANTERN OATH"
+	quest.7A11C0DE13000001.title: "&b&lLANTERN OATH"
 	task.7A11C0DE1310000B.title: "At Least One Teammate Has Become a Hunter"
 	task.7A11C0DE1310000C.title: "Current Hunter Alignment Confirmed for This FTB Team"
 	quest.7A11C0DE13000002.quest_desc: [
@@ -333,7 +333,7 @@
 		"&7[SUITABLE: STARTER / REFUGE / PUBLIC SAFETY; EXISTING BUILDINGS COUNT]"
 	]
 	quest.7A11C0DE13000002.quest_subtitle: "[WORLD] A starter refuge and public-safety build; existing buildings count."
-	quest.7A11C0DE13000002.title: "[WORLD] &a&lWATCHHOUSE"
+	quest.7A11C0DE13000002.title: "&a&lWATCHHOUSE"
 	task.7A11C0DE13100015.title: "REVIEW: The Watchhouse Has Public Information and a Safe Guest Area"
 	quest.7A11C0DE13000003.quest_desc: [
 		"&6Lore:&f The Order's table is where field preparation becomes shared knowledge: one person remembers the recipe, another remembers who needs it."
@@ -342,7 +342,7 @@
 		"&7[SUITABLE: PROGRESSION / SHARED SUPPORT]"
 	]
 	quest.7A11C0DE13000003.quest_subtitle: "[PROGRESSION] Prepare a shared support station."
-	quest.7A11C0DE13000003.title: "[PROGRESSION] &e&lHUNTER TABLE"
+	quest.7A11C0DE13000003.title: "&e&lHUNTER TABLE"
 	task.7A11C0DE1310001F.title: "Carry a Hunter Table"
 	task.7A11C0DE13100020.title: "REVIEW: The Hunter Table Is Installed in a Shared Workshop"
 	quest.7A11C0DE13000004.quest_desc: [
@@ -352,7 +352,7 @@
 		"&7[SUITABLE: WORLD / LOGISTICS STEWARDS]"
 	]
 	quest.7A11C0DE13000004.quest_subtitle: "[WORLD] Keep a public reserve findable and restocked."
-	quest.7A11C0DE13000004.title: "[WORLD] &a&lFIELD CACHE"
+	quest.7A11C0DE13000004.title: "&a&lFIELD CACHE"
 	task.7A11C0DE13100029.title: "Carry 8 Garlic"
 	task.7A11C0DE1310002A.title: "REVIEW: A Labelled Shared Garlic/Field-Supply Reserve Exists"
 	quest.7A11C0DE13000005.quest_desc: [
@@ -362,7 +362,7 @@
 		"&7[SUITABLE: PROGRESSION / TOOL PREPARATION]"
 	]
 	quest.7A11C0DE13000005.quest_subtitle: "[PROGRESSION] Prepare tools for a controlled support drill."
-	quest.7A11C0DE13000005.title: "[PROGRESSION] &e&lSTAKE KIT"
+	quest.7A11C0DE13000005.title: "&e&lSTAKE KIT"
 	task.7A11C0DE13100033.title: "Carry 4 Stakes"
 	task.7A11C0DE13100034.title: "REVIEW: A Safe Training/Equipment Area Exists"
 	quest.7A11C0DE13000006.quest_desc: [
@@ -372,7 +372,7 @@
 		"&7[SUITABLE: PROGRESSION / CARE SUPPORT]"
 	]
 	quest.7A11C0DE13000006.quest_subtitle: "[PROGRESSION] Turn preparation into a readable care service."
-	quest.7A11C0DE13000006.title: "[PROGRESSION] &e&lALCHEMICAL BENCH"
+	quest.7A11C0DE13000006.title: "&e&lALCHEMICAL BENCH"
 	task.7A11C0DE1310003D.title: "Carry an Alchemical Cauldron"
 	task.7A11C0DE1310003E.title: "REVIEW: The Cauldron Has a Safe Shared Work Area"
 	quest.7A11C0DE13000007.quest_desc: [
@@ -382,7 +382,7 @@
 		"&7[SUITABLE: WORLD / NAVIGATION STEWARDS]"
 	]
 	quest.7A11C0DE13000007.quest_subtitle: "[WORLD] Make a public refuge route legible at night."
-	quest.7A11C0DE13000007.title: "[WORLD] &a&lREFUGE ROUTE"
+	quest.7A11C0DE13000007.title: "&a&lREFUGE ROUTE"
 	task.7A11C0DE13100047.title: "REVIEW: A Signed, Lit Refuge Route Connects Two Useful Places"
 	quest.7A11C0DE13000008.quest_desc: [
 		"&6Lore:&f The first response drill is deliberately uncomfortable: the Order must discover what its maps omit before a real traveller does."
@@ -391,7 +391,7 @@
 		"&7[SUITABLE: WORLD / SOLO ROUTE AUDIT]"
 	]
 	quest.7A11C0DE13000008.quest_subtitle: "[WORLD] Solo option available · test one response handoff."
-	quest.7A11C0DE13000008.title: "[WORLD] &a&lRESPONSE DRILL"
+	quest.7A11C0DE13000008.title: "&a&lRESPONSE DRILL"
 	task.7A11C0DE13100051.title: "Solo option available: route audit; log one failure and apply one fix"
 	quest.7A11C0DE13000009.quest_desc: [
 		"&6Lore:&f Holy practice is not a trophy for winning a hunt. It is the quiet work of keeping a room clean, a wound tended, and a frightened traveller inside the light."
@@ -400,7 +400,7 @@
 		"&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
 	]
 	quest.7A11C0DE13000009.quest_subtitle: "[PROGRESSION] Inspect a public Holy Rune service without consuming it."
-	quest.7A11C0DE13000009.title: "[PROGRESSION] &e&lHOLY WARD"
+	quest.7A11C0DE13000009.title: "&e&lHOLY WARD"
 	task.7A11C0DE1310005B.title: "Carry a Holy Rune"
 	task.7A11C0DE1310005C.title: "REVIEW: A Holy Ward Is Installed and Its Use Is Explained"
 	quest.7A11C0DE1300000A.quest_desc: [
@@ -410,7 +410,7 @@
 		"&7[SUITABLE: CHARTER / ANY TEAM]"
 	]
 	quest.7A11C0DE1300000A.quest_subtitle: "[CHARTER] Five of eight works, with both lanes represented."
-	quest.7A11C0DE1300000A.title: "[CHARTER] &b&lLANTERN CHARTER"
+	quest.7A11C0DE1300000A.title: "&b&lLANTERN CHARTER"
 	task.7A11C0DE13100065.title: "A Progression Work and a World-Build Work Are Named"
 	task.7A11C0DE13100066.title: "Headquarters Named; Maintenance Owner Recorded"
 	reward.7A11C0DE13200067.title: "Thirty-Two Scaffolding"
@@ -426,7 +426,7 @@
 	    "&7Build Standard:&f Name one contract steward and one place where a solo visitor can leave a request."
 	]
 	quest.7A11C0DE14000001.quest_subtitle: "Charter · Solo-friendly"
-	quest.7A11C0DE14000001.title: "[CHARTER] FOUND A FREE COMPANY"
+	quest.7A11C0DE14000001.title: "FOUND THE COMPANY"
 	task.7A11C0DE1410000B.title: "Current Neutral/Independent Status Confirmed With Another Player"
 	quest.7A11C0DE14000002.quest_desc: [
 	    "&fLore:&f Orra Vale lost a week to a contract board whose terms were written on both sides of the same page."
@@ -435,7 +435,7 @@
 	    "&7Build Standard:&f The board is reachable from the common route, has a named steward, and records three current offers."
 	]
 	quest.7A11C0DE14000002.quest_subtitle: "World · Team-friendly"
-	quest.7A11C0DE14000002.title: "[WORLD] OPEN THE CONTRACT HALL"
+	quest.7A11C0DE14000002.title: "CONTRACT HALL"
 	task.7A11C0DE14100015.title: "REVIEW: A Public Contract Board Has At Least 3 Clear Job Types"
 	quest.7A11C0DE14000003.quest_desc: [
 	    "&fLore:&f Nessa once delivered a sealed letter to the wrong watchtower because a route marker had been moved for a festival. The letter was harmless; the feud it interrupted was not."
@@ -443,7 +443,7 @@
 	    "&7Build Standard:&f Show the route, its destination, and one safe stopping point. Solo players may submit a signed route audit."
 	]
 	quest.7A11C0DE14000003.quest_subtitle: "World · Solo-friendly"
-	quest.7A11C0DE14000003.title: "[WORLD] MARK A COURIER ROUTE"
+	quest.7A11C0DE14000003.title: "COURIER ROUTE"
 	task.7A11C0DE1410001F.title: "Carry a Filled Map"
 	task.7A11C0DE14100020.title: "REVIEW: A Named Courier Route Connects Two Useful Places"
 	quest.7A11C0DE14000004.quest_desc: [
@@ -453,7 +453,7 @@
 	    "&7Build Standard:&f Provide three active offers or services, public terms, neutral access, and a named steward."
 	]
 	quest.7A11C0DE14000004.quest_subtitle: "World · Team-friendly"
-	quest.7A11C0DE14000004.title: "[WORLD] OPEN A NEUTRAL MARKET"
+	quest.7A11C0DE14000004.title: "NEUTRAL MARKET"
 	task.7A11C0DE14100029.title: "REVIEW: A Stall or Counter Lists Goods/Services and Contact Terms"
 	quest.7A11C0DE14000005.quest_desc: [
 	    "&fLore:&f When the route record was altered, a tired courier slept beside the gate and missed its only witness."
@@ -462,7 +462,7 @@
 	    "&7Build Standard:&f Include a bed, food, lighting, storage, and a clearly marked public entrance."
 	]
 	quest.7A11C0DE14000005.quest_subtitle: "World · Team-friendly"
-	quest.7A11C0DE14000005.title: "[WORLD] OPEN A WAYSTATION"
+	quest.7A11C0DE14000005.title: "WAYSTATION"
 	task.7A11C0DE14100033.title: "REVIEW: A Neutral Guest/Meeting Space Can Host 2 Players"
 	quest.7A11C0DE14000006.quest_desc: [
 	    "&fLore:&f Nessa's ledger contains two versions of the Greybridge route. The names match; the dates do not. A courier learns faster when every delivery carries its own chain of custody."
@@ -470,7 +470,7 @@
 	    "&7Build Standard:&f Record the sender, destination, seal marks, and the correction made if the route was wrong. Solo players may submit a signed test log."
 	]
 	quest.7A11C0DE14000006.quest_subtitle: "Progression · Solo-friendly"
-	quest.7A11C0DE14000006.title: "[PROGRESSION] COURIER UNDER TWO SEALS"
+	quest.7A11C0DE14000006.title: "TWO SEALS"
 	task.7A11C0DE1410003D.title: "REVIEW: A Shared Ledger Records At Least 3 Contracts, Places, or Decisions"
 	quest.7A11C0DE14000007.quest_desc: [
 	    "&fLore:&f Iven translated a Blood ward with a Holy glossary and left out the word for surrender."
@@ -480,7 +480,7 @@
 	    "&fBorrowed, purchased, or received materials are valid without faction allegiance; solo players may self-audit."
 	]
 	quest.7A11C0DE14000007.quest_subtitle: "Progression · Solo-friendly · preparation/demo"
-	quest.7A11C0DE14000007.title: "[PROGRESSION] PUBLIC SPELLWRIGHT"
+	quest.7A11C0DE14000007.title: "SPELLWRIGHT"
 	task.7A11C0DE14100047.title: "REVIEW: We Used MCA/Civic Play to Create One Named Relationship or Place"
 	quest.7A11C0DE14000008.quest_desc: [
 	    "&fLore:&f A Lantern patrol found a stranded traveller beside a Blood-marked bridge. Nessa sent bread first and questions second."
@@ -489,7 +489,7 @@
 	    "&7Build Standard:&f Name the problem, the neutral response, and the follow-up. Solo players may interact with an MCA resident or submit a self-audit."
 	]
 	quest.7A11C0DE14000008.quest_subtitle: "Progression · Team-friendly"
-	quest.7A11C0DE14000008.title: "[PROGRESSION] MEDIATE OR RESCUE"
+	quest.7A11C0DE14000008.title: "MEDIATE OR RESCUE"
 	task.7A11C0DE14100051.title: "A Posted Service Request Was Resolved or Reviewed"
 	quest.7A11C0DE14000009.quest_desc: [
 	    "&fLore:&f The translation desk began with a Blood rune, a Holy rune, and Nessa's refusal to copy either without a warning."
@@ -499,7 +499,7 @@
 	    "&fBorrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
 	]
 	quest.7A11C0DE14000009.quest_subtitle: "Progression · Solo-friendly · interpretation/documentation"
-	quest.7A11C0DE14000009.title: "[PROGRESSION] OPEN THE TRANSLATION DESK"
+	quest.7A11C0DE14000009.title: "TRANSLATION DESK"
 	task.7A11C0DE1410005B.title: "Carry 2 Arcane Essence"
 	task.7A11C0DE1410005C.title: "REVIEW: One Safe Blood or Holy Utility Is Documented"
 	quest.7A11C0DE1400000A.quest_desc: [
@@ -509,7 +509,7 @@
 	    "&7Build Standard:&f The five must include at least one world-building work and one progression/service work."
 	]
 	quest.7A11C0DE1400000A.quest_subtitle: "Charter · Team-friendly · 5 of 8"
-	quest.7A11C0DE1400000A.title: "[CHARTER] CHARTER THE FREE COMPANY"
+	quest.7A11C0DE1400000A.title: "COMPANY CHARTER"
 	task.7A11C0DE14100065.title: "A Progression Work and a World-Build Work Are Named"
 	task.7A11C0DE14100066.title: "Headquarters Named; Maintenance Owner Recorded"
 	reward.7A11C0DE14200067.title: "Thirty-Two Scaffolding"
@@ -535,7 +535,7 @@
 	  "&fStandard:&7 Another player may repeat the service; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000002.quest_subtitle: "[Workshop] [Technical] · make a machine teachable"
-	quest.7A11C0DE15000002.title: "&6[SPECIALTY] ENGINEER"
+	quest.7A11C0DE15000002.title: "&6ENGINEER"
 	task.7A11C0DE15100015.title: "Carry 4 Andesite Alloys for inspection (not consumed)"
 	task.7A11C0DE15100016.title: "REVIEW: A Create Service Solves a Shared Problem"
 	quest.7A11C0DE15000003.quest_desc: [
@@ -546,7 +546,7 @@
 	  "&fStandard:&7 A partner may reproduce the step; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000003.quest_subtitle: "[Magic] [Research] · make one spell step teachable"
-	quest.7A11C0DE15000003.title: "&d[SPECIALTY] ARCANIST"
+	quest.7A11C0DE15000003.title: "&dARCANIST"
 	task.7A11C0DE1510001F.title: "Carry 4 Arcane Essences for inspection (not consumed)"
 	task.7A11C0DE15100020.title: "REVIEW: A Spell/Ingredient/Upgrade Tip Is Published"
 	quest.7A11C0DE15000004.quest_desc: [
@@ -558,7 +558,7 @@
 	  "&fStandard:&7 Another player may follow the procedure; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000004.quest_subtitle: "[Magic] [Faction] [Social] · translate one night custom"
-	quest.7A11C0DE15000004.title: "&4[SPECIALTY] NIGHT SPECIALIST"
+	quest.7A11C0DE15000004.title: "&4NIGHT SPECIALIST"
 	task.7A11C0DE15100029.title: "REVIEW: I Taught or Documented One Vampirism Mechanic for Someone Else"
 	quest.7A11C0DE15000005.quest_desc: [
 	  "&6Lore:&f Nessa's Greybridge courier arrived with a working vehicle and no safe place to land. The first useful aeronautics contribution is a visible, low-tier landing site."
@@ -568,7 +568,7 @@
 	  "&fStandard:&7 Another player may inspect the test; solo players sign the result or failure. Players who want the later Wing project may pursue it elsewhere, but it is not required here."
 	]
 	quest.7A11C0DE15000005.quest_subtitle: "[Build] [Workshop] [Route] · make a landing site usable"
-	quest.7A11C0DE15000005.title: "&b[SPECIALTY] AERONAUT"
+	quest.7A11C0DE15000005.title: "&bAERONAUT"
 	task.7A11C0DE15100033.title: "REVIEW: A Vehicle/Airframe Test or Dock Improvement Was Documented"
 	quest.7A11C0DE15000006.quest_desc: [
 	  "&6Lore:&f Mirelle Voss rang the Greybridge bell once for welcome and once for alarm. Nobody had written down which was which. She asks for a signal that two sides can read the same way."
@@ -578,7 +578,7 @@
 	  "&fStandard:&7 Another player may answer the signal; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000006.quest_subtitle: "[Build] [Social] [Faction] · make one signal legible"
-	quest.7A11C0DE15000006.title: "&a[SPECIALTY] DIPLOMAT"
+	quest.7A11C0DE15000006.title: "&aDIPLOMAT"
 	task.7A11C0DE1510003D.title: "Another Player Confirms a Trade, MCA, Faction, or Civic Agreement"
 	quest.7A11C0DE15000007.quest_desc: [
 	  "&6Lore:&f Elias Rook's Greybridge relief crate held food, torches, and no label. The right supplies reached the wrong hands. He asks for a field kit that can be checked at a glance."
@@ -588,7 +588,7 @@
 	  "&fStandard:&7 Another player may use the kit; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000007.quest_subtitle: "[Build] [Logistics] [Support] · stock one field kit"
-	quest.7A11C0DE15000007.title: "&e[SPECIALTY] QUARTERMASTER"
+	quest.7A11C0DE15000007.title: "&eQUARTERMASTER"
 	task.7A11C0DE15100047.title: "REVIEW: A Shared Travel or Emergency Supply Station Served At Least 2 Players"
 	quest.7A11C0DE15000008.quest_desc: [
 	  "&6Lore:&f Nessa's Greybridge map showed the destination and omitted the dangerous bridge. A route is only useful when the next person can survive following it."
@@ -598,7 +598,7 @@
 	  "&fStandard:&7 Another player may follow the route; solo players sign the test with the observed result or failure."
 	]
 	quest.7A11C0DE15000008.quest_subtitle: "[Route] [Exploration] [Navigation] · publish one survivable route"
-	quest.7A11C0DE15000008.title: "&a[SPECIALTY] PATHFINDER"
+	quest.7A11C0DE15000008.title: "&aPATHFINDER"
 	task.7A11C0DE15100051.title: "Carry 1 Filled Map for inspection (not consumed)"
 	task.7A11C0DE15100052.title: "REVIEW: A New Route/Map Is Usable Without Voice Chat"
 	quest.7A11C0DE15000009.quest_desc: [
@@ -609,7 +609,7 @@
 	  "&fStandard:&7 Another player may review the record; solo players sign their own record and name what failed."
 	]
 	quest.7A11C0DE15000009.quest_subtitle: "[Archive] [Research] · preserve one useful failure"
-	quest.7A11C0DE15000009.title: "&f[SPECIALTY] ARCHIVIST"
+	quest.7A11C0DE15000009.title: "&fARCHIVIST"
 	task.7A11C0DE1510005B.title: "REVIEW: A Failure, Fix, or Weird Event Was Archived With a Useful Lesson"
 	quest.7A11C0DE1500000A.quest_desc: [
 	  "&6Lore:&f Three different crafts kept Greybridge from collapsing completely. Close the gate after any three are proven, then let the rest remain invitations rather than obligations."
@@ -636,7 +636,7 @@
 	    "&fLeave the result usable by a stranger and record one owner, route, or corrective action. Solo logs and self-audits count."
 	]
 	quest.7A11C0DE16000001.quest_subtitle: "Link what already exists. Make one useful thing survive its first failure."
-	quest.7A11C0DE16000001.title: "&6&lTHE ISLAND REMEMBERS"
+	quest.7A11C0DE16000001.title: "&6&lISLAND REMEMBERS"
 	task.7A11C0DE16100001.title: "Read the Public-Works Rubric"
 	quest.7A11C0DE16000002.quest_desc: [
 	    "&6&lLORE"
@@ -651,7 +651,7 @@
 	    "&fAn unbriefed traveller can identify both endpoints, follow the signs, and find the maintenance owner. A solo player may log and correct one navigation failure."
 	]
 	quest.7A11C0DE16000002.quest_subtitle: "Link two useful places and prove the link survives a wrong turn."
-	quest.7A11C0DE16000002.title: "&eCONNECTED ROUTE"
+	quest.7A11C0DE16000002.title: "&ePUBLIC ROUTE"
 	task.7A11C0DE16100015.title: "REVIEW: Route survives a wrong turn and has a named caretaker"
 	quest.7A11C0DE16000003.quest_desc: [
 	    "&6&lLORE"
@@ -666,7 +666,7 @@
 	    "&fNeutral access, visible terms, and a named steward are present. A solo player may perform and log a test transaction or correct one confusing rule."
 	]
 	quest.7A11C0DE16000003.quest_subtitle: "Turn an existing stall into a place where terms survive the seller."
-	quest.7A11C0DE16000003.title: "&6MARKET AND CONTRACT HALL"
+	quest.7A11C0DE16000003.title: "&6CONTRACT HALL"
 	task.7A11C0DE1610001F.title: "REVIEW: Three active services and a readable public contract"
 	quest.7A11C0DE16000004.quest_desc: [
 	    "&6&lLORE"
@@ -682,7 +682,7 @@
 	    "&fTwo capabilities work, operating rules are visible, and a maintainer is named. A solo player may run a repair or processing test and record one corrected failure."
 	]
 	quest.7A11C0DE16000004.quest_subtitle: "Make the useful tools reachable without making them mysteriously vanish."
-	quest.7A11C0DE16000004.title: "&6SHARED WORKSHOP AND DEPOT"
+	quest.7A11C0DE16000004.title: "&6SHARED WORKSHOP"
 	task.7A11C0DE16100029.title: "REVIEW: Two useful capabilities work and stock boundaries are clear"
 	quest.7A11C0DE16000005.quest_desc: [
 	    "&6&lLORE"
@@ -698,7 +698,7 @@
 	    "&fThe facts are browseable, dated or located, and include one uncertainty or correction. A solo player may audit one entry and add its source."
 	]
 	quest.7A11C0DE16000005.quest_subtitle: "Leave the next witness more than your version of events."
-	quest.7A11C0DE16000005.title: "&fARCHIVE AND MEMORIAL"
+	quest.7A11C0DE16000005.title: "&fARCHIVE · MEMORIAL"
 	task.7A11C0DE16100033.title: "REVIEW: Five sourced memories and one correction are browseable"
 	quest.7A11C0DE16000006.quest_desc: [
 	    "&6&lLORE"
@@ -713,7 +713,7 @@
 	    "&fThe station is findable under pressure and one failure is corrected. A solo player may self-audit the route and sign the maintenance log."
 	]
 	quest.7A11C0DE16000006.quest_subtitle: "Test the shelter before the island tests it for you."
-	quest.7A11C0DE16000006.title: "&cTHREAT REFUGE AND READINESS"
+	quest.7A11C0DE16000006.title: "&cTHREAT REFUGE"
 	task.7A11C0DE1610003D.title: "REVIEW: Refuge capacity, exit route, and one corrected failure"
 	quest.7A11C0DE16000007.quest_desc: [
 	    "&6&lLORE"
@@ -729,7 +729,7 @@
 	    "&fMark a safe approach, provide one useful vehicle or venue function, and host or self-audit one event/test with a recorded correction."
 	]
 	quest.7A11C0DE16000007.quest_subtitle: "Give arrivals somewhere to land, gather, and be remembered."
-	quest.7A11C0DE16000007.title: "&bPUBLIC VENUE AND ARRIVAL WORKS"
+	quest.7A11C0DE16000007.title: "&bARRIVAL WORKS"
 	task.7A11C0DE16100047.title: "REVIEW: Safe arrival and one usable public event/test"
 	quest.7A11C0DE1600000B.quest_desc: [
 	    "&6&lLORE"
@@ -742,7 +742,7 @@
 	    "&fEach chosen work is usable by a stranger and has a named route, steward, test, or correction. The team reward funds maintenance, not a technology skip."
 	]
 	quest.7A11C0DE1600000B.quest_subtitle: "Choose three upgrades. Make the choice legible."
-	quest.7A11C0DE1600000B.title: "&6&lTHREE THINGS THE ISLAND KEEPS"
+	quest.7A11C0DE1600000B.title: "&6&lTHREE PUBLIC WORKS"
 	task.7A11C0DE1610006F.title: "Archive One Record of the Three Public Works"
 	reward.7A11C0DE16200070.title: "Sixteen Maintenance Lanterns"
 	reward.7A11C0DE16200071.title: "Thirty-Two Maintenance Scaffolding"
@@ -751,39 +751,39 @@
 	chapter.7A11C0DE17000000.title: "VvH 07 · Rivalry Without Ruin"
 	quest.7A11C0DE17000001.quest_desc: ["{image:minecraft:textures/item/firework_rocket.png width:48 height:48 align:center}" "&d&lLORE" "&fGreybridge broke during a public demonstration. Mirelle Voss remembers the bell as a warning; Elias Rook remembers it as permission. Nessa Quill filed both statements under the same date." "" "&e&lOBJECTIVE" "&fPublish a venue, participants, stop time, cleanup owner, and two formats that everyone can decline without penalty." "" "&9&lSUITABILITY" "&fSolo: rules audit | Group: host formats | Build: venue, boundaries, and cleanup station." "" "&a&lEVENT STANDARD" "&fUse reversible props, visible boundaries, and a written result. The ordinary path is two noncombat events; the skirmish is a separate, runtime-unverified option."]
 	quest.7A11C0DE17000001.quest_subtitle: "[EVENT] Prepare the rules, then choose any two harmless formats."
-	quest.7A11C0DE17000001.title: "[EVENT] &d&lRIVALRY NIGHT"
+	quest.7A11C0DE17000001.title: "&d&lRIVALRY NIGHT"
 	task.7A11C0DE17100001.title: "Publish the Rivalry Rules"
 	quest.7A11C0DE17000002.quest_desc: ["&d&lLORE" "&fMirelle's copy of the Greybridge notice says: ‘Ring once, then wait.’ Elias's margin says the second ring saved them. The contradiction becomes a banner, not a verdict." "" "&e&lOBJECTIVE" "&fCreate one reversible poster, banner, exhibit, or museum label that quotes or paraphrases one side of the bell story." "" "&9&lSUITABILITY" "&fSolo: display audit | Group: paired accounts | Build: reversible poster, banner, or exhibit." "" "&a&lEVENT STANDARD" "&fFor a group, both sides display a piece. For a solo audit, place one display beside a signed note naming the source and its removal time. Do not place it in another player's claim without permission."]
 	quest.7A11C0DE17000002.quest_subtitle: "[EVENT] Make a reversible accusation that can survive daylight."
-	quest.7A11C0DE17000002.title: "[EVENT] &dPROPAGANDA"
+	quest.7A11C0DE17000002.title: "&dPROPAGANDA"
 	task.7A11C0DE17100015.title: "Display One Reversible Bell Account"
 	quest.7A11C0DE17000003.quest_desc: ["&e&lLORE" "&fElias remembers the demonstration failing because the ward was explained after it flashed. The Lantern Order insists the explanation is part of the ward." "" "&e&lOBJECTIVE" "&fStage a Blood-versus-Holy utility demonstration, route briefing, or support-station test against an environmental target or dummy space." "" "&9&lSUITABILITY" "&fSolo: test log | Group: safety briefing | Build: support station or marked demo space." "" "&a&lEVENT STANDARD" "&fFor a group, at least three people can judge or attend. For a solo audit, record the setup, expected result, observed result, and one safe adjustment. No unwilling target, combat spell, or faction change is required."]
 	quest.7A11C0DE17000003.quest_subtitle: "[EVENT] Demonstrate protection without making a person the target."
-	quest.7A11C0DE17000003.title: "[EVENT] &eWARD TEST"
+	quest.7A11C0DE17000003.title: "&eWARD TEST"
 	task.7A11C0DE1710001F.title: "Record a Safe Ward Test"
 	quest.7A11C0DE17000004.quest_desc: ["&a&lLORE" "&fNessa Quill found three copies of the same route with three different final bells. She kept the maps because the walk mattered more than the answer." "" "&e&lOBJECTIVE" "&fPlace a short clue course ending at a public project, harmless trophy, or location reveal, then remove or archive every clue." "" "&9&lSUITABILITY" "&fSolo: timed route audit | Group: solve together | Build: clue trail with removable markers." "" "&a&lEVENT STANDARD" "&fFor a group, participants solve the route. For a solo audit, run it against your own recorded time and one failure note. The final record names what was learned and where the clues went."]
 	quest.7A11C0DE17000004.quest_subtitle: "[EVENT] Leave a trail that teaches something when it ends."
-	quest.7A11C0DE17000004.title: "[EVENT] &aCLUE COURSE"
+	quest.7A11C0DE17000004.title: "&aCLUE COURSE"
 	task.7A11C0DE17100029.title: "Run and Archive a Clue Course"
 	quest.7A11C0DE17000005.quest_desc: ["&b&lLORE" "&fThe old courier ledger has two arrival times for the same Greybridge crate. One is written in ink; the other is corrected in charcoal after the bell." "" "&e&lOBJECTIVE" "&fPublish a start, finish, allowed transport, route, and safety rule for a foot, rail, boat, glider, or vehicle run." "" "&9&lSUITABILITY" "&fSolo: repeat-run audit | Group: route relay | Build: marked route and finish." "" "&a&lEVENT STANDARD" "&fFor a group, record the route and a visible finish. For a solo audit, run it twice, record the times and one failure/recovery, and leave the route usable for the next courier."]
 	quest.7A11C0DE17000005.quest_subtitle: "[EVENT] Publish the route before anyone starts moving."
-	quest.7A11C0DE17000005.title: "[EVENT] &bCOURIER RUN"
+	quest.7A11C0DE17000005.title: "&bCOURIER RUN"
 	task.7A11C0DE17100033.title: "Publish and Run a Safe Courier Route"
 	quest.7A11C0DE17000006.quest_desc: ["&6&lLORE" "&fNessa's archive calls the first Greybridge market a truce. Elias calls it a queue. Mirelle calls it the only hour nobody asked which side rang the bell." "" "&e&lOBJECTIVE" "&fSet a time window and procurement or service benchmark: gather a real bundle, fill a shortage, or complete a useful delivery." "" "&9&lSUITABILITY" "&fSolo: service audit | Group: publish a benchmark | Build: neutral desk or delivery point." "" "&a&lEVENT STANDARD" "&fFor a group, publish the result and the terms. For a solo audit, record the target, inputs, elapsed time, and actual output. No fake trades, duplicated goods, or currency loop."]
 	quest.7A11C0DE17000006.quest_subtitle: "[EVENT] Measure a service without inventing a transaction."
-	quest.7A11C0DE17000006.title: "[EVENT] &6MARKET TEST"
+	quest.7A11C0DE17000006.title: "&6MARKET TEST"
 	task.7A11C0DE1710003D.title: "Publish a Market Benchmark"
 	quest.7A11C0DE17000007.quest_desc: ["&f&lLORE" "&fThe bell fragment is still displayed beside a half-built arch. Nessa wrote: ‘A structure can be wrong and still be honest if its maker leaves the measurements.’" "" "&e&lOBJECTIVE" "&fPresent a mascot, one-chunk build, ceremonial object, or public display with a three-line rubric: readable, reversible, and useful or memorable." "" "&9&lSUITABILITY" "&fSolo: self-score | Group: independent judges | Build: mascot, one-chunk build, or public display." "" "&a&lEVENT STANDARD" "&fFor a group, invite judges or independent categories. For a solo audit, sign your own score against the rubric and record one change you would make. Keep the object only with its owner's consent."]
 	quest.7A11C0DE17000007.quest_subtitle: "[EVENT] Judge a small object by a stated rule, not by power."
-	quest.7A11C0DE17000007.title: "[EVENT] &fBUILD RUBRIC"
+	quest.7A11C0DE17000007.title: "&fBUILD RUBRIC"
 	task.7A11C0DE17100047.title: "Submit a Rubric-Judged Build"
 	quest.7A11C0DE17000008.quest_desc: ["&c&lLORE" "&fThe Greybridge demonstration did not end because anyone won. It ended because the crowd could not tell who had agreed to be in danger." "" "&e&lOBJECTIVE" "&fOnly after two noncombat formats, schedule a fully opt-in skirmish with a roster, loadout ceiling, arena, spectator protection, backup, stop command, and restoration owner." "" "&9&lSUITABILITY" "&fSolo: checklist rehearsal only | Group: consented roster | Build: marked arena and restoration plan." "" "&a&lEVENT STANDARD" "&fThis node is runtime unverified and must remain unused until controls are tested. Completion means a safe end and agreed restoration—not kills, victory, or faction power."]
 	quest.7A11C0DE17000008.quest_subtitle: "[PVP · CONSENT REQUIRED] Optional hosted PvP only after two noncombat formats; record consent, roster, safe stop, and restoration owner."
-	quest.7A11C0DE17000008.title: "[PVP · CONSENT REQUIRED] &cSANCTIONED SKIRMISH"
+	quest.7A11C0DE17000008.title: "&cCONSENTED SKIRMISH"
 	task.7A11C0DE17100051.title: "[PVP · CONSENT REQUIRED] Confirm consent, roster, safe stop, and restoration owner (or choose a noncombat alternative)"
 	quest.7A11C0DE17000009.quest_desc: ["&d&lLORE" "&fNessa Quill never corrected Mirelle or Elias. She placed both bell accounts in the same folder and left a blank page for the next witness." "" "&e&lOBJECTIVE" "&fArchive two event results, the cleanup status, one concrete moment, and one unresolved question or change for next time." "" "&9&lSUITABILITY" "&fSolo: record audit | Group: shared archive | Build: book, signs, map wall, or archive chest." "" "&a&lEVENT STANDARD" "&fUse a book, signs, map wall, or archive chest that a late player can find. The archive is reachable without the skirmish; no PvP result is required."]
 	quest.7A11C0DE17000009.quest_subtitle: "[CAPSTONE] After any two safe formats, leave a useful record."
-	quest.7A11C0DE17000009.title: "[CAPSTONE] &d&lARCHIVE THE NIGHT"
+	quest.7A11C0DE17000009.title: "&d&lARCHIVE THE NIGHT"
 	task.7A11C0DE1710005B.title: "Archive Two Results and One Open Question"
 	reward.7A11C0DE1720005C.title: "Sixteen Firework Rockets"
 	reward.7A11C0DE1720005D.title: "Eight Festival Lanterns"
@@ -792,35 +792,35 @@
 	chapter.7A11C0DE18000000.title: "VvH 08 · The Long Night Fair"
 	quest.7A11C0DE18000001.quest_desc: ["&6&lLORE" "&fGreybridge's truce collapsed during a public demonstration. Mirelle Voss and Elias Rook still describe the same bell differently; Nessa Quill archived both versions." "" "&e&lOBJECTIVE" "&fChoose a venue, post the invitation, name hosts and cleanup owners, and display the bell fragment, demonstration ledger, route map, or two witness notes without pretending the contradiction is solved." "" "&9&lSUITABILITY" "&fSolo: staged preparation audit | Group: host the fair | Build: venue, stations, and archive display." "" "&a&lEVENT STANDARD" "&fThe preferred fair has visitors and shared stations. A solo preparation audit may use a staged venue, signed hosting plan, and NPC-facing invitation. The six contributions are alternatives; any three complete the fair."]
 	quest.7A11C0DE18000001.quest_subtitle: "[EVENT] Set one place, one time, and one unresolved history on the table."
-	quest.7A11C0DE18000001.title: "[EVENT] &6&lCALL THE FAIR"
+	quest.7A11C0DE18000001.title: "&6&lCALL THE FAIR"
 	task.7A11C0DE18100001.title: "Post the Fair Plan and Evidence"
 	quest.7A11C0DE18000002.quest_desc: ["&4&lLORE" "&fMirelle's host book lists a bloodless toast beside the bell fragment: ‘We remember differently; sit anyway.’" "" "&e&lOBJECTIVE" "&fHost a Vampire's Delight table, night-route tour, ritual study, archive reading, or aesthetic exhibit." "" "&9&lSUITABILITY" "&fSolo: staged hospitality audit | Group: host guests | Build: table, exhibit, or route stop." "" "&a&lEVENT STANDARD" "&fFor the fair, guests participate safely and leave with one remembered detail. For a solo audit, stage the table or exhibit, sign the guest protocol, and record the intended audience or NPC visitor."]
 	quest.7A11C0DE18000002.quest_subtitle: "[EVENT] Give the night a table without asking for allegiance."
-	quest.7A11C0DE18000002.title: "[EVENT] &4HOUSE HOSPITALITY"
+	quest.7A11C0DE18000002.title: "&4HOUSE HOSPITALITY"
 	task.7A11C0DE18100015.title: "Stage Hospitality and a Guest Record"
 	quest.7A11C0DE18000003.quest_desc: ["&b&lLORE" "&fElias's margin note says the bell was safe only after somebody explained the exit. The Lantern Order turns that note into a public ward lesson." "" "&e&lOBJECTIVE" "&fHost a safety demonstration, route briefing, rescue drill, countermeasure museum, or support station." "" "&9&lSUITABILITY" "&fSolo: signed test log | Group: teach visitors | Build: support station or marked lesson space." "" "&a&lEVENT STANDARD" "&fFor the fair, visitors can practice or learn without being targets. For a solo audit, stage the display against the environment and sign a test log with expected and observed results."]
 	quest.7A11C0DE18000003.quest_subtitle: "[EVENT] Explain a danger before it becomes a spectacle."
-	quest.7A11C0DE18000003.title: "[EVENT] &bLANTERN SERVICE"
+	quest.7A11C0DE18000003.title: "&bLANTERN SERVICE"
 	task.7A11C0DE1810001F.title: "Run a Public Safety Demonstration"
 	quest.7A11C0DE18000004.quest_desc: ["&a&lLORE" "&fNessa's archive calls the first neutral desk a place where both bell accounts could be delivered without changing hands." "" "&e&lOBJECTIVE" "&fOperate a market, contract desk, courier service, map desk, guesthouse, mediation table, or event logistics station." "" "&9&lSUITABILITY" "&fSolo: documented service test | Group: run one interaction | Build: neutral desk, guesthouse, or logistics station." "" "&a&lEVENT STANDARD" "&fFor the fair, publish terms and complete one real interaction. For a solo audit, post the terms, complete a documented service or route test, and leave the desk ready for a visitor."]
 	quest.7A11C0DE18000004.quest_subtitle: "[EVENT] Make one neutral service actually useful."
-	quest.7A11C0DE18000004.title: "[EVENT] &aFREE COMPANY MARKET"
+	quest.7A11C0DE18000004.title: "&aCOMPANY MARKET"
 	task.7A11C0DE18100029.title: "Operate One Neutral Service"
 	quest.7A11C0DE18000005.quest_desc: ["&6&lLORE" "&fThe demonstration ledger has a missing line where the bell should have been tested. The workshop fills that gap with an operator, a spectator line, and a failure note." "" "&e&lOBJECTIVE" "&fDemonstrate a Create system, vehicle, dock, rail feature, workshop, or controlled engineering test." "" "&9&lSUITABILITY" "&fSolo: controlled test log | Group: explain and run it | Build: marked workshop, dock, or machine exhibit." "" "&a&lEVENT STANDARD" "&fFor the fair, explain the system and run it once with marked zones. For a solo audit, stage the display, run the test, and sign the expected result, observed result, and repair hook."]
 	quest.7A11C0DE18000005.quest_subtitle: "[EVENT] Let one machine explain itself before it moves."
-	quest.7A11C0DE18000005.title: "[EVENT] &6ENGINEERING EXHIBITION"
+	quest.7A11C0DE18000005.title: "&6ENGINEERING EXHIBIT"
 	task.7A11C0DE18100033.title: "Run a Controlled Machine Demonstration"
 	quest.7A11C0DE18000006.quest_desc: ["&e&lLORE" "&fA witness remembered the bell by the sound of the crowd afterward. The fair keeps that human detail: a game, ceremony, music cue, or guided tour that ends with someone taking part." "" "&e&lOBJECTIVE" "&fRun a performance, mini-game, ceremony, award, speech, guided tour, or other shared activity." "" "&9&lSUITABILITY" "&fSolo: staged test run | Group: participate together | Build: stage, game lane, or tour route." "" "&a&lEVENT STANDARD" "&fFor the fair, announce how to join and show a visible ending. For a solo audit, stage the activity, write the joining instructions, and record a test run or NPC audience response."]
 	quest.7A11C0DE18000006.quest_subtitle: "[EVENT] Give visitors a reason to participate."
-	quest.7A11C0DE18000006.title: "[EVENT] &ePUBLIC SHOWCASE"
+	quest.7A11C0DE18000006.title: "&ePUBLIC SHOWCASE"
 	task.7A11C0DE1810003D.title: "Run a Participatory Showcase"
 	quest.7A11C0DE18000007.quest_desc: ["&f&lLORE" "&fThe archive does not choose between Mirelle and Elias. It preserves the bell fragment, both witness notes, the demonstration ledger, and the route that led people home." "" "&e&lOBJECTIVE" "&fPreserve five concrete season facts, images, maps, quotes, results, or failures and identify one unfinished hook." "" "&9&lSUITABILITY" "&fSolo: signed archive audit | Group: browse and contribute | Build: durable archive with next-page marker." "" "&a&lEVENT STANDARD" "&fFor the fair, make the record browseable for a late player. For a solo audit, sign and file the five entries in a durable archive with a clearly marked next page."]
 	quest.7A11C0DE18000007.quest_subtitle: "[EVENT] Preserve five facts and leave one door open."
-	quest.7A11C0DE18000007.title: "[EVENT] &fARCHIVE THE SEASON"
+	quest.7A11C0DE18000007.title: "&fSEASON ARCHIVE"
 	task.7A11C0DE18100047.title: "File Five Season Facts"
 	quest.7A11C0DE18000009.quest_desc: ["&6&lLORE" "&fAt the fair's last bell, Mirelle and Elias still disagree. Nessa's blank page is not an invitation to invent a clean answer; it is a promise that the next season may examine the evidence." "" "&e&lOBJECTIVE" "&fComplete any three fair contributions and record one unresolved pressure or ambition that players genuinely want to continue." "" "&6&lSEASON SEAL REWARDS" "&f3 personal Bevels + personal fair favor + team festival support. No currency is added to reward table #9." "" "&9&lSUITABILITY" "&fSolo: staged seal audit | Group: gather at the fair | Build: capstone venue and sequel-hook archive." "" "&a&lEVENT STANDARD" "&fThe preferred capstone is a real public gathering. A solo seal audit must point to three staged contribution records and one signed sequel hook; it does not pretend a crowd attended."]
 	quest.7A11C0DE18000009.quest_subtitle: "[CAPSTONE] Complete any three contributions, then name what remains unresolved."
-	quest.7A11C0DE18000009.title: "[CAPSTONE] &6&lSEAL SEASON ONE"
+	quest.7A11C0DE18000009.title: "&6&lSEAL SEASON ONE"
 	task.7A11C0DE1810005B.title: "Seal the Fair and Leave a Future Hook"
 	reward.7A11C0DE1820005C.title: "Sixteen Festival Lanterns"
 	reward.7A11C0DE1820005D.title: "Choose a Long Night Fair Favor"
@@ -843,7 +843,7 @@
 		"&fStandard:&f Name the public route, refuge, hall, or event that will receive the team cache."
 	]
 	quest.7A11C0DE19000002.quest_subtitle: "An early route cache for the first shared works."
-	quest.7A11C0DE19000002.title: "&eLIGHTING REQUISITION — 1 BEVEL"
+	quest.7A11C0DE19000002.title: "&eLIGHTING · 1 BEVEL"
 	task.7A11C0DE19100015.title: "Submit 1 Bevel"
 	reward.7A11C0DE19200016.title: "Sixteen Public Lanterns"
 	reward.7A11C0DE19200017.title: "Thirty-Two Public Torches"
@@ -853,7 +853,7 @@
 		"&fStandard:&f Choose a named public route; stations, redstone, and engineering remain the team's work."
 	]
 	quest.7A11C0DE19000003.quest_subtitle: "A modest transit cache for a route with somewhere to go."
-	quest.7A11C0DE19000003.title: "&6TRANSIT REQUISITION — 2 BEVELS"
+	quest.7A11C0DE19000003.title: "&6TRANSIT · 2 BEVELS"
 	task.7A11C0DE1910001F.title: "Submit 2 Bevels"
 	reward.7A11C0DE19200020.title: "Thirty-Two Rails"
 	reward.7A11C0DE19200021.title: "Eight Powered Rails"
@@ -864,7 +864,7 @@
 		"&a&lSTANDARD:&f Name the event route, public destination, delivery owner, and safe handoff point before claiming the team cache."
 	]
 	quest.7A11C0DE19000004.quest_subtitle: "Fireworks and lanterns delivered to a named public event route."
-	quest.7A11C0DE19000004.title: "&e[DELIVERY] FESTIVAL CACHE — 1 BEVEL"
+	quest.7A11C0DE19000004.title: "&eFESTIVAL · 1 BEVEL"
 	task.7A11C0DE19100029.title: "Submit 1 Bevel"
 	reward.7A11C0DE1920002A.title: "Sixteen Festival Rockets"
 	reward.7A11C0DE1920002B.title: "Eight Event Lanterns"
@@ -874,7 +874,7 @@
 		"&fStandard:&f Record which public work received the cache and leave the repaired access usable."
 	]
 	quest.7A11C0DE19000005.quest_subtitle: "A repair cache for shared machines, bridges, and temporary access."
-	quest.7A11C0DE19000005.title: "&aREPAIR REQUISITION — 1 BEVEL"
+	quest.7A11C0DE19000005.title: "&aREPAIR · 1 BEVEL"
 	task.7A11C0DE19100033.title: "Submit 1 Bevel"
 	reward.7A11C0DE19200034.title: "Four Super Glue"
 	reward.7A11C0DE19200035.title: "Thirty-Two Scaffolding"
@@ -885,7 +885,7 @@
 		"&a&lSTANDARD:&f Name the public hall, guesthouse, archive, or refuge, then record the delivery owner and the route a visitor can follow to the handoff."
 	]
 	quest.7A11C0DE19000006.quest_subtitle: "Books and lanterns for a shared guest space or civic hall."
-	quest.7A11C0DE19000006.title: "&4[PUBLIC DESTINATION] HOSPITALITY CACHE — 1 BEVEL"
+	quest.7A11C0DE19000006.title: "&4HOSPITALITY · 1 BEVEL"
 	task.7A11C0DE1910003D.title: "Submit 1 Bevel"
 	reward.7A11C0DE1920003E.title: "Eight Guest Books"
 	reward.7A11C0DE1920003F.title: "Eight Guest Lanterns"
@@ -899,7 +899,7 @@
 		"&a&lSTANDARD:&f A trust checkmark is enough: the entry is specific, findable, and actionable. This renews every 604800 seconds and grants exactly 1 team Bevel; it consumes no Bevel."
 	]
 	quest.7A11C0DE19000007.quest_subtitle: "One real location, one problem, one action, one owner — exactly one team Bevel weekly."
-	quest.7A11C0DE19000007.title: "&f&lFILE A CIVIC DISPATCH"
+	quest.7A11C0DE19000007.title: "&f&lCIVIC DISPATCH"
 	task.7A11C0DE19100047.title: "I Added One Actionable Rumour"
 	quest.7A11C0DE19000009.quest_desc: [
 		"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
@@ -910,14 +910,14 @@
 		"&a&lSTANDARD:&f Add one concrete future action and a named owner or steward; keep the hook useful without inventing a required location."
 	]
 	quest.7A11C0DE19000009.quest_subtitle: "Leave a public destination, stakeholders, and a reason to return."
-	quest.7A11C0DE19000009.title: "&e[ROUTE] LEAVE A SEASON TWO PRESSURE"
+	quest.7A11C0DE19000009.title: "&eSEASON TWO HOOK"
 	task.7A11C0DE1910005B.title: "We Recorded One Evidence-Based Season Two Hook"
 	reward.7A11C0DE1920005C.title: "Choose a Season Two Hook Supply"
 	// Supplemental titles for the charter, route and specialty rewards/tasks.
 	reward.7A11C0DE10200011.title: "Eight Headquarters Scaffolding"
 	reward.7A11C0DE10200012.title: "Eight Festival Rockets"
 	reward.7A11C0DE10200013.title: "Four Bottles of Blood"
-	quest.7A11C0DE11000006.title: "&eCHOOSE YOUR PERSONAL STARTER KIT"
+	quest.7A11C0DE11000006.title: "&eSTARTER KIT"
 	quest.7A11C0DE11000006.quest_subtitle: "Choose a way to be useful without closing the other doors."
 	quest.7A11C0DE11000006.quest_desc: [
 		"&7Lore:&f Nessa Quill sets six practical starter kits beside the welcome point. Each is a first contribution, not a permanent profession or locked class."
@@ -1072,7 +1072,7 @@
 		"&6DECISION&f Keep the supplies anonymous or add the first named guest to Nessa's surviving list. The choice changes the House's record, not the guest's access."
 	]
 	quest.7A11C0DE12010101.quest_subtitle: "Route · Team-friendly"
-	quest.7A11C0DE12010101.title: "[WORLD] OPEN THE REFUGE"
+	quest.7A11C0DE12010101.title: "OPEN THE REFUGE"
 	task.7A11C0DE12110101.title: "REVIEW: Public refuge, guest space, supplies, and safe lighting"
 	reward.7A11C0DE12210101.title: "Choose One House Utility"
 	quest.7A11C0DE12010102.quest_desc: [
@@ -1084,7 +1084,7 @@
 		"&7BUILD STANDARD&f The rule is readable and the unanswered question remains open rather than being presented as settled history."
 	]
 	quest.7A11C0DE12010102.quest_subtitle: "Advanced · Solo-friendly"
-	quest.7A11C0DE12010102.title: "[CHARTER] WRITE THE HOUSE RULE"
+	quest.7A11C0DE12010102.title: "HOUSE RULE"
 	task.7A11C0DE12110102.title: "Carry a Book for the House Archive"
 	task.7A11C0DE12110103.title: "REVIEW: Guest rule and inheritance question recorded"
 	reward.7A11C0DE12210102.title: "Choose One House Utility"
@@ -1098,7 +1098,7 @@
 		"&6CONSEQUENCE&f Mirelle must choose whether to record the guest by name or preserve their anonymity. Honour the choice in the House ledger."
 	]
 	quest.7A11C0DE12010103.quest_subtitle: "Workshop · Team-friendly"
-	quest.7A11C0DE12010103.title: "[CHARTER] SERVE THE CUP"
+	quest.7A11C0DE12010103.title: "SERVE THE CUP"
 	task.7A11C0DE12110104.title: "Show a Blood Bottle"
 	task.7A11C0DE12110105.title: "REVIEW: Bloodless welcome offers shelter, exit, and no obligation"
 	reward.7A11C0DE12210103.title: "Choose One House Utility"
@@ -1109,7 +1109,7 @@
 		"&7[SUITABLE: WORLD / REFUGE REFIT]"
 	]
 	quest.7A11C0DE13000101.quest_subtitle: "[WORLD] Make the refuge legible after dark."
-	quest.7A11C0DE13000101.title: "[WORLD] &a&lREFIT THE WATCHHOUSE"
+	quest.7A11C0DE13000101.title: "&a&lREFIT WATCHHOUSE"
 	task.7A11C0DE13100101.title: "Supply 8 Lanterns"
 	task.7A11C0DE13100102.title: "REVIEW: Public-Service Feature Is Findable"
 	reward.7A11C0DE13200101.title: "Choose One Lantern Utility Cache"
@@ -1120,7 +1120,7 @@
 		"&7[SUITABLE: PROGRESSION / PUBLIC CARE]"
 	]
 	quest.7A11C0DE13000102.quest_subtitle: "[PROGRESSION] Turn protection into a practiced service."
-	quest.7A11C0DE13000102.title: "[PROGRESSION] &e&lCONSECRATE THE REFUGE"
+	quest.7A11C0DE13000102.title: "&e&lCONSECRATE REFUGE"
 	task.7A11C0DE13100103.title: "Supply 1 Holy Rune"
 	task.7A11C0DE13100104.title: "REVIEW: Holy Station Demonstrated"
 	reward.7A11C0DE13200102.title: "Choose One Consecrated Utility Cache"
@@ -1131,7 +1131,7 @@
 		"&7[SUITABLE: PROGRESSION / PUBLIC HANDOFF]"
 	]
 	quest.7A11C0DE13000103.quest_subtitle: "[PROGRESSION] Let the refuge work across faction lines."
-	quest.7A11C0DE13000103.title: "[PROGRESSION] &b&lKEEP A TREATY LIGHT"
+	quest.7A11C0DE13000103.title: "&b&lTREATY LIGHT"
 	task.7A11C0DE13100105.title: "Outside-Order Player Reviews or Uses the Service"
 	task.7A11C0DE13100106.title: "REVIEW: Handoff or Improvement Recorded"
 	reward.7A11C0DE13200103.title: "Choose One Treaty Utility Cache"
@@ -1147,7 +1147,7 @@
 	task.7A11C0DE15100102.title: "Carry 1 Writable Book for inspection (not consumed)"
 	quest.7A11C0DE18000102.quest_desc: ["&f&lLORE" "&fNessa's final note leaves the two bell accounts side by side. The fair is over; the disagreement is now part of the island's usable history." "" "&e&lOBJECTIVE" "&fPlace the fair record and one genuine future hook in the public archive, then leave a writable page or clearly marked place for the next entry." "" "&9&lSUITABILITY" "&fSolo: findability audit | Group: announce the archive | Build: public record wall or writable archive." "" "&a&lEVENT STANDARD" "&fFor a group, announce where the record lives. For a solo audit, verify that a new player can find and understand it without an oral briefing."]
 	quest.7A11C0DE18000102.quest_subtitle: "[EVENT] Put the final record somewhere the next season can find it."
-	quest.7A11C0DE18000102.title: "[EVENT] &fARCHIVE AFTERMATH"
+	quest.7A11C0DE18000102.title: "&fFAIR AFTERMATH"
 	task.7A11C0DE18100102.title: "File the Fair's Final Record"
 	task.7A11C0DE18100103.title: "REVIEW: Record One Contradiction, Success, and Future Promise"
 	reward.7A11C0DE18210102.title: "Choose an Archive Aftermath Supply"
@@ -1160,7 +1160,7 @@
 		"&a&lSTANDARD:&f Name the shared build, delivery route, handoff owner, and the public use the completed crate supports."
 	]
 	quest.7A11C0DE19000101.quest_subtitle: "A modest build delivery for a shared civic work."
-	quest.7A11C0DE19000101.title: "&a[PUBLIC DESTINATION] CONSTRUCTION CRATE — 2 BEVELS"
+	quest.7A11C0DE19000101.title: "&aBUILD CRATE · 2 BEVELS"
 	task.7A11C0DE19100101.title: "Submit 2 Bevels"
 	reward.7A11C0DE19200101.title: "Thirty-Two Stone Bricks"
 	reward.7A11C0DE19200102.title: "Sixteen Construction Scaffolding"
@@ -1172,7 +1172,7 @@
 		"&a&lSTANDARD:&f Name the public study point, delivery route, handoff owner, and safe boundary for the neutral research cache."
 	]
 	quest.7A11C0DE19000102.quest_subtitle: "Low-tier research supplies delivered to a named public study point."
-	quest.7A11C0DE19000102.title: "&d[ROUTE] NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS"
+	quest.7A11C0DE19000102.title: "&dARCANE KIT · 2 BEVELS"
 	task.7A11C0DE19100102.title: "Submit 2 Bevels"
 	reward.7A11C0DE19200104.title: "Four Arcane Essence"
 	reward.7A11C0DE19200105.title: "Two Blank Runes"

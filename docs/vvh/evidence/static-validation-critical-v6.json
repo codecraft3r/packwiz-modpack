@@ -166,7 +166,7 @@
     },
     "duplicate_item_tasks": [],
     "empty_lane_labels": [],
-    "expected_single_onboarding_root": "OPEN THE ISLAND CHARTER",
+    "expected_single_onboarding_root": "7A11C0DE10000001",
     "false_bevel_economy_copy": [],
     "global_ftb_ids": 486,
     "hidden_until_dependencies": [],
@@ -204,9 +204,10 @@
     },
     "item_ids_checked": 53,
     "localization_keys_required": 630,
-    "long_description_lines": 3,
+    "long_description_lines": 0,
     "max_bevel_issuance_6_neutral_parties": 372,
     "max_bevel_issuance_6_players_2_faction_teams": 316,
+    "max_visible_quest_title_length": 22,
     "minimum_intended_path_checkmark_tasks_including_charter": 27,
     "minimum_intended_path_personal_bevels": 18,
     "minimum_intended_path_quest_count_including_charter": 26,
@@ -244,6 +245,7 @@
       "7A11C0DE18000009"
     ],
     "optional_rewardless_leaf_review": [],
+    "overlong_quest_titles": {},
     "primary_paper_rewards": [],
     "removed_cobblemon_namespace_refs": 0,
     "repeatable_bevel_issuers": [
@@ -428,9 +430,6 @@
   ],
   "status": "pass",
   "warnings": [
-    "Long description line (243 chars) in 7A11C0DE12000009: PROOF Carry one Blood Rune and one Bloody Vellum for inspection; neither item is consumed. Borrowed,\u2026",
-    "Long description line (286 chars) in 7A11C0DE14000007: Build Standard: Show the prepared material and a signed procedure. This is preparation and demonstra\u2026",
-    "Long description line (249 chars) in 7A11C0DE14000009: Build Standard: Keep the example available to visitors, record its safety limit, and do not prepare \u2026",
     "Capped seed Bevel issuance detected: 48 personal and 14 team-scoped potential per authored progression board; this is intentional seed currency, not a repeatable economy loop."
   ]
 }

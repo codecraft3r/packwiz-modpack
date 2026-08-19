@@ -15,7 +15,11 @@ quest.7A11C0DE19000001.quest_desc: [
 	"&a&lSTANDARD:&f Submit the visible Bevel price only after the payer, delivery route, public destination, and handoff owner are written down. Each paid service renews after seven days."
 ]
 
-quest.7A11C0DE19000004.title: "&e[DELIVERY] FESTIVAL CACHE — 1 BEVEL"
+quest.7A11C0DE19000002.title: "&eLIGHTING · 1 BEVEL"
+quest.7A11C0DE19000003.title: "&6TRANSIT · 2 BEVELS"
+quest.7A11C0DE19000005.title: "&aREPAIR · 1 BEVEL"
+
+quest.7A11C0DE19000004.title: "&eFESTIVAL · 1 BEVEL"
 quest.7A11C0DE19000004.quest_subtitle: "Fireworks and lanterns delivered to a named public event route."
 quest.7A11C0DE19000004.quest_desc: [
 	"&7&lLORE:&f A festival works when the supplies reach the public square before the first bell, not when they remain in a private chest."
@@ -24,7 +28,7 @@ quest.7A11C0DE19000004.quest_desc: [
 	"&a&lSTANDARD:&f Name the event route, public destination, delivery owner, and safe handoff point before claiming the team cache."
 ]
 
-quest.7A11C0DE19000006.title: "&4[PUBLIC DESTINATION] HOSPITALITY CACHE — 1 BEVEL"
+quest.7A11C0DE19000006.title: "&4HOSPITALITY · 1 BEVEL"
 quest.7A11C0DE19000006.quest_subtitle: "Books and lanterns for a shared guest space or civic hall."
 quest.7A11C0DE19000006.quest_desc: [
 	"&4&lLORE:&f The first welcome after Greybridge is deliberately ordinary: a guest needs a findable room, a readable promise, and enough light to leave safely."
@@ -33,7 +37,7 @@ quest.7A11C0DE19000006.quest_desc: [
 	"&a&lSTANDARD:&f Name the public hall, guesthouse, archive, or refuge, then record the delivery owner and the route a visitor can follow to the handoff."
 ]
 
-quest.7A11C0DE19000007.title: "&f&lFILE A CIVIC DISPATCH"
+quest.7A11C0DE19000007.title: "&f&lCIVIC DISPATCH"
 quest.7A11C0DE19000007.quest_subtitle: "One real location, one problem, one action, one owner — exactly one team Bevel weekly."
 quest.7A11C0DE19000007.quest_desc: [
 	"{image:minecraft:textures/item/writable_book.png width:48 height:48 align:center}"
@@ -45,7 +49,7 @@ quest.7A11C0DE19000007.quest_desc: [
 	"&a&lSTANDARD:&f A trust checkmark is enough: the entry is specific, findable, and actionable. This renews every 604800 seconds and grants exactly 1 team Bevel; it consumes no Bevel."
 ]
 
-quest.7A11C0DE19000009.title: "&e[ROUTE] LEAVE A SEASON TWO PRESSURE"
+quest.7A11C0DE19000009.title: "&eSEASON TWO HOOK"
 quest.7A11C0DE19000009.quest_subtitle: "Leave a public destination, stakeholders, and a reason to return."
 quest.7A11C0DE19000009.quest_desc: [
 	"{image:minecraft:textures/item/filled_map.png width:48 height:48 align:center}"
@@ -56,7 +60,7 @@ quest.7A11C0DE19000009.quest_desc: [
 	"&a&lSTANDARD:&f Add one concrete future action and a named owner or steward; keep the hook useful without inventing a required location."
 ]
 
-quest.7A11C0DE19000101.title: "&a[PUBLIC DESTINATION] CONSTRUCTION CRATE — 2 BEVELS"
+quest.7A11C0DE19000101.title: "&aBUILD CRATE · 2 BEVELS"
 quest.7A11C0DE19000101.quest_subtitle: "A modest build delivery for a shared civic work."
 quest.7A11C0DE19000101.quest_desc: [
 	"&a&lLORE:&f A construction crate matters only when it reaches the public work that needs it and remains legible after the builder leaves."
@@ -65,7 +69,7 @@ quest.7A11C0DE19000101.quest_desc: [
 	"&a&lSTANDARD:&f Name the shared build, delivery route, handoff owner, and the public use the completed crate supports."
 ]
 
-quest.7A11C0DE19000102.title: "&d[ROUTE] NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS"
+quest.7A11C0DE19000102.title: "&dARCANE KIT · 2 BEVELS"
 quest.7A11C0DE19000102.quest_subtitle: "Low-tier research supplies delivered to a named public study point."
 quest.7A11C0DE19000102.quest_desc: [
 	"&d&lLORE:&f Research belongs in a place another player can find, inspect, and continue; the courier records the handoff instead of promising power."

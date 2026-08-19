@@ -2,7 +2,7 @@
 # Merge into config/ftbquests/quests/lang/en_us.snbt only during the controlled
 # localization pass. This fragment is the source for the revised six-node copy.
 
-quest.7A11C0DE16000001.title: "&6&lTHE ISLAND REMEMBERS"
+quest.7A11C0DE16000001.title: "&6&lISLAND REMEMBERS"
 quest.7A11C0DE16000001.quest_subtitle: "Link what already exists. Make one useful thing survive its first failure."
 quest.7A11C0DE16000001.quest_desc: [
     "{image:minecraft:textures/item/lantern.png width:48 height:48 align:center}"
@@ -18,7 +18,7 @@ quest.7A11C0DE16000001.quest_desc: [
     "&fLeave the result usable by a stranger and record one owner, route, or corrective action. Solo logs and self-audits count."
 ]
 
-quest.7A11C0DE16000002.title: "&eCONNECTED ROUTE"
+quest.7A11C0DE16000002.title: "&ePUBLIC ROUTE"
 quest.7A11C0DE16000002.quest_subtitle: "Link two useful places and prove the link survives a wrong turn."
 quest.7A11C0DE16000002.quest_desc: [
     "&6&lLORE"
@@ -35,7 +35,7 @@ quest.7A11C0DE16000002.quest_desc: [
 task.7A11C0DE16100101.title: "Carry a rail marker or route token"
 task.7A11C0DE16100015.title: "REVIEW: Route survives a wrong turn and has a named caretaker"
 
-quest.7A11C0DE16000003.title: "&6MARKET AND CONTRACT HALL"
+quest.7A11C0DE16000003.title: "&6CONTRACT HALL"
 quest.7A11C0DE16000003.quest_subtitle: "Turn an existing stall into a place where terms survive the seller."
 quest.7A11C0DE16000003.quest_desc: [
     "&6&lLORE"
@@ -52,7 +52,7 @@ quest.7A11C0DE16000003.quest_desc: [
 task.7A11C0DE16100102.title: "Place a market token for review"
 task.7A11C0DE1610001F.title: "REVIEW: Three active services and a readable public contract"
 
-quest.7A11C0DE16000004.title: "&6SHARED WORKSHOP AND DEPOT"
+quest.7A11C0DE16000004.title: "&6SHARED WORKSHOP"
 quest.7A11C0DE16000004.quest_subtitle: "Make the useful tools reachable without making them mysteriously vanish."
 quest.7A11C0DE16000004.quest_desc: [
     "&6&lLORE"
@@ -70,7 +70,7 @@ quest.7A11C0DE16000004.quest_desc: [
 task.7A11C0DE16100103.title: "Bring an andesite-alloy workshop token"
 task.7A11C0DE16100029.title: "REVIEW: Two useful capabilities work and stock boundaries are clear"
 
-quest.7A11C0DE16000005.title: "&fARCHIVE AND MEMORIAL"
+quest.7A11C0DE16000005.title: "&fARCHIVE · MEMORIAL"
 quest.7A11C0DE16000005.quest_subtitle: "Leave the next witness more than your version of events."
 quest.7A11C0DE16000005.quest_desc: [
     "&6&lLORE"
@@ -88,7 +88,7 @@ quest.7A11C0DE16000005.quest_desc: [
 task.7A11C0DE16100104.title: "Bring a writable archive token"
 task.7A11C0DE16100033.title: "REVIEW: Five sourced memories and one correction are browseable"
 
-quest.7A11C0DE16000006.title: "&cTHREAT REFUGE AND READINESS"
+quest.7A11C0DE16000006.title: "&cTHREAT REFUGE"
 quest.7A11C0DE16000006.quest_subtitle: "Test the shelter before the island tests it for you."
 quest.7A11C0DE16000006.quest_desc: [
     "&6&lLORE"
@@ -105,7 +105,7 @@ quest.7A11C0DE16000006.quest_desc: [
 task.7A11C0DE16100105.title: "Carry a readiness lantern"
 task.7A11C0DE1610003D.title: "REVIEW: Refuge capacity, exit route, and one corrected failure"
 
-quest.7A11C0DE16000007.title: "&bPUBLIC VENUE AND ARRIVAL WORKS"
+quest.7A11C0DE16000007.title: "&bARRIVAL WORKS"
 quest.7A11C0DE16000007.quest_subtitle: "Give arrivals somewhere to land, gather, and be remembered."
 quest.7A11C0DE16000007.quest_desc: [
     "&6&lLORE"
@@ -123,7 +123,7 @@ quest.7A11C0DE16000007.quest_desc: [
 task.7A11C0DE16100106.title: "Bring a vehicle or venue token"
 task.7A11C0DE16100047.title: "REVIEW: Safe arrival and one usable public event/test"
 
-quest.7A11C0DE1600000B.title: "&6&lTHREE THINGS THE ISLAND KEEPS"
+quest.7A11C0DE1600000B.title: "&6&lTHREE PUBLIC WORKS"
 quest.7A11C0DE1600000B.quest_subtitle: "Choose three upgrades. Make the choice legible."
 quest.7A11C0DE1600000B.quest_desc: [
     "&6&lLORE"

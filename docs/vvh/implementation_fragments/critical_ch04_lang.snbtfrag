@@ -7,7 +7,7 @@ quest.7A11C0DE14000001.quest_desc: [
     "&7Build Standard:&f Name one contract steward and one place where a solo visitor can leave a request."
 ]
 quest.7A11C0DE14000001.quest_subtitle: "Charter · Solo-friendly"
-quest.7A11C0DE14000001.title: "[CHARTER] FOUND A FREE COMPANY"
+quest.7A11C0DE14000001.title: "FOUND THE COMPANY"
 quest.7A11C0DE14000002.quest_desc: [
     "&fLore:&f Orra Vale lost a week to a contract board whose terms were written on both sides of the same page.",
     "&fNessa wants one public board showing who asked, what is owed, and when the promise expires.",
@@ -15,14 +15,14 @@ quest.7A11C0DE14000002.quest_desc: [
     "&7Build Standard:&f The board is reachable from the common route, has a named steward, and records three current offers."
 ]
 quest.7A11C0DE14000002.quest_subtitle: "World · Team-friendly"
-quest.7A11C0DE14000002.title: "[WORLD] OPEN THE CONTRACT HALL"
+quest.7A11C0DE14000002.title: "CONTRACT HALL"
 quest.7A11C0DE14000003.quest_desc: [
     "&fLore:&f Nessa once delivered a sealed letter to the wrong watchtower because a route marker had been moved for a festival. The letter was harmless; the feud it interrupted was not.",
     "&eObjective:&f Mark a neutral courier route between two useful places with a filled map.",
     "&7Build Standard:&f Show the route, its destination, and one safe stopping point. Solo players may submit a signed route audit."
 ]
 quest.7A11C0DE14000003.quest_subtitle: "World · Solo-friendly"
-quest.7A11C0DE14000003.title: "[WORLD] MARK A COURIER ROUTE"
+quest.7A11C0DE14000003.title: "COURIER ROUTE"
 quest.7A11C0DE14000004.quest_desc: [
     "&fLore:&f The first neutral market failed when its Blood apothecary and Lantern carpenter arrived on different days.",
     "&fThey blamed each other for the empty stall. Nessa now keeps the opening hours in one visible place.",
@@ -30,7 +30,7 @@ quest.7A11C0DE14000004.quest_desc: [
     "&7Build Standard:&f Provide three active offers or services, public terms, neutral access, and a named steward."
 ]
 quest.7A11C0DE14000004.quest_subtitle: "World · Team-friendly"
-quest.7A11C0DE14000004.title: "[WORLD] OPEN A NEUTRAL MARKET"
+quest.7A11C0DE14000004.title: "NEUTRAL MARKET"
 quest.7A11C0DE14000005.quest_desc: [
     "&fLore:&f When the route record was altered, a tired courier slept beside the gate and missed its only witness.",
     "&fNessa is building a place where travellers can recover before they sign anything.",
@@ -38,14 +38,14 @@ quest.7A11C0DE14000005.quest_desc: [
     "&7Build Standard:&f Include a bed, food, lighting, storage, and a clearly marked public entrance."
 ]
 quest.7A11C0DE14000005.quest_subtitle: "World · Team-friendly"
-quest.7A11C0DE14000005.title: "[WORLD] OPEN A WAYSTATION"
+quest.7A11C0DE14000005.title: "WAYSTATION"
 quest.7A11C0DE14000006.quest_desc: [
     "&fLore:&f Nessa's ledger contains two versions of the Greybridge route. The names match; the dates do not. A courier learns faster when every delivery carries its own chain of custody.",
     "&eObjective:&f Carry a filled map and complete one courier delivery under two visible seals.",
     "&7Build Standard:&f Record the sender, destination, seal marks, and the correction made if the route was wrong. Solo players may submit a signed test log."
 ]
 quest.7A11C0DE14000006.quest_subtitle: "Progression · Solo-friendly"
-quest.7A11C0DE14000006.title: "[PROGRESSION] COURIER UNDER TWO SEALS"
+quest.7A11C0DE14000006.title: "TWO SEALS"
 quest.7A11C0DE14000007.quest_desc: [
     "&fLore:&f Iven translated a Blood ward with a Holy glossary and left out the word for surrender.",
     "&fNobody was hurt, but the door stayed sealed for three days. The Free Company now publishes safe examples.",
@@ -54,7 +54,7 @@ quest.7A11C0DE14000007.quest_desc: [
     "&fBorrowed, purchased, or received materials are valid without faction allegiance; solo players may self-audit."
 ]
 quest.7A11C0DE14000007.quest_subtitle: "Progression · Solo-friendly · preparation/demo"
-quest.7A11C0DE14000007.title: "[PROGRESSION] PUBLIC SPELLWRIGHT"
+quest.7A11C0DE14000007.title: "SPELLWRIGHT"
 quest.7A11C0DE14000008.quest_desc: [
     "&fLore:&f A Lantern patrol found a stranded traveller beside a Blood-marked bridge. Nessa sent bread first and questions second.",
     "&fThe rescue worked because someone had recorded who could help without starting a faction dispute.",
@@ -62,7 +62,7 @@ quest.7A11C0DE14000008.quest_desc: [
     "&7Build Standard:&f Name the problem, the neutral response, and the follow-up. Solo players may interact with an MCA resident or submit a self-audit."
 ]
 quest.7A11C0DE14000008.quest_subtitle: "Progression · Team-friendly"
-quest.7A11C0DE14000008.title: "[PROGRESSION] MEDIATE OR RESCUE"
+quest.7A11C0DE14000008.title: "MEDIATE OR RESCUE"
 quest.7A11C0DE14000009.quest_desc: [
     "&fLore:&f The translation desk began with a Blood rune, a Holy rune, and Nessa's refusal to copy either without a warning.",
     "&fIts first useful result was not a weapon; it was one safe instruction that both sides could read.",
@@ -71,7 +71,7 @@ quest.7A11C0DE14000009.quest_desc: [
     "&fBorrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
 ]
 quest.7A11C0DE14000009.quest_subtitle: "Progression · Solo-friendly · interpretation/documentation"
-quest.7A11C0DE14000009.title: "[PROGRESSION] OPEN THE TRANSLATION DESK"
+quest.7A11C0DE14000009.title: "TRANSLATION DESK"
 task.7A11C0DE1410005B.title: "Carry 2 Arcane Essence"
 quest.7A11C0DE1400000A.quest_desc: [
     "&fLore:&f A charter is not a majority vote from one lane. Nessa will sign when five distinct works are standing.",
@@ -80,7 +80,7 @@ quest.7A11C0DE1400000A.quest_desc: [
     "&7Build Standard:&f The five must include at least one world-building work and one progression/service work."
 ]
 quest.7A11C0DE1400000A.quest_subtitle: "Charter · Team-friendly · 5 of 8"
-quest.7A11C0DE1400000A.title: "[CHARTER] CHARTER THE FREE COMPANY"
+quest.7A11C0DE1400000A.title: "COMPANY CHARTER"
 
 reward_table.7A11C0DEF0000007.title: "Choose One Neutral Route Utility"
 reward.7A11C0DEF0070001.title: "Compass — route finding"

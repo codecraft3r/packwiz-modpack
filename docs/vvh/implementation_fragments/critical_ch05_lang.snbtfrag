@@ -16,7 +16,7 @@ quest.7A11C0DE15000002.quest_desc: [
   "&fStandard:&7 Another player may repeat the service; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000002.quest_subtitle: "[Workshop] [Technical] · make a machine teachable"
-quest.7A11C0DE15000002.title: "&6[SPECIALTY] ENGINEER"
+quest.7A11C0DE15000002.title: "&6ENGINEER"
 
 quest.7A11C0DE15000003.quest_desc: [
   "&6Lore:&f Mirelle Voss translated a Greybridge ward from memory and reversed one line. The ward held, but it held the wrong doorway. She needs a method with a visible first step.",
@@ -26,7 +26,7 @@ quest.7A11C0DE15000003.quest_desc: [
   "&fStandard:&7 A partner may reproduce the step; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000003.quest_subtitle: "[Magic] [Research] · make one spell step teachable"
-quest.7A11C0DE15000003.title: "&d[SPECIALTY] ARCANIST"
+quest.7A11C0DE15000003.title: "&dARCANIST"
 
 quest.7A11C0DE15000004.quest_desc: [
   "&6Lore:&f Elias Rook once called a night guest by the wrong title at Greybridge. The insult became a security problem.",
@@ -37,7 +37,7 @@ quest.7A11C0DE15000004.quest_desc: [
   "&fStandard:&7 Another player may follow the procedure; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000004.quest_subtitle: "[Magic] [Faction] [Social] · translate one night custom"
-quest.7A11C0DE15000004.title: "&4[SPECIALTY] NIGHT SPECIALIST"
+quest.7A11C0DE15000004.title: "&4NIGHT SPECIALIST"
 
 quest.7A11C0DE15000005.quest_desc: [
   "&6Lore:&f Nessa's Greybridge courier arrived with a working vehicle and no safe place to land. The first useful aeronautics contribution is a visible, low-tier landing site.",
@@ -47,7 +47,7 @@ quest.7A11C0DE15000005.quest_desc: [
   "&fStandard:&7 Another player may inspect the test; solo players sign the result or failure. Players who want the later Wing project may pursue it elsewhere, but it is not required here."
 ]
 quest.7A11C0DE15000005.quest_subtitle: "[Build] [Workshop] [Route] · make a landing site usable"
-quest.7A11C0DE15000005.title: "&b[SPECIALTY] AERONAUT"
+quest.7A11C0DE15000005.title: "&bAERONAUT"
 
 quest.7A11C0DE15000006.quest_desc: [
   "&6Lore:&f Mirelle Voss rang the Greybridge bell once for welcome and once for alarm. Nobody had written down which was which. She asks for a signal that two sides can read the same way.",
@@ -57,7 +57,7 @@ quest.7A11C0DE15000006.quest_desc: [
   "&fStandard:&7 Another player may answer the signal; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000006.quest_subtitle: "[Build] [Social] [Faction] · make one signal legible"
-quest.7A11C0DE15000006.title: "&a[SPECIALTY] DIPLOMAT"
+quest.7A11C0DE15000006.title: "&aDIPLOMAT"
 
 quest.7A11C0DE15000007.quest_desc: [
   "&6Lore:&f Elias Rook's Greybridge relief crate held food, torches, and no label. The right supplies reached the wrong hands. He asks for a field kit that can be checked at a glance.",
@@ -67,7 +67,7 @@ quest.7A11C0DE15000007.quest_desc: [
   "&fStandard:&7 Another player may use the kit; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000007.quest_subtitle: "[Build] [Logistics] [Support] · stock one field kit"
-quest.7A11C0DE15000007.title: "&e[SPECIALTY] QUARTERMASTER"
+quest.7A11C0DE15000007.title: "&eQUARTERMASTER"
 
 quest.7A11C0DE15000008.quest_desc: [
   "&6Lore:&f Nessa's Greybridge map showed the destination and omitted the dangerous bridge. A route is only useful when the next person can survive following it.",
@@ -77,7 +77,7 @@ quest.7A11C0DE15000008.quest_desc: [
   "&fStandard:&7 Another player may follow the route; solo players sign the test with the observed result or failure."
 ]
 quest.7A11C0DE15000008.quest_subtitle: "[Route] [Exploration] [Navigation] · publish one survivable route"
-quest.7A11C0DE15000008.title: "&a[SPECIALTY] PATHFINDER"
+quest.7A11C0DE15000008.title: "&aPATHFINDER"
 
 quest.7A11C0DE15000009.quest_desc: [
   "&6Lore:&f Mirelle Voss remembers Greybridge's failure differently from Elias Rook, and both accounts leave out the moment the plan broke. The archive needs the gap, not a polished legend.",
@@ -87,7 +87,7 @@ quest.7A11C0DE15000009.quest_desc: [
   "&fStandard:&7 Another player may review the record; solo players sign their own record and name what failed."
 ]
 quest.7A11C0DE15000009.quest_subtitle: "[Archive] [Research] · preserve one useful failure"
-quest.7A11C0DE15000009.title: "&f[SPECIALTY] ARCHIVIST"
+quest.7A11C0DE15000009.title: "&fARCHIVIST"
 
 quest.7A11C0DE1500000A.quest_desc: [
   "&6Lore:&f Three different crafts kept Greybridge from collapsing completely. Close the gate after any three are proven, then let the rest remain invitations rather than obligations.",

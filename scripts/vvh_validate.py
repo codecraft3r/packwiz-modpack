@@ -459,13 +459,27 @@ def main() -> int:
     # intentionally downstream of the charter/invitation junction; multiple
     # roots make the advertised opening sequence misleading and let players
     # skip the shared contract.
-    expected_root_title = "OPEN THE ISLAND CHARTER"
-    if len(roots) != 1 or next(iter(roots), None) is None or vvh_quests.get(next(iter(roots), ""), {}).get("title") != expected_root_title:
+    expected_root_id = "7A11C0DE10000001"
+    if roots != {expected_root_id}:
         audit.error(
-            "VvH must have exactly one onboarding root named OPEN THE ISLAND CHARTER; "
+            "VvH must have exactly one stable onboarding root; "
             f"found {len(roots)} roots: {sorted(roots)}"
         )
-    audit.metrics["expected_single_onboarding_root"] = expected_root_title
+    audit.metrics["expected_single_onboarding_root"] = expected_root_id
+
+    # Graph node names must remain scannable at normal client scale. Lane,
+    # event, and suitability labels belong in subtitles rather than titles.
+    visible_titles = {
+        qid: re.sub(r"&[0-9A-FK-ORa-fk-or]", "", str(quest.get("title", "")))
+        for qid, quest in vvh_quests.items()
+    }
+    overlong_titles = {
+        qid: title for qid, title in visible_titles.items() if len(title) > 22
+    }
+    audit.metrics["max_visible_quest_title_length"] = max(map(len, visible_titles.values()), default=0)
+    audit.metrics["overlong_quest_titles"] = overlong_titles
+    for qid, title in sorted(overlong_titles.items()):
+        audit.error(f"Quest title exceeds 22 visible characters: {qid} {title!r}")
 
     # Translation coverage.
     lang_path = quest_root / "lang/en_us.snbt"
@@ -1188,10 +1202,7 @@ def main() -> int:
                 sum(1 for t in vvh_quests[qid].get("tasks", []) if t.get("type") == "checkmark")
                 for qid in best
             )
-            charter_required = {
-                qid for qid, q in vvh_quests.items()
-                if q.get("title") in {"OPEN THE ISLAND CHARTER", "SIGN THE CHARTER"}
-            }
+            charter_required = {"7A11C0DE10000001", "7A11C0DE10000008"}
             intended = set(best) | charter_required
             audit.metrics["minimum_intended_path_quest_count_including_charter"] = len(intended)
             audit.metrics["minimum_intended_path_checkmark_tasks_including_charter"] = sum(

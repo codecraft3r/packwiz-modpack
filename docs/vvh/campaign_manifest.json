@@ -78,7 +78,7 @@
               "value": 1
             }
           ],
-          "title": "OPEN THE ISLAND CHARTER",
+          "title": "ISLAND CHARTER",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -135,7 +135,7 @@
               "value": 1
             }
           ],
-          "title": "LAND, CLAIMS, AND RESET ZONES",
+          "title": "CLAIMS · RESET ZONES",
           "x": -5.5,
           "y": 0,
           "can_repeat": false
@@ -193,7 +193,7 @@
               "value": 1
             }
           ],
-          "title": "RIVALRY, NEUTRALS, AND OPTIONAL COMBAT",
+          "title": "RIVALRY · CONSENT",
           "x": 0,
           "y": 0,
           "can_repeat": false
@@ -251,7 +251,7 @@
               "value": 1
             }
           ],
-          "title": "VAMPIRISM, FTB TEAMS, AND SWITCHING",
+          "title": "TEAMS · SWITCHING",
           "x": 5.5,
           "y": 0,
           "can_repeat": false
@@ -432,7 +432,7 @@
               "value": 1
             }
           ],
-          "title": "READ THE THREE INVITATIONS",
+          "title": "THREE INVITATIONS",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -519,7 +519,7 @@
               "value": 1
             }
           ],
-          "title": "TAKE THE CRIMSON INVITATION",
+          "title": "CRIMSON INVITATION",
           "x": -5.5,
           "y": -1.0,
           "can_repeat": false
@@ -606,7 +606,7 @@
               "value": 1
             }
           ],
-          "title": "TAKE THE LANTERN OATH",
+          "title": "LANTERN OATH",
           "x": 5.5,
           "y": -1.0,
           "can_repeat": false
@@ -680,7 +680,7 @@
               "value": 1
             }
           ],
-          "title": "SIGN THE FREE COMPANY REGISTER",
+          "title": "COMPANY REGISTER",
           "x": 5.5,
           "y": 1.8,
           "can_repeat": false
@@ -777,7 +777,7 @@
               "value": 1
             }
           ],
-          "title": "THREE INVITATIONS",
+          "title": "WELCOME POINT",
           "x": 0,
           "y": 1.5,
           "can_repeat": false
@@ -841,7 +841,7 @@
               "value": 1
             }
           ],
-          "title": "CHOOSE YOUR PERSONAL STARTER KIT",
+          "title": "STARTER KIT",
           "x": 0,
           "y": 4.8,
           "can_repeat": false
@@ -901,7 +901,7 @@
               "value": 1
             }
           ],
-          "title": "LIGHTING REQUISITION — 1 BEVEL",
+          "title": "LIGHTING · 1 BEVEL",
           "x": -5.5,
           "y": 8.0,
           "can_repeat": true
@@ -961,7 +961,7 @@
               "value": 1
             }
           ],
-          "title": "TRANSIT REQUISITION — 2 BEVELS",
+          "title": "TRANSIT · 2 BEVELS",
           "x": 0.0,
           "y": 8.0,
           "can_repeat": true
@@ -1021,7 +1021,7 @@
               "value": 1
             }
           ],
-          "title": "REPAIR REQUISITION — 1 BEVEL",
+          "title": "REPAIR · 1 BEVEL",
           "x": 5.5,
           "y": 8.0,
           "can_repeat": true
@@ -1130,7 +1130,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] FOUND THE HOUSE",
+          "title": "FOUND THE HOUSE",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -1218,7 +1218,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] COMMON ROOM",
+          "title": "COMMON ROOM",
           "x": 0,
           "y": -1.0,
           "can_repeat": false
@@ -1294,7 +1294,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] SET THE ALTAR",
+          "title": "SET THE ALTAR",
           "x": 7.0,
           "y": -1.0,
           "can_repeat": false
@@ -1369,7 +1369,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] BLOOD PANTRY",
+          "title": "BLOOD PANTRY",
           "x": 0,
           "y": 2.5,
           "can_repeat": false
@@ -1445,7 +1445,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] PREPARE THE CAULDRON",
+          "title": "PREPARE CAULDRON",
           "x": 7.0,
           "y": 2.5,
           "can_repeat": false
@@ -1507,7 +1507,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] MARK THE NIGHT ROAD",
+          "title": "NIGHT ROAD",
           "x": 0,
           "y": 6.0,
           "can_repeat": false
@@ -1560,7 +1560,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] LEAVE THE LIGHT ON",
+          "title": "GUEST LIGHT",
           "x": 0,
           "y": 9.5,
           "can_repeat": false
@@ -1645,7 +1645,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] MOVE THE NIGHT STOCK",
+          "title": "NIGHT STOCK",
           "x": 7.0,
           "y": 6.0,
           "can_repeat": false
@@ -1659,7 +1659,8 @@
             "&fA Blood Rune and Bloody Vellum can preserve a method, but neither can tell a new practitioner when to stop. Keep the first focus small, labelled, and teachable.",
             "",
             "&eOBJECTIVE&f Prepare a Blood Rune and Bloody Vellum as the House's introductory school focus.",
-            "&7PROOF&f Carry one Blood Rune and one Bloody Vellum for inspection; neither item is consumed. Borrowed, purchased, or received Blood materials are valid. This proof does not alter Vampirism, faction, or rank, and does not grant a spell-tier skip.",
+            "&7PROOF&f Carry one Blood Rune and one Bloody Vellum for inspection; neither item is consumed.",
+            "&fBorrowed, purchased, or received Blood materials are valid. This proof changes no Vampirism faction or rank and grants no spell-tier skip.",
             "&7BUILD STANDARD&f Store the focus safely and explain one controlled, non-escalating use to another player."
           ],
           "hide_dependency_lines": true,
@@ -1734,7 +1735,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] INSCRIBE BLOOD",
+          "title": "BLOOD INSCRIPTION",
           "x": 7.0,
           "y": 9.5,
           "can_repeat": false
@@ -1785,7 +1786,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] OPEN THE REFUGE",
+          "title": "OPEN THE REFUGE",
           "x": 0,
           "y": 19.0,
           "can_repeat": false
@@ -1849,7 +1850,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] WRITE THE HOUSE RULE",
+          "title": "HOUSE RULE",
           "x": 7.0,
           "y": 24.0,
           "can_repeat": false
@@ -1915,7 +1916,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] SERVE THE CUP",
+          "title": "SERVE THE CUP",
           "x": 0,
           "y": 29.0,
           "can_repeat": false
@@ -2025,7 +2026,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] CHARTER THE HOUSE",
+          "title": "HOUSE CHARTER",
           "x": 0,
           "y": 14.0,
           "can_repeat": false
@@ -2126,7 +2127,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] LANTERN OATH",
+          "title": "LANTERN OATH",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -2213,7 +2214,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] WATCHHOUSE",
+          "title": "WATCHHOUSE",
           "x": 0,
           "y": -1.0,
           "can_repeat": false
@@ -2287,7 +2288,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] HUNTER TABLE",
+          "title": "HUNTER TABLE",
           "x": 7.0,
           "y": -1.0,
           "can_repeat": false
@@ -2361,7 +2362,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] FIELD CACHE",
+          "title": "FIELD CACHE",
           "x": 0,
           "y": 2.4,
           "can_repeat": false
@@ -2435,7 +2436,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] STAKE KIT",
+          "title": "STAKE KIT",
           "x": 7.0,
           "y": 2.4,
           "can_repeat": false
@@ -2509,7 +2510,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] ALCHEMICAL BENCH",
+          "title": "ALCHEMICAL BENCH",
           "x": 7.0,
           "y": 5.8,
           "can_repeat": false
@@ -2570,7 +2571,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] REFUGE ROUTE",
+          "title": "REFUGE ROUTE",
           "x": 0,
           "y": 5.8,
           "can_repeat": false
@@ -2622,7 +2623,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] RESPONSE DRILL",
+          "title": "RESPONSE DRILL",
           "x": 0,
           "y": 9.2,
           "can_repeat": false
@@ -2696,7 +2697,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] HOLY WARD",
+          "title": "HOLY WARD",
           "x": 7.0,
           "y": 9.2,
           "can_repeat": false
@@ -2802,7 +2803,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] LANTERN CHARTER",
+          "title": "LANTERN CHARTER",
           "x": 0,
           "y": 13.0,
           "can_repeat": false
@@ -2865,7 +2866,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] REFIT THE WATCHHOUSE",
+          "title": "REFIT WATCHHOUSE",
           "x": 0,
           "y": 16.4,
           "can_repeat": false
@@ -2928,7 +2929,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] CONSECRATE THE REFUGE",
+          "title": "CONSECRATE REFUGE",
           "x": 0,
           "y": 19.8,
           "can_repeat": false
@@ -2991,7 +2992,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] KEEP A TREATY LIGHT",
+          "title": "TREATY LIGHT",
           "x": 7.0,
           "y": 19.8,
           "can_repeat": false
@@ -3084,7 +3085,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] FOUND A FREE COMPANY",
+          "title": "FOUND THE COMPANY",
           "x": 0,
           "y": -7,
           "can_repeat": false
@@ -3158,7 +3159,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] OPEN THE CONTRACT HALL",
+          "title": "CONTRACT HALL",
           "x": 0,
           "y": -2.0,
           "can_repeat": false
@@ -3231,7 +3232,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] MARK A COURIER ROUTE",
+          "title": "COURIER ROUTE",
           "x": 0,
           "y": 2.0,
           "can_repeat": false
@@ -3305,7 +3306,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] OPEN A NEUTRAL MARKET",
+          "title": "NEUTRAL MARKET",
           "x": 0,
           "y": 6.0,
           "can_repeat": false
@@ -3401,7 +3402,7 @@
               "value": 1
             }
           ],
-          "title": "[WORLD] OPEN A WAYSTATION",
+          "title": "WAYSTATION",
           "x": 0,
           "y": 10.0,
           "can_repeat": false
@@ -3474,7 +3475,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] COURIER UNDER TWO SEALS",
+          "title": "TWO SEALS",
           "x": 7.0,
           "y": -2.0,
           "can_repeat": false
@@ -3487,7 +3488,8 @@
             "&fLore:&f Iven translated a Blood ward with a Holy glossary and left out the word for surrender.",
             "&fNobody was hurt, but the door stayed sealed for three days. The Free Company now publishes safe examples.",
             "&eObjective:&f Prepare a PUBLIC SPELLWRIGHT service with Arcane Essence and demonstrate one safe utility procedure.",
-            "&7Build Standard:&f Show the prepared material and a signed procedure. This is preparation and demonstration only, not Blood/Holy interpretation or a power skip. Borrowed, purchased, or received materials are valid without faction allegiance; a solo player may self-audit the demonstration."
+            "&7Build Standard:&f Show the prepared material and a signed procedure. This is preparation and demonstration only; it is not Blood/Holy interpretation or a power skip.",
+            "&fBorrowed, purchased, or received materials are valid without faction allegiance; solo players may self-audit."
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -3548,7 +3550,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] PUBLIC SPELLWRIGHT",
+          "title": "SPELLWRIGHT",
           "x": 7.0,
           "y": 2.0,
           "can_repeat": false
@@ -3622,7 +3624,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] MEDIATE OR RESCUE",
+          "title": "MEDIATE OR RESCUE",
           "x": 7.0,
           "y": 6.0,
           "can_repeat": false
@@ -3635,7 +3637,8 @@
             "&fLore:&f The translation desk began with a Blood rune, a Holy rune, and Nessa's refusal to copy either without a warning.",
             "&fIts first useful result was not a weapon; it was one safe instruction that both sides could read.",
             "&eObjective:&f Open the TRANSLATION DESK with Arcane Essence and document one limited Blood or Holy interpretation.",
-            "&7Build Standard:&f Keep the example available to visitors, record its safety limit, and do not prepare or cast it as a power skip. Borrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
+            "&7Build Standard:&f Keep the example available to visitors, record its safety limit, and do not prepare or cast it as a power skip.",
+            "&fBorrowed, purchased, or received materials are valid without faction allegiance; this desk documents interpretation only."
           ],
           "hide_dependency_lines": true,
           "hide_until_deps_complete": false,
@@ -3696,7 +3699,7 @@
               "value": 1
             }
           ],
-          "title": "[PROGRESSION] OPEN THE TRANSLATION DESK",
+          "title": "TRANSLATION DESK",
           "x": 7.0,
           "y": 10.0,
           "can_repeat": false
@@ -3835,7 +3838,7 @@
               "value": 1
             }
           ],
-          "title": "[CHARTER] CHARTER THE FREE COMPANY",
+          "title": "COMPANY CHARTER",
           "x": 0,
           "y": 15.0,
           "can_repeat": false
@@ -4012,7 +4015,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] ENGINEER",
+          "title": "ENGINEER",
           "x": -8.4,
           "y": 0,
           "can_repeat": false
@@ -4084,7 +4087,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] ARCANIST",
+          "title": "ARCANIST",
           "x": -6.0,
           "y": 0,
           "can_repeat": false
@@ -4157,7 +4160,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] NIGHT SPECIALIST",
+          "title": "NIGHT SPECIALIST",
           "x": -3.6,
           "y": 0,
           "can_repeat": false
@@ -4229,7 +4232,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] AERONAUT",
+          "title": "AERONAUT",
           "x": -1.2,
           "y": 0,
           "can_repeat": false
@@ -4301,7 +4304,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] DIPLOMAT",
+          "title": "DIPLOMAT",
           "x": 1.2,
           "y": 0,
           "can_repeat": false
@@ -4373,7 +4376,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] QUARTERMASTER",
+          "title": "QUARTERMASTER",
           "x": 3.6,
           "y": 0,
           "can_repeat": false
@@ -4445,7 +4448,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] PATHFINDER",
+          "title": "PATHFINDER",
           "x": 6.0,
           "y": 0,
           "can_repeat": false
@@ -4517,7 +4520,7 @@
               "value": 1
             }
           ],
-          "title": "[SPECIALTY] ARCHIVIST",
+          "title": "ARCHIVIST",
           "x": 8.4,
           "y": 0,
           "can_repeat": false
@@ -4746,7 +4749,7 @@
               "value": 1
             }
           ],
-          "title": "THE ISLAND REMEMBERS",
+          "title": "ISLAND REMEMBERS",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -4814,7 +4817,7 @@
               "value": 1
             }
           ],
-          "title": "CONNECTED ROUTE",
+          "title": "PUBLIC ROUTE",
           "x": -6.0,
           "y": 1.0,
           "can_repeat": false
@@ -4882,7 +4885,7 @@
               "value": 1
             }
           ],
-          "title": "MARKET AND CONTRACT HALL",
+          "title": "CONTRACT HALL",
           "x": -4.0,
           "y": 1.0,
           "can_repeat": false
@@ -4951,7 +4954,7 @@
               "value": 1
             }
           ],
-          "title": "SHARED WORKSHOP AND DEPOT",
+          "title": "SHARED WORKSHOP",
           "x": -2.0,
           "y": 1.0,
           "can_repeat": false
@@ -5020,7 +5023,7 @@
               "value": 1
             }
           ],
-          "title": "ARCHIVE AND MEMORIAL",
+          "title": "ARCHIVE · MEMORIAL",
           "x": 2.0,
           "y": 1.0,
           "can_repeat": false
@@ -5088,7 +5091,7 @@
               "value": 1
             }
           ],
-          "title": "THREAT REFUGE AND READINESS",
+          "title": "THREAT REFUGE",
           "x": 4.0,
           "y": 1.0,
           "can_repeat": false
@@ -5157,7 +5160,7 @@
               "value": 1
             }
           ],
-          "title": "PUBLIC VENUE AND ARRIVAL WORKS",
+          "title": "ARRIVAL WORKS",
           "x": 6.0,
           "y": 1.0,
           "can_repeat": false
@@ -5243,7 +5246,7 @@
               "value": 1
             }
           ],
-          "title": "THREE THINGS THE ISLAND KEEPS",
+          "title": "THREE PUBLIC WORKS",
           "x": 0,
           "y": 7.0,
           "can_repeat": false
@@ -5314,7 +5317,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] RIVALRY NIGHT",
+          "title": "RIVALRY NIGHT",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -5370,7 +5373,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] PROPAGANDA",
+          "title": "PROPAGANDA",
           "x": -6.0,
           "y": -1.2,
           "can_repeat": false
@@ -5426,7 +5429,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] WARD TEST",
+          "title": "WARD TEST",
           "x": -3.6,
           "y": -1.2,
           "can_repeat": false
@@ -5482,7 +5485,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] CLUE COURSE",
+          "title": "CLUE COURSE",
           "x": -1.2,
           "y": -1.2,
           "can_repeat": false
@@ -5538,7 +5541,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] COURIER RUN",
+          "title": "COURIER RUN",
           "x": 1.2,
           "y": -1.2,
           "can_repeat": false
@@ -5594,7 +5597,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] MARKET TEST",
+          "title": "MARKET TEST",
           "x": 3.6,
           "y": -1.2,
           "can_repeat": false
@@ -5650,7 +5653,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] BUILD RUBRIC",
+          "title": "BUILD RUBRIC",
           "x": 6.0,
           "y": -1.2,
           "can_repeat": false
@@ -5711,7 +5714,7 @@
               "value": 1
             }
           ],
-          "title": "[PVP · CONSENT REQUIRED] SANCTIONED SKIRMISH",
+          "title": "CONSENTED SKIRMISH",
           "x": 4.6,
           "y": 4.0,
           "can_repeat": false
@@ -5800,7 +5803,7 @@
               "value": 1
             }
           ],
-          "title": "[CAPSTONE] ARCHIVE THE NIGHT",
+          "title": "ARCHIVE THE NIGHT",
           "x": 0,
           "y": 4.0,
           "can_repeat": false
@@ -5880,7 +5883,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] CALL THE FAIR",
+          "title": "CALL THE FAIR",
           "x": 0,
           "y": -5,
           "can_repeat": false
@@ -5936,7 +5939,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] HOUSE HOSPITALITY",
+          "title": "HOUSE HOSPITALITY",
           "x": -6.0,
           "y": -0.6,
           "can_repeat": false
@@ -5992,7 +5995,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] LANTERN SERVICE",
+          "title": "LANTERN SERVICE",
           "x": -3.6,
           "y": -0.6,
           "can_repeat": false
@@ -6048,7 +6051,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] FREE COMPANY MARKET",
+          "title": "COMPANY MARKET",
           "x": -1.2,
           "y": -0.6,
           "can_repeat": false
@@ -6104,7 +6107,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] ENGINEERING EXHIBITION",
+          "title": "ENGINEERING EXHIBIT",
           "x": 1.2,
           "y": -0.6,
           "can_repeat": false
@@ -6160,7 +6163,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] PUBLIC SHOWCASE",
+          "title": "PUBLIC SHOWCASE",
           "x": 3.6,
           "y": -0.6,
           "can_repeat": false
@@ -6216,7 +6219,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] ARCHIVE THE SEASON",
+          "title": "SEASON ARCHIVE",
           "x": 6.0,
           "y": -0.6,
           "can_repeat": false
@@ -6299,7 +6302,7 @@
               "value": 1
             }
           ],
-          "title": "[CAPSTONE] SEAL SEASON ONE",
+          "title": "SEAL SEASON ONE",
           "x": 0,
           "y": 4.5,
           "can_repeat": false
@@ -6368,7 +6371,7 @@
               "value": 1
             }
           ],
-          "title": "[EVENT] ARCHIVE AFTERMATH",
+          "title": "FAIR AFTERMATH",
           "x": 0,
           "y": 7.2,
           "can_repeat": false
@@ -6514,7 +6517,7 @@
               "value": 1
             }
           ],
-          "title": "[DELIVERY] FESTIVAL CACHE — 1 BEVEL",
+          "title": "FESTIVAL · 1 BEVEL",
           "x": 0,
           "y": -1.5,
           "can_repeat": true
@@ -6575,7 +6578,7 @@
               "value": 1
             }
           ],
-          "title": "[PUBLIC DESTINATION] HOSPITALITY CACHE — 1 BEVEL",
+          "title": "HOSPITALITY · 1 BEVEL",
           "x": 4.5,
           "y": -1.5,
           "can_repeat": true
@@ -6630,7 +6633,7 @@
               "value": 1
             }
           ],
-          "title": "FILE A CIVIC DISPATCH",
+          "title": "CIVIC DISPATCH",
           "x": -2.0,
           "y": 2.0,
           "can_repeat": true
@@ -6682,7 +6685,7 @@
               "value": 1
             }
           ],
-          "title": "[ROUTE] LEAVE A SEASON TWO PRESSURE",
+          "title": "SEASON TWO HOOK",
           "x": 2.0,
           "y": 2.0,
           "can_repeat": false
@@ -6752,7 +6755,7 @@
               "value": 1
             }
           ],
-          "title": "[PUBLIC DESTINATION] CONSTRUCTION CRATE — 2 BEVELS",
+          "title": "BUILD CRATE · 2 BEVELS",
           "x": 6.75,
           "y": 0.0,
           "can_repeat": true
@@ -6822,7 +6825,7 @@
               "value": 1
             }
           ],
-          "title": "[ROUTE] NEUTRAL ARCANE RESEARCH KIT — 2 BEVELS",
+          "title": "ARCANE KIT · 2 BEVELS",
           "x": 6.75,
           "y": 2.75,
           "can_repeat": true
