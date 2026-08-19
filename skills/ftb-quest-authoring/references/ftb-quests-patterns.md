@@ -96,6 +96,8 @@ Treat coordinates as part of implementation, not decoration:
 4. Re-render after dependency or coordinate edits and count crossings.
 5. Inspect titles, icon/background contrast, and text wrapping at real client scale.
 
+Keep node titles to a pack-tested short ceiling, normally two to four words. Put lane names, suitability, and explanatory labels in subtitles; retain prices, cooldowns, or consent warnings in titles only when players need them before opening the node.
+
 A generated graph board proves source geometry only. Label it as source-level evidence until the chapter is opened in the shipped client.
 
 ## Audit checklist
@@ -112,6 +114,13 @@ A generated graph board proves source geometry only. Label it as source-level ev
 - [ ] Personal/team, minimum/completionist, repeatable, fragmented-team, and full-sink totals are accounted separately.
 - [ ] Team/individual progress and team_reward behavior are deliberate and playtested.
 - [ ] Every translation key exists, and copy names the action and its purpose.
+- [ ] Player-facing text contains no design guarantees, admin commentary, placeholder status, or balance claims.
+- [ ] Mandatory onboarding forms a closed dependency loop; every required clause feeds the terminal acknowledgement and downstream gate.
+- [ ] Substantive progression uses hard native criteria where possible; checkmark-only quests are optional/explanatory or modestly rewarded and do not default to currency.
+- [ ] Item tasks state inspect, consume, place, or public-contribution semantics, and no prerequisite reward trivially auto-completes the next task.
+- [ ] Every material reward reaches a useful current-stage recipe/service threshold; adjacent rewards are distinct and late milestones avoid starter filler.
+- [ ] Faction/class anti-conditions use verified visibility support or an accessible redesign; no ordinary visible quest is currently impossible for its audience.
+- [ ] Persistent-world campaigns avoid unrequested wipe/finale framing and leave infrastructure, roles, or future pressures in play.
 - [ ] Every icon/image reference resolves with exact case and / separators.
 - [ ] Edited layouts have no accidental overlap/crossing, and source renders are not mislabeled as client screenshots.
 - [ ] Resource-pack metadata and Packwiz SHA-256 values match the hosted asset.
@@ -135,5 +144,8 @@ Before committing, write down:
 | Fragmented-team repeatable ceiling | <teams × amount per cooldown> |
 | Full sink-board price | <amount per cooldown> |
 | Strongest purchased item | <item + why it is not a tier skip> |
+| Smallest material bundle | <recipe/service enabled at the current stage> |
+| Checkmark-only quests | <why each is optional/explanatory or modestly rewarded> |
+| World lifetime | <persistent, seasonal, or event-based framing> |
 | Catch-up benefit | <convenience, infrastructure, information> |
 | Manual test remaining | <none or exact step> |
