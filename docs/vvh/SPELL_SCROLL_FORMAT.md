@@ -93,7 +93,34 @@ locked: true
 
 to each entry in `data`.
 
-## 3. `/givespell` command
+## 3. Giving scrolls in-game (testing / dev)
+
+### Preferred: `/createScroll` (built into Iron's Spells)
+
+The mod ships its own command — use this one:
+
+```
+/createScroll <spell> <level>
+```
+
+- `<spell>`: bare path (`heal`) or fully qualified (`irons_spellbooks:heal`), with tab completion.
+- `<level>`: integer, clamped hard to `1 .. spell max level` (over-max is a fatal error).
+- Permission level 2 (ops). Calls `ISpellContainer.createScrollContainer(...)`, so the
+  resulting scroll is exactly what players get from legitimate sources.
+
+Examples:
+
+```
+/createScroll heal 8
+/createScroll irons_spellbooks:blood_slash 5
+```
+
+### Deprecated: `/givespell` (this repo's KubeJS command)
+
+> **DEPRECATED** — prefer `/createScroll`. It does everything `/givespell` does with
+> identical output; this command is retained only for its `validate=false` escape hatch
+> (minting a scroll above the spell's max level, with a warning). Quest content must
+> never need that: all quest scroll rewards are within spell caps.
 
 Registered by `kubejs/server_scripts/givespell.js` (KubeJS `2101.7.2-build.368`,
 NeoForge 1.21.1, via `ServerEvents.commandRegistry`). Permission level 2 (ops).
@@ -117,8 +144,36 @@ Examples:
 /givespell irons_spellbooks:blood_slash 5 validate=false   # force above-max level w/ warning
 ```
 
-The command calls `ISpellContainer.createScrollContainer(...)` directly, so its
-output is byte-for-byte what the mod's own `/createScroll` produces.
+Both commands call `ISpellContainer.createScrollContainer(...)` directly, so either
+produces byte-for-byte what the mod itself produces.
+
+## 3b. How FTB Quests hands out scrolls (reward flow)
+
+Understanding why the SNBT in section 2 matters — the flow when a player claims a
+scroll reward:
+
+1. The quest file stores an **item stack specification**: base id + count + `components`.
+2. On claim, FTB Quests deserializes that spec through Minecraft's data-component
+   codec system. For scrolls, the `irons_spellbooks:spell_container` component is
+   parsed by `SpellContainer.CODEC` (section 1).
+3. If parsing succeeds, the player receives a fully-functional scroll — correct name,
+   rarity color, tooltip, castable.
+4. If any required field is missing (`maxSpells`, `spellWheel`, `mustEquip`, slot
+   `index`) or the `id` is not a registered spell, the codec throws, FTB Quests
+   falls back to a bare uncomponented stack, and the player gets the broken
+   **"None Scroll"**. The chapter may also show a red error marker.
+
+Consequences for authoring:
+
+- The SNBT component block is the *only* thing standing between a player and a None
+  Scroll — there is no fallback or auto-repair at claim time.
+- Copy the exact block from section 2 and change only the spell `id`/`level`; do not
+  hand-write variants from memory.
+- After editing, verify: run `/createScroll <same spell> <same level>` in a test world
+  and compare tooltips against a claimed quest scroll. They must match.
+- To sanity-check an existing chapter file without launching the game, grep it for
+  `"irons_spellbooks:spell_container"` blocks and confirm each contains `maxSpells`,
+  `spellWheel`, `mustEquip`, and a slot with `index` before `locked`.
 
 ## 4. Validated spell ids and max levels
 

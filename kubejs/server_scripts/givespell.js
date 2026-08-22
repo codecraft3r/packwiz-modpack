@@ -1,5 +1,10 @@
 // /givespell <spell_id> <level> [validate]
 //
+// ⚠ DEPRECATED — prefer the mod's built-in `/createScroll <spell> <level>`.
+// It produces identical output and is maintained by the Iron's Spells team.
+// This command is kept only for its validate=false escape hatch (minting a
+// scroll above the spell's max level). Do not use for quest-authoring tests.
+//
 // Gives the executing player a correctly-formed irons_spellbooks:scroll
 // containing the requested spell, using Iron's Spells 'n Spellbooks' own
 // public API (verified against v1.21.1-3.16.2 source):
