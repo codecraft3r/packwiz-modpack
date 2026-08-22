@@ -1,11 +1,37 @@
 #!/bin/sh
-# pre-commit hook to ensure packwiz index is up to date
+# Pre-commit hook: keep packwiz index in sync AND validate every staged
+# ``*.snbt`` file against the FTB SNBT grammar.
+#
+# Both steps must succeed for the commit to proceed. Failures from
+# ``packwiz refresh`` or the SNBT validator block the commit; successes
+# auto-add a refreshed ``index.toml`` so authors do not have to remember
+# to re-stage it.
 
-echo "Running packwiz refresh..."
+set -e
+
+echo "==> Running packwiz refresh..."
 packwiz refresh
 
 if [ -n "$(git status --porcelain index.toml)" ]; then
-    echo "Warning: index.toml was updated by packwiz refresh."
-    echo "Adding index.toml to the current commit."
+    echo "    index.toml was updated by packwiz refresh; staging it."
     git add index.toml
+fi
+
+# Collect staged ``*.snbt`` files (Added / Copied / Modified, in the
+# index — unmerged paths are ignored so a half-resolved conflict does
+# not poison the validator). The validator tolerates an empty list and
+# exits 0 in that case.
+SNBT_FILES=$(git diff --cached --name-only --diff-filter=ACMR -- '*.snbt' || true)
+
+if [ -n "${SNBT_FILES}" ]; then
+    echo "==> Validating $(echo "${SNBT_FILES}" | wc -l | tr -d ' ') staged .snbt file(s)..."
+    # ``--no-color`` keeps hook output readable in any terminal;
+    # ``--format text`` is the default but is spelled out for clarity
+    # next to ``--format json`` in the skill docs.
+    if ! python scripts/validate_snbt.py --no-color --format text ${SNBT_FILES}; then
+        echo ""
+        echo "SNBT validation failed. Fix the reported diagnostics above and re-stage."
+        echo "Run \`python scripts/validate_snbt.py <file>\` to re-check."
+        exit 1
+    fi
 fi

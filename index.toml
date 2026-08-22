@@ -274,11 +274,11 @@ hash = "79261c26a2fd6ba3ee6b96ae3ae59587e334558037a4f62d701cf4af0826ea0f"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "51f7bbb26ae3bb70b8d729129c67d93cf49848bceb9a12cc8f7717b62f83aa62"
+hash = "29def7e221d1c4a6e46a6b038580aed34f2f342eaefff78c85c6768c4eecb807"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch01_intro_rules.snbt"
-hash = "b111db24f423f12205a82373e1e09a5579e91711d245ac6bdfc3b0ae13ec1816"
+hash = "e0fdbad21926cdcf736c6915f04eece004868a7351b715b3ab898a806894ef97"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch02_factions.snbt"
@@ -286,11 +286,11 @@ hash = "016438400d2cca3a1c19c05e04fccb88243a302c251c0051441a3ec551e807db"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_hunters.snbt"
-hash = "448b05b14022114a8cf9dc176ef0cabd6b0fd1e7731a0f5347498d5caaa33c69"
+hash = "224dbcf504e45617457ccc69ef4b9a1cdffc4a2b737a0eec13bdb5f7e0fa2a40"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_vampires.snbt"
-hash = "f417273cc80abe160680ff7105c76a4615c46c469f55daed1d06c0721801ff9b"
+hash = "8f9ac5e90aa3ada14e7c71b7ed3878dcc3e88f30b798033c627af40c2f3d86fd"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -302,7 +302,7 @@ hash = "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000001.snbt"
-hash = "738afda50414079fc226b489cc3aa3d16396a71d968683c8f5b1c7f2a21e36fb"
+hash = "da8b4c576aa31dcc6ab02e031aa69bb49752ba0409d8302712f2c4166dd40487"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
@@ -756,6 +756,10 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
 hash = "d3f09520e471a838e8bb567b0308ea3b504516813658c03dd2b87c5db415b16d"
+
+[[files]]
+file = "kubejs/startup_scripts/givespell.js"
+hash = "57596ff0be425410ddd5c0d2f6a05e5eb9235d0667e01f6d44c1e21f24c7f3ce"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"

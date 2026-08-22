@@ -7,6 +7,19 @@ This document is a custom agent skill file detailing the standard operating proc
 
 ---
 
+## 0. In-repo Skills
+
+This pack ships with project-scoped agent skills under [`skills/`](file:///c:/Users/nmitc/packwiz-modpack/skills). Load the relevant skill **before** touching files it covers; the skill documents the exact commands, conventions, and pitfalls that have already been debugged for this repo.
+
+| Skill | When to load |
+| --- | --- |
+| [`skills/snbt-validation/SKILL.md`](file:///c:/Users/nmitc/packwiz-modpack/skills/snbt-validation/SKILL.md) | Adding, editing, or reviewing any `*.snbt` file (FTB Quests, FTB Library / Chunks / Ultimine / Teams configs, KubeJS data files); debugging a blocked commit or a CI SNBT diagnostic. |
+| `skills/ftb-quest-authoring/SKILL.md` | Designing, implementing, balancing, validating, or releasing FTB Quests chapters; auditing quest graphs, layouts, reward economies, or art paths. |
+
+The validator the SNBT skill wraps lives at `scripts/validate_snbt.py` and runs on every commit via `.githooks/pre-commit` once `git config core.hooksPath .githooks` has been set in the clone.
+
+---
+
 ## 1. Import Workflows
 
 We use the automated Python helper script [packwiz_helper.py](file:///c:/Users/nmitc/packwiz-modpack/scripts/packwiz_helper.py) located at `scripts/packwiz_helper.py` to handle all imports.
