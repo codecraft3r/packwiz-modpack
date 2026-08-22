@@ -238,9 +238,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:blood_slash"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -257,9 +262,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:blood_needles"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -276,9 +286,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:acupuncture"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -295,9 +310,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:ray_of_siphoning"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -314,9 +334,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:recall"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1

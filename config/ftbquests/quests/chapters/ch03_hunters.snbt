@@ -241,9 +241,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:heal"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -260,9 +265,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:smite"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -279,9 +289,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:blessing_of_life"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -298,9 +313,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:recall"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
@@ -317,9 +337,14 @@
 								data: [
 									{
 										id: "irons_spellbooks:spectral_hammer"
+										index: 0
 										level: 1
+										locked: false
 									}
 								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
 							}
 						}
 						count: 1
