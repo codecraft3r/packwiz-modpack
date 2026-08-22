@@ -95,7 +95,7 @@ to each entry in `data`.
 
 ## 3. `/givespell` command
 
-Registered by `kubejs/startup_scripts/givespell.js` (KubeJS `2101.7.2-build.368`,
+Registered by `kubejs/server_scripts/givespell.js` (KubeJS `2101.7.2-build.368`,
 NeoForge 1.21.1, via `ServerEvents.commandRegistry`). Permission level 2 (ops).
 
 ```
