@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7A11C0DE20000003"]
 			description: [
 				"Craft a Hunter Table to access specialized hunter gear, stakes, and upgrades."
 				""
@@ -236,21 +237,21 @@
 				{
 					id: "7A11C0DE30000074"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:heal"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:heal"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -258,23 +259,28 @@
 					type: "item"
 				}
 				{
+					id: "7A11C0DE300000D1"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE30000075"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:smite"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:divine_smite"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -284,21 +290,21 @@
 				{
 					id: "7A11C0DE30000076"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:blessing_of_life"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:blessing_of_life"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -308,21 +314,21 @@
 				{
 					id: "7A11C0DE30000077"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:recall"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:recall"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -332,21 +338,21 @@
 				{
 					id: "7A11C0DE30000078"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:spectral_hammer"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:spectral_hammer"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}

@@ -9,8 +9,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7A11C0DE20000002"]
 			description: [
-				"Craft a Coffin to safely sleep through the lethal daylight and gather blood bottles to stay fed."
+				"Craft a Coffin to safely sleep through the lethal daylight, and set up your blood storage with a Blood Pedestal."
 				""
 				"Completing this awards a Vampire Knowledge Book, a Vampire Cloak, and materials to forge blood weapons!"
 			]
@@ -26,16 +27,6 @@
 					id: "7A11C0DE40000012"
 					table_id: "7A11C0DEF0000001"
 					type: "choice"
-				}
-				{
-					id: "7A11C0DE40000013"
-					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000014"
-					item: { count: 2, id: "minecraft:iron_block" }
-					type: "item"
 				}
 				{
 					id: "7A11C0DE40000015"
@@ -54,7 +45,7 @@
 				}
 				{
 					id: "7A11C0DE40000022"
-					item: { count: 4, id: "vampirism:blood_bottle" }
+					item: { count: 1, id: "vampirism:blood_pedestal" }
 					type: "item"
 				}
 			]
@@ -186,6 +177,11 @@
 					item: { count: 2, id: "numismatics:sprocket" }
 					type: "item"
 				}
+				{
+					id: "7A11C0DE400000D3"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			subtitle: "Ritual altars, blood storage, and livestock pens."
@@ -233,21 +229,21 @@
 				{
 					id: "7A11C0DE40000074"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:blood_slash"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:blood_slash"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -255,23 +251,28 @@
 					type: "item"
 				}
 				{
+					id: "7A11C0DE400000D4"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE40000075"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:blood_needles"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:blood_needles"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -281,21 +282,21 @@
 				{
 					id: "7A11C0DE40000076"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:acupuncture"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:acupuncture"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -305,21 +306,21 @@
 				{
 					id: "7A11C0DE40000077"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:ray_of_siphoning"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:ray_of_siphoning"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -329,21 +330,21 @@
 				{
 					id: "7A11C0DE40000078"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:recall"
-										index: 0
-										level: 1
-										locked: false
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:recall"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -385,6 +386,16 @@
 				{
 					id: "7A11C0DE40000092"
 					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000013"
+					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000014"
+					item: { count: 2, id: "minecraft:iron_block" }
 					type: "item"
 				}
 				{
@@ -442,6 +453,11 @@
 				{
 					id: "7A11C0DE400000B4"
 					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000D5"
+					item: { count: 2, id: "numismatics:bevel" }
 					type: "item"
 				}
 			]

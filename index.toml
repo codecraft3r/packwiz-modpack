@@ -286,11 +286,11 @@ hash = "016438400d2cca3a1c19c05e04fccb88243a302c251c0051441a3ec551e807db"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_hunters.snbt"
-hash = "80a83bdccf5add84b6d0498854e8447c3325e7d4061e57b65f573df397f4cd3b"
+hash = "224dbcf504e45617457ccc69ef4b9a1cdffc4a2b737a0eec13bdb5f7e0fa2a40"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_vampires.snbt"
-hash = "87113631ead617699afac4115b9e5cc3b886606401d59ee4da8d3348d16429b2"
+hash = "8f9ac5e90aa3ada14e7c71b7ed3878dcc3e88f30b798033c627af40c2f3d86fd"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -756,6 +756,10 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
 hash = "d3f09520e471a838e8bb567b0308ea3b504516813658c03dd2b87c5db415b16d"
+
+[[files]]
+file = "kubejs/startup_scripts/givespell.js"
+hash = "57596ff0be425410ddd5c0d2f6a05e5eb9235d0667e01f6d44c1e21f24c7f3ce"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"

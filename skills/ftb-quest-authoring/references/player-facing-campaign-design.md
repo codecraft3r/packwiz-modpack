@@ -87,12 +87,22 @@ FTB Quests cannot reliably verify multi-block structures placed in the world. Ra
 
 For workstations and progression altars, detect acquisition/crafting of the core item components and tanks in inventory, not world assembly.
 
-Use a trust-based checkmark only when native detection is unsuitable, especially for builds, social agreements, tours, demonstrations, or human review. A checkmark-only quest should normally satisfy all of these:
+### Quest classes
 
-- It is optional, explanatory, social, or primarily world-building.
-- Its prerequisites represent meaningful effort, or its reward is modest.
-- Server currency is not its primary reward.
+- **Explanatory** — initial/tutorial quests (for example, "how to use the quest book"). Checkmark-only by definition. No reward by default; a minimal item reward only when a dev requests it. May be required for progression to future quests.
+- **Optional** — not required to reach future quests. May have prerequisites and real (hard) conditions; optional describes graph position, not effort.
+- **Substantive** — everything else. Requires a hard native criterion wherever the installed pack can verify one.
+
+Quests with checkmarks or other weak checks must not give strong rewards, and never server currency.
+
+Use a trust-based checkmark only when native detection is unsuitable, especially for builds, social agreements, tours, demonstrations, or human review. A checkmark-only quest must satisfy all of these:
+
+- It is explanatory (per the definition above) or optional.
+- Its prerequisites are difficult, or its reward is minimal.
+- Server currency is never its primary reward.
 - The text tells the player exactly what clicking the checkmark attests.
+
+A checkmark quest that fails one of these is a defect, not a judgment call.
 
 Never ship a placeholder action that looks functional. If a starter-kit choice, faction registration, or social service has no delivery/verification mechanism, implement a verified native choice/checkmark, explicitly mark it as a manual attestation, or remove/hide it until ready.
 
@@ -137,12 +147,15 @@ Verify that every task and reward item is obtainable in regular survival gamepla
 
 When the pack/server has a central issued currency—such as Create: Numismatics Bevels—use it as the default reward for substantive one-time progression only when desirable server-controlled sinks exist.
 
+- Issue currency directly as a guaranteed fixed reward. Never place it as an entry in a random or choice reward table; players must not gamble on receiving it.
 - Standard quest progression should be the fastest normal source.
 - The currency should let players choose what is valuable to them.
 - Scale currency rewards dynamically across the quest tree: do not pay flat starter pocket change (1-2 low coins) on deep milestone quests. Increase coin volume or step up coin denominations (e.g., Bevel -> Sprocket -> Cog -> Crown) as quests advance deeper.
 - The server must exchange it for useful goods, infrastructure, services, cosmetics/status, or capped progression support.
 - A currency with no sinks is decorative clutter.
 - Thematic items should usually supplement currency, not replace it with a weaker random object.
+- One-time quests may be the fastest route to selected resources if the payout is earned, finite, non-compounding, and comparable across factions.
+- Repeatable quests must not be rapidly farmable or become the most optimal way to progress the game; repeatable currency sources are fallback income (for example, after all quests are completed), gated behind substantial progress, limited by cooldown/team scope/cost/stock, and never able to outpace normal play or unreasonably compound.
 
 ### Full-set threshold rule
 
