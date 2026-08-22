@@ -19,22 +19,22 @@
 			rewards: [
 				{
 					id: "7A11C0DE30000011"
-					item: { count: 1, id: "vampirism:hunter_hat_normal" }
+					item: { count: 1, id: "vampirism:hunter_hat_head_0" }
 					type: "item"
 				}
 				{
 					id: "7A11C0DE30000012"
-					item: { count: 1, id: "vampirism:hunter_coat_normal" }
+					item: { count: 1, id: "vampirism:hunter_coat_chest_normal" }
 					type: "item"
 				}
 				{
 					id: "7A11C0DE30000013"
-					item: { count: 1, id: "vampirism:hunter_leggings_normal" }
+					item: { count: 1, id: "vampirism:hunter_coat_legs_normal" }
 					type: "item"
 				}
 				{
 					id: "7A11C0DE30000014"
-					item: { count: 1, id: "vampirism:hunter_boots_normal" }
+					item: { count: 1, id: "vampirism:hunter_coat_feet_normal" }
 					type: "item"
 				}
 				{
@@ -63,7 +63,7 @@
 					type: "item"
 				}
 			]
-			title: "Hunter Armory & Stakes"
+			title: "Hunter Armory and Stakes"
 			x: 0.0d
 			y: -4.0d
 		}
@@ -343,7 +343,7 @@
 					type: "item"
 				}
 			]
-			title: "Holy Arcana & Inscription"
+			title: "Holy Arcana and Inscription"
 			x: 2.5d
 			y: 1.5d
 		}
@@ -352,7 +352,7 @@
 			description: [
 				"Equip yourself for long-range patrols and field reconnaissance."
 				""
-				"A Spyglass helps spot vampire movement from watchtowers, while a Crossbow and a Backpack keep your expedition supplied."
+				"A Spyglass helps spot vampire movement from watchtowers, while a Crossbow and a Quiver keep you loaded with ammunition."
 			]
 			icon: { id: "minecraft:spyglass" }
 			id: "7A11C0DE30000005"
@@ -364,12 +364,12 @@
 				}
 				{
 					id: "7A11C0DE30000092"
-					item: { count: 16, id: "vampirism:arrow_garlic" }
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
 					type: "item"
 				}
 				{
 					id: "7A11C0DE30000093"
-					item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
 					type: "item"
 				}
 				{
@@ -379,7 +379,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "Crossbows, spyglasses, and expedition packs."
+			subtitle: "Crossbows, spyglasses, and expedition gear."
 			tasks: [
 				{
 					id: "7A11C0DE300000A1"
@@ -393,11 +393,11 @@
 				}
 				{
 					id: "7A11C0DE300000A3"
-					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					item: { count: 1, id: "supplementaries:quiver" }
 					type: "item"
 				}
 			]
-			title: "Hunter Scouting & Expeditions"
+			title: "Hunter Scouting and Expeditions"
 			x: -2.5d
 			y: 1.5d
 		}
@@ -407,7 +407,7 @@
 				"7A11C0DE30000005"
 			]
 			description: [
-				"Use Exposure to craft a camera and black & white film."
+				"Use Exposure to craft a camera and black and white film."
 				""
 				"Take reconnaissance photos of vampire strongholds or snap dramatic propaganda photos for the Order to display in your watchpost!"
 			]
@@ -450,7 +450,7 @@
 					type: "item"
 				}
 			]
-			title: "Reconnaissance & Propaganda"
+			title: "Reconnaissance and Propaganda"
 			x: 0.0d
 			y: 3.5d
 		}

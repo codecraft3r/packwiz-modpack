@@ -38,7 +38,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Welcome & Starter Kit"
+			title: "Welcome and Starter Kit"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -60,7 +60,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "Land Claims & FTB Chunks"
+			title: "Land Claims and FTB Chunks"
 			x: -2.5d
 			y: 0.5d
 		}
@@ -80,11 +80,11 @@
 			tasks: [
 				{
 					id: "7A11C0DE10000023"
-					title: "I Accept the Neutral & Conflict Rules"
+					title: "I Accept the Neutral and Conflict Rules"
 					type: "checkmark"
 				}
 			]
-			title: "Rules of Engagement & Neutrals"
+			title: "Rules of Engagement and Neutrals"
 			x: 2.5d
 			y: 0.5d
 		}
@@ -116,10 +116,10 @@
 					type: "checkmark"
 				}
 			]
-			title: "FTB Teams & Economy"
+			title: "FTB Teams and Economy"
 			x: 0.0d
 			y: 2.5d
 		}
 	]
-	title: "01 · Introduction & Rules"
+	title: "01 · Introduction and Rules"
 }

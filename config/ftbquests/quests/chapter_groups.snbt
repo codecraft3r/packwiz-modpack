@@ -1,6 +1,7 @@
 {
 	chapter_groups: [
-		{ id: "7A11C0DE00000001", title: "Getting Started & Rules" }
-		{ id: "7A11C0DE00000002", title: "Factions & Progression" }
+		{ id: "7A11C0DE00000001", title: "Getting Started and Rules" }
+		{ id: "7A11C0DE00000002", title: "Factions and Progression" }
 	]
 }
+

@@ -58,7 +58,7 @@
 					type: "item"
 				}
 			]
-			title: "Coffins & Night Survival"
+			title: "Coffins and Night Survival"
 			x: 0.0d
 			y: -4.0d
 		}
@@ -142,7 +142,7 @@
 					type: "item"
 				}
 			]
-			title: "Gothic Manor & Castle Construction"
+			title: "Gothic Manor and Castle Construction"
 			x: -2.5d
 			y: -1.5d
 		}
@@ -201,7 +201,7 @@
 					type: "item"
 				}
 			]
-			title: "Altar Components & Blood Pen"
+			title: "Altar Components and Blood Pen"
 			x: 2.5d
 			y: -1.5d
 		}
@@ -340,14 +340,14 @@
 					type: "item"
 				}
 			]
-			title: "Blood Arcana & Inscription"
+			title: "Blood Arcana and Inscription"
 			x: 2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A11C0DE40000002"]
 			description: [
-				"Forge blood-infused equipment and carry a backpack to transport blood bottles during nighttime expeditions."
+				"Forge blood-infused equipment and carry travel supplies during nighttime expeditions."
 			]
 			icon: { id: "vampirism:blood_infused_iron_ingot" }
 			id: "7A11C0DE40000005"
@@ -359,7 +359,7 @@
 				}
 				{
 					id: "7A11C0DE40000092"
-					item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
 					type: "item"
 				}
 				{
@@ -378,7 +378,7 @@
 				}
 				{
 					id: "7A11C0DE400000A2"
-					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					item: { count: 1, id: "vampirism:vampire_blood_bottle" }
 					type: "item"
 				}
 			]
@@ -435,7 +435,7 @@
 					type: "item"
 				}
 			]
-			title: "Espionage & Surveillance"
+			title: "Espionage and Surveillance"
 			x: 0.0d
 			y: 3.5d
 		}

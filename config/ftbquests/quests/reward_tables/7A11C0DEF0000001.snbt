@@ -3,10 +3,11 @@
 	loot_size: 1
 	order_index: 0
 	rewards: [
-		{ item: { count: 1, id: "vampirism:vampire_cloak_red" }, title: "Crimson Vampire Cloak" }
-		{ item: { count: 1, id: "vampirism:vampire_cloak_black" }, title: "Obsidian Vampire Cloak" }
-		{ item: { count: 1, id: "vampirism:vampire_cloak_white" }, title: "Pure White Vampire Cloak" }
-		{ item: { count: 1, id: "vampirism:vampire_cloak_blue" }, title: "Midnight Blue Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_red_black" }, title: "Crimson Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_black_red" }, title: "Obsidian Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_white_black" }, title: "Pure White Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_black_blue" }, title: "Midnight Blue Vampire Cloak" }
 	]
 	title: "Vampire Cloak Selection"
 }
+
