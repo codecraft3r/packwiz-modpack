@@ -3,11 +3,11 @@ filename = "create_cardan_shafts-0.1.6.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "bda138b18aa77f107ac7aac1c4b324afc092e3a3"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5zf6e26A/versions/gN7NRzux/create_cardan_shafts-0.1.6.jar"
+hash-format = "sha512"
+hash = "722bb2331ad081950c1a4b6def2964f73bc757bfa14be5c3a9028f758e079cc51ba4810bb198813d05b5fd4fb6fb4acde42f9c098fb7a89e853eeb92587f9743"
 
 [update]
-[update.curseforge]
-file-id = 8146378
-project-id = 1546625
+[update.modrinth]
+mod-id = "5zf6e26A"
+version = "gN7NRzux"
