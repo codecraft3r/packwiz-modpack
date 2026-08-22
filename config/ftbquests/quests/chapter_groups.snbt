@@ -1,5 +1,7 @@
 {
 	chapter_groups: [
-		{ id: "7A11C0DE00000001", title: "Vampires vs Hunters — Season One [DEV · ALL NODES VISIBLE] — CLAIMS LOCKED UNTIL DEPENDENCIES COMPLETE" }
+		{ id: "7A11C0DE00000001", title: "Getting Started and Rules" }
+		{ id: "7A11C0DE00000002", title: "Factions and Progression" }
 	]
 }
+

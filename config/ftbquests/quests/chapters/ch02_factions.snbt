@@ -1,0 +1,198 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch02_factions"
+	group: "7A11C0DE00000002"
+	icon: { id: "minecraft:spyglass" }
+	id: "7A11C0DE20000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Three distinct playstyles exist on the server:"
+				""
+				"§4§lVampires:§r Creatures of the night who harness blood mechanics, speed, stealth, and blood arcana."
+				"§b§lHunters:§r Dedicated sentinels who use garlic, stakes, alchemy, and buffed holy arcana."
+				"§a§lNeutrals:§r Peaceful civilians, crafters, and traders who stay out of the conflict."
+				""
+				"Making third-party warring factions is discouraged. Choose your path below!"
+			]
+			icon: { id: "minecraft:spyglass" }
+			id: "7A11C0DE20000001"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Vampires, Hunters, or Peaceful Neutrals."
+			tasks: [
+				{
+					id: "7A11C0DE20000021"
+					title: "I Have Considered My Path"
+					type: "checkmark"
+				}
+			]
+			title: "Choosing Your Path"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A11C0DE20000001"]
+			description: [
+				"To embrace vampirism, obtain a §cVampire Fang§r from a vampire mob in the dark, infect yourself, and undergo the transformation."
+				""
+				"This unlocks the full Vampire questline, blood storage, gothic architecture, and life-siphoning blood spells."
+			]
+			icon: { id: "vampirism:vampire_fang" }
+			id: "7A11C0DE20000002"
+			rewards: [
+				{
+					id: "7A11C0DE20000012"
+					item: { count: 8, id: "vampirism:blood_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000013"
+					item: { count: 4, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "heart"
+			subtitle: "Embrace the blood and stalk the night."
+			tasks: [
+				{
+					id: "7A11C0DE20000022"
+					item: { count: 1, id: "vampirism:vampire_fang" }
+					type: "item"
+				}
+				{
+					advancement: "vampirism:vampire/become_vampire"
+					criterion: ""
+					id: "7A11C0DE20000023"
+					type: "advancement"
+				}
+			]
+			title: "Path of Blood (Vampires)"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A11C0DE20000001"]
+			description: [
+				"To join the Hunter Order, find a hunter camp or craft a Garlic Injector to inoculate yourself against the infection."
+				""
+				"This unlocks the Hunter questline, specialized weaponry, alchemy, and buffed holy spells."
+			]
+			icon: { id: "vampirism:injection_garlic" }
+			id: "7A11C0DE20000003"
+			rewards: [
+				{
+					id: "7A11C0DE20000015"
+					item: { count: 1, id: "vampirism:hunter_axe_normal" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000016"
+					item: { count: 4, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Take up the stake and defend the light."
+			tasks: [
+				{
+					id: "7A11C0DE20000025"
+					item: { count: 1, id: "vampirism:injection_garlic" }
+					type: "item"
+				}
+				{
+					advancement: "vampirism:hunter/become_hunter"
+					criterion: ""
+					id: "7A11C0DE20000026"
+					type: "advancement"
+				}
+			]
+			title: "Path of the Stake (Hunters)"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A11C0DE20000001"]
+			description: [
+				"If you prefer to focus on building, engineering, farming, or trading without getting involved in the Vampire vs Hunter rivalry, declare your neutrality here."
+				""
+				"Neutrals are protected under server rules from all raids and attacks as long as they do not provoke either faction."
+			]
+			icon: { id: "minecraft:iron_chestplate" }
+			id: "7A11C0DE20000004"
+			rewards: [
+				{
+					id: "7A11C0DE20000017"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000018"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000019"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001A"
+					item: { count: 1, id: "minecraft:iron_boots" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001B"
+					item: { count: 1, id: "minecraft:iron_sword" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001C"
+					item: { count: 1, id: "minecraft:iron_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001D"
+					item: { count: 1, id: "minecraft:iron_axe" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001E"
+					item: { count: 1, id: "minecraft:iron_shovel" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE2000001F"
+					item: { count: 1, id: "minecraft:white_bed" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000020"
+					item: { count: 32, id: "minecraft:cooked_beef" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE20000027"
+					item: { count: 8, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Civilian life, crafting, and protected neutrality."
+			tasks: [
+				{
+					id: "7A11C0DE20000028"
+					title: "I Choose Peaceful Neutrality"
+					type: "checkmark"
+				}
+			]
+			title: "Choosing Neutrality"
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "02 · Choosing Your Path"
+}

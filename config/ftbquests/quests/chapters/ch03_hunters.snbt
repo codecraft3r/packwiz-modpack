@@ -1,0 +1,459 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch03_hunters"
+	group: "7A11C0DE00000002"
+	icon: { id: "vampirism:hunter_table" }
+	id: "7A11C0DE30000000"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Craft a Hunter Table to access specialized hunter gear, stakes, and upgrades."
+				""
+				"Wooden stakes allow you to finish off downed vampires before they can regenerate."
+			]
+			icon: { id: "vampirism:hunter_table" }
+			id: "7A11C0DE30000001"
+			rewards: [
+				{
+					id: "7A11C0DE30000011"
+					item: { count: 1, id: "vampirism:hunter_hat_head_0" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000012"
+					item: { count: 1, id: "vampirism:hunter_coat_chest_normal" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000013"
+					item: { count: 1, id: "vampirism:hunter_coat_legs_normal" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000014"
+					item: { count: 1, id: "vampirism:hunter_coat_feet_normal" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000015"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000016"
+					item: { count: 4, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Hunter Table, stakes, and equipment."
+			tasks: [
+				{
+					id: "7A11C0DE30000021"
+					item: { count: 1, id: "vampirism:hunter_table" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000022"
+					item: { count: 4, id: "vampirism:stake" }
+					type: "item"
+				}
+			]
+			title: "Hunter Armory and Stakes"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7A11C0DE30000001"]
+			description: [
+				"Hunters need secure, well-fortified outposts and watchtowers."
+				""
+				"Gather a starter bundle of fortified building materials: Stone Bricks, Logs, Iron Bars, and Lanterns. Completing this grants double building materials plus valuable crafting supplies so you can build a proper outpost!"
+			]
+			icon: { id: "minecraft:stone_bricks" }
+			id: "7A11C0DE30000002"
+			rewards: [
+				{
+					id: "7A11C0DE30000031"
+					item: { count: 128, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000032"
+					item: { count: 64, id: "minecraft:oak_log" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000033"
+					item: { count: 32, id: "minecraft:iron_bars" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000034"
+					item: { count: 16, id: "minecraft:lantern" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000035"
+					item: { count: 1, id: "minecraft:stonecutter" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000036"
+					item: { count: 16, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000037"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000038"
+					item: { count: 64, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Gather watchpost materials for generous building rewards."
+			tasks: [
+				{
+					id: "7A11C0DE30000041"
+					item: { count: 64, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000042"
+					item: { count: 32, id: "minecraft:oak_log" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000043"
+					item: { count: 16, id: "minecraft:iron_bars" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000044"
+					item: { count: 8, id: "minecraft:lantern" }
+					type: "item"
+				}
+			]
+			title: "Fortified Outpost Construction"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000001"]
+			description: [
+				"Craft an Alchemical Cauldron and brew Holy Water. Holy Water is an essential throwing weapon and cleansing agent against vampires."
+			]
+			icon: { id: "vampirism:alchemical_cauldron" }
+			id: "7A11C0DE30000003"
+			rewards: [
+				{
+					id: "7A11C0DE30000051"
+					item: { count: 1, id: "minecraft:brewing_stand" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000052"
+					item: { count: 16, id: "minecraft:glass_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000053"
+					item: { count: 16, id: "minecraft:blaze_powder" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000054"
+					item: { count: 16, id: "minecraft:nether_wart" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000055"
+					item: { count: 8, id: "minecraft:glistering_melon_slice" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000056"
+					item: { count: 8, id: "minecraft:golden_carrot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000057"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Cauldrons, brewing, and holy water."
+			tasks: [
+				{
+					id: "7A11C0DE30000061"
+					item: { count: 1, id: "vampirism:alchemical_cauldron" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000062"
+					item: { count: 1, id: "vampirism:holy_water_bottle_normal" }
+					type: "item"
+				}
+			]
+			title: "Alchemical Countermeasures"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000003"]
+			description: [
+				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
+				""
+				"§6§lHunters receive a natural buff to Holy Magic!§r Use your holy runes and inks to craft Priest armor and inscribe healing and smiting spells."
+			]
+			icon: { id: "irons_spellbooks:copper_spell_book" }
+			id: "7A11C0DE30000004"
+			rewards: [
+				{
+					id: "7A11C0DE30000071"
+					item: { count: 4, id: "irons_spellbooks:holy_rune" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000072"
+					item: { count: 16, id: "irons_spellbooks:rare_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000073"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000074"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:heal"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Heal"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000075"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:smite"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Smite"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000076"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blessing_of_life"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Blessing of Life"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000077"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:recall"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Recall"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000078"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:spectral_hammer"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Spectral Hammer"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Inscribe holy magic and utility spells."
+			tasks: [
+				{
+					id: "7A11C0DE30000081"
+					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000082"
+					item: { count: 1, id: "irons_spellbooks:inscription_table" }
+					type: "item"
+				}
+			]
+			title: "Holy Arcana and Inscription"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000002"]
+			description: [
+				"Equip yourself for long-range patrols and field reconnaissance."
+				""
+				"A Spyglass helps spot vampire movement from watchtowers, while a Crossbow and a Quiver keep you loaded with ammunition."
+			]
+			icon: { id: "minecraft:spyglass" }
+			id: "7A11C0DE30000005"
+			rewards: [
+				{
+					id: "7A11C0DE30000091"
+					item: { count: 64, id: "minecraft:arrow" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000092"
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000093"
+					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000094"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Crossbows, spyglasses, and expedition gear."
+			tasks: [
+				{
+					id: "7A11C0DE300000A1"
+					item: { count: 1, id: "minecraft:spyglass" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000A2"
+					item: { count: 1, id: "minecraft:crossbow" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000A3"
+					item: { count: 1, id: "supplementaries:quiver" }
+					type: "item"
+				}
+			]
+			title: "Hunter Scouting and Expeditions"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE30000004"
+				"7A11C0DE30000005"
+			]
+			description: [
+				"Use Exposure to craft a camera and black and white film."
+				""
+				"Take reconnaissance photos of vampire strongholds or snap dramatic propaganda photos for the Order to display in your watchpost!"
+			]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DE30000006"
+			rewards: [
+				{
+					id: "7A11C0DE300000B1"
+					item: { count: 2, id: "exposure:color_film" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B2"
+					item: { count: 2, id: "exposure:black_and_white_film" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B3"
+					item: { count: 1, id: "exposure:album" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B4"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Capture reconnaissance and propaganda photos."
+			tasks: [
+				{
+					id: "7A11C0DE300000C1"
+					item: { count: 1, id: "exposure:camera" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C2"
+					item: { count: 1, id: "exposure:black_and_white_film" }
+					type: "item"
+				}
+			]
+			title: "Reconnaissance and Propaganda"
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	title: "03 · The Hunter Order"
+}

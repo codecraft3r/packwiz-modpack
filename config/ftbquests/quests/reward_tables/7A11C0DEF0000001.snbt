@@ -1,116 +1,13 @@
 {
 	id: "7A11C0DEF0000001"
 	loot_size: 1
-	order_index: 10
-	use_title: true
+	order_index: 0
 	rewards: [
-		{
-			id: "7A11C0DEF0010001"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "builder"
-					}
-					"minecraft:custom_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Builder Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"8 Scaffolding for improving a shared place.\"}"
-					]
-				}
-				count: 8
-				id: "minecraft:scaffolding"
-			}
-		}
-		{
-			id: "7A11C0DEF0010002"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "engineer"
-					}
-					"minecraft:custom_name": "{\"color\":\"gold\",\"italic\":false,\"text\":\"Engineer Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"1 Create Goggles for the next workshop job.\"}"
-					]
-				}
-				count: 1
-				id: "create:goggles"
-			}
-		}
-		{
-			id: "7A11C0DEF0010003"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "pathfinder"
-					}
-					"minecraft:custom_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Pathfinder Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"1 Spyglass for mapping routes others can follow.\"}"
-					]
-				}
-				count: 1
-				id: "minecraft:spyglass"
-			}
-		}
-		{
-			id: "7A11C0DEF0010004"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "keeper"
-					}
-					"minecraft:custom_name": "{\"color\":\"green\",\"italic\":false,\"text\":\"Keeper Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"4 Lanterns for food, hospitality, and public continuity.\"}"
-					]
-				}
-				count: 4
-				id: "minecraft:lantern"
-			}
-		}
-		{
-			id: "7A11C0DEF0010005"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "arcanist"
-					}
-					"minecraft:custom_name": "{\"color\":\"light_purple\",\"italic\":false,\"text\":\"Arcanist Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"2 Arcane Essence for a modest supervised demonstration.\"}"
-					]
-				}
-				count: 2
-				id: "irons_spellbooks:arcane_essence"
-			}
-		}
-		{
-			id: "7A11C0DEF0010006"
-			item: {
-				components: {
-					"minecraft:custom_data": {
-						vvh_campaign: "season_one"
-						role: "archivist"
-					}
-					"minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"text\":\"Archivist Supply Kit\"}"
-					"minecraft:enchantment_glint_override": true
-					"minecraft:lore": [
-						"{\"color\":\"gray\",\"italic\":false,\"text\":\"2 Books for guides, contracts, failures, and server memory.\"}"
-					]
-				}
-				count: 2
-				id: "minecraft:book"
-			}
-		}
+		{ item: { count: 1, id: "vampirism:vampire_cloak_red_black" }, title: "Crimson Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_black_red" }, title: "Obsidian Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_white_black" }, title: "Pure White Vampire Cloak" }
+		{ item: { count: 1, id: "vampirism:vampire_cloak_black_blue" }, title: "Midnight Blue Vampire Cloak" }
 	]
+	title: "Vampire Cloak Selection"
 }
+
