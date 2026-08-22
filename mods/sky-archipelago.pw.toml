@@ -1,13 +1,13 @@
 name = "Sky Archipelago"
-filename = "sky_archipelago-1.3.4.jar"
+filename = "sky_archipelago-1.3.6.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/sHFNUlBU/versions/wmsgGqpS/sky_archipelago-1.3.4.jar"
+url = "https://cdn.modrinth.com/data/sHFNUlBU/versions/RwLz4CJb/sky_archipelago-1.3.6.jar"
 hash-format = "sha512"
-hash = "bcd52e9eaf578d48c47e0546856d868ae932e546ddf0f7005116f8d45b6f3971e4192df707fdb24699f074881be47095d6ee08226e490c1665eeb78a09b87925"
+hash = "4acaa8fb29a6eb94ad40e0d6efceec2db561fa38e1dae1bf4803b78b3a0c4b03cac68ebbc97bed487e3c21704a0d48243e124974ac6b309f693d022c9021167c"
 
 [update]
 [update.modrinth]
 mod-id = "sHFNUlBU"
-version = "wmsgGqpS"
+version = "RwLz4CJb"

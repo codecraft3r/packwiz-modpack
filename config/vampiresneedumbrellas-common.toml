@@ -1,0 +1,7 @@
+["Umbrellas Durability"]
+	#The durability in seconds of the Netherite Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	netheriteUmbrellaDurability = -1
+
+["Umbrellas Speed"]
+	#The Speed Modifier of the Umbrella. Set to 0 to disable.
+	netheriteUmbrellaSpeed = 0.0

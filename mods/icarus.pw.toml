@@ -1,13 +1,13 @@
 name = "Icarus"
-filename = "Icarus-NeoForge-4.7.6.jar"
+filename = "Icarus-NeoForge-4.7.8.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Dw7M6XKW/versions/I7uTimBi/Icarus-NeoForge-4.7.6.jar"
+url = "https://cdn.modrinth.com/data/Dw7M6XKW/versions/naLi1FGB/Icarus-NeoForge-4.7.8.jar"
 hash-format = "sha512"
-hash = "06884dd4c3e18afbcfdb8f0f72c32de71866bade08ce62022da9be9e300013b91e7bee11e9100fcfe159faa9f2b7ed62fd0016619b60c838c2f90cba1af82536"
+hash = "bdbda097eeb7904844ed71904e724cd3a4e2716278685dc813dd181cad7a10b8c1ef359b5f9ae34aca47bbecfbd3e2ed0141fda6421f0943e9d163d8a1d0dec0"
 
 [update]
 [update.modrinth]
 mod-id = "Dw7M6XKW"
-version = "I7uTimBi"
+version = "naLi1FGB"

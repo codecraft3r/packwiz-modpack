@@ -1,13 +1,13 @@
 name = "Sizeable Foliage"
-filename = "sizeable_foliage-neoforge-1.21.1-1.2.0.jar"
+filename = "sizeable_foliage-neoforge-1.21.1-1.2.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/lgD8igI0/versions/qRafWI9h/sizeable_foliage-neoforge-1.21.1-1.2.0.jar"
+url = "https://cdn.modrinth.com/data/lgD8igI0/versions/vkS4djbn/sizeable_foliage-neoforge-1.21.1-1.2.1.jar"
 hash-format = "sha512"
-hash = "bd33cf1265a383b62bb8e945f61da572bb30cb36169bcdd8bec7d80560a86cff65b31963d1b38b3c86ec64f9e0c1df6b8ce8fcb60451300f6fcdaaaf6a9ec41e"
+hash = "142f017e8f99658d34b563456ecb9f9f2baff0305b386c97b0d48ea6dd825895d17ec03e1e5bcbdb30c88a55c38e2686cd8f98b4fc00bcb9d6370ad959143eab"
 
 [update]
 [update.modrinth]
 mod-id = "lgD8igI0"
-version = "qRafWI9h"
+version = "vkS4djbn"

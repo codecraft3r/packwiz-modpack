@@ -1,13 +1,13 @@
 name = "Cult of Azazel"
-filename = "cultofazazelneo-killfix.jar"
+filename = "cultofazazelneoforge-1.1.4.12.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/tnd2BYam/versions/PhIGkkCZ/cultofazazelneo-killfix.jar"
+url = "https://cdn.modrinth.com/data/tnd2BYam/versions/soOXKDV6/cultofazazelneoforge-1.1.4.12.jar"
 hash-format = "sha512"
-hash = "ce3db7e42f9f0b4199f79784725c1ba1b84d98e88d8e1159866a5ba0fe98ce111890962b6566fe35001c83c12afbd91a90430dfb2770d5c9757439e13d76b261"
+hash = "2aeb0897ee87d68a585203fc5ec0392279721e01dbaabb2a53c6eaf0aaa8934d4ef2cc869b72c1b24e3adc1617f189af121053c69ee801874f5d79251de31f58"
 
 [update]
 [update.modrinth]
 mod-id = "tnd2BYam"
-version = "PhIGkkCZ"
+version = "soOXKDV6"

@@ -1,13 +1,13 @@
 name = "Create: Numismatics Utils"
-filename = "numismaticsutils-2.1-1.21.1.jar"
+filename = "numismaticsutils-2.2-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/8kRKVjUw/versions/vc4iGddU/numismaticsutils-2.1-1.21.1.jar"
+url = "https://cdn.modrinth.com/data/8kRKVjUw/versions/6c1vcLsi/numismaticsutils-2.2-1.21.1.jar"
 hash-format = "sha512"
-hash = "2412f71aa7701908e74e8e9eed08018ec6374ff13d4a639083bb959ec91c87ca8ba9330465a97974b2a50d0c167c0d2151a1637d78efa5258398fb4c0ce1f4cc"
+hash = "06b34f0fffe755d145b9fdd108f57cc35887a137a36ad32a12e344658d6658a5802d5e18f9b368e719f3af3a011b6153314fe0e584f02ca8d0adc439b5d2a51c"
 
 [update]
 [update.modrinth]
 mod-id = "8kRKVjUw"
-version = "vc4iGddU"
+version = "6c1vcLsi"
