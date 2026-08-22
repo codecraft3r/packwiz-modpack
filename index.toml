@@ -766,50 +766,6 @@ file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
 
 [[files]]
-file = "local/ftbchunks/data/ce1bdd0d-6cf4-4c8a-a19c-9935fdbac30a/biome_map.txt"
-hash = "3c8fa7071cc6c448307ea328d904610868668c4ccaa5d6defc98181e0429482f"
-
-[[files]]
-file = "local/ftbchunks/data/ce1bdd0d-6cf4-4c8a-a19c-9935fdbac30a/block_map.txt"
-hash = "f3522f591fb8641d41ac034be2b9c8fe4f5e0efa4f003363d52bbaf78baa7a54"
-
-[[files]]
-file = "local/ftbchunks/data/ce1bdd0d-6cf4-4c8a-a19c-9935fdbac30a/dimensions.txt"
-hash = "1984e649050138dce002b0a4a5552a0f82897d6faf5a10ec86061369e3a29b6b"
-
-[[files]]
-file = "local/ftbchunks/data/ce1bdd0d-6cf4-4c8a-a19c-9935fdbac30a/minecraft_overworld/dimension.regions"
-hash = "a7b29bb311ac7c05f80fe95871455f28bb5b621eb726ad4aa1f41a91a01b6525"
-
-[[files]]
-file = "local/ftbchunks/data/ce1bdd0d-6cf4-4c8a-a19c-9935fdbac30a/minecraft_overworld/waypoints.json"
-hash = "7f567e705dd03bc2a6a92afe4e1ba7d36d78d6a6747732349b7ec4c9bf493e3d"
-
-[[files]]
-file = "local/ftbchunks/data/e2771302-ed63-4f41-80c1-8413e2bf7fa8/biome_map.txt"
-hash = "837a804f74cc5c5c3ecd44147ece7f30da87b5d6c632f8fb67cbee55f31f3423"
-
-[[files]]
-file = "local/ftbchunks/data/e2771302-ed63-4f41-80c1-8413e2bf7fa8/block_map.txt"
-hash = "a549eca5a641c9a7cbfaed15bbde0d2402eb64ba5418fe6654fd80ecd287ddcf"
-
-[[files]]
-file = "local/ftbchunks/data/e2771302-ed63-4f41-80c1-8413e2bf7fa8/dimensions.txt"
-hash = "1984e649050138dce002b0a4a5552a0f82897d6faf5a10ec86061369e3a29b6b"
-
-[[files]]
-file = "local/ftbchunks/data/e2771302-ed63-4f41-80c1-8413e2bf7fa8/minecraft_overworld/dimension.regions"
-hash = "0d7e59def5fe6513023e2a102c4c80fb944713587f65fbc697a7890eacb276bd"
-
-[[files]]
-file = "local/ftbchunks/data/e2771302-ed63-4f41-80c1-8413e2bf7fa8/minecraft_overworld/waypoints.json"
-hash = "8e2893a1f5ec8e5dedaf4ef5bbdd6867c71891d3f639eb4454fd24493016b571"
-
-[[files]]
-file = "local/kubejs/dev.json"
-hash = "4496d81902b9b30745ecdf547b8829137a32b0e9c94e07f786ef9be8b92d215e"
-
-[[files]]
 file = "mods/accessories.pw.toml"
 hash = "19cbfb37dc29169b50599dfa328fe12a0ec9caaec8ac02627b5846f3bd9d1425"
 metafile = true
