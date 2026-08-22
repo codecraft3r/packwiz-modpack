@@ -189,20 +189,8 @@ file = "config/jei/recipe-category-sort-order.ini"
 hash = "642fe2d10fe167f3726468dcbe9c9728fc99bfabca61d66ab0cc467094afd698"
 
 [[files]]
-file = "config/jei/world/local/New_World/lookupHistory.json"
-hash = "f2ee674584c598083bf685933194299ddc3313cc082571f268e8a0b3a00f8ca4"
-
-[[files]]
-file = "config/jei/world/local/New_World__1/lookupHistory.json"
-hash = "c75c10f0460695580fd8a35bd007306b4b45825e6724069c145095ee9810f8c7"
-
-[[files]]
 file = "config/mca.json"
 hash = "517b49c5f7041d10e9f1f25bc6549b0a77eb856ba867aef865ed83bd75200545"
-
-[[files]]
-file = "config/more_cobblemon_tweaks.json"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/neoforge-server.toml"
@@ -213,44 +201,12 @@ file = "config/offroad-server.toml"
 hash = "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b"
 
 [[files]]
-file = "config/playerxp/playerxp/playerxp.json"
-hash = "c91e64cea27de8e63b295075e14ae42c7515465e55af93b4f168b665780a5efd"
-
-[[files]]
 file = "config/powergrid-server.toml"
 hash = "9d58c62c1164f0e12a54f509139bf2ea40bc75a797a2b3a2ca67f542622f4cad"
 
 [[files]]
-file = "config/simpletms/main.json"
-hash = "24f8689336c04db23312f4019adfdb3587b7e3d4403b695adbc6653789db9250"
-
-[[files]]
-file = "config/simpletms/moves/default_tm_moves.json"
-hash = "5483714eef85f1939060b1f2ddf29b73096a92556b0e092e06d447540ae79156"
-
-[[files]]
-file = "config/simpletms/moves/default_tr_moves.json"
-hash = "5483714eef85f1939060b1f2ddf29b73096a92556b0e092e06d447540ae79156"
-
-[[files]]
-file = "config/simpletms/moves/excluded_moves_from_blank_learning.json"
-hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-
-[[files]]
-file = "config/simpletms/moves/excluded_moves_from_pokemon_drops.json"
-hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-
-[[files]]
-file = "config/simpletms/moves/excluded_moves_from_tmtr_learning.json"
-hash = "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-
-[[files]]
 file = "config/simulated-server.toml"
 hash = "fbcf40465f120ceac12fdc297e8e196ca2774936406404165402d94009f0e53c"
-
-[[files]]
-file = "config/spawn_notification.json"
-hash = "9908149dcfe0eb082f923c7ff823a6e9dc5d00408249a5a93e69313c648f1dd4"
 
 [[files]]
 file = "config/starterkit/descriptions/p_default.txt"
@@ -263,10 +219,6 @@ hash = "4554f1366724aa5b7cbdf54f949664178c221685e2600e1646fef0341d520b7a"
 [[files]]
 file = "config/starterkit/kits/p_default.txt"
 hash = "da5d3bdcba9700671e9f06e4015fc449999b797caaacf7de388e751241be4638"
-
-[[files]]
-file = "config/tim_core.json"
-hash = "b9df2501147828abfb621991ab2c0fc5964650d443688870da803ab8d437443f"
 
 [[files]]
 file = "config/vampiresneedumbrellas-common.toml"
