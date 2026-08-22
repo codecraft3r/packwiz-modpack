@@ -9,8 +9,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7A11C0DE20000002"]
 			description: [
-				"Craft a Coffin to safely sleep through the lethal daylight and gather blood bottles to stay fed."
+				"Craft a Coffin to safely sleep through the lethal daylight, and set up your blood storage with a Blood Pedestal."
 				""
 				"Completing this awards a Vampire Knowledge Book, a Vampire Cloak, and materials to forge blood weapons!"
 			]
@@ -26,16 +27,6 @@
 					id: "7A11C0DE40000012"
 					table_id: "7A11C0DEF0000001"
 					type: "choice"
-				}
-				{
-					id: "7A11C0DE40000013"
-					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000014"
-					item: { count: 2, id: "minecraft:iron_block" }
-					type: "item"
 				}
 				{
 					id: "7A11C0DE40000015"
@@ -54,7 +45,7 @@
 				}
 				{
 					id: "7A11C0DE40000022"
-					item: { count: 4, id: "vampirism:blood_bottle" }
+					item: { count: 1, id: "vampirism:blood_pedestal" }
 					type: "item"
 				}
 			]
@@ -360,6 +351,16 @@
 				{
 					id: "7A11C0DE40000092"
 					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000013"
+					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000014"
+					item: { count: 2, id: "minecraft:iron_block" }
 					type: "item"
 				}
 				{

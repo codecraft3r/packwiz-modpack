@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7A11C0DE20000003"]
 			description: [
 				"Craft a Hunter Table to access specialized hunter gear, stakes, and upgrades."
 				""
@@ -259,7 +260,7 @@
 							"irons_spellbooks:spell_container": {
 								data: [
 									{
-										id: "irons_spellbooks:smite"
+										id: "irons_spellbooks:divine_smite"
 										level: 1
 									}
 								]

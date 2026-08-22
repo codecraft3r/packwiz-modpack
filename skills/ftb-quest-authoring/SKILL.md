@@ -85,7 +85,8 @@ Balance against the slowest regular player and the server's current state, not i
 - Align rewards to stage utility: early rewards should solve immediate survival friction (armor, weapons, food, bedding, basic tools) rather than dormant high-tier materials. Mid-game quests should supply infrastructure solutions (such as leads, fences, and gates alongside blood altar/animal penning quests; brewing stands and potion ingredients for alchemy).
 - Provide meaningful consumable batches: avoid token scraps (such as 2 common ink, 1 stake, 4 emeralds). Award useful batches (such as 16 rare + 4 epic ink) and balanced early/mid utility or combat spells that exist in the pack.
 - Measure item rewards against recipe and gameplay thresholds. A loose component that cannot enable a craft, service, or meaningful next step is inventory clutter; award a usable bundle or currency/player-choice utility instead.
-- Keep adjacent item rewards distinct. Scale late-game rewards beyond repeated starter lighting, scaffolding, or token raw materials while still avoiding tier skips and faction imbalance.
+- Keep adjacent item rewards distinct. Scale late-game rewards beyond repeated starter lighting, scaffolding, or token raw materials while still avoiding tier skips and faction imbalance. Consumable items (food, fuel, ammunition, bottles, film) are an exception to the uniqueness rule when the repeat appears in a different chapter.
+- Never reward an item that is later used as a task condition in any descendant quest, and never use a rewarded item as a later condition. Either the reward changes or the condition does — check every reward against all downstream tasks, not just the next quest.
 
 ### Player-facing writing contract
 
