@@ -171,6 +171,60 @@ Never create quests requiring territory invasion, griefing, or untrackable sparr
 }
 ~~~
 
+## Formatting & Special Characters (Avoiding `&` Formatting Errors)
+
+FTB Quests evaluates text fields (chapter group titles, chapter names, subtitles, quest titles, descriptions, and reward/task labels) through Minecraft's legacy color-code formatter, where `&` is a formatting token (e.g. `&6` for gold, `&l` for bold).
+
+If a string contains a literal ampersand followed by whitespace (` & `), the parser attempts to interpret the space character as a color code, crashing string rendering and displaying the red error banner:
+```text
+Invalid formatting! You must escape whitespace after & with \&!
+```
+
+### Formatting Rules:
+- **Never use literal unescaped `& ` in SNBT strings.**
+- Replace ` & ` with the word ` and ` in all user-facing strings (e.g., `"Introduction and Rules"`, `"Factions and Progression"`).
+- If an ampersand is strictly required, escape the whitespace: `\& `. Prefer using `and` for clean cross-version compatibility.
+
+---
+
+## Data Components & Codec Serialization (1.20.5+ / 1.21+)
+
+In modern Minecraft versions (1.20.5+ and 1.21+), complex items (such as spell scrolls, potion containers, and custom mod attachments) use Data Components governed by strict Mojang `RecordCodecBuilder` / `MapCodec` deserializers.
+
+If an item component in an SNBT task or reward is missing required codec fields, NeoForge/Minecraft rejects the item during deserialization, causing FTB Quests to flag the quest and chapter with a red exclamation mark (`!`) in the sidebar.
+
+### Iron's Spells Scroll Component Pattern:
+When defining `irons_spellbooks:scroll` rewards or tasks, always provide the complete `spell_container` codec structure (`maxSpells`, `mustEquip`, `spellWheel`, slot `index`, and `locked`):
+
+~~~snbt
+{
+  id: "<unique-reward-id>"
+  type: "item"
+  title: "Scroll of Heal"
+  item: {
+    id: "irons_spellbooks:scroll"
+    count: 1
+    components: {
+      "irons_spellbooks:spell_container": {
+        data: [
+          {
+            id: "irons_spellbooks:heal"
+            index: 0
+            level: 1
+            locked: false
+          }
+        ]
+        maxSpells: 1
+        mustEquip: false
+        spellWheel: false
+      }
+    }
+  }
+}
+~~~
+
+---
+
 ## Branch and exchange patterns
 
 For an "any N of M" route, create M comparable quests, attach them directly to the same common opener, and make the capstone depend on all M with the target schema's minimum set to N. Compute a shortest path to the capstone. If every alternative depends on one of its siblings, the real requirement may be N+1 even though the capstone says N.
@@ -237,6 +291,8 @@ A generated graph board proves source geometry only. Label it as source-level ev
 - [ ] Every task/reward type and required field is accepted by the installed FTB Quests version.
 - [ ] Every item, block, entity, advancement, statistic, recipe, currency, and command namespace resolves in the target pack.
 - [ ] Every task and reward item is confirmed obtainable in survival (no backend, internal, or creative-only items).
+- [ ] Item component structures (e.g., `irons_spellbooks:spell_container`, potion effects) include all mandatory Java `RecordCodecBuilder` fields (`maxSpells`, `mustEquip`, `spellWheel`, slot `index`, etc.) to prevent deserialization crashes and red `!` chapter badges.
+- [ ] No unescaped literal `& ` formatting tokens exist in group headers, chapter names, subtitles, quest titles, or descriptions.
 - [ ] Advancement criteria and stat semantics match the actual trigger.
 - [ ] Dependencies form an acyclic graph; the opener, branch minimum, and capstone are reachable.
 - [ ] The computed shortest path matches every advertised any-N-of-M requirement; no hidden sibling prerequisite raises N.
