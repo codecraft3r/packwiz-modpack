@@ -94,6 +94,48 @@ git config core.hooksPath .githooks
 
 Run that once per clone. CI should mirror the same command (see the JSON format for greppable output).
 
+## Validator fallibility — read before trusting a pass
+
+The validator is a **structural grammar checker, not a game**. It proves a file is
+well-formed SNBT; it cannot prove the file is *correct for the game*. Both false
+negatives (broken file passes) and false positives (working file flagged) exist.
+Known limits, each verified by probe:
+
+### False negatives — things it will PASS that are still wrong
+
+- **Semantics are entirely out of scope.** A fully "valid" file can reference
+  nonexistent items (`totally_fake_mod:item`), unknown quest fields
+  (`not_a_real_field: 42`), broken dependencies, or malformed data-component codecs
+  (e.g. an Iron's Spells scroll missing `maxSpells`/`index`) and get a clean pass.
+  Schema correctness is the mod's job; use the pack's other checks (`packwiz`
+  validation, in-game loading, `docs/vvh/SPELL_SCROLL_FORMAT.md`).
+- **Formatting-code corruption is invisible.** `title: "A & B"` parses fine but
+  breaks FTB Quests at render time (`Invalid formatting! You must escape whitespace
+  after & with \&!`). The validator does not scan string contents.
+- **Game-invalid values inside valid syntax.** `level: 99` on a capped spell,
+  counts of 0, negative prices — all grammar-clean.
+
+### False positives — things it FLAGS that actually work in game
+
+- **Unquoted strings containing spaces are rejected** (`invalid_value`). Some FTB
+  contexts tolerate them, but never rely on it: quote the string. Treat this flag
+  as advice to fix your file, not a validator bug to work around.
+- **Unquoted keys containing dots or leading digits are rejected** (`lex_error` /
+  `invalid_key`). Quote such keys (`"some.key": ...`) if you genuinely need them.
+- **Single-quoted strings cannot contain apostrophes** — `'it's'` reports
+  `unterminated_string`. FTB has no documented `\'` escape; reword or switch to
+  double quotes.
+
+### Practical trust model
+
+1. A **pass** means: balanced structure, legal tokens, no duplicate keys. It does
+   NOT mean the quest works.
+2. A **flag** usually means real breakage, but read the message — the unquoted-
+   string cases above are strictness, not correctness.
+3. Grammar-clean is necessary, not sufficient. Always pair it with at least one
+   semantic check: in-game load of the chapter, `/createScroll`-style runtime probes,
+   or the scripted graph audits used in this repo.
+
 ## Authoring tips
 
 - When in doubt about grammar, copy a known-good file (`config/ftbchunks-client.snbt` is a comprehensive real-world sample) and edit from there.
