@@ -759,7 +759,7 @@ hash = "d3f09520e471a838e8bb567b0308ea3b504516813658c03dd2b87c5db415b16d"
 
 [[files]]
 file = "kubejs/server_scripts/givespell.js"
-hash = "1e353106e5442ac90090eb087305cb2b41550e9146fb04c6bee699d981ac3640"
+hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"
