@@ -71,12 +71,22 @@ A graph can be acyclic and still lie about choice. Validate actual minimum paths
 
 Substantive progression should use a hard native criterion whenever possible: items, blocks, advancements, statistics, entities, recipes, or another task type confirmed in the installed FTB Quests version.
 
-Use a trust-based checkmark only when native detection is unsuitable, especially for builds, social agreements, tours, demonstrations, or human review. A checkmark-only quest should normally satisfy all of these:
+### Quest classes
 
-- It is optional, explanatory, social, or primarily world-building.
-- Its prerequisites represent meaningful effort, or its reward is modest.
-- Server currency is not its primary reward.
+- **Explanatory** — initial/tutorial quests (for example, "how to use the quest book"). Checkmark-only by definition. No reward by default; a minimal item reward only when a dev requests it. May be required for progression to future quests.
+- **Optional** — not required to reach future quests. May have prerequisites and real (hard) conditions; optional describes graph position, not effort.
+- **Substantive** — everything else. Requires a hard native criterion wherever the installed pack can verify one.
+
+Quests with checkmarks or other weak checks must not give strong rewards, and never server currency.
+
+Use a trust-based checkmark only when native detection is unsuitable, especially for builds, social agreements, tours, demonstrations, or human review. A checkmark-only quest must satisfy all of these:
+
+- It is explanatory (per the definition above) or optional.
+- Its prerequisites are difficult, or its reward is minimal.
+- Server currency is never its primary reward.
 - The text tells the player exactly what clicking the checkmark attests.
+
+A checkmark quest that fails one of these is a defect, not a judgment call.
 
 Never ship a placeholder action that looks functional. If a starter-kit choice, faction registration, or social service has no delivery/verification mechanism, implement a verified native choice/checkmark, explicitly mark it as a manual attestation, or remove/hide it until ready.
 
@@ -114,11 +124,14 @@ Be as generous as the verified challenge and current progression band safely all
 
 When the pack/server has a central issued currency—such as Create: Numismatics Bevels—use it as the default reward for substantive one-time progression only when desirable server-controlled sinks exist.
 
+- Issue currency directly as a guaranteed fixed reward. Never place it as an entry in a random or choice reward table; players must not gamble on receiving it.
 - Standard quest progression should be the fastest normal source.
 - The currency should let players choose what is valuable to them.
 - The server must exchange it for useful goods, infrastructure, services, cosmetics/status, or capped progression support.
 - A currency with no sinks is decorative clutter.
 - Thematic items should usually supplement currency, not replace it with a weaker random object.
+- One-time quests may be the fastest route to selected resources if the payout is earned, finite, non-compounding, and comparable across factions.
+- Repeatable quests must not be rapidly farmable or become the most optimal way to progress the game; repeatable currency sources are fallback income (for example, after all quests are completed), gated behind substantial progress, limited by cooldown/team scope/cost/stock, and never able to outpace normal play or unreasonably compound.
 
 ### Usable bundle rule
 
@@ -162,10 +175,10 @@ Before release, answer all of these with evidence:
 | Mandatory topology | Every required rule/onboarding clause reaches the terminal gate |
 | Optional topology | Specialty/faction choices are symmetric, optional as advertised, and reconverge correctly |
 | Criteria | Substantive progression uses hard native checks where possible |
-| Trust checks | Optional/explanatory or modestly rewarded; explicit attestation; no default currency payout |
+| Trust checks | Explanatory/optional class, difficult prereqs or minimal reward, explicit attestation, no currency payout |
 | Task semantics | Inspect, consume, place, and contribute are unambiguous |
 | Functional feedback | No placeholder or unresponsive task; choice rewards actually deliver |
-| Eligibility | No visible quest is impossible for its intended current audience |
+| Eligibility | No visible quest is impossible for its intended current audience; static proof acceptable, runtime check when reasonable |
 | Reward threshold | Every item bundle enables a real craft, service, or current-stage contribution |
 | Reward variety | Adjacent quests do not repeat filler; late milestones are not paid in starter scraps |
 | Currency | Progression issuance, sinks, repeatables, cooldowns, and team fragmentation are modeled |

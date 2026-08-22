@@ -7,6 +7,8 @@ description: Design, implement, balance, validate, and release FTB Quests chapte
 
 Build quests that give a server a reason to play together without letting a grinder, a lucky drop, or a reward loop decide who wins. Keep the method pack-agnostic: discover IDs, recipes, currencies, task syntax, and art conventions from the supplied pack instead of carrying assumptions from another pack.
 
+**Rule precedence:** economy and balance safety outrank every other rule in this skill. When guidance conflicts, resolve in favor of the stricter economic reading; breaking the economy breaks the world. Prose quality, art, pacing, and completeness all yield to it, and the resolution is noted in authoring notes.
+
 ## 1. Establish the brief
 
 Collect only the missing decisions that could change the design. Record:
@@ -71,7 +73,7 @@ Balance against the slowest regular player and the server's current state, not i
 - Keep separate ledgers for one-time personal issuance, one-time team issuance, the minimum intended route, completionism, repeatable income, and paid sinks. Model team fragmentation as well as one shared team.
 - Treat a native choice claim as the number of entries the installed implementation actually grants. Do not multiply currency exposure by unrelated table metadata such as display/loot size without verifying the semantics.
 - When the pack has a central server-issued currency and real server sinks, make currency the default reward for substantive progress and combine it with useful thematic items. Currency without desirable sinks has no durable value.
-- Set rewards near the most generous value justified by the verified challenge and current progression band. Pair currency with a useful thematic bundle on substantive quests unless the bundle would create a tier skip, duplication route, or faction advantage.
+- Set rewards near the most generous value justified by the verified challenge and current progression band. Pair currency with a useful thematic bundle on substantive quests unless the bundle would create a tier skip, duplication route, or faction advantage. The bundle is always intended; omit it only when every candidate bundle is unsafe, and record that omission in authoring notes.
 - Measure item rewards against recipe and gameplay thresholds. A loose component that cannot enable a craft, service, or meaningful next step is inventory clutter; award a usable bundle or currency/player-choice utility instead.
 - Keep adjacent item rewards distinct. Scale late-game rewards beyond repeated starter lighting, scaffolding, or token raw materials while still avoiding tier skips and faction imbalance.
 
@@ -93,11 +95,12 @@ Copy a nearby working SNBT object and change the smallest possible surface area.
 - Use stat tasks only with a real statistic ID and text that matches its trigger (for example, a battle-start statistic should say "enter/start a battle," not "win").
 - Use checkmark tasks for trust-based completion, social verification, or a human-reviewed build rather than introducing a script.
 - Give substantive non-explanatory quests a hard, native criterion wherever the installed pack can verify one. A checkmark-only quest should usually be optional or explanatory; otherwise require meaningful prerequisites and keep its payout modest. Do not make server currency its primary reward by default.
+- Do not write custom code (KubeJS, integration glue, custom task types) unless a dev clears it and no native path achieves the result. Do not attempt faction/class state integration without native support unless expressly requested and then validated; do not add custom checks unless the dev really wants them.
 - For a human-reviewed build, do not also consume a duplicate material bundle unless the quest is intentionally a donation. Placed blocks already cost resources; an extra consumed task can charge players twice. Use a non-consuming item preview, a checkmark, or a deliberate public-stock contribution.
 - For an any-of-many branch, set the installed schema's minimum dependency count and test the actual shortest and maximum paths.
 - Set an explicit optional quest flag for side stories when supported; do not rely only on the absence of downstream dependencies.
 - For a repeatable currency exchange, make the input an item task that consumes exactly the displayed price, set a deliberate cooldown, and set team_reward deliberately on every reward. A team-scoped task can let one payer unlock rewards for others if this is left implicit.
-- Use existing reward tables or native item/command/reputation rewards. Resolve every item component, count, and namespace before committing.
+- Use existing reward tables or native item/command/reputation rewards. Resolve every item component, count, and namespace before committing. Issue central currency directly as a guaranteed fixed reward; never place it as an entry in a random or choice reward table.
 - State whether an item task is an inventory inspection, consumed hand-in, or world-placement requirement. Never ship a placeholder task or an unresponsive social action as though it were functional.
 - Do not reward an item immediately before a task that merely detects possession of that same item; test the actual mechanic or a later consequence so the quest does not auto-complete from its own prerequisite reward.
 - If a quest has a faction/class anti-condition, hide it from currently ineligible players using verified native visibility support. If the shipped version cannot express that safely, redesign the condition or provide an accessible alternative instead of showing an impossible quest.
@@ -129,7 +132,8 @@ Run the narrowest useful checks, then expand them in proportion to risk:
 6. Source synchronization: regenerate or synchronize derived manifests/localization/indexes from the chosen authority, run a check-only/idempotency pass, and prevent a stale generator from clobbering live content.
 7. KubeJS boundary: confirm no custom quest logic was added. If existing scripts are involved, test them as-is and document the dependency.
 8. Small playtest: load a disposable world/server, open the chapter, claim the opener, complete one task from each task family used, trigger advancement/stat tasks, complete the minimum dependency path, run one repeatable exchange, and inspect the result as both a payer and a teammate. Check logs for parser, missing-ID, or reward errors.
-9. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened. State separately whether static parsing, server loading, client visual inspection, and two-account reward testing passed or remain pending.
+9. Eligibility evidence: static analysis is acceptable proof that every visible quest is completable by at least one intended player; add a runtime check at the end of the project when reasonable.
+10. Failure evidence: record commands, exit codes, screenshots/log excerpts, and the one remaining manual check. Do not report a playtest as successful when only static text inspection happened. State separately whether static parsing, server loading, client visual inspection, and two-account reward testing passed or remain pending.
 
 Also audit prose and completion clarity: no designer-facing claims in player text, no placeholder objectives, short graph titles, one coherent action per quest, hard criteria coverage for substantive progression, explicit consume/inspect/place semantics, and no currently visible quest that its audience cannot complete.
 
