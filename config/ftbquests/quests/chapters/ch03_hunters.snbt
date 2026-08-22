@@ -237,16 +237,21 @@
 				{
 					id: "7A11C0DE30000074"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:heal"
-										level: 1
-									}
-								]
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:heal"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -261,16 +266,21 @@
 				{
 					id: "7A11C0DE30000075"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:divine_smite"
-										level: 1
-									}
-								]
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:divine_smite"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -280,16 +290,21 @@
 				{
 					id: "7A11C0DE30000076"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:blessing_of_life"
-										level: 1
-									}
-								]
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:blessing_of_life"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -299,16 +314,21 @@
 				{
 					id: "7A11C0DE30000077"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:recall"
-										level: 1
-									}
-								]
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:recall"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -318,16 +338,21 @@
 				{
 					id: "7A11C0DE30000078"
 					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:spectral_hammer"
-										level: 1
-									}
-								]
-							}
+					components: {
+						"irons_spellbooks:spell_container": {
+							maxSpells: 1
+							spellWheel: false
+							mustEquip: false
+							data: [
+								{
+									id: "irons_spellbooks:spectral_hammer"
+									index: 0
+									level: 1
+									locked: true
+								}
+							]
 						}
+					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
