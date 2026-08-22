@@ -177,6 +177,11 @@
 					item: { count: 2, id: "numismatics:sprocket" }
 					type: "item"
 				}
+				{
+					id: "7A11C0DE400000D3"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			subtitle: "Ritual altars, blood storage, and livestock pens."
@@ -238,6 +243,11 @@
 						id: "irons_spellbooks:scroll"
 					}
 					title: "Scroll of Blood Slash"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000D4"
+					item: { count: 2, id: "numismatics:bevel" }
 					type: "item"
 				}
 				{
@@ -418,6 +428,11 @@
 				{
 					id: "7A11C0DE400000B4"
 					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000D5"
+					item: { count: 2, id: "numismatics:bevel" }
 					type: "item"
 				}
 			]

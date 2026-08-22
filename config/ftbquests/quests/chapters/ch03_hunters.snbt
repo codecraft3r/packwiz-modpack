@@ -254,6 +254,11 @@
 					type: "item"
 				}
 				{
+					id: "7A11C0DE300000D1"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
+				{
 					id: "7A11C0DE30000075"
 					item: {
 						components: {
