@@ -1,0 +1,444 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch04_vampires"
+	group: "7A11C0DE00000002"
+	icon: { id: "vampirism:coffin_red" }
+	id: "7A11C0DE40000000"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Craft a Coffin to safely sleep through the lethal daylight and gather blood bottles to stay fed."
+				""
+				"Completing this awards a Vampire Knowledge Book, a Vampire Cloak, and materials to forge blood weapons!"
+			]
+			icon: { id: "vampirism:coffin_red" }
+			id: "7A11C0DE40000001"
+			rewards: [
+				{
+					id: "7A11C0DE40000011"
+					item: { count: 1, id: "vampirism:vampire_book" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000012"
+					table_id: "7A11C0DEF0000001"
+					type: "choice"
+				}
+				{
+					id: "7A11C0DE40000013"
+					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000014"
+					item: { count: 2, id: "minecraft:iron_block" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000015"
+					item: { count: 1, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Coffins, blood, and the vampire tome."
+			tasks: [
+				{
+					id: "7A11C0DE40000021"
+					item: { count: 1, id: "vampirism:coffin_red" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000022"
+					item: { count: 4, id: "vampirism:blood_bottle" }
+					type: "item"
+				}
+			]
+			title: "Coffins & Night Survival"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7A11C0DE40000001"]
+			description: [
+				"Vampires thrive in gothic manors, crypts, and shadowed castles."
+				""
+				"Gather a starter bundle of gothic building materials: Deepslate Bricks, Dark Oak Wood, Fences, and Lanterns. Completing this rewards tripled building stock, obsidian for a full portal, and diamonds!"
+			]
+			icon: { id: "minecraft:deepslate_bricks" }
+			id: "7A11C0DE40000002"
+			rewards: [
+				{
+					id: "7A11C0DE40000031"
+					item: { count: 192, id: "minecraft:deepslate_bricks" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000032"
+					item: { count: 96, id: "minecraft:dark_oak_planks" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000033"
+					item: { count: 48, id: "minecraft:dark_oak_fence" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000034"
+					item: { count: 16, id: "minecraft:lantern" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000035"
+					item: { count: 32, id: "minecraft:torch" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000036"
+					item: { count: 1, id: "minecraft:stonecutter" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000037"
+					item: { count: 16, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000038"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000039"
+					item: { count: 16, id: "minecraft:obsidian" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Gather gothic materials for abundant building rewards."
+			tasks: [
+				{
+					id: "7A11C0DE40000041"
+					item: { count: 64, id: "minecraft:deepslate_bricks" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000042"
+					item: { count: 32, id: "minecraft:dark_oak_log" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000043"
+					item: { count: 16, id: "minecraft:dark_oak_fence" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000044"
+					item: { count: 8, id: "minecraft:lantern" }
+					type: "item"
+				}
+			]
+			title: "Gothic Manor & Castle Construction"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000001"]
+			description: [
+				"Acquire an Altar of Inspiration to advance your vampire level, and a Blood Container to store liquid blood."
+				""
+				"Completing this provides leads, walls, fences, and gates to build a livestock pen for a sustainable blood supply!"
+			]
+			icon: { id: "vampirism:altar_inspiration" }
+			id: "7A11C0DE40000003"
+			rewards: [
+				{
+					id: "7A11C0DE40000051"
+					item: { count: 4, id: "minecraft:lead" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000052"
+					item: { count: 32, id: "minecraft:deepslate_tile_wall" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000053"
+					item: { count: 32, id: "minecraft:oak_fence" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000054"
+					item: { count: 4, id: "minecraft:oak_fence_gate" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000055"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000056"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Ritual altars, blood storage, and livestock pens."
+			tasks: [
+				{
+					id: "7A11C0DE40000061"
+					item: { count: 1, id: "vampirism:altar_inspiration" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000062"
+					item: { count: 1, id: "vampirism:blood_container" }
+					type: "item"
+				}
+			]
+			title: "Altar Components & Blood Pen"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000003"]
+			description: [
+				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
+				""
+				"§4§lBlood Magic empowers Vampires with offensive life-siphoning and combat agility!§r Use your blood runes and inks to craft Cultist armor and inscribe blood spells."
+			]
+			icon: { id: "irons_spellbooks:copper_spell_book" }
+			id: "7A11C0DE40000004"
+			rewards: [
+				{
+					id: "7A11C0DE40000071"
+					item: { count: 4, id: "irons_spellbooks:blood_rune" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000072"
+					item: { count: 16, id: "irons_spellbooks:rare_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000073"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000074"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blood_slash"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Blood Slash"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000075"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blood_needles"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Blood Needles"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000076"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:acupuncture"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Acupuncture"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000077"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:ray_of_siphoning"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Ray of Siphoning"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000078"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:recall"
+										level: 1
+									}
+								]
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					title: "Scroll of Recall"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Inscribe blood magic and life-siphoning arts."
+			tasks: [
+				{
+					id: "7A11C0DE40000081"
+					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000082"
+					item: { count: 1, id: "irons_spellbooks:inscription_table" }
+					type: "item"
+				}
+			]
+			title: "Blood Arcana & Inscription"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000002"]
+			description: [
+				"Forge blood-infused equipment and carry a backpack to transport blood bottles during nighttime expeditions."
+			]
+			icon: { id: "vampirism:blood_infused_iron_ingot" }
+			id: "7A11C0DE40000005"
+			rewards: [
+				{
+					id: "7A11C0DE40000091"
+					item: { count: 8, id: "vampirism:blood_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000092"
+					item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000093"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Blood iron forging and night packs."
+			tasks: [
+				{
+					id: "7A11C0DE400000A1"
+					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000A2"
+					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					type: "item"
+				}
+			]
+			title: "Night Prowler Equipment"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE40000004"
+				"7A11C0DE40000005"
+			]
+			description: [
+				"Craft an Exposure camera and color film."
+				""
+				"Capture dramatic color portraits of your coven, or stealthy night reconnaissance photos of hunter positions to keep in your album!"
+			]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DE40000006"
+			rewards: [
+				{
+					id: "7A11C0DE400000B1"
+					item: { count: 2, id: "exposure:color_film" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B2"
+					item: { count: 2, id: "exposure:black_and_white_film" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B3"
+					item: { count: 1, id: "exposure:album" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B4"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Stealth surveillance and coven portraits."
+			tasks: [
+				{
+					id: "7A11C0DE400000C1"
+					item: { count: 1, id: "exposure:camera" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C2"
+					item: { count: 1, id: "exposure:color_film" }
+					type: "item"
+				}
+			]
+			title: "Espionage & Surveillance"
+			x: 0.0d
+			y: 3.5d
+		}
+	]
+	title: "04 · The Vampire Coven"
+}

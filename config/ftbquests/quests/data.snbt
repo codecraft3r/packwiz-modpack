@@ -1,4 +1,4 @@
-{
+﻿{
 	default_autoclaim_rewards: "disabled"
 	default_consume_items: false
 	default_quest_disable_jei: false
@@ -8,11 +8,12 @@
 	disable_gui: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
-	grid_scale: 0.65d
-	icon: { id: "minecraft:filled_map" }
-	lock_message: "DEV REVIEW: ALL NODES VISIBLE; CLAIMS LOCKED UNTIL DEPENDENCIES ARE COMPLETE."
+	grid_scale: 0.5d
+	icon: { id: "minecraft:book" }
+	lock_message: ""
 	pause_game: false
 	progression_mode: "flexible"
 	show_lock_icons: true
 	version: 13
 }
+

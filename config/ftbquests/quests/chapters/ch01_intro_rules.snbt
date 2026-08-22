@@ -1,0 +1,125 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch01_intro_rules"
+	group: "7A11C0DE00000001"
+	icon: { id: "minecraft:compass" }
+	id: "7A11C0DE10000000"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the server! This quest book is your guide to getting established, understanding server etiquette, and participating in faction activities."
+				""
+				"Take your initial orientation tools and check out the rules around this chapter before venturing out into the world."
+			]
+			icon: { id: "minecraft:compass" }
+			id: "7A11C0DE10000001"
+			rewards: [
+				{
+					id: "7A11C0DE10000011"
+					item: { count: 1, id: "minecraft:compass" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE10000012"
+					item: { count: 16, id: "minecraft:torch" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Orientation, tools, and getting started."
+			tasks: [
+				{
+					id: "7A11C0DE10000021"
+					title: "I Have Read the Welcome Guide"
+					type: "checkmark"
+				}
+			]
+			title: "Welcome & Starter Kit"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A11C0DE10000001"]
+			description: [
+				"You can claim chunks in your map interface via FTB Chunks to prevent unauthorized modification and griefing."
+				""
+				"Always build permanent homes and bases on designated permanent land. Respect other players' chunk claims and boundaries."
+			]
+			icon: { id: "minecraft:filled_map" }
+			id: "7A11C0DE10000002"
+			shape: "diamond"
+			subtitle: "Claiming land and protecting your bases."
+			tasks: [
+				{
+					id: "7A11C0DE10000022"
+					title: "I Understand Land Claims"
+					type: "checkmark"
+				}
+			]
+			title: "Land Claims & FTB Chunks"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DE10000001"]
+			description: [
+				"The two active factions are Vampires and Hunters. Creating separate third-party warring factions is discouraged."
+				""
+				"§l§6THE NEUTRAL RULE:§r Neutral players (civilians, traders, farmers) are to be §l§cLEFT COMPLETELY ALONE§r unless they explicitly provoke conflict."
+				""
+				"Rivalry between Vampires and Hunters should be playful, spirited, and non-destructive. No griefing, theft, or irreversible damage."
+			]
+			icon: { id: "minecraft:shield" }
+			id: "7A11C0DE10000003"
+			shape: "octagon"
+			subtitle: "Playful rivalry, non-griefing, and neutral protection."
+			tasks: [
+				{
+					id: "7A11C0DE10000023"
+					title: "I Accept the Neutral & Conflict Rules"
+					type: "checkmark"
+				}
+			]
+			title: "Rules of Engagement & Neutrals"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE10000002"
+				"7A11C0DE10000003"
+			]
+			description: [
+				"You can create or join an FTB Team with teammates using the FTB Teams menu to share quest progress and claims."
+				""
+				"The server uses Create: Numismatics currency: Spurs, Bevels, Sprockets, and Cogs. Earn coins by completing substantive quest milestones and trade with other players!"
+			]
+			icon: { id: "numismatics:bevel" }
+			id: "7A11C0DE10000004"
+			rewards: [
+				{
+					id: "7A11C0DE10000014"
+					item: { count: 4, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Teams, economy, and Numismatics coins."
+			tasks: [
+				{
+					id: "7A11C0DE10000024"
+					title: "I Understand Teams and Coins"
+					type: "checkmark"
+				}
+			]
+			title: "FTB Teams & Economy"
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "01 · Introduction & Rules"
+}
