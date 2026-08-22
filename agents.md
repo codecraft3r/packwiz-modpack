@@ -20,6 +20,14 @@ The validator the SNBT skill wraps lives at `scripts/validate_snbt.py` and runs 
 
 ---
 
+## 0b. Minecraft wiki — use minecraft.wiki
+
+When looking up "official" Minecraft information (items, blocks, mechanics, data values, crafting recipes, advancement IDs), use **[https://minecraft.wiki/](https://minecraft.wiki/)**.
+
+There is no Mojang-official wiki. `minecraft.wiki` is the community-maintained successor and the best available source. The wiki **moved from Fandom**; any `minecraft.fandom.com` URLs or links are **outdated and invalid** — do not use, cite, or follow them (stale content, missing modern-version data). If a source, bookmark, or agent memory points at fandom, re-resolve it on `minecraft.wiki`.
+
+---
+
 ## 1. Import Workflows
 
 We use the automated Python helper script [packwiz_helper.py](file:///c:/Users/nmitc/packwiz-modpack/scripts/packwiz_helper.py) located at `scripts/packwiz_helper.py` to handle all imports.
