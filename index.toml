@@ -1516,7 +1516,7 @@ metafile = true
 
 [[files]]
 file = "mods/vista-aeronautics-fix.pw.toml"
-hash = "3de56e08b6ffc7bd3e4d02ed90efcce132f62b8dd6b4f2450807706f11d31e6d"
+hash = "e6984ff406125d06bd2b27acbc7c9ed3f524e2110649963461fa5a18ea39ac96"
 metafile = true
 
 [[files]]
