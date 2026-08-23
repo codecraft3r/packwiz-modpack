@@ -1,7 +1,19 @@
 ["Umbrellas Durability"]
+	#The durability in seconds of the Iron Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	ironUmbrellaDurability = 600
+	#The durability in seconds of the Gold Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	goldUmbrellaDurability = 300
+	#The durability in seconds of the Diamond Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	diamondUmbrellaDurability = -1
 	#The durability in seconds of the Netherite Umbrella when in the sun. Set to -1 if you want it to be unbreakable
 	netheriteUmbrellaDurability = -1
 
 ["Umbrellas Speed"]
+	#The Speed Modifier of the Umbrella. Set to 0 to disable.
+	ironUmbrellaSpeed = -0.35
+	#The Speed Modifier of the Umbrella. Set to 0 to disable.
+	goldUmbrellaSpeed = -0.1
+	#The Speed Modifier of the Umbrella. Set to 0 to disable.
+	diamondUmbrellaSpeed = -0.2
 	#The Speed Modifier of the Umbrella. Set to 0 to disable.
 	netheriteUmbrellaSpeed = 0.0
