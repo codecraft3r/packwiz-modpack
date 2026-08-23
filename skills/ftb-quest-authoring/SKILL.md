@@ -24,7 +24,9 @@ Collect only the missing decisions that could change the design. Record:
 
 Do not repeat answers already present in the request. If a high-impact value is unknown, state a reasonable assumption and make it easy to revise.
 
-For standard multi-faction campaigns, organize starting progression into four foundational chapters: (1) Introduction & Rules (minimal closed-loop onboarding), (2) Choosing a Faction (core faction paths + protected neutral civic path), (3) Primary Faction A line, and (4) Primary Faction B line. Focus starting chapters on concrete collaborative tasks, building incentives, and playful rivalry rather than an elaborate prewritten story.
+For standard multi-faction campaigns, organize starting progression into foundational chapters: (1) Introduction & Rules (minimal closed-loop onboarding), (2) Choosing a Faction (symmetrical presentation of core faction paths + protected neutral civic path), followed by dedicated chapters for each primary faction. Structure each faction chapter using the **Core Parity Spine + Specialized Branches** architecture:
+- **Core Parity Spine (Themed/Reskinned for flavor, structurally mirrored for balance):** Mirrored milestone tiers (Tier 1: Foundation/Settlement -> Tier 2: Workstations & Infrastructure -> Tier 3: Logistics & Power -> Tier 4: Faction Capstone) that maintain identical progression depth, pacing, and economic reward tiers so no faction gains an unfair server advantage.
+- **Specialized Mod Branches (Exclusive gameplay loops):** Off-shooting branches attached to the core nodes that engage exclusively with the specific mods in the pack assigned to that faction's identity (unique mod mechanics, exclusive workstations, mod-specific abilities, distinct palette builds, and tailored challenges). These ensure factions do not feel like cookie-cutter clones and provide unique gameplay experiences.
 
 Determine whether the world is persistent, seasonal, or event-based before framing the campaign. Do not imply a wipe, finale, or disposable "season" when the intended experience is a long-lived SMP; use civic milestones, evolving roles, maintenance, and future hooks instead.
 

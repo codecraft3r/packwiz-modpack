@@ -225,6 +225,31 @@ When defining `irons_spellbooks:scroll` rewards or tasks, always provide the com
 
 ---
 
+## Core Parity Spine + Specialized Branches Pattern (Faction Campaigns)
+
+For multi-faction or specialized campaigns, balance economy and progression parity while giving each faction unique gameplay driven by the pack's installed mods:
+
+```text
+       [ Core Tier 1: Foundation / Base ]
+              |                \
+              |                 +--> [ Exclusive Branch: Mod Mechanics Tier 1 ]
+              v
+       [ Core Tier 2: Workstations & Infra ]
+              |                \
+              |                 +--> [ Exclusive Branch: Specialized Abilities/Gear ]
+              v
+       [ Core Tier 3: Logistics & Power ]
+              |                \
+              |                 +--> [ Exclusive Branch: Faction Warfare / Outposts ]
+              v
+       [ Core Tier 4: Faction Capstone ]
+```
+
+1. **Core Parity Spine:** Every faction has an equivalent vertical spine of major milestone nodes (Tier 1 -> Tier 2 -> Tier 3 -> Tier 4). The tasks are themed to the faction, but the required time investment, progression stage, currency payouts, and utility rewards are strictly mirrored.
+2. **Specialized Mod Branches:** Off of each core milestone node, attach exclusive side branches that dive into the unique mechanics of the mods assigned to that faction (e.g. exclusive workstations, spell trees, machinery, specialized building palettes, and claim-safe rivalries).
+
+---
+
 ## Branch and exchange patterns
 
 For an "any N of M" route, create M comparable quests, attach them directly to the same common opener, and make the capstone depend on all M with the target schema's minimum set to N. Compute a shortest path to the capstone. If every alternative depends on one of its siblings, the real requirement may be N+1 even though the capstone says N.
@@ -315,6 +340,7 @@ A generated graph board proves source geometry only. Label it as source-level ev
 - [ ] Item tasks state inspect, consume, place, or public-contribution semantics, and no prerequisite reward trivially auto-completes the next task.
 - [ ] Every material reward reaches a useful current-stage recipe/service threshold; adjacent rewards are distinct and late milestones avoid starter filler.
 - [ ] Faction/class anti-conditions use verified visibility support or an accessible redesign; no ordinary visible quest is currently impossible for its audience.
+- [ ] Faction campaigns implement the Core Parity Spine (mirrored milestone tiers & economic balance) with specialized mod-driven branches (exclusive mod mechanics, workstations, palettes, and challenges).
 - [ ] Persistent-world campaigns avoid unrequested wipe/finale framing and leave infrastructure, roles, or future pressures in play.
 - [ ] Every icon/image reference resolves with exact case and / separators.
 - [ ] Edited layouts have no accidental overlap/crossing, and source renders are not mislabeled as client screenshots.

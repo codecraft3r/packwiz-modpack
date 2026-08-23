@@ -59,11 +59,17 @@ Do not reward players for agreeing to unread rules. Rule acknowledgements may us
 
 Factions, specialties, professions, and optional play styles may fan out:
 
-- For multi-faction packs, organize starting progression into four foundational chapters:
+- **Pack-Agnostic Campaign Structure:** Adapt chapter themes dynamically to the pack's installed mods (e.g. Magic vs. Tech, Empire vs. Rebellion, Vampires vs. Hunters). Organize foundational progression into:
   1. **Introduction & Rules:** Compact, closed-loop onboarding for rules and claim boundaries.
-  2. **Choosing a Faction:** Symmetrical presentation of the core factions alongside an explicit, protected Neutral / Civic path.
-  3. **Primary Faction A Line:** Core progression, palette builds, and claim-safe rivalry.
-  4. **Primary Faction B Line:** Symmetrical progression, palette builds, and claim-safe rivalry.
+  2. **Choosing a Faction / Specialization:** Symmetrical presentation of the core factions alongside an explicit, protected Neutral / Civic path.
+  3. **Dedicated Faction Chapters:** Authored using the **Core Parity Spine + Specialized Branches** pattern.
+- **The Core Parity Spine (Balance Engine):**
+  - Mirrored milestone tiers (Tier 1: Foundation $\rightarrow$ Tier 2: Workstations & Infrastructure $\rightarrow$ Tier 3: Logistics & Expansion $\rightarrow$ Tier 4: Faction Capstone).
+  - Keeps progression depth, pacing, and total economic issuance (currencies, crafting ingots, utility bundles) strictly balanced across factions.
+  - Nodes are themed/reskinned to fit each faction's aesthetic while requiring equivalent effort and stage investment.
+- **Specialized Mod-Driven Branches (Distinct Identity):**
+  - Distinct sub-branches that sprout off the core milestone nodes, engaging with mod mechanics specific to that faction's identity (e.g., unique crafting stations, mod-specific abilities, specialized combat/defense gear, distinct building palettes, and tailored challenges).
+  - Ensures factions are never carbon copies or simple name swaps; each faction offers a distinct gameplay experience and role fantasy.
 - Place equivalent choices symmetrically around a clear center or spine.
 - Put the neutral/default route on the center axis when the visual logic is a three-way choice. Give neutral players practical survival jump-starts (full iron armor and tools, bed, food, currency) rather than token items, and protect them from faction combat/pranking quests.
 - Re-converge parallel specialties at an explicit any-N-of-M breadth gate when cooperation or team composition matters.
