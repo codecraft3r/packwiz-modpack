@@ -198,11 +198,11 @@
 				}
 			]
 			title: "Altar Components and Blood Pen"
-			x: 2.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7A11C0DE40000003"]
+			dependencies: ["7A11C0DE40000001"]
 			description: [
 				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
 				""
@@ -229,21 +229,21 @@
 				{
 					id: "7A11C0DE40000074"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:blood_slash"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blood_slash"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -258,21 +258,21 @@
 				{
 					id: "7A11C0DE40000075"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:blood_needles"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blood_needles"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -282,21 +282,21 @@
 				{
 					id: "7A11C0DE40000076"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:acupuncture"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:acupuncture"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -306,21 +306,21 @@
 				{
 					id: "7A11C0DE40000077"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:ray_of_siphoning"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:ray_of_siphoning"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -330,21 +330,21 @@
 				{
 					id: "7A11C0DE40000078"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:recall"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:recall"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -368,7 +368,7 @@
 			]
 			title: "Blood Arcana and Inscription"
 			x: 2.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DE40000002"]
@@ -423,10 +423,183 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"7A11C0DE40000004"
-				"7A11C0DE40000005"
+			dependencies: ["7A11C0DE40000003"]
+			description: [
+				"Construct an Altar of Infusion to synthesize Enhanced Blood Infused Iron."
+				""
+				"Enhanced Blood Infused Iron forms the backbone of superior vampire armaments, blood rings, and high-tier coven relics."
 			]
+			icon: { id: "vampirism:altar_infusion" }
+			id: "7A11C0DE40000007"
+			rewards: [
+				{
+					id: "7A11C0DE4000007A"
+					item: { count: 16, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE4000007B"
+					item: { count: 16, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE4000007C"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Infusion rituals and enhanced dark metallurgy."
+			tasks: [
+				{
+					id: "7A11C0DE4000007D"
+					item: { count: 1, id: "vampirism:altar_infusion" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE4000007E"
+					item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Sanguine Infusion and Metallurgy"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000004"]
+			description: [
+				"Inscribe Blood Runes into dark cloth at the Inscription Table to weave Cultist Vestments."
+				""
+				"Cultist robes grant immense bonuses to Blood Spell power, siphoning efficiency, and evasive mobility under cover of darkness."
+			]
+			icon: { id: "irons_spellbooks:cultist_chestplate" }
+			id: "7A11C0DE4000000A"
+			rewards: [
+				{
+					id: "7A11C0DE400000A4"
+					item: { count: 4, id: "irons_spellbooks:blood_rune" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000A5"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000A6"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Cultist robes and siphoning mastery."
+			tasks: [
+				{
+					id: "7A11C0DE400000A7"
+					item: { count: 1, id: "irons_spellbooks:cultist_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000A8"
+					item: { count: 1, id: "irons_spellbooks:cultist_boots" }
+					type: "item"
+				}
+			]
+			title: "Cultist Vestments and Sanguine Power"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000005"]
+			description: [
+				"Overcome the deadly daytime sun and master nocturnal aerial flight."
+				""
+				"Craft an Iron Umbrella to protect yourself from sun damage while out during the day, and craft Feathered Wings from Icarus to soar across the night skies!"
+			]
+			icon: { id: "vampiresneedumbrellas:iron_umbrella" }
+			id: "7A11C0DE40000009"
+			rewards: [
+				{
+					id: "7A11C0DE40000095"
+					item: { count: 1, id: "vampiresneedumbrellas:diamond_umbrella" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000096"
+					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000097"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Sun protection and nocturnal flight."
+			tasks: [
+				{
+					id: "7A11C0DE40000098"
+					item: { count: 1, id: "vampiresneedumbrellas:iron_umbrella" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000099"
+					item: { count: 1, id: "icarus:black_feathered_wings" }
+					type: "item"
+				}
+			]
+			title: "Daylight Defiance and Nocturnal Wings"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A11C0DE4000000A"]
+			description: [
+				"Construct an Altar of Cleansing and obtain Pure Blood from vampire nobility."
+				""
+				"Pure blood is the essential reagent for advancing beyond mortal vampire limits, enabling higher coven ranks and greater dark arts."
+			]
+			icon: { id: "vampirism:pure_blood_0" }
+			id: "7A11C0DE4000000B"
+			rewards: [
+				{
+					id: "7A11C0DE400000B5"
+					item: { count: 4, id: "vampirism:pure_blood_1" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B6"
+					item: { count: 8, id: "vampirism:blood_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B7"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Pure blood distillation and coven ascension."
+			tasks: [
+				{
+					id: "7A11C0DE400000B8"
+					item: { count: 1, id: "vampirism:pure_blood_0" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000B9"
+					item: { count: 1, id: "vampirism:altar_cleansing" }
+					type: "item"
+				}
+			]
+			title: "Pure Blood Extraction and Cleansing"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A11C0DE40000009"]
 			description: [
 				"Craft an Exposure camera and color film."
 				""
@@ -477,8 +650,111 @@
 				}
 			]
 			title: "Espionage and Surveillance"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DE4000000B"]
+			description: [
+				"Indulge in decadent sanguine culinary arts using Vampire's Delight."
+				""
+				"Ferment Blood Wine and bake Blood Pie using a Silver Knife to host grand nocturnal banquets for your coven."
+			]
+			icon: { id: "vampiresdelight:blood_wine_bottle" }
+			id: "7A11C0DE4000000C"
+			rewards: [
+				{
+					id: "7A11C0DE400000C3"
+					item: { count: 4, id: "vampiresdelight:blood_wine_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C4"
+					item: { count: 1, id: "vampiresdelight:blood_pie" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C5"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C6"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Blood vintage, dark banquets, and coven feasts."
+			tasks: [
+				{
+					id: "7A11C0DE400000C7"
+					item: { count: 1, id: "vampiresdelight:blood_wine_bottle" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C8"
+					item: { count: 1, id: "vampiresdelight:blood_pie" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE400000C9"
+					item: { count: 1, id: "vampiresdelight:silver_knife" }
+					type: "item"
+				}
+			]
+			title: "Coven Banquet and Blood Vintage"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE40000007"
+				"7A11C0DE40000006"
+				"7A11C0DE4000000C"
+			]
+			description: [
+				"Forge the legendary Enhanced Heart Seeker blade and harvest Pure Blood of the highest order."
+				""
+				"This capstone rewards a Blood Affinity Ring, four gold Cogs, and a full portal stock of Obsidian to solidify your dominion over the mortal realm!"
+			]
+			icon: { id: "vampirism:heart_seeker_enhanced" }
+			id: "7A11C0DE40000008"
+			rewards: [
+				{
+					id: "7A11C0DE40000083"
+					item: { count: 4, id: "numismatics:cog" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000084"
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_blood" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000085"
+					item: { count: 16, id: "minecraft:obsidian" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Heart Seeker, pinnacle blood, and coven capstone."
+			tasks: [
+				{
+					id: "7A11C0DE40000086"
+					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE40000087"
+					item: { count: 1, id: "vampirism:pure_blood_4" }
+					type: "item"
+				}
+			]
+			title: "Vampire Lordship and Heart Seeker"
 			x: 0.0d
-			y: 3.5d
+			y: 4.5d
 		}
 	]
 	title: "04 · The Vampire Coven"

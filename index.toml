@@ -110,11 +110,11 @@ hash = "016438400d2cca3a1c19c05e04fccb88243a302c251c0051441a3ec551e807db"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_hunters.snbt"
-hash = "224dbcf504e45617457ccc69ef4b9a1cdffc4a2b737a0eec13bdb5f7e0fa2a40"
+hash = "30cd849dbf02f20ae197ac0e19eaa90b108ba98a0b6c0c6a0952afdf502b18ac"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_vampires.snbt"
-hash = "8f9ac5e90aa3ada14e7c71b7ed3878dcc3e88f30b798033c627af40c2f3d86fd"
+hash = "738c76e35760faef7a0fb3d55c76fcf3704201cffa471c863197074785ca9102"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

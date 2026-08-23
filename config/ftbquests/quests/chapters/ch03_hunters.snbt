@@ -190,6 +190,11 @@
 					item: { count: 2, id: "numismatics:sprocket" }
 					type: "item"
 				}
+				{
+					id: "7A11C0DE30000058"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			subtitle: "Cauldrons, brewing, and holy water."
@@ -206,11 +211,11 @@
 				}
 			]
 			title: "Alchemical Countermeasures"
-			x: 2.5d
+			x: 0.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7A11C0DE30000003"]
+			dependencies: ["7A11C0DE30000001"]
 			description: [
 				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
 				""
@@ -237,21 +242,21 @@
 				{
 					id: "7A11C0DE30000074"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:heal"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:heal"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -259,28 +264,23 @@
 					type: "item"
 				}
 				{
-					id: "7A11C0DE300000D1"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
-				{
 					id: "7A11C0DE30000075"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:divine_smite"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:divine_smite"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -290,21 +290,21 @@
 				{
 					id: "7A11C0DE30000076"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:blessing_of_life"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:blessing_of_life"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -314,21 +314,21 @@
 				{
 					id: "7A11C0DE30000077"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:recall"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:recall"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
@@ -338,25 +338,30 @@
 				{
 					id: "7A11C0DE30000078"
 					item: {
-					components: {
-						"irons_spellbooks:spell_container": {
-							maxSpells: 1
-							spellWheel: false
-							mustEquip: false
-							data: [
-								{
-									id: "irons_spellbooks:spectral_hammer"
-									index: 0
-									level: 1
-									locked: true
-								}
-							]
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{
+										id: "irons_spellbooks:spectral_hammer"
+										index: 0
+										level: 1
+										locked: true
+									}
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
 						}
-					}
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
 					title: "Scroll of Spectral Hammer"
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000079"
+					item: { count: 2, id: "numismatics:bevel" }
 					type: "item"
 				}
 			]
@@ -376,7 +381,7 @@
 			]
 			title: "Holy Arcana and Inscription"
 			x: 2.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DE30000002"]
@@ -433,10 +438,193 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"7A11C0DE30000004"
-				"7A11C0DE30000005"
+			dependencies: ["7A11C0DE30000003"]
+			description: [
+				"Construct a Weapon Table to craft advanced Hunter weaponry, upgraded crossbows, and specialized quarrels."
+				""
+				"Equipping Vampire Killer Quarrels gives your ranged strikes lethal punch against high-tier vampires."
 			]
+			icon: { id: "vampirism:weapon_table" }
+			id: "7A11C0DE30000007"
+			rewards: [
+				{
+					id: "7A11C0DE3000007A"
+					item: { count: 16, id: "vampirism:crossbow_arrow_spitfire" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE3000007B"
+					item: { count: 16, id: "minecraft:diamond" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE3000007C"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Weapon tables, specialized arrows, and ballistics."
+			tasks: [
+				{
+					id: "7A11C0DE3000007D"
+					item: { count: 1, id: "vampirism:weapon_table" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE3000007E"
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
+					type: "item"
+				}
+			]
+			title: "Master Weaponry and Ammunition"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000004"]
+			description: [
+				"Forge Priest armor using Holy Runes at an Inscription Table."
+				""
+				"Priest Robes channel immense divine energy, significantly bolstering healing, holy damage, and passive spell resistance against dark arts."
+			]
+			icon: { id: "irons_spellbooks:priest_chestplate" }
+			id: "7A11C0DE3000000A"
+			rewards: [
+				{
+					id: "7A11C0DE300000A4"
+					item: { count: 4, id: "irons_spellbooks:holy_rune" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000A5"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000A6"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Priest vestments and divine channeling."
+			tasks: [
+				{
+					id: "7A11C0DE300000A7"
+					item: { count: 1, id: "irons_spellbooks:priest_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000A8"
+					item: { count: 1, id: "irons_spellbooks:priest_boots" }
+					type: "item"
+				}
+			]
+			title: "Vestments of the Divine Order"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000005"]
+			description: [
+				"Mount heavy ordnance to defend your watchtowers and outpost perimeter."
+				""
+				"Using Create Big Cannons, install a Cannon Mount and Cast Iron Barrel. Heavy artillery commands long-range area control against nocturnal attacks."
+			]
+			icon: { id: "createbigcannons:cannon_mount" }
+			id: "7A11C0DE30000009"
+			rewards: [
+				{
+					id: "7A11C0DE30000095"
+					item: { count: 8, id: "createbigcannons:powder_charge" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000096"
+					item: { count: 4, id: "minecraft:iron_block" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000097"
+					item: { count: 4, id: "create:precision_mechanism" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000098"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "Mounted cannons and heavy outpost defense."
+			tasks: [
+				{
+					id: "7A11C0DE30000099"
+					item: { count: 1, id: "createbigcannons:cannon_mount" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE3000009A"
+					item: { count: 1, id: "createbigcannons:cast_iron_cannon_barrel" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE3000009B"
+					item: { count: 1, id: "createbigcannons:powder_charge" }
+					type: "item"
+				}
+			]
+			title: "Watchtower Artillery"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A11C0DE3000000A"]
+			description: [
+				"Purify wild garlic in an alchemical cauldron and brew Enhanced Holy Water."
+				""
+				"Purified garlic repels vampires and protects base grounds, while enhanced holy water delivers massive splash damage to undead monstrosities."
+			]
+			icon: { id: "vampirism:purified_garlic" }
+			id: "7A11C0DE3000000B"
+			rewards: [
+				{
+					id: "7A11C0DE300000B5"
+					item: { count: 16, id: "vampirism:purified_garlic" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B6"
+					item: { count: 4, id: "vampirism:holy_water_bottle_enhanced" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B7"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Purified garlic wards and enhanced holy elixirs."
+			tasks: [
+				{
+					id: "7A11C0DE300000B8"
+					item: { count: 1, id: "vampirism:purified_garlic" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000B9"
+					item: { count: 1, id: "vampirism:holy_water_bottle_enhanced" }
+					type: "item"
+				}
+			]
+			title: "Holy Consecration and Pure Garlic"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A11C0DE30000009"]
 			description: [
 				"Use Exposure to craft a camera and black and white film."
 				""
@@ -465,6 +653,11 @@
 					item: { count: 2, id: "numismatics:sprocket" }
 					type: "item"
 				}
+				{
+					id: "7A11C0DE300000D2"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
 			]
 			shape: "gear"
 			size: 1.3d
@@ -482,9 +675,113 @@
 				}
 			]
 			title: "Reconnaissance and Propaganda"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DE3000000B"]
+			description: [
+				"Prepare fortified, nourishing field rations using Vampire's Delight culinary arts."
+				""
+				"Garlic Soup and Roasted Garlic grant robust vitality, warding off blood-drain debuffs and keeping the Order well-fed on campaign."
+			]
+			icon: { id: "vampiresdelight:garlic_soup" }
+			id: "7A11C0DE3000000C"
+			rewards: [
+				{
+					id: "7A11C0DE300000C3"
+					item: { count: 8, id: "vampiresdelight:garlic_soup" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C4"
+					item: { count: 1, id: "vampiresdelight:garlic_crate" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C5"
+					item: { count: 2, id: "numismatics:sprocket" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C6"
+					item: { count: 2, id: "numismatics:bevel" }
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Garlic cuisine and fortified field nutrition."
+			tasks: [
+				{
+					id: "7A11C0DE300000C7"
+					item: { count: 1, id: "vampiresdelight:garlic_soup" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C8"
+					item: { count: 1, id: "vampiresdelight:roasted_garlic" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE300000C9"
+					item: { count: 1, id: "vampiresdelight:silver_knife" }
+					type: "item"
+				}
+			]
+			title: "Hunter's Hearth and Garlic Banquet"
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DE30000007"
+				"7A11C0DE30000006"
+				"7A11C0DE3000000C"
+			]
+			description: [
+				"Achieve Grand Inquisitor mastery by forging an Enhanced Hunter Axe and brewing Enhanced Splash Holy Water."
+				""
+				"This capstone rewards a Holy Affinity Ring, four gold Cogs, and a full portal stock of Obsidian to complete your supremacy over the night!"
+			]
+			icon: { id: "vampirism:hunter_axe_enhanced" }
+			id: "7A11C0DE30000008"
+			rewards: [
+				{
+					id: "7A11C0DE30000083"
+					item: { count: 4, id: "numismatics:cog" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000084"
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000085"
+					item: { count: 16, id: "minecraft:obsidian" }
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Enhanced axe, holy splash vials, and Order capstone."
+			tasks: [
+				{
+					id: "7A11C0DE30000086"
+					item: { count: 1, id: "vampirism:hunter_axe_enhanced" }
+					type: "item"
+				}
+				{
+					id: "7A11C0DE30000087"
+					item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }
+					type: "item"
+				}
+			]
+			title: "Inquisitor's Masterwork"
 			x: 0.0d
-			y: 3.5d
+			y: 4.5d
 		}
 	]
 	title: "03 · The Hunter Order"
 }
+
