@@ -222,7 +222,7 @@ hash = "da5d3bdcba9700671e9f06e4015fc449999b797caaacf7de388e751241be4638"
 
 [[files]]
 file = "config/vampiresneedumbrellas-common.toml"
-hash = "b47ea0eaf10737174f83aec89931186a18b389fee9e6f075facc57d711d35e77"
+hash = "051947fc69d65659c72f46f8103f0d4f125831a436578429d5f6aa60aad6e29d"
 
 [[files]]
 file = "configureddefaults/config/sodium-options.json"

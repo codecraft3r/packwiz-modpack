@@ -1,8 +1,8 @@
 ["Umbrellas Durability"]
 	#The durability in seconds of the Iron Umbrella when in the sun. Set to -1 if you want it to be unbreakable
-	ironUmbrellaDurability = 600
+	ironUmbrellaDurability = 2700
 	#The durability in seconds of the Gold Umbrella when in the sun. Set to -1 if you want it to be unbreakable
-	goldUmbrellaDurability = 300
+	goldUmbrellaDurability = 900
 	#The durability in seconds of the Diamond Umbrella when in the sun. Set to -1 if you want it to be unbreakable
 	diamondUmbrellaDurability = -1
 	#The durability in seconds of the Netherite Umbrella when in the sun. Set to -1 if you want it to be unbreakable
