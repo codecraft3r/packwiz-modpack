@@ -9,779 +9,236 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7A11C0DE20000003"]
+			dependencies: ["7A11C0DE10000004"]
 			description: [
-				"Craft a Hunter Table to access specialized hunter gear, stakes, and upgrades."
-				""
-				"Wooden stakes allow you to finish off downed vampires before they can regenerate."
+				"Tamsin Rook keeps one blunt reminder above the bench after once choosing the wrong door. Its lesson is caution: a prepared workshop gives the next patrol time to think, and sacred brewing makes that refuge more than a place to hide."
 			]
 			icon: { id: "vampirism:hunter_table" }
 			id: "7A11C0DE30000001"
 			rewards: [
-				{
-					id: "7A11C0DE30000011"
-					item: { count: 1, id: "vampirism:hunter_hat_head_0" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000012"
-					item: { count: 1, id: "vampirism:hunter_coat_chest_normal" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000013"
-					item: { count: 1, id: "vampirism:hunter_coat_legs_normal" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000014"
-					item: { count: 1, id: "vampirism:hunter_coat_feet_normal" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000015"
-					item: { count: 32, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000016"
-					item: { count: 4, id: "numismatics:bevel" }
-					type: "item"
-				}
+				{ id: "7A11C0DE30002001", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002002", item: { count: 1, id: "vampirism:hunter_coat_head" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002003", item: { count: 1, id: "vampirism:hunter_coat_chest" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002004", item: { count: 1, id: "vampirism:hunter_coat_legs" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002005", item: { count: 1, id: "vampirism:hunter_coat_feet" }, team_reward: false, type: "item" }
 			]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Hunter Table, stakes, and equipment."
+			subtitle: "Order path · Foundation"
 			tasks: [
-				{
-					id: "7A11C0DE30000021"
-					item: { count: 1, id: "vampirism:hunter_table" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000022"
-					item: { count: 4, id: "vampirism:stake" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE30001001", item: { count: 1, id: "vampirism:hunter_table" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001002", item: { count: 4, id: "vampirism:stake" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Hunter Armory and Stakes"
+			title: "Hunter's Bench"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7A11C0DE30000001"]
 			description: [
-				"Hunters need secure, well-fortified outposts and watchtowers."
-				""
-				"Gather a starter bundle of fortified building materials: Stone Bricks, Logs, Iron Bars, and Lanterns. Completing this grants double building materials plus valuable crafting supplies so you can build a proper outpost!"
-			]
-			icon: { id: "minecraft:stone_bricks" }
-			id: "7A11C0DE30000002"
-			rewards: [
-				{
-					id: "7A11C0DE30000031"
-					item: { count: 128, id: "minecraft:stone_bricks" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000032"
-					item: { count: 64, id: "minecraft:oak_log" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000033"
-					item: { count: 32, id: "minecraft:iron_bars" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000034"
-					item: { count: 16, id: "minecraft:lantern" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000035"
-					item: { count: 1, id: "minecraft:stonecutter" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000036"
-					item: { count: 16, id: "minecraft:diamond" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000037"
-					item: { count: 64, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000038"
-					item: { count: 64, id: "create:andesite_alloy" }
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "Gather watchpost materials for generous building rewards."
-			tasks: [
-				{
-					id: "7A11C0DE30000041"
-					item: { count: 64, id: "minecraft:stone_bricks" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000042"
-					item: { count: 32, id: "minecraft:oak_log" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000043"
-					item: { count: 16, id: "minecraft:iron_bars" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000044"
-					item: { count: 8, id: "minecraft:lantern" }
-					type: "item"
-				}
-			]
-			title: "Fortified Outpost Construction"
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7A11C0DE30000001"]
-			description: [
-				"Craft an Alchemical Cauldron and brew Holy Water. Holy Water is an essential throwing weapon and cleansing agent against vampires."
+				"Distance can decide whether a patrol returns safely, and a stocked refuge gives frightened travelers another answer besides flight. Once that service is dependable, the weapon workshop can support harder roads."
 			]
 			icon: { id: "vampirism:alchemical_cauldron" }
-			id: "7A11C0DE30000003"
+			id: "7A11C0DE30000002"
 			rewards: [
-				{
-					id: "7A11C0DE30000051"
-					item: { count: 1, id: "minecraft:brewing_stand" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000052"
-					item: { count: 16, id: "minecraft:glass_bottle" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000053"
-					item: { count: 16, id: "minecraft:blaze_powder" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000054"
-					item: { count: 16, id: "minecraft:nether_wart" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000055"
-					item: { count: 8, id: "minecraft:glistering_melon_slice" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000056"
-					item: { count: 8, id: "minecraft:golden_carrot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000057"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000058"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Cauldrons, brewing, and holy water."
-			tasks: [
-				{
-					id: "7A11C0DE30000061"
-					item: { count: 1, id: "vampirism:alchemical_cauldron" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000062"
-					item: { count: 1, id: "vampirism:holy_water_bottle_normal" }
-					type: "item"
-				}
-			]
-			title: "Alchemical Countermeasures"
-			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7A11C0DE30000001"]
-			description: [
-				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
-				""
-				"§6§lHunters receive a natural buff to Holy Magic!§r Use your holy runes and inks to craft Priest armor and inscribe healing and smiting spells."
-			]
-			icon: { id: "irons_spellbooks:copper_spell_book" }
-			id: "7A11C0DE30000004"
-			rewards: [
-				{
-					id: "7A11C0DE30000071"
-					item: { count: 4, id: "irons_spellbooks:holy_rune" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000072"
-					item: { count: 16, id: "irons_spellbooks:rare_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000073"
-					item: { count: 4, id: "irons_spellbooks:epic_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000074"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:heal"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Heal"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000075"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:divine_smite"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Smite"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000076"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:blessing_of_life"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Blessing of Life"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000077"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:recall"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Recall"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000078"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:spectral_hammer"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Spectral Hammer"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000079"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
+				{ id: "7A11C0DE30002006", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002007", item: { count: 4, id: "vampirism:holy_water_bottle" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002008", item: { count: 16, id: "vampirism:holy_salt" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002009", item: { count: 8, id: "vampirism:pure_salt" }, team_reward: false, type: "item" }
 			]
 			shape: "gear"
-			subtitle: "Inscribe holy magic and utility spells."
+			subtitle: "Order path · Brewing"
 			tasks: [
-				{
-					id: "7A11C0DE30000081"
-					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000082"
-					item: { count: 1, id: "irons_spellbooks:inscription_table" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE30001003", item: { count: 1, id: "vampirism:alchemical_cauldron" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001004", item: { count: 1, id: "vampirism:holy_water_bottle" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Holy Arcana and Inscription"
-			x: 2.5d
+			title: "Sacred Brewing"
+			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DE30000002"]
 			description: [
-				"Equip yourself for long-range patrols and field reconnaissance."
-				""
-				"A Spyglass helps spot vampire movement from watchtowers, while a Crossbow and a Quiver keep you loaded with ammunition."
+				"Stronger night threats punish improvised gear and thin supply lines. A mature arsenal lets patrols meet danger at range, then pass reliable equipment to whoever takes the next watch."
 			]
-			icon: { id: "minecraft:spyglass" }
-			id: "7A11C0DE30000005"
+			icon: { id: "vampirism:weapon_table" }
+			id: "7A11C0DE30000003"
 			rewards: [
-				{
-					id: "7A11C0DE30000091"
-					item: { count: 64, id: "minecraft:arrow" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000092"
-					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000093"
-					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000094"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
+				{ id: "7A11C0DE30002010", item: { count: 3, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002011", item: { count: 32, id: "vampirism:crossbow_arrow_vampire_killer" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002012", item: { count: 32, id: "vampirism:crossbow_arrow_spitfire" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002013", item: { count: 16, id: "vampirism:crossbow_arrow_teleport" }, team_reward: false, type: "item" }
 			]
-			shape: "diamond"
-			subtitle: "Crossbows, spyglasses, and expedition gear."
+			shape: "gear"
+			subtitle: "Order path · Arsenal"
 			tasks: [
-				{
-					id: "7A11C0DE300000A1"
-					item: { count: 1, id: "minecraft:spyglass" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000A2"
-					item: { count: 1, id: "minecraft:crossbow" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000A3"
-					item: { count: 1, id: "supplementaries:quiver" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE30001005", item: { count: 1, id: "vampirism:weapon_table" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001006", item: { count: 1, id: "vampirism:enhanced_crossbow" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Hunter Scouting and Expeditions"
-			x: -2.5d
+			title: "Siege Arsenal"
+			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A11C0DE30000003"]
 			description: [
-				"Construct a Weapon Table to craft advanced Hunter weaponry, upgraded crossbows, and specialized quarrels."
-				""
-				"Equipping Vampire Killer Quarrels gives your ranged strikes lethal punch against high-tier vampires."
-			]
-			icon: { id: "vampirism:weapon_table" }
-			id: "7A11C0DE30000007"
-			rewards: [
-				{
-					id: "7A11C0DE3000007A"
-					item: { count: 16, id: "vampirism:crossbow_arrow_spitfire" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE3000007B"
-					item: { count: 16, id: "minecraft:diamond" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE3000007C"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Weapon tables, specialized arrows, and ballistics."
-			tasks: [
-				{
-					id: "7A11C0DE3000007D"
-					item: { count: 1, id: "vampirism:weapon_table" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE3000007E"
-					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
-					type: "item"
-				}
-			]
-			title: "Master Weaponry and Ammunition"
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A11C0DE30000004"]
-			description: [
-				"Forge Priest armor using Holy Runes at an Inscription Table."
-				""
-				"Priest Robes channel immense divine energy, significantly bolstering healing, holy damage, and passive spell resistance against dark arts."
-			]
-			icon: { id: "irons_spellbooks:priest_chestplate" }
-			id: "7A11C0DE3000000A"
-			rewards: [
-				{
-					id: "7A11C0DE300000A4"
-					item: { count: 4, id: "irons_spellbooks:holy_rune" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000A5"
-					item: { count: 4, id: "irons_spellbooks:epic_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000A6"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "Priest vestments and divine channeling."
-			tasks: [
-				{
-					id: "7A11C0DE300000A7"
-					item: { count: 1, id: "irons_spellbooks:priest_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000A8"
-					item: { count: 1, id: "irons_spellbooks:priest_boots" }
-					type: "item"
-				}
-			]
-			title: "Vestments of the Divine Order"
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A11C0DE30000005"]
-			description: [
-				"Mount heavy ordnance to defend your watchtowers and outpost perimeter."
-				""
-				"Using Create Big Cannons, install a Cannon Mount and Cast Iron Barrel. Heavy artillery commands long-range area control against nocturnal attacks."
-			]
-			icon: { id: "createbigcannons:cannon_mount" }
-			id: "7A11C0DE30000009"
-			rewards: [
-				{
-					id: "7A11C0DE30000095"
-					item: { count: 8, id: "createbigcannons:powder_charge" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000096"
-					item: { count: 4, id: "minecraft:iron_block" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000097"
-					item: { count: 4, id: "create:precision_mechanism" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000098"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "gear"
-			subtitle: "Mounted cannons and heavy outpost defense."
-			tasks: [
-				{
-					id: "7A11C0DE30000099"
-					item: { count: 1, id: "createbigcannons:cannon_mount" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE3000009A"
-					item: { count: 1, id: "createbigcannons:cast_iron_cannon_barrel" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE3000009B"
-					item: { count: 1, id: "createbigcannons:powder_charge" }
-					type: "item"
-				}
-			]
-			title: "Watchtower Artillery"
-			x: -2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A11C0DE3000000A"]
-			description: [
-				"Purify wild garlic in an alchemical cauldron and brew Enhanced Holy Water."
-				""
-				"Purified garlic repels vampires and protects base grounds, while enhanced holy water delivers massive splash damage to undead monstrosities."
-			]
-			icon: { id: "vampirism:purified_garlic" }
-			id: "7A11C0DE3000000B"
-			rewards: [
-				{
-					id: "7A11C0DE300000B5"
-					item: { count: 16, id: "vampirism:purified_garlic" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B6"
-					item: { count: 4, id: "vampirism:holy_water_bottle_enhanced" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B7"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Purified garlic wards and enhanced holy elixirs."
-			tasks: [
-				{
-					id: "7A11C0DE300000B8"
-					item: { count: 1, id: "vampirism:purified_garlic" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B9"
-					item: { count: 1, id: "vampirism:holy_water_bottle_enhanced" }
-					type: "item"
-				}
-			]
-			title: "Holy Consecration and Pure Garlic"
-			x: 2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A11C0DE30000009"]
-			description: [
-				"Use Exposure to craft a camera and black and white film."
-				""
-				"Take reconnaissance photos of vampire strongholds or snap dramatic propaganda photos for the Order to display in your watchpost!"
-			]
-			icon: { id: "exposure:camera" }
-			id: "7A11C0DE30000006"
-			rewards: [
-				{
-					id: "7A11C0DE300000B1"
-					item: { count: 2, id: "exposure:color_film" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B2"
-					item: { count: 2, id: "exposure:black_and_white_film" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B3"
-					item: { count: 1, id: "exposure:album" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000B4"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000D2"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.3d
-			subtitle: "Capture reconnaissance and propaganda photos."
-			tasks: [
-				{
-					id: "7A11C0DE300000C1"
-					item: { count: 1, id: "exposure:camera" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C2"
-					item: { count: 1, id: "exposure:black_and_white_film" }
-					type: "item"
-				}
-			]
-			title: "Reconnaissance and Propaganda"
-			x: -2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7A11C0DE3000000B"]
-			description: [
-				"Prepare fortified, nourishing field rations using Vampire's Delight culinary arts."
-				""
-				"Garlic Soup and Roasted Garlic grant robust vitality, warding off blood-drain debuffs and keeping the Order well-fed on campaign."
-			]
-			icon: { id: "vampiresdelight:garlic_soup" }
-			id: "7A11C0DE3000000C"
-			rewards: [
-				{
-					id: "7A11C0DE300000C3"
-					item: { count: 8, id: "vampiresdelight:garlic_soup" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C4"
-					item: { count: 1, id: "vampiresdelight:garlic_crate" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C5"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C6"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "Garlic cuisine and fortified field nutrition."
-			tasks: [
-				{
-					id: "7A11C0DE300000C7"
-					item: { count: 1, id: "vampiresdelight:garlic_soup" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C8"
-					item: { count: 1, id: "vampiresdelight:roasted_garlic" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE300000C9"
-					item: { count: 1, id: "vampiresdelight:silver_knife" }
-					type: "item"
-				}
-			]
-			title: "Hunter's Hearth and Garlic Banquet"
-			x: 2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"7A11C0DE30000007"
-				"7A11C0DE30000006"
-				"7A11C0DE3000000C"
-			]
-			description: [
-				"Achieve Grand Inquisitor mastery by forging an Enhanced Hunter Axe and brewing Enhanced Splash Holy Water."
-				""
-				"This capstone rewards a Holy Affinity Ring, four gold Cogs, and a full portal stock of Obsidian to complete your supremacy over the night!"
+				"Tamsin Rook calls a masterwork useful only when the least experienced patrol member can trust it. Meeting that standard leaves the Order a repeatable practice, and the warding kit opens wider travel."
 			]
 			icon: { id: "vampirism:hunter_axe_enhanced" }
-			id: "7A11C0DE30000008"
+			id: "7A11C0DE30000004"
 			rewards: [
+				{ id: "7A11C0DE30002014", item: { count: 4, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002015", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
-					id: "7A11C0DE30000083"
-					item: { count: 4, id: "numismatics:cog" }
+					id: "7A11C0DE30002016"
+					item: {
+						components: {
+							"irons_spellbooks:affinity_data": {
+								id: "irons_spellbooks:heal"
+								bonus: 1
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:affinity_ring"
+					}
+					team_reward: false
+					title: "Holy Affinity Ring"
 					type: "item"
 				}
-				{
-					id: "7A11C0DE30000084"
-					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE30000085"
-					item: { count: 16, id: "minecraft:obsidian" }
-					type: "item"
-				}
+				{ id: "7A11C0DE30002017", item: { count: 16, id: "minecraft:obsidian" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002018", item: { count: 1, id: "vampirism:garlic_diffuser" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002019", item: { count: 32, id: "vampirism:purified_garlic" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002020", item: { count: 16, id: "vampirism:stake" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002021", item: { count: 1, id: "vampirism:pitchfork" }, team_reward: false, type: "item" }
 			]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Enhanced axe, holy splash vials, and Order capstone."
+			subtitle: "Order path · Masterwork"
 			tasks: [
+				{ consume_items: false, id: "7A11C0DE30001007", item: { count: 1, id: "vampirism:hunter_axe_enhanced" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001008", item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }, title: "Keep for Inspection", type: "item" }
+			]
+			title: "Order's Masterwork"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000002"]
+			description: [
+				"Holy practice matters when healing and protection are available before a patrol turns desperate. A complete discipline lets the workshop teach new casters and broadens the Order's response beyond steel."
+			]
+			icon: { id: "irons_spellbooks:holy_rune" }
+			id: "7A11C0DE30000005"
+			optional: true
+			rewards: [
+				{ id: "7A11C0DE30002022", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002023", item: { count: 16, id: "irons_spellbooks:common_ink" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002024", item: { count: 8, id: "irons_spellbooks:uncommon_ink" }, team_reward: false, type: "item" }
 				{
-					id: "7A11C0DE30000086"
-					item: { count: 1, id: "vampirism:hunter_axe_enhanced" }
+					id: "7A11C0DE30002025"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [{ id: "irons_spellbooks:heal", index: 0, level: 1, locked: true }]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Heal"
 					type: "item"
 				}
 				{
-					id: "7A11C0DE30000087"
-					item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }
+					id: "7A11C0DE30002026"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [{ id: "irons_spellbooks:recall", index: 0, level: 1, locked: true }]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Recall"
 					type: "item"
 				}
 			]
-			title: "Inquisitor's Masterwork"
-			x: 0.0d
-			y: 4.5d
+			shape: "gear"
+			subtitle: "Specialist · Holy practice"
+			tasks: [
+				{ consume_items: false, id: "7A11C0DE30001009", item: { count: 1, id: "irons_spellbooks:spell_book" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001010", item: { count: 4, id: "irons_spellbooks:holy_rune" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001011", item: { count: 1, id: "irons_spellbooks:priest_helmet" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001012", item: { count: 1, id: "irons_spellbooks:priest_chestplate" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001013", item: { count: 1, id: "irons_spellbooks:priest_leggings" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001014", item: { count: 1, id: "irons_spellbooks:priest_boots" }, title: "Show Your Kit", type: "item" }
+			]
+			title: "Holy Arsenal"
+			x: 2.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000003"]
+			description: [
+				"Power that keeps moving after a patrol leaves turns a private workshop into dependable infrastructure. The expanded maintenance stock lets another line branch from the same works."
+			]
+			icon: { id: "create:mechanical_press" }
+			id: "7A11C0DE30000006"
+			optional: true
+			rewards: [
+				{ id: "7A11C0DE30002027", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002028", item: { count: 16, id: "create:shaft" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002029", item: { count: 8, id: "create:cogwheel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002030", item: { count: 4, id: "create:large_cogwheel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002031", item: { count: 8, id: "create:andesite_casing" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002032", item: { count: 4, id: "create:gearbox" }, team_reward: false, type: "item" }
+			]
+			shape: "gear"
+			subtitle: "Specialist · Workshop power"
+			tasks: [
+				{ consume_items: false, id: "7A11C0DE30001015", item: { count: 16, id: "create:andesite_alloy" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001016", item: { count: 1, id: "create:windmill_bearing" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001017", item: { count: 1, id: "create:water_wheel" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001018", item: { count: 1, id: "create:mechanical_drill" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001019", item: { count: 1, id: "create:mechanical_press" }, title: "Keep for Inspection", type: "item" }
+			]
+			title: "Siege Engineering"
+			x: -2.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE30000001"]
+			description: [
+				"A visible watchpost gives travelers a refuge and patrols a place to leave warnings. Once established, it becomes a shared landmark that later builders can reinforce rather than replace."
+			]
+			icon: { id: "minecraft:lantern" }
+			id: "7A11C0DE30000007"
+			optional: true
+			rewards: [
+				{ id: "7A11C0DE30002033", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002034", item: { count: 192, id: "minecraft:stone_bricks" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002035", item: { count: 96, id: "minecraft:oak_log" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002036", item: { count: 48, id: "minecraft:iron_bars" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE30002037", item: { count: 24, id: "minecraft:lantern" }, team_reward: false, type: "item" }
+			]
+			shape: "diamond"
+			subtitle: "Specialist · Public watch"
+			tasks: [
+				{ consume_items: false, id: "7A11C0DE30001020", item: { count: 64, id: "minecraft:stone_bricks" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001021", item: { count: 32, id: "minecraft:oak_log" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001022", item: { count: 16, id: "minecraft:iron_bars" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE30001023", item: { count: 8, id: "minecraft:lantern" }, title: "Keep for Inspection", type: "item" }
+			]
+			title: "Raise the Watch"
+			x: -2.75d
+			y: -4.0d
 		}
 	]
 	title: "03 · The Hunter Order"
 }
-

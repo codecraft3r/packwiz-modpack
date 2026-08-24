@@ -9,235 +9,135 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7A11C0DE20000002"]
+			dependencies: ["7A11C0DE10000004"]
 			description: [
-				"Craft a Coffin to safely sleep through the lethal daylight, and set up your blood storage with a Blood Pedestal."
-				""
-				"Completing this awards a Vampire Knowledge Book, a Vampire Cloak, and materials to forge blood weapons!"
+				"Ivo Mire records the nights he chose hunger over breaking a neighbor's trust in dry, exact handwriting. A measured refuge makes that restraint sustainable, and the next rite can begin without secrecy becoming an excuse."
 			]
 			icon: { id: "vampirism:coffin_red" }
 			id: "7A11C0DE40000001"
 			rewards: [
-				{
-					id: "7A11C0DE40000011"
-					item: { count: 1, id: "vampirism:vampire_book" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000012"
-					table_id: "7A11C0DEF0000001"
-					type: "choice"
-				}
-				{
-					id: "7A11C0DE40000015"
-					item: { count: 1, id: "numismatics:sprocket" }
-					type: "item"
-				}
+				{ id: "7A11C0DE40002001", item: { count: 1, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002002", item: { count: 2, id: "minecraft:gold_ingot" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002003", item: { count: 3, id: "minecraft:obsidian" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002004", item: { count: 3, id: "minecraft:oak_planks" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002005", item: { count: 1, id: "vampirism:blood_bottle" }, team_reward: false, type: "item" }
 			]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Coffins, blood, and the vampire tome."
+			shape: "circle"
+			subtitle: "Coven path · Foundation"
 			tasks: [
-				{
-					id: "7A11C0DE40000021"
-					item: { count: 1, id: "vampirism:coffin_red" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000022"
-					item: { count: 1, id: "vampirism:blood_pedestal" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE40001001", item: { count: 1, id: "vampirism:coffin_red" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001002", item: { count: 1, id: "vampirism:blood_pedestal" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Coffins and Night Survival"
+			title: "Night's Shelter"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7A11C0DE40000001"]
 			description: [
-				"Vampires thrive in gothic manors, crypts, and shadowed castles."
-				""
-				"Gather a starter bundle of gothic building materials: Deepslate Bricks, Dark Oak Wood, Fences, and Lanterns. Completing this rewards tripled building stock, obsidian for a full portal, and diamonds!"
-			]
-			icon: { id: "minecraft:deepslate_bricks" }
-			id: "7A11C0DE40000002"
-			rewards: [
-				{
-					id: "7A11C0DE40000031"
-					item: { count: 192, id: "minecraft:deepslate_bricks" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000032"
-					item: { count: 96, id: "minecraft:dark_oak_planks" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000033"
-					item: { count: 48, id: "minecraft:dark_oak_fence" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000034"
-					item: { count: 16, id: "minecraft:lantern" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000035"
-					item: { count: 32, id: "minecraft:torch" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000036"
-					item: { count: 1, id: "minecraft:stonecutter" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000037"
-					item: { count: 16, id: "minecraft:diamond" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000038"
-					item: { count: 64, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000039"
-					item: { count: 16, id: "minecraft:obsidian" }
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "Gather gothic materials for abundant building rewards."
-			tasks: [
-				{
-					id: "7A11C0DE40000041"
-					item: { count: 64, id: "minecraft:deepslate_bricks" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000042"
-					item: { count: 32, id: "minecraft:dark_oak_log" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000043"
-					item: { count: 16, id: "minecraft:dark_oak_fence" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000044"
-					item: { count: 8, id: "minecraft:lantern" }
-					type: "item"
-				}
-			]
-			title: "Gothic Manor and Castle Construction"
-			x: -2.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["7A11C0DE40000001"]
-			description: [
-				"Acquire an Altar of Inspiration to advance your vampire level, and a Blood Container to store liquid blood."
-				""
-				"Completing this provides leads, walls, fences, and gates to build a livestock pen for a sustainable blood supply!"
+				"A coven lasts when appetite becomes a managed responsibility instead of a private emergency. Shared stores give later rites a steady foundation and leave fewer desperate choices for the next visitor."
 			]
 			icon: { id: "vampirism:altar_inspiration" }
-			id: "7A11C0DE40000003"
+			id: "7A11C0DE40000002"
 			rewards: [
-				{
-					id: "7A11C0DE40000051"
-					item: { count: 4, id: "minecraft:lead" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000052"
-					item: { count: 32, id: "minecraft:deepslate_tile_wall" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000053"
-					item: { count: 32, id: "minecraft:oak_fence" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000054"
-					item: { count: 4, id: "minecraft:oak_fence_gate" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000055"
-					item: { count: 32, id: "minecraft:iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000056"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000D3"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
+				{ id: "7A11C0DE40002006", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002007", item: { count: 1, id: "minecraft:hopper" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002008", item: { count: 1, id: "minecraft:diamond" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002009", item: { count: 1, id: "minecraft:iron_ingot" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002010", item: { count: 3, id: "minecraft:oak_planks" }, team_reward: false, type: "item" }
 			]
-			shape: "diamond"
-			subtitle: "Ritual altars, blood storage, and livestock pens."
+			shape: "gear"
+			subtitle: "Coven path · Bloodwork"
 			tasks: [
-				{
-					id: "7A11C0DE40000061"
-					item: { count: 1, id: "vampirism:altar_inspiration" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000062"
-					item: { count: 1, id: "vampirism:blood_container" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE40001003", item: { count: 1, id: "vampirism:altar_inspiration" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001004", item: { count: 1, id: "vampirism:blood_container" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Altar Components and Blood Pen"
+			title: "Bloodwork Altars"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
-			dependencies: ["7A11C0DE40000001"]
+			dependencies: ["7A11C0DE40000002"]
 			description: [
-				"Craft an Inscription Table and a Copper Spell Book to begin learning magic."
-				""
-				"§4§lBlood Magic empowers Vampires with offensive life-siphoning and combat agility!§r Use your blood runes and inks to craft Cultist armor and inscribe blood spells."
+				"Infusion turns costly bloodwork into a practice that can be taught and repeated. A stable rite makes stronger relics possible without treating hunger as permission to harm a neighbor."
 			]
-			icon: { id: "irons_spellbooks:copper_spell_book" }
+			icon: { id: "vampirism:altar_infusion" }
+			id: "7A11C0DE40000003"
+			rewards: [
+				{ id: "7A11C0DE40002011", item: { count: 3, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002012", item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002013", item: { count: 4, id: "minecraft:iron_ingot" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002014", item: { count: 1, id: "minecraft:stick" }, team_reward: false, type: "item" }
+			]
+			shape: "gear"
+			subtitle: "Coven path · Infusion"
+			tasks: [
+				{ consume_items: false, id: "7A11C0DE40001005", item: { count: 1, id: "vampirism:altar_infusion" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001006", item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }, title: "Keep for Inspection", type: "item" }
+			]
+			title: "Infused Arsenal"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000003"]
+			description: [
+				"Ivo Mire leaves the cleanest line on his masterwork page for what he refused to take. That restraint gives the coven a standard worth inheriting, while the finished work opens wider travel and deeper study."
+			]
+			icon: { id: "vampirism:heart_seeker_enhanced" }
 			id: "7A11C0DE40000004"
 			rewards: [
+				{ id: "7A11C0DE40002015", item: { count: 4, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002016", item: { count: 2, id: "numismatics:bevel" }, team_reward: true, type: "item" }
 				{
-					id: "7A11C0DE40000071"
-					item: { count: 4, id: "irons_spellbooks:blood_rune" }
+					id: "7A11C0DE40002017"
+					item: {
+						components: {
+							"irons_spellbooks:affinity_data": {
+								bonus: 1
+								id: "irons_spellbooks:blood_slash"
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:affinity_ring"
+					}
+					title: "Blood Affinity Ring"
+					team_reward: false
 					type: "item"
 				}
+				{ id: "7A11C0DE40002018", item: { count: 16, id: "minecraft:obsidian" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002019", item: { count: 4, id: "vampirism:blood_infused_enhanced_iron_ingot" }, team_reward: false, type: "item" }
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Coven path · Masterwork"
+			tasks: [
+				{ consume_items: false, id: "7A11C0DE40001007", item: { count: 1, id: "vampirism:heart_seeker_enhanced" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001008", item: { count: 1, id: "vampirism:pure_blood_4" }, title: "Keep for Inspection", type: "item" }
+			]
+			title: "Coven's Masterwork"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DE40000002"]
+			description: [
+				"Bloodbound study becomes safer when its costs are recorded and its lessons remain legible to the next caster. A complete practice widens the coven's repertoire without making raw power its only measure."
+			]
+			icon: { id: "irons_spellbooks:blood_rune" }
+			id: "7A11C0DE40000005"
+			optional: true
+			rewards: [
+				{ id: "7A11C0DE40002020", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002021", item: { count: 8, id: "irons_spellbooks:blood_rune" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002022", item: { count: 16, id: "irons_spellbooks:common_ink" }, team_reward: false, type: "item" }
 				{
-					id: "7A11C0DE40000072"
-					item: { count: 16, id: "irons_spellbooks:rare_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000073"
-					item: { count: 4, id: "irons_spellbooks:epic_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000074"
+					id: "7A11C0DE40002023"
 					item: {
 						components: {
 							"irons_spellbooks:spell_container": {
 								data: [
-									{
-										id: "irons_spellbooks:blood_slash"
-										index: 0
-										level: 1
-										locked: true
-									}
+									{ id: "irons_spellbooks:blood_step", index: 0, level: 1, locked: true }
 								]
 								maxSpells: 1
 								mustEquip: false
@@ -247,98 +147,17 @@
 						count: 1
 						id: "irons_spellbooks:scroll"
 					}
-					title: "Scroll of Blood Slash"
+					title: "Scroll of Blood Step"
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C0DE400000D4"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000075"
+					id: "7A11C0DE40002024"
 					item: {
 						components: {
 							"irons_spellbooks:spell_container": {
 								data: [
-									{
-										id: "irons_spellbooks:blood_needles"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Blood Needles"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000076"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:acupuncture"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Acupuncture"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000077"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:ray_of_siphoning"
-										index: 0
-										level: 1
-										locked: true
-									}
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					title: "Scroll of Ray of Siphoning"
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000078"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{
-										id: "irons_spellbooks:recall"
-										index: 0
-										level: 1
-										locked: true
-									}
+									{ id: "irons_spellbooks:recall", index: 0, level: 1, locked: true }
 								]
 								maxSpells: 1
 								mustEquip: false
@@ -349,412 +168,80 @@
 						id: "irons_spellbooks:scroll"
 					}
 					title: "Scroll of Recall"
+					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "gear"
-			subtitle: "Inscribe blood magic and life-siphoning arts."
+			subtitle: "Specialist · Blood practice"
 			tasks: [
-				{
-					id: "7A11C0DE40000081"
-					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000082"
-					item: { count: 1, id: "irons_spellbooks:inscription_table" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE40001009", item: { count: 1, id: "irons_spellbooks:copper_spell_book" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001010", item: { count: 1, id: "irons_spellbooks:inscription_table" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001011", item: { count: 8, id: "irons_spellbooks:blood_rune" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001021", item: { count: 1, id: "irons_spellbooks:cultist_helmet" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001022", item: { count: 1, id: "irons_spellbooks:cultist_chestplate" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001023", item: { count: 1, id: "irons_spellbooks:cultist_leggings" }, title: "Show Your Kit", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001024", item: { count: 1, id: "irons_spellbooks:cultist_boots" }, title: "Show Your Kit", type: "item" }
 			]
-			title: "Blood Arcana and Inscription"
-			x: 2.5d
+			title: "Bloodbound Arcana"
+			x: -2.75d
 			y: -1.5d
-		}
-		{
-			dependencies: ["7A11C0DE40000002"]
-			description: [
-				"Forge blood-infused equipment and carry travel supplies during nighttime expeditions."
-			]
-			icon: { id: "vampirism:blood_infused_iron_ingot" }
-			id: "7A11C0DE40000005"
-			rewards: [
-				{
-					id: "7A11C0DE40000091"
-					item: { count: 8, id: "vampirism:blood_bottle" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000092"
-					item: { count: 1, id: "irons_spellbooks:scroll_pouch" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000013"
-					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000014"
-					item: { count: 2, id: "minecraft:iron_block" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000093"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Blood iron forging and night packs."
-			tasks: [
-				{
-					id: "7A11C0DE400000A1"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000A2"
-					item: { count: 1, id: "vampirism:vampire_blood_bottle" }
-					type: "item"
-				}
-			]
-			title: "Night Prowler Equipment"
-			x: -2.5d
-			y: 1.5d
 		}
 		{
 			dependencies: ["7A11C0DE40000003"]
 			description: [
-				"Construct an Altar of Infusion to synthesize Enhanced Blood Infused Iron."
-				""
-				"Enhanced Blood Infused Iron forms the backbone of superior vampire armaments, blood rings, and high-tier coven relics."
+				"A coven workshop should keep its rhythm through the hours when its keepers rest. Dependable motion turns private machines into a service others can extend."
 			]
-			icon: { id: "vampirism:altar_infusion" }
-			id: "7A11C0DE40000007"
-			rewards: [
-				{
-					id: "7A11C0DE4000007A"
-					item: { count: 16, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE4000007B"
-					item: { count: 16, id: "minecraft:diamond" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE4000007C"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Infusion rituals and enhanced dark metallurgy."
-			tasks: [
-				{
-					id: "7A11C0DE4000007D"
-					item: { count: 1, id: "vampirism:altar_infusion" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE4000007E"
-					item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }
-					type: "item"
-				}
-			]
-			title: "Sanguine Infusion and Metallurgy"
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A11C0DE40000004"]
-			description: [
-				"Inscribe Blood Runes into dark cloth at the Inscription Table to weave Cultist Vestments."
-				""
-				"Cultist robes grant immense bonuses to Blood Spell power, siphoning efficiency, and evasive mobility under cover of darkness."
-			]
-			icon: { id: "irons_spellbooks:cultist_chestplate" }
-			id: "7A11C0DE4000000A"
-			rewards: [
-				{
-					id: "7A11C0DE400000A4"
-					item: { count: 4, id: "irons_spellbooks:blood_rune" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000A5"
-					item: { count: 4, id: "irons_spellbooks:epic_ink" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000A6"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "Cultist robes and siphoning mastery."
-			tasks: [
-				{
-					id: "7A11C0DE400000A7"
-					item: { count: 1, id: "irons_spellbooks:cultist_chestplate" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000A8"
-					item: { count: 1, id: "irons_spellbooks:cultist_boots" }
-					type: "item"
-				}
-			]
-			title: "Cultist Vestments and Sanguine Power"
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A11C0DE40000005"]
-			description: [
-				"Overcome the deadly daytime sun and master nocturnal aerial flight."
-				""
-				"Craft an Iron Umbrella to protect yourself from sun damage while out during the day, and craft Feathered Wings from Icarus to soar across the night skies!"
-			]
-			icon: { id: "vampiresneedumbrellas:iron_umbrella" }
-			id: "7A11C0DE40000009"
-			rewards: [
-				{
-					id: "7A11C0DE40000095"
-					item: { count: 1, id: "vampiresneedumbrellas:diamond_umbrella" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000096"
-					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000097"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "gear"
-			subtitle: "Sun protection and nocturnal flight."
-			tasks: [
-				{
-					id: "7A11C0DE40000098"
-					item: { count: 1, id: "vampiresneedumbrellas:iron_umbrella" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000099"
-					item: { count: 1, id: "icarus:black_feathered_wings" }
-					type: "item"
-				}
-			]
-			title: "Daylight Defiance and Nocturnal Wings"
-			x: -2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A11C0DE4000000A"]
-			description: [
-				"Construct an Altar of Cleansing and obtain Pure Blood from vampire nobility."
-				""
-				"Pure blood is the essential reagent for advancing beyond mortal vampire limits, enabling higher coven ranks and greater dark arts."
-			]
-			icon: { id: "vampirism:pure_blood_0" }
-			id: "7A11C0DE4000000B"
-			rewards: [
-				{
-					id: "7A11C0DE400000B5"
-					item: { count: 4, id: "vampirism:pure_blood_1" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B6"
-					item: { count: 8, id: "vampirism:blood_bottle" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B7"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			subtitle: "Pure blood distillation and coven ascension."
-			tasks: [
-				{
-					id: "7A11C0DE400000B8"
-					item: { count: 1, id: "vampirism:pure_blood_0" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B9"
-					item: { count: 1, id: "vampirism:altar_cleansing" }
-					type: "item"
-				}
-			]
-			title: "Pure Blood Extraction and Cleansing"
-			x: 2.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7A11C0DE40000009"]
-			description: [
-				"Craft an Exposure camera and color film."
-				""
-				"Capture dramatic color portraits of your coven, or stealthy night reconnaissance photos of hunter positions to keep in your album!"
-			]
-			icon: { id: "exposure:camera" }
+			icon: { id: "create:mechanical_press" }
 			id: "7A11C0DE40000006"
+			optional: true
 			rewards: [
-				{
-					id: "7A11C0DE400000B1"
-					item: { count: 2, id: "exposure:color_film" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B2"
-					item: { count: 2, id: "exposure:black_and_white_film" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B3"
-					item: { count: 1, id: "exposure:album" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000B4"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000D5"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
+				{ id: "7A11C0DE40002025", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002026", item: { count: 16, id: "create:shaft" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002027", item: { count: 8, id: "create:cogwheel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002028", item: { count: 4, id: "create:large_cogwheel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002029", item: { count: 8, id: "create:andesite_casing" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002030", item: { count: 4, id: "create:gearbox" }, team_reward: false, type: "item" }
 			]
 			shape: "gear"
-			size: 1.3d
-			subtitle: "Stealth surveillance and coven portraits."
+			subtitle: "Specialist · Workshop power"
 			tasks: [
-				{
-					id: "7A11C0DE400000C1"
-					item: { count: 1, id: "exposure:camera" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C2"
-					item: { count: 1, id: "exposure:color_film" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE40001012", item: { count: 16, id: "create:andesite_alloy" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001013", item: { count: 1, id: "create:windmill_bearing" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001014", item: { count: 1, id: "create:water_wheel" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001015", item: { count: 1, id: "create:mechanical_drill" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001016", item: { count: 1, id: "create:mechanical_press" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Espionage and Surveillance"
-			x: -2.5d
-			y: 4.5d
+			title: "Sanguine Industry"
+			x: 2.75d
+			y: 1.5d
 		}
 		{
-			dependencies: ["7A11C0DE4000000B"]
+			dependencies: ["7A11C0DE40000001"]
 			description: [
-				"Indulge in decadent sanguine culinary arts using Vampire's Delight."
-				""
-				"Ferment Blood Wine and bake Blood Pie using a Silver Knife to host grand nocturnal banquets for your coven."
+				"A manor is a refuge with a clear threshold, not a claim over the night. Once established, it gives visitors a place they may enter or avoid by choice, and later builders a structure worth maintaining."
 			]
-			icon: { id: "vampiresdelight:blood_wine_bottle" }
-			id: "7A11C0DE4000000C"
+			icon: { id: "minecraft:lantern" }
+			id: "7A11C0DE40000007"
+			optional: true
 			rewards: [
-				{
-					id: "7A11C0DE400000C3"
-					item: { count: 4, id: "vampiresdelight:blood_wine_bottle" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C4"
-					item: { count: 1, id: "vampiresdelight:blood_pie" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C5"
-					item: { count: 2, id: "numismatics:sprocket" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C6"
-					item: { count: 2, id: "numismatics:bevel" }
-					type: "item"
-				}
+				{ id: "7A11C0DE40002031", item: { count: 2, id: "numismatics:bevel" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002032", item: { count: 192, id: "minecraft:deepslate_bricks" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002033", item: { count: 96, id: "minecraft:dark_oak_log" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002034", item: { count: 48, id: "minecraft:dark_oak_fence" }, team_reward: false, type: "item" }
+				{ id: "7A11C0DE40002035", item: { count: 24, id: "minecraft:lantern" }, team_reward: false, type: "item" }
 			]
-			shape: "square"
-			subtitle: "Blood vintage, dark banquets, and coven feasts."
+			shape: "diamond"
+			subtitle: "Specialist · Shared refuge"
 			tasks: [
-				{
-					id: "7A11C0DE400000C7"
-					item: { count: 1, id: "vampiresdelight:blood_wine_bottle" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C8"
-					item: { count: 1, id: "vampiresdelight:blood_pie" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE400000C9"
-					item: { count: 1, id: "vampiresdelight:silver_knife" }
-					type: "item"
-				}
+				{ consume_items: false, id: "7A11C0DE40001017", item: { count: 64, id: "minecraft:deepslate_bricks" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001018", item: { count: 32, id: "minecraft:dark_oak_log" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001019", item: { count: 16, id: "minecraft:dark_oak_fence" }, title: "Keep for Inspection", type: "item" }
+				{ consume_items: false, id: "7A11C0DE40001020", item: { count: 8, id: "minecraft:lantern" }, title: "Keep for Inspection", type: "item" }
 			]
-			title: "Coven Banquet and Blood Vintage"
-			x: 2.5d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"7A11C0DE40000007"
-				"7A11C0DE40000006"
-				"7A11C0DE4000000C"
-			]
-			description: [
-				"Forge the legendary Enhanced Heart Seeker blade and harvest Pure Blood of the highest order."
-				""
-				"This capstone rewards a Blood Affinity Ring, four gold Cogs, and a full portal stock of Obsidian to solidify your dominion over the mortal realm!"
-			]
-			icon: { id: "vampirism:heart_seeker_enhanced" }
-			id: "7A11C0DE40000008"
-			rewards: [
-				{
-					id: "7A11C0DE40000083"
-					item: { count: 4, id: "numismatics:cog" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000084"
-					item: { count: 1, id: "irons_spellbooks:affinity_ring_blood" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000085"
-					item: { count: 16, id: "minecraft:obsidian" }
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Heart Seeker, pinnacle blood, and coven capstone."
-			tasks: [
-				{
-					id: "7A11C0DE40000086"
-					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
-					type: "item"
-				}
-				{
-					id: "7A11C0DE40000087"
-					item: { count: 1, id: "vampirism:pure_blood_4" }
-					type: "item"
-				}
-			]
-			title: "Vampire Lordship and Heart Seeker"
-			x: 0.0d
-			y: 4.5d
+			title: "Raise the Manor"
+			x: 2.75d
+			y: -4.0d
 		}
 	]
 	title: "04 · The Vampire Coven"

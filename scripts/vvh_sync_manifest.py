@@ -30,8 +30,24 @@ def item_id(value: Any) -> str | None:
     return None
 
 
+def localized_or_inline(
+    source: dict[str, Any],
+    field: str,
+    lang: dict[str, Any],
+    translation_key: str,
+    default: Any,
+) -> Any:
+    """Prefer authored inline copy, with localization as a compatibility fallback."""
+    inline = source.get(field)
+    if inline is not None:
+        return inline
+    return lang.get(translation_key, default)
+
+
 def normalize_task(task: dict[str, Any], lang: dict[str, Any]) -> dict[str, Any]:
-    count = task.get("count", 1)
+    item = task.get("item")
+    nested_count = item.get("count", 1) if isinstance(item, dict) else 1
+    count = task.get("count", nested_count)
     return {
         "advancement": task.get("advancement"),
         "consume": bool(task.get("consume", task.get("consume_items", False))),
@@ -41,10 +57,24 @@ def normalize_task(task: dict[str, Any], lang: dict[str, Any]) -> dict[str, Any]
         "item": item_id(task.get("item")),
         "optional": bool(task.get("optional", False)),
         "stat": task.get("stat"),
-        "title": lang.get(f"task.{task['id']}.title", ""),
+        "title": localized_or_inline(
+            task,
+            "title",
+            lang,
+            f"task.{task['id']}.title",
+            "",
+        ),
         "type": task.get("type", "checkmark"),
         "value": task.get("value", 1),
     }
+
+
+def normalized_ftb_id(value: Any) -> str | None:
+    if isinstance(value, int):
+        return f"{value:016X}"
+    if isinstance(value, str):
+        return value.upper()
+    return None
 
 
 def synchronize(root: Path) -> dict[str, Any]:
@@ -52,20 +82,40 @@ def synchronize(root: Path) -> dict[str, Any]:
     existing = json.loads(manifest_path.read_text(encoding="utf-8"))
     existing_chapters = {chapter["id"]: chapter for chapter in existing["chapters"]}
     lang = parse_snbt(root / "config/ftbquests/quests/lang/en_us.snbt")
+    groups_source = parse_snbt(root / "config/ftbquests/quests/chapter_groups.snbt")
+    chapter_groups = groups_source.get("chapter_groups", [])
     chapters: list[dict[str, Any]] = []
+    referenced_reward_tables: set[str] = set()
 
-    for path in sorted((root / "config/ftbquests/quests/chapters").glob("vvh_*.snbt")):
+    for path in sorted((root / "config/ftbquests/quests/chapters").glob("ch*.snbt")):
         source = parse_snbt(path)
         chapter_id = source["id"]
         old = existing_chapters.get(chapter_id, {})
         quests: list[dict[str, Any]] = []
         for quest in source.get("quests", []):
             quest_id = quest["id"]
-            raw_title = lang.get(f"quest.{quest_id}.title", quest_id)
+            for reward in quest.get("rewards", []):
+                if isinstance(reward, dict) and reward.get("type") == "choice":
+                    table_id = normalized_ftb_id(reward.get("table_id"))
+                    if table_id:
+                        referenced_reward_tables.add(table_id)
+            raw_title = localized_or_inline(
+                quest,
+                "title",
+                lang,
+                f"quest.{quest_id}.title",
+                quest_id,
+            )
             quests.append(
                 {
                     "dependencies": quest.get("dependencies", []),
-                    "description": lang.get(f"quest.{quest_id}.quest_desc", []),
+                    "description": localized_or_inline(
+                        quest,
+                        "description",
+                        lang,
+                        f"quest.{quest_id}.quest_desc",
+                        [],
+                    ),
                     "hide_dependency_lines": bool(quest.get("hide_dependency_lines", False)),
                     "hide_until_deps_complete": bool(quest.get("hide_until_deps_complete", False)),
                     "icon": item_id(quest.get("icon")),
@@ -77,7 +127,13 @@ def synchronize(root: Path) -> dict[str, Any]:
                     "rewards": quest.get("rewards", []),
                     "shape": quest.get("shape", source.get("default_quest_shape", "circle")),
                     "size": quest.get("size", 1.0),
-                    "subtitle": lang.get(f"quest.{quest_id}.quest_subtitle", ""),
+                    "subtitle": localized_or_inline(
+                        quest,
+                        "subtitle",
+                        lang,
+                        f"quest.{quest_id}.quest_subtitle",
+                        "",
+                    ),
                     "tasks": [normalize_task(task, lang) for task in quest.get("tasks", [])],
                     "title": COLOR.sub("", raw_title),
                     "x": quest.get("x", 0),
@@ -88,16 +144,35 @@ def synchronize(root: Path) -> dict[str, Any]:
         chapters.append(
             {
                 "filename": source.get("filename", path.stem),
+                "group": source.get("group"),
                 "icon": item_id(source.get("icon")),
                 "id": chapter_id,
                 "images": source.get("images", []),
                 "order": source.get("order_index", old.get("order", 0)),
                 "quests": quests,
-                "title": lang.get(f"chapter.{chapter_id}.title", old.get("title", chapter_id)),
+                "title": localized_or_inline(
+                    source,
+                    "title",
+                    lang,
+                    f"chapter.{chapter_id}.title",
+                    old.get("title", chapter_id),
+                ),
             }
         )
 
     existing["chapters"] = chapters
+    existing["chapter_groups"] = chapter_groups
+    reward_tables: list[dict[str, Any]] = []
+    reward_tables_dir = root / "config/ftbquests/quests/reward_tables"
+    for path in sorted(reward_tables_dir.glob("*.snbt")):
+        source = parse_snbt(path)
+        if normalized_ftb_id(source.get("id")) in referenced_reward_tables:
+            reward_tables.append(source)
+    existing["reward_tables"] = reward_tables
+    if chapter_groups:
+        # Retain the singular field for legacy tooling that treats it as the
+        # campaign's entry group. Per-chapter membership is recorded above.
+        existing["group_id"] = chapter_groups[0]["id"]
     return existing
 
 

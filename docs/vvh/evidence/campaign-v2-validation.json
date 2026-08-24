@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "campaign": "VvH campaign v2",
+  "generated_at_utc": "2026-08-24T02:18:37.432135+00:00",
+  "root": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack",
+  "status": "pass",
+  "summary": {
+    "checks": 27,
+    "passed": 27,
+    "failed": 0,
+    "failed_required": 0,
+    "chapters_parsed": 6,
+    "quests_parsed": 37
+  },
+  "checks": [
+    {
+      "name": "exact_six_chapter_files",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "expected": [
+          "ch01_intro_rules.snbt",
+          "ch02_factions.snbt",
+          "ch03_hunters.snbt",
+          "ch04_vampires.snbt",
+          "ch05_shared_horizons.snbt",
+          "ch06_requisitions.snbt"
+        ],
+        "actual": [
+          "ch01_intro_rules.snbt",
+          "ch02_factions.snbt",
+          "ch03_hunters.snbt",
+          "ch04_vampires.snbt",
+          "ch05_shared_horizons.snbt",
+          "ch06_requisitions.snbt"
+        ]
+      }
+    },
+    {
+      "name": "snbt_parse",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "files_checked": [
+          "config/ftbquests/quests/chapters/ch01_intro_rules.snbt",
+          "config/ftbquests/quests/chapters/ch02_factions.snbt",
+          "config/ftbquests/quests/chapters/ch03_hunters.snbt",
+          "config/ftbquests/quests/chapters/ch04_vampires.snbt",
+          "config/ftbquests/quests/chapters/ch05_shared_horizons.snbt",
+          "config/ftbquests/quests/chapters/ch06_requisitions.snbt",
+          "config/ftbquests/quests/chapter_groups.snbt",
+          "config/ftbquests/quests/data.snbt",
+          "config/ftbquests/quests/lang/en_us.snbt"
+        ]
+      }
+    },
+    {
+      "name": "id_catalog_json",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "campaign_shape",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "expected_quest_counts": {
+          "ch01_intro_rules.snbt": 4,
+          "ch02_factions.snbt": 4,
+          "ch03_hunters.snbt": 7,
+          "ch04_vampires.snbt": 7,
+          "ch05_shared_horizons.snbt": 9,
+          "ch06_requisitions.snbt": 6
+        }
+      }
+    },
+    {
+      "name": "global_unique_ids",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "chapter_quest_task_reward_ids": 248,
+        "unique_ids": 248
+      }
+    },
+    {
+      "name": "dependencies_resolve_and_acyclic",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "all_chapters_reachable_from_ch01_terminal",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "ch01_closed_rules_loop",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "ch02_symmetric_open_branches",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "chapter_groups",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "data_schema_and_no_testing_unlock",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "settings": {
+          "default_autoclaim_rewards": "disabled",
+          "default_consume_items": false,
+          "default_quest_disable_jei": false,
+          "default_quest_shape": "circle",
+          "default_reward_team": false,
+          "detection_delay": 20,
+          "disable_gui": false,
+          "drop_loot_crates": false,
+          "emergency_items_cooldown": 300,
+          "grid_scale": 0.5,
+          "icon": {
+            "id": "numismatics:bevel"
+          },
+          "lock_message": "",
+          "pause_game": false,
+          "progression_mode": "flexible",
+          "show_lock_icons": true,
+          "version": 13
+        }
+      }
+    },
+    {
+      "name": "title_word_count_max_four",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "forbidden_player_copy",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "player_visible_meta_labels",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "no_unescaped_ampersand_space",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "observed_task_reward_types",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "allowed": [
+          "advancement",
+          "checkmark",
+          "choice",
+          "item"
+        ]
+      }
+    },
+    {
+      "name": "item_and_icon_catalog_coverage",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "item_references": 188,
+        "icon_references": 44
+      }
+    },
+    {
+      "name": "advancement_catalog_coverage",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "advancement_references": 4
+      }
+    },
+    {
+      "name": "images_and_icons_resolve",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "image_references": 0,
+        "icon_references": 44
+      }
+    },
+    {
+      "name": "zero_unresolved_localization_keys",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "translation_keys_referenced": [],
+        "localization_keys_defined": 0,
+        "inline_strings": true
+      }
+    },
+    {
+      "name": "item_component_codec_and_spell_ids",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "substantive_hard_criteria",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "shared_activity_runtime_attestations",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "chapter06_repeatable_sinks",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "repeatable_quests": [
+          "7A11C0DE60000002",
+          "7A11C0DE60000003",
+          "7A11C0DE60000004",
+          "7A11C0DE60000005",
+          "7A11C0DE60000006"
+        ],
+        "repeatable_bevel_faucet": 0,
+        "sink_board_bevel_price": 19
+      }
+    },
+    {
+      "name": "reward_task_descendant_collision",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "economy_ledgers",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "one_time_all_claimable_personal_bevels": 44,
+        "one_time_team_bevels": 6,
+        "minimum_hunter_faction_route": {
+          "personal_bevels": 12,
+          "team_bevels": 2
+        },
+        "minimum_vampire_faction_route": {
+          "personal_bevels": 12,
+          "team_bevels": 2
+        },
+        "intended_completionist_personal_bevels_one_selection": 42,
+        "maximum_completionist_personal_bevels_both_selections": 44,
+        "completionist_team_bevels": 6,
+        "repeatable_bevel_faucet": 0,
+        "sink_board_bevel_price_per_team_per_week": 19
+      }
+    },
+    {
+      "name": "no_campaign_kubejs",
+      "required": true,
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "kubejs_files_scanned": [
+          "kubejs/assets/kubejs/textures/block/example_block.png",
+          "kubejs/assets/kubejs/textures/item/example_item.png",
+          "kubejs/client_scripts/main.js",
+          "kubejs/config/client.json",
+          "kubejs/config/common.json",
+          "kubejs/config/web_server.json",
+          "kubejs/README.txt",
+          "kubejs/server_scripts/crafting.js",
+          "kubejs/server_scripts/givespell.js",
+          "kubejs/startup_scripts/main.js"
+        ],
+        "preexisting_givespell_allowed": "kubejs/server_scripts/givespell.js",
+        "dirty_kubejs": []
+      }
+    }
+  ],
+  "economy": {
+    "one_time_all_claimable_personal_bevels": 44,
+    "one_time_team_bevels": 6,
+    "minimum_hunter_faction_route": {
+      "personal_bevels": 12,
+      "team_bevels": 2
+    },
+    "minimum_vampire_faction_route": {
+      "personal_bevels": 12,
+      "team_bevels": 2
+    },
+    "intended_completionist_personal_bevels_one_selection": 42,
+    "maximum_completionist_personal_bevels_both_selections": 44,
+    "completionist_team_bevels": 6,
+    "repeatable_bevel_faucet": 0,
+    "sink_board_bevel_price_per_team_per_week": 19
+  },
+  "file_hashes_sha256": {
+    "config/ftbquests/quests/chapters/ch01_intro_rules.snbt": "14d98862c530964915829142131123a67026f2f120f3dc5469697d81ad7de2c8",
+    "config/ftbquests/quests/chapters/ch02_factions.snbt": "1af66e55b1b182cc40810ed9b231535e7a33b2d79801febee5f3fb9dc838a97a",
+    "config/ftbquests/quests/chapters/ch03_hunters.snbt": "8db5d85e135bb6672f613b62972ba90ef46ed1f96511ebcc6cf2bbc950f0c2d7",
+    "config/ftbquests/quests/chapters/ch04_vampires.snbt": "0cdf6e478074dba8dccdfd78725f5b6a8b2b3c8ad5042569ff8a33e75f45d063",
+    "config/ftbquests/quests/chapters/ch05_shared_horizons.snbt": "22f4c4729d4eefb6e155aee8a25fb5c52f103711d0b3f2f77362dd310a3896a4",
+    "config/ftbquests/quests/chapters/ch06_requisitions.snbt": "3601fdc79d51f7b56f700acb410142c381160ca96bfec31ba02d4f2c8aee9783",
+    "config/ftbquests/quests/chapter_groups.snbt": "16909e42e251d07a1a872b7bc5b57540e1173f8dc724fc3f37d6e8bcfd9e06d6",
+    "config/ftbquests/quests/data.snbt": "bb36c561578474e0c8b51fd9c1972681824ffcface5db68953a8492763db8b59",
+    "config/ftbquests/quests/lang/en_us.snbt": "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00",
+    "docs/vvh/id_catalog.json": "18fcd5ba317836c87202adaf45876a133e36e7c9b7bbc1fbd68815180e57cd16",
+    "docs/vvh/ID_CATALOG.md": "29bd5d5e915fb8468b74d27b83ad1c50a6adfe11d56f20ba346851c6bd6317e0",
+    "docs/vvh/CAMPAIGN_DESIGN.md": "244f8ece36d5d51faef25ae67cba3f386ef8cd7c71895eda71388e8c075d70f2",
+    "docs/vvh/VALIDATION.md": "787bb0cf0f5030b32caefe24b7c50d751ff6e61f5ce604c5369e768892c94e6f",
+    "docs/vvh/UNRESOLVED.md": "ef7d70879fb65d746eb32ae125a9afa9d7652663b0736b4e987466433c41afd7",
+    "docs/vvh/campaign_manifest.json": "08296923e2943ecbf280b429230ad4948e5fffa080aafdcd1b930e6416f1b04e",
+    "scripts/vvh_sync_manifest.py": "1977a9858ead29a96bba9ec5aea8cc19727c693d90d3820497bcf9c70bc0160c",
+    "scripts/vvh_campaign_validate.py": "25e854a1ce448d99c7b2c748fe45329164d51667e0cfd2aea0afa41fd09af26d"
+  },
+  "limitations": [
+    "Static SNBT parsing does not prove acceptance by the shipped FTB Quests loader.",
+    "minecraft:* item/icon IDs are accepted by namespace and are not exhaustively checked against the vanilla registry here.",
+    "Cataloged JAR entries prove exact IDs/resources, not survival balance, faction eligibility, or runtime trigger behavior.",
+    "Client rendering, text wrapping, red-error badges, reward delivery, and data-component tooltips require an actual client.",
+    "Personal/team claims, weekly cooldown scope, faction switching, and FTB Teams synchronization require a two-account disposable-world test."
+  ],
+  "runtime_tests_pending": [
+    "dedicated server load and FTB Quests reload with log review",
+    "client open of all six chapters and visual/text inspection",
+    "Vampirism become_vampire and become_hunter triggers, including already-completed state",
+    "Cobblemon first-catch, first-victory, and raid participation behavior",
+    "Create shared-site attestations and Chapter 05 capstone completion",
+    "one payer plus teammate claim for all five Chapter 06 sinks, followed by cooldown rejection",
+    "personal versus team Bevel claims with two accounts and fragmented teams"
+  ]
+}

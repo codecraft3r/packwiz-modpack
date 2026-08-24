@@ -1,0 +1,19 @@
+{
+  "artifact_type": "source-level review board; not runtime or in-client evidence",
+  "manifest": {
+    "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack\\docs\\vvh\\campaign_manifest.json",
+    "sha256": "780cbece52c58d4074c0d9bc90ac8de1187abcbaf16a48517ee5a41bc56c5739"
+  },
+  "resource_sources": [],
+  "resolved_resource_images": [],
+  "unresolved_references": [],
+  "outputs": [
+    "00_ch01_intro_rules.png",
+    "01_ch02_factions.png",
+    "02_ch03_hunters.png",
+    "03_ch04_vampires.png",
+    "04_ch05_shared_horizons.png",
+    "05_ch06_requisitions.png",
+    "contact_sheet.png"
+  ]
+}

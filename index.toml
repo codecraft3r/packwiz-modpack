@@ -98,35 +98,39 @@ hash = "045ced909c197435a8dc25e09ef89d651d612ff49348ae5d15f32d1f1e852ee8"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "29def7e221d1c4a6e46a6b038580aed34f2f342eaefff78c85c6768c4eecb807"
+hash = "16909e42e251d07a1a872b7bc5b57540e1173f8dc724fc3f37d6e8bcfd9e06d6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch01_intro_rules.snbt"
-hash = "e0fdbad21926cdcf736c6915f04eece004868a7351b715b3ab898a806894ef97"
+hash = "14d98862c530964915829142131123a67026f2f120f3dc5469697d81ad7de2c8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch02_factions.snbt"
-hash = "016438400d2cca3a1c19c05e04fccb88243a302c251c0051441a3ec551e807db"
+hash = "1af66e55b1b182cc40810ed9b231535e7a33b2d79801febee5f3fb9dc838a97a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_hunters.snbt"
-hash = "30cd849dbf02f20ae197ac0e19eaa90b108ba98a0b6c0c6a0952afdf502b18ac"
+hash = "8db5d85e135bb6672f613b62972ba90ef46ed1f96511ebcc6cf2bbc950f0c2d7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_vampires.snbt"
-hash = "738c76e35760faef7a0fb3d55c76fcf3704201cffa471c863197074785ca9102"
+hash = "0cdf6e478074dba8dccdfd78725f5b6a8b2b3c8ad5042569ff8a33e75f45d063"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch05_shared_horizons.snbt"
+hash = "22f4c4729d4eefb6e155aee8a25fb5c52f103711d0b3f2f77362dd310a3896a4"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch06_requisitions.snbt"
+hash = "3601fdc79d51f7b56f700acb410142c381160ca96bfec31ba02d4f2c8aee9783"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "887d580c82fca73f80738c75c72096594f095265b46723bd0df8aae458e366de"
+hash = "bb36c561578474e0c8b51fd9c1972681824ffcface5db68953a8492763db8b59"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
 hash = "4489f9e3e454748b3521eb214e0a5694d562cff3d9ff511cb456953c8f534c00"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/7A11C0DEF0000001.snbt"
-hash = "da8b4c576aa31dcc6ab02e031aa69bb49752ba0409d8302712f2c4166dd40487"
 
 [[files]]
 file = "config/ftbteams-server.snbt"

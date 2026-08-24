@@ -160,7 +160,10 @@ class ValidSamples(unittest.TestCase):
         """Every *.snbt file in the repo should validate cleanly."""
         root = Path(__file__).resolve().parent.parent
         for f in sorted(root.rglob("*.snbt")):
-            if any(part in f.parts for part in (".git", "build", "dist")):
+            # Disposable downloads and extracted JAR evidence are not authored
+            # pack configuration.  Keep this repository-wide assertion scoped
+            # to files that can actually ship.
+            if any(part in f.parts for part in (".git", "build", "dist", "tmp")):
                 continue
             result = validate_file(f)
             if not result.ok:

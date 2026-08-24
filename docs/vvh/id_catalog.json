@@ -1,0 +1,2395 @@
+{
+  "generated_from": "Inspected JAR resources only; no quest-file ID is accepted as proof.",
+  "verification_scope": "Campaign-used IDs only. A namespace in verified_namespaces has an inspected JAR and directly evidenced listed entries; it is not an exhaustive registry claim.",
+  "verified_namespaces": [
+    "cobblemon",
+    "cobblemonraiddens",
+    "create",
+    "exposure",
+    "icarus",
+    "irons_spellbooks",
+    "numismatics",
+    "supplementaries",
+    "vampiresdelight",
+    "vampiresneedumbrellas",
+    "vampirism"
+  ],
+  "unverified_namespaces": [],
+  "jar_inventory": {
+    "All the Mons": [
+      "cobblemon-battle-extras-neoforge-1.13.45.jar",
+      "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "Cobblemon-Utility+-neoforge-1.7.3.jar",
+      "cobblemonintegrations-neoforge-1.21.1-1.1.6.jar",
+      "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "cobblemon_home-neoforge-2.5.9.jar",
+      "cobblemon_industries-neoforge-1.4.0.jar",
+      "cobblemon_smartphone-neoforge-1.0.9-rev01.jar",
+      "create-1.21.1-6.0.10.jar",
+      "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "create-central-kitchen-2.5.0.jar",
+      "createaddition-1.6.0.jar",
+      "createdeco-2.1.3.jar",
+      "CreateDragonsPlus-1.11.2b.jar",
+      "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "createpropulsion-1.1.4.jar",
+      "create_avionics-neoforge-1.21.1-0.5.1.jar",
+      "exposure-neoforge-1.21.1-1.9.18.jar",
+      "irons_lib-1.21.1-1.1.0.jar",
+      "irons_spellbooks-1.21.1-3.16.1.jar",
+      "MoreCobblemonTweaks-neoforge-1.3.3.jar",
+      "numismaticsutils-2.1-1.21.1.jar"
+    ],
+    "Living Atlas PT A": [
+      "cobblemon-battle-extras-neoforge-1.13.45.jar",
+      "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "Cobblemon-Utility+-neoforge-1.7.3.jar",
+      "cobblemonintegrations-neoforge-1.21.1-1.1.6.jar",
+      "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "cobblemon_home-neoforge-2.5.9.jar",
+      "cobblemon_industries-neoforge-1.4.0.jar",
+      "cobblemon_smartphone-neoforge-1.0.9-rev01.jar",
+      "create-1.21.1-6.0.10.jar",
+      "create-aeronautics-bundled-1.21.1-1.3.0.jar",
+      "create-central-kitchen-2.5.0.jar",
+      "createaddition-1.6.0.jar",
+      "createdeco-2.1.3.jar",
+      "CreateDragonsPlus-1.11.2b.jar",
+      "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "createpropulsion-1.1.4.jar",
+      "create_avionics-neoforge-1.21.1-0.5.1.jar",
+      "create_cardan_shafts-0.1.6.jar",
+      "exposure-neoforge-1.21.1-1.9.18.jar",
+      "FarmersDelight-1.21.1-1.3.2.jar",
+      "irons_lib-1.21.1-1.1.0.jar",
+      "irons_spellbooks-1.21.1-3.16.1.jar",
+      "MoreCobblemonTweaks-neoforge-1.3.3.jar",
+      "numismaticsutils-2.1-1.21.1.jar"
+    ]
+  },
+  "entries": [
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:ancient_poke_ball",
+      "display_name": "Ancient Poké Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.ancient_poke_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:ancient_wing_ball",
+      "display_name": "Ancient Wing Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.ancient_wing_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:black_apricorn",
+      "display_name": "Black Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.black_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:blue_apricorn",
+      "display_name": "Blue Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.blue_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:dive_ball",
+      "display_name": "Dive Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.dive_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:dusk_ball",
+      "display_name": "Dusk Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.dusk_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:exp_share",
+      "display_name": "Exp. Share",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.exp_share",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:fast_ball",
+      "display_name": "Fast Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.fast_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:friend_ball",
+      "display_name": "Friend Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.friend_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:full_restore",
+      "display_name": "Full Restore",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.full_restore",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:great_ball",
+      "display_name": "Great Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.great_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:green_apricorn",
+      "display_name": "Green Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.green_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:heal_ball",
+      "display_name": "Heal Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.heal_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:healing_machine",
+      "display_name": "Healing Machine",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::block.cobblemon.healing_machine",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:heavy_ball",
+      "display_name": "Heavy Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.heavy_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:hyper_potion",
+      "display_name": "Hyper Potion",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.hyper_potion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:level_ball",
+      "display_name": "Level Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.level_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:love_ball",
+      "display_name": "Love Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.love_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:lure_ball",
+      "display_name": "Lure Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.lure_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:luxury_ball",
+      "display_name": "Luxury Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.luxury_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:master_ball",
+      "display_name": "Master Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.master_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:max_potion",
+      "display_name": "Max Potion",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.max_potion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:max_revive",
+      "display_name": "Max Revive",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.max_revive",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:moon_ball",
+      "display_name": "Moon Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.moon_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:nest_ball",
+      "display_name": "Nest Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.nest_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:net_ball",
+      "display_name": "Net Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.net_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:park_ball",
+      "display_name": "Park Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.park_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:pink_apricorn",
+      "display_name": "Pink Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.pink_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:poke_ball",
+      "display_name": "Poké Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.poke_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:potion",
+      "display_name": "Potion",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.potion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:premier_ball",
+      "display_name": "Premier Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.premier_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:quick_ball",
+      "display_name": "Quick Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.quick_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:rare_candy",
+      "display_name": "Rare Candy",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.rare_candy",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:red_apricorn",
+      "display_name": "Red Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.red_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:repeat_ball",
+      "display_name": "Repeat Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.repeat_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:revive",
+      "display_name": "Revive",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.revive",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:safari_ball",
+      "display_name": "Safari Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.safari_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:sport_ball",
+      "display_name": "Sport Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.sport_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:super_potion",
+      "display_name": "Super Potion",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.super_potion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:timer_ball",
+      "display_name": "Timer Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.timer_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:ultra_ball",
+      "display_name": "Ultra Ball",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.ultra_ball",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:white_apricorn",
+      "display_name": "White Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.white_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemon",
+      "id": "cobblemon:yellow_apricorn",
+      "display_name": "Yellow Apricorn",
+      "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+      "source_entry": "assets/cobblemon/lang/en_us.json::item.cobblemon.yellow_apricorn",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:catching_charm",
+      "display_name": "Catching Charm",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.catching_charm",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:cheer_attack",
+      "display_name": "Attack Cheer",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.cheer_attack",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:cheer_defense",
+      "display_name": "Defense Cheer",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.cheer_defense",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:cheer_heal",
+      "display_name": "Heal Cheer",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.cheer_heal",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:raid_crystal_block",
+      "display_name": "Raid Den Crystal",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::block.cobblemonraiddens.raid_crystal_block",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:raid_home_block",
+      "display_name": "Raid Den Crystal",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::block.cobblemonraiddens.raid_home_block",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:raid_pouch",
+      "display_name": "Raid Pouch",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.raid_pouch",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "cobblemonraiddens",
+      "id": "cobblemonraiddens:raid_shard",
+      "display_name": "Raid Shard",
+      "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+      "source_entry": "assets/cobblemonraiddens/lang/en_us.json::item.cobblemonraiddens.raid_shard",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:andesite_alloy",
+      "display_name": "Andesite Alloy",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::item.create.andesite_alloy",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:andesite_casing",
+      "display_name": "Andesite Casing",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.andesite_casing",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:basin",
+      "display_name": "Basin",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.basin",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:brass_casing",
+      "display_name": "Brass Casing",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.brass_casing",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:chute",
+      "display_name": "Chute",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.chute",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:cogwheel",
+      "display_name": "Cogwheel",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.cogwheel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:depot",
+      "display_name": "Depot",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.depot",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:encased_fan",
+      "display_name": "Encased Fan",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.encased_fan",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:gearbox",
+      "display_name": "Gearbox",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.gearbox",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:large_cogwheel",
+      "display_name": "Large Cogwheel",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.large_cogwheel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:large_water_wheel",
+      "display_name": "Large Water Wheel",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.large_water_wheel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_drill",
+      "display_name": "Mechanical Drill",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_drill",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_harvester",
+      "display_name": "Mechanical Harvester",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_harvester",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_mixer",
+      "display_name": "Mechanical Mixer",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_mixer",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_plough",
+      "display_name": "Mechanical Plough",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_plough",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_press",
+      "display_name": "Mechanical Press",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_press",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:mechanical_saw",
+      "display_name": "Mechanical Saw",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_saw",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:millstone",
+      "display_name": "Millstone",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.millstone",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:precision_mechanism",
+      "display_name": "Precision Mechanism",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::item.create.precision_mechanism",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:shaft",
+      "display_name": "Shaft",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.shaft",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:smart_chute",
+      "display_name": "Smart Chute",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.smart_chute",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:water_wheel",
+      "display_name": "Water Wheel",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.water_wheel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "create",
+      "id": "create:windmill_bearing",
+      "display_name": "Windmill Bearing",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/lang/en_us.json::block.create.windmill_bearing",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:album",
+      "display_name": "Photo Album",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.album",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:black_and_white_film",
+      "display_name": "Black and White Film",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.black_and_white_film",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:camera",
+      "display_name": "Camera",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.camera",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:camera_stand",
+      "display_name": "Camera Stand",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.camera_stand",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:color_film",
+      "display_name": "Color Film",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.color_film",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:high_sensitivity_black_and_white_film",
+      "display_name": "High-Sensitivity Black and White Film",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_black_and_white_film",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:high_sensitivity_color_film",
+      "display_name": "High-Sensitivity Color Film",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:lightroom",
+      "display_name": "Lightroom",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::block.exposure.lightroom",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:photograph",
+      "display_name": "Photograph",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.photograph",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "exposure",
+      "id": "exposure:photograph_frame",
+      "display_name": "Photograph Frame",
+      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.photograph_frame",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "icarus",
+      "id": "icarus:white_dragon_wings",
+      "display_name": "White Dragon Wings",
+      "source_jar": "Icarus-NeoForge-4.7.8.jar",
+      "source_entry": "assets/icarus/lang/en_us.json::item.icarus.white_dragon_wings",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "icarus",
+      "id": "icarus:white_feathered_wings",
+      "display_name": "White Feathered Wings",
+      "source_jar": "Icarus-NeoForge-4.7.8.jar",
+      "source_entry": "assets/icarus/lang/en_us.json::item.icarus.white_feathered_wings",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "icarus",
+      "id": "icarus:white_light_wings",
+      "display_name": "White Light Wings",
+      "source_jar": "Icarus-NeoForge-4.7.8.jar",
+      "source_entry": "assets/icarus/lang/en_us.json::item.icarus.white_light_wings",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "icarus",
+      "id": "icarus:white_mechanical_feathered_wings",
+      "display_name": "White Mechanical Feathered Wings",
+      "source_jar": "Icarus-NeoForge-4.7.8.jar",
+      "source_entry": "assets/icarus/lang/en_us.json::item.icarus.white_mechanical_feathered_wings",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:affinity_ring",
+      "display_name": "Ring of %s Affinity",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.affinity_ring",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:arcane_essence",
+      "display_name": "Arcane Essence",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:arcane_ingot",
+      "display_name": "Arcane Ingot",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_ingot",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:arcane_rune",
+      "display_name": "Arcane Rune",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:blank_rune",
+      "display_name": "Blank Runestone",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:blood_rune",
+      "display_name": "Blood Rune",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:blood_staff",
+      "display_name": "The Blood Staff",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_staff",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:blood_upgrade_orb",
+      "display_name": "Blood Upgrade Orb",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_upgrade_orb",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:copper_spell_book",
+      "display_name": "Flimsy Journal",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.copper_spell_book; data/irons_spellbooks/recipe/copper_spell_book.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:common_ink",
+      "display_name": "Common Ink",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.common_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:cooldown_rune",
+      "display_name": "Recovery Rune",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.cooldown_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:cultist_boots",
+      "display_name": "Cultist Boots",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.cultist_boots; data/irons_spellbooks/recipe/cultist_boots_crafting.json",
+      "obtainability_note": "Language key and survival crafting recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:cultist_chestplate",
+      "display_name": "Cultist Armor",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.cultist_chestplate; data/irons_spellbooks/recipe/cultist_chestplate_crafting.json",
+      "obtainability_note": "Language key and survival crafting recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:cultist_helmet",
+      "display_name": "Cultist Hood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.cultist_helmet; data/irons_spellbooks/recipe/cultist_helmet_crafting.json",
+      "obtainability_note": "Language key and survival crafting recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:cultist_leggings",
+      "display_name": "Cultist Leggings",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.cultist_leggings; data/irons_spellbooks/recipe/cultist_leggings_crafting.json",
+      "obtainability_note": "Language key and survival crafting recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:diamond_spell_book",
+      "display_name": "Enchanted Spell Book",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.diamond_spell_book",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:epic_ink",
+      "display_name": "Epic Ink",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.epic_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:gold_spell_book",
+      "display_name": "Apprentice's Spell Book",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.gold_spell_book",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:holy_rune",
+      "display_name": "Holy Rune",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:holy_upgrade_orb",
+      "display_name": "Holy Upgrade Orb",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_upgrade_orb",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:improved_blood_staff",
+      "display_name": "Improved Blood Staff",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.improved_blood_staff",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:inscription_table",
+      "display_name": "Inscription Table",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:iron_spell_book",
+      "display_name": "Ironbound Tome",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.iron_spell_book",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:legendary_ink",
+      "display_name": "Legendary Ink",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.legendary_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:priest_boots",
+      "display_name": "Priest Boots",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.priest_boots",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:priest_chestplate",
+      "display_name": "Priest Robes",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.priest_chestplate",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:priest_helmet",
+      "display_name": "Priest Mask",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.priest_helmet",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:priest_leggings",
+      "display_name": "Priest Leggings",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.priest_leggings",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:protection_rune",
+      "display_name": "Protective Rune",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.protection_rune",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:rare_ink",
+      "display_name": "Rare Ink",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.rare_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:scroll",
+      "display_name": "Scroll",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:spell_book",
+      "display_name": "Spell Book",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.spell_book",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:uncommon_ink",
+      "display_name": "Uncommon Ink",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:bevel",
+      "display_name": "Bevel",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.bevel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:cog",
+      "display_name": "Cog",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.cog",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:crown",
+      "display_name": "Crown",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.crown",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:sprocket",
+      "display_name": "Sprocket",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.sprocket",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:spur",
+      "display_name": "Spur",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.spur",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "numismatics",
+      "id": "numismatics:sun",
+      "display_name": "Sun",
+      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "source_entry": "assets/numismatics/lang/en_us.json::item.numismatics.sun",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:antique_ink",
+      "display_name": "Antique Ink",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::item.supplementaries.antique_ink",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:key",
+      "display_name": "Key",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::item.supplementaries.key",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:quiver",
+      "display_name": "Quiver",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::item.supplementaries.quiver",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:rope",
+      "display_name": "Rope",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::block.supplementaries.rope",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:sack",
+      "display_name": "Sack",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::block.supplementaries.sack",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:slingshot",
+      "display_name": "Slingshot",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/lang/en_us.json::item.supplementaries.slingshot",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_bagel",
+      "display_name": "Blood Bagel",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_bagel",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_dough",
+      "display_name": "Blood Dough",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_dough",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_hot_dog",
+      "display_name": "Blood Hot Dog",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_hot_dog",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_pie",
+      "display_name": "Blood Pie",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::block.vampiresdelight.blood_pie",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_pie_slice",
+      "display_name": "Slice of Blood Pie",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_pie_slice",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_sausage",
+      "display_name": "Blood Sausage",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_sausage",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_syrup",
+      "display_name": "Blood Syrup",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_syrup",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_wine_bottle",
+      "display_name": "Blood Wine Bottle",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_wine_bottle",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:blood_wine_glass",
+      "display_name": "Blood Wine Glass",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.blood_wine_glass",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:garlic_crate",
+      "display_name": "Garlic Crate",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::block.vampiresdelight.garlic_crate",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:garlic_soup",
+      "display_name": "Garlic Soup",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.garlic_soup",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:roasted_garlic",
+      "display_name": "Roasted Garlic",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.roasted_garlic",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresdelight",
+      "id": "vampiresdelight:silver_knife",
+      "display_name": "Silver Knife",
+      "source_jar": "VampiresDelight-1.21.1-0.1.12b.jar",
+      "source_entry": "assets/vampiresdelight/lang/en_us.json::item.vampiresdelight.silver_knife",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresneedumbrellas",
+      "id": "vampiresneedumbrellas:diamond_umbrella",
+      "display_name": "Black Diamond Umbrella",
+      "source_jar": "VampiresNeedUmbrellas-1.21.1-1.0.3.jar",
+      "source_entry": "assets/vampiresneedumbrellas/lang/en_us.json::item.vampiresneedumbrellas.diamond_umbrella",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresneedumbrellas",
+      "id": "vampiresneedumbrellas:gold_umbrella",
+      "display_name": "Black Gold Umbrella",
+      "source_jar": "VampiresNeedUmbrellas-1.21.1-1.0.3.jar",
+      "source_entry": "assets/vampiresneedumbrellas/lang/en_us.json::item.vampiresneedumbrellas.gold_umbrella",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresneedumbrellas",
+      "id": "vampiresneedumbrellas:iron_umbrella",
+      "display_name": "Black Iron Umbrella",
+      "source_jar": "VampiresNeedUmbrellas-1.21.1-1.0.3.jar",
+      "source_entry": "assets/vampiresneedumbrellas/lang/en_us.json::item.vampiresneedumbrellas.iron_umbrella",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampiresneedumbrellas",
+      "id": "vampiresneedumbrellas:netherite_umbrella",
+      "display_name": "Black Netherite Umbrella",
+      "source_jar": "VampiresNeedUmbrellas-1.21.1-1.0.3.jar",
+      "source_entry": "assets/vampiresneedumbrellas/lang/en_us.json::item.vampiresneedumbrellas.netherite_umbrella",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:alchemical_cauldron",
+      "display_name": "Alchemical Cauldron",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:altar_infusion",
+      "display_name": "Altar of Infusion",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:altar_inspiration",
+      "display_name": "Altar of Inspiration",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:basic_crossbow",
+      "display_name": "Basic Crossbow",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.basic_crossbow",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:basic_tech_crossbow",
+      "display_name": "Semi-Auto Crossbow",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.basic_tech_crossbow",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_bottle",
+      "display_name": "Blood Bottle",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.blood_bottle",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_container",
+      "display_name": "Blood Container",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.blood_container",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_infused_enhanced_iron_ingot",
+      "display_name": "Enhanced Blood-Infused Iron Ingot",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_enhanced_iron_ingot; data/vampirism/recipe/vampire/blood_infused_enhanced_iron_ingot.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_infused_iron_ingot",
+      "display_name": "Blood-Infused Iron Ingot",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_iron_ingot; data/vampirism/recipe/vampire/blood_infused_iron_ingot.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_grinder",
+      "display_name": "Blood Grinder",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.blood_grinder",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_pedestal",
+      "display_name": "Blood Pedestal",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.blood_pedestal",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_potion",
+      "display_name": "Blood Potion",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.blood_potion",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_potion_table",
+      "display_name": "Blood Potion Table",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.blood_potion_table",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:blood_sieve",
+      "display_name": "Blood Sieve",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.blood_sieve",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:coffin_red",
+      "display_name": "Red Coffin",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.coffin_red; data/vampirism/recipe/vampire/coffin_red.json",
+      "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_normal",
+      "display_name": "Quarrel",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_normal",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_spitfire",
+      "display_name": "Spitfire",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_spitfire",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_teleport",
+      "display_name": "Teleport Quarrel",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_teleport",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_vampire_killer",
+      "display_name": "Vampire Killer Quarrel",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_vampire_killer",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:enhanced_crossbow",
+      "display_name": "Enhanced Crossbow",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.enhanced_crossbow",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:enhanced_tech_crossbow",
+      "display_name": "Enhanced Semi-Auto Crossbow",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.enhanced_tech_crossbow",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:garlic_diffuser",
+      "display_name": "Garlic Diffuser",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.garlic_diffuser",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:holy_salt",
+      "display_name": "Blessed Salt",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.holy_salt",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:holy_water_bottle",
+      "display_name": "Holy Water",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.holy_water_bottle",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:holy_water_splash_bottle",
+      "display_name": "Splash Bottle of Holy Water",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.holy_water_splash_bottle",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:holy_water_splash_bottle_enhanced",
+      "display_name": "Enhanced Splash Bottle of Holy Water",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "de/teamlapen/vampirism/core/ModItems.class::holy_water_splash_bottle_enhanced; assets/vampirism/models/item/holy_water_splash_bottle_enhanced.json",
+      "obtainability_note": "Exact registry string is present in ModItems bytecode and the item model is present. Runtime tier rendering still requires a client smoke test."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:human_heart",
+      "display_name": "Human Heart",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.human_heart",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_axe",
+      "display_name": "Hunter Axe",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.hunter_axe",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_axe_enhanced",
+      "display_name": "Enhanced Hunter Axe",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "data/vampirism/recipe/hunter_axe_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::hunter_axe_enhanced",
+      "obtainability_note": "Exact recipe result and registry string are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_coat_chest",
+      "display_name": "Hunter Coat",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.hunter_coat_chest",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_coat_feet",
+      "display_name": "Hunter Coat Boots",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.hunter_coat_feet",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_coat_head",
+      "display_name": "Hunter Coat Helmet",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.hunter_coat_head",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_coat_legs",
+      "display_name": "Hunter Coat Leggings",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.hunter_coat_legs",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:hunter_table",
+      "display_name": "Hunter Research Table",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.hunter_table",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:injection_garlic",
+      "display_name": "Garlic Injection",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.injection_garlic; de/teamlapen/vampirism/core/ModItems.class::injection_garlic",
+      "obtainability_note": "Exact language key and registry string are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:pitchfork",
+      "display_name": "Pitchfork",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.pitchfork",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:pure_blood",
+      "display_name": "Pure Blood",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.pure_blood",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:pure_blood_4",
+      "display_name": "Pure Blood (purity 4)",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "data/vampirism/recipe/blood_infused_enhanced_iron_ingot_from_pure_blood_4.json::fluid.item; de/teamlapen/vampirism/core/ModItems.class::pure_blood_4",
+      "obtainability_note": "Exact recipe ingredient and registry string are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:pure_salt",
+      "display_name": "Pure Salt",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.pure_salt",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:purified_garlic",
+      "display_name": "Purified Garlic",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.purified_garlic",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:stake",
+      "display_name": "Stake",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.stake",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_blood_bottle",
+      "display_name": "Vampire Blood",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_blood_bottle",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_cloak_white_black",
+      "display_name": "Vampire Cloak",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_cloak_white_black",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_clothing_boots",
+      "display_name": "Boots",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_clothing_boots",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_clothing_crown",
+      "display_name": "Crown",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_clothing_crown",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_clothing_hat",
+      "display_name": "Hat",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_clothing_hat",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_clothing_legs",
+      "display_name": "Pants",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_clothing_legs",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:vampire_fang",
+      "display_name": "Vampire Fang",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.vampire_fang",
+      "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:heart_seeker_enhanced",
+      "display_name": "Enhanced Heartseeker",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "data/vampirism/recipe/vampire/heart_seeker_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::heart_seeker_enhanced",
+      "obtainability_note": "Exact recipe result and registry string are present in the inspected JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:weapon_table",
+      "display_name": "Hunter Weapon Table",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.weapon_table",
+      "obtainability_note": ""
+    }
+  ],
+  "advancements": {
+    "vampirism_vampire": [
+      {
+        "id": "vampirism:vampire/bat",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/bat.json"
+      },
+      {
+        "id": "vampirism:vampire/become_vampire",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/become_vampire.json"
+      },
+      {
+        "id": "vampirism:vampire/blood_cult",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/blood_cult.json"
+      },
+      {
+        "id": "vampirism:vampire/extra_storage",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/extra_storage.json"
+      },
+      {
+        "id": "vampirism:vampire/first_blood",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/first_blood.json"
+      },
+      {
+        "id": "vampirism:vampire/freeze_kill",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/freeze_kill.json"
+      },
+      {
+        "id": "vampirism:vampire/kill_mother",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/kill_mother.json"
+      },
+      {
+        "id": "vampirism:vampire/max_level",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/max_level.json"
+      },
+      {
+        "id": "vampirism:vampire/max_lord",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/max_lord.json"
+      },
+      {
+        "id": "vampirism:vampire/resurrect",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/resurrect.json"
+      },
+      {
+        "id": "vampirism:vampire/sniped",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/sniped.json"
+      },
+      {
+        "id": "vampirism:vampire/yuck",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/vampire/yuck.json"
+      }
+    ],
+    "vampirism_hunter": [
+      {
+        "id": "vampirism:hunter/become_hunter",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/become_hunter.json"
+      },
+      {
+        "id": "vampirism:hunter/betrayal",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/betrayal.json"
+      },
+      {
+        "id": "vampirism:hunter/cure_vampire_villager",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/cure_vampire_villager.json"
+      },
+      {
+        "id": "vampirism:hunter/kill_mother",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/kill_mother.json"
+      },
+      {
+        "id": "vampirism:hunter/kill_resurrected_vampire",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/kill_resurrected_vampire.json"
+      },
+      {
+        "id": "vampirism:hunter/max_level",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/max_level.json"
+      },
+      {
+        "id": "vampirism:hunter/max_lord",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/max_lord.json"
+      },
+      {
+        "id": "vampirism:hunter/stake",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/stake.json"
+      },
+      {
+        "id": "vampirism:hunter/technology",
+        "source_jar": "Vampirism-1.21-1.10.12.jar",
+        "source_entry": "data/vampirism/advancement/hunter/technology.json"
+      }
+    ],
+    "cobblemon": [
+      {
+        "id": "cobblemon:any_plant",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/any_plant.json"
+      },
+      {
+        "id": "cobblemon:brew_all",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/brew_all.json"
+      },
+      {
+        "id": "cobblemon:brew_full_restore",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/brew_full_restore.json"
+      },
+      {
+        "id": "cobblemon:brew_potion",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/brew_potion.json"
+      },
+      {
+        "id": "cobblemon:catch_all_vivillon",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/catch_all_vivillon.json"
+      },
+      {
+        "id": "cobblemon:catch_all_vivillon_but_actually",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/catch_all_vivillon_but_actually.json"
+      },
+      {
+        "id": "cobblemon:cook_all_ev_mochi",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/cook_all_ev_mochi.json"
+      },
+      {
+        "id": "cobblemon:cook_all_regional_delicacies",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/cook_all_regional_delicacies.json"
+      },
+      {
+        "id": "cobblemon:cook_snack",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/cook_snack.json"
+      },
+      {
+        "id": "cobblemon:craft_all_balls",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_all_balls.json"
+      },
+      {
+        "id": "cobblemon:craft_ancient_balls",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_ancient_balls.json"
+      },
+      {
+        "id": "cobblemon:craft_apricorn_balls",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_apricorn_balls.json"
+      },
+      {
+        "id": "cobblemon:craft_base_balls",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_base_balls.json"
+      },
+      {
+        "id": "cobblemon:craft_master_rod",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_master_rod.json"
+      },
+      {
+        "id": "cobblemon:craft_poke_ball",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_poke_ball.json"
+      },
+      {
+        "id": "cobblemon:craft_pokedex",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_pokedex.json"
+      },
+      {
+        "id": "cobblemon:craft_remedy",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_remedy.json"
+      },
+      {
+        "id": "cobblemon:craft_rod",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/craft_rod.json"
+      },
+      {
+        "id": "cobblemon:evolve_gholdengo_netherite",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/evolve_gholdengo_netherite.json"
+      },
+      {
+        "id": "cobblemon:evolve_shedinja",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/evolve_shedinja.json"
+      },
+      {
+        "id": "cobblemon:evolve_veevees",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/evolve_veevees.json"
+      },
+      {
+        "id": "cobblemon:first_battle_victory",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/first_battle_victory.json"
+      },
+      {
+        "id": "cobblemon:first_catch",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/first_catch.json"
+      },
+      {
+        "id": "cobblemon:first_evolution",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/first_evolution.json"
+      },
+      {
+        "id": "cobblemon:first_shiny_catch",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/first_shiny_catch.json"
+      },
+      {
+        "id": "cobblemon:full_party",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/full_party.json"
+      },
+      {
+        "id": "cobblemon:grow_tumblestone",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/grow_tumblestone.json"
+      },
+      {
+        "id": "cobblemon:harvest_apricorn",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/harvest_apricorn.json"
+      },
+      {
+        "id": "cobblemon:harvest_apricorn_seed",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/harvest_apricorn_seed.json"
+      },
+      {
+        "id": "cobblemon:healing_machine",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/healing_machine.json"
+      },
+      {
+        "id": "cobblemon:interact_with_pokemon",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/interact_with_pokemon.json"
+      },
+      {
+        "id": "cobblemon:max_level_baby",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/max_level_baby.json"
+      },
+      {
+        "id": "cobblemon:max_ride_stats",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/max_ride_stats.json"
+      },
+      {
+        "id": "cobblemon:medicinal_brew",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/medicinal_brew.json"
+      },
+      {
+        "id": "cobblemon:obtain_all_berries",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_all_berries.json"
+      },
+      {
+        "id": "cobblemon:obtain_all_mints",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_all_mints.json"
+      },
+      {
+        "id": "cobblemon:obtain_berry",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_berry.json"
+      },
+      {
+        "id": "cobblemon:obtain_big_root",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_big_root.json"
+      },
+      {
+        "id": "cobblemon:obtain_fossil",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_fossil.json"
+      },
+      {
+        "id": "cobblemon:obtain_leek",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_leek.json"
+      },
+      {
+        "id": "cobblemon:obtain_mint",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_mint.json"
+      },
+      {
+        "id": "cobblemon:obtain_mutated_berry",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_mutated_berry.json"
+      },
+      {
+        "id": "cobblemon:obtain_revival_herb",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_revival_herb.json"
+      },
+      {
+        "id": "cobblemon:obtain_tumblestone",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/obtain_tumblestone.json"
+      },
+      {
+        "id": "cobblemon:own_zangoose_seviper",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/own_zangoose_seviper.json"
+      },
+      {
+        "id": "cobblemon:place_campfire_pot",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/place_campfire_pot.json"
+      },
+      {
+        "id": "cobblemon:rainbow_apricorns",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/rainbow_apricorns.json"
+      },
+      {
+        "id": "cobblemon:resurrect_galar_fossil",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/resurrect_galar_fossil.json"
+      },
+      {
+        "id": "cobblemon:resurrect_pokemon",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/resurrect_pokemon.json"
+      },
+      {
+        "id": "cobblemon:ride_pokemon",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/ride_pokemon.json"
+      },
+      {
+        "id": "cobblemon:root",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/root.json"
+      },
+      {
+        "id": "cobblemon:slather_saccharine",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/slather_saccharine.json"
+      },
+      {
+        "id": "cobblemon:trade_pokemon",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/trade_pokemon.json"
+      },
+      {
+        "id": "cobblemon:trade_shelmet_karrablast",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/trade_shelmet_karrablast.json"
+      },
+      {
+        "id": "cobblemon:use_all_berry_bait",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_all_berry_bait.json"
+      },
+      {
+        "id": "cobblemon:use_candy",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_candy.json"
+      },
+      {
+        "id": "cobblemon:use_iv_candy",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_iv_candy.json"
+      },
+      {
+        "id": "cobblemon:use_pasture",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_pasture.json"
+      },
+      {
+        "id": "cobblemon:use_poke_bait",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_poke_bait.json"
+      },
+      {
+        "id": "cobblemon:use_revive",
+        "source_jar": "Cobblemon-neoforge-1.7.3+1.21.1.jar",
+        "source_entry": "data/cobblemon/advancement/use_revive.json"
+      }
+    ],
+    "cobblemonraiddens": [
+      {
+        "id": "cobblemonraiddens:great_friend",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/great_friend.json"
+      },
+      {
+        "id": "cobblemonraiddens:join_raid",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/join_raid.json"
+      },
+      {
+        "id": "cobblemonraiddens:raid_dynamax",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/raid_dynamax.json"
+      },
+      {
+        "id": "cobblemonraiddens:raid_mega",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/raid_mega.json"
+      },
+      {
+        "id": "cobblemonraiddens:raid_shard_charge",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/raid_shard_charge.json"
+      },
+      {
+        "id": "cobblemonraiddens:raid_shiny",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/raid_shiny.json"
+      },
+      {
+        "id": "cobblemonraiddens:raid_tera",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/raid_tera.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_five",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_five.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_four",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_four.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_one",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_one.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_seven",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_seven.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_six",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_six.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_three",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_three.json"
+      },
+      {
+        "id": "cobblemonraiddens:tier_two",
+        "source_jar": "cobblemonraiddens-neoforge-0.11.0+1.21.1.jar",
+        "source_entry": "data/cobblemonraiddens/advancement/tier_two.json"
+      }
+    ]
+  },
+  "spells": [
+    {
+      "id": "irons_spellbooks:acupuncture",
+      "display_name": "Acupuncture",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.acupuncture; io/redspace/ironsspellbooks/spells/blood/AcupunctureSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:blood_needles",
+      "display_name": "Blood Needles",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blood_needles; io/redspace/ironsspellbooks/spells/blood/BloodNeedlesSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:blood_slash",
+      "display_name": "Blood Slash",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blood_slash; io/redspace/ironsspellbooks/spells/blood/BloodSlashSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:blood_step",
+      "display_name": "Blood Step",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blood_step; io/redspace/ironsspellbooks/spells/blood/BloodStepSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:devour",
+      "display_name": "Devour",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.devour; io/redspace/ironsspellbooks/spells/blood/DevourSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:heartstop",
+      "display_name": "Heartstop",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.heartstop; io/redspace/ironsspellbooks/spells/blood/HeartstopSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:raise_dead",
+      "display_name": "Raise Dead",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.raise_dead; io/redspace/ironsspellbooks/spells/blood/RaiseDeadSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:ray_of_siphoning",
+      "display_name": "Ray of Siphoning",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.ray_of_siphoning; io/redspace/ironsspellbooks/spells/blood/RayOfSiphoningSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:sacrifice",
+      "display_name": "Sacrifice",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.sacrifice; io/redspace/ironsspellbooks/spells/blood/SacrificeSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:wither_skull",
+      "display_name": "Wither Skull",
+      "school": "blood",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.wither_skull; io/redspace/ironsspellbooks/spells/blood/WitherSkullSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:recall",
+      "display_name": "Recall",
+      "school": "ender",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.recall; io/redspace/ironsspellbooks/spells/ender/RecallSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:spectral_hammer",
+      "display_name": "Spectral Hammer",
+      "school": "evocation",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.spectral_hammer; io/redspace/ironsspellbooks/spells/evocation/SpectralHammerSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:angel_wing",
+      "display_name": "Angel Wings",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.angel_wing; io/redspace/ironsspellbooks/spells/holy/AngelWingsSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:blessing_of_life",
+      "display_name": "Blessing of Life",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blessing_of_life; io/redspace/ironsspellbooks/spells/holy/BlessingOfLifeSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:cleanse",
+      "display_name": "Cleanse",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.cleanse; io/redspace/ironsspellbooks/spells/holy/CleanseSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:cloud_of_regeneration",
+      "display_name": "Cloud of Regeneration",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.cloud_of_regeneration; io/redspace/ironsspellbooks/spells/holy/CloudOfRegenerationSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:divine_smite",
+      "display_name": "Divine Smite",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.divine_smite; io/redspace/ironsspellbooks/spells/holy/DivineSmiteSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:fortify",
+      "display_name": "Fortify",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.fortify; io/redspace/ironsspellbooks/spells/holy/FortifySpell.class"
+    },
+    {
+      "id": "irons_spellbooks:greater_heal",
+      "display_name": "Greater Heal",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.greater_heal; io/redspace/ironsspellbooks/spells/holy/GreaterHealSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:guiding_bolt",
+      "display_name": "Guiding Bolt",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.guiding_bolt; io/redspace/ironsspellbooks/spells/holy/GuidingBoltSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:haste",
+      "display_name": "Haste",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.haste; io/redspace/ironsspellbooks/spells/holy/HasteSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:heal",
+      "display_name": "Heal",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.heal; io/redspace/ironsspellbooks/spells/holy/HealSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:healing_circle",
+      "display_name": "Healing Circle",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.healing_circle; io/redspace/ironsspellbooks/spells/holy/HealingCircleSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:sunbeam",
+      "display_name": "Sunbeam",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.sunbeam; io/redspace/ironsspellbooks/spells/holy/SunbeamSpell.class"
+    },
+    {
+      "id": "irons_spellbooks:wisp",
+      "display_name": "Wisp",
+      "school": "holy",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.wisp; io/redspace/ironsspellbooks/spells/holy/WispSpell.class"
+    }
+  ],
+  "numismatics_denominations": [
+    {
+      "id": "numismatics:spur",
+      "display_name": "Spur",
+      "relative_value": null
+    },
+    {
+      "id": "numismatics:bevel",
+      "display_name": "Bevel",
+      "relative_value": null
+    },
+    {
+      "id": "numismatics:sprocket",
+      "display_name": "Sprocket",
+      "relative_value": null
+    },
+    {
+      "id": "numismatics:cog",
+      "display_name": "Cog",
+      "relative_value": null
+    },
+    {
+      "id": "numismatics:crown",
+      "display_name": "Crown",
+      "relative_value": null
+    },
+    {
+      "id": "numismatics:sun",
+      "display_name": "Sun",
+      "relative_value": null
+    }
+  ],
+  "ftb_quests": {
+    "installed_filename": "ftb-quests-neoforge-2101.1.33.jar",
+    "task_types_observed": [
+      "advancement",
+      "checkmark",
+      "choice",
+      "item"
+    ],
+    "quest_fields_observed": [
+      "id",
+      "title",
+      "subtitle",
+      "description",
+      "icon",
+      "tasks",
+      "rewards",
+      "dependencies",
+      "shape",
+      "size",
+      "x",
+      "y",
+      "item",
+      "advancement",
+      "criterion",
+      "table_id",
+      "components",
+      "count"
+    ]
+  }
+}

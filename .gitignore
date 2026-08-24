@@ -12,3 +12,4 @@ temp_cache/
 
 # Minecraft client-local data (FTB chunks maps, waypoints)
 local/
+tmp/
