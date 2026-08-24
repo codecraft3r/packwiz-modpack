@@ -11,9 +11,9 @@
 		{
 			dependencies: ["7A11C0DE10000004"]
 			description: [
-				"A dependable ball supply turns chance sightings into journeys that can be planned. The next expedition begins with fewer dead ends and more room to choose a companion."
+				"Mara Venn marked structures she could return to, not every horizon she could name. A reliable compass turns a rumor into a route the next traveler can follow."
 			]
-			icon: { id: "cobblemon:poke_ball" }
+			icon: { id: "explorerscompass:explorerscompass" }
 			id: "7A11C0DE50000001"
 			rewards: [
 				{
@@ -24,32 +24,32 @@
 				}
 				{
 					id: "7A11C0DE50002002"
-					item: { count: 8, id: "cobblemon:poke_ball" }
+					item: { count: 1, id: "minecraft:spyglass" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "circle"
-			subtitle: "Cobblemon · Crafting"
+			subtitle: "Exploration · Find a route"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C0DE50001001"
-					item: { count: 4, id: "cobblemon:poke_ball" }
-					title: "Keep for Inspection"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Carry an Explorer's Compass"
 					type: "item"
 				}
 			]
-			title: "Ballmaker's Start"
+			title: "Surveyor's Kit"
 			x: -4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7A11C0DE50000001"]
 			description: [
-				"A first partnership makes the wilds feel less like a list of sightings and more like a world two companions can explore together. Shared travel experience prepares both trainer and partner for pressure."
+				"A route survives memory when someone records the view that made it worth walking. Once the shutter opens, later records can preserve places instead of coordinates alone."
 			]
-			icon: { id: "cobblemon:friend_ball" }
+			icon: { id: "exposure:camera" }
 			id: "7A11C0DE50000002"
 			rewards: [
 				{
@@ -60,37 +60,52 @@
 				}
 				{
 					id: "7A11C0DE50002004"
-					item: { count: 6, id: "cobblemon:potion" }
+					item: { count: 2, id: "exposure:black_and_white_film" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C0DE50002005"
-					item: { count: 16, id: "minecraft:cooked_beef" }
+					item: { count: 8, id: "minecraft:glow_ink_sac" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "circle"
-			subtitle: "Cobblemon · First capture"
+			subtitle: "Fieldwork · First photograph"
 			tasks: [
 				{
-					advancement: "cobblemon:first_catch"
-					criterion: ""
+					consume_items: false
 					id: "7A11C0DE50001002"
+					item: { count: 1, id: "exposure:camera" }
+					title: "Carry a Camera"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C0DE50001011"
+					item: { count: 1, id: "exposure:black_and_white_film" }
+					title: "Carry Monochrome Film"
+					type: "item"
+				}
+				{
+					advancement: "exposure:adventure/exposure"
+					criterion: ""
+					id: "7A11C0DE50001012"
+					title: "Take a Photograph"
 					type: "advancement"
 				}
 			]
-			title: "First Companion"
+			title: "First Exposure"
 			x: -4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DE50000002"]
 			description: [
-				"Training becomes meaningful when choices hold under pressure and recovery is part of the plan. Raid dens are the next place individual preparation becomes group responsibility."
+				"Loose photographs vanish into chests and unlabeled barrels. An ordered record gives a route witnesses, context, and a reason to be visited again."
 			]
-			icon: { id: "cobblemon:super_potion" }
+			icon: { id: "exposure:photograph" }
 			id: "7A11C0DE50000003"
 			rewards: [
 				{
@@ -101,37 +116,39 @@
 				}
 				{
 					id: "7A11C0DE50002007"
-					item: { count: 4, id: "cobblemon:super_potion" }
+					item: { count: 4, id: "exposure:photograph_frame" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C0DE50002008"
-					item: { count: 2, id: "cobblemon:revive" }
+					item: { count: 1, id: "exposure:camera_stand" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "circle"
-			subtitle: "Cobblemon · Battle"
+			subtitle: "Fieldwork · Printed photograph"
 			tasks: [
 				{
-					advancement: "cobblemon:first_battle_victory"
+					advancement: "exposure:adventure/moment_in_time"
 					criterion: ""
 					id: "7A11C0DE50001003"
+					title: "Print a Photograph"
 					type: "advancement"
 				}
 			]
-			title: "First Victory"
+			title: "Moment in Time"
 			x: -4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["7A11C0DE50000003"]
 			description: [
-				"A den turns private teams into one temporary line of trust, and the recovery kit helps the next group answer it. The checkmark attests that you entered the raid with another player."
+				"Private discoveries become common knowledge when their evidence has a home. A public field record gives future roads names, caretakers, and proof of what waits at the end."
+				"&eAttestation: &fShare four photographs from distinct public sites in an album or display that other players can reach."
 			]
-			icon: { id: "cobblemonraiddens:raid_shard" }
+			icon: { id: "exposure:album" }
 			id: "7A11C0DE50000004"
 			rewards: [
 				{
@@ -142,34 +159,34 @@
 				}
 				{
 					id: "7A11C0DE5000200A"
-					item: { count: 2, id: "cobblemonraiddens:cheer_heal" }
+					item: { count: 2, id: "exposure:color_film" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C0DE5000200B"
-					item: { count: 4, id: "cobblemon:full_restore" }
+					item: { count: 1, id: "exposure:high_sensitivity_color_film" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
-			subtitle: "Cobblemon · Team raid"
+			subtitle: "Exploration · Shared archive"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C0DE50001004"
-					item: { count: 1, id: "cobblemonraiddens:raid_shard" }
-					title: "Keep for Inspection"
+					item: { count: 1, id: "exposure:album" }
+					title: "Carry a Photo Album"
 					type: "item"
 				}
 				{
 					id: "7A11C0DE5000100C"
-					title: "Joined a Team Raid"
+					title: "Shared Four Field Records"
 					type: "checkmark"
 				}
 			]
-			title: "Answer the Den"
+			title: "Island Album"
 			x: -4.0d
 			y: 3.0d
 		}

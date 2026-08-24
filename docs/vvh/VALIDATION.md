@@ -21,9 +21,10 @@ The required gate covers:
 - current chapter groups, data schema, and disabled testing unlock mode;
 - player-copy, title-length, ampersand, and player-visible meta-label rules;
 - observed task and reward types;
+- current-Packwiz membership for every non-vanilla namespace, including indexed metadata, server availability, exact pinned JAR filename, and download hash;
 - catalog-backed non-vanilla items, icons, advancements, images, spell IDs, and component codecs;
 - substantive hard criteria, including the Chapter 04 Cultist armor set;
-- Chapter 05 raid and shared-Create attestations;
+- Chapter 05 field-archive and shared-Create attestations;
 - Chapter 06 weekly payment, cooldown, team-reward, and zero-faucet rules;
 - reward-to-descendant-task collision protection;
 - the exact economy ledgers below; and
@@ -47,7 +48,16 @@ The current chapters use inline strings. Localization completeness therefore mea
 
 The five Chapter 06 sinks cost 4/4/3/3/5 Bevels. They consume currency, use a 604800-second cooldown, grant team-scoped crate outputs, and never issue Bevels.
 
-## Manifest and parser evidence
+## Catalog, manifest, and parser evidence
+
+Synchronize the campaign-scoped ID catalog and prove it is bound to the live Packwiz index:
+
+```powershell
+python -B -X utf8 scripts/vvh_sync_catalog.py
+python -B -X utf8 scripts/vvh_sync_catalog.py --check
+```
+
+The catalog contains only IDs used by the live campaign. A namespace fails validation when its `.pw.toml` is absent from `index.toml`, client-only, renamed, or pinned to a different JAR/hash. Unrelated downloaded JARs are never accepted as installation evidence.
 
 Synchronize the campaign manifest and verify it is current:
 
@@ -58,7 +68,7 @@ python -B -X utf8 scripts/vvh_sync_manifest.py --check
 
 The synchronizer reads the live `ch*.snbt` files, preserves inline copy and nested item counts, records all three chapter groups, and includes only reward tables referenced by the live campaign.
 
-The focused structural command covering `chapter_groups.snbt`, `data.snbt`, `lang/en_us.snbt`, and all six chapter files passes 9/9. The broader `scripts/test_validate_snbt.py` suite passes all 34 tests with one intentional skip. The campaign validator passes 27/27 required checks.
+The focused structural command covering `chapter_groups.snbt`, `data.snbt`, `lang/en_us.snbt`, and all six chapter files passes 9/9. The broader `scripts/test_validate_snbt.py` suite passes all 34 tests with one intentional skip. The campaign validator passes 28/28 required checks.
 
 ## Runtime boundary
 

@@ -15,6 +15,7 @@ import json
 import re
 import subprocess
 import sys
+import tomllib
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -514,7 +515,7 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
     for group in catalog.get("advancements", {}).values():
         for entry in group:
             catalog_advancements[str(entry.get("id"))] = entry
-    catalog_spells = {str(entry.get("id")) for entry in catalog.get("spells", [])}
+    catalog_spells = {str(entry.get("id")): entry for entry in catalog.get("spells", [])}
     item_refs: list[tuple[str, str]] = []
     advancement_refs: list[tuple[str, str]] = []
     icon_refs: list[tuple[str, str]] = []
@@ -541,6 +542,62 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
                 iid = item_id(reward.get("item"))
                 if iid:
                     item_refs.append((f"{qid}:reward:{reward.get('id')}", iid))
+
+    pack_proofs = catalog.get("pack_membership", {}).get("namespaces", {})
+    used_pack_namespaces = sorted(
+        {
+            value.split(":", 1)[0]
+            for _location, value in [*item_refs, *icon_refs, *advancement_refs]
+            if not value.startswith("minecraft:")
+        }
+    )
+    membership_failures: list[str] = []
+    index_files: dict[str, dict[str, Any]] = {}
+    try:
+        index_doc = tomllib.loads((root / "index.toml").read_text(encoding="utf-8"))
+        index_files = {
+            str(entry.get("file")): entry
+            for entry in index_doc.get("files", [])
+            if isinstance(entry, dict)
+        }
+    except (OSError, UnicodeError, tomllib.TOMLDecodeError) as exc:
+        membership_failures.append(f"index.toml could not be parsed: {exc}")
+    for namespace in used_pack_namespaces:
+        proof = pack_proofs.get(namespace)
+        if not isinstance(proof, dict):
+            membership_failures.append(f"{namespace}: no current-Packwiz namespace proof")
+            continue
+        metadata_rel = proof.get("metadata")
+        if not isinstance(metadata_rel, str) or metadata_rel not in index_files:
+            membership_failures.append(f"{namespace}: metadata {metadata_rel!r} is not indexed by index.toml")
+            continue
+        metadata_path = root / metadata_rel
+        try:
+            metadata = tomllib.loads(metadata_path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeError, tomllib.TOMLDecodeError) as exc:
+            membership_failures.append(f"{namespace}: could not parse {metadata_rel}: {exc}")
+            continue
+        download = metadata.get("download", {})
+        actual = {
+            "filename": metadata.get("filename"),
+            "side": metadata.get("side", "both"),
+            "download_hash_format": download.get("hash-format"),
+            "download_hash": download.get("hash"),
+            "index_sha256": index_files[metadata_rel].get("hash"),
+        }
+        for field, value in actual.items():
+            if proof.get(field) != value:
+                membership_failures.append(
+                    f"{namespace}: catalog {field}={proof.get(field)!r} does not match {metadata_rel} value {value!r}"
+                )
+        if actual["side"] == "client":
+            membership_failures.append(f"{namespace}: {metadata_rel} is client-only and unavailable to quest logic")
+    checks.add(
+        "packwiz_namespace_membership",
+        membership_failures,
+        details={"used_non_vanilla_namespaces": used_pack_namespaces},
+    )
+
     item_failures: list[str] = []
     for location, iid in [*item_refs, *icon_refs]:
         if iid.startswith("minecraft:"):
@@ -550,17 +607,27 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
             item_failures.append(f"{location}: non-vanilla item/icon missing from catalog: {iid}")
         elif not entry.get("source_jar") or not entry.get("source_entry"):
             item_failures.append(f"{location}: catalog entry lacks direct JAR evidence path: {iid}")
+        elif entry.get("source_jar") != pack_proofs.get(iid.split(":", 1)[0], {}).get("filename"):
+            item_failures.append(
+                f"{location}: evidence JAR {entry.get('source_jar')!r} is not the current Packwiz JAR for {iid}"
+            )
     checks.add(
         "item_and_icon_catalog_coverage",
         item_failures,
         details={"item_references": len(item_refs), "icon_references": len(icon_refs)},
     )
 
-    advancement_failures = [
-        f"{location}: advancement missing from catalog: {advancement}"
-        for location, advancement in advancement_refs
-        if advancement not in catalog_advancements
-    ]
+    advancement_failures: list[str] = []
+    for location, advancement in advancement_refs:
+        entry = catalog_advancements.get(advancement)
+        if entry is None:
+            advancement_failures.append(f"{location}: advancement missing from catalog: {advancement}")
+            continue
+        namespace = advancement.split(":", 1)[0]
+        if not entry.get("source_entry") or entry.get("source_jar") != pack_proofs.get(namespace, {}).get("filename"):
+            advancement_failures.append(
+                f"{location}: advancement evidence is not bound to the current Packwiz JAR: {advancement}"
+            )
     checks.add(
         "advancement_catalog_coverage",
         advancement_failures,
@@ -621,8 +688,24 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
                     if missing_slot:
                         component_failures.append(f"{qid}:{reward.get('id')}: spell slot missing {sorted(missing_slot)}")
                         continue
-                    if slot.get("id") not in catalog_spells:
+                    spell_entry = catalog_spells.get(str(slot.get("id")))
+                    if spell_entry is None:
                         component_failures.append(f"{qid}:{reward.get('id')}: uncataloged spell {slot.get('id')}")
+                    elif spell_entry.get("source_jar") != pack_proofs.get("irons_spellbooks", {}).get("filename"):
+                        component_failures.append(
+                            f"{qid}:{reward.get('id')}: spell evidence is not bound to the current Iron's Spells JAR"
+                        )
+            affinity_data = components.get("irons_spellbooks:affinity_data")
+            if isinstance(affinity_data, dict) and isinstance(affinity_data.get("id"), str):
+                spell_entry = catalog_spells.get(affinity_data["id"])
+                if spell_entry is None:
+                    component_failures.append(
+                        f"{qid}:{reward.get('id')}: uncataloged affinity spell {affinity_data['id']}"
+                    )
+                elif spell_entry.get("source_jar") != pack_proofs.get("irons_spellbooks", {}).get("filename"):
+                    component_failures.append(
+                        f"{qid}:{reward.get('id')}: affinity evidence is not bound to the current Iron's Spells JAR"
+                    )
     checks.add("item_component_codec_and_spell_ids", component_failures)
 
     criteria_failures: list[str] = []
@@ -639,15 +722,14 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
     checks.add("substantive_hard_criteria", criteria_failures)
 
     shared_failures: list[str] = []
-    raid = quests.get("7A11C0DE50000004", {})
-    raid_has_proof = any(
-        task.get("type") == "checkmark"
-        or (task.get("type") == "advancement" and task.get("advancement") == "cobblemonraiddens:join_raid")
-        for task in raid.get("tasks", [])
-    )
-    if not raid_has_proof:
+    archive = quests.get("7A11C0DE50000004", {})
+    if "exposure:album" not in task_items(archive):
         shared_failures.append(
-            "7A11C0DE50000004 'Answer the Den': a Raid Shard inventory check does not prove witnessed participation; add the verified join_raid advancement or explicit attestation"
+            "7A11C0DE50000004 'Island Album': missing hard Photo Album evidence"
+        )
+    if not any(task.get("type") == "checkmark" for task in archive.get("tasks", [])):
+        shared_failures.append(
+            "7A11C0DE50000004 'Island Album': missing explicit public field-record attestation"
         )
     for qid in ("7A11C0DE50000005", "7A11C0DE50000006", "7A11C0DE50000007", "7A11C0DE50000008"):
         if not any(task.get("type") == "checkmark" for task in quests.get(qid, {}).get("tasks", [])):
@@ -823,14 +905,23 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
         groups_path,
         data_path,
         lang_path,
+        root / "CHANGELOG.md",
         catalog_path,
         root / "docs/vvh/ID_CATALOG.md",
         root / "docs/vvh/CAMPAIGN_DESIGN.md",
+        root / "docs/vvh/MOD_PRESENCE_AUDIT.md",
         root / "docs/vvh/VALIDATION.md",
         root / "docs/vvh/UNRESOLVED.md",
         root / "docs/vvh/campaign_manifest.json",
+        root / "index.toml",
+        root / "scripts/vvh_sync_catalog.py",
         root / "scripts/vvh_sync_manifest.py",
         Path(__file__).resolve(),
+        *[
+            root / proof["metadata"]
+            for proof in pack_proofs.values()
+            if isinstance(proof, dict) and isinstance(proof.get("metadata"), str)
+        ],
     ]
     file_hashes = {
         rel(path, root): sha256(path)
@@ -858,7 +949,7 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
         "limitations": [
             "Static SNBT parsing does not prove acceptance by the shipped FTB Quests loader.",
             "minecraft:* item/icon IDs are accepted by namespace and are not exhaustively checked against the vanilla registry here.",
-            "Cataloged JAR entries prove exact IDs/resources, not survival balance, faction eligibility, or runtime trigger behavior.",
+            "Packwiz-bound JAR entries prove exact IDs/resources, not survival balance, faction eligibility, or runtime trigger behavior.",
             "Client rendering, text wrapping, red-error badges, reward delivery, and data-component tooltips require an actual client.",
             "Personal/team claims, weekly cooldown scope, faction switching, and FTB Teams synchronization require a two-account disposable-world test.",
         ],
@@ -866,7 +957,7 @@ def run(root: Path, output: Path | None) -> tuple[dict[str, Any], int]:
             "dedicated server load and FTB Quests reload with log review",
             "client open of all six chapters and visual/text inspection",
             "Vampirism become_vampire and become_hunter triggers, including already-completed state",
-            "Cobblemon first-catch, first-victory, and raid participation behavior",
+            "Explorer's Compass possession and Exposure advancement behavior, including already-completed state",
             "Create shared-site attestations and Chapter 05 capstone completion",
             "one payer plus teammate claim for all five Chapter 06 sinks, followed by cooldown rejection",
             "personal versus team Bevel claims with two accounts and fragmented teams",

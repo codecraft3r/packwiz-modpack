@@ -15,10 +15,18 @@ from pathlib import Path
 from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from vvh_validate import parse_snbt  # noqa: E402
+from vvh_validate import Parser  # noqa: E402
 
 
 COLOR = re.compile(r"&.")
+
+
+def parse_snbt(path: Path) -> dict[str, Any]:
+    """Parse authored SNBT while tolerating the UTF-8 BOM used by FTB files."""
+    value = Parser(path.read_text(encoding="utf-8").lstrip("\ufeff"), str(path)).parse()
+    if not isinstance(value, dict):
+        raise ValueError(f"{path}: expected root compound")
+    return value
 
 
 def item_id(value: Any) -> str | None:

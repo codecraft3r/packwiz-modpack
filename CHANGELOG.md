@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased] — VvH current-pack repair
+
+- Removed all 18 live Cobblemon and Raid Dens references after confirming those mods are absent from the current Packwiz manifest.
+- Replaced the affected Shared Horizons lane with Explorer's Compass and Exposure field-record progression, and replaced the Ranger requisition with an Archivist supply crate.
+- Bound campaign ID evidence to indexed `.pw.toml` metadata and exact pinned JAR filenames/hashes so unrelated downloaded JARs can no longer prove mod availability.
+
 ## [Unreleased] — VvH Iron's Spells faction weave
 
 - Added separate progression and world-building lanes to the Vampire, Hunter, and Free Company foundation chapters.

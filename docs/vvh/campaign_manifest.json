@@ -2192,11 +2192,11 @@
             "7A11C0DE10000004"
           ],
           "description": [
-            "A dependable ball supply turns chance sightings into journeys that can be planned. The next expedition begins with fewer dead ends and more room to choose a companion."
+            "Mara Venn marked structures she could return to, not every horizon she could name. A reliable compass turns a rumor into a route the next traveler can follow."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
-          "icon": "cobblemon:poke_ball",
+          "icon": "explorerscompass:explorerscompass",
           "id": "7A11C0DE50000001",
           "min_required_dependencies": 0,
           "optional": false,
@@ -2215,8 +2215,8 @@
             {
               "id": "7A11C0DE50002002",
               "item": {
-                "count": 8,
-                "id": "cobblemon:poke_ball"
+                "count": 1,
+                "id": "minecraft:spyglass"
               },
               "team_reward": false,
               "type": "item"
@@ -2224,23 +2224,23 @@
           ],
           "shape": "circle",
           "size": 1.0,
-          "subtitle": "Cobblemon · Crafting",
+          "subtitle": "Exploration · Find a route",
           "tasks": [
             {
               "advancement": null,
               "consume": false,
-              "count": 4,
+              "count": 1,
               "criterion": "",
               "id": "7A11C0DE50001001",
-              "item": "cobblemon:poke_ball",
+              "item": "explorerscompass:explorerscompass",
               "optional": false,
               "stat": null,
-              "title": "Keep for Inspection",
+              "title": "Carry an Explorer's Compass",
               "type": "item",
               "value": 1
             }
           ],
-          "title": "Ballmaker's Start",
+          "title": "Surveyor's Kit",
           "x": -4.0,
           "y": -4.0,
           "can_repeat": false
@@ -2250,11 +2250,11 @@
             "7A11C0DE50000001"
           ],
           "description": [
-            "A first partnership makes the wilds feel less like a list of sightings and more like a world two companions can explore together. Shared travel experience prepares both trainer and partner for pressure."
+            "A route survives memory when someone records the view that made it worth walking. Once the shutter opens, later records can preserve places instead of coordinates alone."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
-          "icon": "cobblemon:friend_ball",
+          "icon": "exposure:camera",
           "id": "7A11C0DE50000002",
           "min_required_dependencies": 0,
           "optional": false,
@@ -2273,8 +2273,8 @@
             {
               "id": "7A11C0DE50002004",
               "item": {
-                "count": 6,
-                "id": "cobblemon:potion"
+                "count": 2,
+                "id": "exposure:black_and_white_film"
               },
               "team_reward": false,
               "type": "item"
@@ -2282,8 +2282,8 @@
             {
               "id": "7A11C0DE50002005",
               "item": {
-                "count": 16,
-                "id": "minecraft:cooked_beef"
+                "count": 8,
+                "id": "minecraft:glow_ink_sac"
               },
               "team_reward": false,
               "type": "item"
@@ -2291,23 +2291,49 @@
           ],
           "shape": "circle",
           "size": 1.0,
-          "subtitle": "Cobblemon · First capture",
+          "subtitle": "Fieldwork · First photograph",
           "tasks": [
             {
-              "advancement": "cobblemon:first_catch",
+              "advancement": null,
               "consume": false,
               "count": 1,
               "criterion": "",
               "id": "7A11C0DE50001002",
+              "item": "exposure:camera",
+              "optional": false,
+              "stat": null,
+              "title": "Carry a Camera",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": null,
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE50001011",
+              "item": "exposure:black_and_white_film",
+              "optional": false,
+              "stat": null,
+              "title": "Carry Monochrome Film",
+              "type": "item",
+              "value": 1
+            },
+            {
+              "advancement": "exposure:adventure/exposure",
+              "consume": false,
+              "count": 1,
+              "criterion": "",
+              "id": "7A11C0DE50001012",
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "",
+              "title": "Take a Photograph",
               "type": "advancement",
               "value": 1
             }
           ],
-          "title": "First Companion",
+          "title": "First Exposure",
           "x": -4.0,
           "y": -1.5,
           "can_repeat": false
@@ -2317,11 +2343,11 @@
             "7A11C0DE50000002"
           ],
           "description": [
-            "Training becomes meaningful when choices hold under pressure and recovery is part of the plan. Raid dens are the next place individual preparation becomes group responsibility."
+            "Loose photographs vanish into chests and unlabeled barrels. An ordered record gives a route witnesses, context, and a reason to be visited again."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
-          "icon": "cobblemon:super_potion",
+          "icon": "exposure:photograph",
           "id": "7A11C0DE50000003",
           "min_required_dependencies": 0,
           "optional": false,
@@ -2341,7 +2367,7 @@
               "id": "7A11C0DE50002007",
               "item": {
                 "count": 4,
-                "id": "cobblemon:super_potion"
+                "id": "exposure:photograph_frame"
               },
               "team_reward": false,
               "type": "item"
@@ -2349,8 +2375,8 @@
             {
               "id": "7A11C0DE50002008",
               "item": {
-                "count": 2,
-                "id": "cobblemon:revive"
+                "count": 1,
+                "id": "exposure:camera_stand"
               },
               "team_reward": false,
               "type": "item"
@@ -2358,10 +2384,10 @@
           ],
           "shape": "circle",
           "size": 1.0,
-          "subtitle": "Cobblemon · Battle",
+          "subtitle": "Fieldwork · Printed photograph",
           "tasks": [
             {
-              "advancement": "cobblemon:first_battle_victory",
+              "advancement": "exposure:adventure/moment_in_time",
               "consume": false,
               "count": 1,
               "criterion": "",
@@ -2369,12 +2395,12 @@
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "",
+              "title": "Print a Photograph",
               "type": "advancement",
               "value": 1
             }
           ],
-          "title": "First Victory",
+          "title": "Moment in Time",
           "x": -4.0,
           "y": 1.0,
           "can_repeat": false
@@ -2384,11 +2410,12 @@
             "7A11C0DE50000003"
           ],
           "description": [
-            "A den turns private teams into one temporary line of trust, and the recovery kit helps the next group answer it. The checkmark attests that you entered the raid with another player."
+            "Private discoveries become common knowledge when their evidence has a home. A public field record gives future roads names, caretakers, and proof of what waits at the end.",
+            "&eAttestation: &fShare four photographs from distinct public sites in an album or display that other players can reach."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
-          "icon": "cobblemonraiddens:raid_shard",
+          "icon": "exposure:album",
           "id": "7A11C0DE50000004",
           "min_required_dependencies": 0,
           "optional": false,
@@ -2408,7 +2435,7 @@
               "id": "7A11C0DE5000200A",
               "item": {
                 "count": 2,
-                "id": "cobblemonraiddens:cheer_heal"
+                "id": "exposure:color_film"
               },
               "team_reward": false,
               "type": "item"
@@ -2416,8 +2443,8 @@
             {
               "id": "7A11C0DE5000200B",
               "item": {
-                "count": 4,
-                "id": "cobblemon:full_restore"
+                "count": 1,
+                "id": "exposure:high_sensitivity_color_film"
               },
               "team_reward": false,
               "type": "item"
@@ -2425,7 +2452,7 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Cobblemon · Team raid",
+          "subtitle": "Exploration · Shared archive",
           "tasks": [
             {
               "advancement": null,
@@ -2433,10 +2460,10 @@
               "count": 1,
               "criterion": "",
               "id": "7A11C0DE50001004",
-              "item": "cobblemonraiddens:raid_shard",
+              "item": "exposure:album",
               "optional": false,
               "stat": null,
-              "title": "Keep for Inspection",
+              "title": "Carry a Photo Album",
               "type": "item",
               "value": 1
             },
@@ -2449,12 +2476,12 @@
               "item": null,
               "optional": false,
               "stat": null,
-              "title": "Joined a Team Raid",
+              "title": "Shared Four Field Records",
               "type": "checkmark",
               "value": 1
             }
           ],
-          "title": "Answer the Den",
+          "title": "Island Album",
           "x": -4.0,
           "y": 3.0,
           "can_repeat": false
@@ -3089,11 +3116,11 @@
             "7A11C0DE60000001"
           ],
           "description": [
-            "Field supplies let a raid party range farther and recover together after a bad turn. The next den becomes a shared risk instead of one player's burden."
+            "Film and display frames keep the public archive growing after its first pages are filled. A team can document another route without rebuilding the darkroom supply from nothing."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
-          "icon": "cobblemon:great_ball",
+          "icon": "exposure:camera_stand",
           "id": "7A11C0DE60000004",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3103,8 +3130,8 @@
             {
               "id": "7A11C0DE60200007",
               "item": {
-                "count": 12,
-                "id": "cobblemon:great_ball"
+                "count": 2,
+                "id": "exposure:black_and_white_film"
               },
               "team_reward": true,
               "type": "item"
@@ -3112,8 +3139,8 @@
             {
               "id": "7A11C0DE60200008",
               "item": {
-                "count": 8,
-                "id": "cobblemon:super_potion"
+                "count": 2,
+                "id": "exposure:color_film"
               },
               "team_reward": true,
               "type": "item"
@@ -3122,7 +3149,7 @@
               "id": "7A11C0DE60200009",
               "item": {
                 "count": 4,
-                "id": "cobblemon:revive"
+                "id": "exposure:photograph_frame"
               },
               "team_reward": true,
               "type": "item"
@@ -3146,7 +3173,7 @@
               "value": 1
             }
           ],
-          "title": "Ranger's Crate",
+          "title": "Archivist's Crate",
           "x": 0.0,
           "y": 2.0,
           "can_repeat": true

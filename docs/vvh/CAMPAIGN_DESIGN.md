@@ -1,6 +1,6 @@
 # VvH Campaign Design
 
-Authoring blueprint for the five-chapter FTB Quests rebuild. This document defines the intended graph, player loop, task semantics, reward exposure, and copy direction. It is not final quest copy and does not authorize changes to live quest files.
+Authoring blueprint for the six-chapter FTB Quests campaign. This document records the intended graph, player loop, task semantics, reward exposure, and copy direction; the live SNBT remains authoritative.
 
 ## 1. Campaign contract
 
@@ -13,13 +13,13 @@ The core loop is:
 1. Learn the rules and acknowledge every required clause.
 2. Choose a vampire, hunter, or protected-neutral identity without closing content.
 3. Follow either mirrored four-tier faction spine and optionally explore its three specialist branches.
-4. Bring Cobblemon and Create progress into a shared public project.
+4. Bring exploration records and Create engineering into a shared public project.
 
 ### Source-of-truth and ID policy
 
-- All proposed item, advancement, statistic, and component IDs are symbolic until checked against `docs/vvh/ID_CATALOG.md` and `docs/vvh/id_catalog.json`.
-- The catalog files were not present when this blueprint was drafted. ID verification is therefore pending. Authors must not implement an ID from this document until the catalog marks it verified.
-- Where this document uses an `ID_CATALOG:<token>` placeholder, the author must replace it with a verified native ID and task family. Do not guess an advancement or statistic name.
+- Every live item, advancement, statistic, and component ID must appear in `docs/vvh/ID_CATALOG.md` and `docs/vvh/id_catalog.json`.
+- Catalog evidence is valid only when its namespace maps to a `.pw.toml` indexed by the current `index.toml` and its source JAR filename exactly matches that metadata.
+- Run `scripts/vvh_sync_catalog.py --check .`; an unrelated downloaded JAR never proves that a mod is installed in this pack.
 - FTB Quests chapter, quest, task, and reward IDs must stay within these exclusive ranges:
 
 | Scope | Reserved range |
@@ -390,61 +390,61 @@ Copy sketch: “A manor gives the coven a recognizable refuge and turns scattere
 
 ## 6. Chapter 05 — Shared Horizons
 
-Nine quests: four sequential Cobblemon milestones, four sequential Create co-op milestones, and one shared-build capstone. Both lane openers depend only on onboarding. The capstone requires the end of both lanes so it represents cooperation across interests rather than a faction gate.
+Nine quests: four sequential exploration-and-photography milestones, four sequential Create co-op milestones, and one shared-build capstone. Both lane openers depend only on onboarding. The capstone requires the end of both lanes so it represents cooperation across interests rather than a faction gate.
 
-### Cobblemon lane
+### Field-record lane
 
-#### `ch05.q01` — Ballmaker's Start
+#### `ch05.q01` — Surveyor's Kit
 
 | Field | Blueprint |
 | --- | --- |
 | Quest ID | `7A11C0DE50000001` |
 | Position / shape | `(-3.5, -4.5)`, circle |
-| Subtitle | `Cobblemon · Crafting` |
+| Subtitle | `Exploration · Find a route` |
 | Dependencies | `ch01.q04` |
-| Tasks | Inspect the catalog-verified standard Poké Ball item, expected `cobblemon:poke_ball`, in a quantity proving one craft batch. |
-| Rewards | One personal Bevel; a recipe-threshold apricorn/ball-component bundle for a second batch. |
+| Tasks | Inspect `explorerscompass:explorerscompass` ×1. The item is not consumed. |
+| Rewards | One personal Bevel and one vanilla spyglass. |
 
-Copy sketch: “A reliable supply of Poké Balls turns chance encounters into deliberate exploration. Craft the first batch so future captures do not depend on scavenged stock; the returned components prepare the next expedition.”
+Pack proof: `mods/explorers-compass.pw.toml` is indexed by the current Packwiz manifest and pins `ExplorersCompass-1.21.1-3.4.0-neoforge.jar`; the verified JAR contains the exact item model and crafting recipe.
 
-#### `ch05.q02` — First Companion
+#### `ch05.q02` — First Exposure
 
 | Field | Blueprint |
 | --- | --- |
 | Quest ID | `7A11C0DE50000002` |
 | Position / shape | `(-3.5, -2.5)`, circle |
-| Subtitle | `Cobblemon · First capture` |
+| Subtitle | `Fieldwork · First photograph` |
 | Dependencies | `ch05.q01` |
-| Tasks | Verified native first-capture advancement/statistic: `ID_CATALOG:cobblemon.first_capture`. Test already-completed state and FTB Team synchronization. |
-| Rewards | One personal Bevel; non-rare healing/travel supplies sized for one outing. |
+| Tasks | Inspect `exposure:camera` and `exposure:black_and_white_film`, then complete `exposure:adventure/exposure`. The item tasks do not consume their inputs. |
+| Rewards | One personal Bevel, two black-and-white film rolls, and eight glow ink sacs. |
 
-Copy sketch: “A first capture changes the world from a list of sightings into a team you can shape. Bring a new companion home and prepare it for travel; the next milestone asks that partnership to hold up in battle.”
+The native advancement fires from Exposure's `exposure:frame_exposed` trigger, so the quest proves a real photograph rather than simple item possession.
 
-#### `ch05.q03` — First Victory
+#### `ch05.q03` — Moment in Time
 
 | Field | Blueprint |
 | --- | --- |
 | Quest ID | `7A11C0DE50000003` |
 | Position / shape | `(-3.5, -0.5)`, circle |
-| Subtitle | `Cobblemon · Battle` |
+| Subtitle | `Fieldwork · Printed photograph` |
 | Dependencies | `ch05.q02` |
-| Tasks | Verified native first battle-win advancement/statistic: `ID_CATALOG:cobblemon.first_battle_win`. Do not substitute a battle-start statistic while calling it a win. |
-| Rewards | One personal Bevel; a verified modest recovery/training bundle that does not accelerate a creature through an entire progression band. |
+| Tasks | Complete `exposure:adventure/moment_in_time`, whose native trigger requires printing an `exposure:photograph`. |
+| Rewards | One personal Bevel, four photograph frames, and one camera stand. |
 
-Copy sketch: “A battle win shows that training, moves, and matchup choices can carry a team through pressure. Earn that first result and recover together; raid dens are the next place individual preparation becomes group work.”
+The reward equips a small public display and does not satisfy the next quest's album task.
 
-#### `ch05.q04` — Answer the Den
+#### `ch05.q04` — Island Album
 
 | Field | Blueprint |
 | --- | --- |
 | Quest ID | `7A11C0DE50000004` |
 | Position / shape | `(-3.5, +1.5)`, diamond |
-| Subtitle | `Cobblemon · Raid participation` |
+| Subtitle | `Exploration · Shared archive` |
 | Dependencies | `ch05.q03` |
-| Tasks | Verified native raid-participation or raid-completion trigger: `ID_CATALOG:cobblemon.raid_participation`. If no reliable native detector exists, use an explicit team-attested checkmark after a witnessed den, document the fallback, and keep the payout at one Bevel. |
-| Rewards | One personal Bevel; one modest raid-recovery bundle. No rare encounter or progression-skipping reward. |
+| Tasks | Inspect `exposure:album` ×1 and attest that four photographs from distinct public places were shared in an accessible album or display. The album is not consumed. |
+| Rewards | One personal Bevel, two color-film rolls, and one high-sensitivity color-film roll for difficult light. |
 
-Copy sketch: “A raid den asks several players to prepare around one shared threat, even when their teams and specialties differ. Take part in a witnessed den and help the group recover afterward; that experience feeds the final public project.”
+The item task provides hard native evidence of the archive tool. The checkmark is restricted to the human-reviewable public-display requirement and explicitly states what the player attests.
 
 ### Create co-op spine
 
@@ -498,7 +498,7 @@ Copy sketch: “A powered press is the first station that proves the shared netw
 | Tasks | Inspect the catalog-verified sequenced-assembly output (prefer `create:precision_mechanism` if the catalog and recipe confirm it) and checkmark that it was produced on the shared line. |
 | Rewards | One personal Bevel; a recipe-threshold maintenance and storage bundle for continued public operation. |
 
-Copy sketch: “An assembly line makes several machines behave like one service, giving the server a place to produce complicated parts without every player rebuilding the same workshop. Complete a verified output on the shared line; the final milestone gives both factory and raid players a lasting public home.”
+	Copy sketch: “An assembly line makes several machines behave like one service, giving the server a place to produce complicated parts without every player rebuilding the same workshop. Complete a verified output on the shared line; the final milestone gives both factory and field-record players a lasting public home.”
 
 ### Co-op capstone
 
@@ -510,10 +510,10 @@ Copy sketch: “An assembly line makes several machines behave like one service,
 | Position / shape | `(0, +4.5)`, hexagon, size 1.5 |
 | Subtitle | `Co-op capstone · Public build` |
 | Dependencies | **All:** `ch05.q04`, `ch05.q08` |
-| Tasks | Checkmark: team attests it has completed a shared build project that joins a raid staging/recovery area to the public Create factory, marks access clearly, and leaves it usable by later visitors. |
+| Tasks | Checkmark: team attests it has completed a shared landmark that joins the field-record archive to the public Create factory, marks access clearly, and leaves both services usable by later visitors. |
 | Rewards | Two team Bevels only. No personal Bevel and no repeatable payout. |
 
-Copy sketch: “Raid groups need a place to gather and recover, while a public factory needs an entrance, storage, and an owner players can find. Join those needs in one shared landmark and leave access clear for whoever comes next; the completed site becomes infrastructure the server can extend rather than a final ending.”
+Copy sketch: “Travelers need a place to leave records, while a public factory needs an entrance, storage, and an owner players can find. Join those needs in one shared landmark and leave access clear for whoever comes next; the completed site becomes infrastructure the server can extend rather than a final ending.”
 
 ## 7. Reward economy ledger
 
@@ -549,7 +549,7 @@ The phrase “pick one faction, complete spine” in the brief does not arithmet
 - Magic scroll suites are fixed one-time utility. They use valid level-one spell components and never award an above-cap spell.
 - Capstone affinity rings and 16 obsidian are one-time personal utility/status rewards. The portal stock is a full, immediately useful bundle.
 - No quest buys inputs, consumes currency, sells outputs back, or reproduces its own reward.
-- The campaign may mention the Numismatics sink board but contains no sink-board exchange. Stock, pricing, cooldowns, and administration belong to the server runbook.
+- Chapter 06 is the native Numismatics sink board. Its five exchanges consume Bevels, have seven-day cooldowns, and return no currency or currency-producing inputs.
 
 ## 8. Author implementation checklist
 
@@ -561,8 +561,8 @@ The phrase “pick one faction, complete spine” in the brief does not arithmet
 6. Implement the chapter dependencies exactly, especially the Chapter 01 closed loop and the absence of Chapter 02 faction locks on Chapters 03/04.
 7. Use the exact scroll data component from `SPELL_SCROLL_FORMAT.md`.
 8. Validate SNBT, unique IDs, localization, reachability, dependency direction, and reward totals.
-9. Render all five graphs and inspect node overlap, branch mirroring, short titles, and the `y=4.5` capstones.
-10. In a disposable client/world, test both native faction advancements, Cobblemon capture/win/raid triggers, Create output tasks, scroll claims, and already-completed advancement behavior.
+9. Render all six graphs and inspect node overlap, branch mirroring, short titles, and capstones.
+10. In a disposable client/world, test both native faction advancements, both Exposure advancements, Create output tasks, scroll claims, and already-completed advancement behavior.
 11. Test personal versus team reward claims with two accounts and with fragmented solo teams.
 12. Record static, server-load, client-visual, and multi-account evidence separately. Do not treat this design blueprint as runtime proof.
 
@@ -575,7 +575,8 @@ The phrase “pick one faction, complete spine” in the brief does not arithmet
 | 03 — The Hunter Order | 4 | 3 | Core T4 (`q04`) | 7 |
 | 04 — The Vampire Coven | 4 | 3 | Core T4 (`q04`) | 7 |
 | 05 — Shared Horizons | 8 | 0 | Separate (`q09`) | 9 |
-| **Campaign** | **24** | **6** | **Three capstone nodes** | **31** |
+| 06 — Requisitions | 1 | 5 | None | 6 |
+| **Campaign** | **25** | **11** | **Three capstone nodes** | **37** |
 
 ## 10. Chapter 06 — Requisitions sink board
 
@@ -587,7 +588,7 @@ Chapter 06 adds six quests: one explanatory opener and five optional, weekly, te
 | --- | ---: | --- | --- |
 | Builder's Crate | 4 Bevels | 64 calcite, 32 tinted glass, 16 glowstone | Building stock only; no currency output. |
 | Spellwright's Crate | 4 Bevels | 8 arcane essence, 4 blank runes, 16 common ink | Ordinary inscription inputs; no spell, upgrade orb, or currency output. |
-| Ranger's Crate | 3 Bevels | 12 Great Balls, 8 Super Potions, 4 Revives | Field consumables only; no rare encounter or currency output. |
+| Archivist's Crate | 3 Bevels | 2 black-and-white film, 2 color film, 4 photograph frames | A complete field-record restock; no currency output. |
 | Wayfarer's Crate | 3 Bevels | 32 firework rockets, 8 leads, 32 paper | Travel and survey stock only; no currency output. |
 | Workshop Crate | 5 Bevels | 32 each of iron ingots, copper ingots, redstone, and spruce logs | Ordinary Create inputs; no finished machine or currency output. |
 

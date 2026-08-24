@@ -118,11 +118,11 @@ hash = "0cdf6e478074dba8dccdfd78725f5b6a8b2b3c8ad5042569ff8a33e75f45d063"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_shared_horizons.snbt"
-hash = "22f4c4729d4eefb6e155aee8a25fb5c52f103711d0b3f2f77362dd310a3896a4"
+hash = "321a6d7bbd74cc25e435e53736fb23c7f0ff46dc7bfd195e6ae6e926aa6bd06a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch06_requisitions.snbt"
-hash = "3601fdc79d51f7b56f700acb410142c381160ca96bfec31ba02d4f2c8aee9783"
+hash = "683cbc3e4a143985296ff63c82785ba00ab2b2fcd37eee8b1d1b790bd39b064d"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
