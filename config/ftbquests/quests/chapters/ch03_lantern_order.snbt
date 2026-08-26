@@ -1,0 +1,637 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch03_lantern_order"
+	group: "7A11C4DF00200000"
+	icon: { id: "vampirism:hunter_table" }
+	id: "7A11C3DF00300000"
+	images: [
+		{
+			alpha: 24
+			height: 7
+			image: "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png"
+			order: -40
+			rotation: 0.0d
+			width: 5
+			x: -6
+			y: 3
+		}
+		{
+			alpha: 22
+			height: 7
+			image: "poiesis:textures/questpics/vvh/holy_public_ward.png"
+			order: -39
+			rotation: 0.0d
+			width: 5
+			x: 6
+			y: 9
+		}
+		{
+			alpha: 30
+			height: 2.5d
+			image: "poiesis:textures/questpics/vvh/holy_school_crest.png"
+			order: -38
+			rotation: 0.0d
+			width: 2.5d
+			x: 0
+			y: 12
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A11C0DF00200004"]
+			description: ["Tamsin Rook keeps a bent stake above the research table, not as a victory but as proof that poor preparation follows people home. A complete field bench gives the next patrol time to think before the door opens."]
+			icon: { id: "vampirism:hunter_table" }
+			id: "7A11C0DF00300001"
+			rewards: [
+				{
+					id: "7A11C2DF00300001"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300002"
+					item: { count: 1, id: "vampirism:hunter_coat_head_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300003"
+					item: { count: 1, id: "vampirism:hunter_coat_chest_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300004"
+					item: { count: 1, id: "vampirism:hunter_coat_legs_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300005"
+					item: { count: 1, id: "vampirism:hunter_coat_feet_normal" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Core I · A working field bench"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300001"
+					item: { count: 1, id: "vampirism:hunter_table" }
+					title: "Have a Hunter Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300002"
+					item: { count: 4, id: "vampirism:stake" }
+					title: "Have four stakes"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300003"
+					item: { count: 1, id: "vampirism:hunter_axe_normal" }
+					title: "Have a normal Hunter Axe"
+					type: "item"
+				}
+			]
+			title: "Salt and Steel"
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: ["7A11C0DF00300001"]
+			description: ["A refuge becomes trustworthy when its remedies are stocked before anyone needs them. Holy preparation here means stewardship: clean water, clear labels, and enough reserve for the stranger who arrives after the patrol."]
+			icon: { id: "vampirism:alchemical_cauldron" }
+			id: "7A11C0DF00300002"
+			rewards: [
+				{
+					id: "7A11C2DF00300006"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300007"
+					item: { count: 32, id: "minecraft:glass_bottle" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300008"
+					item: { count: 16, id: "minecraft:blaze_powder" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300009"
+					item: { count: 16, id: "minecraft:nether_wart" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000A"
+					item: { count: 32, id: "vampirism:holy_salt" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Core II · Remedies and wards"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300004"
+					item: { count: 1, id: "vampirism:alchemical_cauldron" }
+					title: "Have an Alchemical Cauldron"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300005"
+					item: { count: 4, id: "vampirism:holy_water_bottle_normal" }
+					title: "Have four normal Holy Waters"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300006"
+					item: { count: 8, id: "vampirism:pure_salt" }
+					title: "Have eight Pure Salt"
+					type: "item"
+				}
+			]
+			title: "Consecrated Work"
+			x: 0
+			y: -2
+		}
+		{
+			dependencies: ["7A11C0DF00300002"]
+			description: ["The Order measures a patrol by how safely it can hand the next watch to someone else. Reliable quarrels and a maintained weapon table turn one veteran's skill into equipment the whole refuge can understand."]
+			icon: { id: "vampirism:weapon_table" }
+			id: "7A11C0DF00300003"
+			rewards: [
+				{
+					id: "7A11C2DF0030000B"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000C"
+					item: { count: 64, id: "minecraft:arrow" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000D"
+					item: { count: 32, id: "vampirism:crossbow_arrow_spitfire" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000E"
+					item: { count: 16, id: "vampirism:crossbow_arrow_teleport" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000F"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Core III · Ranged fieldcraft"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300007"
+					item: { count: 1, id: "vampirism:weapon_table" }
+					title: "Have a Hunter Weapon Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300008"
+					item: { count: 1, id: "vampirism:basic_crossbow" }
+					title: "Have a basic hunter crossbow"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300009"
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
+					title: "Have sixteen killer quarrels"
+					type: "item"
+				}
+			]
+			title: "Long Watch"
+			x: 0
+			y: 1
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Tamsin's last rule is simple: power belongs where it can be accounted for. The enhanced axe hangs beside a ledger of every time it left the refuge and whether it returned clean."]
+			icon: { id: "vampirism:hunter_axe_enhanced" }
+			id: "7A11C0DF00300004"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300010"
+					item: { count: 1, id: "numismatics:cog" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300011"
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300012"
+					item: { count: 16, id: "minecraft:obsidian" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300013"
+					item: { count: 8, id: "minecraft:diamond" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Optional mastery · Enhanced fieldcraft"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000A"
+					item: { count: 1, id: "vampirism:hunter_axe_enhanced" }
+					title: "Have an enhanced Hunter Axe"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000B"
+					item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }
+					title: "Have enhanced splash Holy Water"
+					type: "item"
+				}
+			]
+			title: "Bright Oath"
+			x: 6
+			y: 1
+		}
+		{
+			dependencies: ["7A11C0DF00300002"]
+			description: ["Sister Aveline's manual begins with triage, not triumph. A spellwright who can heal, recall, and strike with restraint makes every expedition less dependent on whichever veteran happened to log in first."]
+			icon: { id: "irons_spellbooks:holy_rune" }
+			id: "7A11C0DF00300005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300014"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300015"
+					item: { count: 16, id: "irons_spellbooks:uncommon_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300016"
+					item: { count: 8, id: "irons_spellbooks:rare_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300017"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:heal", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Heal"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300018"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:divine_smite", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Divine Smite"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300019"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:recall", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Recall"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Holy support magic"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000C"
+					item: { count: 1, id: "irons_spellbooks:inscription_table" }
+					title: "Have an Inscription Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000D"
+					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+					title: "Have a Flimsy Journal"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000E"
+					item: { count: 4, id: "irons_spellbooks:holy_rune" }
+					title: "Have four Holy Runes"
+					type: "item"
+				}
+				{ id: "7A11C1DF00300018", title: "I demonstrated one Holy spell", type: "checkmark" }
+			]
+			title: "Mercy Manual"
+			x: -6
+			y: 4
+		}
+		{
+			dependencies: ["7A11C0DF00300002"]
+			description: ["A watchpost should be recognizable in bad weather and easy to repair with ordinary stock. This palette establishes the language; the expanded supply can become a tower, refuge, wall, or roadside ward chosen by its builders."]
+			icon: { id: "minecraft:stone_bricks" }
+			id: "7A11C0DF00300006"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030001A"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001B"
+					item: { count: 192, id: "minecraft:stone_bricks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001C"
+					item: { count: 96, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001D"
+					item: { count: 48, id: "minecraft:iron_bars" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001E"
+					item: { count: 24, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001F"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300020"
+					item: { count: 4, id: "minecraft:diamond" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300021"
+					item: { count: 1, id: "minecraft:stonecutter" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Specialty · Outpost palette"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000F"
+					item: { count: 64, id: "minecraft:stone_bricks" }
+					title: "Have sixty-four Stone Bricks"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300010"
+					item: { count: 32, id: "minecraft:oak_log" }
+					title: "Have thirty-two Oak Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300011"
+					item: { count: 16, id: "minecraft:iron_bars" }
+					title: "Have sixteen Iron Bars"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300012"
+					item: { count: 8, id: "minecraft:lantern" }
+					title: "Have eight Lanterns"
+					type: "item"
+				}
+			]
+			title: "Stone Lantern"
+			x: -2
+			y: 4
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["A photograph can warn a neighbor without crossing their boundary or turning rumor into accusation. The ledger gives the Order evidence it can discuss, archive, and eventually admit was wrong."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00300007"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300022"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300023"
+					item: { count: 1, id: "exposure:album" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300024"
+					item: { count: 4, id: "exposure:color_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300025"
+					item: { count: 4, id: "exposure:black_and_white_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300026"
+					item: { count: 8, id: "exposure:photograph_frame" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Specialty · Claim-safe reconnaissance"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300013"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Have an Explorer's Compass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300014"
+					item: { count: 1, id: "exposure:camera" }
+					title: "Have a Camera"
+					type: "item"
+				}
+				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
+			]
+			title: "Field Ledger"
+			x: 2
+			y: 4
+		}
+		{
+			dependencies: ["7A11C0DF00300003", "7A11C0DF00300005", "7A11C0DF00300006", "7A11C0DF00300007"]
+			description: ["No refuge should depend on a single expert. Two practiced specialties are enough to make the Order resilient while leaving room for later players to adopt the third."]
+			icon: { id: "minecraft:lantern" }
+			id: "7A11C0DF00300008"
+			min_required_dependencies: 3
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Breadth · Core plus any two specialties"
+			tasks: [
+				{ id: "7A11C1DF00300016", title: "I completed two specialties", type: "checkmark" }
+			]
+			title: "Two Lanterns"
+			x: 0
+			y: 7
+		}
+		{
+			dependencies: ["7A11C0DF00300008"]
+			description: ["Tamsin keeps one lodestone unengraved for the refuge that will outlive its founders. Its eventual name should belong to the stranger who finds shelter there when no officer is online."]
+			icon: { id: "minecraft:lodestone" }
+			id: "7A11C0DF00300009"
+			rewards: [
+				{
+					id: "7A11C2DF00300027"
+					item: { count: 1, id: "numismatics:cog" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300028"
+					item: { count: 128, id: "minecraft:stone_bricks" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300029"
+					item: { count: 32, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002A"
+					item: { count: 8, id: "minecraft:barrel" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "Team capstone · Mark a public refuge"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300017"
+					item: { count: 1, id: "minecraft:lodestone" }
+					title: "Have the refuge lodestone"
+					type: "item"
+				}
+			]
+			title: "Lantern Charter"
+			x: 0
+			y: 10
+		}
+	]
+	title: "03 · The Lantern Order"
+}

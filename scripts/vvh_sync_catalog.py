@@ -11,6 +11,7 @@ import argparse
 import json
 import sys
 import tomllib
+import zipfile
 from pathlib import Path
 from typing import Any
 
@@ -83,6 +84,88 @@ EXTRA_ADVANCEMENT_EVIDENCE = {
         "source_entry": "data/exposure/advancement/adventure/moment_in_time.json",
     },
 }
+
+COIN_VALUES = [
+    {"id": "numismatics:spur", "display_name": "Spur", "value_in_spurs": 1, "value_in_bevels": 0.125},
+    {"id": "numismatics:bevel", "display_name": "Bevel", "value_in_spurs": 8, "value_in_bevels": 1},
+    {"id": "numismatics:sprocket", "display_name": "Sprocket", "value_in_spurs": 16, "value_in_bevels": 2},
+    {"id": "numismatics:cog", "display_name": "Cog", "value_in_spurs": 64, "value_in_bevels": 8},
+    {"id": "numismatics:crown", "display_name": "Crown", "value_in_spurs": 512, "value_in_bevels": 64},
+    {"id": "numismatics:sun", "display_name": "Sun", "value_in_spurs": 4096, "value_in_bevels": 512},
+]
+
+
+def discover_item_evidence(root: Path, iid: str, proof: dict[str, Any]) -> dict[str, Any]:
+    """Resolve an item directly from the exact pinned JAR in tmp/modcache.
+
+    The catalog remains campaign-scoped, but newly authored IDs no longer need
+    a hand-maintained Python dictionary before they can be proven. A generated
+    item model is registry evidence; a matching recipe entry is recorded when
+    the mod exposes a normal data recipe.
+    """
+    namespace, path = iid.split(":", 1)
+    jar_path = root / "tmp/modcache" / str(proof["filename"])
+    if not jar_path.is_file():
+        raise ValueError(f"{iid}: exact pinned JAR is not materialized at {jar_path}")
+    with zipfile.ZipFile(jar_path) as jar:
+        names = set(jar.namelist())
+        model = f"assets/{namespace}/models/item/{path}.json"
+        if model not in names:
+            raise ValueError(f"{iid}: no exact item model in {proof['filename']}")
+        source_entries = [model]
+        recipe_prefix = f"data/{namespace}/recipe/"
+        recipe_matches = sorted(
+            name for name in names
+            if name.startswith(recipe_prefix)
+            and name.endswith(".json")
+            and Path(name).stem in {path, f"{path}_crafting"}
+        )
+        source_entries.extend(recipe_matches[:3])
+        display_name = path.replace("_", " ").title()
+        lang_path = f"assets/{namespace}/lang/en_us.json"
+        if lang_path in names:
+            lang = json.loads(jar.read(lang_path).decode("utf-8"))
+            display_name = (
+                lang.get(f"item.{namespace}.{path}")
+                or lang.get(f"block.{namespace}.{path}")
+                or display_name
+            )
+    note = "Exact item model is present in the pinned JAR."
+    if recipe_matches:
+        note = "Exact item model and survival data recipe are present in the pinned JAR."
+    return {
+        "namespace": namespace,
+        "id": iid,
+        "display_name": display_name,
+        "source_jar": proof["filename"],
+        "source_entry": "; ".join(source_entries),
+        "obtainability_note": note,
+    }
+
+
+def discover_spell_evidence(root: Path, sid: str, proof: dict[str, Any]) -> dict[str, Any]:
+    namespace, path = sid.split(":", 1)
+    jar_path = root / "tmp/modcache" / str(proof["filename"])
+    if not jar_path.is_file():
+        raise ValueError(f"{sid}: exact pinned JAR is not materialized at {jar_path}")
+    camel = "".join(part.capitalize() for part in path.split("_")) + "Spell.class"
+    with zipfile.ZipFile(jar_path) as jar:
+        names = jar.namelist()
+        class_matches = sorted(name for name in names if name.endswith("/" + camel))
+        if not class_matches:
+            raise ValueError(f"{sid}: no exact spell implementation class in {proof['filename']}")
+        lang_path = f"assets/{namespace}/lang/en_us.json"
+        lang = json.loads(jar.read(lang_path).decode("utf-8")) if lang_path in names else {}
+        display_name = lang.get(f"spell.{namespace}.{path}", path.replace("_", " ").title())
+    class_path = class_matches[0]
+    school = class_path.split("/spells/", 1)[1].split("/", 1)[0] if "/spells/" in class_path else ""
+    return {
+        "id": sid,
+        "display_name": display_name,
+        "school": school,
+        "source_jar": proof["filename"],
+        "source_entry": f"assets/{namespace}/lang/en_us.json::spell.{namespace}.{path}; {class_path}",
+    }
 
 
 def item_id(value: Any) -> str | None:
@@ -191,9 +274,10 @@ def synchronize(root: Path) -> dict[str, Any]:
         entry = dict(old_items.get(iid, {}))
         if not entry:
             extra = EXTRA_ITEM_EVIDENCE.get(iid)
-            if extra is None:
-                raise ValueError(f"missing direct item evidence for {iid}")
-            entry = {"namespace": namespace, "id": iid, **extra, "obtainability_note": ""}
+            if extra is not None:
+                entry = {"namespace": namespace, "id": iid, **extra, "obtainability_note": ""}
+            else:
+                entry = discover_item_evidence(root, iid, proofs[namespace])
         expected_jar = proofs[namespace]["filename"]
         entry["source_jar"] = entry.get("source_jar") or expected_jar
         if entry.get("source_jar") != expected_jar:
@@ -225,7 +309,7 @@ def synchronize(root: Path) -> dict[str, Any]:
     for sid in sorted(spells):
         entry = dict(old_spells.get(sid, {}))
         if not entry:
-            raise ValueError(f"missing direct spell evidence for {sid}")
+            entry = discover_spell_evidence(root, sid, proofs[sid.split(":", 1)[0]])
         expected_jar = proofs[sid.split(":", 1)[0]]["filename"]
         if entry.get("source_jar") != expected_jar:
             raise ValueError(
@@ -245,7 +329,7 @@ def synchronize(root: Path) -> dict[str, Any]:
         "entries": entries,
         "advancements": {"campaign": advancement_entries},
         "spells": spell_entries,
-        "numismatics_denominations": old.get("numismatics_denominations", {}),
+        "numismatics_denominations": COIN_VALUES,
         "ftb_quests": old.get("ftb_quests", {}),
     }
 
@@ -254,7 +338,7 @@ def render_markdown(catalog: dict[str, Any]) -> str:
     lines = [
         "# VvH Current-Pack ID Catalog",
         "",
-        "This catalog contains only IDs referenced by the live six-chapter campaign. "
+        "This catalog contains only IDs referenced by the live eight-chapter campaign. "
         "Every non-vanilla namespace must be backed by a `.pw.toml` that is present in "
         "the current `index.toml`, and every evidence JAR must match that metadata's exact filename.",
         "",
@@ -314,6 +398,23 @@ def render_markdown(catalog: dict[str, Any]) -> str:
         lines.append(
             f"| `{entry['id']}` | {entry.get('school', '')} | `{entry['source_jar']}` | "
             f"`{entry['source_entry']}` |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Numismatics denominations",
+            "",
+            "Values were extracted from `dev.ithundxr.createnumismatics.content.backend.Coin` "
+            "in the exact pinned JAR.",
+            "",
+            "| ID | Spurs | Bevel-equivalent |",
+            "| --- | ---: | ---: |",
+        ]
+    )
+    for entry in catalog["numismatics_denominations"]:
+        lines.append(
+            f"| `{entry['id']}` | {entry['value_in_spurs']} | {entry['value_in_bevels']} |"
         )
 
     lines.extend(

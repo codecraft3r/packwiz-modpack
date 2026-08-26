@@ -1,0 +1,341 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch08_market_services"
+	group: "7A11C4DF00400000"
+	icon: { id: "numismatics:sprocket" }
+	id: "7A11C3DF00800000"
+	images: [
+		{
+			alpha: 18
+			height: 5
+			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
+			order: -40
+			rotation: 0.0d
+			width: 5
+			x: 0
+			y: 4
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A11C0DF00600008"]
+			description: ["The board turns quest earnings into choices players can feel in the world. Small purses solve immediate friction; larger denominations fund whole-team projects without pretending every coin is identical pocket change."]
+			icon: { id: "numismatics:banking_guide" }
+			id: "7A11C0DF00800001"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Weekly services · Team-scoped"
+			tasks: [
+				{ id: "7A11C1DF00800001", title: "I understand prices and team scope", type: "checkmark" }
+			]
+			title: "Read the Board"
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["A small purse replaces the supplies most likely to strand a late arrival. It is deliberately ordinary: food, light, and a way to bring something awkward home."]
+			icon: { id: "numismatics:bevel" }
+			id: "7A11C0DF00800002"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00800001"
+					item: { count: 32, id: "minecraft:cooked_beef" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800002"
+					item: { count: 64, id: "minecraft:torch" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800003"
+					item: { count: 8, id: "minecraft:lead" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "One Bevel · Once per team each week"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800002"
+					item: { count: 1, id: "numismatics:bevel" }
+					title: "Submit one Bevel"
+					type: "item"
+				}
+			]
+			title: "Field Kit"
+			x: -6
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["The works purse is sized for a visible repair rather than a decorative handful. It supports roads, public rooms, and the unglamorous patch that keeps an old build useful."]
+			icon: { id: "numismatics:sprocket" }
+			id: "7A11C0DF00800003"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00800004"
+					item: { count: 128, id: "minecraft:stone_bricks" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800005"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800006"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800007"
+					item: { count: 16, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "One Sprocket · Once per team each week"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800003"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit one Sprocket"
+					type: "item"
+				}
+			]
+			title: "Works Kit"
+			x: -2
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["The arcane purse restocks a teaching table rather than gambling on a random spell. Its materials support several schools and leave the final inscription to the player who understands the need."]
+			icon: { id: "irons_spellbooks:uncommon_ink" }
+			id: "7A11C0DF00800004"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00800008"
+					item: { count: 16, id: "irons_spellbooks:arcane_essence" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800009"
+					item: { count: 4, id: "irons_spellbooks:blank_rune" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0080000A"
+					item: { count: 16, id: "irons_spellbooks:common_ink" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0080000B"
+					item: { count: 8, id: "irons_spellbooks:uncommon_ink" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "One Sprocket · Once per team each week"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800004"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit one Sprocket"
+					type: "item"
+				}
+			]
+			title: "Arcane Kit"
+			x: 2
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["A foundry restock should keep a public line moving through more than one repair. Alloy, brass, and mechanisms buy back time while leaving ore generation and advanced machines valuable."]
+			icon: { id: "create:precision_mechanism" }
+			id: "7A11C0DF00800005"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF0080000C"
+					item: { count: 64, id: "create:andesite_alloy" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0080000D"
+					item: { count: 32, id: "create:brass_ingot" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0080000E"
+					item: { count: 8, id: "create:precision_mechanism" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0080000F"
+					item: { count: 16, id: "create:belt_connector" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Two Sprockets · Once per team each week"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800005"
+					item: { count: 2, id: "numismatics:sprocket" }
+					title: "Submit two Sprockets"
+					type: "item"
+				}
+			]
+			title: "Foundry Kit"
+			x: 6
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["The bond is stamped with a bridge on one face and an empty foundation on the other. Redeeming it puts substantial structural and fabrication stock behind the common project your team chooses."]
+			icon: { id: "numismatics:cog" }
+			id: "7A11C0DF00800006"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00800010"
+					item: { count: 256, id: "minecraft:stone_bricks" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800011"
+					item: { count: 128, id: "minecraft:oak_log" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800012"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800013"
+					item: { count: 16, id: "minecraft:diamond" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00800014"
+					item: { count: 64, id: "create:andesite_alloy" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "One Cog · Once per team each week"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800006"
+					item: { count: 1, id: "numismatics:cog" }
+					title: "Submit one Cog"
+					type: "item"
+				}
+			]
+			title: "Concord Bond"
+			x: 0
+			y: 3
+		}
+		{
+			dependencies: ["7A11C0DF00700008"]
+			description: ["After the public events begin, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."]
+			icon: { id: "minecraft:written_book" }
+			id: "7A11C0DF00800007"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00800015"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Weekly report · 1 team Bevel"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00800007"
+					item: { count: 1, id: "minecraft:written_book" }
+					title: "Submit one written field ledger"
+					type: "item"
+				}
+				{ id: "7A11C1DF00800009", title: "I named the place, problem, and reviewer", type: "checkmark" }
+			]
+			title: "Rumour Ledger"
+			x: -3
+			y: 6.5d
+		}
+		{
+			dependencies: ["7A11C0DF00800001"]
+			description: ["The bank counts base value: a Spur is 1, a Bevel 8, a Sprocket 16, and a Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs. Crowns and Suns can wait for an economy large enough to deserve them."]
+			icon: { id: "numismatics:cog" }
+			id: "7A11C0DF00800008"
+			optional: true
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Coin guide · Spur · Bevel · Sprocket · Cog"
+			tasks: [
+				{ id: "7A11C1DF00800008", title: "I understand the coin denominations", type: "checkmark" }
+			]
+			title: "Know the Coins"
+			x: 3
+			y: 6.5d
+		}
+	]
+	title: "08 · Market Services"
+}

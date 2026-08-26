@@ -1,77 +1,56 @@
-# VvH Six-Chapter Validation Contract
+# VvH Concord Validation Contract
 
-This document is the release contract for the current Chapters 01–06 campaign. Static validation is required before release, but it is not a substitute for a disposable client/server playtest.
+## Static release gate
 
-## Required static gate
-
-Run the campaign validator from the pack root:
+Run from the Packwiz repository root:
 
 ```powershell
-python -B -X utf8 scripts/vvh_campaign_validate.py --output docs/vvh/evidence/campaign-v2-validation.json
+python -m py_compile scripts/vvh_campaign_v3.py scripts/vvh_campaign_v3_validate.py scripts/vvh_sync_catalog.py
+python -X utf8 scripts/vvh_campaign_v3.py --check
+python -X utf8 scripts/vvh_sync_manifest.py . --check
+python -X utf8 scripts/vvh_sync_catalog.py . --check
+python -X utf8 scripts/vvh_campaign_v3_validate.py --output docs/vvh/evidence/campaign-v3-validation.json
 ```
 
-The validator is read-only unless `--output` is supplied. It exits nonzero if a required check fails and writes a structured report containing per-check status, economy totals, SHA-256 source hashes, a UTC timestamp, limitations, and pending runtime tests.
+The v3 validator proves:
 
-The required gate covers:
+- exactly eight expected chapter files parse as SNBT;
+- all chapter, quest, task, and reward IDs are globally unique;
+- dependencies resolve, are acyclic, and every quest is reachable from one root;
+- quest titles contain no more than four words;
+- checkmarks remain attached to orientation, social, spell-demonstration,
+  public-usability, event, or report criteria;
+- no unescaped ampersand-space or removed Cobblemon reference exists;
+- Iron's Spells scroll components contain the full native codec shape;
+- Bevel, Sprocket, and Cog values are accounted at 1/2/8 Bevel-equivalent;
+- there is exactly one weekly team-Bevel faucet and five team-scoped sinks;
+- no one-time descendant quest can be fully item-funded by ancestor rewards
+  without an advancement or human attestation remaining.
 
-- exactly the six expected chapter files and successful structural SNBT parsing;
-- globally unique chapter, quest, task, and reward IDs;
-- resolved, acyclic dependencies and reachability from the Chapter 01 terminal;
-- the Chapter 01 closed rules loop and symmetric, open Chapter 02 faction branches;
-- current chapter groups, data schema, and disabled testing unlock mode;
-- player-copy, title-length, ampersand, and player-visible meta-label rules;
-- observed task and reward types;
-- current-Packwiz membership for every non-vanilla namespace, including indexed metadata, server availability, exact pinned JAR filename, and download hash;
-- catalog-backed non-vanilla items, icons, advancements, images, spell IDs, and component codecs;
-- substantive hard criteria, including the Chapter 04 Cultist armor set;
-- Chapter 05 field-archive and shared-Create attestations;
-- Chapter 06 weekly payment, cooldown, team-reward, and zero-faucet rules;
-- reward-to-descendant-task collision protection;
-- the exact economy ledgers below; and
-- the boundary prohibiting campaign KubeJS changes.
-
-## Localization
-
-The current chapters use inline strings. Localization completeness therefore means **zero unresolved translation-key references**. An empty `config/ftbquests/quests/lang/en_us.snbt` is complete only while no player-facing field refers to a translation key. Any future key reference must be added to that file.
-
-## Economy assertions
-
-| Metric | Required result |
-|---|---:|
-| All-claimable one-time personal Bevels | 44 |
-| Intended-completionist personal Bevels with one faction selection | 42 |
-| One-time team Bevels | 6 |
-| Minimum Hunter route | 12 personal + 2 team |
-| Minimum Vampire route | 12 personal + 2 team |
-| Repeatable Bevel faucet | 0 |
-| Full weekly team sink board | 19 |
-
-The five Chapter 06 sinks cost 4/4/3/3/5 Bevels. They consume currency, use a 604800-second cooldown, grant team-scoped crate outputs, and never issue Bevels.
-
-## Catalog, manifest, and parser evidence
-
-Synchronize the campaign-scoped ID catalog and prove it is bound to the live Packwiz index:
+## Pack and asset checks
 
 ```powershell
-python -B -X utf8 scripts/vvh_sync_catalog.py
-python -B -X utf8 scripts/vvh_sync_catalog.py --check
+packwiz list
+packwiz refresh
+python -X utf8 scripts/vvh_render_layouts.py docs/vvh/campaign_manifest.json docs/vvh/evidence/layout-concord-v3 --resource-zip tmp/poiesis-living-atlas-art-v5.zip --metadata-out docs/vvh/evidence/layout-concord-v3/metadata.json
+git diff --check
 ```
 
-The catalog contains only IDs used by the live campaign. A namespace fails validation when its `.pw.toml` is absent from `index.toml`, client-only, renamed, or pinned to a different JAR/hash. Unrelated downloaded JARs are never accepted as installation evidence.
+The layout renderer must report zero unresolved references. Run `packwiz
+refresh` twice and confirm the second run is idempotent before release.
 
-Synchronize the campaign manifest and verify it is current:
+## Human smoke test still required
 
-```powershell
-python -B -X utf8 scripts/vvh_sync_manifest.py
-python -B -X utf8 scripts/vvh_sync_manifest.py --check
-```
+Static proof does not establish FTB Quests client rendering or runtime team
+semantics. Before a production merge, a human should verify in the shipped
+client:
 
-The synchronizer reads the live `ch*.snbt` files, preserves inline copy and nested item counts, records all three chapter groups, and includes only reward tables referenced by the live campaign.
+1. one calling and its faction opener;
+2. one Blood and one Holy spell demonstration;
+3. one public-build attestation with solo and shared-team progress;
+4. one personal Sprocket, one personal mastery Cog, and one team Cog claim;
+5. all five weekly sinks and the weekly Rumour Ledger cooldown;
+6. background/logo readability at normal UI scale.
 
-The focused structural command covering `chapter_groups.snbt`, `data.snbt`, `lang/en_us.snbt`, and all six chapter files passes 9/9. The broader `scripts/test_validate_snbt.py` suite passes all 34 tests with one intentional skip. The campaign validator passes 28/28 required checks.
-
-## Runtime boundary
-
-Static success does not prove acceptance by the shipped FTB Quests loader, client rendering, native advancement behavior, item-component serialization, reward delivery, team scope, faction switching, or weekly cooldown enforcement. Those checks remain open in `docs/vvh/UNRESOLVED.md`.
-
-Record runtime commands, exit codes, relevant logs, and client observations in `docs/vvh/evidence/`. A missing runtime or client environment is a pending evidence boundary; a live SNBT, graph, localization, economy, ID, or KubeJS failure remains a release blocker.
+No disposable server load is required for this iteration by user direction.
+Do not describe source review boards as in-client screenshots.

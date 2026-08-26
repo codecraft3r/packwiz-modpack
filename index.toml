@@ -98,35 +98,43 @@ hash = "045ced909c197435a8dc25e09ef89d651d612ff49348ae5d15f32d1f1e852ee8"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "16909e42e251d07a1a872b7bc5b57540e1173f8dc724fc3f37d6e8bcfd9e06d6"
+hash = "079c052f9904c12f9d238c5847b176bae80ee0e81b218c8e99a65b5ba144424a"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch01_intro_rules.snbt"
-hash = "14d98862c530964915829142131123a67026f2f120f3dc5469697d81ad7de2c8"
+file = "config/ftbquests/quests/chapters/ch01_island_charter.snbt"
+hash = "3ce303f48ac2693fa58073656d00a83441973e0fccc7c8ad7c2216faf4f52d85"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch02_factions.snbt"
-hash = "1af66e55b1b182cc40810ed9b231535e7a33b2d79801febee5f3fb9dc838a97a"
+file = "config/ftbquests/quests/chapters/ch02_callings.snbt"
+hash = "8ec39d68aed89ed501dedb69b4d0689015e3e585e9ee3522718fb38708c39ef8"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch03_hunters.snbt"
-hash = "8db5d85e135bb6672f613b62972ba90ef46ed1f96511ebcc6cf2bbc950f0c2d7"
+file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
+hash = "d98a488d3a41529ab7f0bf76494cc4801b8ed60fd0247b26c8b8c1dac5c8656c"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch04_vampires.snbt"
-hash = "0cdf6e478074dba8dccdfd78725f5b6a8b2b3c8ad5042569ff8a33e75f45d063"
+file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
+hash = "22c28f071d0fd34d2985936c7570ec30789bb6b65d4ad1dd96880b1b5cf5e21d"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch05_shared_horizons.snbt"
-hash = "321a6d7bbd74cc25e435e53736fb23c7f0ff46dc7bfd195e6ae6e926aa6bd06a"
+file = "config/ftbquests/quests/chapters/ch05_free_companies.snbt"
+hash = "52fce5526539fc3a9c0ca8531021e96835517b887e55992563be1bd35bddc0de"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch06_requisitions.snbt"
-hash = "683cbc3e4a143985296ff63c82785ba00ab2b2fcd37eee8b1d1b790bd39b064d"
+file = "config/ftbquests/quests/chapters/ch06_common_ground.snbt"
+hash = "c3c2ed3ac07370204801ea3756b48bdfd3d40b7090fdefc6eb9c0db4a8a7d36b"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch07_odd_hours.snbt"
+hash = "6dde1a5ae1bdcb0a89c6c5c2a2d58cd746a7090b9301b033ce142a96ee9ff94a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ch08_market_services.snbt"
+hash = "240d139543f85f5a3b25eb742fdd8a448865d07998e435adeaaa54bf260faa1e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "bb36c561578474e0c8b51fd9c1972681824ffcface5db68953a8492763db8b59"
+hash = "fadd30eb8f9360b8bc30ded210ae9a833edca7698a488651926e4d6551ffd35b"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"

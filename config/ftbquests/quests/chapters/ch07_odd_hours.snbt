@@ -1,0 +1,467 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch07_odd_hours"
+	group: "7A11C4DF00300000"
+	icon: { id: "minecraft:clock" }
+	id: "7A11C3DF00700000"
+	images: [
+		{
+			alpha: 22
+			height: 7
+			image: "poiesis:textures/questpics/vvh/long_night_fair.png"
+			order: -40
+			rotation: 0.0d
+			width: 12
+			x: 0
+			y: 4
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A11C0DF00600008"]
+			description: ["Mirelle keeps six blank invitations because a gathering should fit the people who actually arrive. Each event leaves useful stock or evidence behind, so a small session still changes the world."]
+			icon: { id: "minecraft:clock" }
+			id: "7A11C0DF00700001"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Events · Complete any three"
+			tasks: [
+				{ id: "7A11C1DF00700001", title: "I understand the event choices", type: "checkmark" }
+			]
+			title: "Open Invitation"
+			x: 0
+			y: -5
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["The drill begins where someone once tripped over an unlabeled chest during a real outage. Prepared light and repair stock turn a failure into a shared story that gets less dramatic every time it is practiced."]
+			icon: { id: "minecraft:redstone_lamp" }
+			id: "7A11C0DF00700002"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00700001"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700002"
+					item: { count: 32, id: "minecraft:glowstone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700003"
+					item: { count: 64, id: "minecraft:redstone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700004"
+					item: { count: 32, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Event · Restore a dark public place"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00700002"
+					item: { count: 8, id: "minecraft:redstone_lamp" }
+					title: "Have eight Redstone Lamps"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700003"
+					item: { count: 16, id: "minecraft:redstone_torch" }
+					title: "Have sixteen Redstone Torches"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700004"
+					item: { count: 32, id: "minecraft:redstone" }
+					title: "Have thirty-two Redstone"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700014", title: "We restored one dark public place", type: "checkmark" }
+			]
+			title: "Blackout Drill"
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["At the red table, neither school is asked to surrender its language. The point is translation: what each preparation protects, what it costs, and who should never receive it by mistake."]
+			icon: { id: "irons_spellbooks:blank_rune" }
+			id: "7A11C0DF00700003"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00700005"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700006"
+					item: { count: 16, id: "irons_spellbooks:arcane_essence" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700007"
+					item: { count: 16, id: "irons_spellbooks:common_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700008"
+					item: { count: 8, id: "irons_spellbooks:uncommon_ink" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Event · Compare blood and holy service"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00700005"
+					item: { count: 4, id: "vampirism:blood_bottle" }
+					title: "Have four Blood Bottles"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700006"
+					item: { count: 4, id: "vampirism:holy_water_bottle_normal" }
+					title: "Have four normal Holy Waters"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700007"
+					item: { count: 4, id: "irons_spellbooks:blank_rune" }
+					title: "Have four Blank Runestones"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700015", title: "We compared both schools at one table", type: "checkmark" }
+			]
+			title: "The Red Table"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["Oren claims every difficult machine has a moment when four hands are faster than one expert. The event pairs faction benches with public fabrication so players leave with parts, advice, and fewer private bottlenecks."]
+			icon: { id: "create:mechanical_press" }
+			id: "7A11C0DF00700004"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00700009"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070000A"
+					item: { count: 32, id: "create:andesite_alloy" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070000B"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070000C"
+					item: { count: 16, id: "minecraft:gold_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070000D"
+					item: { count: 4, id: "minecraft:diamond" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Event · Make equipment together"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00700008"
+					item: { count: 1, id: "create:mechanical_press" }
+					title: "Have a Mechanical Press"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700009"
+					item: { count: 1, id: "vampirism:hunter_table" }
+					title: "Have a Hunter Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0070000A"
+					item: { count: 1, id: "vampirism:altar_inspiration" }
+					title: "Have an Altar of Inspiration"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700016", title: "Two players made one useful set together", type: "checkmark" }
+			]
+			title: "Four Hands"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["A useful photograph notices what monuments omit: the patched stair, the empty chair, the sign nobody reads. One honest detail can make the archive feel inhabited rather than promotional."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00700005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0070000E"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070000F"
+					item: { count: 8, id: "exposure:color_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700010"
+					item: { count: 8, id: "exposure:black_and_white_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700011"
+					item: { count: 16, id: "exposure:photograph_frame" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Event · Photograph an overlooked place"
+			tasks: [
+				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF0070000B", type: "advancement" }
+				{
+					consume_items: false
+					id: "7A11C1DF0070000C"
+					item: { count: 1, id: "exposure:album" }
+					title: "Have a Photo Album"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700017", title: "I archived one overlooked place", type: "checkmark" }
+			]
+			title: "Photo Hunt"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["The relay rewards clean handoffs rather than raw speed. A marked destination, spare transport, and a returned route note make every runner responsible for the person who follows."]
+			icon: { id: "explorerscompass:explorerscompass" }
+			id: "7A11C0DF00700006"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00700012"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700013"
+					item: { count: 64, id: "minecraft:firework_rocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700014"
+					item: { count: 32, id: "minecraft:golden_carrot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700015"
+					item: { count: 8, id: "minecraft:ender_pearl" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Event · A route anyone may finish"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0070000D"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Have an Explorer's Compass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0070000E"
+					item: { count: 2, id: "minecraft:minecart" }
+					title: "Have two Minecarts"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0070000F"
+					item: { count: 2, id: "minecraft:chest_minecart" }
+					title: "Have two Chest Minecarts"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700018", title: "The next runner finished without guessing", type: "checkmark" }
+			]
+			title: "Courier Relay"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00700001"]
+			description: ["Mirelle leaves one chair empty at every auction for the person who decides not to bid. Posted prices and a clean pickup chest make refusal as safe as participation."]
+			icon: { id: "numismatics:vendor" }
+			id: "7A11C0DF00700007"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00700016"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700017"
+					item: { count: 32, id: "minecraft:emerald" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700018"
+					item: { count: 16, id: "minecraft:item_frame" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00700019"
+					item: { count: 4, id: "create:display_link" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Event · Trade with visible terms"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00700010"
+					item: { count: 2, id: "numismatics:vendor" }
+					title: "Have two Vendors"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700011"
+					item: { count: 1, id: "minecraft:bell" }
+					title: "Have a Bell"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00700012"
+					item: { count: 4, id: "minecraft:chest" }
+					title: "Have four Chests"
+					type: "item"
+				}
+				{ id: "7A11C1DF00700019", title: "We held one trade with visible terms", type: "checkmark" }
+			]
+			title: "Open Auction"
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DF00700002"
+				"7A11C0DF00700003"
+				"7A11C0DF00700004"
+				"7A11C0DF00700005"
+				"7A11C0DF00700006"
+				"7A11C0DF00700007"
+			]
+			description: ["Three gatherings are enough to reveal what the settlement enjoys doing together. The record names what worked and leaves supplies for the next event instead of prescribing which tradition must continue."]
+			icon: { id: "exposure:photograph" }
+			id: "7A11C0DF00700008"
+			min_required_dependencies: 3
+			rewards: [
+				{
+					id: "7A11C2DF0070001A"
+					item: { count: 1, id: "numismatics:cog" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070001B"
+					item: { count: 64, id: "minecraft:firework_rocket" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070001C"
+					item: { count: 32, id: "minecraft:lantern" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0070001D"
+					item: { count: 8, id: "minecraft:barrel" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.7d
+			subtitle: "Team event · Complete any three"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00700013"
+					item: { count: 1, id: "exposure:photograph" }
+					title: "Have one event photograph"
+					type: "item"
+				}
+			]
+			title: "Common Cause"
+			x: 0
+			y: 6
+		}
+	]
+	title: "07 · The Odd Hours"
+}

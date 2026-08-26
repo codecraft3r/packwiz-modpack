@@ -1,0 +1,125 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch01_island_charter"
+	group: "7A11C4DF00100000"
+	icon: { id: "minecraft:compass" }
+	id: "7A11C3DF00100000"
+	images: [
+		{
+			alpha: 20
+			height: 5
+			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
+			order: -40
+			rotation: 0.0d
+			width: 9
+			x: 0
+			y: 3
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [ ]
+			description: ["Mara Venn repaired paths for people she never met and crossed out her own name when the work held. The island remembers useful places, then leaves their story to the players who keep them alive."]
+			icon: { id: "minecraft:compass" }
+			id: "7A11C0DF00100001"
+			rewards: [
+				{
+					id: "7A11C2DF00100001"
+					item: { count: 1, id: "minecraft:compass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00100002"
+					item: { count: 16, id: "minecraft:torch" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Orientation · A persistent world"
+			tasks: [
+				{ id: "7A11C1DF00100001", title: "I have read the welcome", type: "checkmark" }
+			]
+			title: "Island Charter"
+			x: 0
+			y: -4
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
+			description: ["A visible boundary lets neighbors build close without guessing where welcome ends. Public works need a named entrance and an owner so protection never becomes an accidental locked door."]
+			icon: { id: "minecraft:filled_map" }
+			id: "7A11C0DF00100002"
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Required · Land and public access"
+			tasks: [
+				{ id: "7A11C1DF00100002", title: "I understand claim boundaries", type: "checkmark" }
+			]
+			title: "Claim Clearly"
+			x: -4
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
+			description: ["A feud is only worth continuing when yesterday's work still exists tomorrow. Consent, claim safety, and an immediate stop keep competition memorable instead of exhausting."]
+			icon: { id: "minecraft:shield" }
+			id: "7A11C0DF00100003"
+			rewards: [ ]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Required · Conflict and pranks"
+			tasks: [
+				{ id: "7A11C1DF00100003", title: "I agree to stop on request", type: "checkmark" }
+			]
+			title: "Rivalry With Consent"
+			x: 0
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
+			description: ["An FTB Team joins quest progress to claimed ground and shared rewards. Choose it deliberately; a team is a promise about who may finish, claim, and maintain work together."]
+			icon: { id: "minecraft:chest" }
+			id: "7A11C0DF00100004"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Required · Shared progress"
+			tasks: [
+				{ id: "7A11C1DF00100004", title: "I know who shares progress", type: "checkmark" }
+			]
+			title: "Choose Teammates"
+			x: 4
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00100002", "7A11C0DF00100003", "7A11C0DF00100004"]
+			description: ["The charter is deliberately small: protect lasting work, ask before rivalry, and know who shares your progress. Once those promises are settled, every calling remains visible and the island can grow in directions nobody planned."]
+			icon: { id: "minecraft:writable_book" }
+			id: "7A11C0DF00100005"
+			rewards: [
+				{
+					id: "7A11C2DF00100003"
+					item: { count: 16, id: "minecraft:bread" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Required · Protect · consent · share"
+			tasks: [
+				{ id: "7A11C1DF00100005", title: "I accept all three promises", type: "checkmark" }
+			]
+			title: "Sign the Charter"
+			x: 0
+			y: 2.5d
+		}
+	]
+	title: "01 · The Island Charter"
+}

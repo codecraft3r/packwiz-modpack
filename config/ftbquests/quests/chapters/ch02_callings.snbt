@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch02_callings"
+	group: "7A11C4DF00200000"
+	icon: { id: "minecraft:spyglass" }
+	id: "7A11C3DF00200000"
+	images: [
+		{
+			alpha: 18
+			height: 6
+			image: "poiesis:textures/questpics/vvh/season_one_crest.png"
+			order: -40
+			rotation: 0.0d
+			width: 6
+			x: 0
+			y: 2
+		}
+		{
+			alpha: 24
+			height: 3
+			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
+			order: -39
+			rotation: 0.0d
+			width: 3
+			x: 0
+			y: 8
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A11C0DF00100005"]
+			description: ["Transformation changes a body; a calling changes what someone chooses to maintain. The House, the Order, and the Free Companies each offer a useful place in the world without forbidding curiosity about the others."]
+			icon: { id: "minecraft:spyglass" }
+			id: "7A11C0DF00200001"
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Identity · Night, lantern, or civic"
+			tasks: [
+				{ id: "7A11C1DF00200001", title: "I reviewed all three callings", type: "checkmark" }
+			]
+			title: "Three Callings"
+			x: 0
+			y: -4
+		}
+		{
+			dependencies: ["7A11C0DF00200001"]
+			description: ["Nightbound players trade daylight ease for hunger, speed, and a new obligation to prepare safe rooms after sunset. The House values restraint because appetite without hospitality leaves no neighbors worth knowing."]
+			icon: { id: "vampirism:vampire_fang" }
+			id: "7A11C0DF00200002"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00200001"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200002"
+					item: { count: 1, id: "vampirism:vampire_cloak_white_black" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Vampire · Nightbound route"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00200002"
+					item: { count: 1, id: "vampirism:vampire_fang" }
+					title: "Have a vampire fang"
+					type: "item"
+				}
+				{ advancement: "vampirism:vampire/become_vampire", criterion: "", id: "7A11C1DF00200003", type: "advancement" }
+			]
+			title: "Join the House"
+			x: -5
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00200001"]
+			description: ["A civic calling keeps workshops, roads, trade, and shelter outside faction demands. Its authority comes from services anyone can use and the quiet power to refuse a feud."]
+			icon: { id: "create:wrench" }
+			id: "7A11C0DF00200003"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00200003"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200005"
+					item: { count: 32, id: "minecraft:cooked_beef" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200006"
+					item: { count: 1, id: "minecraft:iron_pickaxe" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200007"
+					item: { count: 1, id: "minecraft:iron_axe" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000A"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000B"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000C"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000D"
+					item: { count: 1, id: "minecraft:iron_boots" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Free Company · Shared services"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00200004"
+					item: { count: 1, id: "create:wrench" }
+					title: "Have a Create wrench"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00200005"
+					item: { count: 1, id: "numismatics:banking_guide" }
+					title: "Have a banking guide"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00200006"
+					item: { count: 1, id: "minecraft:shield" }
+					title: "Have a shield"
+					type: "item"
+				}
+			]
+			title: "Join the Commons"
+			x: 0
+			y: -0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00200001"]
+			description: ["Hunters accept specialized tools and the responsibility to make danger legible before striking it. The Order's best patrols leave behind wards, remedies, and a route home—not trophies."]
+			icon: { id: "vampirism:injection_garlic" }
+			id: "7A11C0DF00200004"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00200008"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200009"
+					item: { count: 1, id: "minecraft:crossbow" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			subtitle: "Hunter · Lantern route"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00200007"
+					item: { count: 1, id: "vampirism:injection_garlic" }
+					title: "Have a garlic injection"
+					type: "item"
+				}
+				{ advancement: "vampirism:hunter/become_hunter", criterion: "", id: "7A11C1DF00200008", type: "advancement" }
+			]
+			title: "Join the Order"
+			x: 5
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00200002", "7A11C0DF00200003", "7A11C0DF00200004"]
+			description: ["A first calling gives the world a place to start, not a wall around the others. Workshops, archives, and public events remain open so players can understand one another's craft."]
+			icon: { id: "minecraft:oak_door" }
+			id: "7A11C0DF00200005"
+			min_required_dependencies: 1
+			rewards: [ ]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Complete any one calling"
+			tasks: [
+				{ id: "7A11C1DF00200009", title: "I choose this calling", type: "checkmark" }
+			]
+			title: "Keep Doors Open"
+			x: 0
+			y: 3
+		}
+	]
+	title: "02 · Choose a Calling"
+}

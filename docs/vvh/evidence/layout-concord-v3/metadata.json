@@ -1,0 +1,47 @@
+{
+  "artifact_type": "source-level review board; not runtime or in-client evidence",
+  "manifest": {
+    "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack\\docs\\vvh\\campaign_manifest.json",
+    "sha256": "b9378ca4937aba77ed9e60002da2287112c1092cf7a73ab30105d8d031c6a77d"
+  },
+  "resource_sources": [
+    {
+      "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack\\tmp\\poiesis-living-atlas-art-v5.zip",
+      "sha256": "d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a"
+    }
+  ],
+  "resolved_resource_images": [
+    "poiesis:textures/questpics/first_resonance_key_art.png",
+    "poiesis:textures/questpics/resonance_specimen_sheet.png",
+    "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
+    "poiesis:textures/questpics/vvh/blood_school_crest.png",
+    "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
+    "poiesis:textures/questpics/vvh/free_company_writ.png",
+    "poiesis:textures/questpics/vvh/holy_public_ward.png",
+    "poiesis:textures/questpics/vvh/holy_school_crest.png",
+    "poiesis:textures/questpics/vvh/house_of_night.png",
+    "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
+    "poiesis:textures/questpics/vvh/island_remembers.png",
+    "poiesis:textures/questpics/vvh/lantern_order.png",
+    "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
+    "poiesis:textures/questpics/vvh/long_night_fair.png",
+    "poiesis:textures/questpics/vvh/mediator_hybrid_crest.png",
+    "poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
+    "poiesis:textures/questpics/vvh/season_one_crest.png",
+    "poiesis:textures/questpics/vvh/spell_translation_desk.png",
+    "poiesis:textures/questpics/vvh/vvh_rune_material_sheet.png",
+    "poiesis:textures/questpics/weathered_ledger_key_art.png"
+  ],
+  "unresolved_references": [],
+  "outputs": [
+    "00_ch01_island_charter.png",
+    "01_ch02_callings.png",
+    "02_ch03_lantern_order.png",
+    "03_ch04_house_night.png",
+    "04_ch05_free_companies.png",
+    "05_ch06_common_ground.png",
+    "06_ch07_odd_hours.png",
+    "07_ch08_market_services.png",
+    "contact_sheet.png"
+  ]
+}

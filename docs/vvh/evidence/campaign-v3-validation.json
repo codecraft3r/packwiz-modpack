@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "campaign": "VvH Concord campaign v3",
+  "generated_at_utc": "2026-08-26T01:07:07.505345+00:00",
+  "root": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack",
+  "status": "pass",
+  "summary": {
+    "checks": 13,
+    "passed": 13,
+    "failed": 0,
+    "chapters_parsed": 8,
+    "quests_parsed": 62
+  },
+  "checks": [
+    {
+      "name": "exact_eight_chapter_files",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "expected": [
+          "ch01_island_charter.snbt",
+          "ch02_callings.snbt",
+          "ch03_lantern_order.snbt",
+          "ch04_house_night.snbt",
+          "ch05_free_companies.snbt",
+          "ch06_common_ground.snbt",
+          "ch07_odd_hours.snbt",
+          "ch08_market_services.snbt"
+        ],
+        "actual": [
+          "ch01_island_charter.snbt",
+          "ch02_callings.snbt",
+          "ch03_lantern_order.snbt",
+          "ch04_house_night.snbt",
+          "ch05_free_companies.snbt",
+          "ch06_common_ground.snbt",
+          "ch07_odd_hours.snbt",
+          "ch08_market_services.snbt"
+        ]
+      }
+    },
+    {
+      "name": "snbt_parse",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "files_checked": [
+          "config/ftbquests/quests/chapters/ch01_island_charter.snbt",
+          "config/ftbquests/quests/chapters/ch02_callings.snbt",
+          "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+          "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+          "config/ftbquests/quests/chapters/ch05_free_companies.snbt",
+          "config/ftbquests/quests/chapters/ch06_common_ground.snbt",
+          "config/ftbquests/quests/chapters/ch07_odd_hours.snbt",
+          "config/ftbquests/quests/chapters/ch08_market_services.snbt",
+          "config/ftbquests/quests/chapter_groups.snbt",
+          "config/ftbquests/quests/data.snbt",
+          "config/ftbquests/quests/lang/en_us.snbt"
+        ]
+      }
+    },
+    {
+      "name": "global_unique_ids",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "objects": 463,
+        "unique_ids": 463
+      }
+    },
+    {
+      "name": "dependencies_resolve_and_acyclic",
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "quest_reachability",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "roots": [
+          "7A11C0DF00100001"
+        ],
+        "reachable": 62,
+        "quests": 62
+      }
+    },
+    {
+      "name": "short_titles_max_four_words",
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "checkmark_restrictions",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "checkmark_tasks": 31
+      }
+    },
+    {
+      "name": "no_unescaped_ampersand_space",
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "no_removed_cobblemon_references",
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    },
+    {
+      "name": "spell_container_mandatory_fields",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "components_checked": 6
+      }
+    },
+    {
+      "name": "currency_denomination_scaling_and_ledgers",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "bevel_equivalents": {
+          "numismatics:bevel": 1,
+          "numismatics:sprocket": 2,
+          "numismatics:cog": 8
+        },
+        "currency_references": 43,
+        "one_time_personal_bevel_equivalents": 83,
+        "one_time_team_bevel_equivalents": 40,
+        "one_time_all_claimable_bevel_equivalents": 123,
+        "by_chapter": {
+          "ch01_island_charter.snbt": {
+            "personal_bevel_equivalents": 0,
+            "team_bevel_equivalents": 0
+          },
+          "ch02_callings.snbt": {
+            "personal_bevel_equivalents": 6,
+            "team_bevel_equivalents": 0
+          },
+          "ch03_lantern_order.snbt": {
+            "personal_bevel_equivalents": 17,
+            "team_bevel_equivalents": 8
+          },
+          "ch04_house_night.snbt": {
+            "personal_bevel_equivalents": 17,
+            "team_bevel_equivalents": 8
+          },
+          "ch05_free_companies.snbt": {
+            "personal_bevel_equivalents": 19,
+            "team_bevel_equivalents": 8
+          },
+          "ch06_common_ground.snbt": {
+            "personal_bevel_equivalents": 12,
+            "team_bevel_equivalents": 8
+          },
+          "ch07_odd_hours.snbt": {
+            "personal_bevel_equivalents": 12,
+            "team_bevel_equivalents": 8
+          },
+          "ch08_market_services.snbt": {
+            "personal_bevel_equivalents": 0,
+            "team_bevel_equivalents": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "repeatable_faucet_and_team_sinks",
+      "status": "pass",
+      "failures": [],
+      "details": {
+        "repeatables": [
+          "7A11C0DF00800002",
+          "7A11C0DF00800003",
+          "7A11C0DF00800004",
+          "7A11C0DF00800005",
+          "7A11C0DF00800006",
+          "7A11C0DF00800007"
+        ],
+        "faucets": [
+          "7A11C0DF00800007"
+        ],
+        "sinks": [
+          "7A11C0DF00800002",
+          "7A11C0DF00800003",
+          "7A11C0DF00800004",
+          "7A11C0DF00800005",
+          "7A11C0DF00800006"
+        ],
+        "faucet_bevel_equivalents_per_week": 1,
+        "sink_cost_bevel_equivalents_per_week": 17
+      }
+    },
+    {
+      "name": "no_reward_item_used_by_descendant_task",
+      "status": "pass",
+      "failures": [],
+      "details": {}
+    }
+  ],
+  "limitations": [
+    "Static SNBT validation does not prove acceptance by the shipped FTB Quests loader or runtime team/cooldown behavior."
+  ]
+}
