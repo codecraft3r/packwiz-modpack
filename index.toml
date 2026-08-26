@@ -94,7 +94,7 @@ hash = "598f3bdb74d030f2f5b50c38ae9436610302f3b3e08165b1fcdbec3397ca763a"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "045ced909c197435a8dc25e09ef89d651d612ff49348ae5d15f32d1f1e852ee8"
+hash = "23fef815947c6d76d0c667469cab3fbe4a794e8864066dc9131ac52220eaa15a"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -106,7 +106,7 @@ hash = "3ce303f48ac2693fa58073656d00a83441973e0fccc7c8ad7c2216faf4f52d85"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch02_callings.snbt"
-hash = "8ec39d68aed89ed501dedb69b4d0689015e3e585e9ee3522718fb38708c39ef8"
+hash = "3c571942e1ed3032024611cf05c4a54254d78f0ac9e2cace8548f96b2d19a8dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
@@ -122,11 +122,11 @@ hash = "52fce5526539fc3a9c0ca8531021e96835517b887e55992563be1bd35bddc0de"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch06_common_ground.snbt"
-hash = "c3c2ed3ac07370204801ea3756b48bdfd3d40b7090fdefc6eb9c0db4a8a7d36b"
+hash = "c402432f00267e17c157a73b017331ddaddc050112272ad7d5be6587bb817549"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch07_odd_hours.snbt"
-hash = "6dde1a5ae1bdcb0a89c6c5c2a2d58cd746a7090b9301b033ce142a96ee9ff94a"
+hash = "dca86692cc49b991b7f1018582add29b696f8ece0e1dcb559250648f60d0e665"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch08_market_services.snbt"

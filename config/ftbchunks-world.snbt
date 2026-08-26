@@ -12,7 +12,7 @@
 	
 	# Disables all land protection. Useful for private servers where everyone is trusted and claims are only used for force-loading
 	# Default: false
-	disable_protection: false
+	disable_protection: true
 	
 	# If true, fire is prevented from spreading across claims owned by different teams
 	# (unless the target claim has public 'edit block' permissions defined).
