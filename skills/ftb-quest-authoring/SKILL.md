@@ -11,6 +11,8 @@ Build quests that give a server a reason to play together without letting a grin
 
 ## 1. Establish the brief
 
+Always discover or establish a persistent server-specific configuration/rules doc (e.g., `SERVER_RULES.md` in the project root or docs) before authoring or modifying chapters. This document records server-specific boundaries: active factions, allowed/forbidden chapters, opt-out rules, PvP/pranking consent boundaries, and chapter quotas. Refer to it on every quest edit.
+
 Collect only the missing decisions that could change the design. Record:
 
 - audience, active headcount, expected absences, and veteran/new-player mix;
@@ -24,7 +26,7 @@ Collect only the missing decisions that could change the design. Record:
 
 Do not repeat answers already present in the request. If a high-impact value is unknown, state a reasonable assumption and make it easy to revise.
 
-For standard multi-faction campaigns, organize starting progression into foundational chapters: (1) Introduction & Rules (minimal closed-loop onboarding), (2) Choosing a Faction (symmetrical presentation of core faction paths + protected neutral civic path), followed by dedicated chapters for each primary faction. Structure each faction chapter using the **Core Parity Spine + Specialized Branches** architecture:
+For standard multi-faction campaigns, organize starting progression into foundational chapters: (1) Introduction & Rules (minimal closed-loop onboarding), (2) Choosing a Faction (symmetrical presentation of core faction paths + protected neutral opt-out path), followed by dedicated chapters for each primary faction. Never create unprompted third/splinter faction progression chapters, and never create joint/cooperative cross-faction progression chapters unless explicitly requested in the server brief. Structure each faction chapter using the **Core Parity Spine + Specialized Branches** architecture:
 - **Core Parity Spine (Themed/Reskinned for flavor, structurally mirrored for balance):** Mirrored milestone tiers (Tier 1: Foundation/Settlement -> Tier 2: Workstations & Infrastructure -> Tier 3: Logistics & Power -> Tier 4: Faction Capstone) that maintain identical progression depth, pacing, and economic reward tiers so no faction gains an unfair server advantage.
 - **Specialized Mod Branches (Exclusive gameplay loops):** Off-shooting branches attached to the core nodes that engage exclusively with the specific mods in the pack assigned to that faction's identity (unique mod mechanics, exclusive workstations, mod-specific abilities, distinct palette builds, and tailored challenges). These ensure factions do not feel like cookie-cutter clones and provide unique gameplay experiences.
 
@@ -65,7 +67,7 @@ Use dependencies and "complete any N of M" patterns to reward breadth without ma
 - Re-check reachability, dependency direction, minimum counts, and layout after every graph edit; a parseable acyclic graph can still express the wrong progression.
 - Use closed-loop topology for mandatory rules, safety policy, or required onboarding: every required clause must feed the final acknowledgement, and later chapters must depend on that terminal gate when the brief calls for a strict lock.
 - Use open branches for genuine choices such as factions or specialties, arrange equivalent choices symmetrically, and reconverge them through an explicit breadth gate rather than an arbitrary subjective review.
-- Focus faction progression on the pack's primary factions; discourage splinter factions outside the core design. Provide an explicit Neutral / Civic path for players who wish to opt out of conflict, giving practical survival jump-starts (full iron armor/tools, bed, food, currency) and protecting them from faction combat or pranking tasks.
+- Focus faction progression strictly on the pack's primary factions; discourage and never invent splinter factions or unprompted third-faction progression lines. Never create joint-faction or forced co-op chapters unless explicitly instructed. Provide an explicit Neutral / Civic opt-out path for players who wish to opt out of conflict, giving practical survival jump-starts (full iron armor/tools, bed, food, currency) and completing onboarding, but **never author a dedicated progression chapter or questline for the neutral opt-out path**.
 - Keep playful sabotage and conflict quests strictly claim-safe under FTB Chunks / FTB Teams protections. Replace untrackable griefing, mock duels, or territory invasions with tangible, survival-friendly mechanics (such as photography recon/propaganda via Exposure camera and film, harmless throwables, or craftable prank tools).
 
 Balance against the slowest regular player and the server's current state, not its most advanced outlier. Let questing make life meaningfully easier while preserving the value of ordinary play.
@@ -81,6 +83,7 @@ Balance against the slowest regular player and the server's current state, not i
 - Keep separate ledgers for one-time personal issuance, one-time team issuance, the minimum intended route, completionism, repeatable income, and paid sinks. Model team fragmentation as well as one shared team.
 - Treat a native choice claim as the number of entries the installed implementation actually grants. Do not multiply currency exposure by unrelated table metadata such as display/loot size without verifying the semantics.
 - When the pack has a central server-issued currency and real server sinks, make currency the default reward for substantive progress and combine it with useful thematic items. Currency without desirable sinks has no durable value.
+- **Stage Relevance and Milestone Scaling:** Evaluate the intended game stage and requirements for a quest when deciding on the reward. Later quests and quests with harder requirements must have proportionally better, higher-tier rewards. Rewards should always be strictly relevant and immediately useful to the intended game stage (e.g., survival basics for starter tiers, infrastructure/automation for mid tier, advanced alloys/capstones/high currency for late tier).
 - Scale currency rewards dynamically with quest tree depth and milestone weight. Do not award flat starter pocket change (1-2 low coins) on late or deep milestone quests; increase coin volume or step up coin denominations (e.g., Bevel -> Sprocket -> Cog -> Crown) as progression deepens.
 - Set rewards near the most generous value justified by the verified challenge and current progression band. Pair currency with a useful thematic bundle on substantive quests unless the bundle would create a tier skip, duplication route, or faction advantage. The bundle is always intended; omit it only when every candidate bundle is unsafe, and record that omission in authoring notes.
 - Follow the full-set threshold rule: when awarding specialized crafting materials (such as armor runes, portal obsidian, or weapon ingots), award enough to complete a full functional craft (e.g., 4 runes for a 4-piece armor set, 16 obsidian for a nether portal with corners, complete ingots/blocks for a weapon) rather than unusable single fragments.
@@ -92,6 +95,7 @@ Balance against the slowest regular player and the server's current state, not i
 
 ### Player-facing writing contract
 
+- **Gameplay-Driven Progression Over Lore Bloat:** Treat quests as gameplay and progression tools first. Focus on clear mechanical objectives, workstations, recipes, and survival unlocks. Avoid author-invented lore chapters, extensive backstories, or narrative fluff unless the user explicitly requests a lore-heavy campaign.
 - Quest text is for players. Keep guarantees, balance claims, implementation notes, admin policy, and validator language out of titles, subtitles, and bodies.
 - Treat the quest book as scaffolding for a player-driven sandbox. Prefer world consequences, player roles, and reusable places over an elaborate author-invented cast or fixed history unless the user explicitly wants authored lore.
 - Make each quest answer three questions in one coherent body: why do this, what does it enable or change, and what follows from doing it. If the body needs several sections or a long bullet list, split it into multiple quests.

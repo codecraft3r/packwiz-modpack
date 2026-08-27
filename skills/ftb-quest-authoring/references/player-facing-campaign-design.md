@@ -61,8 +61,8 @@ Factions, specialties, professions, and optional play styles may fan out:
 
 - **Pack-Agnostic Campaign Structure:** Adapt chapter themes dynamically to the pack's installed mods (e.g. Magic vs. Tech, Empire vs. Rebellion, Vampires vs. Hunters). Organize foundational progression into:
   1. **Introduction & Rules:** Compact, closed-loop onboarding for rules and claim boundaries.
-  2. **Choosing a Faction / Specialization:** Symmetrical presentation of the core factions alongside an explicit, protected Neutral / Civic path.
-  3. **Dedicated Faction Chapters:** Authored using the **Core Parity Spine + Specialized Branches** pattern.
+  2. **Choosing a Faction / Specialization:** Symmetrical presentation of the core factions alongside an explicit, protected Neutral / Civic opt-out path (gives starter survival items and completes onboarding, but **has no dedicated progression chapter or questline**).
+  3. **Dedicated Faction Chapters:** Authored strictly for the primary factions using the **Core Parity Spine + Specialized Branches** pattern. Never create unprompted third/splinter faction progression chapters or forced joint-faction/cross-faction co-op chapters unless explicitly instructed in the server brief.
 - **The Core Parity Spine (Balance Engine):**
   - Mirrored milestone tiers (Tier 1: Foundation $\rightarrow$ Tier 2: Workstations & Infrastructure $\rightarrow$ Tier 3: Logistics & Expansion $\rightarrow$ Tier 4: Faction Capstone).
   - Keeps progression depth, pacing, and total economic issuance (currencies, crafting ingots, utility bundles) strictly balanced across factions.
@@ -71,7 +71,7 @@ Factions, specialties, professions, and optional play styles may fan out:
   - Distinct sub-branches that sprout off the core milestone nodes, engaging with mod mechanics specific to that faction's identity (e.g., unique crafting stations, mod-specific abilities, specialized combat/defense gear, distinct building palettes, and tailored challenges).
   - Ensures factions are never carbon copies or simple name swaps; each faction offers a distinct gameplay experience and role fantasy.
 - Place equivalent choices symmetrically around a clear center or spine.
-- Put the neutral/default route on the center axis when the visual logic is a three-way choice. Give neutral players practical survival jump-starts (full iron armor and tools, bed, food, currency) rather than token items, and protect them from faction combat/pranking quests.
+- Put the neutral/default opt-out route on the center axis when the visual logic is a three-way choice. Give neutral players practical survival jump-starts (full iron armor and tools, bed, food, currency) rather than token items, and protect them from faction combat/pranking quests without locking them into an ongoing faction questline.
 - Re-converge parallel specialties at an explicit any-N-of-M breadth gate when cooperation or team composition matters.
 - Do not force every specialty merely because the graph reconnects.
 - Separate short-term starter/world tasks from longer workshop, progression, or charter milestones.
@@ -175,6 +175,7 @@ Do not scatter tiny amounts of future-tier materials through early onboarding. T
 
 ### Stage and variety
 
+- **Stage Relevance and Requirement Scaling:** Evaluate the intended game stage and requirements for a quest when deciding on the reward. Later quests and quests with harder requirements must have proportionally better, higher-tier rewards. Rewards should always be strictly relevant and immediately useful to the intended game stage.
 - Early rewards should solve immediate friction: food, navigation, survival, a usable starter tool, or a complete introductory kit.
 - Mid-game rewards should save time or unlock choice: recipe-scale materials, workstation components, transport, construction support, or currency.
 - Late-game/capstone rewards should feel consequential: significant currency, specialized machinery, high-value service bundles, permanent-but-balanced perks, substantial public construction support, or rare cosmetic/status rewards.
