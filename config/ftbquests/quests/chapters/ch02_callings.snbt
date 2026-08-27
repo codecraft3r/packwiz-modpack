@@ -7,24 +7,14 @@
 	id: "7A11C3DF00200000"
 	images: [
 		{
-			alpha: 18
-			height: 6
-			image: "poiesis:textures/questpics/vvh/season_one_crest.png"
+			alpha: 22
+			height: 4
+			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
 			order: -40
 			rotation: 0.0d
-			width: 6
+			width: 4
 			x: 0
-			y: 1.5d
-		}
-		{
-			alpha: 24
-			height: 3
-			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
-			order: -39
-			rotation: 0.0d
-			width: 3
-			x: 0
-			y: 7.5d
+			y: 0
 		}
 	]
 	order_index: 0
@@ -32,23 +22,23 @@
 	quests: [
 		{
 			dependencies: ["7A11C0DF00100005"]
-			description: ["Transformation changes a body; a calling changes what someone chooses to maintain. The House, the Order, and the Free Companies each offer a useful place in the world without forbidding curiosity about the others."]
+			description: ["Choose the role you want to maintain now. House and Order open faction campaigns; Neutral is a protected opt-out that supplies a practical start and exits faction progression without closing ordinary services."]
 			icon: { id: "minecraft:spyglass" }
 			id: "7A11C0DF00200001"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Identity · Night, lantern, or civic"
+			subtitle: "House · Neutral · Order"
 			tasks: [
 				{ id: "7A11C1DF00200001", title: "I reviewed all three callings", type: "checkmark" }
 			]
 			title: "Three Callings"
 			x: 0
-			y: -4
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["Nightbound players trade daylight ease for hunger, speed, and a new obligation to prepare safe rooms after sunset. The House values restraint because appetite without hospitality leaves no neighbors worth knowing."]
+			description: ["Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties."]
 			icon: { id: "vampirism:vampire_fang" }
 			id: "7A11C0DF00200002"
 			optional: true
@@ -74,19 +64,19 @@
 					consume_items: false
 					id: "7A11C1DF00200002"
 					item: { count: 1, id: "vampirism:vampire_fang" }
-					title: "Have a vampire fang"
+					title: "Carry a vampire fang"
 					type: "item"
 				}
 				{ advancement: "vampirism:vampire/become_vampire", criterion: "", id: "7A11C1DF00200003", type: "advancement" }
 			]
 			title: "Join the House"
-			x: -4
+			x: -5
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["A civic calling keeps workshops, roads, trade, and shelter outside faction demands. Its authority comes from services anyone can use and the quiet power to refuse a feud."]
-			icon: { id: "create:wrench" }
+			description: ["Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it asks for no profession items and creates no hidden third faction."]
+			icon: { id: "minecraft:iron_chestplate" }
 			id: "7A11C0DF00200003"
 			optional: true
 			rewards: [
@@ -104,36 +94,66 @@
 				}
 				{
 					id: "7A11C2DF00200006"
-					item: { count: 1, id: "minecraft:iron_pickaxe" }
+					item: { count: 1, id: "minecraft:iron_sword" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00200007"
-					item: { count: 1, id: "minecraft:iron_axe" }
+					item: { count: 1, id: "minecraft:iron_pickaxe" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0020000A"
-					item: { count: 1, id: "minecraft:iron_helmet" }
+					item: { count: 1, id: "minecraft:iron_axe" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0020000B"
-					item: { count: 1, id: "minecraft:iron_chestplate" }
+					item: { count: 1, id: "minecraft:iron_shovel" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0020000C"
-					item: { count: 1, id: "minecraft:iron_leggings" }
+					item: { count: 1, id: "minecraft:iron_hoe" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0020000D"
+					item: { count: 1, id: "minecraft:shield" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000E"
+					item: { count: 1, id: "minecraft:white_bed" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000F"
+					item: { count: 1, id: "minecraft:iron_helmet" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200010"
+					item: { count: 1, id: "minecraft:iron_chestplate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200011"
+					item: { count: 1, id: "minecraft:iron_leggings" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200012"
 					item: { count: 1, id: "minecraft:iron_boots" }
 					team_reward: false
 					type: "item"
@@ -141,37 +161,17 @@
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Free Company · Shared services"
+			subtitle: "Protected opt-out · No faction tree"
 			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF00200004"
-					item: { count: 1, id: "create:wrench" }
-					title: "Have a Create wrench"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00200005"
-					item: { count: 1, id: "numismatics:banking_guide" }
-					title: "Have a banking guide"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00200006"
-					item: { count: 1, id: "minecraft:shield" }
-					title: "Have a shield"
-					type: "item"
-				}
+				{ id: "7A11C1DF00200004", title: "I choose Neutral and opt out of faction rivalry", type: "checkmark" }
 			]
-			title: "Join the Commons"
+			title: "Choose Neutral"
 			x: 0
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["Hunters accept specialized tools and the responsibility to make danger legible before striking it. The Order's best patrols leave behind wards, remedies, and a route home—not trophies."]
+			description: ["Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support."]
 			icon: { id: "vampirism:injection_garlic" }
 			id: "7A11C0DF00200004"
 			optional: true
@@ -197,84 +197,18 @@
 					consume_items: false
 					id: "7A11C1DF00200007"
 					item: { count: 1, id: "vampirism:injection_garlic" }
-					title: "Have a garlic injection"
+					title: "Carry a garlic injection"
 					type: "item"
 				}
 				{ advancement: "vampirism:hunter/become_hunter", criterion: "", id: "7A11C1DF00200008", type: "advancement" }
 			]
 			title: "Join the Order"
-			x: 4
+			x: 5
 			y: -1
 		}
 		{
-			dependencies: ["7A11C0DF00200003"]
-			description: ["The island rewards travelers who mark their turns before nightfall. A compass in hand turns uncharted wilderness into legible paths everyone can share."]
-			icon: { id: "explorerscompass:explorerscompass" }
-			id: "7A11C0DF00200005"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF0020000E"
-					item: { count: 16, id: "minecraft:torch" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0020000F"
-					item: { count: 16, id: "minecraft:bread" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Optional · Navigation basics"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0020000A"
-					item: { count: 1, id: "explorerscompass:explorerscompass" }
-					title: "Have an Explorer's Compass"
-					type: "item"
-				}
-			]
-			title: "Wayfinder Guide"
-			x: -2
-			y: 1.5d
-		}
-		{
-			dependencies: ["7A11C0DF00200003"]
-			description: ["Trade here runs on Numismatics coins: Spurs for pocket change, Bevels for daily labor, and Sprockets for skilled craftsmanship. Keep a guide close to understand posted prices."]
-			icon: { id: "numismatics:banking_guide" }
-			id: "7A11C0DF00200006"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00200010"
-					item: { count: 1, id: "numismatics:bevel" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Optional · The island ledger"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0020000B"
-					item: { count: 1, id: "numismatics:banking_guide" }
-					title: "Have a banking guide"
-					type: "item"
-				}
-			]
-			title: "First Currency"
-			x: 2
-			y: 1.5d
-		}
-		{
 			dependencies: ["7A11C0DF00200002", "7A11C0DF00200003", "7A11C0DF00200004"]
-			description: ["A first calling gives the world a place to start, not a wall around the others. Workshops, archives, and public events remain open so players can understand one another's craft."]
+			description: ["Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out."]
 			icon: { id: "minecraft:oak_door" }
 			id: "7A11C0DF00200007"
 			min_required_dependencies: 1
@@ -283,11 +217,11 @@
 			size: 1.5d
 			subtitle: "Complete any one calling"
 			tasks: [
-				{ id: "7A11C1DF00200009", title: "I choose this calling", type: "checkmark" }
+				{ id: "7A11C1DF00200009", title: "I confirm this calling", type: "checkmark" }
 			]
 			title: "Keep Doors Open"
 			x: 0
-			y: 4
+			y: 3
 		}
 	]
 	title: "02 · Choose a Calling"

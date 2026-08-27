@@ -1,4 +1,22 @@
 {
+  "architecture": "five-chapter-vvh-current",
+  "authoritative_source": "scripts/vvh_campaign_v3.py",
+  "chapter_count": 5,
+  "quest_count": 52,
+  "groups": [
+    {
+      "id": "7A11C4DF00100000",
+      "title": "The Charter"
+    },
+    {
+      "id": "7A11C4DF00200000",
+      "title": "Callings and Factions"
+    },
+    {
+      "id": "7A11C4DF00300000",
+      "title": "Markets and Services"
+    }
+  ],
   "chapters": [
     {
       "filename": "ch01_island_charter",
@@ -7,12 +25,12 @@
       "id": "7A11C3DF00100000",
       "images": [
         {
-          "alpha": 20,
+          "alpha": 18,
           "height": 5,
           "image": "poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 9,
+          "width": 12,
           "x": 0,
           "y": 3
         }
@@ -22,10 +40,9 @@
         {
           "dependencies": [],
           "description": [
-            "Mara Venn repaired paths for people she never met and crossed out her own name when the work held. The island remembers useful places, then leaves their story to the players who keep them alive."
+            "This island is meant to accumulate useful places, not disposable victories. Read every promise below; the quest book opens only after the rules that protect lasting work are acknowledged."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:compass",
           "id": "7A11C0DF00100001",
           "min_required_dependencies": 0,
@@ -37,7 +54,7 @@
               "id": "7A11C2DF00100001",
               "item": {
                 "count": 1,
-                "id": "minecraft:compass"
+                "id": "minecraft:map"
               },
               "team_reward": false,
               "type": "item"
@@ -57,33 +74,23 @@
           "subtitle": "Orientation · A persistent world",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00100001",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I have read the welcome",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Island Charter",
           "x": 0,
-          "y": -4,
-          "can_repeat": false
+          "y": -5
         },
         {
           "dependencies": [
             "7A11C0DF00100001"
           ],
           "description": [
-            "A visible boundary lets neighbors build close without guessing where welcome ends. Public works need a named entrance and an owner so protection never becomes an accidental locked door."
+            "Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:filled_map",
           "id": "7A11C0DF00100002",
           "min_required_dependencies": 0,
@@ -93,36 +100,55 @@
           "rewards": [],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Required · Land and public access",
+          "subtitle": "Required · Land boundaries",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00100002",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I understand claim boundaries",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Claim Clearly",
-          "x": -4,
-          "y": -1,
-          "can_repeat": false
+          "x": -8,
+          "y": -1.5
         },
         {
           "dependencies": [
             "7A11C0DF00100001"
           ],
           "description": [
-            "A feud is only worth continuing when yesterday's work still exists tomorrow. Consent, claim safety, and an immediate stop keep competition memorable instead of exhausting."
+            "A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
+          "icon": "minecraft:oak_door",
+          "id": "7A11C0DF00100006",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Required · Public access",
+          "tasks": [
+            {
+              "id": "7A11C1DF00100006",
+              "title": "I understand how public access is granted",
+              "type": "checkmark"
+            }
+          ],
+          "title": "Name Public Doors",
+          "x": -4,
+          "y": -1.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00100001"
+          ],
+          "description": [
+            "PvP, pranks, and faction drama are opt-in. A request to stop ends the interaction immediately; silence, absence, or faction membership is not consent."
+          ],
+          "hide_dependency_lines": false,
           "icon": "minecraft:shield",
           "id": "7A11C0DF00100003",
           "min_required_dependencies": 0,
@@ -132,36 +158,55 @@
           "rewards": [],
           "shape": "octagon",
           "size": 1.0,
-          "subtitle": "Required · Conflict and pranks",
+          "subtitle": "Required · PvP and social play",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00100003",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I agree to stop on request",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
-          "title": "Rivalry With Consent",
+          "title": "Consent First",
           "x": 0,
-          "y": -1,
-          "can_repeat": false
+          "y": -1.5
         },
         {
           "dependencies": [
             "7A11C0DF00100001"
           ],
           "description": [
-            "An FTB Team joins quest progress to claimed ground and shared rewards. Choose it deliberately; a team is a promise about who may finish, claim, and maintain work together."
+            "Rivalry may use races, photography, markets, propaganda, and reversible jokes. It never requires theft, griefing, forced entry, destructive sabotage, or targeting Neutral players."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
+          "icon": "exposure:camera",
+          "id": "7A11C0DF00100007",
+          "min_required_dependencies": 0,
+          "optional": false,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [],
+          "shape": "octagon",
+          "size": 1.0,
+          "subtitle": "Required · Rivalry boundaries",
+          "tasks": [
+            {
+              "id": "7A11C1DF00100007",
+              "title": "I will keep rivalry claim-safe and reversible",
+              "type": "checkmark"
+            }
+          ],
+          "title": "Leave Work Standing",
+          "x": 4,
+          "y": -1.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00100001"
+          ],
+          "description": [
+            "FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate."
+          ],
+          "hide_dependency_lines": false,
           "icon": "minecraft:chest",
           "id": "7A11C0DF00100004",
           "min_required_dependencies": 0,
@@ -174,35 +219,27 @@
           "subtitle": "Required · Shared progress",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00100004",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I know who shares progress",
-              "type": "checkmark",
-              "value": 1
+              "title": "I know who shares my quest progress",
+              "type": "checkmark"
             }
           ],
           "title": "Choose Teammates",
-          "x": 4,
-          "y": -1,
-          "can_repeat": false
+          "x": 8,
+          "y": -1.5
         },
         {
           "dependencies": [
             "7A11C0DF00100002",
+            "7A11C0DF00100006",
             "7A11C0DF00100003",
+            "7A11C0DF00100007",
             "7A11C0DF00100004"
           ],
           "description": [
-            "The charter is deliberately small: protect lasting work, ask before rivalry, and know who shares your progress. Once those promises are settled, every calling remains visible and the island can grow in directions nobody planned."
+            "You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DF00100005",
           "min_required_dependencies": 0,
@@ -221,27 +258,18 @@
             }
           ],
           "shape": "hexagon",
-          "size": 1.5,
-          "subtitle": "Required · Protect · consent · share",
+          "size": 1.6,
+          "subtitle": "Required · Claims · consent · teams",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00100005",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I accept all three promises",
-              "type": "checkmark",
-              "value": 1
+              "title": "I accept all five promises",
+              "type": "checkmark"
             }
           ],
           "title": "Sign the Charter",
           "x": 0,
-          "y": 2.5,
-          "can_repeat": false
+          "y": 3
         }
       ],
       "title": "01 · The Island Charter"
@@ -253,24 +281,14 @@
       "id": "7A11C3DF00200000",
       "images": [
         {
-          "alpha": 18,
-          "height": 6,
-          "image": "poiesis:textures/questpics/vvh/season_one_crest.png",
+          "alpha": 22,
+          "height": 4,
+          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 6,
+          "width": 4,
           "x": 0,
-          "y": 1.5
-        },
-        {
-          "alpha": 24,
-          "height": 3,
-          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
-          "order": -39,
-          "rotation": 0.0,
-          "width": 3,
-          "x": 0,
-          "y": 7.5
+          "y": 0
         }
       ],
       "order": 0,
@@ -280,10 +298,9 @@
             "7A11C0DF00100005"
           ],
           "description": [
-            "Transformation changes a body; a calling changes what someone chooses to maintain. The House, the Order, and the Free Companies each offer a useful place in the world without forbidding curiosity about the others."
+            "Choose the role you want to maintain now. House and Order open faction campaigns; Neutral is a protected opt-out that supplies a practical start and exits faction progression without closing ordinary services."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:spyglass",
           "id": "7A11C0DF00200001",
           "min_required_dependencies": 0,
@@ -293,36 +310,26 @@
           "rewards": [],
           "shape": "hexagon",
           "size": 1.5,
-          "subtitle": "Identity · Night, lantern, or civic",
+          "subtitle": "House · Neutral · Order",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00200001",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I reviewed all three callings",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Three Callings",
           "x": 0,
-          "y": -4,
-          "can_repeat": false
+          "y": -5
         },
         {
           "dependencies": [
             "7A11C0DF00200001"
           ],
           "description": [
-            "Nightbound players trade daylight ease for hunger, speed, and a new obligation to prepare safe rooms after sunset. The House values restraint because appetite without hospitality leaves no neighbors worth knowing."
+            "Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_fang",
           "id": "7A11C0DF00200002",
           "min_required_dependencies": 0,
@@ -354,47 +361,35 @@
           "subtitle": "Vampire · Nightbound route",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00200002",
-              "item": "vampirism:vampire_fang",
-              "optional": false,
-              "stat": null,
-              "title": "Have a vampire fang",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:vampire_fang"
+              },
+              "title": "Carry a vampire fang",
+              "type": "item"
             },
             {
               "advancement": "vampirism:vampire/become_vampire",
-              "consume": false,
-              "count": 1,
               "criterion": "",
               "id": "7A11C1DF00200003",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "",
-              "type": "advancement",
-              "value": 1
+              "type": "advancement"
             }
           ],
           "title": "Join the House",
-          "x": -4,
-          "y": -1,
-          "can_repeat": false
+          "x": -5,
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00200001"
           ],
           "description": [
-            "A civic calling keeps workshops, roads, trade, and shelter outside faction demands. Its authority comes from services anyone can use and the quiet power to refuse a feud."
+            "Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it asks for no profession items and creates no hidden third faction."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:wrench",
+          "icon": "minecraft:iron_chestplate",
           "id": "7A11C0DF00200003",
           "min_required_dependencies": 0,
           "optional": true,
@@ -423,7 +418,7 @@
               "id": "7A11C2DF00200006",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_pickaxe"
+                "id": "minecraft:iron_sword"
               },
               "team_reward": false,
               "type": "item"
@@ -432,7 +427,7 @@
               "id": "7A11C2DF00200007",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_axe"
+                "id": "minecraft:iron_pickaxe"
               },
               "team_reward": false,
               "type": "item"
@@ -441,7 +436,7 @@
               "id": "7A11C2DF0020000A",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_helmet"
+                "id": "minecraft:iron_axe"
               },
               "team_reward": false,
               "type": "item"
@@ -450,7 +445,7 @@
               "id": "7A11C2DF0020000B",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_chestplate"
+                "id": "minecraft:iron_shovel"
               },
               "team_reward": false,
               "type": "item"
@@ -459,13 +454,58 @@
               "id": "7A11C2DF0020000C",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_leggings"
+                "id": "minecraft:iron_hoe"
               },
               "team_reward": false,
               "type": "item"
             },
             {
               "id": "7A11C2DF0020000D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:shield"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0020000E",
+              "item": {
+                "count": 1,
+                "id": "minecraft:white_bed"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0020000F",
+              "item": {
+                "count": 1,
+                "id": "minecraft:iron_helmet"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00200010",
+              "item": {
+                "count": 1,
+                "id": "minecraft:iron_chestplate"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00200011",
+              "item": {
+                "count": 1,
+                "id": "minecraft:iron_leggings"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00200012",
               "item": {
                 "count": 1,
                 "id": "minecraft:iron_boots"
@@ -476,62 +516,26 @@
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Free Company · Shared services",
+          "subtitle": "Protected opt-out · No faction tree",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00200004",
-              "item": "create:wrench",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Create wrench",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00200005",
-              "item": "numismatics:banking_guide",
-              "optional": false,
-              "stat": null,
-              "title": "Have a banking guide",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00200006",
-              "item": "minecraft:shield",
-              "optional": false,
-              "stat": null,
-              "title": "Have a shield",
-              "type": "item",
-              "value": 1
+              "title": "I choose Neutral and opt out of faction rivalry",
+              "type": "checkmark"
             }
           ],
-          "title": "Join the Commons",
+          "title": "Choose Neutral",
           "x": 0,
-          "y": -1,
-          "can_repeat": false
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00200001"
           ],
           "description": [
-            "Hunters accept specialized tools and the responsibility to make danger legible before striking it. The Order's best patrols leave behind wards, remedies, and a route home—not trophies."
+            "Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:injection_garlic",
           "id": "7A11C0DF00200004",
           "min_required_dependencies": 0,
@@ -563,143 +567,25 @@
           "subtitle": "Hunter · Lantern route",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00200007",
-              "item": "vampirism:injection_garlic",
-              "optional": false,
-              "stat": null,
-              "title": "Have a garlic injection",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:injection_garlic"
+              },
+              "title": "Carry a garlic injection",
+              "type": "item"
             },
             {
               "advancement": "vampirism:hunter/become_hunter",
-              "consume": false,
-              "count": 1,
               "criterion": "",
               "id": "7A11C1DF00200008",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "",
-              "type": "advancement",
-              "value": 1
+              "type": "advancement"
             }
           ],
           "title": "Join the Order",
-          "x": 4,
-          "y": -1,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00200003"
-          ],
-          "description": [
-            "The island rewards travelers who mark their turns before nightfall. A compass in hand turns uncharted wilderness into legible paths everyone can share."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "explorerscompass:explorerscompass",
-          "id": "7A11C0DF00200005",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0020000E",
-              "item": {
-                "count": 16,
-                "id": "minecraft:torch"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0020000F",
-              "item": {
-                "count": 16,
-                "id": "minecraft:bread"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Optional · Navigation basics",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0020000A",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Wayfinder Guide",
-          "x": -2,
-          "y": 1.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00200003"
-          ],
-          "description": [
-            "Trade here runs on Numismatics coins: Spurs for pocket change, Bevels for daily labor, and Sprockets for skilled craftsmanship. Keep a guide close to understand posted prices."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "numismatics:banking_guide",
-          "id": "7A11C0DF00200006",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00200010",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Optional · The island ledger",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0020000B",
-              "item": "numismatics:banking_guide",
-              "optional": false,
-              "stat": null,
-              "title": "Have a banking guide",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "First Currency",
-          "x": 2,
-          "y": 1.5,
-          "can_repeat": false
+          "x": 5,
+          "y": -1
         },
         {
           "dependencies": [
@@ -708,10 +594,9 @@
             "7A11C0DF00200004"
           ],
           "description": [
-            "A first calling gives the world a place to start, not a wall around the others. Workshops, archives, and public events remain open so players can understand one another's craft."
+            "Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:oak_door",
           "id": "7A11C0DF00200007",
           "min_required_dependencies": 1,
@@ -724,23 +609,14 @@
           "subtitle": "Complete any one calling",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00200009",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I choose this calling",
-              "type": "checkmark",
-              "value": 1
+              "title": "I confirm this calling",
+              "type": "checkmark"
             }
           ],
           "title": "Keep Doors Open",
           "x": 0,
-          "y": 4,
-          "can_repeat": false
+          "y": 3
         }
       ],
       "title": "02 · Choose a Calling"
@@ -752,27 +628,27 @@
       "id": "7A11C3DF00300000",
       "images": [
         {
-          "alpha": 24,
+          "alpha": 22,
           "height": 7,
           "image": "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
           "order": -40,
           "rotation": 0.0,
           "width": 5,
-          "x": -6,
+          "x": -11,
           "y": 2
         },
         {
-          "alpha": 22,
+          "alpha": 20,
           "height": 7,
           "image": "poiesis:textures/questpics/vvh/holy_public_ward.png",
           "order": -39,
           "rotation": 0.0,
           "width": 5,
-          "x": 6,
-          "y": 8
+          "x": 11,
+          "y": 5
         },
         {
-          "alpha": 30,
+          "alpha": 28,
           "height": 2.5,
           "image": "poiesis:textures/questpics/vvh/holy_school_crest.png",
           "order": -38,
@@ -789,10 +665,9 @@
             "7A11C0DF00200004"
           ],
           "description": [
-            "Tamsin Rook keeps a bent stake above the research table, not as a victory but as proof that poor preparation follows people home. A complete field bench gives the next patrol time to think before the door opens."
+            "Build the field bench that makes Hunter work repeatable: a Hunter Table, stakes, and a normal Hunter Axe. The reward supplies a complete working coat so the route starts functional rather than fashionable."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:hunter_table",
           "id": "7A11C0DF00300001",
           "min_required_dependencies": 0,
@@ -848,62 +723,51 @@
           ],
           "shape": "hexagon",
           "size": 1.4,
-          "subtitle": "Core I · A working field bench",
+          "subtitle": "Tier I · Foundation",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300001",
-              "item": "vampirism:hunter_table",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Hunter Table",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:hunter_table"
+              },
+              "title": "Inspect a Hunter Table",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300002",
-              "item": "vampirism:stake",
-              "optional": false,
-              "stat": null,
-              "title": "Have four stakes",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:stake"
+              },
+              "title": "Carry four stakes",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300003",
-              "item": "vampirism:hunter_axe_normal",
-              "optional": false,
-              "stat": null,
-              "title": "Have a normal Hunter Axe",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:hunter_axe_normal"
+              },
+              "title": "Inspect a normal Hunter Axe",
+              "type": "item"
             }
           ],
           "title": "Salt and Steel",
           "x": 0,
-          "y": -5,
-          "can_repeat": false
+          "y": -10
         },
         {
           "dependencies": [
             "7A11C0DF00300001"
           ],
           "description": [
-            "A refuge becomes trustworthy when its remedies are stocked before anyone needs them. Holy preparation here means stewardship: clean water, clear labels, and enough reserve for the stranger who arrives after the patrol."
+            "Stock an Alchemical Cauldron with normal Holy Water and Pure Salt. This turns a private kit into a maintainable remedy station and opens the Order's specialized ward, magic, and refuge branches."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:alchemical_cauldron",
           "id": "7A11C0DF00300002",
           "min_required_dependencies": 0,
@@ -915,7 +779,7 @@
               "id": "7A11C2DF00300006",
               "item": {
                 "count": 1,
-                "id": "numismatics:bevel"
+                "id": "numismatics:sprocket"
               },
               "team_reward": false,
               "type": "item"
@@ -959,62 +823,51 @@
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Core II · Remedies and wards",
+          "subtitle": "Tier II · Workstations",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300004",
-              "item": "vampirism:alchemical_cauldron",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Alchemical Cauldron",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:alchemical_cauldron"
+              },
+              "title": "Inspect an Alchemical Cauldron",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300005",
-              "item": "vampirism:holy_water_bottle_normal",
-              "optional": false,
-              "stat": null,
-              "title": "Have four normal Holy Waters",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:holy_water_bottle_normal"
+              },
+              "title": "Carry four normal Holy Waters",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300006",
-              "item": "vampirism:pure_salt",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Pure Salt",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 8,
+                "id": "vampirism:pure_salt"
+              },
+              "title": "Carry eight Pure Salt",
+              "type": "item"
             }
           ],
           "title": "Consecrated Work",
           "x": 0,
-          "y": -2,
-          "can_repeat": false
+          "y": -7
         },
         {
           "dependencies": [
             "7A11C0DF00300002"
           ],
           "description": [
-            "The Order measures a patrol by how safely it can hand the next watch to someone else. Reliable quarrels and a maintained weapon table turn one veteran's skill into equipment the whole refuge can understand."
+            "Add a Hunter Weapon Table, basic crossbow, and a real reserve of vampire-killer quarrels. The Order can now equip a second patrol instead of depending on one veteran's inventory."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:weapon_table",
           "id": "7A11C0DF00300003",
           "min_required_dependencies": 0,
@@ -1025,8 +878,8 @@
             {
               "id": "7A11C2DF0030000B",
               "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
+                "count": 2,
+                "id": "numismatics:sprocket"
               },
               "team_reward": false,
               "type": "item"
@@ -1070,62 +923,51 @@
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Core III · Ranged fieldcraft",
+          "subtitle": "Tier III · Logistics",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300007",
-              "item": "vampirism:weapon_table",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Hunter Weapon Table",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:weapon_table"
+              },
+              "title": "Inspect a Hunter Weapon Table",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300008",
-              "item": "vampirism:basic_crossbow",
-              "optional": false,
-              "stat": null,
-              "title": "Have a basic hunter crossbow",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:basic_crossbow"
+              },
+              "title": "Carry a basic Hunter crossbow",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300009",
-              "item": "vampirism:crossbow_arrow_vampire_killer",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen killer quarrels",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 16,
+                "id": "vampirism:crossbow_arrow_vampire_killer"
+              },
+              "title": "Carry sixteen killer quarrels",
+              "type": "item"
             }
           ],
           "title": "Long Watch",
           "x": 0,
-          "y": 1,
-          "can_repeat": false
+          "y": -4
         },
         {
           "dependencies": [
-            "7A11C0DF00300002"
+            "7A11C0DF00300003"
           ],
           "description": [
-            "Sister Aveline's manual begins with triage, not triumph. A spellwright who can heal, recall, and strike with restraint makes every expedition less dependent on whichever veteran happened to log in first."
+            "Prepare an Inscription Table, a spellbook, and four Holy Runes, then demonstrate one Holy spell. The reward provides a practical triage set for healing, controlled force, and returning home."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:holy_rune",
           "id": "7A11C0DF00300004",
           "min_required_dependencies": 0,
@@ -1238,75 +1080,56 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Holy support magic",
+          "subtitle": "Specialty · Holy support",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000C",
-              "item": "irons_spellbooks:inscription_table",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Inscription Table",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:inscription_table"
+              },
+              "title": "Inspect an Inscription Table",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000D",
-              "item": "irons_spellbooks:copper_spell_book",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Flimsy Journal",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:copper_spell_book"
+              },
+              "title": "Carry a Flimsy Journal",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000E",
-              "item": "irons_spellbooks:holy_rune",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Holy Runes",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "irons_spellbooks:holy_rune"
+              },
+              "title": "Carry four Holy Runes",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00300018",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I demonstrated one Holy spell",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Mercy Manual",
-          "x": -3.5,
-          "y": -2,
-          "can_repeat": false
+          "x": -14,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00300002"
+            "7A11C0DF00300003"
           ],
           "description": [
-            "A line of salt across a doorway can give a besieged patrol the five seconds needed to reload. Stocking purified salt and defensive waters ensures the refuge holds even when outnumbered."
+            "Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:pure_salt",
           "id": "7A11C0DF00300005",
           "min_required_dependencies": 0,
@@ -1344,62 +1167,51 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Garlic and salt wards",
+          "subtitle": "Specialty · Wards",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300022",
-              "item": "vampirism:pure_salt",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Pure Salt",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 8,
+                "id": "vampirism:pure_salt"
+              },
+              "title": "Carry eight Pure Salt",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300023",
-              "item": "vampirism:holy_salt",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Holy Salt",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 32,
+                "id": "vampirism:holy_salt"
+              },
+              "title": "Carry thirty-two Holy Salt",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300024",
-              "item": "vampirism:injection_garlic",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Garlic Injection",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:injection_garlic"
+              },
+              "title": "Carry a garlic injection",
+              "type": "item"
             }
           ],
           "title": "Pure Defense",
-          "x": -6.5,
-          "y": -2,
-          "can_repeat": false
+          "x": -10,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00300002"
+            "7A11C0DF00300003"
           ],
           "description": [
-            "A watchpost should be recognizable in bad weather and easy to repair with ordinary stock. This palette establishes the language; the expanded supply can become a tower, refuge, wall, or roadside ward chosen by its builders."
+            "Gather a repairable palette of stone brick, oak, iron bars, and lanterns. The expanded stock is enough for a recognizable watchpost, refuge, wall, or roadside ward chosen by its builders."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:stone_bricks",
           "id": "7A11C0DF00300006",
           "min_required_dependencies": 0,
@@ -1482,84 +1294,70 @@
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "Specialty · Outpost palette",
+          "subtitle": "Specialty · Refuge palette",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 64,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000F",
-              "item": "minecraft:stone_bricks",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixty-four Stone Bricks",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_bricks"
+              },
+              "title": "Inspect sixty-four Stone Bricks",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300010",
-              "item": "minecraft:oak_log",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Oak Logs",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 32,
+                "id": "minecraft:oak_log"
+              },
+              "title": "Inspect thirty-two Oak Logs",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300011",
-              "item": "minecraft:iron_bars",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Iron Bars",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 16,
+                "id": "minecraft:iron_bars"
+              },
+              "title": "Inspect sixteen Iron Bars",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300012",
-              "item": "minecraft:lantern",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Lanterns",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "title": "Inspect eight Lanterns",
+              "type": "item"
             }
           ],
           "title": "Stone Lantern",
-          "x": -3.5,
-          "y": 1,
-          "can_repeat": false
+          "x": -6,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00300003"
           ],
           "description": [
-            "Different threats demand different answers: incendiary spitfire quarrels illuminate shadows, while teleport quarrels reposition a trapped scout to safe ground."
+            "Prepare a brewing stand, honey, and expedition food before anyone needs rescue. The reserve supports a real patrol and gives late arrivals something useful immediately."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "vampirism:crossbow_arrow_spitfire",
-          "id": "7A11C0DF00300007",
+          "icon": "minecraft:brewing_stand",
+          "id": "7A11C0DF0030000C",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 0,
           "repeatable": false,
           "rewards": [
             {
-              "id": "7A11C2DF0030002A",
+              "id": "7A11C2DF00300028",
               "item": {
                 "count": 1,
                 "id": "numismatics:sprocket"
@@ -1568,7 +1366,189 @@
               "type": "item"
             },
             {
+              "id": "7A11C2DF00300029",
+              "item": {
+                "count": 32,
+                "id": "minecraft:glass_bottle"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030002A",
+              "item": {
+                "count": 4,
+                "id": "minecraft:golden_apple"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
               "id": "7A11C2DF0030002B",
+              "item": {
+                "count": 32,
+                "id": "minecraft:bread"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Medicine",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300028",
+              "item": {
+                "count": 1,
+                "id": "minecraft:brewing_stand"
+              },
+              "title": "Inspect a Brewing Stand",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300029",
+              "item": {
+                "count": 8,
+                "id": "minecraft:honey_bottle"
+              },
+              "title": "Carry eight Honey Bottles",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030002A",
+              "item": {
+                "count": 16,
+                "id": "minecraft:golden_carrot"
+              },
+              "title": "Carry sixteen Golden Carrots",
+              "type": "item"
+            }
+          ],
+          "title": "Refuge Stores",
+          "x": -2,
+          "y": 0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00300003"
+          ],
+          "description": [
+            "Carry a saddle, spyglass, and compass as a coherent route kit. The reward adds leads and rockets so a patrol can move supplies, signal, and return without turning mobility into a permanent power grant."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:saddle",
+          "id": "7A11C0DF0030000D",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0030002C",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030002D",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lead"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030002E",
+              "item": {
+                "count": 32,
+                "id": "minecraft:firework_rocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030002F",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Field mobility",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030002B",
+              "item": {
+                "count": 1,
+                "id": "minecraft:saddle"
+              },
+              "title": "Carry a Saddle",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030002C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:spyglass"
+              },
+              "title": "Carry a Spyglass",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030002D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:compass"
+              },
+              "title": "Carry a Compass",
+              "type": "item"
+            }
+          ],
+          "title": "Patrol Transit",
+          "x": 2,
+          "y": 0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00300003"
+          ],
+          "description": [
+            "Stock spitfire and teleport quarrels for illumination and emergency repositioning. The branch broadens field options without granting a stronger weapon tier."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:crossbow_arrow_spitfire",
+          "id": "7A11C0DF00300007",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00300030",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300031",
               "item": {
                 "count": 32,
                 "id": "minecraft:iron_ingot"
@@ -1577,7 +1557,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0030002C",
+              "id": "7A11C2DF00300032",
               "item": {
                 "count": 64,
                 "id": "minecraft:arrow"
@@ -1588,49 +1568,41 @@
           ],
           "shape": "gear",
           "size": 1.0,
-          "subtitle": "Specialty · Specialized ammunition",
+          "subtitle": "Specialty · Ammunition",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF00300028",
-              "item": "vampirism:crossbow_arrow_spitfire",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen spitfire quarrels",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF00300030",
+              "item": {
+                "count": 16,
+                "id": "vampirism:crossbow_arrow_spitfire"
+              },
+              "title": "Carry sixteen spitfire quarrels",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF00300029",
-              "item": "vampirism:crossbow_arrow_teleport",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen teleport quarrels",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF00300031",
+              "item": {
+                "count": 16,
+                "id": "vampirism:crossbow_arrow_teleport"
+              },
+              "title": "Carry sixteen teleport quarrels",
+              "type": "item"
             }
           ],
           "title": "Hunter Armament",
-          "x": 3.5,
-          "y": 1,
-          "can_repeat": false
+          "x": 6,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00300003"
           ],
           "description": [
-            "A photograph can warn a neighbor without crossing their boundary or turning rumor into accusation. The ledger gives the Order evidence it can discuss, archive, and eventually admit was wrong."
+            "Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "exposure:camera",
           "id": "7A11C0DF00300008",
           "min_required_dependencies": 0,
@@ -1639,7 +1611,7 @@
           "repeatable": false,
           "rewards": [
             {
-              "id": "7A11C2DF0030002D",
+              "id": "7A11C2DF00300033",
               "item": {
                 "count": 1,
                 "id": "numismatics:sprocket"
@@ -1648,37 +1620,19 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0030002E",
+              "id": "7A11C2DF00300034",
               "item": {
-                "count": 1,
-                "id": "exposure:album"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0030002F",
-              "item": {
-                "count": 4,
+                "count": 8,
                 "id": "exposure:color_film"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00300030",
-              "item": {
-                "count": 4,
-                "id": "exposure:black_and_white_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00300031",
+              "id": "7A11C2DF00300035",
               "item": {
                 "count": 8,
-                "id": "exposure:photograph_frame"
+                "id": "exposure:black_and_white_film"
               },
               "team_reward": false,
               "type": "item"
@@ -1686,62 +1640,47 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Claim-safe reconnaissance",
+          "subtitle": "Specialty · Reconnaissance",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300013",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "explorerscompass:explorerscompass"
+              },
+              "title": "Carry an Explorer's Compass",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300014",
-              "item": "exposure:camera",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Camera",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "exposure:camera"
+              },
+              "title": "Carry a Camera",
+              "type": "item"
             },
             {
               "advancement": "exposure:adventure/moment_in_time",
-              "consume": false,
-              "count": 1,
               "criterion": "",
               "id": "7A11C1DF00300015",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "",
-              "type": "advancement",
-              "value": 1
+              "type": "advancement"
             }
           ],
           "title": "Field Ledger",
-          "x": 6.5,
-          "y": 1,
-          "can_repeat": false
+          "x": 10,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00300003"
           ],
           "description": [
-            "Tamsin's last rule is simple: power belongs where it can be accounted for. The enhanced axe hangs beside a ledger of every time it left the refuge and whether it returned clean."
+            "Carry an enhanced Hunter Axe and enhanced splash Holy Water. This is optional late mastery, paid at Cog scale because it proves a later equipment band rather than routine preparation."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:hunter_axe_enhanced",
           "id": "7A11C0DF00300009",
           "min_required_dependencies": 0,
@@ -1787,55 +1726,236 @@
             }
           ],
           "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Optional mastery · Enhanced fieldcraft",
+          "size": 1.3,
+          "subtitle": "Specialty · Advanced fieldcraft",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000A",
-              "item": "vampirism:hunter_axe_enhanced",
-              "optional": false,
-              "stat": null,
-              "title": "Have an enhanced Hunter Axe",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:hunter_axe_enhanced"
+              },
+              "title": "Carry an enhanced Hunter Axe",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0030000B",
-              "item": "vampirism:holy_water_splash_bottle_enhanced",
-              "optional": false,
-              "stat": null,
-              "title": "Have enhanced splash Holy Water",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:holy_water_splash_bottle_enhanced"
+              },
+              "title": "Carry enhanced splash Holy Water",
+              "type": "item"
             }
           ],
           "title": "Bright Oath",
-          "x": 3.5,
-          "y": -2,
-          "can_repeat": false
+          "x": 14,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00300003",
-            "7A11C0DF00300004",
-            "7A11C0DF00300006",
-            "7A11C0DF00300005",
-            "7A11C0DF00300007",
+            "7A11C0DF00300006"
+          ],
+          "description": [
+            "Use the palette stock to open a claim-safe watchpost with two beds, storage, a bell, and a clearly marked public entrance. The checkmark attests that another player can actually find and use it."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "minecraft:bell",
+          "id": "7A11C0DF0030000E",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00300036",
+              "item": {
+                "count": 16,
+                "id": "minecraft:oak_sign"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300037",
+              "item": {
+                "count": 16,
+                "id": "minecraft:item_frame"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300038",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300039",
+              "item": {
+                "count": 4,
+                "id": "minecraft:campfire"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Optional · Public refuge",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300032",
+              "item": {
+                "count": 2,
+                "id": "minecraft:white_bed"
+              },
+              "title": "Inspect two White Beds",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300033",
+              "item": {
+                "count": 4,
+                "id": "minecraft:barrel"
+              },
+              "title": "Inspect four Barrels",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300034",
+              "item": {
+                "count": 1,
+                "id": "minecraft:bell"
+              },
+              "title": "Inspect a Bell",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF00300035",
+              "title": "I opened and tested the public watchpost",
+              "type": "checkmark"
+            }
+          ],
+          "title": "Open Watchpost",
+          "x": -8,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
             "7A11C0DF00300008"
           ],
           "description": [
-            "No refuge should depend on a single expert. Two practiced specialties are enough to make the Order resilient while leaving room for later players to adopt the third."
+            "File a photo album, eight framed photographs, and one written report in a place other players can inspect. The archive preserves evidence without turning reconnaissance into trespass."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "exposure:album",
+          "id": "7A11C0DF0030000F",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0030003A",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030003B",
+              "item": {
+                "count": 64,
+                "id": "minecraft:paper"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030003C",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030003D",
+              "item": {
+                "count": 16,
+                "id": "minecraft:item_frame"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Optional · Public records",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300036",
+              "item": {
+                "count": 1,
+                "id": "exposure:album"
+              },
+              "title": "Inspect a Photo Album",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300037",
+              "item": {
+                "count": 8,
+                "id": "exposure:photograph_frame"
+              },
+              "title": "Inspect eight Photograph Frames",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300038",
+              "item": {
+                "count": 1,
+                "id": "minecraft:written_book"
+              },
+              "title": "Inspect one written field report",
+              "type": "item"
+            }
+          ],
+          "title": "Archive Wall",
+          "x": 8,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00300004",
+            "7A11C0DF00300005",
+            "7A11C0DF00300006",
+            "7A11C0DF0030000C",
+            "7A11C0DF0030000D",
+            "7A11C0DF00300007",
+            "7A11C0DF00300008",
+            "7A11C0DF00300009"
+          ],
+          "description": [
+            "Complete any three specialty nodes above. Because every counted specialty descends from Long Watch, this breadth gate proves the full core spine without forcing one preferred Hunter personality."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DF0030000A",
           "min_required_dependencies": 3,
@@ -1845,36 +1965,26 @@
           "rewards": [],
           "shape": "diamond",
           "size": 1.3,
-          "subtitle": "Breadth · Core plus any two specialties",
+          "subtitle": "Breadth · Any three specialties",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00300016",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I completed two specialties",
-              "type": "checkmark",
-              "value": 1
+              "title": "I completed three Hunter specialties",
+              "type": "checkmark"
             }
           ],
-          "title": "Two Lanterns",
+          "title": "Three Lanterns",
           "x": 0,
-          "y": 4,
-          "can_repeat": false
+          "y": 6
         },
         {
           "dependencies": [
             "7A11C0DF0030000A"
           ],
           "description": [
-            "Tamsin keeps one lodestone unengraved for the refuge that will outlive its founders. Its eventual name should belong to the stranger who finds shelter there when no officer is online."
+            "Carry a lodestone reserved for a named public refuge. The team reward supplies enough durable stock to extend the place after the capstone instead of treating it as a finished museum piece."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:lodestone",
           "id": "7A11C0DF0030000B",
           "min_required_dependencies": 0,
@@ -1883,7 +1993,7 @@
           "repeatable": false,
           "rewards": [
             {
-              "id": "7A11C2DF00300032",
+              "id": "7A11C2DF0030003E",
               "item": {
                 "count": 1,
                 "id": "numismatics:cog"
@@ -1892,7 +2002,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00300033",
+              "id": "7A11C2DF0030003F",
               "item": {
                 "count": 128,
                 "id": "minecraft:stone_bricks"
@@ -1901,7 +2011,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00300034",
+              "id": "7A11C2DF00300040",
               "item": {
                 "count": 32,
                 "id": "minecraft:lantern"
@@ -1910,7 +2020,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00300035",
+              "id": "7A11C2DF00300041",
               "item": {
                 "count": 8,
                 "id": "minecraft:barrel"
@@ -1921,29 +2031,25 @@
           ],
           "shape": "hexagon",
           "size": 1.6,
-          "subtitle": "Team capstone · Mark a public refuge",
+          "subtitle": "Tier IV · Team refuge",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00300017",
-              "item": "minecraft:lodestone",
-              "optional": false,
-              "stat": null,
-              "title": "Have the refuge lodestone",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "minecraft:lodestone"
+              },
+              "title": "Carry the refuge Lodestone",
+              "type": "item"
             }
           ],
           "title": "Lantern Charter",
           "x": 0,
-          "y": 7,
-          "can_repeat": false
+          "y": 9
         }
       ],
-      "title": "03 · The Lantern Order"
+      "title": "03 · Lantern Order"
     },
     {
       "filename": "ch04_house_night",
@@ -1952,27 +2058,27 @@
       "id": "7A11C3DF00400000",
       "images": [
         {
-          "alpha": 24,
+          "alpha": 22,
           "height": 7,
           "image": "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
           "order": -40,
           "rotation": 0.0,
           "width": 5,
-          "x": -6,
+          "x": 11,
           "y": 2
         },
         {
-          "alpha": 22,
+          "alpha": 20,
           "height": 7,
           "image": "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
           "order": -39,
           "rotation": 0.0,
           "width": 5,
-          "x": 6,
-          "y": 8
+          "x": -11,
+          "y": 5
         },
         {
-          "alpha": 30,
+          "alpha": 28,
           "height": 2.5,
           "image": "poiesis:textures/questpics/vvh/blood_school_crest.png",
           "order": -38,
@@ -1989,10 +2095,9 @@
             "7A11C0DF00200002"
           ],
           "description": [
-            "Ilyas Venn labels every bottle with a donor, a date, or the word unknown. Hunger becomes governable when supply is visible, and a prepared room lets restraint survive the hour when it matters."
+            "Prepare an Altar of Inspiration, Blood Container, and four Blood Bottles. Visible reserves turn hunger from an emergency into a system another House member can maintain."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:altar_inspiration",
           "id": "7A11C0DF00400001",
           "min_required_dependencies": 0,
@@ -2048,62 +2153,51 @@
           ],
           "shape": "hexagon",
           "size": 1.4,
-          "subtitle": "Core I · Stored blood and shelter",
+          "subtitle": "Tier I · Foundation",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400001",
-              "item": "vampirism:altar_inspiration",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Altar of Inspiration",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:altar_inspiration"
+              },
+              "title": "Inspect an Altar of Inspiration",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400002",
-              "item": "vampirism:blood_container",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Blood Container",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_container"
+              },
+              "title": "Inspect a Blood Container",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400003",
-              "item": "vampirism:blood_bottle",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Bottles",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_bottle"
+              },
+              "title": "Carry four Blood Bottles",
+              "type": "item"
             }
           ],
           "title": "First Thirst",
           "x": 0,
-          "y": -5,
-          "can_repeat": false
+          "y": -10
         },
         {
           "dependencies": [
             "7A11C0DF00400001"
           ],
           "description": [
-            "An altar is not a shortcut around consequence. Pedestals, storage, and measured ingredients turn inheritance into a repeatable craft that another player can inspect instead of a secret only one veteran understands."
+            "Add an Altar of Infusion, four Blood Pedestals, and two Blood-Infused Iron. The ritual becomes an inspectable workstation rather than a secret held by whoever logged in first."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:altar_infusion",
           "id": "7A11C0DF00400002",
           "min_required_dependencies": 0,
@@ -2115,7 +2209,7 @@
               "id": "7A11C2DF00400006",
               "item": {
                 "count": 1,
-                "id": "numismatics:bevel"
+                "id": "numismatics:sprocket"
               },
               "team_reward": false,
               "type": "item"
@@ -2159,62 +2253,51 @@
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Core II · Ritual infrastructure",
+          "subtitle": "Tier II · Workstations",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400004",
-              "item": "vampirism:altar_infusion",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Altar of Infusion",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:altar_infusion"
+              },
+              "title": "Inspect an Altar of Infusion",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400005",
-              "item": "vampirism:blood_pedestal",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Pedestals",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_pedestal"
+              },
+              "title": "Inspect four Blood Pedestals",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400006",
-              "item": "vampirism:blood_infused_iron_ingot",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Blood-Infused Iron",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 2,
+                "id": "vampirism:blood_infused_iron_ingot"
+              },
+              "title": "Carry two Blood-Infused Iron",
+              "type": "item"
             }
           ],
           "title": "Red Measure",
           "x": 0,
-          "y": -2,
-          "can_repeat": false
+          "y": -7
         },
         {
           "dependencies": [
             "7A11C0DF00400002"
           ],
           "description": [
-            "A weapon with a lineage is still a tool that someone must maintain. The House treats its edge as shared responsibility: enough stock for repair, no mystery about where its strength came from."
+            "Prepare a Blood Sieve, normal Heartseeker, and four Blood-Infused Iron. The House can now repair controlled armament and support specialized bloodwork without receiving a free late-tier blade."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:heart_seeker_normal",
           "id": "7A11C0DF00400003",
           "min_required_dependencies": 0,
@@ -2225,8 +2308,8 @@
             {
               "id": "7A11C2DF0040000B",
               "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
+                "count": 2,
+                "id": "numismatics:sprocket"
               },
               "team_reward": false,
               "type": "item"
@@ -2270,62 +2353,51 @@
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Core III · Controlled armament",
+          "subtitle": "Tier III · Logistics",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400007",
-              "item": "vampirism:blood_sieve",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Blood Sieve",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_sieve"
+              },
+              "title": "Inspect a Blood Sieve",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400008",
-              "item": "vampirism:heart_seeker_normal",
-              "optional": false,
-              "stat": null,
-              "title": "Have a normal Heartseeker",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:heart_seeker_normal"
+              },
+              "title": "Carry a normal Heartseeker",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400009",
-              "item": "vampirism:blood_infused_iron_ingot",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood-Infused Iron",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_infused_iron_ingot"
+              },
+              "title": "Carry four Blood-Infused Iron",
+              "type": "item"
             }
           ],
           "title": "Inherited Edge",
           "x": 0,
-          "y": 1,
-          "can_repeat": false
+          "y": -4
         },
         {
           "dependencies": [
-            "7A11C0DF00400002"
+            "7A11C0DF00400003"
           ],
           "description": [
-            "The House writes blood magic as memory before it writes it as violence. Movement, recovery, and measured siphoning let a spellwright protect a night route without reducing every problem to damage."
+            "Prepare an Inscription Table, spellbook, and four Blood Runes, then demonstrate one Blood spell. The reward favors movement, measured siphoning, and practical combat rather than a random high-tier scroll."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:blood_rune",
           "id": "7A11C0DF00400004",
           "min_required_dependencies": 0,
@@ -2438,75 +2510,56 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Blood utility magic",
+          "subtitle": "Specialty · Blood utility",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000C",
-              "item": "irons_spellbooks:inscription_table",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Inscription Table",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:inscription_table"
+              },
+              "title": "Inspect an Inscription Table",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000D",
-              "item": "irons_spellbooks:copper_spell_book",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Flimsy Journal",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:copper_spell_book"
+              },
+              "title": "Carry a Flimsy Journal",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000E",
-              "item": "irons_spellbooks:blood_rune",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Runes",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "irons_spellbooks:blood_rune"
+              },
+              "title": "Carry four Blood Runes",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00400018",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I demonstrated one Blood spell",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Scarlet Script",
-          "x": -3.5,
-          "y": -2,
-          "can_repeat": false
+          "x": 14,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00400002"
+            "7A11C0DF00400003"
           ],
           "description": [
-            "A well-managed crypt maintains a secure blood reserve so that emerging fledglings never experience the delirium of sudden thirst. Containers and clean glassware keep the cellar orderly."
+            "Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:blood_container",
           "id": "7A11C0DF00400005",
           "min_required_dependencies": 0,
@@ -2515,7 +2568,7 @@
           "repeatable": false,
           "rewards": [
             {
-              "id": "7A11C2DF00400024",
+              "id": "7A11C2DF00400025",
               "item": {
                 "count": 1,
                 "id": "numismatics:sprocket"
@@ -2524,7 +2577,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400025",
+              "id": "7A11C2DF00400026",
               "item": {
                 "count": 32,
                 "id": "minecraft:glass_bottle"
@@ -2533,10 +2586,19 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400026",
+              "id": "7A11C2DF00400027",
               "item": {
                 "count": 8,
                 "id": "minecraft:lead"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400028",
+              "item": {
+                "count": 32,
+                "id": "minecraft:oak_fence"
               },
               "team_reward": false,
               "type": "item"
@@ -2544,49 +2606,41 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Blood collection",
+          "subtitle": "Specialty · Blood supply",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400022",
-              "item": "vampirism:blood_bottle",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Bottles",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_bottle"
+              },
+              "title": "Carry four Blood Bottles",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400023",
-              "item": "vampirism:blood_container",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Blood Container",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_container"
+              },
+              "title": "Inspect a Blood Container",
+              "type": "item"
             }
           ],
           "title": "Crimson Reserve",
-          "x": -6.5,
-          "y": -2,
-          "can_repeat": false
+          "x": 10,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00400002"
+            "7A11C0DF00400003"
           ],
           "description": [
-            "A manor earns its name from the number of people who can find a safe door, not the height of its walls. This palette can become a crypt, guest hall, garden court, or night clinic chosen by its builders."
+            "Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:dark_stone_bricks",
           "id": "7A11C0DF00400006",
           "min_required_dependencies": 0,
@@ -2672,74 +2726,60 @@
           "subtitle": "Specialty · Manor palette",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 64,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000F",
-              "item": "vampirism:dark_stone_bricks",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixty-four Dark Stone Bricks",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 64,
+                "id": "vampirism:dark_stone_bricks"
+              },
+              "title": "Inspect sixty-four Dark Stone Bricks",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400010",
-              "item": "minecraft:dark_oak_log",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Dark Oak Logs",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 32,
+                "id": "minecraft:dark_oak_log"
+              },
+              "title": "Inspect thirty-two Dark Oak Logs",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400011",
-              "item": "minecraft:dark_oak_fence",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Dark Oak Fences",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 16,
+                "id": "minecraft:dark_oak_fence"
+              },
+              "title": "Inspect sixteen Dark Oak Fences",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400012",
-              "item": "minecraft:lantern",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Lanterns",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 8,
+                "id": "minecraft:lantern"
+              },
+              "title": "Inspect eight Lanterns",
+              "type": "item"
             }
           ],
           "title": "House of Doors",
-          "x": -3.5,
-          "y": 1,
-          "can_repeat": false
+          "x": 6,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00400003"
           ],
           "description": [
-            "Blood-infused iron requires careful purification. Passing molten alloy through a specialized sieve separates impurities and tempers the metal for durable arms and armor."
+            "Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "vampirism:blood_sieve",
-          "id": "7A11C0DF00400007",
+          "icon": "minecraft:brewing_stand",
+          "id": "7A11C0DF0040000C",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 0,
@@ -2758,7 +2798,7 @@
               "id": "7A11C2DF0040002A",
               "item": {
                 "count": 32,
-                "id": "minecraft:redstone"
+                "id": "minecraft:glass_bottle"
               },
               "team_reward": false,
               "type": "item"
@@ -2766,8 +2806,8 @@
             {
               "id": "7A11C2DF0040002B",
               "item": {
-                "count": 16,
-                "id": "minecraft:gold_ingot"
+                "count": 4,
+                "id": "minecraft:golden_apple"
               },
               "team_reward": false,
               "type": "item"
@@ -2775,60 +2815,62 @@
             {
               "id": "7A11C2DF0040002C",
               "item": {
-                "count": 16,
-                "id": "minecraft:iron_ingot"
+                "count": 32,
+                "id": "minecraft:bread"
               },
               "team_reward": false,
               "type": "item"
             }
           ],
-          "shape": "gear",
+          "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Blood metallurgy",
+          "subtitle": "Specialty · Hospitality",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00400027",
-              "item": "vampirism:blood_sieve",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Blood Sieve",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF00400028",
+              "item": {
+                "count": 1,
+                "id": "minecraft:brewing_stand"
+              },
+              "title": "Inspect a Brewing Stand",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00400028",
-              "item": "vampirism:blood_infused_iron_ingot",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood-Infused Iron",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF00400029",
+              "item": {
+                "count": 8,
+                "id": "minecraft:honey_bottle"
+              },
+              "title": "Carry eight Honey Bottles",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040002A",
+              "item": {
+                "count": 32,
+                "id": "minecraft:cooked_beef"
+              },
+              "title": "Carry thirty-two Cooked Beef",
+              "type": "item"
             }
           ],
-          "title": "Sieve Extraction",
-          "x": 3.5,
-          "y": 1,
-          "can_repeat": false
+          "title": "Guest Stores",
+          "x": 2,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00400003"
           ],
           "description": [
-            "Nessa Vale once delivered a sealed letter three days late because she refused to cross a sleeping farm uninvited. The route took longer; the trust it preserved became a road everyone still used."
+            "Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:umbrella",
-          "id": "7A11C0DF00400008",
+          "id": "7A11C0DF0040000D",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 0,
@@ -2846,8 +2888,8 @@
             {
               "id": "7A11C2DF0040002E",
               "item": {
-                "count": 1,
-                "id": "exposure:album"
+                "count": 8,
+                "id": "minecraft:lead"
               },
               "team_reward": false,
               "type": "item"
@@ -2855,8 +2897,8 @@
             {
               "id": "7A11C2DF0040002F",
               "item": {
-                "count": 4,
-                "id": "exposure:high_sensitivity_color_film"
+                "count": 32,
+                "id": "minecraft:firework_rocket"
               },
               "team_reward": false,
               "type": "item"
@@ -2864,17 +2906,8 @@
             {
               "id": "7A11C2DF00400030",
               "item": {
-                "count": 4,
-                "id": "exposure:black_and_white_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400031",
-              "item": {
-                "count": 32,
-                "id": "minecraft:firework_rocket"
+                "count": 8,
+                "id": "minecraft:map"
               },
               "team_reward": false,
               "type": "item"
@@ -2882,62 +2915,210 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Safe night routes",
+          "subtitle": "Specialty · Night mobility",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00400013",
-              "item": "vampirism:umbrella",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Umbrella",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF0040002B",
+              "item": {
+                "count": 1,
+                "id": "vampirism:umbrella"
+              },
+              "title": "Carry an Umbrella",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00400014",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF0040002C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:saddle"
+              },
+              "title": "Carry a Saddle",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00400015",
-              "item": "exposure:camera",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Camera",
-              "type": "item",
-              "value": 1
+              "consume_items": false,
+              "id": "7A11C1DF0040002D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:clock"
+              },
+              "title": "Carry a Clock",
+              "type": "item"
             }
           ],
-          "title": "Moon Courier",
-          "x": 6.5,
-          "y": 1,
-          "can_repeat": false
+          "title": "Sunproof Transit",
+          "x": -2,
+          "y": 0
         },
         {
           "dependencies": [
             "7A11C0DF00400003"
           ],
           "description": [
-            "Ilyas calls the enhanced blade a debt made visible. Its scabbard bears the names of three people who may demand it be put away, including one who is not nightbound."
+            "Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
+          "icon": "vampirism:blood_sieve",
+          "id": "7A11C0DF00400007",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400031",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400032",
+              "item": {
+                "count": 32,
+                "id": "minecraft:redstone"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400033",
+              "item": {
+                "count": 16,
+                "id": "minecraft:gold_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400034",
+              "item": {
+                "count": 16,
+                "id": "minecraft:iron_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.0,
+          "subtitle": "Specialty · Blood metallurgy",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400031",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_sieve"
+              },
+              "title": "Inspect a Blood Sieve",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400032",
+              "item": {
+                "count": 4,
+                "id": "vampirism:blood_infused_iron_ingot"
+              },
+              "title": "Carry four Blood-Infused Iron",
+              "type": "item"
+            }
+          ],
+          "title": "Sieve Extraction",
+          "x": -6,
+          "y": 0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400003"
+          ],
+          "description": [
+            "Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "exposure:camera",
+          "id": "7A11C0DF00400008",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400035",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400036",
+              "item": {
+                "count": 8,
+                "id": "exposure:high_sensitivity_color_film"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400037",
+              "item": {
+                "count": 8,
+                "id": "exposure:black_and_white_film"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Night records",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400013",
+              "item": {
+                "count": 1,
+                "id": "explorerscompass:explorerscompass"
+              },
+              "title": "Carry an Explorer's Compass",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400014",
+              "item": {
+                "count": 1,
+                "id": "exposure:camera"
+              },
+              "title": "Carry a Camera",
+              "type": "item"
+            },
+            {
+              "advancement": "exposure:adventure/moment_in_time",
+              "criterion": "",
+              "id": "7A11C1DF00400015",
+              "type": "advancement"
+            }
+          ],
+          "title": "Moon Courier",
+          "x": -10,
+          "y": 0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400003"
+          ],
+          "description": [
+            "Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression."
+          ],
+          "hide_dependency_lines": false,
           "icon": "vampirism:heart_seeker_enhanced",
           "id": "7A11C0DF00400009",
           "min_required_dependencies": 0,
@@ -2983,55 +3164,236 @@
             }
           ],
           "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Optional mastery · Enhanced bloodwork",
+          "size": 1.3,
+          "subtitle": "Specialty · Advanced bloodwork",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000A",
-              "item": "vampirism:heart_seeker_enhanced",
-              "optional": false,
-              "stat": null,
-              "title": "Have an enhanced Heartseeker",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "vampirism:heart_seeker_enhanced"
+              },
+              "title": "Carry an enhanced Heartseeker",
+              "type": "item"
             },
             {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF0040000B",
-              "item": "vampirism:blood_infused_enhanced_iron_ingot",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Enhanced Blood-Infused Iron",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 2,
+                "id": "vampirism:blood_infused_enhanced_iron_ingot"
+              },
+              "title": "Carry two Enhanced Blood-Infused Iron",
+              "type": "item"
             }
           ],
           "title": "Night's Due",
-          "x": 3.5,
-          "y": -2,
-          "can_repeat": false
+          "x": -14,
+          "y": 0
         },
         {
           "dependencies": [
-            "7A11C0DF00400003",
-            "7A11C0DF00400004",
-            "7A11C0DF00400006",
-            "7A11C0DF00400005",
-            "7A11C0DF00400007",
+            "7A11C0DF00400006"
+          ],
+          "description": [
+            "Use the manor palette to open a claim-safe guest hall with two beds, storage, a bell, and a clearly marked public entrance. The checkmark attests that a non-House player can find and use it."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "minecraft:bell",
+          "id": "7A11C0DF0040000E",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400038",
+              "item": {
+                "count": 16,
+                "id": "minecraft:dark_oak_sign"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400039",
+              "item": {
+                "count": 16,
+                "id": "minecraft:item_frame"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040003A",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040003B",
+              "item": {
+                "count": 4,
+                "id": "minecraft:campfire"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Optional · Public refuge",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400033",
+              "item": {
+                "count": 2,
+                "id": "minecraft:white_bed"
+              },
+              "title": "Inspect two White Beds",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400034",
+              "item": {
+                "count": 4,
+                "id": "minecraft:barrel"
+              },
+              "title": "Inspect four Barrels",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400035",
+              "item": {
+                "count": 1,
+                "id": "minecraft:bell"
+              },
+              "title": "Inspect a Bell",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF00400036",
+              "title": "I opened and tested the public guest hall",
+              "type": "checkmark"
+            }
+          ],
+          "title": "Open Guest Hall",
+          "x": 8,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
             "7A11C0DF00400008"
           ],
           "description": [
-            "A house becomes fragile when one person holds every useful secret. Two practiced specialties are enough to share responsibility while leaving a third role open for a later arrival."
+            "File a photo album, eight framed photographs, and one written route report where neighbors can inspect it. The archive makes nocturnal knowledge useful without manufacturing a license to trespass."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "exposure:album",
+          "id": "7A11C0DF0040000F",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0040003C",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040003D",
+              "item": {
+                "count": 64,
+                "id": "minecraft:paper"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040003E",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040003F",
+              "item": {
+                "count": 16,
+                "id": "minecraft:item_frame"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Optional · Public records",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400037",
+              "item": {
+                "count": 1,
+                "id": "exposure:album"
+              },
+              "title": "Inspect a Photo Album",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400038",
+              "item": {
+                "count": 8,
+                "id": "exposure:photograph_frame"
+              },
+              "title": "Inspect eight Photograph Frames",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400039",
+              "item": {
+                "count": 1,
+                "id": "minecraft:written_book"
+              },
+              "title": "Inspect one written route report",
+              "type": "item"
+            }
+          ],
+          "title": "Night Archive",
+          "x": -8,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400004",
+            "7A11C0DF00400005",
+            "7A11C0DF00400006",
+            "7A11C0DF0040000C",
+            "7A11C0DF0040000D",
+            "7A11C0DF00400007",
+            "7A11C0DF00400008",
+            "7A11C0DF00400009"
+          ],
+          "description": [
+            "Complete any three specialty nodes above. Every counted specialty descends from Inherited Edge, so the gate proves the full core while allowing bloodwork, hospitality, magic, records, or transport to define the House."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "vampirism:vampire_cloak_white_black",
           "id": "7A11C0DF0040000A",
           "min_required_dependencies": 3,
@@ -3041,36 +3403,26 @@
           "rewards": [],
           "shape": "diamond",
           "size": 1.3,
-          "subtitle": "Breadth · Core plus any two specialties",
+          "subtitle": "Breadth · Any three specialties",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00400016",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I completed two specialties",
-              "type": "checkmark",
-              "value": 1
+              "title": "I completed three Vampire specialties",
+              "type": "checkmark"
             }
           ],
-          "title": "Two Seals",
+          "title": "Three Seals",
           "x": 0,
-          "y": 4,
-          "can_repeat": false
+          "y": 6
         },
         {
           "dependencies": [
             "7A11C0DF0040000A"
           ],
           "description": [
-            "Ilyas keeps one lodestone wrapped in a guest's old scarf. It waits for a refuge whose door can be found, whose service can be named, and whose keeper can be questioned when something fails."
+            "Carry a lodestone reserved for a named night refuge. The team reward extends the place with durable stock so hospitality and blood logistics remain useful after the capstone."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "minecraft:lodestone",
           "id": "7A11C0DF0040000B",
           "min_required_dependencies": 0,
@@ -3079,7 +3431,7 @@
           "repeatable": false,
           "rewards": [
             {
-              "id": "7A11C2DF00400032",
+              "id": "7A11C2DF00400040",
               "item": {
                 "count": 1,
                 "id": "numismatics:cog"
@@ -3088,7 +3440,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400033",
+              "id": "7A11C2DF00400041",
               "item": {
                 "count": 128,
                 "id": "vampirism:dark_stone_bricks"
@@ -3097,7 +3449,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400034",
+              "id": "7A11C2DF00400042",
               "item": {
                 "count": 32,
                 "id": "minecraft:lantern"
@@ -3106,7 +3458,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400035",
+              "id": "7A11C2DF00400043",
               "item": {
                 "count": 8,
                 "id": "minecraft:barrel"
@@ -3117,29 +3469,25 @@
           ],
           "shape": "hexagon",
           "size": 1.6,
-          "subtitle": "Team capstone · Mark a night refuge",
+          "subtitle": "Tier IV · Team refuge",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": false,
               "id": "7A11C1DF00400017",
-              "item": "minecraft:lodestone",
-              "optional": false,
-              "stat": null,
-              "title": "Have the refuge lodestone",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "minecraft:lodestone"
+              },
+              "title": "Carry the refuge Lodestone",
+              "type": "item"
             }
           ],
           "title": "Night Charter",
           "x": 0,
-          "y": 7,
-          "can_repeat": false
+          "y": 9
         }
       ],
-      "title": "04 · The House of Night"
+      "title": "04 · House of Night"
     },
     {
       "filename": "ch05_market_services",
@@ -3149,11 +3497,11 @@
       "images": [
         {
           "alpha": 18,
-          "height": 5,
+          "height": 6,
           "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 5,
+          "width": 7,
           "x": 0,
           "y": 1
         }
@@ -3165,10 +3513,9 @@
             "7A11C0DF00200007"
           ],
           "description": [
-            "The board turns quest earnings into choices players can feel in the world. Small purses solve immediate friction; larger denominations fund whole-team projects without pretending every coin is identical pocket change."
+            "The board converts finite quest currency into visible utility. Every purchase consumes the exact posted price, repeats no faster than once per team each week, and grants no currency back."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "numismatics:banking_guide",
           "id": "7A11C0DF00500001",
           "min_required_dependencies": 0,
@@ -3181,33 +3528,23 @@
           "subtitle": "Weekly services · Team-scoped",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00500001",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I understand prices and team scope",
-              "type": "checkmark",
-              "value": 1
+              "title": "I understand prices, cooldowns, and team scope",
+              "type": "checkmark"
             }
           ],
           "title": "Read the Board",
           "x": 0,
-          "y": -4,
-          "can_repeat": false
+          "y": -5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "A small purse replaces the supplies most likely to strand a late arrival. It is deliberately ordinary: food, light, and a way to bring something awkward home."
+            "Replace the ordinary supplies most likely to strand a late arrival: food, light, and leads. This is convenience, not a progression skip."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "numismatics:bevel",
           "id": "7A11C0DF00500002",
           "min_required_dependencies": 0,
@@ -3245,36 +3582,31 @@
           ],
           "shape": "gear",
           "size": 1.0,
-          "subtitle": "One Bevel · Once per team each week",
+          "subtitle": "1 Bevel · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 1,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500002",
-              "item": "numismatics:bevel",
-              "optional": false,
-              "stat": null,
-              "title": "Submit one Bevel",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "title": "Submit 1 Bevel",
+              "type": "item"
             }
           ],
           "title": "Field Kit",
-          "x": -5,
-          "y": -1,
-          "can_repeat": true
+          "x": -6,
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "The works purse is sized for a visible repair rather than a decorative handful. It supports roads, public rooms, and the unglamorous patch that keeps an old build useful."
+            "Buy enough structural stock for a visible repair, roadside shelter, or public-room extension rather than a decorative handful."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "numismatics:sprocket",
           "id": "7A11C0DF00500003",
           "min_required_dependencies": 0,
@@ -3321,36 +3653,31 @@
           ],
           "shape": "gear",
           "size": 1.0,
-          "subtitle": "One Sprocket · Once per team each week",
+          "subtitle": "1 Sprocket · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 1,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500003",
-              "item": "numismatics:sprocket",
-              "optional": false,
-              "stat": null,
-              "title": "Submit one Sprocket",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "title": "Submit 1 Sprocket",
+              "type": "item"
             }
           ],
           "title": "Works Kit",
-          "x": -1.7,
-          "y": -1,
-          "can_repeat": true
+          "x": -2,
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "The arcane purse restocks a teaching table rather than gambling on a random spell. Its materials support several schools and leave the final inscription to the player who understands the need."
+            "Restock a teaching table with multi-school inscription materials. The final spell remains the player's decision; the board does not gamble on random scrolls."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:uncommon_ink",
           "id": "7A11C0DF00500004",
           "min_required_dependencies": 0,
@@ -3397,36 +3724,31 @@
           ],
           "shape": "gear",
           "size": 1.0,
-          "subtitle": "One Sprocket · Once per team each week",
+          "subtitle": "1 Sprocket · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 1,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500004",
-              "item": "numismatics:sprocket",
-              "optional": false,
-              "stat": null,
-              "title": "Submit one Sprocket",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "title": "Submit 1 Sprocket",
+              "type": "item"
             }
           ],
           "title": "Arcane Kit",
-          "x": 1.7,
-          "y": -1,
-          "can_repeat": true
+          "x": 2,
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "A foundry restock should keep a public line moving through more than one repair. Alloy, brass, and mechanisms buy back time while leaving ore generation and advanced machines valuable."
+            "Restock a public Create line with alloy, brass, mechanisms, and belts. The bundle saves maintenance time without replacing ore generation or advanced machines."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
           "icon": "create:precision_mechanism",
           "id": "7A11C0DF00500005",
           "min_required_dependencies": 0,
@@ -3437,7 +3759,7 @@
             {
               "id": "7A11C2DF0050000C",
               "item": {
-                "count": 64,
+                "count": 48,
                 "id": "create:andesite_alloy"
               },
               "team_reward": true,
@@ -3446,7 +3768,7 @@
             {
               "id": "7A11C2DF0050000D",
               "item": {
-                "count": 32,
+                "count": 24,
                 "id": "create:brass_ingot"
               },
               "team_reward": true,
@@ -3455,7 +3777,7 @@
             {
               "id": "7A11C2DF0050000E",
               "item": {
-                "count": 8,
+                "count": 4,
                 "id": "create:precision_mechanism"
               },
               "team_reward": true,
@@ -3464,7 +3786,7 @@
             {
               "id": "7A11C2DF0050000F",
               "item": {
-                "count": 16,
+                "count": 8,
                 "id": "create:belt_connector"
               },
               "team_reward": true,
@@ -3473,98 +3795,182 @@
           ],
           "shape": "gear",
           "size": 1.0,
-          "subtitle": "Two Sprockets · Once per team each week",
+          "subtitle": "2 Sprockets · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 2,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500005",
-              "item": "numismatics:sprocket",
-              "optional": false,
-              "stat": null,
-              "title": "Submit two Sprockets",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 2,
+                "id": "numismatics:sprocket"
+              },
+              "title": "Submit 2 Sprockets",
+              "type": "item"
             }
           ],
           "title": "Foundry Kit",
-          "x": 5,
-          "y": -1,
-          "can_repeat": true
+          "x": 6,
+          "y": -1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "After callings are chosen, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."
+            "Buy a complete recovery cache for a difficult expedition: beds, shields, honey, and golden apples. It restores readiness without issuing permanent combat power."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:written_book",
-          "id": "7A11C0DF00500006",
+          "icon": "minecraft:golden_apple",
+          "id": "7A11C0DF00500009",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
+              "id": "7A11C2DF00500014",
+              "item": {
+                "count": 2,
+                "id": "minecraft:white_bed"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
               "id": "7A11C2DF00500015",
               "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
+                "count": 2,
+                "id": "minecraft:shield"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00500016",
+              "item": {
+                "count": 16,
+                "id": "minecraft:honey_bottle"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00500017",
+              "item": {
+                "count": 4,
+                "id": "minecraft:golden_apple"
               },
               "team_reward": true,
               "type": "item"
             }
           ],
-          "shape": "diamond",
+          "shape": "gear",
           "size": 1.0,
-          "subtitle": "Weekly report · 1 team Bevel",
+          "subtitle": "1 Sprocket · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500007",
-              "item": "minecraft:written_book",
-              "optional": false,
-              "stat": null,
-              "title": "Submit one written field ledger",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500009",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I named the place, problem, and reviewer",
-              "type": "checkmark",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "title": "Submit 1 Sprocket",
+              "type": "item"
             }
           ],
-          "title": "Rumour Ledger",
-          "x": -3.5,
-          "y": 2.5,
-          "can_repeat": true
+          "title": "Recovery Crate",
+          "x": -6,
+          "y": 2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "The bond is stamped with a bridge on one face and an empty foundation on the other. Redeeming it puts substantial structural and fabrication stock behind the common project your team chooses."
+            "Equip a team route with saddles, leads, rockets, boats, and compasses. The crate helps move people and stock but grants no mount, elytra, or teleport tier."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
+          "icon": "minecraft:saddle",
+          "id": "7A11C0DF0050000A",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00500018",
+              "item": {
+                "count": 4,
+                "id": "minecraft:saddle"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00500019",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lead"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0050001A",
+              "item": {
+                "count": 64,
+                "id": "minecraft:firework_rocket"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0050001B",
+              "item": {
+                "count": 4,
+                "id": "minecraft:oak_boat"
+              },
+              "team_reward": true,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0050001C",
+              "item": {
+                "count": 4,
+                "id": "minecraft:compass"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · Weekly",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF0050000A",
+              "item": {
+                "count": 2,
+                "id": "numismatics:sprocket"
+              },
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Transit Crate",
+          "x": -2,
+          "y": 2.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Redeem a major team bond for structural and fabrication stock behind one common project. The bundle is broad, finite, and does not reproduce its Cog input."
+          ],
+          "hide_dependency_lines": false,
           "icon": "numismatics:cog",
           "id": "7A11C0DF00500007",
           "min_required_dependencies": 0,
@@ -3602,14 +4008,14 @@
             {
               "id": "7A11C2DF00500013",
               "item": {
-                "count": 16,
+                "count": 8,
                 "id": "minecraft:diamond"
               },
               "team_reward": true,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00500014",
+              "id": "7A11C2DF0050001D",
               "item": {
                 "count": 64,
                 "id": "create:andesite_alloy"
@@ -3619,37 +4025,81 @@
             }
           ],
           "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "One Cog · Once per team each week",
+          "size": 1.3,
+          "subtitle": "1 Cog · Weekly",
           "tasks": [
             {
-              "advancement": null,
-              "consume": true,
-              "count": 1,
-              "criterion": "",
+              "consume_items": true,
               "id": "7A11C1DF00500006",
-              "item": "numismatics:cog",
-              "optional": false,
-              "stat": null,
-              "title": "Submit one Cog",
-              "type": "item",
-              "value": 1
+              "item": {
+                "count": 1,
+                "id": "numismatics:cog"
+              },
+              "title": "Submit 1 Cog",
+              "type": "item"
             }
           ],
           "title": "Concord Bond",
-          "x": 0,
-          "y": 2.5,
-          "can_repeat": true
+          "x": 2,
+          "y": 2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "The bank counts base value: a Spur is 1, a Bevel 8, a Sprocket 16, and a Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs. Crowns and Suns can wait for an economy large enough to deserve them."
+            "File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet."
           ],
           "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
+          "icon": "minecraft:written_book",
+          "id": "7A11C0DF00500006",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 604800,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF0050001E",
+              "item": {
+                "count": 1,
+                "id": "numismatics:bevel"
+              },
+              "team_reward": true,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Fallback · 1 team Bevel weekly",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00500007",
+              "item": {
+                "count": 1,
+                "id": "minecraft:written_book"
+              },
+              "title": "Submit one written field ledger",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF0050000B",
+              "title": "I named the place, problem, and reviewer",
+              "type": "checkmark"
+            }
+          ],
+          "title": "Rumour Ledger",
+          "x": 6,
+          "y": 2.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign."
+          ],
+          "hide_dependency_lines": false,
           "icon": "numismatics:cog",
           "id": "7A11C0DF00500008",
           "min_required_dependencies": 0,
@@ -3659,46 +4109,20 @@
           "rewards": [],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Coin guide · Spur · Bevel · Sprocket · Cog",
+          "subtitle": "Spur · Bevel · Sprocket · Cog",
           "tasks": [
             {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
               "id": "7A11C1DF00500008",
-              "item": null,
-              "optional": false,
-              "stat": null,
               "title": "I understand the coin denominations",
-              "type": "checkmark",
-              "value": 1
+              "type": "checkmark"
             }
           ],
           "title": "Know the Coins",
-          "x": 3.5,
-          "y": 2.5,
-          "can_repeat": false
+          "x": 0,
+          "y": 6
         }
       ],
       "title": "05 · Market Services"
-    }
-  ],
-  "group_id": "7A11C4DF00100000",
-  "reward_tables": [],
-  "version": "2.1.0-dev.1",
-  "chapter_groups": [
-    {
-      "id": "7A11C4DF00100000",
-      "title": "The Charter"
-    },
-    {
-      "id": "7A11C4DF00200000",
-      "title": "Callings and Craft"
-    },
-    {
-      "id": "7A11C4DF00300000",
-      "title": "Markets and Services"
     }
   ]
 }

@@ -8,11 +8,11 @@
 	images: [
 		{
 			alpha: 18
-			height: 5
+			height: 6
 			image: "poiesis:textures/questpics/vvh/free_company_writ.png"
 			order: -40
 			rotation: 0.0d
-			width: 5
+			width: 7
 			x: 0
 			y: 1
 		}
@@ -22,7 +22,7 @@
 	quests: [
 		{
 			dependencies: ["7A11C0DF00200007"]
-			description: ["The board turns quest earnings into choices players can feel in the world. Small purses solve immediate friction; larger denominations fund whole-team projects without pretending every coin is identical pocket change."]
+			description: ["The board converts finite quest currency into visible utility. Every purchase consumes the exact posted price, repeats no faster than once per team each week, and grants no currency back."]
 			icon: { id: "numismatics:banking_guide" }
 			id: "7A11C0DF00500001"
 			rewards: [ ]
@@ -30,15 +30,15 @@
 			size: 1.4d
 			subtitle: "Weekly services · Team-scoped"
 			tasks: [
-				{ id: "7A11C1DF00500001", title: "I understand prices and team scope", type: "checkmark" }
+				{ id: "7A11C1DF00500001", title: "I understand prices, cooldowns, and team scope", type: "checkmark" }
 			]
 			title: "Read the Board"
 			x: 0
-			y: -4
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["A small purse replaces the supplies most likely to strand a late arrival. It is deliberately ordinary: food, light, and a way to bring something awkward home."]
+			description: ["Replace the ordinary supplies most likely to strand a late arrival: food, light, and leads. This is convenience, not a progression skip."]
 			icon: { id: "numismatics:bevel" }
 			id: "7A11C0DF00500002"
 			optional: true
@@ -66,23 +66,23 @@
 			]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "One Bevel · Once per team each week"
+			subtitle: "1 Bevel · Weekly"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500002"
 					item: { count: 1, id: "numismatics:bevel" }
-					title: "Submit one Bevel"
+					title: "Submit 1 Bevel"
 					type: "item"
 				}
 			]
 			title: "Field Kit"
-			x: -5
+			x: -6
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["The works purse is sized for a visible repair rather than a decorative handful. It supports roads, public rooms, and the unglamorous patch that keeps an old build useful."]
+			description: ["Buy enough structural stock for a visible repair, roadside shelter, or public-room extension rather than a decorative handful."]
 			icon: { id: "numismatics:sprocket" }
 			id: "7A11C0DF00500003"
 			optional: true
@@ -116,23 +116,23 @@
 			]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "One Sprocket · Once per team each week"
+			subtitle: "1 Sprocket · Weekly"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500003"
 					item: { count: 1, id: "numismatics:sprocket" }
-					title: "Submit one Sprocket"
+					title: "Submit 1 Sprocket"
 					type: "item"
 				}
 			]
 			title: "Works Kit"
-			x: -1.7d
+			x: -2
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["The arcane purse restocks a teaching table rather than gambling on a random spell. Its materials support several schools and leave the final inscription to the player who understands the need."]
+			description: ["Restock a teaching table with multi-school inscription materials. The final spell remains the player's decision; the board does not gamble on random scrolls."]
 			icon: { id: "irons_spellbooks:uncommon_ink" }
 			id: "7A11C0DF00500004"
 			optional: true
@@ -166,23 +166,23 @@
 			]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "One Sprocket · Once per team each week"
+			subtitle: "1 Sprocket · Weekly"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500004"
 					item: { count: 1, id: "numismatics:sprocket" }
-					title: "Submit one Sprocket"
+					title: "Submit 1 Sprocket"
 					type: "item"
 				}
 			]
 			title: "Arcane Kit"
-			x: 1.7d
+			x: 2
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["A foundry restock should keep a public line moving through more than one repair. Alloy, brass, and mechanisms buy back time while leaving ore generation and advanced machines valuable."]
+			description: ["Restock a public Create line with alloy, brass, mechanisms, and belts. The bundle saves maintenance time without replacing ore generation or advanced machines."]
 			icon: { id: "create:precision_mechanism" }
 			id: "7A11C0DF00500005"
 			optional: true
@@ -191,81 +191,154 @@
 			rewards: [
 				{
 					id: "7A11C2DF0050000C"
-					item: { count: 64, id: "create:andesite_alloy" }
+					item: { count: 48, id: "create:andesite_alloy" }
 					team_reward: true
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000D"
-					item: { count: 32, id: "create:brass_ingot" }
+					item: { count: 24, id: "create:brass_ingot" }
 					team_reward: true
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000E"
-					item: { count: 8, id: "create:precision_mechanism" }
+					item: { count: 4, id: "create:precision_mechanism" }
 					team_reward: true
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000F"
-					item: { count: 16, id: "create:belt_connector" }
+					item: { count: 8, id: "create:belt_connector" }
 					team_reward: true
 					type: "item"
 				}
 			]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "Two Sprockets · Once per team each week"
+			subtitle: "2 Sprockets · Weekly"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500005"
 					item: { count: 2, id: "numismatics:sprocket" }
-					title: "Submit two Sprockets"
+					title: "Submit 2 Sprockets"
 					type: "item"
 				}
 			]
 			title: "Foundry Kit"
-			x: 5
+			x: 6
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["After callings are chosen, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."]
-			icon: { id: "minecraft:written_book" }
-			id: "7A11C0DF00500006"
+			description: ["Buy a complete recovery cache for a difficult expedition: beds, shields, honey, and golden apples. It restores readiness without issuing permanent combat power."]
+			icon: { id: "minecraft:golden_apple" }
+			id: "7A11C0DF00500009"
 			optional: true
 			can_repeat: true
 			repeat_cooldown: 604800
 			rewards: [
 				{
+					id: "7A11C2DF00500014"
+					item: { count: 2, id: "minecraft:white_bed" }
+					team_reward: true
+					type: "item"
+				}
+				{
 					id: "7A11C2DF00500015"
-					item: { count: 1, id: "numismatics:bevel" }
+					item: { count: 2, id: "minecraft:shield" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500016"
+					item: { count: 16, id: "minecraft:honey_bottle" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500017"
+					item: { count: 4, id: "minecraft:golden_apple" }
 					team_reward: true
 					type: "item"
 				}
 			]
-			shape: "diamond"
+			shape: "gear"
 			size: 1.0d
-			subtitle: "Weekly report · 1 team Bevel"
+			subtitle: "1 Sprocket · Weekly"
 			tasks: [
 				{
 					consume_items: true
-					id: "7A11C1DF00500007"
-					item: { count: 1, id: "minecraft:written_book" }
-					title: "Submit one written field ledger"
+					id: "7A11C1DF00500009"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
 					type: "item"
 				}
-				{ id: "7A11C1DF00500009", title: "I named the place, problem, and reviewer", type: "checkmark" }
 			]
-			title: "Rumour Ledger"
-			x: -3.5d
+			title: "Recovery Crate"
+			x: -6
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["The bond is stamped with a bridge on one face and an empty foundation on the other. Redeeming it puts substantial structural and fabrication stock behind the common project your team chooses."]
+			description: ["Equip a team route with saddles, leads, rockets, boats, and compasses. The crate helps move people and stock but grants no mount, elytra, or teleport tier."]
+			icon: { id: "minecraft:saddle" }
+			id: "7A11C0DF0050000A"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00500018"
+					item: { count: 4, id: "minecraft:saddle" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500019"
+					item: { count: 16, id: "minecraft:lead" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050001A"
+					item: { count: 64, id: "minecraft:firework_rocket" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050001B"
+					item: { count: 4, id: "minecraft:oak_boat" }
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050001C"
+					item: { count: 4, id: "minecraft:compass" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "2 Sprockets · Weekly"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF0050000A"
+					item: { count: 2, id: "numismatics:sprocket" }
+					title: "Submit 2 Sprockets"
+					type: "item"
+				}
+			]
+			title: "Transit Crate"
+			x: -2
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Redeem a major team bond for structural and fabrication stock behind one common project. The bundle is broad, finite, and does not reproduce its Cog input."]
 			icon: { id: "numismatics:cog" }
 			id: "7A11C0DF00500007"
 			optional: true
@@ -292,49 +365,82 @@
 				}
 				{
 					id: "7A11C2DF00500013"
-					item: { count: 16, id: "minecraft:diamond" }
+					item: { count: 8, id: "minecraft:diamond" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00500014"
+					id: "7A11C2DF0050001D"
 					item: { count: 64, id: "create:andesite_alloy" }
 					team_reward: true
 					type: "item"
 				}
 			]
 			shape: "hexagon"
-			size: 1.4d
-			subtitle: "One Cog · Once per team each week"
+			size: 1.3d
+			subtitle: "1 Cog · Weekly"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500006"
 					item: { count: 1, id: "numismatics:cog" }
-					title: "Submit one Cog"
+					title: "Submit 1 Cog"
 					type: "item"
 				}
 			]
 			title: "Concord Bond"
-			x: 0
+			x: 2
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["The bank counts base value: a Spur is 1, a Bevel 8, a Sprocket 16, and a Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs. Crowns and Suns can wait for an economy large enough to deserve them."]
+			description: ["File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet."]
+			icon: { id: "minecraft:written_book" }
+			id: "7A11C0DF00500006"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF0050001E"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Fallback · 1 team Bevel weekly"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500007"
+					item: { count: 1, id: "minecraft:written_book" }
+					title: "Submit one written field ledger"
+					type: "item"
+				}
+				{ id: "7A11C1DF0050000B", title: "I named the place, problem, and reviewer", type: "checkmark" }
+			]
+			title: "Rumour Ledger"
+			x: 6
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign."]
 			icon: { id: "numismatics:cog" }
 			id: "7A11C0DF00500008"
 			optional: true
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Coin guide · Spur · Bevel · Sprocket · Cog"
+			subtitle: "Spur · Bevel · Sprocket · Cog"
 			tasks: [
 				{ id: "7A11C1DF00500008", title: "I understand the coin denominations", type: "checkmark" }
 			]
 			title: "Know the Coins"
-			x: 3.5d
-			y: 2.5d
+			x: 0
+			y: 6
 		}
 	]
 	title: "05 · Market Services"

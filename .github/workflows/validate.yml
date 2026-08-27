@@ -1,4 +1,5 @@
-name: Validate Packwiz Index
+name: Validate Packwiz and VvH
+
 on:
   push:
   pull_request:
@@ -9,6 +10,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Validate SNBT grammar
+        run: python scripts/validate_snbt.py config/
+
+      - name: Run SNBT validator tests
+        run: python scripts/test_validate_snbt.py
+
+      - name: Check authoritative VvH generation
+        run: python scripts/vvh_campaign_v3.py --check
+
+      - name: Run VvH graph, parity, and economy audit
+        run: python scripts/vvh_campaign_v3_validate.py --output /tmp/vvh-campaign-validation.json
+
       - name: Install Go
         uses: actions/setup-go@v5
         with:
@@ -17,14 +35,19 @@ jobs:
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@latest
 
-      - name: Run packwiz refresh
+      - name: Refresh Packwiz index
+        run: packwiz refresh
+
+      - name: List Packwiz entries
+        run: packwiz list
+
+      - name: Verify second refresh is stable
         run: packwiz refresh
 
       - name: Check for uncommitted changes
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-            echo "Error: packwiz index is out of date!"
-            echo "Please run 'packwiz refresh' locally and commit the resulting changes."
+            echo "Error: generated campaign or Packwiz index is out of date."
             git status
             git diff
             exit 1

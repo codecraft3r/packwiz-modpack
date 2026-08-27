@@ -7,12 +7,12 @@
 	id: "7A11C3DF00100000"
 	images: [
 		{
-			alpha: 20
+			alpha: 18
 			height: 5
 			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
 			order: -40
 			rotation: 0.0d
-			width: 9
+			width: 12
 			x: 0
 			y: 3
 		}
@@ -22,13 +22,13 @@
 	quests: [
 		{
 			dependencies: [ ]
-			description: ["Mara Venn repaired paths for people she never met and crossed out her own name when the work held. The island remembers useful places, then leaves their story to the players who keep them alive."]
+			description: ["This island is meant to accumulate useful places, not disposable victories. Read every promise below; the quest book opens only after the rules that protect lasting work are acknowledged."]
 			icon: { id: "minecraft:compass" }
 			id: "7A11C0DF00100001"
 			rewards: [
 				{
 					id: "7A11C2DF00100001"
-					item: { count: 1, id: "minecraft:compass" }
+					item: { count: 1, id: "minecraft:map" }
 					team_reward: false
 					type: "item"
 				}
@@ -47,43 +47,75 @@
 			]
 			title: "Island Charter"
 			x: 0
-			y: -4
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00100001"]
-			description: ["A visible boundary lets neighbors build close without guessing where welcome ends. Public works need a named entrance and an owner so protection never becomes an accidental locked door."]
+			description: ["Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise."]
 			icon: { id: "minecraft:filled_map" }
 			id: "7A11C0DF00100002"
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Required · Land and public access"
+			subtitle: "Required · Land boundaries"
 			tasks: [
 				{ id: "7A11C1DF00100002", title: "I understand claim boundaries", type: "checkmark" }
 			]
 			title: "Claim Clearly"
-			x: -4
-			y: -1
+			x: -8
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DF00100001"]
-			description: ["A feud is only worth continuing when yesterday's work still exists tomorrow. Consent, claim safety, and an immediate stop keep competition memorable instead of exhausting."]
+			description: ["A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it."]
+			icon: { id: "minecraft:oak_door" }
+			id: "7A11C0DF00100006"
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Required · Public access"
+			tasks: [
+				{ id: "7A11C1DF00100006", title: "I understand how public access is granted", type: "checkmark" }
+			]
+			title: "Name Public Doors"
+			x: -4
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
+			description: ["PvP, pranks, and faction drama are opt-in. A request to stop ends the interaction immediately; silence, absence, or faction membership is not consent."]
 			icon: { id: "minecraft:shield" }
 			id: "7A11C0DF00100003"
 			rewards: [ ]
 			shape: "octagon"
 			size: 1.0d
-			subtitle: "Required · Conflict and pranks"
+			subtitle: "Required · PvP and social play"
 			tasks: [
 				{ id: "7A11C1DF00100003", title: "I agree to stop on request", type: "checkmark" }
 			]
-			title: "Rivalry With Consent"
+			title: "Consent First"
 			x: 0
-			y: -1
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DF00100001"]
-			description: ["An FTB Team joins quest progress to claimed ground and shared rewards. Choose it deliberately; a team is a promise about who may finish, claim, and maintain work together."]
+			description: ["Rivalry may use races, photography, markets, propaganda, and reversible jokes. It never requires theft, griefing, forced entry, destructive sabotage, or targeting Neutral players."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00100007"
+			rewards: [ ]
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "Required · Rivalry boundaries"
+			tasks: [
+				{ id: "7A11C1DF00100007", title: "I will keep rivalry claim-safe and reversible", type: "checkmark" }
+			]
+			title: "Leave Work Standing"
+			x: 4
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
+			description: ["FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate."]
 			icon: { id: "minecraft:chest" }
 			id: "7A11C0DF00100004"
 			rewards: [ ]
@@ -91,15 +123,21 @@
 			size: 1.0d
 			subtitle: "Required · Shared progress"
 			tasks: [
-				{ id: "7A11C1DF00100004", title: "I know who shares progress", type: "checkmark" }
+				{ id: "7A11C1DF00100004", title: "I know who shares my quest progress", type: "checkmark" }
 			]
 			title: "Choose Teammates"
-			x: 4
-			y: -1
+			x: 8
+			y: -1.5d
 		}
 		{
-			dependencies: ["7A11C0DF00100002", "7A11C0DF00100003", "7A11C0DF00100004"]
-			description: ["The charter is deliberately small: protect lasting work, ask before rivalry, and know who shares your progress. Once those promises are settled, every calling remains visible and the island can grow in directions nobody planned."]
+			dependencies: [
+				"7A11C0DF00100002"
+				"7A11C0DF00100006"
+				"7A11C0DF00100003"
+				"7A11C0DF00100007"
+				"7A11C0DF00100004"
+			]
+			description: ["You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open."]
 			icon: { id: "minecraft:writable_book" }
 			id: "7A11C0DF00100005"
 			rewards: [
@@ -111,14 +149,14 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.5d
-			subtitle: "Required · Protect · consent · share"
+			size: 1.6d
+			subtitle: "Required · Claims · consent · teams"
 			tasks: [
-				{ id: "7A11C1DF00100005", title: "I accept all three promises", type: "checkmark" }
+				{ id: "7A11C1DF00100005", title: "I accept all five promises", type: "checkmark" }
 			]
 			title: "Sign the Charter"
 			x: 0
-			y: 2.5d
+			y: 3
 		}
 	]
 	title: "01 · The Island Charter"

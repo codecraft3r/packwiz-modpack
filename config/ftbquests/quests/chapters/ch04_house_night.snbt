@@ -7,27 +7,27 @@
 	id: "7A11C3DF00400000"
 	images: [
 		{
-			alpha: 24
+			alpha: 22
 			height: 7
 			image: "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png"
 			order: -40
 			rotation: 0.0d
 			width: 5
-			x: -6
+			x: 11
 			y: 2
 		}
 		{
-			alpha: 22
+			alpha: 20
 			height: 7
 			image: "poiesis:textures/questpics/vvh/blood_ritual_workstation.png"
 			order: -39
 			rotation: 0.0d
 			width: 5
-			x: 6
-			y: 8
+			x: -11
+			y: 5
 		}
 		{
-			alpha: 30
+			alpha: 28
 			height: 2.5d
 			image: "poiesis:textures/questpics/vvh/blood_school_crest.png"
 			order: -38
@@ -42,7 +42,7 @@
 	quests: [
 		{
 			dependencies: ["7A11C0DF00200002"]
-			description: ["Ilyas Venn labels every bottle with a donor, a date, or the word unknown. Hunger becomes governable when supply is visible, and a prepared room lets restraint survive the hour when it matters."]
+			description: ["Prepare an Altar of Inspiration, Blood Container, and four Blood Bottles. Visible reserves turn hunger from an emergency into a system another House member can maintain."]
 			icon: { id: "vampirism:altar_inspiration" }
 			id: "7A11C0DF00400001"
 			rewards: [
@@ -79,43 +79,43 @@
 			]
 			shape: "hexagon"
 			size: 1.4d
-			subtitle: "Core I · Stored blood and shelter"
+			subtitle: "Tier I · Foundation"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400001"
 					item: { count: 1, id: "vampirism:altar_inspiration" }
-					title: "Have an Altar of Inspiration"
+					title: "Inspect an Altar of Inspiration"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400002"
 					item: { count: 1, id: "vampirism:blood_container" }
-					title: "Have a Blood Container"
+					title: "Inspect a Blood Container"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400003"
 					item: { count: 4, id: "vampirism:blood_bottle" }
-					title: "Have four Blood Bottles"
+					title: "Carry four Blood Bottles"
 					type: "item"
 				}
 			]
 			title: "First Thirst"
 			x: 0
-			y: -5
+			y: -10
 		}
 		{
 			dependencies: ["7A11C0DF00400001"]
-			description: ["An altar is not a shortcut around consequence. Pedestals, storage, and measured ingredients turn inheritance into a repeatable craft that another player can inspect instead of a secret only one veteran understands."]
+			description: ["Add an Altar of Infusion, four Blood Pedestals, and two Blood-Infused Iron. The ritual becomes an inspectable workstation rather than a secret held by whoever logged in first."]
 			icon: { id: "vampirism:altar_infusion" }
 			id: "7A11C0DF00400002"
 			rewards: [
 				{
 					id: "7A11C2DF00400006"
-					item: { count: 1, id: "numismatics:bevel" }
+					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -146,43 +146,43 @@
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Core II · Ritual infrastructure"
+			subtitle: "Tier II · Workstations"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400004"
 					item: { count: 1, id: "vampirism:altar_infusion" }
-					title: "Have an Altar of Infusion"
+					title: "Inspect an Altar of Infusion"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400005"
 					item: { count: 4, id: "vampirism:blood_pedestal" }
-					title: "Have four Blood Pedestals"
+					title: "Inspect four Blood Pedestals"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400006"
 					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
-					title: "Have two Blood-Infused Iron"
+					title: "Carry two Blood-Infused Iron"
 					type: "item"
 				}
 			]
 			title: "Red Measure"
 			x: 0
-			y: -2
+			y: -7
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
-			description: ["A weapon with a lineage is still a tool that someone must maintain. The House treats its edge as shared responsibility: enough stock for repair, no mystery about where its strength came from."]
+			description: ["Prepare a Blood Sieve, normal Heartseeker, and four Blood-Infused Iron. The House can now repair controlled armament and support specialized bloodwork without receiving a free late-tier blade."]
 			icon: { id: "vampirism:heart_seeker_normal" }
 			id: "7A11C0DF00400003"
 			rewards: [
 				{
 					id: "7A11C2DF0040000B"
-					item: { count: 1, id: "numismatics:bevel" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -213,37 +213,37 @@
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Core III · Controlled armament"
+			subtitle: "Tier III · Logistics"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400007"
 					item: { count: 1, id: "vampirism:blood_sieve" }
-					title: "Have a Blood Sieve"
+					title: "Inspect a Blood Sieve"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400008"
 					item: { count: 1, id: "vampirism:heart_seeker_normal" }
-					title: "Have a normal Heartseeker"
+					title: "Carry a normal Heartseeker"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400009"
 					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
-					title: "Have four Blood-Infused Iron"
+					title: "Carry four Blood-Infused Iron"
 					type: "item"
 				}
 			]
 			title: "Inherited Edge"
 			x: 0
-			y: 1
+			y: -4
 		}
 		{
-			dependencies: ["7A11C0DF00400002"]
-			description: ["The House writes blood magic as memory before it writes it as violence. Movement, recovery, and measured siphoning let a spellwright protect a night route without reducing every problem to damage."]
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Prepare an Inscription Table, spellbook, and four Blood Runes, then demonstrate one Blood spell. The reward favors movement, measured siphoning, and practical combat rather than a random high-tier scroll."]
 			icon: { id: "irons_spellbooks:blood_rune" }
 			id: "7A11C0DF00400004"
 			optional: true
@@ -329,87 +329,93 @@
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Blood utility magic"
+			subtitle: "Specialty · Blood utility"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040000C"
 					item: { count: 1, id: "irons_spellbooks:inscription_table" }
-					title: "Have an Inscription Table"
+					title: "Inspect an Inscription Table"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040000D"
 					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
-					title: "Have a Flimsy Journal"
+					title: "Carry a Flimsy Journal"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040000E"
 					item: { count: 4, id: "irons_spellbooks:blood_rune" }
-					title: "Have four Blood Runes"
+					title: "Carry four Blood Runes"
 					type: "item"
 				}
 				{ id: "7A11C1DF00400018", title: "I demonstrated one Blood spell", type: "checkmark" }
 			]
 			title: "Scarlet Script"
-			x: -3.5d
-			y: -2
+			x: 14
+			y: 0
 		}
 		{
-			dependencies: ["7A11C0DF00400002"]
-			description: ["A well-managed crypt maintains a secure blood reserve so that emerging fledglings never experience the delirium of sudden thirst. Containers and clean glassware keep the cellar orderly."]
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm."]
 			icon: { id: "vampirism:blood_container" }
 			id: "7A11C0DF00400005"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF00400024"
+					id: "7A11C2DF00400025"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400025"
+					id: "7A11C2DF00400026"
 					item: { count: 32, id: "minecraft:glass_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400026"
+					id: "7A11C2DF00400027"
 					item: { count: 8, id: "minecraft:lead" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400028"
+					item: { count: 32, id: "minecraft:oak_fence" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Blood collection"
+			subtitle: "Specialty · Blood supply"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400022"
 					item: { count: 4, id: "vampirism:blood_bottle" }
-					title: "Have four Blood Bottles"
+					title: "Carry four Blood Bottles"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400023"
 					item: { count: 1, id: "vampirism:blood_container" }
-					title: "Have a Blood Container"
+					title: "Inspect a Blood Container"
 					type: "item"
 				}
 			]
 			title: "Crimson Reserve"
-			x: -6.5d
-			y: -2
+			x: 10
+			y: 0
 		}
 		{
-			dependencies: ["7A11C0DF00400002"]
-			description: ["A manor earns its name from the number of people who can find a safe door, not the height of its walls. This palette can become a crypt, guest hall, garden court, or night clinic chosen by its builders."]
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders."]
 			icon: { id: "vampirism:dark_stone_bricks" }
 			id: "7A11C0DF00400006"
 			optional: true
@@ -471,40 +477,40 @@
 					consume_items: false
 					id: "7A11C1DF0040000F"
 					item: { count: 64, id: "vampirism:dark_stone_bricks" }
-					title: "Have sixty-four Dark Stone Bricks"
+					title: "Inspect sixty-four Dark Stone Bricks"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400010"
 					item: { count: 32, id: "minecraft:dark_oak_log" }
-					title: "Have thirty-two Dark Oak Logs"
+					title: "Inspect thirty-two Dark Oak Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400011"
 					item: { count: 16, id: "minecraft:dark_oak_fence" }
-					title: "Have sixteen Dark Oak Fences"
+					title: "Inspect sixteen Dark Oak Fences"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400012"
 					item: { count: 8, id: "minecraft:lantern" }
-					title: "Have eight Lanterns"
+					title: "Inspect eight Lanterns"
 					type: "item"
 				}
 			]
 			title: "House of Doors"
-			x: -3.5d
-			y: 1
+			x: 6
+			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Blood-infused iron requires careful purification. Passing molten alloy through a specialized sieve separates impurities and tempers the metal for durable arms and armor."]
-			icon: { id: "vampirism:blood_sieve" }
-			id: "7A11C0DF00400007"
+			description: ["Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark."]
+			icon: { id: "minecraft:brewing_stand" }
+			id: "7A11C0DF0040000C"
 			optional: true
 			rewards: [
 				{
@@ -515,18 +521,142 @@
 				}
 				{
 					id: "7A11C2DF0040002A"
-					item: { count: 32, id: "minecraft:redstone" }
+					item: { count: 32, id: "minecraft:glass_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002B"
-					item: { count: 16, id: "minecraft:gold_ingot" }
+					item: { count: 4, id: "minecraft:golden_apple" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002C"
+					item: { count: 32, id: "minecraft:bread" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Hospitality"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400028"
+					item: { count: 1, id: "minecraft:brewing_stand" }
+					title: "Inspect a Brewing Stand"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400029"
+					item: { count: 8, id: "minecraft:honey_bottle" }
+					title: "Carry eight Honey Bottles"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040002A"
+					item: { count: 32, id: "minecraft:cooked_beef" }
+					title: "Carry thirty-two Cooked Beef"
+					type: "item"
+				}
+			]
+			title: "Guest Stores"
+			x: 2
+			y: 0
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression."]
+			icon: { id: "vampirism:umbrella" }
+			id: "7A11C0DF0040000D"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0040002D"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040002E"
+					item: { count: 8, id: "minecraft:lead" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040002F"
+					item: { count: 32, id: "minecraft:firework_rocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400030"
+					item: { count: 8, id: "minecraft:map" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Night mobility"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0040002B"
+					item: { count: 1, id: "vampirism:umbrella" }
+					title: "Carry an Umbrella"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040002C"
+					item: { count: 1, id: "minecraft:saddle" }
+					title: "Carry a Saddle"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040002D"
+					item: { count: 1, id: "minecraft:clock" }
+					title: "Carry a Clock"
+					type: "item"
+				}
+			]
+			title: "Sunproof Transit"
+			x: -2
+			y: 0
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery."]
+			icon: { id: "vampirism:blood_sieve" }
+			id: "7A11C0DF00400007"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400031"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400032"
+					item: { count: 32, id: "minecraft:redstone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400033"
+					item: { count: 16, id: "minecraft:gold_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400034"
 					item: { count: 16, id: "minecraft:iron_ingot" }
 					team_reward: false
 					type: "item"
@@ -538,94 +668,76 @@
 			tasks: [
 				{
 					consume_items: false
-					id: "7A11C1DF00400027"
+					id: "7A11C1DF00400031"
 					item: { count: 1, id: "vampirism:blood_sieve" }
-					title: "Have a Blood Sieve"
+					title: "Inspect a Blood Sieve"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF00400028"
+					id: "7A11C1DF00400032"
 					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
-					title: "Have four Blood-Infused Iron"
+					title: "Carry four Blood-Infused Iron"
 					type: "item"
 				}
 			]
 			title: "Sieve Extraction"
-			x: 3.5d
-			y: 1
+			x: -6
+			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Nessa Vale once delivered a sealed letter three days late because she refused to cross a sleeping farm uninvited. The route took longer; the trust it preserved became a road everyone still used."]
-			icon: { id: "vampirism:umbrella" }
+			description: ["Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground."]
+			icon: { id: "exposure:camera" }
 			id: "7A11C0DF00400008"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF0040002D"
+					id: "7A11C2DF00400035"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0040002E"
-					item: { count: 1, id: "exposure:album" }
+					id: "7A11C2DF00400036"
+					item: { count: 8, id: "exposure:high_sensitivity_color_film" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0040002F"
-					item: { count: 4, id: "exposure:high_sensitivity_color_film" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400030"
-					item: { count: 4, id: "exposure:black_and_white_film" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400031"
-					item: { count: 32, id: "minecraft:firework_rocket" }
+					id: "7A11C2DF00400037"
+					item: { count: 8, id: "exposure:black_and_white_film" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Safe night routes"
+			subtitle: "Specialty · Night records"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400013"
-					item: { count: 1, id: "vampirism:umbrella" }
-					title: "Have an Umbrella"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Carry an Explorer's Compass"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400014"
-					item: { count: 1, id: "explorerscompass:explorerscompass" }
-					title: "Have an Explorer's Compass"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400015"
 					item: { count: 1, id: "exposure:camera" }
-					title: "Have a Camera"
+					title: "Carry a Camera"
 					type: "item"
 				}
+				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00400015", type: "advancement" }
 			]
 			title: "Moon Courier"
-			x: 6.5d
-			y: 1
+			x: -10
+			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Ilyas calls the enhanced blade a debt made visible. Its scabbard bears the names of three people who may demand it be put away, including one who is not nightbound."]
+			description: ["Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression."]
 			icon: { id: "vampirism:heart_seeker_enhanced" }
 			id: "7A11C0DF00400009"
 			optional: true
@@ -656,78 +768,207 @@
 				}
 			]
 			shape: "hexagon"
-			size: 1.4d
-			subtitle: "Optional mastery · Enhanced bloodwork"
+			size: 1.3d
+			subtitle: "Specialty · Advanced bloodwork"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040000A"
 					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
-					title: "Have an enhanced Heartseeker"
+					title: "Carry an enhanced Heartseeker"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040000B"
 					item: { count: 2, id: "vampirism:blood_infused_enhanced_iron_ingot" }
-					title: "Have two Enhanced Blood-Infused Iron"
+					title: "Carry two Enhanced Blood-Infused Iron"
 					type: "item"
 				}
 			]
 			title: "Night's Due"
-			x: 3.5d
-			y: -2
+			x: -14
+			y: 0
+		}
+		{
+			dependencies: ["7A11C0DF00400006"]
+			description: ["Use the manor palette to open a claim-safe guest hall with two beds, storage, a bell, and a clearly marked public entrance. The checkmark attests that a non-House player can find and use it."]
+			icon: { id: "minecraft:bell" }
+			id: "7A11C0DF0040000E"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400038"
+					item: { count: 16, id: "minecraft:dark_oak_sign" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400039"
+					item: { count: 16, id: "minecraft:item_frame" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040003A"
+					item: { count: 8, id: "minecraft:map" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040003B"
+					item: { count: 4, id: "minecraft:campfire" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Optional · Public refuge"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400033"
+					item: { count: 2, id: "minecraft:white_bed" }
+					title: "Inspect two White Beds"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400034"
+					item: { count: 4, id: "minecraft:barrel" }
+					title: "Inspect four Barrels"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400035"
+					item: { count: 1, id: "minecraft:bell" }
+					title: "Inspect a Bell"
+					type: "item"
+				}
+				{ id: "7A11C1DF00400036", title: "I opened and tested the public guest hall", type: "checkmark" }
+			]
+			title: "Open Guest Hall"
+			x: 8
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A11C0DF00400008"]
+			description: ["File a photo album, eight framed photographs, and one written route report where neighbors can inspect it. The archive makes nocturnal knowledge useful without manufacturing a license to trespass."]
+			icon: { id: "exposure:album" }
+			id: "7A11C0DF0040000F"
+			hide_dependency_lines: true
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0040003C"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040003D"
+					item: { count: 64, id: "minecraft:paper" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040003E"
+					item: { count: 8, id: "minecraft:map" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040003F"
+					item: { count: 16, id: "minecraft:item_frame" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Optional · Public records"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400037"
+					item: { count: 1, id: "exposure:album" }
+					title: "Inspect a Photo Album"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400038"
+					item: { count: 8, id: "exposure:photograph_frame" }
+					title: "Inspect eight Photograph Frames"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400039"
+					item: { count: 1, id: "minecraft:written_book" }
+					title: "Inspect one written route report"
+					type: "item"
+				}
+			]
+			title: "Night Archive"
+			x: -8
+			y: 3.5d
 		}
 		{
 			dependencies: [
-				"7A11C0DF00400003"
 				"7A11C0DF00400004"
-				"7A11C0DF00400006"
 				"7A11C0DF00400005"
+				"7A11C0DF00400006"
+				"7A11C0DF0040000C"
+				"7A11C0DF0040000D"
 				"7A11C0DF00400007"
 				"7A11C0DF00400008"
+				"7A11C0DF00400009"
 			]
-			description: ["A house becomes fragile when one person holds every useful secret. Two practiced specialties are enough to share responsibility while leaving a third role open for a later arrival."]
+			description: ["Complete any three specialty nodes above. Every counted specialty descends from Inherited Edge, so the gate proves the full core while allowing bloodwork, hospitality, magic, records, or transport to define the House."]
 			icon: { id: "vampirism:vampire_cloak_white_black" }
 			id: "7A11C0DF0040000A"
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"
 			size: 1.3d
-			subtitle: "Breadth · Core plus any two specialties"
+			subtitle: "Breadth · Any three specialties"
 			tasks: [
-				{ id: "7A11C1DF00400016", title: "I completed two specialties", type: "checkmark" }
+				{ id: "7A11C1DF00400016", title: "I completed three Vampire specialties", type: "checkmark" }
 			]
-			title: "Two Seals"
+			title: "Three Seals"
 			x: 0
-			y: 4
+			y: 6
 		}
 		{
 			dependencies: ["7A11C0DF0040000A"]
-			description: ["Ilyas keeps one lodestone wrapped in a guest's old scarf. It waits for a refuge whose door can be found, whose service can be named, and whose keeper can be questioned when something fails."]
+			description: ["Carry a lodestone reserved for a named night refuge. The team reward extends the place with durable stock so hospitality and blood logistics remain useful after the capstone."]
 			icon: { id: "minecraft:lodestone" }
 			id: "7A11C0DF0040000B"
 			rewards: [
 				{
-					id: "7A11C2DF00400032"
+					id: "7A11C2DF00400040"
 					item: { count: 1, id: "numismatics:cog" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400033"
+					id: "7A11C2DF00400041"
 					item: { count: 128, id: "vampirism:dark_stone_bricks" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400034"
+					id: "7A11C2DF00400042"
 					item: { count: 32, id: "minecraft:lantern" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400035"
+					id: "7A11C2DF00400043"
 					item: { count: 8, id: "minecraft:barrel" }
 					team_reward: true
 					type: "item"
@@ -735,20 +976,20 @@
 			]
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "Team capstone · Mark a night refuge"
+			subtitle: "Tier IV · Team refuge"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400017"
 					item: { count: 1, id: "minecraft:lodestone" }
-					title: "Have the refuge lodestone"
+					title: "Carry the refuge Lodestone"
 					type: "item"
 				}
 			]
 			title: "Night Charter"
 			x: 0
-			y: 7
+			y: 9
 		}
 	]
-	title: "04 · The House of Night"
+	title: "04 · House of Night"
 }

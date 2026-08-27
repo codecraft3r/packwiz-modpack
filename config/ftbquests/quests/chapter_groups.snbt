@@ -1,7 +1,7 @@
 {
 	chapter_groups: [
 		{ id: "7A11C4DF00100000", title: "The Charter" }
-		{ id: "7A11C4DF00200000", title: "Callings and Craft" }
+		{ id: "7A11C4DF00200000", title: "Callings and Factions" }
 		{ id: "7A11C4DF00300000", title: "Markets and Services" }
 	]
 }

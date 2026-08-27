@@ -1,71 +1,100 @@
-# VvH Concord Reward Economy
+# VvH Balance and Economy Ledger
 
-This document describes the live v3 denomination economy. Values are derived
-from the exact pinned Create: Numismatics JAR, not from visual coin size.
+Status: current five-chapter campaign.
 
-| Coin | Base value | Bevel-equivalent | Campaign use |
-|---|---:|---:|---|
-| Spur | 1 | 0.125 | not issued by this campaign |
-| Bevel | 8 | 1 | ordinary core work and weekly fallback |
-| Sprocket | 16 | 2 | callings, specialties, and hosted events |
-| Cog | 64 | 8 | optional mastery and team capstones |
-| Crown | 512 | 64 | intentionally not issued |
-| Sun | 4096 | 512 | intentionally not issued |
+## Currency basis
 
-## One-time issuance
+All comparisons use Bevel-equivalent value:
 
-| Path | Personal | Team treasury |
+| Coin | Value |
+|---|---:|
+| Spur | 0.125 |
+| Bevel | 1 |
+| Sprocket | 2 |
+| Cog | 8 |
+| Crown | 64 |
+| Sun | 512 |
+
+## Route issuance
+
+| Ledger | Bevel-equivalent |
+|---|---:|
+| Neutral one-time route | 2 personal |
+| Minimum Hunter route through Tier IV | 15 personal + 8 team |
+| Minimum Vampire route through Tier IV | 15 personal + 8 team |
+| Hunter personal completionism | 31 |
+| Vampire personal completionism | 31 |
+| Whole campaign one-time personal completionism | 68 |
+| Whole campaign one-time team completionism | 16 |
+
+The minimum faction route is faction entry, Core I–III, any three counted specialties, breadth gate, and capstone. Chapter 01 contains no currency issuance.
+
+## Stage scaling
+
+| Stage | Normal currency pattern |
+|---|---|
+| Faction entry | 1 Sprocket |
+| Core I | 1 Bevel |
+| Core II | 1 Sprocket |
+| Core III | 2 Sprockets |
+| Normal specialty | 1 Sprocket |
+| Advanced specialty | 1 Cog |
+| Team capstone | 1 team Cog |
+
+Currency normally arrives with an immediately useful thematic bundle. Quantities are sized to support a real craft, trip, workstation, or build rather than a token sample.
+
+## Hunter / Vampire parity
+
+| Dimension | Lantern Order | House of Night |
 |---|---:|---:|
-| Normal intended route | 23–25 Bevel-equivalent | 24 Bevel-equivalent |
-| Chosen-faction mastery and optional breadth | adds up to 8–12 | unchanged |
-| Every one-time branch | 83 Bevel-equivalent | 40 Bevel-equivalent |
+| Total quests | 15 | 15 |
+| Core quests | 3 | 3 |
+| Counted specialties | 8 | 8 |
+| Deep optional branches | 2 | 2 |
+| Breadth requirement | 3 of 8 | 3 of 8 |
+| Core currency | 7 | 7 |
+| Specialty currency | 22 | 22 |
+| Personal completionism | 31 | 31 |
+| Team capstone | 8 | 8 |
+| Tier IV structure | team refuge | team refuge |
 
-The normal personal route comprises one calling, three accessible faction core
-steps, any two specialties, the Common Ground spine plus any two side
-contributions, and any three events. The advanced mastery card is optional and
-pays one personal Cog because its requirements are substantially later than the
-server's current state.
+Parity is structural and economic, not cosmetic. Hunters receive holy support, field logistics, medicine, and defensive preparation. Vampires receive blood infrastructure, nocturnal logistics, ritual utility, hospitality, and extraction systems.
 
-The 83-point completionist ceiling is not reachable through passive repetition.
-It requires completing all faction initiations, all core chains, every
-specialty, all three advanced mastery cards, the full civic chapter, and all six
-events. Cross-faction completion remains possible, but the first step of each
-faction core depends on its corresponding calling rather than a generic gate.
+## Weekly service-board sinks
 
-## Reward hierarchy
+| Service | Price | Bevel-equivalent |
+|---|---:|---:|
+| Field Kit | 1 Bevel | 1 |
+| Works Kit | 1 Sprocket | 2 |
+| Arcane Kit | 1 Sprocket | 2 |
+| Foundry Kit | 2 Sprockets | 4 |
+| Recovery Crate | 1 Sprocket | 2 |
+| Transit Crate | 2 Sprockets | 4 |
+| Concord Bond | 1 Cog | 8 |
+| **Complete weekly board** |  | **23** |
 
-- Ordinary core: one Bevel plus useful catch-up or workstation stock.
-- Calling, specialty, or event: one Sprocket plus a thematic bundle.
-- Especially large civic contribution: up to two Sprockets.
-- Optional mastery: one personal Cog plus late-path utility.
-- Team charter or shared capstone: one team Cog plus public project stock.
-- No substantive quest pays paper as its primary reward.
-- Spell rewards are verified, capped low-tier scrolls and materials rather than
-  random high-tier drops.
-- No reward directly generates a stronger currency or a self-funding loop.
+Every purchase consumes exactly the displayed coin input. Every service is team-scoped and has a seven-day cooldown.
 
-## Weekly services
+## Repeatable issuance
 
-All repeatables are optional, team-scoped, and have a 604800-second cooldown.
+`Rumour Ledger` consumes one written book and pays one team Bevel every seven days.
 
-| Service | Cost | Purpose |
-|---|---:|---|
-| Field Kit | 1 Bevel | food, light, and leads |
-| Works Kit | 1 Sprocket | structural repair stock |
-| Arcane Kit | 1 Sprocket | multi-school inscription stock |
-| Foundry Kit | 2 Sprockets | substantial Create repair stock |
-| Concord Bond | 1 Cog | a major common project bundle |
+- Weekly faucet per FTB Team: **1 Bevel-equivalent**.
+- Complete weekly board: **23 Bevel-equivalent**.
+- A team relying only on fallback income needs 23 weekly windows to buy one complete board cycle.
+- Fragmented-team worst case is `1 × number of separately maintained FTB Teams` per week. This is monitored socially and in future economy reviews.
 
-The full board costs 17 Bevel-equivalent per team per week. The sole repeatable
-faucet is `Rumour Ledger`: one consumed written report plus a trust attestation
-pays exactly one team Bevel per week. It cannot self-fund even the smallest
-premium service, and fragmented teams gain no compounding conversion route.
+The faucet does not reproduce its input, does not return currency used to buy itself, and cannot self-fund the board.
 
-## Risk boundaries
+## Collision controls
 
-- Team recreation can still multiply native FTB Team cooldown containers; this
-  cannot be server-capped without custom logic and must be a social rule.
-- Foundry and Concord outputs are intentionally generous time-savers. Human
-  playtesting should compare them with normal Create and diamond acquisition.
-- Currency is a choice enabler, not direct combat power. The meaningful sinks
-  are visible in Chapter 08 before players decide how much optional work to do.
+The semantic validator rejects:
+
+- duplicate quest, task, and reward IDs;
+- missing or cyclic dependencies;
+- reward items that satisfy descendant item tasks;
+- repeatables that reproduce their own input;
+- non-consumed displayed purchase prices;
+- asymmetric faction ledgers;
+- fallback issuance that reaches premium-service scale;
+- hidden Core III bypasses at faction breadth gates.

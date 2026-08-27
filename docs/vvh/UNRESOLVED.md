@@ -1,18 +1,17 @@
-# VvH Concord Open Verification
+# VvH Unresolved Checks
 
-The campaign has no unresolved static item, spell, advancement, dependency, or
-image reference after generation. The following runtime questions remain:
+Status: static implementation complete; runtime/client verification remains.
 
-- Confirm all eight chapters render as intended in the actual FTB Quests client.
-- Confirm advancement tasks complete under the exact shipped mod versions.
-- Confirm personal versus team reward claims and weekly cooldown persistence in
-  both solo worlds and shared FTB Teams.
-- Confirm a team cannot reasonably abuse recreation to multiply the weekly
-  Rumour Ledger faucet; native FTB Quests cannot impose a server-wide cap.
-- Compare Foundry Kit and Concord Bond outputs against normal live-server Create
-  and diamond acquisition before production deployment.
-- Capture in-client screenshots of layouts and background/logo contrast. Current
-  boards are source-level evidence only.
+The generator, graph, Charter closure, exact identifier allowlists, Neutral route, faction parity, reward collision scan, repeatable economy, source layouts, generated-file drift check, and Packwiz hash chain pass locally. A disposable Minecraft client/server and the pinned resource-pack archive were not available in the authoring container, so these checks remain open:
 
-Server-load testing was explicitly skipped for this iteration. No custom KubeJS
-quest logic was added.
+- open all five chapters at real GUI scale and inspect red `!` indicators;
+- confirm the eight `poiesis:` textures resolve from the pinned resource pack;
+- complete every native task family used: checkmark, item, and advancement;
+- test Hunter and Vampire entry with already-earned advancements and late joiners;
+- test team change, faction switch, and Neutral paths;
+- complete one minimum faction path and one optional branch;
+- purchase a service as payer and teammate and confirm exact consumed price/reward scope;
+- confirm all six Iron's Spells scroll codecs load and award correctly;
+- inspect server/client logs for missing IDs, parser errors, codec errors, reward errors, and missing assets.
+
+No static parser, manifest render, release metadata record, or Packwiz hash should be represented as proof of those runtime behaviours.

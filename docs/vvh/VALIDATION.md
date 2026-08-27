@@ -1,56 +1,73 @@
-# VvH Concord Validation Contract
+# VvH Validation Report
 
-## Static release gate
+Status: current source-level validation. Runtime client checks remain explicitly separate.
 
-Run from the Packwiz repository root:
+## Static campaign result
 
-```powershell
-python -m py_compile scripts/vvh_campaign_v3.py scripts/vvh_campaign_v3_validate.py scripts/vvh_sync_catalog.py
-python -X utf8 scripts/vvh_campaign_v3.py --check
-python -X utf8 scripts/vvh_sync_manifest.py . --check
-python -X utf8 scripts/vvh_sync_catalog.py . --check
-python -X utf8 scripts/vvh_campaign_v3_validate.py --output docs/vvh/evidence/campaign-v3-validation.json
+`docs/vvh/evidence/current/campaign-validation.json` reports:
+
+- status: pass;
+- 5 chapters;
+- 52 quests;
+- 52 reachable quests;
+- zero cycles;
+- zero duplicate IDs;
+- zero missing dependencies;
+- zero node overlaps;
+- zero visible dependency crossings;
+- zero reward-to-descendant-task collisions;
+- exact non-vanilla item, icon, advancement, spell, component, and art-reference allowlists;
+- explicit carry/submit semantics on every item task;
+- true any-three-of-eight breadth gates after Core III for both factions;
+- exact Hunter/Vampire economic parity;
+- 23 Bevel-equivalent weekly service-board sink cost;
+- 1 Bevel-equivalent weekly fallback faucet;
+- generated Packwiz file hashes match `index.toml`;
+- the `pack.toml` index digest matches the exact `index.toml` bytes;
+- zero warnings and zero errors.
+
+## Commands completed in the implementation workspace
+
+```sh
+python -m py_compile scripts/vvh_campaign_v3.py scripts/vvh_campaign_v3_validate.py
+python -X utf8 scripts/vvh_campaign_v3.py --check --root .
+python -X utf8 scripts/vvh_campaign_v3_validate.py \
+  --output docs/vvh/evidence/current/campaign-validation.json
+sha256sum index.toml pack.toml
 ```
 
-The v3 validator proves:
+The generator check is idempotent and the structured semantic report is deterministic. The validator also recomputes every generated Packwiz entry and the top-level index digest, so manual index refresh drift is caught before CI.
 
-- exactly eight expected chapter files parse as SNBT;
-- all chapter, quest, task, and reward IDs are globally unique;
-- dependencies resolve, are acyclic, and every quest is reachable from one root;
-- quest titles contain no more than four words;
-- checkmarks remain attached to orientation, social, spell-demonstration,
-  public-usability, event, or report criteria;
-- no unescaped ampersand-space or removed Cobblemon reference exists;
-- Iron's Spells scroll components contain the full native codec shape;
-- Bevel, Sprocket, and Cog values are accounted at 1/2/8 Bevel-equivalent;
-- there is exactly one weekly team-Bevel faucet and five team-scoped sinks;
-- no one-time descendant quest can be fully item-funded by ancestor rewards
-  without an advancement or human attestation remaining.
+## Repository CI gauntlet
 
-## Pack and asset checks
+The validation workflow runs the repository's full parser and Packwiz checks in a networked GitHub runner:
 
-```powershell
+```sh
+python scripts/validate_snbt.py config/
+python scripts/test_validate_snbt.py
+python scripts/vvh_campaign_v3.py --check
+python scripts/vvh_campaign_v3_validate.py --output /tmp/vvh-campaign-validation.json
+packwiz refresh
 packwiz list
 packwiz refresh
-python -X utf8 scripts/vvh_render_layouts.py docs/vvh/campaign_manifest.json docs/vvh/evidence/layout-concord-v3 --resource-zip tmp/poiesis-living-atlas-art-v5.zip --metadata-out docs/vvh/evidence/layout-concord-v3/metadata.json
-git diff --check
+
+git diff --exit-code
 ```
 
-The layout renderer must report zero unresolved references. Run `packwiz
-refresh` twice and confirm the second run is idempotent before release.
+The second refresh must produce no diff.
 
-## Human smoke test still required
+## Runtime status
 
-Static proof does not establish FTB Quests client rendering or runtime team
-semantics. Before a production merge, a human should verify in the shipped
-client:
+A disposable Minecraft client/server was not available in the authoring container. The following are therefore **pending human/client checks**, not silently claimed as passed:
 
-1. one calling and its faction opener;
-2. one Blood and one Holy spell demonstration;
-3. one public-build attestation with solo and shared-team progress;
-4. one personal Sprocket, one personal mastery Cog, and one team Cog claim;
-5. all five weekly sinks and the weekly Rumour Ledger cooldown;
-6. background/logo readability at normal UI scale.
+- open every chapter at real GUI scale and inspect red `!` indicators;
+- claim the opener and complete every task family used;
+- test Vampire and Hunter advancement detection, including already-earned advancements;
+- test late join, team change, faction switch, and Neutral paths;
+- complete one minimum faction path and one optional branch;
+- buy at least one market service as payer and teammate;
+- verify Iron's Spells scroll component codecs at runtime;
+- verify all `poiesis:` art in the required resource pack;
+- inspect logs for missing IDs, parser errors, codec errors, reward errors, and missing assets.
 
-No disposable server load is required for this iteration by user direction.
-Do not describe source review boards as in-client screenshots.
+Source-level layout boards, where generated, are geometry evidence only. They are not Minecraft screenshots or a runtime playtest.

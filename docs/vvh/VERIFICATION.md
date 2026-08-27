@@ -1,22 +1,26 @@
-# VvH Season One Verification
+# VvH Verification Matrix
 
-## Automated checks
+Status: current.
 
-- SNBT generation and localization completed from the installed pack schema.
-- Static ID, dependency, image, reward-scope, economy, and KubeJS-boundary checks pass.
-- Packwiz refresh/list completes with the current Poiesis art release hash.
-- The disposable NeoForge server reaches `Done` and FTB Quests reloads without targeted quest errors.
-- Chapter layout rendering completes for all ten VvH chapters.
+| Layer | Evidence | Result |
+|---|---|---|
+| Generator ownership | `scripts/vvh_campaign_v3.py --check` | pass |
+| Python syntax | `python -m py_compile` | pass |
+| Graph reachability and cycles | `vvh_campaign_v3_validate.py` | pass |
+| Charter closure | semantic validator | pass |
+| Neutral opt-out | semantic validator | pass |
+| Faction breadth truth | semantic validator | pass |
+| Hunter/Vampire parity | semantic validator | pass |
+| Reward descendant collision | semantic validator | pass |
+| Exact registry/component/art allowlists | semantic validator and `ID_CATALOG.md` | pass |
+| Generated Packwiz file hashes | semantic validator vs `index.toml` | pass |
+| Packwiz index digest | semantic validator vs `pack.toml` | pass |
+| Repeatable economy | semantic validator | pass |
+| Node overlap and source-line crossings | semantic validator | pass |
+| Repository SNBT parser | GitHub validation workflow | required |
+| SNBT parser test suite | GitHub validation workflow | required |
+| Packwiz refresh/list/idempotency | GitHub validation workflow | required |
+| Pinned art archive entry resolution | client/resource-pack environment | pending |
+| Minecraft client/server smoke test | human/client environment | pending |
 
-## Art checks
-
-- Five chapter panoramas are present at their documented 16:9 dimensions.
-- Blood, Holy, and mediator crests are RGBA PNGs with transparent corners.
-- The rune/material sheet is an RGBA PNG with isolated objects and transparent corners.
-- All referenced paths resolve inside the Poiesis resource-pack ZIP.
-
-## Manual checks remaining
-
-- Normal-scale client rendering and two-account team reward semantics.
-- Live Vampirism faction switching with FTB Teams and FTB Chunks ownership.
-- Optional skirmish safety controls and any future reset boundary.
+The canonical structured static report is `docs/vvh/evidence/current/campaign-validation.json`.
