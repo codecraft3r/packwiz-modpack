@@ -20,24 +20,9 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | Namespace | ID | Display name | Exact evidence JAR | JAR entry evidence |
 | --- | --- | --- | --- | --- |
 | `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
-| `create` | `create:basin` | Basin | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.basin` |
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
-| `create` | `create:cogwheel` | Cogwheel | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.cogwheel` |
-| `create` | `create:depot` | Depot | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.depot` |
-| `create` | `create:display_board` | Display Board | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/display_board.json; data/create/recipe/crafting/kinetics/display_board.json` |
-| `create` | `create:display_link` | Display Link | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/display_link.json; data/create/recipe/crafting/logistics/display_link.json` |
-| `create` | `create:encased_fan` | Encased Fan | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.encased_fan` |
-| `create` | `create:gearbox` | Gearbox | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.gearbox` |
-| `create` | `create:item_vault` | Item Vault | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/item_vault.json; data/create/recipe/crafting/kinetics/item_vault.json` |
-| `create` | `create:large_cogwheel` | Large Cogwheel | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.large_cogwheel` |
-| `create` | `create:mechanical_arm` | Mechanical Arm | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/mechanical_arm.json; data/create/recipe/crafting/kinetics/mechanical_arm.json` |
-| `create` | `create:mechanical_mixer` | Mechanical Mixer | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/mechanical_mixer.json; data/create/recipe/crafting/kinetics/mechanical_mixer.json` |
-| `create` | `create:mechanical_press` | Mechanical Press | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.mechanical_press` |
 | `create` | `create:precision_mechanism` | Precision Mechanism | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.precision_mechanism` |
-| `create` | `create:shaft` | Shaft | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.shaft` |
-| `create` | `create:smart_chute` | Smart Chute | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.smart_chute` |
-| `create` | `create:water_wheel` | Water Wheel | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::block.create.water_wheel` |
 | `create` | `create:wrench` | Wrench | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json` |
 | `explorerscompass` | `explorerscompass:explorerscompass` | Explorer's Compass | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `assets/explorerscompass/models/item/explorerscompass.json; data/explorerscompass/recipe/explorers_compass.json` |
 | `exposure` | `exposure:album` | Photo Album | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.album` |
@@ -45,7 +30,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
 | `exposure` | `exposure:high_sensitivity_color_film` | High-Sensitivity Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film; data/exposure/recipe/high_sensitivity_color_film.json` |
-| `exposure` | `exposure:photograph` | Photograph | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.photograph` |
 | `exposure` | `exposure:photograph_frame` | Photograph Frame | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.photograph_frame` |
 | `irons_spellbooks` | `irons_spellbooks:affinity_ring_blood` | Affinity Ring Blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_blood.json` |
 | `irons_spellbooks` | `irons_spellbooks:affinity_ring_holy` | Affinity Ring Holy | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_holy.json` |
@@ -59,13 +43,10 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
 | `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
-| `numismatics` | `numismatics:bank_terminal` | Bank Terminal | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/bank_terminal.json; data/numismatics/recipe/crafting/bank_terminal.json` |
 | `numismatics` | `numismatics:banking_guide` | Banking Guide | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/banking_guide.json; data/numismatics/recipe/crafting/banking_guide.json` |
 | `numismatics` | `numismatics:bevel` | Bevel | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/lang/en_us.json::item.numismatics.bevel` |
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
-| `numismatics` | `numismatics:green_card` | Green Card | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/green_card.json; data/numismatics/recipe/crafting/green_card.json` |
 | `numismatics` | `numismatics:sprocket` | Sprocket | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/sprocket.json` |
-| `numismatics` | `numismatics:vendor` | Vendor | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/vendor.json; data/numismatics/recipe/crafting/vendor.json` |
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
 | `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |

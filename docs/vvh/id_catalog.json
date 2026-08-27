@@ -80,14 +80,6 @@
     },
     {
       "namespace": "create",
-      "id": "create:basin",
-      "display_name": "Basin",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.basin",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
       "id": "create:belt_connector",
       "display_name": "Mechanical Belt",
       "source_jar": "create-1.21.1-6.0.10.jar",
@@ -104,122 +96,10 @@
     },
     {
       "namespace": "create",
-      "id": "create:cogwheel",
-      "display_name": "Cogwheel",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.cogwheel",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:depot",
-      "display_name": "Depot",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.depot",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:display_board",
-      "display_name": "Display Board",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/display_board.json; data/create/recipe/crafting/kinetics/display_board.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "create",
-      "id": "create:display_link",
-      "display_name": "Display Link",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/display_link.json; data/create/recipe/crafting/logistics/display_link.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "create",
-      "id": "create:encased_fan",
-      "display_name": "Encased Fan",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.encased_fan",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:gearbox",
-      "display_name": "Gearbox",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.gearbox",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:item_vault",
-      "display_name": "Item Vault",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/item_vault.json; data/create/recipe/crafting/kinetics/item_vault.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "create",
-      "id": "create:large_cogwheel",
-      "display_name": "Large Cogwheel",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.large_cogwheel",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:mechanical_arm",
-      "display_name": "Mechanical Arm",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/mechanical_arm.json; data/create/recipe/crafting/kinetics/mechanical_arm.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "create",
-      "id": "create:mechanical_mixer",
-      "display_name": "Mechanical Mixer",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/mechanical_mixer.json; data/create/recipe/crafting/kinetics/mechanical_mixer.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "create",
-      "id": "create:mechanical_press",
-      "display_name": "Mechanical Press",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.mechanical_press",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
       "id": "create:precision_mechanism",
       "display_name": "Precision Mechanism",
       "source_jar": "create-1.21.1-6.0.10.jar",
       "source_entry": "assets/create/lang/en_us.json::item.create.precision_mechanism",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:shaft",
-      "display_name": "Shaft",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.shaft",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:smart_chute",
-      "display_name": "Smart Chute",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.smart_chute",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:water_wheel",
-      "display_name": "Water Wheel",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/lang/en_us.json::block.create.water_wheel",
       "obtainability_note": ""
     },
     {
@@ -277,14 +157,6 @@
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film; data/exposure/recipe/high_sensitivity_color_film.json",
       "obtainability_note": "",
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar"
-    },
-    {
-      "namespace": "exposure",
-      "id": "exposure:photograph",
-      "display_name": "Photograph",
-      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
-      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.photograph",
-      "obtainability_note": ""
     },
     {
       "namespace": "exposure",
@@ -392,14 +264,6 @@
     },
     {
       "namespace": "numismatics",
-      "id": "numismatics:bank_terminal",
-      "display_name": "Bank Terminal",
-      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
-      "source_entry": "assets/numismatics/models/item/bank_terminal.json; data/numismatics/recipe/crafting/bank_terminal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "numismatics",
       "id": "numismatics:banking_guide",
       "display_name": "Banking Guide",
       "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
@@ -424,27 +288,11 @@
     },
     {
       "namespace": "numismatics",
-      "id": "numismatics:green_card",
-      "display_name": "Green Card",
-      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
-      "source_entry": "assets/numismatics/models/item/green_card.json; data/numismatics/recipe/crafting/green_card.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "numismatics",
       "id": "numismatics:sprocket",
       "display_name": "Sprocket",
       "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
       "source_entry": "assets/numismatics/models/item/sprocket.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "numismatics",
-      "id": "numismatics:vendor",
-      "display_name": "Vendor",
-      "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
-      "source_entry": "assets/numismatics/models/item/vendor.json; data/numismatics/recipe/crafting/vendor.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "vampirism",

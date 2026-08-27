@@ -32,10 +32,7 @@ EXPECTED_CHAPTERS = (
     "ch02_callings.snbt",
     "ch03_lantern_order.snbt",
     "ch04_house_night.snbt",
-    "ch05_free_companies.snbt",
-    "ch06_common_ground.snbt",
-    "ch07_odd_hours.snbt",
-    "ch08_market_services.snbt",
+    "ch05_market_services.snbt",
 )
 HEX_ID = re.compile(r"^[0-9A-F]{16}$")
 WORD = re.compile(r"[A-Za-z0-9]+(?:['’][A-Za-z]+)?")
@@ -158,7 +155,7 @@ def run(root: Path, output: Path | None = None) -> tuple[dict[str, Any], int]:
 
     actual = sorted(path.name for path in chapters_dir.glob("*.snbt")) if chapters_dir.exists() else []
     checks.add(
-        "exact_eight_chapter_files",
+        "exact_five_chapter_files",
         [
             f"missing chapter files: {sorted(set(EXPECTED_CHAPTERS) - set(actual))}"
             for _ in [0]

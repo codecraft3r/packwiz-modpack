@@ -98,7 +98,7 @@ hash = "23fef815947c6d76d0c667469cab3fbe4a794e8864066dc9131ac52220eaa15a"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "079c052f9904c12f9d238c5847b176bae80ee0e81b218c8e99a65b5ba144424a"
+hash = "9e8bf2862213270e69a626db064e53737207556e97e54e9fe01db444802ce224"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch01_island_charter.snbt"
@@ -117,20 +117,8 @@ file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
 hash = "22c28f071d0fd34d2985936c7570ec30789bb6b65d4ad1dd96880b1b5cf5e21d"
 
 [[files]]
-file = "config/ftbquests/quests/chapters/ch05_free_companies.snbt"
-hash = "52fce5526539fc3a9c0ca8531021e96835517b887e55992563be1bd35bddc0de"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ch06_common_ground.snbt"
-hash = "c402432f00267e17c157a73b017331ddaddc050112272ad7d5be6587bb817549"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ch07_odd_hours.snbt"
-hash = "dca86692cc49b991b7f1018582add29b696f8ece0e1dcb559250648f60d0e665"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ch08_market_services.snbt"
-hash = "240d139543f85f5a3b25eb742fdd8a448865d07998e435adeaaa54bf260faa1e"
+file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"
+hash = "d5073369914af1ca9ad4c1d69959da46814e93886560296b1dad3078f1fb966d"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

@@ -2689,2940 +2689,10 @@
       "title": "04 · The House of Night"
     },
     {
-      "filename": "ch05_free_companies",
-      "group": "7A11C4DF00200000",
-      "icon": "numismatics:banking_guide",
-      "id": "7A11C3DF00500000",
-      "images": [
-        {
-          "alpha": 24,
-          "height": 7,
-          "image": "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
-          "order": -40,
-          "rotation": 0.0,
-          "width": 5,
-          "x": -6,
-          "y": 3
-        },
-        {
-          "alpha": 22,
-          "height": 7,
-          "image": "poiesis:textures/questpics/vvh/spell_translation_desk.png",
-          "order": -39,
-          "rotation": 0.0,
-          "width": 5,
-          "x": 6,
-          "y": 9
-        },
-        {
-          "alpha": 30,
-          "height": 2.5,
-          "image": "poiesis:textures/questpics/vvh/mediator_hybrid_crest.png",
-          "order": -38,
-          "rotation": 0.0,
-          "width": 2.5,
-          "x": 0,
-          "y": 12
-        }
-      ],
-      "order": 3,
-      "quests": [
-        {
-          "dependencies": [
-            "7A11C0DF00200003"
-          ],
-          "description": [
-            "Mirelle Quill refuses to call a price fair until both people can read it. A visible vendor and written banking guide turn surplus into choice without asking one grinder to become the server's permanent shopkeeper."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "numismatics:vendor",
-          "id": "7A11C0DF00500001",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500001",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500002",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bank_terminal"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500003",
-              "item": {
-                "count": 8,
-                "id": "minecraft:chest"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500004",
-              "item": {
-                "count": 16,
-                "id": "minecraft:item_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Core I · Trade people can inspect",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500001",
-              "item": "numismatics:vendor",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Vendor",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500002",
-              "item": "numismatics:banking_guide",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Banking Guide",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Open Ledger",
-          "x": 0,
-          "y": -5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "The first windmill proved the settlement could turn weather into work. Mirelle's creek line is deliberately plainer: exposed shafts, labeled direction, and a second source another player can diagnose when the wind workshop is busy."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:water_wheel",
-          "id": "7A11C0DF00500002",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500005",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500006",
-              "item": {
-                "count": 32,
-                "id": "create:andesite_alloy"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500007",
-              "item": {
-                "count": 32,
-                "id": "create:shaft"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500008",
-              "item": {
-                "count": 16,
-                "id": "create:cogwheel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500009",
-              "item": {
-                "count": 8,
-                "id": "create:large_cogwheel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050000A",
-              "item": {
-                "count": 8,
-                "id": "create:gearbox"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Core II · Power beyond the windmill",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500003",
-              "item": "create:water_wheel",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Water Wheel",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500004",
-              "item": "create:gearbox",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Gearbox",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00500005",
-              "item": "create:belt_connector",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Mechanical Belts",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050001D",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate traced the power line",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Second Current",
-          "x": 0,
-          "y": -2,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500002"
-          ],
-          "description": [
-            "A press beside a basin can save eight players from building eight half-finished sheds. The line matters because its inputs are obvious, its output has a chest, and someone can repair it after its founder leaves."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:mechanical_press",
-          "id": "7A11C0DF00500003",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0050000B",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050000C",
-              "item": {
-                "count": 4,
-                "id": "create:encased_fan"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050000D",
-              "item": {
-                "count": 8,
-                "id": "create:smart_chute"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050000E",
-              "item": {
-                "count": 2,
-                "id": "create:mechanical_mixer"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050000F",
-              "item": {
-                "count": 32,
-                "id": "create:brass_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Core III · Shared processing",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500006",
-              "item": "create:mechanical_press",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Mechanical Press",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500007",
-              "item": "create:basin",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Basin",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500008",
-              "item": "create:depot",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Depot",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050001E",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate ran one public recipe",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Public Line",
-          "x": 0,
-          "y": 1,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003"
-          ],
-          "description": [
-            "Mirelle calls a machine complete when someone else can use it without waking the builder. Storage, routing, and a public display turn motion into a durable service instead of a personal monument."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:mechanical_arm",
-          "id": "7A11C0DF00500004",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500010",
-              "item": {
-                "count": 1,
-                "id": "numismatics:cog"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500011",
-              "item": {
-                "count": 8,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500012",
-              "item": {
-                "count": 32,
-                "id": "create:brass_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500013",
-              "item": {
-                "count": 8,
-                "id": "create:precision_mechanism"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500014",
-              "item": {
-                "count": 2,
-                "id": "create:mechanical_arm"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Optional mastery · Maintainable automation",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000A",
-              "item": "create:mechanical_arm",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Mechanical Arm",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000B",
-              "item": "create:item_vault",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Item Vault",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000C",
-              "item": "create:display_board",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Display Board",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Common Engine",
-          "x": 8,
-          "y": 1,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003"
-          ],
-          "description": [
-            "A map room turns one person's dangerous discovery into everybody's informed choice. Photographs preserve what coordinates forget: entrances, hazards, and whether the road was kind to travelers."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "explorerscompass:explorerscompass",
-          "id": "7A11C0DF00500005",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500015",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500016",
-              "item": {
-                "count": 6,
-                "id": "exposure:color_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500017",
-              "item": {
-                "count": 6,
-                "id": "exposure:black_and_white_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500018",
-              "item": {
-                "count": 12,
-                "id": "exposure:photograph_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500019",
-              "item": {
-                "count": 32,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Specialty · Exploration archive",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000D",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000E",
-              "item": "exposure:camera",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Camera",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050000F",
-              "item": "exposure:album",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Photo Album",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Map Room",
-          "x": -6,
-          "y": 4,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003"
-          ],
-          "description": [
-            "A hall needs no grand design to matter. Beds for guests, a bell people can find, and labeled storage make villagers and players part of the same settlement instead of scenery around private bases."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:bell",
-          "id": "7A11C0DF00500006",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0050001A",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050001B",
-              "item": {
-                "count": 16,
-                "id": "minecraft:emerald"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050001C",
-              "item": {
-                "count": 32,
-                "id": "minecraft:book"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050001D",
-              "item": {
-                "count": 64,
-                "id": "minecraft:oak_log"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050001E",
-              "item": {
-                "count": 16,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050001F",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "Specialty · A simple civic room",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500010",
-              "item": "minecraft:bell",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Bell",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF00500011",
-              "item": "minecraft:white_bed",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Beds",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500012",
-              "item": "minecraft:lectern",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Lectern",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00500013",
-              "item": "minecraft:barrel",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Barrels",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Village Hall",
-          "x": -2,
-          "y": 4,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003"
-          ],
-          "description": [
-            "A market works when players can tell what is offered, what it costs, and where the purchase will appear. The clock is less about urgency than confidence that a promised trade will still make sense tomorrow."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "numismatics:vendor",
-          "id": "7A11C0DF00500007",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500020",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500021",
-              "item": {
-                "count": 1,
-                "id": "numismatics:green_card"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500022",
-              "item": {
-                "count": 4,
-                "id": "create:display_link"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500023",
-              "item": {
-                "count": 32,
-                "id": "minecraft:oak_sign"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500024",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Specialty · Prices and pickup",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF00500014",
-              "item": "numismatics:vendor",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Vendors",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF00500015",
-              "item": "create:display_link",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Display Links",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00500016",
-              "item": "minecraft:clock",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Clock",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Market Clock",
-          "x": 2,
-          "y": 4,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003"
-          ],
-          "description": [
-            "The most impressive road is the one a late arrival can follow at night. Durable surface, clear turns, and ordinary repair stock let a route earn trust one uneventful journey at a time."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:gravel",
-          "id": "7A11C0DF00500008",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500025",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500026",
-              "item": {
-                "count": 192,
-                "id": "minecraft:gravel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500027",
-              "item": {
-                "count": 96,
-                "id": "minecraft:stone_bricks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500028",
-              "item": {
-                "count": 64,
-                "id": "minecraft:rail"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500029",
-              "item": {
-                "count": 16,
-                "id": "minecraft:powered_rail"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050002A",
-              "item": {
-                "count": 8,
-                "id": "minecraft:lead"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "Specialty · Legible public routes",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 64,
-              "criterion": "",
-              "id": "7A11C1DF00500017",
-              "item": "minecraft:gravel",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixty-four Gravel",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
-              "id": "7A11C1DF00500018",
-              "item": "minecraft:stone_bricks",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Stone Bricks",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF00500019",
-              "item": "minecraft:oak_sign",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Oak Signs",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF0050001A",
-              "item": "minecraft:lantern",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Lanterns",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Road Keeper",
-          "x": 6,
-          "y": 4,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500003",
-            "7A11C0DF00500005",
-            "7A11C0DF00500006",
-            "7A11C0DF00500007",
-            "7A11C0DF00500008"
-          ],
-          "description": [
-            "The Free Companies refuse the myth of the indispensable founder. Two practiced services are enough to keep the commons useful while leaving a visible vacancy for the next player who wants a role."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:tripwire_hook",
-          "id": "7A11C0DF00500009",
-          "min_required_dependencies": 3,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Breadth · Core plus any two specialties",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050001B",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I completed two specialties",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Three Hands",
-          "x": 0,
-          "y": 7,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500009"
-          ],
-          "description": [
-            "Mirelle's spare lodestone carries a brass plate with three blank lines: service, supplies, maintainer. It belongs wherever neutrality becomes something both factions would notice losing."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:lodestone",
-          "id": "7A11C0DF0050000A",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0050002B",
-              "item": {
-                "count": 1,
-                "id": "numismatics:cog"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050002C",
-              "item": {
-                "count": 64,
-                "id": "create:andesite_alloy"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050002D",
-              "item": {
-                "count": 64,
-                "id": "minecraft:iron_ingot"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050002E",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": true,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.6,
-          "subtitle": "Team capstone · Mark a service house",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0050001C",
-              "item": "minecraft:lodestone",
-              "optional": false,
-              "stat": null,
-              "title": "Have the service-house lodestone",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Free Charter",
-          "x": 0,
-          "y": 10,
-          "can_repeat": false
-        }
-      ],
-      "title": "05 · The Free Companies"
-    },
-    {
-      "filename": "ch06_common_ground",
+      "filename": "ch05_market_services",
       "group": "7A11C4DF00300000",
-      "icon": "minecraft:bell",
-      "id": "7A11C3DF00600000",
-      "images": [
-        {
-          "alpha": 22,
-          "height": 8,
-          "image": "poiesis:textures/questpics/vvh/island_remembers.png",
-          "order": -40,
-          "rotation": 0.0,
-          "width": 5,
-          "x": -7,
-          "y": 6
-        },
-        {
-          "alpha": 26,
-          "height": 3,
-          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
-          "order": -39,
-          "rotation": 0.0,
-          "width": 3,
-          "x": 7,
-          "y": 11
-        }
-      ],
-      "order": 0,
-      "quests": [
-        {
-          "dependencies": [
-            "7A11C0DF00200005"
-          ],
-          "description": [
-            "Nessa's first town had no walls, only a bell, dry beds, and a chest nobody was afraid to open. A center becomes real when a lost player can recognize it and understand what may be used."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:bell",
-          "id": "7A11C0DF00600001",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00600001",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600002",
-              "item": {
-                "count": 8,
-                "id": "minecraft:white_bed"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600003",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600004",
-              "item": {
-                "count": 64,
-                "id": "minecraft:torch"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Commons I · A findable center",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600001",
-              "item": "minecraft:bell",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Bell",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00600002",
-              "item": "minecraft:barrel",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Barrels",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF00600003",
-              "item": "minecraft:lantern",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Lanterns",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600019",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate found and used the center",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Town Bell",
-          "x": 0,
-          "y": -5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600001"
-          ],
-          "description": [
-            "A route is a shared promise that distance will remain understandable. Signs, landmarks, and an archive let the road improve when players discover a safer turn instead of forcing every traveler to relearn it."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "explorerscompass:explorerscompass",
-          "id": "7A11C0DF00600002",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00600005",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600006",
-              "item": {
-                "count": 64,
-                "id": "minecraft:rail"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600007",
-              "item": {
-                "count": 16,
-                "id": "minecraft:powered_rail"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600008",
-              "item": {
-                "count": 32,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600009",
-              "item": {
-                "count": 8,
-                "id": "minecraft:lead"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Commons II · Routes with memory",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600004",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF00600005",
-              "item": "minecraft:oak_sign",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Oak Signs",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 64,
-              "criterion": "",
-              "id": "7A11C1DF00600006",
-              "item": "minecraft:gravel",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixty-four Gravel",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001A",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate followed the marked route",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Known Roads",
-          "x": 0,
-          "y": -2,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600002"
-          ],
-          "description": [
-            "Oren leaves a chipped wrench above the press with a note: if the line jams, teach the repair to whoever is waiting. The next batch should be easier because two people now know the machine."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:mechanical_press",
-          "id": "7A11C0DF00600003",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0060000A",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060000B",
-              "item": {
-                "count": 32,
-                "id": "create:andesite_alloy"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060000C",
-              "item": {
-                "count": 32,
-                "id": "create:shaft"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060000D",
-              "item": {
-                "count": 16,
-                "id": "create:cogwheel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060000E",
-              "item": {
-                "count": 8,
-                "id": "create:belt_connector"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Commons III · Shared fabrication",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600007",
-              "item": "create:mechanical_press",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Mechanical Press",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600008",
-              "item": "create:basin",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Basin",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600009",
-              "item": "create:depot",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Depot",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001B",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate ran one public recipe",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Common Forge",
-          "x": 0,
-          "y": 1,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600003"
-          ],
-          "description": [
-            "Public architecture does not need a style committee. A modest stone-and-timber palette makes repairs predictable while leaving the shape, history, and odd little details entirely to its builders."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:stone_bricks",
-          "id": "7A11C0DF00600004",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0060000F",
-              "item": {
-                "count": 1,
-                "id": "numismatics:bevel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600010",
-              "item": {
-                "count": 192,
-                "id": "minecraft:stone_bricks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600011",
-              "item": {
-                "count": 96,
-                "id": "minecraft:oak_log"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600012",
-              "item": {
-                "count": 48,
-                "id": "minecraft:glass_pane"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600013",
-              "item": {
-                "count": 24,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600014",
-              "item": {
-                "count": 32,
-                "id": "minecraft:iron_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600015",
-              "item": {
-                "count": 4,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "Commons IV · Simple public palette",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 64,
-              "criterion": "",
-              "id": "7A11C1DF0060000A",
-              "item": "minecraft:stone_bricks",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixty-four Stone Bricks",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
-              "id": "7A11C1DF0060000B",
-              "item": "minecraft:oak_log",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Oak Logs",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF0060000C",
-              "item": "minecraft:glass_pane",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Glass Panes",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF0060000D",
-              "item": "minecraft:lantern",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Lanterns",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001C",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate used the public room",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Shared Roof",
-          "x": 0,
-          "y": 4,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600004"
-          ],
-          "description": [
-            "The archive is allowed to contain mistakes. Dated photographs and named locations give future players evidence they can correct instead of a perfect story they are expected to obey."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "exposure:album",
-          "id": "7A11C0DF00600005",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00600016",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600017",
-              "item": {
-                "count": 6,
-                "id": "exposure:color_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600018",
-              "item": {
-                "count": 6,
-                "id": "exposure:black_and_white_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600019",
-              "item": {
-                "count": 12,
-                "id": "exposure:photograph_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Side lane · Places worth remembering",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060000E",
-              "item": "exposure:camera",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Camera",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060000F",
-              "item": "exposure:album",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Photo Album",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00600010",
-              "item": "exposure:photograph_frame",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Photograph Frames",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001D",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate found one named record",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Public Archive",
-          "x": -5,
-          "y": 2.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600004"
-          ],
-          "description": [
-            "The watch chest refuses faction ownership. Blood keeps one neighbor alive, holy water protects another, and clear labels let either service reach the road before an argument does."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:ender_chest",
-          "id": "7A11C0DF00600006",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0060001A",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060001B",
-              "item": {
-                "count": 4,
-                "id": "irons_spellbooks:blood_rune"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060001C",
-              "item": {
-                "count": 4,
-                "id": "irons_spellbooks:holy_rune"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060001D",
-              "item": {
-                "count": 16,
-                "id": "irons_spellbooks:common_ink"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0060001E",
-              "item": {
-                "count": 32,
-                "id": "minecraft:glass_bottle"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Side lane · Shared emergency stock",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00600011",
-              "item": "vampirism:blood_bottle",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Bottles",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00600012",
-              "item": "vampirism:holy_water_bottle_normal",
-              "optional": false,
-              "stat": null,
-              "title": "Have four normal Holy Waters",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00600013",
-              "item": "minecraft:campfire",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Campfires",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001E",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate found the emergency stock",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Night Watch",
-          "x": 5,
-          "y": 2.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600004"
-          ],
-          "description": [
-            "Mirelle leaves one stall empty for the person who arrived with nothing to sell. A good market leaves behind clear prices, working pickup, and a reason to remember who showed up."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "numismatics:vendor",
-          "id": "7A11C0DF00600007",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0060001F",
-              "item": {
-                "count": 2,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600020",
-              "item": {
-                "count": 32,
-                "id": "minecraft:emerald"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600021",
-              "item": {
-                "count": 16,
-                "id": "minecraft:item_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600022",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Side lane · A visible exchange",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF00600014",
-              "item": "numismatics:vendor",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Vendors",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600015",
-              "item": "create:display_board",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Display Board",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600016",
-              "item": "minecraft:bell",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Bell",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0060001F",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "A teammate read a price and pickup point",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Market Day",
-          "x": 5,
-          "y": 7,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00600004",
-            "7A11C0DF00600005",
-            "7A11C0DF00600006",
-            "7A11C0DF00600007"
-          ],
-          "description": [
-            "Nessa pins one photograph above the bell after every difficult week. The frame is never straight, but the route, service, or shelter in it becomes a dependable beginning for whatever follows."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "exposure:photograph",
-          "id": "7A11C0DF00600008",
-          "min_required_dependencies": 3,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00600023",
-              "item": {
-                "count": 1,
-                "id": "numismatics:cog"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600024",
-              "item": {
-                "count": 64,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600025",
-              "item": {
-                "count": 8,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00600026",
-              "item": {
-                "count": 64,
-                "id": "create:andesite_alloy"
-              },
-              "team_reward": true,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.7,
-          "subtitle": "Team capstone · Three public contributions",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00600017",
-              "item": "exposure:photograph",
-              "optional": false,
-              "stat": null,
-              "title": "Have one photograph of the commons",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF00600018",
-              "item": "minecraft:firework_star",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Firework Stars",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "First Concord",
-          "x": 0,
-          "y": 10,
-          "can_repeat": false
-        }
-      ],
-      "title": "06 · Common Ground"
-    },
-    {
-      "filename": "ch07_odd_hours",
-      "group": "7A11C4DF00300000",
-      "icon": "minecraft:clock",
-      "id": "7A11C3DF00700000",
-      "images": [
-        {
-          "alpha": 22,
-          "height": 7,
-          "image": "poiesis:textures/questpics/vvh/long_night_fair.png",
-          "order": -40,
-          "rotation": 0.0,
-          "width": 12,
-          "x": 0,
-          "y": 4
-        }
-      ],
-      "order": 1,
-      "quests": [
-        {
-          "dependencies": [
-            "7A11C0DF00600008"
-          ],
-          "description": [
-            "Mirelle keeps six blank invitations because a gathering should fit the people who actually arrive. Each event leaves useful stock or evidence behind, so a small session still changes the world."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:clock",
-          "id": "7A11C0DF00700001",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [],
-          "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Events · Complete any three",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700001",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I understand the event choices",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Open Invitation",
-          "x": 0,
-          "y": -5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "The drill begins where someone once tripped over an unlabeled chest during a real outage. Prepared light and repair stock turn a failure into a shared story that gets less dramatic every time it is practiced."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "minecraft:redstone_lamp",
-          "id": "7A11C0DF00700002",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00700001",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700002",
-              "item": {
-                "count": 32,
-                "id": "minecraft:glowstone"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700003",
-              "item": {
-                "count": 64,
-                "id": "minecraft:redstone"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700004",
-              "item": {
-                "count": 32,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Event · Restore a dark public place",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 8,
-              "criterion": "",
-              "id": "7A11C1DF00700002",
-              "item": "minecraft:redstone_lamp",
-              "optional": false,
-              "stat": null,
-              "title": "Have eight Redstone Lamps",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 16,
-              "criterion": "",
-              "id": "7A11C1DF00700003",
-              "item": "minecraft:redstone_torch",
-              "optional": false,
-              "stat": null,
-              "title": "Have sixteen Redstone Torches",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 32,
-              "criterion": "",
-              "id": "7A11C1DF00700004",
-              "item": "minecraft:redstone",
-              "optional": false,
-              "stat": null,
-              "title": "Have thirty-two Redstone",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700014",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "We restored one dark public place",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Blackout Drill",
-          "x": -7.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "At the red table, neither school is asked to surrender its language. The point is translation: what each preparation protects, what it costs, and who should never receive it by mistake."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "irons_spellbooks:blank_rune",
-          "id": "7A11C0DF00700003",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00700005",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700006",
-              "item": {
-                "count": 16,
-                "id": "irons_spellbooks:arcane_essence"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700007",
-              "item": {
-                "count": 16,
-                "id": "irons_spellbooks:common_ink"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700008",
-              "item": {
-                "count": 8,
-                "id": "irons_spellbooks:uncommon_ink"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Event · Compare blood and holy service",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00700005",
-              "item": "vampirism:blood_bottle",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blood Bottles",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00700006",
-              "item": "vampirism:holy_water_bottle_normal",
-              "optional": false,
-              "stat": null,
-              "title": "Have four normal Holy Waters",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00700007",
-              "item": "irons_spellbooks:blank_rune",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Blank Runestones",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700015",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "We compared both schools at one table",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "The Red Table",
-          "x": -4.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "Oren claims every difficult machine has a moment when four hands are faster than one expert. The event pairs faction benches with public fabrication so players leave with parts, advice, and fewer private bottlenecks."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "create:mechanical_press",
-          "id": "7A11C0DF00700004",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00700009",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070000A",
-              "item": {
-                "count": 32,
-                "id": "create:andesite_alloy"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070000B",
-              "item": {
-                "count": 32,
-                "id": "minecraft:iron_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070000C",
-              "item": {
-                "count": 16,
-                "id": "minecraft:gold_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070000D",
-              "item": {
-                "count": 4,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Event · Make equipment together",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700008",
-              "item": "create:mechanical_press",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Mechanical Press",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700009",
-              "item": "vampirism:hunter_table",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Hunter Table",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0070000A",
-              "item": "vampirism:altar_inspiration",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Altar of Inspiration",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700016",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "Two players made one useful set together",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Four Hands",
-          "x": -1.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "A useful photograph notices what monuments omit: the patched stair, the empty chair, the sign nobody reads. One honest detail can make the archive feel inhabited rather than promotional."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "exposure:camera",
-          "id": "7A11C0DF00700005",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0070000E",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070000F",
-              "item": {
-                "count": 8,
-                "id": "exposure:color_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700010",
-              "item": {
-                "count": 8,
-                "id": "exposure:black_and_white_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700011",
-              "item": {
-                "count": 16,
-                "id": "exposure:photograph_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Event · Photograph an overlooked place",
-          "tasks": [
-            {
-              "advancement": "exposure:adventure/moment_in_time",
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0070000B",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "",
-              "type": "advancement",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0070000C",
-              "item": "exposure:album",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Photo Album",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700017",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "I archived one overlooked place",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Photo Hunt",
-          "x": 1.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "The relay rewards clean handoffs rather than raw speed. A marked destination, spare transport, and a returned route note make every runner responsible for the person who follows."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "explorerscompass:explorerscompass",
-          "id": "7A11C0DF00700006",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00700012",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700013",
-              "item": {
-                "count": 64,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700014",
-              "item": {
-                "count": 32,
-                "id": "minecraft:golden_carrot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700015",
-              "item": {
-                "count": 8,
-                "id": "minecraft:ender_pearl"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Event · A route anyone may finish",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF0070000D",
-              "item": "explorerscompass:explorerscompass",
-              "optional": false,
-              "stat": null,
-              "title": "Have an Explorer's Compass",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF0070000E",
-              "item": "minecraft:minecart",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Minecarts",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF0070000F",
-              "item": "minecraft:chest_minecart",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Chest Minecarts",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700018",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "The next runner finished without guessing",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Courier Relay",
-          "x": 4.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700001"
-          ],
-          "description": [
-            "Mirelle leaves one chair empty at every auction for the person who decides not to bid. Posted prices and a clean pickup chest make refusal as safe as participation."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "numismatics:vendor",
-          "id": "7A11C0DF00700007",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00700016",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700017",
-              "item": {
-                "count": 32,
-                "id": "minecraft:emerald"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700018",
-              "item": {
-                "count": 16,
-                "id": "minecraft:item_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00700019",
-              "item": {
-                "count": 4,
-                "id": "create:display_link"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Event · Trade with visible terms",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 2,
-              "criterion": "",
-              "id": "7A11C1DF00700010",
-              "item": "numismatics:vendor",
-              "optional": false,
-              "stat": null,
-              "title": "Have two Vendors",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700011",
-              "item": "minecraft:bell",
-              "optional": false,
-              "stat": null,
-              "title": "Have a Bell",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 4,
-              "criterion": "",
-              "id": "7A11C1DF00700012",
-              "item": "minecraft:chest",
-              "optional": false,
-              "stat": null,
-              "title": "Have four Chests",
-              "type": "item",
-              "value": 1
-            },
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700019",
-              "item": null,
-              "optional": false,
-              "stat": null,
-              "title": "We held one trade with visible terms",
-              "type": "checkmark",
-              "value": 1
-            }
-          ],
-          "title": "Open Auction",
-          "x": 7.5,
-          "y": 0.5,
-          "can_repeat": false
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00700002",
-            "7A11C0DF00700003",
-            "7A11C0DF00700004",
-            "7A11C0DF00700005",
-            "7A11C0DF00700006",
-            "7A11C0DF00700007"
-          ],
-          "description": [
-            "Three gatherings are enough to reveal what the settlement enjoys doing together. The record names what worked and leaves supplies for the next event instead of prescribing which tradition must continue."
-          ],
-          "hide_dependency_lines": false,
-          "hide_until_deps_complete": false,
-          "icon": "exposure:photograph",
-          "id": "7A11C0DF00700008",
-          "min_required_dependencies": 3,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0070001A",
-              "item": {
-                "count": 1,
-                "id": "numismatics:cog"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070001B",
-              "item": {
-                "count": 64,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070001C",
-              "item": {
-                "count": 32,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": true,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0070001D",
-              "item": {
-                "count": 8,
-                "id": "minecraft:barrel"
-              },
-              "team_reward": true,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.7,
-          "subtitle": "Team event · Complete any three",
-          "tasks": [
-            {
-              "advancement": null,
-              "consume": false,
-              "count": 1,
-              "criterion": "",
-              "id": "7A11C1DF00700013",
-              "item": "exposure:photograph",
-              "optional": false,
-              "stat": null,
-              "title": "Have one event photograph",
-              "type": "item",
-              "value": 1
-            }
-          ],
-          "title": "Common Cause",
-          "x": 0,
-          "y": 6,
-          "can_repeat": false
-        }
-      ],
-      "title": "07 · The Odd Hours"
-    },
-    {
-      "filename": "ch08_market_services",
-      "group": "7A11C4DF00400000",
       "icon": "numismatics:sprocket",
-      "id": "7A11C3DF00800000",
+      "id": "7A11C3DF00500000",
       "images": [
         {
           "alpha": 18,
@@ -5639,7 +2709,7 @@
       "quests": [
         {
           "dependencies": [
-            "7A11C0DF00600008"
+            "7A11C0DF00200005"
           ],
           "description": [
             "The board turns quest earnings into choices players can feel in the world. Small purses solve immediate friction; larger denominations fund whole-team projects without pretending every coin is identical pocket change."
@@ -5647,7 +2717,7 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "numismatics:banking_guide",
-          "id": "7A11C0DF00800001",
+          "id": "7A11C0DF00500001",
           "min_required_dependencies": 0,
           "optional": false,
           "repeat_cooldown": 0,
@@ -5662,7 +2732,7 @@
               "consume": false,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800001",
+              "id": "7A11C1DF00500001",
               "item": null,
               "optional": false,
               "stat": null,
@@ -5678,7 +2748,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "A small purse replaces the supplies most likely to strand a late arrival. It is deliberately ordinary: food, light, and a way to bring something awkward home."
@@ -5686,14 +2756,14 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "numismatics:bevel",
-          "id": "7A11C0DF00800002",
+          "id": "7A11C0DF00500002",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00800001",
+              "id": "7A11C2DF00500001",
               "item": {
                 "count": 32,
                 "id": "minecraft:cooked_beef"
@@ -5702,7 +2772,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800002",
+              "id": "7A11C2DF00500002",
               "item": {
                 "count": 64,
                 "id": "minecraft:torch"
@@ -5711,7 +2781,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800003",
+              "id": "7A11C2DF00500003",
               "item": {
                 "count": 8,
                 "id": "minecraft:lead"
@@ -5729,7 +2799,7 @@
               "consume": true,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800002",
+              "id": "7A11C1DF00500002",
               "item": "numismatics:bevel",
               "optional": false,
               "stat": null,
@@ -5745,7 +2815,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "The works purse is sized for a visible repair rather than a decorative handful. It supports roads, public rooms, and the unglamorous patch that keeps an old build useful."
@@ -5753,14 +2823,14 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "numismatics:sprocket",
-          "id": "7A11C0DF00800003",
+          "id": "7A11C0DF00500003",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00800004",
+              "id": "7A11C2DF00500004",
               "item": {
                 "count": 128,
                 "id": "minecraft:stone_bricks"
@@ -5769,7 +2839,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800005",
+              "id": "7A11C2DF00500005",
               "item": {
                 "count": 64,
                 "id": "minecraft:oak_log"
@@ -5778,7 +2848,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800006",
+              "id": "7A11C2DF00500006",
               "item": {
                 "count": 32,
                 "id": "minecraft:iron_ingot"
@@ -5787,7 +2857,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800007",
+              "id": "7A11C2DF00500007",
               "item": {
                 "count": 16,
                 "id": "minecraft:lantern"
@@ -5805,7 +2875,7 @@
               "consume": true,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800003",
+              "id": "7A11C1DF00500003",
               "item": "numismatics:sprocket",
               "optional": false,
               "stat": null,
@@ -5821,7 +2891,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "The arcane purse restocks a teaching table rather than gambling on a random spell. Its materials support several schools and leave the final inscription to the player who understands the need."
@@ -5829,14 +2899,14 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "irons_spellbooks:uncommon_ink",
-          "id": "7A11C0DF00800004",
+          "id": "7A11C0DF00500004",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00800008",
+              "id": "7A11C2DF00500008",
               "item": {
                 "count": 16,
                 "id": "irons_spellbooks:arcane_essence"
@@ -5845,7 +2915,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800009",
+              "id": "7A11C2DF00500009",
               "item": {
                 "count": 4,
                 "id": "irons_spellbooks:blank_rune"
@@ -5854,7 +2924,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0080000A",
+              "id": "7A11C2DF0050000A",
               "item": {
                 "count": 16,
                 "id": "irons_spellbooks:common_ink"
@@ -5863,7 +2933,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0080000B",
+              "id": "7A11C2DF0050000B",
               "item": {
                 "count": 8,
                 "id": "irons_spellbooks:uncommon_ink"
@@ -5881,7 +2951,7 @@
               "consume": true,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800004",
+              "id": "7A11C1DF00500004",
               "item": "numismatics:sprocket",
               "optional": false,
               "stat": null,
@@ -5897,7 +2967,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "A foundry restock should keep a public line moving through more than one repair. Alloy, brass, and mechanisms buy back time while leaving ore generation and advanced machines valuable."
@@ -5905,14 +2975,14 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "create:precision_mechanism",
-          "id": "7A11C0DF00800005",
+          "id": "7A11C0DF00500005",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF0080000C",
+              "id": "7A11C2DF0050000C",
               "item": {
                 "count": 64,
                 "id": "create:andesite_alloy"
@@ -5921,7 +2991,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0080000D",
+              "id": "7A11C2DF0050000D",
               "item": {
                 "count": 32,
                 "id": "create:brass_ingot"
@@ -5930,7 +3000,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0080000E",
+              "id": "7A11C2DF0050000E",
               "item": {
                 "count": 8,
                 "id": "create:precision_mechanism"
@@ -5939,7 +3009,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0080000F",
+              "id": "7A11C2DF0050000F",
               "item": {
                 "count": 16,
                 "id": "create:belt_connector"
@@ -5957,7 +3027,7 @@
               "consume": true,
               "count": 2,
               "criterion": "",
-              "id": "7A11C1DF00800005",
+              "id": "7A11C1DF00500005",
               "item": "numismatics:sprocket",
               "optional": false,
               "stat": null,
@@ -5973,7 +3043,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "The bond is stamped with a bridge on one face and an empty foundation on the other. Redeeming it puts substantial structural and fabrication stock behind the common project your team chooses."
@@ -5981,14 +3051,14 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "numismatics:cog",
-          "id": "7A11C0DF00800006",
+          "id": "7A11C0DF00500006",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00800010",
+              "id": "7A11C2DF00500010",
               "item": {
                 "count": 256,
                 "id": "minecraft:stone_bricks"
@@ -5997,7 +3067,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800011",
+              "id": "7A11C2DF00500011",
               "item": {
                 "count": 128,
                 "id": "minecraft:oak_log"
@@ -6006,7 +3076,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800012",
+              "id": "7A11C2DF00500012",
               "item": {
                 "count": 64,
                 "id": "minecraft:iron_ingot"
@@ -6015,7 +3085,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800013",
+              "id": "7A11C2DF00500013",
               "item": {
                 "count": 16,
                 "id": "minecraft:diamond"
@@ -6024,7 +3094,7 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00800014",
+              "id": "7A11C2DF00500014",
               "item": {
                 "count": 64,
                 "id": "create:andesite_alloy"
@@ -6042,7 +3112,7 @@
               "consume": true,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800006",
+              "id": "7A11C1DF00500006",
               "item": "numismatics:cog",
               "optional": false,
               "stat": null,
@@ -6058,22 +3128,22 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00700008"
+            "7A11C0DF00500001"
           ],
           "description": [
-            "After the public events begin, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."
+            "After callings are chosen, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."
           ],
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "minecraft:written_book",
-          "id": "7A11C0DF00800007",
+          "id": "7A11C0DF00500007",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 604800,
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00800015",
+              "id": "7A11C2DF00500015",
               "item": {
                 "count": 1,
                 "id": "numismatics:bevel"
@@ -6091,7 +3161,7 @@
               "consume": true,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800007",
+              "id": "7A11C1DF00500007",
               "item": "minecraft:written_book",
               "optional": false,
               "stat": null,
@@ -6104,7 +3174,7 @@
               "consume": false,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800009",
+              "id": "7A11C1DF00500009",
               "item": null,
               "optional": false,
               "stat": null,
@@ -6120,7 +3190,7 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00800001"
+            "7A11C0DF00500001"
           ],
           "description": [
             "The bank counts base value: a Spur is 1, a Bevel 8, a Sprocket 16, and a Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs. Crowns and Suns can wait for an economy large enough to deserve them."
@@ -6128,7 +3198,7 @@
           "hide_dependency_lines": false,
           "hide_until_deps_complete": false,
           "icon": "numismatics:cog",
-          "id": "7A11C0DF00800008",
+          "id": "7A11C0DF00500008",
           "min_required_dependencies": 0,
           "optional": true,
           "repeat_cooldown": 0,
@@ -6143,7 +3213,7 @@
               "consume": false,
               "count": 1,
               "criterion": "",
-              "id": "7A11C1DF00800008",
+              "id": "7A11C1DF00500008",
               "item": null,
               "optional": false,
               "stat": null,
@@ -6158,7 +3228,7 @@
           "can_repeat": false
         }
       ],
-      "title": "08 · Market Services"
+      "title": "05 · Market Services"
     }
   ],
   "group_id": "7A11C4DF00100000",
@@ -6175,10 +3245,6 @@
     },
     {
       "id": "7A11C4DF00300000",
-      "title": "The Living World"
-    },
-    {
-      "id": "7A11C4DF00400000",
       "title": "Markets and Services"
     }
   ]
