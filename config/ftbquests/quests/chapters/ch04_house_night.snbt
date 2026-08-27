@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 5
 			x: -6
-			y: 3
+			y: 2
 		}
 		{
 			alpha: 22
@@ -24,7 +24,7 @@
 			rotation: 0.0d
 			width: 5
 			x: 6
-			y: 9
+			y: 8
 		}
 		{
 			alpha: 30
@@ -34,7 +34,7 @@
 			rotation: 0.0d
 			width: 2.5d
 			x: 0
-			y: 12
+			y: 10
 		}
 	]
 	order_index: 2
@@ -105,7 +105,7 @@
 			]
 			title: "First Thirst"
 			x: 0
-			y: -6
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00400001"]
@@ -145,7 +145,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Core II · Ritual infrastructure"
 			tasks: [
 				{
@@ -172,7 +172,7 @@
 			]
 			title: "Red Measure"
 			x: 0
-			y: -3
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
@@ -212,7 +212,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Core III · Controlled armament"
 			tasks: [
 				{
@@ -239,68 +239,13 @@
 			]
 			title: "Inherited Edge"
 			x: 0
-			y: 0
-		}
-		{
-			dependencies: ["7A11C0DF00400003"]
-			description: ["Ilyas calls the enhanced blade a debt made visible. Its scabbard bears the names of three people who may demand it be put away, including one who is not nightbound."]
-			icon: { id: "vampirism:heart_seeker_enhanced" }
-			id: "7A11C0DF00400004"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00400010"
-					item: { count: 1, id: "numismatics:cog" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400011"
-					item: { count: 1, id: "irons_spellbooks:affinity_ring_blood" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400012"
-					item: { count: 16, id: "minecraft:obsidian" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400013"
-					item: { count: 8, id: "minecraft:diamond" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			size: 1.4d
-			subtitle: "Optional mastery · Enhanced bloodwork"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0040000A"
-					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
-					title: "Have an enhanced Heartseeker"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040000B"
-					item: { count: 2, id: "vampirism:blood_infused_enhanced_iron_ingot" }
-					title: "Have two Enhanced Blood-Infused Iron"
-					type: "item"
-				}
-			]
-			title: "Night's Due"
-			x: 6
-			y: 0
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
 			description: ["The House writes blood magic as memory before it writes it as violence. Movement, recovery, and measured siphoning let a spellwright protect a night route without reducing every problem to damage."]
 			icon: { id: "irons_spellbooks:blood_rune" }
-			id: "7A11C0DF00400005"
+			id: "7A11C0DF00400004"
 			optional: true
 			rewards: [
 				{
@@ -410,8 +355,57 @@
 				{ id: "7A11C1DF00400018", title: "I demonstrated one Blood spell", type: "checkmark" }
 			]
 			title: "Scarlet Script"
-			x: -6
-			y: -1.5d
+			x: -3.5d
+			y: -2
+		}
+		{
+			dependencies: ["7A11C0DF00400002"]
+			description: ["A well-managed crypt maintains a secure blood reserve so that emerging fledglings never experience the delirium of sudden thirst. Containers and clean glassware keep the cellar orderly."]
+			icon: { id: "vampirism:blood_container" }
+			id: "7A11C0DF00400005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400024"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400025"
+					item: { count: 32, id: "minecraft:glass_bottle" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400026"
+					item: { count: 8, id: "minecraft:lead" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Blood collection"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400022"
+					item: { count: 4, id: "vampirism:blood_bottle" }
+					title: "Have four Blood Bottles"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400023"
+					item: { count: 1, id: "vampirism:blood_container" }
+					title: "Have a Blood Container"
+					type: "item"
+				}
+			]
+			title: "Crimson Reserve"
+			x: -6.5d
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
@@ -503,63 +497,14 @@
 				}
 			]
 			title: "House of Doors"
-			x: -3
-			y: 3
-		}
-		{
-			dependencies: ["7A11C0DF00400002"]
-			description: ["A well-managed crypt maintains a secure blood reserve so that emerging fledglings never experience the delirium of sudden thirst. Containers and clean glassware keep the cellar orderly."]
-			icon: { id: "vampirism:blood_container" }
-			id: "7A11C0DF00400007"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00400024"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400025"
-					item: { count: 32, id: "minecraft:glass_bottle" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400026"
-					item: { count: 8, id: "minecraft:lead" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Specialty · Blood collection"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF00400022"
-					item: { count: 4, id: "vampirism:blood_bottle" }
-					title: "Have four Blood Bottles"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400023"
-					item: { count: 1, id: "vampirism:blood_container" }
-					title: "Have a Blood Container"
-					type: "item"
-				}
-			]
-			title: "Crimson Reserve"
-			x: -6
-			y: 3
+			x: -3.5d
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
 			description: ["Blood-infused iron requires careful purification. Passing molten alloy through a specialized sieve separates impurities and tempers the metal for durable arms and armor."]
 			icon: { id: "vampirism:blood_sieve" }
-			id: "7A11C0DF00400008"
+			id: "7A11C0DF00400007"
 			optional: true
 			rewards: [
 				{
@@ -607,14 +552,14 @@
 				}
 			]
 			title: "Sieve Extraction"
-			x: 3
-			y: 3
+			x: 3.5d
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
 			description: ["Nessa Vale once delivered a sealed letter three days late because she refused to cross a sleeping farm uninvited. The route took longer; the trust it preserved became a road everyone still used."]
 			icon: { id: "vampirism:umbrella" }
-			id: "7A11C0DF00400009"
+			id: "7A11C0DF00400008"
 			optional: true
 			rewards: [
 				{
@@ -648,7 +593,7 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "diamond"
 			size: 1.0d
 			subtitle: "Specialty · Safe night routes"
 			tasks: [
@@ -675,17 +620,72 @@
 				}
 			]
 			title: "Moon Courier"
-			x: 6
-			y: 3
+			x: 6.5d
+			y: 1
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Ilyas calls the enhanced blade a debt made visible. Its scabbard bears the names of three people who may demand it be put away, including one who is not nightbound."]
+			icon: { id: "vampirism:heart_seeker_enhanced" }
+			id: "7A11C0DF00400009"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400010"
+					item: { count: 1, id: "numismatics:cog" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400011"
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_blood" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400012"
+					item: { count: 16, id: "minecraft:obsidian" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400013"
+					item: { count: 8, id: "minecraft:diamond" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Optional mastery · Enhanced bloodwork"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0040000A"
+					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
+					title: "Have an enhanced Heartseeker"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040000B"
+					item: { count: 2, id: "vampirism:blood_infused_enhanced_iron_ingot" }
+					title: "Have two Enhanced Blood-Infused Iron"
+					type: "item"
+				}
+			]
+			title: "Night's Due"
+			x: 3.5d
+			y: -2
 		}
 		{
 			dependencies: [
 				"7A11C0DF00400003"
-				"7A11C0DF00400005"
+				"7A11C0DF00400004"
 				"7A11C0DF00400006"
+				"7A11C0DF00400005"
 				"7A11C0DF00400007"
 				"7A11C0DF00400008"
-				"7A11C0DF00400009"
 			]
 			description: ["A house becomes fragile when one person holds every useful secret. Two practiced specialties are enough to share responsibility while leaving a third role open for a later arrival."]
 			icon: { id: "vampirism:vampire_cloak_white_black" }
@@ -693,14 +693,14 @@
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Breadth · Core plus any two specialties"
 			tasks: [
 				{ id: "7A11C1DF00400016", title: "I completed two specialties", type: "checkmark" }
 			]
 			title: "Two Seals"
 			x: 0
-			y: 6.5d
+			y: 4
 		}
 		{
 			dependencies: ["7A11C0DF0040000A"]
@@ -747,7 +747,7 @@
 			]
 			title: "Night Charter"
 			x: 0
-			y: 9.5d
+			y: 7
 		}
 	]
 	title: "04 · The House of Night"

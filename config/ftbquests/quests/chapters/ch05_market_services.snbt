@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 5
 			x: 0
-			y: 4
+			y: 1
 		}
 	]
 	order_index: 0
@@ -34,7 +34,7 @@
 			]
 			title: "Read the Board"
 			x: 0
-			y: -5
+			y: -4
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
@@ -77,8 +77,8 @@
 				}
 			]
 			title: "Field Kit"
-			x: -6
-			y: -1.5d
+			x: -5
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
@@ -127,8 +127,8 @@
 				}
 			]
 			title: "Works Kit"
-			x: -2
-			y: -0.5d
+			x: -1.7d
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
@@ -177,8 +177,8 @@
 				}
 			]
 			title: "Arcane Kit"
-			x: 2
-			y: -0.5d
+			x: 1.7d
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
@@ -227,14 +227,47 @@
 				}
 			]
 			title: "Foundry Kit"
-			x: 6
-			y: -1.5d
+			x: 5
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["After callings are chosen, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."]
+			icon: { id: "minecraft:written_book" }
+			id: "7A11C0DF00500006"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 604800
+			rewards: [
+				{
+					id: "7A11C2DF00500015"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: true
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Weekly report · 1 team Bevel"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500007"
+					item: { count: 1, id: "minecraft:written_book" }
+					title: "Submit one written field ledger"
+					type: "item"
+				}
+				{ id: "7A11C1DF00500009", title: "I named the place, problem, and reviewer", type: "checkmark" }
+			]
+			title: "Rumour Ledger"
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
 			description: ["The bond is stamped with a bridge on one face and an empty foundation on the other. Redeeming it puts substantial structural and fabrication stock behind the common project your team chooses."]
 			icon: { id: "numismatics:cog" }
-			id: "7A11C0DF00500006"
+			id: "7A11C0DF00500007"
 			optional: true
 			can_repeat: true
 			repeat_cooldown: 604800
@@ -284,40 +317,7 @@
 			]
 			title: "Concord Bond"
 			x: 0
-			y: 3
-		}
-		{
-			dependencies: ["7A11C0DF00500001"]
-			description: ["After callings are chosen, the archive pays for one specific maintenance report: a findable place, a real problem, and the name of whoever will check the result. The written book is consumed as the filed copy."]
-			icon: { id: "minecraft:written_book" }
-			id: "7A11C0DF00500007"
-			optional: true
-			can_repeat: true
-			repeat_cooldown: 604800
-			rewards: [
-				{
-					id: "7A11C2DF00500015"
-					item: { count: 1, id: "numismatics:bevel" }
-					team_reward: true
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Weekly report · 1 team Bevel"
-			tasks: [
-				{
-					consume_items: true
-					id: "7A11C1DF00500007"
-					item: { count: 1, id: "minecraft:written_book" }
-					title: "Submit one written field ledger"
-					type: "item"
-				}
-				{ id: "7A11C1DF00500009", title: "I named the place, problem, and reviewer", type: "checkmark" }
-			]
-			title: "Rumour Ledger"
-			x: -3
-			y: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
@@ -333,8 +333,8 @@
 				{ id: "7A11C1DF00500008", title: "I understand the coin denominations", type: "checkmark" }
 			]
 			title: "Know the Coins"
-			x: 3
-			y: 6.5d
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "05 · Market Services"

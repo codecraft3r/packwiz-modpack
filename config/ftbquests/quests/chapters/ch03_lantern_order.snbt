@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 5
 			x: -6
-			y: 3
+			y: 2
 		}
 		{
 			alpha: 22
@@ -24,7 +24,7 @@
 			rotation: 0.0d
 			width: 5
 			x: 6
-			y: 9
+			y: 8
 		}
 		{
 			alpha: 30
@@ -34,7 +34,7 @@
 			rotation: 0.0d
 			width: 2.5d
 			x: 0
-			y: 12
+			y: 10
 		}
 	]
 	order_index: 1
@@ -105,7 +105,7 @@
 			]
 			title: "Salt and Steel"
 			x: 0
-			y: -6
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
@@ -145,7 +145,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Core II · Remedies and wards"
 			tasks: [
 				{
@@ -172,7 +172,7 @@
 			]
 			title: "Consecrated Work"
 			x: 0
-			y: -3
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
@@ -212,7 +212,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Core III · Ranged fieldcraft"
 			tasks: [
 				{
@@ -239,68 +239,13 @@
 			]
 			title: "Long Watch"
 			x: 0
-			y: 0
-		}
-		{
-			dependencies: ["7A11C0DF00300003"]
-			description: ["Tamsin's last rule is simple: power belongs where it can be accounted for. The enhanced axe hangs beside a ledger of every time it left the refuge and whether it returned clean."]
-			icon: { id: "vampirism:hunter_axe_enhanced" }
-			id: "7A11C0DF00300004"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00300010"
-					item: { count: 1, id: "numismatics:cog" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300011"
-					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300012"
-					item: { count: 16, id: "minecraft:obsidian" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300013"
-					item: { count: 8, id: "minecraft:diamond" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "hexagon"
-			size: 1.4d
-			subtitle: "Optional mastery · Enhanced fieldcraft"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0030000A"
-					item: { count: 1, id: "vampirism:hunter_axe_enhanced" }
-					title: "Have an enhanced Hunter Axe"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0030000B"
-					item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }
-					title: "Have enhanced splash Holy Water"
-					type: "item"
-				}
-			]
-			title: "Bright Oath"
-			x: 6
-			y: 0
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
 			description: ["Sister Aveline's manual begins with triage, not triumph. A spellwright who can heal, recall, and strike with restraint makes every expedition less dependent on whichever veteran happened to log in first."]
 			icon: { id: "irons_spellbooks:holy_rune" }
-			id: "7A11C0DF00300005"
+			id: "7A11C0DF00300004"
 			optional: true
 			rewards: [
 				{
@@ -410,8 +355,64 @@
 				{ id: "7A11C1DF00300018", title: "I demonstrated one Holy spell", type: "checkmark" }
 			]
 			title: "Mercy Manual"
-			x: -6
-			y: -1.5d
+			x: -3.5d
+			y: -2
+		}
+		{
+			dependencies: ["7A11C0DF00300002"]
+			description: ["A line of salt across a doorway can give a besieged patrol the five seconds needed to reload. Stocking purified salt and defensive waters ensures the refuge holds even when outnumbered."]
+			icon: { id: "vampirism:pure_salt" }
+			id: "7A11C0DF00300005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300025"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300026"
+					item: { count: 16, id: "vampirism:holy_water_bottle_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300027"
+					item: { count: 16, id: "vampirism:pure_salt" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Garlic and salt wards"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300022"
+					item: { count: 8, id: "vampirism:pure_salt" }
+					title: "Have eight Pure Salt"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300023"
+					item: { count: 32, id: "vampirism:holy_salt" }
+					title: "Have thirty-two Holy Salt"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300024"
+					item: { count: 1, id: "vampirism:injection_garlic" }
+					title: "Have a Garlic Injection"
+					type: "item"
+				}
+			]
+			title: "Pure Defense"
+			x: -6.5d
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
@@ -503,70 +504,14 @@
 				}
 			]
 			title: "Stone Lantern"
-			x: -3
-			y: 3
-		}
-		{
-			dependencies: ["7A11C0DF00300002"]
-			description: ["A line of salt across a doorway can give a besieged patrol the five seconds needed to reload. Stocking purified salt and defensive waters ensures the refuge holds even when outnumbered."]
-			icon: { id: "vampirism:pure_salt" }
-			id: "7A11C0DF00300007"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00300025"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300026"
-					item: { count: 16, id: "vampirism:holy_water_bottle_normal" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300027"
-					item: { count: 16, id: "vampirism:pure_salt" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Specialty · Garlic and salt wards"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF00300022"
-					item: { count: 8, id: "vampirism:pure_salt" }
-					title: "Have eight Pure Salt"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00300023"
-					item: { count: 32, id: "vampirism:holy_salt" }
-					title: "Have thirty-two Holy Salt"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00300024"
-					item: { count: 1, id: "vampirism:injection_garlic" }
-					title: "Have a Garlic Injection"
-					type: "item"
-				}
-			]
-			title: "Pure Defense"
-			x: -6
-			y: 3
+			x: -3.5d
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
 			description: ["Different threats demand different answers: incendiary spitfire quarrels illuminate shadows, while teleport quarrels reposition a trapped scout to safe ground."]
 			icon: { id: "vampirism:crossbow_arrow_spitfire" }
-			id: "7A11C0DF00300008"
+			id: "7A11C0DF00300007"
 			optional: true
 			rewards: [
 				{
@@ -608,14 +553,14 @@
 				}
 			]
 			title: "Hunter Armament"
-			x: 3
-			y: 3
+			x: 3.5d
+			y: 1
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
 			description: ["A photograph can warn a neighbor without crossing their boundary or turning rumor into accusation. The ledger gives the Order evidence it can discuss, archive, and eventually admit was wrong."]
 			icon: { id: "exposure:camera" }
-			id: "7A11C0DF00300009"
+			id: "7A11C0DF00300008"
 			optional: true
 			rewards: [
 				{
@@ -649,7 +594,7 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "diamond"
 			size: 1.0d
 			subtitle: "Specialty · Claim-safe reconnaissance"
 			tasks: [
@@ -670,17 +615,72 @@
 				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
 			]
 			title: "Field Ledger"
-			x: 6
-			y: 3
+			x: 6.5d
+			y: 1
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Tamsin's last rule is simple: power belongs where it can be accounted for. The enhanced axe hangs beside a ledger of every time it left the refuge and whether it returned clean."]
+			icon: { id: "vampirism:hunter_axe_enhanced" }
+			id: "7A11C0DF00300009"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300010"
+					item: { count: 1, id: "numismatics:cog" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300011"
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300012"
+					item: { count: 16, id: "minecraft:obsidian" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300013"
+					item: { count: 8, id: "minecraft:diamond" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Optional mastery · Enhanced fieldcraft"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000A"
+					item: { count: 1, id: "vampirism:hunter_axe_enhanced" }
+					title: "Have an enhanced Hunter Axe"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000B"
+					item: { count: 1, id: "vampirism:holy_water_splash_bottle_enhanced" }
+					title: "Have enhanced splash Holy Water"
+					type: "item"
+				}
+			]
+			title: "Bright Oath"
+			x: 3.5d
+			y: -2
 		}
 		{
 			dependencies: [
 				"7A11C0DF00300003"
-				"7A11C0DF00300005"
+				"7A11C0DF00300004"
 				"7A11C0DF00300006"
+				"7A11C0DF00300005"
 				"7A11C0DF00300007"
 				"7A11C0DF00300008"
-				"7A11C0DF00300009"
 			]
 			description: ["No refuge should depend on a single expert. Two practiced specialties are enough to make the Order resilient while leaving room for later players to adopt the third."]
 			icon: { id: "minecraft:lantern" }
@@ -688,14 +688,14 @@
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Breadth · Core plus any two specialties"
 			tasks: [
 				{ id: "7A11C1DF00300016", title: "I completed two specialties", type: "checkmark" }
 			]
 			title: "Two Lanterns"
 			x: 0
-			y: 6.5d
+			y: 4
 		}
 		{
 			dependencies: ["7A11C0DF0030000A"]
@@ -742,7 +742,7 @@
 			]
 			title: "Lantern Charter"
 			x: 0
-			y: 9.5d
+			y: 7
 		}
 	]
 	title: "03 · The Lantern Order"

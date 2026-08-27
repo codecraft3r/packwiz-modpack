@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 6
 			x: 0
-			y: 2
+			y: 1.5d
 		}
 		{
 			alpha: 24
@@ -24,7 +24,7 @@
 			rotation: 0.0d
 			width: 3
 			x: 0
-			y: 8
+			y: 7.5d
 		}
 	]
 	order_index: 0
@@ -44,7 +44,7 @@
 			]
 			title: "Three Callings"
 			x: 0
-			y: -5
+			y: -4
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -66,8 +66,8 @@
 					type: "item"
 				}
 			]
-			shape: "circle"
-			size: 1.0d
+			shape: "hexagon"
+			size: 1.3d
 			subtitle: "Vampire · Nightbound route"
 			tasks: [
 				{
@@ -80,8 +80,8 @@
 				{ advancement: "vampirism:vampire/become_vampire", criterion: "", id: "7A11C1DF00200003", type: "advancement" }
 			]
 			title: "Join the House"
-			x: -5
-			y: -2
+			x: -4
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -140,7 +140,7 @@
 				}
 			]
 			shape: "gear"
-			size: 1.0d
+			size: 1.3d
 			subtitle: "Free Company · Shared services"
 			tasks: [
 				{
@@ -167,7 +167,7 @@
 			]
 			title: "Join the Commons"
 			x: 0
-			y: -2
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -189,8 +189,8 @@
 					type: "item"
 				}
 			]
-			shape: "circle"
-			size: 1.0d
+			shape: "hexagon"
+			size: 1.3d
 			subtitle: "Hunter · Lantern route"
 			tasks: [
 				{
@@ -203,11 +203,11 @@
 				{ advancement: "vampirism:hunter/become_hunter", criterion: "", id: "7A11C1DF00200008", type: "advancement" }
 			]
 			title: "Join the Order"
-			x: 5
-			y: -2
+			x: 4
+			y: -1
 		}
 		{
-			dependencies: ["7A11C0DF00200001"]
+			dependencies: ["7A11C0DF00200003"]
 			description: ["The island rewards travelers who mark their turns before nightfall. A compass in hand turns uncharted wilderness into legible paths everyone can share."]
 			icon: { id: "explorerscompass:explorerscompass" }
 			id: "7A11C0DF00200005"
@@ -239,11 +239,11 @@
 				}
 			]
 			title: "Wayfinder Guide"
-			x: -2.5d
-			y: 0.5d
+			x: -2
+			y: 1.5d
 		}
 		{
-			dependencies: ["7A11C0DF00200001"]
+			dependencies: ["7A11C0DF00200003"]
 			description: ["Trade here runs on Numismatics coins: Spurs for pocket change, Bevels for daily labor, and Sprockets for skilled craftsmanship. Keep a guide close to understand posted prices."]
 			icon: { id: "numismatics:banking_guide" }
 			id: "7A11C0DF00200006"
@@ -269,8 +269,8 @@
 				}
 			]
 			title: "First Currency"
-			x: 2.5d
-			y: 0.5d
+			x: 2
+			y: 1.5d
 		}
 		{
 			dependencies: ["7A11C0DF00200002", "7A11C0DF00200003", "7A11C0DF00200004"]
@@ -287,7 +287,7 @@
 			]
 			title: "Keep Doors Open"
 			x: 0
-			y: 3.5d
+			y: 4
 		}
 	]
 	title: "02 · Choose a Calling"
