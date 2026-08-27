@@ -105,7 +105,7 @@
 			]
 			title: "Salt and Steel"
 			x: 0
-			y: -5
+			y: -6
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
@@ -121,25 +121,25 @@
 				}
 				{
 					id: "7A11C2DF00300007"
-					item: { count: 32, id: "minecraft:glass_bottle" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300008"
 					item: { count: 16, id: "minecraft:blaze_powder" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300009"
+					id: "7A11C2DF00300008"
 					item: { count: 16, id: "minecraft:nether_wart" }
 					team_reward: false
 					type: "item"
 				}
 				{
+					id: "7A11C2DF00300009"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
 					id: "7A11C2DF0030000A"
-					item: { count: 32, id: "vampirism:holy_salt" }
+					item: { count: 16, id: "minecraft:gunpowder" }
 					team_reward: false
 					type: "item"
 				}
@@ -172,7 +172,7 @@
 			]
 			title: "Consecrated Work"
 			x: 0
-			y: -2
+			y: -3
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
@@ -194,13 +194,13 @@
 				}
 				{
 					id: "7A11C2DF0030000D"
-					item: { count: 32, id: "vampirism:crossbow_arrow_spitfire" }
+					item: { count: 32, id: "minecraft:feather" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030000E"
-					item: { count: 16, id: "vampirism:crossbow_arrow_teleport" }
+					item: { count: 32, id: "minecraft:flint" }
 					team_reward: false
 					type: "item"
 				}
@@ -239,7 +239,7 @@
 			]
 			title: "Long Watch"
 			x: 0
-			y: 1
+			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -294,7 +294,7 @@
 			]
 			title: "Bright Oath"
 			x: 6
-			y: 1
+			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
@@ -411,7 +411,7 @@
 			]
 			title: "Mercy Manual"
 			x: -6
-			y: 4
+			y: -1.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300002"]
@@ -503,42 +503,147 @@
 				}
 			]
 			title: "Stone Lantern"
-			x: -2
-			y: 4
+			x: -3
+			y: 3
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
-			description: ["A photograph can warn a neighbor without crossing their boundary or turning rumor into accusation. The ledger gives the Order evidence it can discuss, archive, and eventually admit was wrong."]
-			icon: { id: "exposure:camera" }
+			dependencies: ["7A11C0DF00300002"]
+			description: ["A line of salt across a doorway can give a besieged patrol the five seconds needed to reload. Stocking purified salt and defensive waters ensures the refuge holds even when outnumbered."]
+			icon: { id: "vampirism:pure_salt" }
 			id: "7A11C0DF00300007"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF00300022"
+					id: "7A11C2DF00300025"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300023"
+					id: "7A11C2DF00300026"
+					item: { count: 16, id: "vampirism:holy_water_bottle_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300027"
+					item: { count: 16, id: "vampirism:pure_salt" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Garlic and salt wards"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300022"
+					item: { count: 8, id: "vampirism:pure_salt" }
+					title: "Have eight Pure Salt"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300023"
+					item: { count: 32, id: "vampirism:holy_salt" }
+					title: "Have thirty-two Holy Salt"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300024"
+					item: { count: 1, id: "vampirism:injection_garlic" }
+					title: "Have a Garlic Injection"
+					type: "item"
+				}
+			]
+			title: "Pure Defense"
+			x: -6
+			y: 3
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Different threats demand different answers: incendiary spitfire quarrels illuminate shadows, while teleport quarrels reposition a trapped scout to safe ground."]
+			icon: { id: "vampirism:crossbow_arrow_spitfire" }
+			id: "7A11C0DF00300008"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030002A"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002B"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002C"
+					item: { count: 64, id: "minecraft:arrow" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Specialty · Specialized ammunition"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300028"
+					item: { count: 16, id: "vampirism:crossbow_arrow_spitfire" }
+					title: "Have sixteen spitfire quarrels"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300029"
+					item: { count: 16, id: "vampirism:crossbow_arrow_teleport" }
+					title: "Have sixteen teleport quarrels"
+					type: "item"
+				}
+			]
+			title: "Hunter Armament"
+			x: 3
+			y: 3
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["A photograph can warn a neighbor without crossing their boundary or turning rumor into accusation. The ledger gives the Order evidence it can discuss, archive, and eventually admit was wrong."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00300009"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030002D"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002E"
 					item: { count: 1, id: "exposure:album" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300024"
+					id: "7A11C2DF0030002F"
 					item: { count: 4, id: "exposure:color_film" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300025"
+					id: "7A11C2DF00300030"
 					item: { count: 4, id: "exposure:black_and_white_film" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300026"
+					id: "7A11C2DF00300031"
 					item: { count: 8, id: "exposure:photograph_frame" }
 					team_reward: false
 					type: "item"
@@ -565,14 +670,21 @@
 				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
 			]
 			title: "Field Ledger"
-			x: 2
-			y: 4
+			x: 6
+			y: 3
 		}
 		{
-			dependencies: ["7A11C0DF00300003", "7A11C0DF00300005", "7A11C0DF00300006", "7A11C0DF00300007"]
+			dependencies: [
+				"7A11C0DF00300003"
+				"7A11C0DF00300005"
+				"7A11C0DF00300006"
+				"7A11C0DF00300007"
+				"7A11C0DF00300008"
+				"7A11C0DF00300009"
+			]
 			description: ["No refuge should depend on a single expert. Two practiced specialties are enough to make the Order resilient while leaving room for later players to adopt the third."]
 			icon: { id: "minecraft:lantern" }
-			id: "7A11C0DF00300008"
+			id: "7A11C0DF0030000A"
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"
@@ -583,34 +695,34 @@
 			]
 			title: "Two Lanterns"
 			x: 0
-			y: 7
+			y: 6.5d
 		}
 		{
-			dependencies: ["7A11C0DF00300008"]
+			dependencies: ["7A11C0DF0030000A"]
 			description: ["Tamsin keeps one lodestone unengraved for the refuge that will outlive its founders. Its eventual name should belong to the stranger who finds shelter there when no officer is online."]
 			icon: { id: "minecraft:lodestone" }
-			id: "7A11C0DF00300009"
+			id: "7A11C0DF0030000B"
 			rewards: [
 				{
-					id: "7A11C2DF00300027"
+					id: "7A11C2DF00300032"
 					item: { count: 1, id: "numismatics:cog" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300028"
+					id: "7A11C2DF00300033"
 					item: { count: 128, id: "minecraft:stone_bricks" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300029"
+					id: "7A11C2DF00300034"
 					item: { count: 32, id: "minecraft:lantern" }
 					team_reward: true
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0030002A"
+					id: "7A11C2DF00300035"
 					item: { count: 8, id: "minecraft:barrel" }
 					team_reward: true
 					type: "item"
@@ -630,7 +742,7 @@
 			]
 			title: "Lantern Charter"
 			x: 0
-			y: 10
+			y: 9.5d
 		}
 	]
 	title: "03 · The Lantern Order"

@@ -44,7 +44,7 @@
 			]
 			title: "Three Callings"
 			x: 0
-			y: -4
+			y: -5
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -81,7 +81,7 @@
 			]
 			title: "Join the House"
 			x: -5
-			y: -1
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -167,7 +167,7 @@
 			]
 			title: "Join the Commons"
 			x: 0
-			y: -0.5d
+			y: -2
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
@@ -204,13 +204,79 @@
 			]
 			title: "Join the Order"
 			x: 5
-			y: -1
+			y: -2
+		}
+		{
+			dependencies: ["7A11C0DF00200001"]
+			description: ["The island rewards travelers who mark their turns before nightfall. A compass in hand turns uncharted wilderness into legible paths everyone can share."]
+			icon: { id: "explorerscompass:explorerscompass" }
+			id: "7A11C0DF00200005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0020000E"
+					item: { count: 16, id: "minecraft:torch" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0020000F"
+					item: { count: 16, id: "minecraft:bread" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Optional · Navigation basics"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0020000A"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Have an Explorer's Compass"
+					type: "item"
+				}
+			]
+			title: "Wayfinder Guide"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00200001"]
+			description: ["Trade here runs on Numismatics coins: Spurs for pocket change, Bevels for daily labor, and Sprockets for skilled craftsmanship. Keep a guide close to understand posted prices."]
+			icon: { id: "numismatics:banking_guide" }
+			id: "7A11C0DF00200006"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00200010"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Optional · The island ledger"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0020000B"
+					item: { count: 1, id: "numismatics:banking_guide" }
+					title: "Have a banking guide"
+					type: "item"
+				}
+			]
+			title: "First Currency"
+			x: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["7A11C0DF00200002", "7A11C0DF00200003", "7A11C0DF00200004"]
 			description: ["A first calling gives the world a place to start, not a wall around the others. Workshops, archives, and public events remain open so players can understand one another's craft."]
 			icon: { id: "minecraft:oak_door" }
-			id: "7A11C0DF00200005"
+			id: "7A11C0DF00200007"
 			min_required_dependencies: 1
 			rewards: [ ]
 			shape: "hexagon"
@@ -221,7 +287,7 @@
 			]
 			title: "Keep Doors Open"
 			x: 0
-			y: 3
+			y: 3.5d
 		}
 	]
 	title: "02 · Choose a Calling"

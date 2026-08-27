@@ -21,7 +21,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7A11C0DF00200005"]
+			dependencies: ["7A11C0DF00200007"]
 			description: ["The board turns quest earnings into choices players can feel in the world. Small purses solve immediate friction; larger denominations fund whole-team projects without pretending every coin is identical pocket change."]
 			icon: { id: "numismatics:banking_guide" }
 			id: "7A11C0DF00500001"
