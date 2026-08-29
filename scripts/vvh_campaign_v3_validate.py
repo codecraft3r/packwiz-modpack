@@ -72,6 +72,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:blood_infused_iron_ingot",
     "vampirism:blood_pedestal",
     "vampirism:blood_sieve",
+    "vampirism:crossbow_arrow_normal",
     "vampirism:crossbow_arrow_spitfire",
     "vampirism:crossbow_arrow_teleport",
     "vampirism:crossbow_arrow_vampire_killer",

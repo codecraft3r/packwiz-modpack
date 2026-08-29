@@ -191,7 +191,7 @@
 				}
 				{
 					id: "7A11C2DF0030000C"
-					item: { count: 64, id: "minecraft:arrow" }
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
 					team_reward: false
 					type: "item"
 				}
@@ -665,7 +665,7 @@
 				}
 				{
 					id: "7A11C2DF00300032"
-					item: { count: 64, id: "minecraft:arrow" }
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
 					team_reward: false
 					type: "item"
 				}

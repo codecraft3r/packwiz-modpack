@@ -60,6 +60,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:blood_infused_iron_ingot` | Blood-Infused Iron Ingot | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_iron_ingot; data/vampirism/recipe/vampire/blood_infused_iron_ingot.json` |
 | `vampirism` | `vampirism:blood_pedestal` | Blood Pedestal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_pedestal` |
 | `vampirism` | `vampirism:blood_sieve` | Blood Sieve | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/blood_sieve.json; data/vampirism/recipe/general/blood_sieve.json` |
+| `vampirism` | `vampirism:crossbow_arrow_normal` | Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/crossbow_arrow_normal.json; data/vampirism/recipe/hunter/crossbow_arrow_normal.json` |
 | `vampirism` | `vampirism:crossbow_arrow_spitfire` | Spitfire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_spitfire` |
 | `vampirism` | `vampirism:crossbow_arrow_teleport` | Teleport Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_teleport` |
 | `vampirism` | `vampirism:crossbow_arrow_vampire_killer` | Vampire Killer Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_vampire_killer` |

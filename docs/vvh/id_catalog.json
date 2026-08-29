@@ -400,6 +400,14 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_normal",
+      "display_name": "Quarrel",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/crossbow_arrow_normal.json; data/vampirism/recipe/hunter/crossbow_arrow_normal.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:crossbow_arrow_spitfire",
       "display_name": "Spitfire",
       "source_jar": "Vampirism-1.21-1.10.12.jar",

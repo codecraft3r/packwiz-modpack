@@ -193,6 +193,7 @@
       "vampirism:blood_infused_iron_ingot",
       "vampirism:blood_pedestal",
       "vampirism:blood_sieve",
+      "vampirism:crossbow_arrow_normal",
       "vampirism:crossbow_arrow_spitfire",
       "vampirism:crossbow_arrow_teleport",
       "vampirism:crossbow_arrow_vampire_killer",
@@ -291,8 +292,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
-        "actual": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
+        "index": "7da27694f6c39543fbe65de593c96dea1c86f0b2caaa3eeb104051d2842e8c6e",
+        "actual": "7da27694f6c39543fbe65de593c96dea1c86f0b2caaa3eeb104051d2842e8c6e",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -316,8 +317,8 @@
         "match": true
       }
     },
-    "index_sha256": "04a5cdf2d758343af3105d7321d4592dd560875e3514768e05fef9acdcff1abb",
-    "pack_toml_declared_index_sha256": "04a5cdf2d758343af3105d7321d4592dd560875e3514768e05fef9acdcff1abb",
+    "index_sha256": "fcb05660f3565be432c2505ca1d375c3314651e6e316b90123f168a1fc9b0cf0",
+    "pack_toml_declared_index_sha256": "fcb05660f3565be432c2505ca1d375c3314651e6e316b90123f168a1fc9b0cf0",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
