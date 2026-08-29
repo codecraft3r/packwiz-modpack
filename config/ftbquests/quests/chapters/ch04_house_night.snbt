@@ -948,7 +948,6 @@
 			description: ["Complete any three specialty nodes above. Every counted specialty descends from Inherited Edge, so the gate proves the full core while allowing bloodwork, hospitality, magic, records, or transport to define the House."]
 			icon: { id: "vampirism:vampire_cloak_white_black" }
 			id: "7A11C0DF0040000A"
-			hide_dependency_lines: true
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"

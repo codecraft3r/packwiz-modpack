@@ -944,7 +944,6 @@
 			description: ["Complete any three specialty nodes above. Because every counted specialty descends from Long Watch, this breadth gate proves the full core spine without forcing one preferred Hunter personality."]
 			icon: { id: "minecraft:lantern" }
 			id: "7A11C0DF0030000A"
-			hide_dependency_lines: true
 			min_required_dependencies: 3
 			rewards: [ ]
 			shape: "diamond"

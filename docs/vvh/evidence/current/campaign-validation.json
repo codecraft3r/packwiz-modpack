@@ -291,13 +291,13 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "e277528e4016785e248870423885e17472e6297cdcdbb2f7ff6ec1478e9d6c28",
-        "actual": "e277528e4016785e248870423885e17472e6297cdcdbb2f7ff6ec1478e9d6c28",
+        "index": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
+        "actual": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "6cdf527368b7c792c46b971a7551a9c5a9df7d91f9232e71143434f24689cad7",
-        "actual": "6cdf527368b7c792c46b971a7551a9c5a9df7d91f9232e71143434f24689cad7",
+        "index": "15f553dd9ef405c8ed96227c0b8ebd32d5087765278b7a6a0358c9b2d9cbf44f",
+        "actual": "15f553dd9ef405c8ed96227c0b8ebd32d5087765278b7a6a0358c9b2d9cbf44f",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -316,8 +316,8 @@
         "match": true
       }
     },
-    "index_sha256": "369515785a886e7bf73012a8986fd5f71a4bb02f194358c159da4b3a7941e925",
-    "pack_toml_declared_index_sha256": "369515785a886e7bf73012a8986fd5f71a4bb02f194358c159da4b3a7941e925",
+    "index_sha256": "04a5cdf2d758343af3105d7321d4592dd560875e3514768e05fef9acdcff1abb",
+    "pack_toml_declared_index_sha256": "04a5cdf2d758343af3105d7321d4592dd560875e3514768e05fef9acdcff1abb",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

@@ -792,7 +792,6 @@ def build_hunters(group: str) -> Chapter:
         shape="diamond",
         size=1.3,
         min_deps=3,
-        hide_dependency_lines=True,
         tasks=[check_task(3, 22, "I completed three Hunter specialties")],
         dependencies=[mercy, defense, palette, stores, transit, armament, ledger, mastery],
     )
@@ -1160,7 +1159,6 @@ def build_vampires(group: str) -> Chapter:
         shape="diamond",
         size=1.3,
         min_deps=3,
-        hide_dependency_lines=True,
         tasks=[check_task(4, 22, "I completed three Vampire specialties")],
         dependencies=[script, reserve, palette, stores, transit, metallurgy, courier, mastery],
     )

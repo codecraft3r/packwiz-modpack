@@ -1973,7 +1973,7 @@
           "description": [
             "Complete any three specialty nodes above. Because every counted specialty descends from Long Watch, this breadth gate proves the full core spine without forcing one preferred Hunter personality."
           ],
-          "hide_dependency_lines": true,
+          "hide_dependency_lines": false,
           "icon": "minecraft:lantern",
           "id": "7A11C0DF0030000A",
           "min_required_dependencies": 3,
@@ -3428,7 +3428,7 @@
           "description": [
             "Complete any three specialty nodes above. Every counted specialty descends from Inherited Edge, so the gate proves the full core while allowing bloodwork, hospitality, magic, records, or transport to define the House."
           ],
-          "hide_dependency_lines": true,
+          "hide_dependency_lines": false,
           "icon": "vampirism:vampire_cloak_white_black",
           "id": "7A11C0DF0040000A",
           "min_required_dependencies": 3,
