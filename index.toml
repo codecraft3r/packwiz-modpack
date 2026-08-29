@@ -292,7 +292,7 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
-hash = "d3f09520e471a838e8bb567b0308ea3b504516813658c03dd2b87c5db415b16d"
+hash = "f0e4917834e8c849ebea831ee25cd46035e2eca858f93ee95f1fb2912ccc142c"
 
 [[files]]
 file = "kubejs/server_scripts/givespell.js"
@@ -764,6 +764,16 @@ metafile = true
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "531aa276b74eabc24566c57412527767238c74ee16b9c646dff511f56dba990c"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-mekanism.pw.toml"
+hash = "828f12a754a929bf2e955cf9d0acca4cbe305f172e94c556fe9b0704bcaff7e0"
 metafile = true
 
 [[files]]
