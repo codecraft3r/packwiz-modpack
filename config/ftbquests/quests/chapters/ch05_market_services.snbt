@@ -221,7 +221,8 @@
 				{
 					consume_items: true
 					id: "7A11C1DF00500005"
-					item: { count: 2, id: "numismatics:sprocket" }
+					item: { count: 1, id: "numismatics:sprocket" }
+					count: 2
 					title: "Submit 2 Sprockets"
 					type: "item"
 				}
@@ -327,7 +328,8 @@
 				{
 					consume_items: true
 					id: "7A11C1DF0050000A"
-					item: { count: 2, id: "numismatics:sprocket" }
+					item: { count: 1, id: "numismatics:sprocket" }
+					count: 2
 					title: "Submit 2 Sprockets"
 					type: "item"
 				}
