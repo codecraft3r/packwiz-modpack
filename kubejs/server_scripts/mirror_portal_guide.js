@@ -1,7 +1,7 @@
 // Server script for Mirror Dimension portal feedback & guidance
 
 ItemEvents.rightClicked('minecraft:bone_meal', event => {
-  const { player, level, target } = event
+  const { player, level, target, server } = event
   if (!target || !target.block) return
 
   const clickedBlock = target.block
@@ -16,84 +16,48 @@ ItemEvents.rightClicked('minecraft:bone_meal', event => {
 
   // Check if player clicked a flower block while sneaking
   if (player.isCrouching() && isFlower(clickedBlock)) {
-    const x = clickedBlock.x
-    const y = clickedBlock.y
-    const z = clickedBlock.z
+    const currentDim = String(level.dimension)
+    const isMirror = currentDim.includes('overworldmirror')
+    const targetDim = isMirror ? 'minecraft:overworld' : 'overworldmirror:overworld'
 
-    // Relative offsets for 8 perimeter blocks around a center
-    const perimeterOffsets = [
-      [-1, -1], [-1, 0], [-1, 1],
-      [ 0, -1],          [ 0, 1],
-      [ 1, -1], [ 1, 0], [ 1, 1]
-    ]
+    const username = player.username || player.name.string
+    const x = player.x.toFixed(2)
+    const y = player.y.toFixed(2)
+    const z = player.z.toFixed(2)
 
-    // Candidate centers relative to clicked block
-    // The clicked block could be any of the 8 perimeter flowers, or the center itself
-    const candidateCenterOffsets = [
-      [ 0,  0],
-      [-1, -1], [-1, 0], [-1, 1],
-      [ 0, -1],          [ 0, 1],
-      [ 1, -1], [ 1, 0], [ 1, 1]
-    ]
-
-    let bestCandidate = null
-    let maxFlowerCount = -1
-    let bestMissingPositions = []
-
-    for (const [cxOff, czOff] of candidateCenterOffsets) {
-      const cx = x + cxOff
-      const cz = z + czOff
-      let flowerCount = 0
-      let missingPos = []
-
-      for (const [pxOff, pzOff] of perimeterOffsets) {
-        const px = cx + pxOff
-        const pz = cz + pzOff
-        const b = level.getBlock(px, y, pz)
-        if (isFlower(b)) {
-          flowerCount++
-        } else {
-          missingPos.push({ x: px, y: y, z: pz })
-        }
-      }
-
-      if (flowerCount > maxFlowerCount) {
-        maxFlowerCount = flowerCount
-        bestCandidate = { x: cx, y: y, z: cz }
-        bestMissingPositions = missingPos
-      }
+    // Consume 1 Bone Meal if not in Creative mode
+    if (!player.isCreative() && event.item) {
+      event.item.count--
     }
 
-    if (maxFlowerCount === 8) {
-      // Complete flower ring!
-      player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fOpening gateway to the Perpetual Night Overworld..."))
-      
-      // Play portal activation sounds
-      player.playSound('minecraft:block.portal.trigger', 0.8, 1.2)
-      player.playSound('minecraft:block.amethyst_block.chime', 1.0, 1.0)
-
-      // Spawn decorative particles around the portal center
-      if (bestCandidate) {
-        const { x: cx, y: cy, z: cz } = bestCandidate
-        try {
-          level.spawnParticles('minecraft:portal', false, cx + 0.5, cy + 0.5, cz + 0.5, 0.5, 0.5, 0.5, 30, 0.2)
-          level.spawnParticles('minecraft:end_rod', false, cx + 0.5, cy + 1.0, cz + 0.5, 0.8, 0.2, 0.8, 15, 0.05)
-        } catch (_e) {}
-      }
+    // Display action bar message
+    if (isMirror) {
+      player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fReturning to the Sunlit Overworld..."))
     } else {
-      // Incomplete flower ring
-      player.setStatusMessage(
-        Text.of(`§e[Dark Mirror Portal] §fIncomplete portal frame (${maxFlowerCount}/8 flowers). Surround a 3x3 area with 8 flowers on soil.`)
-      )
-      
-      player.playSound('minecraft:block.dispensable.fail', 0.8, 0.9)
+      player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fOpening gateway to the Perpetual Night Overworld..."))
+    }
 
-      // Highlight missing flower positions with subtle particles
-      for (const pos of bestMissingPositions) {
-        try {
-          level.spawnParticles('minecraft:smoke', false, pos.x + 0.5, pos.y + 0.5, pos.z + 0.5, 0.1, 0.1, 0.1, 3, 0.02)
-        } catch (_e) {}
+    // Audio & Particle Effects
+    player.playSound('minecraft:block.portal.trigger', 0.8, 1.2)
+    player.playSound('minecraft:block.amethyst_block.chime', 1.0, 1.0)
+
+    try {
+      level.spawnParticles('minecraft:portal', false, player.x, player.y + 1, player.z, 0.5, 0.5, 0.5, 30, 0.2)
+      level.spawnParticles('minecraft:end_rod', false, player.x, player.y + 1, player.z, 0.8, 0.5, 0.8, 15, 0.05)
+    } catch (_e) {}
+
+    // Place portal block above clicked flower if empty
+    try {
+      const aboveBlock = clickedBlock.above
+      if (aboveBlock && (aboveBlock.id === 'minecraft:air' || aboveBlock.id === 'minecraft:cave_air')) {
+        aboveBlock.set('overworldmirror:portal')
       }
+    } catch (_e) {}
+
+    // Teleport player to target dimension
+    const srv = server || (level && level.server) || (player && player.server)
+    if (srv) {
+      srv.runCommandSilent(`execute in ${targetDim} run tp ${username} ${x} ${y} ${z}`)
     }
   }
 })

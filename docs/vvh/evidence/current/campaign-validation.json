@@ -316,8 +316,8 @@
         "match": true
       }
     },
-    "index_sha256": "2432e30da336f19e3a73518c94384fb73e9376699fff81ebc54fd2ffed787d93",
-    "pack_toml_declared_index_sha256": "2432e30da336f19e3a73518c94384fb73e9376699fff81ebc54fd2ffed787d93",
+    "index_sha256": "c52905978cf09a69139644fc6876a639e0aefdba0ebe68a6a3f18ef6d7c5d6c7",
+    "pack_toml_declared_index_sha256": "c52905978cf09a69139644fc6876a639e0aefdba0ebe68a6a3f18ef6d7c5d6c7",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

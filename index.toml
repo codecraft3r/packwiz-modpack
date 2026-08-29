@@ -300,7 +300,7 @@ hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/server_scripts/mirror_portal_guide.js"
-hash = "5ed7e9e6bcdb714fec00dfb13a2a0c3bef9a5d8d3ec182102b031b32bcfdb6c3"
+hash = "3e255a688f8aeb2d33858016f18a8005f1dcb47ff05f90b3684e8a6f072d6c32"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"
