@@ -1,0 +1,13 @@
+name = "Mekanism Bigger Teleporters"
+filename = "mekanismbiggerteleporter-1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/MdZrR0vN/versions/E1wPYgv4/mekanismbiggerteleporter-1.0.3.jar"
+hash-format = "sha512"
+hash = "29a82439889889eefa2ac0312b5bd6a0d2c07532f0c2304a537d55788aeb5173eda4fa5a78e65779db399f940a4e6f4f13bb830d35d093bc3deac14c7e2e1121"
+
+[update]
+[update.modrinth]
+mod-id = "MdZrR0vN"
+version = "E1wPYgv4"

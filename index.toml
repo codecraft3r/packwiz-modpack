@@ -807,6 +807,11 @@ hash = "4cd8faf67ccc41e13242a1ae968122b777b13a2d1c908b1880ad5e4c9199d81b"
 metafile = true
 
 [[files]]
+file = "mods/mekanism-bigger-teleporters.pw.toml"
+hash = "1bf10eee365af673913c0fda34d3c91d79277774f4d12c5b8cf906f72169795e"
+metafile = true
+
+[[files]]
 file = "mods/mekanism-generators.pw.toml"
 hash = "2ccba41c76a7b860e97d8956319d5ad931baf29d66588386703130894fcd383c"
 metafile = true
