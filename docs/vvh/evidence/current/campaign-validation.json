@@ -164,14 +164,14 @@
       "exposure:color_film",
       "exposure:high_sensitivity_color_film",
       "exposure:photograph_frame",
-      "irons_spellbooks:affinity_ring_blood",
-      "irons_spellbooks:affinity_ring_holy",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
+      "irons_spellbooks:blood_upgrade_orb",
       "irons_spellbooks:common_ink",
       "irons_spellbooks:copper_spell_book",
       "irons_spellbooks:holy_rune",
+      "irons_spellbooks:holy_upgrade_orb",
       "irons_spellbooks:inscription_table",
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
@@ -199,7 +199,6 @@
       "vampirism:dark_stone_bricks",
       "vampirism:heart_seeker_enhanced",
       "vampirism:heart_seeker_normal",
-      "vampirism:holy_salt",
       "vampirism:holy_water_bottle_normal",
       "vampirism:holy_water_splash_bottle_enhanced",
       "vampirism:hunter_axe_enhanced",
@@ -211,6 +210,7 @@
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
       "vampirism:pure_salt",
+      "vampirism:purified_garlic",
       "vampirism:stake",
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
@@ -291,18 +291,18 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "728e150ca75185cb26cd36db8b8e05f95323dcda5326606e68f9e180f59d5547",
-        "actual": "728e150ca75185cb26cd36db8b8e05f95323dcda5326606e68f9e180f59d5547",
+        "index": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
+        "actual": "8e1b22feed6d2c742b91a4f307adeee4739211393e3bab4a478a2d514ef6630b",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
-        "actual": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
+        "index": "15f553dd9ef405c8ed96227c0b8ebd32d5087765278b7a6a0358c9b2d9cbf44f",
+        "actual": "15f553dd9ef405c8ed96227c0b8ebd32d5087765278b7a6a0358c9b2d9cbf44f",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
-        "index": "32cb39bb6325e8afcc202cec5858c0142896c8719c8d88fa5016782cef81da21",
-        "actual": "32cb39bb6325e8afcc202cec5858c0142896c8719c8d88fa5016782cef81da21",
+        "index": "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f",
+        "actual": "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f",
         "match": true
       },
       "config/ftbquests/quests/data.snbt": {
@@ -316,8 +316,8 @@
         "match": true
       }
     },
-    "index_sha256": "933094e310f37e9d622d88c538f5253448d61939ab0be680f3bec75a2f0aa194",
-    "pack_toml_declared_index_sha256": "933094e310f37e9d622d88c538f5253448d61939ab0be680f3bec75a2f0aa194",
+    "index_sha256": "2e9412f5319796b6fa0f440a8cd736306a72a651f3014ca47b8bbd81ed8924a8",
+    "pack_toml_declared_index_sha256": "2e9412f5319796b6fa0f440a8cd736306a72a651f3014ca47b8bbd81ed8924a8",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

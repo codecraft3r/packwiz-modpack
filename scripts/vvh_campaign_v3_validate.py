@@ -43,14 +43,14 @@ VERIFIED_NONVANILLA_ITEMS = {
     "exposure:color_film",
     "exposure:high_sensitivity_color_film",
     "exposure:photograph_frame",
-    "irons_spellbooks:affinity_ring_blood",
-    "irons_spellbooks:affinity_ring_holy",
     "irons_spellbooks:arcane_essence",
     "irons_spellbooks:blank_rune",
     "irons_spellbooks:blood_rune",
+    "irons_spellbooks:blood_upgrade_orb",
     "irons_spellbooks:common_ink",
     "irons_spellbooks:copper_spell_book",
     "irons_spellbooks:holy_rune",
+    "irons_spellbooks:holy_upgrade_orb",
     "irons_spellbooks:inscription_table",
     "irons_spellbooks:rare_ink",
     "irons_spellbooks:scroll",
@@ -78,7 +78,6 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:dark_stone_bricks",
     "vampirism:heart_seeker_enhanced",
     "vampirism:heart_seeker_normal",
-    "vampirism:holy_salt",
     "vampirism:holy_water_bottle_normal",
     "vampirism:holy_water_splash_bottle_enhanced",
     "vampirism:hunter_axe_enhanced",
@@ -90,6 +89,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:hunter_table",
     "vampirism:injection_garlic",
     "vampirism:pure_salt",
+    "vampirism:purified_garlic",
     "vampirism:stake",
     "vampirism:umbrella",
     "vampirism:vampire_cloak_white_black",
@@ -178,6 +178,8 @@ def item_id(record: dict[str, Any]) -> str | None:
 
 
 def item_count(record: dict[str, Any]) -> int:
+    if "count" in record and record["count"] is not None:
+        return int(record["count"])
     item = record.get("item")
     return int(item.get("count", 1)) if isinstance(item, dict) else 1
 
