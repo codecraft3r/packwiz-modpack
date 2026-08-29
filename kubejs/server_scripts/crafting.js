@@ -68,4 +68,30 @@ ServerEvents.recipes(event => {
     S: 'minecraft:stick',
     O: 'mekanism:ingot_refined_obsidian'
   })
+
+  // --- HDPE Elytra & Icarus Wings Modifications ---
+
+  // 1. Craft mekanism:hdpe_elytra without base game elytra (Atomic Alloy & HDPE Sheets)
+  event.remove({ output: 'mekanism:hdpe_elytra' })
+  event.shaped('mekanism:hdpe_elytra', [
+    'AHA',
+    'H H',
+    'H H'
+  ], {
+    A: 'mekanism:alloy_atomic',
+    H: 'mekanism:hdpe_sheet'
+  })
+
+  // 2. Craft icarus:white_feathered_wings using Create Cogwheels, Netherite Ingot, Create Shafts, and HDPE Elytra
+  event.remove({ output: 'icarus:white_feathered_wings' })
+  event.shaped('icarus:white_feathered_wings', [
+    'CNC',
+    'SES',
+    'S S'
+  ], {
+    C: 'create:cogwheel',
+    N: 'minecraft:netherite_ingot',
+    S: 'create:shaft',
+    E: 'mekanism:hdpe_elytra'
+  })
 })
