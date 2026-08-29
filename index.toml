@@ -292,7 +292,7 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
-hash = "f0e4917834e8c849ebea831ee25cd46035e2eca858f93ee95f1fb2912ccc142c"
+hash = "24886a774419777682d44e0efe1c0bf41e0916eca596f5b1dbacd133295b04eb"
 
 [[files]]
 file = "kubejs/server_scripts/givespell.js"

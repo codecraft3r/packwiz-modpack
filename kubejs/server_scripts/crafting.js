@@ -17,9 +17,22 @@ ServerEvents.recipes(event => {
     R: 'minecraft:redstone',
     C: 'create:precision_mechanism'
   })
-  if (event.recipes && event.recipes.mekanism) {
-    event.recipes.mekanism.infusing('mekanism:basic_control_circuit', 'create:precision_mechanism', 'mekanism:redstone', 20)
-  }
+
+  event.custom({
+    type: 'mekanism:metallurgic_infusing',
+    chemical_input: {
+      amount: 20,
+      tag: 'mekanism:redstone'
+    },
+    item_input: {
+      count: 1,
+      item: 'create:precision_mechanism'
+    },
+    output: {
+      count: 1,
+      id: 'mekanism:basic_control_circuit'
+    }
+  })
 
   // 2. alloy_infused requires create:brass_ingot instead of copper ingot
   event.replaceInput({ output: 'mekanism:alloy_infused' }, 'minecraft:copper_ingot', 'create:brass_ingot')
@@ -32,7 +45,20 @@ ServerEvents.recipes(event => {
     R: 'minecraft:redstone',
     C: 'create:brass_ingot'
   })
-  if (event.recipes && event.recipes.mekanism) {
-    event.recipes.mekanism.infusing('mekanism:alloy_infused', 'create:brass_ingot', 'mekanism:redstone', 10)
-  }
+
+  event.custom({
+    type: 'mekanism:metallurgic_infusing',
+    chemical_input: {
+      amount: 10,
+      tag: 'mekanism:redstone'
+    },
+    item_input: {
+      count: 1,
+      item: 'create:brass_ingot'
+    },
+    output: {
+      count: 1,
+      id: 'mekanism:alloy_infused'
+    }
+  })
 })
