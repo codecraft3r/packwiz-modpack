@@ -110,11 +110,11 @@ hash = "a94d018501c8146b034f83ac8a47202f8fb2f13e0d829829147d49e961a21ff0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "728e150ca75185cb26cd36db8b8e05f95323dcda5326606e68f9e180f59d5547"
+hash = "ae2df29895a34ed1d45d704f0884503e911ae72a151a2ccf44063f056ba04f87"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
-hash = "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd"
+hash = "0ebd7cd8cfbaf2976b563a66ee45552a5088f912cbe7785d7396ac2519217b3b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"

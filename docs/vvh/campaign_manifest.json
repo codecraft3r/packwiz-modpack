@@ -1127,7 +1127,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."
+            "Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:pure_salt",
@@ -1183,10 +1183,10 @@
               "consume_items": false,
               "id": "7A11C1DF00300023",
               "item": {
-                "count": 32,
-                "id": "vampirism:holy_salt"
+                "count": 16,
+                "id": "vampirism:purified_garlic"
               },
-              "title": "Carry thirty-two Holy Salt",
+              "title": "Carry sixteen Purified Garlic",
               "type": "item"
             },
             {
@@ -1701,7 +1701,7 @@
               "id": "7A11C2DF00300011",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:affinity_ring_holy"
+                "id": "irons_spellbooks:holy_upgrade_orb"
               },
               "team_reward": false,
               "type": "item"
@@ -3139,7 +3139,7 @@
               "id": "7A11C2DF00400011",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:affinity_ring_blood"
+                "id": "irons_spellbooks:blood_upgrade_orb"
               },
               "team_reward": false,
               "type": "item"

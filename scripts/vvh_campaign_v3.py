@@ -570,7 +570,7 @@ def build_hunters(group: str) -> Chapter:
         5,
         title="Pure Defense",
         subtitle="Specialty · Wards",
-        description="Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
+        description="Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
         icon="vampirism:pure_salt",
         x=-10,
         y=0,
@@ -578,7 +578,7 @@ def build_hunters(group: str) -> Chapter:
         optional=True,
         tasks=[
             item_task(3, 34, "vampirism:pure_salt", 8, "Carry eight Pure Salt"),
-            item_task(3, 35, "vampirism:holy_salt", 32, "Carry thirty-two Holy Salt"),
+            item_task(3, 35, "vampirism:purified_garlic", 16, "Carry sixteen Purified Garlic"),
             item_task(3, 36, "vampirism:injection_garlic", title="Carry a garlic injection"),
         ],
         rewards=[
@@ -722,7 +722,7 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 16, "numismatics:cog"),
-            item_reward(3, 17, "irons_spellbooks:affinity_ring_holy"),
+            item_reward(3, 17, "irons_spellbooks:holy_upgrade_orb"),
             item_reward(3, 18, "minecraft:obsidian", 16),
             item_reward(3, 19, "minecraft:diamond", 8),
         ],
@@ -1089,7 +1089,7 @@ def build_vampires(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(4, 16, "numismatics:cog"),
-            item_reward(4, 17, "irons_spellbooks:affinity_ring_blood"),
+            item_reward(4, 17, "irons_spellbooks:blood_upgrade_orb"),
             item_reward(4, 18, "minecraft:obsidian", 16),
             item_reward(4, 19, "minecraft:diamond", 8),
         ],
