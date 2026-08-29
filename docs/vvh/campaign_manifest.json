@@ -908,8 +908,8 @@
             {
               "id": "7A11C2DF0030000E",
               "item": {
-                "count": 32,
-                "id": "minecraft:flint"
+                "count": 16,
+                "id": "vampirism:crossbow_arrow_vampire_killer"
               },
               "team_reward": false,
               "type": "item"

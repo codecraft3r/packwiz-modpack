@@ -543,7 +543,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 11, "numismatics:sprocket", 2),
             item_reward(3, 12, "vampirism:crossbow_arrow_normal", 64),
             item_reward(3, 13, "minecraft:feather", 32),
-            item_reward(3, 14, "minecraft:flint", 32),
+            item_reward(3, 14, "vampirism:crossbow_arrow_vampire_killer", 16),
             item_reward(3, 15, "minecraft:iron_ingot", 32),
         ],
         dependencies=[core2],
