@@ -55,6 +55,10 @@ VERIFIED_NONVANILLA_ITEMS = {
     "irons_spellbooks:rare_ink",
     "irons_spellbooks:scroll",
     "irons_spellbooks:uncommon_ink",
+    "irons_spellbooks:wizard_boots",
+    "irons_spellbooks:wizard_chestplate",
+    "irons_spellbooks:wizard_helmet",
+    "irons_spellbooks:wizard_leggings",
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
@@ -103,6 +107,10 @@ VERIFIED_NONVANILLA_ICONS = {
     "irons_spellbooks:blood_rune",
     "irons_spellbooks:holy_rune",
     "irons_spellbooks:uncommon_ink",
+    "irons_spellbooks:wizard_boots",
+    "irons_spellbooks:wizard_chestplate",
+    "irons_spellbooks:wizard_helmet",
+    "irons_spellbooks:wizard_leggings",
     "numismatics:banking_guide",
     "numismatics:bevel",
     "numismatics:cog",
@@ -138,7 +146,7 @@ VERIFIED_SPELLS = {
     "irons_spellbooks:ray_of_siphoning",
     "irons_spellbooks:recall",
 }
-VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container"}
+VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container", "minecraft:dyed_color"}
 VERIFIED_IMAGES = {
     "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
     "poiesis:textures/questpics/vvh/blood_school_crest.png",

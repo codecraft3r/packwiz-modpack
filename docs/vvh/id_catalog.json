@@ -255,6 +255,38 @@
       "obtainability_note": ""
     },
     {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_boots",
+      "display_name": "Wizard Boots",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_boots.json; data/irons_spellbooks/recipe/wizard_boots.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_chestplate",
+      "display_name": "Wizard Robes",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_chestplate.json; data/irons_spellbooks/recipe/wizard_chestplate.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_helmet",
+      "display_name": "Wizard Helmet",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_helmet.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_leggings",
+      "display_name": "Wizard Leggings",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_leggings.json; data/irons_spellbooks/recipe/wizard_leggings.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
       "namespace": "numismatics",
       "id": "numismatics:banking_guide",
       "display_name": "Banking Guide",
@@ -309,38 +341,6 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json",
       "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_chest_normal",
-      "display_name": "Armor Of Swiftness Chest Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_chest_normal.json; data/vampirism/recipe/armor_of_swiftness_chest_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_feet_normal",
-      "display_name": "Armor Of Swiftness Feet Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_feet_normal.json; data/vampirism/recipe/armor_of_swiftness_feet_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_head_normal",
-      "display_name": "Armor Of Swiftness Head Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_head_normal.json; data/vampirism/recipe/armor_of_swiftness_head_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_legs_normal",
-      "display_name": "Armor Of Swiftness Legs Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_legs_normal.json; data/vampirism/recipe/armor_of_swiftness_legs_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "vampirism",

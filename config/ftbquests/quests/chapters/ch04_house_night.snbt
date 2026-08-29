@@ -54,25 +54,49 @@
 				}
 				{
 					id: "7A11C2DF00400002"
-					item: { count: 1, id: "vampirism:armor_of_swiftness_head_normal" }
+					item: {
+						count: 1
+						id: "irons_spellbooks:wizard_helmet"
+						components: {
+							"minecraft:dyed_color": { rgb: 1908001 }
+						}
+					}
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400003"
-					item: { count: 1, id: "vampirism:armor_of_swiftness_chest_normal" }
+					item: {
+						count: 1
+						id: "irons_spellbooks:wizard_chestplate"
+						components: {
+							"minecraft:dyed_color": { rgb: 1908001 }
+						}
+					}
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400004"
-					item: { count: 1, id: "vampirism:armor_of_swiftness_legs_normal" }
+					item: {
+						count: 1
+						id: "irons_spellbooks:wizard_leggings"
+						components: {
+							"minecraft:dyed_color": { rgb: 1908001 }
+						}
+					}
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400005"
-					item: { count: 1, id: "vampirism:armor_of_swiftness_feet_normal" }
+					item: {
+						count: 1
+						id: "irons_spellbooks:wizard_boots"
+						components: {
+							"minecraft:dyed_color": { rgb: 1908001 }
+						}
+					}
 					team_reward: false
 					type: "item"
 				}

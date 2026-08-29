@@ -115,10 +115,13 @@ def check_task(ch: int, idx: int, title: str) -> dict[str, Any]:
     return {"id": tid(ch, idx), "title": title, "type": "checkmark"}
 
 
-def item_reward(ch: int, idx: int, item: str, count: int = 1, *, team: bool = False, title: str | None = None) -> dict[str, Any]:
+def item_reward(ch: int, idx: int, item: str, count: int = 1, *, team: bool = False, title: str | None = None, components: dict[str, Any] | None = None) -> dict[str, Any]:
+    item_obj: dict[str, Any] = {"count": count, "id": item}
+    if components:
+        item_obj["components"] = components
     reward: dict[str, Any] = {
         "id": rid(ch, idx),
-        "item": {"count": count, "id": item},
+        "item": item_obj,
         "team_reward": team,
     }
     if title:
@@ -831,10 +834,10 @@ def build_vampires(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(4, 1, "numismatics:bevel"),
-            item_reward(4, 2, "vampirism:armor_of_swiftness_head_normal"),
-            item_reward(4, 3, "vampirism:armor_of_swiftness_chest_normal"),
-            item_reward(4, 4, "vampirism:armor_of_swiftness_legs_normal"),
-            item_reward(4, 5, "vampirism:armor_of_swiftness_feet_normal"),
+            item_reward(4, 2, "irons_spellbooks:wizard_helmet", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 3, "irons_spellbooks:wizard_chestplate", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 4, "irons_spellbooks:wizard_leggings", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 5, "irons_spellbooks:wizard_boots", components={"minecraft:dyed_color": {"rgb": 1908001}}),
         ],
         dependencies=[qid(2, 2)],
     )

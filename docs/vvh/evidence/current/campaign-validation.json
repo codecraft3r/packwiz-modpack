@@ -176,16 +176,16 @@
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
       "irons_spellbooks:uncommon_ink",
+      "irons_spellbooks:wizard_boots",
+      "irons_spellbooks:wizard_chestplate",
+      "irons_spellbooks:wizard_helmet",
+      "irons_spellbooks:wizard_leggings",
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
       "vampirism:alchemical_cauldron",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
-      "vampirism:armor_of_swiftness_chest_normal",
-      "vampirism:armor_of_swiftness_feet_normal",
-      "vampirism:armor_of_swiftness_head_normal",
-      "vampirism:armor_of_swiftness_legs_normal",
       "vampirism:basic_crossbow",
       "vampirism:blood_bottle",
       "vampirism:blood_container",
@@ -260,7 +260,8 @@
       "irons_spellbooks:recall"
     ],
     "components": [
-      "irons_spellbooks:spell_container"
+      "irons_spellbooks:spell_container",
+      "minecraft:dyed_color"
     ],
     "images": [
       "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
@@ -296,8 +297,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
-        "actual": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
+        "index": "b1addcbb0d18986129b9cc6a7c35f5ab055ab6b54a59de7023e9b17d731b5a32",
+        "actual": "b1addcbb0d18986129b9cc6a7c35f5ab055ab6b54a59de7023e9b17d731b5a32",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -316,8 +317,8 @@
         "match": true
       }
     },
-    "index_sha256": "d00632459f8e8cb2394f5bcc5b5582806981614362df469d271fc5b0f5add2c6",
-    "pack_toml_declared_index_sha256": "d00632459f8e8cb2394f5bcc5b5582806981614362df469d271fc5b0f5add2c6",
+    "index_sha256": "015a46241641e785c84716d74f3db73788bff536d673bc7238334f72be4864eb",
+    "pack_toml_declared_index_sha256": "015a46241641e785c84716d74f3db73788bff536d673bc7238334f72be4864eb",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

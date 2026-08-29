@@ -42,6 +42,10 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
 | `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_boots` | Wizard Boots | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_boots.json; data/irons_spellbooks/recipe/wizard_boots.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_chestplate` | Wizard Robes | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_chestplate.json; data/irons_spellbooks/recipe/wizard_chestplate.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_helmet` | Wizard Helmet | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_helmet.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_leggings` | Wizard Leggings | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_leggings.json; data/irons_spellbooks/recipe/wizard_leggings.json` |
 | `numismatics` | `numismatics:banking_guide` | Banking Guide | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/banking_guide.json; data/numismatics/recipe/crafting/banking_guide.json` |
 | `numismatics` | `numismatics:bevel` | Bevel | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/lang/en_us.json::item.numismatics.bevel` |
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
@@ -49,10 +53,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
 | `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_chest_normal` | Armor Of Swiftness Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_chest_normal.json; data/vampirism/recipe/armor_of_swiftness_chest_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_feet_normal` | Armor Of Swiftness Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_feet_normal.json; data/vampirism/recipe/armor_of_swiftness_feet_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_head_normal` | Armor Of Swiftness Head Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_head_normal.json; data/vampirism/recipe/armor_of_swiftness_head_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_legs_normal` | Armor Of Swiftness Legs Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_legs_normal.json; data/vampirism/recipe/armor_of_swiftness_legs_normal.json` |
 | `vampirism` | `vampirism:basic_crossbow` | Basic Crossbow | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/basic_crossbow.json; data/vampirism/recipe/basic_crossbow.json` |
 | `vampirism` | `vampirism:blood_bottle` | Blood Bottle | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_bottle` |
 | `vampirism` | `vampirism:blood_container` | Blood Container | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_container` |
