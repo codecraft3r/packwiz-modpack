@@ -1,0 +1,13 @@
+name = "Overworld Mirror"
+filename = "overworld_mirror-neoforge-1.21.1-1.8.0.25.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/FrfbLzzv/versions/UekhoaXH/overworld_mirror-neoforge-1.21.1-1.8.0.25.jar"
+hash-format = "sha512"
+hash = "b6632a38723de6213a2f66bc6cd1726f3e60a64a17af8badc59e3ca37ad4f1e7b75fa34c6dbe84cbf050a93366a57858332c5180c3a30a66219d9650285f7396"
+
+[update]
+[update.modrinth]
+mod-id = "FrfbLzzv"
+version = "UekhoaXH"

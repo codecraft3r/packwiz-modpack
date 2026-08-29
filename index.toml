@@ -233,6 +233,26 @@ file = "configureddefaults/config/xaero/world-map/profiles/default.cfg"
 hash = "043bc669d5119e2915440e27cf24ae211fedb5a322b09a01297eb707aa866ccf"
 
 [[files]]
+file = "datapacks/overworld_customization/data/minecraft/dimension/overworld.json"
+hash = "7a1edb819e713190b24d23efe5eec269bbb4839909f98bc624d693bef04712d4"
+
+[[files]]
+file = "datapacks/overworld_customization/data/overworld_customization/neoforge/biome_modifier/boosted_hostile_spawns.json"
+hash = "0d6fa7f8e9ed90ab26d226fef515ded33ebc24ec24ea41e59b65212c4a5d708b"
+
+[[files]]
+file = "datapacks/overworld_customization/data/overworldmirror/dimension/overworld.json"
+hash = "36e2cd860b265ec92357b3b691572d4eefe393eb95dde7f3e1c880a971794ff1"
+
+[[files]]
+file = "datapacks/overworld_customization/data/overworldmirror/dimension_type/overworld_mirror.json"
+hash = "6f56e250beabb7154f39c1eb16724a6a923e93dfac20f0f99914b5227dc3a253"
+
+[[files]]
+file = "datapacks/overworld_customization/pack.mcmeta"
+hash = "a3daddb5586ae695aa949852b49680c68dc007d6d0bf6351783f110469a2733b"
+
+[[files]]
 file = "datapacks/vampires-need-umbrellas-curios.pw.toml"
 hash = "c0a24c2c3e847e15acd99774581aad9ffb06cc1f4db5ffcf02c4c9e50be0c189"
 metafile = true
@@ -279,8 +299,17 @@ file = "kubejs/server_scripts/givespell.js"
 hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
+file = "kubejs/server_scripts/mirror_portal_guide.js"
+hash = "c2d33978e9c097b9161850d57344d96eed223799a8978488008b517370c795e7"
+
+[[files]]
 file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
+
+[[files]]
+file = "mods/abyssal-decor.pw.toml"
+hash = "20dfb8bc6554a13dc19b606224923c3167ec1b8bb37f6c8bfe812e07980dc2c4"
+metafile = true
 
 [[files]]
 file = "mods/accessories.pw.toml"
@@ -360,6 +389,11 @@ metafile = true
 [[files]]
 file = "mods/cbc-compact-mount.pw.toml"
 hash = "414a58bba157ca4e565529c006a8637660644de1b2347f5452e1d7906b41c225"
+metafile = true
+
+[[files]]
+file = "mods/cc-cbc.pw.toml"
+hash = "df32f867e04ce60dfd13d2c5af9d90b58daccfce7b4c94e5dba2f4666ba38a89"
 metafile = true
 
 [[files]]
@@ -833,6 +867,11 @@ hash = "4ea27e021d02d575bf7f4feb1f6ec65b9e097f3a2d9cfccad92d594b1594c037"
 metafile = true
 
 [[files]]
+file = "mods/overworld-mirror.pw.toml"
+hash = "bd6c12762dc17447dfafa5c15f27b149fa7c966bbb468352de22694794b85e53"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "46831c04077a06df823bcd0f254833a90a9a9ccc78f5069f4b4c27fa301ac0cf"
 metafile = true
@@ -985,6 +1024,11 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "e6ef4cf01f5b048a810d28dbfb45f23b085299ac91afea719d2304ced7a0fd94"
+metafile = true
+
+[[files]]
+file = "mods/u-team-core.pw.toml"
+hash = "89afc3b671b36c0cb2eb24a88d00f45b534be3f63d9f24a0d4ac004e1ca61c45"
 metafile = true
 
 [[files]]
