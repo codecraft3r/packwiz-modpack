@@ -94,7 +94,7 @@ hash = "598f3bdb74d030f2f5b50c38ae9436610302f3b3e08165b1fcdbec3397ca763a"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "23fef815947c6d76d0c667469cab3fbe4a794e8864066dc9131ac52220eaa15a"
+hash = "711b1f8f5a5883ee6a93d17112af78eabddafaf994fcd21c14f32a4f6b56c885"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
