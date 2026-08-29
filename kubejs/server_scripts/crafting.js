@@ -6,17 +6,14 @@ ServerEvents.recipes(event => {
 
   // --- Mekanism Recipe Modifications ---
 
-  // 1. basic_control_circuit requires create:precision_mechanism instead of osmium ingot
+  // 1. basic_control_circuit requires create:precision_mechanism instead of osmium ingot in Metallurgic Infuser (crafting table recipe removed)
   event.replaceInput({ output: 'mekanism:basic_control_circuit' }, 'mekanism:ingot_osmium', 'create:precision_mechanism')
   event.replaceInput({ output: 'mekanism:basic_control_circuit' }, '#c:ingots/osmium', 'create:precision_mechanism')
   event.replaceInput({ output: 'mekanism:basic_control_circuit' }, '#neoforge:ingots/osmium', 'create:precision_mechanism')
   event.replaceInput({ output: 'mekanism:basic_control_circuit' }, '#forge:ingots/osmium', 'create:precision_mechanism')
 
-  event.remove({ output: 'mekanism:basic_control_circuit' })
-  event.shaped('mekanism:basic_control_circuit', ['RCR'], {
-    R: 'minecraft:redstone',
-    C: 'create:precision_mechanism'
-  })
+  event.remove({ type: 'minecraft:crafting_shaped', output: 'mekanism:basic_control_circuit' })
+  event.remove({ type: 'minecraft:crafting_shapeless', output: 'mekanism:basic_control_circuit' })
 
   event.custom({
     type: 'mekanism:metallurgic_infusing',
@@ -34,17 +31,14 @@ ServerEvents.recipes(event => {
     }
   })
 
-  // 2. alloy_infused requires create:brass_ingot instead of copper ingot
+  // 2. alloy_infused requires create:brass_ingot instead of copper ingot in Metallurgic Infuser (crafting table recipe removed)
   event.replaceInput({ output: 'mekanism:alloy_infused' }, 'minecraft:copper_ingot', 'create:brass_ingot')
   event.replaceInput({ output: 'mekanism:alloy_infused' }, '#c:ingots/copper', 'create:brass_ingot')
   event.replaceInput({ output: 'mekanism:alloy_infused' }, '#neoforge:ingots/copper', 'create:brass_ingot')
   event.replaceInput({ output: 'mekanism:alloy_infused' }, '#forge:ingots/copper', 'create:brass_ingot')
 
-  event.remove({ output: 'mekanism:alloy_infused' })
-  event.shaped('mekanism:alloy_infused', ['RCR'], {
-    R: 'minecraft:redstone',
-    C: 'create:brass_ingot'
-  })
+  event.remove({ type: 'minecraft:crafting_shaped', output: 'mekanism:alloy_infused' })
+  event.remove({ type: 'minecraft:crafting_shapeless', output: 'mekanism:alloy_infused' })
 
   event.custom({
     type: 'mekanism:metallurgic_infusing',
