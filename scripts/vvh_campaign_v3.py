@@ -14,7 +14,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
@@ -1545,6 +1547,16 @@ def main() -> int:
 
     action = "updated" if stale else "verified"
     print(f"{action} {len(expected)} authoritative files; unknown chapter files were not deleted")
+
+    appdata = os.environ.get("APPDATA")
+    if appdata:
+        instance_ftb = Path(appdata) / "PrismLauncher/instances/Poiesis Modded dev/minecraft/config/ftbquests"
+        if instance_ftb.parent.exists():
+            src = root / "config/ftbquests"
+            if src.exists():
+                shutil.copytree(src, instance_ftb, dirs_exist_ok=True)
+                print(f"one-way synced quest files to local instance: {instance_ftb}")
+
     return 0
 
 
