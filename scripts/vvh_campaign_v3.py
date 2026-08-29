@@ -250,18 +250,6 @@ def build_charter(group: str) -> Chapter:
             item_reward(1, 2, "minecraft:torch", 16),
         ],
     )
-    claim = ch.add(
-        2,
-        title="Claim Clearly",
-        subtitle="Required · Land boundaries",
-        description="Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise.",
-        icon="minecraft:filled_map",
-        x=-8,
-        y=-1.5,
-        shape="diamond",
-        tasks=[check_task(1, 2, "I understand claim boundaries")],
-        dependencies=[opener],
-    )
     public = ch.add(
         6,
         title="Name Public Doors",
@@ -298,31 +286,19 @@ def build_charter(group: str) -> Chapter:
         tasks=[check_task(1, 7, "I will keep rivalry claim-safe and reversible")],
         dependencies=[opener],
     )
-    teams = ch.add(
-        4,
-        title="Choose Teammates",
-        subtitle="Required · Shared progress",
-        description="FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate.",
-        icon="minecraft:chest",
-        x=8,
-        y=-1.5,
-        shape="gear",
-        tasks=[check_task(1, 4, "I know who shares my quest progress")],
-        dependencies=[opener],
-    )
     ch.add(
         5,
         title="Sign the Charter",
-        subtitle="Required · Claims · consent · teams",
-        description="You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open.",
+        subtitle="Required · Public access · consent · rivalry",
+        description="You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open.",
         icon="minecraft:writable_book",
         x=0,
         y=3,
         shape="hexagon",
         size=1.6,
-        tasks=[check_task(1, 5, "I accept all five promises")],
+        tasks=[check_task(1, 5, "I accept the Charter promises")],
         rewards=[item_reward(1, 3, "minecraft:bread", 16)],
-        dependencies=[claim, public, consent, rivalry, teams],
+        dependencies=[public, consent, rivalry],
     )
     return ch
 
@@ -1540,7 +1516,7 @@ def main() -> int:
         if stale:
             print("campaign source drift:\n- " + "\n- ".join(stale))
             return 1
-        print("campaign source is synchronized: 5 chapters, 52 quests")
+        print("campaign source is synchronized: 5 chapters, 50 quests")
         return 0
 
     action = "updated" if stale else "verified"

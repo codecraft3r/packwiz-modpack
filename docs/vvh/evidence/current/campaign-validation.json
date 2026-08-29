@@ -2,9 +2,9 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 52,
+    "quests": 50,
     "chapter_quest_counts": {
-      "ch01_island_charter": 7,
+      "ch01_island_charter": 5,
       "ch02_callings": 5,
       "ch03_lantern_order": 15,
       "ch04_house_night": 15,
@@ -29,9 +29,9 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 52,
+    "reachable_quests": 50,
     "cycles": false,
-    "charter_clause_count": 5,
+    "charter_clause_count": 3,
     "hunter_gate": "any 3 of 8 after Core III",
     "vampire_gate": "any 3 of 8 after Core III",
     "reward_descendant_task_collisions": []
@@ -281,8 +281,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch01_island_charter.snbt": {
-        "index": "489c7bce1839ac654ddfe470305739cc5cc166a451a3151ee72b6d4550d09131",
-        "actual": "489c7bce1839ac654ddfe470305739cc5cc166a451a3151ee72b6d4550d09131",
+        "index": "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0",
+        "actual": "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch02_callings.snbt": {
@@ -316,8 +316,8 @@
         "match": true
       }
     },
-    "index_sha256": "955a5beaad94cabeba22a408130f1de6077caa32d7f33811889446cbbbf66275",
-    "pack_toml_declared_index_sha256": "955a5beaad94cabeba22a408130f1de6077caa32d7f33811889446cbbbf66275",
+    "index_sha256": "d00632459f8e8cb2394f5bcc5b5582806981614362df469d271fc5b0f5add2c6",
+    "pack_toml_declared_index_sha256": "d00632459f8e8cb2394f5bcc5b5582806981614362df469d271fc5b0f5add2c6",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

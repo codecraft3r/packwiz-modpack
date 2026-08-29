@@ -156,7 +156,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [7, 5, 15, 15, 10]
+EXPECTED_COUNTS = [5, 5, 15, 15, 10]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -294,9 +294,9 @@ def main() -> int:
         errors.append(f"unreachable quests: {missing_reach}")
 
     charter_terminal = quest_by_id[source.qid(1, 5)]
-    expected_charter = {source.qid(1, i) for i in (2, 6, 3, 7, 4)}
+    expected_charter = {source.qid(1, i) for i in (6, 3, 7)}
     if set(charter_terminal["dependencies"]) != expected_charter:
-        errors.append("Charter terminal does not directly depend on all five mandatory clauses")
+        errors.append("Charter terminal does not directly depend on all three mandatory clauses")
     for later_ch in chapters[1:]:
         for quest in later_ch.quests:
             ancestors: set[str] = set()

@@ -2,7 +2,7 @@
   "architecture": "five-chapter-vvh-current",
   "authoritative_source": "scripts/vvh_campaign_v3.py",
   "chapter_count": 5,
-  "quest_count": 52,
+  "quest_count": 50,
   "groups": [
     {
       "id": "7A11C4DF00100000",
@@ -82,35 +82,6 @@
           "title": "Island Charter",
           "x": 0,
           "y": -5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00100001"
-          ],
-          "description": [
-            "Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "minecraft:filled_map",
-          "id": "7A11C0DF00100002",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Required · Land boundaries",
-          "tasks": [
-            {
-              "id": "7A11C1DF00100002",
-              "title": "I understand claim boundaries",
-              "type": "checkmark"
-            }
-          ],
-          "title": "Claim Clearly",
-          "x": -8,
-          "y": -1.5
         },
         {
           "dependencies": [
@@ -201,43 +172,12 @@
         },
         {
           "dependencies": [
-            "7A11C0DF00100001"
-          ],
-          "description": [
-            "FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "minecraft:chest",
-          "id": "7A11C0DF00100004",
-          "min_required_dependencies": 0,
-          "optional": false,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Required · Shared progress",
-          "tasks": [
-            {
-              "id": "7A11C1DF00100004",
-              "title": "I know who shares my quest progress",
-              "type": "checkmark"
-            }
-          ],
-          "title": "Choose Teammates",
-          "x": 8,
-          "y": -1.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00100002",
             "7A11C0DF00100006",
             "7A11C0DF00100003",
-            "7A11C0DF00100007",
-            "7A11C0DF00100004"
+            "7A11C0DF00100007"
           ],
           "description": [
-            "You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open."
+            "You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:writable_book",
@@ -259,11 +199,11 @@
           ],
           "shape": "hexagon",
           "size": 1.6,
-          "subtitle": "Required · Claims · consent · teams",
+          "subtitle": "Required · Public access · consent · rivalry",
           "tasks": [
             {
               "id": "7A11C1DF00100005",
-              "title": "I accept all five promises",
+              "title": "I accept the Charter promises",
               "type": "checkmark"
             }
           ],

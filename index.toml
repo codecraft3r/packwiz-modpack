@@ -102,7 +102,7 @@ hash = "43af7a4ed40567575d513f33d460cc6b57c504ad227784c88f28c170f795b3de"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch01_island_charter.snbt"
-hash = "489c7bce1839ac654ddfe470305739cc5cc166a451a3151ee72b6d4550d09131"
+hash = "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch02_callings.snbt"

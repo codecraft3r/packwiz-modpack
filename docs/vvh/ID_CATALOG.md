@@ -1,174 +1,124 @@
-# VvH Live ID Catalogue
+# VvH Current-Pack ID Catalog
 
-Status: current exact allowlist for the generated five-chapter campaign. New non-vanilla IDs are forbidden until exact installed-pack evidence is added here and to `scripts/vvh_campaign_v3_validate.py`.
+This catalog contains only IDs referenced by the live eight-chapter campaign. Every non-vanilla namespace must be backed by a `.pw.toml` that is present in the current `index.toml`, and every evidence JAR must match that metadata's exact filename.
 
-## Evidence chain
+An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B -X utf8 scripts/vvh_sync_catalog.py --check .` before release.
 
-Pack membership comes from the current Packwiz index. Registry evidence was established from the exact artifact versions below using language, model, recipe, advancement, or component entries rather than inferred display names.
+## Pack membership
 
-| Namespace | Indexed metadata | Exact inspected artifact | Side |
-|---|---|---|---|
-| `create` | `mods/create.pw.toml` | `create-1.21.1-6.0.10.jar` | `both` |
-| `explorerscompass` | `mods/explorers-compass.pw.toml` | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `both` |
-| `exposure` | `mods/exposure.pw.toml` | `exposure-neoforge-1.21.1-1.9.18.jar` | `both` |
-| `irons_spellbooks` | `mods/irons-spells-n-spellbooks.pw.toml` | `irons_spellbooks-1.21.1-3.16.3.jar` | `both` |
-| `numismatics` | `mods/numismatics.pw.toml` | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `both` |
-| `vampirism` | `mods/vampirism.pw.toml` | `Vampirism-1.21-1.10.12.jar` | `both` |
+| Namespace | Indexed metadata | Pinned JAR | Side | Download hash |
+| --- | --- | --- | --- | --- |
+| `create` | `mods/create.pw.toml` | `create-1.21.1-6.0.10.jar` | `both` | `sha512:11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b` |
+| `explorerscompass` | `mods/explorers-compass.pw.toml` | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `both` | `sha512:a1b2e385aaacb547763441fc23e9a33a0b1d67bd32094cd605ded3fbdd1c7a0e5fc4520fdfa090c29d2d3384b685e3ead91b32d20030e45632c94145ee3ec668` |
+| `exposure` | `mods/exposure.pw.toml` | `exposure-neoforge-1.21.1-1.9.18.jar` | `both` | `sha512:2c0310cfbc9abfcf9e589fdf1079829253e47eb3ac84684a643951ebc432536a4e6f6567a67fc8ba4f4d55036e513804ff0996adee6a8a11cf59c76399de5ef6` |
+| `irons_spellbooks` | `mods/irons-spells-n-spellbooks.pw.toml` | `irons_spellbooks-1.21.1-3.16.3.jar` | `both` | `sha512:fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b` |
+| `numismatics` | `mods/numismatics.pw.toml` | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `both` | `sha512:2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203` |
+| `vampirism` | `mods/vampirism.pw.toml` | `Vampirism-1.21-1.10.12.jar` | `both` | `sha512:b19aec3fb8abb2c83047b64d2497fa440e9295044919b546cfaedd417e604e2176e48c289745ed0a03ec57d032e7051e16de993ef3107d42f5b077187662c070` |
 
-The Poiesis art pack is indexed as `global_packs/required_resources/poiesis_living_atlas_art.pw.toml`. Its pinned release asset is `poiesis-living-atlas-art-v5.zip` with SHA-256 `d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a`. The release metadata and digest are verified; archive-entry loading and in-client resolution remain part of the runtime smoke test.
+## Campaign items and icons
 
-## Deterministic structural IDs
+| Namespace | ID | Display name | Exact evidence JAR | JAR entry evidence |
+| --- | --- | --- | --- | --- |
+| `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
+| `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
+| `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
+| `create` | `create:precision_mechanism` | Precision Mechanism | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.precision_mechanism` |
+| `explorerscompass` | `explorerscompass:explorerscompass` | Explorer's Compass | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `assets/explorerscompass/models/item/explorerscompass.json; data/explorerscompass/recipe/explorers_compass.json` |
+| `exposure` | `exposure:album` | Photo Album | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.album` |
+| `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
+| `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
+| `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
+| `exposure` | `exposure:high_sensitivity_color_film` | High-Sensitivity Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film; data/exposure/recipe/high_sensitivity_color_film.json` |
+| `exposure` | `exposure:photograph_frame` | Photograph Frame | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.photograph_frame` |
+| `irons_spellbooks` | `irons_spellbooks:affinity_ring_blood` | Affinity Ring Blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_blood.json` |
+| `irons_spellbooks` | `irons_spellbooks:affinity_ring_holy` | Affinity Ring Holy | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_holy.json` |
+| `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
+| `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
+| `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |
+| `irons_spellbooks` | `irons_spellbooks:common_ink` | Common Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.common_ink` |
+| `irons_spellbooks` | `irons_spellbooks:copper_spell_book` | Flimsy Journal | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.copper_spell_book; data/irons_spellbooks/recipe/copper_spell_book.json` |
+| `irons_spellbooks` | `irons_spellbooks:holy_rune` | Holy Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune` |
+| `irons_spellbooks` | `irons_spellbooks:inscription_table` | Inscription Table | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json` |
+| `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
+| `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
+| `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
+| `numismatics` | `numismatics:banking_guide` | Banking Guide | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/banking_guide.json; data/numismatics/recipe/crafting/banking_guide.json` |
+| `numismatics` | `numismatics:bevel` | Bevel | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/lang/en_us.json::item.numismatics.bevel` |
+| `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
+| `numismatics` | `numismatics:sprocket` | Sprocket | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/sprocket.json` |
+| `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
+| `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
+| `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |
+| `vampirism` | `vampirism:armor_of_swiftness_chest_normal` | Armor Of Swiftness Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_chest_normal.json; data/vampirism/recipe/armor_of_swiftness_chest_normal.json` |
+| `vampirism` | `vampirism:armor_of_swiftness_feet_normal` | Armor Of Swiftness Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_feet_normal.json; data/vampirism/recipe/armor_of_swiftness_feet_normal.json` |
+| `vampirism` | `vampirism:armor_of_swiftness_head_normal` | Armor Of Swiftness Head Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_head_normal.json; data/vampirism/recipe/armor_of_swiftness_head_normal.json` |
+| `vampirism` | `vampirism:armor_of_swiftness_legs_normal` | Armor Of Swiftness Legs Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_legs_normal.json; data/vampirism/recipe/armor_of_swiftness_legs_normal.json` |
+| `vampirism` | `vampirism:basic_crossbow` | Basic Crossbow | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/basic_crossbow.json; data/vampirism/recipe/basic_crossbow.json` |
+| `vampirism` | `vampirism:blood_bottle` | Blood Bottle | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_bottle` |
+| `vampirism` | `vampirism:blood_container` | Blood Container | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_container` |
+| `vampirism` | `vampirism:blood_infused_enhanced_iron_ingot` | Enhanced Blood-Infused Iron Ingot | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_enhanced_iron_ingot; data/vampirism/recipe/vampire/blood_infused_enhanced_iron_ingot.json` |
+| `vampirism` | `vampirism:blood_infused_iron_ingot` | Blood-Infused Iron Ingot | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_iron_ingot; data/vampirism/recipe/vampire/blood_infused_iron_ingot.json` |
+| `vampirism` | `vampirism:blood_pedestal` | Blood Pedestal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_pedestal` |
+| `vampirism` | `vampirism:blood_sieve` | Blood Sieve | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/blood_sieve.json; data/vampirism/recipe/general/blood_sieve.json` |
+| `vampirism` | `vampirism:crossbow_arrow_spitfire` | Spitfire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_spitfire` |
+| `vampirism` | `vampirism:crossbow_arrow_teleport` | Teleport Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_teleport` |
+| `vampirism` | `vampirism:crossbow_arrow_vampire_killer` | Vampire Killer Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_vampire_killer` |
+| `vampirism` | `vampirism:dark_stone_bricks` | Dark Stone Bricks | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/dark_stone_bricks.json` |
+| `vampirism` | `vampirism:heart_seeker_enhanced` | Enhanced Heartseeker | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/vampire/heart_seeker_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::heart_seeker_enhanced` |
+| `vampirism` | `vampirism:heart_seeker_normal` | Heart Seeker Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/heart_seeker_normal.json; data/vampirism/recipe/vampire/heart_seeker_normal.json` |
+| `vampirism` | `vampirism:holy_salt` | Blessed Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.holy_salt` |
+| `vampirism` | `vampirism:holy_water_bottle_normal` | Holy Water Bottle Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/holy_water_bottle_normal.json` |
+| `vampirism` | `vampirism:holy_water_splash_bottle_enhanced` | Enhanced Splash Bottle of Holy Water | `Vampirism-1.21-1.10.12.jar` | `de/teamlapen/vampirism/core/ModItems.class::holy_water_splash_bottle_enhanced; assets/vampirism/models/item/holy_water_splash_bottle_enhanced.json` |
+| `vampirism` | `vampirism:hunter_axe_enhanced` | Enhanced Hunter Axe | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/hunter_axe_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::hunter_axe_enhanced` |
+| `vampirism` | `vampirism:hunter_axe_normal` | Hunter Axe Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_axe_normal.json; data/vampirism/recipe/hunter_axe_normal.json` |
+| `vampirism` | `vampirism:hunter_coat_chest_normal` | Hunter Coat Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_chest_normal.json; data/vampirism/recipe/hunter_coat_chest_normal.json` |
+| `vampirism` | `vampirism:hunter_coat_feet_normal` | Hunter Coat Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_feet_normal.json; data/vampirism/recipe/hunter_coat_feet_normal.json` |
+| `vampirism` | `vampirism:hunter_coat_head_normal` | Hunter Coat Head Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_head_normal.json; data/vampirism/recipe/hunter_coat_head_normal.json` |
+| `vampirism` | `vampirism:hunter_coat_legs_normal` | Hunter Coat Legs Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_legs_normal.json; data/vampirism/recipe/hunter_coat_legs_normal.json` |
+| `vampirism` | `vampirism:hunter_table` | Hunter Research Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.hunter_table` |
+| `vampirism` | `vampirism:injection_garlic` | Garlic Injection | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.injection_garlic; de/teamlapen/vampirism/core/ModItems.class::injection_garlic` |
+| `vampirism` | `vampirism:pure_salt` | Pure Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.pure_salt` |
+| `vampirism` | `vampirism:stake` | Stake | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.stake` |
+| `vampirism` | `vampirism:umbrella` | Umbrella | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/umbrella.json; data/vampirism/recipe/general/umbrella.json` |
+| `vampirism` | `vampirism:vampire_cloak_white_black` | Vampire Cloak | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.vampire_cloak_white_black` |
+| `vampirism` | `vampirism:vampire_fang` | Vampire Fang | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.vampire_fang` |
+| `vampirism` | `vampirism:weapon_table` | Hunter Weapon Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.weapon_table` |
 
-| Kind | Prefix / pattern |
-|---|---|
-| Quest | `7A11C0DF...` |
-| Task | `7A11C1DF...` |
-| Reward | `7A11C2DF...` |
-| Chapter | `7A11C3DF00N00000` |
-| Chapter group | `7A11C4DF00N00000` |
+## Campaign advancements
 
-New quest, task, reward, chapter, and group IDs are generated by `scripts/vvh_campaign_v3.py`; do not copy them between records.
+| ID | Exact evidence JAR | JAR entry evidence |
+| --- | --- | --- |
+| `exposure:adventure/moment_in_time` | `exposure-neoforge-1.21.1-1.9.18.jar` | `data/exposure/advancement/adventure/moment_in_time.json` |
+| `vampirism:hunter/become_hunter` | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/advancement/hunter/become_hunter.json` |
+| `vampirism:vampire/become_vampire` | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/advancement/vampire/become_vampire.json` |
 
-## Live chapter IDs
+## Campaign spell IDs
 
-| File | Chapter ID |
-|---|---|
-| `ch01_island_charter.snbt` | `7A11C3DF00100000` |
-| `ch02_callings.snbt` | `7A11C3DF00200000` |
-| `ch03_lantern_order.snbt` | `7A11C3DF00300000` |
-| `ch04_house_night.snbt` | `7A11C3DF00400000` |
-| `ch05_market_services.snbt` | `7A11C3DF00500000` |
+| ID | School | Exact evidence JAR | JAR entry evidence |
+| --- | --- | --- | --- |
+| `irons_spellbooks:blood_slash` | blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blood_slash; io/redspace/ironsspellbooks/spells/blood/BloodSlashSpell.class` |
+| `irons_spellbooks:blood_step` | blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.blood_step; io/redspace/ironsspellbooks/spells/blood/BloodStepSpell.class` |
+| `irons_spellbooks:divine_smite` | holy | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.divine_smite; io/redspace/ironsspellbooks/spells/holy/DivineSmiteSpell.class` |
+| `irons_spellbooks:heal` | holy | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.heal; io/redspace/ironsspellbooks/spells/holy/HealSpell.class` |
+| `irons_spellbooks:ray_of_siphoning` | blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.ray_of_siphoning; io/redspace/ironsspellbooks/spells/blood/RayOfSiphoningSpell.class` |
+| `irons_spellbooks:recall` | ender | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::spell.irons_spellbooks.recall; io/redspace/ironsspellbooks/spells/ender/RecallSpell.class` |
 
-## Exact non-vanilla item allowlist
+## Numismatics denominations
 
-### `create`
+Values were extracted from `dev.ithundxr.createnumismatics.content.backend.Coin` in the exact pinned JAR.
 
-- `create:andesite_alloy`
-- `create:belt_connector`
-- `create:brass_ingot`
-- `create:precision_mechanism`
+| ID | Spurs | Bevel-equivalent |
+| --- | ---: | ---: |
+| `numismatics:spur` | 1 | 0.125 |
+| `numismatics:bevel` | 8 | 1 |
+| `numismatics:sprocket` | 16 | 2 |
+| `numismatics:cog` | 64 | 8 |
+| `numismatics:crown` | 512 | 64 |
+| `numismatics:sun` | 4096 | 512 |
 
-### `explorerscompass`
+## FTB Quests schema observations
 
-- `explorerscompass:explorerscompass`
+- Installed evidence JAR: `ftb-quests-neoforge-2101.1.33.jar`
+- Observed task/reward types: `advancement`, `checkmark`, `choice`, `item`
 
-### `exposure`
-
-- `exposure:album`
-- `exposure:black_and_white_film`
-- `exposure:camera`
-- `exposure:color_film`
-- `exposure:high_sensitivity_color_film`
-- `exposure:photograph_frame`
-
-### `irons_spellbooks`
-
-- `irons_spellbooks:affinity_ring_blood`
-- `irons_spellbooks:affinity_ring_holy`
-- `irons_spellbooks:arcane_essence`
-- `irons_spellbooks:blank_rune`
-- `irons_spellbooks:blood_rune`
-- `irons_spellbooks:common_ink`
-- `irons_spellbooks:copper_spell_book`
-- `irons_spellbooks:holy_rune`
-- `irons_spellbooks:inscription_table`
-- `irons_spellbooks:rare_ink`
-- `irons_spellbooks:scroll`
-- `irons_spellbooks:uncommon_ink`
-
-### `numismatics`
-
-- `numismatics:bevel`
-- `numismatics:cog`
-- `numismatics:sprocket`
-
-### `vampirism`
-
-- `vampirism:alchemical_cauldron`
-- `vampirism:altar_infusion`
-- `vampirism:altar_inspiration`
-- `vampirism:armor_of_swiftness_chest_normal`
-- `vampirism:armor_of_swiftness_feet_normal`
-- `vampirism:armor_of_swiftness_head_normal`
-- `vampirism:armor_of_swiftness_legs_normal`
-- `vampirism:basic_crossbow`
-- `vampirism:blood_bottle`
-- `vampirism:blood_container`
-- `vampirism:blood_infused_enhanced_iron_ingot`
-- `vampirism:blood_infused_iron_ingot`
-- `vampirism:blood_pedestal`
-- `vampirism:blood_sieve`
-- `vampirism:crossbow_arrow_spitfire`
-- `vampirism:crossbow_arrow_teleport`
-- `vampirism:crossbow_arrow_vampire_killer`
-- `vampirism:dark_stone_bricks`
-- `vampirism:heart_seeker_enhanced`
-- `vampirism:heart_seeker_normal`
-- `vampirism:holy_salt`
-- `vampirism:holy_water_bottle_normal`
-- `vampirism:holy_water_splash_bottle_enhanced`
-- `vampirism:hunter_axe_enhanced`
-- `vampirism:hunter_axe_normal`
-- `vampirism:hunter_coat_chest_normal`
-- `vampirism:hunter_coat_feet_normal`
-- `vampirism:hunter_coat_head_normal`
-- `vampirism:hunter_coat_legs_normal`
-- `vampirism:hunter_table`
-- `vampirism:injection_garlic`
-- `vampirism:pure_salt`
-- `vampirism:stake`
-- `vampirism:umbrella`
-- `vampirism:vampire_cloak_white_black`
-- `vampirism:vampire_fang`
-- `vampirism:weapon_table`
-
-## Icon-only registry IDs
-
-- `numismatics:banking_guide`
-
-## Advancements
-
-- `exposure:adventure/moment_in_time`
-- `vampirism:hunter/become_hunter`
-- `vampirism:vampire/become_vampire`
-
-## Iron's Spells component and spell IDs
-
-Component codec:
-
-- `irons_spellbooks:spell_container`
-
-Spell IDs serialized inside the complete `irons_spellbooks:spell_container` codec:
-
-- `irons_spellbooks:blood_slash`
-- `irons_spellbooks:blood_step`
-- `irons_spellbooks:divine_smite`
-- `irons_spellbooks:heal`
-- `irons_spellbooks:ray_of_siphoning`
-- `irons_spellbooks:recall`
-
-## Chapter art references
-
-- `poiesis:textures/questpics/vvh/blood_ritual_workstation.png`
-- `poiesis:textures/questpics/vvh/blood_school_crest.png`
-- `poiesis:textures/questpics/vvh/free_company_writ.png`
-- `poiesis:textures/questpics/vvh/holy_public_ward.png`
-- `poiesis:textures/questpics/vvh/holy_school_crest.png`
-- `poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png`
-- `poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png`
-- `poiesis:textures/questpics/vvh/rivalry_without_ruin.png`
-
-## Currency values used by the campaign
-
-| Denomination | Registry ID | Base value | Bevel-equivalent |
-|---|---|---:|---:|
-| Spur | `numismatics:spur` | 1 | 0.125 |
-| Bevel | `numismatics:bevel` | 8 | 1 |
-| Sprocket | `numismatics:sprocket` | 16 | 2 |
-| Cog | `numismatics:cog` | 64 | 8 |
-
-Crowns and Suns remain outside campaign issuance and pricing.
-
-## Enforcement
-
-`scripts/vvh_campaign_v3_validate.py` rejects any non-vanilla item, icon, advancement, spell, component, or image reference outside these exact sets. The generated validation report records every identifier actually used, making catalogue drift visible in code review. Syntactic SNBT validity alone is not accepted as registry or codec proof.
+Vanilla `minecraft:*` IDs are outside this campaign-scoped catalog. Runtime/client checks remain separate from static Packwiz membership and JAR-entry proof.
