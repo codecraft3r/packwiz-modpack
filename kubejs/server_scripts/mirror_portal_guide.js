@@ -1,4 +1,33 @@
-// Server script for Mirror Dimension portal feedback, guidance & crafting
+// Server script for Mirror Dimension portal feedback, guidance, crafting & mob modifications
+
+// Ensure all spawning Zombies, Husks, and Drowneds are equipped with helmets so they do not burn in perpetual day
+EntityEvents.spawned(event => {
+  const { entity } = event
+  if (!entity || !entity.isLiving()) return
+
+  const type = String(entity.type)
+  if (type.includes('zombie') || type.includes('husk') || type.includes('drowned')) {
+    try {
+      const headItem = entity.headArmorItem
+      if (!headItem || headItem.isEmpty()) {
+        const helmets = ['minecraft:iron_helmet', 'minecraft:golden_helmet', 'minecraft:chainmail_helmet', 'minecraft:leather_helmet']
+        const chosenHelmet = helmets[Math.floor(Math.random() * helmets.length)]
+        entity.headArmorItem = Item.of(chosenHelmet)
+      }
+    } catch (_e) {
+      try {
+        const EquipmentSlot = Java.loadClass('net.minecraft.world.entity.EquipmentSlot')
+        const ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+        const ItemRegistry = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries').ITEM
+        const ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+        const item = ItemRegistry.get(ResourceLocation.parse('minecraft:iron_helmet'))
+        if (item) {
+          entity.setItemSlot(EquipmentSlot.HEAD, new ItemStack(item))
+        }
+      } catch (_e2) {}
+    }
+  }
+})
 
 // Recipe to craft the Dark Mirror Portal Guide book (Book + Poppy)
 ServerEvents.recipes(event => {
@@ -11,7 +40,7 @@ ServerEvents.recipes(event => {
           JSON.stringify([
             { text: "  Dark Mirror Portal\n", bold: true, color: "dark_purple" },
             { text: "   Construction Guide\n\n", italic: true, color: "gold" },
-            { text: "To open a gateway to the Perpetual Night Overworld:\n\n", color: "black" },
+            { text: "To open a gateway to the Perpetual Day Mirror Overworld:\n\n", color: "black" },
             { text: "1. ", bold: true, color: "dark_red" },
             { text: "Plant 8 Poppies in a 3x3 ring on soil.\n\n", color: "black" },
             { text: "2. ", bold: true, color: "dark_gray" },
@@ -152,7 +181,7 @@ ItemEvents.rightClicked('minecraft:bone_meal', event => {
       if (isMirror) {
         player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fReturning to the Sunlit Overworld..."))
       } else {
-        player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fOpening gateway to the Perpetual Night Overworld..."))
+        player.setStatusMessage(Text.of("§d[Dark Mirror Portal] §fOpening gateway to the Perpetual Day Mirror Overworld..."))
       }
 
       player.playSound('minecraft:block.portal.trigger', 0.8, 1.2)

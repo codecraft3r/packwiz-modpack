@@ -4,63 +4,75 @@
   "spawners": [
     {
       "type": "minecraft:zombie",
-      "weight": 300,
-      "minCount": 4,
-      "maxCount": 8
+      "weight": 600,
+      "minCount": 6,
+      "maxCount": 12
     },
     {
       "type": "minecraft:skeleton",
-      "weight": 250,
+      "weight": 500,
+      "minCount": 6,
+      "maxCount": 12
+    },
+    {
+      "type": "minecraft:creeper",
+      "weight": 400,
       "minCount": 4,
       "maxCount": 8
     },
     {
-      "type": "minecraft:creeper",
-      "weight": 200,
-      "minCount": 3,
-      "maxCount": 6
-    },
-    {
       "type": "minecraft:spider",
-      "weight": 200,
-      "minCount": 3,
-      "maxCount": 6
+      "weight": 400,
+      "minCount": 4,
+      "maxCount": 8
     },
     {
       "type": "minecraft:witch",
-      "weight": 100,
-      "minCount": 2,
-      "maxCount": 4
+      "weight": 250,
+      "minCount": 3,
+      "maxCount": 6
     },
     {
       "type": "minecraft:enderman",
-      "weight": 100,
-      "minCount": 2,
-      "maxCount": 4
+      "weight": 200,
+      "minCount": 3,
+      "maxCount": 6
     },
     {
       "type": "minecraft:cave_spider",
-      "weight": 100,
-      "minCount": 2,
-      "maxCount": 4
+      "weight": 200,
+      "minCount": 3,
+      "maxCount": 6
     },
     {
       "type": "minecraft:stray",
-      "weight": 80,
-      "minCount": 2,
-      "maxCount": 5
+      "weight": 180,
+      "minCount": 3,
+      "maxCount": 6
     },
     {
       "type": "minecraft:husk",
-      "weight": 80,
+      "weight": 180,
+      "minCount": 3,
+      "maxCount": 6
+    },
+    {
+      "type": "minecraft:phantom",
+      "weight": 250,
+      "minCount": 3,
+      "maxCount": 8
+    },
+    {
+      "type": "minecraft:pillager",
+      "weight": 150,
       "minCount": 2,
       "maxCount": 5
     },
     {
-      "type": "minecraft:phantom",
-      "weight": 120,
-      "minCount": 2,
-      "maxCount": 5
+      "type": "minecraft:ravager",
+      "weight": 50,
+      "minCount": 1,
+      "maxCount": 2
     }
   ]
 }
