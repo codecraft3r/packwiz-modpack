@@ -98,8 +98,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400003"
-					item: { count: 1, id: "vampirism:blood_bottle" }
-					count: 4
+					item: { count: 4, id: "vampirism:blood_bottle" }
 					title: "Carry four Blood Bottles"
 					type: "item"
 				}
@@ -159,16 +158,14 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400005"
-					item: { count: 1, id: "vampirism:blood_pedestal" }
-					count: 4
+					item: { count: 4, id: "vampirism:blood_pedestal" }
 					title: "Inspect four Blood Pedestals"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400006"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					count: 2
+					item: { count: 2, id: "vampirism:blood_infused_iron_ingot" }
 					title: "Carry two Blood-Infused Iron"
 					type: "item"
 				}
@@ -235,8 +232,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400009"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					count: 4
+					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
 					title: "Carry four Blood-Infused Iron"
 					type: "item"
 				}
@@ -352,8 +348,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0040000E"
-					item: { count: 1, id: "irons_spellbooks:blood_rune" }
-					count: 4
+					item: { count: 4, id: "irons_spellbooks:blood_rune" }
 					title: "Carry four Blood Runes"
 					type: "item"
 				}
@@ -402,8 +397,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400022"
-					item: { count: 1, id: "vampirism:blood_bottle" }
-					count: 4
+					item: { count: 4, id: "vampirism:blood_bottle" }
 					title: "Carry four Blood Bottles"
 					type: "item"
 				}
@@ -482,32 +476,28 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0040000F"
-					item: { count: 1, id: "vampirism:dark_stone_bricks" }
-					count: 64
+					item: { count: 64, id: "vampirism:dark_stone_bricks" }
 					title: "Inspect sixty-four Dark Stone Bricks"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400010"
-					item: { count: 1, id: "minecraft:dark_oak_log" }
-					count: 32
+					item: { count: 32, id: "minecraft:dark_oak_log" }
 					title: "Inspect thirty-two Dark Oak Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400011"
-					item: { count: 1, id: "minecraft:dark_oak_fence" }
-					count: 16
+					item: { count: 16, id: "minecraft:dark_oak_fence" }
 					title: "Inspect sixteen Dark Oak Fences"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400012"
-					item: { count: 1, id: "minecraft:lantern" }
-					count: 8
+					item: { count: 8, id: "minecraft:lantern" }
 					title: "Inspect eight Lanterns"
 					type: "item"
 				}
@@ -562,16 +552,14 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400029"
-					item: { count: 1, id: "minecraft:honey_bottle" }
-					count: 8
+					item: { count: 8, id: "minecraft:honey_bottle" }
 					title: "Carry eight Honey Bottles"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040002A"
-					item: { count: 1, id: "minecraft:cooked_beef" }
-					count: 32
+					item: { count: 32, id: "minecraft:cooked_beef" }
 					title: "Carry thirty-two Cooked Beef"
 					type: "item"
 				}
@@ -688,8 +676,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400032"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					count: 4
+					item: { count: 4, id: "vampirism:blood_infused_iron_ingot" }
 					title: "Carry four Blood-Infused Iron"
 					type: "item"
 				}
@@ -794,8 +781,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0040000B"
-					item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }
-					count: 2
+					item: { count: 2, id: "vampirism:blood_infused_enhanced_iron_ingot" }
 					title: "Carry two Enhanced Blood-Infused Iron"
 					type: "item"
 				}
@@ -844,16 +830,14 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400033"
-					item: { count: 1, id: "minecraft:white_bed" }
-					count: 2
+					item: { count: 2, id: "minecraft:white_bed" }
 					title: "Inspect two White Beds"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400034"
-					item: { count: 1, id: "minecraft:barrel" }
-					count: 4
+					item: { count: 4, id: "minecraft:barrel" }
 					title: "Inspect four Barrels"
 					type: "item"
 				}
@@ -917,8 +901,7 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400038"
-					item: { count: 1, id: "exposure:photograph_frame" }
-					count: 8
+					item: { count: 8, id: "exposure:photograph_frame" }
 					title: "Inspect eight Photograph Frames"
 					type: "item"
 				}

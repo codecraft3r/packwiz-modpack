@@ -739,10 +739,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300002",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:stake"
               },
-              "count": 4,
               "title": "Carry four stakes",
               "type": "item"
             },
@@ -840,10 +839,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300005",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:holy_water_bottle_normal"
               },
-              "count": 4,
               "title": "Carry four normal Holy Waters",
               "type": "item"
             },
@@ -851,10 +849,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300006",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "vampirism:pure_salt"
               },
-              "count": 8,
               "title": "Carry eight Pure Salt",
               "type": "item"
             }
@@ -952,10 +949,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300009",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "vampirism:crossbow_arrow_vampire_killer"
               },
-              "count": 16,
               "title": "Carry sixteen killer quarrels",
               "type": "item"
             }
@@ -1110,10 +1106,9 @@
               "consume_items": false,
               "id": "7A11C1DF0030000E",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "irons_spellbooks:holy_rune"
               },
-              "count": 4,
               "title": "Carry four Holy Runes",
               "type": "item"
             },
@@ -1178,10 +1173,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300022",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "vampirism:pure_salt"
               },
-              "count": 8,
               "title": "Carry eight Pure Salt",
               "type": "item"
             },
@@ -1189,10 +1183,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300023",
               "item": {
-                "count": 1,
+                "count": 32,
                 "id": "vampirism:holy_salt"
               },
-              "count": 32,
               "title": "Carry thirty-two Holy Salt",
               "type": "item"
             },
@@ -1307,10 +1300,9 @@
               "consume_items": false,
               "id": "7A11C1DF0030000F",
               "item": {
-                "count": 1,
+                "count": 64,
                 "id": "minecraft:stone_bricks"
               },
-              "count": 64,
               "title": "Inspect sixty-four Stone Bricks",
               "type": "item"
             },
@@ -1318,10 +1310,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300010",
               "item": {
-                "count": 1,
+                "count": 32,
                 "id": "minecraft:oak_log"
               },
-              "count": 32,
               "title": "Inspect thirty-two Oak Logs",
               "type": "item"
             },
@@ -1329,10 +1320,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300011",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "minecraft:iron_bars"
               },
-              "count": 16,
               "title": "Inspect sixteen Iron Bars",
               "type": "item"
             },
@@ -1340,10 +1330,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300012",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "minecraft:lantern"
               },
-              "count": 8,
               "title": "Inspect eight Lanterns",
               "type": "item"
             }
@@ -1422,10 +1411,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300029",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "minecraft:honey_bottle"
               },
-              "count": 8,
               "title": "Carry eight Honey Bottles",
               "type": "item"
             },
@@ -1433,10 +1421,9 @@
               "consume_items": false,
               "id": "7A11C1DF0030002A",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "minecraft:golden_carrot"
               },
-              "count": 16,
               "title": "Carry sixteen Golden Carrots",
               "type": "item"
             }
@@ -1587,10 +1574,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300030",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "vampirism:crossbow_arrow_spitfire"
               },
-              "count": 16,
               "title": "Carry sixteen spitfire quarrels",
               "type": "item"
             },
@@ -1598,10 +1584,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300031",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "vampirism:crossbow_arrow_teleport"
               },
-              "count": 16,
               "title": "Carry sixteen teleport quarrels",
               "type": "item"
             }
@@ -1829,10 +1814,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300032",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "minecraft:white_bed"
               },
-              "count": 2,
               "title": "Inspect two White Beds",
               "type": "item"
             },
@@ -1840,10 +1824,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300033",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "minecraft:barrel"
               },
-              "count": 4,
               "title": "Inspect four Barrels",
               "type": "item"
             },
@@ -1937,10 +1920,9 @@
               "consume_items": false,
               "id": "7A11C1DF00300037",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "exposure:photograph_frame"
               },
-              "count": 8,
               "title": "Inspect eight Photograph Frames",
               "type": "item"
             },
@@ -2197,10 +2179,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400003",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:blood_bottle"
               },
-              "count": 4,
               "title": "Carry four Blood Bottles",
               "type": "item"
             }
@@ -2288,10 +2269,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400005",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:blood_pedestal"
               },
-              "count": 4,
               "title": "Inspect four Blood Pedestals",
               "type": "item"
             },
@@ -2299,10 +2279,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400006",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "vampirism:blood_infused_iron_ingot"
               },
-              "count": 2,
               "title": "Carry two Blood-Infused Iron",
               "type": "item"
             }
@@ -2400,10 +2379,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400009",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:blood_infused_iron_ingot"
               },
-              "count": 4,
               "title": "Carry four Blood-Infused Iron",
               "type": "item"
             }
@@ -2558,10 +2536,9 @@
               "consume_items": false,
               "id": "7A11C1DF0040000E",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "irons_spellbooks:blood_rune"
               },
-              "count": 4,
               "title": "Carry four Blood Runes",
               "type": "item"
             },
@@ -2635,10 +2612,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400022",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:blood_bottle"
               },
-              "count": 4,
               "title": "Carry four Blood Bottles",
               "type": "item"
             },
@@ -2753,10 +2729,9 @@
               "consume_items": false,
               "id": "7A11C1DF0040000F",
               "item": {
-                "count": 1,
+                "count": 64,
                 "id": "vampirism:dark_stone_bricks"
               },
-              "count": 64,
               "title": "Inspect sixty-four Dark Stone Bricks",
               "type": "item"
             },
@@ -2764,10 +2739,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400010",
               "item": {
-                "count": 1,
+                "count": 32,
                 "id": "minecraft:dark_oak_log"
               },
-              "count": 32,
               "title": "Inspect thirty-two Dark Oak Logs",
               "type": "item"
             },
@@ -2775,10 +2749,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400011",
               "item": {
-                "count": 1,
+                "count": 16,
                 "id": "minecraft:dark_oak_fence"
               },
-              "count": 16,
               "title": "Inspect sixteen Dark Oak Fences",
               "type": "item"
             },
@@ -2786,10 +2759,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400012",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "minecraft:lantern"
               },
-              "count": 8,
               "title": "Inspect eight Lanterns",
               "type": "item"
             }
@@ -2868,10 +2840,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400029",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "minecraft:honey_bottle"
               },
-              "count": 8,
               "title": "Carry eight Honey Bottles",
               "type": "item"
             },
@@ -2879,10 +2850,9 @@
               "consume_items": false,
               "id": "7A11C1DF0040002A",
               "item": {
-                "count": 1,
+                "count": 32,
                 "id": "minecraft:cooked_beef"
               },
-              "count": 32,
               "title": "Carry thirty-two Cooked Beef",
               "type": "item"
             }
@@ -3052,10 +3022,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400032",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "vampirism:blood_infused_iron_ingot"
               },
-              "count": 4,
               "title": "Carry four Blood-Infused Iron",
               "type": "item"
             }
@@ -3212,10 +3181,9 @@
               "consume_items": false,
               "id": "7A11C1DF0040000B",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "vampirism:blood_infused_enhanced_iron_ingot"
               },
-              "count": 2,
               "title": "Carry two Enhanced Blood-Infused Iron",
               "type": "item"
             }
@@ -3284,10 +3252,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400033",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "minecraft:white_bed"
               },
-              "count": 2,
               "title": "Inspect two White Beds",
               "type": "item"
             },
@@ -3295,10 +3262,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400034",
               "item": {
-                "count": 1,
+                "count": 4,
                 "id": "minecraft:barrel"
               },
-              "count": 4,
               "title": "Inspect four Barrels",
               "type": "item"
             },
@@ -3392,10 +3358,9 @@
               "consume_items": false,
               "id": "7A11C1DF00400038",
               "item": {
-                "count": 1,
+                "count": 8,
                 "id": "exposure:photograph_frame"
               },
-              "count": 8,
               "title": "Inspect eight Photograph Frames",
               "type": "item"
             },
@@ -3836,10 +3801,9 @@
               "consume_items": true,
               "id": "7A11C1DF00500005",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "count": 2,
               "title": "Submit 2 Sprockets",
               "type": "item"
             }
@@ -3988,10 +3952,9 @@
               "consume_items": true,
               "id": "7A11C1DF0050000A",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "count": 2,
               "title": "Submit 2 Sprockets",
               "type": "item"
             }

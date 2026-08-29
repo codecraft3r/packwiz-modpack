@@ -110,15 +110,15 @@ hash = "a94d018501c8146b034f83ac8a47202f8fb2f13e0d829829147d49e961a21ff0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "f5bca2f6dc3d1cbe755edd5845c64f78fb41abd84c2d006fde5603857c176ec4"
+hash = "728e150ca75185cb26cd36db8b8e05f95323dcda5326606e68f9e180f59d5547"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
-hash = "1f410fee2e99d665e6c0795a1c9cdd373eb3f522d4e07466cafe8fa077fe20d8"
+hash = "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"
-hash = "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f"
+hash = "32cb39bb6325e8afcc202cec5858c0142896c8719c8d88fa5016782cef81da21"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -300,7 +300,7 @@ hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/server_scripts/mirror_portal_guide.js"
-hash = "3e255a688f8aeb2d33858016f18a8005f1dcb47ff05f90b3684e8a6f072d6c32"
+hash = "e12634d6bf9c6999a007e26d250ebe5e829cac6b45396e653643282e91e02ee7"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"

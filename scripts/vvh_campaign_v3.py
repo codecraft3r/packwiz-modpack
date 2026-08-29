@@ -99,10 +99,8 @@ def item_task(ch: int, idx: int, item: str, count: int = 1, title: str | None = 
     task: dict[str, Any] = {
         "consume_items": consume,
         "id": tid(ch, idx),
-        "item": {"count": 1, "id": item},
+        "item": {"count": count, "id": item},
     }
-    if count != 1:
-        task["count"] = count
     if title:
         task["title"] = title
     task["type"] = "item"
