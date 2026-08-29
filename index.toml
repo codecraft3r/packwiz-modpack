@@ -300,7 +300,7 @@ hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/server_scripts/mirror_portal_guide.js"
-hash = "bd44168d03281b1983cd389f6fe51b3e86ed23954090d8d950bec5232523cf15"
+hash = "c20a77134b2d4ec746c24dd83e4cc09582e0b92e82f6d310722247315636d3d5"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"
@@ -884,6 +884,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "93284ca7f2f23f0bb76d42b797cabf2aea1914ee9825bec82bf6ffe4c60dda0d"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "152769b5dfbb92a836634e315898b23b6a555c60b6f05ddf38c00085f2b784f6"
 metafile = true
 
 [[files]]

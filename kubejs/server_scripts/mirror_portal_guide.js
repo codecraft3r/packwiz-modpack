@@ -29,7 +29,7 @@ EntityEvents.spawned(event => {
   }
 })
 
-// Recipe to craft the Dark Mirror Portal Guide book (Book + Poppy)
+// Recipe to craft the Dark Mirror Portal Guide book (Book + Poppy + Stone Brick)
 ServerEvents.recipes(event => {
   event.shapeless(
     Item.of('minecraft:written_book', {
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         ]
       }
     }),
-    ['minecraft:book', 'minecraft:poppy']
+    ['minecraft:book', 'minecraft:poppy', 'minecraft:stone_bricks']
   )
 })
 
