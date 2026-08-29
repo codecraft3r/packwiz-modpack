@@ -3038,10 +3038,10 @@
             "7A11C0DF00400003"
           ],
           "description": [
-            "Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground."
+            "Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."
           ],
           "hide_dependency_lines": false,
-          "icon": "exposure:camera",
+          "icon": "vista:television",
           "id": "7A11C0DF00400008",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3060,17 +3060,8 @@
             {
               "id": "7A11C2DF00400036",
               "item": {
-                "count": 8,
-                "id": "exposure:high_sensitivity_color_film"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400037",
-              "item": {
-                "count": 8,
-                "id": "exposure:black_and_white_film"
+                "count": 4,
+                "id": "vista:hollow_cassette"
               },
               "team_reward": false,
               "type": "item"
@@ -3078,16 +3069,16 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Night records",
+          "subtitle": "Specialty · Vista broadcast",
           "tasks": [
             {
               "consume_items": false,
               "id": "7A11C1DF00400013",
               "item": {
                 "count": 1,
-                "id": "explorerscompass:explorerscompass"
+                "id": "vista:television"
               },
-              "title": "Carry an Explorer's Compass",
+              "title": "Craft a Television",
               "type": "item"
             },
             {
@@ -3095,19 +3086,13 @@
               "id": "7A11C1DF00400014",
               "item": {
                 "count": 1,
-                "id": "exposure:camera"
+                "id": "vista:viewfinder"
               },
-              "title": "Carry a Camera",
+              "title": "Craft a Viewfinder",
               "type": "item"
-            },
-            {
-              "advancement": "exposure:adventure/moment_in_time",
-              "criterion": "",
-              "id": "7A11C1DF00400015",
-              "type": "advancement"
             }
           ],
-          "title": "Moon Courier",
+          "title": "Nocturnal Broadcast",
           "x": -10,
           "y": 0
         },

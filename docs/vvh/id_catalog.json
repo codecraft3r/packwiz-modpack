@@ -7,7 +7,8 @@
     "exposure",
     "irons_spellbooks",
     "numismatics",
-    "vampirism"
+    "vampirism",
+    "vista"
   ],
   "unverified_namespaces": [],
   "pack_membership": {
@@ -66,6 +67,15 @@
         "download_hash_format": "sha512",
         "download_hash": "b19aec3fb8abb2c83047b64d2497fa440e9295044919b546cfaedd417e604e2176e48c289745ed0a03ec57d032e7051e16de993ef3107d42f5b077187662c070",
         "index_sha256": "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
+      },
+      "vista": {
+        "metadata": "mods/vista_tv.pw.toml",
+        "name": "vista",
+        "filename": "vista-1.21.1-5.4.4-neoforge.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "a26106fb220f71a09e5b7817f757952f0b5ff277d2a29cfce07255d307a680bdde8158ccc0ffa9311356e70a125b26ed85216a9418aa195fd47dc48a4b15dd60",
+        "index_sha256": "040b6ebf5597bc3fda75a00e0fc17644fb7853a08717249ae3da183a93e5075c"
       }
     }
   },
@@ -101,14 +111,6 @@
       "source_jar": "create-1.21.1-6.0.10.jar",
       "source_entry": "assets/create/lang/en_us.json::item.create.precision_mechanism",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:wrench",
-      "display_name": "Wrench",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "explorerscompass",
@@ -149,14 +151,6 @@
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.color_film",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "exposure",
-      "id": "exposure:high_sensitivity_color_film",
-      "display_name": "High-Sensitivity Color Film",
-      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film; data/exposure/recipe/high_sensitivity_color_film.json",
-      "obtainability_note": "",
-      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar"
     },
     {
       "namespace": "exposure",
@@ -589,6 +583,30 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.weapon_table",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:hollow_cassette",
+      "display_name": "Hollow Cassette",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/hollow_cassette.json; data/vista/recipe/hollow_cassette.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:television",
+      "display_name": "Television",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/television.json; data/vista/recipe/television.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:viewfinder",
+      "display_name": "Viewfinder",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/viewfinder.json; data/vista/recipe/viewfinder.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     }
   ],
   "advancements": {

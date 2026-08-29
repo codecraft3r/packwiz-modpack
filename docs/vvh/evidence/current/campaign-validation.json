@@ -162,7 +162,6 @@
       "exposure:black_and_white_film",
       "exposure:camera",
       "exposure:color_film",
-      "exposure:high_sensitivity_color_film",
       "exposure:photograph_frame",
       "irons_spellbooks:affinity_ring_blood",
       "irons_spellbooks:affinity_ring_holy",
@@ -215,7 +214,10 @@
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
       "vampirism:vampire_fang",
-      "vampirism:weapon_table"
+      "vampirism:weapon_table",
+      "vista:hollow_cassette",
+      "vista:television",
+      "vista:viewfinder"
     ],
     "nonvanilla_icons": [
       "create:precision_mechanism",
@@ -244,7 +246,8 @@
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
       "vampirism:vampire_fang",
-      "vampirism:weapon_table"
+      "vampirism:weapon_table",
+      "vista:television"
     ],
     "advancements": [
       "exposure:adventure/moment_in_time",
@@ -296,8 +299,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
-        "actual": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
+        "index": "d314134768540156ca8be9a0d8ec1af075aa4748a4317c00a5a73286293d09fa",
+        "actual": "d314134768540156ca8be9a0d8ec1af075aa4748a4317c00a5a73286293d09fa",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -316,8 +319,8 @@
         "match": true
       }
     },
-    "index_sha256": "2a497ed4983c5f156601276809247edce191c94f0eefe6e2be04ca2d3db38bac",
-    "pack_toml_declared_index_sha256": "2a497ed4983c5f156601276809247edce191c94f0eefe6e2be04ca2d3db38bac",
+    "index_sha256": "0d35393ece41df439f485779e693f624bc8c12b437ab72e761a142e520707a33",
+    "pack_toml_declared_index_sha256": "0d35393ece41df439f485779e693f624bc8c12b437ab72e761a142e520707a33",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

@@ -95,6 +95,9 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:vampire_cloak_white_black",
     "vampirism:vampire_fang",
     "vampirism:weapon_table",
+    "vista:hollow_cassette",
+    "vista:television",
+    "vista:viewfinder",
 }
 VERIFIED_NONVANILLA_ICONS = {
     "create:precision_mechanism",
@@ -124,6 +127,9 @@ VERIFIED_NONVANILLA_ICONS = {
     "vampirism:vampire_cloak_white_black",
     "vampirism:vampire_fang",
     "vampirism:weapon_table",
+    "vista:hollow_cassette",
+    "vista:television",
+    "vista:viewfinder",
 }
 VERIFIED_ADVANCEMENTS = {
     "exposure:adventure/moment_in_time",

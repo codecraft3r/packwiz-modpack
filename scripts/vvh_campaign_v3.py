@@ -1050,23 +1050,21 @@ def build_vampires(group: str) -> Chapter:
     )
     courier = ch.add(
         8,
-        title="Moon Courier",
-        subtitle="Specialty · Night records",
-        description="Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground.",
-        icon="exposure:camera",
+        title="Nocturnal Broadcast",
+        subtitle="Specialty · Vista broadcast",
+        description="Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds.",
+        icon="vista:television",
         x=-10,
         y=0,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 19, "explorerscompass:explorerscompass", title="Carry an Explorer's Compass"),
-            item_task(4, 20, "exposure:camera", title="Carry a Camera"),
-            advancement_task(4, 21, "exposure:adventure/moment_in_time"),
+            item_task(4, 19, "vista:television", title="Craft a Television"),
+            item_task(4, 20, "vista:viewfinder", title="Craft a Viewfinder"),
         ],
         rewards=[
             item_reward(4, 53, "numismatics:sprocket"),
-            item_reward(4, 54, "exposure:high_sensitivity_color_film", 8),
-            item_reward(4, 55, "exposure:black_and_white_film", 8),
+            item_reward(4, 54, "vista:hollow_cassette", 4),
         ],
         dependencies=[core3],
     )

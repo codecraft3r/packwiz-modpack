@@ -687,8 +687,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground."]
-			icon: { id: "exposure:camera" }
+			description: ["Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."]
+			icon: { id: "vista:television" }
 			id: "7A11C0DF00400008"
 			optional: true
 			rewards: [
@@ -700,38 +700,31 @@
 				}
 				{
 					id: "7A11C2DF00400036"
-					item: { count: 8, id: "exposure:high_sensitivity_color_film" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400037"
-					item: { count: 8, id: "exposure:black_and_white_film" }
+					item: { count: 4, id: "vista:hollow_cassette" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Night records"
+			subtitle: "Specialty · Vista broadcast"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400013"
-					item: { count: 1, id: "explorerscompass:explorerscompass" }
-					title: "Carry an Explorer's Compass"
+					item: { count: 1, id: "vista:television" }
+					title: "Craft a Television"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400014"
-					item: { count: 1, id: "exposure:camera" }
-					title: "Carry a Camera"
+					item: { count: 1, id: "vista:viewfinder" }
+					title: "Craft a Viewfinder"
 					type: "item"
 				}
-				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00400015", type: "advancement" }
 			]
-			title: "Moon Courier"
+			title: "Nocturnal Broadcast"
 			x: -10
 			y: 0
 		}
