@@ -55,4 +55,17 @@ ServerEvents.recipes(event => {
       id: 'mekanism:alloy_infused'
     }
   })
+
+  // --- Construction Wands Modifications ---
+
+  // Replace constructionwand:infinity_wand recipe with 2 sticks and 1 mekanism:ingot_refined_obsidian on diagonal (bottom-left to top-right)
+  event.remove({ output: 'constructionwand:infinity_wand' })
+  event.shaped('constructionwand:infinity_wand', [
+    '  O',
+    ' S ',
+    'S  '
+  ], {
+    S: 'minecraft:stick',
+    O: 'mekanism:ingot_refined_obsidian'
+  })
 })

@@ -9,7 +9,9 @@ __pycache__/
 *.pyc
 temp_cache/
 
-
 # Minecraft client-local data (FTB chunks maps, waypoints)
 local/
 tmp/
+
+# OS metadata
+.DS_Store
