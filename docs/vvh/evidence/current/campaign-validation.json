@@ -2,9 +2,9 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 50,
+    "quests": 52,
     "chapter_quest_counts": {
-      "ch01_island_charter": 5,
+      "ch01_island_charter": 7,
       "ch02_callings": 5,
       "ch03_lantern_order": 15,
       "ch04_house_night": 15,
@@ -29,9 +29,9 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 50,
+    "reachable_quests": 52,
     "cycles": false,
-    "charter_clause_count": 3,
+    "charter_clause_count": 5,
     "hunter_gate": "any 3 of 8 after Core III",
     "vampire_gate": "any 3 of 8 after Core III",
     "reward_descendant_task_collisions": []
@@ -176,16 +176,16 @@
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
       "irons_spellbooks:uncommon_ink",
-      "irons_spellbooks:wizard_boots",
-      "irons_spellbooks:wizard_chestplate",
-      "irons_spellbooks:wizard_helmet",
-      "irons_spellbooks:wizard_leggings",
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
       "vampirism:alchemical_cauldron",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
+      "vampirism:armor_of_swiftness_chest_normal",
+      "vampirism:armor_of_swiftness_feet_normal",
+      "vampirism:armor_of_swiftness_head_normal",
+      "vampirism:armor_of_swiftness_legs_normal",
       "vampirism:basic_crossbow",
       "vampirism:blood_bottle",
       "vampirism:blood_container",
@@ -260,8 +260,7 @@
       "irons_spellbooks:recall"
     ],
     "components": [
-      "irons_spellbooks:spell_container",
-      "minecraft:dyed_color"
+      "irons_spellbooks:spell_container"
     ],
     "images": [
       "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
@@ -282,8 +281,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch01_island_charter.snbt": {
-        "index": "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0",
-        "actual": "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0",
+        "index": "489c7bce1839ac654ddfe470305739cc5cc166a451a3151ee72b6d4550d09131",
+        "actual": "489c7bce1839ac654ddfe470305739cc5cc166a451a3151ee72b6d4550d09131",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch02_callings.snbt": {
@@ -297,8 +296,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "b1addcbb0d18986129b9cc6a7c35f5ab055ab6b54a59de7023e9b17d731b5a32",
-        "actual": "b1addcbb0d18986129b9cc6a7c35f5ab055ab6b54a59de7023e9b17d731b5a32",
+        "index": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
+        "actual": "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -317,8 +316,8 @@
         "match": true
       }
     },
-    "index_sha256": "015a46241641e785c84716d74f3db73788bff536d673bc7238334f72be4864eb",
-    "pack_toml_declared_index_sha256": "015a46241641e785c84716d74f3db73788bff536d673bc7238334f72be4864eb",
+    "index_sha256": "2a497ed4983c5f156601276809247edce191c94f0eefe6e2be04ca2d3db38bac",
+    "pack_toml_declared_index_sha256": "2a497ed4983c5f156601276809247edce191c94f0eefe6e2be04ca2d3db38bac",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

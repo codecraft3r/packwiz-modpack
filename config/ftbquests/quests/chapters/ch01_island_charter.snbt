@@ -51,6 +51,22 @@
 		}
 		{
 			dependencies: ["7A11C0DF00100001"]
+			description: ["Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise."]
+			icon: { id: "minecraft:filled_map" }
+			id: "7A11C0DF00100002"
+			rewards: [ ]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Required · Land boundaries"
+			tasks: [
+				{ id: "7A11C1DF00100002", title: "I understand claim boundaries", type: "checkmark" }
+			]
+			title: "Claim Clearly"
+			x: -8
+			y: -1.5d
+		}
+		{
+			dependencies: ["7A11C0DF00100001"]
 			description: ["A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it."]
 			icon: { id: "minecraft:oak_door" }
 			id: "7A11C0DF00100006"
@@ -98,8 +114,30 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7A11C0DF00100006", "7A11C0DF00100003", "7A11C0DF00100007"]
-			description: ["You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open."]
+			dependencies: ["7A11C0DF00100001"]
+			description: ["FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate."]
+			icon: { id: "minecraft:chest" }
+			id: "7A11C0DF00100004"
+			rewards: [ ]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Required · Shared progress"
+			tasks: [
+				{ id: "7A11C1DF00100004", title: "I know who shares my quest progress", type: "checkmark" }
+			]
+			title: "Choose Teammates"
+			x: 8
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7A11C0DF00100002"
+				"7A11C0DF00100006"
+				"7A11C0DF00100003"
+				"7A11C0DF00100007"
+				"7A11C0DF00100004"
+			]
+			description: ["You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open."]
 			icon: { id: "minecraft:writable_book" }
 			id: "7A11C0DF00100005"
 			rewards: [
@@ -112,9 +150,9 @@
 			]
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "Required · Public access · consent · rivalry"
+			subtitle: "Required · Claims · consent · teams"
 			tasks: [
-				{ id: "7A11C1DF00100005", title: "I accept the Charter promises", type: "checkmark" }
+				{ id: "7A11C1DF00100005", title: "I accept all five promises", type: "checkmark" }
 			]
 			title: "Sign the Charter"
 			x: 0

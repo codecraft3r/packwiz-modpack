@@ -55,10 +55,6 @@ VERIFIED_NONVANILLA_ITEMS = {
     "irons_spellbooks:rare_ink",
     "irons_spellbooks:scroll",
     "irons_spellbooks:uncommon_ink",
-    "irons_spellbooks:wizard_boots",
-    "irons_spellbooks:wizard_chestplate",
-    "irons_spellbooks:wizard_helmet",
-    "irons_spellbooks:wizard_leggings",
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
@@ -107,10 +103,6 @@ VERIFIED_NONVANILLA_ICONS = {
     "irons_spellbooks:blood_rune",
     "irons_spellbooks:holy_rune",
     "irons_spellbooks:uncommon_ink",
-    "irons_spellbooks:wizard_boots",
-    "irons_spellbooks:wizard_chestplate",
-    "irons_spellbooks:wizard_helmet",
-    "irons_spellbooks:wizard_leggings",
     "numismatics:banking_guide",
     "numismatics:bevel",
     "numismatics:cog",
@@ -146,7 +138,7 @@ VERIFIED_SPELLS = {
     "irons_spellbooks:ray_of_siphoning",
     "irons_spellbooks:recall",
 }
-VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container", "minecraft:dyed_color"}
+VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container"}
 VERIFIED_IMAGES = {
     "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
     "poiesis:textures/questpics/vvh/blood_school_crest.png",
@@ -164,7 +156,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [5, 5, 15, 15, 10]
+EXPECTED_COUNTS = [7, 5, 15, 15, 10]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -302,9 +294,9 @@ def main() -> int:
         errors.append(f"unreachable quests: {missing_reach}")
 
     charter_terminal = quest_by_id[source.qid(1, 5)]
-    expected_charter = {source.qid(1, i) for i in (6, 3, 7)}
+    expected_charter = {source.qid(1, i) for i in (2, 6, 3, 7, 4)}
     if set(charter_terminal["dependencies"]) != expected_charter:
-        errors.append("Charter terminal does not directly depend on all three mandatory clauses")
+        errors.append("Charter terminal does not directly depend on all five mandatory clauses")
     for later_ch in chapters[1:]:
         for quest in later_ch.quests:
             ancestors: set[str] = set()

@@ -3,6 +3,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'mekanism:mekasuit_bodyarmor' })
   event.remove({ output: 'mekanism:mekasuit_pants' })
   event.remove({ output: 'mekanism:mekasuit_boots' })
+  event.remove({ output: 'mekanism:antiprotonic_nucleosynthesizer' })
 
   // --- Mekanism Recipe Modifications ---
 
