@@ -258,7 +258,7 @@ hash = "36e2cd860b265ec92357b3b691572d4eefe393eb95dde7f3e1c880a971794ff1"
 
 [[files]]
 file = "datapacks/overworld_customization/data/overworldmirror/dimension_type/overworld_mirror.json"
-hash = "7f4c91dc17433be90a64e09d9abb3a38ce0557b25d8bb0fd4d2fb9b1c463eb26"
+hash = "79edc495221f1d1dbc8c4fa3f55272940e3b8dd012d94356b0a894319e90679d"
 
 [[files]]
 file = "datapacks/overworld_customization/pack.mcmeta"
@@ -312,7 +312,7 @@ hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/server_scripts/mirror_portal_guide.js"
-hash = "c20a77134b2d4ec746c24dd83e4cc09582e0b92e82f6d310722247315636d3d5"
+hash = "6a8cc993a088ea6523c8ac11205dc1a4b438cabbfd466d7e4da9a4986269d4b8"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"
