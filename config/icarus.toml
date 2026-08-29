@@ -1,0 +1,7 @@
+# Icarus Configuration
+armor_slows = false
+armor_slow_multiplier = 0.0
+exhaustion_amount = 0.0
+fly_exhaustion = 0.0
+wings_speed = 1.0
+can_loop = true

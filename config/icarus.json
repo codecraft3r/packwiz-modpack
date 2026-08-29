@@ -1,0 +1,8 @@
+{
+  "armorSlows": false,
+  "armorSlowMultiplier": 0.0,
+  "exhaustionAmount": 0.0,
+  "flyExhaustion": 0.0,
+  "canLoop": true,
+  "wingsSpeed": 1.0
+}

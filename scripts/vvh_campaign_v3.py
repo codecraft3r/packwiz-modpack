@@ -14,9 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
-import shutil
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Iterable
@@ -101,10 +99,8 @@ def item_task(ch: int, idx: int, item: str, count: int = 1, title: str | None = 
     task: dict[str, Any] = {
         "consume_items": consume,
         "id": tid(ch, idx),
-        "item": {"count": 1, "id": item},
+        "item": {"count": count, "id": item},
     }
-    if count != 1:
-        task["count"] = count
     if title:
         task["title"] = title
     task["type"] = "item"
@@ -541,9 +537,9 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 11, "numismatics:sprocket", 2),
-            item_reward(3, 12, "vampirism:crossbow_arrow_normal", 64),
+            item_reward(3, 12, "minecraft:arrow", 64),
             item_reward(3, 13, "minecraft:feather", 32),
-            item_reward(3, 14, "vampirism:crossbow_arrow_vampire_killer", 16),
+            item_reward(3, 14, "minecraft:flint", 32),
             item_reward(3, 15, "minecraft:iron_ingot", 32),
         ],
         dependencies=[core2],
@@ -572,7 +568,7 @@ def build_hunters(group: str) -> Chapter:
         5,
         title="Pure Defense",
         subtitle="Specialty · Wards",
-        description="Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
+        description="Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
         icon="vampirism:pure_salt",
         x=-10,
         y=0,
@@ -580,7 +576,7 @@ def build_hunters(group: str) -> Chapter:
         optional=True,
         tasks=[
             item_task(3, 34, "vampirism:pure_salt", 8, "Carry eight Pure Salt"),
-            item_task(3, 35, "vampirism:purified_garlic", 16, "Carry sixteen Purified Garlic"),
+            item_task(3, 35, "vampirism:holy_salt", 32, "Carry thirty-two Holy Salt"),
             item_task(3, 36, "vampirism:injection_garlic", title="Carry a garlic injection"),
         ],
         rewards=[
@@ -681,7 +677,7 @@ def build_hunters(group: str) -> Chapter:
         rewards=[
             item_reward(3, 48, "numismatics:sprocket"),
             item_reward(3, 49, "minecraft:iron_ingot", 32),
-            item_reward(3, 50, "vampirism:crossbow_arrow_normal", 64),
+            item_reward(3, 50, "minecraft:arrow", 64),
         ],
         dependencies=[core3],
     )
@@ -724,7 +720,7 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 16, "numismatics:cog"),
-            item_reward(3, 17, "irons_spellbooks:holy_upgrade_orb"),
+            item_reward(3, 17, "irons_spellbooks:affinity_ring_holy"),
             item_reward(3, 18, "minecraft:obsidian", 16),
             item_reward(3, 19, "minecraft:diamond", 8),
         ],
@@ -1091,7 +1087,7 @@ def build_vampires(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(4, 16, "numismatics:cog"),
-            item_reward(4, 17, "irons_spellbooks:blood_upgrade_orb"),
+            item_reward(4, 17, "irons_spellbooks:affinity_ring_blood"),
             item_reward(4, 18, "minecraft:obsidian", 16),
             item_reward(4, 19, "minecraft:diamond", 8),
         ],
@@ -1549,16 +1545,6 @@ def main() -> int:
 
     action = "updated" if stale else "verified"
     print(f"{action} {len(expected)} authoritative files; unknown chapter files were not deleted")
-
-    appdata = os.environ.get("APPDATA")
-    if appdata:
-        instance_ftb = Path(appdata) / "PrismLauncher/instances/Poiesis Modded dev/minecraft/config/ftbquests"
-        if instance_ftb.parent.exists():
-            src = root / "config/ftbquests"
-            if src.exists():
-                shutil.copytree(src, instance_ftb, dirs_exist_ok=True)
-                print(f"one-way synced quest files to local instance: {instance_ftb}")
-
     return 0
 
 

@@ -110,15 +110,15 @@ hash = "a94d018501c8146b034f83ac8a47202f8fb2f13e0d829829147d49e961a21ff0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "95829227ebd3133e87cb0a1a032964483c63c094655f2ef480e06403c5cae639"
+hash = "728e150ca75185cb26cd36db8b8e05f95323dcda5326606e68f9e180f59d5547"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
-hash = "15f553dd9ef405c8ed96227c0b8ebd32d5087765278b7a6a0358c9b2d9cbf44f"
+hash = "2127aa893abe29a9e7bd1b9b419c157be8c99c89ecd7cc3f6f21cfcbc297e5dd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"
-hash = "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f"
+hash = "32cb39bb6325e8afcc202cec5858c0142896c8719c8d88fa5016782cef81da21"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -135,6 +135,14 @@ hash = "2ef5e2dca3a653ced3f3981a85a32832fb3716caa5fa05e233f50ab16044a2c4"
 [[files]]
 file = "config/ftbultimine-server.snbt"
 hash = "147a38645eda41c75721eb6825585f7af00b19bd3ae7e948779635747b8840e9"
+
+[[files]]
+file = "config/icarus.json"
+hash = "a7a307c82c7da96e77b3ca708442d37629226d7e01f7c6ca57c714e9f9e634fa"
+
+[[files]]
+file = "config/icarus.toml"
+hash = "23c07b805845f5934c9b1b86626a1499270b61647d0de05da0e0f1b09bcb88a6"
 
 [[files]]
 file = "config/infinitetrading.json5"
@@ -233,6 +241,10 @@ file = "configureddefaults/config/xaero/world-map/profiles/default.cfg"
 hash = "043bc669d5119e2915440e27cf24ae211fedb5a322b09a01297eb707aa866ccf"
 
 [[files]]
+file = "datapacks/overworld_customization/data/icarus/tags/item/no_hunger.json"
+hash = "cf72f05a595d2c34407ef6722c2f223a048ab474ddc8793ad1215a9da8dcfa96"
+
+[[files]]
 file = "datapacks/overworld_customization/data/minecraft/dimension/overworld.json"
 hash = "7a1edb819e713190b24d23efe5eec269bbb4839909f98bc624d693bef04712d4"
 
@@ -292,7 +304,7 @@ hash = "bbe82168b612863e01f0b0dc09a27fcd73bcf301a91c10505064d44f16bd18ce"
 
 [[files]]
 file = "kubejs/server_scripts/crafting.js"
-hash = "8a112ffbc2d0138dcda865bba72a7897515c48e30e70ea6af55311e4776102d4"
+hash = "b8af56ccbf6c39e5a32868059f6f07b1a6856033de251137c28fea21f551a961"
 
 [[files]]
 file = "kubejs/server_scripts/givespell.js"
