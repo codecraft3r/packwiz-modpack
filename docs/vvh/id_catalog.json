@@ -103,14 +103,6 @@
       "obtainability_note": ""
     },
     {
-      "namespace": "create",
-      "id": "create:wrench",
-      "display_name": "Wrench",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
       "namespace": "explorerscompass",
       "id": "explorerscompass:explorerscompass",
       "display_name": "Explorer's Compass",

@@ -178,6 +178,8 @@ def item_id(record: dict[str, Any]) -> str | None:
 
 
 def item_count(record: dict[str, Any]) -> int:
+    if "count" in record:
+        return int(record["count"])
     item = record.get("item")
     return int(item.get("count", 1)) if isinstance(item, dict) else 1
 
