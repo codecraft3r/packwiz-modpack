@@ -377,6 +377,7 @@ def build_callings(group: str) -> Chapter:
         rewards=[
             item_reward(2, 1, "numismatics:sprocket"),
             item_reward(2, 2, "vampirism:vampire_cloak_white_black"),
+            item_reward(2, 4, "vampirism:blood_bottle", 8),
         ],
         dependencies=[opener],
     )
@@ -427,6 +428,7 @@ def build_callings(group: str) -> Chapter:
         rewards=[
             item_reward(2, 8, "numismatics:sprocket"),
             item_reward(2, 9, "minecraft:crossbow"),
+            item_reward(2, 19, "supplementaries:rope_arrow", 16),
         ],
         dependencies=[opener],
     )

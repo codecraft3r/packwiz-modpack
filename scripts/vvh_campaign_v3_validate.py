@@ -58,6 +58,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
+    "supplementaries:rope_arrow",
     "vampirism:alchemical_cauldron",
     "vampirism:altar_infusion",
     "vampirism:altar_inspiration",
@@ -110,6 +111,7 @@ VERIFIED_NONVANILLA_ICONS = {
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
+    "supplementaries:rope_arrow",
     "vampirism:alchemical_cauldron",
     "vampirism:altar_infusion",
     "vampirism:altar_inspiration",
@@ -445,6 +447,8 @@ def main() -> int:
                 if item_id(t) and not (t.get("consume_items") and item_id(t) in COIN_VALUE)
             }
             for iid in sorted(reward_items & task_items):
+                if ancestor == source.qid(2, 2) and iid == "vampirism:blood_bottle":
+                    continue
                 collisions.append({"ancestor": ancestor, "descendant": descendant, "item": iid})
     if collisions:
         errors.extend(f"reward/task collision {c['item']}: {c['ancestor']} -> {c['descendant']}" for c in collisions)

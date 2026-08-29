@@ -7,6 +7,7 @@
     "exposure",
     "irons_spellbooks",
     "numismatics",
+    "supplementaries",
     "vampirism",
     "vista"
   ],
@@ -58,6 +59,15 @@
         "download_hash_format": "sha512",
         "download_hash": "2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203",
         "index_sha256": "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f"
+      },
+      "supplementaries": {
+        "metadata": "mods/supplementaries.pw.toml",
+        "name": "Supplementaries",
+        "filename": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "b72fad1d77d6d9dd536ce008f23a9014f4d47231ebf5c4e7d5c23156243f5135eacaf34b2d022a028412ffe5e803081b48abdf3ed61951c6930ad463633c9abb",
+        "index_sha256": "2845b7367289659770e8476125f5949c5705790e4a9335b10c82f433a24c6d76"
       },
       "vampirism": {
         "metadata": "mods/vampirism.pw.toml",
@@ -286,6 +296,14 @@
       "display_name": "Sprocket",
       "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
       "source_entry": "assets/numismatics/models/item/sprocket.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:rope_arrow",
+      "display_name": "Rope Arrow",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/rope_arrow.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {

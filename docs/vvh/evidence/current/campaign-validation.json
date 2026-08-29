@@ -178,6 +178,7 @@
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
+      "supplementaries:rope_arrow",
       "vampirism:alchemical_cauldron",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
@@ -289,8 +290,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch02_callings.snbt": {
-        "index": "a94d018501c8146b034f83ac8a47202f8fb2f13e0d829829147d49e961a21ff0",
-        "actual": "a94d018501c8146b034f83ac8a47202f8fb2f13e0d829829147d49e961a21ff0",
+        "index": "77d6a2deb751a48f00254c07962eaecd050974c105605b80adafb8a4834da477",
+        "actual": "77d6a2deb751a48f00254c07962eaecd050974c105605b80adafb8a4834da477",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
@@ -319,8 +320,8 @@
         "match": true
       }
     },
-    "index_sha256": "0d35393ece41df439f485779e693f624bc8c12b437ab72e761a142e520707a33",
-    "pack_toml_declared_index_sha256": "0d35393ece41df439f485779e693f624bc8c12b437ab72e761a142e520707a33",
+    "index_sha256": "62030eefc1cf6bef6fa49449420adb6dd1974062e08fb2205324df18dda98c22",
+    "pack_toml_declared_index_sha256": "62030eefc1cf6bef6fa49449420adb6dd1974062e08fb2205324df18dda98c22",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
