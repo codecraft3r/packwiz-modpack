@@ -750,7 +750,7 @@
 				}
 				{
 					id: "7A11C2DF00400011"
-					item: { count: 1, id: "irons_spellbooks:blood_upgrade_orb" }
+					item: { count: 1, id: "irons_spellbooks:affinity_ring_blood" }
 					team_reward: false
 					type: "item"
 				}
