@@ -648,8 +648,8 @@ def build_hunters(group: str) -> Chapter:
         subtitle="Specialty · Ammunition",
         description="Stock spitfire and teleport quarrels for illumination and emergency repositioning. The branch broadens field options without granting a stronger weapon tier.",
         icon="vampirism:crossbow_arrow_spitfire",
-        x=1.5,
-        y=4.5,
+        x=7.5,
+        y=2,
         shape="gear",
         optional=True,
         tasks=[
@@ -669,8 +669,8 @@ def build_hunters(group: str) -> Chapter:
         subtitle="Specialty · Reconnaissance",
         description="Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims.",
         icon="exposure:camera",
-        x=7.5,
-        y=2,
+        x=1.5,
+        y=4.5,
         shape="diamond",
         optional=True,
         tasks=[

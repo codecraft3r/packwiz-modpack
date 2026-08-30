@@ -1554,8 +1554,8 @@
             }
           ],
           "title": "Hunter Armament",
-          "x": 1.5,
-          "y": 4.5
+          "x": 7.5,
+          "y": 2
         },
         {
           "dependencies": [
@@ -1632,8 +1632,8 @@
             }
           ],
           "title": "Field Ledger",
-          "x": 7.5,
-          "y": 2
+          "x": 1.5,
+          "y": 4.5
         },
         {
           "dependencies": [

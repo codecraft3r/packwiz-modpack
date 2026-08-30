@@ -696,8 +696,8 @@
 				}
 			]
 			title: "Hunter Armament"
-			x: 1.5d
-			y: 4.5d
+			x: 7.5d
+			y: 2
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -746,8 +746,8 @@
 				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
 			]
 			title: "Field Ledger"
-			x: 7.5d
-			y: 2
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
