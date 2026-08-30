@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'mekanism:mekasuit_pants' })
   event.remove({ output: 'mekanism:mekasuit_boots' })
   event.remove({ output: 'mekanism:antiprotonic_nucleosynthesizer' })
+  event.remove({ output: 'mekanism:quantum_entangloporter' })
 
   // --- Mekanism Recipe Modifications ---
 
@@ -55,6 +56,19 @@ ServerEvents.recipes(event => {
       count: 1,
       id: 'mekanism:alloy_infused'
     }
+  })
+
+  // 3. Update mekanism:nutritional_liquifier recipe (Atomic Alloy, Ultimate Control Circuit, Ultimate Fluid Tank, Steel Casing)
+  event.remove({ output: 'mekanism:nutritional_liquifier' })
+  event.shaped('mekanism:nutritional_liquifier', [
+    'ACA',
+    'TST',
+    'ACA'
+  ], {
+    A: 'mekanism:alloy_atomic',
+    C: 'mekanism:ultimate_control_circuit',
+    T: 'mekanism:ultimate_fluid_tank',
+    S: 'mekanism:steel_casing'
   })
 
   // --- Construction Wands Modifications ---
