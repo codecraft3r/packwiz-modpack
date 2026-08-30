@@ -330,6 +330,14 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:alchemy_table",
+      "display_name": "Alchemy Table",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/alchemy_table.json; data/vampirism/recipe/alchemy_table.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:altar_infusion",
       "display_name": "Altar of Infusion",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
@@ -543,6 +551,14 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/models/item/item_alchemical_fire.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:potion_table",
+      "display_name": "Potion table",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/potion_table.json; data/vampirism/recipe/hunter/potion_table.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "vampirism",

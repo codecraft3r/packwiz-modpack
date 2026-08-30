@@ -508,8 +508,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Prepare a brewing stand, honey, and expedition food before anyone needs rescue. The reserve supports a real patrol and gives late arrivals something useful immediately."]
-			icon: { id: "minecraft:brewing_stand" }
+			description: ["Craft a Potion Table and glass bottles to begin field medicine. The Order supplies a Brewing Stand, an Alchemy Table, and a substantial reserve of brewing ingredients."]
+			icon: { id: "vampirism:potion_table" }
 			id: "7A11C0DF0030000C"
 			optional: true
 			rewards: [
@@ -521,19 +521,43 @@
 				}
 				{
 					id: "7A11C2DF00300029"
-					item: { count: 32, id: "minecraft:glass_bottle" }
+					item: { count: 1, id: "minecraft:brewing_stand" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030002A"
-					item: { count: 4, id: "minecraft:golden_apple" }
+					item: { count: 1, id: "vampirism:alchemy_table" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030002B"
-					item: { count: 32, id: "minecraft:bread" }
+					item: { count: 16, id: "minecraft:nether_wart" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300042"
+					item: { count: 16, id: "minecraft:blaze_powder" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300043"
+					item: { count: 16, id: "minecraft:glistering_melon_slice" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300044"
+					item: { count: 16, id: "minecraft:golden_carrot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300045"
+					item: { count: 8, id: "minecraft:fermented_spider_eye" }
 					team_reward: false
 					type: "item"
 				}
@@ -545,24 +569,16 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300028"
-					item: { count: 1, id: "minecraft:brewing_stand" }
-					title: "Inspect a Brewing Stand"
+					item: { count: 1, id: "vampirism:potion_table" }
+					title: "Craft a Potion Table"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300029"
-					item: { count: 1, id: "minecraft:honey_bottle" }
-					count: 8
-					title: "Carry eight Honey Bottles"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0030002A"
-					item: { count: 1, id: "minecraft:golden_carrot" }
+					item: { count: 1, id: "minecraft:glass_bottle" }
 					count: 16
-					title: "Carry sixteen Golden Carrots"
+					title: "Craft sixteen Glass Bottles"
 					type: "item"
 				}
 			]

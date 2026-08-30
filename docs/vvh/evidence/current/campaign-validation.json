@@ -183,6 +183,7 @@
       "numismatics:cog",
       "numismatics:sprocket",
       "vampirism:alchemical_cauldron",
+      "vampirism:alchemy_table",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
       "vampirism:basic_crossbow",
@@ -210,6 +211,7 @@
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
       "vampirism:item_alchemical_fire",
+      "vampirism:potion_table",
       "vampirism:pure_salt",
       "vampirism:purified_garlic",
       "vampirism:stake",
@@ -244,6 +246,7 @@
       "vampirism:hunter_axe_enhanced",
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
+      "vampirism:potion_table",
       "vampirism:pure_salt",
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
@@ -297,8 +300,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "0d0af88e42ca8d01d074c2fcea2d03361b0454b5eb626d3c16263a0aacbb4e09",
-        "actual": "0d0af88e42ca8d01d074c2fcea2d03361b0454b5eb626d3c16263a0aacbb4e09",
+        "index": "74d637000384885de7518cedf203eac5a57871f475b12c5e1dcc7822b5bc7933",
+        "actual": "74d637000384885de7518cedf203eac5a57871f475b12c5e1dcc7822b5bc7933",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -322,8 +325,8 @@
         "match": true
       }
     },
-    "index_sha256": "c6aca96aeeae83393e2c35b696a822156d24258b6928e948040ad431b6548f67",
-    "pack_toml_declared_index_sha256": "c6aca96aeeae83393e2c35b696a822156d24258b6928e948040ad431b6548f67",
+    "index_sha256": "15db184d472dea10551a01fa2895c0746490677415f914932363f12b14194181",
+    "pack_toml_declared_index_sha256": "15db184d472dea10551a01fa2895c0746490677415f914932363f12b14194181",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

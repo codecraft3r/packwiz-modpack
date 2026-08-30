@@ -51,6 +51,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
 | `numismatics` | `numismatics:sprocket` | Sprocket | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/sprocket.json` |
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
+| `vampirism` | `vampirism:alchemy_table` | Alchemy Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/alchemy_table.json; data/vampirism/recipe/alchemy_table.json` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
 | `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |
 | `vampirism` | `vampirism:basic_crossbow` | Basic Crossbow | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/basic_crossbow.json; data/vampirism/recipe/basic_crossbow.json` |
@@ -78,6 +79,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:hunter_table` | Hunter Research Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.hunter_table` |
 | `vampirism` | `vampirism:injection_garlic` | Garlic Injection | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.injection_garlic; de/teamlapen/vampirism/core/ModItems.class::injection_garlic` |
 | `vampirism` | `vampirism:item_alchemical_fire` | Alchemical Fire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/item_alchemical_fire.json` |
+| `vampirism` | `vampirism:potion_table` | Potion table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/potion_table.json; data/vampirism/recipe/hunter/potion_table.json` |
 | `vampirism` | `vampirism:pure_salt` | Pure Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.pure_salt` |
 | `vampirism` | `vampirism:purified_garlic` | Purified Garlic | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/purified_garlic.json; data/vampirism/recipe/purified_garlic.json` |
 | `vampirism` | `vampirism:stake` | Stake | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.stake` |
