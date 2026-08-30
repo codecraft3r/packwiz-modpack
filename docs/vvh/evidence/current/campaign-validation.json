@@ -2,11 +2,11 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 42,
+    "quests": 46,
     "chapter_quest_counts": {
       "ch01_island_charter": 5,
       "ch02_callings": 5,
-      "ch03_lantern_order": 11,
+      "ch03_lantern_order": 15,
       "ch04_house_night": 11,
       "ch05_market_services": 10
     },
@@ -29,7 +29,7 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 42,
+    "reachable_quests": 46,
     "cycles": false,
     "charter_clause_count": 3,
     "hunter_gate": "any 3 of 8 after Core III",
@@ -45,7 +45,7 @@
   },
   "parity": {
     "hunter": {
-      "quest_count": 11,
+      "quest_count": 15,
       "core_currency": [
         1.0,
         2.0,
@@ -62,8 +62,8 @@
         2.0,
         8.0
       ],
-      "personal_completionism": 29.0,
-      "branch_count": 8
+      "personal_completionism": 37.0,
+      "branch_count": 12
     },
     "vampire": {
       "quest_count": 11,
@@ -86,7 +86,7 @@
       "personal_completionism": 29.0,
       "branch_count": 8
     },
-    "equal": true
+    "equal": false
   },
   "economy": {
     "coin_values_bevel_equivalent": {
@@ -99,7 +99,7 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 64.0,
+    "one_time_personal_raw_completionism": 72.0,
     "one_time_team_completionism": 0.0,
     "weekly_sinks": [
       {
@@ -224,6 +224,7 @@
       "exposure:camera",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
+      "irons_spellbooks:inscription_table",
       "irons_spellbooks:uncommon_ink",
       "numismatics:banking_guide",
       "numismatics:bevel",
@@ -294,8 +295,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "fc46018fc8358778ce6b47453f43d5f9ddac9c8f190be5ac0e3e139e50aaff53",
-        "actual": "fc46018fc8358778ce6b47453f43d5f9ddac9c8f190be5ac0e3e139e50aaff53",
+        "index": "c2aefd034836a56cba168bc61c276f6b082be485bc435ab2ff2ebff47abd167c",
+        "actual": "c2aefd034836a56cba168bc61c276f6b082be485bc435ab2ff2ebff47abd167c",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -319,8 +320,8 @@
         "match": true
       }
     },
-    "index_sha256": "3cbb31361e09bb2cd40eea708c1410b5b6af1597ea146323818a78c8c039e1d0",
-    "pack_toml_declared_index_sha256": "3cbb31361e09bb2cd40eea708c1410b5b6af1597ea146323818a78c8c039e1d0",
+    "index_sha256": "c172e57681fcfbdf408e30f421e7b8b337f729448ee0ef06f397d4b92b6cb58c",
+    "pack_toml_declared_index_sha256": "c172e57681fcfbdf408e30f421e7b8b337f729448ee0ef06f397d4b92b6cb58c",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

@@ -274,6 +274,296 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
+			description: ["Gather deepslate bricks, amethyst shards, cut copper, and bookshelves to construct an arcane tower for holy spellcraft and sanctuary warding."]
+			icon: { id: "irons_spellbooks:inscription_table" }
+			id: "7A11C0DF0030000E"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030004B"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004C"
+					item: { count: 64, id: "minecraft:deepslate_bricks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004D"
+					item: { count: 32, id: "minecraft:glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004E"
+					item: { count: 16, id: "minecraft:candle" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Arcane tower"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030004B"
+					item: { count: 1, id: "minecraft:deepslate_bricks" }
+					count: 64
+					title: "Inspect sixty-four Deepslate Bricks"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030004C"
+					item: { count: 1, id: "minecraft:amethyst_shard" }
+					count: 16
+					title: "Inspect sixteen Amethyst Shards"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030004D"
+					item: { count: 1, id: "minecraft:cut_copper" }
+					count: 4
+					title: "Inspect four Cut Copper"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030004E"
+					item: { count: 1, id: "minecraft:bookshelf" }
+					count: 4
+					title: "Inspect four Bookshelves"
+					type: "item"
+				}
+			]
+			title: "Wizard Tower Materials"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Gather polished deepslate, copper ingots, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions."]
+			icon: { id: "vampirism:alchemical_cauldron" }
+			id: "7A11C0DF0030000F"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030004F"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300050"
+					item: { count: 64, id: "minecraft:polished_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300051"
+					item: { count: 32, id: "minecraft:glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300052"
+					item: { count: 32, id: "minecraft:oak_planks" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Alchemy lab"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030004F"
+					item: { count: 1, id: "minecraft:polished_deepslate" }
+					count: 64
+					title: "Inspect sixty-four Polished Deepslate"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300050"
+					item: { count: 1, id: "minecraft:copper_ingot" }
+					count: 16
+					title: "Inspect sixteen Copper Ingots"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300051"
+					item: { count: 1, id: "minecraft:cauldron" }
+					count: 2
+					title: "Inspect two Cauldrons"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300052"
+					item: { count: 1, id: "minecraft:barrel" }
+					count: 4
+					title: "Inspect four Barrels"
+					type: "item"
+				}
+			]
+			title: "Brewery Materials"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Gather spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying."]
+			icon: { id: "minecraft:cartography_table" }
+			id: "7A11C0DF00300010"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300053"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300054"
+					item: { count: 64, id: "minecraft:spruce_planks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300055"
+					item: { count: 32, id: "minecraft:paper" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300056"
+					item: { count: 8, id: "minecraft:item_frame" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Expedition post"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300053"
+					item: { count: 1, id: "minecraft:spruce_log" }
+					count: 32
+					title: "Inspect thirty-two Spruce Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300054"
+					item: { count: 1, id: "minecraft:spruce_fence" }
+					count: 16
+					title: "Inspect sixteen Spruce Fences"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300055"
+					item: { count: 1, id: "minecraft:cartography_table" }
+					title: "Inspect a Cartography Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300056"
+					item: { count: 1, id: "minecraft:item_frame" }
+					count: 8
+					title: "Inspect eight Item Frames"
+					type: "item"
+				}
+			]
+			title: "Recon Centre Materials"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Gather polished andesite, chains, an anvil, and target blocks to construct an armory and perimeter watchtower overlooking the frontier."]
+			icon: { id: "minecraft:chain" }
+			id: "7A11C0DF00300011"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300057"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300058"
+					item: { count: 64, id: "minecraft:polished_andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300059"
+					item: { count: 16, id: "minecraft:chain" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005A"
+					item: { count: 16, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Fortifications"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300057"
+					item: { count: 1, id: "minecraft:polished_andesite" }
+					count: 64
+					title: "Inspect sixty-four Polished Andesite"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300058"
+					item: { count: 1, id: "minecraft:chain" }
+					count: 16
+					title: "Inspect sixteen Chains"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300059"
+					item: { count: 1, id: "minecraft:anvil" }
+					title: "Inspect an Anvil"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030005A"
+					item: { count: 1, id: "minecraft:target" }
+					count: 2
+					title: "Inspect two Target Blocks"
+					type: "item"
+				}
+			]
+			title: "Armory Tower Materials"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A11C0DF0030000E"]
 			description: ["Prepare an Inscription Table, a spellbook, and four Holy Runes, then demonstrate one Holy spell. The reward provides a practical triage set for healing, controlled force, and returning home."]
 			icon: { id: "irons_spellbooks:holy_rune" }
 			id: "7A11C0DF00300004"
@@ -391,7 +681,7 @@
 			y: 0
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF0030000E"]
 			description: ["Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."]
 			icon: { id: "vampirism:pure_salt" }
 			id: "7A11C0DF00300005"
@@ -449,7 +739,7 @@
 			y: 2
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF0030000F"]
 			description: ["Stock an Alchemical Cauldron with normal Holy Water and Pure Salt. This turns a private kit into a maintainable remedy station and opens the Order's specialized alchemical preparation."]
 			icon: { id: "vampirism:alchemical_cauldron" }
 			id: "7A11C0DF00300006"
@@ -507,7 +797,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF0030000F"]
 			description: ["Craft a Potion Table and glass bottles to begin field medicine. The Order supplies a Brewing Stand, an Alchemy Table, and a substantial reserve of brewing ingredients."]
 			icon: { id: "vampirism:potion_table" }
 			id: "7A11C0DF0030000C"
@@ -587,7 +877,57 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF00300010"]
+			description: ["Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00300008"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300033"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300034"
+					item: { count: 8, id: "exposure:color_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300035"
+					item: { count: 8, id: "exposure:black_and_white_film" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Reconnaissance"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300013"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Carry an Explorer's Compass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300014"
+					item: { count: 1, id: "exposure:camera" }
+					title: "Carry a Camera"
+					type: "item"
+				}
+				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
+			]
+			title: "Field Ledger"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300010"]
 			description: ["Carry a saddle, spyglass, and compass as a coherent route kit. The reward adds leads and rockets so a patrol can move supplies, signal, and return without turning mobility into a permanent power grant."]
 			icon: { id: "minecraft:saddle" }
 			id: "7A11C0DF0030000D"
@@ -649,7 +989,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF00300011"]
 			description: ["Stock spitfire and teleport quarrels for illumination and emergency repositioning. The branch broadens field options without granting a stronger weapon tier."]
 			icon: { id: "vampirism:crossbow_arrow_spitfire" }
 			id: "7A11C0DF00300007"
@@ -700,57 +1040,7 @@
 			y: 2
 		}
 		{
-			dependencies: ["7A11C0DF00300003"]
-			description: ["Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims."]
-			icon: { id: "exposure:camera" }
-			id: "7A11C0DF00300008"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00300033"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300034"
-					item: { count: 8, id: "exposure:color_film" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300035"
-					item: { count: 8, id: "exposure:black_and_white_film" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "Specialty · Reconnaissance"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF00300013"
-					item: { count: 1, id: "explorerscompass:explorerscompass" }
-					title: "Carry an Explorer's Compass"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00300014"
-					item: { count: 1, id: "exposure:camera" }
-					title: "Carry a Camera"
-					type: "item"
-				}
-				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
-			]
-			title: "Field Ledger"
-			x: 1.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["7A11C0DF00300003"]
+			dependencies: ["7A11C0DF00300011"]
 			description: ["Carry an enhanced Hunter Axe and enhanced splash Holy Water. This is optional late mastery, paid at Cog scale because it proves a later equipment band rather than routine preparation."]
 			icon: { id: "vampirism:hunter_axe_enhanced" }
 			id: "7A11C0DF00300009"

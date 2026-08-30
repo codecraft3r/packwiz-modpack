@@ -530,6 +530,103 @@ def build_hunters(group: str) -> Chapter:
         dependencies=[core2],
     )
 
+    b_wizard = ch.add(
+        14,
+        title="Wizard Tower Materials",
+        subtitle="Construction · Arcane tower",
+        description="Gather deepslate bricks, amethyst shards, cut copper, and bookshelves to construct an arcane tower for holy spellcraft and sanctuary warding.",
+        icon="irons_spellbooks:inscription_table",
+        x=-6.5,
+        y=-1.0,
+        shape="square",
+        optional=True,
+        tasks=[
+            item_task(3, 75, "minecraft:deepslate_bricks", 64, "Inspect sixty-four Deepslate Bricks"),
+            item_task(3, 76, "minecraft:amethyst_shard", 16, "Inspect sixteen Amethyst Shards"),
+            item_task(3, 77, "minecraft:cut_copper", 4, "Inspect four Cut Copper"),
+            item_task(3, 78, "minecraft:bookshelf", 4, "Inspect four Bookshelves"),
+        ],
+        rewards=[
+            item_reward(3, 75, "numismatics:sprocket"),
+            item_reward(3, 76, "minecraft:deepslate_bricks", 64),
+            item_reward(3, 77, "minecraft:glass", 32),
+            item_reward(3, 78, "minecraft:candle", 16),
+        ],
+        dependencies=[core3],
+    )
+    b_brewery = ch.add(
+        15,
+        title="Brewery Materials",
+        subtitle="Construction · Alchemy lab",
+        description="Gather polished deepslate, copper ingots, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions.",
+        icon="vampirism:alchemical_cauldron",
+        x=-2.5,
+        y=0.5,
+        shape="square",
+        optional=True,
+        tasks=[
+            item_task(3, 79, "minecraft:polished_deepslate", 64, "Inspect sixty-four Polished Deepslate"),
+            item_task(3, 80, "minecraft:copper_ingot", 16, "Inspect sixteen Copper Ingots"),
+            item_task(3, 81, "minecraft:cauldron", 2, "Inspect two Cauldrons"),
+            item_task(3, 82, "minecraft:barrel", 4, "Inspect four Barrels"),
+        ],
+        rewards=[
+            item_reward(3, 79, "numismatics:sprocket"),
+            item_reward(3, 80, "minecraft:polished_deepslate", 64),
+            item_reward(3, 81, "minecraft:glass", 32),
+            item_reward(3, 82, "minecraft:oak_planks", 32),
+        ],
+        dependencies=[core3],
+    )
+    b_recon = ch.add(
+        16,
+        title="Recon Centre Materials",
+        subtitle="Construction · Expedition post",
+        description="Gather spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying.",
+        icon="minecraft:cartography_table",
+        x=2.5,
+        y=0.5,
+        shape="square",
+        optional=True,
+        tasks=[
+            item_task(3, 83, "minecraft:spruce_log", 32, "Inspect thirty-two Spruce Logs"),
+            item_task(3, 84, "minecraft:spruce_fence", 16, "Inspect sixteen Spruce Fences"),
+            item_task(3, 85, "minecraft:cartography_table", title="Inspect a Cartography Table"),
+            item_task(3, 86, "minecraft:item_frame", 8, "Inspect eight Item Frames"),
+        ],
+        rewards=[
+            item_reward(3, 83, "numismatics:sprocket"),
+            item_reward(3, 84, "minecraft:spruce_planks", 64),
+            item_reward(3, 85, "minecraft:paper", 32),
+            item_reward(3, 86, "minecraft:item_frame", 8),
+        ],
+        dependencies=[core3],
+    )
+    b_armory = ch.add(
+        17,
+        title="Armory Tower Materials",
+        subtitle="Construction · Fortifications",
+        description="Gather polished andesite, chains, an anvil, and target blocks to construct an armory and perimeter watchtower overlooking the frontier.",
+        icon="minecraft:chain",
+        x=6.5,
+        y=-1.0,
+        shape="square",
+        optional=True,
+        tasks=[
+            item_task(3, 87, "minecraft:polished_andesite", 64, "Inspect sixty-four Polished Andesite"),
+            item_task(3, 88, "minecraft:chain", 16, "Inspect sixteen Chains"),
+            item_task(3, 89, "minecraft:anvil", title="Inspect an Anvil"),
+            item_task(3, 90, "minecraft:target", 2, "Inspect two Target Blocks"),
+        ],
+        rewards=[
+            item_reward(3, 87, "numismatics:sprocket"),
+            item_reward(3, 88, "minecraft:polished_andesite", 64),
+            item_reward(3, 89, "minecraft:chain", 16),
+            item_reward(3, 90, "minecraft:lantern", 16),
+        ],
+        dependencies=[core3],
+    )
+
     mercy = ch.add(
         4,
         title="Mercy Manual",
@@ -547,7 +644,7 @@ def build_hunters(group: str) -> Chapter:
             check_task(3, 24, "I demonstrated one Holy spell"),
         ],
         rewards=hunter_spell_rewards(),
-        dependencies=[core3],
+        dependencies=[b_wizard],
     )
     defense = ch.add(
         5,
@@ -569,7 +666,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 38, "vampirism:holy_water_bottle_normal", 16),
             item_reward(3, 39, "vampirism:pure_salt", 16),
         ],
-        dependencies=[core3],
+        dependencies=[b_wizard],
     )
     consecrated = ch.add(
         6,
@@ -591,7 +688,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 27, "vampirism:item_alchemical_fire", 16),
             item_reward(3, 28, "minecraft:iron_ingot", 32),
         ],
-        dependencies=[core3],
+        dependencies=[b_brewery],
     )
     stores = ch.add(
         12,
@@ -617,7 +714,29 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 68, "minecraft:golden_carrot", 16),
             item_reward(3, 69, "minecraft:fermented_spider_eye", 8),
         ],
-        dependencies=[core3],
+        dependencies=[b_brewery],
+    )
+    ledger = ch.add(
+        8,
+        title="Field Ledger",
+        subtitle="Specialty · Reconnaissance",
+        description="Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims.",
+        icon="exposure:camera",
+        x=1.5,
+        y=4.5,
+        shape="diamond",
+        optional=True,
+        tasks=[
+            item_task(3, 19, "explorerscompass:explorerscompass", title="Carry an Explorer's Compass"),
+            item_task(3, 20, "exposure:camera", title="Carry a Camera"),
+            advancement_task(3, 21, "exposure:adventure/moment_in_time"),
+        ],
+        rewards=[
+            item_reward(3, 51, "numismatics:sprocket"),
+            item_reward(3, 52, "exposure:color_film", 8),
+            item_reward(3, 53, "exposure:black_and_white_film", 8),
+        ],
+        dependencies=[b_recon],
     )
     transit = ch.add(
         13,
@@ -640,7 +759,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 46, "minecraft:firework_rocket", 32),
             item_reward(3, 47, "minecraft:map", 8),
         ],
-        dependencies=[core3],
+        dependencies=[b_recon],
     )
     armament = ch.add(
         7,
@@ -661,29 +780,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 49, "minecraft:iron_ingot", 32),
             item_reward(3, 50, "vampirism:crossbow_arrow_normal", 64),
         ],
-        dependencies=[core3],
-    )
-    ledger = ch.add(
-        8,
-        title="Field Ledger",
-        subtitle="Specialty · Reconnaissance",
-        description="Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims.",
-        icon="exposure:camera",
-        x=1.5,
-        y=4.5,
-        shape="diamond",
-        optional=True,
-        tasks=[
-            item_task(3, 19, "explorerscompass:explorerscompass", title="Carry an Explorer's Compass"),
-            item_task(3, 20, "exposure:camera", title="Carry a Camera"),
-            advancement_task(3, 21, "exposure:adventure/moment_in_time"),
-        ],
-        rewards=[
-            item_reward(3, 51, "numismatics:sprocket"),
-            item_reward(3, 52, "exposure:color_film", 8),
-            item_reward(3, 53, "exposure:black_and_white_film", 8),
-        ],
-        dependencies=[core3],
+        dependencies=[b_armory],
     )
     mastery = ch.add(
         9,
@@ -706,7 +803,7 @@ def build_hunters(group: str) -> Chapter:
             item_reward(3, 18, "minecraft:obsidian", 16),
             item_reward(3, 19, "minecraft:diamond", 8),
         ],
-        dependencies=[core3],
+        dependencies=[b_armory],
     )
 
     return ch
@@ -1354,7 +1451,7 @@ def main() -> int:
         if stale:
             print("campaign source drift:\n- " + "\n- ".join(stale))
             return 1
-        print("campaign source is synchronized: 5 chapters, 42 quests")
+        print("campaign source is synchronized: 5 chapters, 46 quests")
         return 0
 
     action = "updated" if stale else "verified"
