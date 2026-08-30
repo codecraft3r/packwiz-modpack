@@ -625,8 +625,8 @@ def build_hunters(group: str) -> Chapter:
         subtitle="Specialty · Field mobility",
         description="Carry a saddle, spyglass, and compass as a coherent route kit. The reward adds leads and rockets so a patrol can move supplies, signal, and return without turning mobility into a permanent power grant.",
         icon="minecraft:saddle",
-        x=1.5,
-        y=4.5,
+        x=4.5,
+        y=3.5,
         shape="diamond",
         optional=True,
         tasks=[
@@ -648,8 +648,8 @@ def build_hunters(group: str) -> Chapter:
         subtitle="Specialty · Ammunition",
         description="Stock spitfire and teleport quarrels for illumination and emergency repositioning. The branch broadens field options without granting a stronger weapon tier.",
         icon="vampirism:crossbow_arrow_spitfire",
-        x=4.5,
-        y=3.5,
+        x=1.5,
+        y=4.5,
         shape="gear",
         optional=True,
         tasks=[

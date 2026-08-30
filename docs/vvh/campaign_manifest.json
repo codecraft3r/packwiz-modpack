@@ -1480,8 +1480,8 @@
             }
           ],
           "title": "Patrol Transit",
-          "x": 1.5,
-          "y": 4.5
+          "x": 4.5,
+          "y": 3.5
         },
         {
           "dependencies": [
@@ -1554,8 +1554,8 @@
             }
           ],
           "title": "Hunter Armament",
-          "x": 4.5,
-          "y": 3.5
+          "x": 1.5,
+          "y": 4.5
         },
         {
           "dependencies": [
