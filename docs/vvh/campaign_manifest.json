@@ -2,7 +2,7 @@
   "architecture": "five-chapter-vvh-current",
   "authoritative_source": "scripts/vvh_campaign_v3.py",
   "chapter_count": 5,
-  "quest_count": 46,
+  "quest_count": 50,
   "groups": [
     {
       "id": "7A11C4DF00100000",
@@ -2505,6 +2505,1060 @@
             "7A11C0DF00400003"
           ],
           "description": [
+            "Gather obsidian, lightning rods, cut copper, and tinted glass to construct a dark transmission spire and advanced workshop overlooking the island."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:lightning_rod",
+          "id": "7A11C0DF0040000E",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0040004B",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040004C",
+              "item": {
+                "count": 64,
+                "id": "minecraft:obsidian"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040004D",
+              "item": {
+                "count": 32,
+                "id": "minecraft:tinted_glass"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040004E",
+              "item": {
+                "count": 16,
+                "id": "minecraft:redstone_torch"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Construction · Nocturnal spire",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040004B",
+              "item": {
+                "count": 1,
+                "id": "minecraft:obsidian"
+              },
+              "count": 64,
+              "title": "Inspect sixty-four Obsidian",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040004C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:lightning_rod"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Lightning Rods",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040004D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:cut_copper"
+              },
+              "count": 4,
+              "title": "Inspect four Cut Copper",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040004E",
+              "item": {
+                "count": 1,
+                "id": "minecraft:tinted_glass"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Tinted Glass",
+              "type": "item"
+            }
+          ],
+          "title": "Dark Spire Materials",
+          "x": -6.5,
+          "y": -1.0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400003"
+          ],
+          "description": [
+            "Gather nether bricks, quartz, cauldrons, and chains to construct a blood foundry and transit waystation for nocturnal couriers."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:nether_bricks",
+          "id": "7A11C0DF0040000F",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0040004F",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400050",
+              "item": {
+                "count": 64,
+                "id": "minecraft:nether_bricks"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400051",
+              "item": {
+                "count": 16,
+                "id": "minecraft:chain"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400052",
+              "item": {
+                "count": 32,
+                "id": "minecraft:crimson_planks"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Construction · Metallurgy lab",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040004F",
+              "item": {
+                "count": 1,
+                "id": "minecraft:nether_bricks"
+              },
+              "count": 64,
+              "title": "Inspect sixty-four Nether Bricks",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400050",
+              "item": {
+                "count": 1,
+                "id": "minecraft:quartz"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Nether Quartz",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400051",
+              "item": {
+                "count": 1,
+                "id": "minecraft:cauldron"
+              },
+              "count": 2,
+              "title": "Inspect two Cauldrons",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400052",
+              "item": {
+                "count": 1,
+                "id": "minecraft:chain"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Chains",
+              "type": "item"
+            }
+          ],
+          "title": "Blood Foundry Materials",
+          "x": -2.5,
+          "y": 0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400003"
+          ],
+          "description": [
+            "Gather polished blackstone, crimson stems, barrels, and soul lanterns to construct an imposing manor hall and hospitality vault."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:polished_blackstone",
+          "id": "7A11C0DF00400010",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400053",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400054",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_blackstone"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400055",
+              "item": {
+                "count": 32,
+                "id": "minecraft:crimson_planks"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400056",
+              "item": {
+                "count": 8,
+                "id": "minecraft:soul_lantern"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Construction · Manor estate",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400053",
+              "item": {
+                "count": 1,
+                "id": "minecraft:polished_blackstone"
+              },
+              "count": 64,
+              "title": "Inspect sixty-four Polished Blackstone",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400054",
+              "item": {
+                "count": 1,
+                "id": "minecraft:crimson_stem"
+              },
+              "count": 32,
+              "title": "Inspect thirty-two Crimson Stems",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400055",
+              "item": {
+                "count": 1,
+                "id": "minecraft:barrel"
+              },
+              "count": 4,
+              "title": "Inspect four Barrels",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400056",
+              "item": {
+                "count": 1,
+                "id": "minecraft:soul_lantern"
+              },
+              "count": 4,
+              "title": "Inspect four Soul Lanterns",
+              "type": "item"
+            }
+          ],
+          "title": "Guest Hall Materials",
+          "x": 2.5,
+          "y": 0.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400003"
+          ],
+          "description": [
+            "Gather crying obsidian, amethyst shards, bookshelves, and glass to construct an arcane blood vault and sanguine library."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:crying_obsidian",
+          "id": "7A11C0DF00400011",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400057",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400058",
+              "item": {
+                "count": 64,
+                "id": "minecraft:crying_obsidian"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400059",
+              "item": {
+                "count": 32,
+                "id": "minecraft:glass"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040005A",
+              "item": {
+                "count": 16,
+                "id": "minecraft:redstone"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Construction · Sanguine arcanum",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400057",
+              "item": {
+                "count": 1,
+                "id": "minecraft:crying_obsidian"
+              },
+              "count": 64,
+              "title": "Inspect sixty-four Crying Obsidian",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400058",
+              "item": {
+                "count": 1,
+                "id": "minecraft:amethyst_shard"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Amethyst Shards",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400059",
+              "item": {
+                "count": 1,
+                "id": "minecraft:bookshelf"
+              },
+              "count": 4,
+              "title": "Inspect four Bookshelves",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040005A",
+              "item": {
+                "count": 1,
+                "id": "minecraft:glass"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Glass",
+              "type": "item"
+            }
+          ],
+          "title": "Blood Vault Materials",
+          "x": 6.5,
+          "y": -1.0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF0040000E"
+          ],
+          "description": [
+            "Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:heart_seeker_enhanced",
+          "id": "7A11C0DF00400009",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400010",
+              "item": {
+                "count": 1,
+                "id": "numismatics:cog"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400011",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:blood_upgrade_orb"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400012",
+              "item": {
+                "count": 16,
+                "id": "minecraft:obsidian"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400013",
+              "item": {
+                "count": 8,
+                "id": "minecraft:diamond"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "hexagon",
+          "size": 1.3,
+          "subtitle": "Specialty · Advanced bloodwork",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040000A",
+              "item": {
+                "count": 1,
+                "id": "vampirism:heart_seeker_enhanced"
+              },
+              "title": "Carry an enhanced Heartseeker",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040000B",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_infused_enhanced_iron_ingot"
+              },
+              "count": 2,
+              "title": "Carry two Enhanced Blood-Infused Iron",
+              "type": "item"
+            }
+          ],
+          "title": "Night's Due",
+          "x": -10.5,
+          "y": 0
+        },
+        {
+          "dependencies": [
+            "7A11C0DF0040000E"
+          ],
+          "description": [
+            "Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vista:television",
+          "id": "7A11C0DF00400008",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400035",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400036",
+              "item": {
+                "count": 4,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Vista broadcast",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400013",
+              "item": {
+                "count": 1,
+                "id": "vista:television"
+              },
+              "title": "Craft a Television",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400014",
+              "item": {
+                "count": 1,
+                "id": "vista:viewfinder"
+              },
+              "title": "Craft a Viewfinder",
+              "type": "item"
+            }
+          ],
+          "title": "Nocturnal Broadcast",
+          "x": -7.5,
+          "y": 2
+        },
+        {
+          "dependencies": [
+            "7A11C0DF0040000F"
+          ],
+          "description": [
+            "Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:blood_sieve",
+          "id": "7A11C0DF00400007",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400031",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400032",
+              "item": {
+                "count": 32,
+                "id": "minecraft:redstone"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400033",
+              "item": {
+                "count": 16,
+                "id": "minecraft:gold_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400034",
+              "item": {
+                "count": 16,
+                "id": "minecraft:iron_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "gear",
+          "size": 1.0,
+          "subtitle": "Specialty · Blood metallurgy",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400031",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_sieve"
+              },
+              "title": "Inspect a Blood Sieve",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400032",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_infused_iron_ingot"
+              },
+              "count": 4,
+              "title": "Carry four Blood-Infused Iron",
+              "type": "item"
+            }
+          ],
+          "title": "Sieve Extraction",
+          "x": -4.5,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF0040000F"
+          ],
+          "description": [
+            "Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:umbrella",
+          "id": "7A11C0DF0040000D",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0040002D",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040002E",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lead"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040002F",
+              "item": {
+                "count": 32,
+                "id": "minecraft:firework_rocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400030",
+              "item": {
+                "count": 8,
+                "id": "minecraft:map"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Night mobility",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040002B",
+              "item": {
+                "count": 1,
+                "id": "vampirism:umbrella"
+              },
+              "title": "Carry an Umbrella",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040002C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:saddle"
+              },
+              "title": "Carry a Saddle",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040002D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:clock"
+              },
+              "title": "Carry a Clock",
+              "type": "item"
+            }
+          ],
+          "title": "Sunproof Transit",
+          "x": -1.5,
+          "y": 4.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400010"
+          ],
+          "description": [
+            "Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "minecraft:brewing_stand",
+          "id": "7A11C0DF0040000C",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400029",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040002A",
+              "item": {
+                "count": 32,
+                "id": "minecraft:glass_bottle"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040002B",
+              "item": {
+                "count": 4,
+                "id": "minecraft:golden_apple"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040002C",
+              "item": {
+                "count": 32,
+                "id": "minecraft:bread"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Hospitality",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400028",
+              "item": {
+                "count": 1,
+                "id": "minecraft:brewing_stand"
+              },
+              "title": "Inspect a Brewing Stand",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400029",
+              "item": {
+                "count": 1,
+                "id": "minecraft:honey_bottle"
+              },
+              "count": 8,
+              "title": "Carry eight Honey Bottles",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040002A",
+              "item": {
+                "count": 1,
+                "id": "minecraft:cooked_beef"
+              },
+              "count": 32,
+              "title": "Carry thirty-two Cooked Beef",
+              "type": "item"
+            }
+          ],
+          "title": "Guest Stores",
+          "x": 1.5,
+          "y": 4.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400010"
+          ],
+          "description": [
+            "Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:dark_stone_bricks",
+          "id": "7A11C0DF00400006",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF0040001A",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040001B",
+              "item": {
+                "count": 192,
+                "id": "vampirism:dark_stone_bricks"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040001C",
+              "item": {
+                "count": 96,
+                "id": "minecraft:dark_oak_log"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040001D",
+              "item": {
+                "count": 48,
+                "id": "minecraft:dark_oak_fence"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040001E",
+              "item": {
+                "count": 24,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040001F",
+              "item": {
+                "count": 32,
+                "id": "minecraft:iron_ingot"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400020",
+              "item": {
+                "count": 4,
+                "id": "minecraft:diamond"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400021",
+              "item": {
+                "count": 1,
+                "id": "minecraft:stonecutter"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "Specialty · Manor palette",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040000F",
+              "item": {
+                "count": 1,
+                "id": "vampirism:dark_stone_bricks"
+              },
+              "count": 64,
+              "title": "Inspect sixty-four Dark Stone Bricks",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400010",
+              "item": {
+                "count": 1,
+                "id": "minecraft:dark_oak_log"
+              },
+              "count": 32,
+              "title": "Inspect thirty-two Dark Oak Logs",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400011",
+              "item": {
+                "count": 1,
+                "id": "minecraft:dark_oak_fence"
+              },
+              "count": 16,
+              "title": "Inspect sixteen Dark Oak Fences",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400012",
+              "item": {
+                "count": 1,
+                "id": "minecraft:lantern"
+              },
+              "count": 8,
+              "title": "Inspect eight Lanterns",
+              "type": "item"
+            }
+          ],
+          "title": "House of Doors",
+          "x": 4.5,
+          "y": 3.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400011"
+          ],
+          "description": [
+            "Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm."
+          ],
+          "hide_dependency_lines": false,
+          "icon": "vampirism:blood_container",
+          "id": "7A11C0DF00400005",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 0,
+          "repeatable": false,
+          "rewards": [
+            {
+              "id": "7A11C2DF00400025",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400026",
+              "item": {
+                "count": 32,
+                "id": "minecraft:glass_bottle"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400027",
+              "item": {
+                "count": 8,
+                "id": "minecraft:lead"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00400028",
+              "item": {
+                "count": 32,
+                "id": "minecraft:oak_fence"
+              },
+              "team_reward": false,
+              "type": "item"
+            }
+          ],
+          "shape": "diamond",
+          "size": 1.0,
+          "subtitle": "Specialty · Blood supply",
+          "tasks": [
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400022",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_bottle"
+              },
+              "count": 4,
+              "title": "Carry four Blood Bottles",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00400023",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_container"
+              },
+              "title": "Inspect a Blood Container",
+              "type": "item"
+            }
+          ],
+          "title": "Crimson Reserve",
+          "x": 7.5,
+          "y": 2
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00400011"
+          ],
+          "description": [
             "Prepare an Inscription Table, spellbook, and four Blood Runes, then demonstrate one Blood spell. The reward favors movement, measured siphoning, and practical combat rather than a random high-tier scroll."
           ],
           "hide_dependency_lines": false,
@@ -2661,640 +3715,6 @@
           ],
           "title": "Scarlet Script",
           "x": 10.5,
-          "y": 0
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vampirism:blood_container",
-          "id": "7A11C0DF00400005",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00400025",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400026",
-              "item": {
-                "count": 32,
-                "id": "minecraft:glass_bottle"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400027",
-              "item": {
-                "count": 8,
-                "id": "minecraft:lead"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400028",
-              "item": {
-                "count": 32,
-                "id": "minecraft:oak_fence"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Specialty · Blood supply",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400022",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_bottle"
-              },
-              "count": 4,
-              "title": "Carry four Blood Bottles",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400023",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_container"
-              },
-              "title": "Inspect a Blood Container",
-              "type": "item"
-            }
-          ],
-          "title": "Crimson Reserve",
-          "x": 7.5,
-          "y": 2
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vampirism:dark_stone_bricks",
-          "id": "7A11C0DF00400006",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0040001A",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001B",
-              "item": {
-                "count": 192,
-                "id": "vampirism:dark_stone_bricks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001C",
-              "item": {
-                "count": 96,
-                "id": "minecraft:dark_oak_log"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001D",
-              "item": {
-                "count": 48,
-                "id": "minecraft:dark_oak_fence"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001E",
-              "item": {
-                "count": 24,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001F",
-              "item": {
-                "count": 32,
-                "id": "minecraft:iron_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400020",
-              "item": {
-                "count": 4,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400021",
-              "item": {
-                "count": 1,
-                "id": "minecraft:stonecutter"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "Specialty · Manor palette",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040000F",
-              "item": {
-                "count": 1,
-                "id": "vampirism:dark_stone_bricks"
-              },
-              "count": 64,
-              "title": "Inspect sixty-four Dark Stone Bricks",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400010",
-              "item": {
-                "count": 1,
-                "id": "minecraft:dark_oak_log"
-              },
-              "count": 32,
-              "title": "Inspect thirty-two Dark Oak Logs",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400011",
-              "item": {
-                "count": 1,
-                "id": "minecraft:dark_oak_fence"
-              },
-              "count": 16,
-              "title": "Inspect sixteen Dark Oak Fences",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400012",
-              "item": {
-                "count": 1,
-                "id": "minecraft:lantern"
-              },
-              "count": 8,
-              "title": "Inspect eight Lanterns",
-              "type": "item"
-            }
-          ],
-          "title": "House of Doors",
-          "x": 4.5,
-          "y": 3.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "minecraft:brewing_stand",
-          "id": "7A11C0DF0040000C",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00400029",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040002A",
-              "item": {
-                "count": 32,
-                "id": "minecraft:glass_bottle"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040002B",
-              "item": {
-                "count": 4,
-                "id": "minecraft:golden_apple"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040002C",
-              "item": {
-                "count": 32,
-                "id": "minecraft:bread"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Specialty · Hospitality",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400028",
-              "item": {
-                "count": 1,
-                "id": "minecraft:brewing_stand"
-              },
-              "title": "Inspect a Brewing Stand",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400029",
-              "item": {
-                "count": 1,
-                "id": "minecraft:honey_bottle"
-              },
-              "count": 8,
-              "title": "Carry eight Honey Bottles",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040002A",
-              "item": {
-                "count": 1,
-                "id": "minecraft:cooked_beef"
-              },
-              "count": 32,
-              "title": "Carry thirty-two Cooked Beef",
-              "type": "item"
-            }
-          ],
-          "title": "Guest Stores",
-          "x": 1.5,
-          "y": 4.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vampirism:umbrella",
-          "id": "7A11C0DF0040000D",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF0040002D",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040002E",
-              "item": {
-                "count": 8,
-                "id": "minecraft:lead"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040002F",
-              "item": {
-                "count": 32,
-                "id": "minecraft:firework_rocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400030",
-              "item": {
-                "count": 8,
-                "id": "minecraft:map"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Specialty · Night mobility",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040002B",
-              "item": {
-                "count": 1,
-                "id": "vampirism:umbrella"
-              },
-              "title": "Carry an Umbrella",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040002C",
-              "item": {
-                "count": 1,
-                "id": "minecraft:saddle"
-              },
-              "title": "Carry a Saddle",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040002D",
-              "item": {
-                "count": 1,
-                "id": "minecraft:clock"
-              },
-              "title": "Carry a Clock",
-              "type": "item"
-            }
-          ],
-          "title": "Sunproof Transit",
-          "x": -1.5,
-          "y": 4.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vampirism:blood_sieve",
-          "id": "7A11C0DF00400007",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00400031",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400032",
-              "item": {
-                "count": 32,
-                "id": "minecraft:redstone"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400033",
-              "item": {
-                "count": 16,
-                "id": "minecraft:gold_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400034",
-              "item": {
-                "count": 16,
-                "id": "minecraft:iron_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "gear",
-          "size": 1.0,
-          "subtitle": "Specialty · Blood metallurgy",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400031",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_sieve"
-              },
-              "title": "Inspect a Blood Sieve",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400032",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_infused_iron_ingot"
-              },
-              "count": 4,
-              "title": "Carry four Blood-Infused Iron",
-              "type": "item"
-            }
-          ],
-          "title": "Sieve Extraction",
-          "x": -4.5,
-          "y": 3.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vista:television",
-          "id": "7A11C0DF00400008",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00400035",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400036",
-              "item": {
-                "count": 4,
-                "id": "vista:hollow_cassette"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "diamond",
-          "size": 1.0,
-          "subtitle": "Specialty · Vista broadcast",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400013",
-              "item": {
-                "count": 1,
-                "id": "vista:television"
-              },
-              "title": "Craft a Television",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400014",
-              "item": {
-                "count": 1,
-                "id": "vista:viewfinder"
-              },
-              "title": "Craft a Viewfinder",
-              "type": "item"
-            }
-          ],
-          "title": "Nocturnal Broadcast",
-          "x": -7.5,
-          "y": 2
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00400003"
-          ],
-          "description": [
-            "Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "vampirism:heart_seeker_enhanced",
-          "id": "7A11C0DF00400009",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 0,
-          "repeatable": false,
-          "rewards": [
-            {
-              "id": "7A11C2DF00400010",
-              "item": {
-                "count": 1,
-                "id": "numismatics:cog"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400011",
-              "item": {
-                "count": 1,
-                "id": "irons_spellbooks:blood_upgrade_orb"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400012",
-              "item": {
-                "count": 16,
-                "id": "minecraft:obsidian"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400013",
-              "item": {
-                "count": 8,
-                "id": "minecraft:diamond"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "hexagon",
-          "size": 1.3,
-          "subtitle": "Specialty · Advanced bloodwork",
-          "tasks": [
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040000A",
-              "item": {
-                "count": 1,
-                "id": "vampirism:heart_seeker_enhanced"
-              },
-              "title": "Carry an enhanced Heartseeker",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040000B",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_infused_enhanced_iron_ingot"
-              },
-              "count": 2,
-              "title": "Carry two Enhanced Blood-Infused Iron",
-              "type": "item"
-            }
-          ],
-          "title": "Night's Due",
-          "x": -10.5,
           "y": 0
         }
       ],

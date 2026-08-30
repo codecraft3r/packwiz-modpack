@@ -2,12 +2,12 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 46,
+    "quests": 50,
     "chapter_quest_counts": {
       "ch01_island_charter": 5,
       "ch02_callings": 5,
       "ch03_lantern_order": 15,
-      "ch04_house_night": 11,
+      "ch04_house_night": 15,
       "ch05_market_services": 10
     },
     "groups": [
@@ -29,7 +29,7 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 46,
+    "reachable_quests": 50,
     "cycles": false,
     "charter_clause_count": 3,
     "hunter_gate": "any 3 of 8 after Core III",
@@ -66,7 +66,7 @@
       "branch_count": 12
     },
     "vampire": {
-      "quest_count": 11,
+      "quest_count": 15,
       "core_currency": [
         1.0,
         2.0,
@@ -83,10 +83,10 @@
         2.0,
         8.0
       ],
-      "personal_completionism": 29.0,
-      "branch_count": 8
+      "personal_completionism": 37.0,
+      "branch_count": 12
     },
-    "equal": false
+    "equal": true
   },
   "economy": {
     "coin_values_bevel_equivalent": {
@@ -99,7 +99,7 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 72.0,
+    "one_time_personal_raw_completionism": 80.0,
     "one_time_team_completionism": 0.0,
     "weekly_sinks": [
       {
@@ -300,8 +300,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "6cf23259a64fdd225207e0d295774b07f3be244ade1af741f5384e20ecb39459",
-        "actual": "6cf23259a64fdd225207e0d295774b07f3be244ade1af741f5384e20ecb39459",
+        "index": "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae",
+        "actual": "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -320,8 +320,8 @@
         "match": true
       }
     },
-    "index_sha256": "c172e57681fcfbdf408e30f421e7b8b337f729448ee0ef06f397d4b92b6cb58c",
-    "pack_toml_declared_index_sha256": "c172e57681fcfbdf408e30f421e7b8b337f729448ee0ef06f397d4b92b6cb58c",
+    "index_sha256": "721d659548f57f25994a1b9880d9009f74b3321c48459f78b4dce441d4675365",
+    "pack_toml_declared_index_sha256": "721d659548f57f25994a1b9880d9009f74b3321c48459f78b4dce441d4675365",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

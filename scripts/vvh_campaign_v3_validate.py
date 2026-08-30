@@ -180,7 +180,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [5, 5, 15, 11, 10]
+EXPECTED_COUNTS = [5, 5, 15, 15, 10]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -372,21 +372,16 @@ def main() -> int:
         core1, core2, core3 = (source.qid(chapter_num, i) for i in (1, 2, 3))
         if deps[core2] != [core1] or deps[core3] != [core2]:
             errors.append(f"chapter {chapter_num} core spine is not Tier I -> II -> III")
-        if chapter_num == 4:
-            for sid in specialty_ids:
-                if deps[sid] != [core3]:
-                    errors.append(f"specialty {sid} does not directly descend from Core III")
-        else:
-            # Hunter chapter has 4 building prerequisite pairs
-            for b_idx in (14, 15, 16, 17):
-                b_qid = source.qid(3, b_idx)
-                if deps[b_qid] != [core3]:
-                    errors.append(f"building quest {b_qid} does not directly descend from Core III")
-            for pair, b_idx in (((4, 5), 14), ((6, 12), 15), ((8, 13), 16), ((7, 9), 17)):
-                for q_idx in pair:
-                    q_qid = source.qid(3, q_idx)
-                    if deps[q_qid] != [source.qid(3, b_idx)]:
-                        errors.append(f"quest {q_qid} does not descend from building prerequisite {b_idx}")
+        for b_idx in (14, 15, 16, 17):
+            b_qid = source.qid(chapter_num, b_idx)
+            if deps[b_qid] != [core3]:
+                errors.append(f"building quest {b_qid} in chapter {chapter_num} does not directly descend from Core III")
+        pairs = (((4, 5), 14), ((6, 12), 15), ((8, 13), 16), ((7, 9), 17)) if chapter_num == 3 else (((9, 8), 14), ((7, 13), 15), ((12, 6), 16), ((5, 4), 17))
+        for pair, b_idx in pairs:
+            for q_idx in pair:
+                q_qid = source.qid(chapter_num, q_idx)
+                if deps[q_qid] != [source.qid(chapter_num, b_idx)]:
+                    errors.append(f"quest {q_qid} in chapter {chapter_num} does not descend from building prerequisite {b_idx}")
 
     # Structural and prose rules.
     checkmark_currency_allowlist = {source.qid(2, 3)}  # Explicit protected opt-out starter choice.
@@ -542,7 +537,7 @@ def main() -> int:
 
     hunter = faction_summary(3)
     vampire = faction_summary(4)
-    for key in ("core_currency", "counted_specialties", "specialty_currency"):
+    for key in ("quest_count", "core_currency", "counted_specialties", "specialty_currency", "personal_completionism", "branch_count"):
         if hunter[key] != vampire[key]:
             errors.append(f"faction parity mismatch in {key}: Hunter={hunter[key]} Vampire={vampire[key]}")
 
