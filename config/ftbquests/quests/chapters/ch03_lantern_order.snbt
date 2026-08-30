@@ -348,7 +348,7 @@
 				{ id: "7A11C1DF00300018", title: "I demonstrated one Holy spell", type: "checkmark" }
 			]
 			title: "Mercy Manual"
-			x: -14
+			x: -10.5d
 			y: 0
 		}
 		{
@@ -406,8 +406,8 @@
 				}
 			]
 			title: "Pure Defense"
-			x: -10
-			y: 0
+			x: -7.5d
+			y: 2
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -503,8 +503,8 @@
 				}
 			]
 			title: "Stone Lantern"
-			x: -6
-			y: 0
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -583,8 +583,8 @@
 				}
 			]
 			title: "Refuge Stores"
-			x: -2
-			y: 0
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -645,8 +645,8 @@
 				}
 			]
 			title: "Patrol Transit"
-			x: 2
-			y: 0
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -696,8 +696,8 @@
 				}
 			]
 			title: "Hunter Armament"
-			x: 6
-			y: 0
+			x: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -746,8 +746,8 @@
 				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
 			]
 			title: "Field Ledger"
-			x: 10
-			y: 0
+			x: 7.5d
+			y: 2
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
@@ -801,7 +801,7 @@
 				}
 			]
 			title: "Bright Oath"
-			x: 14
+			x: 10.5d
 			y: 0
 		}
 	]

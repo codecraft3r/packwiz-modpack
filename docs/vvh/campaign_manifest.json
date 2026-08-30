@@ -1046,7 +1046,7 @@
             }
           ],
           "title": "Mercy Manual",
-          "x": -14,
+          "x": -10.5,
           "y": 0
         },
         {
@@ -1130,8 +1130,8 @@
             }
           ],
           "title": "Pure Defense",
-          "x": -10,
-          "y": 0
+          "x": -7.5,
+          "y": 2
         },
         {
           "dependencies": [
@@ -1271,8 +1271,8 @@
             }
           ],
           "title": "Stone Lantern",
-          "x": -6,
-          "y": 0
+          "x": -4.5,
+          "y": 3.5
         },
         {
           "dependencies": [
@@ -1389,8 +1389,8 @@
             }
           ],
           "title": "Refuge Stores",
-          "x": -2,
-          "y": 0
+          "x": -1.5,
+          "y": 4.5
         },
         {
           "dependencies": [
@@ -1480,8 +1480,8 @@
             }
           ],
           "title": "Patrol Transit",
-          "x": 2,
-          "y": 0
+          "x": 1.5,
+          "y": 4.5
         },
         {
           "dependencies": [
@@ -1554,8 +1554,8 @@
             }
           ],
           "title": "Hunter Armament",
-          "x": 6,
-          "y": 0
+          "x": 4.5,
+          "y": 3.5
         },
         {
           "dependencies": [
@@ -1632,8 +1632,8 @@
             }
           ],
           "title": "Field Ledger",
-          "x": 10,
-          "y": 0
+          "x": 7.5,
+          "y": 2
         },
         {
           "dependencies": [
@@ -1713,7 +1713,7 @@
             }
           ],
           "title": "Bright Oath",
-          "x": 14,
+          "x": 10.5,
           "y": 0
         }
       ],
@@ -2242,7 +2242,7 @@
             }
           ],
           "title": "Scarlet Script",
-          "x": 14,
+          "x": 10.5,
           "y": 0
         },
         {
@@ -2324,8 +2324,8 @@
             }
           ],
           "title": "Crimson Reserve",
-          "x": 10,
-          "y": 0
+          "x": 7.5,
+          "y": 2
         },
         {
           "dependencies": [
@@ -2465,8 +2465,8 @@
             }
           ],
           "title": "House of Doors",
-          "x": 6,
-          "y": 0
+          "x": 4.5,
+          "y": 3.5
         },
         {
           "dependencies": [
@@ -2558,8 +2558,8 @@
             }
           ],
           "title": "Guest Stores",
-          "x": 2,
-          "y": 0
+          "x": 1.5,
+          "y": 4.5
         },
         {
           "dependencies": [
@@ -2649,8 +2649,8 @@
             }
           ],
           "title": "Sunproof Transit",
-          "x": -2,
-          "y": 0
+          "x": -1.5,
+          "y": 4.5
         },
         {
           "dependencies": [
@@ -2731,8 +2731,8 @@
             }
           ],
           "title": "Sieve Extraction",
-          "x": -6,
-          "y": 0
+          "x": -4.5,
+          "y": 3.5
         },
         {
           "dependencies": [
@@ -2794,8 +2794,8 @@
             }
           ],
           "title": "Nocturnal Broadcast",
-          "x": -10,
-          "y": 0
+          "x": -7.5,
+          "y": 2
         },
         {
           "dependencies": [
@@ -2876,7 +2876,7 @@
             }
           ],
           "title": "Night's Due",
-          "x": -14,
+          "x": -10.5,
           "y": 0
         }
       ],
