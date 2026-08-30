@@ -91,7 +91,8 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300002"
-					item: { count: 4, id: "vampirism:stake" }
+					item: { count: 1, id: "vampirism:stake" }
+					count: 4
 					title: "Carry four stakes"
 					type: "item"
 				}
@@ -158,14 +159,16 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300005"
-					item: { count: 4, id: "vampirism:holy_water_bottle_normal" }
+					item: { count: 1, id: "vampirism:holy_water_bottle_normal" }
+					count: 4
 					title: "Carry four normal Holy Waters"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300006"
-					item: { count: 8, id: "vampirism:pure_salt" }
+					item: { count: 1, id: "vampirism:pure_salt" }
+					count: 8
 					title: "Carry eight Pure Salt"
 					type: "item"
 				}
@@ -188,7 +191,7 @@
 				}
 				{
 					id: "7A11C2DF0030000C"
-					item: { count: 64, id: "minecraft:arrow" }
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
 					team_reward: false
 					type: "item"
 				}
@@ -200,7 +203,7 @@
 				}
 				{
 					id: "7A11C2DF0030000E"
-					item: { count: 32, id: "minecraft:flint" }
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
 					team_reward: false
 					type: "item"
 				}
@@ -232,7 +235,8 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300009"
-					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
+					item: { count: 1, id: "vampirism:crossbow_arrow_vampire_killer" }
+					count: 16
 					title: "Carry sixteen killer quarrels"
 					type: "item"
 				}
@@ -348,7 +352,8 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0030000E"
-					item: { count: 4, id: "irons_spellbooks:holy_rune" }
+					item: { count: 1, id: "irons_spellbooks:holy_rune" }
+					count: 4
 					title: "Carry four Holy Runes"
 					type: "item"
 				}
@@ -360,7 +365,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."]
+			description: ["Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."]
 			icon: { id: "vampirism:pure_salt" }
 			id: "7A11C0DF00300005"
 			optional: true
@@ -391,15 +396,17 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300022"
-					item: { count: 8, id: "vampirism:pure_salt" }
+					item: { count: 1, id: "vampirism:pure_salt" }
+					count: 8
 					title: "Carry eight Pure Salt"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300023"
-					item: { count: 32, id: "vampirism:holy_salt" }
-					title: "Carry thirty-two Holy Salt"
+					item: { count: 1, id: "vampirism:purified_garlic" }
+					count: 16
+					title: "Carry sixteen Purified Garlic"
 					type: "item"
 				}
 				{
@@ -477,28 +484,32 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0030000F"
-					item: { count: 64, id: "minecraft:stone_bricks" }
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					count: 64
 					title: "Inspect sixty-four Stone Bricks"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300010"
-					item: { count: 32, id: "minecraft:oak_log" }
+					item: { count: 1, id: "minecraft:oak_log" }
+					count: 32
 					title: "Inspect thirty-two Oak Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300011"
-					item: { count: 16, id: "minecraft:iron_bars" }
+					item: { count: 1, id: "minecraft:iron_bars" }
+					count: 16
 					title: "Inspect sixteen Iron Bars"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300012"
-					item: { count: 8, id: "minecraft:lantern" }
+					item: { count: 1, id: "minecraft:lantern" }
+					count: 8
 					title: "Inspect eight Lanterns"
 					type: "item"
 				}
@@ -553,14 +564,16 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300029"
-					item: { count: 8, id: "minecraft:honey_bottle" }
+					item: { count: 1, id: "minecraft:honey_bottle" }
+					count: 8
 					title: "Carry eight Honey Bottles"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0030002A"
-					item: { count: 16, id: "minecraft:golden_carrot" }
+					item: { count: 1, id: "minecraft:golden_carrot" }
+					count: 16
 					title: "Carry sixteen Golden Carrots"
 					type: "item"
 				}
@@ -652,7 +665,7 @@
 				}
 				{
 					id: "7A11C2DF00300032"
-					item: { count: 64, id: "minecraft:arrow" }
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
 					team_reward: false
 					type: "item"
 				}
@@ -664,14 +677,16 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300030"
-					item: { count: 16, id: "vampirism:crossbow_arrow_spitfire" }
+					item: { count: 1, id: "vampirism:crossbow_arrow_spitfire" }
+					count: 16
 					title: "Carry sixteen spitfire quarrels"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300031"
-					item: { count: 16, id: "vampirism:crossbow_arrow_teleport" }
+					item: { count: 1, id: "vampirism:crossbow_arrow_teleport" }
+					count: 16
 					title: "Carry sixteen teleport quarrels"
 					type: "item"
 				}
@@ -745,7 +760,7 @@
 				}
 				{
 					id: "7A11C2DF00300011"
-					item: { count: 1, id: "irons_spellbooks:affinity_ring_holy" }
+					item: { count: 1, id: "irons_spellbooks:holy_upgrade_orb" }
 					team_reward: false
 					type: "item"
 				}
@@ -825,14 +840,16 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300032"
-					item: { count: 2, id: "minecraft:white_bed" }
+					item: { count: 1, id: "minecraft:white_bed" }
+					count: 2
 					title: "Inspect two White Beds"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300033"
-					item: { count: 4, id: "minecraft:barrel" }
+					item: { count: 1, id: "minecraft:barrel" }
+					count: 4
 					title: "Inspect four Barrels"
 					type: "item"
 				}
@@ -896,7 +913,8 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300037"
-					item: { count: 8, id: "exposure:photograph_frame" }
+					item: { count: 1, id: "exposure:photograph_frame" }
+					count: 8
 					title: "Inspect eight Photograph Frames"
 					type: "item"
 				}

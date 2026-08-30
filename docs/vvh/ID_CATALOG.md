@@ -31,18 +31,22 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
 | `exposure` | `exposure:photograph_frame` | Photograph Frame | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.photograph_frame` |
-| `irons_spellbooks` | `irons_spellbooks:affinity_ring_blood` | Affinity Ring Blood | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_blood.json` |
-| `irons_spellbooks` | `irons_spellbooks:affinity_ring_holy` | Affinity Ring Holy | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/affinity_ring_holy.json` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |
+| `irons_spellbooks` | `irons_spellbooks:blood_upgrade_orb` | Blood Upgrade Orb | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/blood_upgrade_orb.json; data/irons_spellbooks/recipe/blood_upgrade_orb.json` |
 | `irons_spellbooks` | `irons_spellbooks:common_ink` | Common Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.common_ink` |
 | `irons_spellbooks` | `irons_spellbooks:copper_spell_book` | Flimsy Journal | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.copper_spell_book; data/irons_spellbooks/recipe/copper_spell_book.json` |
 | `irons_spellbooks` | `irons_spellbooks:holy_rune` | Holy Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune` |
+| `irons_spellbooks` | `irons_spellbooks:holy_upgrade_orb` | Holy Upgrade Orb | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/holy_upgrade_orb.json; data/irons_spellbooks/recipe/holy_upgrade_orb.json` |
 | `irons_spellbooks` | `irons_spellbooks:inscription_table` | Inscription Table | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json` |
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
 | `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_boots` | Wizard Boots | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_boots.json; data/irons_spellbooks/recipe/wizard_boots.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_chestplate` | Wizard Robes | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_chestplate.json; data/irons_spellbooks/recipe/wizard_chestplate.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_helmet` | Wizard Helmet | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_helmet.json` |
+| `irons_spellbooks` | `irons_spellbooks:wizard_leggings` | Wizard Leggings | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_leggings.json; data/irons_spellbooks/recipe/wizard_leggings.json` |
 | `numismatics` | `numismatics:banking_guide` | Banking Guide | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/banking_guide.json; data/numismatics/recipe/crafting/banking_guide.json` |
 | `numismatics` | `numismatics:bevel` | Bevel | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/lang/en_us.json::item.numismatics.bevel` |
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
@@ -51,10 +55,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
 | `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_chest_normal` | Armor Of Swiftness Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_chest_normal.json; data/vampirism/recipe/armor_of_swiftness_chest_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_feet_normal` | Armor Of Swiftness Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_feet_normal.json; data/vampirism/recipe/armor_of_swiftness_feet_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_head_normal` | Armor Of Swiftness Head Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_head_normal.json; data/vampirism/recipe/armor_of_swiftness_head_normal.json` |
-| `vampirism` | `vampirism:armor_of_swiftness_legs_normal` | Armor Of Swiftness Legs Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/armor_of_swiftness_legs_normal.json; data/vampirism/recipe/armor_of_swiftness_legs_normal.json` |
 | `vampirism` | `vampirism:basic_crossbow` | Basic Crossbow | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/basic_crossbow.json; data/vampirism/recipe/basic_crossbow.json` |
 | `vampirism` | `vampirism:blood_bottle` | Blood Bottle | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_bottle` |
 | `vampirism` | `vampirism:blood_container` | Blood Container | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_container` |
@@ -62,13 +62,13 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:blood_infused_iron_ingot` | Blood-Infused Iron Ingot | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.blood_infused_iron_ingot; data/vampirism/recipe/vampire/blood_infused_iron_ingot.json` |
 | `vampirism` | `vampirism:blood_pedestal` | Blood Pedestal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.blood_pedestal` |
 | `vampirism` | `vampirism:blood_sieve` | Blood Sieve | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/blood_sieve.json; data/vampirism/recipe/general/blood_sieve.json` |
+| `vampirism` | `vampirism:crossbow_arrow_normal` | Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/crossbow_arrow_normal.json; data/vampirism/recipe/hunter/crossbow_arrow_normal.json` |
 | `vampirism` | `vampirism:crossbow_arrow_spitfire` | Spitfire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_spitfire` |
 | `vampirism` | `vampirism:crossbow_arrow_teleport` | Teleport Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_teleport` |
 | `vampirism` | `vampirism:crossbow_arrow_vampire_killer` | Vampire Killer Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_vampire_killer` |
 | `vampirism` | `vampirism:dark_stone_bricks` | Dark Stone Bricks | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/dark_stone_bricks.json` |
 | `vampirism` | `vampirism:heart_seeker_enhanced` | Enhanced Heartseeker | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/vampire/heart_seeker_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::heart_seeker_enhanced` |
 | `vampirism` | `vampirism:heart_seeker_normal` | Heart Seeker Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/heart_seeker_normal.json; data/vampirism/recipe/vampire/heart_seeker_normal.json` |
-| `vampirism` | `vampirism:holy_salt` | Blessed Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.holy_salt` |
 | `vampirism` | `vampirism:holy_water_bottle_normal` | Holy Water Bottle Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/holy_water_bottle_normal.json` |
 | `vampirism` | `vampirism:holy_water_splash_bottle_enhanced` | Enhanced Splash Bottle of Holy Water | `Vampirism-1.21-1.10.12.jar` | `de/teamlapen/vampirism/core/ModItems.class::holy_water_splash_bottle_enhanced; assets/vampirism/models/item/holy_water_splash_bottle_enhanced.json` |
 | `vampirism` | `vampirism:hunter_axe_enhanced` | Enhanced Hunter Axe | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/hunter_axe_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::hunter_axe_enhanced` |
@@ -80,6 +80,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:hunter_table` | Hunter Research Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.hunter_table` |
 | `vampirism` | `vampirism:injection_garlic` | Garlic Injection | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.injection_garlic; de/teamlapen/vampirism/core/ModItems.class::injection_garlic` |
 | `vampirism` | `vampirism:pure_salt` | Pure Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.pure_salt` |
+| `vampirism` | `vampirism:purified_garlic` | Purified Garlic | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/purified_garlic.json; data/vampirism/recipe/purified_garlic.json` |
 | `vampirism` | `vampirism:stake` | Stake | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.stake` |
 | `vampirism` | `vampirism:umbrella` | Umbrella | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/umbrella.json; data/vampirism/recipe/general/umbrella.json` |
 | `vampirism` | `vampirism:vampire_cloak_white_black` | Vampire Cloak | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.vampire_cloak_white_black` |
