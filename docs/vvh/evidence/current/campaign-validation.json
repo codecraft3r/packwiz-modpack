@@ -2,12 +2,12 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 50,
+    "quests": 42,
     "chapter_quest_counts": {
       "ch01_island_charter": 5,
       "ch02_callings": 5,
-      "ch03_lantern_order": 15,
-      "ch04_house_night": 15,
+      "ch03_lantern_order": 11,
+      "ch04_house_night": 11,
       "ch05_market_services": 10
     },
     "groups": [
@@ -29,7 +29,7 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 50,
+    "reachable_quests": 42,
     "cycles": false,
     "charter_clause_count": 3,
     "hunter_gate": "any 3 of 8 after Core III",
@@ -45,7 +45,7 @@
   },
   "parity": {
     "hunter": {
-      "quest_count": 15,
+      "quest_count": 11,
       "core_currency": [
         1.0,
         2.0,
@@ -62,12 +62,11 @@
         2.0,
         8.0
       ],
-      "personal_completionism": 31.0,
-      "team_capstone": 8.0,
-      "branch_count": 10
+      "personal_completionism": 29.0,
+      "branch_count": 8
     },
     "vampire": {
-      "quest_count": 15,
+      "quest_count": 11,
       "core_currency": [
         1.0,
         2.0,
@@ -84,9 +83,8 @@
         2.0,
         8.0
       ],
-      "personal_completionism": 31.0,
-      "team_capstone": 8.0,
-      "branch_count": 10
+      "personal_completionism": 29.0,
+      "branch_count": 8
     },
     "equal": true
   },
@@ -101,8 +99,8 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 68.0,
-    "one_time_team_completionism": 16.0,
+    "one_time_personal_raw_completionism": 64.0,
+    "one_time_team_completionism": 0.0,
     "weekly_sinks": [
       {
         "id": "7A11C0DF00500002",
@@ -158,11 +156,9 @@
       "create:brass_ingot",
       "create:precision_mechanism",
       "explorerscompass:explorerscompass",
-      "exposure:album",
       "exposure:black_and_white_film",
       "exposure:camera",
       "exposure:color_film",
-      "exposure:photograph_frame",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
@@ -225,7 +221,6 @@
     ],
     "nonvanilla_icons": [
       "create:precision_mechanism",
-      "exposure:album",
       "exposure:camera",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
@@ -249,7 +244,6 @@
       "vampirism:potion_table",
       "vampirism:pure_salt",
       "vampirism:umbrella",
-      "vampirism:vampire_cloak_white_black",
       "vampirism:vampire_fang",
       "vampirism:weapon_table",
       "vista:television"
@@ -300,13 +294,13 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "74d637000384885de7518cedf203eac5a57871f475b12c5e1dcc7822b5bc7933",
-        "actual": "74d637000384885de7518cedf203eac5a57871f475b12c5e1dcc7822b5bc7933",
+        "index": "a65b5bde8058219c70a7a19e6292960a6ab86f42ae81291c809fb99a2d2aa0d8",
+        "actual": "a65b5bde8058219c70a7a19e6292960a6ab86f42ae81291c809fb99a2d2aa0d8",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "8acdee96d312bd8010e272b0a11c0f2de00ce4c8461357ca3bde4f632e8365fb",
-        "actual": "8acdee96d312bd8010e272b0a11c0f2de00ce4c8461357ca3bde4f632e8365fb",
+        "index": "ffded1a0f847fbafb07401fe358d32422aaa5ea656df4c7282f45f08c7685a0e",
+        "actual": "ffded1a0f847fbafb07401fe358d32422aaa5ea656df4c7282f45f08c7685a0e",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
@@ -325,8 +319,8 @@
         "match": true
       }
     },
-    "index_sha256": "15db184d472dea10551a01fa2895c0746490677415f914932363f12b14194181",
-    "pack_toml_declared_index_sha256": "15db184d472dea10551a01fa2895c0746490677415f914932363f12b14194181",
+    "index_sha256": "bae35a56056308da3c812924e17fc0b09d44a0cd2902c7f7c12e484c9153d8c2",
+    "pack_toml_declared_index_sha256": "bae35a56056308da3c812924e17fc0b09d44a0cd2902c7f7c12e484c9153d8c2",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

@@ -709,89 +709,6 @@ def build_hunters(group: str) -> Chapter:
         dependencies=[core3],
     )
 
-    ch.add(
-        14,
-        title="Open Watchpost",
-        subtitle="Optional · Public refuge",
-        description="Use the palette stock to open a claim-safe watchpost with two beds, storage, a bell, and a clearly marked public entrance. The checkmark attests that another player can actually find and use it.",
-        icon="minecraft:bell",
-        x=-8,
-        y=3.5,
-        shape="square",
-        optional=True,
-        tasks=[
-            item_task(3, 50, "minecraft:white_bed", 2, "Inspect two White Beds"),
-            item_task(3, 51, "minecraft:barrel", 4, "Inspect four Barrels"),
-            item_task(3, 52, "minecraft:bell", title="Inspect a Bell"),
-            check_task(3, 53, "I opened and tested the public watchpost"),
-        ],
-        hide_dependency_lines=True,
-        rewards=[
-            item_reward(3, 54, "minecraft:oak_sign", 16),
-            item_reward(3, 55, "minecraft:item_frame", 16),
-            item_reward(3, 56, "minecraft:map", 8),
-            item_reward(3, 57, "minecraft:campfire", 4),
-        ],
-        dependencies=[palette],
-    )
-    ch.add(
-        15,
-        title="Archive Wall",
-        subtitle="Optional · Public records",
-        description="File a photo album, eight framed photographs, and one written report in a place other players can inspect. The archive preserves evidence without turning reconnaissance into trespass.",
-        icon="exposure:album",
-        x=8,
-        y=3.5,
-        shape="square",
-        optional=True,
-        tasks=[
-            item_task(3, 54, "exposure:album", title="Inspect a Photo Album"),
-            item_task(3, 55, "exposure:photograph_frame", 8, "Inspect eight Photograph Frames"),
-            item_task(3, 56, "minecraft:written_book", title="Inspect one written field report"),
-        ],
-        hide_dependency_lines=True,
-        rewards=[
-            item_reward(3, 58, "numismatics:sprocket"),
-            item_reward(3, 59, "minecraft:paper", 64),
-            item_reward(3, 60, "minecraft:map", 8),
-            item_reward(3, 61, "minecraft:item_frame", 16),
-        ],
-        dependencies=[ledger],
-    )
-
-    gate = ch.add(
-        10,
-        title="Three Lanterns",
-        subtitle="Breadth · Any three specialties",
-        description="Complete any three specialty nodes above. Because every counted specialty descends from Long Watch, this breadth gate proves the full core spine without forcing one preferred Hunter personality.",
-        icon="minecraft:lantern",
-        x=0,
-        y=6,
-        shape="diamond",
-        size=1.3,
-        min_deps=3,
-        tasks=[check_task(3, 22, "I completed three Hunter specialties")],
-        dependencies=[mercy, defense, palette, stores, transit, armament, ledger, mastery],
-    )
-    ch.add(
-        11,
-        title="Lantern Charter",
-        subtitle="Tier IV · Team refuge",
-        description="Carry a lodestone reserved for a named public refuge. The team reward supplies enough durable stock to extend the place after the capstone instead of treating it as a finished museum piece.",
-        icon="minecraft:lodestone",
-        x=0,
-        y=9,
-        shape="hexagon",
-        size=1.6,
-        tasks=[item_task(3, 23, "minecraft:lodestone", title="Carry the refuge Lodestone")],
-        rewards=[
-            item_reward(3, 62, "numismatics:cog", team=True),
-            item_reward(3, 63, "minecraft:stone_bricks", 128, team=True),
-            item_reward(3, 64, "minecraft:lantern", 32, team=True),
-            item_reward(3, 65, "minecraft:barrel", 8, team=True),
-        ],
-        dependencies=[gate],
-    )
     return ch
 
 
@@ -1074,89 +991,6 @@ def build_vampires(group: str) -> Chapter:
         dependencies=[core3],
     )
 
-    ch.add(
-        14,
-        title="Open Guest Hall",
-        subtitle="Optional · Public refuge",
-        description="Use the manor palette to open a claim-safe guest hall with two beds, storage, a bell, and a clearly marked public entrance. The checkmark attests that a non-House player can find and use it.",
-        icon="minecraft:bell",
-        x=8,
-        y=3.5,
-        shape="square",
-        optional=True,
-        tasks=[
-            item_task(4, 51, "minecraft:white_bed", 2, "Inspect two White Beds"),
-            item_task(4, 52, "minecraft:barrel", 4, "Inspect four Barrels"),
-            item_task(4, 53, "minecraft:bell", title="Inspect a Bell"),
-            check_task(4, 54, "I opened and tested the public guest hall"),
-        ],
-        hide_dependency_lines=True,
-        rewards=[
-            item_reward(4, 56, "minecraft:dark_oak_sign", 16),
-            item_reward(4, 57, "minecraft:item_frame", 16),
-            item_reward(4, 58, "minecraft:map", 8),
-            item_reward(4, 59, "minecraft:campfire", 4),
-        ],
-        dependencies=[palette],
-    )
-    ch.add(
-        15,
-        title="Night Archive",
-        subtitle="Optional · Public records",
-        description="File a photo album, eight framed photographs, and one written route report where neighbors can inspect it. The archive makes nocturnal knowledge useful without manufacturing a license to trespass.",
-        icon="exposure:album",
-        x=-8,
-        y=3.5,
-        shape="square",
-        optional=True,
-        tasks=[
-            item_task(4, 55, "exposure:album", title="Inspect a Photo Album"),
-            item_task(4, 56, "exposure:photograph_frame", 8, "Inspect eight Photograph Frames"),
-            item_task(4, 57, "minecraft:written_book", title="Inspect one written route report"),
-        ],
-        hide_dependency_lines=True,
-        rewards=[
-            item_reward(4, 60, "numismatics:sprocket"),
-            item_reward(4, 61, "minecraft:paper", 64),
-            item_reward(4, 62, "minecraft:map", 8),
-            item_reward(4, 63, "minecraft:item_frame", 16),
-        ],
-        dependencies=[courier],
-    )
-
-    gate = ch.add(
-        10,
-        title="Three Seals",
-        subtitle="Breadth · Any three specialties",
-        description="Complete any three specialty nodes above. Every counted specialty descends from Inherited Edge, so the gate proves the full core while allowing bloodwork, hospitality, magic, records, or transport to define the House.",
-        icon="vampirism:vampire_cloak_white_black",
-        x=0,
-        y=6,
-        shape="diamond",
-        size=1.3,
-        min_deps=3,
-        tasks=[check_task(4, 22, "I completed three Vampire specialties")],
-        dependencies=[script, reserve, palette, stores, transit, metallurgy, courier, mastery],
-    )
-    ch.add(
-        11,
-        title="Night Charter",
-        subtitle="Tier IV · Team refuge",
-        description="Carry a lodestone reserved for a named night refuge. The team reward extends the place with durable stock so hospitality and blood logistics remain useful after the capstone.",
-        icon="minecraft:lodestone",
-        x=0,
-        y=9,
-        shape="hexagon",
-        size=1.6,
-        tasks=[item_task(4, 23, "minecraft:lodestone", title="Carry the refuge Lodestone")],
-        rewards=[
-            item_reward(4, 64, "numismatics:cog", team=True),
-            item_reward(4, 65, "vampirism:dark_stone_bricks", 128, team=True),
-            item_reward(4, 66, "minecraft:lantern", 32, team=True),
-            item_reward(4, 67, "minecraft:barrel", 8, team=True),
-        ],
-        dependencies=[gate],
-    )
     return ch
 
 
@@ -1520,7 +1354,7 @@ def main() -> int:
         if stale:
             print("campaign source drift:\n- " + "\n- ".join(stale))
             return 1
-        print("campaign source is synchronized: 5 chapters, 50 quests")
+        print("campaign source is synchronized: 5 chapters, 42 quests")
         return 0
 
     action = "updated" if stale else "verified"

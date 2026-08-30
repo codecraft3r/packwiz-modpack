@@ -25,11 +25,9 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
 | `create` | `create:precision_mechanism` | Precision Mechanism | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.precision_mechanism` |
 | `explorerscompass` | `explorerscompass:explorerscompass` | Explorer's Compass | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `assets/explorerscompass/models/item/explorerscompass.json; data/explorerscompass/recipe/explorers_compass.json` |
-| `exposure` | `exposure:album` | Photo Album | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.album` |
 | `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
-| `exposure` | `exposure:photograph_frame` | Photograph Frame | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.photograph_frame` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |

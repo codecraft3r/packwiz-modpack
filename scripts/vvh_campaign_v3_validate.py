@@ -178,7 +178,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [5, 5, 15, 15, 10]
+EXPECTED_COUNTS = [5, 5, 11, 11, 10]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -368,26 +368,11 @@ def main() -> int:
 
     for chapter_num, specialty_ids in ((3, HUNTER_SPECIALTIES), (4, VAMPIRE_SPECIALTIES)):
         core1, core2, core3 = (source.qid(chapter_num, i) for i in (1, 2, 3))
-        gate, capstone = source.qid(chapter_num, 10), source.qid(chapter_num, 11)
         if deps[core2] != [core1] or deps[core3] != [core2]:
             errors.append(f"chapter {chapter_num} core spine is not Tier I -> II -> III")
         for sid in specialty_ids:
             if deps[sid] != [core3]:
                 errors.append(f"specialty {sid} does not directly descend from Core III")
-        gate_q = quest_by_id[gate]
-        if set(gate_q["dependencies"]) != set(specialty_ids) or gate_q.get("min_required_dependencies") != 3:
-            errors.append(f"chapter {chapter_num} breadth gate is not true any 3 of 8")
-        if deps[capstone] != [gate]:
-            errors.append(f"chapter {chapter_num} capstone does not descend from breadth gate")
-        minimum_currency = (
-            currency_value(quest_by_id[source.qid(2, 4 if chapter_num == 3 else 2)]["rewards"], team=False)
-            + sum(currency_value(quest_by_id[source.qid(chapter_num, i)]["rewards"], team=False) for i in (1, 2, 3))
-            + sum(sorted(currency_value(quest_by_id[s]["rewards"], team=False) for s in specialty_ids)[:3])
-        )
-        if minimum_currency != 15:
-            errors.append(f"chapter {chapter_num} minimum personal route is {minimum_currency}, expected 15 Bevel-equivalent")
-        if currency_value(quest_by_id[capstone]["rewards"], team=True) != 8:
-            errors.append(f"chapter {chapter_num} capstone does not issue exactly one team Cog")
 
     # Structural and prose rules.
     checkmark_currency_allowlist = {source.qid(2, 3)}  # Explicit protected opt-out starter choice.
@@ -538,13 +523,12 @@ def main() -> int:
             "counted_specialties": len(specialties),
             "specialty_currency": [currency_value(quest_by_id[s]["rewards"], team=False) for s in specialties],
             "personal_completionism": all_personal,
-            "team_capstone": currency_value(quest_by_id[source.qid(chapter_num, 11)]["rewards"], team=True),
             "branch_count": len([q for q in ch.quests if q.get("optional")]),
         }
 
     hunter = faction_summary(3)
     vampire = faction_summary(4)
-    for key in ("quest_count", "core_currency", "counted_specialties", "specialty_currency", "personal_completionism", "team_capstone", "branch_count"):
+    for key in ("quest_count", "core_currency", "counted_specialties", "specialty_currency", "personal_completionism", "branch_count"):
         if hunter[key] != vampire[key]:
             errors.append(f"faction parity mismatch in {key}: Hunter={hunter[key]} Vampire={vampire[key]}")
 

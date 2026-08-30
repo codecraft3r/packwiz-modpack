@@ -122,14 +122,6 @@
     },
     {
       "namespace": "exposure",
-      "id": "exposure:album",
-      "display_name": "Photo Album",
-      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
-      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.album",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "exposure",
       "id": "exposure:black_and_white_film",
       "display_name": "Black and White Film",
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
@@ -150,14 +142,6 @@
       "display_name": "Color Film",
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.color_film",
-      "obtainability_note": ""
-    },
-    {
-      "namespace": "exposure",
-      "id": "exposure:photograph_frame",
-      "display_name": "Photograph Frame",
-      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
-      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.photograph_frame",
       "obtainability_note": ""
     },
     {
