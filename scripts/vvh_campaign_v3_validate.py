@@ -43,8 +43,8 @@ VERIFIED_NONVANILLA_ITEMS = {
     "exposure:color_film",
     "exposure:high_sensitivity_color_film",
     "exposure:photograph_frame",
-    "irons_spellbooks:affinity_ring_blood",
-    "irons_spellbooks:affinity_ring_holy",
+    "irons_spellbooks:blood_upgrade_orb",
+    "irons_spellbooks:holy_upgrade_orb",
     "irons_spellbooks:arcane_essence",
     "irons_spellbooks:blank_rune",
     "irons_spellbooks:blood_rune",
@@ -55,6 +55,10 @@ VERIFIED_NONVANILLA_ITEMS = {
     "irons_spellbooks:rare_ink",
     "irons_spellbooks:scroll",
     "irons_spellbooks:uncommon_ink",
+    "irons_spellbooks:wizard_boots",
+    "irons_spellbooks:wizard_chestplate",
+    "irons_spellbooks:wizard_helmet",
+    "irons_spellbooks:wizard_leggings",
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
@@ -72,13 +76,14 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:blood_infused_iron_ingot",
     "vampirism:blood_pedestal",
     "vampirism:blood_sieve",
+    "vampirism:crossbow_arrow_normal",
     "vampirism:crossbow_arrow_spitfire",
     "vampirism:crossbow_arrow_teleport",
     "vampirism:crossbow_arrow_vampire_killer",
     "vampirism:dark_stone_bricks",
     "vampirism:heart_seeker_enhanced",
     "vampirism:heart_seeker_normal",
-    "vampirism:holy_salt",
+    "vampirism:purified_garlic",
     "vampirism:holy_water_bottle_normal",
     "vampirism:holy_water_splash_bottle_enhanced",
     "vampirism:hunter_axe_enhanced",
@@ -89,12 +94,16 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vampirism:hunter_coat_legs_normal",
     "vampirism:hunter_table",
     "vampirism:injection_garlic",
+    "vampirism:item_alchemical_fire",
     "vampirism:pure_salt",
     "vampirism:stake",
     "vampirism:umbrella",
     "vampirism:vampire_cloak_white_black",
     "vampirism:vampire_fang",
     "vampirism:weapon_table",
+    "vista:hollow_cassette",
+    "vista:television",
+    "vista:viewfinder",
 }
 VERIFIED_NONVANILLA_ICONS = {
     "create:precision_mechanism",
@@ -103,6 +112,10 @@ VERIFIED_NONVANILLA_ICONS = {
     "irons_spellbooks:blood_rune",
     "irons_spellbooks:holy_rune",
     "irons_spellbooks:uncommon_ink",
+    "irons_spellbooks:wizard_boots",
+    "irons_spellbooks:wizard_chestplate",
+    "irons_spellbooks:wizard_helmet",
+    "irons_spellbooks:wizard_leggings",
     "numismatics:banking_guide",
     "numismatics:bevel",
     "numismatics:cog",
@@ -112,6 +125,7 @@ VERIFIED_NONVANILLA_ICONS = {
     "vampirism:altar_inspiration",
     "vampirism:blood_container",
     "vampirism:blood_sieve",
+    "vampirism:crossbow_arrow_normal",
     "vampirism:crossbow_arrow_spitfire",
     "vampirism:dark_stone_bricks",
     "vampirism:heart_seeker_enhanced",
@@ -119,11 +133,15 @@ VERIFIED_NONVANILLA_ICONS = {
     "vampirism:hunter_axe_enhanced",
     "vampirism:hunter_table",
     "vampirism:injection_garlic",
+    "vampirism:item_alchemical_fire",
     "vampirism:pure_salt",
     "vampirism:umbrella",
     "vampirism:vampire_cloak_white_black",
     "vampirism:vampire_fang",
     "vampirism:weapon_table",
+    "vista:hollow_cassette",
+    "vista:television",
+    "vista:viewfinder",
 }
 VERIFIED_ADVANCEMENTS = {
     "exposure:adventure/moment_in_time",
@@ -138,7 +156,7 @@ VERIFIED_SPELLS = {
     "irons_spellbooks:ray_of_siphoning",
     "irons_spellbooks:recall",
 }
-VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container"}
+VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container", "minecraft:dyed_color"}
 VERIFIED_IMAGES = {
     "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
     "poiesis:textures/questpics/vvh/blood_school_crest.png",
@@ -156,7 +174,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [7, 5, 15, 15, 10]
+EXPECTED_COUNTS = [5, 5, 15, 15, 10]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -178,6 +196,8 @@ def item_id(record: dict[str, Any]) -> str | None:
 
 
 def item_count(record: dict[str, Any]) -> int:
+    if "count" in record and record["count"] is not None:
+        return int(record["count"])
     item = record.get("item")
     return int(item.get("count", 1)) if isinstance(item, dict) else 1
 
@@ -294,9 +314,9 @@ def main() -> int:
         errors.append(f"unreachable quests: {missing_reach}")
 
     charter_terminal = quest_by_id[source.qid(1, 5)]
-    expected_charter = {source.qid(1, i) for i in (2, 6, 3, 7, 4)}
+    expected_charter = {source.qid(1, i) for i in (6, 3, 7)}
     if set(charter_terminal["dependencies"]) != expected_charter:
-        errors.append("Charter terminal does not directly depend on all five mandatory clauses")
+        errors.append("Charter terminal does not directly depend on all three mandatory clauses")
     for later_ch in chapters[1:]:
         for quest in later_ch.quests:
             ancestors: set[str] = set()

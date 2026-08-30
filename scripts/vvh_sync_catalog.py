@@ -29,6 +29,7 @@ NAMESPACE_METADATA = {
     "irons_spellbooks": "mods/irons-spells-n-spellbooks.pw.toml",
     "numismatics": "mods/numismatics.pw.toml",
     "vampirism": "mods/vampirism.pw.toml",
+    "vista": "mods/vista_tv.pw.toml",
 }
 
 EXTRA_ITEM_EVIDENCE = {

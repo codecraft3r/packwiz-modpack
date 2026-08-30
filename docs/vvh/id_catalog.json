@@ -7,7 +7,8 @@
     "exposure",
     "irons_spellbooks",
     "numismatics",
-    "vampirism"
+    "vampirism",
+    "vista"
   ],
   "unverified_namespaces": [],
   "pack_membership": {
@@ -66,6 +67,15 @@
         "download_hash_format": "sha512",
         "download_hash": "b19aec3fb8abb2c83047b64d2497fa440e9295044919b546cfaedd417e604e2176e48c289745ed0a03ec57d032e7051e16de993ef3107d42f5b077187662c070",
         "index_sha256": "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00"
+      },
+      "vista": {
+        "metadata": "mods/vista_tv.pw.toml",
+        "name": "vista",
+        "filename": "vista-1.21.1-5.4.4-neoforge.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "a26106fb220f71a09e5b7817f757952f0b5ff277d2a29cfce07255d307a680bdde8158ccc0ffa9311356e70a125b26ed85216a9418aa195fd47dc48a4b15dd60",
+        "index_sha256": "040b6ebf5597bc3fda75a00e0fc17644fb7853a08717249ae3da183a93e5075c"
       }
     }
   },
@@ -101,14 +111,6 @@
       "source_jar": "create-1.21.1-6.0.10.jar",
       "source_entry": "assets/create/lang/en_us.json::item.create.precision_mechanism",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "create",
-      "id": "create:wrench",
-      "display_name": "Wrench",
-      "source_jar": "create-1.21.1-6.0.10.jar",
-      "source_entry": "assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "explorerscompass",
@@ -152,35 +154,11 @@
     },
     {
       "namespace": "exposure",
-      "id": "exposure:high_sensitivity_color_film",
-      "display_name": "High-Sensitivity Color Film",
-      "source_entry": "assets/exposure/lang/en_us.json::item.exposure.high_sensitivity_color_film; data/exposure/recipe/high_sensitivity_color_film.json",
-      "obtainability_note": "",
-      "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar"
-    },
-    {
-      "namespace": "exposure",
       "id": "exposure:photograph_frame",
       "display_name": "Photograph Frame",
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.photograph_frame",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "irons_spellbooks",
-      "id": "irons_spellbooks:affinity_ring_blood",
-      "display_name": "Affinity Ring Blood",
-      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
-      "source_entry": "assets/irons_spellbooks/models/item/affinity_ring_blood.json",
-      "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "irons_spellbooks",
-      "id": "irons_spellbooks:affinity_ring_holy",
-      "display_name": "Affinity Ring Holy",
-      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
-      "source_entry": "assets/irons_spellbooks/models/item/affinity_ring_holy.json",
-      "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",
@@ -208,6 +186,14 @@
     },
     {
       "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:blood_upgrade_orb",
+      "display_name": "Blood Upgrade Orb",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/blood_upgrade_orb.json; data/irons_spellbooks/recipe/blood_upgrade_orb.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
       "id": "irons_spellbooks:common_ink",
       "display_name": "Common Ink",
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
@@ -229,6 +215,14 @@
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
       "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:holy_upgrade_orb",
+      "display_name": "Holy Upgrade Orb",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/holy_upgrade_orb.json; data/irons_spellbooks/recipe/holy_upgrade_orb.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",
@@ -261,6 +255,38 @@
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
       "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_boots",
+      "display_name": "Wizard Boots",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_boots.json; data/irons_spellbooks/recipe/wizard_boots.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_chestplate",
+      "display_name": "Wizard Robes",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_chestplate.json; data/irons_spellbooks/recipe/wizard_chestplate.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_helmet",
+      "display_name": "Wizard Helmet",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_helmet.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:wizard_leggings",
+      "display_name": "Wizard Leggings",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/wizard_leggings.json; data/irons_spellbooks/recipe/wizard_leggings.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "numismatics",
@@ -320,38 +346,6 @@
     },
     {
       "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_chest_normal",
-      "display_name": "Armor Of Swiftness Chest Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_chest_normal.json; data/vampirism/recipe/armor_of_swiftness_chest_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_feet_normal",
-      "display_name": "Armor Of Swiftness Feet Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_feet_normal.json; data/vampirism/recipe/armor_of_swiftness_feet_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_head_normal",
-      "display_name": "Armor Of Swiftness Head Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_head_normal.json; data/vampirism/recipe/armor_of_swiftness_head_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:armor_of_swiftness_legs_normal",
-      "display_name": "Armor Of Swiftness Legs Normal",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/armor_of_swiftness_legs_normal.json; data/vampirism/recipe/armor_of_swiftness_legs_normal.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
       "id": "vampirism:basic_crossbow",
       "display_name": "Basic Crossbow",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
@@ -408,6 +402,14 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:crossbow_arrow_normal",
+      "display_name": "Quarrel",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/crossbow_arrow_normal.json; data/vampirism/recipe/hunter/crossbow_arrow_normal.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:crossbow_arrow_spitfire",
       "display_name": "Spitfire",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
@@ -453,14 +455,6 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/models/item/heart_seeker_normal.json; data/vampirism/recipe/vampire/heart_seeker_normal.json",
       "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:holy_salt",
-      "display_name": "Blessed Salt",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.holy_salt",
-      "obtainability_note": ""
     },
     {
       "namespace": "vampirism",
@@ -544,11 +538,27 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:item_alchemical_fire",
+      "display_name": "Alchemical Fire",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/item_alchemical_fire.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:pure_salt",
       "display_name": "Pure Salt",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.pure_salt",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:purified_garlic",
+      "display_name": "Purified Garlic",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/purified_garlic.json; data/vampirism/recipe/purified_garlic.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "vampirism",
@@ -589,6 +599,30 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/lang/en_us.json::block.vampirism.weapon_table",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:hollow_cassette",
+      "display_name": "Hollow Cassette",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/hollow_cassette.json; data/vista/recipe/hollow_cassette.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:television",
+      "display_name": "Television",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/television.json; data/vista/recipe/television.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vista",
+      "id": "vista:viewfinder",
+      "display_name": "Viewfinder",
+      "source_jar": "vista-1.21.1-5.4.4-neoforge.jar",
+      "source_entry": "assets/vista/models/item/viewfinder.json; data/vista/recipe/viewfinder.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     }
   ],
   "advancements": {

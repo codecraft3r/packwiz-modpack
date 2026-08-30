@@ -99,8 +99,10 @@ def item_task(ch: int, idx: int, item: str, count: int = 1, title: str | None = 
     task: dict[str, Any] = {
         "consume_items": consume,
         "id": tid(ch, idx),
-        "item": {"count": count, "id": item},
+        "item": {"count": 1, "id": item},
     }
+    if count != 1:
+        task["count"] = count
     if title:
         task["title"] = title
     task["type"] = "item"
@@ -115,10 +117,13 @@ def check_task(ch: int, idx: int, title: str) -> dict[str, Any]:
     return {"id": tid(ch, idx), "title": title, "type": "checkmark"}
 
 
-def item_reward(ch: int, idx: int, item: str, count: int = 1, *, team: bool = False, title: str | None = None) -> dict[str, Any]:
+def item_reward(ch: int, idx: int, item: str, count: int = 1, *, team: bool = False, title: str | None = None, components: dict[str, Any] | None = None) -> dict[str, Any]:
+    item_obj: dict[str, Any] = {"count": count, "id": item}
+    if components:
+        item_obj["components"] = components
     reward: dict[str, Any] = {
         "id": rid(ch, idx),
-        "item": {"count": count, "id": item},
+        "item": item_obj,
         "team_reward": team,
     }
     if title:
@@ -250,18 +255,6 @@ def build_charter(group: str) -> Chapter:
             item_reward(1, 2, "minecraft:torch", 16),
         ],
     )
-    claim = ch.add(
-        2,
-        title="Claim Clearly",
-        subtitle="Required · Land boundaries",
-        description="Mark claimed ground before building near a neighbor. A visible boundary prevents accidental trespass and makes expansion a conversation rather than a surprise.",
-        icon="minecraft:filled_map",
-        x=-8,
-        y=-1.5,
-        shape="diamond",
-        tasks=[check_task(1, 2, "I understand claim boundaries")],
-        dependencies=[opener],
-    )
     public = ch.add(
         6,
         title="Name Public Doors",
@@ -298,31 +291,19 @@ def build_charter(group: str) -> Chapter:
         tasks=[check_task(1, 7, "I will keep rivalry claim-safe and reversible")],
         dependencies=[opener],
     )
-    teams = ch.add(
-        4,
-        title="Choose Teammates",
-        subtitle="Required · Shared progress",
-        description="FTB Teams owns quest progress, claims, and shared reward state. Join deliberately: a team decides who may finish, claim, and maintain work together; Vampirism faction state remains separate.",
-        icon="minecraft:chest",
-        x=8,
-        y=-1.5,
-        shape="gear",
-        tasks=[check_task(1, 4, "I know who shares my quest progress")],
-        dependencies=[opener],
-    )
     ch.add(
         5,
         title="Sign the Charter",
-        subtitle="Required · Claims · consent · teams",
-        description="You have read the rules that keep a persistent world playable: protect claims, name public access, obtain consent, keep rivalry reversible, and understand shared progress. The calling board is now open.",
+        subtitle="Required · Public access · consent · rivalry",
+        description="You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open.",
         icon="minecraft:writable_book",
         x=0,
         y=3,
         shape="hexagon",
         size=1.6,
-        tasks=[check_task(1, 5, "I accept all five promises")],
+        tasks=[check_task(1, 5, "I accept the Charter promises")],
         rewards=[item_reward(1, 3, "minecraft:bread", 16)],
-        dependencies=[claim, public, consent, rivalry, teams],
+        dependencies=[public, consent, rivalry],
     )
     return ch
 
@@ -513,10 +494,8 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 6, "numismatics:sprocket"),
-            item_reward(3, 7, "minecraft:blaze_powder", 16),
-            item_reward(3, 8, "minecraft:nether_wart", 16),
+            item_reward(3, 7, "vampirism:item_alchemical_fire", 16),
             item_reward(3, 9, "minecraft:iron_ingot", 32),
-            item_reward(3, 10, "minecraft:gunpowder", 16),
         ],
         dependencies=[core1],
     )
@@ -537,9 +516,9 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 11, "numismatics:sprocket", 2),
-            item_reward(3, 12, "minecraft:arrow", 64),
+            item_reward(3, 12, "vampirism:crossbow_arrow_normal", 64),
             item_reward(3, 13, "minecraft:feather", 32),
-            item_reward(3, 14, "minecraft:flint", 32),
+            item_reward(3, 14, "vampirism:crossbow_arrow_vampire_killer", 16),
             item_reward(3, 15, "minecraft:iron_ingot", 32),
         ],
         dependencies=[core2],
@@ -568,7 +547,7 @@ def build_hunters(group: str) -> Chapter:
         5,
         title="Pure Defense",
         subtitle="Specialty · Wards",
-        description="Assemble a usable reserve of Pure Salt, Holy Salt, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
+        description="Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
         icon="vampirism:pure_salt",
         x=-10,
         y=0,
@@ -576,7 +555,7 @@ def build_hunters(group: str) -> Chapter:
         optional=True,
         tasks=[
             item_task(3, 34, "vampirism:pure_salt", 8, "Carry eight Pure Salt"),
-            item_task(3, 35, "vampirism:holy_salt", 32, "Carry thirty-two Holy Salt"),
+            item_task(3, 35, "vampirism:purified_garlic", 16, "Carry sixteen Purified Garlic"),
             item_task(3, 36, "vampirism:injection_garlic", title="Carry a garlic injection"),
         ],
         rewards=[
@@ -677,7 +656,7 @@ def build_hunters(group: str) -> Chapter:
         rewards=[
             item_reward(3, 48, "numismatics:sprocket"),
             item_reward(3, 49, "minecraft:iron_ingot", 32),
-            item_reward(3, 50, "minecraft:arrow", 64),
+            item_reward(3, 50, "vampirism:crossbow_arrow_normal", 64),
         ],
         dependencies=[core3],
     )
@@ -720,7 +699,7 @@ def build_hunters(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(3, 16, "numismatics:cog"),
-            item_reward(3, 17, "irons_spellbooks:affinity_ring_holy"),
+            item_reward(3, 17, "irons_spellbooks:holy_upgrade_orb"),
             item_reward(3, 18, "minecraft:obsidian", 16),
             item_reward(3, 19, "minecraft:diamond", 8),
         ],
@@ -855,10 +834,10 @@ def build_vampires(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(4, 1, "numismatics:bevel"),
-            item_reward(4, 2, "vampirism:armor_of_swiftness_head_normal"),
-            item_reward(4, 3, "vampirism:armor_of_swiftness_chest_normal"),
-            item_reward(4, 4, "vampirism:armor_of_swiftness_legs_normal"),
-            item_reward(4, 5, "vampirism:armor_of_swiftness_feet_normal"),
+            item_reward(4, 2, "irons_spellbooks:wizard_helmet", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 3, "irons_spellbooks:wizard_chestplate", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 4, "irons_spellbooks:wizard_leggings", components={"minecraft:dyed_color": {"rgb": 1908001}}),
+            item_reward(4, 5, "irons_spellbooks:wizard_boots", components={"minecraft:dyed_color": {"rgb": 1908001}}),
         ],
         dependencies=[qid(2, 2)],
     )
@@ -1050,23 +1029,21 @@ def build_vampires(group: str) -> Chapter:
     )
     courier = ch.add(
         8,
-        title="Moon Courier",
-        subtitle="Specialty · Night records",
-        description="Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. High-sensitivity film supports legal night-route records from public ground.",
-        icon="exposure:camera",
+        title="Nocturnal Broadcast",
+        subtitle="Specialty · Vista broadcast",
+        description="Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds.",
+        icon="vista:television",
         x=-10,
         y=0,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 19, "explorerscompass:explorerscompass", title="Carry an Explorer's Compass"),
-            item_task(4, 20, "exposure:camera", title="Carry a Camera"),
-            advancement_task(4, 21, "exposure:adventure/moment_in_time"),
+            item_task(4, 19, "vista:television", title="Craft a Television"),
+            item_task(4, 20, "vista:viewfinder", title="Craft a Viewfinder"),
         ],
         rewards=[
             item_reward(4, 53, "numismatics:sprocket"),
-            item_reward(4, 54, "exposure:high_sensitivity_color_film", 8),
-            item_reward(4, 55, "exposure:black_and_white_film", 8),
+            item_reward(4, 54, "vista:hollow_cassette", 4),
         ],
         dependencies=[core3],
     )
@@ -1087,7 +1064,7 @@ def build_vampires(group: str) -> Chapter:
         ],
         rewards=[
             item_reward(4, 16, "numismatics:cog"),
-            item_reward(4, 17, "irons_spellbooks:affinity_ring_blood"),
+            item_reward(4, 17, "irons_spellbooks:blood_upgrade_orb"),
             item_reward(4, 18, "minecraft:obsidian", 16),
             item_reward(4, 19, "minecraft:diamond", 8),
         ],
@@ -1540,7 +1517,7 @@ def main() -> int:
         if stale:
             print("campaign source drift:\n- " + "\n- ".join(stale))
             return 1
-        print("campaign source is synchronized: 5 chapters, 52 quests")
+        print("campaign source is synchronized: 5 chapters, 50 quests")
         return 0
 
     action = "updated" if stale else "verified"
