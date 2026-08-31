@@ -1380,7 +1380,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather deepslate bricks, amethyst shards, cut copper, and bookshelves to construct an arcane tower for holy spellcraft and sanctuary warding. Completing this construction provides twenty-four stacks of deepslate bricks, twelve stacks of chiseled stone, twelve stacks of glass, amethyst, lapis, gold, a lectern, and an enchanting table."
+            "Gather deepslate bricks, amethyst shards, and bookshelves to establish an arcane tower for holy spellcraft and sanctuary warding. Completing this construction provides twenty-four stacks of deepslate bricks, twelve stacks of chiseled deepslate, twelve stacks of glass, amethyst, lapis, gold, a lectern, and an enchanting table."
           ],
           "hide_dependency_lines": false,
           "icon": "irons_spellbooks:inscription_table",
@@ -1619,7 +1619,7 @@
               "id": "7A11C2DF003000E6",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1628,7 +1628,7 @@
               "id": "7A11C2DF003000E7",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1637,7 +1637,7 @@
               "id": "7A11C2DF003000E8",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1646,7 +1646,7 @@
               "id": "7A11C2DF003000E9",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1655,7 +1655,7 @@
               "id": "7A11C2DF003000EA",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1664,7 +1664,7 @@
               "id": "7A11C2DF003000EB",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1673,7 +1673,7 @@
               "id": "7A11C2DF003000EC",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1682,7 +1682,7 @@
               "id": "7A11C2DF003000ED",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1691,7 +1691,7 @@
               "id": "7A11C2DF003000EE",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1700,7 +1700,7 @@
               "id": "7A11C2DF003000EF",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1709,7 +1709,7 @@
               "id": "7A11C2DF003000F0",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1718,7 +1718,7 @@
               "id": "7A11C2DF003000F1",
               "item": {
                 "count": 64,
-                "id": "minecraft:chiseled_stone_bricks"
+                "id": "minecraft:chiseled_deepslate"
               },
               "team_reward": false,
               "type": "item"
@@ -1888,8 +1888,8 @@
                 "count": 1,
                 "id": "minecraft:deepslate_bricks"
               },
-              "count": 64,
-              "title": "Inspect sixty-four Deepslate Bricks",
+              "count": 32,
+              "title": "Inspect thirty-two Deepslate Bricks",
               "type": "item"
             },
             {
@@ -1899,19 +1899,8 @@
                 "count": 1,
                 "id": "minecraft:amethyst_shard"
               },
-              "count": 16,
-              "title": "Inspect sixteen Amethyst Shards",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0030004D",
-              "item": {
-                "count": 1,
-                "id": "minecraft:cut_copper"
-              },
-              "count": 4,
-              "title": "Inspect four Cut Copper",
+              "count": 8,
+              "title": "Inspect eight Amethyst Shards",
               "type": "item"
             },
             {
@@ -1935,7 +1924,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather polished deepslate, cut copper, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions. Completing the lab rewards twenty-four stacks of polished deepslate, twelve stacks of nether bricks, twelve stacks of oak planks, glass, redstone, blaze rods, cauldrons, and barrels."
+            "Gather polished deepslate, a cauldron, and barrels to construct a secure alchemical brewery for remedies and holy concoctions. Completing the lab rewards twenty-four stacks of polished deepslate, twelve stacks of nether bricks, twelve stacks of oak planks, glass, redstone, blaze rods, cauldrons, and barrels."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:alchemical_cauldron",
@@ -2443,19 +2432,8 @@
                 "count": 1,
                 "id": "minecraft:polished_deepslate"
               },
-              "count": 64,
-              "title": "Inspect sixty-four Polished Deepslate",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00300050",
-              "item": {
-                "count": 1,
-                "id": "minecraft:cut_copper"
-              },
-              "count": 16,
-              "title": "Inspect sixteen Cut Copper",
+              "count": 32,
+              "title": "Inspect thirty-two Polished Deepslate",
               "type": "item"
             },
             {
@@ -2465,8 +2443,7 @@
                 "count": 1,
                 "id": "minecraft:cauldron"
               },
-              "count": 2,
-              "title": "Inspect two Cauldrons",
+              "title": "Inspect a Cauldron",
               "type": "item"
             },
             {
@@ -2490,7 +2467,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather stripped spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying. Completing the post rewards twenty-four stacks of spruce planks, twelve stacks of spruce fences, twelve stacks of cobblestone, paper, torches, glow item frames, a cartography table, and campfires."
+            "Gather spruce planks, spruce fences, and a cartography table to construct a reconnaissance hub and expedition post for frontier surveying. Completing the post rewards twenty-four stacks of spruce planks, twelve stacks of spruce fences, twelve stacks of cobblestone, paper, torches, glow item frames, a cartography table, and campfires."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:cartography_table",
@@ -2996,10 +2973,10 @@
               "id": "7A11C1DF00300053",
               "item": {
                 "count": 1,
-                "id": "minecraft:stripped_spruce_log"
+                "id": "minecraft:spruce_planks"
               },
               "count": 32,
-              "title": "Inspect thirty-two Stripped Spruce Logs",
+              "title": "Inspect thirty-two Spruce Planks",
               "type": "item"
             },
             {
@@ -3022,17 +2999,6 @@
               },
               "title": "Inspect a Cartography Table",
               "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00300056",
-              "item": {
-                "count": 1,
-                "id": "minecraft:item_frame"
-              },
-              "count": 8,
-              "title": "Inspect eight Item Frames",
-              "type": "item"
             }
           ],
           "title": "Recon Centre Materials",
@@ -3044,7 +3010,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather polished andesite, chains, an anvil, and target blocks to construct an armory and perimeter watchtower overlooking the frontier. Completing the fortification rewards twenty-four stacks of polished andesite, twelve stacks of andesite, twelve stacks of iron bars, chains, lanterns, iron blocks, an anvil, and a smithing table."
+            "Gather polished andesite, chains, and a target block to construct an armory and perimeter watchtower overlooking the frontier. Completing the fortification rewards twenty-four stacks of polished andesite, twelve stacks of andesite, twelve stacks of iron bars, chains, lanterns, iron blocks, an anvil, and a smithing table."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:chain",
@@ -3552,8 +3518,8 @@
                 "count": 1,
                 "id": "minecraft:polished_andesite"
               },
-              "count": 64,
-              "title": "Inspect sixty-four Polished Andesite",
+              "count": 32,
+              "title": "Inspect thirty-two Polished Andesite",
               "type": "item"
             },
             {
@@ -3569,23 +3535,12 @@
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00300059",
-              "item": {
-                "count": 1,
-                "id": "minecraft:anvil"
-              },
-              "title": "Inspect an Anvil",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
               "id": "7A11C1DF0030005A",
               "item": {
                 "count": 1,
                 "id": "minecraft:target"
               },
-              "count": 2,
-              "title": "Inspect two Target Blocks",
+              "title": "Inspect a Target Block",
               "type": "item"
             }
           ],
