@@ -55,6 +55,12 @@
 					team_reward: false
 					type: "item"
 				}
+				{
+					id: "7A11C2DF00200014"
+					item: { count: 8, id: "minecraft:glass_bottle" }
+					team_reward: false
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			size: 1.3d
@@ -185,6 +191,12 @@
 				{
 					id: "7A11C2DF00200009"
 					item: { count: 1, id: "minecraft:crossbow" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00200013"
+					item: { count: 8, id: "supplementaries:rope_arrow" }
 					team_reward: false
 					type: "item"
 				}

@@ -63,6 +63,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "numismatics:bevel",
     "numismatics:cog",
     "numismatics:sprocket",
+    "supplementaries:rope_arrow",
     "vampirism:alchemical_cauldron",
     "vampirism:alchemy_table",
     "vampirism:altar_infusion",
