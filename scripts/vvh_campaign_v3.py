@@ -534,11 +534,22 @@ def build_hunters(group: str) -> Chapter:
         dependencies=[core2],
     )
 
+    wizard_tower_rewards = [
+        item_reward(3, 75, "numismatics:sprocket"),
+        *[item_reward(3, 200 + i, "minecraft:deepslate_bricks", 64) for i in range(24)],
+        *[item_reward(3, 230 + i, "minecraft:chiseled_stone_bricks", 64) for i in range(12)],
+        *[item_reward(3, 250 + i, "minecraft:glass", 64) for i in range(12)],
+        item_reward(3, 76, "minecraft:amethyst_shard", 64),
+        item_reward(3, 77, "minecraft:lapis_lazuli", 64),
+        item_reward(3, 78, "minecraft:gold_ingot", 8),
+        item_reward(3, 270, "minecraft:lectern"),
+        item_reward(3, 271, "minecraft:enchanting_table"),
+    ]
     b_wizard = ch.add(
         14,
         title="Wizard Tower Materials",
         subtitle="Construction · Arcane tower",
-        description="Gather deepslate bricks, amethyst shards, cut copper, and bookshelves to construct an arcane tower for holy spellcraft and sanctuary warding.",
+        description="Gather deepslate bricks, amethyst shards, cut copper, and bookshelves to construct an arcane tower for holy spellcraft and sanctuary warding. Completing this construction provides twenty-four stacks of deepslate bricks, twelve stacks of chiseled stone, twelve stacks of glass, amethyst, lapis, gold, a lectern, and an enchanting table.",
         icon="irons_spellbooks:inscription_table",
         x=-6.5,
         y=-1.0,
@@ -550,19 +561,26 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 77, "minecraft:cut_copper", 4, "Inspect four Cut Copper"),
             item_task(3, 78, "minecraft:bookshelf", 4, "Inspect four Bookshelves"),
         ],
-        rewards=[
-            item_reward(3, 75, "numismatics:sprocket"),
-            item_reward(3, 76, "minecraft:deepslate_bricks", 64),
-            item_reward(3, 77, "minecraft:glass", 32),
-            item_reward(3, 78, "minecraft:candle", 16),
-        ],
+        rewards=wizard_tower_rewards,
         dependencies=[core3],
     )
+
+    brewery_rewards = [
+        item_reward(3, 79, "numismatics:sprocket"),
+        *[item_reward(3, 300 + i, "minecraft:polished_deepslate", 64) for i in range(24)],
+        *[item_reward(3, 330 + i, "minecraft:nether_bricks", 64) for i in range(12)],
+        *[item_reward(3, 350 + i, "minecraft:oak_planks", 64) for i in range(12)],
+        item_reward(3, 80, "minecraft:glass", 64),
+        item_reward(3, 81, "minecraft:redstone", 64),
+        item_reward(3, 82, "minecraft:blaze_rod", 8),
+        item_reward(3, 370, "minecraft:cauldron", 4),
+        item_reward(3, 371, "minecraft:barrel", 12),
+    ]
     b_brewery = ch.add(
         15,
         title="Brewery Materials",
         subtitle="Construction · Alchemy lab",
-        description="Gather polished deepslate, cut copper, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions.",
+        description="Gather polished deepslate, cut copper, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions. Completing the lab rewards twenty-four stacks of polished deepslate, twelve stacks of nether bricks, twelve stacks of oak planks, glass, redstone, blaze rods, cauldrons, and barrels.",
         icon="vampirism:alchemical_cauldron",
         x=-2.5,
         y=0.5,
@@ -574,19 +592,26 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 81, "minecraft:cauldron", 2, "Inspect two Cauldrons"),
             item_task(3, 82, "minecraft:barrel", 4, "Inspect four Barrels"),
         ],
-        rewards=[
-            item_reward(3, 79, "numismatics:sprocket"),
-            item_reward(3, 80, "minecraft:polished_deepslate", 64),
-            item_reward(3, 81, "minecraft:glass", 32),
-            item_reward(3, 82, "minecraft:oak_planks", 32),
-        ],
+        rewards=brewery_rewards,
         dependencies=[core3],
     )
+
+    recon_centre_rewards = [
+        item_reward(3, 83, "numismatics:sprocket"),
+        *[item_reward(3, 400 + i, "minecraft:spruce_planks", 64) for i in range(24)],
+        *[item_reward(3, 430 + i, "minecraft:spruce_fence", 64) for i in range(12)],
+        *[item_reward(3, 450 + i, "minecraft:cobblestone", 64) for i in range(12)],
+        item_reward(3, 84, "minecraft:paper", 64),
+        item_reward(3, 85, "minecraft:torch", 64),
+        item_reward(3, 86, "minecraft:glow_item_frame", 8),
+        item_reward(3, 470, "minecraft:cartography_table"),
+        item_reward(3, 471, "minecraft:campfire", 4),
+    ]
     b_recon = ch.add(
         16,
         title="Recon Centre Materials",
         subtitle="Construction · Expedition post",
-        description="Gather stripped spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying.",
+        description="Gather stripped spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying. Completing the post rewards twenty-four stacks of spruce planks, twelve stacks of spruce fences, twelve stacks of cobblestone, paper, torches, glow item frames, a cartography table, and campfires.",
         icon="minecraft:cartography_table",
         x=2.5,
         y=0.5,
@@ -598,19 +623,26 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 85, "minecraft:cartography_table", title="Inspect a Cartography Table"),
             item_task(3, 86, "minecraft:item_frame", 8, "Inspect eight Item Frames"),
         ],
-        rewards=[
-            item_reward(3, 83, "numismatics:sprocket"),
-            item_reward(3, 84, "minecraft:spruce_planks", 64),
-            item_reward(3, 85, "minecraft:paper", 32),
-            item_reward(3, 86, "minecraft:item_frame", 8),
-        ],
+        rewards=recon_centre_rewards,
         dependencies=[core3],
     )
+
+    armory_tower_rewards = [
+        item_reward(3, 87, "numismatics:sprocket"),
+        *[item_reward(3, 500 + i, "minecraft:polished_andesite", 64) for i in range(24)],
+        *[item_reward(3, 530 + i, "minecraft:andesite", 64) for i in range(12)],
+        *[item_reward(3, 550 + i, "minecraft:iron_bars", 64) for i in range(12)],
+        item_reward(3, 88, "minecraft:chain", 64),
+        item_reward(3, 89, "minecraft:lantern", 64),
+        item_reward(3, 90, "minecraft:iron_block", 8),
+        item_reward(3, 570, "minecraft:anvil"),
+        item_reward(3, 571, "minecraft:smithing_table"),
+    ]
     b_armory = ch.add(
         17,
         title="Armory Tower Materials",
         subtitle="Construction · Fortifications",
-        description="Gather polished andesite, chains, an anvil, and target blocks to construct an armory and perimeter watchtower overlooking the frontier.",
+        description="Gather polished andesite, chains, an anvil, and target blocks to construct an armory and perimeter watchtower overlooking the frontier. Completing the fortification rewards twenty-four stacks of polished andesite, twelve stacks of andesite, twelve stacks of iron bars, chains, lanterns, iron blocks, an anvil, and a smithing table.",
         icon="minecraft:chain",
         x=6.5,
         y=-1.0,
@@ -622,12 +654,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 89, "minecraft:anvil", title="Inspect an Anvil"),
             item_task(3, 90, "minecraft:target", 2, "Inspect two Target Blocks"),
         ],
-        rewards=[
-            item_reward(3, 87, "numismatics:sprocket"),
-            item_reward(3, 88, "minecraft:polished_andesite", 64),
-            item_reward(3, 89, "minecraft:chain", 16),
-            item_reward(3, 90, "minecraft:lantern", 16),
-        ],
+        rewards=armory_tower_rewards,
         dependencies=[core3],
     )
 
