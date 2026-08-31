@@ -550,9 +550,9 @@ def build_hunters(group: str) -> Chapter:
     ]
     b_wizard = ch.add(
         14,
-        title="Wizard Tower Materials",
-        subtitle="Construction · Arcane tower",
-        description="Gather cobbled deepslate, dark oak logs, and amethyst shards to establish an arcane study and sanctuary tower. Completing this construction provides twenty-four stacks of cobbled deepslate, twelve stacks of dark oak logs, twelve stacks of sand, two stacks of scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table.",
+        title="Arcane Spire",
+        subtitle="Construction · High study",
+        description="Lay the foundation for an arcane study and celestial spire overlooking the island. Gather deepslate, dark oak timber, and amethyst shards. The Order delivers a massive construction cache of deepslate, dark oak logs, sand for glasswork, scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table.",
         icon="irons_spellbooks:inscription_table",
         x=-6.5,
         y=-1.0,
@@ -583,9 +583,9 @@ def build_hunters(group: str) -> Chapter:
     ]
     b_brewery = ch.add(
         15,
-        title="Brewery Materials",
-        subtitle="Construction · Alchemy lab",
-        description="Gather cobblestone, birch logs, and netherrack to construct a secure alchemical brewery for remedies and holy concoctions. Completing the lab rewards twenty-four stacks of cobblestone, twelve stacks of birch logs, twelve stacks of netherrack, two stacks of scaffolding, redstone, copper, quartz, blaze rods, cauldrons, and barrels.",
+        title="Apothecary Lab",
+        subtitle="Construction · Holy brewery",
+        description="Erect a fortified alchemical brewery to produce tinctures, holy draughts, and field remedies. Provide cobblestone, birch timber, and netherrack. Completing the lab pays out bulk cobblestone, birch logs, netherrack, scaffolding, redstone, copper, quartz, blaze rods, cauldrons, and barrels.",
         icon="vampirism:alchemical_cauldron",
         x=-2.5,
         y=0.5,
@@ -616,9 +616,9 @@ def build_hunters(group: str) -> Chapter:
     ]
     b_recon = ch.add(
         16,
-        title="Recon Centre Materials",
-        subtitle="Construction · Expedition post",
-        description="Gather stripped spruce logs, cobblestone, and coal to construct a reconnaissance hub and expedition post for frontier surveying. Completing the post rewards twenty-four stacks of spruce logs, twelve stacks of oak logs, twelve stacks of cobblestone, two stacks of scaffolding, torches, iron, coal, paper, a cartography table, and campfires.",
+        title="Survey Outpost",
+        subtitle="Construction · Frontier watch",
+        description="Establish an elevated reconnaissance hub and cartography outpost for surveying uncharted frontier routes. Gather stripped spruce logs, cobblestone, and coal. The Order outfits the station with bulk spruce logs, oak logs, cobblestone, scaffolding, torches, iron, coal, paper, and campfires.",
         icon="minecraft:cartography_table",
         x=2.5,
         y=0.5,
@@ -649,9 +649,9 @@ def build_hunters(group: str) -> Chapter:
     ]
     b_armory = ch.add(
         17,
-        title="Armory Tower Materials",
-        subtitle="Construction · Fortifications",
-        description="Gather andesite, basalt, and raw iron to construct an armory and perimeter watchtower overlooking the frontier. Completing the fortification rewards twenty-four stacks of andesite, twelve stacks of deepslate, twelve stacks of oak logs, two stacks of scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table.",
+        title="Garrison Armory",
+        subtitle="Construction · Heavy bastion",
+        description="Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather andesite, basalt, and raw iron. The Order furnishes the bastion with bulk andesite, deepslate, oak timber, scaffolding, lanterns, iron ingots, chains, iron blocks, and an anvil.",
         icon="minecraft:chain",
         x=6.5,
         y=-1.0,

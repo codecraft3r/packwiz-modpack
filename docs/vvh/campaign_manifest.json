@@ -1380,7 +1380,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather cobbled deepslate, dark oak logs, and amethyst shards to establish an arcane study and sanctuary tower. Completing this construction provides twenty-four stacks of cobbled deepslate, twelve stacks of dark oak logs, twelve stacks of sand, two stacks of scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table."
+            "Lay the foundation for an arcane study and celestial spire overlooking the island. Gather deepslate, dark oak timber, and amethyst shards. The Order delivers a massive construction cache of deepslate, dark oak logs, sand for glasswork, scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table."
           ],
           "hide_dependency_lines": false,
           "icon": "irons_spellbooks:inscription_table",
@@ -1906,7 +1906,7 @@
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "Construction · Arcane tower",
+          "subtitle": "Construction · High study",
           "tasks": [
             {
               "consume_items": false,
@@ -1942,7 +1942,7 @@
               "type": "item"
             }
           ],
-          "title": "Wizard Tower Materials",
+          "title": "Arcane Spire",
           "x": -6.5,
           "y": -1.0
         },
@@ -1951,7 +1951,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather cobblestone, birch logs, and netherrack to construct a secure alchemical brewery for remedies and holy concoctions. Completing the lab rewards twenty-four stacks of cobblestone, twelve stacks of birch logs, twelve stacks of netherrack, two stacks of scaffolding, redstone, copper, quartz, blaze rods, cauldrons, and barrels."
+            "Erect a fortified alchemical brewery to produce tinctures, holy draughts, and field remedies. Provide cobblestone, birch timber, and netherrack. Completing the lab pays out bulk cobblestone, birch logs, netherrack, scaffolding, redstone, copper, quartz, blaze rods, cauldrons, and barrels."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:alchemical_cauldron",
@@ -2477,7 +2477,7 @@
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "Construction · Alchemy lab",
+          "subtitle": "Construction · Holy brewery",
           "tasks": [
             {
               "consume_items": false,
@@ -2513,7 +2513,7 @@
               "type": "item"
             }
           ],
-          "title": "Brewery Materials",
+          "title": "Apothecary Lab",
           "x": -2.5,
           "y": 0.5
         },
@@ -2522,7 +2522,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather stripped spruce logs, cobblestone, and coal to construct a reconnaissance hub and expedition post for frontier surveying. Completing the post rewards twenty-four stacks of spruce logs, twelve stacks of oak logs, twelve stacks of cobblestone, two stacks of scaffolding, torches, iron, coal, paper, a cartography table, and campfires."
+            "Establish an elevated reconnaissance hub and cartography outpost for surveying uncharted frontier routes. Gather stripped spruce logs, cobblestone, and coal. The Order outfits the station with bulk spruce logs, oak logs, cobblestone, scaffolding, torches, iron, coal, paper, and campfires."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:cartography_table",
@@ -3048,7 +3048,7 @@
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "Construction · Expedition post",
+          "subtitle": "Construction · Frontier watch",
           "tasks": [
             {
               "consume_items": false,
@@ -3084,7 +3084,7 @@
               "type": "item"
             }
           ],
-          "title": "Recon Centre Materials",
+          "title": "Survey Outpost",
           "x": 2.5,
           "y": 0.5
         },
@@ -3093,7 +3093,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Gather andesite, basalt, and raw iron to construct an armory and perimeter watchtower overlooking the frontier. Completing the fortification rewards twenty-four stacks of andesite, twelve stacks of deepslate, twelve stacks of oak logs, two stacks of scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."
+            "Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather andesite, basalt, and raw iron. The Order furnishes the bastion with bulk andesite, deepslate, oak timber, scaffolding, lanterns, iron ingots, chains, iron blocks, and an anvil."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:chain",
@@ -3619,7 +3619,7 @@
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "Construction · Fortifications",
+          "subtitle": "Construction · Heavy bastion",
           "tasks": [
             {
               "consume_items": false,
@@ -3655,7 +3655,7 @@
               "type": "item"
             }
           ],
-          "title": "Armory Tower Materials",
+          "title": "Garrison Armory",
           "x": 6.5,
           "y": -1.0
         },
