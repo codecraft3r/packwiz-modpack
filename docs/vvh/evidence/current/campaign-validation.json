@@ -297,8 +297,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "e73e0d683d3c557de5bcdfd3f41dfb4079d4b22a62e7e0fe8f9dc4838c36bc0d",
-        "actual": "e73e0d683d3c557de5bcdfd3f41dfb4079d4b22a62e7e0fe8f9dc4838c36bc0d",
+        "index": "1cf997af20082658ce3dcdb3b5e884d90c698ce4b1df4db307f1808bb8cfecc8",
+        "actual": "1cf997af20082658ce3dcdb3b5e884d90c698ce4b1df4db307f1808bb8cfecc8",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -322,8 +322,8 @@
         "match": true
       }
     },
-    "index_sha256": "94eb5f5746efdb549d9a9fff19ab63ba12bd3488c52bcef1fca294a2d182549c",
-    "pack_toml_declared_index_sha256": "94eb5f5746efdb549d9a9fff19ab63ba12bd3488c52bcef1fca294a2d182549c",
+    "index_sha256": "0a2d60f3f97e6774d69764ebd74cf5596a2781f58f2a5448de7c0ee682c27a7f",
+    "pack_toml_declared_index_sha256": "0a2d60f3f97e6774d69764ebd74cf5596a2781f58f2a5448de7c0ee682c27a7f",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

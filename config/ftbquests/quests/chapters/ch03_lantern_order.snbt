@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with two dozen stacks of stone, a dozen stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -121,20 +121,290 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300007"
-					item: { count: 1536, id: "minecraft:stone" }
+					id: "7A11C2DF00300064"
+					item: { count: 64, id: "minecraft:stone" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300008"
-					item: { count: 768, id: "minecraft:oak_log" }
+					id: "7A11C2DF00300065"
+					item: { count: 64, id: "minecraft:stone" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300009"
-					item: { count: 768, id: "minecraft:spruce_log" }
+					id: "7A11C2DF00300066"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300067"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300068"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300069"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006A"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006B"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006C"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006D"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006E"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006F"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300070"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300071"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300072"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300073"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300074"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300075"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300076"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300077"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300078"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300079"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030007A"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030007B"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300082"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300083"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300084"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300085"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300086"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300087"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300088"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300089"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030008A"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030008B"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030008C"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030008D"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300096"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300097"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300098"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300099"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009A"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009B"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009C"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009D"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009E"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009F"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000A0"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000A1"
+					item: { count: 64, id: "minecraft:spruce_log" }
 					team_reward: false
 					type: "item"
 				}

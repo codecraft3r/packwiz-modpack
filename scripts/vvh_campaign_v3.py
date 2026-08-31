@@ -479,11 +479,22 @@ def build_hunters(group: str) -> Chapter:
         ],
         dependencies=[qid(2, 4)],
     )
+    building_supplies_rewards = [
+        item_reward(3, 6, "numismatics:sprocket"),
+        *[item_reward(3, 100 + i, "minecraft:stone", 64) for i in range(24)],
+        *[item_reward(3, 130 + i, "minecraft:oak_log", 64) for i in range(12)],
+        *[item_reward(3, 150 + i, "minecraft:spruce_log", 64) for i in range(12)],
+        item_reward(3, 10, "minecraft:iron_ingot", 64),
+        item_reward(3, 70, "minecraft:copper_ingot", 64),
+        item_reward(3, 71, "minecraft:diamond", 8),
+        item_reward(3, 72, "minecraft:stonecutter"),
+        item_reward(3, 73, "supplementaries:wrench"),
+    ]
     core2 = ch.add(
         2,
         title="Building Supplies",
         subtitle="Tier II · Construction stock",
-        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with two dozen stacks of stone, a dozen stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench.",
+        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench.",
         icon="minecraft:stone",
         x=0,
         y=-7,
@@ -495,17 +506,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 6, "minecraft:iron_bars", 16, "Inspect sixteen Iron Bars"),
             item_task(3, 70, "minecraft:lantern", 8, "Inspect eight Lanterns"),
         ],
-        rewards=[
-            item_reward(3, 6, "numismatics:sprocket"),
-            item_reward(3, 7, "minecraft:stone", 1536),
-            item_reward(3, 8, "minecraft:oak_log", 768),
-            item_reward(3, 9, "minecraft:spruce_log", 768),
-            item_reward(3, 10, "minecraft:iron_ingot", 64),
-            item_reward(3, 70, "minecraft:copper_ingot", 64),
-            item_reward(3, 71, "minecraft:diamond", 8),
-            item_reward(3, 72, "minecraft:stonecutter"),
-            item_reward(3, 73, "supplementaries:wrench"),
-        ],
+        rewards=building_supplies_rewards,
         dependencies=[core1],
     )
     core3 = ch.add(
