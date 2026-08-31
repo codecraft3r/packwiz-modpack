@@ -179,6 +179,7 @@
       "numismatics:cog",
       "numismatics:sprocket",
       "supplementaries:rope_arrow",
+      "supplementaries:wrench",
       "vampirism:alchemical_cauldron",
       "vampirism:alchemy_table",
       "vampirism:altar_infusion",
@@ -296,8 +297,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "c2aefd034836a56cba168bc61c276f6b082be485bc435ab2ff2ebff47abd167c",
-        "actual": "c2aefd034836a56cba168bc61c276f6b082be485bc435ab2ff2ebff47abd167c",
+        "index": "e73e0d683d3c557de5bcdfd3f41dfb4079d4b22a62e7e0fe8f9dc4838c36bc0d",
+        "actual": "e73e0d683d3c557de5bcdfd3f41dfb4079d4b22a62e7e0fe8f9dc4838c36bc0d",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -321,8 +322,8 @@
         "match": true
       }
     },
-    "index_sha256": "4c28e9a5b9bc0e628f8218911ce9827c2651afe363f7645c70ec3fa94dfe7a0e",
-    "pack_toml_declared_index_sha256": "4c28e9a5b9bc0e628f8218911ce9827c2651afe363f7645c70ec3fa94dfe7a0e",
+    "index_sha256": "94eb5f5746efdb549d9a9fff19ab63ba12bd3488c52bcef1fca294a2d182549c",
+    "pack_toml_declared_index_sha256": "94eb5f5746efdb549d9a9fff19ab63ba12bd3488c52bcef1fca294a2d182549c",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

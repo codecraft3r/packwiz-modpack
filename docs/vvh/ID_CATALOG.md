@@ -50,6 +50,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
 | `numismatics` | `numismatics:sprocket` | Sprocket | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/sprocket.json` |
 | `supplementaries` | `supplementaries:rope_arrow` | Rope Arrow | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/rope_arrow.json` |
+| `supplementaries` | `supplementaries:wrench` | Wrench | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/wrench.json; data/supplementaries/recipe/wrench.json` |
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
 | `vampirism` | `vampirism:alchemy_table` | Alchemy Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/alchemy_table.json; data/vampirism/recipe/alchemy_table.json` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |

@@ -64,6 +64,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "numismatics:cog",
     "numismatics:sprocket",
     "supplementaries:rope_arrow",
+    "supplementaries:wrench",
     "vampirism:alchemical_cauldron",
     "vampirism:alchemy_table",
     "vampirism:altar_infusion",

@@ -110,8 +110,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather a repairable palette of stone brick, oak, iron bars, and lanterns. The expanded stock is enough for a recognizable watchpost, refuge, wall, or roadside ward chosen by its builders."]
-			icon: { id: "minecraft:stone_bricks" }
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with two dozen stacks of stone, a dozen stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench."]
+			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
 				{
@@ -122,37 +122,37 @@
 				}
 				{
 					id: "7A11C2DF00300007"
-					item: { count: 192, id: "minecraft:stone_bricks" }
+					item: { count: 1536, id: "minecraft:stone" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300008"
-					item: { count: 96, id: "minecraft:oak_log" }
+					item: { count: 768, id: "minecraft:oak_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300009"
-					item: { count: 48, id: "minecraft:iron_bars" }
+					item: { count: 768, id: "minecraft:spruce_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030000A"
-					item: { count: 24, id: "minecraft:lantern" }
+					item: { count: 64, id: "minecraft:iron_ingot" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300046"
-					item: { count: 32, id: "minecraft:iron_ingot" }
+					item: { count: 64, id: "minecraft:copper_ingot" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300047"
-					item: { count: 4, id: "minecraft:diamond" }
+					item: { count: 8, id: "minecraft:diamond" }
 					team_reward: false
 					type: "item"
 				}
@@ -162,10 +162,16 @@
 					team_reward: false
 					type: "item"
 				}
+				{
+					id: "7A11C2DF00300049"
+					item: { count: 1, id: "supplementaries:wrench" }
+					team_reward: false
+					type: "item"
+				}
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Tier II · Refuge palette"
+			subtitle: "Tier II · Construction stock"
 			tasks: [
 				{
 					consume_items: false
@@ -200,7 +206,7 @@
 					type: "item"
 				}
 			]
-			title: "Stone Lantern"
+			title: "Building Supplies"
 			x: 0
 			y: -7
 		}
@@ -347,7 +353,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Gather polished deepslate, copper ingots, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions."]
+			description: ["Gather polished deepslate, cut copper, cauldrons, and barrels to construct a secure alchemical brewery for remedies and holy concoctions."]
 			icon: { id: "vampirism:alchemical_cauldron" }
 			id: "7A11C0DF0030000F"
 			optional: true
@@ -392,9 +398,9 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300050"
-					item: { count: 1, id: "minecraft:copper_ingot" }
+					item: { count: 1, id: "minecraft:cut_copper" }
 					count: 16
-					title: "Inspect sixteen Copper Ingots"
+					title: "Inspect sixteen Cut Copper"
 					type: "item"
 				}
 				{
@@ -420,7 +426,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Gather spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying."]
+			description: ["Gather stripped spruce logs, spruce fences, a cartography table, and item frames to construct a reconnaissance hub and expedition post for frontier surveying."]
 			icon: { id: "minecraft:cartography_table" }
 			id: "7A11C0DF00300010"
 			optional: true
@@ -457,9 +463,9 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300053"
-					item: { count: 1, id: "minecraft:spruce_log" }
+					item: { count: 1, id: "minecraft:stripped_spruce_log" }
 					count: 32
-					title: "Inspect thirty-two Spruce Logs"
+					title: "Inspect thirty-two Stripped Spruce Logs"
 					type: "item"
 				}
 				{

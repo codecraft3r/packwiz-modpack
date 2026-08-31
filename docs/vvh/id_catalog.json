@@ -323,6 +323,14 @@
       "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {
+      "namespace": "supplementaries",
+      "id": "supplementaries:wrench",
+      "display_name": "Wrench",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/wrench.json; data/supplementaries/recipe/wrench.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
       "namespace": "vampirism",
       "id": "vampirism:alchemical_cauldron",
       "display_name": "Alchemical Cauldron",
