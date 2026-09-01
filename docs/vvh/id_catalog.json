@@ -3,6 +3,7 @@
   "verification_scope": "Campaign-used non-vanilla IDs only; unrelated downloaded JARs are excluded.",
   "verified_namespaces": [
     "create",
+    "createbigcannons",
     "explorerscompass",
     "exposure",
     "irons_spellbooks",
@@ -23,6 +24,15 @@
         "download_hash_format": "sha512",
         "download_hash": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
         "index_sha256": "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
+      },
+      "createbigcannons": {
+        "metadata": "mods/create-big-cannons.pw.toml",
+        "name": "Create Big Cannons",
+        "filename": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "24f414dfbb973a0f4d9c9b2aa059edc7bed4d23b4f39eb1f7d23a1d6b437e3b5d64cca6e4b85ff7eb2815743fa711d54ad652bffe96d1eb1234544716006440d",
+        "index_sha256": "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
       },
       "explorerscompass": {
         "metadata": "mods/explorers-compass.pw.toml",
@@ -123,6 +133,70 @@
       "obtainability_note": ""
     },
     {
+      "namespace": "create",
+      "id": "create:wrench",
+      "display_name": "Wrench",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:cannon_carriage",
+      "display_name": "Cannon Carriage",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/cannon_carriage.json; data/createbigcannons/recipe/cannon_carriage.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:mortar_stone",
+      "display_name": "Mortar Stone",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/mortar_stone.json; data/createbigcannons/recipe/mortar_stone.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:powder_charge",
+      "display_name": "Powder Charge",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/powder_charge.json; data/createbigcannons/recipe/powder_charge.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:ram_rod",
+      "display_name": "Ram Rod",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/ram_rod.json; data/createbigcannons/recipe/ram_rod.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:worm",
+      "display_name": "Worm",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/worm.json; data/createbigcannons/recipe/worm.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:wrought_iron_cannon_chamber",
+      "display_name": "Wrought Iron Cannon Chamber",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/wrought_iron_cannon_chamber.json; data/createbigcannons/recipe/wrought_iron_cannon_chamber.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "createbigcannons",
+      "id": "createbigcannons:wrought_iron_cannon_end",
+      "display_name": "Wrought Iron Cannon End",
+      "source_jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+      "source_entry": "assets/createbigcannons/models/item/wrought_iron_cannon_end.json; data/createbigcannons/recipe/wrought_iron_cannon_end.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
       "namespace": "explorerscompass",
       "id": "explorerscompass:explorerscompass",
       "display_name": "Explorer's Compass",
@@ -209,14 +283,6 @@
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
       "source_entry": "assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "irons_spellbooks",
-      "id": "irons_spellbooks:holy_upgrade_orb",
-      "display_name": "Holy Upgrade Orb",
-      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
-      "source_entry": "assets/irons_spellbooks/models/item/holy_upgrade_orb.json; data/irons_spellbooks/recipe/holy_upgrade_orb.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",
@@ -481,22 +547,6 @@
       "source_jar": "Vampirism-1.21-1.10.12.jar",
       "source_entry": "assets/vampirism/models/item/holy_water_bottle_normal.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:holy_water_splash_bottle_enhanced",
-      "display_name": "Enhanced Splash Bottle of Holy Water",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "de/teamlapen/vampirism/core/ModItems.class::holy_water_splash_bottle_enhanced; assets/vampirism/models/item/holy_water_splash_bottle_enhanced.json",
-      "obtainability_note": "Exact registry string is present in ModItems bytecode and the item model is present. Runtime tier rendering still requires a client smoke test."
-    },
-    {
-      "namespace": "vampirism",
-      "id": "vampirism:hunter_axe_enhanced",
-      "display_name": "Enhanced Hunter Axe",
-      "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "data/vampirism/recipe/hunter_axe_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::hunter_axe_enhanced",
-      "obtainability_note": "Exact recipe result and registry string are present in the inspected JAR."
     },
     {
       "namespace": "vampirism",

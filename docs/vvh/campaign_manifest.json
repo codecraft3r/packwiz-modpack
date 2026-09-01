@@ -4356,10 +4356,10 @@
             "7A11C0DF00300011"
           ],
           "description": [
-            "Carry an enhanced Hunter Axe and enhanced splash Holy Water. This is optional late mastery, paid at Cog scale because it proves a later equipment band rather than routine preparation."
+            "Construct heavy siege artillery with Create Big Cannons. Assemble a Cannon Carriage, two Wrought Iron Cannon Chambers, and a Wrought Iron Cannon End. The Order supplies a Ramrod, Worm, Create Wrench, sixty-four Powder Charges, and a stockpile of Mortar Stones."
           ],
           "hide_dependency_lines": false,
-          "icon": "vampirism:hunter_axe_enhanced",
+          "icon": "createbigcannons:cannon_carriage",
           "id": "7A11C0DF00300009",
           "min_required_dependencies": 0,
           "optional": true,
@@ -4370,7 +4370,7 @@
               "id": "7A11C2DF00300010",
               "item": {
                 "count": 1,
-                "id": "numismatics:cog"
+                "id": "createbigcannons:ram_rod"
               },
               "team_reward": false,
               "type": "item"
@@ -4379,7 +4379,7 @@
               "id": "7A11C2DF00300011",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:holy_upgrade_orb"
+                "id": "createbigcannons:worm"
               },
               "team_reward": false,
               "type": "item"
@@ -4387,8 +4387,8 @@
             {
               "id": "7A11C2DF00300012",
               "item": {
-                "count": 16,
-                "id": "minecraft:obsidian"
+                "count": 1,
+                "id": "create:wrench"
               },
               "team_reward": false,
               "type": "item"
@@ -4396,8 +4396,17 @@
             {
               "id": "7A11C2DF00300013",
               "item": {
-                "count": 8,
-                "id": "minecraft:diamond"
+                "count": 64,
+                "id": "createbigcannons:powder_charge"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030005B",
+              "item": {
+                "count": 64,
+                "id": "createbigcannons:mortar_stone"
               },
               "team_reward": false,
               "type": "item"
@@ -4405,16 +4414,16 @@
           ],
           "shape": "hexagon",
           "size": 1.3,
-          "subtitle": "Specialty · Advanced fieldcraft",
+          "subtitle": "Specialty · Big cannons",
           "tasks": [
             {
               "consume_items": false,
               "id": "7A11C1DF0030000A",
               "item": {
                 "count": 1,
-                "id": "vampirism:hunter_axe_enhanced"
+                "id": "createbigcannons:cannon_carriage"
               },
-              "title": "Carry an enhanced Hunter Axe",
+              "title": "Obtain a Cannon Carriage",
               "type": "item"
             },
             {
@@ -4422,9 +4431,20 @@
               "id": "7A11C1DF0030000B",
               "item": {
                 "count": 1,
-                "id": "vampirism:holy_water_splash_bottle_enhanced"
+                "id": "createbigcannons:wrought_iron_cannon_chamber"
               },
-              "title": "Carry enhanced splash Holy Water",
+              "count": 2,
+              "title": "Obtain two Wrought Iron Cannon Chambers",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030005B",
+              "item": {
+                "count": 1,
+                "id": "createbigcannons:wrought_iron_cannon_end"
+              },
+              "title": "Obtain a Wrought Iron Cannon End",
               "type": "item"
             }
           ],

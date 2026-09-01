@@ -9,6 +9,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | Namespace | Indexed metadata | Pinned JAR | Side | Download hash |
 | --- | --- | --- | --- | --- |
 | `create` | `mods/create.pw.toml` | `create-1.21.1-6.0.10.jar` | `both` | `sha512:11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b` |
+| `createbigcannons` | `mods/create-big-cannons.pw.toml` | `createbigcannons-5.11.7+mc.1.21.1.jar` | `both` | `sha512:24f414dfbb973a0f4d9c9b2aa059edc7bed4d23b4f39eb1f7d23a1d6b437e3b5d64cca6e4b85ff7eb2815743fa711d54ad652bffe96d1eb1234544716006440d` |
 | `explorerscompass` | `mods/explorers-compass.pw.toml` | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `both` | `sha512:a1b2e385aaacb547763441fc23e9a33a0b1d67bd32094cd605ded3fbdd1c7a0e5fc4520fdfa090c29d2d3384b685e3ead91b32d20030e45632c94145ee3ec668` |
 | `exposure` | `mods/exposure.pw.toml` | `exposure-neoforge-1.21.1-1.9.18.jar` | `both` | `sha512:2c0310cfbc9abfcf9e589fdf1079829253e47eb3ac84684a643951ebc432536a4e6f6567a67fc8ba4f4d55036e513804ff0996adee6a8a11cf59c76399de5ef6` |
 | `irons_spellbooks` | `mods/irons-spells-n-spellbooks.pw.toml` | `irons_spellbooks-1.21.1-3.16.3.jar` | `both` | `sha512:fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b` |
@@ -25,6 +26,14 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
 | `create` | `create:precision_mechanism` | Precision Mechanism | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.precision_mechanism` |
+| `create` | `create:wrench` | Wrench | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json` |
+| `createbigcannons` | `createbigcannons:cannon_carriage` | Cannon Carriage | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/cannon_carriage.json; data/createbigcannons/recipe/cannon_carriage.json` |
+| `createbigcannons` | `createbigcannons:mortar_stone` | Mortar Stone | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/mortar_stone.json; data/createbigcannons/recipe/mortar_stone.json` |
+| `createbigcannons` | `createbigcannons:powder_charge` | Powder Charge | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/powder_charge.json; data/createbigcannons/recipe/powder_charge.json` |
+| `createbigcannons` | `createbigcannons:ram_rod` | Ram Rod | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/ram_rod.json; data/createbigcannons/recipe/ram_rod.json` |
+| `createbigcannons` | `createbigcannons:worm` | Worm | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/worm.json; data/createbigcannons/recipe/worm.json` |
+| `createbigcannons` | `createbigcannons:wrought_iron_cannon_chamber` | Wrought Iron Cannon Chamber | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/wrought_iron_cannon_chamber.json; data/createbigcannons/recipe/wrought_iron_cannon_chamber.json` |
+| `createbigcannons` | `createbigcannons:wrought_iron_cannon_end` | Wrought Iron Cannon End | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/wrought_iron_cannon_end.json; data/createbigcannons/recipe/wrought_iron_cannon_end.json` |
 | `explorerscompass` | `explorerscompass:explorerscompass` | Explorer's Compass | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `assets/explorerscompass/models/item/explorerscompass.json; data/explorerscompass/recipe/explorers_compass.json` |
 | `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
@@ -36,7 +45,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `irons_spellbooks` | `irons_spellbooks:common_ink` | Common Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.common_ink` |
 | `irons_spellbooks` | `irons_spellbooks:copper_spell_book` | Flimsy Journal | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.copper_spell_book; data/irons_spellbooks/recipe/copper_spell_book.json` |
 | `irons_spellbooks` | `irons_spellbooks:holy_rune` | Holy Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune` |
-| `irons_spellbooks` | `irons_spellbooks:holy_upgrade_orb` | Holy Upgrade Orb | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/holy_upgrade_orb.json; data/irons_spellbooks/recipe/holy_upgrade_orb.json` |
 | `irons_spellbooks` | `irons_spellbooks:inscription_table` | Inscription Table | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json` |
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
@@ -70,8 +78,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:heart_seeker_enhanced` | Enhanced Heartseeker | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/vampire/heart_seeker_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::heart_seeker_enhanced` |
 | `vampirism` | `vampirism:heart_seeker_normal` | Heart Seeker Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/heart_seeker_normal.json; data/vampirism/recipe/vampire/heart_seeker_normal.json` |
 | `vampirism` | `vampirism:holy_water_bottle_normal` | Holy Water Bottle Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/holy_water_bottle_normal.json` |
-| `vampirism` | `vampirism:holy_water_splash_bottle_enhanced` | Enhanced Splash Bottle of Holy Water | `Vampirism-1.21-1.10.12.jar` | `de/teamlapen/vampirism/core/ModItems.class::holy_water_splash_bottle_enhanced; assets/vampirism/models/item/holy_water_splash_bottle_enhanced.json` |
-| `vampirism` | `vampirism:hunter_axe_enhanced` | Enhanced Hunter Axe | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/hunter_axe_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::hunter_axe_enhanced` |
 | `vampirism` | `vampirism:hunter_axe_normal` | Hunter Axe Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_axe_normal.json; data/vampirism/recipe/hunter_axe_normal.json` |
 | `vampirism` | `vampirism:hunter_coat_chest_normal` | Hunter Coat Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_chest_normal.json; data/vampirism/recipe/hunter_coat_chest_normal.json` |
 | `vampirism` | `vampirism:hunter_coat_feet_normal` | Hunter Coat Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_feet_normal.json; data/vampirism/recipe/hunter_coat_feet_normal.json` |

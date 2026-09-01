@@ -60,9 +60,9 @@
         2.0,
         2.0,
         2.0,
-        8.0
+        0.0
       ],
-      "personal_completionism": 37.0,
+      "personal_completionism": 29.0,
       "branch_count": 12
     },
     "vampire": {
@@ -86,7 +86,7 @@
       "personal_completionism": 37.0,
       "branch_count": 12
     },
-    "equal": true
+    "equal": false
   },
   "economy": {
     "coin_values_bevel_equivalent": {
@@ -99,7 +99,7 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 80.0,
+    "one_time_personal_raw_completionism": 72.0,
     "one_time_team_completionism": 0.0,
     "weekly_sinks": [
       {
@@ -155,6 +155,14 @@
       "create:belt_connector",
       "create:brass_ingot",
       "create:precision_mechanism",
+      "create:wrench",
+      "createbigcannons:cannon_carriage",
+      "createbigcannons:mortar_stone",
+      "createbigcannons:powder_charge",
+      "createbigcannons:ram_rod",
+      "createbigcannons:worm",
+      "createbigcannons:wrought_iron_cannon_chamber",
+      "createbigcannons:wrought_iron_cannon_end",
       "explorerscompass:explorerscompass",
       "exposure:black_and_white_film",
       "exposure:camera",
@@ -166,7 +174,6 @@
       "irons_spellbooks:common_ink",
       "irons_spellbooks:copper_spell_book",
       "irons_spellbooks:holy_rune",
-      "irons_spellbooks:holy_upgrade_orb",
       "irons_spellbooks:inscription_table",
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
@@ -199,8 +206,6 @@
       "vampirism:heart_seeker_enhanced",
       "vampirism:heart_seeker_normal",
       "vampirism:holy_water_bottle_normal",
-      "vampirism:holy_water_splash_bottle_enhanced",
-      "vampirism:hunter_axe_enhanced",
       "vampirism:hunter_axe_normal",
       "vampirism:hunter_coat_chest_normal",
       "vampirism:hunter_coat_feet_normal",
@@ -223,6 +228,7 @@
     ],
     "nonvanilla_icons": [
       "create:precision_mechanism",
+      "createbigcannons:cannon_carriage",
       "exposure:camera",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
@@ -241,7 +247,6 @@
       "vampirism:dark_stone_bricks",
       "vampirism:heart_seeker_enhanced",
       "vampirism:heart_seeker_normal",
-      "vampirism:hunter_axe_enhanced",
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
       "vampirism:potion_table",
@@ -297,8 +302,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "0aa87afd76bb0fa2fbc806eb6375397b06d16d764a91d379c2895a80acd0130f",
-        "actual": "0aa87afd76bb0fa2fbc806eb6375397b06d16d764a91d379c2895a80acd0130f",
+        "index": "e920da9fbadd1cc03a2063a18fc37eda8857c05c13c01b93db81dcf94aa7b7fd",
+        "actual": "e920da9fbadd1cc03a2063a18fc37eda8857c05c13c01b93db81dcf94aa7b7fd",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -322,8 +327,8 @@
         "match": true
       }
     },
-    "index_sha256": "42f9cb2e760ed0edad945e45e10d93f4f7307907327c21b712775e1d099769d6",
-    "pack_toml_declared_index_sha256": "42f9cb2e760ed0edad945e45e10d93f4f7307907327c21b712775e1d099769d6",
+    "index_sha256": "8630cce19180b73679de4c99ec94d5cda64e59e3c808cbe93e8c6dda5a488d95",
+    "pack_toml_declared_index_sha256": "8630cce19180b73679de4c99ec94d5cda64e59e3c808cbe93e8c6dda5a488d95",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

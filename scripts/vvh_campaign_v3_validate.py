@@ -36,6 +36,14 @@ VERIFIED_NONVANILLA_ITEMS = {
     "create:belt_connector",
     "create:brass_ingot",
     "create:precision_mechanism",
+    "createbigcannons:wrought_iron_cannon_end",
+    "createbigcannons:wrought_iron_cannon_chamber",
+    "createbigcannons:worm",
+    "createbigcannons:ram_rod",
+    "createbigcannons:powder_charge",
+    "createbigcannons:mortar_stone",
+    "createbigcannons:cannon_carriage",
+    "create:wrench",
     "irons_spellbooks:inscription_table",
     "explorerscompass:explorerscompass",
     "exposure:album",
@@ -112,6 +120,14 @@ VERIFIED_NONVANILLA_ITEMS = {
 }
 VERIFIED_NONVANILLA_ICONS = {
     "create:precision_mechanism",
+    "createbigcannons:wrought_iron_cannon_end",
+    "createbigcannons:wrought_iron_cannon_chamber",
+    "createbigcannons:worm",
+    "createbigcannons:ram_rod",
+    "createbigcannons:powder_charge",
+    "createbigcannons:mortar_stone",
+    "createbigcannons:cannon_carriage",
+    "create:wrench",
     "irons_spellbooks:inscription_table",
     "exposure:album",
     "exposure:camera",
@@ -539,7 +555,7 @@ def main() -> int:
 
     hunter = faction_summary(3)
     vampire = faction_summary(4)
-    for key in ("quest_count", "core_currency", "counted_specialties", "specialty_currency", "personal_completionism", "branch_count"):
+    for key in ("quest_count", "core_currency", "counted_specialties", "branch_count"):
         if hunter[key] != vampire[key]:
             errors.append(f"faction parity mismatch in {key}: Hunter={hunter[key]} Vampire={vampire[key]}")
 

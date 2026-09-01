@@ -24,6 +24,7 @@ from vvh_validate import Parser  # noqa: E402
 
 NAMESPACE_METADATA = {
     "create": "mods/create.pw.toml",
+    "createbigcannons": "mods/create-big-cannons.pw.toml",
     "explorerscompass": "mods/explorers-compass.pw.toml",
     "exposure": "mods/exposure.pw.toml",
     "irons_spellbooks": "mods/irons-spells-n-spellbooks.pw.toml",
