@@ -2502,7 +2502,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300011"]
-			description: ["Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spikes."]
+			description: ["Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with iron ingots, substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spikes."]
 			icon: { id: "vampirism:crossbow_arrow_spitfire" }
 			id: "7A11C0DF00300007"
 			optional: true
@@ -2528,6 +2528,12 @@
 				{
 					id: "7A11C2DF00300036"
 					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300037"
+					item: { count: 32, id: "minecraft:iron_ingot" }
 					team_reward: false
 					type: "item"
 				}
@@ -2558,8 +2564,8 @@
 					consume_items: false
 					id: "7A11C1DF00300030"
 					item: { count: 1, id: "vampirism:crossbow_arrow_spitfire" }
-					count: 4
-					title: "Carry four spitfire quarrels"
+					count: 3
+					title: "Carry three spitfire quarrels"
 					type: "item"
 				}
 				{
