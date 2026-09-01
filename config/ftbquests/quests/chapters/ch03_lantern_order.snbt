@@ -1693,7 +1693,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Prepare a smithing table, chains, and raw iron. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, twelve stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."]
+			description: ["Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather foundation cobblestone, a blast furnace for the forge, and a sentry shield. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, twelve stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."]
 			icon: { id: "minecraft:chain" }
 			id: "7A11C0DF00300011"
 			optional: true
@@ -1976,24 +1976,23 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00300057"
-					item: { count: 1, id: "minecraft:smithing_table" }
-					title: "Inspect a Smithing Table"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 64
+					title: "Inspect sixty-four Cobblestone"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300058"
-					item: { count: 1, id: "minecraft:chain" }
-					count: 16
-					title: "Inspect sixteen Chains"
+					item: { count: 1, id: "minecraft:blast_furnace" }
+					title: "Inspect a Blast Furnace"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300059"
-					item: { count: 1, id: "minecraft:raw_iron" }
-					count: 16
-					title: "Inspect sixteen Raw Iron"
+					item: { count: 1, id: "minecraft:shield" }
+					title: "Carry a Shield"
 					type: "item"
 				}
 			]
