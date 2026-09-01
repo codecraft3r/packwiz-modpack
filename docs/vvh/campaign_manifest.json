@@ -4273,7 +4273,7 @@
             "7A11C0DF00300011"
           ],
           "description": [
-            "Stock spitfire and teleport quarrels for illumination and emergency repositioning. The branch broadens field options without granting a stronger weapon tier."
+            "Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spikes."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:crossbow_arrow_spitfire",
@@ -4296,7 +4296,7 @@
               "id": "7A11C2DF00300031",
               "item": {
                 "count": 32,
-                "id": "minecraft:iron_ingot"
+                "id": "vampirism:crossbow_arrow_spitfire"
               },
               "team_reward": false,
               "type": "item"
@@ -4304,8 +4304,40 @@
             {
               "id": "7A11C2DF00300032",
               "item": {
+                "count": 32,
+                "id": "vampirism:crossbow_arrow_teleport"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300036",
+              "item": {
                 "count": 64,
                 "id": "vampirism:crossbow_arrow_normal"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030005C",
+              "item": {
+                "count": 16,
+                "id": "supplementaries:bomb"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030005D",
+              "item": {
+                "count": 16,
+                "id": "supplementaries:bamboo_spikes_tipped",
+                "components": {
+                  "minecraft:potion_contents": {
+                    "potion": "minecraft:harming"
+                  }
+                }
               },
               "team_reward": false,
               "type": "item"
@@ -4322,8 +4354,8 @@
                 "count": 1,
                 "id": "vampirism:crossbow_arrow_spitfire"
               },
-              "count": 16,
-              "title": "Carry sixteen spitfire quarrels",
+              "count": 4,
+              "title": "Carry four spitfire quarrels",
               "type": "item"
             },
             {
@@ -4333,8 +4365,30 @@
                 "count": 1,
                 "id": "vampirism:crossbow_arrow_teleport"
               },
-              "count": 16,
-              "title": "Carry sixteen teleport quarrels",
+              "count": 4,
+              "title": "Carry four teleport quarrels",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030005C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:target"
+              },
+              "count": 2,
+              "title": "Inspect two Target Blocks",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0030005D",
+              "item": {
+                "count": 1,
+                "id": "mannequins:mannequin"
+              },
+              "count": 2,
+              "title": "Inspect two Mannequins",
               "type": "item"
             }
           ],

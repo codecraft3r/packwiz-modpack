@@ -73,6 +73,10 @@ VERIFIED_NONVANILLA_ITEMS = {
     "numismatics:sprocket",
     "supplementaries:rope_arrow",
     "supplementaries:wrench",
+    "supplementaries:bomb",
+    "supplementaries:bamboo_spikes_tipped",
+    "supplementaries:bamboo_spikes",
+    "mannequins:mannequin",
     "vampirism:alchemical_cauldron",
     "vampirism:alchemy_table",
     "vampirism:altar_infusion",
@@ -180,7 +184,7 @@ VERIFIED_SPELLS = {
     "irons_spellbooks:ray_of_siphoning",
     "irons_spellbooks:recall",
 }
-VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container", "minecraft:dyed_color"}
+VERIFIED_COMPONENTS = {"irons_spellbooks:spell_container", "minecraft:dyed_color", "minecraft:potion_contents"}
 VERIFIED_IMAGES = {
     "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
     "poiesis:textures/questpics/vvh/blood_school_crest.png",

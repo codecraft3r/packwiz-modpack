@@ -7,6 +7,7 @@
     "explorerscompass",
     "exposure",
     "irons_spellbooks",
+    "mannequins",
     "numismatics",
     "supplementaries",
     "vampirism",
@@ -60,6 +61,15 @@
         "download_hash_format": "sha512",
         "download_hash": "fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b",
         "index_sha256": "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2"
+      },
+      "mannequins": {
+        "metadata": "mods/mannequins.pw.toml",
+        "name": "Mannequins",
+        "filename": "mannequins-3.0.0-rc.1.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "1b844a327605f26a4b87b8b5608c09620354b5d1a8c39573477e374f78f1ee4a27b11be605cf5a2f8d3339a715f2b373afcbba3f725bcf189b8e384f506f16e6",
+        "index_sha256": "0c53ddaaa2d828c91ea4f5fe920bf3935b48b4ee2507f9145225775a64a88669"
       },
       "numismatics": {
         "metadata": "mods/numismatics.pw.toml",
@@ -349,6 +359,14 @@
       "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
+      "namespace": "mannequins",
+      "id": "mannequins:mannequin",
+      "display_name": "Mannequin",
+      "source_jar": "mannequins-3.0.0-rc.1.jar",
+      "source_entry": "assets/mannequins/models/item/mannequin.json; data/mannequins/recipe/mannequin.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
       "namespace": "numismatics",
       "id": "numismatics:banking_guide",
       "display_name": "Banking Guide",
@@ -379,6 +397,22 @@
       "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
       "source_entry": "assets/numismatics/models/item/sprocket.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:bamboo_spikes_tipped",
+      "display_name": "Tipped Bamboo Spikes",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/bamboo_spikes_tipped.json; data/supplementaries/recipe/bamboo_spikes_tipped.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:bomb",
+      "display_name": "Bomb",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/bomb.json; data/supplementaries/recipe/bomb.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "supplementaries",

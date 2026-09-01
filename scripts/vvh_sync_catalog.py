@@ -28,6 +28,7 @@ NAMESPACE_METADATA = {
     "explorerscompass": "mods/explorers-compass.pw.toml",
     "exposure": "mods/exposure.pw.toml",
     "irons_spellbooks": "mods/irons-spells-n-spellbooks.pw.toml",
+    "mannequins": "mods/mannequins.pw.toml",
     "numismatics": "mods/numismatics.pw.toml",
     "supplementaries": "mods/supplementaries.pw.toml",
     "vampirism": "mods/vampirism.pw.toml",

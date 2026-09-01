@@ -182,9 +182,12 @@
       "irons_spellbooks:wizard_chestplate",
       "irons_spellbooks:wizard_helmet",
       "irons_spellbooks:wizard_leggings",
+      "mannequins:mannequin",
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
+      "supplementaries:bamboo_spikes_tipped",
+      "supplementaries:bomb",
       "supplementaries:rope_arrow",
       "supplementaries:wrench",
       "vampirism:alchemical_cauldron",
@@ -271,7 +274,8 @@
     ],
     "components": [
       "irons_spellbooks:spell_container",
-      "minecraft:dyed_color"
+      "minecraft:dyed_color",
+      "minecraft:potion_contents"
     ],
     "images": [
       "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
@@ -302,8 +306,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "9cf27ce76b557adc80c2baf7988d4ecf0ac29e169268ec32098e256ca0194d7a",
-        "actual": "9cf27ce76b557adc80c2baf7988d4ecf0ac29e169268ec32098e256ca0194d7a",
+        "index": "500d233f7e3739fce63573afbd343d85343c79a5c1a726df19019e089ca25503",
+        "actual": "500d233f7e3739fce63573afbd343d85343c79a5c1a726df19019e089ca25503",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -327,8 +331,8 @@
         "match": true
       }
     },
-    "index_sha256": "3cec1855079c57f34bdee2ee2b7afe76dab22e3ce46b94eccd6dbe4676befd83",
-    "pack_toml_declared_index_sha256": "3cec1855079c57f34bdee2ee2b7afe76dab22e3ce46b94eccd6dbe4676befd83",
+    "index_sha256": "50a6c094fb02bedd12abce8f5d88b98eca73ebe31ccee0bd2a7f785f1dc8a670",
+    "pack_toml_declared_index_sha256": "50a6c094fb02bedd12abce8f5d88b98eca73ebe31ccee0bd2a7f785f1dc8a670",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
