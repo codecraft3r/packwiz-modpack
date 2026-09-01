@@ -486,7 +486,6 @@ def build_hunters(group: str) -> Chapter:
         *[item_reward(3, 150 + i, "minecraft:spruce_log", 64) for i in range(12)],
         item_reward(3, 10, "minecraft:iron_ingot", 64),
         item_reward(3, 70, "minecraft:copper_ingot", 64),
-        item_reward(3, 71, "minecraft:diamond", 8),
         item_reward(3, 72, "minecraft:stonecutter"),
         item_reward(3, 73, "supplementaries:wrench"),
     ]
@@ -494,7 +493,7 @@ def build_hunters(group: str) -> Chapter:
         2,
         title="Building Supplies",
         subtitle="Tier II · Construction stock",
-        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench.",
+        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench.",
         icon="minecraft:stone",
         x=0,
         y=-7,
@@ -823,7 +822,7 @@ def build_hunters(group: str) -> Chapter:
     )
     mastery = ch.add(
         9,
-        title="Bright Oath",
+        title="Siege Artillery",
         subtitle="Specialty · Big cannons",
         description="Construct heavy siege artillery with Create Big Cannons. Assemble a Cannon Carriage, two Wrought Iron Cannon Chambers, and a Wrought Iron Cannon End. The Order supplies a Ramrod, Worm, Create Wrench, sixty-four Powder Charges, and a stockpile of Mortar Stones.",
         icon="createbigcannons:cannon_carriage",

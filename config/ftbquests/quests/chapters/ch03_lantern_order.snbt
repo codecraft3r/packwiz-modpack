@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, diamonds, a stonecutter, and a wrench."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -417,12 +417,6 @@
 				{
 					id: "7A11C2DF00300046"
 					item: { count: 64, id: "minecraft:copper_ingot" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300047"
-					item: { count: 8, id: "minecraft:diamond" }
 					team_reward: false
 					type: "item"
 				}
@@ -2622,7 +2616,7 @@
 					type: "item"
 				}
 			]
-			title: "Bright Oath"
+			title: "Siege Artillery"
 			x: 10.5d
 			y: 0
 		}
