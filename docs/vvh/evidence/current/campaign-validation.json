@@ -152,7 +152,7 @@
   "identifiers": {
     "nonvanilla_items": [
       "abyssal_decor:frosted_glass",
-      "abyssal_decor:raw_marble",
+      "abyssal_decor:white_wood_log",
       "create:andesite_alloy",
       "create:belt_connector",
       "create:brass_ingot",
@@ -314,8 +314,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "d78acd2c20501420df6b85c7bd02bb6f658d6d3ebb68ee18de1bd30b2c896718",
-        "actual": "d78acd2c20501420df6b85c7bd02bb6f658d6d3ebb68ee18de1bd30b2c896718",
+        "index": "fdea2cf8d1f621dcc7d01868fc14f822140fd523f1b476bbfc709317dde0eb0b",
+        "actual": "fdea2cf8d1f621dcc7d01868fc14f822140fd523f1b476bbfc709317dde0eb0b",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -339,8 +339,8 @@
         "match": true
       }
     },
-    "index_sha256": "aa4c92f2c7122b5fe4e29310572e148c8f94592b7fe37b2174e5dc0bf1007e38",
-    "pack_toml_declared_index_sha256": "aa4c92f2c7122b5fe4e29310572e148c8f94592b7fe37b2174e5dc0bf1007e38",
+    "index_sha256": "c792939baeceb89d2d09f7187ad9f7426ef604e9ba6e060a631ec414d6ce8313",
+    "pack_toml_declared_index_sha256": "c792939baeceb89d2d09f7187ad9f7426ef604e9ba6e060a631ec414d6ce8313",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

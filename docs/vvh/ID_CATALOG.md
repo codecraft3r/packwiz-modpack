@@ -26,7 +26,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | Namespace | ID | Display name | Exact evidence JAR | JAR entry evidence |
 | --- | --- | --- | --- | --- |
 | `abyssal_decor` | `abyssal_decor:frosted_glass` | Frosted Glass | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/frosted_glass.json` |
-| `abyssal_decor` | `abyssal_decor:raw_marble` | Raw Marble | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/raw_marble.json` |
+| `abyssal_decor` | `abyssal_decor:white_wood_log` | Whitewood Log | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/white_wood_log.json` |
 | `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |

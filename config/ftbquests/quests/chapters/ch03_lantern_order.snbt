@@ -801,7 +801,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Erect a specialized alchemical laboratory to distill holy tinctures, extracts, and draughts. Gather raw marble, mangrove logs, and laboratory glass bottles. The Order supplies nine stacks of marble, nine stacks of mud bricks, mangrove timber, frosted glass, scaffolding, apothecary jars, liquid faucets, brewing stations, cauldrons, redstone, glowstone, and golden carrots."]
+			description: ["Erect a specialized alchemical laboratory to distill holy tinctures, extracts, and draughts. Gather tuff stone, white wood timber, and laboratory glass bottles. The Order supplies bulk volcanic tuff, white wood logs, frosted glass, scaffolding, apothecary jars, liquid faucets, brewing stands, cauldrons, redstone, glowstone, and golden carrots."]
 			icon: { id: "minecraft:brewing_stand" }
 			id: "7A11C0DF0030000F"
 			optional: true
@@ -814,139 +814,139 @@
 				}
 				{
 					id: "7A11C2DF0030012C"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012D"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012E"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012F"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300130"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300131"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300132"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300133"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300134"
-					item: { count: 64, id: "abyssal_decor:raw_marble" }
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300135"
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300136"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300137"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300138"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300139"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013A"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013B"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013C"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013D"
-					item: { count: 64, id: "minecraft:mud_bricks" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030013E"
-					item: { count: 64, id: "minecraft:mud_bricks" }
+					item: { count: 64, id: "minecraft:tuff" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014A"
-					item: { count: 64, id: "minecraft:mangrove_log" }
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014B"
-					item: { count: 64, id: "minecraft:mangrove_log" }
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014C"
-					item: { count: 64, id: "minecraft:mangrove_log" }
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014D"
-					item: { count: 64, id: "minecraft:mangrove_log" }
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014E"
-					item: { count: 64, id: "minecraft:mangrove_log" }
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
 					team_reward: false
 					type: "item"
 				}
@@ -1054,17 +1054,17 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0030004F"
-					item: { count: 1, id: "abyssal_decor:raw_marble" }
+					item: { count: 1, id: "minecraft:tuff" }
 					count: 32
-					title: "Inspect thirty-two Raw Marble"
+					title: "Inspect thirty-two Tuff"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300050"
-					item: { count: 1, id: "minecraft:mangrove_log" }
+					item: { count: 1, id: "abyssal_decor:white_wood_log" }
 					count: 32
-					title: "Inspect thirty-two Mangrove Logs"
+					title: "Inspect thirty-two White Wood Logs"
 					type: "item"
 				}
 				{
