@@ -209,6 +209,7 @@
       "supplementaries:wrench",
       "vampirism:alchemical_cauldron",
       "vampirism:alchemy_table",
+      "vampirism:altar_cleansing",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
       "vampirism:basic_crossbow",
@@ -223,9 +224,11 @@
       "vampirism:crossbow_arrow_teleport",
       "vampirism:crossbow_arrow_vampire_killer",
       "vampirism:dark_stone_bricks",
+      "vampirism:garlic",
+      "vampirism:garlic_diffuser_normal",
       "vampirism:heart_seeker_enhanced",
       "vampirism:heart_seeker_normal",
-      "vampirism:holy_water_bottle_normal",
+      "vampirism:holy_water_bottle_ultimate",
       "vampirism:hunter_axe_normal",
       "vampirism:hunter_coat_chest_normal",
       "vampirism:hunter_coat_feet_normal",
@@ -235,7 +238,7 @@
       "vampirism:injection_garlic",
       "vampirism:item_alchemical_fire",
       "vampirism:potion_table",
-      "vampirism:pure_salt",
+      "vampirism:pure_salt_water",
       "vampirism:stake",
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
@@ -323,8 +326,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "5681438dabe2b588ef8e978d799bea7cd564011590ab29b7f30835070187924e",
-        "actual": "5681438dabe2b588ef8e978d799bea7cd564011590ab29b7f30835070187924e",
+        "index": "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918",
+        "actual": "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -353,8 +356,8 @@
         "match": true
       }
     },
-    "index_sha256": "1ada3bd977373bbd5e0792be3d2b74b1b90966c1eaf91a3a88e00481ddc922e0",
-    "pack_toml_declared_index_sha256": "1ada3bd977373bbd5e0792be3d2b74b1b90966c1eaf91a3a88e00481ddc922e0",
+    "index_sha256": "f9a1ccac6c79928852f64d1dba420444750ce3a31aad8b10a3ed40fa5068c802",
+    "pack_toml_declared_index_sha256": "f9a1ccac6c79928852f64d1dba420444750ce3a31aad8b10a3ed40fa5068c802",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

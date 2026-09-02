@@ -1814,7 +1814,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF0030000F"]
-			description: ["Stock an Alchemical Cauldron with normal Holy Water and Pure Salt. This turns a private kit into a maintainable remedy station and opens the Order's specialized alchemical preparation."]
+			description: ["Establish a sanctified workshop: assemble an Alchemical Cauldron and an Altar of Cleansing, then prepare sixteen heads of Garlic and Pure Salt Water. The Order rewards your purification efforts with two sprockets, four bottles of Ultimate Holy Water, a Garlic Diffuser, and sixteen bottles of Alchemical Fire."]
 			icon: { id: "vampirism:alchemical_cauldron" }
 			id: "7A11C0DF00300006"
 			optional: true
@@ -1827,13 +1827,19 @@
 				}
 				{
 					id: "7A11C2DF0030001B"
-					item: { count: 16, id: "vampirism:item_alchemical_fire" }
+					item: { count: 4, id: "vampirism:holy_water_bottle_ultimate" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030001C"
-					item: { count: 32, id: "minecraft:iron_ingot" }
+					item: { count: 1, id: "vampirism:garlic_diffuser_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001E"
+					item: { count: 16, id: "vampirism:item_alchemical_fire" }
 					team_reward: false
 					type: "item"
 				}
@@ -1846,23 +1852,30 @@
 					consume_items: false
 					id: "7A11C1DF0030000F"
 					item: { count: 1, id: "vampirism:alchemical_cauldron" }
-					title: "Inspect an Alchemical Cauldron"
+					title: "Craft an Alchemical Cauldron"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300010"
-					item: { count: 1, id: "vampirism:holy_water_bottle_normal" }
-					count: 4
-					title: "Carry four normal Holy Waters"
+					item: { count: 1, id: "vampirism:altar_cleansing" }
+					title: "Construct an Altar of Cleansing"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300011"
-					item: { count: 1, id: "vampirism:pure_salt" }
-					count: 8
-					title: "Carry eight Pure Salt"
+					item: { count: 1, id: "vampirism:garlic" }
+					count: 16
+					title: "Gather sixteen Garlic"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300012"
+					item: { count: 1, id: "vampirism:pure_salt_water" }
+					count: 4
+					title: "Brew four bottles of Pure Salt Water"
 					type: "item"
 				}
 			]

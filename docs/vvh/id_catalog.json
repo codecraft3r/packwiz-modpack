@@ -604,6 +604,14 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:altar_cleansing",
+      "display_name": "Altar Cleansing",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/altar_cleansing.json; data/vampirism/recipe/general/altar_cleansing.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:altar_infusion",
       "display_name": "Altar of Infusion",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
@@ -716,6 +724,22 @@
     },
     {
       "namespace": "vampirism",
+      "id": "vampirism:garlic",
+      "display_name": "Garlic",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/garlic.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
+      "id": "vampirism:garlic_diffuser_normal",
+      "display_name": "Garlic Diffuser Normal",
+      "source_jar": "Vampirism-1.21-1.10.12.jar",
+      "source_entry": "assets/vampirism/models/item/garlic_diffuser_normal.json; data/vampirism/recipe/hunter/garlic_diffuser_normal.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "vampirism",
       "id": "vampirism:heart_seeker_enhanced",
       "display_name": "Enhanced Heartseeker",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
@@ -732,10 +756,10 @@
     },
     {
       "namespace": "vampirism",
-      "id": "vampirism:holy_water_bottle_normal",
-      "display_name": "Holy Water Bottle Normal",
+      "id": "vampirism:holy_water_bottle_ultimate",
+      "display_name": "Holy Water Bottle Ultimate",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/models/item/holy_water_bottle_normal.json",
+      "source_entry": "assets/vampirism/models/item/holy_water_bottle_ultimate.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {
@@ -812,11 +836,11 @@
     },
     {
       "namespace": "vampirism",
-      "id": "vampirism:pure_salt",
-      "display_name": "Pure Salt",
+      "id": "vampirism:pure_salt_water",
+      "display_name": "Pure Salt Water",
       "source_jar": "Vampirism-1.21-1.10.12.jar",
-      "source_entry": "assets/vampirism/lang/en_us.json::item.vampirism.pure_salt",
-      "obtainability_note": ""
+      "source_entry": "assets/vampirism/models/item/pure_salt_water.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {
       "namespace": "vampirism",

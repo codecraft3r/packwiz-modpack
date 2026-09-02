@@ -84,6 +84,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `supplementaries` | `supplementaries:wrench` | Wrench | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/wrench.json; data/supplementaries/recipe/wrench.json` |
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |
 | `vampirism` | `vampirism:alchemy_table` | Alchemy Table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/alchemy_table.json; data/vampirism/recipe/alchemy_table.json` |
+| `vampirism` | `vampirism:altar_cleansing` | Altar Cleansing | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/altar_cleansing.json; data/vampirism/recipe/general/altar_cleansing.json` |
 | `vampirism` | `vampirism:altar_infusion` | Altar of Infusion | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_infusion` |
 | `vampirism` | `vampirism:altar_inspiration` | Altar of Inspiration | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.altar_inspiration; data/vampirism/recipe/vampire/altar_inspiration.json` |
 | `vampirism` | `vampirism:basic_crossbow` | Basic Crossbow | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/basic_crossbow.json; data/vampirism/recipe/basic_crossbow.json` |
@@ -98,9 +99,11 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:crossbow_arrow_teleport` | Teleport Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_teleport` |
 | `vampirism` | `vampirism:crossbow_arrow_vampire_killer` | Vampire Killer Quarrel | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.crossbow_arrow_vampire_killer` |
 | `vampirism` | `vampirism:dark_stone_bricks` | Dark Stone Bricks | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/dark_stone_bricks.json` |
+| `vampirism` | `vampirism:garlic` | Garlic | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/garlic.json` |
+| `vampirism` | `vampirism:garlic_diffuser_normal` | Garlic Diffuser Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/garlic_diffuser_normal.json; data/vampirism/recipe/hunter/garlic_diffuser_normal.json` |
 | `vampirism` | `vampirism:heart_seeker_enhanced` | Enhanced Heartseeker | `Vampirism-1.21-1.10.12.jar` | `data/vampirism/recipe/vampire/heart_seeker_enhanced.json::result.id; de/teamlapen/vampirism/core/ModItems.class::heart_seeker_enhanced` |
 | `vampirism` | `vampirism:heart_seeker_normal` | Heart Seeker Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/heart_seeker_normal.json; data/vampirism/recipe/vampire/heart_seeker_normal.json` |
-| `vampirism` | `vampirism:holy_water_bottle_normal` | Holy Water Bottle Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/holy_water_bottle_normal.json` |
+| `vampirism` | `vampirism:holy_water_bottle_ultimate` | Holy Water Bottle Ultimate | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/holy_water_bottle_ultimate.json` |
 | `vampirism` | `vampirism:hunter_axe_normal` | Hunter Axe Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_axe_normal.json; data/vampirism/recipe/hunter_axe_normal.json` |
 | `vampirism` | `vampirism:hunter_coat_chest_normal` | Hunter Coat Chest Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_chest_normal.json; data/vampirism/recipe/hunter_coat_chest_normal.json` |
 | `vampirism` | `vampirism:hunter_coat_feet_normal` | Hunter Coat Feet Normal | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/hunter_coat_feet_normal.json; data/vampirism/recipe/hunter_coat_feet_normal.json` |
@@ -110,7 +113,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:injection_garlic` | Garlic Injection | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.injection_garlic; de/teamlapen/vampirism/core/ModItems.class::injection_garlic` |
 | `vampirism` | `vampirism:item_alchemical_fire` | Alchemical Fire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/item_alchemical_fire.json` |
 | `vampirism` | `vampirism:potion_table` | Potion table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/potion_table.json; data/vampirism/recipe/hunter/potion_table.json` |
-| `vampirism` | `vampirism:pure_salt` | Pure Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.pure_salt` |
+| `vampirism` | `vampirism:pure_salt_water` | Pure Salt Water | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/pure_salt_water.json` |
 | `vampirism` | `vampirism:stake` | Stake | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.stake` |
 | `vampirism` | `vampirism:umbrella` | Umbrella | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/umbrella.json; data/vampirism/recipe/general/umbrella.json` |
 | `vampirism` | `vampirism:vampire_cloak_white_black` | Vampire Cloak | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.vampire_cloak_white_black` |
