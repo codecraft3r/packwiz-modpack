@@ -53,16 +53,16 @@
       ],
       "counted_specialties": 8,
       "specialty_currency": [
-        2.0,
-        2.0,
-        2.0,
-        2.0,
-        2.0,
-        2.0,
-        2.0,
-        0.0
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
       ],
-      "personal_completionism": 29.0,
+      "personal_completionism": 47.0,
       "branch_count": 12
     },
     "vampire": {
@@ -99,7 +99,7 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 72.0,
+    "one_time_personal_raw_completionism": 90.0,
     "one_time_team_completionism": 0.0,
     "weekly_sinks": [
       {
@@ -323,8 +323,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b",
-        "actual": "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b",
+        "index": "2322c04a5fc1997313c95843c457b59a883393654b3b505c73154d31a569252c",
+        "actual": "2322c04a5fc1997313c95843c457b59a883393654b3b505c73154d31a569252c",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -353,8 +353,8 @@
         "match": true
       }
     },
-    "index_sha256": "732bf1a33241f930d00469b8cb18823d09f9367ca1f33eedb092ace14104cf67",
-    "pack_toml_declared_index_sha256": "732bf1a33241f930d00469b8cb18823d09f9367ca1f33eedb092ace14104cf67",
+    "index_sha256": "cd455f25ab6983bf71832cd92a45740823921cca71a7484c25ac6226a8d178bc",
+    "pack_toml_declared_index_sha256": "cd455f25ab6983bf71832cd92a45740823921cca71a7484c25ac6226a8d178bc",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

@@ -1613,7 +1613,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00300014"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -1736,7 +1736,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00300025"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -1821,7 +1821,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF0030001A"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -1879,7 +1879,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00300028"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -1959,7 +1959,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00300033"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -2009,7 +2009,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF0030002C"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -2097,7 +2097,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00300030"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -2192,6 +2192,12 @@
 			id: "7A11C0DF00300009"
 			optional: true
 			rewards: [
+				{
+					id: "7A11C2DF0030001D"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
 				{
 					id: "7A11C2DF00300010"
 					item: { count: 1, id: "createbigcannons:ram_rod" }

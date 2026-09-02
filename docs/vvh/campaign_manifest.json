@@ -2964,7 +2964,7 @@
             {
               "id": "7A11C2DF00300014",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3135,7 +3135,7 @@
             {
               "id": "7A11C2DF00300025",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3263,7 +3263,7 @@
             {
               "id": "7A11C2DF0030001A",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3347,7 +3347,7 @@
             {
               "id": "7A11C2DF00300028",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3465,7 +3465,7 @@
             {
               "id": "7A11C2DF00300033",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3543,7 +3543,7 @@
             {
               "id": "7A11C2DF0030002C",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3668,7 +3668,7 @@
             {
               "id": "7A11C2DF00300030",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
@@ -3802,6 +3802,15 @@
           "repeat_cooldown": 0,
           "repeatable": false,
           "rewards": [
+            {
+              "id": "7A11C2DF0030001D",
+              "item": {
+                "count": 2,
+                "id": "numismatics:sprocket"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
             {
               "id": "7A11C2DF00300010",
               "item": {

@@ -483,7 +483,7 @@ def build_callings(group: str) -> Chapter:
 
 def hunter_spell_rewards() -> list[dict[str, Any]]:
     return [
-        item_reward(3, 20, "numismatics:sprocket"),
+        item_reward(3, 20, "numismatics:sprocket", 2),
         item_reward(3, 21, "irons_spellbooks:rare_ink", 8),
         item_reward(3, 22, "irons_spellbooks:epic_ink", 4),
         item_reward(3, 97, "irons_spellbooks:holy_rune", 4),
@@ -757,7 +757,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 100, "irons_spellbooks:priest_boots", title="Equip Priest Boots"),
         ],
         rewards=[
-            item_reward(3, 37, "numismatics:sprocket"),
+            item_reward(3, 37, "numismatics:sprocket", 2),
             item_reward(3, 38, "irons_spellbooks:villager_spell_book", title="Villager Bible"),
             choice_reward(3, 39, lid_int(3, 1), title="Choice: Artificer's Cane or Graybeard Staff"),
             item_reward(3, 98, "minecraft:paper", 64),
@@ -781,7 +781,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 17, "vampirism:pure_salt", 8, "Carry eight Pure Salt"),
         ],
         rewards=[
-            item_reward(3, 26, "numismatics:sprocket"),
+            item_reward(3, 26, "numismatics:sprocket", 2),
             item_reward(3, 27, "vampirism:item_alchemical_fire", 16),
             item_reward(3, 28, "minecraft:iron_ingot", 32),
         ],
@@ -802,7 +802,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 41, "minecraft:glass_bottle", 16, "Craft sixteen Glass Bottles"),
         ],
         rewards=[
-            item_reward(3, 40, "numismatics:sprocket"),
+            item_reward(3, 40, "numismatics:sprocket", 2),
             item_reward(3, 41, "minecraft:brewing_stand"),
             item_reward(3, 42, "vampirism:alchemy_table"),
             item_reward(3, 43, "minecraft:nether_wart", 16),
@@ -829,7 +829,7 @@ def build_hunters(group: str) -> Chapter:
             advancement_task(3, 21, "exposure:adventure/moment_in_time"),
         ],
         rewards=[
-            item_reward(3, 51, "numismatics:sprocket"),
+            item_reward(3, 51, "numismatics:sprocket", 2),
             item_reward(3, 52, "exposure:color_film", 8),
             item_reward(3, 53, "exposure:black_and_white_film", 8),
         ],
@@ -851,7 +851,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 45, "minecraft:spyglass", title="Carry a Spyglass"),
         ],
         rewards=[
-            item_reward(3, 44, "numismatics:sprocket"),
+            item_reward(3, 44, "numismatics:sprocket", 2),
             item_reward(3, 45, "minecraft:lead", 8),
             item_reward(3, 46, "create:brown_toolbox", title="Brown Toolbox"),
             item_reward(3, 47, "supplementaries:rope_arrow", 32),
@@ -878,7 +878,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 93, "mannequins:mannequin", 2, "Inspect two Mannequins"),
         ],
         rewards=[
-            item_reward(3, 48, "numismatics:sprocket"),
+            item_reward(3, 48, "numismatics:sprocket", 2),
             item_reward(3, 49, "vampirism:crossbow_arrow_spitfire", 32),
             item_reward(3, 50, "vampirism:crossbow_arrow_teleport", 32),
             item_reward(3, 54, "vampirism:crossbow_arrow_normal", 64),
@@ -905,6 +905,7 @@ def build_hunters(group: str) -> Chapter:
             item_task(3, 91, "createbigcannons:wrought_iron_cannon_end", title="Obtain a Wrought Iron Cannon End"),
         ],
         rewards=[
+            item_reward(3, 29, "numismatics:sprocket", 2),
             item_reward(3, 16, "createbigcannons:ram_rod"),
             item_reward(3, 17, "createbigcannons:worm"),
             item_reward(3, 18, "create:wrench"),

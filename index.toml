@@ -5,10 +5,6 @@ file = "README.md"
 hash = "5b90652222632aeec64f2dbafba28bc7bbb42ef2f6d5f23d2bc1539a791ca0db"
 
 [[files]]
-file = "RewardTable_javap.txt"
-hash = "a305c259017086f66c1d2563f1cb8501f1e16da921b12c491f6e25c93dd56778"
-
-[[files]]
 file = "config/Mekanism/additions.toml"
 hash = "167317f50212fd80d2557ee1d560a796f2a99c827c979c6ca68e32e960cf3a1c"
 
@@ -114,7 +110,7 @@ hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b"
+hash = "2322c04a5fc1997313c95843c457b59a883393654b3b505c73154d31a569252c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
