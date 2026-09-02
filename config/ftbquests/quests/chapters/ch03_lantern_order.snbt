@@ -2030,7 +2030,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300010"]
-			description: ["Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, hearty rabbit stew, a long invisibility potion, and milk for emergency recovery."]
+			description: ["Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, a long invisibility potion, and milk for emergency recovery."]
 			icon: { id: "sophisticatedbackpacks:backpack" }
 			id: "7A11C0DF0030000D"
 			optional: true
@@ -2052,6 +2052,12 @@
 					item: { count: 1, id: "create:brown_toolbox" }
 					team_reward: false
 					title: "Brown Toolbox"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002F"
+					item: { count: 32, id: "supplementaries:rope_arrow" }
+					team_reward: false
 					type: "item"
 				}
 				{

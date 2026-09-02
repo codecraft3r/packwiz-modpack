@@ -110,7 +110,7 @@ hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "2d7844a41f42bd29b47578eb9cc681cafffbe8e5dc2f09db83c2ddbbf8dcd8f4"
+hash = "bfb232e24037d429bb394f4f5207e8bfce7d2971aa3aa98e76aea341f4359693"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
