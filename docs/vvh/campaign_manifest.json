@@ -3568,7 +3568,7 @@
             "7A11C0DF00300010"
           ],
           "description": [
-            "Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, a long invisibility potion, and milk for emergency recovery."
+            "Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, Vampirism's strongest invisibility draught (80 minutes), and milk for emergency recovery."
           ],
           "hide_dependency_lines": false,
           "icon": "sophisticatedbackpacks:backpack",
@@ -3631,12 +3631,12 @@
                 "id": "minecraft:potion",
                 "components": {
                   "minecraft:potion_contents": {
-                    "potion": "minecraft:long_invisibility"
+                    "potion": "vampirism:very_long_invisibility"
                   }
                 }
               },
               "team_reward": false,
-              "title": "Potion of Invisibility (8:00)",
+              "title": "Potion of Invisibility (01:20:00)",
               "type": "item"
             },
             {
