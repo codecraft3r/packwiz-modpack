@@ -2030,8 +2030,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300010"]
-			description: ["Carry a saddle, spyglass, and compass as a coherent route kit. The reward adds leads and rockets so a patrol can move supplies, signal, and return without turning mobility into a permanent power grant."]
-			icon: { id: "minecraft:saddle" }
+			description: ["Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, a reserve backpack, hearty rabbit stew, a long invisibility potion, and milk for emergency recovery."]
+			icon: { id: "sophisticatedbackpacks:backpack" }
 			id: "7A11C0DF0030000D"
 			optional: true
 			rewards: [
@@ -2049,40 +2049,66 @@
 				}
 				{
 					id: "7A11C2DF0030002E"
-					item: { count: 32, id: "minecraft:firework_rocket" }
+					item: { count: 1, id: "create:brown_toolbox" }
 					team_reward: false
+					title: "Brown Toolbox"
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030002F"
-					item: { count: 8, id: "minecraft:map" }
+					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005E"
+					item: { count: 16, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005F"
+					item: {
+						count: 1
+						id: "minecraft:potion"
+						components: {
+							"minecraft:potion_contents": { potion: "minecraft:long_invisibility" }
+						}
+					}
+					team_reward: false
+					title: "Potion of Invisibility (8:00)"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300060"
+					item: { count: 1, id: "minecraft:milk_bucket" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Field mobility"
+			subtitle: "Specialty · Field logistics"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0030002B"
-					item: { count: 1, id: "minecraft:saddle" }
-					title: "Carry a Saddle"
+					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					title: "Obtain a Backpack"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0030002C"
-					item: { count: 1, id: "minecraft:spyglass" }
-					title: "Carry a Spyglass"
+					item: { count: 1, id: "create:clipboard" }
+					title: "Obtain a Clipboard"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0030002D"
-					item: { count: 1, id: "minecraft:compass" }
-					title: "Carry a Compass"
+					item: { count: 1, id: "minecraft:spyglass" }
+					title: "Carry a Spyglass"
 					type: "item"
 				}
 			]

@@ -15,6 +15,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `irons_spellbooks` | `mods/irons-spells-n-spellbooks.pw.toml` | `irons_spellbooks-1.21.1-3.16.3.jar` | `both` | `sha512:fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b` |
 | `mannequins` | `mods/mannequins.pw.toml` | `mannequins-3.0.0-rc.1.jar` | `both` | `sha512:1b844a327605f26a4b87b8b5608c09620354b5d1a8c39573477e374f78f1ee4a27b11be605cf5a2f8d3339a715f2b373afcbba3f725bcf189b8e384f506f16e6` |
 | `numismatics` | `mods/numismatics.pw.toml` | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `both` | `sha512:2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203` |
+| `sophisticatedbackpacks` | `mods/sophisticated-backpacks.pw.toml` | `sophisticatedbackpacks-1.21.1-3.25.78.2107.jar` | `both` | `sha512:c2c9bc314068eb4a216dc8cd0826e7763ffa49f948595c9454a42ac80b1d0bd8e83a40752c6ee374ca5cdaafbf34be0577105b77947d7c2e60e1e7695630f7b7` |
 | `supplementaries` | `mods/supplementaries.pw.toml` | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `both` | `sha512:b72fad1d77d6d9dd536ce008f23a9014f4d47231ebf5c4e7d5c23156243f5135eacaf34b2d022a028412ffe5e803081b48abdf3ed61951c6930ad463633c9abb` |
 | `vampirism` | `mods/vampirism.pw.toml` | `Vampirism-1.21-1.10.12.jar` | `both` | `sha512:b19aec3fb8abb2c83047b64d2497fa440e9295044919b546cfaedd417e604e2176e48c289745ed0a03ec57d032e7051e16de993ef3107d42f5b077187662c070` |
 | `vista` | `mods/vista_tv.pw.toml` | `vista-1.21.1-5.4.4-neoforge.jar` | `both` | `sha512:a26106fb220f71a09e5b7817f757952f0b5ff277d2a29cfce07255d307a680bdde8158ccc0ffa9311356e70a125b26ed85216a9418aa195fd47dc48a4b15dd60` |
@@ -26,6 +27,8 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
+| `create` | `create:brown_toolbox` | Brown Toolbox | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brown_toolbox.json; data/create/recipe/crafting/curiosities/brown_toolbox.json` |
+| `create` | `create:clipboard` | Clipboard | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/clipboard.json; data/create/recipe/crafting/appliances/clipboard.json` |
 | `create` | `create:precision_mechanism` | Precision Mechanism | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.precision_mechanism` |
 | `create` | `create:wrench` | Wrench | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/wrench.json; data/create/recipe/crafting/kinetics/wrench.json` |
 | `createbigcannons` | `createbigcannons:cannon_carriage` | Cannon Carriage | `createbigcannons-5.11.7+mc.1.21.1.jar` | `assets/createbigcannons/models/item/cannon_carriage.json; data/createbigcannons/recipe/cannon_carriage.json` |
@@ -59,6 +62,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `numismatics` | `numismatics:bevel` | Bevel | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/lang/en_us.json::item.numismatics.bevel` |
 | `numismatics` | `numismatics:cog` | Cog | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/cog.json` |
 | `numismatics` | `numismatics:sprocket` | Sprocket | `CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` | `assets/numismatics/models/item/sprocket.json` |
+| `sophisticatedbackpacks` | `sophisticatedbackpacks:backpack` | Backpack | `sophisticatedbackpacks-1.21.1-3.25.78.2107.jar` | `assets/sophisticatedbackpacks/models/item/backpack.json; data/sophisticatedbackpacks/recipe/backpack.json` |
 | `supplementaries` | `supplementaries:bamboo_spikes_tipped` | Tipped Bamboo Spikes | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/bamboo_spikes_tipped.json; data/supplementaries/recipe/bamboo_spikes_tipped.json` |
 | `supplementaries` | `supplementaries:bomb` | Bomb | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/bomb.json; data/supplementaries/recipe/bomb.json` |
 | `supplementaries` | `supplementaries:rope_arrow` | Rope Arrow | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/rope_arrow.json` |

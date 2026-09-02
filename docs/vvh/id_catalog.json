@@ -9,6 +9,7 @@
     "irons_spellbooks",
     "mannequins",
     "numismatics",
+    "sophisticatedbackpacks",
     "supplementaries",
     "vampirism",
     "vista"
@@ -80,6 +81,15 @@
         "download_hash": "2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203",
         "index_sha256": "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f"
       },
+      "sophisticatedbackpacks": {
+        "metadata": "mods/sophisticated-backpacks.pw.toml",
+        "name": "Sophisticated Backpacks",
+        "filename": "sophisticatedbackpacks-1.21.1-3.25.78.2107.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "c2c9bc314068eb4a216dc8cd0826e7763ffa49f948595c9454a42ac80b1d0bd8e83a40752c6ee374ca5cdaafbf34be0577105b77947d7c2e60e1e7695630f7b7",
+        "index_sha256": "2b3710eb891a5f6c8a0db46f2b51b1505794ab10244353d35357d269279bbc86"
+      },
       "supplementaries": {
         "metadata": "mods/supplementaries.pw.toml",
         "name": "Supplementaries",
@@ -132,6 +142,22 @@
       "display_name": "Brass Ingot",
       "source_jar": "create-1.21.1-6.0.10.jar",
       "source_entry": "assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "create",
+      "id": "create:brown_toolbox",
+      "display_name": "Brown Toolbox",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/models/item/brown_toolbox.json; data/create/recipe/crafting/curiosities/brown_toolbox.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "create",
+      "id": "create:clipboard",
+      "display_name": "Clipboard",
+      "source_jar": "create-1.21.1-6.0.10.jar",
+      "source_entry": "assets/create/models/item/clipboard.json; data/create/recipe/crafting/appliances/clipboard.json",
       "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
@@ -397,6 +423,14 @@
       "source_jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
       "source_entry": "assets/numismatics/models/item/sprocket.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "sophisticatedbackpacks",
+      "id": "sophisticatedbackpacks:backpack",
+      "display_name": "Backpack",
+      "source_jar": "sophisticatedbackpacks-1.21.1-3.25.78.2107.jar",
+      "source_entry": "assets/sophisticatedbackpacks/models/item/backpack.json; data/sophisticatedbackpacks/recipe/backpack.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "supplementaries",

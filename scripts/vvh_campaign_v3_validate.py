@@ -36,6 +36,9 @@ VERIFIED_NONVANILLA_ITEMS = {
     "create:belt_connector",
     "create:brass_ingot",
     "create:precision_mechanism",
+    "sophisticatedbackpacks:backpack",
+    "create:clipboard",
+    "create:brown_toolbox",
     "createbigcannons:wrought_iron_cannon_end",
     "createbigcannons:wrought_iron_cannon_chamber",
     "createbigcannons:worm",
@@ -124,6 +127,9 @@ VERIFIED_NONVANILLA_ITEMS = {
 }
 VERIFIED_NONVANILLA_ICONS = {
     "create:precision_mechanism",
+    "sophisticatedbackpacks:backpack",
+    "create:clipboard",
+    "create:brown_toolbox",
     "createbigcannons:wrought_iron_cannon_end",
     "createbigcannons:wrought_iron_cannon_chamber",
     "createbigcannons:worm",

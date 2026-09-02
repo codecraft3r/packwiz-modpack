@@ -30,6 +30,7 @@ NAMESPACE_METADATA = {
     "irons_spellbooks": "mods/irons-spells-n-spellbooks.pw.toml",
     "mannequins": "mods/mannequins.pw.toml",
     "numismatics": "mods/numismatics.pw.toml",
+    "sophisticatedbackpacks": "mods/sophisticated-backpacks.pw.toml",
     "supplementaries": "mods/supplementaries.pw.toml",
     "vampirism": "mods/vampirism.pw.toml",
     "vista": "mods/vista_tv.pw.toml",

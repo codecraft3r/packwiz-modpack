@@ -154,6 +154,8 @@
       "create:andesite_alloy",
       "create:belt_connector",
       "create:brass_ingot",
+      "create:brown_toolbox",
+      "create:clipboard",
       "create:precision_mechanism",
       "create:wrench",
       "createbigcannons:cannon_carriage",
@@ -186,6 +188,7 @@
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
+      "sophisticatedbackpacks:backpack",
       "supplementaries:bamboo_spikes_tipped",
       "supplementaries:bomb",
       "supplementaries:rope_arrow",
@@ -241,6 +244,7 @@
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
+      "sophisticatedbackpacks:backpack",
       "vampirism:alchemical_cauldron",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
@@ -306,8 +310,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "cab4b1cf39267b6d783b1d2898ef0718bb09d1bef467e6e03a00c6b414de4cd6",
-        "actual": "cab4b1cf39267b6d783b1d2898ef0718bb09d1bef467e6e03a00c6b414de4cd6",
+        "index": "9a3fda73458620cf140deaf0aacf665c5c74c08bd29da276aa3d32666b97f777",
+        "actual": "9a3fda73458620cf140deaf0aacf665c5c74c08bd29da276aa3d32666b97f777",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -331,8 +335,8 @@
         "match": true
       }
     },
-    "index_sha256": "b91d1ef5ccef83800cdf329d0c98effeac058dc0b271ffad9c410537136e60a6",
-    "pack_toml_declared_index_sha256": "b91d1ef5ccef83800cdf329d0c98effeac058dc0b271ffad9c410537136e60a6",
+    "index_sha256": "4d31eabbbe30879fee9d3a2c77b0602b7edfc38b5516788fb914f7a209fe10c8",
+    "pack_toml_declared_index_sha256": "4d31eabbbe30879fee9d3a2c77b0602b7edfc38b5516788fb914f7a209fe10c8",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
