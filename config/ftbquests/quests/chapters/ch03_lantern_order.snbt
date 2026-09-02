@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, twelve full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, five full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -295,48 +295,6 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300087"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300088"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300089"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030008A"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030008B"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030008C"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030008D"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF00300096"
 					item: { count: 64, id: "minecraft:spruce_log" }
 					team_reward: false
@@ -362,48 +320,6 @@
 				}
 				{
 					id: "7A11C2DF0030009A"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009B"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009C"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009D"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009E"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009F"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000A0"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000A1"
 					item: { count: 64, id: "minecraft:spruce_log" }
 					team_reward: false
 					type: "item"
@@ -725,48 +641,6 @@
 				}
 				{
 					id: "7A11C2DF003000EA"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000EB"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000EC"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000ED"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000EE"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000EF"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000F0"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000F1"
 					item: { count: 64, id: "minecraft:dark_oak_log" }
 					team_reward: false
 					type: "item"
@@ -1113,48 +987,6 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0030014F"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300150"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300151"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300152"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300153"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300154"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300155"
-					item: { count: 64, id: "minecraft:birch_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF0030015E"
 					item: { count: 64, id: "minecraft:netherrack" }
 					team_reward: false
@@ -1382,90 +1214,6 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0030019A"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030019B"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030019C"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030019D"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030019E"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030019F"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A0"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A1"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A2"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A3"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A4"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A5"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A6"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001A7"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF003001AE"
 					item: { count: 64, id: "minecraft:oak_log" }
 					team_reward: false
@@ -1491,48 +1239,6 @@
 				}
 				{
 					id: "7A11C2DF003001B2"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B3"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B4"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B5"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B6"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B7"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B8"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003001B9"
 					item: { count: 64, id: "minecraft:oak_log" }
 					team_reward: false
 					type: "item"
@@ -1693,7 +1399,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather foundation cobblestone, a blast furnace for the forge, and a sentry shield. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, twelve stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."]
+			description: ["Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather foundation cobblestone, a blast furnace for the forge, and a sentry shield. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, five stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."]
 			icon: { id: "minecraft:chain" }
 			id: "7A11C0DF00300011"
 			optional: true
@@ -1874,48 +1580,6 @@
 				}
 				{
 					id: "7A11C2DF00300216"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300217"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300218"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300219"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030021A"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030021B"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030021C"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030021D"
 					item: { count: 64, id: "minecraft:oak_log" }
 					team_reward: false
 					type: "item"
