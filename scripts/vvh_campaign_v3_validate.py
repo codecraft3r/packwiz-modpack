@@ -80,6 +80,15 @@ VERIFIED_NONVANILLA_ITEMS = {
     "abyssal_decor:cinnamon_log",
     "irons_spellbooks:rare_ink",
     "irons_spellbooks:gold_spell_book",
+    "irons_spellbooks:villager_spell_book",
+    "irons_spellbooks:scroll_forge",
+    "irons_spellbooks:priest_leggings",
+    "irons_spellbooks:priest_helmet",
+    "irons_spellbooks:priest_chestplate",
+    "irons_spellbooks:priest_boots",
+    "irons_spellbooks:graybeard_staff",
+    "irons_spellbooks:artificer_cane",
+    "irons_spellbooks:arcane_anvil",
     "irons_spellbooks:iron_spell_book",
     "irons_spellbooks:epic_ink",
     "irons_spellbooks:scroll",
@@ -145,6 +154,7 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vista:viewfinder",
 }
 VERIFIED_NONVANILLA_ICONS = {
+    "irons_spellbooks:priest_chestplate",
     "create:precision_mechanism",
     "sophisticatedbackpacks:backpack",
     "create:clipboard",

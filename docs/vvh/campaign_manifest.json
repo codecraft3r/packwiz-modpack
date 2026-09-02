@@ -3122,10 +3122,10 @@
             "7A11C0DF0030000E"
           ],
           "description": [
-            "Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall."
+            "Forge the holy armaments of the Lantern Order: construct an Arcane Anvil and a Scroll Forge, then don a full set of Priest's vestments. The Order rewards your devotion with a Villager Bible, your choice of an Artificer's Cane or Graybeard Staff, a stack of paper, four pots of Epic Ink, and a sprocket."
           ],
           "hide_dependency_lines": false,
-          "icon": "vampirism:pure_salt",
+          "icon": "irons_spellbooks:priest_chestplate",
           "id": "7A11C0DF00300005",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3144,17 +3144,33 @@
             {
               "id": "7A11C2DF00300026",
               "item": {
-                "count": 16,
-                "id": "vampirism:holy_water_bottle_normal"
+                "count": 1,
+                "id": "irons_spellbooks:villager_spell_book"
+              },
+              "team_reward": false,
+              "title": "Villager Bible",
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00300027",
+              "table_id": "7A11C0DF00300063",
+              "type": "choice",
+              "title": "Choice: Artificer's Cane or Graybeard Staff"
+            },
+            {
+              "id": "7A11C2DF00300062",
+              "item": {
+                "count": 64,
+                "id": "minecraft:paper"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00300027",
+              "id": "7A11C2DF00300063",
               "item": {
-                "count": 16,
-                "id": "vampirism:pure_salt"
+                "count": 4,
+                "id": "irons_spellbooks:epic_ink"
               },
               "team_reward": false,
               "type": "item"
@@ -3162,17 +3178,16 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Wards",
+          "subtitle": "Specialty · Holy vestments",
           "tasks": [
             {
               "consume_items": false,
               "id": "7A11C1DF00300022",
               "item": {
                 "count": 1,
-                "id": "vampirism:pure_salt"
+                "id": "irons_spellbooks:arcane_anvil"
               },
-              "count": 8,
-              "title": "Carry eight Pure Salt",
+              "title": "Craft an Arcane Anvil",
               "type": "item"
             },
             {
@@ -3180,10 +3195,9 @@
               "id": "7A11C1DF00300023",
               "item": {
                 "count": 1,
-                "id": "vampirism:purified_garlic"
+                "id": "irons_spellbooks:scroll_forge"
               },
-              "count": 16,
-              "title": "Carry sixteen Purified Garlic",
+              "title": "Craft a Scroll Forge",
               "type": "item"
             },
             {
@@ -3191,9 +3205,39 @@
               "id": "7A11C1DF00300024",
               "item": {
                 "count": 1,
-                "id": "vampirism:injection_garlic"
+                "id": "irons_spellbooks:priest_helmet"
               },
-              "title": "Carry a garlic injection",
+              "title": "Equip a Priest Hood",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300062",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:priest_chestplate"
+              },
+              "title": "Equip Priest Robes",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300063",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:priest_leggings"
+              },
+              "title": "Equip Priest Leggings",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00300064",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:priest_boots"
+              },
+              "title": "Equip Priest Boots",
               "type": "item"
             }
           ],

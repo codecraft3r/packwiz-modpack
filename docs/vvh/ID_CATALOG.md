@@ -46,6 +46,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
 | `irons_spellbooks` | `irons_spellbooks:alchemist_cauldron` | Alchemist Cauldron | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json` |
+| `irons_spellbooks` | `irons_spellbooks:arcane_anvil` | Arcane Anvil | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/arcane_anvil.json; data/irons_spellbooks/recipe/arcane_anvil.json` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |
@@ -56,9 +57,15 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `irons_spellbooks` | `irons_spellbooks:gold_spell_book` | Apprentice's Spell Book | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/gold_spell_book.json; data/irons_spellbooks/recipe/gold_spell_book.json` |
 | `irons_spellbooks` | `irons_spellbooks:holy_rune` | Holy Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune` |
 | `irons_spellbooks` | `irons_spellbooks:inscription_table` | Inscription Table | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json` |
+| `irons_spellbooks` | `irons_spellbooks:priest_boots` | Priest Boots | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/priest_boots.json; data/irons_spellbooks/recipe/priest_boots_crafting.json` |
+| `irons_spellbooks` | `irons_spellbooks:priest_chestplate` | Priest Robes | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/priest_chestplate.json; data/irons_spellbooks/recipe/priest_chestplate_crafting.json` |
+| `irons_spellbooks` | `irons_spellbooks:priest_helmet` | Priest Mask | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/priest_helmet.json; data/irons_spellbooks/recipe/priest_helmet_crafting.json` |
+| `irons_spellbooks` | `irons_spellbooks:priest_leggings` | Priest Leggings | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/priest_leggings.json; data/irons_spellbooks/recipe/priest_leggings_crafting.json` |
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
+| `irons_spellbooks` | `irons_spellbooks:scroll_forge` | Scroll Forge | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/scroll_forge.json; data/irons_spellbooks/recipe/scroll_forge.json` |
 | `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
+| `irons_spellbooks` | `irons_spellbooks:villager_spell_book` | Villager Bible | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/villager_spell_book.json` |
 | `irons_spellbooks` | `irons_spellbooks:wizard_boots` | Wizard Boots | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_boots.json; data/irons_spellbooks/recipe/wizard_boots.json` |
 | `irons_spellbooks` | `irons_spellbooks:wizard_chestplate` | Wizard Robes | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_chestplate.json; data/irons_spellbooks/recipe/wizard_chestplate.json` |
 | `irons_spellbooks` | `irons_spellbooks:wizard_helmet` | Wizard Helmet | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/wizard_helmet.json` |
@@ -104,7 +111,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `vampirism` | `vampirism:item_alchemical_fire` | Alchemical Fire | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/item_alchemical_fire.json` |
 | `vampirism` | `vampirism:potion_table` | Potion table | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/potion_table.json; data/vampirism/recipe/hunter/potion_table.json` |
 | `vampirism` | `vampirism:pure_salt` | Pure Salt | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.pure_salt` |
-| `vampirism` | `vampirism:purified_garlic` | Purified Garlic | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/purified_garlic.json; data/vampirism/recipe/purified_garlic.json` |
 | `vampirism` | `vampirism:stake` | Stake | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.stake` |
 | `vampirism` | `vampirism:umbrella` | Umbrella | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/models/item/umbrella.json; data/vampirism/recipe/general/umbrella.json` |
 | `vampirism` | `vampirism:vampire_cloak_white_black` | Vampire Cloak | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::item.vampirism.vampire_cloak_white_black` |

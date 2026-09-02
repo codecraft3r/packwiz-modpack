@@ -61,7 +61,7 @@ def snbt(value: Any, indent: int = 0) -> str:
     if isinstance(value, bool):
         return "true" if value else "false"
     if isinstance(value, int):
-        return str(value)
+        return f"{value}L" if value > 2147483647 or value < -2147483648 else str(value)
     if isinstance(value, float):
         return f"{value:.1f}d"
     if isinstance(value, str):
@@ -131,6 +131,48 @@ def item_reward(ch: int, idx: int, item: str, count: int = 1, *, team: bool = Fa
     reward["type"] = "item"
     return reward
 
+
+def choice_reward(chapter_index: int, local_id: int, table_id: int, title: str | None = None) -> dict[str, Any]:
+    reward: dict[str, Any] = {
+        "id": rid(chapter_index, local_id),
+        "table_id": table_id,
+        "type": "choice",
+    }
+    if title:
+        reward["title"] = title
+    return reward
+
+
+@dataclass
+class RewardTable:
+    id: int
+    filename: str
+    title: str
+    rewards: list[dict[str, Any]]
+
+
+def build_reward_tables() -> list[RewardTable]:
+    return [
+        RewardTable(
+            id=qid(3, 99),
+            filename="holy_focus_choice",
+            title="Holy Focus Choice",
+            rewards=[
+                {"item": {"id": "irons_spellbooks:artificer_cane", "count": 1}},
+                {"item": {"id": "irons_spellbooks:graybeard_staff", "count": 1}},
+            ],
+        )
+    ]
+
+
+def render_reward_table(table: RewardTable) -> str:
+    data = {
+        "id": rid(3, 99),
+        "order_index": 0,
+        "rewards": table.rewards,
+        "title": table.title,
+    }
+    return snbt(data) + "\n"
 
 def scroll_reward(ch: int, idx: int, spell: str, title: str, *, level: int = 1, team: bool = False) -> dict[str, Any]:
     return {
@@ -690,22 +732,27 @@ def build_hunters(group: str) -> Chapter:
     defense = ch.add(
         5,
         title="Pure Defense",
-        subtitle="Specialty · Wards",
-        description="Assemble a usable reserve of Pure Salt, Purified Garlic, and a garlic injection. These supplies buy time at a refuge door without asking the quest system to pretend it inspected a finished wall.",
-        icon="vampirism:pure_salt",
+        subtitle="Specialty · Holy vestments",
+        description="Forge the holy armaments of the Lantern Order: construct an Arcane Anvil and a Scroll Forge, then don a full set of Priest's vestments. The Order rewards your devotion with a Villager Bible, your choice of an Artificer's Cane or Graybeard Staff, a stack of paper, four pots of Epic Ink, and a sprocket.",
+        icon="irons_spellbooks:priest_chestplate",
         x=-7.5,
         y=2,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(3, 34, "vampirism:pure_salt", 8, "Carry eight Pure Salt"),
-            item_task(3, 35, "vampirism:purified_garlic", 16, "Carry sixteen Purified Garlic"),
-            item_task(3, 36, "vampirism:injection_garlic", title="Carry a garlic injection"),
+            item_task(3, 34, "irons_spellbooks:arcane_anvil", title="Craft an Arcane Anvil"),
+            item_task(3, 35, "irons_spellbooks:scroll_forge", title="Craft a Scroll Forge"),
+            item_task(3, 36, "irons_spellbooks:priest_helmet", title="Equip a Priest Hood"),
+            item_task(3, 98, "irons_spellbooks:priest_chestplate", title="Equip Priest Robes"),
+            item_task(3, 99, "irons_spellbooks:priest_leggings", title="Equip Priest Leggings"),
+            item_task(3, 100, "irons_spellbooks:priest_boots", title="Equip Priest Boots"),
         ],
         rewards=[
             item_reward(3, 37, "numismatics:sprocket"),
-            item_reward(3, 38, "vampirism:holy_water_bottle_normal", 16),
-            item_reward(3, 39, "vampirism:pure_salt", 16),
+            item_reward(3, 38, "irons_spellbooks:villager_spell_book", title="Villager Bible"),
+            choice_reward(3, 39, qid(3, 99), title="Choice: Artificer's Cane or Graybeard Staff"),
+            item_reward(3, 98, "minecraft:paper", 64),
+            item_reward(3, 99, "irons_spellbooks:epic_ink", 4),
         ],
         dependencies=[b_wizard],
     )
@@ -1557,6 +1604,7 @@ def normalized_manifest(chapters: list[Chapter], groups: list[dict[str, str]]) -
 
 def outputs(root: Path) -> dict[Path, str]:
     chapters, groups = build_campaign()
+    tables = build_reward_tables()
     base = root / "config/ftbquests/quests"
     result: dict[Path, str] = {
         base / "chapter_groups.snbt": render_groups(groups),
@@ -1566,6 +1614,8 @@ def outputs(root: Path) -> dict[Path, str]:
     }
     for chapter in chapters:
         result[base / "chapters" / f"{chapter.filename}.snbt"] = render_chapter(chapter)
+    for table in tables:
+        result[base / "reward_tables" / f"{table.filename}.snbt"] = render_reward_table(table)
     return result
 
 

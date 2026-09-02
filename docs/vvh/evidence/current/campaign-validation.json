@@ -172,6 +172,7 @@
       "exposure:camera",
       "exposure:color_film",
       "irons_spellbooks:alchemist_cauldron",
+      "irons_spellbooks:arcane_anvil",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
@@ -182,9 +183,15 @@
       "irons_spellbooks:gold_spell_book",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
+      "irons_spellbooks:priest_boots",
+      "irons_spellbooks:priest_chestplate",
+      "irons_spellbooks:priest_helmet",
+      "irons_spellbooks:priest_leggings",
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
+      "irons_spellbooks:scroll_forge",
       "irons_spellbooks:uncommon_ink",
+      "irons_spellbooks:villager_spell_book",
       "irons_spellbooks:wizard_boots",
       "irons_spellbooks:wizard_chestplate",
       "irons_spellbooks:wizard_helmet",
@@ -229,7 +236,6 @@
       "vampirism:item_alchemical_fire",
       "vampirism:potion_table",
       "vampirism:pure_salt",
-      "vampirism:purified_garlic",
       "vampirism:stake",
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
@@ -246,6 +252,7 @@
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
+      "irons_spellbooks:priest_chestplate",
       "irons_spellbooks:uncommon_ink",
       "numismatics:banking_guide",
       "numismatics:bevel",
@@ -264,7 +271,6 @@
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
       "vampirism:potion_table",
-      "vampirism:pure_salt",
       "vampirism:umbrella",
       "vampirism:vampire_fang",
       "vampirism:weapon_table",
@@ -317,8 +323,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "5f6d133514cecfb0af59da4a38c2c8a25d7a85919ba4b9230ca70b611baefff9",
-        "actual": "5f6d133514cecfb0af59da4a38c2c8a25d7a85919ba4b9230ca70b611baefff9",
+        "index": "546d7c90c599951ebac174f91d96a93c8bb8427cdcd12205e2ce1921ff315eeb",
+        "actual": "546d7c90c599951ebac174f91d96a93c8bb8427cdcd12205e2ce1921ff315eeb",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -340,10 +346,15 @@
         "index": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817",
         "actual": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817",
         "match": true
+      },
+      "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt": {
+        "index": "94310293bc0ad6d09981a5f3106b572b5d6614fb34c40fbcbe92265b9d32619f",
+        "actual": "94310293bc0ad6d09981a5f3106b572b5d6614fb34c40fbcbe92265b9d32619f",
+        "match": true
       }
     },
-    "index_sha256": "2bb5a8346e6e612b5878d46413dd4b125cf6870444465a95f7054a98923dccb1",
-    "pack_toml_declared_index_sha256": "2bb5a8346e6e612b5878d46413dd4b125cf6870444465a95f7054a98923dccb1",
+    "index_sha256": "94807a91ae9629651581cab2d3b84255cf4c3fcbba2c0f741c545d884b6c9d31",
+    "pack_toml_declared_index_sha256": "94807a91ae9629651581cab2d3b84255cf4c3fcbba2c0f741c545d884b6c9d31",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
