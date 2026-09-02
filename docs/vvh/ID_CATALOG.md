@@ -25,11 +25,8 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 
 | Namespace | ID | Display name | Exact evidence JAR | JAR entry evidence |
 | --- | --- | --- | --- | --- |
-| `abyssal_decor` | `abyssal_decor:cinnamon_log` | Cinnamon Log | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/cinnamon_log.json` |
 | `abyssal_decor` | `abyssal_decor:frosted_glass` | Frosted Glass | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/frosted_glass.json` |
 | `abyssal_decor` | `abyssal_decor:raw_marble` | Raw Marble | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/raw_marble.json` |
-| `abyssal_decor` | `abyssal_decor:seabrass_sconce` | Seabrass Sconce | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/seabrass_sconce.json` |
-| `abyssal_decor` | `abyssal_decor:small_seabrass_pipes` | Small Seabrass Pipes | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/small_seabrass_pipes.json` |
 | `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
@@ -48,7 +45,6 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
-| `irons_spellbooks` | `irons_spellbooks:alchemist_cauldron` | Alchemist Cauldron | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |
@@ -72,6 +68,8 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `sophisticatedbackpacks` | `sophisticatedbackpacks:backpack` | Backpack | `sophisticatedbackpacks-1.21.1-3.25.78.2107.jar` | `assets/sophisticatedbackpacks/models/item/backpack.json; data/sophisticatedbackpacks/recipe/backpack.json` |
 | `supplementaries` | `supplementaries:bamboo_spikes_tipped` | Tipped Bamboo Spikes | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/bamboo_spikes_tipped.json; data/supplementaries/recipe/bamboo_spikes_tipped.json` |
 | `supplementaries` | `supplementaries:bomb` | Bomb | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/bomb.json; data/supplementaries/recipe/bomb.json` |
+| `supplementaries` | `supplementaries:faucet` | Faucet | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/faucet.json; data/supplementaries/recipe/faucet.json` |
+| `supplementaries` | `supplementaries:jar` | Jar | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/jar.json; data/supplementaries/recipe/jar.json` |
 | `supplementaries` | `supplementaries:rope_arrow` | Rope Arrow | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/rope_arrow.json` |
 | `supplementaries` | `supplementaries:wrench` | Wrench | `supplementaries-1.21.1-3.9.1-neoforge.jar` | `assets/supplementaries/models/item/wrench.json; data/supplementaries/recipe/wrench.json` |
 | `vampirism` | `vampirism:alchemical_cauldron` | Alchemical Cauldron | `Vampirism-1.21-1.10.12.jar` | `assets/vampirism/lang/en_us.json::block.vampirism.alchemical_cauldron` |

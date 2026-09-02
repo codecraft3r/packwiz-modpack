@@ -88,6 +88,8 @@ VERIFIED_NONVANILLA_ITEMS = {
     "numismatics:sprocket",
     "supplementaries:rope_arrow",
     "supplementaries:wrench",
+    "supplementaries:jar",
+    "supplementaries:faucet",
     "supplementaries:bomb",
     "supplementaries:bamboo_spikes_tipped",
     "supplementaries:bamboo_spikes",

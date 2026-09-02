@@ -132,14 +132,6 @@
   "entries": [
     {
       "namespace": "abyssal_decor",
-      "id": "abyssal_decor:cinnamon_log",
-      "display_name": "Cinnamon Log",
-      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
-      "source_entry": "assets/abyssal_decor/models/item/cinnamon_log.json",
-      "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "abyssal_decor",
       "id": "abyssal_decor:frosted_glass",
       "display_name": "Frosted Glass",
       "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
@@ -152,22 +144,6 @@
       "display_name": "Raw Marble",
       "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
       "source_entry": "assets/abyssal_decor/models/item/raw_marble.json",
-      "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "abyssal_decor",
-      "id": "abyssal_decor:seabrass_sconce",
-      "display_name": "Seabrass Sconce",
-      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
-      "source_entry": "assets/abyssal_decor/models/item/seabrass_sconce.json",
-      "obtainability_note": "Exact item model is present in the pinned JAR."
-    },
-    {
-      "namespace": "abyssal_decor",
-      "id": "abyssal_decor:small_seabrass_pipes",
-      "display_name": "Small Seabrass Pipes",
-      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
-      "source_entry": "assets/abyssal_decor/models/item/small_seabrass_pipes.json",
       "obtainability_note": "Exact item model is present in the pinned JAR."
     },
     {
@@ -313,14 +289,6 @@
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.color_film",
       "obtainability_note": ""
-    },
-    {
-      "namespace": "irons_spellbooks",
-      "id": "irons_spellbooks:alchemist_cauldron",
-      "display_name": "Alchemist Cauldron",
-      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
-      "source_entry": "assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",
@@ -504,6 +472,22 @@
       "display_name": "Bomb",
       "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
       "source_entry": "assets/supplementaries/models/item/bomb.json; data/supplementaries/recipe/bomb.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:faucet",
+      "display_name": "Faucet",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/faucet.json; data/supplementaries/recipe/faucet.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "supplementaries",
+      "id": "supplementaries:jar",
+      "display_name": "Jar",
+      "source_jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+      "source_entry": "assets/supplementaries/models/item/jar.json; data/supplementaries/recipe/jar.json",
       "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {

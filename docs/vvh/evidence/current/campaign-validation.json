@@ -151,11 +151,8 @@
   },
   "identifiers": {
     "nonvanilla_items": [
-      "abyssal_decor:cinnamon_log",
       "abyssal_decor:frosted_glass",
       "abyssal_decor:raw_marble",
-      "abyssal_decor:seabrass_sconce",
-      "abyssal_decor:small_seabrass_pipes",
       "create:andesite_alloy",
       "create:belt_connector",
       "create:brass_ingot",
@@ -174,7 +171,6 @@
       "exposure:black_and_white_film",
       "exposure:camera",
       "exposure:color_film",
-      "irons_spellbooks:alchemist_cauldron",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
@@ -197,6 +193,8 @@
       "sophisticatedbackpacks:backpack",
       "supplementaries:bamboo_spikes_tipped",
       "supplementaries:bomb",
+      "supplementaries:faucet",
+      "supplementaries:jar",
       "supplementaries:rope_arrow",
       "supplementaries:wrench",
       "vampirism:alchemical_cauldron",
@@ -242,7 +240,6 @@
       "create:precision_mechanism",
       "createbigcannons:cannon_carriage",
       "exposure:camera",
-      "irons_spellbooks:alchemist_cauldron",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
@@ -317,8 +314,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "e78b83fc392942039015093880505e8f9903cea1d35f753972b566d8b63c0d60",
-        "actual": "e78b83fc392942039015093880505e8f9903cea1d35f753972b566d8b63c0d60",
+        "index": "d78acd2c20501420df6b85c7bd02bb6f658d6d3ebb68ee18de1bd30b2c896718",
+        "actual": "d78acd2c20501420df6b85c7bd02bb6f658d6d3ebb68ee18de1bd30b2c896718",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -342,8 +339,8 @@
         "match": true
       }
     },
-    "index_sha256": "d56c5c5f9b19f6bb5b4f4cb3156265692b9e589b8b1b58960172dff259546632",
-    "pack_toml_declared_index_sha256": "d56c5c5f9b19f6bb5b4f4cb3156265692b9e589b8b1b58960172dff259546632",
+    "index_sha256": "aa4c92f2c7122b5fe4e29310572e148c8f94592b7fe37b2174e5dc0bf1007e38",
+    "pack_toml_declared_index_sha256": "aa4c92f2c7122b5fe4e29310572e148c8f94592b7fe37b2174e5dc0bf1007e38",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
