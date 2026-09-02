@@ -680,7 +680,7 @@ def build_hunters(group: str) -> Chapter:
         optional=True,
         tasks=[
             item_task(3, 12, "irons_spellbooks:inscription_table", title="Inspect an Inscription Table"),
-            item_task(3, 13, "irons_spellbooks:iron_spell_book", title="Carry an Apprentice's Spell Book"),
+            item_task(3, 13, "irons_spellbooks:gold_spell_book", title="Carry an Apprentice's Spell Book"),
             item_task(3, 97, "irons_spellbooks:alchemist_cauldron", title="Craft an Alchemist Cauldron"),
             check_task(3, 24, "I demonstrated one Holy spell"),
         ],

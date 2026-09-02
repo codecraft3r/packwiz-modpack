@@ -356,6 +356,14 @@
     },
     {
       "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:gold_spell_book",
+      "display_name": "Apprentice's Spell Book",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/gold_spell_book.json; data/irons_spellbooks/recipe/gold_spell_book.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
+    },
+    {
+      "namespace": "irons_spellbooks",
       "id": "irons_spellbooks:holy_rune",
       "display_name": "Holy Rune",
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
@@ -369,14 +377,6 @@
       "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
       "source_entry": "assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json",
       "obtainability_note": "Language key and survival recipe are present in the inspected JAR."
-    },
-    {
-      "namespace": "irons_spellbooks",
-      "id": "irons_spellbooks:iron_spell_book",
-      "display_name": "Ironbound Tome",
-      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
-      "source_entry": "assets/irons_spellbooks/models/item/iron_spell_book.json; data/irons_spellbooks/recipe/iron_spell_book.json",
-      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",

@@ -179,9 +179,9 @@
       "irons_spellbooks:common_ink",
       "irons_spellbooks:copper_spell_book",
       "irons_spellbooks:epic_ink",
+      "irons_spellbooks:gold_spell_book",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
-      "irons_spellbooks:iron_spell_book",
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
       "irons_spellbooks:uncommon_ink",
@@ -317,8 +317,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "ad6c786a53535bd5f5f20499483b4bd8761ef10f78ec813474f3a099a0003179",
-        "actual": "ad6c786a53535bd5f5f20499483b4bd8761ef10f78ec813474f3a099a0003179",
+        "index": "5f6d133514cecfb0af59da4a38c2c8a25d7a85919ba4b9230ca70b611baefff9",
+        "actual": "5f6d133514cecfb0af59da4a38c2c8a25d7a85919ba4b9230ca70b611baefff9",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -342,8 +342,8 @@
         "match": true
       }
     },
-    "index_sha256": "39b027b3de2d37dcf3253b429541decdc530853f46a7a531014e56a8b6d4b9d5",
-    "pack_toml_declared_index_sha256": "39b027b3de2d37dcf3253b429541decdc530853f46a7a531014e56a8b6d4b9d5",
+    "index_sha256": "2bb5a8346e6e612b5878d46413dd4b125cf6870444465a95f7054a98923dccb1",
+    "pack_toml_declared_index_sha256": "2bb5a8346e6e612b5878d46413dd4b125cf6870444465a95f7054a98923dccb1",
     "index_hash_matches_pack_toml": true
   },
   "layout": {
