@@ -225,6 +225,44 @@ When defining `irons_spellbooks:scroll` rewards or tasks, always provide the com
 
 ---
 
+## Choice reward and reward table pattern
+
+Use interactive Choice Rewards when offering branching archetypes or gear specializations without inflating the player's power budget.
+
+> [!IMPORTANT]
+> **Registry ID Isolation & SNBT Long Typing:** Reward tables must use an isolated ID range distinct from quests, tasks, and reward items to prevent runtime ID collisions in FTB Quests' internal `questObjectMap`. In quest SNBT, `table_id` must always be serialized as a typed 64-bit integer (`...L`).
+
+**Reward Table File (`config/ftbquests/quests/reward_tables/<table_name>.snbt`):**
+~~~snbt
+{
+  id: "<isolated-hex-table-id>"
+  order_index: 0
+  title: "Choice: Focus Specialization"
+  rewards: [
+    {
+      id: "<isolated-choice-reward-id-1>"
+      item: { count: 1, id: "<namespace:item_choice_a>" }
+    }
+    {
+      id: "<isolated-choice-reward-id-2>"
+      item: { count: 1, id: "<namespace:item_choice_b>" }
+    }
+  ]
+}
+~~~
+
+**Quest SNBT Reward Entry:**
+~~~snbt
+{
+  id: "<unique-reward-id>"
+  type: "choice"
+  table_id: <decimal-table-id-matching-table-hex>L
+  title: "Choice: Option A or Option B"
+}
+~~~
+
+---
+
 ## Core Parity Spine + Specialized Branches Pattern (Faction Campaigns)
 
 For multi-faction or specialized campaigns, balance economy and progression parity while giving each faction unique gameplay driven by the pack's installed mods:
