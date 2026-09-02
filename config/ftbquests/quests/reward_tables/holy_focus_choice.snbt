@@ -1,13 +1,13 @@
 {
-	id: "7A11C2DF00300063"
+	id: "7A11C5DF00300001"
 	order_index: 0
 	rewards: [
 		{
-			id: "7A11C2DF00300065"
+			id: "7A11C5DF00300002"
 			item: { count: 1, id: "irons_spellbooks:artificer_cane" }
 		}
 		{
-			id: "7A11C2DF00300066"
+			id: "7A11C5DF00300003"
 			item: { count: 1, id: "irons_spellbooks:graybeard_staff" }
 		}
 	]

@@ -323,8 +323,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "62d436c8695fbb43053c6c3bc0b7af7660f9a7b67f8269218d1a123097f79612",
-        "actual": "62d436c8695fbb43053c6c3bc0b7af7660f9a7b67f8269218d1a123097f79612",
+        "index": "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b",
+        "actual": "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -348,13 +348,13 @@
         "match": true
       },
       "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt": {
-        "index": "6c24ba3201752cb4b4b9f41ce17d091796758c163a488eafae032f2e9212bcc7",
-        "actual": "6c24ba3201752cb4b4b9f41ce17d091796758c163a488eafae032f2e9212bcc7",
+        "index": "bc73cc65f9b67c994433794941abbf2f14efb55a2e161a5581ed0fc40a272e70",
+        "actual": "bc73cc65f9b67c994433794941abbf2f14efb55a2e161a5581ed0fc40a272e70",
         "match": true
       }
     },
-    "index_sha256": "2725096d9b58b3fbcbed37dc55546b80bc52a7c19196ca8ff1b5770068897abc",
-    "pack_toml_declared_index_sha256": "2725096d9b58b3fbcbed37dc55546b80bc52a7c19196ca8ff1b5770068897abc",
+    "index_sha256": "732bf1a33241f930d00469b8cb18823d09f9367ca1f33eedb092ace14104cf67",
+    "pack_toml_declared_index_sha256": "732bf1a33241f930d00469b8cb18823d09f9367ca1f33eedb092ace14104cf67",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

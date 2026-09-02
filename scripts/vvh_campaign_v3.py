@@ -24,6 +24,7 @@ T_PREFIX = 0x7A11C1DF00000000
 R_PREFIX = 0x7A11C2DF00000000
 C_PREFIX = 0x7A11C3DF00000000
 G_PREFIX = 0x7A11C4DF00000000
+L_PREFIX = 0x7A11C5DF00000000
 WEEK = 604800
 
 RETIRED_CHAPTER_FILES = {
@@ -50,6 +51,14 @@ def tid(chapter: int, index: int) -> str:
 
 def rid(chapter: int, index: int) -> str:
     return hid(R_PREFIX, chapter, index)
+
+
+def lid(chapter: int, index: int) -> str:
+    return hid(L_PREFIX, chapter, index)
+
+
+def lid_int(chapter: int, index: int) -> int:
+    return int(lid(chapter, index), 16)
 
 
 def esc(value: str) -> str:
@@ -152,15 +161,14 @@ class RewardTable:
 
 
 def build_reward_tables() -> list[RewardTable]:
-    table_id_int = int(rid(3, 99), 16)
     return [
         RewardTable(
-            id=table_id_int,
+            id=lid_int(3, 1),
             filename="holy_focus_choice",
             title="Holy Focus Choice",
             rewards=[
-                {"id": rid(3, 101), "item": {"count": 1, "id": "irons_spellbooks:artificer_cane"}},
-                {"id": rid(3, 102), "item": {"count": 1, "id": "irons_spellbooks:graybeard_staff"}},
+                {"id": lid(3, 2), "item": {"count": 1, "id": "irons_spellbooks:artificer_cane"}},
+                {"id": lid(3, 3), "item": {"count": 1, "id": "irons_spellbooks:graybeard_staff"}},
             ],
         )
     ]
@@ -751,7 +759,7 @@ def build_hunters(group: str) -> Chapter:
         rewards=[
             item_reward(3, 37, "numismatics:sprocket"),
             item_reward(3, 38, "irons_spellbooks:villager_spell_book", title="Villager Bible"),
-            choice_reward(3, 39, int(rid(3, 99), 16), title="Choice: Artificer's Cane or Graybeard Staff"),
+            choice_reward(3, 39, lid_int(3, 1), title="Choice: Artificer's Cane or Graybeard Staff"),
             item_reward(3, 98, "minecraft:paper", 64),
             item_reward(3, 99, "irons_spellbooks:epic_ink", 4),
         ],

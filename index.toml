@@ -5,6 +5,10 @@ file = "README.md"
 hash = "5b90652222632aeec64f2dbafba28bc7bbb42ef2f6d5f23d2bc1539a791ca0db"
 
 [[files]]
+file = "RewardTable_javap.txt"
+hash = "a305c259017086f66c1d2563f1cb8501f1e16da921b12c491f6e25c93dd56778"
+
+[[files]]
 file = "config/Mekanism/additions.toml"
 hash = "167317f50212fd80d2557ee1d560a796f2a99c827c979c6ca68e32e960cf3a1c"
 
@@ -110,7 +114,7 @@ hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "62d436c8695fbb43053c6c3bc0b7af7660f9a7b67f8269218d1a123097f79612"
+hash = "32653c0d7d0447ee4187427ae69b37a2c9210b07db5b0314564ce2c94ce51f2b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
@@ -130,7 +134,7 @@ hash = "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt"
-hash = "6c24ba3201752cb4b4b9f41ce17d091796758c163a488eafae032f2e9212bcc7"
+hash = "bc73cc65f9b67c994433794941abbf2f14efb55a2e161a5581ed0fc40a272e70"
 
 [[files]]
 file = "config/ftbteams-server.snbt"
