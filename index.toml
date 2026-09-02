@@ -110,7 +110,7 @@ hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "546d7c90c599951ebac174f91d96a93c8bb8427cdcd12205e2ce1921ff315eeb"
+hash = "62d436c8695fbb43053c6c3bc0b7af7660f9a7b67f8269218d1a123097f79612"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
@@ -130,7 +130,7 @@ hash = "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt"
-hash = "94310293bc0ad6d09981a5f3106b572b5d6614fb34c40fbcbe92265b9d32619f"
+hash = "6c24ba3201752cb4b4b9f41ce17d091796758c163a488eafae032f2e9212bcc7"
 
 [[files]]
 file = "config/ftbteams-server.snbt"

@@ -152,14 +152,15 @@ class RewardTable:
 
 
 def build_reward_tables() -> list[RewardTable]:
+    table_id_int = int(rid(3, 99), 16)
     return [
         RewardTable(
-            id=qid(3, 99),
+            id=table_id_int,
             filename="holy_focus_choice",
             title="Holy Focus Choice",
             rewards=[
-                {"item": {"id": "irons_spellbooks:artificer_cane", "count": 1}},
-                {"item": {"id": "irons_spellbooks:graybeard_staff", "count": 1}},
+                {"id": rid(3, 101), "item": {"count": 1, "id": "irons_spellbooks:artificer_cane"}},
+                {"id": rid(3, 102), "item": {"count": 1, "id": "irons_spellbooks:graybeard_staff"}},
             ],
         )
     ]
@@ -167,7 +168,7 @@ def build_reward_tables() -> list[RewardTable]:
 
 def render_reward_table(table: RewardTable) -> str:
     data = {
-        "id": rid(3, 99),
+        "id": f"{table.id:016X}",
         "order_index": 0,
         "rewards": table.rewards,
         "title": table.title,
@@ -750,7 +751,7 @@ def build_hunters(group: str) -> Chapter:
         rewards=[
             item_reward(3, 37, "numismatics:sprocket"),
             item_reward(3, 38, "irons_spellbooks:villager_spell_book", title="Villager Bible"),
-            choice_reward(3, 39, qid(3, 99), title="Choice: Artificer's Cane or Graybeard Staff"),
+            choice_reward(3, 39, int(rid(3, 99), 16), title="Choice: Artificer's Cane or Graybeard Staff"),
             item_reward(3, 98, "minecraft:paper", 64),
             item_reward(3, 99, "irons_spellbooks:epic_ink", 4),
         ],

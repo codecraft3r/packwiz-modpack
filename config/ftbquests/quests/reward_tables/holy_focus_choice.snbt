@@ -3,10 +3,12 @@
 	order_index: 0
 	rewards: [
 		{
-			item: { id: "irons_spellbooks:artificer_cane", count: 1 }
+			id: "7A11C2DF00300065"
+			item: { count: 1, id: "irons_spellbooks:artificer_cane" }
 		}
 		{
-			item: { id: "irons_spellbooks:graybeard_staff", count: 1 }
+			id: "7A11C2DF00300066"
+			item: { count: 1, id: "irons_spellbooks:graybeard_staff" }
 		}
 	]
 	title: "Holy Focus Choice"
