@@ -23,6 +23,7 @@ from vvh_validate import Parser  # noqa: E402
 
 
 NAMESPACE_METADATA = {
+    "abyssal_decor": "mods/abyssal-decor.pw.toml",
     "create": "mods/create.pw.toml",
     "createbigcannons": "mods/create-big-cannons.pw.toml",
     "explorerscompass": "mods/explorers-compass.pw.toml",

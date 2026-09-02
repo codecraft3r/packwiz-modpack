@@ -151,6 +151,11 @@
   },
   "identifiers": {
     "nonvanilla_items": [
+      "abyssal_decor:cinnamon_log",
+      "abyssal_decor:frosted_glass",
+      "abyssal_decor:raw_marble",
+      "abyssal_decor:seabrass_sconce",
+      "abyssal_decor:small_seabrass_pipes",
       "create:andesite_alloy",
       "create:belt_connector",
       "create:brass_ingot",
@@ -169,6 +174,7 @@
       "exposure:black_and_white_film",
       "exposure:camera",
       "exposure:color_film",
+      "irons_spellbooks:alchemist_cauldron",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
@@ -236,6 +242,7 @@
       "create:precision_mechanism",
       "createbigcannons:cannon_carriage",
       "exposure:camera",
+      "irons_spellbooks:alchemist_cauldron",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
@@ -310,8 +317,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "b5f7e921cd66690b39994ab41914bdce68e0892ce6bc6370ca2d0f46bbd7529d",
-        "actual": "b5f7e921cd66690b39994ab41914bdce68e0892ce6bc6370ca2d0f46bbd7529d",
+        "index": "e78b83fc392942039015093880505e8f9903cea1d35f753972b566d8b63c0d60",
+        "actual": "e78b83fc392942039015093880505e8f9903cea1d35f753972b566d8b63c0d60",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -335,8 +342,8 @@
         "match": true
       }
     },
-    "index_sha256": "08fbc663782cfcecf9419f0df0f03aa115c64a968f8ee28c6c6953dc39e65f15",
-    "pack_toml_declared_index_sha256": "08fbc663782cfcecf9419f0df0f03aa115c64a968f8ee28c6c6953dc39e65f15",
+    "index_sha256": "d56c5c5f9b19f6bb5b4f4cb3156265692b9e589b8b1b58960172dff259546632",
+    "pack_toml_declared_index_sha256": "d56c5c5f9b19f6bb5b4f4cb3156265692b9e589b8b1b58960172dff259546632",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

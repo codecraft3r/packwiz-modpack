@@ -2,6 +2,7 @@
   "generated_from": "Live ch*.snbt references bound to current indexed Packwiz metadata and exact JAR-entry evidence.",
   "verification_scope": "Campaign-used non-vanilla IDs only; unrelated downloaded JARs are excluded.",
   "verified_namespaces": [
+    "abyssal_decor",
     "create",
     "createbigcannons",
     "explorerscompass",
@@ -18,6 +19,15 @@
   "pack_membership": {
     "index": "index.toml",
     "namespaces": {
+      "abyssal_decor": {
+        "metadata": "mods/abyssal-decor.pw.toml",
+        "name": "Abyssal Decor",
+        "filename": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "side": "both",
+        "download_hash_format": "sha512",
+        "download_hash": "58c1f233fb56f3360c772ee77525f23da3877738fe20ebff81f8841de47dd81dda420495e2b03407b5ae9078a2457d4d51b654fe65ccfe61cd97993f6f1e562c",
+        "index_sha256": "20dfb8bc6554a13dc19b606224923c3167ec1b8bb37f6c8bfe812e07980dc2c4"
+      },
       "create": {
         "metadata": "mods/create.pw.toml",
         "name": "Create",
@@ -120,6 +130,46 @@
     }
   },
   "entries": [
+    {
+      "namespace": "abyssal_decor",
+      "id": "abyssal_decor:cinnamon_log",
+      "display_name": "Cinnamon Log",
+      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+      "source_entry": "assets/abyssal_decor/models/item/cinnamon_log.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "abyssal_decor",
+      "id": "abyssal_decor:frosted_glass",
+      "display_name": "Frosted Glass",
+      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+      "source_entry": "assets/abyssal_decor/models/item/frosted_glass.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "abyssal_decor",
+      "id": "abyssal_decor:raw_marble",
+      "display_name": "Raw Marble",
+      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+      "source_entry": "assets/abyssal_decor/models/item/raw_marble.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "abyssal_decor",
+      "id": "abyssal_decor:seabrass_sconce",
+      "display_name": "Seabrass Sconce",
+      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+      "source_entry": "assets/abyssal_decor/models/item/seabrass_sconce.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
+    {
+      "namespace": "abyssal_decor",
+      "id": "abyssal_decor:small_seabrass_pipes",
+      "display_name": "Small Seabrass Pipes",
+      "source_jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+      "source_entry": "assets/abyssal_decor/models/item/small_seabrass_pipes.json",
+      "obtainability_note": "Exact item model is present in the pinned JAR."
+    },
     {
       "namespace": "create",
       "id": "create:andesite_alloy",
@@ -263,6 +313,14 @@
       "source_jar": "exposure-neoforge-1.21.1-1.9.18.jar",
       "source_entry": "assets/exposure/lang/en_us.json::item.exposure.color_film",
       "obtainability_note": ""
+    },
+    {
+      "namespace": "irons_spellbooks",
+      "id": "irons_spellbooks:alchemist_cauldron",
+      "display_name": "Alchemist Cauldron",
+      "source_jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "source_entry": "assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json",
+      "obtainability_note": "Exact item model and survival data recipe are present in the pinned JAR."
     },
     {
       "namespace": "irons_spellbooks",

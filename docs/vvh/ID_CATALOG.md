@@ -8,6 +8,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 
 | Namespace | Indexed metadata | Pinned JAR | Side | Download hash |
 | --- | --- | --- | --- | --- |
+| `abyssal_decor` | `mods/abyssal-decor.pw.toml` | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `both` | `sha512:58c1f233fb56f3360c772ee77525f23da3877738fe20ebff81f8841de47dd81dda420495e2b03407b5ae9078a2457d4d51b654fe65ccfe61cd97993f6f1e562c` |
 | `create` | `mods/create.pw.toml` | `create-1.21.1-6.0.10.jar` | `both` | `sha512:11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b` |
 | `createbigcannons` | `mods/create-big-cannons.pw.toml` | `createbigcannons-5.11.7+mc.1.21.1.jar` | `both` | `sha512:24f414dfbb973a0f4d9c9b2aa059edc7bed4d23b4f39eb1f7d23a1d6b437e3b5d64cca6e4b85ff7eb2815743fa711d54ad652bffe96d1eb1234544716006440d` |
 | `explorerscompass` | `mods/explorers-compass.pw.toml` | `ExplorersCompass-1.21.1-3.4.0-neoforge.jar` | `both` | `sha512:a1b2e385aaacb547763441fc23e9a33a0b1d67bd32094cd605ded3fbdd1c7a0e5fc4520fdfa090c29d2d3384b685e3ead91b32d20030e45632c94145ee3ec668` |
@@ -24,6 +25,11 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 
 | Namespace | ID | Display name | Exact evidence JAR | JAR entry evidence |
 | --- | --- | --- | --- | --- |
+| `abyssal_decor` | `abyssal_decor:cinnamon_log` | Cinnamon Log | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/cinnamon_log.json` |
+| `abyssal_decor` | `abyssal_decor:frosted_glass` | Frosted Glass | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/frosted_glass.json` |
+| `abyssal_decor` | `abyssal_decor:raw_marble` | Raw Marble | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/raw_marble.json` |
+| `abyssal_decor` | `abyssal_decor:seabrass_sconce` | Seabrass Sconce | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/seabrass_sconce.json` |
+| `abyssal_decor` | `abyssal_decor:small_seabrass_pipes` | Small Seabrass Pipes | `abyssal_decor_1.21.1_0.11.0_Neoforge.jar` | `assets/abyssal_decor/models/item/small_seabrass_pipes.json` |
 | `create` | `create:andesite_alloy` | Andesite Alloy | `create-1.21.1-6.0.10.jar` | `assets/create/lang/en_us.json::item.create.andesite_alloy` |
 | `create` | `create:belt_connector` | Mechanical Belt | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/belt_connector.json; data/create/recipe/crafting/kinetics/belt_connector.json` |
 | `create` | `create:brass_ingot` | Brass Ingot | `create-1.21.1-6.0.10.jar` | `assets/create/models/item/brass_ingot.json; data/create/recipe/mixing/brass_ingot.json; data/create/recipe/pressing/brass_ingot.json` |
@@ -42,6 +48,7 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
+| `irons_spellbooks` | `irons_spellbooks:alchemist_cauldron` | Alchemist Cauldron | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |

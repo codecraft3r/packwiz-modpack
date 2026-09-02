@@ -801,8 +801,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Erect a fortified alchemical brewery to produce tinctures, holy draughts, and field remedies. Provide cobblestone, birch timber, and netherrack. Completing the lab pays out bulk cobblestone, birch logs, netherrack, scaffolding, redstone, copper, quartz, blaze rods, cauldrons, and barrels."]
-			icon: { id: "vampirism:alchemical_cauldron" }
+			description: ["Erect a specialized alchemical laboratory to distill holy tinctures, extracts, and draughts. Gather raw marble, aromatic cinnamon timber, and laboratory glass bottles. The Order supplies bulk marble, cinnamon logs, frosted glass, distillation pipes, seabrass sconces, redstone, copper, quartz, blaze rods, an Alchemist Cauldron, and storage barrels."]
+			icon: { id: "irons_spellbooks:alchemist_cauldron" }
 			id: "7A11C0DF0030000F"
 			optional: true
 			rewards: [
@@ -814,247 +814,175 @@
 				}
 				{
 					id: "7A11C2DF0030012C"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012D"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012E"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030012F"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300130"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300131"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300132"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300133"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300134"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300135"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300136"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300137"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300138"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300139"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013A"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013B"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013C"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030013D"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030013E"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030013F"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300140"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300141"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300142"
-					item: { count: 64, id: "minecraft:cobblestone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300143"
-					item: { count: 64, id: "minecraft:cobblestone" }
+					item: { count: 64, id: "abyssal_decor:raw_marble" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014A"
-					item: { count: 64, id: "minecraft:birch_log" }
+					item: { count: 64, id: "abyssal_decor:cinnamon_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014B"
-					item: { count: 64, id: "minecraft:birch_log" }
+					item: { count: 64, id: "abyssal_decor:cinnamon_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014C"
-					item: { count: 64, id: "minecraft:birch_log" }
+					item: { count: 64, id: "abyssal_decor:cinnamon_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014D"
-					item: { count: 64, id: "minecraft:birch_log" }
+					item: { count: 64, id: "abyssal_decor:cinnamon_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030014E"
-					item: { count: 64, id: "minecraft:birch_log" }
+					item: { count: 64, id: "abyssal_decor:cinnamon_log" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030015E"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0030015F"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300160"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300161"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300162"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300163"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300164"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300165"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300166"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300167"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300168"
-					item: { count: 64, id: "minecraft:netherrack" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300169"
-					item: { count: 64, id: "minecraft:netherrack" }
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
 					team_reward: false
 					type: "item"
 				}
@@ -1067,6 +995,18 @@
 				{
 					id: "7A11C2DF00300173"
 					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300177"
+					item: { count: 64, id: "abyssal_decor:small_seabrass_pipes" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300178"
+					item: { count: 64, id: "abyssal_decor:seabrass_sconce" }
 					team_reward: false
 					type: "item"
 				}
@@ -1096,7 +1036,7 @@
 				}
 				{
 					id: "7A11C2DF00300175"
-					item: { count: 4, id: "minecraft:cauldron" }
+					item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
 					team_reward: false
 					type: "item"
 				}
@@ -1114,25 +1054,25 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0030004F"
-					item: { count: 1, id: "minecraft:cobblestone" }
+					item: { count: 1, id: "abyssal_decor:raw_marble" }
 					count: 32
-					title: "Inspect thirty-two Cobblestone"
+					title: "Inspect thirty-two Raw Marble"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300050"
-					item: { count: 1, id: "minecraft:birch_log" }
+					item: { count: 1, id: "abyssal_decor:cinnamon_log" }
 					count: 32
-					title: "Inspect thirty-two Birch Logs"
+					title: "Inspect thirty-two Cinnamon Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300051"
-					item: { count: 1, id: "minecraft:netherrack" }
+					item: { count: 1, id: "minecraft:glass_bottle" }
 					count: 16
-					title: "Inspect sixteen Netherrack"
+					title: "Inspect sixteen Glass Bottles"
 					type: "item"
 				}
 			]
