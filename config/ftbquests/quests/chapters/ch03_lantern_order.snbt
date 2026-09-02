@@ -1606,7 +1606,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF0030000E"]
-			description: ["Prepare an Inscription Table, a spellbook, and four Holy Runes, then demonstrate one Holy spell. The reward provides a practical triage set for healing, controlled force, and returning home."]
+			description: ["Prepare an Inscription Table, an Apprentice's Spell Book, and an Alchemist Cauldron, then demonstrate one Holy spell. The Order equips the initiate with four Holy Runes, Rare and Epic inks, and holy scrolls for healing, divine smite, and recall."]
 			icon: { id: "irons_spellbooks:holy_rune" }
 			id: "7A11C0DF00300004"
 			optional: true
@@ -1619,13 +1619,19 @@
 				}
 				{
 					id: "7A11C2DF00300015"
-					item: { count: 16, id: "irons_spellbooks:uncommon_ink" }
+					item: { count: 8, id: "irons_spellbooks:rare_ink" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300016"
-					item: { count: 8, id: "irons_spellbooks:rare_ink" }
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300061"
+					item: { count: 4, id: "irons_spellbooks:holy_rune" }
 					team_reward: false
 					type: "item"
 				}
@@ -1704,16 +1710,15 @@
 				{
 					consume_items: false
 					id: "7A11C1DF0030000D"
-					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
-					title: "Carry a Flimsy Journal"
+					item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
+					title: "Carry an Apprentice's Spell Book"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF0030000E"
-					item: { count: 1, id: "irons_spellbooks:holy_rune" }
-					count: 4
-					title: "Carry four Holy Runes"
+					id: "7A11C1DF00300061"
+					item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+					title: "Craft an Alchemist Cauldron"
 					type: "item"
 				}
 				{ id: "7A11C1DF00300018", title: "I demonstrated one Holy spell", type: "checkmark" }

@@ -79,6 +79,8 @@ VERIFIED_NONVANILLA_ITEMS = {
     "abyssal_decor:frosted_glass",
     "abyssal_decor:cinnamon_log",
     "irons_spellbooks:rare_ink",
+    "irons_spellbooks:iron_spell_book",
+    "irons_spellbooks:epic_ink",
     "irons_spellbooks:scroll",
     "irons_spellbooks:uncommon_ink",
     "irons_spellbooks:wizard_boots",

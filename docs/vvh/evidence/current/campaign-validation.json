@@ -171,14 +171,17 @@
       "exposure:black_and_white_film",
       "exposure:camera",
       "exposure:color_film",
+      "irons_spellbooks:alchemist_cauldron",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
       "irons_spellbooks:blood_rune",
       "irons_spellbooks:blood_upgrade_orb",
       "irons_spellbooks:common_ink",
       "irons_spellbooks:copper_spell_book",
+      "irons_spellbooks:epic_ink",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
+      "irons_spellbooks:iron_spell_book",
       "irons_spellbooks:rare_ink",
       "irons_spellbooks:scroll",
       "irons_spellbooks:uncommon_ink",
@@ -314,8 +317,8 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "fdea2cf8d1f621dcc7d01868fc14f822140fd523f1b476bbfc709317dde0eb0b",
-        "actual": "fdea2cf8d1f621dcc7d01868fc14f822140fd523f1b476bbfc709317dde0eb0b",
+        "index": "ad6c786a53535bd5f5f20499483b4bd8761ef10f78ec813474f3a099a0003179",
+        "actual": "ad6c786a53535bd5f5f20499483b4bd8761ef10f78ec813474f3a099a0003179",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
@@ -339,8 +342,8 @@
         "match": true
       }
     },
-    "index_sha256": "c792939baeceb89d2d09f7187ad9f7426ef604e9ba6e060a631ec414d6ce8313",
-    "pack_toml_declared_index_sha256": "c792939baeceb89d2d09f7187ad9f7426ef604e9ba6e060a631ec414d6ce8313",
+    "index_sha256": "39b027b3de2d37dcf3253b429541decdc530853f46a7a531014e56a8b6d4b9d5",
+    "pack_toml_declared_index_sha256": "39b027b3de2d37dcf3253b429541decdc530853f46a7a531014e56a8b6d4b9d5",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

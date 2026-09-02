@@ -433,8 +433,9 @@ def build_callings(group: str) -> Chapter:
 def hunter_spell_rewards() -> list[dict[str, Any]]:
     return [
         item_reward(3, 20, "numismatics:sprocket"),
-        item_reward(3, 21, "irons_spellbooks:uncommon_ink", 16),
-        item_reward(3, 22, "irons_spellbooks:rare_ink", 8),
+        item_reward(3, 21, "irons_spellbooks:rare_ink", 8),
+        item_reward(3, 22, "irons_spellbooks:epic_ink", 4),
+        item_reward(3, 97, "irons_spellbooks:holy_rune", 4),
         scroll_reward(3, 23, "irons_spellbooks:heal", "Scroll of Heal"),
         scroll_reward(3, 24, "irons_spellbooks:divine_smite", "Scroll of Divine Smite"),
         scroll_reward(3, 25, "irons_spellbooks:recall", "Scroll of Recall"),
@@ -671,7 +672,7 @@ def build_hunters(group: str) -> Chapter:
         4,
         title="Mercy Manual",
         subtitle="Specialty · Holy support",
-        description="Prepare an Inscription Table, a spellbook, and four Holy Runes, then demonstrate one Holy spell. The reward provides a practical triage set for healing, controlled force, and returning home.",
+        description="Prepare an Inscription Table, an Apprentice's Spell Book, and an Alchemist Cauldron, then demonstrate one Holy spell. The Order equips the initiate with four Holy Runes, Rare and Epic inks, and holy scrolls for healing, divine smite, and recall.",
         icon="irons_spellbooks:holy_rune",
         x=-10.5,
         y=0,
@@ -679,8 +680,8 @@ def build_hunters(group: str) -> Chapter:
         optional=True,
         tasks=[
             item_task(3, 12, "irons_spellbooks:inscription_table", title="Inspect an Inscription Table"),
-            item_task(3, 13, "irons_spellbooks:copper_spell_book", title="Carry a Flimsy Journal"),
-            item_task(3, 14, "irons_spellbooks:holy_rune", 4, "Carry four Holy Runes"),
+            item_task(3, 13, "irons_spellbooks:iron_spell_book", title="Carry an Apprentice's Spell Book"),
+            item_task(3, 97, "irons_spellbooks:alchemist_cauldron", title="Craft an Alchemist Cauldron"),
             check_task(3, 24, "I demonstrated one Holy spell"),
         ],
         rewards=hunter_spell_rewards(),

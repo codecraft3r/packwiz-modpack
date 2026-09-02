@@ -45,14 +45,17 @@ An unrelated downloaded JAR is not proof that a mod is installed. Run `python -B
 | `exposure` | `exposure:black_and_white_film` | Black and White Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.black_and_white_film` |
 | `exposure` | `exposure:camera` | Camera | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.camera` |
 | `exposure` | `exposure:color_film` | Color Film | `exposure-neoforge-1.21.1-1.9.18.jar` | `assets/exposure/lang/en_us.json::item.exposure.color_film` |
+| `irons_spellbooks` | `irons_spellbooks:alchemist_cauldron` | Alchemist Cauldron | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/alchemist_cauldron.json; data/irons_spellbooks/recipe/alchemist_cauldron.json` |
 | `irons_spellbooks` | `irons_spellbooks:arcane_essence` | Arcane Essence | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.arcane_essence` |
 | `irons_spellbooks` | `irons_spellbooks:blank_rune` | Blank Runestone | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blank_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_rune` | Blood Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.blood_rune` |
 | `irons_spellbooks` | `irons_spellbooks:blood_upgrade_orb` | Blood Upgrade Orb | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/blood_upgrade_orb.json; data/irons_spellbooks/recipe/blood_upgrade_orb.json` |
 | `irons_spellbooks` | `irons_spellbooks:common_ink` | Common Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.common_ink` |
 | `irons_spellbooks` | `irons_spellbooks:copper_spell_book` | Flimsy Journal | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.copper_spell_book; data/irons_spellbooks/recipe/copper_spell_book.json` |
+| `irons_spellbooks` | `irons_spellbooks:epic_ink` | Epic Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/epic_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:holy_rune` | Holy Rune | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.holy_rune` |
 | `irons_spellbooks` | `irons_spellbooks:inscription_table` | Inscription Table | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::block.irons_spellbooks.inscription_table; data/irons_spellbooks/recipe/inscription_table.json` |
+| `irons_spellbooks` | `irons_spellbooks:iron_spell_book` | Ironbound Tome | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/iron_spell_book.json; data/irons_spellbooks/recipe/iron_spell_book.json` |
 | `irons_spellbooks` | `irons_spellbooks:rare_ink` | Rare Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/models/item/rare_ink.json` |
 | `irons_spellbooks` | `irons_spellbooks:scroll` | Scroll | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.scroll` |
 | `irons_spellbooks` | `irons_spellbooks:uncommon_ink` | Uncommon Ink | `irons_spellbooks-1.21.1-3.16.3.jar` | `assets/irons_spellbooks/lang/en_us.json::item.irons_spellbooks.uncommon_ink` |
