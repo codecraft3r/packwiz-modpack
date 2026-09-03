@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, five full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, a stonecutter, a wrench, and a sprocket construction grant to redeem at the Market."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -118,6 +118,7 @@
 					id: "7A11C2DF00300006"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
+					title: "Order Construction Grant"
 					type: "item"
 				}
 				{
@@ -133,163 +134,7 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300066"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300067"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300068"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300069"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006A"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006B"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006C"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006D"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006E"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030006F"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300070"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300071"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300072"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300073"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300074"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300075"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300076"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300077"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300078"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300079"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030007A"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030007B"
-					item: { count: 64, id: "minecraft:stone" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF00300082"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300083"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300084"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300085"
-					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300086"
 					item: { count: 64, id: "minecraft:oak_log" }
 					team_reward: false
 					type: "item"
@@ -301,38 +146,14 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00300097"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300098"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300099"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030009A"
-					item: { count: 64, id: "minecraft:spruce_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF0030000A"
-					item: { count: 64, id: "minecraft:iron_ingot" }
+					item: { count: 16, id: "minecraft:iron_ingot" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300046"
-					item: { count: 64, id: "minecraft:copper_ingot" }
+					item: { count: 16, id: "minecraft:copper_ingot" }
 					team_reward: false
 					type: "item"
 				}
@@ -357,32 +178,32 @@
 					consume_items: false
 					id: "7A11C1DF00300004"
 					item: { count: 1, id: "minecraft:stone_bricks" }
-					count: 64
-					title: "Inspect sixty-four Stone Bricks"
+					count: 32
+					title: "Inspect thirty-two Stone Bricks"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300005"
 					item: { count: 1, id: "minecraft:oak_log" }
-					count: 32
-					title: "Inspect thirty-two Oak Logs"
+					count: 16
+					title: "Inspect sixteen Oak Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300006"
 					item: { count: 1, id: "minecraft:iron_bars" }
-					count: 16
-					title: "Inspect sixteen Iron Bars"
+					count: 8
+					title: "Inspect eight Iron Bars"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00300046"
 					item: { count: 1, id: "minecraft:lantern" }
-					count: 8
-					title: "Inspect eight Lanterns"
+					count: 4
+					title: "Inspect four Lanterns"
 					type: "item"
 				}
 			]
@@ -460,7 +281,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Lay the foundation for an arcane study and celestial spire overlooking the island. Gather deepslate, dark oak timber, and amethyst shards. The Order delivers a massive construction cache of deepslate, dark oak logs, sand for glasswork, scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table."]
+			description: ["Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and a sprocket construction grant for the Celestial Spire Crate at the Market."]
 			icon: { id: "irons_spellbooks:inscription_table" }
 			id: "7A11C0DF0030000E"
 			optional: true
@@ -469,6 +290,7 @@
 					id: "7A11C2DF0030004B"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
+					title: "Order Construction Grant"
 					type: "item"
 				}
 				{
@@ -484,163 +306,7 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF003000CA"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000CB"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000CC"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000CD"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000CE"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000CF"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D0"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D1"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D2"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D3"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D4"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D5"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D6"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D7"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D8"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000D9"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DA"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DB"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DC"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DD"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DE"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000DF"
-					item: { count: 64, id: "minecraft:cobbled_deepslate" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF003000E6"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000E7"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000E8"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000E9"
-					item: { count: 64, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000EA"
 					item: { count: 64, id: "minecraft:dark_oak_log" }
 					team_reward: false
 					type: "item"
@@ -652,104 +318,20 @@
 					type: "item"
 				}
 				{
-					id: "7A11C2DF003000FB"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000FC"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000FD"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000FE"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF003000FF"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300100"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300101"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300102"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300103"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300104"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300105"
-					item: { count: 64, id: "minecraft:sand" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF0030010E"
 					item: { count: 64, id: "minecraft:scaffolding" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0030010F"
-					item: { count: 64, id: "minecraft:scaffolding" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030004C"
-					item: { count: 64, id: "minecraft:candle" }
-					team_reward: false
-					type: "item"
-				}
-				{
 					id: "7A11C2DF0030004D"
-					item: { count: 64, id: "minecraft:lapis_lazuli" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0030004E"
-					item: { count: 64, id: "minecraft:gold_ingot" }
+					item: { count: 16, id: "minecraft:lapis_lazuli" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00300110"
-					item: { count: 64, id: "minecraft:amethyst_shard" }
+					item: { count: 16, id: "minecraft:amethyst_shard" }
 					team_reward: false
 					type: "item"
 				}
@@ -768,30 +350,30 @@
 			]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Construction · High study"
+			subtitle: "Facility Hub · Arcane Study"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0030004B"
 					item: { count: 1, id: "minecraft:cobbled_deepslate" }
-					count: 32
-					title: "Inspect thirty-two Cobbled Deepslate"
+					count: 16
+					title: "Inspect sixteen Cobbled Deepslate"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0030004C"
 					item: { count: 1, id: "minecraft:dark_oak_log" }
-					count: 32
-					title: "Inspect thirty-two Dark Oak Logs"
+					count: 16
+					title: "Inspect sixteen Dark Oak Logs"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0030004E"
 					item: { count: 1, id: "minecraft:amethyst_shard" }
-					count: 16
-					title: "Inspect sixteen Amethyst Shards"
+					count: 8
+					title: "Inspect eight Amethyst Shards"
 					type: "item"
 				}
 			]

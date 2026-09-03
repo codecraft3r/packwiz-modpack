@@ -5,6 +5,10 @@ file = "README.md"
 hash = "5b90652222632aeec64f2dbafba28bc7bbb42ef2f6d5f23d2bc1539a791ca0db"
 
 [[files]]
+file = "backups/ch03_lantern_order.snbt.bak"
+hash = "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918"
+
+[[files]]
 file = "config/Mekanism/additions.toml"
 hash = "167317f50212fd80d2557ee1d560a796f2a99c827c979c6ca68e32e960cf3a1c"
 
@@ -110,7 +114,7 @@ hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918"
+hash = "bae751b8f2002623d2303b5aaad11fec3df3a2bf6b52dcd56789f86a62a845d7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
@@ -118,7 +122,7 @@ hash = "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"
-hash = "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f"
+hash = "bf5fcc440ab58468d6b9cf9cb0747e097060a45eb7d5a950b3395e163577b13d"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

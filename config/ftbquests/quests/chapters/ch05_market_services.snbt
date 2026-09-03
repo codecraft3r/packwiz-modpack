@@ -442,6 +442,254 @@
 			]
 			title: "Know the Coins"
 			x: 0
+			y: 8.5d
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for celestial spires and arcane studies: deepslate tiles, dark oak planks, tinted glass, amethyst clusters, bookshelves, and sea lanterns."]
+			icon: { id: "minecraft:deepslate_tiles" }
+			id: "7A11C0DF00500011"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 86400
+			rewards: [
+				{
+					id: "7A11C2DF00500031"
+					item: { count: 128, id: "minecraft:deepslate_tiles" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500032"
+					item: { count: 64, id: "minecraft:dark_oak_planks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500033"
+					item: { count: 64, id: "minecraft:tinted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500034"
+					item: { count: 16, id: "minecraft:amethyst_cluster" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500035"
+					item: { count: 16, id: "minecraft:bookshelf" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500036"
+					item: { count: 8, id: "minecraft:sea_lantern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "1 Sprocket · Daily"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500021"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
+					type: "item"
+				}
+			]
+			title: "Celestial Spire Crate"
+			x: -6
+			y: 6
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for holy breweries and alchemical laboratories: polished tuff, white wood planks, frosted glass, apothecary jars, faucets, and lanterns."]
+			icon: { id: "abyssal_decor:white_wood_planks" }
+			id: "7A11C0DF00500012"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 86400
+			rewards: [
+				{
+					id: "7A11C2DF00500037"
+					item: { count: 128, id: "minecraft:polished_tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500038"
+					item: { count: 64, id: "abyssal_decor:white_wood_planks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500039"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050003A"
+					item: { count: 16, id: "supplementaries:jar" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050003B"
+					item: { count: 4, id: "supplementaries:faucet" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050003C"
+					item: { count: 16, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "1 Sprocket · Daily"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500022"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
+					type: "item"
+				}
+			]
+			title: "Sanctified Brewery Crate"
+			x: -2
+			y: 6
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for frontier outposts and watchtowers: spruce planks, timber frames, ropes, way signs, torches, and spyglasses."]
+			icon: { id: "supplementaries:timber_frame" }
+			id: "7A11C0DF00500013"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 86400
+			rewards: [
+				{
+					id: "7A11C2DF0050003D"
+					item: { count: 128, id: "minecraft:spruce_planks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050003E"
+					item: { count: 64, id: "supplementaries:timber_frame" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050003F"
+					item: { count: 32, id: "supplementaries:rope" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500040"
+					item: { count: 16, id: "supplementaries:way_sign_oak" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500041"
+					item: { count: 32, id: "minecraft:torch" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500042"
+					item: { count: 2, id: "minecraft:spyglass" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "1 Sprocket · Daily"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500023"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
+					type: "item"
+				}
+			]
+			title: "Frontier Watch Crate"
+			x: 2
+			y: 6
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for sentry bastions, armories, and artillery installations: Create Deco industrial iron catwalks, sheet metal, structural supports, mesh fences, chains, and iron bars."]
+			icon: { id: "createdeco:industrial_iron_catwalk" }
+			id: "7A11C0DF00500014"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 86400
+			rewards: [
+				{
+					id: "7A11C2DF00500043"
+					item: { count: 64, id: "createdeco:industrial_iron_catwalk" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500044"
+					item: { count: 64, id: "createdeco:industrial_iron_sheet_metal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500045"
+					item: { count: 32, id: "createdeco:industrial_iron_support" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500046"
+					item: { count: 32, id: "createdeco:industrial_iron_mesh_fence" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500047"
+					item: { count: 32, id: "minecraft:chain" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500048"
+					item: { count: 32, id: "minecraft:iron_bars" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "1 Sprocket · Daily"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500024"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
+					type: "item"
+				}
+			]
+			title: "Heavy Bastion Crate"
+			x: 6
 			y: 6
 		}
 	]

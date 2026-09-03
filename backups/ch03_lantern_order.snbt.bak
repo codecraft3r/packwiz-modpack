@@ -1,0 +1,2272 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch03_lantern_order"
+	group: "7A11C4DF00200000"
+	icon: { id: "vampirism:hunter_table" }
+	id: "7A11C3DF00300000"
+	images: [
+		{
+			alpha: 22
+			height: 7
+			image: "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png"
+			order: -40
+			rotation: 0.0d
+			width: 5
+			x: -11
+			y: 2
+		}
+		{
+			alpha: 20
+			height: 7
+			image: "poiesis:textures/questpics/vvh/holy_public_ward.png"
+			order: -39
+			rotation: 0.0d
+			width: 5
+			x: 11
+			y: 5
+		}
+		{
+			alpha: 28
+			height: 2.5d
+			image: "poiesis:textures/questpics/vvh/holy_school_crest.png"
+			order: -38
+			rotation: 0.0d
+			width: 2.5d
+			x: 0
+			y: 10
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A11C0DF00200004"]
+			description: ["Build the field bench that makes Hunter work repeatable: a Hunter Table, stakes, and a normal Hunter Axe. The reward supplies a complete working coat so the route starts functional rather than fashionable."]
+			icon: { id: "vampirism:hunter_table" }
+			id: "7A11C0DF00300001"
+			rewards: [
+				{
+					id: "7A11C2DF00300001"
+					item: { count: 1, id: "numismatics:bevel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300002"
+					item: { count: 1, id: "vampirism:hunter_coat_head_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300003"
+					item: { count: 1, id: "vampirism:hunter_coat_chest_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300004"
+					item: { count: 1, id: "vampirism:hunter_coat_legs_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300005"
+					item: { count: 1, id: "vampirism:hunter_coat_feet_normal" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			subtitle: "Tier I · Foundation"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300001"
+					item: { count: 1, id: "vampirism:hunter_table" }
+					title: "Inspect a Hunter Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300002"
+					item: { count: 1, id: "vampirism:stake" }
+					count: 4
+					title: "Carry four stakes"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300003"
+					item: { count: 1, id: "vampirism:hunter_axe_normal" }
+					title: "Inspect a normal Hunter Axe"
+					type: "item"
+				}
+			]
+			title: "Salt and Steel"
+			x: 0
+			y: -10
+		}
+		{
+			dependencies: ["7A11C0DF00300001"]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, five full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench."]
+			icon: { id: "minecraft:stone" }
+			id: "7A11C0DF00300002"
+			rewards: [
+				{
+					id: "7A11C2DF00300006"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300064"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300065"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300066"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300067"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300068"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300069"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006A"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006B"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006C"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006D"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006E"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030006F"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300070"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300071"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300072"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300073"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300074"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300075"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300076"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300077"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300078"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300079"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030007A"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030007B"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300082"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300083"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300084"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300085"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300086"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300096"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300097"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300098"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300099"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030009A"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000A"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300046"
+					item: { count: 64, id: "minecraft:copper_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300048"
+					item: { count: 1, id: "minecraft:stonecutter" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300049"
+					item: { count: 1, id: "supplementaries:wrench" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Tier II · Construction stock"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300004"
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					count: 64
+					title: "Inspect sixty-four Stone Bricks"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300005"
+					item: { count: 1, id: "minecraft:oak_log" }
+					count: 32
+					title: "Inspect thirty-two Oak Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300006"
+					item: { count: 1, id: "minecraft:iron_bars" }
+					count: 16
+					title: "Inspect sixteen Iron Bars"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300046"
+					item: { count: 1, id: "minecraft:lantern" }
+					count: 8
+					title: "Inspect eight Lanterns"
+					type: "item"
+				}
+			]
+			title: "Building Supplies"
+			x: 0
+			y: -7
+		}
+		{
+			dependencies: ["7A11C0DF00300002"]
+			description: ["Add a Hunter Weapon Table, basic crossbow, and a real reserve of vampire-killer quarrels. The Order can now equip a second patrol instead of depending on one veteran's inventory."]
+			icon: { id: "vampirism:weapon_table" }
+			id: "7A11C0DF00300003"
+			rewards: [
+				{
+					id: "7A11C2DF0030000B"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000C"
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000D"
+					item: { count: 32, id: "minecraft:feather" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000E"
+					item: { count: 16, id: "vampirism:crossbow_arrow_vampire_killer" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030000F"
+					item: { count: 32, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "Tier III · Logistics"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300007"
+					item: { count: 1, id: "vampirism:weapon_table" }
+					title: "Inspect a Hunter Weapon Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300008"
+					item: { count: 1, id: "vampirism:basic_crossbow" }
+					title: "Carry a basic Hunter crossbow"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300009"
+					item: { count: 1, id: "vampirism:crossbow_arrow_vampire_killer" }
+					count: 16
+					title: "Carry sixteen killer quarrels"
+					type: "item"
+				}
+			]
+			title: "Long Watch"
+			x: 0
+			y: -4
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Lay the foundation for an arcane study and celestial spire overlooking the island. Gather deepslate, dark oak timber, and amethyst shards. The Order delivers a massive construction cache of deepslate, dark oak logs, sand for glasswork, scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table."]
+			icon: { id: "irons_spellbooks:inscription_table" }
+			id: "7A11C0DF0030000E"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030004B"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000C8"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000C9"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CA"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CB"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CC"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CD"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CE"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000CF"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D0"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D1"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D2"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D3"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D4"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D5"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D6"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D7"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D8"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000D9"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DA"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DB"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DC"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DD"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DE"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000DF"
+					item: { count: 64, id: "minecraft:cobbled_deepslate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000E6"
+					item: { count: 64, id: "minecraft:dark_oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000E7"
+					item: { count: 64, id: "minecraft:dark_oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000E8"
+					item: { count: 64, id: "minecraft:dark_oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000E9"
+					item: { count: 64, id: "minecraft:dark_oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000EA"
+					item: { count: 64, id: "minecraft:dark_oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FA"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FB"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FC"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FD"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FE"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003000FF"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300100"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300101"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300102"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300103"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300104"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300105"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030010E"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030010F"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004C"
+					item: { count: 64, id: "minecraft:candle" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004D"
+					item: { count: 64, id: "minecraft:lapis_lazuli" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030004E"
+					item: { count: 64, id: "minecraft:gold_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300110"
+					item: { count: 64, id: "minecraft:amethyst_shard" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300111"
+					item: { count: 1, id: "minecraft:enchanting_table" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300112"
+					item: { count: 1, id: "minecraft:lectern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · High study"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030004B"
+					item: { count: 1, id: "minecraft:cobbled_deepslate" }
+					count: 32
+					title: "Inspect thirty-two Cobbled Deepslate"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030004C"
+					item: { count: 1, id: "minecraft:dark_oak_log" }
+					count: 32
+					title: "Inspect thirty-two Dark Oak Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030004E"
+					item: { count: 1, id: "minecraft:amethyst_shard" }
+					count: 16
+					title: "Inspect sixteen Amethyst Shards"
+					type: "item"
+				}
+			]
+			title: "Arcane Spire"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Erect a specialized alchemical laboratory to distill holy tinctures, extracts, and draughts. Gather tuff stone, white wood timber, and laboratory glass bottles. The Order supplies bulk volcanic tuff, white wood logs, frosted glass, scaffolding, apothecary jars, liquid faucets, brewing stands, cauldrons, redstone, glowstone, and golden carrots."]
+			icon: { id: "minecraft:brewing_stand" }
+			id: "7A11C0DF0030000F"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030004F"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030012C"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030012D"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030012E"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030012F"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300130"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300131"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300132"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300133"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300134"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300135"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300136"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300137"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300138"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300139"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030013A"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030013B"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030013C"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030013D"
+					item: { count: 64, id: "minecraft:tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030014A"
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030014B"
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030014C"
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030014D"
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030014E"
+					item: { count: 64, id: "abyssal_decor:white_wood_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030015E"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030015F"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300160"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300161"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300162"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300163"
+					item: { count: 64, id: "abyssal_decor:frosted_glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300172"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300173"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300177"
+					item: { count: 16, id: "supplementaries:jar" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300178"
+					item: { count: 4, id: "supplementaries:faucet" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300050"
+					item: { count: 64, id: "minecraft:redstone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300051"
+					item: { count: 64, id: "minecraft:glowstone_dust" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300052"
+					item: { count: 16, id: "minecraft:golden_carrot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300174"
+					item: { count: 1, id: "minecraft:brewing_stand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300175"
+					item: { count: 2, id: "minecraft:cauldron" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300176"
+					item: { count: 64, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Holy brewery"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030004F"
+					item: { count: 1, id: "minecraft:tuff" }
+					count: 32
+					title: "Inspect thirty-two Tuff"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300050"
+					item: { count: 1, id: "abyssal_decor:white_wood_log" }
+					count: 32
+					title: "Inspect thirty-two White Wood Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300051"
+					item: { count: 1, id: "minecraft:glass_bottle" }
+					count: 16
+					title: "Inspect sixteen Glass Bottles"
+					type: "item"
+				}
+			]
+			title: "Apothecary Lab"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Establish an elevated reconnaissance hub and cartography outpost for surveying uncharted frontier routes. Gather stripped spruce logs, cobblestone, and coal. The Order outfits the station with bulk spruce logs, oak logs, cobblestone, scaffolding, torches, iron, coal, paper, and campfires."]
+			icon: { id: "minecraft:cartography_table" }
+			id: "7A11C0DF00300010"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300053"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300190"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300191"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300192"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300193"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300194"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300195"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300196"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300197"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300198"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300199"
+					item: { count: 64, id: "minecraft:spruce_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001AE"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001AF"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001B0"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001B1"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001B2"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C2"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C3"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C4"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C5"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C6"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C7"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C8"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001C9"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001CA"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001CB"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001CC"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001CD"
+					item: { count: 64, id: "minecraft:cobblestone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001D6"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001D7"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300054"
+					item: { count: 64, id: "minecraft:torch" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300055"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300056"
+					item: { count: 64, id: "minecraft:coal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001D8"
+					item: { count: 64, id: "minecraft:paper" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001D9"
+					item: { count: 1, id: "minecraft:cartography_table" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001DA"
+					item: { count: 4, id: "minecraft:campfire" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Frontier watch"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300053"
+					item: { count: 1, id: "minecraft:stripped_spruce_log" }
+					count: 32
+					title: "Inspect thirty-two Stripped Spruce Logs"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300054"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 32
+					title: "Inspect thirty-two Cobblestone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300055"
+					item: { count: 1, id: "minecraft:coal" }
+					count: 16
+					title: "Inspect sixteen Coal"
+					type: "item"
+				}
+			]
+			title: "Survey Outpost"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300003"]
+			description: ["Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather foundation cobblestone, a blast furnace for the forge, and a sentry shield. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, five stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."]
+			icon: { id: "minecraft:chain" }
+			id: "7A11C0DF00300011"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300057"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F4"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F5"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F6"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F7"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F8"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001F9"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FA"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FB"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FC"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FD"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FE"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF003001FF"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300200"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300201"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300202"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300203"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300204"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300205"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300208"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300209"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030020A"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030020B"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030020C"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030020D"
+					item: { count: 64, id: "minecraft:andesite" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300212"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300213"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300214"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300215"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300216"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030023A"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030023B"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300058"
+					item: { count: 64, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300059"
+					item: { count: 64, id: "minecraft:iron_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005A"
+					item: { count: 64, id: "minecraft:chain" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030023C"
+					item: { count: 8, id: "minecraft:iron_block" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030023D"
+					item: { count: 1, id: "minecraft:anvil" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030023E"
+					item: { count: 1, id: "minecraft:smithing_table" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Construction · Heavy bastion"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300057"
+					item: { count: 1, id: "minecraft:cobblestone" }
+					count: 64
+					title: "Inspect sixty-four Cobblestone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300058"
+					item: { count: 1, id: "minecraft:blast_furnace" }
+					title: "Inspect a Blast Furnace"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300059"
+					item: { count: 1, id: "minecraft:shield" }
+					title: "Carry a Shield"
+					type: "item"
+				}
+			]
+			title: "Garrison Armory"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A11C0DF0030000E"]
+			description: ["Prepare an Inscription Table, an Apprentice's Spell Book, and an Alchemist Cauldron, then demonstrate one Holy spell. The Order equips the initiate with four Holy Runes, Rare and Epic inks, and holy scrolls for healing, divine smite, and recall."]
+			icon: { id: "irons_spellbooks:holy_rune" }
+			id: "7A11C0DF00300004"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300014"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300015"
+					item: { count: 8, id: "irons_spellbooks:rare_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300016"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300061"
+					item: { count: 4, id: "irons_spellbooks:holy_rune" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300017"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:heal", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Heal"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300018"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:divine_smite", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Divine Smite"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300019"
+					item: {
+						components: {
+							"irons_spellbooks:spell_container": {
+								data: [
+									{ id: "irons_spellbooks:recall", index: 0, level: 1, locked: false }
+								]
+								maxSpells: 1
+								mustEquip: false
+								spellWheel: false
+							}
+						}
+						count: 1
+						id: "irons_spellbooks:scroll"
+					}
+					team_reward: false
+					title: "Scroll of Recall"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Holy support"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000C"
+					item: { count: 1, id: "irons_spellbooks:inscription_table" }
+					title: "Inspect an Inscription Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000D"
+					item: { count: 1, id: "irons_spellbooks:gold_spell_book" }
+					title: "Carry an Apprentice's Spell Book"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300061"
+					item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+					title: "Craft an Alchemist Cauldron"
+					type: "item"
+				}
+				{ id: "7A11C1DF00300018", title: "I demonstrated one Holy spell", type: "checkmark" }
+			]
+			title: "Mercy Manual"
+			x: -10.5d
+			y: 0
+		}
+		{
+			dependencies: ["7A11C0DF0030000E"]
+			description: ["Forge the holy armaments of the Lantern Order: construct an Arcane Anvil and a Scroll Forge, then don a full set of Priest's vestments. The Order rewards your devotion with a Villager Bible, your choice of an Artificer's Cane or Graybeard Staff, a stack of paper, four pots of Epic Ink, and a sprocket."]
+			icon: { id: "irons_spellbooks:priest_chestplate" }
+			id: "7A11C0DF00300005"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300025"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300026"
+					item: { count: 1, id: "irons_spellbooks:villager_spell_book" }
+					team_reward: false
+					title: "Villager Bible"
+					type: "item"
+				}
+				{ id: "7A11C2DF00300027", table_id: 8796029108802813953L, type: "choice", title: "Choice: Artificer's Cane or Graybeard Staff" }
+				{
+					id: "7A11C2DF00300062"
+					item: { count: 64, id: "minecraft:paper" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300063"
+					item: { count: 4, id: "irons_spellbooks:epic_ink" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Holy vestments"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300022"
+					item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
+					title: "Craft an Arcane Anvil"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300023"
+					item: { count: 1, id: "irons_spellbooks:scroll_forge" }
+					title: "Craft a Scroll Forge"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300024"
+					item: { count: 1, id: "irons_spellbooks:priest_helmet" }
+					title: "Equip a Priest Hood"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300062"
+					item: { count: 1, id: "irons_spellbooks:priest_chestplate" }
+					title: "Equip Priest Robes"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300063"
+					item: { count: 1, id: "irons_spellbooks:priest_leggings" }
+					title: "Equip Priest Leggings"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300064"
+					item: { count: 1, id: "irons_spellbooks:priest_boots" }
+					title: "Equip Priest Boots"
+					type: "item"
+				}
+			]
+			title: "Pure Defense"
+			x: -7.5d
+			y: 2
+		}
+		{
+			dependencies: ["7A11C0DF0030000F"]
+			description: ["Establish a sanctified workshop: assemble an Alchemical Cauldron and an Altar of Cleansing, then prepare sixteen heads of Garlic and Pure Salt Water. The Order rewards your purification efforts with two sprockets, four bottles of Ultimate Holy Water, a Garlic Diffuser, and sixteen bottles of Alchemical Fire."]
+			icon: { id: "vampirism:alchemical_cauldron" }
+			id: "7A11C0DF00300006"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030001A"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001B"
+					item: { count: 4, id: "vampirism:holy_water_bottle_ultimate" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001C"
+					item: { count: 1, id: "vampirism:garlic_diffuser_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030001E"
+					item: { count: 16, id: "vampirism:item_alchemical_fire" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Workstations"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000F"
+					item: { count: 1, id: "vampirism:alchemical_cauldron" }
+					title: "Craft an Alchemical Cauldron"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300010"
+					item: { count: 1, id: "vampirism:altar_cleansing" }
+					title: "Construct an Altar of Cleansing"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300011"
+					item: { count: 1, id: "vampirism:garlic" }
+					count: 16
+					title: "Gather sixteen Garlic"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300012"
+					item: { count: 1, id: "vampirism:pure_salt_water" }
+					count: 4
+					title: "Brew four bottles of Pure Salt Water"
+					type: "item"
+				}
+			]
+			title: "Consecrated Work"
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A11C0DF0030000F"]
+			description: ["Craft a Potion Table and glass bottles to begin field medicine. The Order supplies a Brewing Stand, an Alchemy Table, and a substantial reserve of brewing ingredients."]
+			icon: { id: "vampirism:potion_table" }
+			id: "7A11C0DF0030000C"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300028"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300029"
+					item: { count: 1, id: "minecraft:brewing_stand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002A"
+					item: { count: 1, id: "vampirism:alchemy_table" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002B"
+					item: { count: 16, id: "minecraft:nether_wart" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300042"
+					item: { count: 16, id: "minecraft:blaze_powder" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300043"
+					item: { count: 16, id: "minecraft:glistering_melon_slice" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300044"
+					item: { count: 16, id: "minecraft:golden_carrot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300045"
+					item: { count: 8, id: "minecraft:fermented_spider_eye" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Medicine"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300028"
+					item: { count: 1, id: "vampirism:potion_table" }
+					title: "Craft a Potion Table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300029"
+					item: { count: 1, id: "minecraft:glass_bottle" }
+					count: 16
+					title: "Craft sixteen Glass Bottles"
+					type: "item"
+				}
+			]
+			title: "Refuge Stores"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300010"]
+			description: ["Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims."]
+			icon: { id: "exposure:camera" }
+			id: "7A11C0DF00300008"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300033"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300034"
+					item: { count: 8, id: "exposure:color_film" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300035"
+					item: { count: 8, id: "exposure:black_and_white_film" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Reconnaissance"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300013"
+					item: { count: 1, id: "explorerscompass:explorerscompass" }
+					title: "Carry an Explorer's Compass"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300014"
+					item: { count: 1, id: "exposure:camera" }
+					title: "Carry a Camera"
+					type: "item"
+				}
+				{ advancement: "exposure:adventure/moment_in_time", criterion: "", id: "7A11C1DF00300015", type: "advancement" }
+			]
+			title: "Field Ledger"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300010"]
+			description: ["Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, Vampirism's strongest invisibility draught (80 minutes), and milk for emergency recovery."]
+			icon: { id: "sophisticatedbackpacks:backpack" }
+			id: "7A11C0DF0030000D"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030002C"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002D"
+					item: { count: 8, id: "minecraft:lead" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002E"
+					item: { count: 1, id: "create:brown_toolbox" }
+					team_reward: false
+					title: "Brown Toolbox"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030002F"
+					item: { count: 32, id: "supplementaries:rope_arrow" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005E"
+					item: { count: 16, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005F"
+					item: {
+						count: 1
+						id: "minecraft:potion"
+						components: {
+							"minecraft:potion_contents": { potion: "vampirism:very_long_invisibility" }
+						}
+					}
+					team_reward: false
+					title: "Potion of Invisibility (01:20:00)"
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300060"
+					item: { count: 1, id: "minecraft:milk_bucket" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "Specialty · Field logistics"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030002B"
+					item: { count: 1, id: "sophisticatedbackpacks:backpack" }
+					title: "Obtain a Backpack"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030002C"
+					item: { count: 1, id: "create:clipboard" }
+					title: "Obtain a Clipboard"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030002D"
+					item: { count: 1, id: "minecraft:spyglass" }
+					title: "Carry a Spyglass"
+					type: "item"
+				}
+			]
+			title: "Patrol Transit"
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7A11C0DF00300011"]
+			description: ["Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with two sprockets, substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spikes."]
+			icon: { id: "vampirism:crossbow_arrow_spitfire" }
+			id: "7A11C0DF00300007"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00300030"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300031"
+					item: { count: 32, id: "vampirism:crossbow_arrow_spitfire" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300032"
+					item: { count: 32, id: "vampirism:crossbow_arrow_teleport" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300036"
+					item: { count: 64, id: "vampirism:crossbow_arrow_normal" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005C"
+					item: { count: 16, id: "supplementaries:bomb" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005D"
+					item: {
+						count: 16
+						id: "supplementaries:bamboo_spikes_tipped"
+						components: {
+							"minecraft:potion_contents": { potion: "minecraft:harming" }
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Specialty · Ammunition"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00300030"
+					item: { count: 1, id: "vampirism:crossbow_arrow_spitfire" }
+					count: 3
+					title: "Carry three spitfire quarrels"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00300031"
+					item: { count: 1, id: "vampirism:crossbow_arrow_teleport" }
+					count: 4
+					title: "Carry four teleport quarrels"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030005C"
+					item: { count: 1, id: "minecraft:target" }
+					count: 2
+					title: "Inspect two Target Blocks"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030005D"
+					item: { count: 1, id: "mannequins:mannequin" }
+					count: 2
+					title: "Inspect two Mannequins"
+					type: "item"
+				}
+			]
+			title: "Hunter Armament"
+			x: 7.5d
+			y: 2
+		}
+		{
+			dependencies: ["7A11C0DF00300011"]
+			description: ["Construct heavy siege artillery with Create Big Cannons. Assemble a Cannon Carriage, two Wrought Iron Cannon Chambers, and a Wrought Iron Cannon End. The Order supplies a Ramrod, Worm, Create Wrench, sixty-four Powder Charges, and a stockpile of Mortar Stones."]
+			icon: { id: "createbigcannons:cannon_carriage" }
+			id: "7A11C0DF00300009"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF0030001D"
+					item: { count: 2, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300010"
+					item: { count: 1, id: "createbigcannons:ram_rod" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300011"
+					item: { count: 1, id: "createbigcannons:worm" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300012"
+					item: { count: 1, id: "create:wrench" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00300013"
+					item: { count: 64, id: "createbigcannons:powder_charge" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030005B"
+					item: { count: 64, id: "createbigcannons:mortar_stone" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			subtitle: "Specialty · Big cannons"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0030000A"
+					item: { count: 1, id: "createbigcannons:cannon_carriage" }
+					title: "Obtain a Cannon Carriage"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030000B"
+					item: { count: 1, id: "createbigcannons:wrought_iron_cannon_chamber" }
+					count: 2
+					title: "Obtain two Wrought Iron Cannon Chambers"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0030005B"
+					item: { count: 1, id: "createbigcannons:wrought_iron_cannon_end" }
+					title: "Obtain a Wrought Iron Cannon End"
+					type: "item"
+				}
+			]
+			title: "Siege Artillery"
+			x: 10.5d
+			y: 0
+		}
+	]
+	title: "03 · Lantern Order"
+}
