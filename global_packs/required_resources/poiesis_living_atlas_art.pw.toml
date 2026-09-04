@@ -1,8 +1,0 @@
-name = "Poiesis Living Atlas Art"
-filename = "poiesis-living-atlas-art-v5.zip"
-side = "client"
-
-[download]
-url = "https://github.com/codecraft3r/packwiz-modpack/releases/download/vvh-season-one-art-20260809-253445c/poiesis-living-atlas-art-v5.zip"
-hash-format = "sha256"
-hash = "d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a"

@@ -278,11 +278,6 @@ hash = "c0a24c2c3e847e15acd99774581aad9ffb06cc1f4db5ffcf02c4c9e50be0c189"
 metafile = true
 
 [[files]]
-file = "global_packs/required_resources/poiesis_living_atlas_art.pw.toml"
-hash = "9e0253aa9fdc4a0c0aaee69b0e0c93e6b20f4b3fa19b1acbfc09a47e40d397b0"
-metafile = true
-
-[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
