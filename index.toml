@@ -1052,11 +1052,6 @@ hash = "2845b7367289659770e8476125f5949c5705790e4a9335b10c82f433a24c6d76"
 metafile = true
 
 [[files]]
-file = "mods/the-hordes.pw.toml"
-hash = "a5d9d5bcbdc15c48252147a795343113e092278437684e24c0c81a3567c760f4"
-metafile = true
-
-[[files]]
 file = "mods/the-roads-more-travelled.pw.toml"
 hash = "93ed0e00b8820e25d16eb8e6d508c0cefd07e59b4bb620d0bdc0bac7ed8cad0f"
 metafile = true
