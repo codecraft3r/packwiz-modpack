@@ -257,10 +257,6 @@ file = "datapacks/overworld_customization/data/minecraft/dimension/overworld.jso
 hash = "7a1edb819e713190b24d23efe5eec269bbb4839909f98bc624d693bef04712d4"
 
 [[files]]
-file = "datapacks/overworld_customization/data/overworld_customization/neoforge/biome_modifier/boosted_hostile_spawns.json"
-hash = "88059fba411102cde1b77d4089fdda577f0a4bf481cbb4e855ed32950ab71cfb"
-
-[[files]]
 file = "datapacks/overworld_customization/data/overworldmirror/dimension/overworld.json"
 hash = "36e2cd860b265ec92357b3b691572d4eefe393eb95dde7f3e1c880a971794ff1"
 
@@ -315,7 +311,7 @@ hash = "fb11d7ab9e39a3289c71db12b488d114b04f492b52cbd427eefc3e22a82daea7"
 
 [[files]]
 file = "kubejs/server_scripts/mirror_portal_guide.js"
-hash = "217ff5c020a379cdd67eb2157b36937a6ce72d1b56d51e84bac63b0a2283aec2"
+hash = "a5b13036816db96bf53a39ca361a9aff4d15bd19212bda690f38e98defae6ac1"
 
 [[files]]
 file = "kubejs/startup_scripts/main.js"

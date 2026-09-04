@@ -1,9 +1,13 @@
 // Server script for Mirror Dimension portal feedback, guidance, crafting & mob modifications
 
 // Ensure all spawning Zombies, Husks, and Drowneds are equipped with helmets so they do not burn in perpetual day
+// Restrict to the mirror dimension so main overworld difficulty is unaffected
 EntityEvents.spawned(event => {
   const { entity } = event
   if (!entity || !entity.isLiving()) return
+
+  const dim = String(entity.level.dimension)
+  if (!dim.includes('overworldmirror')) return
 
   const type = String(entity.type)
   if (type.includes('zombie') || type.includes('husk') || type.includes('drowned') || type.includes('skeleton')) {
