@@ -5,6 +5,11 @@ on:
     tags:
       - '**'
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag to release'
+        required: false
+        default: 'v3.0.0'
 
 permissions:
   contents: write
@@ -21,7 +26,9 @@ jobs:
           go-version: '1.26'
 
       - name: Install packwiz
-        run: go install github.com/packwiz/packwiz@latest
+        run: |
+          git clone --depth=1 https://github.com/packwiz/packwiz.git /tmp/packwiz
+          (cd /tmp/packwiz && go install .)
 
       - name: Refresh index
         run: packwiz refresh
@@ -44,6 +51,7 @@ jobs:
       - name: Upload Modrinth pack
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
           files: '*.mrpack'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -56,6 +64,7 @@ jobs:
       - name: Upload CurseForge pack
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
           files: 'All the Mons-CurseForge.zip'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -63,6 +72,7 @@ jobs:
       - name: Upload MultiMC instance
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
           files: '*.zip'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
