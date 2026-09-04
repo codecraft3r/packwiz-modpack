@@ -49,7 +49,7 @@
 	#Maximum amount of blocks in a structure assemble-able by Physics Assemblers, Swivel Bearings, or other means.
 	# Default: 128000
 	# Range: > 1
-	maxBlocksMoved = 128000
+	maxBlocksMoved = 32000
 	#.
 	#Maximum range in blocks which honey glue may initially be placed
 	# Default: 48
