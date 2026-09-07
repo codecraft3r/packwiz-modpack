@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "ch05_market_services"
 	group: "7A11C4DF00300000"
@@ -22,15 +22,15 @@
 	quests: [
 		{
 			dependencies: ["7A11C0DF00200007"]
-			description: ["The board converts finite quest currency into visible utility. Every purchase consumes the exact posted price, repeats no faster than once per team each week, and grants no currency back."]
+			description: ["The board is two departments: building palettes on the left, progression and utility kits on the right. Every purchase consumes the exact posted price for one personal kit, restocks after three minutes (building) or five minutes (progression), and never pays currency back. The Rumour Ledger remains the sole slow weekly team faucet."]
 			icon: { id: "numismatics:banking_guide" }
 			id: "7A11C0DF00500001"
 			rewards: [ ]
 			shape: "hexagon"
 			size: 1.4d
-			subtitle: "Weekly services · Team-scoped"
+			subtitle: "Market guide · Personal scope"
 			tasks: [
-				{ id: "7A11C1DF00500001", title: "I understand prices, cooldowns, and team scope", type: "checkmark" }
+				{ id: "7A11C1DF00500001", title: "I understand prices, cooldowns, and personal scope", type: "checkmark" }
 			]
 			title: "Read the Board"
 			x: 0
@@ -38,85 +38,101 @@
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Replace the ordinary supplies most likely to strand a late arrival: food, light, and leads. This is convenience, not a progression skip."]
-			icon: { id: "numismatics:bevel" }
-			id: "7A11C0DF00500002"
-			optional: true
-			can_repeat: true
-			repeat_cooldown: 604800
-			rewards: [
-				{
-					id: "7A11C2DF00500001"
-					item: { count: 32, id: "minecraft:cooked_beef" }
-					team_reward: true
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00500002"
-					item: { count: 64, id: "minecraft:torch" }
-					team_reward: true
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00500003"
-					item: { count: 8, id: "minecraft:lead" }
-					team_reward: true
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "1 Bevel · Weekly"
-			tasks: [
-				{
-					consume_items: true
-					id: "7A11C1DF00500002"
-					item: { count: 1, id: "numismatics:bevel" }
-					title: "Submit 1 Bevel"
-					type: "item"
-				}
-			]
-			title: "Field Kit"
-			x: -6
-			y: -1
-		}
-		{
-			dependencies: ["7A11C0DF00500001"]
-			description: ["Buy enough structural stock for a visible repair, roadside shelter, or public-room extension rather than a decorative handful."]
-			icon: { id: "numismatics:sprocket" }
+			description: ["Consume one Sprocket for a personal raw building stock of bulk Stone, Oak, Sand, Glass, and Lanterns: about twelve full-stack equivalents for repairs, shelters, and civic rooms. Restocks after three minutes. Flexible raw stock, not premade bricks, machines, or combat gear."]
+			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00500003"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 180
 			rewards: [
 				{
-					id: "7A11C2DF00500004"
-					item: { count: 128, id: "minecraft:stone_bricks" }
-					team_reward: true
+					id: "7A11C2DF00500049"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00500005"
+					id: "7A11C2DF0050004A"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050004B"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050004C"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050004D"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050004E"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050004F"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500050"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500051"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500052"
 					item: { count: 64, id: "minecraft:oak_log" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00500006"
-					item: { count: 32, id: "minecraft:iron_ingot" }
-					team_reward: true
+					id: "7A11C2DF00500053"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00500007"
-					item: { count: 16, id: "minecraft:lantern" }
-					team_reward: true
+					id: "7A11C2DF00500054"
+					item: { count: 64, id: "minecraft:sand" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500055"
+					item: { count: 16, id: "minecraft:glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500056"
+					item: { count: 8, id: "minecraft:lantern" }
+					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Weekly"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
@@ -127,96 +143,224 @@
 				}
 			]
 			title: "Works Kit"
-			x: -2
+			x: -7
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Restock a teaching table with multi-school inscription materials. The final spell remains the player's decision; the board does not gamble on random scrolls."]
-			icon: { id: "irons_spellbooks:uncommon_ink" }
-			id: "7A11C0DF00500004"
+			description: ["Consume one Sprocket for a personal village palette of Bricks, Oak, Terracotta, Glass, Lanterns, and a Hearth Campfire for homes, inns, and workshops. Restocks after three minutes. Homes and civic rooms, not fortifications or machinery."]
+			icon: { id: "minecraft:bricks" }
+			id: "7A11C0DF0050000F"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 180
 			rewards: [
 				{
-					id: "7A11C2DF00500008"
-					item: { count: 16, id: "irons_spellbooks:arcane_essence" }
-					team_reward: true
+					id: "7A11C2DF00500057"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00500009"
-					item: { count: 4, id: "irons_spellbooks:blank_rune" }
-					team_reward: true
+					id: "7A11C2DF00500058"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0050000A"
-					item: { count: 16, id: "irons_spellbooks:common_ink" }
-					team_reward: true
+					id: "7A11C2DF00500059"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0050000B"
-					item: { count: 8, id: "irons_spellbooks:uncommon_ink" }
-					team_reward: true
+					id: "7A11C2DF0050005A"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050005B"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050005C"
+					item: { count: 64, id: "minecraft:brick" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050005D"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050005E"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050005F"
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500060"
+					item: { count: 64, id: "minecraft:terracotta" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500061"
+					item: { count: 64, id: "minecraft:terracotta" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500062"
+					item: { count: 32, id: "minecraft:glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500063"
+					item: { count: 8, id: "minecraft:lantern" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500064"
+					item: { count: 2, id: "minecraft:campfire" }
+					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Weekly"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
-					id: "7A11C1DF00500004"
+					id: "7A11C1DF0050000C"
 					item: { count: 1, id: "numismatics:sprocket" }
 					title: "Submit 1 Sprocket"
 					type: "item"
 				}
 			]
-			title: "Arcane Kit"
-			x: 2
+			title: "Village Hearth Kit"
+			x: -3.5d
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Restock a public Create line with alloy, brass, mechanisms, and belts. The bundle saves maintenance time without replacing ore generation or advanced machines."]
-			icon: { id: "create:precision_mechanism" }
+			description: ["Consume one Bevel for a personal survival refill of food, torches, leads, and a shield for late arrivals and failed expeditions. Restocks after five minutes. Convenience, not building stock or progression."]
+			icon: { id: "numismatics:bevel" }
+			id: "7A11C0DF00500002"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 300
+			rewards: [
+				{
+					id: "7A11C2DF00500001"
+					item: { count: 16, id: "minecraft:cooked_beef" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500002"
+					item: { count: 32, id: "minecraft:torch" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500003"
+					item: { count: 4, id: "minecraft:lead" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500076"
+					item: { count: 1, id: "minecraft:shield" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "1 Bevel · 5 min"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500002"
+					item: { count: 1, id: "numismatics:bevel" }
+					title: "Submit 1 Bevel"
+					type: "item"
+				}
+			]
+			title: "Field Kit"
+			x: 7
+			y: -1
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Consume two Sprockets for a personal early-Create starter of alloy, shafts, cogwheels, belts, a wrench, and copper for first machines. Restocks after five minutes. A beginning, not precision mechanisms, brass-age parts, or an automated factory."]
+			icon: { id: "create:shaft" }
 			id: "7A11C0DF00500005"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 300
 			rewards: [
 				{
 					id: "7A11C2DF0050000C"
-					item: { count: 48, id: "create:andesite_alloy" }
-					team_reward: true
+					item: { count: 16, id: "create:andesite_alloy" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000D"
-					item: { count: 24, id: "create:brass_ingot" }
-					team_reward: true
+					item: { count: 8, id: "create:shaft" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000E"
-					item: { count: 4, id: "create:precision_mechanism" }
-					team_reward: true
+					item: { count: 8, id: "create:cogwheel" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050000F"
-					item: { count: 8, id: "create:belt_connector" }
-					team_reward: true
+					item: { count: 4, id: "create:large_cogwheel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500065"
+					item: { count: 4, id: "create:belt_connector" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500066"
+					item: { count: 1, id: "create:wrench" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500067"
+					item: { count: 16, id: "minecraft:copper_ingot" }
+					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "diamond"
 			size: 1.0d
-			subtitle: "2 Sprockets · Weekly"
+			subtitle: "2 Sprockets · 5 min"
 			tasks: [
 				{
 					consume_items: true
@@ -227,47 +371,103 @@
 					type: "item"
 				}
 			]
-			title: "Foundry Kit"
-			x: 6
+			title: "Create Starter Kit"
+			x: 3.5d
 			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Buy a complete recovery cache for a difficult expedition: beds, shields, honey, and golden apples. It restores readiness without issuing permanent combat power."]
+			description: ["Consume one Sprocket for a personal first-steps magic kit of essence, blank runes, common and uncommon inks, and a Copper Spell Book. Restocks after five minutes. Learn the school, not a finished mage loadout or high-tier scrolls."]
+			icon: { id: "irons_spellbooks:copper_spell_book" }
+			id: "7A11C0DF00500004"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 300
+			rewards: [
+				{
+					id: "7A11C2DF00500008"
+					item: { count: 8, id: "irons_spellbooks:arcane_essence" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500009"
+					item: { count: 2, id: "irons_spellbooks:blank_rune" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050000A"
+					item: { count: 8, id: "irons_spellbooks:common_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050000B"
+					item: { count: 4, id: "irons_spellbooks:uncommon_ink" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500068"
+					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "1 Sprocket · 5 min"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF00500004"
+					item: { count: 1, id: "numismatics:sprocket" }
+					title: "Submit 1 Sprocket"
+					type: "item"
+				}
+			]
+			title: "Iron's Spells Starter Kit"
+			x: 7
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Consume one Sprocket for a personal recovery cache after a failed expedition: beds, shields, honey, and golden apples. Restocks after five minutes. Readiness restored, no permanent combat power, no mounts."]
 			icon: { id: "minecraft:golden_apple" }
 			id: "7A11C0DF00500009"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 300
 			rewards: [
 				{
 					id: "7A11C2DF00500014"
 					item: { count: 2, id: "minecraft:white_bed" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500015"
 					item: { count: 2, id: "minecraft:shield" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500016"
 					item: { count: 16, id: "minecraft:honey_bottle" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500017"
 					item: { count: 4, id: "minecraft:golden_apple" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "diamond"
 			size: 1.0d
-			subtitle: "1 Sprocket · Weekly"
+			subtitle: "1 Sprocket · 5 min"
 			tasks: [
 				{
 					consume_items: true
@@ -278,52 +478,52 @@
 				}
 			]
 			title: "Recovery Crate"
-			x: -6
+			x: 3.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Equip a team route with saddles, leads, rockets, boats, and compasses. The crate helps move people and stock but grants no mount, elytra, or teleport tier."]
+			description: ["Consume two Sprockets for a personal route kit of saddles, leads, rockets, boats, and compasses to move people and stock. Restocks after five minutes. No elytra, no teleport tier, no permanent flight."]
 			icon: { id: "minecraft:saddle" }
 			id: "7A11C0DF0050000A"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 300
 			rewards: [
 				{
 					id: "7A11C2DF00500018"
 					item: { count: 4, id: "minecraft:saddle" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500019"
 					item: { count: 16, id: "minecraft:lead" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050001A"
 					item: { count: 64, id: "minecraft:firework_rocket" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050001B"
 					item: { count: 4, id: "minecraft:oak_boat" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050001C"
 					item: { count: 4, id: "minecraft:compass" }
-					team_reward: true
+					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "diamond"
 			size: 1.0d
-			subtitle: "2 Sprockets · Weekly"
+			subtitle: "2 Sprockets · 5 min"
 			tasks: [
 				{
 					consume_items: true
@@ -335,52 +535,88 @@
 				}
 			]
 			title: "Transit Crate"
-			x: -2
-			y: 2.5d
+			x: 3.5d
+			y: 6
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Redeem a major team bond for structural and fabrication stock behind one common project. The bundle is broad, finite, and does not reproduce its Cog input."]
+			description: ["Consume one Cog for a personal civic-works package behind one shared project: bulk Stone and Oak, scaffolding, Glass, Chains, and Lanterns at a scale no single lower kit matches. Restocks after five minutes. Shared building stock, not diamonds, alloy, or combat gear."]
 			icon: { id: "numismatics:cog" }
 			id: "7A11C0DF00500007"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 604800
+			repeat_cooldown: 300
 			rewards: [
 				{
 					id: "7A11C2DF00500010"
-					item: { count: 256, id: "minecraft:stone_bricks" }
-					team_reward: true
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500011"
-					item: { count: 128, id: "minecraft:oak_log" }
-					team_reward: true
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500012"
-					item: { count: 64, id: "minecraft:iron_ingot" }
-					team_reward: true
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500069"
+					item: { count: 64, id: "minecraft:stone" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00500013"
-					item: { count: 8, id: "minecraft:diamond" }
-					team_reward: true
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0050001D"
-					item: { count: 64, id: "create:andesite_alloy" }
-					team_reward: true
+					item: { count: 64, id: "minecraft:oak_log" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006A"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006B"
+					item: { count: 64, id: "minecraft:scaffolding" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006C"
+					item: { count: 32, id: "minecraft:glass" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006D"
+					item: { count: 16, id: "minecraft:chain" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006E"
+					item: { count: 16, id: "minecraft:lantern" }
+					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "hexagon"
 			size: 1.3d
-			subtitle: "1 Cog · Weekly"
+			subtitle: "1 Cog · 5 min"
 			tasks: [
 				{
 					consume_items: true
@@ -390,13 +626,13 @@
 					type: "item"
 				}
 			]
-			title: "Concord Bond"
-			x: 2
-			y: 2.5d
+			title: "Civic Works Bond"
+			x: 0
+			y: -1
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet."]
+			description: ["File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet, deliberately weekly and team-scoped while purchases restock in minutes."]
 			icon: { id: "minecraft:written_book" }
 			id: "7A11C0DF00500006"
 			optional: true
@@ -424,12 +660,12 @@
 				{ id: "7A11C1DF0050000B", title: "I named the place, problem, and reviewer", type: "checkmark" }
 			]
 			title: "Rumour Ledger"
-			x: 6
+			x: 0
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign."]
+			description: ["Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign. Purchases are personal-scope with three-minute building and five-minute progression restocks; only the Rumour Ledger faucet is weekly and team-scoped."]
 			icon: { id: "numismatics:cog" }
 			id: "7A11C0DF00500008"
 			optional: true
@@ -442,20 +678,26 @@
 			]
 			title: "Know the Coins"
 			x: 0
-			y: 8.5d
+			y: 6
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for celestial spires and arcane studies: deepslate tiles, dark oak planks, tinted glass, amethyst clusters, bookshelves, and sea lanterns."]
+			description: ["Consume one Sprocket for a personal dark-arcane palette of deepslate tiles, dark oak planks, tinted glass, amethyst clusters, bookshelves, and sea lanterns for observatories and ritual studies. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."]
 			icon: { id: "minecraft:deepslate_tiles" }
 			id: "7A11C0DF00500011"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 86400
+			repeat_cooldown: 180
 			rewards: [
 				{
 					id: "7A11C2DF00500031"
-					item: { count: 128, id: "minecraft:deepslate_tiles" }
+					item: { count: 64, id: "minecraft:deepslate_tiles" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500077"
+					item: { count: 64, id: "minecraft:deepslate_tiles" }
 					team_reward: false
 					type: "item"
 				}
@@ -490,9 +732,9 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Daily"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
@@ -503,21 +745,27 @@
 				}
 			]
 			title: "Celestial Spire Crate"
-			x: -6
-			y: 6
+			x: -7
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for holy breweries and alchemical laboratories: polished tuff, white wood planks, frosted glass, apothecary jars, faucets, and lanterns."]
+			description: ["Consume one Sprocket for a personal light-masonry palette of polished tuff, white wood planks, frosted glass, apothecary jars, faucets, and lanterns for breweries, workshops, and scholastic halls. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."]
 			icon: { id: "abyssal_decor:white_wood_planks" }
 			id: "7A11C0DF00500012"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 86400
+			repeat_cooldown: 180
 			rewards: [
 				{
 					id: "7A11C2DF00500037"
-					item: { count: 128, id: "minecraft:polished_tuff" }
+					item: { count: 64, id: "minecraft:polished_tuff" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500078"
+					item: { count: 64, id: "minecraft:polished_tuff" }
 					team_reward: false
 					type: "item"
 				}
@@ -552,9 +800,9 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Daily"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
@@ -565,21 +813,27 @@
 				}
 			]
 			title: "Sanctified Brewery Crate"
-			x: -2
-			y: 6
+			x: -3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for frontier outposts and watchtowers: spruce planks, timber frames, ropes, way signs, torches, and spyglasses."]
+			description: ["Consume one Sprocket for a personal frontier palette of spruce planks, timber frames, ropes, way signs, torches, and spyglasses for outposts and watchtowers. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."]
 			icon: { id: "supplementaries:timber_frame" }
 			id: "7A11C0DF00500013"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 86400
+			repeat_cooldown: 180
 			rewards: [
 				{
 					id: "7A11C2DF0050003D"
-					item: { count: 128, id: "minecraft:spruce_planks" }
+					item: { count: 64, id: "minecraft:spruce_planks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500079"
+					item: { count: 64, id: "minecraft:spruce_planks" }
 					team_reward: false
 					type: "item"
 				}
@@ -614,9 +868,9 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Daily"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
@@ -627,17 +881,17 @@
 				}
 			]
 			title: "Frontier Watch Crate"
-			x: 2
+			x: -7
 			y: 6
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Redeem an Order Construction Grant or 1 Sprocket for a decorative palette crate tailored for sentry bastions, armories, and artillery installations: Create Deco industrial iron catwalks, sheet metal, structural supports, mesh fences, chains, and iron bars."]
+			description: ["Consume one Sprocket for a personal fortress palette of Create Deco iron catwalks, sheet metal, supports, mesh fences, chains, and iron bars for bastions and armories. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."]
 			icon: { id: "createdeco:industrial_iron_catwalk" }
 			id: "7A11C0DF00500014"
 			optional: true
 			can_repeat: true
-			repeat_cooldown: 86400
+			repeat_cooldown: 180
 			rewards: [
 				{
 					id: "7A11C2DF00500043"
@@ -676,9 +930,9 @@
 					type: "item"
 				}
 			]
-			shape: "gear"
+			shape: "square"
 			size: 1.0d
-			subtitle: "1 Sprocket · Daily"
+			subtitle: "1 Sprocket · 3 min"
 			tasks: [
 				{
 					consume_items: true
@@ -689,8 +943,71 @@
 				}
 			]
 			title: "Heavy Bastion Crate"
-			x: 6
+			x: -3.5d
 			y: 6
+		}
+		{
+			dependencies: ["7A11C0DF00500001"]
+			description: ["Consume two Sprockets for a personal Create Deco palette of Pearl and Scarlet bricks with stairs plus iron windows and bars for industrial facades. Restocks after three minutes. Decorative stock, not machines, precision parts, or combat gear."]
+			icon: { id: "createdeco:pearl_bricks" }
+			id: "7A11C0DF00500015"
+			optional: true
+			can_repeat: true
+			repeat_cooldown: 180
+			rewards: [
+				{
+					id: "7A11C2DF00500070"
+					item: { count: 64, id: "createdeco:pearl_bricks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500071"
+					item: { count: 64, id: "createdeco:scarlet_bricks" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500072"
+					item: { count: 32, id: "createdeco:pearl_brick_stairs" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500073"
+					item: { count: 32, id: "createdeco:scarlet_brick_stairs" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500074"
+					item: { count: 16, id: "createdeco:industrial_iron_window" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00500075"
+					item: { count: 16, id: "createdeco:industrial_iron_bars" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "2 Sprockets · 3 min"
+			tasks: [
+				{
+					consume_items: true
+					id: "7A11C1DF0050000D"
+					item: { count: 1, id: "numismatics:sprocket" }
+					count: 2
+					title: "Submit 2 Sprockets"
+					type: "item"
+				}
+			]
+			title: "Create Deco Palette"
+			x: -5.2d
+			y: 9.5d
 		}
 	]
 	title: "05 · Market Services"

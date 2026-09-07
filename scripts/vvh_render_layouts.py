@@ -88,9 +88,11 @@ def main():
                                  max(1,round(float(art.get('height',1))*scale))),
                                 int(art.get('alpha',255)), float(art.get('rotation',0)))
         d=ImageDraw.Draw(img)
-        # lines first
+        # lines first; effective visibility honors the chapter default
+        # (Market hides all lines) plus any quest-level override.
+        chapter_default_hidden = bool(ch.get('default_hide_dependency_lines', False))
         for q in qs:
-            if q.get('hide_dependency_lines'):
+            if chapter_default_hidden or q.get('hide_dependency_lines'):
                 continue
             x2,y2=pt(float(q['x']),float(q['y']))
             for dep in q['dependencies']:

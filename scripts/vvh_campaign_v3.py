@@ -214,6 +214,9 @@ class Chapter:
     order: int
     images: list[dict[str, Any]] = field(default_factory=list)
     quests: list[dict[str, Any]] = field(default_factory=list)
+    # Chapter-level FTB default for hiding dependency lines. Only the Market
+    # sets this; every other chapter keeps visible progression lines.
+    default_hide_dependency_lines: bool = False
 
     @property
     def id(self) -> str:
@@ -531,13 +534,17 @@ def build_hunters(group: str) -> Chapter:
         ],
         dependencies=[qid(2, 4)],
     )
+    # Reconciled 2026-09-07 with live origin/dev: human streamlining (f3ecc4b)
+    # trimmed bulk rewards to a starter kit and titled the sprocket as the
+    # Order Construction Grant redeemable at the Market. IDs preserved.
     building_supplies_rewards = [
-        item_reward(3, 6, "numismatics:sprocket"),
-        *[item_reward(3, 100 + i, "minecraft:stone", 64) for i in range(24)],
-        *[item_reward(3, 130 + i, "minecraft:oak_log", 64) for i in range(5)],
-        *[item_reward(3, 150 + i, "minecraft:spruce_log", 64) for i in range(5)],
-        item_reward(3, 10, "minecraft:iron_ingot", 64),
-        item_reward(3, 70, "minecraft:copper_ingot", 64),
+        item_reward(3, 6, "numismatics:sprocket", title="Order Construction Grant"),
+        item_reward(3, 100, "minecraft:stone", 64),
+        item_reward(3, 101, "minecraft:stone", 64),
+        item_reward(3, 130, "minecraft:oak_log", 64),
+        item_reward(3, 150, "minecraft:spruce_log", 64),
+        item_reward(3, 10, "minecraft:iron_ingot", 16),
+        item_reward(3, 70, "minecraft:copper_ingot", 16),
         item_reward(3, 72, "minecraft:stonecutter"),
         item_reward(3, 73, "supplementaries:wrench"),
     ]
@@ -545,17 +552,17 @@ def build_hunters(group: str) -> Chapter:
         2,
         title="Building Supplies",
         subtitle="Tier II · Construction stock",
-        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a massive building stockpile with twenty-four full stacks of stone, five full stacks each of oak and spruce logs, a sprocket, iron, copper, a stonecutter, and a wrench.",
+        description="Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, a stonecutter, a wrench, and a sprocket construction grant to redeem at the Market.",
         icon="minecraft:stone",
         x=0,
         y=-7,
         shape="gear",
         size=1.3,
         tasks=[
-            item_task(3, 4, "minecraft:stone_bricks", 64, "Inspect sixty-four Stone Bricks"),
-            item_task(3, 5, "minecraft:oak_log", 32, "Inspect thirty-two Oak Logs"),
-            item_task(3, 6, "minecraft:iron_bars", 16, "Inspect sixteen Iron Bars"),
-            item_task(3, 70, "minecraft:lantern", 8, "Inspect eight Lanterns"),
+            item_task(3, 4, "minecraft:stone_bricks", 32, "Inspect thirty-two Stone Bricks"),
+            item_task(3, 5, "minecraft:oak_log", 16, "Inspect sixteen Oak Logs"),
+            item_task(3, 6, "minecraft:iron_bars", 8, "Inspect eight Iron Bars"),
+            item_task(3, 70, "minecraft:lantern", 4, "Inspect four Lanterns"),
         ],
         rewards=building_supplies_rewards,
         dependencies=[core1],
@@ -585,34 +592,35 @@ def build_hunters(group: str) -> Chapter:
         dependencies=[core2],
     )
 
+    # Reconciled 2026-09-07 with live origin/dev: human streamlining (f3ecc4b)
+    # trimmed the cache to a compact starter tied to the Celestial Spire Crate.
+    # IDs preserved.
     wizard_tower_rewards = [
-        item_reward(3, 75, "numismatics:sprocket"),
-        *[item_reward(3, 200 + i, "minecraft:cobbled_deepslate", 64) for i in range(24)],
-        *[item_reward(3, 230 + i, "minecraft:dark_oak_log", 64) for i in range(5)],
-        *[item_reward(3, 250 + i, "minecraft:sand", 64) for i in range(12)],
+        item_reward(3, 75, "numismatics:sprocket", title="Order Construction Grant"),
+        item_reward(3, 200, "minecraft:cobbled_deepslate", 64),
+        item_reward(3, 201, "minecraft:cobbled_deepslate", 64),
+        item_reward(3, 230, "minecraft:dark_oak_log", 64),
+        item_reward(3, 250, "minecraft:sand", 64),
         item_reward(3, 270, "minecraft:scaffolding", 64),
-        item_reward(3, 271, "minecraft:scaffolding", 64),
-        item_reward(3, 76, "minecraft:candle", 64),
-        item_reward(3, 77, "minecraft:lapis_lazuli", 64),
-        item_reward(3, 78, "minecraft:gold_ingot", 64),
-        item_reward(3, 272, "minecraft:amethyst_shard", 64),
+        item_reward(3, 77, "minecraft:lapis_lazuli", 16),
+        item_reward(3, 272, "minecraft:amethyst_shard", 16),
         item_reward(3, 273, "minecraft:enchanting_table"),
         item_reward(3, 274, "minecraft:lectern"),
     ]
     b_wizard = ch.add(
         14,
         title="Arcane Spire",
-        subtitle="Construction · High study",
-        description="Lay the foundation for an arcane study and celestial spire overlooking the island. Gather deepslate, dark oak timber, and amethyst shards. The Order delivers a massive construction cache of deepslate, dark oak logs, sand for glasswork, scaffolding, candles, lapis, gold, amethyst, a lectern, and an enchanting table.",
+        subtitle="Facility Hub · Arcane Study",
+        description="Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and a sprocket construction grant for the Celestial Spire Crate at the Market.",
         icon="irons_spellbooks:inscription_table",
         x=-6.5,
         y=-1.0,
         shape="square",
         optional=True,
         tasks=[
-            item_task(3, 75, "minecraft:cobbled_deepslate", 32, "Inspect thirty-two Cobbled Deepslate"),
-            item_task(3, 76, "minecraft:dark_oak_log", 32, "Inspect thirty-two Dark Oak Logs"),
-            item_task(3, 78, "minecraft:amethyst_shard", 16, "Inspect sixteen Amethyst Shards"),
+            item_task(3, 75, "minecraft:cobbled_deepslate", 16, "Inspect sixteen Cobbled Deepslate"),
+            item_task(3, 76, "minecraft:dark_oak_log", 16, "Inspect sixteen Dark Oak Logs"),
+            item_task(3, 78, "minecraft:amethyst_shard", 8, "Inspect eight Amethyst Shards"),
         ],
         rewards=wizard_tower_rewards,
         dependencies=[core3],
@@ -919,17 +927,6 @@ def build_hunters(group: str) -> Chapter:
     return ch
 
 
-def vampire_spell_rewards() -> list[dict[str, Any]]:
-    return [
-        item_reward(4, 20, "numismatics:sprocket"),
-        item_reward(4, 21, "irons_spellbooks:uncommon_ink", 16),
-        item_reward(4, 22, "irons_spellbooks:rare_ink", 8),
-        scroll_reward(4, 23, "irons_spellbooks:blood_slash", "Scroll of Blood Slash"),
-        scroll_reward(4, 24, "irons_spellbooks:blood_step", "Scroll of Blood Step"),
-        scroll_reward(4, 25, "irons_spellbooks:ray_of_siphoning", "Scroll of Siphoning"),
-    ]
-
-
 def build_vampires(group: str) -> Chapter:
     ch = Chapter(
         4,
@@ -968,172 +965,177 @@ def build_vampires(group: str) -> Chapter:
         ],
         dependencies=[qid(2, 2)],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: teach the Altar of Infusion
+    # upgrade (pillars + tips + structure) instead of verifying the base
+    # altar; generic bottle/iron/lead/redstone bundle removed.
     core2 = ch.add(
         2,
         title="Red Measure",
-        subtitle="Tier II · Workstations",
-        description="Add an Altar of Infusion, four Blood Pedestals, and two Blood-Infused Iron. The ritual becomes an inspectable workstation rather than a secret held by whoever logged in first.",
+        subtitle="Tier II · Altar ascent",
+        description="Raise a meaningfully upgraded Altar of Infusion: four Altar Pillars crowned with four Altar Tips over a true stone foundation. The reward funds ritual upkeep with currency, a blood transport bucket, and candles rather than unrelated bulk.",
         icon="vampirism:altar_infusion",
         x=0,
         y=-7,
         shape="gear",
         size=1.3,
         tasks=[
-            item_task(4, 4, "vampirism:altar_infusion", title="Inspect an Altar of Infusion"),
-            item_task(4, 5, "vampirism:blood_pedestal", 4, "Inspect four Blood Pedestals"),
-            item_task(4, 6, "vampirism:blood_infused_iron_ingot", 2, "Carry two Blood-Infused Iron"),
+            item_task(4, 91, "vampirism:altar_pillar", 4, "Raise four Altar Pillars"),
+            item_task(4, 92, "vampirism:altar_tip", 4, "Crown the pillars with four Altar Tips"),
+            item_task(4, 93, "minecraft:stone_bricks", 16, "Lay sixteen Stone Bricks of foundation"),
         ],
         rewards=[
-            item_reward(4, 6, "numismatics:sprocket"),
-            item_reward(4, 7, "minecraft:glass_bottle", 32),
-            item_reward(4, 8, "minecraft:iron_ingot", 32),
-            item_reward(4, 9, "minecraft:lead", 8),
-            item_reward(4, 10, "minecraft:redstone", 32),
+            item_reward(4, 91, "numismatics:sprocket"),
+            item_reward(4, 92, "vampirism:blood_bucket"),
+            item_reward(4, 93, "minecraft:candle", 16),
         ],
         dependencies=[core1],
     )
+    # Redesigned 2026-09-07 per Ch4 appendix: Tier III Household muster that
+    # unlocks the four commissions. Heartseeker, blood-iron, and generic
+    # metal rewards removed; no altar/storage/automation duplication.
     core3 = ch.add(
         3,
         title="Inherited Edge",
-        subtitle="Tier III · Logistics",
-        description="Prepare a Blood Sieve, normal Heartseeker, and four Blood-Infused Iron. The House can now repair controlled armament and support specialized bloodwork without receiving a free late-tier blade.",
-        icon="vampirism:heart_seeker_normal",
+        subtitle="Tier III · Household muster",
+        description="Muster the Household: raise a House Notice Board, draft the Household Roll, and convene the four commissions that raise the Spire, Foundry, Hall, and Vault. The reward rings in the new House with a muster bell, currency, and paper without issuing weapons, blood iron, or bulk metals.",
+        icon="supplementaries:notice_board",
         x=0,
         y=-4,
         shape="gear",
         size=1.3,
         tasks=[
-            item_task(4, 7, "vampirism:blood_sieve", title="Inspect a Blood Sieve"),
-            item_task(4, 8, "vampirism:heart_seeker_normal", title="Carry a normal Heartseeker"),
-            item_task(4, 9, "vampirism:blood_infused_iron_ingot", 4, "Carry four Blood-Infused Iron"),
+            item_task(4, 94, "supplementaries:notice_board", title="Raise a House Notice Board"),
+            item_task(4, 95, "minecraft:writable_book", title="Draft the Household Roll"),
+            check_task(4, 96, "I convened the four commissions"),
         ],
         rewards=[
-            item_reward(4, 11, "numismatics:sprocket", 2),
-            item_reward(4, 12, "minecraft:iron_block", 2),
-            item_reward(4, 13, "minecraft:redstone", 32),
-            item_reward(4, 14, "minecraft:gold_ingot", 16),
-            item_reward(4, 15, "minecraft:coal", 32),
+            item_reward(4, 94, "numismatics:sprocket", 2),
+            item_reward(4, 95, "minecraft:bell"),
+            item_reward(4, 96, "minecraft:paper", 16),
         ],
         dependencies=[core2],
     )
 
+    # Reworked 2026-09-07 per Ch4 appendix: functional Spire commission
+    # (signals/observation/broadcast). Material piles removed; the sprocket
+    # spends at the Market Celestial Spire Crate without funding loops.
     b_spire = ch.add(
         14,
-        title="Dark Spire Materials",
-        subtitle="Construction · Nocturnal spire",
-        description="Gather obsidian, lightning rods, cut copper, and tinted glass to construct a dark transmission spire and advanced workshop overlooking the island.",
+        title="Dark Spire",
+        subtitle="Commission · Signals and watch",
+        description="Commission the Dark Spire as the island's nocturnal signal post: raise lightning rods, post a lookout spyglass, and stock broadcast cassettes for the Nocturnal Broadcast crew. The commission pays one sprocket, sized for the Market Celestial Spire Crate, plus wiring for the signal lamps.",
         icon="minecraft:lightning_rod",
         x=-6.5,
         y=-1.0,
         shape="square",
         optional=True,
         tasks=[
-            item_task(4, 75, "minecraft:obsidian", 64, "Inspect sixty-four Obsidian"),
-            item_task(4, 76, "minecraft:lightning_rod", 16, "Inspect sixteen Lightning Rods"),
-            item_task(4, 77, "minecraft:cut_copper", 4, "Inspect four Cut Copper"),
-            item_task(4, 78, "minecraft:tinted_glass", 16, "Inspect sixteen Tinted Glass"),
+            item_task(4, 97, "minecraft:lightning_rod", 8, "Raise eight Lightning Rods"),
+            item_task(4, 98, "minecraft:spyglass", title="Post a lookout Spyglass"),
+            item_task(4, 99, "vista:hollow_cassette", 4, "Stock four blank Broadcast Cassettes"),
         ],
         rewards=[
-            item_reward(4, 75, "numismatics:sprocket"),
-            item_reward(4, 76, "minecraft:obsidian", 64),
-            item_reward(4, 77, "minecraft:tinted_glass", 32),
-            item_reward(4, 78, "minecraft:redstone_torch", 16),
+            item_reward(4, 97, "numismatics:sprocket"),
+            item_reward(4, 98, "minecraft:redstone", 16),
         ],
         dependencies=[core3],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: functional Foundry commission
+    # (rendering rig/extraction logistics). Material piles removed; the
+    # sprocket spends at the Market Heavy Bastion Crate without loops.
     b_foundry = ch.add(
         15,
-        title="Blood Foundry Materials",
-        subtitle="Construction · Metallurgy lab",
-        description="Gather nether bricks, quartz, cauldrons, and chains to construct a blood foundry and transit waystation for nocturnal couriers.",
-        icon="minecraft:nether_bricks",
+        title="Blood Foundry",
+        subtitle="Commission · Rendering rig",
+        description="Commission the Blood Foundry as the House rendering rig: set seething cauldrons, rig hoist chains, and bank furnace fuel for extraction work. The commission pays one sprocket, sized for the Market Heavy Bastion Crate, plus fuel for the first firing. Sieve automation itself belongs to Sieve Extraction.",
+        icon="minecraft:cauldron",
         x=-2.5,
         y=0.5,
         shape="square",
         optional=True,
         tasks=[
-            item_task(4, 79, "minecraft:nether_bricks", 64, "Inspect sixty-four Nether Bricks"),
-            item_task(4, 80, "minecraft:quartz", 16, "Inspect sixteen Nether Quartz"),
-            item_task(4, 81, "minecraft:cauldron", 2, "Inspect two Cauldrons"),
-            item_task(4, 82, "minecraft:chain", 16, "Inspect sixteen Chains"),
+            item_task(4, 100, "minecraft:cauldron", 2, "Set two Rendering Cauldrons"),
+            item_task(4, 101, "minecraft:chain", 16, "Rig sixteen Hoist Chains"),
+            item_task(4, 102, "minecraft:furnace", 4, "Bank four Smelting Furnaces"),
         ],
         rewards=[
-            item_reward(4, 79, "numismatics:sprocket"),
-            item_reward(4, 80, "minecraft:nether_bricks", 64),
-            item_reward(4, 81, "minecraft:chain", 16),
-            item_reward(4, 82, "minecraft:crimson_planks", 32),
+            item_reward(4, 99, "numismatics:sprocket"),
+            item_reward(4, 100, "minecraft:coal", 16),
         ],
         dependencies=[core3],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: functional Hall commission
+    # (hospitality: stores, hearth, beds). Material piles removed; the
+    # sprocket spends at the Market Frontier Watch Crate without loops.
     b_manor = ch.add(
         16,
-        title="Guest Hall Materials",
-        subtitle="Construction · Manor estate",
-        description="Gather polished blackstone, crimson stems, barrels, and soul lanterns to construct an imposing manor hall and hospitality vault.",
-        icon="minecraft:polished_blackstone",
+        title="Guest Hall",
+        subtitle="Commission · Hearth and beds",
+        description="Commission the Guest Hall as the island's open hearth: fill provision barrels, keep a welcome campfire, and air two guest beds for travellers caught out after dark. The commission pays one sprocket, sized for the Market Frontier Watch Crate, plus a first welcome stock of bread.",
+        icon="minecraft:campfire",
         x=2.5,
         y=0.5,
         shape="square",
         optional=True,
         tasks=[
-            item_task(4, 83, "minecraft:polished_blackstone", 64, "Inspect sixty-four Polished Blackstone"),
-            item_task(4, 84, "minecraft:crimson_stem", 32, "Inspect thirty-two Crimson Stems"),
-            item_task(4, 85, "minecraft:barrel", 4, "Inspect four Barrels"),
-            item_task(4, 86, "minecraft:soul_lantern", 4, "Inspect four Soul Lanterns"),
+            item_task(4, 103, "minecraft:barrel", 4, "Fill four Provision Barrels"),
+            item_task(4, 104, "minecraft:campfire", 2, "Keep two Welcome Campfires"),
+            item_task(4, 105, "minecraft:white_bed", 2, "Air two Guest Beds"),
         ],
         rewards=[
-            item_reward(4, 83, "numismatics:sprocket"),
-            item_reward(4, 84, "minecraft:polished_blackstone", 64),
-            item_reward(4, 85, "minecraft:crimson_planks", 32),
-            item_reward(4, 86, "minecraft:soul_lantern", 8),
+            item_reward(4, 101, "numismatics:sprocket"),
+            item_reward(4, 102, "minecraft:bread", 16),
         ],
         dependencies=[core3],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: functional Vault commission
+    # (records/archive/secure reserves). Material piles removed; the sprocket
+    # spends at the Market Sanctified Brewery Crate without loops.
     b_vault = ch.add(
         17,
-        title="Blood Vault Materials",
-        subtitle="Construction · Sanguine arcanum",
-        description="Gather crying obsidian, amethyst shards, bookshelves, and glass to construct an arcane blood vault and sanguine library.",
-        icon="minecraft:crying_obsidian",
+        title="Blood Vault",
+        subtitle="Commission · Archive and reserves",
+        description="Commission the Blood Vault as the House archive: shelve records bookshelves, stand a catalogue lectern, and glaze tinted panes for the sealed reserve. The commission pays one sprocket, sized for the Market Sanctified Brewery Crate, plus paper for the first ledgers. Bulk automation belongs to Sieve Extraction.",
+        icon="minecraft:lectern",
         x=6.5,
         y=-1.0,
         shape="square",
         optional=True,
         tasks=[
-            item_task(4, 87, "minecraft:crying_obsidian", 64, "Inspect sixty-four Crying Obsidian"),
-            item_task(4, 88, "minecraft:amethyst_shard", 16, "Inspect sixteen Amethyst Shards"),
-            item_task(4, 89, "minecraft:bookshelf", 4, "Inspect four Bookshelves"),
-            item_task(4, 90, "minecraft:glass", 16, "Inspect sixteen Glass"),
+            item_task(4, 106, "minecraft:bookshelf", 2, "Shelve two Archive Bookshelves"),
+            item_task(4, 107, "minecraft:lectern", title="Stand a Catalogue Lectern"),
+            item_task(4, 108, "minecraft:tinted_glass", 8, "Glaze eight Tinted Archive Panes"),
         ],
         rewards=[
-            item_reward(4, 87, "numismatics:sprocket"),
-            item_reward(4, 88, "minecraft:crying_obsidian", 64),
-            item_reward(4, 89, "minecraft:glass", 32),
-            item_reward(4, 90, "minecraft:redstone", 16),
+            item_reward(4, 103, "numismatics:sprocket"),
+            item_reward(4, 104, "minecraft:paper", 16),
         ],
         dependencies=[core3],
     )
 
+    # Reworked 2026-09-07 per Ch4 appendix: late Dark Spire civic lighting
+    # duty, not a weapon tax. Enhanced Heartseeker, enhanced alloy, orb, and
+    # diamonds removed; one-time Cog-scale lighting milestone retained.
     mastery = ch.add(
         9,
         title="Night's Due",
-        subtitle="Specialty · Advanced bloodwork",
-        description="Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression.",
-        icon="vampirism:heart_seeker_enhanced",
+        subtitle="Specialty · Signal lighting",
+        description="Pay the Night's Due: hang the Spire's signal lighting across the public route, soul-lanterns where the dark pools deepest, then walk the lit perimeter to prove it. This civic lighting duty pays once at Cog scale with lamps and glowstone; it grants no weapons, alloy, or diamonds.",
+        icon="minecraft:soul_lantern",
         x=-10.5,
         y=0,
         shape="hexagon",
         size=1.3,
         optional=True,
         tasks=[
-            item_task(4, 10, "vampirism:heart_seeker_enhanced", title="Carry an enhanced Heartseeker"),
-            item_task(4, 11, "vampirism:blood_infused_enhanced_iron_ingot", 2, "Carry two Enhanced Blood-Infused Iron"),
+            item_task(4, 109, "minecraft:lantern", 16, "Hang sixteen Signal Lanterns"),
+            item_task(4, 110, "minecraft:soul_lantern", 8, "Set eight Soul-Lanterns"),
+            check_task(4, 111, "I walked the lit perimeter"),
         ],
         rewards=[
-            item_reward(4, 16, "numismatics:cog"),
-            item_reward(4, 17, "irons_spellbooks:blood_upgrade_orb"),
-            item_reward(4, 18, "minecraft:obsidian", 16),
-            item_reward(4, 19, "minecraft:diamond", 8),
+            item_reward(4, 105, "numismatics:cog"),
+            item_reward(4, 106, "minecraft:glowstone", 16),
+            item_reward(4, 107, "minecraft:redstone_lamp", 4),
         ],
         dependencies=[b_spire],
     )
@@ -1151,154 +1153,191 @@ def build_vampires(group: str) -> Chapter:
             item_task(4, 19, "vista:television", title="Craft a Television"),
             item_task(4, 20, "vista:viewfinder", title="Craft a Viewfinder"),
         ],
+        # Adjusted 2026-09-07 per Ch4 appendix: currency reward raised to two
+        # sprockets; cassettes doubled to support actual broadcast use.
         rewards=[
-            item_reward(4, 53, "numismatics:sprocket"),
-            item_reward(4, 54, "vista:hollow_cassette", 4),
+            item_reward(4, 53, "numismatics:sprocket", 2),
+            item_reward(4, 54, "vista:hollow_cassette", 8),
         ],
         dependencies=[b_spire],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: dedicated blood-processing lane
+    # quest (sieve + livestock + feed). Generic metal rewards replaced with
+    # lane support; no enhanced alloy granted.
     metallurgy = ch.add(
         7,
         title="Sieve Extraction",
-        subtitle="Specialty · Blood metallurgy",
-        description="Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery.",
+        subtitle="Specialty · Blood processing",
+        description="Run a functioning blood-processing lane: commission a Blood Sieve, lead livestock to the pens, and stock feed for the herd. The reward outfits the lane with hoppers, collection bottles, and feed without handing out enhanced alloy or foundry metals.",
         icon="vampirism:blood_sieve",
         x=-4.5,
         y=3.5,
         shape="gear",
         optional=True,
         tasks=[
-            item_task(4, 49, "vampirism:blood_sieve", title="Inspect a Blood Sieve"),
-            item_task(4, 50, "vampirism:blood_infused_iron_ingot", 4, "Carry four Blood-Infused Iron"),
+            item_task(4, 49, "vampirism:blood_sieve", title="Commission a Blood Sieve"),
+            item_task(4, 50, "minecraft:lead", 4, "Lead four Head of Livestock"),
+            item_task(4, 51, "minecraft:wheat", 16, "Stock sixteen Wheat"),
         ],
         rewards=[
             item_reward(4, 49, "numismatics:sprocket"),
-            item_reward(4, 50, "minecraft:redstone", 32),
-            item_reward(4, 51, "minecraft:gold_ingot", 16),
-            item_reward(4, 52, "minecraft:iron_ingot", 16),
+            item_reward(4, 50, "minecraft:hopper", 2),
+            item_reward(4, 51, "minecraft:glass_bottle", 16),
+            item_reward(4, 52, "minecraft:wheat", 16),
         ],
         dependencies=[b_foundry],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: focused daytime-survival loop
+    # around the verified Sunscreen Beacon plus umbrella. Saddle/clock
+    # tasks and lead/rocket/map rewards removed to avoid duplicating the
+    # Market Transit Crate and Broadcast quest.
     transit = ch.add(
         13,
         title="Sunproof Transit",
-        subtitle="Specialty · Night mobility",
-        description="Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression.",
+        subtitle="Specialty · Daytime survival",
+        description="Walk at noon and live: raise a Sunscreen Beacon over the foundry route, carry a sunshade umbrella, and prove the crossing on foot. The reward sustains the courier with blood top-ups and trail food; mounts, rockets, maps, and flight stay with the Market Transit Crate and ordinary progression.",
         icon="vampirism:umbrella",
         x=-1.5,
         y=4.5,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 43, "vampirism:umbrella", title="Carry an Umbrella"),
-            item_task(4, 44, "minecraft:saddle", title="Carry a Saddle"),
-            item_task(4, 45, "minecraft:clock", title="Carry a Clock"),
+            item_task(4, 43, "vampirism:sunscreen_beacon", title="Raise a Sunscreen Beacon"),
+            item_task(4, 44, "vampirism:umbrella", title="Carry a Sunshade Umbrella"),
+            check_task(4, 45, "I crossed the route at noon"),
         ],
         rewards=[
             item_reward(4, 45, "numismatics:sprocket"),
-            item_reward(4, 46, "minecraft:lead", 8),
-            item_reward(4, 47, "minecraft:firework_rocket", 32),
-            item_reward(4, 48, "minecraft:map", 8),
+            item_reward(4, 46, "minecraft:glass_bottle", 16),
+            item_reward(4, 47, "minecraft:cooked_beef", 16),
         ],
         dependencies=[b_foundry],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: distinctive hearth-table service
+    # for visitors; generic brewing-stand package removed. No duplication of
+    # the Market Recovery Crate or Crimson Reserve; no bulk materials.
     stores = ch.add(
         12,
-        title="Guest Stores",
-        subtitle="Specialty · Hospitality",
-        description="Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark.",
-        icon="minecraft:brewing_stand",
+        title="Wayfarer Table",
+        subtitle="Specialty · Hearth service",
+        description="Keep the wayfarer's table: a lit hearth campfire, a served welcome cake, and dressed table pots for travellers of any diet. The reward restocks baking and lighting without duplicating the Market Recovery Crate, the Crimson Reserve, or bulk construction stock.",
+        icon="minecraft:cake",
         x=1.5,
         y=4.5,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 40, "minecraft:brewing_stand", title="Inspect a Brewing Stand"),
-            item_task(4, 41, "minecraft:honey_bottle", 8, "Carry eight Honey Bottles"),
-            item_task(4, 42, "minecraft:cooked_beef", 32, "Carry thirty-two Cooked Beef"),
+            item_task(4, 40, "minecraft:campfire", title="Keep a Hearth Campfire"),
+            item_task(4, 41, "minecraft:cake", title="Serve a Welcome Cake"),
+            item_task(4, 42, "minecraft:flower_pot", 2, "Dress two Table Pots"),
         ],
         rewards=[
             item_reward(4, 41, "numismatics:sprocket"),
-            item_reward(4, 42, "minecraft:glass_bottle", 32),
-            item_reward(4, 43, "minecraft:golden_apple", 4),
-            item_reward(4, 44, "minecraft:bread", 32),
+            item_reward(4, 42, "minecraft:wheat", 16),
+            item_reward(4, 43, "minecraft:sugar", 8),
+            item_reward(4, 44, "minecraft:torch", 16),
         ],
         dependencies=[b_manor],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: non-building social function
+    # (guest registry). Manor-palette concept, bulk blocks, iron, diamond,
+    # and stonecutter removed entirely.
     palette = ch.add(
         6,
-        title="House of Doors",
-        subtitle="Specialty · Manor palette",
-        description="Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders.",
-        icon="vampirism:dark_stone_bricks",
+        title="Guest Registry",
+        subtitle="Specialty · Welcome records",
+        description="Open the Guest Hall's doors on paper: stand a registry lectern, open the guest book, and personally welcome a first guest of the mixed settlement. A social and administrative function, not another block collection; it grants record stock, never building bulk, iron, or diamonds.",
+        icon="minecraft:lectern",
         x=4.5,
         y=3.5,
-        shape="square",
+        shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 15, "vampirism:dark_stone_bricks", 64, "Inspect sixty-four Dark Stone Bricks"),
-            item_task(4, 16, "minecraft:dark_oak_log", 32, "Inspect thirty-two Dark Oak Logs"),
-            item_task(4, 17, "minecraft:dark_oak_fence", 16, "Inspect sixteen Dark Oak Fences"),
-            item_task(4, 18, "minecraft:lantern", 8, "Inspect eight Lanterns"),
+            item_task(4, 15, "minecraft:lectern", title="Stand a Registry Lectern"),
+            item_task(4, 16, "minecraft:writable_book", title="Open the Guest Book"),
+            check_task(4, 17, "I welcomed a first guest"),
         ],
         rewards=[
             item_reward(4, 26, "numismatics:sprocket"),
-            item_reward(4, 27, "vampirism:dark_stone_bricks", 192),
-            item_reward(4, 28, "minecraft:dark_oak_log", 96),
-            item_reward(4, 29, "minecraft:dark_oak_fence", 48),
-            item_reward(4, 30, "minecraft:lantern", 24),
-            item_reward(4, 31, "minecraft:iron_ingot", 32),
-            item_reward(4, 32, "minecraft:diamond", 4),
-            item_reward(4, 33, "minecraft:stonecutter"),
+            item_reward(4, 27, "minecraft:paper", 16),
+            item_reward(4, 28, "minecraft:feather", 16),
         ],
         dependencies=[b_manor],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: deeper emergency reserve with
+    # real breeding support. Storage theme kept; automation stays with the
+    # Sieve lane and no farm-bypassing herds are granted.
     reserve = ch.add(
         5,
         title="Crimson Reserve",
         subtitle="Specialty · Blood supply",
-        description="Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm.",
+        description="Hold the emergency reserve visibly: eight blood bottles across two blood containers, plus the breeding stock to refill them. The reward seeds a real herd with feed, leads, and modest fencing; it does not automate processing (see Sieve Extraction) or replace building a farm.",
         icon="vampirism:blood_container",
         x=7.5,
         y=2,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 34, "vampirism:blood_bottle", 4, "Carry four Blood Bottles"),
-            item_task(4, 35, "vampirism:blood_container", title="Inspect a Blood Container"),
+            item_task(4, 34, "vampirism:blood_bottle", 8, "Carry eight Blood Bottles"),
+            item_task(4, 35, "vampirism:blood_container", 2, "Hold two Blood Containers"),
         ],
         rewards=[
             item_reward(4, 37, "numismatics:sprocket"),
             item_reward(4, 38, "minecraft:glass_bottle", 32),
-            item_reward(4, 39, "minecraft:lead", 8),
-            item_reward(4, 40, "minecraft:oak_fence", 32),
+            item_reward(4, 39, "minecraft:lead", 4),
+            item_reward(4, 40, "minecraft:oak_fence", 16),
+            item_reward(4, 108, "minecraft:wheat", 16),
+            item_reward(4, 109, "minecraft:carrot", 8),
+            item_reward(4, 110, "minecraft:potato", 8),
         ],
         dependencies=[b_vault],
     )
+    # Reworked 2026-09-07 per Ch4 appendix: blood-mage workshop and loadout
+    # mirroring the structure of Ch3 Pure Defense (workstation + equipment +
+    # controlled supplies), with vampire items throughout. Random high-tier
+    # scrolls, duplicate scrolls, free endgame armour, and task-invalidating
+    # rewards removed.
     script = ch.add(
         4,
         title="Scarlet Script",
-        subtitle="Specialty · Blood utility",
-        description="Prepare an Inscription Table, spellbook, and four Blood Runes, then demonstrate one Blood spell. The reward favors movement, measured siphoning, and practical combat rather than a random high-tier scroll.",
-        icon="irons_spellbooks:blood_rune",
+        subtitle="Specialty · Blood-mage workshop",
+        description="Complete the blood-mage workshop: raise an Arcane Anvil, bind an Iron Spell Book, wield a Blood Staff, and fill blood vials for the work ahead. The reward outfits the mage with an upgrade orb, vellum, paper, controlled epic ink, and currency; it grants no high-tier scrolls and nothing that replaces the assembled loadout.",
+        icon="irons_spellbooks:blood_staff",
         x=10.5,
         y=0,
         shape="diamond",
         optional=True,
         tasks=[
-            item_task(4, 12, "irons_spellbooks:inscription_table", title="Inspect an Inscription Table"),
-            item_task(4, 13, "irons_spellbooks:copper_spell_book", title="Carry a Flimsy Journal"),
-            item_task(4, 14, "irons_spellbooks:blood_rune", 4, "Carry four Blood Runes"),
-            check_task(4, 24, "I demonstrated one Blood spell"),
+            item_task(4, 12, "irons_spellbooks:arcane_anvil", title="Raise an Arcane Anvil"),
+            item_task(4, 13, "irons_spellbooks:iron_spell_book", title="Bind an Iron Spell Book"),
+            item_task(4, 14, "irons_spellbooks:blood_staff", title="Wield a Blood Staff"),
+            item_task(4, 24, "irons_spellbooks:blood_vial", 4, "Fill four Blood Vials"),
         ],
-        rewards=vampire_spell_rewards(),
+        rewards=[
+            item_reward(4, 112, "numismatics:sprocket", 2),
+            item_reward(4, 113, "irons_spellbooks:blood_upgrade_orb"),
+            item_reward(4, 114, "irons_spellbooks:bloody_vellum", 16),
+            item_reward(4, 115, "minecraft:paper", 32),
+            item_reward(4, 116, "irons_spellbooks:epic_ink", 2),
+        ],
         dependencies=[b_vault],
     )
 
     return ch
 
 
+MINUTE = 60
+BUILDING_MARKET_COOLDOWN = 3 * MINUTE
+PROGRESSION_MARKET_COOLDOWN = 5 * MINUTE
+
+
 def build_market(group: str) -> Chapter:
+    # Redesigned 2026-09-07 per Ch5 appendix: two-wing storefront with
+    # building palettes left, progression kits right, explanations center.
+    # Dependency lines stay hidden chapter-wide; purchase cooldowns are
+    # short (3/5 min) while the currency faucet remains weekly. All
+    # purchases are personal-scope unless stated; no purchase returns its
+    # own currency and no diamond redemption exists.
     ch = Chapter(
         5,
         "ch05_market_services",
@@ -1306,6 +1345,7 @@ def build_market(group: str) -> Chapter:
         group,
         "numismatics:sprocket",
         0,
+        default_hide_dependency_lines=True,
         images=[{
             "alpha": 18,
             "height": 6,
@@ -1320,18 +1360,18 @@ def build_market(group: str) -> Chapter:
     opener = ch.add(
         1,
         title="Read the Board",
-        subtitle="Weekly services · Team-scoped",
-        description="The board converts finite quest currency into visible utility. Every purchase consumes the exact posted price, repeats no faster than once per team each week, and grants no currency back.",
+        subtitle="Market guide · Personal scope",
+        description="The board is two departments: building palettes on the left, progression and utility kits on the right. Every purchase consumes the exact posted price for one personal kit, restocks after three minutes (building) or five minutes (progression), and never pays currency back. The Rumour Ledger remains the sole slow weekly team faucet.",
         icon="numismatics:banking_guide",
         x=0,
         y=-5,
         shape="hexagon",
         size=1.4,
-        tasks=[check_task(5, 1, "I understand prices, cooldowns, and team scope")],
+        tasks=[check_task(5, 1, "I understand prices, cooldowns, and personal scope")],
         dependencies=[qid(2, 7)],
     )
 
-    def sink(index: int, *, title: str, subtitle: str, description: str, icon: str, x: float, y: float, price_item: str, price_count: int, task_idx: int, rewards: list[dict[str, Any]]) -> str:
+    def sink(index: int, *, title: str, subtitle: str, description: str, icon: str, x: float, y: float, price_item: str, price_count: int, task_idx: int, rewards: list[dict[str, Any]], cooldown: int = PROGRESSION_MARKET_COOLDOWN, shape: str = "diamond") -> str:
         coin_name = {"numismatics:bevel": "Bevel", "numismatics:sprocket": "Sprocket", "numismatics:cog": "Cog"}[price_item]
         label = f"Submit {price_count} {coin_name}{'' if price_count == 1 else 's'}"
         return ch.add(
@@ -1342,150 +1382,221 @@ def build_market(group: str) -> Chapter:
             icon=icon,
             x=x,
             y=y,
-            shape="gear" if index != 7 else "hexagon",
-            size=1.0 if index != 7 else 1.3,
+            shape="hexagon" if index == 7 else shape,
+            size=1.3 if index == 7 else 1.0,
             optional=True,
             can_repeat=True,
-            cooldown=WEEK,
+            cooldown=cooldown,
             tasks=[item_task(5, task_idx, price_item, price_count, label, consume=True)],
             rewards=rewards,
             dependencies=[opener],
         )
 
-    sink(
-        2,
-        title="Field Kit",
-        subtitle="1 Bevel · Weekly",
-        description="Replace the ordinary supplies most likely to strand a late arrival: food, light, and leads. This is convenience, not a progression skip.",
-        icon="numismatics:bevel",
-        x=-6,
-        y=-1,
-        price_item="numismatics:bevel",
-        price_count=1,
-        task_idx=2,
-        rewards=[
-            item_reward(5, 1, "minecraft:cooked_beef", 32, team=True),
-            item_reward(5, 2, "minecraft:torch", 64, team=True),
-            item_reward(5, 3, "minecraft:lead", 8, team=True),
-        ],
-    )
+    # Left wing: raw and themed building palettes (square family).
     sink(
         3,
         title="Works Kit",
-        subtitle="1 Sprocket · Weekly",
-        description="Buy enough structural stock for a visible repair, roadside shelter, or public-room extension rather than a decorative handful.",
-        icon="numismatics:sprocket",
-        x=-2,
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal raw building stock of bulk Stone, Oak, Sand, Glass, and Lanterns: about twelve full-stack equivalents for repairs, shelters, and civic rooms. Restocks after three minutes. Flexible raw stock, not premade bricks, machines, or combat gear.",
+        icon="minecraft:stone",
+        x=-7,
         y=-1,
         price_item="numismatics:sprocket",
         price_count=1,
         task_idx=3,
+        cooldown=BUILDING_MARKET_COOLDOWN,
+        shape="square",
         rewards=[
-            item_reward(5, 4, "minecraft:stone_bricks", 128, team=True),
-            item_reward(5, 5, "minecraft:oak_log", 64, team=True),
-            item_reward(5, 6, "minecraft:iron_ingot", 32, team=True),
-            item_reward(5, 7, "minecraft:lantern", 16, team=True),
+            item_reward(5, 73, "minecraft:stone", 64),
+            item_reward(5, 74, "minecraft:stone", 64),
+            item_reward(5, 75, "minecraft:stone", 64),
+            item_reward(5, 76, "minecraft:stone", 64),
+            item_reward(5, 77, "minecraft:stone", 64),
+            item_reward(5, 78, "minecraft:stone", 64),
+            item_reward(5, 79, "minecraft:stone", 64),
+            item_reward(5, 80, "minecraft:stone", 64),
+            item_reward(5, 81, "minecraft:stone", 64),
+            item_reward(5, 82, "minecraft:oak_log", 64),
+            item_reward(5, 83, "minecraft:oak_log", 64),
+            item_reward(5, 84, "minecraft:sand", 64),
+            item_reward(5, 85, "minecraft:glass", 16),
+            item_reward(5, 86, "minecraft:lantern", 8),
         ],
     )
     sink(
-        4,
-        title="Arcane Kit",
-        subtitle="1 Sprocket · Weekly",
-        description="Restock a teaching table with multi-school inscription materials. The final spell remains the player's decision; the board does not gamble on random scrolls.",
-        icon="irons_spellbooks:uncommon_ink",
-        x=2,
+        15,
+        title="Village Hearth Kit",
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal village palette of Bricks, Oak, Terracotta, Glass, Lanterns, and a Hearth Campfire for homes, inns, and workshops. Restocks after three minutes. Homes and civic rooms, not fortifications or machinery.",
+        icon="minecraft:bricks",
+        x=-3.5,
         y=-1,
         price_item="numismatics:sprocket",
         price_count=1,
-        task_idx=4,
+        task_idx=12,
+        cooldown=BUILDING_MARKET_COOLDOWN,
+        shape="square",
         rewards=[
-            item_reward(5, 8, "irons_spellbooks:arcane_essence", 16, team=True),
-            item_reward(5, 9, "irons_spellbooks:blank_rune", 4, team=True),
-            item_reward(5, 10, "irons_spellbooks:common_ink", 16, team=True),
-            item_reward(5, 11, "irons_spellbooks:uncommon_ink", 8, team=True),
+            item_reward(5, 87, "minecraft:brick", 64),
+            item_reward(5, 88, "minecraft:brick", 64),
+            item_reward(5, 89, "minecraft:brick", 64),
+            item_reward(5, 90, "minecraft:brick", 64),
+            item_reward(5, 91, "minecraft:brick", 64),
+            item_reward(5, 92, "minecraft:brick", 64),
+            item_reward(5, 93, "minecraft:oak_log", 64),
+            item_reward(5, 94, "minecraft:oak_log", 64),
+            item_reward(5, 95, "minecraft:oak_log", 64),
+            item_reward(5, 96, "minecraft:terracotta", 64),
+            item_reward(5, 97, "minecraft:terracotta", 64),
+            item_reward(5, 98, "minecraft:glass", 32),
+            item_reward(5, 99, "minecraft:lantern", 8),
+            item_reward(5, 100, "minecraft:campfire", 2),
+        ],
+    )
+    # Right wing: progression starters and utility (diamond family).
+    sink(
+        2,
+        title="Field Kit",
+        subtitle="1 Bevel · 5 min",
+        description="Consume one Bevel for a personal survival refill of food, torches, leads, and a shield for late arrivals and failed expeditions. Restocks after five minutes. Convenience, not building stock or progression.",
+        icon="numismatics:bevel",
+        x=7,
+        y=-1,
+        price_item="numismatics:bevel",
+        price_count=1,
+        task_idx=2,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
+        shape="diamond",
+        rewards=[
+            item_reward(5, 1, "minecraft:cooked_beef", 16),
+            item_reward(5, 2, "minecraft:torch", 32),
+            item_reward(5, 3, "minecraft:lead", 4),
+            item_reward(5, 118, "minecraft:shield"),
         ],
     )
     sink(
         5,
-        title="Foundry Kit",
-        subtitle="2 Sprockets · Weekly",
-        description="Restock a public Create line with alloy, brass, mechanisms, and belts. The bundle saves maintenance time without replacing ore generation or advanced machines.",
-        icon="create:precision_mechanism",
-        x=6,
+        title="Create Starter Kit",
+        subtitle="2 Sprockets · 5 min",
+        description="Consume two Sprockets for a personal early-Create starter of alloy, shafts, cogwheels, belts, a wrench, and copper for first machines. Restocks after five minutes. A beginning, not precision mechanisms, brass-age parts, or an automated factory.",
+        icon="create:shaft",
+        x=3.5,
         y=-1,
         price_item="numismatics:sprocket",
         price_count=2,
         task_idx=5,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
+        shape="diamond",
         rewards=[
-            item_reward(5, 12, "create:andesite_alloy", 48, team=True),
-            item_reward(5, 13, "create:brass_ingot", 24, team=True),
-            item_reward(5, 14, "create:precision_mechanism", 4, team=True),
-            item_reward(5, 15, "create:belt_connector", 8, team=True),
+            item_reward(5, 12, "create:andesite_alloy", 16),
+            item_reward(5, 13, "create:shaft", 8),
+            item_reward(5, 14, "create:cogwheel", 8),
+            item_reward(5, 15, "create:large_cogwheel", 4),
+            item_reward(5, 101, "create:belt_connector", 4),
+            item_reward(5, 102, "create:wrench"),
+            item_reward(5, 103, "minecraft:copper_ingot", 16),
+        ],
+    )
+    sink(
+        4,
+        title="Iron's Spells Starter Kit",
+        subtitle="1 Sprocket · 5 min",
+        description="Consume one Sprocket for a personal first-steps magic kit of essence, blank runes, common and uncommon inks, and a Copper Spell Book. Restocks after five minutes. Learn the school, not a finished mage loadout or high-tier scrolls.",
+        icon="irons_spellbooks:copper_spell_book",
+        x=7,
+        y=2.5,
+        price_item="numismatics:sprocket",
+        price_count=1,
+        task_idx=4,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
+        shape="diamond",
+        rewards=[
+            item_reward(5, 8, "irons_spellbooks:arcane_essence", 8),
+            item_reward(5, 9, "irons_spellbooks:blank_rune", 2),
+            item_reward(5, 10, "irons_spellbooks:common_ink", 8),
+            item_reward(5, 11, "irons_spellbooks:uncommon_ink", 4),
+            item_reward(5, 104, "irons_spellbooks:copper_spell_book"),
         ],
     )
     sink(
         9,
         title="Recovery Crate",
-        subtitle="1 Sprocket · Weekly",
-        description="Buy a complete recovery cache for a difficult expedition: beds, shields, honey, and golden apples. It restores readiness without issuing permanent combat power.",
+        subtitle="1 Sprocket · 5 min",
+        description="Consume one Sprocket for a personal recovery cache after a failed expedition: beds, shields, honey, and golden apples. Restocks after five minutes. Readiness restored, no permanent combat power, no mounts.",
         icon="minecraft:golden_apple",
-        x=-6,
+        x=3.5,
         y=2.5,
         price_item="numismatics:sprocket",
         price_count=1,
         task_idx=9,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
+        shape="diamond",
         rewards=[
-            item_reward(5, 20, "minecraft:white_bed", 2, team=True),
-            item_reward(5, 21, "minecraft:shield", 2, team=True),
-            item_reward(5, 22, "minecraft:honey_bottle", 16, team=True),
-            item_reward(5, 23, "minecraft:golden_apple", 4, team=True),
+            item_reward(5, 20, "minecraft:white_bed", 2),
+            item_reward(5, 21, "minecraft:shield", 2),
+            item_reward(5, 22, "minecraft:honey_bottle", 16),
+            item_reward(5, 23, "minecraft:golden_apple", 4),
         ],
     )
     sink(
         10,
         title="Transit Crate",
-        subtitle="2 Sprockets · Weekly",
-        description="Equip a team route with saddles, leads, rockets, boats, and compasses. The crate helps move people and stock but grants no mount, elytra, or teleport tier.",
+        subtitle="2 Sprockets · 5 min",
+        description="Consume two Sprockets for a personal route kit of saddles, leads, rockets, boats, and compasses to move people and stock. Restocks after five minutes. No elytra, no teleport tier, no permanent flight.",
         icon="minecraft:saddle",
-        x=-2,
-        y=2.5,
+        x=3.5,
+        y=6,
         price_item="numismatics:sprocket",
         price_count=2,
         task_idx=10,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
+        shape="diamond",
         rewards=[
-            item_reward(5, 24, "minecraft:saddle", 4, team=True),
-            item_reward(5, 25, "minecraft:lead", 16, team=True),
-            item_reward(5, 26, "minecraft:firework_rocket", 64, team=True),
-            item_reward(5, 27, "minecraft:oak_boat", 4, team=True),
-            item_reward(5, 28, "minecraft:compass", 4, team=True),
+            item_reward(5, 24, "minecraft:saddle", 4),
+            item_reward(5, 25, "minecraft:lead", 16),
+            item_reward(5, 26, "minecraft:firework_rocket", 64),
+            item_reward(5, 27, "minecraft:oak_boat", 4),
+            item_reward(5, 28, "minecraft:compass", 4),
         ],
     )
+    # Re-scoped 2026-09-07 per Ch5 appendix: the Cog purchase becomes a
+    # civic-works package with distinctive scale but no diamonds,
+    # progression alloy, or strict domination of lower kits.
     sink(
         7,
-        title="Concord Bond",
-        subtitle="1 Cog · Weekly",
-        description="Redeem a major team bond for structural and fabrication stock behind one common project. The bundle is broad, finite, and does not reproduce its Cog input.",
+        title="Civic Works Bond",
+        subtitle="1 Cog · 5 min",
+        description="Consume one Cog for a personal civic-works package behind one shared project: bulk Stone and Oak, scaffolding, Glass, Chains, and Lanterns at a scale no single lower kit matches. Restocks after five minutes. Shared building stock, not diamonds, alloy, or combat gear.",
         icon="numismatics:cog",
-        x=2,
-        y=2.5,
+        x=0,
+        y=-1,
         price_item="numismatics:cog",
         price_count=1,
         task_idx=6,
+        cooldown=PROGRESSION_MARKET_COOLDOWN,
         rewards=[
-            item_reward(5, 16, "minecraft:stone_bricks", 256, team=True),
-            item_reward(5, 17, "minecraft:oak_log", 128, team=True),
-            item_reward(5, 18, "minecraft:iron_ingot", 64, team=True),
-            item_reward(5, 19, "minecraft:diamond", 8, team=True),
-            item_reward(5, 29, "create:andesite_alloy", 64, team=True),
+            item_reward(5, 16, "minecraft:stone", 64),
+            item_reward(5, 17, "minecraft:stone", 64),
+            item_reward(5, 18, "minecraft:stone", 64),
+            item_reward(5, 105, "minecraft:stone", 64),
+            item_reward(5, 19, "minecraft:oak_log", 64),
+            item_reward(5, 29, "minecraft:oak_log", 64),
+            item_reward(5, 106, "minecraft:scaffolding", 64),
+            item_reward(5, 107, "minecraft:scaffolding", 64),
+            item_reward(5, 108, "minecraft:glass", 32),
+            item_reward(5, 109, "minecraft:chain", 16),
+            item_reward(5, 110, "minecraft:lantern", 16),
         ],
     )
+    # Center column: the faucet stays weekly and team-scoped by design; the
+    # coin guide is informational and non-repeatable.
     ch.add(
         6,
         title="Rumour Ledger",
         subtitle="Fallback · 1 team Bevel weekly",
-        description="File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet.",
+        description="File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet, deliberately weekly and team-scoped while purchases restock in minutes.",
         icon="minecraft:written_book",
-        x=6,
+        x=0,
         y=2.5,
         shape="diamond",
         optional=True,
@@ -1502,7 +1613,7 @@ def build_market(group: str) -> Chapter:
         8,
         title="Know the Coins",
         subtitle="Spur · Bevel · Sprocket · Cog",
-        description="Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign.",
+        description="Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign. Purchases are personal-scope with three-minute building and five-minute progression restocks; only the Rumour Ledger faucet is weekly and team-scoped.",
         icon="numismatics:cog",
         x=0,
         y=6,
@@ -1510,6 +1621,149 @@ def build_market(group: str) -> Chapter:
         optional=True,
         tasks=[check_task(5, 8, "I understand the coin denominations")],
         dependencies=[opener],
+    )
+
+    # Left wing, lower rows: the four preserved human-authored construction
+    # crates (IDs 17-20 kept). Contents are the refined manual palettes,
+    # unchanged; the redesign moves them into the building wing with short
+    # personal restocks and explicit scope/contents descriptions.
+    def crate(
+        index: int,
+        *,
+        title: str,
+        subtitle: str,
+        description: str,
+        icon: str,
+        x: float,
+        y: float,
+        task_idx: int,
+        rewards: list[dict[str, Any]],
+    ) -> str:
+        return ch.add(
+            index,
+            title=title,
+            subtitle=subtitle,
+            description=description,
+            icon=icon,
+            x=x,
+            y=y,
+            shape="square",
+            optional=True,
+            can_repeat=True,
+            cooldown=BUILDING_MARKET_COOLDOWN,
+            tasks=[item_task(5, task_idx, "numismatics:sprocket", 1, "Submit 1 Sprocket", consume=True)],
+            rewards=rewards,
+            dependencies=[opener],
+        )
+
+    # NOTE: live quest IDs use hex-style numbering 7A11C0DF00500011-14, i.e.
+    # decimal indices 17-20. Decimal 11-14 (…0000B-E) stay free.
+    crate(
+        17,
+        title="Celestial Spire Crate",
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal dark-arcane palette of deepslate tiles, dark oak planks, tinted glass, amethyst clusters, bookshelves, and sea lanterns for observatories and ritual studies. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations.",
+        icon="minecraft:deepslate_tiles",
+        x=-7,
+        y=2.5,
+        task_idx=0x21,
+        # Stack-safety split 2026-09-07 per Ch5 appendix S11: the legacy
+        # 128-count tile reward becomes two 64-count entries. Original ID
+        # 0x31 kept for the first stack; 119 allocated for the second.
+        rewards=[
+            item_reward(5, 0x31, "minecraft:deepslate_tiles", 64),
+            item_reward(5, 119, "minecraft:deepslate_tiles", 64),
+            item_reward(5, 0x32, "minecraft:dark_oak_planks", 64),
+            item_reward(5, 0x33, "minecraft:tinted_glass", 64),
+            item_reward(5, 0x34, "minecraft:amethyst_cluster", 16),
+            item_reward(5, 0x35, "minecraft:bookshelf", 16),
+            item_reward(5, 0x36, "minecraft:sea_lantern", 8),
+        ],
+    )
+    crate(
+        18,
+        title="Sanctified Brewery Crate",
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal light-masonry palette of polished tuff, white wood planks, frosted glass, apothecary jars, faucets, and lanterns for breweries, workshops, and scholastic halls. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations.",
+        icon="abyssal_decor:white_wood_planks",
+        x=-3.5,
+        y=2.5,
+        task_idx=0x22,
+        # Stack-safety split 2026-09-07 per Ch5 appendix S11: legacy 128
+        # tuff reward divided across IDs 0x37 (kept) and 120 (allocated).
+        rewards=[
+            item_reward(5, 0x37, "minecraft:polished_tuff", 64),
+            item_reward(5, 120, "minecraft:polished_tuff", 64),
+            item_reward(5, 0x38, "abyssal_decor:white_wood_planks", 64),
+            item_reward(5, 0x39, "abyssal_decor:frosted_glass", 64),
+            item_reward(5, 0x3A, "supplementaries:jar", 16),
+            item_reward(5, 0x3B, "supplementaries:faucet", 4),
+            item_reward(5, 0x3C, "minecraft:lantern", 16),
+        ],
+    )
+    crate(
+        19,
+        title="Frontier Watch Crate",
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal frontier palette of spruce planks, timber frames, ropes, way signs, torches, and spyglasses for outposts and watchtowers. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations.",
+        icon="supplementaries:timber_frame",
+        x=-7,
+        y=6,
+        task_idx=0x23,
+        # Stack-safety split 2026-09-07 per Ch5 appendix S11: legacy 128
+        # planks divided across IDs 0x3D (kept) and 121 (allocated).
+        rewards=[
+            item_reward(5, 0x3D, "minecraft:spruce_planks", 64),
+            item_reward(5, 121, "minecraft:spruce_planks", 64),
+            item_reward(5, 0x3E, "supplementaries:timber_frame", 64),
+            item_reward(5, 0x3F, "supplementaries:rope", 32),
+            item_reward(5, 0x40, "supplementaries:way_sign_oak", 16),
+            item_reward(5, 0x41, "minecraft:torch", 32),
+            item_reward(5, 0x42, "minecraft:spyglass", 2),
+        ],
+    )
+    crate(
+        20,
+        title="Heavy Bastion Crate",
+        subtitle="1 Sprocket · 3 min",
+        description="Consume one Sprocket for a personal fortress palette of Create Deco iron catwalks, sheet metal, supports, mesh fences, chains, and iron bars for bastions and armories. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations.",
+        icon="createdeco:industrial_iron_catwalk",
+        x=-3.5,
+        y=6,
+        task_idx=0x24,
+        rewards=[
+            item_reward(5, 0x43, "createdeco:industrial_iron_catwalk", 64),
+            item_reward(5, 0x44, "createdeco:industrial_iron_sheet_metal", 64),
+            item_reward(5, 0x45, "createdeco:industrial_iron_support", 32),
+            item_reward(5, 0x46, "createdeco:industrial_iron_mesh_fence", 32),
+            item_reward(5, 0x47, "minecraft:chain", 32),
+            item_reward(5, 0x48, "minecraft:iron_bars", 32),
+        ],
+    )
+    # New 2026-09-07 per Ch5 appendix: Create Deco palette from IDs
+    # verified in the pinned Create Deco JAR (pearl/scarlet brick families
+    # and iron windows). No unverified Umbra palette is used.
+    sink(
+        21,
+        title="Create Deco Palette",
+        subtitle="2 Sprockets · 3 min",
+        description="Consume two Sprockets for a personal Create Deco palette of Pearl and Scarlet bricks with stairs plus iron windows and bars for industrial facades. Restocks after three minutes. Decorative stock, not machines, precision parts, or combat gear.",
+        icon="createdeco:pearl_bricks",
+        x=-5.25,
+        y=9.5,
+        price_item="numismatics:sprocket",
+        price_count=2,
+        task_idx=13,
+        cooldown=BUILDING_MARKET_COOLDOWN,
+        shape="square",
+        rewards=[
+            item_reward(5, 112, "createdeco:pearl_bricks", 64),
+            item_reward(5, 113, "createdeco:scarlet_bricks", 64),
+            item_reward(5, 114, "createdeco:pearl_brick_stairs", 32),
+            item_reward(5, 115, "createdeco:scarlet_brick_stairs", 32),
+            item_reward(5, 116, "createdeco:industrial_iron_window", 16),
+            item_reward(5, 117, "createdeco:industrial_iron_bars", 16),
+        ],
     )
     return ch
 
@@ -1535,7 +1789,7 @@ def build_campaign() -> tuple[list[Chapter], list[dict[str, str]]]:
 
 def render_chapter(chapter: Chapter) -> str:
     root: dict[str, Any] = {
-        "default_hide_dependency_lines": False,
+        "default_hide_dependency_lines": chapter.default_hide_dependency_lines,
         "default_quest_shape": "",
         "filename": chapter.filename,
         "group": chapter.group,
@@ -1602,6 +1856,7 @@ def normalized_manifest(chapters: list[Chapter], groups: list[dict[str, str]]) -
             "order": chapter.order,
             "quests": qs,
             "title": chapter.title,
+            "default_hide_dependency_lines": chapter.default_hide_dependency_lines,
         })
     return {
         "architecture": "five-chapter-vvh-current",

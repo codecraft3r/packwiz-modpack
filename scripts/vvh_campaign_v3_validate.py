@@ -32,10 +32,38 @@ COIN_VALUE = {
     "numismatics:sun": 512,
 }
 VERIFIED_NONVANILLA_ITEMS = {
+    # Extended 2026-09-07 for the Ch4 patch and Ch5 redesign. Every ID below
+    # is either already campaign-used or verified against the pinned mod
+    # JARs in the workspace item registry (model-file evidence).
+    "abyssal_decor:white_wood_planks",
     "create:andesite_alloy",
     "create:belt_connector",
     "create:brass_ingot",
+    "create:cogwheel",
+    "create:large_cogwheel",
     "create:precision_mechanism",
+    "create:shaft",
+    "createdeco:industrial_iron_bars",
+    "createdeco:industrial_iron_catwalk",
+    "createdeco:industrial_iron_mesh_fence",
+    "createdeco:industrial_iron_sheet_metal",
+    "createdeco:industrial_iron_support",
+    "createdeco:industrial_iron_window",
+    "createdeco:pearl_brick_stairs",
+    "createdeco:pearl_bricks",
+    "createdeco:scarlet_brick_stairs",
+    "createdeco:scarlet_bricks",
+    "irons_spellbooks:blood_staff",
+    "irons_spellbooks:blood_vial",
+    "irons_spellbooks:bloody_vellum",
+    "supplementaries:notice_board",
+    "supplementaries:rope",
+    "supplementaries:timber_frame",
+    "supplementaries:way_sign_oak",
+    "vampirism:altar_pillar",
+    "vampirism:altar_tip",
+    "vampirism:blood_bucket",
+    "vampirism:sunscreen_beacon",
     "sophisticatedbackpacks:backpack",
     "create:clipboard",
     "create:brown_toolbox",
@@ -159,7 +187,16 @@ VERIFIED_NONVANILLA_ITEMS = {
     "vista:viewfinder",
 }
 VERIFIED_NONVANILLA_ICONS = {
+    # Extended 2026-09-07 alongside the item set above.
+    "abyssal_decor:white_wood_planks",
+    "create:shaft",
+    "createdeco:industrial_iron_catwalk",
+    "createdeco:pearl_bricks",
+    "irons_spellbooks:blood_staff",
+    "irons_spellbooks:copper_spell_book",
     "irons_spellbooks:priest_chestplate",
+    "supplementaries:notice_board",
+    "supplementaries:timber_frame",
     "create:precision_mechanism",
     "sophisticatedbackpacks:backpack",
     "create:clipboard",
@@ -250,7 +287,7 @@ EXPECTED_FILES = [
     "ch04_house_night",
     "ch05_market_services",
 ]
-EXPECTED_COUNTS = [5, 5, 15, 15, 10]
+EXPECTED_COUNTS = [5, 5, 15, 15, 16]
 HUNTER_SPECIALTIES = [source.qid(3, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 VAMPIRE_SPECIALTIES = [source.qid(4, i) for i in (4, 5, 6, 12, 13, 7, 8, 9)]
 
@@ -531,25 +568,108 @@ def main() -> int:
     if collisions:
         errors.extend(f"reward/task collision {c['item']}: {c['ancestor']} -> {c['descendant']}" for c in collisions)
 
-    # Market economy.
+    # Market economy (two-wing storefront model, redesigned 2026-09-07).
+    # Purchase cooldowns are short (3/5 min); only the currency faucet stays
+    # weekly. All purchases are personal-scope; no purchase returns its own
+    # currency; no diamond redemption exists.
     repeatables = [q for q in quest_by_id.values() if q.get("can_repeat")]
+    MARKET_BUILDING_COOLDOWN = 3 * 60
+    MARKET_PROGRESSION_COOLDOWN = 5 * 60
     expected_market_prices = {
-        source.qid(5, 2): 1,
-        source.qid(5, 3): 2,
-        source.qid(5, 4): 2,
-        source.qid(5, 5): 4,
-        source.qid(5, 9): 2,
-        source.qid(5, 10): 4,
-        source.qid(5, 7): 8,
+        source.qid(5, 2): 1,    # Field Kit: 1 Bevel
+        source.qid(5, 3): 2,    # Works Kit: 1 Sprocket
+        source.qid(5, 15): 2,   # Village Hearth Kit: 1 Sprocket
+        source.qid(5, 5): 4,    # Create Starter Kit: 2 Sprockets
+        source.qid(5, 4): 2,    # Iron's Spells Starter Kit: 1 Sprocket
+        source.qid(5, 9): 2,    # Recovery Crate: 1 Sprocket
+        source.qid(5, 10): 4,   # Transit Crate: 2 Sprockets
+        source.qid(5, 7): 8,    # Civic Works Bond: 1 Cog
+        source.qid(5, 17): 2,   # Celestial Spire Crate: 1 Sprocket
+        source.qid(5, 18): 2,   # Sanctified Brewery Crate: 1 Sprocket
+        source.qid(5, 19): 2,   # Frontier Watch Crate: 1 Sprocket
+        source.qid(5, 20): 2,   # Heavy Bastion Crate: 1 Sprocket
+        source.qid(5, 21): 4,   # Create Deco Palette: 2 Sprockets
+    }
+    expected_market_cooldowns = {
+        source.qid(5, 3): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 15): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 17): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 18): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 19): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 20): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 21): MARKET_BUILDING_COOLDOWN,
+        source.qid(5, 2): MARKET_PROGRESSION_COOLDOWN,
+        source.qid(5, 5): MARKET_PROGRESSION_COOLDOWN,
+        source.qid(5, 4): MARKET_PROGRESSION_COOLDOWN,
+        source.qid(5, 9): MARKET_PROGRESSION_COOLDOWN,
+        source.qid(5, 10): MARKET_PROGRESSION_COOLDOWN,
+        source.qid(5, 7): MARKET_PROGRESSION_COOLDOWN,
+    }
+    MARKET_DEPARTMENTS = {
+        source.qid(5, 3): "building",
+        source.qid(5, 15): "building",
+        source.qid(5, 17): "building",
+        source.qid(5, 18): "building",
+        source.qid(5, 19): "building",
+        source.qid(5, 20): "building",
+        source.qid(5, 21): "building",
+        source.qid(5, 2): "progression",
+        source.qid(5, 5): "progression",
+        source.qid(5, 4): "progression",
+        source.qid(5, 9): "progression",
+        source.qid(5, 10): "progression",
+        source.qid(5, 7): "civic",
+        source.qid(5, 6): "faucet",
+    }
+    # General masonry kits must offer flexible raw Stone; themed palettes
+    # (Village brick, decorative crates) keep their coherent identities.
+    MARKET_GENERAL_MASONRY_KITS = {source.qid(5, 3), source.qid(5, 7)}
+    MARKET_PROHIBITED_PREMIUMS = {
+        "minecraft:diamond",
+        "minecraft:netherite_ingot",
+        "minecraft:netherite_scrap",
+        "minecraft:elytra",
+        "minecraft:nether_star",
+        "minecraft:dragon_egg",
+        "create:precision_mechanism",
+        "numismatics:bevel",
+        "numismatics:sprocket",
+        "numismatics:cog",
+        "numismatics:crown",
+        "numismatics:sun",
+        "numismatics:spur",
     }
     expected_repeatables = set(expected_market_prices) | {source.qid(5, 6)}
     if {quest["id"] for quest in repeatables} != expected_repeatables:
-        errors.append(f"repeatable set differs from the eight approved weekly services: {[q['id'] for q in repeatables]}")
+        errors.append(f"repeatable set differs from the thirteen approved purchases plus faucet: {[q['id'] for q in repeatables]}")
+    # Protected human-authored Market crate identities must survive.
+    for legacy_idx, legacy_task, first_reward, last_reward in (
+        (17, 0x21, 0x31, 0x36),
+        (18, 0x22, 0x37, 0x3C),
+        (19, 0x23, 0x3D, 0x42),
+        (20, 0x24, 0x43, 0x48),
+    ):
+        if source.qid(5, legacy_idx) not in quest_by_id:
+            errors.append(f"protected Market crate {source.qid(5, legacy_idx)} is missing")
+        if source.tid(5, legacy_task) not in all_ids:
+            errors.append(f"protected Market crate task {source.tid(5, legacy_task)} is missing")
+        for reward_idx in range(first_reward, last_reward + 1):
+            if source.rid(5, reward_idx) not in all_ids:
+                errors.append(f"protected Market crate reward {source.rid(5, reward_idx)} is missing")
+    ch5_quests = [q for q in quest_by_id.values() if chapter_by_quest[q["id"]] == "ch05_market_services"]
+    for quest in ch5_quests:
+        blob = (quest["title"] + " " + " ".join(quest.get("description", []))).lower()
+        if "handcrafted" in blob:
+            errors.append(f"rejected Handcrafted kit concept reappeared in {quest['id']}")
+    # Chapter-level hidden dependency lines: Market only.
+    for ch in chapters:
+        expected_default = ch.filename == "ch05_market_services"
+        if bool(ch.default_hide_dependency_lines) != expected_default:
+            errors.append(f"{ch.filename} default_hide_dependency_lines should be {expected_default}")
     sinks: list[dict[str, Any]] = []
     faucets: list[dict[str, Any]] = []
+    market_report: list[dict[str, Any]] = []
     for quest in repeatables:
-        if quest.get("repeat_cooldown") != source.WEEK:
-            errors.append(f"repeatable {quest['id']} does not use weekly cooldown")
         consumed = [t for t in quest["tasks"] if t.get("type") == "item" and t.get("consume_items")]
         if not consumed:
             errors.append(f"repeatable {quest['id']} has no consumed input")
@@ -565,19 +685,54 @@ def main() -> int:
             sinks.append({"id": quest["id"], "title": quest["title"], "price_bevel_equivalent": price})
             if expected_market_prices.get(quest["id"]) != price:
                 errors.append(f"market sink {quest['id']} costs {price}, expected {expected_market_prices.get(quest['id'])}")
-            if not all(bool(r.get("team_reward", False)) for r in quest["rewards"]):
-                errors.append(f"market sink {quest['id']} has a non-team reward")
+            if quest.get("repeat_cooldown") != expected_market_cooldowns.get(quest["id"]):
+                errors.append(f"market sink {quest['id']} cooldown {quest.get('repeat_cooldown')} differs from expected {expected_market_cooldowns.get(quest['id'])}")
+            if not all(not bool(r.get("team_reward", False)) for r in quest["rewards"]):
+                errors.append(f"market sink {quest['id']} is not personal-scoped")
             if any(item_id(reward) in COIN_VALUE for reward in quest["rewards"]):
                 errors.append(f"market sink {quest['id']} returns currency")
+            if any(item_id(reward) in MARKET_PROHIBITED_PREMIUMS for reward in quest["rewards"]):
+                errors.append(f"market sink {quest['id']} contains a prohibited premium item")
+            if any(item_count(reward) is not None and int(item_count(reward)) > 64 for reward in quest["rewards"] if item_id(reward)):
+                errors.append(f"market sink {quest['id']} has a reward count above safe single-stack handling")
+            copy = (quest.get("subtitle", "") + " " + " ".join(quest.get("description", [])))
+            if "weekly" in copy.lower():
+                errors.append(f"market sink {quest['id']} still claims weekly behaviour after the short-cooldown redesign")
+            if "personal" not in " ".join(quest.get("description", [])).lower():
+                errors.append(f"market sink {quest['id']} does not state its personal scope")
+            reward_items = [item_id(r) for r in quest["rewards"]]
+            if quest["id"] in MARKET_GENERAL_MASONRY_KITS:
+                if "minecraft:stone" not in reward_items:
+                    errors.append(f"masonry kit {quest['id']} lacks flexible raw Stone")
+                if "minecraft:cobblestone" in reward_items:
+                    errors.append(f"masonry kit {quest['id']} uses Cobblestone instead of raw Stone")
+            namespaces = sorted({iid.split(":")[0] for iid in reward_items if iid and ":" in iid})
+            market_report.append({
+                "id": quest["id"],
+                "title": quest["title"],
+                "department": MARKET_DEPARTMENTS.get(quest["id"], "unknown"),
+                "price_bevel_equivalent": price,
+                "cooldown_seconds": quest.get("repeat_cooldown"),
+                "scope": "personal",
+                "reward_slots": len(quest["rewards"]),
+                "full_stack_equivalents": round(sum(item_count(r) for r in quest["rewards"] if item_id(r)) / 64, 2),
+                "namespaces": namespaces,
+            })
         if currency_value(quest["rewards"], team=True):
             faucets.append({"id": quest["id"], "title": quest["title"], "value_bevel_equivalent": currency_value(quest["rewards"], team=True)})
     sink_total = sum(s["price_bevel_equivalent"] for s in sinks)
     faucet_total = sum(f["value_bevel_equivalent"] for f in faucets)
-    if sink_total != 23:
-        errors.append(f"full weekly sink board costs {sink_total}, expected 23 Bevel-equivalent")
+    if sink_total != 37:
+        errors.append(f"full purchase board costs {sink_total}, expected 37 Bevel-equivalent")
     if faucets != [{"id": source.qid(5, 6), "title": "Rumour Ledger", "value_bevel_equivalent": 1.0}]:
         errors.append(f"unexpected repeatable faucets: {faucets}")
-    premium_prices = [s["price_bevel_equivalent"] for s in sinks if s["price_bevel_equivalent"] >= 2]
+    rumour = quest_by_id.get(source.qid(5, 6))
+    if rumour is not None:
+        if rumour.get("repeat_cooldown") != source.WEEK:
+            errors.append("Rumour Ledger faucet cooldown is not the protected weekly schedule")
+        if "team" not in " ".join(rumour.get("description", [])).lower():
+            errors.append("Rumour Ledger does not state its team scope")
+    premium_prices = [s["price_bevel_equivalent"] for s in sinks if s["price_bevel_equivalent"] >= 4]
     if premium_prices and faucet_total >= min(premium_prices):
         errors.append("fallback faucet can self-fund a premium service")
     if faucet_total >= sink_total:
@@ -624,7 +779,8 @@ def main() -> int:
                     overlaps.append({"a": left["id"], "b": right["id"]})
         edges: list[tuple[str, str, tuple[float, float], tuple[float, float]]] = []
         for quest in ch.quests:
-            if quest.get("hide_dependency_lines"):
+            hidden = bool(quest.get("hide_dependency_lines", False)) or bool(ch.default_hide_dependency_lines)
+            if hidden:
                 continue
             for dep in quest.get("dependencies", []):
                 if dep in by:
@@ -722,10 +878,12 @@ def main() -> int:
             "neutral_route_personal": 2,
             "one_time_personal_raw_completionism": one_time_personal,
             "one_time_team_completionism": one_time_team,
-            "weekly_sinks": sinks,
-            "weekly_sink_total": sink_total,
-            "weekly_faucets": faucets,
-            "weekly_faucet_total": faucet_total,
+            "purchase_cooldowns": {"building_seconds": MARKET_BUILDING_COOLDOWN, "progression_seconds": MARKET_PROGRESSION_COOLDOWN, "faucet_seconds": source.WEEK},
+            "sinks": sinks,
+            "sink_total": sink_total,
+            "faucets": faucets,
+            "faucet_total": faucet_total,
+            "market_report": market_report,
             "fragmented_team_faucet_formula": "1 Bevel-equivalent × number of separately maintained FTB Teams per week",
         },
         "identifiers": identifier_details,
@@ -744,8 +902,8 @@ def main() -> int:
         "quests": len(quest_by_id),
         "errors": len(errors),
         "warnings": len(warnings),
-        "weekly_sink_total": sink_total,
-        "weekly_faucet_total": faucet_total,
+        "sink_total": sink_total,
+        "faucet_total": faucet_total,
         "report": str(output),
     }, indent=2))
     if errors:
