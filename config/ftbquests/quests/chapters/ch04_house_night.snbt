@@ -134,66 +134,55 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400001"]
-			description: ["Add an Altar of Infusion, four Blood Pedestals, and two Blood-Infused Iron. The ritual becomes an inspectable workstation rather than a secret held by whoever logged in first."]
+			description: ["Raise a meaningfully upgraded Altar of Infusion: four Altar Pillars crowned with four Altar Tips over a true stone foundation. The reward funds ritual upkeep with currency, a blood transport bucket, and candles rather than unrelated bulk."]
 			icon: { id: "vampirism:altar_infusion" }
 			id: "7A11C0DF00400002"
 			rewards: [
 				{
-					id: "7A11C2DF00400006"
+					id: "7A11C2DF0040005B"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400007"
-					item: { count: 32, id: "minecraft:glass_bottle" }
+					id: "7A11C2DF0040005C"
+					item: { count: 1, id: "vampirism:blood_bucket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400008"
-					item: { count: 32, id: "minecraft:iron_ingot" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400009"
-					item: { count: 8, id: "minecraft:lead" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040000A"
-					item: { count: 32, id: "minecraft:redstone" }
+					id: "7A11C2DF0040005D"
+					item: { count: 16, id: "minecraft:candle" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Tier II · Workstations"
+			subtitle: "Tier II · Altar ascent"
 			tasks: [
 				{
 					consume_items: false
-					id: "7A11C1DF00400004"
-					item: { count: 1, id: "vampirism:altar_infusion" }
-					title: "Inspect an Altar of Infusion"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400005"
-					item: { count: 1, id: "vampirism:blood_pedestal" }
+					id: "7A11C1DF0040005B"
+					item: { count: 1, id: "vampirism:altar_pillar" }
 					count: 4
-					title: "Inspect four Blood Pedestals"
+					title: "Raise four Altar Pillars"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF00400006"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					count: 2
-					title: "Carry two Blood-Infused Iron"
+					id: "7A11C1DF0040005C"
+					item: { count: 1, id: "vampirism:altar_tip" }
+					count: 4
+					title: "Crown the pillars with four Altar Tips"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040005D"
+					item: { count: 1, id: "minecraft:stone_bricks" }
+					count: 16
+					title: "Lay sixteen Stone Bricks of foundation"
 					type: "item"
 				}
 			]
@@ -203,67 +192,48 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
-			description: ["Prepare a Blood Sieve, normal Heartseeker, and four Blood-Infused Iron. The House can now repair controlled armament and support specialized bloodwork without receiving a free late-tier blade."]
-			icon: { id: "vampirism:heart_seeker_normal" }
+			description: ["Muster the Household: raise a House Notice Board, draft the Household Roll, and convene the four commissions that raise the Spire, Foundry, Hall, and Vault. The reward rings in the new House with a muster bell, currency, and paper without issuing weapons, blood iron, or bulk metals."]
+			icon: { id: "supplementaries:notice_board" }
 			id: "7A11C0DF00400003"
 			rewards: [
 				{
-					id: "7A11C2DF0040000B"
+					id: "7A11C2DF0040005E"
 					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0040000C"
-					item: { count: 2, id: "minecraft:iron_block" }
+					id: "7A11C2DF0040005F"
+					item: { count: 1, id: "minecraft:bell" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0040000D"
-					item: { count: 32, id: "minecraft:redstone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040000E"
-					item: { count: 16, id: "minecraft:gold_ingot" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040000F"
-					item: { count: 32, id: "minecraft:coal" }
+					id: "7A11C2DF00400060"
+					item: { count: 16, id: "minecraft:paper" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "gear"
 			size: 1.3d
-			subtitle: "Tier III · Logistics"
+			subtitle: "Tier III · Household muster"
 			tasks: [
 				{
 					consume_items: false
-					id: "7A11C1DF00400007"
-					item: { count: 1, id: "vampirism:blood_sieve" }
-					title: "Inspect a Blood Sieve"
+					id: "7A11C1DF0040005E"
+					item: { count: 1, id: "supplementaries:notice_board" }
+					title: "Raise a House Notice Board"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF00400008"
-					item: { count: 1, id: "vampirism:heart_seeker_normal" }
-					title: "Carry a normal Heartseeker"
+					id: "7A11C1DF0040005F"
+					item: { count: 1, id: "minecraft:writable_book" }
+					title: "Draft the Household Roll"
 					type: "item"
 				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400009"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
-					count: 4
-					title: "Carry four Blood-Infused Iron"
-					type: "item"
-				}
+				{ id: "7A11C1DF00400060", title: "I convened the four commissions", type: "checkmark" }
 			]
 			title: "Inherited Edge"
 			x: 0
@@ -271,250 +241,19 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Gather obsidian, lightning rods, cut copper, and tinted glass to construct a dark transmission spire and advanced workshop overlooking the island."]
+			description: ["Commission the Dark Spire as the island's nocturnal signal post: raise lightning rods, post a lookout spyglass, and stock broadcast cassettes for the Nocturnal Broadcast crew. The commission pays one sprocket, sized for the Market Celestial Spire Crate, plus wiring for the signal lamps."]
 			icon: { id: "minecraft:lightning_rod" }
 			id: "7A11C0DF0040000E"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF0040004B"
+					id: "7A11C2DF00400061"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF0040004C"
-					item: { count: 64, id: "minecraft:obsidian" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040004D"
-					item: { count: 32, id: "minecraft:tinted_glass" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040004E"
-					item: { count: 16, id: "minecraft:redstone_torch" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "square"
-			size: 1.0d
-			subtitle: "Construction · Nocturnal spire"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0040004B"
-					item: { count: 1, id: "minecraft:obsidian" }
-					count: 64
-					title: "Inspect sixty-four Obsidian"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040004C"
-					item: { count: 1, id: "minecraft:lightning_rod" }
-					count: 16
-					title: "Inspect sixteen Lightning Rods"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040004D"
-					item: { count: 1, id: "minecraft:cut_copper" }
-					count: 4
-					title: "Inspect four Cut Copper"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040004E"
-					item: { count: 1, id: "minecraft:tinted_glass" }
-					count: 16
-					title: "Inspect sixteen Tinted Glass"
-					type: "item"
-				}
-			]
-			title: "Dark Spire Materials"
-			x: -6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7A11C0DF00400003"]
-			description: ["Gather nether bricks, quartz, cauldrons, and chains to construct a blood foundry and transit waystation for nocturnal couriers."]
-			icon: { id: "minecraft:nether_bricks" }
-			id: "7A11C0DF0040000F"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF0040004F"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400050"
-					item: { count: 64, id: "minecraft:nether_bricks" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400051"
-					item: { count: 16, id: "minecraft:chain" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400052"
-					item: { count: 32, id: "minecraft:crimson_planks" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "square"
-			size: 1.0d
-			subtitle: "Construction · Metallurgy lab"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF0040004F"
-					item: { count: 1, id: "minecraft:nether_bricks" }
-					count: 64
-					title: "Inspect sixty-four Nether Bricks"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400050"
-					item: { count: 1, id: "minecraft:quartz" }
-					count: 16
-					title: "Inspect sixteen Nether Quartz"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400051"
-					item: { count: 1, id: "minecraft:cauldron" }
-					count: 2
-					title: "Inspect two Cauldrons"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400052"
-					item: { count: 1, id: "minecraft:chain" }
-					count: 16
-					title: "Inspect sixteen Chains"
-					type: "item"
-				}
-			]
-			title: "Blood Foundry Materials"
-			x: -2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["7A11C0DF00400003"]
-			description: ["Gather polished blackstone, crimson stems, barrels, and soul lanterns to construct an imposing manor hall and hospitality vault."]
-			icon: { id: "minecraft:polished_blackstone" }
-			id: "7A11C0DF00400010"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00400053"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400054"
-					item: { count: 64, id: "minecraft:polished_blackstone" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400055"
-					item: { count: 32, id: "minecraft:crimson_planks" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400056"
-					item: { count: 8, id: "minecraft:soul_lantern" }
-					team_reward: false
-					type: "item"
-				}
-			]
-			shape: "square"
-			size: 1.0d
-			subtitle: "Construction · Manor estate"
-			tasks: [
-				{
-					consume_items: false
-					id: "7A11C1DF00400053"
-					item: { count: 1, id: "minecraft:polished_blackstone" }
-					count: 64
-					title: "Inspect sixty-four Polished Blackstone"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400054"
-					item: { count: 1, id: "minecraft:crimson_stem" }
-					count: 32
-					title: "Inspect thirty-two Crimson Stems"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400055"
-					item: { count: 1, id: "minecraft:barrel" }
-					count: 4
-					title: "Inspect four Barrels"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400056"
-					item: { count: 1, id: "minecraft:soul_lantern" }
-					count: 4
-					title: "Inspect four Soul Lanterns"
-					type: "item"
-				}
-			]
-			title: "Guest Hall Materials"
-			x: 2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["7A11C0DF00400003"]
-			description: ["Gather crying obsidian, amethyst shards, bookshelves, and glass to construct an arcane blood vault and sanguine library."]
-			icon: { id: "minecraft:crying_obsidian" }
-			id: "7A11C0DF00400011"
-			optional: true
-			rewards: [
-				{
-					id: "7A11C2DF00400057"
-					item: { count: 1, id: "numismatics:sprocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400058"
-					item: { count: 64, id: "minecraft:crying_obsidian" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400059"
-					item: { count: 32, id: "minecraft:glass" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040005A"
+					id: "7A11C2DF00400062"
 					item: { count: 16, id: "minecraft:redstone" }
 					team_reward: false
 					type: "item"
@@ -522,96 +261,241 @@
 			]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Construction · Sanguine arcanum"
+			subtitle: "Commission · Signals and watch"
 			tasks: [
 				{
 					consume_items: false
-					id: "7A11C1DF00400057"
-					item: { count: 1, id: "minecraft:crying_obsidian" }
-					count: 64
-					title: "Inspect sixty-four Crying Obsidian"
+					id: "7A11C1DF00400061"
+					item: { count: 1, id: "minecraft:lightning_rod" }
+					count: 8
+					title: "Raise eight Lightning Rods"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF00400058"
-					item: { count: 1, id: "minecraft:amethyst_shard" }
-					count: 16
-					title: "Inspect sixteen Amethyst Shards"
+					id: "7A11C1DF00400062"
+					item: { count: 1, id: "minecraft:spyglass" }
+					title: "Post a lookout Spyglass"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF00400059"
-					item: { count: 1, id: "minecraft:bookshelf" }
+					id: "7A11C1DF00400063"
+					item: { count: 1, id: "vista:hollow_cassette" }
 					count: 4
-					title: "Inspect four Bookshelves"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040005A"
-					item: { count: 1, id: "minecraft:glass" }
-					count: 16
-					title: "Inspect sixteen Glass"
+					title: "Stock four blank Broadcast Cassettes"
 					type: "item"
 				}
 			]
-			title: "Blood Vault Materials"
+			title: "Dark Spire"
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Commission the Blood Foundry as the House rendering rig: set seething cauldrons, rig hoist chains, and bank furnace fuel for extraction work. The commission pays one sprocket, sized for the Market Heavy Bastion Crate, plus fuel for the first firing. Sieve automation itself belongs to Sieve Extraction."]
+			icon: { id: "minecraft:cauldron" }
+			id: "7A11C0DF0040000F"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400063"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400064"
+					item: { count: 16, id: "minecraft:coal" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Commission · Rendering rig"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400064"
+					item: { count: 1, id: "minecraft:cauldron" }
+					count: 2
+					title: "Set two Rendering Cauldrons"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400065"
+					item: { count: 1, id: "minecraft:chain" }
+					count: 16
+					title: "Rig sixteen Hoist Chains"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400066"
+					item: { count: 1, id: "minecraft:furnace" }
+					count: 4
+					title: "Bank four Smelting Furnaces"
+					type: "item"
+				}
+			]
+			title: "Blood Foundry"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Commission the Guest Hall as the island's open hearth: fill provision barrels, keep a welcome campfire, and air two guest beds for travellers caught out after dark. The commission pays one sprocket, sized for the Market Frontier Watch Crate, plus a first welcome stock of bread."]
+			icon: { id: "minecraft:campfire" }
+			id: "7A11C0DF00400010"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400065"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400066"
+					item: { count: 16, id: "minecraft:bread" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Commission · Hearth and beds"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF00400067"
+					item: { count: 1, id: "minecraft:barrel" }
+					count: 4
+					title: "Fill four Provision Barrels"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400068"
+					item: { count: 1, id: "minecraft:campfire" }
+					count: 2
+					title: "Keep two Welcome Campfires"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400069"
+					item: { count: 1, id: "minecraft:white_bed" }
+					count: 2
+					title: "Air two Guest Beds"
+					type: "item"
+				}
+			]
+			title: "Guest Hall"
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A11C0DF00400003"]
+			description: ["Commission the Blood Vault as the House archive: shelve records bookshelves, stand a catalogue lectern, and glaze tinted panes for the sealed reserve. The commission pays one sprocket, sized for the Market Sanctified Brewery Crate, plus paper for the first ledgers. Bulk automation belongs to Sieve Extraction."]
+			icon: { id: "minecraft:lectern" }
+			id: "7A11C0DF00400011"
+			optional: true
+			rewards: [
+				{
+					id: "7A11C2DF00400067"
+					item: { count: 1, id: "numismatics:sprocket" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00400068"
+					item: { count: 16, id: "minecraft:paper" }
+					team_reward: false
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.0d
+			subtitle: "Commission · Archive and reserves"
+			tasks: [
+				{
+					consume_items: false
+					id: "7A11C1DF0040006A"
+					item: { count: 1, id: "minecraft:bookshelf" }
+					count: 2
+					title: "Shelve two Archive Bookshelves"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040006B"
+					item: { count: 1, id: "minecraft:lectern" }
+					title: "Stand a Catalogue Lectern"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF0040006C"
+					item: { count: 1, id: "minecraft:tinted_glass" }
+					count: 8
+					title: "Glaze eight Tinted Archive Panes"
+					type: "item"
+				}
+			]
+			title: "Blood Vault"
 			x: 6.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7A11C0DF0040000E"]
-			description: ["Carry an enhanced Heartseeker and two Enhanced Blood-Infused Iron. This optional late mastery pays at Cog scale while leaving the weapon and its alloy earned through actual Vampirism progression."]
-			icon: { id: "vampirism:heart_seeker_enhanced" }
+			description: ["Pay the Night's Due: hang the Spire's signal lighting across the public route, soul-lanterns where the dark pools deepest, then walk the lit perimeter to prove it. This civic lighting duty pays once at Cog scale with lamps and glowstone; it grants no weapons, alloy, or diamonds."]
+			icon: { id: "minecraft:soul_lantern" }
 			id: "7A11C0DF00400009"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF00400010"
+					id: "7A11C2DF00400069"
 					item: { count: 1, id: "numismatics:cog" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400011"
-					item: { count: 1, id: "irons_spellbooks:blood_upgrade_orb" }
+					id: "7A11C2DF0040006A"
+					item: { count: 16, id: "minecraft:glowstone" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400012"
-					item: { count: 16, id: "minecraft:obsidian" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400013"
-					item: { count: 8, id: "minecraft:diamond" }
+					id: "7A11C2DF0040006B"
+					item: { count: 4, id: "minecraft:redstone_lamp" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "hexagon"
 			size: 1.3d
-			subtitle: "Specialty · Advanced bloodwork"
+			subtitle: "Specialty · Signal lighting"
 			tasks: [
 				{
 					consume_items: false
-					id: "7A11C1DF0040000A"
-					item: { count: 1, id: "vampirism:heart_seeker_enhanced" }
-					title: "Carry an enhanced Heartseeker"
+					id: "7A11C1DF0040006D"
+					item: { count: 1, id: "minecraft:lantern" }
+					count: 16
+					title: "Hang sixteen Signal Lanterns"
 					type: "item"
 				}
 				{
 					consume_items: false
-					id: "7A11C1DF0040000B"
-					item: { count: 1, id: "vampirism:blood_infused_enhanced_iron_ingot" }
-					count: 2
-					title: "Carry two Enhanced Blood-Infused Iron"
+					id: "7A11C1DF0040006E"
+					item: { count: 1, id: "minecraft:soul_lantern" }
+					count: 8
+					title: "Set eight Soul-Lanterns"
 					type: "item"
 				}
+				{ id: "7A11C1DF0040006F", title: "I walked the lit perimeter", type: "checkmark" }
 			]
 			title: "Night's Due"
 			x: -10.5d
@@ -626,13 +510,13 @@
 			rewards: [
 				{
 					id: "7A11C2DF00400035"
-					item: { count: 1, id: "numismatics:sprocket" }
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400036"
-					item: { count: 4, id: "vista:hollow_cassette" }
+					item: { count: 8, id: "vista:hollow_cassette" }
 					team_reward: false
 					type: "item"
 				}
@@ -662,7 +546,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF0040000F"]
-			description: ["Use a Blood Sieve and four Blood-Infused Iron as proof of a working material lane. The reward restocks ordinary inputs without handing out the enhanced alloy required by later mastery."]
+			description: ["Run a functioning blood-processing lane: commission a Blood Sieve, lead livestock to the pens, and stock feed for the herd. The reward outfits the lane with hoppers, collection bottles, and feed without handing out enhanced alloy or foundry metals."]
 			icon: { id: "vampirism:blood_sieve" }
 			id: "7A11C0DF00400007"
 			optional: true
@@ -675,40 +559,48 @@
 				}
 				{
 					id: "7A11C2DF00400032"
-					item: { count: 32, id: "minecraft:redstone" }
+					item: { count: 2, id: "minecraft:hopper" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400033"
-					item: { count: 16, id: "minecraft:gold_ingot" }
+					item: { count: 16, id: "minecraft:glass_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400034"
-					item: { count: 16, id: "minecraft:iron_ingot" }
+					item: { count: 16, id: "minecraft:wheat" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "gear"
 			size: 1.0d
-			subtitle: "Specialty · Blood metallurgy"
+			subtitle: "Specialty · Blood processing"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400031"
 					item: { count: 1, id: "vampirism:blood_sieve" }
-					title: "Inspect a Blood Sieve"
+					title: "Commission a Blood Sieve"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400032"
-					item: { count: 1, id: "vampirism:blood_infused_iron_ingot" }
+					item: { count: 1, id: "minecraft:lead" }
 					count: 4
-					title: "Carry four Blood-Infused Iron"
+					title: "Lead four Head of Livestock"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7A11C1DF00400033"
+					item: { count: 1, id: "minecraft:wheat" }
+					count: 16
+					title: "Stock sixteen Wheat"
 					type: "item"
 				}
 			]
@@ -718,7 +610,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF0040000F"]
-			description: ["Carry an umbrella, saddle, and clock as a coherent night-route kit. The reward adds leads and rockets for transport and signals while leaving advanced movement to ordinary progression."]
+			description: ["Walk at noon and live: raise a Sunscreen Beacon over the foundry route, carry a sunshade umbrella, and prove the crossing on foot. The reward sustains the courier with blood top-ups and trail food; mounts, rockets, maps, and flight stay with the Market Transit Crate and ordinary progression."]
 			icon: { id: "vampirism:umbrella" }
 			id: "7A11C0DF0040000D"
 			optional: true
@@ -731,48 +623,36 @@
 				}
 				{
 					id: "7A11C2DF0040002E"
-					item: { count: 8, id: "minecraft:lead" }
+					item: { count: 16, id: "minecraft:glass_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002F"
-					item: { count: 32, id: "minecraft:firework_rocket" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400030"
-					item: { count: 8, id: "minecraft:map" }
+					item: { count: 16, id: "minecraft:cooked_beef" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Night mobility"
+			subtitle: "Specialty · Daytime survival"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040002B"
-					item: { count: 1, id: "vampirism:umbrella" }
-					title: "Carry an Umbrella"
+					item: { count: 1, id: "vampirism:sunscreen_beacon" }
+					title: "Raise a Sunscreen Beacon"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040002C"
-					item: { count: 1, id: "minecraft:saddle" }
-					title: "Carry a Saddle"
+					item: { count: 1, id: "vampirism:umbrella" }
+					title: "Carry a Sunshade Umbrella"
 					type: "item"
 				}
-				{
-					consume_items: false
-					id: "7A11C1DF0040002D"
-					item: { count: 1, id: "minecraft:clock" }
-					title: "Carry a Clock"
-					type: "item"
-				}
+				{ id: "7A11C1DF0040002D", title: "I crossed the route at noon", type: "checkmark" }
 			]
 			title: "Sunproof Transit"
 			x: -1.5d
@@ -780,8 +660,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400010"]
-			description: ["Prepare a brewing stand, honey, and ordinary food for visitors who do not share the House's diet. The reserve makes hospitality functional when a route ends after dark."]
-			icon: { id: "minecraft:brewing_stand" }
+			description: ["Keep the wayfarer's table: a lit hearth campfire, a served welcome cake, and dressed table pots for travellers of any diet. The reward restocks baking and lighting without duplicating the Market Recovery Crate, the Crimson Reserve, or bulk construction stock."]
+			icon: { id: "minecraft:cake" }
 			id: "7A11C0DF0040000C"
 			optional: true
 			rewards: [
@@ -793,59 +673,58 @@
 				}
 				{
 					id: "7A11C2DF0040002A"
-					item: { count: 32, id: "minecraft:glass_bottle" }
+					item: { count: 16, id: "minecraft:wheat" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002B"
-					item: { count: 4, id: "minecraft:golden_apple" }
+					item: { count: 8, id: "minecraft:sugar" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002C"
-					item: { count: 32, id: "minecraft:bread" }
+					item: { count: 16, id: "minecraft:torch" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Hospitality"
+			subtitle: "Specialty · Hearth service"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400028"
-					item: { count: 1, id: "minecraft:brewing_stand" }
-					title: "Inspect a Brewing Stand"
+					item: { count: 1, id: "minecraft:campfire" }
+					title: "Keep a Hearth Campfire"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400029"
-					item: { count: 1, id: "minecraft:honey_bottle" }
-					count: 8
-					title: "Carry eight Honey Bottles"
+					item: { count: 1, id: "minecraft:cake" }
+					title: "Serve a Welcome Cake"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040002A"
-					item: { count: 1, id: "minecraft:cooked_beef" }
-					count: 32
-					title: "Carry thirty-two Cooked Beef"
+					item: { count: 1, id: "minecraft:flower_pot" }
+					count: 2
+					title: "Dress two Table Pots"
 					type: "item"
 				}
 			]
-			title: "Guest Stores"
+			title: "Wayfarer Table"
 			x: 1.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["7A11C0DF00400010"]
-			description: ["Gather dark stone brick, dark oak, fences, and lanterns. The expanded palette is enough for a crypt, guest hall, garden court, or night clinic chosen by its builders."]
-			icon: { id: "vampirism:dark_stone_bricks" }
+			description: ["Open the Guest Hall's doors on paper: stand a registry lectern, open the guest book, and personally welcome a first guest of the mixed settlement. A social and administrative function, not another block collection; it grants record stock, never building bulk, iron, or diamonds."]
+			icon: { id: "minecraft:lectern" }
 			id: "7A11C0DF00400006"
 			optional: true
 			rewards: [
@@ -857,91 +736,44 @@
 				}
 				{
 					id: "7A11C2DF0040001B"
-					item: { count: 192, id: "vampirism:dark_stone_bricks" }
+					item: { count: 16, id: "minecraft:paper" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040001C"
-					item: { count: 96, id: "minecraft:dark_oak_log" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040001D"
-					item: { count: 48, id: "minecraft:dark_oak_fence" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040001E"
-					item: { count: 24, id: "minecraft:lantern" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0040001F"
-					item: { count: 32, id: "minecraft:iron_ingot" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400020"
-					item: { count: 4, id: "minecraft:diamond" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400021"
-					item: { count: 1, id: "minecraft:stonecutter" }
+					item: { count: 16, id: "minecraft:feather" }
 					team_reward: false
 					type: "item"
 				}
 			]
-			shape: "square"
+			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Manor palette"
+			subtitle: "Specialty · Welcome records"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040000F"
-					item: { count: 1, id: "vampirism:dark_stone_bricks" }
-					count: 64
-					title: "Inspect sixty-four Dark Stone Bricks"
+					item: { count: 1, id: "minecraft:lectern" }
+					title: "Stand a Registry Lectern"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400010"
-					item: { count: 1, id: "minecraft:dark_oak_log" }
-					count: 32
-					title: "Inspect thirty-two Dark Oak Logs"
+					item: { count: 1, id: "minecraft:writable_book" }
+					title: "Open the Guest Book"
 					type: "item"
 				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400011"
-					item: { count: 1, id: "minecraft:dark_oak_fence" }
-					count: 16
-					title: "Inspect sixteen Dark Oak Fences"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "7A11C1DF00400012"
-					item: { count: 1, id: "minecraft:lantern" }
-					count: 8
-					title: "Inspect eight Lanterns"
-					type: "item"
-				}
+				{ id: "7A11C1DF00400011", title: "I welcomed a first guest", type: "checkmark" }
 			]
-			title: "House of Doors"
+			title: "Guest Registry"
 			x: 4.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["7A11C0DF00400011"]
-			description: ["Maintain Blood Bottles and a Blood Container as a visible emergency reserve. The reward adds glassware and animal-handling supplies without pretending inventory proves a finished farm."]
+			description: ["Hold the emergency reserve visibly: eight blood bottles across two blood containers, plus the breeding stock to refill them. The reward seeds a real herd with feed, leads, and modest fencing; it does not automate processing (see Sieve Extraction) or replace building a farm."]
 			icon: { id: "vampirism:blood_container" }
 			id: "7A11C0DF00400005"
 			optional: true
@@ -960,13 +792,31 @@
 				}
 				{
 					id: "7A11C2DF00400027"
-					item: { count: 8, id: "minecraft:lead" }
+					item: { count: 4, id: "minecraft:lead" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400028"
-					item: { count: 32, id: "minecraft:oak_fence" }
+					item: { count: 16, id: "minecraft:oak_fence" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040006C"
+					item: { count: 16, id: "minecraft:wheat" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040006D"
+					item: { count: 8, id: "minecraft:carrot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0040006E"
+					item: { count: 8, id: "minecraft:potato" }
 					team_reward: false
 					type: "item"
 				}
@@ -979,15 +829,16 @@
 					consume_items: false
 					id: "7A11C1DF00400022"
 					item: { count: 1, id: "vampirism:blood_bottle" }
-					count: 4
-					title: "Carry four Blood Bottles"
+					count: 8
+					title: "Carry eight Blood Bottles"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400023"
 					item: { count: 1, id: "vampirism:blood_container" }
-					title: "Inspect a Blood Container"
+					count: 2
+					title: "Hold two Blood Containers"
 					type: "item"
 				}
 			]
@@ -997,117 +848,75 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400011"]
-			description: ["Prepare an Inscription Table, spellbook, and four Blood Runes, then demonstrate one Blood spell. The reward favors movement, measured siphoning, and practical combat rather than a random high-tier scroll."]
-			icon: { id: "irons_spellbooks:blood_rune" }
+			description: ["Complete the blood-mage workshop: raise an Arcane Anvil, bind an Iron Spell Book, wield a Blood Staff, and fill blood vials for the work ahead. The reward outfits the mage with an upgrade orb, vellum, paper, controlled epic ink, and currency; it grants no high-tier scrolls and nothing that replaces the assembled loadout."]
+			icon: { id: "irons_spellbooks:blood_staff" }
 			id: "7A11C0DF00400004"
 			optional: true
 			rewards: [
 				{
-					id: "7A11C2DF00400014"
-					item: { count: 1, id: "numismatics:sprocket" }
+					id: "7A11C2DF00400070"
+					item: { count: 2, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400015"
-					item: { count: 16, id: "irons_spellbooks:uncommon_ink" }
+					id: "7A11C2DF00400071"
+					item: { count: 1, id: "irons_spellbooks:blood_upgrade_orb" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400016"
-					item: { count: 8, id: "irons_spellbooks:rare_ink" }
+					id: "7A11C2DF00400072"
+					item: { count: 16, id: "irons_spellbooks:bloody_vellum" }
 					team_reward: false
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400017"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{ id: "irons_spellbooks:blood_slash", index: 0, level: 1, locked: false }
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
+					id: "7A11C2DF00400073"
+					item: { count: 32, id: "minecraft:paper" }
 					team_reward: false
-					title: "Scroll of Blood Slash"
 					type: "item"
 				}
 				{
-					id: "7A11C2DF00400018"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{ id: "irons_spellbooks:blood_step", index: 0, level: 1, locked: false }
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
+					id: "7A11C2DF00400074"
+					item: { count: 2, id: "irons_spellbooks:epic_ink" }
 					team_reward: false
-					title: "Scroll of Blood Step"
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400019"
-					item: {
-						components: {
-							"irons_spellbooks:spell_container": {
-								data: [
-									{ id: "irons_spellbooks:ray_of_siphoning", index: 0, level: 1, locked: false }
-								]
-								maxSpells: 1
-								mustEquip: false
-								spellWheel: false
-							}
-						}
-						count: 1
-						id: "irons_spellbooks:scroll"
-					}
-					team_reward: false
-					title: "Scroll of Siphoning"
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Blood utility"
+			subtitle: "Specialty · Blood-mage workshop"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040000C"
-					item: { count: 1, id: "irons_spellbooks:inscription_table" }
-					title: "Inspect an Inscription Table"
+					item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
+					title: "Raise an Arcane Anvil"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040000D"
-					item: { count: 1, id: "irons_spellbooks:copper_spell_book" }
-					title: "Carry a Flimsy Journal"
+					item: { count: 1, id: "irons_spellbooks:iron_spell_book" }
+					title: "Bind an Iron Spell Book"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040000E"
-					item: { count: 1, id: "irons_spellbooks:blood_rune" }
-					count: 4
-					title: "Carry four Blood Runes"
+					item: { count: 1, id: "irons_spellbooks:blood_staff" }
+					title: "Wield a Blood Staff"
 					type: "item"
 				}
-				{ id: "7A11C1DF00400018", title: "I demonstrated one Blood spell", type: "checkmark" }
+				{
+					consume_items: false
+					id: "7A11C1DF00400018"
+					item: { count: 1, id: "irons_spellbooks:blood_vial" }
+					count: 4
+					title: "Fill four Blood Vials"
+					type: "item"
+				}
 			]
 			title: "Scarlet Script"
 			x: 10.5d
