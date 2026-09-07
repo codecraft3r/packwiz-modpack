@@ -38,7 +38,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties."]
+			description: ["Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties. Taking a second calling renounces the first: pass its mark on before you claim another."]
 			icon: { id: "vampirism:vampire_fang" }
 			id: "7A11C0DF00200002"
 			optional: true
@@ -67,10 +67,10 @@
 			subtitle: "Vampire · Nightbound route"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "7A11C1DF00200002"
 					item: { count: 1, id: "vampirism:vampire_fang" }
-					title: "Carry a vampire fang"
+					title: "Offer a vampire fang"
 					type: "item"
 				}
 				{ advancement: "vampirism:vampire/become_vampire", criterion: "", id: "7A11C1DF00200003", type: "advancement" }
@@ -81,8 +81,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it asks for no profession items and creates no hidden third faction."]
-			icon: { id: "minecraft:iron_chestplate" }
+			description: ["Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it grants trade stock and record supplies instead of faction arms, and creates no hidden third faction. Claiming a faction calling later ends Neutral protection."]
+			icon: { id: "minecraft:emerald" }
 			id: "7A11C0DF00200003"
 			optional: true
 			rewards: [
@@ -94,37 +94,25 @@
 				}
 				{
 					id: "7A11C2DF00200005"
-					item: { count: 32, id: "minecraft:cooked_beef" }
+					item: { count: 16, id: "minecraft:cooked_beef" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00200006"
-					item: { count: 1, id: "minecraft:iron_sword" }
+					item: { count: 1, id: "minecraft:spyglass" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00200007"
-					item: { count: 1, id: "minecraft:iron_pickaxe" }
+					item: { count: 8, id: "minecraft:emerald" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0020000A"
-					item: { count: 1, id: "minecraft:iron_axe" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0020000B"
-					item: { count: 1, id: "minecraft:iron_shovel" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0020000C"
-					item: { count: 1, id: "minecraft:iron_hoe" }
+					item: { count: 16, id: "minecraft:paper" }
 					team_reward: false
 					type: "item"
 				}
@@ -137,30 +125,6 @@
 				{
 					id: "7A11C2DF0020000E"
 					item: { count: 1, id: "minecraft:white_bed" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF0020000F"
-					item: { count: 1, id: "minecraft:iron_helmet" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00200010"
-					item: { count: 1, id: "minecraft:iron_chestplate" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00200011"
-					item: { count: 1, id: "minecraft:iron_leggings" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00200012"
-					item: { count: 1, id: "minecraft:iron_boots" }
 					team_reward: false
 					type: "item"
 				}
@@ -177,7 +141,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00200001"]
-			description: ["Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support."]
+			description: ["Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support. Taking a second calling renounces the first: pass its mark on before you claim another."]
 			icon: { id: "vampirism:injection_garlic" }
 			id: "7A11C0DF00200004"
 			optional: true
@@ -206,10 +170,10 @@
 			subtitle: "Hunter · Lantern route"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "7A11C1DF00200007"
 					item: { count: 1, id: "vampirism:injection_garlic" }
-					title: "Carry a garlic injection"
+					title: "Offer a garlic injection"
 					type: "item"
 				}
 				{ advancement: "vampirism:hunter/become_hunter", criterion: "", id: "7A11C1DF00200008", type: "advancement" }
@@ -220,7 +184,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00200002", "7A11C0DF00200003", "7A11C0DF00200004"]
-			description: ["Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out."]
+			description: ["Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out. One calling per member - a second calling renounces the first. Complete it as a party - every member checks in."]
 			icon: { id: "minecraft:oak_door" }
 			id: "7A11C0DF00200007"
 			min_required_dependencies: 1
@@ -229,7 +193,7 @@
 			size: 1.5d
 			subtitle: "Complete any one calling"
 			tasks: [
-				{ id: "7A11C1DF00200009", title: "I confirm this calling", type: "checkmark" }
+				{ id: "7A11C1DF00200009", title: "We confirm this calling as a party - each member checks in", type: "checkmark" }
 			]
 			title: "Keep Doors Open"
 			x: 0

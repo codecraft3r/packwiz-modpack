@@ -308,7 +308,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Consume two Sprockets for a personal early-Create starter of alloy, shafts, cogwheels, belts, a wrench, and copper for first machines. Restocks after five minutes. A beginning, not precision mechanisms, brass-age parts, or an automated factory."]
+			description: ["Consume two Sprockets for a personal early-Create starter of alloy, shafts, cogwheels, belts, water wheels, a millstone and basin, a wrench, and copper for first machines. Restocks after five minutes. A beginning, not precision mechanisms, brass-age parts, or an automated factory."]
 			icon: { id: "create:shaft" }
 			id: "7A11C0DF00500005"
 			optional: true
@@ -354,6 +354,24 @@
 				{
 					id: "7A11C2DF00500067"
 					item: { count: 16, id: "minecraft:copper_ingot" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050006F"
+					item: { count: 2, id: "create:water_wheel" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050007A"
+					item: { count: 1, id: "create:millstone" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0050007B"
+					item: { count: 1, id: "create:basin" }
 					team_reward: false
 					type: "item"
 				}
@@ -460,7 +478,7 @@
 				}
 				{
 					id: "7A11C2DF00500017"
-					item: { count: 4, id: "minecraft:golden_apple" }
+					item: { count: 1, id: "minecraft:golden_apple" }
 					team_reward: false
 					type: "item"
 				}
@@ -492,7 +510,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00500018"
-					item: { count: 4, id: "minecraft:saddle" }
+					item: { count: 2, id: "minecraft:saddle" }
 					team_reward: false
 					type: "item"
 				}
@@ -504,7 +522,7 @@
 				}
 				{
 					id: "7A11C2DF0050001A"
-					item: { count: 64, id: "minecraft:firework_rocket" }
+					item: { count: 32, id: "minecraft:firework_rocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -540,7 +558,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00500001"]
-			description: ["Consume one Cog for a personal civic-works package behind one shared project: bulk Stone and Oak, scaffolding, Glass, Chains, and Lanterns at a scale no single lower kit matches. Restocks after five minutes. Shared building stock, not diamonds, alloy, or combat gear."]
+			description: ["Consume four Sprockets for a personal civic-works package behind one shared project: bulk Stone and Oak, scaffolding, Glass, Chains, and Lanterns at a scale no single lower kit matches. Restocks after five minutes. Shared building stock, not diamonds, alloy, or combat gear."]
 			icon: { id: "numismatics:cog" }
 			id: "7A11C0DF00500007"
 			optional: true
@@ -616,13 +634,13 @@
 			]
 			shape: "hexagon"
 			size: 1.3d
-			subtitle: "1 Cog · 5 min"
+			subtitle: "4 Sprockets · 5 min"
 			tasks: [
 				{
 					consume_items: true
 					id: "7A11C1DF00500006"
-					item: { count: 1, id: "numismatics:cog" }
-					title: "Submit 1 Cog"
+					item: { count: 4, id: "numismatics:sprocket" }
+					title: "Submit 4 Sprockets"
 					type: "item"
 				}
 			]

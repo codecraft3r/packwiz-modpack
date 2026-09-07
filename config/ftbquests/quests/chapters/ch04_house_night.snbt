@@ -203,7 +203,7 @@
 					title: "Draft the Household Roll"
 					type: "item"
 				}
-				{ id: "7A11C1DF00400060", title: "I convened the four commissions", type: "checkmark" }
+				{ id: "7A11C1DF00400060", title: "I convened the four commissions - witnessed by a member", type: "checkmark" }
 			]
 			title: "Household Muster"
 			x: 0
@@ -428,7 +428,7 @@
 			rewards: [
 				{
 					id: "7A11C2DF00400069"
-					item: { count: 1, id: "numismatics:cog" }
+					item: { count: 4, id: "numismatics:sprocket" }
 					team_reward: false
 					type: "item"
 				}
@@ -465,7 +465,7 @@
 					title: "Set eight Omen Soul-Flames"
 					type: "item"
 				}
-				{ id: "7A11C1DF0040006F", title: "I walked the shadowed perimeter", type: "checkmark" }
+				{ id: "7A11C1DF0040006F", title: "I walked the shadowed perimeter - witnessed by a member", type: "checkmark" }
 			]
 			title: "Night's Shroud"
 			x: -10.5d
@@ -623,7 +623,7 @@
 					title: "Carry a Sunshade Umbrella"
 					type: "item"
 				}
-				{ id: "7A11C1DF0040002D", title: "I crossed the route at noon", type: "checkmark" }
+				{ id: "7A11C1DF0040002D", title: "I crossed the route at noon - witnessed by a member", type: "checkmark" }
 			]
 			title: "Sunproof Transit"
 			x: -1.5d
@@ -736,7 +736,7 @@
 					title: "Open the Oath Book"
 					type: "item"
 				}
-				{ id: "7A11C1DF00400011", title: "I bound a first thrall-oath", type: "checkmark" }
+				{ id: "7A11C1DF00400011", title: "I bound a first thrall-oath - witnessed by a member", type: "checkmark" }
 			]
 			title: "Thrall Registry"
 			x: 4.5d

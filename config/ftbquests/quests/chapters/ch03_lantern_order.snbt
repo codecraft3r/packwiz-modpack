@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, a stonecutter, a wrench, and a sprocket construction grant to redeem at the Market."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, and a sprocket construction grant to redeem at the Market."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -154,18 +154,6 @@
 				{
 					id: "7A11C2DF00300046"
 					item: { count: 16, id: "minecraft:copper_ingot" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300048"
-					item: { count: 1, id: "minecraft:stonecutter" }
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00300049"
-					item: { count: 1, id: "supplementaries:wrench" }
 					team_reward: false
 					type: "item"
 				}
