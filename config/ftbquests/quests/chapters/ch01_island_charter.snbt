@@ -51,7 +51,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00100001"]
-			description: ["A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it."]
+			description: ["A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it. Ask a member to witness your understanding."]
 			icon: { id: "minecraft:oak_door" }
 			id: "7A11C0DF00100006"
 			rewards: [ ]
@@ -59,7 +59,7 @@
 			size: 1.0d
 			subtitle: "Required · Public access"
 			tasks: [
-				{ id: "7A11C1DF00100006", title: "I understand how public access is granted", type: "checkmark" }
+				{ id: "7A11C1DF00100006", title: "I understand how public access is granted - witnessed by a member", type: "checkmark" }
 			]
 			title: "Name Public Doors"
 			x: -4
@@ -75,7 +75,7 @@
 			size: 1.0d
 			subtitle: "Required · PvP and social play"
 			tasks: [
-				{ id: "7A11C1DF00100003", title: "I agree to stop on request", type: "checkmark" }
+				{ id: "7A11C1DF00100003", title: "I agree to stop on request - witnessed by a member", type: "checkmark" }
 			]
 			title: "Consent First"
 			x: 0
@@ -91,7 +91,7 @@
 			size: 1.0d
 			subtitle: "Required · Rivalry boundaries"
 			tasks: [
-				{ id: "7A11C1DF00100007", title: "I will keep rivalry claim-safe and reversible", type: "checkmark" }
+				{ id: "7A11C1DF00100007", title: "I will keep rivalry claim-safe and reversible - witnessed by a member", type: "checkmark" }
 			]
 			title: "Leave Work Standing"
 			x: 4
@@ -99,9 +99,10 @@
 		}
 		{
 			dependencies: ["7A11C0DF00100006", "7A11C0DF00100003", "7A11C0DF00100007"]
-			description: ["You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open."]
+			description: ["You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. Event guests may sign with a sponsor member present and backfill the third promise later. The calling board is now open."]
 			icon: { id: "minecraft:writable_book" }
 			id: "7A11C0DF00100005"
+			min_required_dependencies: 2
 			rewards: [
 				{
 					id: "7A11C2DF00100003"
@@ -112,7 +113,7 @@
 			]
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "Required · Public access · consent · rivalry"
+			subtitle: "Required · Any two promises, third vouched"
 			tasks: [
 				{ id: "7A11C1DF00100005", title: "I accept the Charter promises", type: "checkmark" }
 			]

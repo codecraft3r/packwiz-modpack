@@ -106,23 +106,23 @@ hash = "43af7a4ed40567575d513f33d460cc6b57c504ad227784c88f28c170f795b3de"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch01_island_charter.snbt"
-hash = "a2d24a073cb094cf95959ec2f3f94336c87ff79d5417d4a833943938de87e2c0"
+hash = "cdfb630697b5f5d07b74e2abb97946274a163639ab21b3c4902e8e1a31731661"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch02_callings.snbt"
-hash = "73064d391fc16e148a318df3b4e5aa031f809e55ec7e4639fbed4858862385ca"
+hash = "880fb22a7dca8a2d611b5e83043343bba9b8e2c01a5f98e535bc9bbdabb3bb8c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch03_lantern_order.snbt"
-hash = "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918"
+hash = "c659c793e2b9f36497a4961b7ec182eb629d398d6c588028da463c7a1231c82e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch04_house_night.snbt"
-hash = "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae"
+hash = "0a3fa426702a35b40ddb843f1e2710f22dd7fac24ac07495a7fba644b25fe8e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ch05_market_services.snbt"
-hash = "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f"
+hash = "5db50ea655a05b1a604d8c803fdb47f03c208374182be0e150a393fbe754b2c2"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

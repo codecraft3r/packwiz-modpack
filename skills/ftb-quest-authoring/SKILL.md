@@ -169,7 +169,17 @@ Also audit prose and completion clarity: no designer-facing claims in player tex
 
 Update translations, changelog/version metadata, Packwiz indexes, and hosted asset references only when the change requires them. Stage only the quest/art/release files in scope. Fetch the target branch before committing or pushing; if it advanced, inspect and integrate it without discarding unrelated work, then refresh Packwiz metadata again. Commit with a focused message, push the requested branch, and use a draft pull request unless the user explicitly asks for a merge. Preserve existing tags and unrelated user changes.
 
-## 8. Hand off clearly
+## 8. VvH project preferences
+
+When working on the VvH campaign in this repository, load and respect
+`docs/vvh/HUMAN_QUEST_PREFERENCES.md` alongside this skill. It records
+human design corrections mined from `dev` history (Market hidden lines,
+two-wing layout, short purchase cooldowns, personal scope, raw-Stone
+masonry, stack-safe rewards, verified-only modded IDs) with hard
+requirements enforced by `scripts/vvh_campaign_v3_validate.py`. Treat it
+as a maintained artifact and extend it when new human edits set precedent.
+
+## 9. Hand off clearly
 
 Report:
 
@@ -178,4 +188,3 @@ Report:
 - validation and playtest results, including what was not run;
 - economy guardrails, currency scaling, and team-scope decisions;
 - the branch/commit/PR or release link and the next safe playtest step.
-

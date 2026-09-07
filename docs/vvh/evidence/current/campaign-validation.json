@@ -2,13 +2,13 @@
   "status": "pass",
   "architecture": {
     "chapters": 5,
-    "quests": 50,
+    "quests": 56,
     "chapter_quest_counts": {
       "ch01_island_charter": 5,
       "ch02_callings": 5,
       "ch03_lantern_order": 15,
       "ch04_house_night": 15,
-      "ch05_market_services": 10
+      "ch05_market_services": 16
     },
     "groups": [
       {
@@ -29,7 +29,7 @@
     "global_root": [
       "7A11C0DF00100001"
     ],
-    "reachable_quests": 50,
+    "reachable_quests": 56,
     "cycles": false,
     "charter_clause_count": 3,
     "hunter_gate": "any 3 of 8 after Core III",
@@ -74,16 +74,16 @@
       ],
       "counted_specialties": 8,
       "specialty_currency": [
+        4.0,
         2.0,
         2.0,
         2.0,
         2.0,
         2.0,
-        2.0,
-        2.0,
+        4.0,
         8.0
       ],
-      "personal_completionism": 37.0,
+      "personal_completionism": 41.0,
       "branch_count": 12
     },
     "equal": false
@@ -99,28 +99,38 @@
     },
     "minimum_faction_route_personal": 15,
     "neutral_route_personal": 2,
-    "one_time_personal_raw_completionism": 90.0,
+    "one_time_personal_raw_completionism": 94.0,
     "one_time_team_completionism": 0.0,
-    "weekly_sinks": [
-      {
-        "id": "7A11C0DF00500002",
-        "title": "Field Kit",
-        "price_bevel_equivalent": 1
-      },
+    "purchase_cooldowns": {
+      "building_seconds": 180,
+      "progression_seconds": 300,
+      "faucet_seconds": 604800
+    },
+    "sinks": [
       {
         "id": "7A11C0DF00500003",
         "title": "Works Kit",
         "price_bevel_equivalent": 2
       },
       {
-        "id": "7A11C0DF00500004",
-        "title": "Arcane Kit",
+        "id": "7A11C0DF0050000F",
+        "title": "Village Hearth Kit",
         "price_bevel_equivalent": 2
       },
       {
+        "id": "7A11C0DF00500002",
+        "title": "Field Kit",
+        "price_bevel_equivalent": 1
+      },
+      {
         "id": "7A11C0DF00500005",
-        "title": "Foundry Kit",
+        "title": "Create Starter Kit",
         "price_bevel_equivalent": 4
+      },
+      {
+        "id": "7A11C0DF00500004",
+        "title": "Iron's Spells Starter Kit",
+        "price_bevel_equivalent": 2
       },
       {
         "id": "7A11C0DF00500009",
@@ -134,31 +144,234 @@
       },
       {
         "id": "7A11C0DF00500007",
-        "title": "Concord Bond",
+        "title": "Civic Works Bond",
         "price_bevel_equivalent": 8
+      },
+      {
+        "id": "7A11C0DF00500011",
+        "title": "Celestial Spire Crate",
+        "price_bevel_equivalent": 2
+      },
+      {
+        "id": "7A11C0DF00500012",
+        "title": "Sanctified Brewery Crate",
+        "price_bevel_equivalent": 2
+      },
+      {
+        "id": "7A11C0DF00500013",
+        "title": "Frontier Watch Crate",
+        "price_bevel_equivalent": 2
+      },
+      {
+        "id": "7A11C0DF00500014",
+        "title": "Heavy Bastion Crate",
+        "price_bevel_equivalent": 2
+      },
+      {
+        "id": "7A11C0DF00500015",
+        "title": "Create Deco Palette",
+        "price_bevel_equivalent": 4
       }
     ],
-    "weekly_sink_total": 23,
-    "weekly_faucets": [
+    "sink_total": 37,
+    "faucets": [
       {
         "id": "7A11C0DF00500006",
         "title": "Rumour Ledger",
         "value_bevel_equivalent": 1.0
       }
     ],
-    "weekly_faucet_total": 1.0,
+    "faucet_total": 1.0,
+    "market_report": [
+      {
+        "id": "7A11C0DF00500003",
+        "title": "Works Kit",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 14,
+        "full_stack_equivalents": 12.38,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF0050000F",
+        "title": "Village Hearth Kit",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 14,
+        "full_stack_equivalents": 11.66,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500002",
+        "title": "Field Kit",
+        "department": "progression",
+        "price_bevel_equivalent": 1,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 4,
+        "full_stack_equivalents": 0.83,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500005",
+        "title": "Create Starter Kit",
+        "department": "progression",
+        "price_bevel_equivalent": 4,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 7,
+        "full_stack_equivalents": 0.89,
+        "namespaces": [
+          "create",
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500004",
+        "title": "Iron's Spells Starter Kit",
+        "department": "progression",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 5,
+        "full_stack_equivalents": 0.36,
+        "namespaces": [
+          "irons_spellbooks"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500009",
+        "title": "Recovery Crate",
+        "department": "progression",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 4,
+        "full_stack_equivalents": 0.38,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF0050000A",
+        "title": "Transit Crate",
+        "department": "progression",
+        "price_bevel_equivalent": 4,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 5,
+        "full_stack_equivalents": 1.44,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500007",
+        "title": "Civic Works Bond",
+        "department": "civic",
+        "price_bevel_equivalent": 8,
+        "cooldown_seconds": 300,
+        "scope": "personal",
+        "reward_slots": 11,
+        "full_stack_equivalents": 9.0,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500011",
+        "title": "Celestial Spire Crate",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 7,
+        "full_stack_equivalents": 4.62,
+        "namespaces": [
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500012",
+        "title": "Sanctified Brewery Crate",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 7,
+        "full_stack_equivalents": 4.56,
+        "namespaces": [
+          "abyssal_decor",
+          "minecraft",
+          "supplementaries"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500013",
+        "title": "Frontier Watch Crate",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 7,
+        "full_stack_equivalents": 4.28,
+        "namespaces": [
+          "minecraft",
+          "supplementaries"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500014",
+        "title": "Heavy Bastion Crate",
+        "department": "building",
+        "price_bevel_equivalent": 2,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 6,
+        "full_stack_equivalents": 4.0,
+        "namespaces": [
+          "createdeco",
+          "minecraft"
+        ]
+      },
+      {
+        "id": "7A11C0DF00500015",
+        "title": "Create Deco Palette",
+        "department": "building",
+        "price_bevel_equivalent": 4,
+        "cooldown_seconds": 180,
+        "scope": "personal",
+        "reward_slots": 6,
+        "full_stack_equivalents": 3.5,
+        "namespaces": [
+          "createdeco"
+        ]
+      }
+    ],
     "fragmented_team_faucet_formula": "1 Bevel-equivalent × number of separately maintained FTB Teams per week"
   },
   "identifiers": {
     "nonvanilla_items": [
       "abyssal_decor:frosted_glass",
       "abyssal_decor:white_wood_log",
+      "abyssal_decor:white_wood_planks",
       "create:andesite_alloy",
       "create:belt_connector",
-      "create:brass_ingot",
       "create:brown_toolbox",
       "create:clipboard",
-      "create:precision_mechanism",
+      "create:cogwheel",
+      "create:large_cogwheel",
+      "create:shaft",
       "create:wrench",
       "createbigcannons:cannon_carriage",
       "createbigcannons:mortar_stone",
@@ -167,6 +380,16 @@
       "createbigcannons:worm",
       "createbigcannons:wrought_iron_cannon_chamber",
       "createbigcannons:wrought_iron_cannon_end",
+      "createdeco:industrial_iron_bars",
+      "createdeco:industrial_iron_catwalk",
+      "createdeco:industrial_iron_mesh_fence",
+      "createdeco:industrial_iron_sheet_metal",
+      "createdeco:industrial_iron_support",
+      "createdeco:industrial_iron_window",
+      "createdeco:pearl_brick_stairs",
+      "createdeco:pearl_bricks",
+      "createdeco:scarlet_brick_stairs",
+      "createdeco:scarlet_bricks",
       "explorerscompass:explorerscompass",
       "exposure:black_and_white_film",
       "exposure:camera",
@@ -175,14 +398,17 @@
       "irons_spellbooks:arcane_anvil",
       "irons_spellbooks:arcane_essence",
       "irons_spellbooks:blank_rune",
-      "irons_spellbooks:blood_rune",
+      "irons_spellbooks:blood_staff",
       "irons_spellbooks:blood_upgrade_orb",
+      "irons_spellbooks:blood_vial",
+      "irons_spellbooks:bloody_vellum",
       "irons_spellbooks:common_ink",
       "irons_spellbooks:copper_spell_book",
       "irons_spellbooks:epic_ink",
       "irons_spellbooks:gold_spell_book",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
+      "irons_spellbooks:iron_spell_book",
       "irons_spellbooks:priest_boots",
       "irons_spellbooks:priest_chestplate",
       "irons_spellbooks:priest_helmet",
@@ -205,29 +431,29 @@
       "supplementaries:bomb",
       "supplementaries:faucet",
       "supplementaries:jar",
+      "supplementaries:notice_board",
+      "supplementaries:rope",
       "supplementaries:rope_arrow",
+      "supplementaries:timber_frame",
+      "supplementaries:way_sign_oak",
       "supplementaries:wrench",
       "vampirism:alchemical_cauldron",
       "vampirism:alchemy_table",
       "vampirism:altar_cleansing",
-      "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
+      "vampirism:altar_pillar",
+      "vampirism:altar_tip",
       "vampirism:basic_crossbow",
       "vampirism:blood_bottle",
+      "vampirism:blood_bucket",
       "vampirism:blood_container",
-      "vampirism:blood_infused_enhanced_iron_ingot",
-      "vampirism:blood_infused_iron_ingot",
-      "vampirism:blood_pedestal",
       "vampirism:blood_sieve",
       "vampirism:crossbow_arrow_normal",
       "vampirism:crossbow_arrow_spitfire",
       "vampirism:crossbow_arrow_teleport",
       "vampirism:crossbow_arrow_vampire_killer",
-      "vampirism:dark_stone_bricks",
       "vampirism:garlic",
       "vampirism:garlic_diffuser_normal",
-      "vampirism:heart_seeker_enhanced",
-      "vampirism:heart_seeker_normal",
       "vampirism:holy_water_bottle_ultimate",
       "vampirism:hunter_axe_normal",
       "vampirism:hunter_coat_chest_normal",
@@ -240,6 +466,7 @@
       "vampirism:potion_table",
       "vampirism:pure_salt_water",
       "vampirism:stake",
+      "vampirism:sunscreen_beacon",
       "vampirism:umbrella",
       "vampirism:vampire_cloak_white_black",
       "vampirism:vampire_fang",
@@ -249,28 +476,30 @@
       "vista:viewfinder"
     ],
     "nonvanilla_icons": [
-      "create:precision_mechanism",
+      "abyssal_decor:white_wood_planks",
+      "create:shaft",
       "createbigcannons:cannon_carriage",
+      "createdeco:industrial_iron_catwalk",
+      "createdeco:pearl_bricks",
       "exposure:camera",
-      "irons_spellbooks:blood_rune",
+      "irons_spellbooks:blood_staff",
+      "irons_spellbooks:copper_spell_book",
       "irons_spellbooks:holy_rune",
       "irons_spellbooks:inscription_table",
       "irons_spellbooks:priest_chestplate",
-      "irons_spellbooks:uncommon_ink",
       "numismatics:banking_guide",
       "numismatics:bevel",
       "numismatics:cog",
       "numismatics:sprocket",
       "sophisticatedbackpacks:backpack",
+      "supplementaries:notice_board",
+      "supplementaries:timber_frame",
       "vampirism:alchemical_cauldron",
       "vampirism:altar_infusion",
       "vampirism:altar_inspiration",
       "vampirism:blood_container",
       "vampirism:blood_sieve",
       "vampirism:crossbow_arrow_spitfire",
-      "vampirism:dark_stone_bricks",
-      "vampirism:heart_seeker_enhanced",
-      "vampirism:heart_seeker_normal",
       "vampirism:hunter_table",
       "vampirism:injection_garlic",
       "vampirism:potion_table",
@@ -285,11 +514,8 @@
       "vampirism:vampire/become_vampire"
     ],
     "spells": [
-      "irons_spellbooks:blood_slash",
-      "irons_spellbooks:blood_step",
       "irons_spellbooks:divine_smite",
       "irons_spellbooks:heal",
-      "irons_spellbooks:ray_of_siphoning",
       "irons_spellbooks:recall"
     ],
     "components": [
@@ -326,18 +552,18 @@
         "match": true
       },
       "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": {
-        "index": "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918",
-        "actual": "ef13d9b35e0f3856062fb94d8dd9fc869130ad11628cc090375fcf59506c8918",
+        "index": "bae751b8f2002623d2303b5aaad11fec3df3a2bf6b52dcd56789f86a62a845d7",
+        "actual": "bae751b8f2002623d2303b5aaad11fec3df3a2bf6b52dcd56789f86a62a845d7",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch04_house_night.snbt": {
-        "index": "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae",
-        "actual": "44344f4a12cf5ed192ec6c6c565b8402a5e4b4d56b0be8ee3d297b05f10a0cae",
+        "index": "222c1e5b6394783d76e9df0cde2bb2207152167fff8cab859375180ce481d238",
+        "actual": "222c1e5b6394783d76e9df0cde2bb2207152167fff8cab859375180ce481d238",
         "match": true
       },
       "config/ftbquests/quests/chapters/ch05_market_services.snbt": {
-        "index": "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f",
-        "actual": "ee7b34eb156562fdc5c15320cd4d3e590d46ca1d2588bc646414531155b40b1f",
+        "index": "2fa905ed7d492074a4db80cf4b2db1b81d7b466a1b3999ec8cbeace64a4428ac",
+        "actual": "2fa905ed7d492074a4db80cf4b2db1b81d7b466a1b3999ec8cbeace64a4428ac",
         "match": true
       },
       "config/ftbquests/quests/data.snbt": {
@@ -356,8 +582,8 @@
         "match": true
       }
     },
-    "index_sha256": "f9a1ccac6c79928852f64d1dba420444750ce3a31aad8b10a3ed40fa5068c802",
-    "pack_toml_declared_index_sha256": "f9a1ccac6c79928852f64d1dba420444750ce3a31aad8b10a3ed40fa5068c802",
+    "index_sha256": "a3867782c62d09e2c1d6ebc8a2320291fdccb8a5c272b72bd82e4d82728e8c5a",
+    "pack_toml_declared_index_sha256": "a3867782c62d09e2c1d6ebc8a2320291fdccb8a5c272b72bd82e4d82728e8c5a",
     "index_hash_matches_pack_toml": true
   },
   "layout": {

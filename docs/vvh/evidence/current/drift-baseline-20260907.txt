@@ -1,0 +1,3 @@
+campaign source drift:
+- config\ftbquests\quests\chapters\ch03_lantern_order.snbt
+- config\ftbquests\quests\chapters\ch05_market_services.snbt
