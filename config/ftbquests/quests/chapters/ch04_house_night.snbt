@@ -54,49 +54,19 @@
 				}
 				{
 					id: "7A11C2DF00400002"
-					item: {
-						count: 1
-						id: "irons_spellbooks:wizard_helmet"
-						components: {
-							"minecraft:dyed_color": { rgb: 1908001 }
-						}
-					}
+					item: { count: 1, id: "vampirism:vampire_cloak_red_black" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400003"
-					item: {
-						count: 1
-						id: "irons_spellbooks:wizard_chestplate"
-						components: {
-							"minecraft:dyed_color": { rgb: 1908001 }
-						}
-					}
+					item: { count: 4, id: "vampirism:blood_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF00400004"
-					item: {
-						count: 1
-						id: "irons_spellbooks:wizard_leggings"
-						components: {
-							"minecraft:dyed_color": { rgb: 1908001 }
-						}
-					}
-					team_reward: false
-					type: "item"
-				}
-				{
-					id: "7A11C2DF00400005"
-					item: {
-						count: 1
-						id: "irons_spellbooks:wizard_boots"
-						components: {
-							"minecraft:dyed_color": { rgb: 1908001 }
-						}
-					}
+					item: { count: 8, id: "minecraft:glass_bottle" }
 					team_reward: false
 					type: "item"
 				}
@@ -134,7 +104,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400001"]
-			description: ["Raise a meaningfully upgraded Altar of Infusion: four Altar Pillars crowned with four Altar Tips over a true stone foundation. The reward funds ritual upkeep with currency, a blood transport bucket, and candles rather than unrelated bulk."]
+			description: ["Raise an Altar of Infusion: four Altar Pillars crowned with four Altar Tips over a stone foundation. The upgraded altar unlocks stronger rites and steadier blood work."]
 			icon: { id: "vampirism:altar_infusion" }
 			id: "7A11C0DF00400002"
 			rewards: [
@@ -192,7 +162,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400002"]
-			description: ["Muster the Household: raise a House Notice Board, draft the Household Roll, and convene the four commissions that raise the Spire, Foundry, Hall, and Vault. The reward rings in the new House with a muster bell, currency, and paper without issuing weapons, blood iron, or bulk metals."]
+			description: ["Muster the Household: raise a House Notice Board, draft the Household Roll, and convene the four commissions that raise the Spire, Foundry, Hall, and Vault. Ring the muster bell and set the House to work."]
 			icon: { id: "supplementaries:notice_board" }
 			id: "7A11C0DF00400003"
 			rewards: [
@@ -235,13 +205,13 @@
 				}
 				{ id: "7A11C1DF00400060", title: "I convened the four commissions", type: "checkmark" }
 			]
-			title: "Inherited Edge"
+			title: "Household Muster"
 			x: 0
 			y: -4
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Commission the Dark Spire as the island's nocturnal signal post: raise lightning rods, post a lookout spyglass, and stock broadcast cassettes for the Nocturnal Broadcast crew. The commission pays one sprocket, sized for the Market Celestial Spire Crate, plus wiring for the signal lamps."]
+			description: ["Commission the Dark Spire as the House night-watch: raise lightning rods, post a lookout spyglass, and hang signal lamps that call the House home after dark."]
 			icon: { id: "minecraft:lightning_rod" }
 			id: "7A11C0DF0040000E"
 			optional: true
@@ -281,9 +251,9 @@
 				{
 					consume_items: false
 					id: "7A11C1DF00400063"
-					item: { count: 1, id: "vista:hollow_cassette" }
+					item: { count: 1, id: "minecraft:redstone_lamp" }
 					count: 4
-					title: "Stock four blank Broadcast Cassettes"
+					title: "Hang four Spire Signal Lamps"
 					type: "item"
 				}
 			]
@@ -293,7 +263,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Commission the Blood Foundry as the House rendering rig: set seething cauldrons, rig hoist chains, and bank furnace fuel for extraction work. The commission pays one sprocket, sized for the Market Heavy Bastion Crate, plus fuel for the first firing. Sieve automation itself belongs to Sieve Extraction."]
+			description: ["Commission the Blood Foundry as the House rendering rig: set seething cauldrons, rig hoist chains, and bank furnace fuel to render blood and tallow for the House works."]
 			icon: { id: "minecraft:cauldron" }
 			id: "7A11C0DF0040000F"
 			optional: true
@@ -346,8 +316,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Commission the Guest Hall as the island's open hearth: fill provision barrels, keep a welcome campfire, and air two guest beds for travellers caught out after dark. The commission pays one sprocket, sized for the Market Frontier Watch Crate, plus a first welcome stock of bread."]
-			icon: { id: "minecraft:campfire" }
+			description: ["Commission the Thrall Hall as the House rest-house: fill provision barrels, keep low hearth fires, and set red coffins where bound thralls sleep through the day. The hall feeds the night shift and keeps blood close at hand."]
+			icon: { id: "vampirism:coffin_red" }
 			id: "7A11C0DF00400010"
 			optional: true
 			rewards: [
@@ -359,21 +329,21 @@
 				}
 				{
 					id: "7A11C2DF00400066"
-					item: { count: 16, id: "minecraft:bread" }
+					item: { count: 4, id: "vampirism:blood_bottle" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "square"
 			size: 1.0d
-			subtitle: "Commission · Hearth and beds"
+			subtitle: "Commission · Thralls and rest"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400067"
 					item: { count: 1, id: "minecraft:barrel" }
 					count: 4
-					title: "Fill four Provision Barrels"
+					title: "Fill four Thrall Provision Barrels"
 					type: "item"
 				}
 				{
@@ -381,25 +351,25 @@
 					id: "7A11C1DF00400068"
 					item: { count: 1, id: "minecraft:campfire" }
 					count: 2
-					title: "Keep two Welcome Campfires"
+					title: "Keep two Low Hearth Fires"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400069"
-					item: { count: 1, id: "minecraft:white_bed" }
+					item: { count: 1, id: "vampirism:coffin_red" }
 					count: 2
-					title: "Air two Guest Beds"
+					title: "Set two Thrall Coffins"
 					type: "item"
 				}
 			]
-			title: "Guest Hall"
+			title: "Thrall Hall"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7A11C0DF00400003"]
-			description: ["Commission the Blood Vault as the House archive: shelve records bookshelves, stand a catalogue lectern, and glaze tinted panes for the sealed reserve. The commission pays one sprocket, sized for the Market Sanctified Brewery Crate, plus paper for the first ledgers. Bulk automation belongs to Sieve Extraction."]
+			description: ["Commission the Blood Vault as the House archive: shelve records bookshelves, stand a catalogue lectern, and glaze tinted panes for the sealed blood reserve."]
 			icon: { id: "minecraft:lectern" }
 			id: "7A11C0DF00400011"
 			optional: true
@@ -451,7 +421,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF0040000E"]
-			description: ["Pay the Night's Due: hang the Spire's signal lighting across the public route, soul-lanterns where the dark pools deepest, then walk the lit perimeter to prove it. This civic lighting duty pays once at Cog scale with lamps and glowstone; it grants no weapons, alloy, or diamonds."]
+			description: ["Pay the Night's Shroud: veil the Spire route with tinted panes, set soul-flames where the dark pools deepest, then walk the shadowed perimeter to prove safe passage."]
 			icon: { id: "minecraft:soul_lantern" }
 			id: "7A11C0DF00400009"
 			optional: true
@@ -464,7 +434,7 @@
 				}
 				{
 					id: "7A11C2DF0040006A"
-					item: { count: 16, id: "minecraft:glowstone" }
+					item: { count: 16, id: "minecraft:tinted_glass" }
 					team_reward: false
 					type: "item"
 				}
@@ -477,14 +447,14 @@
 			]
 			shape: "hexagon"
 			size: 1.3d
-			subtitle: "Specialty · Signal lighting"
+			subtitle: "Specialty · Shadow veiling"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040006D"
-					item: { count: 1, id: "minecraft:lantern" }
+					item: { count: 1, id: "minecraft:tinted_glass" }
 					count: 16
-					title: "Hang sixteen Signal Lanterns"
+					title: "Veil sixteen Shadow Panes"
 					type: "item"
 				}
 				{
@@ -492,19 +462,19 @@
 					id: "7A11C1DF0040006E"
 					item: { count: 1, id: "minecraft:soul_lantern" }
 					count: 8
-					title: "Set eight Soul-Lanterns"
+					title: "Set eight Omen Soul-Flames"
 					type: "item"
 				}
-				{ id: "7A11C1DF0040006F", title: "I walked the lit perimeter", type: "checkmark" }
+				{ id: "7A11C1DF0040006F", title: "I walked the shadowed perimeter", type: "checkmark" }
 			]
-			title: "Night's Due"
+			title: "Night's Shroud"
 			x: -10.5d
 			y: 0
 		}
 		{
 			dependencies: ["7A11C0DF0040000E"]
-			description: ["Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."]
-			icon: { id: "vista:television" }
+			description: ["Post the night omens from the Dark Spire: ring the muster bell, light soul-flames for the far farms, and pin written notices so no House member misses the call."]
+			icon: { id: "minecraft:bell" }
 			id: "7A11C0DF00400008"
 			optional: true
 			rewards: [
@@ -516,31 +486,32 @@
 				}
 				{
 					id: "7A11C2DF00400036"
-					item: { count: 8, id: "vista:hollow_cassette" }
+					item: { count: 16, id: "minecraft:paper" }
 					team_reward: false
 					type: "item"
 				}
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Vista broadcast"
+			subtitle: "Specialty · Omen signs"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400013"
-					item: { count: 1, id: "vista:television" }
-					title: "Craft a Television"
+					item: { count: 1, id: "minecraft:bell" }
+					title: "Ring the Omen Bell"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400014"
-					item: { count: 1, id: "vista:viewfinder" }
-					title: "Craft a Viewfinder"
+					item: { count: 1, id: "minecraft:soul_lantern" }
+					count: 4
+					title: "Light four Omen Soul-Flames"
 					type: "item"
 				}
 			]
-			title: "Nocturnal Broadcast"
+			title: "Night Omens"
 			x: -7.5d
 			y: 2
 		}
@@ -660,8 +631,8 @@
 		}
 		{
 			dependencies: ["7A11C0DF00400010"]
-			description: ["Keep the wayfarer's table: a lit hearth campfire, a served welcome cake, and dressed table pots for travellers of any diet. The reward restocks baking and lighting without duplicating the Market Recovery Crate, the Crimson Reserve, or bulk construction stock."]
-			icon: { id: "minecraft:cake" }
+			description: ["Keep the tithe table: a low hearth fire, a sealed blood vessel for the House tithe, and candles that burn through the night watch. The table turns feeding into a rite the whole House can share."]
+			icon: { id: "vampirism:blood_bottle" }
 			id: "7A11C0DF0040000C"
 			optional: true
 			rewards: [
@@ -673,13 +644,13 @@
 				}
 				{
 					id: "7A11C2DF0040002A"
-					item: { count: 16, id: "minecraft:wheat" }
+					item: { count: 4, id: "vampirism:blood_bottle" }
 					team_reward: false
 					type: "item"
 				}
 				{
 					id: "7A11C2DF0040002B"
-					item: { count: 8, id: "minecraft:sugar" }
+					item: { count: 8, id: "minecraft:candle" }
 					team_reward: false
 					type: "item"
 				}
@@ -692,38 +663,38 @@
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Hearth service"
+			subtitle: "Specialty · Tithe service"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF00400028"
 					item: { count: 1, id: "minecraft:campfire" }
-					title: "Keep a Hearth Campfire"
+					title: "Keep a Low Tithe Fire"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400029"
-					item: { count: 1, id: "minecraft:cake" }
-					title: "Serve a Welcome Cake"
+					item: { count: 1, id: "vampirism:blood_container" }
+					title: "Seal a Blood Tithe Vessel"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF0040002A"
-					item: { count: 1, id: "minecraft:flower_pot" }
-					count: 2
-					title: "Dress two Table Pots"
+					item: { count: 1, id: "minecraft:candle" }
+					count: 8
+					title: "Set eight Tithe Candles"
 					type: "item"
 				}
 			]
-			title: "Wayfarer Table"
+			title: "Blood Tithe"
 			x: 1.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["7A11C0DF00400010"]
-			description: ["Open the Guest Hall's doors on paper: stand a registry lectern, open the guest book, and personally welcome a first guest of the mixed settlement. A social and administrative function, not another block collection; it grants record stock, never building bulk, iron, or diamonds."]
+			description: ["Bind the Thrall Hall on paper: stand a registry lectern, open the oath book, and take a first thrall-oath for the night shift. Names in the book keep feeding and watch duties honest."]
 			icon: { id: "minecraft:lectern" }
 			id: "7A11C0DF00400006"
 			optional: true
@@ -749,25 +720,25 @@
 			]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "Specialty · Welcome records"
+			subtitle: "Specialty · Oaths and records"
 			tasks: [
 				{
 					consume_items: false
 					id: "7A11C1DF0040000F"
 					item: { count: 1, id: "minecraft:lectern" }
-					title: "Stand a Registry Lectern"
+					title: "Stand an Oath Lectern"
 					type: "item"
 				}
 				{
 					consume_items: false
 					id: "7A11C1DF00400010"
 					item: { count: 1, id: "minecraft:writable_book" }
-					title: "Open the Guest Book"
+					title: "Open the Oath Book"
 					type: "item"
 				}
-				{ id: "7A11C1DF00400011", title: "I welcomed a first guest", type: "checkmark" }
+				{ id: "7A11C1DF00400011", title: "I bound a first thrall-oath", type: "checkmark" }
 			]
-			title: "Guest Registry"
+			title: "Thrall Registry"
 			x: 4.5d
 			y: 3.5d
 		}
