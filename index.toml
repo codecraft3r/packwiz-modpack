@@ -827,6 +827,11 @@ hash = "7eb5a10afd2b41c7eead2ed72e7517aa39f24649da3e126579ca0c27dba1e406"
 metafile = true
 
 [[files]]
+file = "mods/mac-input-fixes-neoforged.pw.toml"
+hash = "8d278ffc4ca20708d1bb459a122de2bf0db5933717db72fdb70db94e58e799de"
+metafile = true
+
+[[files]]
 file = "mods/mannequins.pw.toml"
 hash = "0c53ddaaa2d828c91ea4f5fe920bf3935b48b4ee2507f9145225775a64a88669"
 metafile = true

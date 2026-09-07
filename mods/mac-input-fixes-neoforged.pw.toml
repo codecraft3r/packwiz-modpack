@@ -1,0 +1,13 @@
+name = "MacOS Input Fixes (Neoforged)"
+filename = "macos_input_fixes-26.04.27.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ac3bcWXA/versions/l5jRTw9P/macos_input_fixes-26.04.27.jar"
+hash-format = "sha512"
+hash = "6fd041f80cd91b899521dbb35338363e8ec0d8895e562542cee1c9aadca8d0c1ba5c656501a6145316f912286eab48a025ccf5674c8957d5af894bb576f5dd94"
+
+[update]
+[update.modrinth]
+mod-id = "ac3bcWXA"
+version = "l5jRTw9P"
