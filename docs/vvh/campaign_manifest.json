@@ -1,8 +1,13 @@
 {
   "architecture": "five-chapter-vvh-current",
   "authoritative_source": "scripts/vvh_campaign_v3.py",
+  "reviewed_source_commits": [
+    "92a9020",
+    "4ed3207",
+    "777a1e0"
+  ],
   "chapter_count": 5,
-  "quest_count": 56,
+  "quest_count": 59,
   "groups": [
     {
       "id": "7A11C4DF00100000",
@@ -25,14 +30,14 @@
       "id": "7A11C3DF00100000",
       "images": [
         {
-          "alpha": 18,
-          "height": 5,
-          "image": "poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
+          "alpha": 130,
+          "height": 13.5,
+          "width": 24,
+          "image": "poiesis:textures/questpics/vvh/island_remembers.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 12,
           "x": 0,
-          "y": 3
+          "y": -1
         }
       ],
       "order": 0,
@@ -88,7 +93,7 @@
             "7A11C0DF00100001"
           ],
           "description": [
-            "A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it."
+            "A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it. Ask a member to witness your understanding."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:oak_door",
@@ -104,7 +109,7 @@
           "tasks": [
             {
               "id": "7A11C1DF00100006",
-              "title": "I understand how public access is granted",
+              "title": "I understand how public access is granted - witnessed by a member",
               "type": "checkmark"
             }
           ],
@@ -133,7 +138,7 @@
           "tasks": [
             {
               "id": "7A11C1DF00100003",
-              "title": "I agree to stop on request",
+              "title": "I agree to stop on request - witnessed by a member",
               "type": "checkmark"
             }
           ],
@@ -162,7 +167,7 @@
           "tasks": [
             {
               "id": "7A11C1DF00100007",
-              "title": "I will keep rivalry claim-safe and reversible",
+              "title": "I will keep rivalry claim-safe and reversible - witnessed by a member",
               "type": "checkmark"
             }
           ],
@@ -177,12 +182,12 @@
             "7A11C0DF00100007"
           ],
           "description": [
-            "You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. The calling board is now open."
+            "You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. Event guests may sign with a sponsor member present and backfill the third promise later. The calling board is now open."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:writable_book",
           "id": "7A11C0DF00100005",
-          "min_required_dependencies": 0,
+          "min_required_dependencies": 2,
           "optional": false,
           "repeat_cooldown": 0,
           "repeatable": false,
@@ -199,7 +204,7 @@
           ],
           "shape": "hexagon",
           "size": 1.6,
-          "subtitle": "Required · Public access · consent · rivalry",
+          "subtitle": "Required · Any two promises, third vouched",
           "tasks": [
             {
               "id": "7A11C1DF00100005",
@@ -222,14 +227,14 @@
       "id": "7A11C3DF00200000",
       "images": [
         {
-          "alpha": 22,
-          "height": 4,
-          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
+          "alpha": 105,
+          "height": 13.5,
+          "width": 24,
+          "image": "poiesis:textures/questpics/vvh/rivalry_without_ruin.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 4,
           "x": 0,
-          "y": 0
+          "y": -1
         }
       ],
       "order": 0,
@@ -268,7 +273,7 @@
             "7A11C0DF00200001"
           ],
           "description": [
-            "Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties."
+            "Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties. Taking a second calling renounces the first: pass its mark on before you claim another."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:vampire_fang",
@@ -311,13 +316,13 @@
           "subtitle": "Vampire · Nightbound route",
           "tasks": [
             {
-              "consume_items": false,
+              "consume_items": true,
               "id": "7A11C1DF00200002",
               "item": {
                 "count": 1,
                 "id": "vampirism:vampire_fang"
               },
-              "title": "Carry a vampire fang",
+              "title": "Offer a vampire fang",
               "type": "item"
             },
             {
@@ -336,10 +341,10 @@
             "7A11C0DF00200001"
           ],
           "description": [
-            "Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it asks for no profession items and creates no hidden third faction."
+            "Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it grants trade stock and record supplies instead of faction arms, and creates no hidden third faction. Claiming a faction calling later ends Neutral protection."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:iron_chestplate",
+          "icon": "minecraft:emerald",
           "id": "7A11C0DF00200003",
           "min_required_dependencies": 0,
           "optional": true,
@@ -358,7 +363,7 @@
             {
               "id": "7A11C2DF00200005",
               "item": {
-                "count": 32,
+                "count": 16,
                 "id": "minecraft:cooked_beef"
               },
               "team_reward": false,
@@ -368,7 +373,7 @@
               "id": "7A11C2DF00200006",
               "item": {
                 "count": 1,
-                "id": "minecraft:iron_sword"
+                "id": "minecraft:spyglass"
               },
               "team_reward": false,
               "type": "item"
@@ -376,8 +381,8 @@
             {
               "id": "7A11C2DF00200007",
               "item": {
-                "count": 1,
-                "id": "minecraft:iron_pickaxe"
+                "count": 8,
+                "id": "minecraft:emerald"
               },
               "team_reward": false,
               "type": "item"
@@ -385,26 +390,8 @@
             {
               "id": "7A11C2DF0020000A",
               "item": {
-                "count": 1,
-                "id": "minecraft:iron_axe"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0020000B",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_shovel"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0020000C",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_hoe"
+                "count": 16,
+                "id": "minecraft:paper"
               },
               "team_reward": false,
               "type": "item"
@@ -423,42 +410,6 @@
               "item": {
                 "count": 1,
                 "id": "minecraft:white_bed"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0020000F",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_helmet"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00200010",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_chestplate"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00200011",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_leggings"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00200012",
-              "item": {
-                "count": 1,
-                "id": "minecraft:iron_boots"
               },
               "team_reward": false,
               "type": "item"
@@ -483,7 +434,7 @@
             "7A11C0DF00200001"
           ],
           "description": [
-            "Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support."
+            "Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support. Taking a second calling renounces the first: pass its mark on before you claim another."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:injection_garlic",
@@ -526,13 +477,13 @@
           "subtitle": "Hunter · Lantern route",
           "tasks": [
             {
-              "consume_items": false,
+              "consume_items": true,
               "id": "7A11C1DF00200007",
               "item": {
                 "count": 1,
                 "id": "vampirism:injection_garlic"
               },
-              "title": "Carry a garlic injection",
+              "title": "Offer a garlic injection",
               "type": "item"
             },
             {
@@ -553,7 +504,7 @@
             "7A11C0DF00200004"
           ],
           "description": [
-            "Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out."
+            "Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out. One calling per member - a second calling renounces the first. Complete it as a party - every member checks in."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:oak_door",
@@ -569,7 +520,7 @@
           "tasks": [
             {
               "id": "7A11C1DF00200009",
-              "title": "I confirm this calling",
+              "title": "We confirm this calling as a party - each member checks in",
               "type": "checkmark"
             }
           ],
@@ -588,34 +539,14 @@
       "id": "7A11C3DF00300000",
       "images": [
         {
-          "alpha": 22,
-          "height": 7,
+          "alpha": 140,
+          "height": 19.125,
+          "width": 34,
           "image": "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 5,
-          "x": -11,
-          "y": 2
-        },
-        {
-          "alpha": 20,
-          "height": 7,
-          "image": "poiesis:textures/questpics/vvh/holy_public_ward.png",
-          "order": -39,
-          "rotation": 0.0,
-          "width": 5,
-          "x": 11,
-          "y": 5
-        },
-        {
-          "alpha": 28,
-          "height": 2.5,
-          "image": "poiesis:textures/questpics/vvh/holy_school_crest.png",
-          "order": -38,
-          "rotation": 0.0,
-          "width": 2.5,
           "x": 0,
-          "y": 10
+          "y": -2.5
         }
       ],
       "order": 1,
@@ -726,7 +657,7 @@
             "7A11C0DF00300001"
           ],
           "description": [
-            "Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, a stonecutter, a wrench, and a sprocket construction grant to redeem at the Market."
+            "Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, and one Sprocket to spend at the Market."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:stone",
@@ -743,7 +674,7 @@
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
-              "title": "Order Construction Grant",
+              "title": "1 Sprocket",
               "type": "item"
             },
             {
@@ -796,24 +727,6 @@
               "item": {
                 "count": 16,
                 "id": "minecraft:copper_ingot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00300048",
-              "item": {
-                "count": 1,
-                "id": "minecraft:stonecutter"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00300049",
-              "item": {
-                "count": 1,
-                "id": "supplementaries:wrench"
               },
               "team_reward": false,
               "type": "item"
@@ -978,7 +891,7 @@
             "7A11C0DF00300003"
           ],
           "description": [
-            "Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and a sprocket construction grant for the Celestial Spire Crate at the Market."
+            "Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and one Sprocket to spend on the Celestial Spire Crate at the Market."
           ],
           "hide_dependency_lines": false,
           "icon": "irons_spellbooks:inscription_table",
@@ -995,7 +908,7 @@
                 "id": "numismatics:sprocket"
               },
               "team_reward": false,
-              "title": "Order Construction Grant",
+              "title": "1 Sprocket",
               "type": "item"
             },
             {
@@ -2527,7 +2440,7 @@
             },
             {
               "id": "7A11C2DF00300027",
-              "table_id": 8796029108802813953,
+              "table_id": "8796029108802813953",
               "type": "choice",
               "title": "Choice: Artificer's Cane or Graybeard Staff"
             },
@@ -2973,7 +2886,142 @@
             {
               "id": "7A11C2DF0030005E",
               "item": {
-                "count": 16,
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305001",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305002",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305003",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305004",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305005",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305006",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305007",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305008",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00305009",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500A",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500B",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500D",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500E",
+              "item": {
+                "count": 1,
+                "id": "minecraft:rabbit_stew"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0030500F",
+              "item": {
+                "count": 1,
                 "id": "minecraft:rabbit_stew"
               },
               "team_reward": false,
@@ -3292,34 +3340,14 @@
       "id": "7A11C3DF00400000",
       "images": [
         {
-          "alpha": 22,
-          "height": 7,
+          "alpha": 150,
+          "height": 19.125,
+          "width": 34,
           "image": "poiesis:textures/questpics/vvh/house_of_night_blood_panorama.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 5,
-          "x": 11,
-          "y": 2
-        },
-        {
-          "alpha": 20,
-          "height": 7,
-          "image": "poiesis:textures/questpics/vvh/blood_ritual_workstation.png",
-          "order": -39,
-          "rotation": 0.0,
-          "width": 5,
-          "x": -11,
-          "y": 5
-        },
-        {
-          "alpha": 28,
-          "height": 2.5,
-          "image": "poiesis:textures/questpics/vvh/blood_school_crest.png",
-          "order": -38,
-          "rotation": 0.0,
-          "width": 2.5,
           "x": 0,
-          "y": 10
+          "y": -2.5
         }
       ],
       "order": 2,
@@ -3352,12 +3380,7 @@
               "id": "7A11C2DF00400002",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:wizard_helmet",
-                "components": {
-                  "minecraft:dyed_color": {
-                    "rgb": 1908001
-                  }
-                }
+                "id": "vampirism:vampire_cloak_red_black"
               },
               "team_reward": false,
               "type": "item"
@@ -3365,13 +3388,8 @@
             {
               "id": "7A11C2DF00400003",
               "item": {
-                "count": 1,
-                "id": "irons_spellbooks:wizard_chestplate",
-                "components": {
-                  "minecraft:dyed_color": {
-                    "rgb": 1908001
-                  }
-                }
+                "count": 4,
+                "id": "vampirism:blood_bottle"
               },
               "team_reward": false,
               "type": "item"
@@ -3379,27 +3397,8 @@
             {
               "id": "7A11C2DF00400004",
               "item": {
-                "count": 1,
-                "id": "irons_spellbooks:wizard_leggings",
-                "components": {
-                  "minecraft:dyed_color": {
-                    "rgb": 1908001
-                  }
-                }
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400005",
-              "item": {
-                "count": 1,
-                "id": "irons_spellbooks:wizard_boots",
-                "components": {
-                  "minecraft:dyed_color": {
-                    "rgb": 1908001
-                  }
-                }
+                "count": 8,
+                "id": "minecraft:glass_bottle"
               },
               "team_reward": false,
               "type": "item"
@@ -3450,7 +3449,7 @@
             "7A11C0DF00400001"
           ],
           "description": [
-            "Raise a meaningfully upgraded Altar of Infusion: four Altar Pillars crowned with four Altar Tips over a true stone foundation. The reward funds ritual upkeep with currency, a blood transport bucket, and candles rather than unrelated bulk."
+            "Prepare your ascent from Vampire level 4 to level 5. Bring an Altar of Infusion, eight Altar Pillars, four Altar Tips, eight Stone Bricks, five Human Hearts, and a Vampire Book. Build four two-pillar columns three blocks north, south, east, and west of the altar, with their bases at altar height. Fill each pillar with a Stone Brick and cap each column with a tip. This supplies the eight structure points for the night-time ritual; no pure blood is needed. These inventory checks record your supplies, so assemble and activate the altar yourself."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:altar_infusion",
@@ -3463,26 +3462,8 @@
             {
               "id": "7A11C2DF0040005B",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040005C",
-              "item": {
-                "count": 1,
-                "id": "vampirism:blood_bucket"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040005D",
-              "item": {
-                "count": 16,
-                "id": "minecraft:candle"
               },
               "team_reward": false,
               "type": "item"
@@ -3494,35 +3475,66 @@
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040005B",
+              "id": "7A11C1DF00404001",
               "item": {
                 "count": 1,
-                "id": "vampirism:altar_pillar"
+                "id": "vampirism:altar_infusion"
               },
-              "count": 4,
-              "title": "Raise four Altar Pillars",
+              "title": "Bring an Altar of Infusion",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040005C",
+              "id": "7A11C1DF00404002",
+              "item": {
+                "count": 1,
+                "id": "vampirism:altar_pillar"
+              },
+              "count": 8,
+              "title": "Bring eight Altar Pillars",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404003",
               "item": {
                 "count": 1,
                 "id": "vampirism:altar_tip"
               },
               "count": 4,
-              "title": "Crown the pillars with four Altar Tips",
+              "title": "Bring four Altar Tips",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040005D",
+              "id": "7A11C1DF00404004",
               "item": {
                 "count": 1,
                 "id": "minecraft:stone_bricks"
               },
-              "count": 16,
-              "title": "Lay sixteen Stone Bricks of foundation",
+              "count": 8,
+              "title": "Bring eight Stone Bricks",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404036",
+              "item": {
+                "count": 1,
+                "id": "vampirism:human_heart"
+              },
+              "count": 5,
+              "title": "Bring five Human Hearts",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404037",
+              "item": {
+                "count": 1,
+                "id": "vampirism:vampire_book"
+              },
+              "title": "Bring a Vampire Book",
               "type": "item"
             }
           ],
@@ -3535,10 +3547,10 @@
             "7A11C0DF00400002"
           ],
           "description": [
-            "Muster the Household: raise a House Notice Board, draft the Household Roll, and convene the four commissions that raise the Spire, Foundry, Hall, and Vault. The reward rings in the new House with a muster bell, currency, and paper without issuing weapons, blood iron, or bulk metals."
+            "Found the House: keep a real coffin at the daytime refuge, prepare a backpack and clipboard for its quartermaster, and sign a House plan naming the Dark Spire, Blood Foundry, Guest Hall, and Blood Vault services with their public-access boundaries. The plan is player-confirmed; the quest does not inspect private claims or book text."
           ],
           "hide_dependency_lines": false,
-          "icon": "supplementaries:notice_board",
+          "icon": "vampirism:coffin_red",
           "id": "7A11C0DF00400003",
           "min_required_dependencies": 0,
           "optional": false,
@@ -3555,55 +3567,67 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040005F",
+              "id": "7A11C2DF00405002",
               "item": {
                 "count": 1,
-                "id": "minecraft:bell"
+                "id": "minecraft:compass"
               },
               "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400060",
-              "item": {
-                "count": 16,
-                "id": "minecraft:paper"
-              },
-              "team_reward": false,
+              "title": "House Route Compass",
               "type": "item"
             }
           ],
           "shape": "gear",
           "size": 1.3,
-          "subtitle": "Tier III · Household muster",
+          "subtitle": "Tier III · Shared refuge",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040005E",
+              "id": "7A11C1DF00404005",
               "item": {
                 "count": 1,
-                "id": "supplementaries:notice_board"
+                "id": "vampirism:coffin_red"
               },
-              "title": "Raise a House Notice Board",
+              "title": "Bring a House Coffin",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040005F",
+              "id": "7A11C1DF00404006",
               "item": {
                 "count": 1,
-                "id": "minecraft:writable_book"
+                "id": "sophisticatedbackpacks:backpack"
               },
-              "title": "Draft the Household Roll",
+              "title": "Bring a Quartermaster Backpack",
               "type": "item"
             },
             {
-              "id": "7A11C1DF00400060",
-              "title": "I convened the four commissions",
+              "consume_items": false,
+              "id": "7A11C1DF00404007",
+              "item": {
+                "count": 1,
+                "id": "create:clipboard"
+              },
+              "title": "Bring a House Clipboard",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404008",
+              "item": {
+                "count": 1,
+                "id": "minecraft:written_book"
+              },
+              "title": "Carry the signed House Plan",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF00404009",
+              "title": "Player-confirmed: I signed the House plan and marked its public boundaries",
               "type": "checkmark"
             }
           ],
-          "title": "Inherited Edge",
+          "title": "House Charter",
           "x": 0,
           "y": -4
         },
@@ -3612,10 +3636,10 @@
             "7A11C0DF00400003"
           ],
           "description": [
-            "Commission the Dark Spire as the island's nocturnal signal post: raise lightning rods, post a lookout spyglass, and stock broadcast cassettes for the Nocturnal Broadcast crew. The commission pays one sprocket, sized for the Market Celestial Spire Crate, plus wiring for the signal lamps."
+            "Establish the Dark Spire service: keep a spyglass for observation, a bell for local signalling, and a written signal register. State what the tower broadcasts and where its public boundary begins; the Market palette recommendation is Celestial Spire or another suitable tower palette. Television and Viewfinder belong to Nocturnal Broadcast later."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:lightning_rod",
+          "icon": "minecraft:spyglass",
           "id": "7A11C0DF0040000E",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3625,60 +3649,55 @@
             {
               "id": "7A11C2DF00400061",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400062",
-              "item": {
-                "count": 16,
-                "id": "minecraft:redstone"
-              },
-              "team_reward": false,
+              "team_reward": true,
               "type": "item"
             }
           ],
           "shape": "square",
-          "size": 1.0,
-          "subtitle": "Commission · Signals and watch",
+          "size": 1.1,
+          "subtitle": "Commission · Observation and signalling",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400061",
-              "item": {
-                "count": 1,
-                "id": "minecraft:lightning_rod"
-              },
-              "count": 8,
-              "title": "Raise eight Lightning Rods",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400062",
+              "id": "7A11C1DF0040400A",
               "item": {
                 "count": 1,
                 "id": "minecraft:spyglass"
               },
-              "title": "Post a lookout Spyglass",
+              "title": "Bring a Spire Spyglass",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400063",
+              "id": "7A11C1DF0040400B",
               "item": {
                 "count": 1,
-                "id": "vista:hollow_cassette"
+                "id": "minecraft:bell"
               },
-              "count": 4,
-              "title": "Stock four blank Broadcast Cassettes",
+              "title": "Bring a Signal Bell",
               "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040400C",
+              "item": {
+                "count": 1,
+                "id": "minecraft:paper"
+              },
+              "count": 8,
+              "title": "Bring eight Signal Register Pages",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF0040400D",
+              "title": "Player-confirmed: I named the tower service and its public boundary",
+              "type": "checkmark"
             }
           ],
-          "title": "Dark Spire",
+          "title": "Dark Spire Commission",
           "x": -6.5,
           "y": -1.0
         },
@@ -3687,10 +3706,10 @@
             "7A11C0DF00400003"
           ],
           "description": [
-            "Commission the Blood Foundry as the House rendering rig: set seething cauldrons, rig hoist chains, and bank furnace fuel for extraction work. The commission pays one sprocket, sized for the Market Heavy Bastion Crate, plus fuel for the first firing. Sieve automation itself belongs to Sieve Extraction."
+            "Establish the Foundry service with a Blood Grinder and a small raw-blood input. Four Raw Beef provide 800 mB of impure blood when the grinder's lower fluid receiver accepts the batch; confirm that output at the service boundary. The recommended Market palette is Heavy Bastion or Create Builder. Sieve Extraction later teaches conversion of impure blood, while this commission establishes the input apparatus."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:cauldron",
+          "icon": "vampirism:blood_grinder",
           "id": "7A11C0DF0040000F",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3700,61 +3719,45 @@
             {
               "id": "7A11C2DF00400063",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400064",
-              "item": {
-                "count": 16,
-                "id": "minecraft:coal"
-              },
-              "team_reward": false,
+              "team_reward": true,
               "type": "item"
             }
           ],
           "shape": "square",
-          "size": 1.0,
-          "subtitle": "Commission · Rendering rig",
+          "size": 1.1,
+          "subtitle": "Commission · Blood handling",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400064",
+              "id": "7A11C1DF0040400E",
               "item": {
                 "count": 1,
-                "id": "minecraft:cauldron"
+                "id": "vampirism:blood_grinder"
               },
-              "count": 2,
-              "title": "Set two Rendering Cauldrons",
+              "title": "Bring a Blood Grinder",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400065",
+              "id": "7A11C1DF0040400F",
               "item": {
                 "count": 1,
-                "id": "minecraft:chain"
-              },
-              "count": 16,
-              "title": "Rig sixteen Hoist Chains",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF00400066",
-              "item": {
-                "count": 1,
-                "id": "minecraft:furnace"
+                "id": "minecraft:beef"
               },
               "count": 4,
-              "title": "Bank four Smelting Furnaces",
+              "title": "Bring four Raw Beef",
               "type": "item"
+            },
+            {
+              "id": "7A11C1DF00404012",
+              "title": "Player-confirmed: I ran the beef batch into a lower fluid receiver and marked the Foundry boundary",
+              "type": "checkmark"
             }
           ],
-          "title": "Blood Foundry",
+          "title": "Blood Foundry Commission",
           "x": -2.5,
           "y": 0.5
         },
@@ -3763,10 +3766,10 @@
             "7A11C0DF00400003"
           ],
           "description": [
-            "Commission the Guest Hall as the island's open hearth: fill provision barrels, keep a welcome campfire, and air two guest beds for travellers caught out after dark. The commission pays one sprocket, sized for the Market Frontier Watch Crate, plus a first welcome stock of bread."
+            "Establish the Guest Hall as a public reception service: prepare a lectern and visitor register, keep a barrel of welcome stock, and name the public entrance without granting access to private claimed areas. The Market palette recommendation is Frontier Watch or Village Timber."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:campfire",
+          "icon": "minecraft:lectern",
           "id": "7A11C0DF00400010",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3776,61 +3779,64 @@
             {
               "id": "7A11C2DF00400065",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400066",
-              "item": {
-                "count": 16,
-                "id": "minecraft:bread"
-              },
-              "team_reward": false,
+              "team_reward": true,
               "type": "item"
             }
           ],
           "shape": "square",
-          "size": 1.0,
-          "subtitle": "Commission · Hearth and beds",
+          "size": 1.1,
+          "subtitle": "Commission · Reception service",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400067",
+              "id": "7A11C1DF00404013",
+              "item": {
+                "count": 1,
+                "id": "minecraft:lectern"
+              },
+              "title": "Bring a Visitor Register Lectern",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404014",
+              "item": {
+                "count": 1,
+                "id": "minecraft:writable_book"
+              },
+              "title": "Bring a Visitor Register",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404015",
               "item": {
                 "count": 1,
                 "id": "minecraft:barrel"
               },
-              "count": 4,
-              "title": "Fill four Provision Barrels",
+              "title": "Bring a Welcome Barrel",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400068",
+              "id": "7A11C1DF00404016",
               "item": {
                 "count": 1,
                 "id": "minecraft:campfire"
               },
-              "count": 2,
-              "title": "Keep two Welcome Campfires",
+              "title": "Bring a Reception Hearth",
               "type": "item"
             },
             {
-              "consume_items": false,
-              "id": "7A11C1DF00400069",
-              "item": {
-                "count": 1,
-                "id": "minecraft:white_bed"
-              },
-              "count": 2,
-              "title": "Air two Guest Beds",
-              "type": "item"
+              "id": "7A11C1DF00404017",
+              "title": "Player-confirmed: I marked the public entrance and visitor service boundary",
+              "type": "checkmark"
             }
           ],
-          "title": "Guest Hall",
+          "title": "Guest Hall Commission",
           "x": 2.5,
           "y": 0.5
         },
@@ -3839,7 +3845,7 @@
             "7A11C0DF00400003"
           ],
           "description": [
-            "Commission the Blood Vault as the House archive: shelve records bookshelves, stand a catalogue lectern, and glaze tinted panes for the sealed reserve. The commission pays one sprocket, sized for the Market Sanctified Brewery Crate, plus paper for the first ledgers. Bulk automation belongs to Sieve Extraction."
+            "Establish the Blood Vault as an archive and reserve-management station: keep a lectern, written ledger, and labelled chest for reserve records. The recommended Market palette is Sanctified Brewery or Iron's Spells Arcanum. The commission documents the service; it does not require a completed blood-storage system or an advanced spell workshop."
           ],
           "hide_dependency_lines": false,
           "icon": "minecraft:lectern",
@@ -3852,60 +3858,54 @@
             {
               "id": "7A11C2DF00400067",
               "item": {
-                "count": 1,
+                "count": 2,
                 "id": "numismatics:sprocket"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400068",
-              "item": {
-                "count": 16,
-                "id": "minecraft:paper"
-              },
-              "team_reward": false,
+              "team_reward": true,
               "type": "item"
             }
           ],
           "shape": "square",
-          "size": 1.0,
-          "subtitle": "Commission · Archive and reserves",
+          "size": 1.1,
+          "subtitle": "Commission · Archive and reserve records",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040006A",
-              "item": {
-                "count": 1,
-                "id": "minecraft:bookshelf"
-              },
-              "count": 2,
-              "title": "Shelve two Archive Bookshelves",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040006B",
+              "id": "7A11C1DF00404018",
               "item": {
                 "count": 1,
                 "id": "minecraft:lectern"
               },
-              "title": "Stand a Catalogue Lectern",
+              "title": "Bring an Archive Lectern",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040006C",
+              "id": "7A11C1DF00404019",
               "item": {
                 "count": 1,
-                "id": "minecraft:tinted_glass"
+                "id": "minecraft:written_book"
               },
-              "count": 8,
-              "title": "Glaze eight Tinted Archive Panes",
+              "title": "Bring the Reserve Ledger",
               "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF0040401A",
+              "item": {
+                "count": 1,
+                "id": "minecraft:chest"
+              },
+              "title": "Bring a Reserve Chest",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF0040401B",
+              "title": "Player-confirmed: I defined the archive and reserve-management service",
+              "type": "checkmark"
             }
           ],
-          "title": "Blood Vault",
+          "title": "Blood Vault Commission",
           "x": 6.5,
           "y": -1.0
         },
@@ -3914,10 +3914,10 @@
             "7A11C0DF0040000E"
           ],
           "description": [
-            "Pay the Night's Due: hang the Spire's signal lighting across the public route, soul-lanterns where the dark pools deepest, then walk the lit perimeter to prove it. This civic lighting duty pays once at Cog scale with lamps and glowstone; it grants no weapons, alloy, or diamonds."
+            "Build a dawn-warning relay for the public route: bring a Daylight Detector, repeaters, and a clearly labelled warning lamp. The wiring test is player-confirmed because an ordinary task cannot inspect live signal connectivity."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:soul_lantern",
+          "icon": "minecraft:daylight_detector",
           "id": "7A11C0DF00400009",
           "min_required_dependencies": 0,
           "optional": true,
@@ -3927,26 +3927,26 @@
             {
               "id": "7A11C2DF00400069",
               "item": {
-                "count": 1,
-                "id": "numismatics:cog"
+                "count": 2,
+                "id": "numismatics:sprocket"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040006A",
+              "id": "7A11C2DF00405004",
               "item": {
                 "count": 16,
-                "id": "minecraft:glowstone"
+                "id": "minecraft:redstone"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040006B",
+              "id": "7A11C2DF00405005",
               "item": {
-                "count": 4,
-                "id": "minecraft:redstone_lamp"
+                "count": 2,
+                "id": "minecraft:repeater"
               },
               "team_reward": false,
               "type": "item"
@@ -3954,37 +3954,46 @@
           ],
           "shape": "hexagon",
           "size": 1.3,
-          "subtitle": "Specialty · Signal lighting",
+          "subtitle": "Specialty · Dawn warning",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040006D",
+              "id": "7A11C1DF0040401C",
               "item": {
                 "count": 1,
-                "id": "minecraft:lantern"
+                "id": "minecraft:daylight_detector"
               },
-              "count": 16,
-              "title": "Hang sixteen Signal Lanterns",
+              "title": "Bring a Daylight Detector",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040006E",
+              "id": "7A11C1DF0040401D",
               "item": {
                 "count": 1,
-                "id": "minecraft:soul_lantern"
+                "id": "minecraft:repeater"
               },
-              "count": 8,
-              "title": "Set eight Soul-Lanterns",
+              "count": 2,
+              "title": "Bring two Signal Repeaters",
               "type": "item"
             },
             {
-              "id": "7A11C1DF0040006F",
-              "title": "I walked the lit perimeter",
+              "consume_items": false,
+              "id": "7A11C1DF0040401E",
+              "item": {
+                "count": 1,
+                "id": "minecraft:redstone_lamp"
+              },
+              "title": "Bring a Warning Lamp",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF0040401F",
+              "title": "Player-confirmed: I tested the dawn warning circuit at first light",
               "type": "checkmark"
             }
           ],
-          "title": "Night's Due",
+          "title": "Dawn Watch",
           "x": -10.5,
           "y": 0
         },
@@ -3993,7 +4002,7 @@
             "7A11C0DF0040000E"
           ],
           "description": [
-            "Craft a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies currency and a set of hollow cassettes to record feeds."
+            "Bring a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies two Sprockets and eight Hollow Cassettes for recording feeds."
           ],
           "hide_dependency_lines": false,
           "icon": "vista:television",
@@ -4015,7 +4024,70 @@
             {
               "id": "7A11C2DF00400036",
               "item": {
-                "count": 8,
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405100",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405101",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405102",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405103",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405104",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405105",
+              "item": {
+                "count": 1,
+                "id": "vista:hollow_cassette"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405106",
+              "item": {
+                "count": 1,
                 "id": "vista:hollow_cassette"
               },
               "team_reward": false,
@@ -4033,7 +4105,7 @@
                 "count": 1,
                 "id": "vista:television"
               },
-              "title": "Craft a Television",
+              "title": "Bring a Television",
               "type": "item"
             },
             {
@@ -4043,7 +4115,7 @@
                 "count": 1,
                 "id": "vista:viewfinder"
               },
-              "title": "Craft a Viewfinder",
+              "title": "Bring a Viewfinder",
               "type": "item"
             }
           ],
@@ -4056,7 +4128,7 @@
             "7A11C0DF0040000F"
           ],
           "description": [
-            "Run a functioning blood-processing lane: commission a Blood Sieve, lead livestock to the pens, and stock feed for the herd. The reward outfits the lane with hoppers, collection bottles, and feed without handing out enhanced alloy or foundry metals."
+            "Turn impure blood into a useful House supply. Place one Blood Container above the Blood Sieve to feed it and a second below to receive blood. Four parts of impure blood yield three parts of blood; run 1,200 mB through the Sieve for 900 mB, enough to fill one Blood Bottle. Its item task only proves that a Blood Bottle exists, so the player-confirmed note records the Sieve as its origin. Run a batch and check the receiving container before confirming the test yourself; the inventory tasks only check that you have the apparatus. Collecting blood from animals is a separate job."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:blood_sieve",
@@ -4076,28 +4148,19 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400032",
+              "id": "7A11C2DF00405006",
               "item": {
                 "count": 2,
-                "id": "minecraft:hopper"
+                "id": "minecraft:bucket"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400033",
+              "id": "7A11C2DF00405007",
               "item": {
                 "count": 16,
                 "id": "minecraft:glass_bottle"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400034",
-              "item": {
-                "count": 16,
-                "id": "minecraft:wheat"
               },
               "team_reward": false,
               "type": "item"
@@ -4109,35 +4172,48 @@
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400031",
+              "id": "7A11C1DF00404020",
               "item": {
                 "count": 1,
                 "id": "vampirism:blood_sieve"
               },
-              "title": "Commission a Blood Sieve",
+              "title": "Bring a Blood Sieve",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400032",
+              "id": "7A11C1DF00404021",
               "item": {
                 "count": 1,
-                "id": "minecraft:lead"
+                "id": "vampirism:blood_container"
               },
-              "count": 4,
-              "title": "Lead four Head of Livestock",
+              "title": "Bring an Input Blood Container",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400033",
+              "id": "7A11C1DF00404022",
               "item": {
                 "count": 1,
-                "id": "minecraft:wheat"
+                "id": "vampirism:blood_container"
               },
-              "count": 16,
-              "title": "Stock sixteen Wheat",
+              "title": "Bring an Output Blood Container",
               "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404038",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_bottle"
+              },
+              "title": "Bring a Processed Blood Bottle",
+              "type": "item"
+            },
+            {
+              "id": "7A11C1DF00404023",
+              "title": "Player-confirmed: I bottled processed blood from the Sieve output; the item task cannot prove its origin",
+              "type": "checkmark"
             }
           ],
           "title": "Sieve Extraction",
@@ -4149,7 +4225,7 @@
             "7A11C0DF0040000F"
           ],
           "description": [
-            "Walk at noon and live: raise a Sunscreen Beacon over the foundry route, carry a sunshade umbrella, and prove the crossing on foot. The reward sustains the courier with blood top-ups and trail food; mounts, rockets, maps, and flight stay with the Market Transit Crate and ordinary progression."
+            "Plan a shaded daytime route to a refuge you can reach. Hold your Umbrella in your main hand to block vampire sun damage, and remember that switching to another item leaves you exposed. Travel the route and confirm the journey yourself. Shelter and ordinary precautions still matter along the way."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:umbrella",
@@ -4169,19 +4245,28 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040002E",
+              "id": "7A11C2DF00405008",
               "item": {
-                "count": 16,
-                "id": "minecraft:glass_bottle"
+                "count": 3,
+                "id": "minecraft:black_wool"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040002F",
+              "id": "7A11C2DF00405009",
               "item": {
-                "count": 16,
-                "id": "minecraft:cooked_beef"
+                "count": 2,
+                "id": "vampirism:vampire_orchid"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF0040501A",
+              "item": {
+                "count": 2,
+                "id": "minecraft:stick"
               },
               "team_reward": false,
               "type": "item"
@@ -4193,27 +4278,17 @@
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040002B",
-              "item": {
-                "count": 1,
-                "id": "vampirism:sunscreen_beacon"
-              },
-              "title": "Raise a Sunscreen Beacon",
-              "type": "item"
-            },
-            {
-              "consume_items": false,
-              "id": "7A11C1DF0040002C",
+              "id": "7A11C1DF00404024",
               "item": {
                 "count": 1,
                 "id": "vampirism:umbrella"
               },
-              "title": "Carry a Sunshade Umbrella",
+              "title": "Carry a Sunproof Umbrella",
               "type": "item"
             },
             {
-              "id": "7A11C1DF0040002D",
-              "title": "I crossed the route at noon",
+              "id": "7A11C1DF00404025",
+              "title": "Player-confirmed: I completed the shaded route between refuges",
               "type": "checkmark"
             }
           ],
@@ -4226,10 +4301,10 @@
             "7A11C0DF00400010"
           ],
           "description": [
-            "Keep the wayfarer's table: a lit hearth campfire, a served welcome cake, and dressed table pots for travellers of any diet. The reward restocks baking and lighting without duplicating the Market Recovery Crate, the Crimson Reserve, or bulk construction stock."
+            "Keep a Remedy Counter for ordinary visitors. In an Alchemist Cauldron, combine 1,000 mB of strong Healing potion with an Amethyst Shard for Greater Healing, or 1,000 mB of long Invisibility potion with a Shriving Stone for Invisibility Elixir. Bottle the remedies in 250 mB portions. Bring one of each and confirm that the counter is stocked and labelled. These are visitor remedies; keep the House's blood supply and daytime protection services available separately."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:cake",
+          "icon": "irons_spellbooks:alchemist_cauldron",
           "id": "7A11C0DF0040000C",
           "min_required_dependencies": 0,
           "optional": true,
@@ -4246,28 +4321,28 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040002A",
+              "id": "7A11C2DF0040500A",
               "item": {
                 "count": 16,
-                "id": "minecraft:wheat"
+                "id": "minecraft:glass_bottle"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040002B",
+              "id": "7A11C2DF0040500B",
               "item": {
                 "count": 8,
-                "id": "minecraft:sugar"
+                "id": "minecraft:amethyst_shard"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040002C",
+              "id": "7A11C2DF0040500C",
               "item": {
-                "count": 16,
-                "id": "minecraft:torch"
+                "count": 4,
+                "id": "irons_spellbooks:shriving_stone"
               },
               "team_reward": false,
               "type": "item"
@@ -4275,41 +4350,45 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Hearth service",
+          "subtitle": "Specialty · Visitor remedies",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400028",
+              "id": "7A11C1DF00404026",
               "item": {
                 "count": 1,
-                "id": "minecraft:campfire"
+                "id": "irons_spellbooks:alchemist_cauldron"
               },
-              "title": "Keep a Hearth Campfire",
+              "title": "Bring an Alchemist Cauldron",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400029",
+              "id": "7A11C1DF00404027",
               "item": {
                 "count": 1,
-                "id": "minecraft:cake"
+                "id": "irons_spellbooks:greater_healing_potion"
               },
-              "title": "Serve a Welcome Cake",
+              "title": "Bring a Greater Healing Remedy",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040002A",
+              "id": "7A11C1DF00404028",
               "item": {
                 "count": 1,
-                "id": "minecraft:flower_pot"
+                "id": "irons_spellbooks:invisibility_elixir"
               },
-              "count": 2,
-              "title": "Dress two Table Pots",
+              "title": "Bring an Invisibility Remedy",
               "type": "item"
+            },
+            {
+              "id": "7A11C1DF00404029",
+              "title": "Player-confirmed: I labelled the visitor remedies and their faction limits",
+              "type": "checkmark"
             }
           ],
-          "title": "Wayfarer Table",
+          "title": "Remedy Counter",
           "x": 1.5,
           "y": 4.5
         },
@@ -4318,10 +4397,10 @@
             "7A11C0DF00400010"
           ],
           "description": [
-            "Open the Guest Hall's doors on paper: stand a registry lectern, open the guest book, and personally welcome a first guest of the mixed settlement. A social and administrative function, not another block collection; it grants record stock, never building bulk, iron, or diamonds."
+            "Publish a signed visitor guide, mark the public entrance, and show where private claimed areas begin. Test access to one designated public area only; this attestation does not grant unrestricted access to the claim."
           ],
           "hide_dependency_lines": false,
-          "icon": "minecraft:lectern",
+          "icon": "minecraft:written_book",
           "id": "7A11C0DF00400006",
           "min_required_dependencies": 0,
           "optional": true,
@@ -4338,19 +4417,10 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040001B",
+              "id": "7A11C2DF0040500D",
               "item": {
-                "count": 16,
+                "count": 8,
                 "id": "minecraft:paper"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040001C",
-              "item": {
-                "count": 16,
-                "id": "minecraft:feather"
               },
               "team_reward": false,
               "type": "item"
@@ -4358,35 +4428,35 @@
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Specialty · Welcome records",
+          "subtitle": "Specialty · Public wayfinding",
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040000F",
+              "id": "7A11C1DF0040402A",
               "item": {
                 "count": 1,
-                "id": "minecraft:lectern"
+                "id": "minecraft:written_book"
               },
-              "title": "Stand a Registry Lectern",
+              "title": "Bring a Signed Visitor Guide",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400010",
+              "id": "7A11C1DF0040402B",
               "item": {
                 "count": 1,
-                "id": "minecraft:writable_book"
+                "id": "minecraft:oak_sign"
               },
-              "title": "Open the Guest Book",
+              "title": "Bring an Entrance Sign",
               "type": "item"
             },
             {
-              "id": "7A11C1DF00400011",
-              "title": "I welcomed a first guest",
+              "id": "7A11C1DF0040402C",
+              "title": "Player-confirmed: I tested the public entrance and private boundary",
               "type": "checkmark"
             }
           ],
-          "title": "Guest Registry",
+          "title": "Open House",
           "x": 4.5,
           "y": 3.5
         },
@@ -4395,7 +4465,7 @@
             "7A11C0DF00400011"
           ],
           "description": [
-            "Hold the emergency reserve visibly: eight blood bottles across two blood containers, plus the breeding stock to refill them. The reward seeds a real herd with feed, leads, and modest fencing; it does not automate processing (see Sieve Extraction) or replace building a farm."
+            "Maintain an emergency reserve: carry eight Blood Bottles and two Blood Containers, then confirm that the reserve is filled and reachable. A Blood Container holds 12,600 mB, but the item tasks cannot read fluid level; the reward adds separate containers, feed, leads, and limited fencing without claiming automated storage."
           ],
           "hide_dependency_lines": false,
           "icon": "vampirism:blood_container",
@@ -4415,16 +4485,52 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400026",
+              "id": "7A11C2DF0040500E",
               "item": {
-                "count": 32,
-                "id": "minecraft:glass_bottle"
+                "count": 1,
+                "id": "vampirism:blood_container"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400027",
+              "id": "7A11C2DF0040500F",
+              "item": {
+                "count": 1,
+                "id": "vampirism:blood_container"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405010",
+              "item": {
+                "count": 32,
+                "id": "minecraft:wheat"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405011",
+              "item": {
+                "count": 16,
+                "id": "minecraft:carrot"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405012",
+              "item": {
+                "count": 16,
+                "id": "minecraft:potato"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405013",
               "item": {
                 "count": 4,
                 "id": "minecraft:lead"
@@ -4433,37 +4539,19 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400028",
+              "id": "7A11C2DF00405014",
               "item": {
-                "count": 16,
+                "count": 8,
                 "id": "minecraft:oak_fence"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF0040006C",
+              "id": "7A11C2DF00405015",
               "item": {
-                "count": 16,
-                "id": "minecraft:wheat"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040006D",
-              "item": {
-                "count": 8,
-                "id": "minecraft:carrot"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0040006E",
-              "item": {
-                "count": 8,
-                "id": "minecraft:potato"
+                "count": 2,
+                "id": "minecraft:oak_fence_gate"
               },
               "team_reward": false,
               "type": "item"
@@ -4475,7 +4563,7 @@
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF00400022",
+              "id": "7A11C1DF0040402D",
               "item": {
                 "count": 1,
                 "id": "vampirism:blood_bottle"
@@ -4486,14 +4574,19 @@
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400023",
+              "id": "7A11C1DF0040402E",
               "item": {
                 "count": 1,
                 "id": "vampirism:blood_container"
               },
               "count": 2,
-              "title": "Hold two Blood Containers",
+              "title": "Carry two Blood Containers",
               "type": "item"
+            },
+            {
+              "id": "7A11C1DF0040402F",
+              "title": "Player-confirmed: I checked that the reserve is filled and reachable",
+              "type": "checkmark"
             }
           ],
           "title": "Crimson Reserve",
@@ -4505,7 +4598,7 @@
             "7A11C0DF00400011"
           ],
           "description": [
-            "Complete the blood-mage workshop: raise an Arcane Anvil, bind an Iron Spell Book, wield a Blood Staff, and fill blood vials for the work ahead. The reward outfits the mage with an upgrade orb, vellum, paper, controlled epic ink, and currency; it grants no high-tier scrolls and nothing that replaces the assembled loadout."
+            "Complete a blood-mage workshop with an Arcane Anvil, Scroll Forge, and the Cultist equipment set. The reward offers a Blood Staff with paper and controlled Rare and Epic Ink for the next script; it does not return the armour or hand out unrelated fixed scrolls."
           ],
           "hide_dependency_lines": false,
           "icon": "irons_spellbooks:blood_staff",
@@ -4525,36 +4618,36 @@
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400071",
+              "id": "7A11C2DF00405016",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:blood_upgrade_orb"
+                "id": "irons_spellbooks:blood_staff"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400072",
+              "id": "7A11C2DF00405017",
               "item": {
                 "count": 16,
-                "id": "irons_spellbooks:bloody_vellum"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00400073",
-              "item": {
-                "count": 32,
                 "id": "minecraft:paper"
               },
               "team_reward": false,
               "type": "item"
             },
             {
-              "id": "7A11C2DF00400074",
+              "id": "7A11C2DF00405018",
               "item": {
                 "count": 2,
+                "id": "irons_spellbooks:rare_ink"
+              },
+              "team_reward": false,
+              "type": "item"
+            },
+            {
+              "id": "7A11C2DF00405019",
+              "item": {
+                "count": 1,
                 "id": "irons_spellbooks:epic_ink"
               },
               "team_reward": false,
@@ -4567,43 +4660,62 @@
           "tasks": [
             {
               "consume_items": false,
-              "id": "7A11C1DF0040000C",
+              "id": "7A11C1DF00404030",
               "item": {
                 "count": 1,
                 "id": "irons_spellbooks:arcane_anvil"
               },
-              "title": "Raise an Arcane Anvil",
+              "title": "Bring an Arcane Anvil",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040000D",
+              "id": "7A11C1DF00404031",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:iron_spell_book"
+                "id": "irons_spellbooks:scroll_forge"
               },
-              "title": "Bind an Iron Spell Book",
+              "title": "Bring a Scroll Forge",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF0040000E",
+              "id": "7A11C1DF00404032",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:blood_staff"
+                "id": "irons_spellbooks:cultist_helmet"
               },
-              "title": "Wield a Blood Staff",
+              "title": "Bring the Cultist Hood",
               "type": "item"
             },
             {
               "consume_items": false,
-              "id": "7A11C1DF00400018",
+              "id": "7A11C1DF00404033",
               "item": {
                 "count": 1,
-                "id": "irons_spellbooks:blood_vial"
+                "id": "irons_spellbooks:cultist_chestplate"
               },
-              "count": 4,
-              "title": "Fill four Blood Vials",
+              "title": "Bring the Cultist Chestplate",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404034",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:cultist_leggings"
+              },
+              "title": "Bring the Cultist Leggings",
+              "type": "item"
+            },
+            {
+              "consume_items": false,
+              "id": "7A11C1DF00404035",
+              "item": {
+                "count": 1,
+                "id": "irons_spellbooks:cultist_boots"
+              },
+              "title": "Bring the Cultist Boots",
               "type": "item"
             }
           ],
@@ -4622,14 +4734,14 @@
       "id": "7A11C3DF00500000",
       "images": [
         {
-          "alpha": 18,
-          "height": 6,
-          "image": "poiesis:textures/questpics/vvh/free_company_writ.png",
+          "alpha": 130,
+          "height": 22.5,
+          "width": 40,
+          "image": "poiesis:textures/questpics/vvh/free_company_mediator_panorama.png",
           "order": -40,
           "rotation": 0.0,
-          "width": 7,
           "x": 0,
-          "y": 1
+          "y": 2.25
         }
       ],
       "order": 0,
@@ -4639,9 +4751,9 @@
             "7A11C0DF00200007"
           ],
           "description": [
-            "The board is two departments: building palettes on the left, progression and utility kits on the right. Every purchase consumes the exact posted price for one personal kit, restocks after three minutes (building) or five minutes (progression), and never pays currency back. The Rumour Ledger remains the sole slow weekly team faucet."
+            "The board has two departments: building palettes on the left, progression and utility kits on the right. A purchase consumes the exact posted price, creates one shared set of team reward entitlements, and never returns currency. Claim each reward manually so a large order does not flood an occupied inventory. Building orders restock after 180 seconds; progression and utility orders restock after 300 seconds. The Rumour Ledger remains the only weekly currency source."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "numismatics:banking_guide",
           "id": "7A11C0DF00500001",
           "min_required_dependencies": 0,
@@ -4650,27 +4762,27 @@
           "repeatable": false,
           "rewards": [],
           "shape": "hexagon",
-          "size": 1.4,
-          "subtitle": "Market guide · Personal scope",
+          "size": 1.5,
+          "subtitle": "Catalogue guide · Shared team stock",
           "tasks": [
             {
               "id": "7A11C1DF00500001",
-              "title": "I understand prices, cooldowns, and personal scope",
+              "title": "I understand prices, cooldowns, and shared team claims",
               "type": "checkmark"
             }
           ],
           "title": "Read the Board",
           "x": 0,
-          "y": -5
+          "y": -7
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Sprocket for a personal raw building stock of bulk Stone, Oak, Sand, Glass, and Lanterns: about twelve full-stack equivalents for repairs, shelters, and civic rooms. Restocks after three minutes. Flexible raw stock, not premade bricks, machines, or combat gear."
+            "Submit and consume 1 Sprocket for one shared team order: 8 stacks of raw Stone, 4 stacks of Oak Logs, 2 stacks of Sand, 16 Glass, and 8 Lanterns. Claim each entry manually. Building stock for repairs, shelters, and civic rooms; no machines, Diamonds, or combat gear. Restocks after 180 seconds."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "minecraft:stone",
           "id": "7A11C0DF00500003",
           "min_required_dependencies": 0,
@@ -4684,8 +4796,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004A",
@@ -4693,8 +4807,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004B",
@@ -4702,8 +4818,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004C",
@@ -4711,8 +4829,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004D",
@@ -4720,8 +4840,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004E",
@@ -4729,8 +4851,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050004F",
@@ -4738,8 +4862,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500050",
@@ -4747,44 +4873,76 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500051",
-              "item": {
-                "count": 64,
-                "id": "minecraft:stone"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500052",
+              "id": "7A11C2DF00505001",
               "item": {
                 "count": 64,
                 "id": "minecraft:oak_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500053",
+              "id": "7A11C2DF00505002",
               "item": {
                 "count": 64,
                 "id": "minecraft:oak_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500054",
+              "id": "7A11C2DF00505003",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505004",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505005",
               "item": {
                 "count": 64,
                 "id": "minecraft:sand"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505006",
+              "item": {
+                "count": 64,
+                "id": "minecraft:sand"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500055",
@@ -4792,8 +4950,10 @@
                 "count": 16,
                 "id": "minecraft:glass"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500056",
@@ -4801,13 +4961,15 @@
                 "count": 8,
                 "id": "minecraft:lantern"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
+          "subtitle": "1 Sprocket · 180 s",
           "tasks": [
             {
               "consume_items": true,
@@ -4821,18 +4983,18 @@
             }
           ],
           "title": "Works Kit",
-          "x": -7,
-          "y": -1
+          "x": -10,
+          "y": -2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Sprocket for a personal village palette of Bricks, Oak, Terracotta, Glass, Lanterns, and a Hearth Campfire for homes, inns, and workshops. Restocks after three minutes. Homes and civic rooms, not fortifications or machinery."
+            "Submit and consume 1 Sprocket for one shared team village palette: 4 stacks of raw Stone, 4 stacks of Spruce Logs, 2 stacks of Terracotta, 2 stacks of Sand, Glass, Lanterns, and 2 Campfires for homes, inns, and workshops. Claim each stack manually. Restocks after 180 seconds; this is a house-and-inn palette, not a fortress or machine kit."
           ],
-          "hide_dependency_lines": false,
-          "icon": "minecraft:bricks",
+          "hide_dependency_lines": true,
+          "icon": "minecraft:spruce_log",
           "id": "7A11C0DF0050000F",
           "min_required_dependencies": 0,
           "optional": true,
@@ -4840,85 +5002,92 @@
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00500057",
+              "id": "7A11C2DF005050E0",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500058",
+              "id": "7A11C2DF005050E1",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500059",
+              "id": "7A11C2DF005050E2",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050005A",
+              "id": "7A11C2DF005050E3",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050005B",
+              "id": "7A11C2DF005050E4",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:spruce_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050005C",
+              "id": "7A11C2DF005050E5",
               "item": {
                 "count": 64,
-                "id": "minecraft:brick"
+                "id": "minecraft:spruce_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050005D",
+              "id": "7A11C2DF005050E6",
               "item": {
                 "count": 64,
-                "id": "minecraft:oak_log"
+                "id": "minecraft:spruce_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050005E",
+              "id": "7A11C2DF005050E7",
               "item": {
                 "count": 64,
-                "id": "minecraft:oak_log"
+                "id": "minecraft:spruce_log"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050005F",
-              "item": {
-                "count": 64,
-                "id": "minecraft:oak_log"
-              },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500060",
@@ -4926,8 +5095,10 @@
                 "count": 64,
                 "id": "minecraft:terracotta"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500061",
@@ -4935,8 +5106,32 @@
                 "count": 64,
                 "id": "minecraft:terracotta"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050E8",
+              "item": {
+                "count": 64,
+                "id": "minecraft:sand"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050E9",
+              "item": {
+                "count": 64,
+                "id": "minecraft:sand"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500062",
@@ -4944,8 +5139,10 @@
                 "count": 32,
                 "id": "minecraft:glass"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500063",
@@ -4953,8 +5150,10 @@
                 "count": 8,
                 "id": "minecraft:lantern"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500064",
@@ -4962,13 +5161,15 @@
                 "count": 2,
                 "id": "minecraft:campfire"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "square",
           "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
+          "subtitle": "1 Sprocket · 180 s",
           "tasks": [
             {
               "consume_items": true,
@@ -4981,18 +5182,1659 @@
               "type": "item"
             }
           ],
-          "title": "Village Hearth Kit",
-          "x": -3.5,
-          "y": -1
+          "title": "Village Timber Kit",
+          "x": -5,
+          "y": -2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Bevel for a personal survival refill of food, torches, leads, and a shield for late arrivals and failed expeditions. Restocks after five minutes. Convenience, not building stock or progression."
+            "Submit and consume 2 Sprockets for one shared team fortress palette: 6 stacks of raw Stone, 4 stacks of Deepslate, 2 stacks of Dark Oak Logs, 32 Iron Bars, 16 Chains, and 16 Lanterns. Claim entries manually. Restocks after 180 seconds; it supplies structure and lighting, never armour, weapons, or machinery."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
+          "icon": "minecraft:deepslate",
+          "id": "7A11C0DF00500016",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00505010",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505011",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505012",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505013",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505014",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505015",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505016",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505017",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505018",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505019",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050501A",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050501B",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050501C",
+              "item": {
+                "count": 32,
+                "id": "minecraft:iron_bars"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050501D",
+              "item": {
+                "count": 16,
+                "id": "minecraft:chain"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050501E",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00504010",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Fortress Kit",
+          "x": -10,
+          "y": 1
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team dark observatory palette: Deepslate Tiles, Dark Oak Planks, Tinted Glass, Nether Brick Pillars, Wisewood Shelving, Amethyst Clusters, Bookshelves, and Sea Lanterns. Claim each entry manually. Restocks after 180 seconds. Arcane architecture only; no Enchanting Table or spell workstation."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "minecraft:deepslate_tiles",
+          "id": "7A11C0DF00500011",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00500031",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500077",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505040",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505041",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500032",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505043",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505044",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505045",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500033",
+              "item": {
+                "count": 64,
+                "id": "minecraft:tinted_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505047",
+              "item": {
+                "count": 64,
+                "id": "minecraft:tinted_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B1",
+              "item": {
+                "count": 64,
+                "id": "minecraft:deepslate_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B2",
+              "item": {
+                "count": 64,
+                "id": "minecraft:dark_oak_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500034",
+              "item": {
+                "count": 16,
+                "id": "minecraft:amethyst_cluster"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500035",
+              "item": {
+                "count": 16,
+                "id": "minecraft:bookshelf"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500036",
+              "item": {
+                "count": 8,
+                "id": "minecraft:sea_lantern"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050DA",
+              "item": {
+                "count": 16,
+                "id": "irons_spellbooks:nether_brick_pillar"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050DB",
+              "item": {
+                "count": 16,
+                "id": "irons_spellbooks:wisewood_bookshelf"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050DC",
+              "item": {
+                "count": 16,
+                "id": "irons_spellbooks:wisewood_chiseled_bookshelf"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00500021",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Celestial Spire Crate",
+          "x": -5,
+          "y": 1
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team light apothecary palette: Polished Tuff, Whitewood Planks, Frosted Glass, Jars, Faucets, and Lanterns. Claim each entry manually. Restocks after 180 seconds. Decorative service stock only; no progression ingredients or repeated workstations."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "abyssal_decor:white_wood_planks",
+          "id": "7A11C0DF00500012",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00500037",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_tuff"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500078",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_tuff"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505048",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_tuff"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505049",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_tuff"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500038",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:white_wood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050504B",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:white_wood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050504C",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:white_wood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500039",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:frosted_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050504E",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:frosted_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B3",
+              "item": {
+                "count": 64,
+                "id": "minecraft:polished_tuff"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B4",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:white_wood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B5",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:frosted_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050003A",
+              "item": {
+                "count": 16,
+                "id": "supplementaries:jar"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050003B",
+              "item": {
+                "count": 4,
+                "id": "supplementaries:faucet"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050003C",
+              "item": {
+                "count": 16,
+                "id": "minecraft:lantern"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00500022",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Sanctified Brewery Crate",
+          "x": -10,
+          "y": 4.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team frontier palette: 3 stacks of raw Stone, Spruce Planks, Scaffolding, Timber Frames, Rope, Way Signs, Torches, and 2 Spyglasses for outposts and watchtowers. Claim each entry manually. Restocks after 180 seconds; route accents remain modest."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "supplementaries:timber_frame",
+          "id": "7A11C0DF00500013",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF0050003D",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500079",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505050",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505051",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505052",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B6",
+              "item": {
+                "count": 64,
+                "id": "minecraft:spruce_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050003E",
+              "item": {
+                "count": 64,
+                "id": "supplementaries:timber_frame"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505053",
+              "item": {
+                "count": 64,
+                "id": "supplementaries:timber_frame"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505054",
+              "item": {
+                "count": 64,
+                "id": "supplementaries:timber_frame"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505055",
+              "item": {
+                "count": 64,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505056",
+              "item": {
+                "count": 64,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050003F",
+              "item": {
+                "count": 32,
+                "id": "supplementaries:rope"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500040",
+              "item": {
+                "count": 16,
+                "id": "supplementaries:way_sign_oak"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500041",
+              "item": {
+                "count": 32,
+                "id": "minecraft:torch"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500042",
+              "item": {
+                "count": 1,
+                "id": "minecraft:spyglass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050A0D4",
+              "item": {
+                "count": 1,
+                "id": "minecraft:spyglass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505100",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505101",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505102",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00500023",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Frontier Watch Crate",
+          "x": -5,
+          "y": 4.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team industrial fortress palette: Create Deco Iron Catwalks, Sheet Metal, Supports, Mesh Fences, Chains, and Iron Bars. Claim each entry manually. Restocks after 180 seconds; structural stock only, never armour, weapons, or advanced machinery."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "createdeco:industrial_iron_catwalk",
+          "id": "7A11C0DF00500014",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00500043",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_catwalk"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505057",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_catwalk"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505058",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_catwalk"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B7",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_catwalk"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BE",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_catwalk"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500044",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_sheet_metal"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505059",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_sheet_metal"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050505A",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_sheet_metal"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B8",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_sheet_metal"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BF",
+              "item": {
+                "count": 64,
+                "id": "createdeco:industrial_iron_sheet_metal"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500045",
+              "item": {
+                "count": 32,
+                "id": "createdeco:industrial_iron_support"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050505B",
+              "item": {
+                "count": 32,
+                "id": "createdeco:industrial_iron_support"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500046",
+              "item": {
+                "count": 32,
+                "id": "createdeco:industrial_iron_mesh_fence"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050505D",
+              "item": {
+                "count": 32,
+                "id": "createdeco:industrial_iron_mesh_fence"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500047",
+              "item": {
+                "count": 32,
+                "id": "minecraft:chain"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500048",
+              "item": {
+                "count": 32,
+                "id": "minecraft:iron_bars"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00500024",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Heavy Bastion Crate",
+          "x": -10,
+          "y": 8
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team Create architecture order: Stone, Andesite Casing, Copper Casing, Glass, Scaffolding, and façade stock for workshops and windows. Claim each stack manually. Restocks after 180 seconds; Precision Mechanisms, machines, and automation equipment stay out."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "create:andesite_casing",
+          "id": "7A11C0DF00500017",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00505020",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505021",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505026",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505027",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505028",
+              "item": {
+                "count": 64,
+                "id": "create:andesite_casing"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505029",
+              "item": {
+                "count": 64,
+                "id": "create:andesite_casing"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502A",
+              "item": {
+                "count": 64,
+                "id": "create:copper_casing"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502B",
+              "item": {
+                "count": 64,
+                "id": "create:copper_casing"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502C",
+              "item": {
+                "count": 64,
+                "id": "minecraft:glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502D",
+              "item": {
+                "count": 64,
+                "id": "minecraft:glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502E",
+              "item": {
+                "count": 64,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050502F",
+              "item": {
+                "count": 64,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00504011",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Create Builder's Palette",
+          "x": -5,
+          "y": 8
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team Create Deco masonry palette in the Pearl family: Pearl Bricks, Stairs, Walls, Slabs, Industrial Iron Windows, and Industrial Iron Bars. Claim each entry manually. Restocks after 180 seconds; this is decorative masonry, not machinery or progression parts."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "createdeco:pearl_bricks",
+          "id": "7A11C0DF00500015",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00500070",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505070",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505071",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505072",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_stairs"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505073",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_stairs"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505074",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_wall"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505075",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_wall"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505076",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505077",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050B9",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BA",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_stairs"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BB",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_wall"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BC",
+              "item": {
+                "count": 64,
+                "id": "createdeco:pearl_brick_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500074",
+              "item": {
+                "count": 16,
+                "id": "createdeco:industrial_iron_window"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00500075",
+              "item": {
+                "count": 16,
+                "id": "createdeco:industrial_iron_bars"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF0050000D",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Create Deco Palette",
+          "x": -10,
+          "y": 11.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 2 Sprockets for one shared team Abyssal Decor construction order: Blackwood Planks, Black Pearl Bricks, Deepbronze Tiles, Blaze Glass, and Deepbronze Bars. Claim each stack manually. Restocks after 180 seconds; rare ingots and progression alloys are excluded."
+          ],
+          "hide_dependency_lines": true,
+          "icon": "abyssal_decor:black_pearl_bricks",
+          "id": "7A11C0DF00500018",
+          "min_required_dependencies": 0,
+          "optional": true,
+          "repeat_cooldown": 180,
+          "repeatable": true,
+          "rewards": [
+            {
+              "id": "7A11C2DF00505030",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blackwood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505031",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blackwood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505036",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blackwood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505037",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:black_pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505038",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:black_pearl_bricks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF00505039",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:black_pearl_brick_wall"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503A",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:deepbronze_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503B",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:deepbronze_tiles"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503C",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blaze_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503D",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blaze_glass"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503E",
+              "item": {
+                "count": 32,
+                "id": "abyssal_decor:deepbronze_bars"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF0050503F",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blackwood_stairs"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050BD",
+              "item": {
+                "count": 64,
+                "id": "abyssal_decor:blackwood_planks"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            }
+          ],
+          "shape": "square",
+          "size": 1.0,
+          "subtitle": "2 Sprockets · 180 s",
+          "tasks": [
+            {
+              "consume_items": true,
+              "id": "7A11C1DF00504012",
+              "item": {
+                "count": 1,
+                "id": "numismatics:sprocket"
+              },
+              "count": 2,
+              "title": "Submit 2 Sprockets",
+              "type": "item"
+            }
+          ],
+          "title": "Abyssal Deepworks Palette",
+          "x": -5,
+          "y": 11.5
+        },
+        {
+          "dependencies": [
+            "7A11C0DF00500001"
+          ],
+          "description": [
+            "Submit and consume 1 Bevel for one shared team field refill: 16 Cooked Beef, 32 Torches, 4 Leads, and one Shield. Claim each entry manually. Restocks after 300 seconds; expedition convenience, not building stock or permanent combat power."
+          ],
+          "hide_dependency_lines": true,
           "icon": "numismatics:bevel",
           "id": "7A11C0DF00500002",
           "min_required_dependencies": 0,
@@ -5006,8 +6848,10 @@
                 "count": 16,
                 "id": "minecraft:cooked_beef"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500002",
@@ -5015,8 +6859,10 @@
                 "count": 32,
                 "id": "minecraft:torch"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500003",
@@ -5024,8 +6870,10 @@
                 "count": 4,
                 "id": "minecraft:lead"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500076",
@@ -5033,13 +6881,15 @@
                 "count": 1,
                 "id": "minecraft:shield"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "1 Bevel · 5 min",
+          "subtitle": "1 Bevel · 300 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5053,17 +6903,17 @@
             }
           ],
           "title": "Field Kit",
-          "x": 7,
-          "y": -1
+          "x": 6,
+          "y": -2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume two Sprockets for a personal early-Create starter of alloy, shafts, cogwheels, belts, a wrench, and copper for first machines. Restocks after five minutes. A beginning, not precision mechanisms, brass-age parts, or an automated factory."
+            "Submit and consume 2 Sprockets for one shared team early-Create starter: Andesite Alloy, Shafts, Cogwheels, Large Cogwheels, Belt Connectors, a Wrench, and Copper. Claim entries manually. Restocks after 300 seconds; Precision Mechanisms and a functioning factory stay out."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "create:shaft",
           "id": "7A11C0DF00500005",
           "min_required_dependencies": 0,
@@ -5077,8 +6927,10 @@
                 "count": 16,
                 "id": "create:andesite_alloy"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050000D",
@@ -5086,8 +6938,10 @@
                 "count": 8,
                 "id": "create:shaft"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050000E",
@@ -5095,8 +6949,10 @@
                 "count": 8,
                 "id": "create:cogwheel"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050000F",
@@ -5104,8 +6960,10 @@
                 "count": 4,
                 "id": "create:large_cogwheel"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500065",
@@ -5113,8 +6971,10 @@
                 "count": 4,
                 "id": "create:belt_connector"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500066",
@@ -5122,8 +6982,10 @@
                 "count": 1,
                 "id": "create:wrench"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500067",
@@ -5131,13 +6993,15 @@
                 "count": 16,
                 "id": "minecraft:copper_ingot"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "2 Sprockets · 5 min",
+          "subtitle": "2 Sprockets · 300 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5152,18 +7016,18 @@
             }
           ],
           "title": "Create Starter Kit",
-          "x": 3.5,
-          "y": -1
+          "x": 10,
+          "y": -2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Sprocket for a personal first-steps magic kit of essence, blank runes, common and uncommon inks, and a Copper Spell Book. Restocks after five minutes. Learn the school, not a finished mage loadout or high-tier scrolls."
+            "Submit and consume 1 Sprocket for one shared team first-steps magic kit: Arcane Essence, Blank Runes, Common Ink, and Uncommon Ink. Claim each entry manually. Restocks after 300 seconds; no advanced armour, spellbook, random scrolls, or high-tier loadout."
           ],
-          "hide_dependency_lines": false,
-          "icon": "irons_spellbooks:copper_spell_book",
+          "hide_dependency_lines": true,
+          "icon": "irons_spellbooks:arcane_essence",
           "id": "7A11C0DF00500004",
           "min_required_dependencies": 0,
           "optional": true,
@@ -5176,8 +7040,10 @@
                 "count": 8,
                 "id": "irons_spellbooks:arcane_essence"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500009",
@@ -5185,8 +7051,10 @@
                 "count": 2,
                 "id": "irons_spellbooks:blank_rune"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050000A",
@@ -5194,8 +7062,10 @@
                 "count": 8,
                 "id": "irons_spellbooks:common_ink"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050000B",
@@ -5203,22 +7073,15 @@
                 "count": 4,
                 "id": "irons_spellbooks:uncommon_ink"
               },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500068",
-              "item": {
-                "count": 1,
-                "id": "irons_spellbooks:copper_spell_book"
-              },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "1 Sprocket · 5 min",
+          "subtitle": "1 Sprocket · 300 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5232,17 +7095,17 @@
             }
           ],
           "title": "Iron's Spells Starter Kit",
-          "x": 7,
-          "y": 2.5
+          "x": 6,
+          "y": 1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Sprocket for a personal recovery cache after a failed expedition: beds, shields, honey, and golden apples. Restocks after five minutes. Readiness restored, no permanent combat power, no mounts."
+            "Submit and consume 1 Sprocket for one shared team recovery cache: cooked food, Torches, 16 Honey Bottles, and 4 Golden Apples. Claim entries manually after a failed expedition. Restocks after 300 seconds; no permanent combat upgrades, beds, shields, or mounts."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "minecraft:golden_apple",
           "id": "7A11C0DF00500009",
           "min_required_dependencies": 0,
@@ -5251,22 +7114,26 @@
           "repeatable": true,
           "rewards": [
             {
-              "id": "7A11C2DF00500014",
+              "id": "7A11C2DF00505090",
               "item": {
-                "count": 2,
-                "id": "minecraft:white_bed"
+                "count": 16,
+                "id": "minecraft:cooked_beef"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF00500015",
+              "id": "7A11C2DF00505091",
               "item": {
-                "count": 2,
-                "id": "minecraft:shield"
+                "count": 32,
+                "id": "minecraft:torch"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500016",
@@ -5274,8 +7141,10 @@
                 "count": 16,
                 "id": "minecraft:honey_bottle"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500017",
@@ -5283,13 +7152,15 @@
                 "count": 4,
                 "id": "minecraft:golden_apple"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "1 Sprocket · 5 min",
+          "subtitle": "1 Sprocket · 300 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5303,17 +7174,17 @@
             }
           ],
           "title": "Recovery Crate",
-          "x": 3.5,
-          "y": 2.5
+          "x": 10,
+          "y": 1
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume two Sprockets for a personal route kit of saddles, leads, rockets, boats, and compasses to move people and stock. Restocks after five minutes. No elytra, no teleport tier, no permanent flight."
+            "Submit and consume 2 Sprockets for one shared team route kit: 2 Saddles, 16 Leads, 32 Firework Rockets, 4 Oak Boats, and 4 Compasses. Claim each entry manually; claim every saddle and boat separately. Restocks after 300 seconds; ordinary transport only—no Elytra, permanent flight, or advanced teleportation."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "minecraft:saddle",
           "id": "7A11C0DF0050000A",
           "min_required_dependencies": 0,
@@ -5324,11 +7195,24 @@
             {
               "id": "7A11C2DF00500018",
               "item": {
-                "count": 4,
+                "count": 1,
                 "id": "minecraft:saddle"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050A0",
+              "item": {
+                "count": 1,
+                "id": "minecraft:saddle"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500019",
@@ -5336,26 +7220,65 @@
                 "count": 16,
                 "id": "minecraft:lead"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050001A",
               "item": {
-                "count": 64,
+                "count": 32,
                 "id": "minecraft:firework_rocket"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050001B",
+              "id": "7A11C2DF005050A1",
               "item": {
-                "count": 4,
+                "count": 1,
                 "id": "minecraft:oak_boat"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050A2",
+              "item": {
+                "count": 1,
+                "id": "minecraft:oak_boat"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050A3",
+              "item": {
+                "count": 1,
+                "id": "minecraft:oak_boat"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050A4",
+              "item": {
+                "count": 1,
+                "id": "minecraft:oak_boat"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050001C",
@@ -5363,13 +7286,15 @@
                 "count": 4,
                 "id": "minecraft:compass"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "2 Sprockets · 5 min",
+          "subtitle": "2 Sprockets · 300 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5384,18 +7309,18 @@
             }
           ],
           "title": "Transit Crate",
-          "x": 3.5,
-          "y": 6
+          "x": 6,
+          "y": 4.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Consume one Cog for a personal civic-works package behind one shared project: bulk Stone and Oak, scaffolding, Glass, Chains, and Lanterns at a scale no single lower kit matches. Restocks after five minutes. Shared building stock, not diamonds, alloy, or combat gear."
+            "Submit and consume 2 Sprockets for one shared team civic roads-and-bridges order: 8 stacks of raw Stone, 4 stacks of Stone Slabs, 2 stacks of Stone Brick Slabs, 4 stacks of Oak Logs, 4 stacks of Scaffolding, 2 stacks of Oak Fences, 16 Chains, and 16 Lanterns. Claim entries manually for one named public road, bridge, or shared-stock project. Restocks after 300 seconds; no Diamonds, alloy, or combat gear."
           ],
-          "hide_dependency_lines": false,
-          "icon": "numismatics:cog",
+          "hide_dependency_lines": true,
+          "icon": "minecraft:stone_slab",
           "id": "7A11C0DF00500007",
           "min_required_dependencies": 0,
           "optional": true,
@@ -5408,8 +7333,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500011",
@@ -5417,8 +7344,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500012",
@@ -5426,8 +7355,10 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500069",
@@ -5435,8 +7366,54 @@
                 "count": 64,
                 "id": "minecraft:stone"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F0",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F1",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F2",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F3",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF00500013",
@@ -5444,8 +7421,10 @@
                 "count": 64,
                 "id": "minecraft:oak_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050001D",
@@ -5453,8 +7432,32 @@
                 "count": 64,
                 "id": "minecraft:oak_log"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F4",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F5",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_log"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050006A",
@@ -5462,8 +7465,10 @@
                 "count": 64,
                 "id": "minecraft:scaffolding"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050006B",
@@ -5471,17 +7476,120 @@
                 "count": 64,
                 "id": "minecraft:scaffolding"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
-              "id": "7A11C2DF0050006C",
+              "id": "7A11C2DF005050F6",
               "item": {
-                "count": 32,
-                "id": "minecraft:glass"
+                "count": 64,
+                "id": "minecraft:scaffolding"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F7",
+              "item": {
+                "count": 64,
+                "id": "minecraft:scaffolding"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F8",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050F9",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FA",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FB",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FC",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_brick_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FD",
+              "item": {
+                "count": 64,
+                "id": "minecraft:stone_brick_slab"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FE",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_fence"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
+            },
+            {
+              "id": "7A11C2DF005050FF",
+              "item": {
+                "count": 64,
+                "id": "minecraft:oak_fence"
+              },
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050006D",
@@ -5489,8 +7597,10 @@
                 "count": 16,
                 "id": "minecraft:chain"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             },
             {
               "id": "7A11C2DF0050006E",
@@ -5498,37 +7608,40 @@
                 "count": 16,
                 "id": "minecraft:lantern"
               },
-              "team_reward": false,
-              "type": "item"
+              "team_reward": true,
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "hexagon",
-          "size": 1.3,
-          "subtitle": "1 Cog · 5 min",
+          "size": 1.45,
+          "subtitle": "2 Sprockets · 300 s",
           "tasks": [
             {
               "consume_items": true,
-              "id": "7A11C1DF00500006",
+              "id": "7A11C1DF00504013",
               "item": {
                 "count": 1,
-                "id": "numismatics:cog"
+                "id": "numismatics:sprocket"
               },
-              "title": "Submit 1 Cog",
+              "count": 2,
+              "title": "Submit 2 Sprockets",
               "type": "item"
             }
           ],
-          "title": "Civic Works Bond",
+          "title": "Concord Bond",
           "x": 0,
-          "y": -1
+          "y": -2.5
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "File one written maintenance report naming a findable place, a real problem, and the person who will review the result. The book is consumed as the archive copy; this is the board's sole slow currency faucet, deliberately weekly and team-scoped while purchases restock in minutes."
+            "Submit and consume one Written Book naming a findable place, a real problem, and the person who will review the result. This is the board's sole currency faucet: one shared team Bevel entitlement every 604800 seconds. Claim it manually; purchases restock in minutes but never produce currency."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "minecraft:written_book",
           "id": "7A11C0DF00500006",
           "min_required_dependencies": 0,
@@ -5543,12 +7656,14 @@
                 "id": "numismatics:bevel"
               },
               "team_reward": true,
-              "type": "item"
+              "type": "item",
+              "auto": "disabled",
+              "exclude_from_claim_all": true
             }
           ],
           "shape": "diamond",
           "size": 1.0,
-          "subtitle": "Fallback · 1 team Bevel weekly",
+          "subtitle": "Fallback · 1 team Bevel · 604800 s",
           "tasks": [
             {
               "consume_items": true,
@@ -5568,16 +7683,16 @@
           ],
           "title": "Rumour Ledger",
           "x": 0,
-          "y": 2.5
+          "y": 2
         },
         {
           "dependencies": [
             "7A11C0DF00500001"
           ],
           "description": [
-            "Numismatics base values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Routine work pays Bevels, specialties pay Sprockets, and major team milestones pay Cogs; Crowns and Suns remain outside this campaign. Purchases are personal-scope with three-minute building and five-minute progression restocks; only the Rumour Ledger faucet is weekly and team-scoped."
+            "Numismatics values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Purchases consume their displayed price and create one shared team reward set with manual claims: 180-second building restocks and 300-second progression or civic restocks. Only the Rumour Ledger is weekly."
           ],
-          "hide_dependency_lines": false,
+          "hide_dependency_lines": true,
           "icon": "numismatics:cog",
           "id": "7A11C0DF00500008",
           "min_required_dependencies": 0,
@@ -5586,7 +7701,7 @@
           "repeatable": false,
           "rewards": [],
           "shape": "diamond",
-          "size": 1.0,
+          "size": 1.15,
           "subtitle": "Spur · Bevel · Sprocket · Cog",
           "tasks": [
             {
@@ -5597,480 +7712,7 @@
           ],
           "title": "Know the Coins",
           "x": 0,
-          "y": 6
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "Consume one Sprocket for a personal dark-arcane palette of deepslate tiles, dark oak planks, tinted glass, amethyst clusters, bookshelves, and sea lanterns for observatories and ritual studies. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "minecraft:deepslate_tiles",
-          "id": "7A11C0DF00500011",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 180,
-          "repeatable": true,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500031",
-              "item": {
-                "count": 64,
-                "id": "minecraft:deepslate_tiles"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500077",
-              "item": {
-                "count": 64,
-                "id": "minecraft:deepslate_tiles"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500032",
-              "item": {
-                "count": 64,
-                "id": "minecraft:dark_oak_planks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500033",
-              "item": {
-                "count": 64,
-                "id": "minecraft:tinted_glass"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500034",
-              "item": {
-                "count": 16,
-                "id": "minecraft:amethyst_cluster"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500035",
-              "item": {
-                "count": 16,
-                "id": "minecraft:bookshelf"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500036",
-              "item": {
-                "count": 8,
-                "id": "minecraft:sea_lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
-          "tasks": [
-            {
-              "consume_items": true,
-              "id": "7A11C1DF00500021",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "title": "Submit 1 Sprocket",
-              "type": "item"
-            }
-          ],
-          "title": "Celestial Spire Crate",
-          "x": -7,
-          "y": 2.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "Consume one Sprocket for a personal light-masonry palette of polished tuff, white wood planks, frosted glass, apothecary jars, faucets, and lanterns for breweries, workshops, and scholastic halls. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "abyssal_decor:white_wood_planks",
-          "id": "7A11C0DF00500012",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 180,
-          "repeatable": true,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500037",
-              "item": {
-                "count": 64,
-                "id": "minecraft:polished_tuff"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500078",
-              "item": {
-                "count": 64,
-                "id": "minecraft:polished_tuff"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500038",
-              "item": {
-                "count": 64,
-                "id": "abyssal_decor:white_wood_planks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500039",
-              "item": {
-                "count": 64,
-                "id": "abyssal_decor:frosted_glass"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050003A",
-              "item": {
-                "count": 16,
-                "id": "supplementaries:jar"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050003B",
-              "item": {
-                "count": 4,
-                "id": "supplementaries:faucet"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050003C",
-              "item": {
-                "count": 16,
-                "id": "minecraft:lantern"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
-          "tasks": [
-            {
-              "consume_items": true,
-              "id": "7A11C1DF00500022",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "title": "Submit 1 Sprocket",
-              "type": "item"
-            }
-          ],
-          "title": "Sanctified Brewery Crate",
-          "x": -3.5,
-          "y": 2.5
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "Consume one Sprocket for a personal frontier palette of spruce planks, timber frames, ropes, way signs, torches, and spyglasses for outposts and watchtowers. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "supplementaries:timber_frame",
-          "id": "7A11C0DF00500013",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 180,
-          "repeatable": true,
-          "rewards": [
-            {
-              "id": "7A11C2DF0050003D",
-              "item": {
-                "count": 64,
-                "id": "minecraft:spruce_planks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500079",
-              "item": {
-                "count": 64,
-                "id": "minecraft:spruce_planks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050003E",
-              "item": {
-                "count": 64,
-                "id": "supplementaries:timber_frame"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF0050003F",
-              "item": {
-                "count": 32,
-                "id": "supplementaries:rope"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500040",
-              "item": {
-                "count": 16,
-                "id": "supplementaries:way_sign_oak"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500041",
-              "item": {
-                "count": 32,
-                "id": "minecraft:torch"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500042",
-              "item": {
-                "count": 2,
-                "id": "minecraft:spyglass"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
-          "tasks": [
-            {
-              "consume_items": true,
-              "id": "7A11C1DF00500023",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "title": "Submit 1 Sprocket",
-              "type": "item"
-            }
-          ],
-          "title": "Frontier Watch Crate",
-          "x": -7,
-          "y": 6
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "Consume one Sprocket for a personal fortress palette of Create Deco iron catwalks, sheet metal, supports, mesh fences, chains, and iron bars for bastions and armories. Restocks after three minutes. An Order Construction Grant spends here. Decorative stock, not progression alloy or workstations."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "createdeco:industrial_iron_catwalk",
-          "id": "7A11C0DF00500014",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 180,
-          "repeatable": true,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500043",
-              "item": {
-                "count": 64,
-                "id": "createdeco:industrial_iron_catwalk"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500044",
-              "item": {
-                "count": 64,
-                "id": "createdeco:industrial_iron_sheet_metal"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500045",
-              "item": {
-                "count": 32,
-                "id": "createdeco:industrial_iron_support"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500046",
-              "item": {
-                "count": 32,
-                "id": "createdeco:industrial_iron_mesh_fence"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500047",
-              "item": {
-                "count": 32,
-                "id": "minecraft:chain"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500048",
-              "item": {
-                "count": 32,
-                "id": "minecraft:iron_bars"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "1 Sprocket · 3 min",
-          "tasks": [
-            {
-              "consume_items": true,
-              "id": "7A11C1DF00500024",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "title": "Submit 1 Sprocket",
-              "type": "item"
-            }
-          ],
-          "title": "Heavy Bastion Crate",
-          "x": -3.5,
-          "y": 6
-        },
-        {
-          "dependencies": [
-            "7A11C0DF00500001"
-          ],
-          "description": [
-            "Consume two Sprockets for a personal Create Deco palette of Pearl and Scarlet bricks with stairs plus iron windows and bars for industrial facades. Restocks after three minutes. Decorative stock, not machines, precision parts, or combat gear."
-          ],
-          "hide_dependency_lines": false,
-          "icon": "createdeco:pearl_bricks",
-          "id": "7A11C0DF00500015",
-          "min_required_dependencies": 0,
-          "optional": true,
-          "repeat_cooldown": 180,
-          "repeatable": true,
-          "rewards": [
-            {
-              "id": "7A11C2DF00500070",
-              "item": {
-                "count": 64,
-                "id": "createdeco:pearl_bricks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500071",
-              "item": {
-                "count": 64,
-                "id": "createdeco:scarlet_bricks"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500072",
-              "item": {
-                "count": 32,
-                "id": "createdeco:pearl_brick_stairs"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500073",
-              "item": {
-                "count": 32,
-                "id": "createdeco:scarlet_brick_stairs"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500074",
-              "item": {
-                "count": 16,
-                "id": "createdeco:industrial_iron_window"
-              },
-              "team_reward": false,
-              "type": "item"
-            },
-            {
-              "id": "7A11C2DF00500075",
-              "item": {
-                "count": 16,
-                "id": "createdeco:industrial_iron_bars"
-              },
-              "team_reward": false,
-              "type": "item"
-            }
-          ],
-          "shape": "square",
-          "size": 1.0,
-          "subtitle": "2 Sprockets · 3 min",
-          "tasks": [
-            {
-              "consume_items": true,
-              "id": "7A11C1DF0050000D",
-              "item": {
-                "count": 1,
-                "id": "numismatics:sprocket"
-              },
-              "count": 2,
-              "title": "Submit 2 Sprockets",
-              "type": "item"
-            }
-          ],
-          "title": "Create Deco Palette",
-          "x": -5.25,
-          "y": 9.5
+          "y": 5.5
         }
       ],
       "title": "05 · Market Services",

@@ -11,6 +11,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install source-render dependencies
+        run: python -m pip install 'Pillow>=12,<13'
+
+      - name: Validate campaign before export
+        run: |
+          python scripts/validate_snbt.py config/
+          python scripts/test_validate_snbt.py
+          python -m unittest discover -s scripts -p 'test_vvh*.py'
+          python scripts/vvh_campaign_v3.py --root . --check
+          python scripts/vvh_campaign_v3_validate.py --root . --output /tmp/vvh-campaign-validation.json
+          python scripts/vvh_sync_catalog.py --check .
         
       - name: Install Go
         uses: actions/setup-go@v5
@@ -24,11 +41,14 @@ jobs:
         
       - name: Refresh index
         run: packwiz refresh
+
+      - name: Require a stable generated index
+        run: git diff --exit-code -- index.toml pack.toml
         
       - name: Create Modrinth export
         run: |
           mkdir -p dist
-          packwiz modrinth export -o dist/all-the-mons.mrpack
+          packwiz modrinth export -o "dist/Poiesis-2-${GITHUB_REF_NAME:-snapshot}.mrpack"
           
       - name: Upload release asset
         if: startsWith(github.ref, 'refs/tags/')

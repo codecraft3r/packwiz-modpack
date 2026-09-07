@@ -23,6 +23,21 @@ fi
 # exits 0 in that case.
 SNBT_FILES=$(git diff --cached --name-only --diff-filter=ACMR -- '*.snbt' || true)
 
+# A staged SNBT file with additional worktree edits is a partial-staging trap:
+# the validator would inspect bytes that are not the commit candidate. Refuse
+# that state instead of claiming the staged snapshot was checked.
+PARTIAL_FILES=""
+for FILE in ${SNBT_FILES}; do
+    if ! git diff --quiet -- "${FILE}"; then
+        PARTIAL_FILES="${PARTIAL_FILES}${FILE}\n"
+    fi
+done
+if [ -n "${PARTIAL_FILES}" ]; then
+    echo "Refusing partial staging for quest files; stage or stash the worktree edits:"
+    printf '%b' "${PARTIAL_FILES}"
+    exit 1
+fi
+
 if [ -n "${SNBT_FILES}" ]; then
     echo "==> Validating $(echo "${SNBT_FILES}" | wc -l | tr -d ' ') staged .snbt file(s)..."
     # ``--no-color`` keeps hook output readable in any terminal;
@@ -34,4 +49,16 @@ if [ -n "${SNBT_FILES}" ]; then
         echo "Run \`python scripts/validate_snbt.py <file>\` to re-check."
         exit 1
     fi
+fi
+
+SOURCE_STAGED=0
+if ! git diff --cached --quiet -- scripts/vvh_campaign_v3.py scripts/vvh_campaign_overrides.py scripts/vvh_render_layouts.py scripts/vvh_sync_catalog.py scripts/vvh_campaign_v3_validate.py scripts/vvh_extract_stack_receipt.py scripts/vvh_economy_report.py scripts/vvh_migrate_claims.py 'scripts/test_vvh*.py' docs/vvh/generated_output_hashes.json docs/vvh/evidence/current/item-stack-registry.json docs/vvh/evidence/save-migration-mapping.json; then
+    SOURCE_STAGED=1
+fi
+if [ -n "${SNBT_FILES}" ] || [ "${SOURCE_STAGED}" -eq 1 ]; then
+    echo "==> Checking authoritative campaign source and emitted graph..."
+    python -m unittest discover -s scripts -p 'test_vvh*.py'
+    python scripts/vvh_campaign_v3.py --root . --check
+    python scripts/vvh_campaign_v3_validate.py --root . --output "${TMPDIR:-/tmp}/vvh-campaign-precommit.json"
+    python scripts/vvh_sync_catalog.py --check .
 fi

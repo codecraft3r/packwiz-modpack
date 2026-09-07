@@ -18,8 +18,8 @@ Vampirism and FTB Teams are separate systems.
 - Finish the personal Charter before joining a shared faction FTB party when practical.
 - House of Night and Lantern Order foundation caches require a second player/host to confirm the FTB team is presently aligned with the claimed Vampirism faction.
 - A past `become_vampire` / `become_hunter` advancement is historical evidence only; do not use it alone to approve a post-switch cache.
-- Blood and Holy materials reinforce the House and Order stories but remain usable by any player. Free Companies use the translation desk for limited cross-school utility; no KubeJS state bridge or hard school lock exists.
-- Free Companies use personal/neutral FTB parties unless the server intentionally creates a shared neutral company.
+- Blood and Holy materials reinforce the House and Order stories but remain usable by any player. Neutral has no faction tree or hidden school lock; no KubeJS state bridge exists.
+- Market Services opens after any one calling, including Neutral, and remains available after faction progress.
 
 ## Faction switch
 
@@ -60,9 +60,30 @@ Run noncombat formats first. A skirmish is disabled in practice until the host h
 
 No kill/win reward is issued by VvH.
 
-## Weekly requisitions
+## Market services
 
-One teammate pays the Bevel cost; the cache is a team reward. Stand beside the intended public destination chest before claiming. Never refund the Bevel while leaving the cache in circulation.
+The paid board uses explicit consumed inputs and one shared reward entitlement
+set per FTB Team payment. Test each service as payer and teammate: submit the
+exact displayed price, have both members claim/collect the shared stock, retry
+after the 180-second building or 300-second progression delay, and repeat with
+an occupied inventory. `team_reward: false` alone is not evidence that quest
+progression or rewards are personal. `Rumour Ledger` is the only team-scoped
+weekly faucet and stays on its seven-day cadence. Never refund a payment while
+leaving the resulting cache in circulation.
+
+Before release, run:
+
+```powershell
+uv run python scripts/vvh_economy_report.py --format markdown
+# Add --external-root <server-root> when auditing the installed playtest server.
+```
+
+Review its separate personal/shared one-time totals, fixed-population
+one-team-versus-solo-team comparison, optional larger-population scenario,
+paid-sink total, weekly faucet, and configured currency/recycling/NPC/
+denomination matches. The packaged-archive section records the pinned
+Numismatics digest and direct-loop search. Those matches are audit leads; they
+are not proof that a server exchange, recipe, registry, or NPC offer is active.
 
 ## Progress repair
 

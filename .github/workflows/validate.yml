@@ -21,11 +21,20 @@ jobs:
       - name: Run SNBT validator tests
         run: python scripts/test_validate_snbt.py
 
+      - name: Install source-render dependencies
+        run: python -m pip install 'Pillow>=12,<13'
+
+      - name: Run campaign regression tests
+        run: python -m unittest discover -s scripts -p 'test_vvh*.py'
+
       - name: Check authoritative VvH generation
-        run: python scripts/vvh_campaign_v3.py --check
+        run: python scripts/vvh_campaign_v3.py --root . --check
 
       - name: Run VvH graph, parity, and economy audit
-        run: python scripts/vvh_campaign_v3_validate.py --output /tmp/vvh-campaign-validation.json
+        run: python scripts/vvh_campaign_v3_validate.py --root . --output /tmp/vvh-campaign-validation.json
+
+      - name: Check campaign ID catalog provenance
+        run: python scripts/vvh_sync_catalog.py --check .
 
       - name: Install Go
         uses: actions/setup-go@v5

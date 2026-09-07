@@ -1,0 +1,136 @@
+{
+  "schema": "vvh-human-quest-preferences-v1",
+  "status": "current-review-baseline",
+  "scope": "VvH campaign authoring only",
+  "authority": [
+    "explicit corrected user brief",
+    "installed pack and pinned artifacts",
+    "deliberate retained source diffs",
+    "scripts/vvh_campaign_v3.py",
+    "docs/vvh/HUMAN_QUEST_PREFERENCES.md"
+  ],
+  "evidence_policy": "Author names and commit messages are provenance only. A preference needs an explicit instruction or a deliberate corrective diff retained by later source edits.",
+  "preferences": [
+    {
+      "id": "persistent-five-chapter-surface",
+      "rule": "Keep the five-chapter persistent SMP campaign and do not restore retired chapters, deleted capstones, or a Neutral progression chapter.",
+      "supporting_commits": ["fb48ad1", "3bf11f2", "b712dc6"],
+      "before": "Historical designs used larger seasonal graphs, breadth gates, capstones, and a third civic progression lane.",
+      "after": "The current design retains five chapters with Neutral as a protected opt-out.",
+      "status": "retained",
+      "scope": "campaign topology",
+      "confidence": "high",
+      "enforcement": ["source validator", "semantic regression", "source authority docs"]
+    },
+    {
+      "id": "intentional-geometry",
+      "rule": "Preserve explicitly protected Chapter 4 coordinates and the established horseshoe; preserve Chapter 5 catalogue departments and center-weighted information nodes.",
+      "supporting_commits": ["ef8f3cb", "10ab179", "8f22064", "3bf11f2"],
+      "before": "Generic graph layouts and orthogonal routing obscured the deliberate arrangement.",
+      "after": "Source-faithful layout remains authoritative; diagnostic routing is optional and labeled.",
+      "status": "retained",
+      "scope": "layout and renderer",
+      "confidence": "high",
+      "enforcement": ["protected-coordinate checks", "source-level renders", "chapter-default visibility checks"]
+    },
+    {
+      "id": "concrete-workstation-loops",
+      "rule": "Use real workstations, apparatus, recipes, outputs, and bounded manual attestations to teach a coherent mechanic.",
+      "supporting_commits": ["24caafe", "d44d149", "0b9315e", "94b5c0c"],
+      "before": "Generic block stockpiles and lore checklists stood in for usable gameplay.",
+      "after": "Chapter 4 commissions and specialties establish a service, then teach its later workflow.",
+      "status": "retained",
+      "scope": "Chapter 4 objectives and player copy",
+      "confidence": "high",
+      "enforcement": ["task semantics review", "verified item catalogue", "runtime task tests pending"]
+    },
+    {
+      "id": "paid-market-bulk-approved",
+      "rule": "Generous common-material building palettes are approved when purchased with currency; that approval does not restore large free construction rewards.",
+      "supporting_commits": ["explicit corrected brief"],
+      "before": "Older balance notes treated large material bundles as generally prohibited.",
+      "after": "Bulk common materials belong in finite paid Market palettes, while one-time faction rewards remain thematic and bounded.",
+      "status": "retained",
+      "scope": "Market economy and reward design",
+      "confidence": "high",
+      "enforcement": ["economy report", "paid-sink price checks", "descendant-shortcut review"]
+    },
+    {
+      "id": "shared-paid-entitlement",
+      "rule": "A paid Market redemption is one shared payment and one shared reward entitlement per FTB Team; claim scope must follow installed FTB Quests claim keys.",
+      "supporting_commits": ["explicit corrected brief"],
+      "before": "The earlier source and docs described paid rewards as personal and treated team_reward=false as sufficient scope control.",
+      "after": "Paid purchases are modeled as shared entitlements; the weekly Rumour Ledger remains separately team-scoped and slow.",
+      "status": "retained",
+      "scope": "FTB Quests payment and claim behavior",
+      "confidence": "high",
+      "enforcement": ["source reward-scope check", "two-account runtime test required", "docs economy ledger"]
+    },
+    {
+      "id": "short-purchase-delay-weekly-faucet",
+      "rule": "Use 180 seconds for building purchases and 300 seconds for progression or utility purchases; keep recurring currency issuance on its separately approved seven-day schedule.",
+      "supporting_commits": ["explicit corrected brief"],
+      "before": "A weekly purchase-board proposal conflated purchase restocking with currency issuance.",
+      "after": "Purchase delay and faucet cadence are documented and audited as separate controls.",
+      "status": "retained",
+      "scope": "Market cooldowns",
+      "confidence": "high",
+      "enforcement": ["cooldown class checks", "economy report", "runtime timing test required"]
+    },
+    {
+      "id": "stable-identities",
+      "rule": "Preserve existing Chapter 5 crate, task, quest, and unchanged reward IDs; record any genuine replacement mapping.",
+      "supporting_commits": ["92a9020", "explicit corrected brief"],
+      "before": "An appendix proposed invented 7A1105AA IDs.",
+      "after": "The four preserved crates remain 7A11C0DF00500011 through 00014 with task IDs ending 00021 through 00024.",
+      "status": "retained",
+      "scope": "save compatibility and generator",
+      "confidence": "high",
+      "enforcement": ["protected-ID tests", "generator reconciliation", "semantic diff"]
+    },
+    {
+      "id": "verified-identifiers",
+      "rule": "Resolve every non-vanilla item from the pinned artifact/catalogue and distinguish registry, recipe, obtainability, and runtime evidence.",
+      "supporting_commits": ["94fcbed", "b24cafd", "c832478", "0b9315e", "94b5c0c"],
+      "before": "Display-name guesses and unrelated JAR matches entered quest tasks and rewards.",
+      "after": "The current workflow records exact artifact evidence and leaves runtime resolution explicitly pending.",
+      "status": "retained",
+      "scope": "item catalogue and validation",
+      "confidence": "high",
+      "enforcement": ["catalogue validator", "source review", "runtime registry test required"]
+    },
+    {
+      "id": "preserve-unrelated-fields",
+      "rule": "Reconcile live SNBT before generation and preserve unrelated chapter fields, manual edits, coordinates, and stable IDs.",
+      "supporting_commits": ["477279e", "17ceafd", "92a9020"],
+      "before": "A stale whole-campaign generator could erase richer manual content.",
+      "after": "Reviewed overlays, hash ledgers, temporary generation, and semantic --check protect retained edits.",
+      "status": "retained",
+      "scope": "generator preservation",
+      "confidence": "high",
+      "enforcement": ["generated-output hash ledger", "semantic diff", "check-only mode"]
+    },
+    {
+      "id": "no-guessed-item-ids",
+      "rule": "Do not infer IDs from names, stale appendices, or author identity; stop at an explicit unresolved evidence state.",
+      "supporting_commits": ["explicit corrected brief", "94fcbed", "0b9315e"],
+      "before": "Legacy appendix IDs and guessed decorative names were presented as current.",
+      "after": "The report and docs label unresolved registry/recipe/runtime checks instead of claiming completion.",
+      "status": "retained",
+      "scope": "all chapters and tools",
+      "confidence": "high",
+      "enforcement": ["catalogue checks", "source authority", "validation evidence boundary"]
+    },
+    {
+      "id": "explicit-reversal-old-parity",
+      "rule": "Record reversals explicitly: exact old completionism parity, weekly purchase issuance, and automatic bulk claim behavior are not current requirements.",
+      "supporting_commits": ["b712dc6", "explicit corrected brief"],
+      "before": "Historical validators and docs expected breadth gates, capstones, exact parity, or weekly purchase boards.",
+      "after": "The current brief prioritizes preserved graph structure, shared paid stock, and separate runtime acceptance tests.",
+      "status": "reversed",
+      "scope": "historical policy and validators",
+      "confidence": "high",
+      "enforcement": ["source docs", "validator labels", "regression tests"]
+    }
+  ]
+}

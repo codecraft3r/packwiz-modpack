@@ -1,73 +1,83 @@
-# VvH Validation Report
+# VvH Validation Contract
 
-Status: current source-level validation. Runtime client checks remain explicitly separate.
+Status: current source-level validation. Runtime and client evidence stay
+separate from this report.
 
-## Static campaign result
+## Static gauntlet
 
-`docs/vvh/evidence/current/campaign-validation.json` reports:
+Run from the Packwiz repository root with the bundled Python runtime when the
+Windows `python` alias is unavailable:
 
-- status: pass;
-- 5 chapters;
-- 52 quests;
-- 52 reachable quests;
-- zero cycles;
-- zero duplicate IDs;
-- zero missing dependencies;
-- zero node overlaps;
-- zero visible dependency crossings;
-- zero reward-to-descendant-task collisions;
-- exact non-vanilla item, icon, advancement, spell, component, and art-reference allowlists;
-- explicit carry/submit semantics on every item task;
-- true any-three-of-eight breadth gates after Core III for both factions;
-- exact Hunter/Vampire economic parity;
-- 23 Bevel-equivalent weekly service-board sink cost;
-- 1 Bevel-equivalent weekly fallback faucet;
-- generated Packwiz file hashes match `index.toml`;
-- the `pack.toml` index digest matches the exact `index.toml` bytes;
-- zero warnings and zero errors.
-
-## Commands completed in the implementation workspace
-
-```sh
-python -m py_compile scripts/vvh_campaign_v3.py scripts/vvh_campaign_v3_validate.py
-python -X utf8 scripts/vvh_campaign_v3.py --check --root .
-python -X utf8 scripts/vvh_campaign_v3_validate.py \
-  --output docs/vvh/evidence/current/campaign-validation.json
-sha256sum index.toml pack.toml
-```
-
-The generator check is idempotent and the structured semantic report is deterministic. The validator also recomputes every generated Packwiz entry and the top-level index digest, so manual index refresh drift is caught before CI.
-
-## Repository CI gauntlet
-
-The validation workflow runs the repository's full parser and Packwiz checks in a networked GitHub runner:
-
-```sh
+```powershell
 python scripts/validate_snbt.py config/
 python scripts/test_validate_snbt.py
+python -m unittest discover -s scripts -p 'test_vvh*.py'
 python scripts/vvh_campaign_v3.py --check
-python scripts/vvh_campaign_v3_validate.py --output /tmp/vvh-campaign-validation.json
+python scripts/vvh_campaign_v3_validate.py --output "$env:TEMP\vvh-campaign-validation.json"
+python scripts/vvh_economy_report.py --strict --format markdown --output "$env:TEMP\vvh-economy-report.md"
+python scripts/vvh_sync_catalog.py --check .
 packwiz refresh
 packwiz list
 packwiz refresh
-
-git diff --exit-code
 ```
 
-The second refresh must produce no diff.
+The campaign validator has two passes. It checks the source model for design
+rules, then parses the emitted chapters and reward tables as the FTB loader will
+see them. The emitted pass rejects malformed IDs, duplicate entities, unknown
+task or reward types, impossible `min_required_dependencies`, missing
+advancement criteria, missing choice tables, and hidden currency in a choice
+table. It also checks dependency references and repeatable cooldown shape.
 
-## Runtime status
+The generator compares SNBT and JSON by parsed value, preserving loader-visible
+numeric suffixes while ignoring compound-key order. Normal generation still
+writes only files whose value has changed and preserves unknown chapter files
+unless `--prune-retired` is explicitly requested.
 
-A disposable Minecraft client/server was not available in the authoring container. The following are therefore **pending human/client checks**, not silently claimed as passed:
+## Current result shape
 
-- open every chapter at real GUI scale and inspect red `!` indicators;
-- claim the opener and complete every task family used;
-- test Vampire and Hunter advancement detection, including already-earned advancements;
-- test late join, team change, faction switch, and Neutral paths;
-- complete one minimum faction path and one optional branch;
-- buy at least one market service as payer and teammate;
-- verify Iron's Spells scroll component codecs at runtime;
-- verify all `poiesis:` art in the required resource pack;
-- inspect logs for missing IDs, parser errors, codec errors, reward errors, and missing assets.
+The generated source currently reports five chapters and a 19-quest Market
+(59 quests total). Do not hard-code a warning total into a validator; the
+current report retains findings and warnings instead of hiding them in the
+pass status.
 
-Source-level layout boards, where generated, are geometry evidence only. They are not Minecraft screenshots or a runtime playtest.
+The economy report is deterministic for the same source and external-root
+inputs; two consecutive JSON runs produced the same SHA-256. The economy
+fixture `uv run python scripts/test_vvh_economy_report.py` covers the
+fixed-population formula and currency/board accounting.
+
+The regression suite checks preservation of Chapters 1–3 with narrowly named
+wording/stack exceptions, all Chapter 4 structural identities and First Thirst,
+hash-guard refusal and baseline bootstrap, migration claim fanouts, rendering,
+and fixed-population economy arithmetic. Migration fixtures are checked into
+the repository so these checks also run outside the author's machine.
+
+`generated_output_hashes.json` retains the immutable pre-edit bootstrap
+receipt. Generation refuses unrecognized live edits, validates staged output,
+and checks the live hashes again before replacing files. `--check` prints
+per-quest semantic differences without changing files. See `VERIFICATION.md`
+and the machine-readable current report for final integration results.
+
+The Packwiz catalog is campaign-scoped. Each referenced non-vanilla namespace
+must resolve to indexed metadata; the catalog records metadata SHA-256 and the
+declared download hash. When a local JAR is materialized, its bytes must match
+that declared hash before it can provide item-entry evidence.
+
+The economy report keeps one-time personal currency, one-time shared/team
+currency, paid Market sinks, the weekly Rumour Ledger faucet, and configured
+currency/recycling/NPC/denomination references in separate ledgers. It is a
+deterministic source-level diagnostic, not a runtime transaction log.
+
+For paid Market services, check one explicit payment -> one shared entitlement
+set per FTB Team. `team_reward: false` is not sufficient evidence of personal
+progression or anti-multiplication behavior. Static output cannot prove claim
+scope, late joiners, split claims, full-inventory delivery, cooldown timing, or
+component decoding.
+
+## Evidence boundary
+
+Static checks prove syntax, source/file agreement, graph integrity, identifier
+provenance, and declared economy. They do not prove Minecraft client rendering,
+advancement synchronization for an already-qualified player, FTB team claim
+order, inventory overflow behaviour, cooldown timing in a live world, or
+resource-pack artwork. Those remain explicit runtime gates in
+`UNRESOLVED.md`.

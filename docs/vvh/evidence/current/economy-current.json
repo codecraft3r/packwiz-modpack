@@ -1,0 +1,1612 @@
+{
+  "affordability": {
+    "assumptions": [
+      "One team scenario uses 2 members and assumes each non-team one-time reward key can be claimed once by each member.",
+      "Team rewards are counted once per team. This is a source-level affordability model, not proof of claim order or late-join behavior.",
+      "Team-scoped issuance is counted per team. Currency items can be transferred or traded, so economic pooling remains possible even when quest claim and progress scope differ."
+    ],
+    "faction_completion": [
+      {
+        "faction": "Lantern Order",
+        "note": "Faction routes are reported separately; summing both is a hypothetical upper bound, not a normal player path.",
+        "personal_bevel_equivalent": 49.0,
+        "single_team_total_with_members": 98.0,
+        "team_bevel_equivalent": 0.0
+      },
+      {
+        "faction": "House of Night",
+        "note": "Faction routes are reported separately; summing both is a hypothetical upper bound, not a normal player path.",
+        "personal_bevel_equivalent": 33.0,
+        "single_team_total_with_members": 82.0,
+        "team_bevel_equivalent": 16.0
+      }
+    ],
+    "fixed_population": {
+      "population": 2,
+      "scenario_label": "fixed population: one team versus one-player teams",
+      "single_team": {
+        "complete_board_cycles_from_one_time_currency": 3,
+        "members": 2,
+        "personal_pool_bevel_equivalent": 168.0,
+        "shared_pool_bevel_equivalent": 16.0,
+        "teams": 1,
+        "total_pool_bevel_equivalent": 184.0,
+        "weekly_faucet_bevel_equivalent": 1.0
+      },
+      "solo_teams": {
+        "aggregate_personal_pool_bevel_equivalent": 168.0,
+        "aggregate_shared_pool_bevel_equivalent": 32.0,
+        "aggregate_total_pool_bevel_equivalent": 200.0,
+        "aggregate_weekly_faucet_bevel_equivalent": 2.0,
+        "complete_board_cycles_from_aggregate_transferable_currency": 3,
+        "members_per_team": 1,
+        "scope_note": "Each solo team receives its own team-scoped issuance; currency items remain transferable/tradeable between players.",
+        "teams": 2
+      }
+    },
+    "fragmented_teams": {
+      "aggregate_faucet_bevel_equivalent_per_week": 2.0,
+      "aggregate_personal_pool_bevel_equivalent": 336.0,
+      "aggregate_shared_pool_bevel_equivalent": 32.0,
+      "aggregate_total_pool_bevel_equivalent": 368.0,
+      "complete_board_cycles_per_team": 3,
+      "members_per_team": 2,
+      "per_team_total_pool_bevel_equivalent": 184.0,
+      "population": 4,
+      "scenario_label": "optional larger population: fragmented teams",
+      "teams": 2,
+      "weeks_from_faucet_only_per_team": 53.0
+    },
+    "paid_board_cost_bevel_equivalent": 53.0,
+    "single_team": {
+      "complete_board_cycles_from_one_time_currency": 3,
+      "members": 2,
+      "personal_pool_bevel_equivalent": 168.0,
+      "population": 2,
+      "scenario_label": "fixed population: one team",
+      "shared_pool_bevel_equivalent": 16.0,
+      "teams": 1,
+      "total_pool_bevel_equivalent": 184.0,
+      "weeks_from_faucet_only": 53.0
+    }
+  },
+  "chapters": [
+    {
+      "default_hide_dependency_lines": false,
+      "filename": "ch01_island_charter",
+      "quest_count": 5,
+      "title": "01 · The Island Charter"
+    },
+    {
+      "default_hide_dependency_lines": false,
+      "filename": "ch02_callings",
+      "quest_count": 5,
+      "title": "02 · Choose a Calling"
+    },
+    {
+      "default_hide_dependency_lines": false,
+      "filename": "ch03_lantern_order",
+      "quest_count": 15,
+      "title": "03 · Lantern Order"
+    },
+    {
+      "default_hide_dependency_lines": false,
+      "filename": "ch04_house_night",
+      "quest_count": 15,
+      "title": "04 · House of Night"
+    },
+    {
+      "default_hide_dependency_lines": true,
+      "filename": "ch05_market_services",
+      "quest_count": 19,
+      "title": "05 · Market Services"
+    }
+  ],
+  "currency_basis_bevel": {
+    "numismatics:bevel": 1.0,
+    "numismatics:cog": 8.0,
+    "numismatics:crown": 64.0,
+    "numismatics:sprocket": 2.0,
+    "numismatics:spur": 0.125,
+    "numismatics:sun": 512.0
+  },
+  "external_artifact_audit": {
+    "dangerous_decor_recycling": {
+      "direct_numismatics_coin_loop_count": 0,
+      "evidence": [],
+      "recipe_reference_count_across_mods": 0,
+      "status": "unverified_runtime_gate"
+    },
+    "numismatics_jar": {
+      "path": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack\\mods\\CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+      "sha256": null,
+      "status": "unverified_missing"
+    },
+    "numismatics_recipe_audit": {
+      "coin_input_recipe_count": 0,
+      "coin_loot_entry_count": 0,
+      "coin_output_recipe_count": 0,
+      "config_entry_count": 0,
+      "recipe_json_count": 0
+    },
+    "proof_boundary": "Archive inspection confirms packaged JSON only. Dynamic recipe registration, loot behavior, NPC offers, config defaults, and runtime recycling still require a loaded server/client check."
+  },
+  "external_audit": {
+    "configured_currency_source_candidates": [
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 113,
+        "text": "description: [\"Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, "
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1302,
+        "text": "description: [\"Forge the holy armaments of the Lantern Order: construct an Arcane Anvil and a Scroll Forge, then don a full set of Priest's vestments. The Order rewards your devotion with a Villager Bible, your choice of an Artificer's Cane"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1387,
+        "text": "description: [\"Establish a sanctified workshop: assemble an Alchemical Cauldron and an Altar of Cleansing, then prepare sixteen heads of Garlic and Pure Salt Water. The Order rewards your purification efforts with two sprockets, four bottle"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 659,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team light apothecary palette: Polished Tuff, Whitewood Planks, Frosted Glass, Jars, Faucets, and Lanterns. Claim each entry manually. Restocks after 180 seconds. Decorative servi"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2132,
+        "text": "description: [\"Submit and consume one Written Book naming a findable place, a real problem, and the person who will review the result. This is the board's sole currency faucet: one shared team Bevel entitlement every 604800 seconds. Claim i"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2167,
+        "text": "description: [\"Numismatics values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Purchases consume their displayed price and create one shared team reward set with manual claims: 180-second building restocks and 300-second progression or civ"
+      }
+    ],
+    "currency_references_needing_review": [
+      {
+        "file": "config/copycats-server.toml",
+        "line": 10,
+        "text": "copycat_cogwheel = 0.0"
+      },
+      {
+        "file": "config/copycats-server.toml",
+        "line": 11,
+        "text": "copycat_large_cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 301,
+        "text": "cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 304,
+        "text": "brass_encased_large_cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 311,
+        "text": "brass_encased_cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 319,
+        "text": "andesite_encased_large_cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 324,
+        "text": "andesite_encased_cogwheel = 0.0"
+      },
+      {
+        "file": "config/create-server.toml",
+        "line": 325,
+        "text": "large_cogwheel = 0.0"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch02_callings.snbt",
+        "line": 48,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch02_callings.snbt",
+        "line": 91,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch02_callings.snbt",
+        "line": 151,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 51,
+        "text": "item: { count: 1, id: \"numismatics:bevel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 119,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 121,
+        "text": "title: \"1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 210,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 272,
+        "text": "description: [\"Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaff"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 279,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 281,
+        "text": "title: \"1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 381,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 662,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 919,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1186,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1309,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1394,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1465,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1545,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1588,
+        "text": "description: [\"Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, Vampirism's strongest invisibility dra"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1595,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1766,
+        "text": "description: [\"Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with two sprockets, substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spik"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1773,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+        "line": 1864,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 51,
+        "text": "item: { count: 1, id: \"numismatics:bevel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 113,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 181,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 240,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 286,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 325,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 377,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 422,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 473,
+        "text": "description: [\"Bring a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies two Sprockets and eight Hollow Cassettes for recording feeds.\"]"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 480,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 565,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 622,
+        "text": "description: [\"Plan a shaded daytime route to a refuge you can reach. Hold your Umbrella in your main hand to block vampire sun damage, and remember that switching to another item leaves you exposed. Travel the route and confirm the journey"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 629,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 660,
+        "text": "title: \"Carry a Sunproof Umbrella\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 665,
+        "text": "title: \"Sunproof Transit\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 678,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 741,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 785,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+        "line": 873,
+        "text": "item: { count: 2, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 6,
+        "text": "icon: { id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 26,
+        "text": "icon: { id: \"numismatics:banking_guide\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 41,
+        "text": "description: [\"Submit and consume 1 Sprocket for one shared team order: 8 stacks of raw Stone, 4 stacks of Oak Logs, 2 stacks of Sand, 16 Glass, and 8 Lanterns. Claim each entry manually. Building stock for repairs, shelters, and civic room"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 179,
+        "text": "subtitle: \"1 Sprocket · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 184,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 185,
+        "text": "title: \"Submit 1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 195,
+        "text": "description: [\"Submit and consume 1 Sprocket for one shared team village palette: 4 stacks of raw Stone, 4 stacks of Spruce Logs, 2 stacks of Terracotta, 2 stacks of Sand, Glass, Lanterns, and 2 Campfires for homes, inns, and workshops. Cla"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 325,
+        "text": "subtitle: \"1 Sprocket · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 330,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 331,
+        "text": "title: \"Submit 1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 341,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team fortress palette: 6 stacks of raw Stone, 4 stacks of Deepslate, 2 stacks of Dark Oak Logs, 32 Iron Bars, 16 Chains, and 16 Lanterns. Claim entries manually. Restocks after 18"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 471,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 476,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 478,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 488,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team dark observatory palette: Deepslate Tiles, Dark Oak Planks, Tinted Glass, Nether Brick Pillars, Wisewood Shelving, Amethyst Clusters, Bookshelves, and Sea Lanterns. Claim eac"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 642,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 647,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 649,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 789,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 794,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 796,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 806,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team frontier palette: 3 stacks of raw Stone, Spruce Planks, Scaffolding, Timber Frames, Rope, Way Signs, Torches, and 2 Spyglasses for outposts and watchtowers. Claim each entry "
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 968,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 973,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 975,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 985,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team industrial fortress palette: Create Deco Iron Catwalks, Sheet Metal, Supports, Mesh Fences, Chains, and Iron Bars. Claim each entry manually. Restocks after 180 seconds; stru"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1123,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1128,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1130,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1140,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team Create architecture order: Stone, Andesite Casing, Copper Casing, Glass, Scaffolding, and façade stock for workshops and windows. Claim each stack manually. Restocks after 18"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1246,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1251,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1253,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1263,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team Create Deco masonry palette in the Pearl family: Pearl Bricks, Stairs, Walls, Slabs, Industrial Iron Windows, and Industrial Iron Bars. Claim each entry manually. Restocks af"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1393,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1398,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1400,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1410,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team Abyssal Decor construction order: Blackwood Planks, Black Pearl Bricks, Deepbronze Tiles, Blaze Glass, and Deepbronze Bars. Claim each stack manually. Restocks after 180 seco"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1524,
+        "text": "subtitle: \"2 Sprockets · 180 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1529,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1531,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1541,
+        "text": "description: [\"Submit and consume 1 Bevel for one shared team field refill: 16 Cooked Beef, 32 Torches, 4 Leads, and one Shield. Claim each entry manually. Restocks after 300 seconds; expedition convenience, not building stock or permanent "
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1542,
+        "text": "icon: { id: \"numismatics:bevel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1583,
+        "text": "subtitle: \"1 Bevel · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1588,
+        "text": "item: { count: 1, id: \"numismatics:bevel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1589,
+        "text": "title: \"Submit 1 Bevel\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1599,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team early-Create starter: Andesite Alloy, Shafts, Cogwheels, Large Cogwheels, Belt Connectors, a Wrench, and Copper. Claim entries manually. Restocks after 300 seconds; Precision"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1624,
+        "text": "item: { count: 8, id: \"create:cogwheel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1632,
+        "text": "item: { count: 4, id: \"create:large_cogwheel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1665,
+        "text": "subtitle: \"2 Sprockets · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1670,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1672,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1682,
+        "text": "description: [\"Submit and consume 1 Sprocket for one shared team first-steps magic kit: Arcane Essence, Blank Runes, Common Ink, and Uncommon Ink. Claim each entry manually. Restocks after 300 seconds; no advanced armour, spellbook, random "
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1724,
+        "text": "subtitle: \"1 Sprocket · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1729,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1730,
+        "text": "title: \"Submit 1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1740,
+        "text": "description: [\"Submit and consume 1 Sprocket for one shared team recovery cache: cooked food, Torches, 16 Honey Bottles, and 4 Golden Apples. Claim entries manually after a failed expedition. Restocks after 300 seconds; no permanent combat "
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1782,
+        "text": "subtitle: \"1 Sprocket · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1787,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1788,
+        "text": "title: \"Submit 1 Sprocket\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1798,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team route kit: 2 Saddles, 16 Leads, 32 Firework Rockets, 4 Oak Boats, and 4 Compasses. Claim each entry manually; claim every saddle and boat separately. Restocks after 300 secon"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1880,
+        "text": "subtitle: \"2 Sprockets · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1885,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1887,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 1897,
+        "text": "description: [\"Submit and consume 2 Sprockets for one shared team civic roads-and-bridges order: 8 stacks of raw Stone, 4 stacks of Stone Slabs, 2 stacks of Stone Brick Slabs, 4 stacks of Oak Logs, 4 stacks of Scaffolding, 2 stacks of Oak F"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2115,
+        "text": "subtitle: \"2 Sprockets · 300 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2120,
+        "text": "item: { count: 1, id: \"numismatics:sprocket\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2122,
+        "text": "title: \"Submit 2 Sprockets\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2141,
+        "text": "item: { count: 1, id: \"numismatics:bevel\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2150,
+        "text": "subtitle: \"Fallback · 1 team Bevel · 604800 s\""
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2168,
+        "text": "icon: { id: \"numismatics:cog\" }"
+      },
+      {
+        "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+        "line": 2174,
+        "text": "subtitle: \"Spur · Bevel · Sprocket · Cog\""
+      },
+      {
+        "file": "config/simulated-server.toml",
+        "line": 18,
+        "text": "auger_cog = 0.5"
+      },
+      {
+        "file": "config/vampiresneedumbrellas-common.toml",
+        "line": 2,
+        "text": "#The durability in seconds of the Iron Umbrella when in the sun. Set to -1 if you want it to be unbreakable"
+      },
+      {
+        "file": "config/vampiresneedumbrellas-common.toml",
+        "line": 4,
+        "text": "#The durability in seconds of the Gold Umbrella when in the sun. Set to -1 if you want it to be unbreakable"
+      },
+      {
+        "file": "config/vampiresneedumbrellas-common.toml",
+        "line": 6,
+        "text": "#The durability in seconds of the Diamond Umbrella when in the sun. Set to -1 if you want it to be unbreakable"
+      },
+      {
+        "file": "config/vampiresneedumbrellas-common.toml",
+        "line": 8,
+        "text": "#The durability in seconds of the Netherite Umbrella when in the sun. Set to -1 if you want it to be unbreakable"
+      },
+      {
+        "file": "kubejs/server_scripts/crafting.js",
+        "line": 100,
+        "text": "// 2. Craft icarus:white_feathered_wings using Create Cogwheels, Netherite Ingot, Create Shafts, and HDPE Elytra"
+      },
+      {
+        "file": "kubejs/server_scripts/crafting.js",
+        "line": 107,
+        "text": "C: 'create:cogwheel',"
+      },
+      {
+        "file": "kubejs/server_scripts/mirror_portal_guide.js",
+        "line": 186,
+        "text": "player.setStatusMessage(Text.of(\"§d[Dark Mirror Portal] §fReturning to the Sunlit Overworld...\"))"
+      }
+    ],
+    "recycling_npc_exchange_or_denomination_candidates": []
+  },
+  "external_audit_review": {
+    "denomination_conversion": {
+      "evidence": [],
+      "proof_boundary": "Static configuration is a review lead only; recipe registration, NPC offers, recycling outputs, and denomination behavior require registry/recipe inspection and a live client/server check.",
+      "status": "no_static_candidate_found"
+    },
+    "npc_trading": {
+      "evidence": [
+        {
+          "file": "config/infinitetrading.json5",
+          "line": 2,
+          "text": "// When enabled, the trades of the wandering trader will never lock up."
+        },
+        {
+          "file": "config/infinitetrading.json5",
+          "line": 3,
+          "text": "\"wanderingTraderInfiniteTrades\": true,"
+        },
+        {
+          "file": "config/infinitetrading.json5",
+          "line": 5,
+          "text": "\"villagerInfiniteTrades\": true,"
+        },
+        {
+          "file": "config/infinitetrading.json5",
+          "line": 6,
+          "text": "// If abstract villagers that are not a villager or wandering trader, from other mods, should have infinite trades."
+        },
+        {
+          "file": "config/infinitetrading.json5",
+          "line": 7,
+          "text": "\"fallbackInfiniteTrades\": true"
+        },
+        {
+          "file": "config/irons_spellbooks-server.toml",
+          "line": 43,
+          "text": "#Whether or not the wandering trader can have magic related trades, such as ink or scrolls. Default: true"
+        },
+        {
+          "file": "config/irons_spellbooks-server.toml",
+          "line": 44,
+          "text": "additionalWanderingTraderTrades = true"
+        },
+        {
+          "file": "config/mca.json",
+          "line": 164,
+          "text": "\"innSpawnsWanderingTraders\": true,"
+        }
+      ],
+      "proof_boundary": "Static configuration is a review lead only; recipe registration, NPC offers, recycling outputs, and denomination behavior require registry/recipe inspection and a live client/server check.",
+      "status": "configured_candidate"
+    },
+    "recipe_or_kubejs_currency_changes": {
+      "evidence": [
+        {
+          "file": "config/ftbquests/quests/chapters/ch05_market_services.snbt",
+          "line": 2132,
+          "text": "description: [\"Submit and consume one Written Book naming a findable place, a real problem, and the person who will review the result. This is the board's sole currency faucet: one shared team Bevel entitlement every 604800 seconds. Claim i"
+        }
+      ],
+      "proof_boundary": "Static configuration is a review lead only; recipe registration, NPC offers, recycling outputs, and denomination behavior require registry/recipe inspection and a live client/server check.",
+      "status": "configured_candidate"
+    },
+    "recycling": {
+      "evidence": [
+        {
+          "file": "config/irons_spellbooks-server.toml",
+          "line": 31,
+          "text": "#From 0-1, the percent chance for scrolls to be successfully recycled. Default: 0.5 (50%)"
+        },
+        {
+          "file": "config/irons_spellbooks-server.toml",
+          "line": 32,
+          "text": "scrollRecycleChance = 1"
+        }
+      ],
+      "proof_boundary": "Static configuration is a review lead only; recipe registration, NPC offers, recycling outputs, and denomination behavior require registry/recipe inspection and a live client/server check.",
+      "status": "configured_candidate"
+    }
+  },
+  "external_audit_root": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\work\\packwiz-modpack",
+  "findings": [],
+  "limitations": [
+    "Source rewards do not prove FTB claim keys, payment consumption, cooldown timing, inventory overflow, or late-join behaviour.",
+    "A paid service is a shared-entitlement candidate only when every reward entry has team_reward=true; confirm this in a two-account client test.",
+    "Configured-source matches are review leads. Recipe, NPC, recycling, denomination, and obtainability evidence still require registry/recipe inspection and runtime verification.",
+    "Item counts are reported as authored entries; maximum stack size and component decoding require the installed client and registry."
+  ],
+  "minimum_personal_route": {
+    "cost_to_quest": {
+      "7A11C0DF00100001": 0.0,
+      "7A11C0DF00100003": 0.0,
+      "7A11C0DF00100005": 0.0,
+      "7A11C0DF00100006": 0.0,
+      "7A11C0DF00100007": 0.0,
+      "7A11C0DF00200001": 0.0,
+      "7A11C0DF00200002": 2.0,
+      "7A11C0DF00200003": 2.0,
+      "7A11C0DF00200004": 2.0,
+      "7A11C0DF00200007": 2.0,
+      "7A11C0DF00300001": 3.0,
+      "7A11C0DF00300002": 5.0,
+      "7A11C0DF00300003": 9.0,
+      "7A11C0DF00300004": 15.0,
+      "7A11C0DF00300005": 15.0,
+      "7A11C0DF00300006": 15.0,
+      "7A11C0DF00300007": 15.0,
+      "7A11C0DF00300008": 15.0,
+      "7A11C0DF00300009": 15.0,
+      "7A11C0DF0030000C": 15.0,
+      "7A11C0DF0030000D": 15.0,
+      "7A11C0DF0030000E": 11.0,
+      "7A11C0DF0030000F": 11.0,
+      "7A11C0DF00300010": 11.0,
+      "7A11C0DF00300011": 11.0,
+      "7A11C0DF00400001": 3.0,
+      "7A11C0DF00400002": 7.0,
+      "7A11C0DF00400003": 11.0,
+      "7A11C0DF00400004": 15.0,
+      "7A11C0DF00400005": 13.0,
+      "7A11C0DF00400006": 13.0,
+      "7A11C0DF00400007": 13.0,
+      "7A11C0DF00400008": 15.0,
+      "7A11C0DF00400009": 15.0,
+      "7A11C0DF0040000C": 13.0,
+      "7A11C0DF0040000D": 13.0,
+      "7A11C0DF0040000E": 11.0,
+      "7A11C0DF0040000F": 11.0,
+      "7A11C0DF00400010": 11.0,
+      "7A11C0DF00400011": 11.0,
+      "7A11C0DF00500001": 2.0,
+      "7A11C0DF00500002": 2.0,
+      "7A11C0DF00500003": 2.0,
+      "7A11C0DF00500004": 2.0,
+      "7A11C0DF00500005": 2.0,
+      "7A11C0DF00500006": 2.0,
+      "7A11C0DF00500007": 2.0,
+      "7A11C0DF00500008": 2.0,
+      "7A11C0DF00500009": 2.0,
+      "7A11C0DF0050000A": 2.0,
+      "7A11C0DF0050000F": 2.0,
+      "7A11C0DF00500011": 2.0,
+      "7A11C0DF00500012": 2.0,
+      "7A11C0DF00500013": 2.0,
+      "7A11C0DF00500014": 2.0,
+      "7A11C0DF00500015": 2.0,
+      "7A11C0DF00500016": 2.0,
+      "7A11C0DF00500017": 2.0,
+      "7A11C0DF00500018": 2.0
+    },
+    "max_reachable_cost_bevel_equivalent": 15.0,
+    "reachable_quests": 59
+  },
+  "one_time": {
+    "by_chapter": [
+      {
+        "chapter": "ch01_island_charter",
+        "personal_bevel_equivalent": 0.0,
+        "team_bevel_equivalent": 0.0
+      },
+      {
+        "chapter": "ch02_callings",
+        "personal_bevel_equivalent": 6.0,
+        "team_bevel_equivalent": 0.0
+      },
+      {
+        "chapter": "ch03_lantern_order",
+        "personal_bevel_equivalent": 47.0,
+        "team_bevel_equivalent": 0.0
+      },
+      {
+        "chapter": "ch04_house_night",
+        "personal_bevel_equivalent": 31.0,
+        "team_bevel_equivalent": 16.0
+      },
+      {
+        "chapter": "ch05_market_services",
+        "personal_bevel_equivalent": 0.0,
+        "team_bevel_equivalent": 0.0
+      }
+    ],
+    "combined_bevel_equivalent": 100.0,
+    "personal_bevel_equivalent": 84.0,
+    "team_bevel_equivalent": 16.0
+  },
+  "quest_count": 59,
+  "repeatable": {
+    "fragmented_team_count_assumption": 2,
+    "paid_sink_count": 16,
+    "paid_sink_price_bevel_equivalent": 53.0,
+    "services": [
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500003",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:glass": 16,
+            "minecraft:lantern": 8,
+            "minecraft:oak_log": 256,
+            "minecraft:sand": 128,
+            "minecraft:stone": 512
+          },
+          "item_count": 920,
+          "item_entries": 16,
+          "stack_equivalents_assuming_64": 14.375,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 1,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 2.0
+          }
+        ],
+        "price_bevel": 2.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Works Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF0050000F",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:campfire": 2,
+            "minecraft:glass": 32,
+            "minecraft:lantern": 8,
+            "minecraft:sand": 128,
+            "minecraft:spruce_log": 256,
+            "minecraft:stone": 256,
+            "minecraft:terracotta": 128
+          },
+          "item_count": 810,
+          "item_entries": 15,
+          "stack_equivalents_assuming_64": 12.65625,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 1,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 2.0
+          }
+        ],
+        "price_bevel": 2.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Village Timber Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500016",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:chain": 16,
+            "minecraft:dark_oak_log": 128,
+            "minecraft:deepslate": 256,
+            "minecraft:iron_bars": 32,
+            "minecraft:lantern": 16,
+            "minecraft:stone": 384
+          },
+          "item_count": 832,
+          "item_entries": 15,
+          "stack_equivalents_assuming_64": 13.0,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Fortress Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500011",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "irons_spellbooks:nether_brick_pillar": 16,
+            "irons_spellbooks:wisewood_bookshelf": 16,
+            "irons_spellbooks:wisewood_chiseled_bookshelf": 16,
+            "minecraft:amethyst_cluster": 16,
+            "minecraft:bookshelf": 16,
+            "minecraft:dark_oak_planks": 320,
+            "minecraft:deepslate_tiles": 320,
+            "minecraft:sea_lantern": 8,
+            "minecraft:tinted_glass": 128
+          },
+          "item_count": 856,
+          "item_entries": 18,
+          "stack_equivalents_assuming_64": 13.375,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Celestial Spire Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500012",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "abyssal_decor:frosted_glass": 192,
+            "abyssal_decor:white_wood_planks": 256,
+            "minecraft:lantern": 16,
+            "minecraft:polished_tuff": 320,
+            "supplementaries:faucet": 4,
+            "supplementaries:jar": 16
+          },
+          "item_count": 804,
+          "item_entries": 15,
+          "stack_equivalents_assuming_64": 12.5625,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Sanctified Brewery Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500013",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:scaffolding": 128,
+            "minecraft:spruce_planks": 384,
+            "minecraft:spyglass": 2,
+            "minecraft:stone": 192,
+            "minecraft:torch": 32,
+            "supplementaries:rope": 32,
+            "supplementaries:timber_frame": 192,
+            "supplementaries:way_sign_oak": 16
+          },
+          "item_count": 978,
+          "item_entries": 19,
+          "stack_equivalents_assuming_64": 15.28125,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Frontier Watch Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500014",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "createdeco:industrial_iron_catwalk": 320,
+            "createdeco:industrial_iron_mesh_fence": 64,
+            "createdeco:industrial_iron_sheet_metal": 320,
+            "createdeco:industrial_iron_support": 64,
+            "minecraft:chain": 32,
+            "minecraft:iron_bars": 32
+          },
+          "item_count": 832,
+          "item_entries": 16,
+          "stack_equivalents_assuming_64": 13.0,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Heavy Bastion Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500017",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "create:andesite_casing": 128,
+            "create:copper_casing": 128,
+            "minecraft:glass": 128,
+            "minecraft:scaffolding": 128,
+            "minecraft:stone": 256
+          },
+          "item_count": 768,
+          "item_entries": 12,
+          "stack_equivalents_assuming_64": 12.0,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Create Builder's Palette"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500015",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "createdeco:industrial_iron_bars": 16,
+            "createdeco:industrial_iron_window": 16,
+            "createdeco:pearl_brick_slab": 192,
+            "createdeco:pearl_brick_stairs": 192,
+            "createdeco:pearl_brick_wall": 192,
+            "createdeco:pearl_bricks": 256
+          },
+          "item_count": 864,
+          "item_entries": 15,
+          "stack_equivalents_assuming_64": 13.5,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Create Deco Palette"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 180,
+        "id": "7A11C0DF00500018",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "abyssal_decor:black_pearl_brick_wall": 64,
+            "abyssal_decor:black_pearl_bricks": 128,
+            "abyssal_decor:blackwood_planks": 256,
+            "abyssal_decor:blackwood_stairs": 64,
+            "abyssal_decor:blaze_glass": 128,
+            "abyssal_decor:deepbronze_bars": 32,
+            "abyssal_decor:deepbronze_tiles": 128
+          },
+          "item_count": 800,
+          "item_entries": 13,
+          "stack_equivalents_assuming_64": 12.5,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Abyssal Deepworks Palette"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF00500002",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:cooked_beef": 16,
+            "minecraft:lead": 4,
+            "minecraft:shield": 1,
+            "minecraft:torch": 32
+          },
+          "item_count": 53,
+          "item_entries": 4,
+          "stack_equivalents_assuming_64": 0.828125,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 1,
+            "item": "numismatics:bevel",
+            "name": "Bevel",
+            "value_bevel": 1.0
+          }
+        ],
+        "price_bevel": 1.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Field Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF00500005",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "create:andesite_alloy": 16,
+            "create:belt_connector": 4,
+            "create:cogwheel": 8,
+            "create:large_cogwheel": 4,
+            "create:shaft": 8,
+            "create:wrench": 1,
+            "minecraft:copper_ingot": 16
+          },
+          "item_count": 57,
+          "item_entries": 7,
+          "stack_equivalents_assuming_64": 0.890625,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Create Starter Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF00500004",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "irons_spellbooks:arcane_essence": 8,
+            "irons_spellbooks:blank_rune": 2,
+            "irons_spellbooks:common_ink": 8,
+            "irons_spellbooks:uncommon_ink": 4
+          },
+          "item_count": 22,
+          "item_entries": 4,
+          "stack_equivalents_assuming_64": 0.34375,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 1,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 2.0
+          }
+        ],
+        "price_bevel": 2.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Iron's Spells Starter Kit"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF00500009",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:cooked_beef": 16,
+            "minecraft:golden_apple": 4,
+            "minecraft:honey_bottle": 16,
+            "minecraft:torch": 32
+          },
+          "item_count": 68,
+          "item_entries": 4,
+          "stack_equivalents_assuming_64": 1.0625,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 1,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 2.0
+          }
+        ],
+        "price_bevel": 2.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Recovery Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF0050000A",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:compass": 4,
+            "minecraft:firework_rocket": 32,
+            "minecraft:lead": 16,
+            "minecraft:oak_boat": 4,
+            "minecraft:saddle": 2
+          },
+          "item_count": 58,
+          "item_entries": 9,
+          "stack_equivalents_assuming_64": 0.90625,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Transit Crate"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 300,
+        "id": "7A11C0DF00500007",
+        "kind": "paid_sink",
+        "payload": {
+          "by_item": {
+            "minecraft:chain": 16,
+            "minecraft:lantern": 16,
+            "minecraft:oak_fence": 128,
+            "minecraft:oak_log": 256,
+            "minecraft:scaffolding": 256,
+            "minecraft:stone": 512,
+            "minecraft:stone_brick_slab": 128,
+            "minecraft:stone_slab": 256
+          },
+          "item_count": 1568,
+          "item_entries": 26,
+          "stack_equivalents_assuming_64": 24.5,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [
+          {
+            "count": 2,
+            "item": "numismatics:sprocket",
+            "name": "Sprocket",
+            "value_bevel": 4.0
+          }
+        ],
+        "price_bevel": 4.0,
+        "reward_bevel": 0.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Concord Bond"
+      },
+      {
+        "chapter": "ch05_market_services",
+        "cooldown_seconds": 604800,
+        "id": "7A11C0DF00500006",
+        "kind": "weekly_faucet",
+        "payload": {
+          "by_item": {},
+          "item_count": 0,
+          "item_entries": 0,
+          "stack_equivalents_assuming_64": 0,
+          "stack_limit_boundary": "64-stack equivalent is a presentation metric for this report; unstackable and mod-specific maximums require the installed registry."
+        },
+        "price": [],
+        "price_bevel": 0,
+        "reward_bevel": 1.0,
+        "reward_team_flags": [
+          true
+        ],
+        "shared_entitlement_candidate": true,
+        "title": "Rumour Ledger"
+      }
+    ],
+    "weekly_faucet_count": 1,
+    "weekly_faucet_reward_bevel_equivalent_fragmented_teams": 2.0,
+    "weekly_faucet_reward_bevel_equivalent_per_team": 1.0
+  },
+  "schema": "vvh-economy-report-v1",
+  "source": "scripts/vvh_campaign_v3.py::build_campaign",
+  "source_level_only": true,
+  "value_comparison": {
+    "assessment": "Current Concord is a curated civic-material premium: it supplies shaped road/bridge stock and is about 15% below Works by 64-stack-equivalent volume at the same price. A one-Cog version would be only about 43% of Works volume at equal currency and should be rebalanced or explicitly approved as a convenience premium.",
+    "concord_fraction_of_works_at_same_price": 0.8521739130434782,
+    "concord_price_bevel": 4.0,
+    "concord_stack_equivalents": 24.5,
+    "status": "current_source",
+    "works_equivalent_at_concord_price": 28.75,
+    "works_price_bevel": 2.0,
+    "works_stack_equivalents": 14.375
+  }
+}

@@ -7,34 +7,14 @@
 	id: "7A11C3DF00300000"
 	images: [
 		{
-			alpha: 22
-			height: 7
+			alpha: 140
+			height: 19.1d
+			width: 34
 			image: "poiesis:textures/questpics/vvh/lantern_order_holy_panorama.png"
 			order: -40
 			rotation: 0.0d
-			width: 5
-			x: -11
-			y: 2
-		}
-		{
-			alpha: 20
-			height: 7
-			image: "poiesis:textures/questpics/vvh/holy_public_ward.png"
-			order: -39
-			rotation: 0.0d
-			width: 5
-			x: 11
-			y: 5
-		}
-		{
-			alpha: 28
-			height: 2.5d
-			image: "poiesis:textures/questpics/vvh/holy_school_crest.png"
-			order: -38
-			rotation: 0.0d
-			width: 2.5d
 			x: 0
-			y: 10
+			y: -2.5d
 		}
 	]
 	order_index: 1
@@ -110,7 +90,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300001"]
-			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, and a sprocket construction grant to redeem at the Market."]
+			description: ["Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, and one Sprocket to spend at the Market."]
 			icon: { id: "minecraft:stone" }
 			id: "7A11C0DF00300002"
 			rewards: [
@@ -118,7 +98,7 @@
 					id: "7A11C2DF00300006"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
-					title: "Order Construction Grant"
+					title: "1 Sprocket"
 					type: "item"
 				}
 				{
@@ -269,7 +249,7 @@
 		}
 		{
 			dependencies: ["7A11C0DF00300003"]
-			description: ["Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and a sprocket construction grant for the Celestial Spire Crate at the Market."]
+			description: ["Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and one Sprocket to spend on the Celestial Spire Crate at the Market."]
 			icon: { id: "irons_spellbooks:inscription_table" }
 			id: "7A11C0DF0030000E"
 			optional: true
@@ -278,7 +258,7 @@
 					id: "7A11C2DF0030004B"
 					item: { count: 1, id: "numismatics:sprocket" }
 					team_reward: false
-					title: "Order Construction Grant"
+					title: "1 Sprocket"
 					type: "item"
 				}
 				{
@@ -1617,7 +1597,97 @@
 				}
 				{
 					id: "7A11C2DF0030005E"
-					item: { count: 16, id: "minecraft:rabbit_stew" }
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305001"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305002"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305003"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305004"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305005"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305006"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305007"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305008"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF00305009"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500A"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500B"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500C"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500D"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500E"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7A11C2DF0030500F"
+					item: { count: 1, id: "minecraft:rabbit_stew" }
 					team_reward: false
 					type: "item"
 				}

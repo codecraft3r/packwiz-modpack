@@ -1,0 +1,694 @@
+{
+  "schema": 1,
+  "provenance": {
+    "baseline_files": {
+      "ch03_lantern_order.snbt": {
+        "relative_path": "evidence/20260907-requested-fixes-baseline/quests/chapters/ch03_lantern_order.snbt",
+        "sha256": "c659c793e2b9f36497a4961b7ec182eb629d398d6c588028da463c7a1231c82e"
+      },
+      "ch04_house_night.snbt": {
+        "relative_path": "evidence/20260907-requested-fixes-baseline/quests/chapters/ch04_house_night.snbt",
+        "sha256": "0a3fa426702a35b40ddb843f1e2710f22dd7fac24ac07495a7fba644b25fe8e1"
+      },
+      "ch05_market_services.snbt": {
+        "relative_path": "evidence/20260907-requested-fixes-baseline/quests/chapters/ch05_market_services.snbt",
+        "sha256": "5db50ea655a05b1a604d8c803fdb47f03c208374182be0e150a393fbe754b2c2"
+      }
+    },
+    "source": "scripts/vvh_campaign_v3.py",
+    "purpose": "Compact baseline subset for reviewing save-claim scope transitions and one-to-many count splits."
+  },
+  "scope_transitions": [
+    {
+      "quest_id": "7A11C0DF0040000E",
+      "reward_ids": [
+        "7A11C2DF00400061"
+      ],
+      "item": "numismatics:sprocket",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0040000F",
+      "reward_ids": [
+        "7A11C2DF00400063"
+      ],
+      "item": "numismatics:sprocket",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00400010",
+      "reward_ids": [
+        "7A11C2DF00400065"
+      ],
+      "item": "numismatics:sprocket",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00400011",
+      "reward_ids": [
+        "7A11C2DF00400067"
+      ],
+      "item": "numismatics:sprocket",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500002",
+      "reward_ids": [
+        "7A11C2DF00500001"
+      ],
+      "item": "minecraft:cooked_beef",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500002",
+      "reward_ids": [
+        "7A11C2DF00500003"
+      ],
+      "item": "minecraft:lead",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500002",
+      "reward_ids": [
+        "7A11C2DF00500076"
+      ],
+      "item": "minecraft:shield",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500002",
+      "reward_ids": [
+        "7A11C2DF00500002"
+      ],
+      "item": "minecraft:torch",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500003",
+      "reward_ids": [
+        "7A11C2DF00500055"
+      ],
+      "item": "minecraft:glass",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500003",
+      "reward_ids": [
+        "7A11C2DF00500056"
+      ],
+      "item": "minecraft:lantern",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500003",
+      "reward_ids": [
+        "7A11C2DF00500049",
+        "7A11C2DF0050004A",
+        "7A11C2DF0050004B",
+        "7A11C2DF0050004C",
+        "7A11C2DF0050004D",
+        "7A11C2DF0050004E",
+        "7A11C2DF0050004F",
+        "7A11C2DF00500050"
+      ],
+      "item": "minecraft:stone",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500004",
+      "reward_ids": [
+        "7A11C2DF00500008"
+      ],
+      "item": "irons_spellbooks:arcane_essence",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500004",
+      "reward_ids": [
+        "7A11C2DF00500009"
+      ],
+      "item": "irons_spellbooks:blank_rune",
+      "count": 2,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500004",
+      "reward_ids": [
+        "7A11C2DF0050000A"
+      ],
+      "item": "irons_spellbooks:common_ink",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500004",
+      "reward_ids": [
+        "7A11C2DF0050000B"
+      ],
+      "item": "irons_spellbooks:uncommon_ink",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF0050000C"
+      ],
+      "item": "create:andesite_alloy",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF00500065"
+      ],
+      "item": "create:belt_connector",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF0050000E"
+      ],
+      "item": "create:cogwheel",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF0050000F"
+      ],
+      "item": "create:large_cogwheel",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF0050000D"
+      ],
+      "item": "create:shaft",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF00500066"
+      ],
+      "item": "create:wrench",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500005",
+      "reward_ids": [
+        "7A11C2DF00500067"
+      ],
+      "item": "minecraft:copper_ingot",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500007",
+      "reward_ids": [
+        "7A11C2DF0050006D"
+      ],
+      "item": "minecraft:chain",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500007",
+      "reward_ids": [
+        "7A11C2DF0050006E"
+      ],
+      "item": "minecraft:lantern",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500007",
+      "reward_ids": [
+        "7A11C2DF00500013",
+        "7A11C2DF0050001D"
+      ],
+      "item": "minecraft:oak_log",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500007",
+      "reward_ids": [
+        "7A11C2DF0050006A",
+        "7A11C2DF0050006B"
+      ],
+      "item": "minecraft:scaffolding",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500007",
+      "reward_ids": [
+        "7A11C2DF00500010",
+        "7A11C2DF00500011",
+        "7A11C2DF00500012",
+        "7A11C2DF00500069"
+      ],
+      "item": "minecraft:stone",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500009",
+      "reward_ids": [
+        "7A11C2DF00500017"
+      ],
+      "item": "minecraft:golden_apple",
+      "count": 1,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500009",
+      "reward_ids": [
+        "7A11C2DF00500016"
+      ],
+      "item": "minecraft:honey_bottle",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_ids": [
+        "7A11C2DF0050001C"
+      ],
+      "item": "minecraft:compass",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_ids": [
+        "7A11C2DF0050001A"
+      ],
+      "item": "minecraft:firework_rocket",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_ids": [
+        "7A11C2DF00500019"
+      ],
+      "item": "minecraft:lead",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_ids": [
+        "7A11C2DF00500018"
+      ],
+      "item": "minecraft:saddle",
+      "count": 2,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000F",
+      "reward_ids": [
+        "7A11C2DF00500064"
+      ],
+      "item": "minecraft:campfire",
+      "count": 2,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000F",
+      "reward_ids": [
+        "7A11C2DF00500062"
+      ],
+      "item": "minecraft:glass",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000F",
+      "reward_ids": [
+        "7A11C2DF00500063"
+      ],
+      "item": "minecraft:lantern",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF0050000F",
+      "reward_ids": [
+        "7A11C2DF00500060",
+        "7A11C2DF00500061"
+      ],
+      "item": "minecraft:terracotta",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500034"
+      ],
+      "item": "minecraft:amethyst_cluster",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500035"
+      ],
+      "item": "minecraft:bookshelf",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500032"
+      ],
+      "item": "minecraft:dark_oak_planks",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500031",
+        "7A11C2DF00500077"
+      ],
+      "item": "minecraft:deepslate_tiles",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500036"
+      ],
+      "item": "minecraft:sea_lantern",
+      "count": 8,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500011",
+      "reward_ids": [
+        "7A11C2DF00500033"
+      ],
+      "item": "minecraft:tinted_glass",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF00500039"
+      ],
+      "item": "abyssal_decor:frosted_glass",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF00500038"
+      ],
+      "item": "abyssal_decor:white_wood_planks",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF0050003C"
+      ],
+      "item": "minecraft:lantern",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF00500037",
+        "7A11C2DF00500078"
+      ],
+      "item": "minecraft:polished_tuff",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF0050003B"
+      ],
+      "item": "supplementaries:faucet",
+      "count": 4,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500012",
+      "reward_ids": [
+        "7A11C2DF0050003A"
+      ],
+      "item": "supplementaries:jar",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF0050003D",
+        "7A11C2DF00500079"
+      ],
+      "item": "minecraft:spruce_planks",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF00500042"
+      ],
+      "item": "minecraft:spyglass",
+      "count": 2,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF00500041"
+      ],
+      "item": "minecraft:torch",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF0050003F"
+      ],
+      "item": "supplementaries:rope",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF0050003E"
+      ],
+      "item": "supplementaries:timber_frame",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_ids": [
+        "7A11C2DF00500040"
+      ],
+      "item": "supplementaries:way_sign_oak",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500043"
+      ],
+      "item": "createdeco:industrial_iron_catwalk",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500046"
+      ],
+      "item": "createdeco:industrial_iron_mesh_fence",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500044"
+      ],
+      "item": "createdeco:industrial_iron_sheet_metal",
+      "count": 64,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500045"
+      ],
+      "item": "createdeco:industrial_iron_support",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500047"
+      ],
+      "item": "minecraft:chain",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500014",
+      "reward_ids": [
+        "7A11C2DF00500048"
+      ],
+      "item": "minecraft:iron_bars",
+      "count": 32,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500015",
+      "reward_ids": [
+        "7A11C2DF00500075"
+      ],
+      "item": "createdeco:industrial_iron_bars",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500015",
+      "reward_ids": [
+        "7A11C2DF00500074"
+      ],
+      "item": "createdeco:industrial_iron_window",
+      "count": 16,
+      "team_reward": false
+    },
+    {
+      "quest_id": "7A11C0DF00500015",
+      "reward_ids": [
+        "7A11C2DF00500070"
+      ],
+      "item": "createdeco:pearl_bricks",
+      "count": 64,
+      "team_reward": false
+    }
+  ],
+  "claim_splits": [
+    {
+      "quest_id": "7A11C0DF0030000D",
+      "reward_id": "7A11C2DF0030005E",
+      "item": "minecraft:rabbit_stew",
+      "count": 16,
+      "team_reward": false,
+      "targets": [
+        "7A11C2DF0030005E",
+        "7A11C2DF00305001",
+        "7A11C2DF00305002",
+        "7A11C2DF00305003",
+        "7A11C2DF00305004",
+        "7A11C2DF00305005",
+        "7A11C2DF00305006",
+        "7A11C2DF00305007",
+        "7A11C2DF00305008",
+        "7A11C2DF00305009",
+        "7A11C2DF0030500A",
+        "7A11C2DF0030500B",
+        "7A11C2DF0030500C",
+        "7A11C2DF0030500D",
+        "7A11C2DF0030500E",
+        "7A11C2DF0030500F"
+      ]
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_id": "7A11C2DF00500018",
+      "item": "minecraft:saddle",
+      "count": 2,
+      "team_reward": false,
+      "targets": [
+        "7A11C2DF00500018",
+        "7A11C2DF005050A0"
+      ]
+    },
+    {
+      "quest_id": "7A11C0DF0050000A",
+      "reward_id": "7A11C2DF0050001B",
+      "item": "minecraft:oak_boat",
+      "count": 4,
+      "team_reward": false,
+      "targets": [
+        "7A11C2DF005050A1",
+        "7A11C2DF005050A2",
+        "7A11C2DF005050A3",
+        "7A11C2DF005050A4"
+      ]
+    },
+    {
+      "quest_id": "7A11C0DF00500013",
+      "reward_id": "7A11C2DF00500042",
+      "item": "minecraft:spyglass",
+      "count": 2,
+      "team_reward": false,
+      "targets": [
+        "7A11C2DF00500042",
+        "7A11C2DF0050A0D4"
+      ]
+    },
+    {
+      "quest_id": "7A11C0DF00400008",
+      "reward_id": "7A11C2DF00400036",
+      "item": "vista:hollow_cassette",
+      "count": 8,
+      "team_reward": false,
+      "targets": [
+        "7A11C2DF00400036",
+        "7A11C2DF00405100",
+        "7A11C2DF00405101",
+        "7A11C2DF00405102",
+        "7A11C2DF00405103",
+        "7A11C2DF00405104",
+        "7A11C2DF00405105",
+        "7A11C2DF00405106"
+      ]
+    }
+  ]
+}

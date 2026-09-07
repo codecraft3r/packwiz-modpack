@@ -1,0 +1,32 @@
+{
+  "algorithm": "sha256",
+  "authoritative_source": "scripts/vvh_campaign_v3.py",
+  "bootstrap_receipt": {
+    "fixture_hashes_sha256": {
+      "config/ftbquests/quests/chapter_groups.snbt": "43af7a4ed40567575d513f33d460cc6b57c504ad227784c88f28c170f795b3de",
+      "config/ftbquests/quests/chapters/ch01_island_charter.snbt": "cdfb630697b5f5d07b74e2abb97946274a163639ab21b3c4902e8e1a31731661",
+      "config/ftbquests/quests/chapters/ch02_callings.snbt": "880fb22a7dca8a2d611b5e83043343bba9b8e2c01a5f98e535bc9bbdabb3bb8c",
+      "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": "c659c793e2b9f36497a4961b7ec182eb629d398d6c588028da463c7a1231c82e",
+      "config/ftbquests/quests/chapters/ch04_house_night.snbt": "0a3fa426702a35b40ddb843f1e2710f22dd7fac24ac07495a7fba644b25fe8e1",
+      "config/ftbquests/quests/chapters/ch05_market_services.snbt": "5db50ea655a05b1a604d8c803fdb47f03c208374182be0e150a393fbe754b2c2",
+      "config/ftbquests/quests/data.snbt": "d4583289e77fab3a95385993859e83a459f5aef8cb964ed975f782b2f2c9845d",
+      "config/ftbquests/quests/lang/en_us.snbt": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817",
+      "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt": "bc73cc65f9b67c994433794941abbf2f14efb55a2e161a5581ed0fc40a272e70",
+      "docs/vvh/campaign_manifest.json": "93d8c594f03d3bbbd36a6b61b566a273d8ebcab72a93fd82bbbe565dc0181620"
+    },
+    "mode": "immutable-pre-edit-snapshot"
+  },
+  "managed_outputs": {
+    "config/ftbquests/quests/chapter_groups.snbt": "43af7a4ed40567575d513f33d460cc6b57c504ad227784c88f28c170f795b3de",
+    "config/ftbquests/quests/chapters/ch01_island_charter.snbt": "0d2fb31b14e9bca6f48289fa64c53aad18fdcaba6604857d1e29d549c3fffdfd",
+    "config/ftbquests/quests/chapters/ch02_callings.snbt": "6f802a80c89aef6cec4ce65ea6e55c0989aed2bd914bd36a16d27161fa10d224",
+    "config/ftbquests/quests/chapters/ch03_lantern_order.snbt": "94736b5b19d76fc26ec5a643b9bf6fc438c4b022153923dfb241726495647baf",
+    "config/ftbquests/quests/chapters/ch04_house_night.snbt": "6d6f1743b9cfc385d56850f02336634fb1d5f4a2f70167d95f992ed47800bc5e",
+    "config/ftbquests/quests/chapters/ch05_market_services.snbt": "ff0936dc01acece30b2846381ea914cae4dad404706841d682788bd88f4ba387",
+    "config/ftbquests/quests/data.snbt": "d4583289e77fab3a95385993859e83a459f5aef8cb964ed975f782b2f2c9845d",
+    "config/ftbquests/quests/lang/en_us.snbt": "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817",
+    "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt": "bc73cc65f9b67c994433794941abbf2f14efb55a2e161a5581ed0fc40a272e70",
+    "docs/vvh/campaign_manifest.json": "b56960da1477705f080cf465a271611b2f05418a5380f599c6d7a6b1bb65c001"
+  },
+  "version": 1
+}

@@ -41,12 +41,21 @@ This document records the persistent server contract that quest content must pre
 
 ## Economy contract
 
-- Personal rewards are the default. Team rewards are reserved for shared projects and team capstones.
+- Personal rewards are the default. Team rewards are reserved for shared projects or an explicit paid shared-entitlement exception.
 - Currency scales with quest depth and effort.
 - Repeatables must have explicit inputs, explicit consumed prices, deliberate cooldowns, and declared reward scope.
 - No repeatable may reproduce its own input, finance the full market board, or become the optimal route through the pack.
-- No reward may satisfy a descendant task.
+- A finite reward may help a later descendant task when it is an earned continuity aid. Review that overlap against the task's decisive workstation or milestone; reject repeatable self-funding, duplication, and tier-skipping shortcuts.
 - Reward quantities must cross a useful gameplay threshold rather than arriving as decorative scraps.
+- Market palettes are an explicit paid exception to the personal default: one submitted price by an FTB Team grants one shared reward entitlement set. The installed FTB Quests claim key and payer/teammate claim order require a two-account runtime check; `team_reward: false` alone is not a scope guarantee.
+- Building purchases use a 180-second delay and progression/utility purchases use 300 seconds. The Rumour Ledger remains a separate seven-day team-scoped faucet; purchase delays do not accelerate recurring currency issuance.
+- Common structural materials are allowed in finite paid palettes. Check price, cooldown, stock, recycling, NPC exchange, denomination conversion, fragmentation, inventory overflow, and descendant shortcuts before release.
+
+The pinned Create Numismatics candidate artifact for current registry work is
+`CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar` with SHA-256
+`1375BA1B50E53FD09435029B5B2D5B94779BA397CCA7E01180D07B0F624E5B9B`.
+This verifies the inspected file bytes only; it does not establish live
+registry loading or survival obtainability.
 
 ## Required authoring chain
 

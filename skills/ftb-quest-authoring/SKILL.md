@@ -172,12 +172,15 @@ Update translations, changelog/version metadata, Packwiz indexes, and hosted ass
 ## 8. VvH project preferences
 
 When working on the VvH campaign in this repository, load and respect
-`docs/vvh/HUMAN_QUEST_PREFERENCES.md` alongside this skill. It records
-human design corrections mined from `dev` history (Market hidden lines,
-two-wing layout, short purchase cooldowns, personal scope, raw-Stone
-masonry, stack-safe rewards, verified-only modded IDs) with hard
-requirements enforced by `scripts/vvh_campaign_v3_validate.py`. Treat it
-as a maintained artifact and extend it when new human edits set precedent.
+`docs/vvh/HUMAN_QUEST_PREFERENCES.md` alongside this skill, with its
+structured companion `docs/vvh/HUMAN_QUEST_PREFERENCES.json`. It records
+scoped human design corrections (Market hidden lines and two-wing layout,
+short purchase cooldowns, the shared paid-entitlement exception to the
+personal default, raw-Stone masonry, stack-safe rewards, stable IDs, and
+verified-only modded IDs) with hard requirements enforced by the campaign
+validator where static checks are possible. Treat it as a maintained artifact
+and extend it when new human edits set precedent; do not universalize these
+VvH decisions into generic authoring defaults.
 
 ## 9. Hand off clearly
 

@@ -1,0 +1,46 @@
+{
+  "kind": "local integration verification; no client/server or production claim",
+  "date": "2026-09-07",
+  "campaign_regression_tests": {
+    "passed": 35
+  },
+  "snbt_parser_tests": {
+    "total": 34,
+    "skipped": 1,
+    "status": "pass"
+  },
+  "snbt_files": {
+    "passed": 12
+  },
+  "semantic_audit": {
+    "errors": 0,
+    "warnings": 5,
+    "chapters": 5,
+    "quests": 59
+  },
+  "generated_source_check": "pass; repeated generation verified 10 files",
+  "packwiz": "list pass; second refresh byte-stable",
+  "indexed_entry_changes": [
+    "config/ftbquests/quests/chapters/ch01_island_charter.snbt",
+    "config/ftbquests/quests/chapters/ch02_callings.snbt",
+    "config/ftbquests/quests/chapters/ch03_lantern_order.snbt",
+    "config/ftbquests/quests/chapters/ch04_house_night.snbt",
+    "config/ftbquests/quests/chapters/ch05_market_services.snbt"
+  ],
+  "clean_cache_catalogue": "pass",
+  "protected_first_thirst": "exact baseline; explicit blood-bottle stack exception",
+  "save_migration": "80 scope transitions and 5 split fanouts; fixture-tested only",
+  "hashes_sha256": {
+    "scripts/vvh_campaign_v3.py": "25e12a16f6b79c7352a0408b149dc62a0f70b8c6657f0b71006b08f89a2cfd02",
+    "docs/vvh/campaign_manifest.json": "b56960da1477705f080cf465a271611b2f05418a5380f599c6d7a6b1bb65c001",
+    "docs/vvh/generated_output_hashes.json": "67d6cbd97dc12878ea8993a878c548b6cf8fff65e6aea732050bb9ee4bbfeae5",
+    "docs/vvh/evidence/current/campaign-validation.json": "223c14e7e8ce869dd61fcf03078863e8e7c190267716cbb1c5bfb617d192422c",
+    "docs/vvh/evidence/current/item-stack-registry.json": "b72ef99230ae34316d9cf5b2ce38047c40d7af2529a9a8cfa281ddc11a72afdc",
+    "docs/vvh/evidence/save-migration-mapping.json": "a62196c2efb4178d64d2937b88e5517b75d0d0baa605c27d39a91614ebf6de77",
+    "docs/vvh/evidence/current/layouts/render-metadata.json": "6b61f51bdeed9a21a1a128067b370f20bf49d1b7649a76f51720ab51fc2843c8",
+    "index.toml": "5bd277110fd127a3f9edd7a7accbc5a068ac04e2bab5e478e2c1fcb3b722acf7",
+    "pack.toml": "a63ae6a1160a58afebb6ae48182a7480f8eba1a4b822288080b5bebe4e2566f4"
+  },
+  "integrated_remote_base": "cfb53c510340d1ce29581d0ce139520d683706bd",
+  "backdrops": "one centered 16:9 panorama per chapter; alpha105-150; viewport includes image bounds; source renders visually reviewed"
+}

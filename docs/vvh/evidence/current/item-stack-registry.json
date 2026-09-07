@@ -1,0 +1,3558 @@
+{
+  "items": {
+    "abyssal_decor:black_pearl_brick_wall": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:black_pearl_bricks": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:blackwood_planks": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:blackwood_stairs": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:blaze_glass": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:deepbronze_bars": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:deepbronze_tiles": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:frosted_glass": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:white_wood_log": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "abyssal_decor:white_wood_planks": {
+      "evidence": {
+        "class": "net/mcreator/abyssaldecor/init/AbyssalDecorModItems.class",
+        "classes": [
+          "net.mcreator.abyssaldecor.init.AbyssalDecorModItems"
+        ],
+        "detail": "registry block field: net.mcreator.abyssaldecor.init.AbyssalDecorModItems -> net.mcreator.abyssaldecor.init.AbyssalDecorModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+        "jars": [
+          {
+            "name": "abyssal_decor_1.21.1_0.11.0_Neoforge.jar",
+            "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "d5d35d0665ca8a5693c8b330dca07ffb1a44912c7ad547ae6304b73fead5c7be"
+      },
+      "max_stack_size": 64
+    },
+    "create:andesite_alloy": {
+      "evidence": {
+        "class": "com/simibubi/create/AllItems.class",
+        "classes": [
+          "com.simibubi.create.AllItems"
+        ],
+        "detail": "registry block field: com.simibubi.create.AllItems -> com.simibubi.create.AllItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:andesite_casing": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$242 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$243 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:belt_connector": {
+      "evidence": {
+        "class": "com/simibubi/create/AllItems.class",
+        "classes": [
+          "com.simibubi.create.AllItems"
+        ],
+        "detail": "registry block field: com.simibubi.create.AllItems -> com.simibubi.create.AllItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:brown_toolbox": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "Create AllBlocks TOOLBOXES generated UncontainableBlockItem path; no item stack override",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:clipboard": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/foundation/data/SharedProperties.wooden has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$414 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$416 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$417 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/content/equipment/clipboard/ClipboardBlockItem.registerModelOverrides has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$418 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:cogwheel": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/content/kinetics/simpleRelays/CogWheelBlock.small has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/foundation/data/SharedProperties.stone has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$9 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$10 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:copper_casing": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$246 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$247 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:large_cogwheel": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/content/kinetics/simpleRelays/CogWheelBlock.large has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/foundation/data/SharedProperties.stone has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$11 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$12 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:shaft": {
+      "evidence": {
+        "class": "com/simibubi/create/AllBlocks.class",
+        "classes": [
+          "com.simibubi.create.AllBlocks"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/foundation/data/SharedProperties.stone has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$7 has no stack override; registry invokedynamic: com.simibubi.create.AllBlocks -> com/simibubi/create/AllBlocks.lambda$static$8 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "create:wrench": {
+      "evidence": {
+        "class": "com/simibubi/create/AllItems.class",
+        "classes": [
+          "com.simibubi.create.AllItems"
+        ],
+        "detail": "registry invokedynamic: com.simibubi.create.AllItems -> com/simibubi/create/AllItems.lambda$static$47 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 1
+    },
+    "createbigcannons:cannon_carriage": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCBlocks.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCBlocks"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$119 has no stack override; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$120 has no stack override; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$121 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 64
+    },
+    "createbigcannons:mortar_stone": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCBlocks.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCBlocks"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> com/simibubi/create/foundation/data/SharedProperties.stone has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          },
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "max_stack_size": 64
+    },
+    "createbigcannons:powder_charge": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCBlocks.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCBlocks"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$157 has no stack override; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$158 has no stack override; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$159 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 64
+    },
+    "createbigcannons:ram_rod": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCItems.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCItems"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCItems -> rbasamoyai/createbigcannons/index/CBCItems.lambda$static$8 -> [(1, 'Item.Properties.stacksTo')]; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCItems -> rbasamoyai/createbigcannons/index/CBCItems.lambda$static$9 has no stack override",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 1
+    },
+    "createbigcannons:worm": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCItems.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCItems"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCItems -> rbasamoyai/createbigcannons/index/CBCItems.lambda$static$10 -> [(1, 'Item.Properties.stacksTo')]; registry invokedynamic: rbasamoyai.createbigcannons.index.CBCItems -> rbasamoyai/createbigcannons/index/CBCItems.lambda$static$11 has no stack override",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 1
+    },
+    "createbigcannons:wrought_iron_cannon_chamber": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCBlocks.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCBlocks"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$2 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 64
+    },
+    "createbigcannons:wrought_iron_cannon_end": {
+      "evidence": {
+        "class": "rbasamoyai/createbigcannons/index/CBCBlocks.class",
+        "classes": [
+          "rbasamoyai.createbigcannons.index.CBCBlocks"
+        ],
+        "detail": "registry invokedynamic: rbasamoyai.createbigcannons.index.CBCBlocks -> rbasamoyai/createbigcannons/index/CBCBlocks.lambda$static$3 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createbigcannons-5.11.7+mc.1.21.1.jar",
+        "jars": [
+          {
+            "name": "createbigcannons-5.11.7+mc.1.21.1.jar",
+            "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_bars": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_catwalk": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_mesh_fence": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_sheet_metal": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_support": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:industrial_iron_window": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "registry block field: com.github.talrey.createdeco.BlockRegistry -> com.github.talrey.createdeco.BlockRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:pearl_brick_slab": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:pearl_brick_stairs": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:pearl_brick_wall": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "createdeco:pearl_bricks": {
+      "evidence": {
+        "class": "com/github/talrey/createdeco/BlockRegistry.class",
+        "classes": [
+          "com.github.talrey.createdeco.BlockRegistry"
+        ],
+        "detail": "Create Deco BlockRegistry BARS/BAR_PANELS dynamic block builder; no item stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "createdeco-2.1.3.jar",
+        "jars": [
+          {
+            "name": "createdeco-2.1.3.jar",
+            "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "edacf1ad0bd6b9f1667d711650dc0cde604356d91caca7ca1ec428c2f9400c6e"
+      },
+      "max_stack_size": 64
+    },
+    "explorerscompass:explorerscompass": {
+      "evidence": {
+        "class": "com/chaosthedude/explorerscompass/registry/ExplorersCompassRegistry.class",
+        "classes": [
+          "com.chaosthedude.explorerscompass.registry.ExplorersCompassRegistry"
+        ],
+        "detail": "registry block field: com.chaosthedude.explorerscompass.registry.ExplorersCompassRegistry -> com.chaosthedude.explorerscompass.registry.ExplorersCompassRegistry.<registry field> has no stack override; exact constructor-chain override: ExplorersCompassItem constructor calls Item.Properties.stacksTo(1)",
+        "jar": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+        "jars": [
+          {
+            "name": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+            "sha256": "71e7b47bd88c9c210d7c06fe5276736fc2e225e869778216537d584e6d1faf24"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "71e7b47bd88c9c210d7c06fe5276736fc2e225e869778216537d584e6d1faf24"
+      },
+      "max_stack_size": 1
+    },
+    "exposure:black_and_white_film": {
+      "evidence": {
+        "class": "io/github/mortuusars/exposure/Exposure$Items.class",
+        "classes": [
+          "io.github.mortuusars.exposure.Exposure$Items"
+        ],
+        "detail": "registry invokedynamic: io.github.mortuusars.exposure.Exposure$Items -> io/github/mortuusars/exposure/Exposure$Items.lambda$static$1 -> [(16, 'Item.Properties.stacksTo')]",
+        "jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+        "jars": [
+          {
+            "name": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+      },
+      "max_stack_size": 16
+    },
+    "exposure:camera": {
+      "evidence": {
+        "class": "io/github/mortuusars/exposure/Exposure$Items.class",
+        "classes": [
+          "io.github.mortuusars.exposure.Exposure$Items"
+        ],
+        "detail": "registry invokedynamic: io.github.mortuusars.exposure.Exposure$Items -> io/github/mortuusars/exposure/Exposure$Items.lambda$static$0 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+        "jars": [
+          {
+            "name": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+      },
+      "max_stack_size": 1
+    },
+    "exposure:color_film": {
+      "evidence": {
+        "class": "io/github/mortuusars/exposure/Exposure$Items.class",
+        "classes": [
+          "io.github.mortuusars.exposure.Exposure$Items"
+        ],
+        "detail": "registry invokedynamic: io.github.mortuusars.exposure.Exposure$Items -> io/github/mortuusars/exposure/Exposure$Items.lambda$static$2 -> [(16, 'Item.Properties.stacksTo')]",
+        "jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+        "jars": [
+          {
+            "name": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+      },
+      "max_stack_size": 16
+    },
+    "irons_spellbooks:alchemist_cauldron": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.BlockRegistry",
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$107 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$21 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:arcane_anvil": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$101 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:arcane_essence": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry block field: io.redspace.ironsspellbooks.registries.ItemRegistry -> io.redspace.ironsspellbooks.registries.ItemRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:artificer_cane": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$15 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:blank_rune": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry block field: io.redspace.ironsspellbooks.registries.ItemRegistry -> io.redspace.ironsspellbooks.registries.ItemRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:blood_staff": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$18 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:common_ink": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$37 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:cultist_boots": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$145 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:cultist_chestplate": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$143 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:cultist_helmet": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$142 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:cultist_leggings": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$144 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:epic_ink": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$40 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:gold_spell_book": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$4 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:graybeard_staff": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$13 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:greater_healing_potion": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$47 -> [(4, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 4
+    },
+    "irons_spellbooks:holy_rune": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry block field: io.redspace.ironsspellbooks.registries.ItemRegistry -> io.redspace.ironsspellbooks.registries.ItemRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:inscription_table": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$100 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:invisibility_elixir": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$49 -> [(4, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 4
+    },
+    "irons_spellbooks:nether_brick_pillar": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.BlockRegistry",
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$118 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$15 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:priest_boots": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$157 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:priest_chestplate": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$155 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:priest_helmet": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$154 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:priest_leggings": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$156 -> [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:rare_ink": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$39 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:scroll": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$29 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:scroll_forge": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.BlockRegistry",
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$102 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$19 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:shriving_stone": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry block field: io.redspace.ironsspellbooks.registries.ItemRegistry -> io.redspace.ironsspellbooks.registries.ItemRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:uncommon_ink": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$38 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:villager_spell_book": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$11 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 1
+    },
+    "irons_spellbooks:wisewood_bookshelf": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.BlockRegistry",
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$116 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$12 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "irons_spellbooks:wisewood_chiseled_bookshelf": {
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.BlockRegistry",
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$117 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$14 has no stack override; registry invokedynamic: io.redspace.ironsspellbooks.registries.BlockRegistry -> io/redspace/ironsspellbooks/registries/BlockRegistry.lambda$static$23 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "max_stack_size": 64
+    },
+    "mannequins:mannequin": {
+      "evidence": {
+        "class": "dev/hardaway/mannequins/core/registry/MannequinsItems.class",
+        "classes": [
+          "dev.hardaway.mannequins.core.registry.MannequinsItems"
+        ],
+        "detail": "registry invokedynamic: dev.hardaway.mannequins.core.registry.MannequinsItems -> dev/hardaway/mannequins/core/registry/MannequinsItems.lambda$static$0 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "mannequins-3.0.0-rc.1.jar",
+        "jars": [
+          {
+            "name": "mannequins-3.0.0-rc.1.jar",
+            "sha256": "e89947097ce5a3a94b91b6d2f664257210f9b4195a31c0f8dce6755e023093a5"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "e89947097ce5a3a94b91b6d2f664257210f9b4195a31c0f8dce6755e023093a5"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:amethyst_cluster": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.AMETHYST_CLUSTER registration and item type: max 64; default 64",
+        "field": "AMETHYST_CLUSTER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "1c37c3c2c3c36498fd86406e7800197690ecd0257da28253070c3b0beb67fab9",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:amethyst_shard": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.AMETHYST_SHARD registration and item type: max 64; default 64",
+        "field": "AMETHYST_SHARD",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "c7167249e21ded84e13ac679e89470420794cfdab16962292e6f2e7a677c607c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:andesite": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.ANDESITE registration and item type: max 64; default 64",
+        "field": "ANDESITE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ca5570f493de450e6733e423585524c94c0d7617a91f1e19d5757f45d63acaf8",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:anvil": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.ANVIL registration and item type: max 64; default 64",
+        "field": "ANVIL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ebbc8ba4591f50870c7467cad992fb12aa489e933501b01dc1b09fedde53bddb",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:barrel": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BARREL registration and item type: max 64; default 64",
+        "field": "BARREL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e68b690f91fc9211f4cdca7fa8bddc28a0b0c825d1a2e7056d0395597cc20d85",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:beef": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BEEF registration and item type: max 64; default 64",
+        "field": "BEEF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ed388342eb2a7537b2fb2737a829a7ffaaf7aa75811ba04fe34719e427079e15",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:bell": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BELL registration and item type: max 64; default 64",
+        "field": "BELL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "acbf5966b8d8d7193fcfb97c8415a8abc7e44a2f793400a13861591f7a1446fd",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:black_wool": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BLACK_WOOL registration and item type: max 64; default 64",
+        "field": "BLACK_WOOL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "dc1e8c87399edea7eecc26ec45dd4faff3c32b9c83e2c3516929d67194c78a0c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:blast_furnace": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BLAST_FURNACE registration and item type: max 64; default 64",
+        "field": "BLAST_FURNACE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "952ae21c5c03c68a0f813eb1d41e9b5073954c7d895d3fb6e707f5e3af4dbcbe",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:blaze_powder": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BLAZE_POWDER registration and item type: max 64; default 64",
+        "field": "BLAZE_POWDER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "a1b0150344a62c3d33172fd28f319a9042a1cd89a1ee8861fb73abd3513e6ac0",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:bookshelf": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BOOKSHELF registration and item type: max 64; default 64",
+        "field": "BOOKSHELF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "4b0af8ca1df7f1119670ad21a8e3b3f4c4c6d8bc2c64e6ba1fd1f8eb8517f048",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:bread": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BREAD registration and item type: max 64; default 64",
+        "field": "BREAD",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "6e682a0b22cecae4d1e3a9cbb44893eaa5d6d920d16e247ca9b329df577407ac",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:brewing_stand": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BREWING_STAND registration and item type: max 64; default 64",
+        "field": "BREWING_STAND",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "02827893ca1b023fd7c1e8ad7fd6128a0b0fe65de45829086c9ce4d69d735fb2",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:bucket": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BUCKET registration: [(16, 'Item.Properties.stacksTo')]",
+        "field": "BUCKET",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "4b30273c8e213571968825f11050b1e35690d5d2e055998b6e9209f6563506b5",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 16
+    },
+    "minecraft:campfire": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CAMPFIRE registration and item type: max 64; default 64",
+        "field": "CAMPFIRE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "09a03d09b4e6d2758470925edb1dedfb9f3b652756b74c64393b693dba1c3b93",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:carrot": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CARROT registration and item type: max 64; default 64",
+        "field": "CARROT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e7fd72a8eccbe39aa159440e652ea052eafd67a55c7dfe67be29a285df4581b3",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:cartography_table": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CARTOGRAPHY_TABLE registration and item type: max 64; default 64",
+        "field": "CARTOGRAPHY_TABLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "50a3e8a586151ec63c4e34e1c5611f525302fe60d763db935e3f20adc7159c56",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:cauldron": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CAULDRON registration and item type: max 64; default 64",
+        "field": "CAULDRON",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "dd36fff6916c5eb3a228ae191a1c4ba4c3e98b6abf17ae0672645c469f624196",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:chain": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CHAIN registration and item type: max 64; default 64",
+        "field": "CHAIN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "f91a923b7b0c7b3d0a506f6a24e5a09e9057f767521fd1389b1b09aeeb7e3bd4",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:chest": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CHEST registration and item type: max 64; default 64",
+        "field": "CHEST",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "f3a9c2884bb5908b4dc50991c2b4891326e614de6fdfbdd4ef1f8a1829dcd371",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:coal": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COAL registration and item type: max 64; default 64",
+        "field": "COAL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "a4c16e4543d7502deb0340f99c42dfacfea4ff91f0aac68c57e5d15dc24eb9b8",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:cobbled_deepslate": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COBBLED_DEEPSLATE registration and item type: max 64; default 64",
+        "field": "COBBLED_DEEPSLATE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "2644f843117efec3c857f94df4ebe5fb00c167871cc9ae254a98fd38e7f5859c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:cobblestone": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COBBLESTONE registration and item type: max 64; default 64",
+        "field": "COBBLESTONE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "af0e28ce9422dca2019bba380dd829cc92d61e703a976a11f499a0aed31a44b6",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:compass": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COMPASS registration and item type: max 64; default 64",
+        "field": "COMPASS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "6e5734b457c3b555794e2985d20ebad34d4d18c5c832fb5e4a257c4af70217f2",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:cooked_beef": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COOKED_BEEF registration and item type: max 64; default 64",
+        "field": "COOKED_BEEF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "cc8b4807746075ecee62afa6b8acaebefdbf2894cf2136c1607ee4afba977ec5",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:copper_ingot": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COPPER_INGOT registration and item type: max 64; default 64",
+        "field": "COPPER_INGOT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ca0ed78846c369cbf162f87c243499ca037b5187ae8c7467fba21aa025d0f1de",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:crossbow": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.CROSSBOW registration: [(1, 'Item.Properties.stacksTo'), (1, 'Item.Properties.durability')]",
+        "field": "CROSSBOW",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e709e98a36102e2e9f55a603bb1612fb33067c2a25194c4df16a146ea3b64b17",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:dark_oak_log": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.DARK_OAK_LOG registration and item type: max 64; default 64",
+        "field": "DARK_OAK_LOG",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "beaa10e5d0b70fbbee70947a296c123aff239cdefd5327d286ccfaeb63e80f3f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:dark_oak_planks": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.DARK_OAK_PLANKS registration and item type: max 64; default 64",
+        "field": "DARK_OAK_PLANKS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "1ad43823a53bff833cb300b800e66a6611a649598127435db92f19ad290b36f5",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:daylight_detector": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.DAYLIGHT_DETECTOR registration and item type: max 64; default 64",
+        "field": "DAYLIGHT_DETECTOR",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9fea11dfc538959cceb6d137048fad38be7ab2c59723d758b7a3dbe266d78485",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:deepslate": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.DEEPSLATE registration and item type: max 64; default 64",
+        "field": "DEEPSLATE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "49812d3bf401a310d2877384567826b21075ee9d0bf091bb0aa003336c09a95f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:deepslate_tiles": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.DEEPSLATE_TILES registration and item type: max 64; default 64",
+        "field": "DEEPSLATE_TILES",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9005e8966b08164725ac56dae689e4d89da1a1f6cd663bcf86a9630ec69228be",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:emerald": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.EMERALD registration and item type: max 64; default 64",
+        "field": "EMERALD",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "747af647b5f6ffacfc5d1ba3038d62f007d47a07cb6827c08d085efef7f9c855",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:enchanting_table": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.ENCHANTING_TABLE registration and item type: max 64; default 64",
+        "field": "ENCHANTING_TABLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "f4c3c01a649a86ff59edcc211a98c1d0aa65f9061c21e5bee6ab3124f53f643c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:feather": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.FEATHER registration and item type: max 64; default 64",
+        "field": "FEATHER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "43ed3b69549136a859ad7f2cd92a54a9c819bef70430257b9136f25095a01b1d",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:fermented_spider_eye": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.FERMENTED_SPIDER_EYE registration and item type: max 64; default 64",
+        "field": "FERMENTED_SPIDER_EYE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d883c54f93c94067c52f6c242e31f1a808c77edbcd02b1fa16f1804b6984ecda",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:firework_rocket": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.FIREWORK_ROCKET registration and item type: max 64; default 64",
+        "field": "FIREWORK_ROCKET",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "496d41b2919a4ea002ea5df0b0e1772a69735e0801535d515022b59df186588b",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:glass": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GLASS registration and item type: max 64; default 64",
+        "field": "GLASS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "c2ccb3b4a1a92a9e0e6a3d1fcbf46e32191efc54bacc6eed2577392b7b0917ed",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:glass_bottle": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GLASS_BOTTLE registration and item type: max 64; default 64",
+        "field": "GLASS_BOTTLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9018918b24de8502f8d2e9730f7ce7f2911a86616cfecc22b7e7284293b016f8",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:glistering_melon_slice": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GLISTERING_MELON_SLICE registration and item type: max 64; default 64",
+        "field": "GLISTERING_MELON_SLICE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d1833e56eef2f13120d53c7a367e7ddb4afa00ac8a2eb081a76ea5c813540035",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:glowstone_dust": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GLOWSTONE_DUST registration and item type: max 64; default 64",
+        "field": "GLOWSTONE_DUST",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "36f0ae2b02437558c1faa7ecb9bdc121ee3ec77df3736c10296fa860a9109566",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:golden_apple": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GOLDEN_APPLE registration and item type: max 64; default 64",
+        "field": "GOLDEN_APPLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "deed521a42cc2e17474b1384943eaa05c6fa9d563f4a35a4fd8cb34874542724",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:golden_carrot": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GOLDEN_CARROT registration and item type: max 64; default 64",
+        "field": "GOLDEN_CARROT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "295dff0860a2eb84d8286dda6ca14ef1a7b19703f969bf039a66ea281181add3",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:honey_bottle": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.HONEY_BOTTLE registration: [(16, 'Item.Properties.stacksTo')]",
+        "field": "HONEY_BOTTLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "947ec10718b4d508b14f9d1dc2ae607283c9840020ef6b98cc673a91ecef61cf",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 16
+    },
+    "minecraft:iron_bars": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.IRON_BARS registration and item type: max 64; default 64",
+        "field": "IRON_BARS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "da0c91c5175fd07d29e65fca8d6077e0adbba03fa562a0fe40922e2a2c172283",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:iron_block": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.IRON_BLOCK registration and item type: max 64; default 64",
+        "field": "IRON_BLOCK",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "88d3f7ea887707930a7b87b8e514be74533e3a74ca9aef4f7e38c6f578b889ab",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:iron_ingot": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.IRON_INGOT registration and item type: max 64; default 64",
+        "field": "IRON_INGOT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "96faf4fe8bce3de6e90d70a17a6e73a8aba60b989f0a274c13742c3e5652b412",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:lantern": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.LANTERN registration and item type: max 64; default 64",
+        "field": "LANTERN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ede81d0d1c9083a2bde69aa2bfa3c8963a81115ec727c35a0f9ac2d18a350649",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:lapis_lazuli": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.LAPIS_LAZULI registration and item type: max 64; default 64",
+        "field": "LAPIS_LAZULI",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "45ad400916c73d0178891846bca6db68ab021cf51cc31ab63c1c66c8300a9a20",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:lead": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.LEAD registration and item type: max 64; default 64",
+        "field": "LEAD",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d1d8095b12cc8945a7cfd7b8fba3b8f26f36403619e7a73f2baabc4d12ffe2b3",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:lectern": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.LECTERN registration and item type: max 64; default 64",
+        "field": "LECTERN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "62ae7d5a9b05e8472314a459bab40a9ccbc61e18bb80a11aa6bd88731ed85096",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:map": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.MAP registration and item type: max 64; default 64",
+        "field": "MAP",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "09639334a5437be7c5342fe5b55e17813f42c7d7236d340805f3c537c585446d",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:milk_bucket": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.MILK_BUCKET registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "MILK_BUCKET",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "abe9ea95037a5a18be412eaf0608b7f1513b99f0df708bc689906183e913c6c9",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:nether_wart": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.NETHER_WART registration and item type: max 64; default 64",
+        "field": "NETHER_WART",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "5592619b93734a35ba6e8fc24f52fcc704246f0102a51baa3bf1cde0c6392521",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:oak_boat": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_BOAT registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "OAK_BOAT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "5a98eea0fefbf9b923e50c4ff12b67ab5dced7bf9bc8208b61a7dee3cd486f72",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:oak_door": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_DOOR registration and item type: max 64; default 64",
+        "field": "OAK_DOOR",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e8b28854cdf2b7c36a885a54ea76ad92f635495f124c7cfb82ba6371c52d702f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:oak_fence": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_FENCE registration and item type: max 64; default 64",
+        "field": "OAK_FENCE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "dd05e5ff7aba703db22a519080f5a79726605740e19ce4cd4e1c6bed020bf788",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:oak_fence_gate": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_FENCE_GATE registration and item type: max 64; default 64",
+        "field": "OAK_FENCE_GATE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "43e834371aa876c25ac560fb90005cbb652357956d07bbeaa20d6f9c3063fe4f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:oak_log": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_LOG registration and item type: max 64; default 64",
+        "field": "OAK_LOG",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e64c93aaae482c94035867f507730d8d8d4d1b860873b2bba6b888f5d3654796",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:oak_sign": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_SIGN registration: [(16, 'Item.Properties.stacksTo')]",
+        "field": "OAK_SIGN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "4889f464bc1a464f7937be11e2df937660ed7614685f2906b2608cb52eae93b3",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 16
+    },
+    "minecraft:paper": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.PAPER registration and item type: max 64; default 64",
+        "field": "PAPER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "554a304a45ba170f049b9d0bc052e21db4e54df07c94e60b25aa39e8cecaf447",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:polished_tuff": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.POLISHED_TUFF registration and item type: max 64; default 64",
+        "field": "POLISHED_TUFF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "730436a34272a25e9e8edfc65bab8b0e445602e13acacea0aead30dd883a147f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:potato": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.POTATO registration and item type: max 64; default 64",
+        "field": "POTATO",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "88efa2cc0f7452d16d729355f8c137ef3ad8dbbb192bcc91847141a90d156c8f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:potion": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.POTION registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "POTION",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9110db041b504e08b824969036f9285e2fd5732efa48596f5bbb07e8b713b437",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:rabbit_stew": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.RABBIT_STEW registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "RABBIT_STEW",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "61bc65e6196c37f37eaa092eb79e8c40a5258c7e0ccd6b60e83fbf8cd2e9d033",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:redstone": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.REDSTONE registration and item type: max 64; default 64",
+        "field": "REDSTONE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ad60060e8d917706c07b8de5bb45283690130994e16030704b65071628de714c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:redstone_lamp": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.REDSTONE_LAMP registration and item type: max 64; default 64",
+        "field": "REDSTONE_LAMP",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "f8fc64cf61a01f4e5668cd9a918a5d035975d4a19d9b2247e97f1e62eae42698",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:repeater": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.REPEATER registration and item type: max 64; default 64",
+        "field": "REPEATER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "df10ec01b71e0bacbcb8909101deb96cff2875a34118f046b2afd3e57ae88f03",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:saddle": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SADDLE registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "SADDLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "be3ced05405bcfdeb5ca10f46a875a10406f7a52a6c94946da9115ead77e3428",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:sand": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SAND registration and item type: max 64; default 64",
+        "field": "SAND",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d5c0d5719d1fc8a159dfd16bd7935a159eb5e68747087c7deb9dab42f5ef397d",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:scaffolding": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SCAFFOLDING registration and item type: max 64; default 64",
+        "field": "SCAFFOLDING",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "6ca7269ad72b29629467cd8d7db4bb210976d8b2be5b632f14c198df751dfb91",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:sea_lantern": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SEA_LANTERN registration and item type: max 64; default 64",
+        "field": "SEA_LANTERN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "2f76e5cbc333036b895ce0bd138dbde9c8e2da4f3a1ebaf193cd894514a6303f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:shield": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SHIELD registration: [(1, 'Item.Properties.durability')]",
+        "field": "SHIELD",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "b5df1904e5296dba69c4a0270cf70d2e7633f5cafa8d88be989116c98296c653",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:smithing_table": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SMITHING_TABLE registration and item type: max 64; default 64",
+        "field": "SMITHING_TABLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "74adcdfbaa819ccae7c8bad573e4dcca5f58dd20a253e499526e7e831bc6ae1a",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:spruce_log": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SPRUCE_LOG registration and item type: max 64; default 64",
+        "field": "SPRUCE_LOG",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "3efc21a502165e9c71956098fce5e853d312eb4d0c581b54e011d331edd1fcc4",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:spruce_planks": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SPRUCE_PLANKS registration and item type: max 64; default 64",
+        "field": "SPRUCE_PLANKS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "367d2527be6c45a741b549e123b039db04e1d679917704a918b2d68705c3eec8",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:spyglass": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SPYGLASS registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "SPYGLASS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "bb29fe17a80e45b982590ca10c675f4abf68111b125703958910d6116e68fcf5",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:stick": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STICK registration and item type: max 64; default 64",
+        "field": "STICK",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "f748cf4768ef4d163946001cb319149b9e605b78c978835bd17edab3f966ccd9",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:stone": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STONE registration and item type: max 64; default 64",
+        "field": "STONE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d375bb8c051ca8beb05cb1ba019138a9bc540b2ac8d9cc62c8a07168d5e6f908",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:stone_brick_slab": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STONE_BRICK_SLAB registration and item type: max 64; default 64",
+        "field": "STONE_BRICK_SLAB",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "7ff178670babfb14ebcb16b36c94940f18057bb6d89c559572a75e258a18871b",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:stone_bricks": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STONE_BRICKS registration and item type: max 64; default 64",
+        "field": "STONE_BRICKS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "5077b7f684e6ab7e3f1b077a4f5d1d0a08cdfd01ca689a9a99ecfc53a8849641",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:stone_slab": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STONE_SLAB registration and item type: max 64; default 64",
+        "field": "STONE_SLAB",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "836c20124df0a2012cdceccc9ae69bf870b5e70ce9eb39bdb4b77ebb3f0d2473",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:stripped_spruce_log": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STRIPPED_SPRUCE_LOG registration and item type: max 64; default 64",
+        "field": "STRIPPED_SPRUCE_LOG",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9225d526f76c7202eb3a7eb99718d79caeabed1ffed3d6e4bef4de59038ee0bd",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:target": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TARGET registration and item type: max 64; default 64",
+        "field": "TARGET",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "0b32c0e59305d47da8a4cefb03e410b67cca2201a497f033cd6cfb14aba25a0f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:terracotta": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TERRACOTTA registration and item type: max 64; default 64",
+        "field": "TERRACOTTA",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d2423db5fc766b4b647a11951272d900ef9db56e29226eb3e87d9a677bdc0ee6",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:tinted_glass": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TINTED_GLASS registration and item type: max 64; default 64",
+        "field": "TINTED_GLASS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "aa2ce02b46f5cb79e19e315eae6b13b8ae6da2bf6118f7d22cff8aa504cf98df",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:torch": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TORCH registration and item type: max 64; default 64",
+        "field": "TORCH",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "52965b2bd58e7b11eb568798f7df0eb85ae4f1790a56c218260e0ecc5cb0fe0b",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:tuff": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TUFF registration and item type: max 64; default 64",
+        "field": "TUFF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "9071e1eee4f6d7f9f8668fb0bf228bbed7533cd6f1a89c74c2d6fc144152a970",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:wheat": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.WHEAT registration and item type: max 64; default 64",
+        "field": "WHEAT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "3a014e3b7bd79fe01b5449d1b3aa5829c816305b8b8336842c8bbdcdd05df520",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 64
+    },
+    "minecraft:white_bed": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.WHITE_BED registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "WHITE_BED",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d86f42f0987df203dc93d4d029e698d471652e876f0d9850e996dedc846c99e9",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:writable_book": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.WRITABLE_BOOK registration: [(1, 'Item.Properties.stacksTo')]",
+        "field": "WRITABLE_BOOK",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "42f5ea576cef9bffeb7d56aceab422a79f7b6f0115e9804b1e12a64184af7dfa",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 1
+    },
+    "minecraft:written_book": {
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.WRITTEN_BOOK registration: [(16, 'Item.Properties.stacksTo')]",
+        "field": "WRITTEN_BOOK",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "a59db60506db732dc7672df0d56a19b4dd1907fb26ee073048869ee02187a945",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "max_stack_size": 16
+    },
+    "numismatics:banking_guide": {
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "registry block field: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "max_stack_size": 64
+    },
+    "numismatics:bevel": {
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "generated makeCoin registration: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.makeCoin has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "max_stack_size": 64
+    },
+    "numismatics:cog": {
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "generated makeCoin registration: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.makeCoin has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "max_stack_size": 64
+    },
+    "numismatics:sprocket": {
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "generated makeCoin registration: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.makeCoin has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "max_stack_size": 64
+    },
+    "sophisticatedbackpacks:backpack": {
+      "evidence": {
+        "class": "net/p3pp3rf1y/sophisticatedbackpacks/init/ModItems.class",
+        "classes": [
+          "net.p3pp3rf1y.sophisticatedbackpacks.init.ModBlocks",
+          "net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems"
+        ],
+        "detail": "registry invokedynamic: net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems -> net/p3pp3rf1y/sophisticatedbackpacks/init/ModItems.lambda$static$0 has no stack override; registry invokedynamic: net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems -> net/p3pp3rf1y/sophisticatedbackpacks/init/ModItems.lambda$static$74 has no stack override; registry invokedynamic: net.p3pp3rf1y.sophisticatedbackpacks.init.ModBlocks -> net/p3pp3rf1y/sophisticatedbackpacks/init/ModBlocks.lambda$static$0 has no stack override; registry invokedynamic: net.p3pp3rf1y.sophisticatedbackpacks.init.ModBlocks -> net/p3pp3rf1y/sophisticatedbackpacks/init/ModBlocks.lambda$static$6 has no stack override; exact constructor-chain override: BackpackItem constructor calls Item.Properties.stacksTo(1)",
+        "jar": "sophisticatedbackpacks-1.21.1-3.25.78.2107.jar",
+        "jars": [
+          {
+            "name": "sophisticatedbackpacks-1.21.1-3.25.78.2107.jar",
+            "sha256": "2848ff4d01793268859d36263793bf042226a34efaf3a45e849833490b8cc4a1"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "2848ff4d01793268859d36263793bf042226a34efaf3a45e849833490b8cc4a1"
+      },
+      "max_stack_size": 1
+    },
+    "supplementaries:bamboo_spikes_tipped": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$85 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:bomb": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$2 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:faucet": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$126 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$127 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:jar": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$45 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$46 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$47 -> [(16, 'Item.Properties.stacksTo')]",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 16
+    },
+    "supplementaries:rope": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$74 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$76 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:rope_arrow": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$4 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:timber_frame": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$169 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$170 has no stack override; registry invokedynamic: net.mehvahdjukaar.supplementaries.reg.ModRegistry -> net/mehvahdjukaar/supplementaries/reg/ModRegistry.lambda$static$176 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "supplementaries:way_sign_oak": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/supplementaries/reg/ModRegistry.class",
+        "classes": [
+          "net.mehvahdjukaar.supplementaries.reg.ModRegistry"
+        ],
+        "detail": "Supplementaries ModRegistry WAY_SIGN_ITEMS dynamic SignPostItem registration; no stack override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+        "jars": [
+          {
+            "name": "supplementaries-1.21.1-3.9.1-neoforge.jar",
+            "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "cdbbeb6eca83a1d6005acd5edfca360102ea798129ce7a0941e34e59e15b5c7b"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:alchemical_cauldron": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$0 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:alchemy_table": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:altar_cleansing": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:altar_infusion": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$1 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:altar_inspiration": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$2 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:altar_pillar": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:altar_tip": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:basic_crossbow": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$13 -> [(1, 'Item.Properties.durability')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:blood_bottle": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$16 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:blood_container": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$3 has no stack override; registry direct property: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry direct> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:blood_grinder": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$4 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:blood_sieve": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$6 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:coffin_red": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$82 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:crossbow_arrow_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$20 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:crossbow_arrow_spitfire": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$21 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:crossbow_arrow_teleport": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$23 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:crossbow_arrow_vampire_killer": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$22 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:garlic": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks",
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$7 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:garlic_diffuser_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$9 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:holy_water_bottle_ultimate": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$37 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:human_heart": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$69 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:hunter_axe_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$42 has no stack override; exact constructor-chain override: HunterAxeItem -> VampirismSwordItem -> SwordItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:hunter_coat_chest_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$45 has no stack override; exact constructor-chain override: HunterCoatItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:hunter_coat_feet_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$48 has no stack override; exact constructor-chain override: HunterCoatItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:hunter_coat_head_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$51 has no stack override; exact constructor-chain override: HunterCoatItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:hunter_coat_legs_normal": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$54 has no stack override; exact constructor-chain override: HunterCoatItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:hunter_table": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:injection_garlic": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$71 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:item_alchemical_fire": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:potion_table": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$21 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:pure_salt_water": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$41 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:stake": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; exact constructor-chain override: StakeItem -> VampirismSwordItem -> SwordItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:umbrella": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; exact constructor-chain override: UmbrellaItem constructor calls Item.Properties.stacksTo(1)",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:vampire_book": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:vampire_cloak_red_black": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$89 has no stack override; exact constructor-chain override: ColoredVampireClothingItem -> VampireClothingItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:vampire_cloak_white_black": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$90 has no stack override; exact constructor-chain override: ColoredVampireClothingItem -> VampireClothingItem -> ArmorItem durability constructor",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vampirism:vampire_fang": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModItems -> de.teamlapen.vampirism.core.ModItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:vampire_orchid": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModBlocks -> de/teamlapen/vampirism/core/ModBlocks.lambda$static$18 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 64
+    },
+    "vampirism:weapon_table": {
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModBlocks.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModBlocks"
+        ],
+        "detail": "registry block field: de.teamlapen.vampirism.core.ModBlocks -> de.teamlapen.vampirism.core.ModBlocks.<registry field> -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "max_stack_size": 1
+    },
+    "vista:hollow_cassette": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/vista/VistaMod.class",
+        "classes": [
+          "net.mehvahdjukaar.vista.VistaMod"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.vista.VistaMod -> net/mehvahdjukaar/vista/VistaMod.lambda$static$12 -> [(1, 'Item.Properties.stacksTo')]",
+        "jar": "vista-1.21.1-5.4.4-neoforge.jar",
+        "jars": [
+          {
+            "name": "vista-1.21.1-5.4.4-neoforge.jar",
+            "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+      },
+      "max_stack_size": 1
+    },
+    "vista:television": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/vista/VistaMod.class",
+        "classes": [
+          "net.mehvahdjukaar.vista.VistaMod"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.vista.VistaMod -> net/mehvahdjukaar/vista/VistaMod.lambda$static$5 has no stack override; registry invokedynamic: net.mehvahdjukaar.vista.VistaMod -> net/mehvahdjukaar/vista/VistaMod.lambda$static$6 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "vista-1.21.1-5.4.4-neoforge.jar",
+        "jars": [
+          {
+            "name": "vista-1.21.1-5.4.4-neoforge.jar",
+            "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+      },
+      "max_stack_size": 64
+    },
+    "vista:viewfinder": {
+      "evidence": {
+        "class": "net/mehvahdjukaar/vista/VistaMod.class",
+        "classes": [
+          "net.mehvahdjukaar.vista.VistaMod"
+        ],
+        "detail": "registry invokedynamic: net.mehvahdjukaar.vista.VistaMod -> net/mehvahdjukaar/vista/VistaMod.lambda$static$8 has no stack override; registry invokedynamic: net.mehvahdjukaar.vista.VistaMod -> net/mehvahdjukaar/vista/common/view_finder/ViewFinderMenu.create has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "vista-1.21.1-5.4.4-neoforge.jar",
+        "jars": [
+          {
+            "name": "vista-1.21.1-5.4.4-neoforge.jar",
+            "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5"
+      },
+      "max_stack_size": 64
+    }
+  },
+  "kind": "pinned_bytecode_stack_receipt",
+  "runtime": {
+    "default_max_stack_size": 64,
+    "minecraft_jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+    "minecraft_sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+  },
+  "schema_version": 1
+}

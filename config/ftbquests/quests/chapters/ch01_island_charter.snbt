@@ -7,14 +7,14 @@
 	id: "7A11C3DF00100000"
 	images: [
 		{
-			alpha: 18
-			height: 5
-			image: "poiesis:textures/questpics/vvh/rivalry_without_ruin.png"
+			alpha: 130
+			height: 13.5d
+			width: 24
+			image: "poiesis:textures/questpics/vvh/island_remembers.png"
 			order: -40
 			rotation: 0.0d
-			width: 12
 			x: 0
-			y: 3
+			y: -1
 		}
 	]
 	order_index: 0
@@ -102,7 +102,6 @@
 			description: ["You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. Event guests may sign with a sponsor member present and backfill the third promise later. The calling board is now open."]
 			icon: { id: "minecraft:writable_book" }
 			id: "7A11C0DF00100005"
-			min_required_dependencies: 2
 			rewards: [
 				{
 					id: "7A11C2DF00100003"
@@ -120,6 +119,7 @@
 			title: "Sign the Charter"
 			x: 0
 			y: 3
+			min_required_dependencies: 2
 		}
 	]
 	title: "01 · The Island Charter"

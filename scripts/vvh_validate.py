@@ -35,6 +35,21 @@ class Token:
     offset: int
 
 
+@dataclass(frozen=True)
+class SNBTNumber:
+    """A numeric literal with its loader-visible kind and suffix preserved.
+
+    The normal parser intentionally returns Python numbers for validation
+    arithmetic.  Source-drift checks can opt into this lossless form so an
+    unsuffixed integer cannot compare equal to a long, or an unsuffixed float
+    to an explicit double, merely because Python considers their values equal.
+    """
+
+    value: int | float
+    kind: str
+    suffix: str
+
+
 TOKEN_RE = re.compile(
     r'(?://[^\n]*|/\*.*?\*/|[\s,]+)'
     r'|([{}\[\]:])'
@@ -73,9 +88,10 @@ class Tokenizer:
 
 
 class Parser:
-    def __init__(self, text: str, source: str) -> None:
+    def __init__(self, text: str, source: str, *, preserve_numeric_types: bool = False) -> None:
         self.tok = Tokenizer(text, source)
         self.source = source
+        self.preserve_numeric_types = preserve_numeric_types
         self.look = self.tok.next()
 
     def consume(self, kind: str) -> Token:
@@ -112,8 +128,14 @@ class Parser:
                 num, suffix = m.groups()
                 try:
                     if "." in num or "e" in num.lower() or suffix.lower() in {"f", "d"}:
-                        return float(num)
-                    return int(num)
+                        value: int | float = float(num)
+                        kind = "float"
+                    else:
+                        value = int(num)
+                        kind = "int"
+                    if self.preserve_numeric_types:
+                        return SNBTNumber(value=value, kind=kind, suffix=suffix.lower())
+                    return value
                 except ValueError:
                     pass
             return raw

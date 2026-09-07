@@ -1,123 +1,105 @@
 # VvH Campaign Design
 
-Status: current five-chapter campaign.
+Status: current five-chapter campaign. The generated source and live SNBT are
+the authority; this document explains the player-facing shape without adding
+mechanics that are not present in the files.
 
 ## Player loop
 
-Players read and sign the Island Charter, choose House, Neutral, or Order, then either exit faction progression as Neutral or build a four-tier faction identity. Specialized branches teach real pack mechanics and leave behind useful places, equipment, routes, records, and services. Currency earned through meaningful milestones returns to a weekly market board whose purchases remain useful after the main faction spine is complete.
-
-The campaign contains **52 quests**:
+Players acknowledge the Island Charter, choose House, Neutral, or Order, then
+follow the selected faction spine or leave faction progression as a protected
+Neutral opt-out. Faction branches teach concrete pack mechanics and reward
+useful equipment, workstations, records, routes, and services. Market Services
+is available after any calling and remains usable after faction progress.
 
 | Chapter | Quests | Function |
 |---|---:|---|
-| 01 · The Island Charter | 7 | Closed-loop rules and progress ownership |
-| 02 · Choose a Calling | 5 | Symmetric House / Neutral / Order decision |
-| 03 · Lantern Order | 15 | Four-tier Hunter spine plus ten branches |
-| 04 · House of Night | 15 | Four-tier Vampire spine plus ten branches |
-| 05 · Market Services | 10 | Weekly service catalogue and bounded fallback income |
+| 01 · The Island Charter | 5 | Three witnessed rules plus a terminal acknowledgement |
+| 02 · Choose a Calling | 5 | House, Neutral, Order, and a one-of-three continuation |
+| 03 · Lantern Order | 15 | Three required core quests, four hubs, eight optional leaves |
+| 04 · House of Night | 15 | Three required core quests, four hubs, eight optional leaves |
+| 05 · Market Services | 19 target | Four information nodes, ten building palettes, five progression/utility purchases |
+
+The generated campaign currently has **59 quests** after the 19-quest Market
+rebuild. Chapter 05 is the only chapter with a chapter-level hidden
+dependency-line default.
 
 ## Chapter 01 — The Island Charter
 
-The Charter is a compact mandatory loop:
+`Island Charter` opens three clauses: `Name Public Doors`, `Consent First`, and
+`Leave Work Standing`. `Sign the Charter` requires any two of those three
+dependencies (`min_required_dependencies: 2`) so a witnessed guest can join
+after two promises while the third is backfilled. The file records the
+exception explicitly; it is not a validator-only rule.
 
-`Island Charter → five required clauses → Sign the Charter`
-
-The terminal acknowledgement depends on every clause:
-
-- claim boundaries;
-- named public access;
-- consent and opt-in PvP;
-- reversible, claim-safe rivalry;
-- FTB Team shared-progress implications.
-
-Only rule acknowledgement uses checkmarks. Rewards are small, practical, and non-economic. Every later campaign chapter descends from the signed Charter.
+The Charter uses checkmark acknowledgements and practical map, torch, and bread
+rewards. It issues no currency. Every later chapter descends from its terminal.
 
 ## Chapter 02 — Choose a Calling
 
-The decision surface is visually symmetric:
+The decision surface is:
 
-`House of Night | Neutral | Lantern Order`
+`Join the House | Choose Neutral | Join the Order`
 
-- House and Order require native Vampirism evidence: the relevant entry item plus the actual faction advancement.
-- Neutral requires only an explicit choice. It has no profession-item gate.
-- Neutral receives one Sprocket, full iron armour, iron sword and complete iron tool set, shield, bed, and 32 cooked beef.
-- `Keep Doors Open` accepts any one calling and opens ordinary market services.
-- Neutral has no dedicated progression chapter and no hidden specialist chain.
+House and Order use native Vampirism item and advancement tasks. Neutral uses a
+single explicit acknowledgement and supplies a small personal starter kit:
+one Sprocket, 16 cooked beef, eight emeralds, 16 paper, a spyglass, shield,
+and white bed. It has no item prerequisite and no faction progression branch.
+
+`Keep Doors Open` depends on one of the three calling quests. It is a
+continuation acknowledgement, not a hidden three-of-three gate, and it opens
+the shared Market chapter.
 
 ## Chapters 03 and 04 — Faction campaigns
 
-Each faction has 15 quests arranged on mirrored macro-geometry:
+Each faction has a three-quest required core spine. Core III opens four optional
+building hubs; each hub has two optional specialty leaves. There is no
+any-three-of-eight threshold and no team capstone in the current files. The
+branches remain optional and do not gate shared Market access.
 
-- three mandatory core quests for Tiers I–III;
-- eight counted specialties, all unlocked only after Core III;
-- a true any-three-of-eight breadth gate;
-- two deeper optional public-place or archive branches;
-- one Tier IV team capstone.
+Lantern Order hubs are `Arcane Spire`, `Apothecary Lab`, `Survey Outpost`, and
+`Garrison Armory`. Their leaves cover holy support, defence, medicine, refuge,
+records, transit, armament, and artillery.
 
-The core cannot be skipped by taking an unrelated side quest. Optional branches are real choices rather than disguised mandatory work.
+House of Night hubs are `Dark Spire`, `Blood Foundry`, `Thrall Hall`, and
+`Blood Vault`. Their leaves cover shrouds, omens, extraction, transit, tithe,
+registry, reserve, and script.
 
-### Lantern Order identity
-
-The Hunter campaign centres on field readiness, medicine, holy support, wards, reconnaissance, armoury work, public refuge, and written records.
-
-Counted specialties:
-
-- Mercy Manual
-- Pure Defense
-- Stone Lantern
-- Refuge Stores
-- Patrol Transit
-- Hunter Armament
-- Field Ledger
-- Bright Oath
-
-Deep optional branches:
-
-- Open Watchpost
-- Archive Wall
-
-### House of Night identity
-
-The Vampire campaign centres on blood supply, nocturnal shelter, hospitality, ritual infrastructure, blood utility, secure transit, metallurgy, public refuge, and route records.
-
-Counted specialties:
-
-- Scarlet Script
-- Crimson Reserve
-- House of Doors
-- Guest Stores
-- Sunproof Transit
-- Sieve Extraction
-- Moon Courier
-- Night's Due
-
-Deep optional branches:
-
-- Open Guest Hall
-- Night Archive
-
-### Palette quests
-
-`Stone Lantern` and `House of Doors` use the Palette Quest pattern. The task proves access to a compact reachable palette; the reward provides enough matching stock and construction support to build a coherent faction place. The quest does not pretend FTB Quests can inspect a complex assembled building.
+The validator reports the minimum personal-currency route from the live graph
+instead of assuming a historical breadth gate. Current lower bounds to Core
+III are derived at validation time.
 
 ## Chapter 05 — Market Services
 
-Market Services is a weekly service board, not another faction ladder. All purchase inputs are explicitly consumed, all services are team-scoped, and all repeatables use a seven-day cooldown.
+Market Services is a catalogue with four central information nodes, ten
+building palettes on the left, and five progression or utility purchases on
+the right. Purchases consume explicit Numismatics inputs and grant one shared
+reward entitlement set per FTB Team payment. Building services use a
+180-second cooldown; progression and utility services use 300 seconds.
+`Rumour Ledger` is the only weekly faucet: it pays one team
+Bevel-equivalent per 604800 seconds. The short purchase delays do not change
+the weekly currency schedule.
 
-Catalogue:
+The board cost is generated from the revised source and must be refreshed with
+`scripts/vvh_economy_report.py` after Chapter 4 and Chapter 5 edits. The
+faucet is intentionally too small to fund the board by itself. Finite common
+materials in paid palettes are allowed after reviewing recycling, NPC
+exchanges, denomination conversion, team fragmentation, and milestone
+shortcuts; free bulk construction rewards remain separately bounded. The
+current source contains no custom KubeJS state bridge or fabricated faction
+lock.
 
-- Field Kit
-- Works Kit
-- Arcane Kit
-- Foundry Kit
-- Recovery Crate
-- Transit Crate
-- Concord Bond
+## Verification boundary
 
-`Rumour Ledger` is a deliberately weak fallback faucet: one submitted written field ledger yields one team Bevel per week. It cannot finance the board by itself.
+Native item and advancement tasks prove the relevant inventory or advancement
+state. Checkmarks record rules, choices, and human-reviewed social outcomes.
+Static validation proves syntax, graph integrity, file provenance, and the
+declared economy. It does not prove client rendering, already-earned
+advancement synchronization, reward delivery between teammates, or resource
+pack artwork; those remain runtime gates in `UNRESOLVED.md`.
 
-## Verification philosophy
-
-Substantive mod progression uses native item and advancement tasks. Checkmarks are restricted to rules, voluntary identity choices, and human-reviewed social or public-use outcomes. Inventory tasks prove inventory facts, not functioning multiblocks or completed architecture.
-
-No player-facing text claims fake faction locking, validator behaviour, or authorial balance intent. The graph and rewards must tell the truth without a footnote from the designer.
+The installed FTB Quests claim behavior requires a two-account acceptance test:
+one payer submits the exact displayed price, the team receives one shared set
+of entitlements, teammates can coordinate collection, and an occupied
+inventory does not silently duplicate or destroy stock. Static `team_reward`
+flags are evidence to inspect, not proof of this transaction.

@@ -1,81 +1,96 @@
 # VvH Human Quest Preferences
 
-Status: current. Maintained artifact: update when later human edits provide new evidence.
+Status: current review baseline. The generator, reviewed override record, and
+live Packwiz files are authoritative; this document records the preferences
+the validator should preserve.
 
-These preferences were mined from manual correction sequences on `dev`
-(post-generation repair passes, palette iterations, ID/count fixes, and the
-f3ecc4b Market-crate addition) plus the explicit Ch4/Ch5 review appendices
-(2026-09). Newest deliberate human corrections outrank older generated
-states; repeated corrections are requirements, one-offs are heuristics.
+## Enforced preferences
 
-## Hard requirements (enforced by validators where marked [V])
+- Keep `scripts/vvh_campaign_v3.py` as the authoring source and port accepted
+  live edits into its explicit `vvh_campaign_overrides.py` record.
+- Preserve stable quest, task, reward, and table IDs when changing wording,
+  rewards, or layout.
+- Keep the five-chapter architecture: Charter, Callings, Lantern Order, House
+  of Night, and Market Services.
+- Keep Neutral a protected opt-out. It has one checkmark, no item prerequisite,
+  no faction branch, and the current practical personal kit.
+- Keep Chapter 05 dependency lines hidden at chapter level; all other chapters
+  retain visible dependency lines unless a quest explicitly hides them.
+- Keep Market purchases on the shared paid-entitlement path: one explicit
+  payment and one shared reward entitlement set per FTB Team, with explicit
+  consumed prices, 180-second building cooldowns, and 300-second
+  progression/civic cooldowns. Keep Rumour Ledger team-scoped and weekly.
+- Keep general masonry kits on raw Stone rather than Cobblestone, avoid premium
+  currency loops, and keep each reward entry within one stack.
+- Use native item and advancement tasks for mechanical progression. Use
+  checkmarks for rules, choices, and human-reviewed social outcomes.
+- Keep titles short, descriptions explicit about scope and price, and item tasks
+  explicit about `consume_items` semantics.
+- Verify new non-vanilla IDs against the indexed Packwiz artifact, not an
+  unrelated downloaded JAR or display-name guess.
 
-- Authoritative source is `scripts/vvh_campaign_v3.py`; generated SNBT must
-  never be hand-edited without porting the change into the generator. [V: drift check]
-- Quest-ID stability beats generator prettiness: legacy IDs (e.g. Market
-  crates 17-20 with task IDs 0x21-0x24 and reward IDs 0x31-0x48) are
-  preserved across redesigns. [V: protected-crate check]
-- Minimum semantic diff: a palette rebalance must not rewrite tuned rewards,
-  titles, dependencies, or coordinates, and vice versa.
-- Chapter 5 dependency lines are invisible (`default_hide_dependency_lines`
-  on the Market chapter only). [V: chapter-default check + renderer]
-- Market layout is two-wing: building palettes left, progression kits
-  right, explanations center. [V: department report]
-- Purchase cooldowns are short (building 180s, progression 300s); the
-  Rumour Ledger faucet stays weekly and team-scoped. [V: cooldown checks]
-- Purchases are personal-scope; bulk kits must not multiply per team
-  member. Descriptions state scope, price, consumption, and cooldown. [V]
-- No purchase rewards its own input currency; no easy diamond redemption;
-  no Handcrafted-specific kit. [V: prohibited-premium + handcrafted checks]
-- Building kits provide raw flexible stock (general masonry uses raw Stone,
-  never Cobblestone-as-masonry), never premade structures, and one
-  coherent log/masonry identity per palette. [V: masonry checks]
-- Multi-stack rewards ship as multiple unique 64-count entries, never one
-  giant count. [V: stack-safety check]
-- Candidate modded material names must be verified from pinned JARs before
-  use (Umbra palette and Abyssal alloy names were rejected unverified). [V:
-  verified-ID sets]
-- Faction/specialty branches never hard-gate shared server progression;
-  Neutral opt-out stays viable. [V: neutral + reachability checks]
-- Titles stay within four words; no unescaped ampersand-space. [V]
-- Checkmark-only quests issue no currency (except the protected Neutral
-  opt-out). [V]
-- Chapter core spines keep currency parity across factions (Tier I-III
-  currency [1, 2, 4] bevel-equivalent). [V: parity check]
+## Current structural baseline
 
-## Soft heuristics (review, not enforced)
+Each faction has a three-quest required core, four optional building hubs, and
+eight optional leaves. There is no any-three-of-eight breadth gate or team
+capstone in the current files. The validator derives route and economy facts
+from the emitted graph instead of carrying those historical assertions.
 
-- Prefer centered vertical World-Building spines with obvious hubs; side
-  clusters compact with negative space and short local dependencies.
-- Prefer mechanically concrete quests (workstations, lanes, services) over
-  generic collect-filler; use mod-specific stations over vanilla surrogates.
-- Construction support should feel generous but never trivialize gathering:
-  past construction rewards went massive quantities -> themed palettes ->
-  structured stacks -> reductions -> streamlining. Preserve that lesson.
-- Reward time-savers, cooperation, theme, and next-activity support; avoid
-  diamonds, generic precious metals, armor tiers, boss gear, high-tier
-  spells, and faction advancement as reflex rewards.
-- Commission quests should establish functional identity (signals, rig,
-  hearth, archive), not inspect material piles; commissions pay controlled
-  currency sized for a matching Market kit without creating loops.
-- Static renders are diagnostic only and must be labeled as such; real
-  client acceptance is required for icons, tasks, codecs, cooldowns, team
-  behavior, and overflow handling.
+Hunter and Vampire share core payout values `[1, 2, 4]` Bevel-equivalent. Their
+optional branch payouts currently total 47 and 41 personal Bevel-equivalents;
+the validator reports that difference as a warning for review rather than
+calling the ledgers equal.
 
-## Explicit reversals on record
+## Review heuristics
 
-- Diamonds removed from building bundles and Concord Bond.
-- Generic iron/arrow/flint rewards replaced by mod-specific equivalents.
-- Handcrafted-specific kit proposed, then explicitly rejected.
-- Stack-of-Diamonds redemption considered, rejected without a written model.
-- Weekly team-scoped Market model replaced by short-cooldown personal model.
-- Cobblestone-as-masonry replaced by raw Stone in general kits.
-- Unavailable Cobblemon content removed; unverified IDs are not guessed.
+Prefer centered vertical spines, compact side branches, concrete workstations,
+useful time-savers, coherent material palettes, and restrained utility rewards.
+Static renders are diagnostic only. Client captures are required for icons,
+text wrapping, codecs, cooldowns, reward delivery, and team behaviour.
 
-## Enforcement map
+## Superseded decisions
 
-- `scripts/vvh_campaign_v3.py --check`: source/sink drift.
-- `scripts/vvh_campaign_v3_validate.py`: all [V] rules above plus the
-  machine-readable `market_report` (quest, department, price, cooldown,
-  scope, slots, full-stack equivalents, namespaces).
-- `scripts/vvh_render_layouts.py`: effective hidden-line rendering.
+The full-iron Neutral kit, 32-beef requirement, any-three-of-eight gate,
+weekly purchase board, faction capstones, and exact economic parity belong to
+older designs. They must not be reintroduced by a validator, preview, or
+documentation update without a new reviewed source change.
+
+## Corrected brief additions (2026-09-07)
+
+The structured evidence ledger is
+`docs/vvh/HUMAN_QUEST_PREFERENCES.json`. It records concrete before/after
+changes, supporting commits or explicit instructions, confidence, scope, and
+how each preference is enforced. Commit authorship and a commit subject are
+provenance only; they are not evidence of a human preference by themselves.
+
+The current brief approves generous common-material building palettes when
+they are paid Market purchases. That approval is scoped to finite paid sinks;
+it does not restore large free construction grants throughout the campaign.
+
+Paid Market purchases have a shared-entitlement exception to the usual
+personal-reward default: one explicit currency payment by an FTB Team buys
+one shared set of reward entitlements. The installed FTB Quests claim key and
+claim order must be verified in a two-account test. `team_reward: false` alone
+does not make quest progression personal or prevent team multiplication. The
+seven-day Rumour Ledger is a separate team-scoped recurring faucet; its slow
+issuance is not changed by the 180-second building or 300-second progression
+purchase delays.
+
+The four preserved Market crate identities are `7A11C0DF00500011` through
+`7A11C0DF00500014`, with the corresponding existing task IDs ending in
+`00500021` through `00500024`. The `7A1105AA...` appendix IDs are rejected.
+Existing reward IDs remain stable where reward identity remains unchanged.
+
+Finite common-material help in a purchased palette is not automatically an
+infinite exploit. Review it against price, cooldown, team claim scope,
+recycling, NPC exchange, denomination conversion, and descendant milestone
+shortcuts. A reward that merely helps a later task is a finite continuity
+overlap; a repeatable reward that reproduces its input or defeats a decisive
+workstation remains a release blocker.
+
+The pinned Create Numismatics candidate artifact used for current registry
+investigation is
+`CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar`, SHA-256
+`1375BA1B50E53FD09435029B5B2D5B94779BA397CCA7E01180D07B0F624E5B9B`.
+This is artifact evidence only; it does not prove that a live client loaded
+the item registry or that an item is obtainable in survival.

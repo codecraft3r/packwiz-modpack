@@ -11,10 +11,14 @@ When sources disagree, use this order:
 1. The installed Packwiz index, current configs, datapacks, and installed-artifact evidence.
 2. The current repository-scoped quest-authoring and SNBT-validation skills.
 3. `docs/vvh/SERVER_RULES.md`.
-4. `scripts/vvh_campaign_v3.py`, the deterministic authoring source for the five live chapter files.
+4. `scripts/vvh_campaign_v3.py`, plus the reviewed stable-ID overlay in
+   `scripts/vvh_campaign_overrides.py`, the deterministic authoring source for
+   the five live chapter files and the reward table.
 5. The generated live SNBT under `config/ftbquests/quests/`.
 6. `docs/vvh/campaign_manifest.json` and current validation evidence under `docs/vvh/evidence/current/`.
-7. Current design and balance documentation under `docs/vvh/`.
+7. `docs/vvh/HUMAN_QUEST_PREFERENCES.md` and its structured companion
+   `docs/vvh/HUMAN_QUEST_PREFERENCES.json` for scoped human design rules.
+8. Current design and balance documentation under `docs/vvh/`.
 
 The installed pack wins over remembered IDs, display-name guesses, old prompts, old ZIPs, and historical prose.
 
@@ -26,11 +30,44 @@ The installed pack wins over remembered IDs, display-name guesses, old prompts, 
 - `config/ftbquests/quests/data.snbt`
 - `config/ftbquests/quests/lang/en_us.snbt`
 - the five live chapter SNBT files
+- `config/ftbquests/quests/reward_tables/holy_focus_choice.snbt`
 - `docs/vvh/campaign_manifest.json`
 
-Normal generation preserves unknown chapter files. Named retired historical chapter files are removed only with the explicit `--prune-retired` flag. `--check` is read-only and fails when generated output drifts.
+Normal generation preserves unknown chapter files. Named retired historical chapter files are removed only with the explicit `--prune-retired` flag. `--check` is read-only, compares SNBT/JSON by parsed value while preserving loader-visible numeric suffixes, and fails when generated output drifts.
+
+The overlay records accepted live commits `92a9020`, `4ed3207`, and `777a1e0`
+by stable quest ID. A generator run cannot silently erase those reviewed
+changes, and the manifest records the same provenance list.
 
 Derived catalogues, review renders, validation reports, Packwiz hashes, and runtime evidence remain owned by their dedicated tools. They are not silently overwritten by the campaign generator.
+
+`scripts/vvh_economy_report.py` is a deterministic source-level audit. It
+reports personal versus shared one-time currency, paid sinks, recurring
+issuance, team fragmentation, and configured currency/recycling/NPC/
+denomination references. Its configured-reference matches are leads for
+inspection; they do not prove recipe, survival, registry, or runtime behavior.
+The report also compares one fixed player population as one team versus
+one-player teams; currency items remain transferable even when claim scope is
+team-scoped. Its packaged archive review records the pinned Numismatics
+digest, coin recipe/loot findings, and the explicit runtime gate for recycling
+and registry behavior.
+The current generated outputs are
+`docs/vvh/evidence/current/economy-current.json` and
+`docs/vvh/evidence/current/economy-current.md`; regenerate both from the same
+source revision and external server root.
+
+Paid Market purchases are a deliberate claim-scope exception to the ordinary
+personal reward default: one explicit payment must produce one shared reward
+entitlement set for the FTB Team. Confirm this against the installed FTB
+Quests claim key and a two-account runtime test. The weekly Rumour Ledger is a
+separate team-scoped faucet and remains on its seven-day cadence.
+
+`scripts/vvh_campaign_validate.py` is retained only for historical six-chapter
+checkouts and delegates to the current validator when pointed at this manifest.
+The older `scripts/vvh_sync_manifest.py` likewise delegates read-only checks to
+the v3 generator and refuses to rewrite a current manifest.
+`scripts/vvh_package_dropin.py` packages the current five-chapter shape and does
+not require the retired ten-chapter file names.
 
 ## Live architecture
 
@@ -68,6 +105,7 @@ python scripts/vvh_campaign_v3.py --check
 python scripts/vvh_campaign_v3_validate.py --output docs/vvh/evidence/current/campaign-validation.json
 python scripts/validate_snbt.py config/
 python scripts/test_validate_snbt.py
+python scripts/test_vvh_campaign_source.py
 packwiz refresh
 packwiz list
 packwiz refresh

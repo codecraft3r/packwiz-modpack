@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Read-only static validator for the six-chapter VvH campaign.
+"""Read-only legacy validator for the superseded six-chapter VvH campaign.
 
 The working tree is not modified unless ``--output`` is supplied.  This script
 uses the repository's structural SNBT validator, then parses the same files for
 campaign-specific graph, copy, ID, criteria, repeatable, and economy checks.
-It is deliberately narrower than ``vvh_validate.py``: the older validator is
-for the retired ten-chapter campaign and has incompatible IDs/economy rules.
+It is deliberately retained for historical checkouts only.  The current
+five-chapter campaign is validated by ``vvh_campaign_v3_validate.py``; running
+this entry point against a current checkout delegates there unless ``--legacy``
+is explicitly supplied.
 """
 from __future__ import annotations
 
@@ -974,7 +976,32 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT_DEFAULT, help="repository root (default: inferred)")
     parser.add_argument("--output", type=Path, default=None, help="explicit JSON report path; omitted means read-only")
+    parser.add_argument(
+        "--legacy",
+        action="store_true",
+        help="run the historical six-chapter checks even when the root is a current checkout",
+    )
     args = parser.parse_args()
+
+    if not args.legacy:
+        manifest_path = args.root.resolve() / "docs/vvh/campaign_manifest.json"
+        try:
+            manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            manifest = None
+        if isinstance(manifest, dict) and manifest.get("architecture") == "five-chapter-vvh-current":
+            validator = SCRIPT_DIR / "vvh_campaign_v3_validate.py"
+            command = [sys.executable, str(validator), "--root", str(args.root.resolve())]
+            if args.output is not None:
+                destination = args.output if args.output.is_absolute() else args.root.resolve() / args.output
+                command.extend(["--output", str(destination)])
+            print(
+                "vvh_campaign_validate.py is a legacy entry point; "
+                "delegating to vvh_campaign_v3_validate.py",
+                flush=True,
+            )
+            return subprocess.run(command, check=False).returncode
+
     report, exit_code = run(args.root, args.output)
     print(
         f"[{report['status'].upper()}] {report['summary']['passed']}/{report['summary']['checks']} checks passed; "

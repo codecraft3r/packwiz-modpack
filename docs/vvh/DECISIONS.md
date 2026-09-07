@@ -1,25 +1,27 @@
 # VvH Decisions
 
-Status: current. Supersedes earlier season-scale and multi-chapter campaign decisions.
+Status: current. A change to one of these decisions must update the generator,
+validator, preview bundle, and derived docs in the same review.
 
 | Decision | Current rule | Reason |
 |---|---|---|
-| World lifetime | Persistent SMP | Durable places and uneven attendance matter more than season throughput. |
-| Top-level architecture | Exactly five live chapters | Depth belongs inside the faction books, not in vanity chapter count. |
-| Progression factions | Lantern Order and House of Night | These are the two principal mechanical identities supported by Vampirism. |
-| Neutral | Protected opt-out in Chapter 02 | Neutral is not a third faction and must not require specialist progression items. |
-| Charter | Five mandatory clauses plus terminal acknowledgement | Topology must prove every rule was visited. |
-| Faction model | Core parity spine plus specialized branches | Players receive comparable progression weight without cloned play. |
-| Breadth gate | Any three of eight specialties after Core III | Core progression remains real while personality branches stay optional. |
-| Build verification | Palette Quest plus human review where necessary | Inventory ownership cannot prove a completed building or multiblock. |
-| Progress ownership | FTB Teams for quests; Vampirism for faction state | No custom synchronization layer is maintained. |
-| Faction locking | Native visibility only when proven | Player-facing labels are not access control. |
-| Rivalry | Claim-safe, reversible, opt-in | Content should create stories rather than repair work. |
-| Reward scope | Personal by default; team only for shared projects | Uneven attendance should not create accidental team-wide duplication. |
-| Currency scale | Bevel → Sprocket → Cog with depth | Capstones must not pay starter pocket change. |
-| Market | Weekly service board and economy sink | Currency remains useful after the linear spine ends. |
-| Fallback income | One team Bevel per written ledger per week | It is recovery access, not a primary money strategy. |
-| Generator | `scripts/vvh_campaign_v3.py` | The historical filename is retained; its output and scope are now unambiguous and idempotent. |
-| Historical generators | Non-authoritative unless explicitly restored | Old whole-campaign generation must not resurrect retired chapters. |
-| KubeJS | No custom quest-state glue | Native solutions and honest graph structure are preferred. |
-| Runtime evidence | Report separately from static validation | A clean parser result is not a playtest. |
+| World lifetime | Persistent SMP | Durable places and uneven attendance matter. |
+| Top-level architecture | Exactly five live chapters | Current depth is inside the two faction books and the shared market. |
+| Progression factions | Lantern Order and House of Night | These are the supported Vampirism identities. |
+| Neutral | Protected opt-out in Chapter 02 | No specialist item gate or faction tree. |
+| Charter | Three clauses plus terminal acknowledgement | `Sign the Charter` accepts any two witnessed clauses. |
+| Faction model | Three required core quests, four optional hubs, eight optional leaves | Concrete depth without a hidden breadth capstone. |
+| Market | Ten building palettes, five utility/progression purchases, one civic order, and three information/income nodes | Left and right departments surround the central board. |
+| Reward scope | Purchases and four House commissions use shared entitlements; existing personal rewards remain personal | One payment must not create a complete kit per teammate. Scope changes require existing-save claim migration. |
+| Currency | Bevel-equivalent accounting | Makes prices and payouts comparable across denominations. |
+| Generator | `scripts/vvh_campaign_v3.py` plus reviewed override record | Stable IDs and accepted live edits must survive generation. |
+| ID provenance | Indexed Packwiz metadata and hash-bound artifact evidence | Unrelated downloaded JARs are not pack membership proof. |
+| KubeJS | No custom quest-state glue | Native tasks and honest graph structure are preferred. |
+| Runtime evidence | Separate from static validation and preview | A clean parser result is not a playtest. |
+| Protected content | Preserve Chapters 1–3, exact live First Thirst, Chapter 4 geometry, and the four manually added crate identities | Correct actual compatibility defects with a documented exception, rather than restoring stale generator content. |
+| Construction stock | Generous paid palettes; modest thematic free rewards | The current request reverses the older blanket restriction on large purchased kits. |
+| Repeat cycle | 180-second building orders, 300-second utility orders, seven-day Rumour Ledger | Faster spending is separate from recurring currency issuance. |
+| Preservation guard | Hash-ledger preflight, staged validation, semantic quest diffs | External edits must be reconciled before the generator overwrites its outputs. |
+
+Historical season-scale plans, Free Companies chapters, any-three-of-eight
+gates, faction capstones, and weekly purchase boards remain research history.

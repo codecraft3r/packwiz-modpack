@@ -1,33 +1,66 @@
-# VvH Quest Rules — Recorded Exceptions & Intents
+# VvH Recorded Exceptions and Clarifications
 
-These entries are explicit dev decisions. They are deliberate departures or
-clarifications of `skills/ftb-quest-authoring`; auditors should treat them as
-approved, not as defects to fix.
+These entries describe deliberate current behaviour. They are part of the
+review record and should be changed only with a corresponding source edit.
 
-## F4 — "FTB Teams and Economy" pays 4 Bevels on a checkmark (ch01)
+## F1 — Charter guest pass
 
-The quest introduces the server economy and its reward doubles as a first
-currency handout so players immediately learn what coins are. Approved as an
-**express exception** to the weak-checks-never-currency rule: the payout is
-one-time, tiny, and pedagogical.
+`Sign the Charter` accepts any two of its three witnessed clauses. The third
+promise can be backfilled after a guest joins. This is encoded as
+`min_required_dependencies: 2` on the terminal quest.
 
-## F5 — "Choosing Neutrality" pays a full iron kit + 8 Bevels on a checkmark (ch02)
+## F2 — Neutral starter handout
 
-The neutral jump-start (full iron armor/tools, bed, food, currency) is
-intentional per the faction-campaign design rules: neutrals get a practical
-survival start and protection instead of faction power. Approved as an
-**express exception** to the weak-checks-never-currency rule. It is finite,
-one-time, comparable to faction route payouts, and creates no repeatable
-income.
+`Choose Neutral` is a checkmark choice with no item prerequisite. It pays a
+small personal kit: one Sprocket, 16 cooked beef, eight emeralds, 16 paper, a
+spyglass, shield, and white bed. The old full-iron and eight-Bevel proposal is
+superseded by the reviewed live edit.
 
-## F7 — "Welcome and Starter Kit" rewards compass + torches on a checkmark (ch01)
+## F3 — Explanatory Charter rewards
 
-**Intended.** This is the explanatory-class opener; the minimal utility items
-are a dev-approved starter handout under the explanatory-quest reward rule.
+The Charter opener supplies a map and torches, and the terminal supplies bread.
+These are finite explanatory rewards. The Charter does not issue currency.
 
-## F6 — Faction route currency parity
+## F4 — Faction branch asymmetry is visible
 
-Hunter and vampire routes must pay equivalent total currency. Current targets:
-both routes land at 22–24 Bevel-equivalents (1 Sprocket = 2 Bevels). When adding
-rewards to one faction line, check the other line's total and keep them within
-2 Bevel-equivalents of each other.
+Chapter 3 retains its manually reduced rewards. Chapter 4 now rewards its
+revised service objectives and pays each commission a one-time shared grant.
+The factions do not have identical personal and team issuance. Use the
+generated economy report for current values; do not restore older rewards
+to manufacture numeric parity.
+
+## F5 — Market transaction scope
+
+One player submits the displayed price into shared FTB Team quest progress.
+Each payment unlocks one shared set of reward entitlements and one shared
+repeat cycle. Members coordinate manual collection; they do not each receive
+a copy of the purchase. Bulk entries are excluded from claim-all. The exact
+installed client still needs two-account, partial-claim, cooldown, and
+full-inventory verification.
+
+Changing an existing reward from personal to shared changes its claim key.
+The offline save migration described in `SAVE_MIGRATION.md` is a release gate
+for existing worlds, even when the reward ID itself is preserved.
+
+## F6 — Purchased construction stock
+
+The current request explicitly approves generous paid building palettes and
+180-second purchase delays. This reverses the earlier small-kit and weekly
+purchase guidance. It does not authorize large free faction block grants or
+accelerated recurring currency issuance; Rumour Ledger remains weekly.
+
+## F7 — Exact First Thirst preservation
+
+The explicit instruction to leave First Thirst unchanged takes precedence over
+the new stack-splitting convention. Its baseline reward
+`7A11C2DF00400003` remains four Blood Bottles in one entry, although the pinned
+item has a maximum stack size of one. The preservation test guards the whole
+quest; this exception does not apply to new or redesigned rewards. Confirm
+delivery of all four bottles during client testing before an existing-world
+release.
+
+## Superseded records
+
+The former full-iron Neutral exception, checkmark currency payout, any-three-
+of-eight faction gate, weekly purchase board, and team capstones are historical
+records only. They remain searchable in Git history but are not current policy.

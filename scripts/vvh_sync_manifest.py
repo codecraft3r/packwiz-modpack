@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -191,6 +192,34 @@ def main() -> int:
     args = parser.parse_args()
     root = args.root.resolve()
     path = root / "docs/vvh/campaign_manifest.json"
+
+    # This synchronizer predates the deterministic v3 source model and would
+    # erase the reviewed overlay, architecture metadata, and stable IDs if it
+    # rewrote a current checkout.  Keep it available for historical six/
+    # ten-chapter snapshots, but route current repositories to the authoritative
+    # generator and refuse a destructive write.
+    try:
+        current_manifest = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        current_manifest = None
+    if isinstance(current_manifest, dict) and current_manifest.get("architecture") == "five-chapter-vvh-current":
+        generator = Path(__file__).resolve().with_name("vvh_campaign_v3.py")
+        if args.check:
+            print(
+                "vvh_sync_manifest.py is legacy; delegating current checkout to vvh_campaign_v3.py --check",
+                flush=True,
+            )
+            return subprocess.run(
+                [sys.executable, str(generator), "--root", str(root), "--check"],
+                check=False,
+            ).returncode
+        print(
+            "Refusing to rewrite the current five-chapter manifest with the legacy synchronizer. "
+            "Use scripts/vvh_campaign_v3.py for authoritative generation.",
+            file=sys.stderr,
+        )
+        return 2
+
     rendered = json.dumps(synchronize(root), indent=2, ensure_ascii=False) + "\n"
     current = path.read_text(encoding="utf-8")
     if args.check:

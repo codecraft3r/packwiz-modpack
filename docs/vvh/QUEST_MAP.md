@@ -1,78 +1,66 @@
 # VvH Quest Map
 
-Status: current generated graph.
+Status: current generated graph. Quest IDs and dependencies are authoritative
+in the chapter SNBT and `campaign_manifest.json`.
 
 ## Global flow
 
 ```text
-01 Island Charter
-  Island Charter
-    ├─ Claim Clearly
-    ├─ Name Public Doors
-    ├─ Consent First
-    ├─ Leave Work Standing
-    └─ Choose Teammates
-          all five clauses ──> Sign the Charter
-
-02 Choose a Calling
-  Sign the Charter ──> Three Callings
-    ├─ Join the House ──> House of Night Core I
-    ├─ Choose Neutral ──> no faction progression
-    └─ Join the Order ──> Lantern Order Core I
-          any one calling ──> Keep Doors Open ──> Market Services
+Island Charter
+  ├─ Name Public Doors
+  ├─ Consent First
+  └─ Leave Work Standing
+        any 2 of 3 ──> Sign the Charter
+                         └─> Three Callings
+                              ├─ Join the House ──> House of Night core
+                              ├─ Choose Neutral ──> protected opt-out
+                              └─ Join the Order ──> Lantern Order core
+                                    any 1 calling ──> Keep Doors Open
+                                                         └─> Market Services
 ```
 
 ## Lantern Order
 
 ```text
 Join the Order
-  └─ Salt and Steel [Core I]
-      └─ Consecrated Work [Core II]
-          └─ Long Watch [Core III]
-              ├─ Mercy Manual
-              ├─ Pure Defense ──> Open Watchpost
-              ├─ Stone Lantern
-              ├─ Refuge Stores
-              ├─ Patrol Transit
-              ├─ Hunter Armament
-              ├─ Field Ledger ──> Archive Wall
-              └─ Bright Oath
-                    any 3 of 8 ──> Three Lanterns
-                                      └─ Lantern Charter [Tier IV]
+  └─ Salt and Steel
+      └─ Building Supplies
+          └─ Long Watch
+              ├─ Arcane Spire ──> Mercy Manual / Pure Defense
+              ├─ Apothecary Lab ──> Consecrated Work / Refuge Stores
+              ├─ Survey Outpost ──> Field Ledger / Patrol Transit
+              └─ Garrison Armory ──> Hunter Armament / Siege Artillery
 ```
 
 ## House of Night
 
 ```text
 Join the House
-  └─ First Thirst [Core I]
-      └─ Red Measure [Core II]
-          └─ Inherited Edge [Core III]
-              ├─ Scarlet Script
-              ├─ Crimson Reserve
-              ├─ House of Doors
-              ├─ Guest Stores ──> Open Guest Hall
-              ├─ Sunproof Transit
-              ├─ Sieve Extraction
-              ├─ Moon Courier ──> Night Archive
-              └─ Night's Due
-                    any 3 of 8 ──> Three Seals
-                                      └─ Night Charter [Tier IV]
+  └─ First Thirst
+      └─ Red Measure
+          └─ House Charter
+              ├─ Dark Spire Commission ──> Dawn Watch / Nocturnal Broadcast
+              ├─ Blood Foundry Commission ──> Sieve Extraction / Sunproof Transit
+              ├─ Guest Hall Commission ──> Remedy Counter / Open House
+              └─ Blood Vault Commission ──> Crimson Reserve / Scarlet Script
 ```
+
+All four hubs and their leaves are optional. The current graph has no
+any-three-of-eight breadth gate and no team capstone.
 
 ## Market Services
 
 ```text
 Keep Doors Open ──> Read the Board
-  ├─ Field Kit
-  ├─ Works Kit
-  ├─ Arcane Kit
-  ├─ Foundry Kit
-  ├─ Recovery Crate
-  ├─ Transit Crate
-  ├─ Concord Bond
-  ├─ Rumour Ledger
-  └─ Know the Coins
+  ├─ 10 building palettes on the left
+  ├─ 5 utility purchases on the right
+  ├─ Concord Bond (central civic purchase)
+  ├─ Rumour Ledger (weekly team faucet)
+  └─ Know the Coins (one-time lesson)
 ```
 
-All market descendants are optional weekly services. The market has no mandatory staircase and does not create a Neutral faction tree.
+The 19-node Market hides dependency lines at chapter level. Each payment
+creates one shared reward entitlement for the team. Building purchases reset
+after 180 seconds; utility purchases after 300 seconds; the Rumour Ledger
+after 604800 seconds. Neutral has no
+dedicated faction tree and still reaches Market through `Keep Doors Open`.
