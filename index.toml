@@ -145,6 +145,10 @@ file = "config/ftbultimine-server.snbt"
 hash = "147a38645eda41c75721eb6825585f7af00b19bd3ae7e948779635747b8840e9"
 
 [[files]]
+file = "config/global_packs.toml"
+hash = "662abf0d1657fb2666f7dcfec93c28549ef50ac038d2787bbf0b18c4ea4dbc1d"
+
+[[files]]
 file = "config/icarus.json"
 hash = "a7a307c82c7da96e77b3ca708442d37629226d7e01f7c6ca57c714e9f9e634fa"
 
@@ -276,6 +280,30 @@ hash = "a3daddb5586ae695aa949852b49680c68dc007d6d0bf6351783f110469a2733b"
 file = "datapacks/vampires-need-umbrellas-curios.pw.toml"
 hash = "c0a24c2c3e847e15acd99774581aad9ffb06cc1f4db5ffcf02c4c9e50be0c189"
 metafile = true
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/free_company_mediator_panorama.png"
+hash = "b2a3eadea8a95f289ecad23ec44ce43cfce88197efe801d70a9993d2dbdb2a1e"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/house_of_night_blood_panorama.png"
+hash = "6b0e1fe5679cd736e009429fdc07012deccd32db4eb939af1b637976efd5cc25"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/island_remembers.png"
+hash = "b2dc6a9188e0c0d13906feda840de1bdb065157bb40b937863331d696405c0e6"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/lantern_order_holy_panorama.png"
+hash = "9c6249d39a31f7bdfefe6b8d7acc331cea2f0e3db51ad0a1729de8a648dad47f"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/rivalry_without_ruin.png"
+hash = "6994091d6e5c642788f694b1e360e60c71c7ea78a89a5640f483067475a6d81e"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/pack.mcmeta"
+hash = "b8f5a3f9394b558700d1005d91bd5a579c4cfdff4370050a92317dde39437dbd"
 
 [[files]]
 file = "kubejs/README.txt"

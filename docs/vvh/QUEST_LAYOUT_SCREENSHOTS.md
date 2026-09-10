@@ -18,9 +18,14 @@ quest coordinates remain unchanged.
 
 The supplied `poiesis-living-atlas-art-v5.zip` contains these existing assets
 (SHA-256 `d6d273dae29ab294618a1fae0738b99b1b9c176910cc75a572dcde7f81a95b4a`).
-The renders use that archive; no ZIP or new resource-pack installation is
-included in this source change. A client must have the Poiesis artwork loaded
-to display its namespaced images.
+The five referenced PNGs are distributed as an unpacked resource pack under
+`global_packs/required_resources/vvh_backgrounds/`. The installed Global Packs
+mod force-loads that directory through `config/global_packs.toml`. Packwiz
+ships each texture and `pack.mcmeta`; clients must update and restart to load
+the backgrounds. A server-only update cannot install client textures.
+
+Loader configuration follows the [Global Packs documentation](https://www.curseforge.com/minecraft/mc-mods/globalpacks).
+The source archive itself is not distributed or committed.
 
 The current campaign has five chapters and 59 quests:
 
