@@ -158,7 +158,7 @@ hash = "cfb180c05bcf11259b08d62e516e7a2cad0d25e727c4a6674f512d08977730d0"
 
 [[files]]
 file = "config/irons_spellbooks-server.toml"
-hash = "c35b15f31ab53a407fe1d5e022c0a2dff880450799b7d4077353d92e19be9c5f"
+hash = "4f3ae6a6e5abe021430935ac89c4fca1463fe9df018bcf4b5a026e5702c78cf1"
 
 [[files]]
 file = "config/irons_spellbooks_spell_config/global_config.json"
@@ -342,6 +342,11 @@ hash = "793e70a07961b1670ba13dcdfe2c1cfb1379df52485adc2d3ba5db128e9536a6"
 metafile = true
 
 [[files]]
+file = "mods/appleskin.pw.toml"
+hash = "716d930feff599bf9ce732e05979fbae8025dc8a3c13ccf4f1cb207a70883bc6"
+metafile = true
+
+[[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "187eafde5974beee1263538b462b7b8fe2fc8948c5d413980d9796d55928580b"
 metafile = true
@@ -398,7 +403,7 @@ metafile = true
 
 [[files]]
 file = "mods/cataclysm-spellbooks.pw.toml"
-hash = "d081b466ddf0c20397f7e282944dd0df7d359c0373eeaed8a390117a62bf838c"
+hash = "48a43f54f8e00b8c578aff25efcb824019016be3b432374df87a6e0960728aa5"
 metafile = true
 
 [[files]]
@@ -914,6 +919,11 @@ metafile = true
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
 hash = "4ea27e021d02d575bf7f4feb1f6ec65b9e097f3a2d9cfccad92d594b1594c037"
+metafile = true
+
+[[files]]
+file = "mods/overflowing-bars.pw.toml"
+hash = "cb40fc0e1e0a3338d57b34a5ba2612ae9a9f0e32619695c4da637a98b4e52cf3"
 metafile = true
 
 [[files]]
