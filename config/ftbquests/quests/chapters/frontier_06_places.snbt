@@ -14,10 +14,10 @@
 			title: "Dinner Together"
 			description: ["Place a Farmer's Delight feast and invite the crew. The native feast-placement advancement is the automatic check.", "Make the meal a reason to gather before or after an expedition. Vampires can bring something suitable for themselves."]
 			icon: { id: "farmersdelight:cooking_pot" }
-			x: 0.0d
+			x: -3.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "heart"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "farmersdelight:main/place_feast", criterion: "", id: "6E260267F3BB9870" }
@@ -49,16 +49,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26C8E1466128A7"
 			title: "Crew and Companions"
 			description: ["Earn Exposure's Family Portrait: use a camera on a stand to capture a player, a tamed cat, and a tamed wolf in the frame.", "The real Exposure advancement verifies the photograph. You keep the picture."]
 			icon: { id: "exposure:camera_stand" }
-			x: 3.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: -8.0d
+			y: 4.0d
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "exposure:adventure/family_portrait", criterion: "", id: "6E266177B6EFB7FE" }
@@ -90,16 +91,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E261B9C11222B2A"]
 		}
 		{
 			id: "6E2674666E4FF474"
 			title: "A Familiar Face"
 			description: ["Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine.", "Existing friendship credit counts. This does not require marriage or a particular roleplay choice.", "Use the chairs to make a place to sit with the neighbors you have met."]
 			icon: { id: "minecraft:emerald" }
-			x: 6.0d
+			x: 1.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "heart"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "mca:friend", criterion: "", id: "6E26DEF9B406ACDB" }
@@ -123,16 +125,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26E83442EC8F5A"
 			title: "A Better Palette"
 			description: ["Set up a Chipped Mason Table and Carpenter's Table. Inspect the placed workstations; a shared existing workshop counts.", "Use them to choose a palette for a build you want to finish. The reward supplies a small project without rewarding a stone-mining grind."]
 			icon: { id: "chipped:mason_table" }
-			x: 9.0d
+			x: 5.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "square"
 			optional: true
 			tasks: [
 				{
@@ -177,16 +180,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26ECCABBC759DF"
 			title: "Open a Stall"
 			description: ["Place and inspect a Numismatics Vendor. Stock a useful offer and set a price someone might pay.", "The automatic check proves a vendor is installed; it does not claim a sale happened. Invite another player to test it."]
 			icon: { id: "numismatics:vendor" }
-			x: 0.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: 7.0d
+			y: 4.0d
+			size: 1
+			shape: "square"
 			optional: true
 			tasks: [
 				{
@@ -224,16 +228,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26E83442EC8F5A"]
 		}
 		{
 			id: "6E2614A8A7306DA3"
 			title: "Your Create Shop"
 			description: ["Earn Create's Table Cloth Shop advancement. Follow the in-game advancement and Ponder instructions for the actual shop interaction.", "This opens a different trading route from Numismatics Vendors. Existing progress counts."]
 			icon: { id: "create:red_table_cloth" }
-			x: 3.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: 7.0d
+			y: 8.0d
+			size: 1.1d
+			shape: "gear"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "create:table_cloth_shop", criterion: "", id: "6E2626E9EA0CC53A" }
@@ -257,16 +262,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26ECCABBC759DF"]
 		}
 		{
 			id: "6E2641C2297AFB51"
 			title: "Show the Journey"
 			description: ["Install a Vista television and obtain a viewfinder. Capture something from the server you want other people to see.", "The checks verify the equipment, not the contents of a recording. Make a small viewing area instead of leaving the screen in a chest."]
 			icon: { id: "vista:television" }
-			x: 6.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: -8.0d
+			y: 8.0d
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{
@@ -327,16 +333,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26C8E1466128A7"]
 		}
 		{
 			id: "6E26F13410C8B481"
 			title: "A Welcome Guest"
 			description: ["Finish a guest space with a bed or coffin appropriate for the guest, storage, lighting, and a clearly marked entrance. Invite a player outside your usual building crew to try it.", "Guest-confirmed challenge: tick this after the visit. One completion and one shared reward per team."]
 			icon: { id: "handcrafted:oak_table" }
-			x: 9.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: 3.0d
+			y: 4.0d
+			size: 1.1d
+			shape: "heart"
 			optional: true
 			tasks: [
 				{ type: "checkmark", id: "6E26A3AC7E3DE63B", title: "A guest visited and used the space" }
@@ -359,17 +366,18 @@
 					id: "6E26F7DCBAE734AB"
 				}
 			]
-			progression_mode: "flexible"
+			progression_mode: "linear"
+			dependencies: ["6E26E83442EC8F5A", "6E2674666E4FF474"]
 		}
 		{
 			id: "6E26E1F13BA2672F"
 			title: "The Testing Grounds"
 			description: ["With permission to use the site, build a marked cannon or spell-testing range away from other people’s structures and claims. Demonstrate it for a willing spectator outside the firing area, then repair the target area.", "Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."]
 			icon: { id: "createbigcannons:cannon_carriage" }
-			x: 0.0d
-			y: 6.0d
-			size: 1.0d
-			shape: "circle"
+			x: 12.0d
+			y: 4.0d
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "checkmark", id: "6E26915E532C32CC", title: "Our witness saw the demonstration and the range is usable" }
@@ -392,7 +400,34 @@
 					id: "6E2612B6F4A656B4"
 				}
 			]
-			progression_mode: "flexible"
+			progression_mode: "linear"
+			dependencies: ["6E26C7687AA1253D"]
+		}
+	]
+	quest_links: [
+		{
+			id: "6E26FEC7A53F99E5"
+			linked_quest: "6E260819FC7E5947"
+			x: 0.0d
+			y: -4.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26010DB46C7B4E"
+			linked_quest: "6E261B9C11222B2A"
+			x: -8.0d
+			y: 0.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26063B7CCCD9AA"
+			linked_quest: "6E26C7687AA1253D"
+			x: 9.0d
+			y: 0.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

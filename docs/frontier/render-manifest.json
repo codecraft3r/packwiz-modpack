@@ -18,6 +18,7 @@
           "title": "Your Next Adventure",
           "description": [
             "Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress.",
+            "Lines between milestones suggest a route; earlier milestones do not block credit for things you have already done. Crew projects, contracts, and paid orders require their connected prerequisites.",
             "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.",
             "Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group.",
             "Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."
@@ -27,8 +28,8 @@
           },
           "x": 0.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.3,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -62,10 +63,10 @@
           "icon": {
             "id": "minecraft:shield"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -3.0,
+          "y": 3.0,
+          "size": 0.9,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -123,7 +124,10 @@
               "id": "6E267674ADC33E4F"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26B89DD1523BD3",
@@ -135,10 +139,10 @@
           "icon": {
             "id": "enchantinginfuser:enchanting_infuser"
           },
-          "x": 6.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -173,9 +177,13 @@
               "id": "6E2625BB9355E730"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         }
-      ]
+      ],
+      "quest_links": []
     },
     {
       "id": "6E26B1F3E4BAC235",
@@ -200,9 +208,9 @@
           "icon": {
             "id": "exposure:camera"
           },
-          "x": 0.0,
+          "x": -6.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1,
           "shape": "circle",
           "optional": true,
           "tasks": [
@@ -248,7 +256,10 @@
               "id": "6E26C0BF609DFDE8"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26B71ED45B0179",
@@ -260,10 +271,10 @@
           "icon": {
             "id": "exposure:photograph_frame"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -6.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -297,7 +308,10 @@
               "id": "6E2676AFF88F7C40"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E261B9C11222B2A"
+          ]
         },
         {
           "id": "6E26114622D37E7F",
@@ -309,10 +323,10 @@
           "icon": {
             "id": "irons_spellbooks:bone_key"
           },
-          "x": 6.0,
+          "x": -2.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -346,7 +360,10 @@
               "id": "6E26D763377CC5AC"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E268B44A0C8789B",
@@ -358,10 +375,10 @@
           "icon": {
             "id": "minecraft:ender_eye"
           },
-          "x": 9.0,
+          "x": 2.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.1,
+          "shape": "octagon",
           "optional": true,
           "tasks": [
             {
@@ -395,7 +412,10 @@
               "id": "6E268FBE7CED7DC4"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26A5C076450596",
@@ -407,10 +427,10 @@
           "icon": {
             "id": "exposure:camera"
           },
-          "x": 0.0,
+          "x": 2.0,
           "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 0.9,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -455,7 +475,10 @@
               "id": "6E2685EBC833DB6B"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E268B44A0C8789B"
+          ]
         },
         {
           "id": "6E26596722B417C4",
@@ -467,10 +490,10 @@
           "icon": {
             "id": "cataclysm:altar_of_abyss"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.1,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -504,7 +527,10 @@
               "id": "6E2622349A427BBC"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26C7B60D14A1C6",
@@ -518,8 +544,8 @@
           },
           "x": 6.0,
           "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.1,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -553,7 +579,10 @@
               "id": "6E26434F6F0D843C"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26596722B417C4"
+          ]
         },
         {
           "id": "6E263A514ED1B351",
@@ -565,10 +594,10 @@
           "icon": {
             "id": "minecraft:lightning_rod"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 4.0,
+          "y": 6.0,
+          "size": 1.2,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -602,7 +631,10 @@
               "id": "6E26FEAE7A00ACD9"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E268B44A0C8789B"
+          ]
         },
         {
           "id": "6E26B609FD3DA0FD",
@@ -614,10 +646,10 @@
           "icon": {
             "id": "minecraft:crying_obsidian"
           },
-          "x": 0.0,
-          "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -2.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -651,7 +683,20 @@
               "id": "6E266935BEACED2D"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26114622D37E7F"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E26E727CD2EDB37",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -678,9 +723,9 @@
           "icon": {
             "id": "block_factorys_bosses:undying_tentacle"
           },
-          "x": 0.0,
+          "x": -10.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -715,7 +760,10 @@
               "id": "6E26475B8E07F3CB"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26596722B417C4"
+          ]
         },
         {
           "id": "6E2630DCECD63DAB",
@@ -727,9 +775,9 @@
           "icon": {
             "id": "block_factorys_bosses:knight_sword"
           },
-          "x": 3.0,
+          "x": -4.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1.1,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -764,7 +812,10 @@
               "id": "6E26D37F2E4659DE"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26B85654476589",
@@ -776,9 +827,9 @@
           "icon": {
             "id": "minecraft:dragon_breath"
           },
-          "x": 6.0,
+          "x": 10.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -824,7 +875,10 @@
               "id": "6E269A6854801575"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E268B44A0C8789B"
+          ]
         },
         {
           "id": "6E26503B6ACB5284",
@@ -836,9 +890,9 @@
           "icon": {
             "id": "block_factorys_bosses:sandworm_gauntlet"
           },
-          "x": 9.0,
+          "x": 0.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1.1,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -873,7 +927,10 @@
               "id": "6E262DF0C375C17D"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E263C2F9B59EE37",
@@ -885,9 +942,9 @@
           "icon": {
             "id": "cataclysm:ignitium_ingot"
           },
-          "x": 0.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 4.0,
+          "y": 0.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -922,7 +979,10 @@
               "id": "6E26912556505C9C"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26459D86508DED",
@@ -934,9 +994,9 @@
           "icon": {
             "id": "cataclysm:witherite_ingot"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 4.0,
+          "y": 4.0,
+          "size": 1.1,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -971,7 +1031,10 @@
               "id": "6E2623193CD8F369"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E263C2F9B59EE37"
+          ]
         },
         {
           "id": "6E26ECFF5B20D03A",
@@ -983,9 +1046,9 @@
           "icon": {
             "id": "cataclysm:ancient_metal_ingot"
           },
-          "x": 6.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 14.0,
+          "y": 12.0,
+          "size": 1.1,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1020,7 +1083,10 @@
               "id": "6E26822712C65CB2"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E263A514ED1B351"
+          ]
         },
         {
           "id": "6E268C8F94E96C43",
@@ -1032,9 +1098,9 @@
           "icon": {
             "id": "cataclysm:gauntlet_of_guard"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 10.0,
+          "y": 4.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1069,7 +1135,10 @@
               "id": "6E266BFC46899B8D"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26B85654476589"
+          ]
         },
         {
           "id": "6E263C80910AEB59",
@@ -1081,9 +1150,9 @@
           "icon": {
             "id": "minecraft:netherite_scrap"
           },
-          "x": 0.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": 4.0,
+          "y": 8.0,
+          "size": 1.3,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1118,7 +1187,10 @@
               "id": "6E261607C98FD38F"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26459D86508DED"
+          ]
         },
         {
           "id": "6E269A5A0A38EE19",
@@ -1130,9 +1202,9 @@
           "icon": {
             "id": "cataclysm:altar_of_abyss"
           },
-          "x": 3.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": -10.0,
+          "y": 4.0,
+          "size": 1.3,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1167,7 +1239,10 @@
               "id": "6E26E28B72F6AE6F"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2688DA25219A46"
+          ]
         },
         {
           "id": "6E2636F2D969C506",
@@ -1179,9 +1254,9 @@
           "icon": {
             "id": "minecraft:echo_shard"
           },
-          "x": 6.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": -16.0,
+          "y": 12.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1216,7 +1291,10 @@
               "id": "6E269F03E35227BD"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26C7B60D14A1C6"
+          ]
         },
         {
           "id": "6E2600D391E9924E",
@@ -1228,9 +1306,9 @@
           "icon": {
             "id": "minecraft:lightning_rod"
           },
-          "x": 9.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": 14.0,
+          "y": 16.0,
+          "size": 1.3,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1265,7 +1343,10 @@
               "id": "6E26018636BCB814"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26ECFF5B20D03A"
+          ]
         },
         {
           "id": "6E26A7A44AE011AA",
@@ -1277,9 +1358,9 @@
           "icon": {
             "id": "minecraft:nautilus_shell"
           },
-          "x": 0.0,
-          "y": 9.0,
-          "size": 1.0,
+          "x": -10.0,
+          "y": 8.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1314,7 +1395,10 @@
               "id": "6E26D3A2823A9302"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E269A5A0A38EE19"
+          ]
         },
         {
           "id": "6E2604721322C227",
@@ -1326,9 +1410,9 @@
           "icon": {
             "id": "minecraft:nether_star"
           },
-          "x": 3.0,
-          "y": 9.0,
-          "size": 1.0,
+          "x": 0.0,
+          "y": 16.0,
+          "size": 1.2,
           "shape": "hexagon",
           "optional": true,
           "tasks": [
@@ -1363,7 +1447,68 @@
               "id": "6E2621DFCFAA3250"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26B609FD3DA0FD"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E265A24EF66E28F",
+          "linked_quest": "6E26596722B417C4",
+          "x": -10.0,
+          "y": -4.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E266256349CEFB2",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -4.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26D5FC34E7EAEE",
+          "linked_quest": "6E268B44A0C8789B",
+          "x": 10.0,
+          "y": -4.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E268603493A2C36",
+          "linked_quest": "6E263A514ED1B351",
+          "x": 14.0,
+          "y": 8.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26D060B7E65954",
+          "linked_quest": "6E26C7B60D14A1C6",
+          "x": -16.0,
+          "y": 8.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E2600485740915B",
+          "linked_quest": "6E26B609FD3DA0FD",
+          "x": 0.0,
+          "y": 12.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E260E2CDCC57C7B",
+          "linked_quest": "6E26114622D37E7F",
+          "x": -4.0,
+          "y": 12.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -1392,7 +1537,7 @@
           },
           "x": 0.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 1,
           "shape": "circle",
           "optional": true,
           "tasks": [
@@ -1427,7 +1572,10 @@
               "id": "6E265C970653C89C"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E2688BDF879CCED",
@@ -1439,10 +1587,10 @@
           "icon": {
             "id": "irons_spellbooks:scroll_forge"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -1487,7 +1635,10 @@
               "id": "6E264506C2B89BB8"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E265455E4BA73EA"
+          ]
         },
         {
           "id": "6E26C7687AA1253D",
@@ -1499,10 +1650,10 @@
           "icon": {
             "id": "irons_spellbooks:arcane_anvil"
           },
-          "x": 6.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -1536,7 +1687,10 @@
               "id": "6E267CF9F0E0C9C3"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2688BDF879CCED"
+          ]
         },
         {
           "id": "6E26B41AA42A0D4F",
@@ -1548,10 +1702,10 @@
           "icon": {
             "id": "irons_spellbooks:legendary_ink"
           },
-          "x": 9.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 0.0,
+          "y": 9.0,
+          "size": 1.2,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -1585,7 +1739,10 @@
               "id": "6E263A05F77D10A0"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26C7687AA1253D"
+          ]
         },
         {
           "id": "6E262E1A327F4984",
@@ -1598,9 +1755,9 @@
             "id": "irons_spellbooks:dragonskin_spell_book"
           },
           "x": 0.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "y": 12.0,
+          "size": 1.2,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -1645,7 +1802,10 @@
               "id": "6E2630810B8C2BA4"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26B41AA42A0D4F"
+          ]
         },
         {
           "id": "6E26ACC7A9335CB9",
@@ -1657,10 +1817,10 @@
           "icon": {
             "id": "vampirism:vampire_fang"
           },
-          "x": 3.0,
+          "x": -6.0,
           "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -1694,7 +1854,10 @@
               "id": "6E26DE428D6D66C9"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E265455E4BA73EA"
+          ]
         },
         {
           "id": "6E269AEB8D51E29B",
@@ -1708,8 +1871,8 @@
           },
           "x": 6.0,
           "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -1743,7 +1906,10 @@
               "id": "6E26BD6612BCBF4D"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E265455E4BA73EA"
+          ]
         },
         {
           "id": "6E268AA25B24480C",
@@ -1755,10 +1921,10 @@
           "icon": {
             "id": "vampirism:altar_infusion"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -6.0,
+          "y": 6.0,
+          "size": 1.2,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -1792,7 +1958,10 @@
               "id": "6E260765D73B6957"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26ACC7A9335CB9"
+          ]
         },
         {
           "id": "6E266425D5F4A5D0",
@@ -1804,10 +1973,10 @@
           "icon": {
             "id": "vampirism:weapon_table"
           },
-          "x": 0.0,
+          "x": 6.0,
           "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.2,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -1841,7 +2010,20 @@
               "id": "6E265B1FED5D262A"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E269AEB8D51E29B"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E266398CA3F5733",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -1868,10 +2050,10 @@
           "icon": {
             "id": "create:brass_ingot"
           },
-          "x": 0.0,
+          "x": -9.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -1905,7 +2087,10 @@
               "id": "6E260705A2519660"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26AE726B685FF5",
@@ -1917,10 +2102,10 @@
           "icon": {
             "id": "create:precision_mechanism"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -9.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -1954,7 +2139,10 @@
               "id": "6E268A1E8902B2F2"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26C4366AA57BC9"
+          ]
         },
         {
           "id": "6E26CB5FA755BAB4",
@@ -1966,10 +2154,10 @@
           "icon": {
             "id": "create:steam_engine"
           },
-          "x": 6.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -9.0,
+          "y": 6.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2003,7 +2191,10 @@
               "id": "6E266A57E7775E31"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26AE726B685FF5"
+          ]
         },
         {
           "id": "6E26903736497478",
@@ -2015,10 +2206,10 @@
           "icon": {
             "id": "mekanism:basic_tier_installer"
           },
-          "x": 9.0,
+          "x": -3.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -2052,7 +2243,10 @@
               "id": "6E2618100E4886AE"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E2626E1826D2754",
@@ -2064,10 +2258,10 @@
           "icon": {
             "id": "mekanism:digital_miner"
           },
-          "x": 0.0,
+          "x": -3.0,
           "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -2101,7 +2295,10 @@
               "id": "6E26887A8ED49785"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26903736497478"
+          ]
         },
         {
           "id": "6E2681B962288196",
@@ -2113,10 +2310,10 @@
           "icon": {
             "id": "mekanismgenerators:gas_burning_generator"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -3.0,
+          "y": 6.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -2150,7 +2347,10 @@
               "id": "6E260841A5CA8352"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2626E1826D2754"
+          ]
         },
         {
           "id": "6E2649A7C32470D8",
@@ -2162,10 +2362,10 @@
           "icon": {
             "id": "mekanism:formulaic_assemblicator"
           },
-          "x": 6.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -3.0,
+          "y": 9.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2199,7 +2399,10 @@
               "id": "6E26F1470E9EC9F8"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2681B962288196"
+          ]
         },
         {
           "id": "6E26C8872927CC3D",
@@ -2212,10 +2415,10 @@
           "icon": {
             "id": "mekanism:portable_qio_dashboard"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -3.0,
+          "y": 12.0,
+          "size": 1.2,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -2256,7 +2459,10 @@
               "id": "6E263A7940145CDC"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2649A7C32470D8"
+          ]
         },
         {
           "id": "6E2685D40D328648",
@@ -2268,10 +2474,10 @@
           "icon": {
             "id": "create:steam_engine"
           },
-          "x": 0.0,
-          "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -9.0,
+          "y": 9.0,
+          "size": 1.2,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -2316,7 +2522,10 @@
               "id": "6E26A19FDDA729E2"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26CB5FA755BAB4"
+          ]
         },
         {
           "id": "6E26DC99B2B9F37E",
@@ -2329,9 +2538,9 @@
             "id": "powah:energizing_orb"
           },
           "x": 3.0,
-          "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "y": 0.0,
+          "size": 1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2376,7 +2585,10 @@
               "id": "6E262AF54E1B2567"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E269465526DD79A",
@@ -2388,10 +2600,10 @@
           "icon": {
             "id": "powergrid:electric_motor"
           },
-          "x": 6.0,
-          "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2426,7 +2638,10 @@
               "id": "6E268D350E1BB81B"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26DC99B2B9F37E"
+          ]
         },
         {
           "id": "6E263A31DC312F1D",
@@ -2438,10 +2653,10 @@
           "icon": {
             "id": "computercraft:computer_advanced"
           },
-          "x": 9.0,
+          "x": 3.0,
           "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -2494,7 +2709,20 @@
               "id": "6E2674AEDD021E91"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E269465526DD79A"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E266D260F93A5C4",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -2521,10 +2749,10 @@
           "icon": {
             "id": "simulated:physics_assembler"
           },
-          "x": 0.0,
+          "x": -7.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -2566,7 +2794,10 @@
               "id": "6E26F029668B5DB2"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E2675BD33374B3C",
@@ -2578,10 +2809,10 @@
           "icon": {
             "id": "aeronautics:andesite_propeller"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -10.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2639,7 +2870,10 @@
               "id": "6E26CD73B376DEF9"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26820F0536F5C5"
+          ]
         },
         {
           "id": "6E266290ED70D30D",
@@ -2651,10 +2885,10 @@
           "icon": {
             "id": "create:track_station"
           },
-          "x": 6.0,
+          "x": 0.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1.1,
+          "shape": "hexagon",
           "optional": true,
           "tasks": [
             {
@@ -2699,7 +2933,10 @@
               "id": "6E260E807AC3AAAE"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E269D5583333DE8",
@@ -2711,10 +2948,10 @@
           "icon": {
             "id": "create:green_seat"
           },
-          "x": 9.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -2748,7 +2985,10 @@
               "id": "6E2631BEF5D817CF"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E266290ED70D30D"
+          ]
         },
         {
           "id": "6E2654CF12083F88",
@@ -2761,10 +3001,10 @@
           "icon": {
             "id": "simulated:steering_wheel"
           },
-          "x": 0.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -6.0,
+          "y": 7.0,
+          "size": 1.1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -2786,7 +3026,7 @@
               "id": "6E26C5DAE90E920B"
             }
           ],
-          "progression_mode": "flexible",
+          "progression_mode": "linear",
           "dependencies": [
             "6E26820F0536F5C5",
             "6E2675BD33374B3C"
@@ -2802,10 +3042,10 @@
           "icon": {
             "id": "create:packager"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -2845,7 +3085,10 @@
               "id": "6E26604536A3EA44"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E269D5583333DE8"
+          ]
         },
         {
           "id": "6E262BB31BF0076D",
@@ -2857,10 +3100,10 @@
           "icon": {
             "id": "icarus:white_feathered_wings"
           },
-          "x": 6.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -13.0,
+          "y": 6.0,
+          "size": 1.1,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -2905,7 +3148,10 @@
               "id": "6E26170FD81F043A"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E2675BD33374B3C"
+          ]
         },
         {
           "id": "6E26B66A6926E5A8",
@@ -2917,9 +3163,9 @@
           "icon": {
             "id": "via_romana:charting_map"
           },
-          "x": 9.0,
+          "x": 5.0,
           "y": 3.0,
-          "size": 1.0,
+          "size": 1,
           "shape": "circle",
           "optional": true,
           "tasks": [
@@ -2954,7 +3200,20 @@
               "id": "6E26F6317C4F6566"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E266290ED70D30D"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E26228C6D7E84BD",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -2981,10 +3240,10 @@
           "icon": {
             "id": "farmersdelight:cooking_pot"
           },
-          "x": 0.0,
+          "x": -3.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -3029,7 +3288,10 @@
               "id": "6E26525E9A25F825"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26C8E1466128A7",
@@ -3041,10 +3303,10 @@
           "icon": {
             "id": "exposure:camera_stand"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -8.0,
+          "y": 4.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3089,7 +3351,10 @@
               "id": "6E262ABFA521DE47"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E261B9C11222B2A"
+          ]
         },
         {
           "id": "6E2674666E4FF474",
@@ -3102,10 +3367,10 @@
           "icon": {
             "id": "minecraft:emerald"
           },
-          "x": 6.0,
+          "x": 1.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -3139,7 +3404,10 @@
               "id": "6E2645259E9F01B8"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26E83442EC8F5A",
@@ -3151,10 +3419,10 @@
           "icon": {
             "id": "chipped:mason_table"
           },
-          "x": 9.0,
+          "x": 5.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -3207,7 +3475,10 @@
               "id": "6E26811E59760B39"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ]
         },
         {
           "id": "6E26ECCABBC759DF",
@@ -3219,10 +3490,10 @@
           "icon": {
             "id": "numismatics:vendor"
           },
-          "x": 0.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 7.0,
+          "y": 4.0,
+          "size": 1,
+          "shape": "square",
           "optional": true,
           "tasks": [
             {
@@ -3268,7 +3539,10 @@
               "id": "6E267E65AB7653E4"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26E83442EC8F5A"
+          ]
         },
         {
           "id": "6E2614A8A7306DA3",
@@ -3280,10 +3554,10 @@
           "icon": {
             "id": "create:red_table_cloth"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 7.0,
+          "y": 8.0,
+          "size": 1.1,
+          "shape": "gear",
           "optional": true,
           "tasks": [
             {
@@ -3317,7 +3591,10 @@
               "id": "6E26FA3F1688A1B7"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26ECCABBC759DF"
+          ]
         },
         {
           "id": "6E2641C2297AFB51",
@@ -3329,10 +3606,10 @@
           "icon": {
             "id": "vista:television"
           },
-          "x": 6.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": -8.0,
+          "y": 8.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3410,7 +3687,10 @@
               "id": "6E26961040C381FD"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "flexible",
+          "dependencies": [
+            "6E26C8E1466128A7"
+          ]
         },
         {
           "id": "6E26F13410C8B481",
@@ -3422,10 +3702,10 @@
           "icon": {
             "id": "handcrafted:oak_table"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 3.0,
+          "y": 4.0,
+          "size": 1.1,
+          "shape": "heart",
           "optional": true,
           "tasks": [
             {
@@ -3458,7 +3738,11 @@
               "id": "6E26F7DCBAE734AB"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26E83442EC8F5A",
+            "6E2674666E4FF474"
+          ]
         },
         {
           "id": "6E26E1F13BA2672F",
@@ -3470,10 +3754,10 @@
           "icon": {
             "id": "createbigcannons:cannon_carriage"
           },
-          "x": 0.0,
-          "y": 6.0,
-          "size": 1.0,
-          "shape": "circle",
+          "x": 12.0,
+          "y": 4.0,
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3506,7 +3790,36 @@
               "id": "6E2612B6F4A656B4"
             }
           ],
-          "progression_mode": "flexible"
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26C7687AA1253D"
+          ]
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E26FEC7A53F99E5",
+          "linked_quest": "6E260819FC7E5947",
+          "x": 0.0,
+          "y": -4.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26010DB46C7B4E",
+          "linked_quest": "6E261B9C11222B2A",
+          "x": -8.0,
+          "y": 0.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26063B7CCCD9AA",
+          "linked_quest": "6E26C7687AA1253D",
+          "x": 9.0,
+          "y": 0.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     },
@@ -3520,7 +3833,7 @@
         "id": "numismatics:cog"
       },
       "order_index": 7,
-      "default_hide_dependency_lines": true,
+      "default_hide_dependency_lines": false,
       "default_quest_shape": "circle",
       "quests": [
         {
@@ -3533,10 +3846,10 @@
           "icon": {
             "id": "irons_spellbooks:rotten_spell_book"
           },
-          "x": 0.0,
+          "x": -6.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3587,10 +3900,10 @@
           "icon": {
             "id": "cataclysm:burning_ashes"
           },
-          "x": 3.0,
+          "x": -2.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3641,10 +3954,10 @@
           "icon": {
             "id": "cataclysm:altar_of_abyss"
           },
-          "x": 6.0,
+          "x": 2.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3695,10 +4008,10 @@
           "icon": {
             "id": "farmersdelight:beef_stew"
           },
-          "x": 9.0,
+          "x": 6.0,
           "y": 0.0,
-          "size": 1.0,
-          "shape": "circle",
+          "size": 1,
+          "shape": "diamond",
           "optional": true,
           "tasks": [
             {
@@ -3755,6 +4068,40 @@
           "can_repeat": true,
           "repeat_cooldown": 21600
         }
+      ],
+      "quest_links": [
+        {
+          "id": "6E264B6436EE01AA",
+          "linked_quest": "6E26114622D37E7F",
+          "x": -6.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E260EEBF71005E9",
+          "linked_quest": "6E263C2F9B59EE37",
+          "x": -2.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E2689CE6064174E",
+          "linked_quest": "6E269A5A0A38EE19",
+          "x": 2.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E2684243C5BC922",
+          "linked_quest": "6E26C44B5FC97883",
+          "x": 6.0,
+          "y": -3.0,
+          "shape": "diamond",
+          "size": 0.8
+        }
       ]
     },
     {
@@ -3767,7 +4114,7 @@
         "id": "numismatics:bank_terminal"
       },
       "order_index": 8,
-      "default_hide_dependency_lines": true,
+      "default_hide_dependency_lines": false,
       "default_quest_shape": "circle",
       "quests": [
         {
@@ -3781,9 +4128,9 @@
           "icon": {
             "id": "minecraft:golden_apple"
           },
-          "x": 0.0,
+          "x": -18.0,
           "y": 0.0,
-          "size": 1.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -3835,6 +4182,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -3849,9 +4199,9 @@
           "icon": {
             "id": "minecraft:scaffolding"
           },
-          "x": 3.0,
-          "y": 0.0,
-          "size": 1.0,
+          "x": -14.0,
+          "y": 3.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4035,6 +4385,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4049,9 +4402,9 @@
           "icon": {
             "id": "handcrafted:oak_table"
           },
-          "x": 6.0,
-          "y": 0.0,
-          "size": 1.0,
+          "x": -10.0,
+          "y": 5.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4114,6 +4467,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4128,9 +4484,9 @@
           "icon": {
             "id": "exposure:color_film"
           },
-          "x": 9.0,
-          "y": 0.0,
-          "size": 1.0,
+          "x": -6.0,
+          "y": 5.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4182,6 +4538,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4196,9 +4555,9 @@
           "icon": {
             "id": "aeronautics:white_envelope"
           },
-          "x": 0.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": -2.0,
+          "y": 5.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4261,6 +4620,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4275,9 +4637,9 @@
           "icon": {
             "id": "create:track"
           },
-          "x": 3.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 20.0,
+          "y": -1.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4346,9 +4708,9 @@
           "icon": {
             "id": "irons_spellbooks:rare_ink"
           },
-          "x": 6.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 13.0,
+          "y": 7.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4428,9 +4790,9 @@
           "icon": {
             "id": "irons_spellbooks:epic_ink"
           },
-          "x": 9.0,
-          "y": 3.0,
-          "size": 1.0,
+          "x": 4.0,
+          "y": 23.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4488,9 +4850,9 @@
           "icon": {
             "id": "minecraft:enchanted_book"
           },
-          "x": 0.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": -21.0,
+          "y": 4.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4527,6 +4889,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4541,9 +4906,9 @@
           "icon": {
             "id": "minecraft:enchanted_book"
           },
-          "x": 3.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": 1.0,
+          "y": 0.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4580,6 +4945,9 @@
             }
           ],
           "progression_mode": "linear",
+          "dependencies": [
+            "6E260819FC7E5947"
+          ],
           "can_repeat": true,
           "repeat_cooldown": 60
         },
@@ -4594,9 +4962,9 @@
           "icon": {
             "id": "irons_spellbooks:mana_upgrade_orb"
           },
-          "x": 6.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": 4.0,
+          "y": 15.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4643,9 +5011,9 @@
           "icon": {
             "id": "irons_spellbooks:cooldown_upgrade_orb"
           },
-          "x": 9.0,
-          "y": 6.0,
-          "size": 1.0,
+          "x": 12.0,
+          "y": 15.0,
+          "size": 0.9,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4692,9 +5060,9 @@
           "icon": {
             "id": "irons_spellbooks:legendary_ink"
           },
-          "x": 0.0,
-          "y": 9.0,
-          "size": 1.0,
+          "x": 12.0,
+          "y": 23.0,
+          "size": 1,
           "shape": "square",
           "optional": true,
           "tasks": [
@@ -4729,6 +5097,56 @@
           ],
           "can_repeat": true,
           "repeat_cooldown": 60
+        }
+      ],
+      "quest_links": [
+        {
+          "id": "6E263934AFD19746",
+          "linked_quest": "6E260819FC7E5947",
+          "x": -8.0,
+          "y": -5.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E2694EE1EBEC6FC",
+          "linked_quest": "6E266290ED70D30D",
+          "x": 16.0,
+          "y": -5.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26B1CF09064F04",
+          "linked_quest": "6E2688BDF879CCED",
+          "x": 8.0,
+          "y": 3.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E2675BF6C4E320B",
+          "linked_quest": "6E26C7687AA1253D",
+          "x": 8.0,
+          "y": 11.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26C59202D1A409",
+          "linked_quest": "6E26B41AA42A0D4F",
+          "x": 8.0,
+          "y": 19.0,
+          "shape": "diamond",
+          "size": 0.8
+        },
+        {
+          "id": "6E26CEE3B9E4C1C5",
+          "linked_quest": "6E265455E4BA73EA",
+          "x": 8.0,
+          "y": -2.0,
+          "shape": "diamond",
+          "size": 0.8
         }
       ]
     }

@@ -25,6 +25,9 @@ class FrontierCampaignTests(unittest.TestCase):
         for proof in proofs.values():
             target = root / proof['metadata'];target.parent.mkdir(exist_ok=True)
             shutil.copy2(ROOT / proof['metadata'], target)
+        graph_runtime = json.loads((root / 'docs/frontier/evidence/graph-runtime.json').read_text())
+        target = root / graph_runtime['metadata'];target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / graph_runtime['metadata'], target)
         for path, text in source.outputs(root).items():
             path.parent.mkdir(parents=True, exist_ok=True);path.write_text(text)
         return root
@@ -61,15 +64,20 @@ class FrontierCampaignTests(unittest.TestCase):
         path = root / 'config/ftbquests/quests/chapters/ch03_lantern_order.snbt'
         self.assertRegex(path.read_text(), r'table_id: \d+L')
 
-    def test_existing_advancements_are_ungated_and_whole(self):
+    def test_existing_advancements_are_connected_flexible_and_whole(self):
         root = self.fixture()
-        for path, content in source.outputs(root).items():
-            if path.stem not in frontier.chapter_names(root):continue
-            for q in Parser(content,str(path)).parse()['quests']:
-                if all(t['type'] == 'advancement' for t in q['tasks']):
-                    self.assertFalse(q.get('dependencies'))
-                    self.assertEqual(q['progression_mode'],'flexible')
-                    self.assertTrue(all(t['criterion']=='' for t in q['tasks']))
+        manifest = frontier.load(root)
+        for source_q in manifest['quests']:
+            if not all(t['type'] == 'advancement' for t in source_q['tasks']):
+                continue
+            chapter = root / 'config/ftbquests/quests/chapters' / ('frontier_' + source_q['chapter'] + '.snbt')
+            emitted = next(q for q in Parser(chapter.read_text(), str(chapter)).parse()['quests']
+                           if q['id'] == frontier.ident('quest:' + source_q['key']))
+            if source_q['key'] != 'welcome':
+                self.assertTrue(source_q['deps'], source_q['key'])
+                self.assertTrue(emitted.get('dependencies'), source_q['key'])
+            self.assertEqual(emitted['progression_mode'], 'flexible', source_q['key'])
+            self.assertTrue(all(t['criterion'] == '' for t in emitted['tasks']))
 
     def change_quest(self, root, key, change):
         path = root / frontier.SOURCE_REL
@@ -133,5 +141,52 @@ class FrontierCampaignTests(unittest.TestCase):
             q['rewards'][0]['item']['components']['minecraft:stored_enchantments']['levels']['minecraft:mending'] = 10
         self.change_quest(root, 'shop_mending', change)
         self.assertTrue(any('invalid enchanted-book component' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_external_prerequisite_requires_one_local_link(self):
+        root = self.fixture()
+        path = root / frontier.SOURCE_REL
+        manifest = json.loads(path.read_text())
+        chapter = next(c for c in manifest['chapters'] if c['key'] == '05_transport')
+        quest = next(q for q in manifest['quests'] if q['key'] == 'flight_test')
+        quest['deps'] = ['first_photo']
+        chapter['links'] = [link for link in chapter.get('links', []) if link.get('quest') != 'first_photo']
+        path.write_text(json.dumps(manifest))
+        for output, content in source.outputs(root).items():
+            output.parent.mkdir(parents=True, exist_ok=True);output.write_text(content)
+        self.assertTrue(any('needs exactly one local' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_disconnected_milestone_is_rejected(self):
+        root = self.fixture()
+        self.change_quest(root, 'shop_legendary', lambda q: q.update(deps=[]))
+        self.assertTrue(any('disconnected from welcome' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_crew_confirmed_cannot_be_flexible(self):
+        root = self.fixture()
+        path = root / 'config/ftbquests/quests/chapters/frontier_05_transport.snbt'
+        data = Parser(path.read_text(), str(path)).parse()
+        quest = next(q for q in data['quests'] if q['id'] == frontier.ident('quest:flight_test'))
+        quest['progression_mode'] = 'flexible'
+        path.write_text(source.snbt(data))
+        self.assertTrue(any('progression mode does not match quest kind' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_source_shape_must_be_verified_by_shipped_runtime(self):
+        root = self.fixture()
+        self.change_quest(root, 'brass', lambda q: q.update(shape='star'))
+        self.assertTrue(any('unsupported shipped quest shape' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_emitted_layout_cannot_drift_from_authored_source(self):
+        root = self.fixture()
+        path = root / 'config/ftbquests/quests/chapters/frontier_04_engineering.snbt'
+        data = Parser(path.read_text(), str(path)).parse()
+        quest = next(q for q in data['quests'] if q['id'] == frontier.ident('quest:brass'))
+        quest['x'] += 1
+        path.write_text(source.snbt(data))
+        self.assertTrue(any('emitted x differs from source' in e or 'emitted file differs from source' in e
+                            for e in frontier_validate.audit(root)['errors']))
+
+    def test_faction_branches_cannot_cross_lock(self):
+        root = self.fixture()
+        self.change_quest(root, 'hunter_master', lambda q: q.update(deps=['vampire_master']))
+        self.assertTrue(any('faction cross-lock' in e for e in frontier_validate.audit(root)['errors']))
 
 if __name__ == '__main__':unittest.main()

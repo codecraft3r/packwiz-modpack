@@ -18,7 +18,16 @@
 		}
 	]
 	order_index: 100
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "6E263A24C419C7CF"
+			linked_quest: "7A11C0DF00200007"
+			x: 0.0d
+			y: -11.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["7A11C0DF00200007"]

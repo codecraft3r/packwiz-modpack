@@ -1996,6 +1996,10 @@ def _stage_outputs(root: Path, expected: dict[Path, str]) -> Path:
                 target = stage / proof["metadata"]
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(root / proof["metadata"], target)
+            graph_runtime = json.loads((root / "docs/frontier/evidence/graph-runtime.json").read_text())
+            target = stage / graph_runtime["metadata"]
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(root / graph_runtime["metadata"], target)
         _, errors, warnings = validate_emitted_files(stage, stack_limits)
         if frontier:
             from frontier_validate import audit

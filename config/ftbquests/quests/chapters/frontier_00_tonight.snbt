@@ -12,12 +12,18 @@
 		{
 			id: "6E260819FC7E5947"
 			title: "Your Next Adventure"
-			description: ["Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress.", "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.", "Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group.", "Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."]
+			description: [
+				"Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress."
+				"Lines between milestones suggest a route; earlier milestones do not block credit for things you have already done. Crew projects, contracts, and paid orders require their connected prerequisites."
+				"Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges."
+				"Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."
+				"Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."
+			]
 			icon: { id: "numismatics:cog" }
 			x: 0.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1.3d
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "checkmark", id: "6E26D0172F9D8F90", title: "Choose something you actually want to do" }
@@ -39,10 +45,10 @@
 			title: "A Short Fight"
 			description: ["New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons.", "This is an optional fresh-combat warm-up, not an entrance requirement for veterans. The book rewards can protect the armor you choose."]
 			icon: { id: "minecraft:shield" }
-			x: 3.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: -3.0d
+			y: 3.0d
+			size: 0.9d
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "kill", entity: "minecraft:zombie", value: 3, id: "6E261AD7A999CA10" }
@@ -83,16 +89,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26B89DD1523BD3"
 			title: "The Enchanting Workshop"
 			description: ["Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate.", "Use the bottles to start upgrading your own equipment. Looking at the block verifies workshop access, not a particular enchantment."]
 			icon: { id: "enchantinginfuser:enchanting_infuser" }
-			x: 6.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: 3.0d
+			y: 3.0d
+			size: 1
+			shape: "square"
 			optional: true
 			tasks: [
 				{
@@ -122,6 +129,8 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 	]
+	quest_links: [ ]
 }

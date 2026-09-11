@@ -14,9 +14,9 @@
 			title: "Kraken"
 			description: ["Take a boat or airship to the fight and make a plan for staying together.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "block_factorys_bosses:undying_tentacle" }
-			x: 0.0d
+			x: -10.0d
 			y: 0.0d
-			size: 1.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -41,15 +41,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26596722B417C4"]
 		}
 		{
 			id: "6E2630DCECD63DAB"
 			title: "Underworld Knight"
 			description: ["A good next target for a newly equipped fighter. Learn the openings instead of trading every hit.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "block_factorys_bosses:knight_sword" }
-			x: 3.0d
+			x: -4.0d
 			y: 0.0d
-			size: 1.0d
+			size: 1.1d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -74,15 +75,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26B85654476589"
 			title: "Infernal Dragon"
 			description: ["A separate encounter from the Ender Dragon. Bring fire preparation and ranged options.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "minecraft:dragon_breath" }
-			x: 6.0d
+			x: 10.0d
 			y: 0.0d
-			size: 1.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -115,15 +117,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E268B44A0C8789B"]
 		}
 		{
 			id: "6E26503B6ACB5284"
 			title: "Sandworm"
 			description: ["Turn a desert expedition into a proper boss hunt.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "block_factorys_bosses:sandworm_gauntlet" }
-			x: 9.0d
+			x: 0.0d
 			y: 0.0d
-			size: 1.0d
+			size: 1.1d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -148,15 +151,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E263C2F9B59EE37"
 			title: "Ignis"
 			description: ["Coordinate your opening and recovery windows. Your existing Ignis victory already earns this credit.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "cataclysm:ignitium_ingot" }
-			x: 0.0d
-			y: 3.0d
-			size: 1.0d
+			x: 4.0d
+			y: 0.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -181,15 +185,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E26459D86508DED"
 			title: "The Harbinger"
 			description: ["Take on the factory encounter. Spend the reward on the next improvement to your loadout.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "cataclysm:witherite_ingot" }
-			x: 3.0d
-			y: 3.0d
-			size: 1.0d
+			x: 4.0d
+			y: 4.0d
+			size: 1.1d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -214,15 +219,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E263C2F9B59EE37"]
 		}
 		{
 			id: "6E26ECFF5B20D03A"
 			title: "Ancient Remnant"
 			description: ["The desert raid continues inside the Cursed Pyramid. A previous win counts.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "cataclysm:ancient_metal_ingot" }
-			x: 6.0d
-			y: 3.0d
-			size: 1.0d
+			x: 14.0d
+			y: 12.0d
+			size: 1.1d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -247,15 +253,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E263A514ED1B351"]
 		}
 		{
 			id: "6E268C8F94E96C43"
 			title: "Ender Guardian"
 			description: ["A destination beyond simply reaching the End. Existing victories count.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "cataclysm:gauntlet_of_guard" }
-			x: 9.0d
-			y: 3.0d
-			size: 1.0d
+			x: 10.0d
+			y: 4.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -280,15 +287,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26B85654476589"]
 		}
 		{
 			id: "6E263C80910AEB59"
 			title: "Netherite Monstrosity"
 			description: ["A fresh heavyweight target for the group. Prepare the arena approach before starting the encounter.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "minecraft:netherite_scrap" }
-			x: 0.0d
-			y: 6.0d
-			size: 1.0d
+			x: 4.0d
+			y: 8.0d
+			size: 1.3d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -313,15 +321,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26459D86508DED"]
 		}
 		{
 			id: "6E269A5A0A38EE19"
 			title: "The Leviathan"
 			description: ["Your sea expedition culminates here. Bring a loadout designed for the environment.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "cataclysm:altar_of_abyss" }
-			x: 3.0d
-			y: 6.0d
-			size: 1.0d
+			x: -10.0d
+			y: 4.0d
+			size: 1.3d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -346,15 +355,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E2688DA25219A46"]
 		}
 		{
 			id: "6E2636F2D969C506"
 			title: "Maledictus"
 			description: ["A new challenge for players who already cleared Ignis and the Harbinger.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "minecraft:echo_shard" }
-			x: 6.0d
-			y: 6.0d
-			size: 1.0d
+			x: -16.0d
+			y: 12.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -379,15 +389,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26C7B60D14A1C6"]
 		}
 		{
 			id: "6E2600D391E9924E"
 			title: "Scylla"
 			description: ["The Acropolis raid is a reason to finish that airship, test a spell build, and gather the crew.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "minecraft:lightning_rod" }
-			x: 9.0d
-			y: 6.0d
-			size: 1.0d
+			x: 14.0d
+			y: 16.0d
+			size: 1.3d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -412,15 +423,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26ECFF5B20D03A"]
 		}
 		{
 			id: "6E26A7A44AE011AA"
 			title: "Clawdian"
 			description: ["Another untouched Cataclysm encounter. Use the in-game guide and Explorer's Compass to plan the expedition.", "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."]
 			icon: { id: "minecraft:nautilus_shell" }
-			x: 0.0d
-			y: 9.0d
-			size: 1.0d
+			x: -10.0d
+			y: 8.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -445,15 +457,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E269A5A0A38EE19"]
 		}
 		{
 			id: "6E2604721322C227"
 			title: "Azazel's Relic"
 			description: ["Follow the Cult of Azazel progression to its Manipulator Stick relic. Possessing the relic earns this milestone; a kill alone does not.", "Previously earned the relic advancement? Your team can claim the reward once per teammate."]
 			icon: { id: "minecraft:nether_star" }
-			x: 3.0d
-			y: 9.0d
-			size: 1.0d
+			x: 0.0d
+			y: 16.0d
+			size: 1.2d
 			shape: "hexagon"
 			optional: true
 			tasks: [
@@ -478,6 +491,65 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26B609FD3DA0FD"]
+		}
+	]
+	quest_links: [
+		{
+			id: "6E265A24EF66E28F"
+			linked_quest: "6E26596722B417C4"
+			x: -10.0d
+			y: -4.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E266256349CEFB2"
+			linked_quest: "6E260819FC7E5947"
+			x: 0.0d
+			y: -4.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26D5FC34E7EAEE"
+			linked_quest: "6E268B44A0C8789B"
+			x: 10.0d
+			y: -4.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E268603493A2C36"
+			linked_quest: "6E263A514ED1B351"
+			x: 14.0d
+			y: 8.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26D060B7E65954"
+			linked_quest: "6E26C7B60D14A1C6"
+			x: -16.0d
+			y: 8.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E2600485740915B"
+			linked_quest: "6E26B609FD3DA0FD"
+			x: 0.0d
+			y: 12.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E260E2CDCC57C7B"
+			linked_quest: "6E26114622D37E7F"
+			x: -4.0d
+			y: 12.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

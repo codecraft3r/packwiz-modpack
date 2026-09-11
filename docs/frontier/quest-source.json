@@ -5,63 +5,200 @@
       "title": "Start Here",
       "icon": "minecraft:compass",
       "subtitle": "Pick a route. Past achievements count. No charter gate.",
-      "group": "play"
+      "group": "play",
+      "links": []
     },
     {
       "key": "01_expeditions",
       "title": "Go Somewhere Worth Going",
       "icon": "explorerscompass:explorerscompass",
       "subtitle": "Discovery, photography, dangerous places, and reasons to bring a friend.",
-      "group": "play"
+      "group": "play",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -3
+        }
+      ]
     },
     {
       "key": "02_bosses",
       "title": "Boss Board",
       "icon": "cataclysm:burning_ashes",
       "subtitle": "Old wins count. Your next untouched boss is the real destination.",
-      "group": "play"
+      "group": "play",
+      "links": [
+        {
+          "quest": "sunken_city",
+          "x": -10,
+          "y": -4
+        },
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -4
+        },
+        {
+          "quest": "end_gateway",
+          "x": 10,
+          "y": -4
+        },
+        {
+          "quest": "acropolis",
+          "x": 14,
+          "y": 8
+        },
+        {
+          "quest": "frosted_prison",
+          "x": -16,
+          "y": 8
+        },
+        {
+          "quest": "azazel_maze",
+          "x": 0,
+          "y": 12
+        },
+        {
+          "quest": "catacombs",
+          "x": -4,
+          "y": 12
+        }
+      ]
     },
     {
       "key": "03_magic",
       "title": "Build a Spell Loadout",
       "icon": "irons_spellbooks:arcane_anvil",
       "subtitle": "Make choices that change how you fight. Keep the faction you enjoy.",
-      "group": "play"
+      "group": "play",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -3
+        }
+      ]
     },
     {
       "key": "04_engineering",
       "title": "Machines That Change the Server",
       "icon": "create:precision_mechanism",
       "subtitle": "Credit for the factory you already built; challenges beyond the Digital Miner.",
-      "group": "make"
+      "group": "make",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -3
+        }
+      ]
     },
     {
       "key": "05_transport",
       "title": "Flight, Freight, and Arrival",
       "icon": "simulated:steering_wheel",
       "subtitle": "Build something people will actually ride.",
-      "group": "make"
+      "group": "make",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -3
+        }
+      ]
     },
     {
       "key": "06_places",
       "title": "Make This Place Yours",
       "icon": "exposure:photograph_frame",
       "subtitle": "Food, photographs, markets, interiors, and shared stories.",
-      "group": "make"
+      "group": "make",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": 0,
+          "y": -4
+        },
+        {
+          "quest": "first_photo",
+          "x": -8,
+          "y": 0
+        },
+        {
+          "quest": "arcane_workshop",
+          "x": 9,
+          "y": 0
+        }
+      ]
     },
     {
       "key": "07_contracts",
       "title": "Crew Contracts",
       "icon": "numismatics:cog",
       "subtitle": "Optional repeat jobs. No streaks and no login calendar.",
-      "group": "trade"
+      "group": "trade",
+      "links": [
+        {
+          "quest": "catacombs",
+          "x": -6,
+          "y": -3
+        },
+        {
+          "quest": "boss_ignis",
+          "x": -2,
+          "y": -3
+        },
+        {
+          "quest": "boss_leviathan",
+          "x": 2,
+          "y": -3
+        },
+        {
+          "quest": "feast",
+          "x": 6,
+          "y": -3
+        }
+      ]
     },
     {
       "key": "08_quartermaster",
       "title": "Spend It on Your Next Project",
       "icon": "numismatics:bank_terminal",
       "subtitle": "Coins buy convenience and selected upgrades. Orders are one shared parcel.",
-      "group": "trade"
+      "group": "trade",
+      "links": [
+        {
+          "quest": "welcome",
+          "x": -8,
+          "y": -5
+        },
+        {
+          "quest": "first_train",
+          "x": 16,
+          "y": -5
+        },
+        {
+          "quest": "scroll_workshop",
+          "x": 8,
+          "y": 3
+        },
+        {
+          "quest": "arcane_workshop",
+          "x": 8,
+          "y": 11
+        },
+        {
+          "quest": "legendary_ink",
+          "x": 8,
+          "y": 19
+        },
+        {
+          "quest": "book_ready",
+          "x": 8,
+          "y": -2
+        }
+      ]
     }
   ],
   "quests": [
@@ -72,6 +209,7 @@
       "icon": "numismatics:cog",
       "description": [
         "Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress.",
+        "Lines between milestones suggest a route; earlier milestones do not block credit for things you have already done. Crew projects, contracts, and paid orders require their connected prerequisites.",
         "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.",
         "Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group.",
         "Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."
@@ -99,7 +237,11 @@
       "kind": "welcome",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1.3
     },
     {
       "key": "field_test",
@@ -162,11 +304,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "fresh",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 3,
+      "shape": "diamond",
+      "size": 0.9
     },
     {
       "key": "enchanting_access",
@@ -208,11 +356,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 3,
+      "y": 3,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "first_photo",
@@ -263,11 +417,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -6,
+      "y": 0,
+      "shape": "circle",
+      "size": 1
     },
     {
       "key": "printed_photo",
@@ -308,11 +468,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "first_photo"
+      ],
       "kind": "milestone",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -6,
+      "y": 3,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "catacombs",
@@ -353,11 +519,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -2,
+      "y": 0,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "end_gateway",
@@ -398,11 +570,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 2,
+      "y": 0,
+      "shape": "octagon",
+      "size": 1.1
     },
     {
       "key": "end_photograph",
@@ -453,11 +631,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "end_gateway"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 2,
+      "y": 3,
+      "shape": "diamond",
+      "size": 0.9
     },
     {
       "key": "sunken_city",
@@ -498,11 +682,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 6,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "frosted_prison",
@@ -543,11 +733,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "sunken_city"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 6,
+      "y": 3,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "acropolis",
@@ -588,11 +784,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "end_gateway"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 4,
+      "y": 6,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "azazel_maze",
@@ -633,11 +835,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "catacombs"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -2,
+      "y": 3,
+      "shape": "gear",
+      "size": 1
     },
     {
       "key": "boss_kraken",
@@ -678,11 +886,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "sunken_city"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -10,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_knight",
@@ -723,11 +937,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -4,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "boss_infernal_dragon",
@@ -778,11 +998,17 @@
         }
       ],
       "coins": 96,
-      "deps": [],
+      "deps": [
+        "end_gateway"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 10,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_sandworm",
@@ -823,11 +1049,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "boss_ignis",
@@ -868,11 +1100,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 4,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_harbinger",
@@ -913,11 +1151,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "boss_ignis"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 4,
+      "y": 4,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "boss_remnant",
@@ -958,11 +1202,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "acropolis"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 14,
+      "y": 12,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "boss_guardian",
@@ -1003,11 +1253,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "boss_infernal_dragon"
+      ],
       "kind": "boss_milestone",
       "tier": "established",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 10,
+      "y": 4,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_monstrosity",
@@ -1048,11 +1304,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "boss_harbinger"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 4,
+      "y": 8,
+      "shape": "hexagon",
+      "size": 1.3
     },
     {
       "key": "boss_leviathan",
@@ -1093,11 +1355,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "boss_kraken"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -10,
+      "y": 4,
+      "shape": "hexagon",
+      "size": 1.3
     },
     {
       "key": "boss_maledictus",
@@ -1138,11 +1406,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "frosted_prison"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -16,
+      "y": 12,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_scylla",
@@ -1183,11 +1457,17 @@
         }
       ],
       "coins": 256,
-      "deps": [],
+      "deps": [
+        "boss_remnant"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 14,
+      "y": 16,
+      "shape": "hexagon",
+      "size": 1.3
     },
     {
       "key": "boss_clawdian",
@@ -1228,11 +1508,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "boss_leviathan"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -10,
+      "y": 8,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "boss_azazel",
@@ -1273,11 +1559,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "azazel_maze"
+      ],
       "kind": "boss_milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 16,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "book_ready",
@@ -1318,11 +1610,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "entry",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 0,
+      "shape": "circle",
+      "size": 1
     },
     {
       "key": "scroll_workshop",
@@ -1373,11 +1671,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "book_ready"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 3,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "arcane_workshop",
@@ -1418,11 +1722,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "scroll_workshop"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 6,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "legendary_ink",
@@ -1463,11 +1773,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "arcane_workshop"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 9,
+      "shape": "gear",
+      "size": 1.2
     },
     {
       "key": "dragon_book",
@@ -1518,11 +1834,17 @@
         }
       ],
       "coins": 96,
-      "deps": [],
+      "deps": [
+        "legendary_ink"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 12,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "vampire_flight",
@@ -1563,11 +1885,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "book_ready"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -6,
+      "y": 3,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "hunter_tech",
@@ -1608,11 +1936,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "book_ready"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 6,
+      "y": 3,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "vampire_master",
@@ -1653,11 +1987,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "vampire_flight"
+      ],
       "kind": "milestone",
       "tier": "long_term",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -6,
+      "y": 6,
+      "shape": "heart",
+      "size": 1.2
     },
     {
       "key": "hunter_master",
@@ -1698,11 +2038,17 @@
         }
       ],
       "coins": 192,
-      "deps": [],
+      "deps": [
+        "hunter_tech"
+      ],
       "kind": "milestone",
       "tier": "long_term",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 6,
+      "y": 6,
+      "shape": "heart",
+      "size": 1.2
     },
     {
       "key": "brass",
@@ -1743,11 +2089,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -9,
+      "y": 0,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "precision",
@@ -1788,11 +2140,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "brass"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -9,
+      "y": 3,
+      "shape": "gear",
+      "size": 1
     },
     {
       "key": "steam",
@@ -1833,11 +2191,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "precision"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -9,
+      "y": 6,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "factory",
@@ -1878,11 +2242,17 @@
         }
       ],
       "coins": 16,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 0,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "miner",
@@ -1923,11 +2293,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "factory"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 3,
+      "shape": "square",
+      "size": 1.1
     },
     {
       "key": "gas_power",
@@ -1968,11 +2344,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "miner"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 6,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "automatic_crafting",
@@ -2013,11 +2395,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "gas_power"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 9,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "portable_qio",
@@ -2066,11 +2454,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "automatic_crafting"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 12,
+      "shape": "square",
+      "size": 1.2
     },
     {
       "key": "steam_max",
@@ -2121,11 +2515,17 @@
         }
       ],
       "coins": 96,
-      "deps": [],
+      "deps": [
+        "steam"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -9,
+      "y": 9,
+      "shape": "hexagon",
+      "size": 1.2
     },
     {
       "key": "powah_energizing",
@@ -2176,11 +2576,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 3,
+      "y": 0,
+      "shape": "gear",
+      "size": 1
     },
     {
       "key": "powergrid_motor",
@@ -2222,11 +2628,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "powah_energizing"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 3,
+      "y": 3,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "crew_dashboard",
@@ -2284,11 +2696,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "powergrid_motor"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 3,
+      "y": 6,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "airframe",
@@ -2336,11 +2754,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -7,
+      "y": 0,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "propulsion",
@@ -2403,11 +2827,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "airframe"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -10,
+      "y": 3,
+      "shape": "gear",
+      "size": 1
     },
     {
       "key": "first_train",
@@ -2458,11 +2888,17 @@
         }
       ],
       "coins": 96,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 0,
+      "shape": "hexagon",
+      "size": 1.1
     },
     {
       "key": "train_travel",
@@ -2503,11 +2939,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "first_train"
+      ],
       "kind": "milestone",
       "tier": "long_term",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 3,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "flight_test",
@@ -2545,7 +2987,11 @@
       "kind": "crew_confirmed",
       "tier": "frontier",
       "repeat": 0,
-      "shared": true
+      "shared": true,
+      "x": -6,
+      "y": 7,
+      "shape": "diamond",
+      "size": 1.1
     },
     {
       "key": "freight",
@@ -2591,11 +3037,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "train_travel"
+      ],
       "kind": "milestone",
       "tier": "recognition",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 0,
+      "y": 6,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "personal_wings",
@@ -2647,11 +3099,17 @@
         }
       ],
       "coins": 128,
-      "deps": [],
+      "deps": [
+        "propulsion"
+      ],
       "kind": "milestone",
       "tier": "advanced",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -13,
+      "y": 6,
+      "shape": "heart",
+      "size": 1.1
     },
     {
       "key": "charted_road",
@@ -2692,11 +3150,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "first_train"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 5,
+      "y": 3,
+      "shape": "circle",
+      "size": 1
     },
     {
       "key": "feast",
@@ -2747,11 +3211,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -3,
+      "y": 0,
+      "shape": "heart",
+      "size": 1
     },
     {
       "key": "photo_portrait",
@@ -2802,11 +3272,17 @@
         }
       ],
       "coins": 96,
-      "deps": [],
+      "deps": [
+        "first_photo"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -8,
+      "y": 4,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "friend",
@@ -2848,11 +3324,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 1,
+      "y": 0,
+      "shape": "heart",
+      "size": 1
     },
     {
       "key": "palette",
@@ -2910,11 +3392,17 @@
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "milestone",
       "tier": "open",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 5,
+      "y": 0,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "market_stall",
@@ -2966,11 +3454,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "palette"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 7,
+      "y": 4,
+      "shape": "square",
+      "size": 1
     },
     {
       "key": "shop_sale",
@@ -3011,11 +3505,17 @@
         }
       ],
       "coins": 64,
-      "deps": [],
+      "deps": [
+        "market_stall"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": 7,
+      "y": 8,
+      "shape": "gear",
+      "size": 1.1
     },
     {
       "key": "cinema",
@@ -3096,11 +3596,17 @@
         }
       ],
       "coins": 48,
-      "deps": [],
+      "deps": [
+        "photo_portrait"
+      ],
       "kind": "milestone",
       "tier": "frontier",
       "repeat": 0,
-      "shared": false
+      "shared": false,
+      "x": -8,
+      "y": 8,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "guesthouse",
@@ -3140,11 +3646,18 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "palette",
+        "friend"
+      ],
       "kind": "crew_confirmed",
       "tier": "open",
       "repeat": 0,
-      "shared": true
+      "shared": true,
+      "x": 3,
+      "y": 4,
+      "shape": "heart",
+      "size": 1.1
     },
     {
       "key": "range",
@@ -3184,11 +3697,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "arcane_workshop"
+      ],
       "kind": "crew_confirmed",
       "tier": "open",
       "repeat": 0,
-      "shared": true
+      "shared": true,
+      "x": 12,
+      "y": 4,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "dead_king_contract",
@@ -3235,7 +3754,11 @@
       "kind": "contract",
       "tier": "advanced",
       "repeat": 21600,
-      "shared": true
+      "shared": true,
+      "x": -6,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "ignis_contract",
@@ -3282,7 +3805,11 @@
       "kind": "contract",
       "tier": "advanced",
       "repeat": 21600,
-      "shared": true
+      "shared": true,
+      "x": -2,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "leviathan_contract",
@@ -3329,7 +3856,11 @@
       "kind": "contract",
       "tier": "advanced",
       "repeat": 21600,
-      "shared": true
+      "shared": true,
+      "x": 2,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "galley_contract",
@@ -3391,7 +3922,11 @@
       "kind": "contract",
       "tier": "entry",
       "repeat": 21600,
-      "shared": true
+      "shared": true,
+      "x": 6,
+      "y": 0,
+      "shape": "diamond",
+      "size": 1
     },
     {
       "key": "shop_field",
@@ -3448,11 +3983,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -18,
+      "y": 0,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_builder",
@@ -3629,11 +4170,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -14,
+      "y": 3,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_decor",
@@ -3700,11 +4247,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -10,
+      "y": 5,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_film",
@@ -3761,11 +4314,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -6,
+      "y": 5,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_airframe",
@@ -3832,11 +4391,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -2,
+      "y": 5,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_rail",
@@ -3899,7 +4464,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 20,
+      "y": -1,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_scroll",
@@ -3972,7 +4541,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 13,
+      "y": 7,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_epic",
@@ -4025,7 +4598,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 4,
+      "y": 23,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_mending",
@@ -4069,11 +4646,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": -21,
+      "y": 4,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_fortune",
@@ -4117,11 +4700,17 @@
         }
       ],
       "coins": 0,
-      "deps": [],
+      "deps": [
+        "welcome"
+      ],
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 1,
+      "y": 0,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_mana",
@@ -4164,7 +4753,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 4,
+      "y": 15,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_cooldown",
@@ -4207,7 +4800,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 12,
+      "y": 15,
+      "shape": "square",
+      "size": 0.9
     },
     {
       "key": "shop_legendary",
@@ -4250,7 +4847,11 @@
       "kind": "shop",
       "tier": "open",
       "repeat": 60,
-      "shared": true
+      "shared": true,
+      "x": 12,
+      "y": 23,
+      "shape": "square",
+      "size": 1
     }
   ],
   "schema": "poiesis-frontier-v1",

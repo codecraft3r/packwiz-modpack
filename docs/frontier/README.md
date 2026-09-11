@@ -18,6 +18,12 @@ The brief is a fresh engagement-focused book with balanced adventures, machines 
 
 The five-player snapshot supports 20 retrospective milestones for one existing team and 13 for the other. The resulting forecast is 1,184 or 880 Spurs per teammate after detection and manual claiming. This is a one-time opening budget, not money already present in the bank. Team progress acknowledges access to a team's achievements; it does not claim every member personally accomplished them.
 
+## Connected routes and credit
+
+Every new quest is connected to the welcome route. Chapters use authored spines, forks and destination nodes, with small native Quest Links displaying relevant prerequisites from another chapter. Those links point to the original quest and do not create another claim or reward.
+
+Milestone lines are suggested next steps: flexible progression preserves direct credit for achievements veterans already hold. Crew projects, contracts and purchases have enforced prerequisites through linear progression. Optional faction routes remain separate. The welcome quest explains the distinction.
+
 ## Economy and deliberate scope
 
 New personal one-time currency has a 4,704-Spur completionist ceiling. There is no required route or minimum mandatory payout. Opposing faction branches mean the mathematical ceiling is not a normal expected path. Welcome and crew-confirmed checkmarks give useful items but **no currency**, following the repository's stronger rule for weak verification. Those social projects cannot repeat.
@@ -30,12 +36,12 @@ Recipe restrictions remain intact, including the disabled MekaSuit, Antiprotonic
 
 Every bulk reward is checked against the item's verified stack limit, with 37 item types covered by pinned registry/constructor evidence in `evidence/reward-stack-limits.json`. Singleton entries fit any valid registered item; no exact maximum is inferred for singleton-only rewards. The native ItemReward delivery loop also splits physical stacks, but that behavior is not used to excuse oversized authoring entries. Source evidence for 46 modded survival paths lives in `evidence/survival-paths.json`, including custom Icarus recipes and Lightning Bottles' charged-creeper interaction.
 
-The second rules pass gates the ferry's modest, shared 16-envelope reward behind its equipment milestones and gates cooking behind the feast. Friendship awards seating rather than MCA's romance-triggering bouquet. The QIO milestone supplies a Mending book, and automated crafting supplies a full stack of andesite alloy. Quest titles are at most four words, prices must match consumed coins, and unsupported book components or repeatable one-time milestones block validation. See `RULES_REVIEW.md` for findings and the remaining runtime checks.
+The graph correction enforces the ferry's modest, shared 16-envelope reward behind its equipment milestones by changing crew projects to linear progression. The preceding rules pass added the ferry dependencies but left flexible mode enabled, which bypassed that gate. Cooking already uses linear progression and remains gated behind the feast. Friendship awards seating rather than MCA's romance-triggering bouquet. The QIO milestone supplies a Mending book, and automated crafting supplies a full stack of andesite alloy. Quest titles are at most four words, prices must match consumed coins, and unsupported book components or repeatable one-time milestones block validation. See `GRAPH_REVIEW.md` for the current graph findings and `RULES_REVIEW.md` for the preceding economy review.
 
 ## Source ownership
 
 1. `docs/frontier/quest-source.json` owns the 81 new quests.
-2. `scripts/frontier_campaign.py` composes their chapters over `vvh_campaign_v3.py`'s reviewed legacy output. It changes only archived chapter placement and titles; legacy quest objects remain identical.
+2. `scripts/frontier_campaign.py` composes their chapters over `vvh_campaign_v3.py`'s reviewed legacy output. It changes archived chapter placement and titles and adds four visual prerequisite links; legacy quest objects remain identical.
 3. The existing `vvh_campaign_v3.py` entry point, output hash ledger and staged-write guard own the combined generation. Calling the old command cannot erase the new book.
 4. `scripts/frontier_validate.py` validates the new source, emitted files, full-book ID/dependency boundary, currency scopes and exact-artifact evidence. The existing VvH validator still checks its archived source and invokes the Frontier audit.
 5. VvH's original ID catalog remains scoped to its reviewed archived content. Frontier has a separate pinned-artifact and live-query evidence ledger; unknown new namespaces are not accepted merely because the old allowlist omits them.

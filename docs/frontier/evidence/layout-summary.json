@@ -1,60 +1,592 @@
 {
-  "evidence_type": "source geometry only; not a Minecraft client screenshot",
-  "manifest_sha256": "dd9706d36f4c678fed4aee401003e829c47d4c0fd1ea95ee7fee386ec35e1e9a",
+  "evidence_type": "Source geometry only; not a Minecraft client screenshot",
+  "manifest_sha256": "aa0a1ede159f08c5f209dba607c572f18d139df781904e7fef60214441665708",
   "chapters": {
     "frontier_00_tonight": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 2,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 0,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_01_expeditions": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 1,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_02_bosses": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 20,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 7,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_03_magic": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 1,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_04_engineering": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 12,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 1,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_05_transport": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 1,
+      "disconnected_components": 1,
       "review_label_clipping": 0
     },
     "frontier_06_places": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 11,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 3,
+      "disconnected_components": 2,
       "review_label_clipping": 0
     },
     "frontier_07_contracts": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 4,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 4,
+      "disconnected_components": 4,
       "review_label_clipping": 0
     },
     "frontier_08_quartermaster": {
       "node_overlaps": 0,
       "estimated_label_collisions": 0,
       "visible_edge_crossings": 0,
+      "visible_edge_count": 18,
+      "visible_edge_overlaps": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "missing_dependency_nodes": 0,
+      "linked_visual_nodes": 6,
+      "disconnected_components": 1,
       "review_label_clipping": 0
+    }
+  },
+  "complete_book": {
+    "ch01_island_charter": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 6,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 0,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 6,
+        "mean": 5.112,
+        "max": 6.021
+      },
+      "node_spacing": {
+        "mean": 5.467,
+        "min": 3.5
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": 0.0,
+        "core_rms": 2.53,
+        "all_nodes_rms": 2.53
+      },
+      "spine_alignment_rms": 2.53,
+      "disconnected_components": 1
+    },
+    "ch02_callings": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 7,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 7,
+        "mean": 5.373,
+        "max": 6.403
+      },
+      "node_spacing": {
+        "mean": 6.965,
+        "min": 4.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": 0.0,
+        "core_rms": 0.0,
+        "all_nodes_rms": 2.887
+      },
+      "spine_alignment_rms": 2.887,
+      "disconnected_components": 1
+    },
+    "ch03_lantern_order": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 2,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 15,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 15,
+        "mean": 4.309,
+        "max": 7.159
+      },
+      "node_spacing": {
+        "mean": 9.923,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": 0.0,
+        "core_rms": 0.0,
+        "all_nodes_rms": 5.449
+      },
+      "spine_alignment_rms": 5.449,
+      "disconnected_components": 1
+    },
+    "ch04_house_night": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 2,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 15,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 15,
+        "mean": 4.309,
+        "max": 7.159
+      },
+      "node_spacing": {
+        "mean": 9.923,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": 0.0,
+        "core_rms": 0.0,
+        "all_nodes_rms": 5.449
+      },
+      "spine_alignment_rms": 5.449,
+      "disconnected_components": 1
+    },
+    "ch05_market_services": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 0,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 19,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 0,
+        "mean": 0,
+        "max": 0
+      },
+      "node_spacing": {
+        "mean": 11.423,
+        "min": 3.5
+      },
+      "cluster_separation": {
+        "left_right_gap": 11.0
+      },
+      "spine_alignment": {
+        "core_x": 0.0,
+        "core_rms": 0.0,
+        "all_nodes_rms": 6.575
+      },
+      "spine_alignment_rms": 6.575,
+      "disconnected_components": 1
+    },
+    "frontier_00_tonight": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 2,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 0,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 2,
+        "mean": 4.243,
+        "max": 4.243
+      },
+      "node_spacing": {
+        "mean": 4.828,
+        "min": 4.243
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 2.449
+      },
+      "spine_alignment_rms": 2.449,
+      "disconnected_components": 1
+    },
+    "frontier_01_expeditions": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 9,
+        "mean": 4.328,
+        "max": 6.708
+      },
+      "node_spacing": {
+        "mean": 6.626,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 4.176
+      },
+      "spine_alignment_rms": 4.176,
+      "disconnected_components": 1
+    },
+    "frontier_02_bosses": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 20,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 7,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 20,
+        "mean": 6.294,
+        "max": 16.492
+      },
+      "node_spacing": {
+        "mean": 14.988,
+        "min": 4.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 9.46
+      },
+      "spine_alignment_rms": 9.46,
+      "disconnected_components": 1
+    },
+    "frontier_03_magic": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 9,
+        "mean": 3.824,
+        "max": 6.708
+      },
+      "node_spacing": {
+        "mean": 7.746,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 3.795
+      },
+      "spine_alignment_rms": 3.795,
+      "disconnected_components": 1
+    },
+    "frontier_04_engineering": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 12,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 12,
+        "mean": 3.748,
+        "max": 9.487
+      },
+      "node_spacing": {
+        "mean": 8.352,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 4.475
+      },
+      "spine_alignment_rms": 4.475,
+      "disconnected_components": 1
+    },
+    "frontier_05_transport": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 9,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 1,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 9,
+        "mean": 4.851,
+        "max": 7.616
+      },
+      "node_spacing": {
+        "mean": 8.7,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 5.5
+      },
+      "spine_alignment_rms": 5.5,
+      "disconnected_components": 1
+    },
+    "frontier_06_places": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 11,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 3,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 11,
+        "mean": 4.99,
+        "max": 8.944
+      },
+      "node_spacing": {
+        "mean": 10.047,
+        "min": 4.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 6.677
+      },
+      "spine_alignment_rms": 6.677,
+      "disconnected_components": 2
+    },
+    "frontier_07_contracts": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 4,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 4,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 4,
+        "mean": 3.0,
+        "max": 3.0
+      },
+      "node_spacing": {
+        "mean": 6.461,
+        "min": 3.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 4.472
+      },
+      "spine_alignment_rms": 4.472,
+      "disconnected_components": 4
+    },
+    "frontier_08_quartermaster": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "visible_edge_count": 18,
+      "visible_edge_overlaps": 0,
+      "visible_edge_touching_intersections": 0,
+      "visible_edge_through_unrelated_nodes": 0,
+      "edge_overlaps": 0,
+      "edge_through_unrelated_nodes": 0,
+      "linked_visual_nodes": 6,
+      "quest_link_errors": [],
+      "hidden_dependency_edges": 0,
+      "missing_dependency_nodes": 0,
+      "edge_lengths": {
+        "count": 18,
+        "mean": 9.74,
+        "max": 24.0
+      },
+      "node_spacing": {
+        "mean": 18.735,
+        "min": 4.0
+      },
+      "cluster_separation": {
+        "left_right_gap": null
+      },
+      "spine_alignment": {
+        "core_x": null,
+        "core_rms": null,
+        "all_nodes_rms": 11.477
+      },
+      "spine_alignment_rms": 11.477,
+      "disconnected_components": 1
     }
   }
 }

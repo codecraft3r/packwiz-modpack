@@ -12,6 +12,23 @@
   "evidence_policy": "Author names and commit messages are provenance only. A preference needs an explicit instruction or a deliberate corrective diff retained by later source edits.",
   "preferences": [
     {
+      "id": "connected-frontier-maps",
+      "rule": "Author explicit connected routes, native cross-chapter links and meaningful shipped quest shapes. Keep retrospective milestones flexible; enforce crew, contract and purchase prerequisites with linear progression.",
+      "supporting_instructions": [
+        "why arent any of the quest connected to each other properly? can you double check them all o they're first cla quest shapes",
+        "quests need to account for how far ahead people already are"
+      ],
+      "date": "2026-09-11",
+      "status": "current",
+      "scope": "nine Frontier chapters; archived geometry remains protected",
+      "confidence": "high",
+      "enforcement": [
+        "graph reachability and link validation",
+        "pinned native progression semantics",
+        "source layout geometry and regression tests"
+      ]
+    },
+    {
       "id": "progression-aware-frontier-rebuild",
       "rule": "Add a new optional adventure, machine and shared-project questbook that recognizes existing progression. Preserve all current dev quest identities in the archive.",
       "supporting_instructions": [

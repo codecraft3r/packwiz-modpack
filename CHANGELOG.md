@@ -1,5 +1,7 @@
 # Unreleased — dev questbook rebuild
 
+- Connect all Frontier quests with authored routes, meaningful native shapes and cross-chapter Quest Links; enforce project/contract/order gates while preserving veteran milestone credit.
+
 - Review quest rules: enforce verified stack sizes, paid orders and repeat gates; correct objectives, shorten titles, and improve stage-appropriate rewards.
 
 - Add 81 optional progression-aware quests across adventure, machines, magic, transport, shared places and a new supply board.

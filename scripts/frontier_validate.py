@@ -5,6 +5,7 @@ import argparse
 import collections
 import hashlib
 import json
+import math
 import re
 import tomllib
 from pathlib import Path
@@ -19,6 +20,40 @@ ENCHANTMENT_CAPS = {'minecraft:mending': 1, 'minecraft:fortune': 3,
 DISABLED_EQUIPMENT = {'mekanism:mekasuit_helmet', 'mekanism:mekasuit_bodyarmor',
                       'mekanism:mekasuit_pants', 'mekanism:mekasuit_boots',
                       'mekanism:antiprotonic_nucleosynthesizer', 'mekanism:quantum_entangloporter'}
+
+PROGRESSION_MODES = {
+    'welcome': 'flexible',
+    'fresh': 'flexible',
+    'milestone': 'flexible',
+    'boss_milestone': 'flexible',
+    'crew_confirmed': 'linear',
+    'contract': 'linear',
+    'shop': 'linear',
+}
+
+# This is loaded from the reviewed graph-runtime evidence below.  The fallback
+# is deliberately empty: a shape is valid only when the shipped-runtime proof
+# says so, rather than because it happens to be accepted by a local renderer.
+
+def finite_number(value: Any) -> bool:
+    return type(value) in (int, float) and math.isfinite(value)
+
+def faction_of(quest: dict[str, Any]) -> str | None:
+    """Return an explicit or source-key faction marker for cross-lock checks."""
+    for field in ('faction', 'requires_faction', 'branch'):
+        value = quest.get(field)
+        if isinstance(value, str):
+            value = value.lower()
+            if 'hunter' in value:
+                return 'hunter'
+            if 'vampire' in value or 'night' in value:
+                return 'vampire'
+    key = str(quest.get('key', '')).lower()
+    if key.startswith('hunter_') or key.endswith('_hunter'):
+        return 'hunter'
+    if key.startswith('vampire_') or key.endswith('_vampire'):
+        return 'vampire'
+    return None
 
 def positive_int(value: Any) -> bool:
     return type(value) is int and value > 0
@@ -42,12 +77,28 @@ def audit(root: Path) -> dict[str, Any]:
         advancements = read('docs/frontier/evidence/advancement-criteria.json')
         stacks = read('docs/frontier/evidence/reward-stack-limits.json')['items']
         survival = read('docs/frontier/evidence/survival-paths.json')
+        graph_runtime = read('docs/frontier/evidence/graph-runtime.json')
         base = root / 'config/ftbquests/quests'
         chapters = [Parser(p.read_text(), str(p)).parse() for p in sorted((base / 'chapters').glob('*.snbt'))]
         tables = [Parser(p.read_text(), str(p)).parse() for p in sorted((base / 'reward_tables').glob('*.snbt'))]
         groups = Parser((base / 'chapter_groups.snbt').read_text(), 'chapter_groups').parse()['chapter_groups']
     except (OSError, ValueError, KeyError) as exc:
         return {'active': True, 'errors': [f'Frontier input could not be loaded: {exc}']}
+    runtime_metadata = root / graph_runtime.get('metadata', '')
+    require(runtime_metadata.is_file(), 'graph-runtime: missing pinned FTB Quests metadata')
+    if runtime_metadata.is_file():
+        require(hashlib.sha256(runtime_metadata.read_bytes()).hexdigest() == graph_runtime.get('metadata_sha256'),
+                'graph-runtime: stale pinned-artifact proof')
+        try:
+            runtime_toml = tomllib.loads(runtime_metadata.read_text())
+            require(runtime_toml.get('filename') == graph_runtime.get('artifact'),
+                    'graph-runtime: artifact pin changed')
+        except (OSError, ValueError, tomllib.TOMLDecodeError):
+            require(False, 'graph-runtime: invalid pinned metadata')
+    runtime_shapes = set(graph_runtime.get('shapes', []))
+    require(bool(runtime_shapes), 'graph-runtime: no verified shipped quest shapes')
+    require(bool(re.fullmatch(r'[0-9a-fA-F]{64}', str(graph_runtime.get('artifact_sha256', '')))),
+            'graph-runtime: invalid artifact hash evidence')
     all_ids: dict[str, str] = {}
     quest_map: dict[str, dict[str, Any]] = {}
     def register(value: str, owner: str):
@@ -59,10 +110,22 @@ def audit(root: Path) -> dict[str, Any]:
     for chapter in chapters:
         register(chapter['id'], chapter['filename'])
         require(chapter['group'] in all_ids, f'Unknown group on {chapter["filename"]}')
+        for link in chapter.get('quest_links', []):
+            link_id = link.get('id') if isinstance(link, dict) else None
+            require(isinstance(link_id, str), f'{chapter["filename"]}: QuestLink has no ID')
+            if isinstance(link_id, str):
+                register(link_id, f'{chapter["filename"]} QuestLink')
         for q in chapter['quests']:
             register(q['id'], q.get('title', 'quest'));quest_map[q['id']] = q
             for family in ['tasks', 'rewards']:
                 for entry in q.get(family, []):register(entry['id'], family)
+    # QuestLink targets can only be resolved after all chapter quests have been
+    # indexed.  Keep this separate from registration so forward references work.
+    for chapter in chapters:
+        for link in chapter.get('quest_links', []):
+            target = link.get('linked_quest') if isinstance(link, dict) else None
+            require(target in quest_map,
+                    f'{chapter["filename"]}: QuestLink target does not resolve: {target}')
     for table in tables:
         register(table['id'], 'reward table')
         for r in table.get('rewards', []):
@@ -104,6 +167,81 @@ def audit(root: Path) -> dict[str, Any]:
                     f'{iid}: survival evidence does not match the pinned artifact')
     source_quests = {q['key']: q for q in manifest['quests']}
     require(len(source_quests) == len(manifest['quests']), 'Duplicate source quest keys')
+    source_chapters = {c['key']: c for c in manifest.get('chapters', [])}
+    require(len(source_chapters) == len(manifest.get('chapters', [])), 'Duplicate source chapter keys')
+    require('welcome' in source_quests, 'Source graph has no welcome root')
+    source_deps: dict[str, list[str]] = {}
+    dependents: dict[str, list[str]] = collections.defaultdict(list)
+    for q in manifest['quests']:
+        key = q.get('key')
+        deps = q.get('deps')
+        require(isinstance(deps, list), f'{key}: source prerequisites must be a list')
+        if not isinstance(deps, list):
+            deps = []
+        source_deps[key] = deps
+        if all(isinstance(dep, str) for dep in deps):
+            require(len(deps) == len(set(deps)), f'{key}: duplicate source prerequisites')
+            require(key not in deps, f'{key}: quest cannot depend on itself')
+        if key != 'welcome':
+            require(bool(deps), f'{key}: every new quest except welcome needs a prerequisite')
+        else:
+            require(not deps, 'welcome: root quest cannot have prerequisites')
+        for dep in deps:
+            known_dependency = isinstance(dep, str) and dep in source_quests
+            require(known_dependency, f'{key}: unknown source prerequisite {dep}')
+            if known_dependency:
+                dependents[dep].append(key)
+
+    # Validate direction and reachability in the authored source graph.  The
+    # emitted graph is checked separately above, including archived chapters.
+    source_visiting: set[str] = set()
+    source_visited: set[str] = set()
+    def visit_source(key: str) -> None:
+        if key in source_visiting:
+            errors.append(f'Source dependency cycle at {key}')
+            return
+        if key in source_visited or key not in source_quests:
+            return
+        source_visiting.add(key)
+        for dep in source_deps.get(key, []):
+            if isinstance(dep, str) and dep in source_quests:
+                visit_source(dep)
+        source_visiting.remove(key)
+        source_visited.add(key)
+    for key in source_quests:
+        visit_source(key)
+    reachable: set[str] = set()
+    if 'welcome' in source_quests:
+        todo = ['welcome']
+        while todo:
+            key = todo.pop()
+            if key in reachable:
+                continue
+            reachable.add(key)
+            todo.extend(dependents.get(key, []))
+    for key in source_quests:
+        require(key in reachable, f'{key}: source graph is disconnected from welcome')
+
+    def source_ancestors(key: str) -> set[str]:
+        found: set[str] = set()
+        todo = list(source_deps.get(key, []))
+        while todo:
+            dep = todo.pop()
+            if not isinstance(dep, str) or dep in found or dep not in source_quests:
+                continue
+            found.add(dep)
+            todo.extend(source_deps.get(dep, []))
+        return found
+
+    # Faction branches may depend on shared route work, but one faction must
+    # never unlock itself through the opposing faction's private milestone.
+    for q in manifest['quests']:
+        q_faction = faction_of(q)
+        for dep in source_ancestors(q.get('key')):
+            dep_faction = faction_of(source_quests.get(dep, {}))
+            require(not (q_faction and dep_faction and q_faction != dep_faction),
+                    f'{q.get("key")}: faction cross-lock on {dep}')
+
     for iid, record in stacks.items():
         require(positive_int(record['max_stack_size']), f'{iid}: invalid stack receipt')
         ns = iid.split(':')[0]
@@ -113,11 +251,94 @@ def audit(root: Path) -> dict[str, Any]:
         if ns != 'minecraft':
             require(ns in proof and proof[ns]['live_jar_sha256'].lower() in hashes,
                     f'{iid}: stack receipt does not match the pinned artifact')
+
+    external_by_chapter: dict[str, set[str]] = collections.defaultdict(set)
+    external_ancestors_by_chapter: dict[str, set[str]] = collections.defaultdict(set)
+    for q in manifest['quests']:
+        key = q['key']
+        chapter_key = q.get('chapter')
+        require(chapter_key in source_chapters, f'{key}: unknown source chapter {chapter_key}')
+        for field in ('x', 'y', 'size'):
+            require(finite_number(q.get(field)), f'{key}: {field} must be finite')
+        require(finite_number(q.get('size')) and 0 < q.get('size') <= 4,
+                f'{key}: quest size must be positive and sensible')
+        shape = q.get('shape')
+        require(isinstance(shape, str) and shape in runtime_shapes,
+                f'{key}: unsupported shipped quest shape {shape!r}')
+        ancestors = source_ancestors(key)
+        for dep in ancestors:
+            if source_quests.get(dep, {}).get('chapter') != chapter_key:
+                external_ancestors_by_chapter[chapter_key].add(dep)
+        for dep in source_deps.get(key, []):
+            dep_chapter = source_quests.get(dep, {}).get('chapter') if isinstance(dep, str) else None
+            if dep_chapter != chapter_key:
+                external_by_chapter[chapter_key].add(dep)
+    for chapter_key, chapter in source_chapters.items():
+        links = chapter.get('links', [])
+        require(isinstance(links, list), f'{chapter_key}: source QuestLinks must be a list')
+        if not isinstance(links, list):
+            links = []
+        seen_links: set[str] = set()
+        for link in links:
+            target = link.get('quest') if isinstance(link, dict) else None
+            require(isinstance(target, str) and target in source_quests,
+                    f'{chapter_key}: QuestLink target does not resolve: {target}')
+            require(target not in seen_links, f'{chapter_key}: duplicate source QuestLink for {target}')
+            if isinstance(target, str):
+                seen_links.add(target)
+            for field in ('x', 'y'):
+                value = link.get(field) if isinstance(link, dict) else None
+                require(finite_number(value), f'{chapter_key}: QuestLink {field} must be finite')
+            require(target in external_ancestors_by_chapter.get(chapter_key, set()),
+                    f'{chapter_key}: QuestLink is not an external prerequisite: {target}')
+        for target in sorted(external_by_chapter.get(chapter_key, set())):
+            require(sum(1 for link in links if isinstance(link, dict) and link.get('quest') == target) == 1,
+                    f'{chapter_key}: external prerequisite {target} needs exactly one local QuestLink')
+
     for ch in manifest['chapters']:references.add(('item', ch['icon']))
     new_names = chapter_names(root)
     actual_new = [c for c in chapters if c['filename'] in new_names]
+    actual_new_by_key = {c['filename'][len('frontier_'):]: c for c in actual_new}
     require(len(actual_new) == len(manifest['chapters']), 'Missing Frontier chapters')
     require(sum(len(c['quests']) for c in actual_new) == len(manifest['quests']), 'Frontier quest count differs from source')
+    for chapter_key, emitted_chapter in actual_new_by_key.items():
+        require(emitted_chapter.get('default_hide_dependency_lines') is False,
+                f'{chapter_key}: Frontier dependency lines must remain visible')
+        links = emitted_chapter.get('quest_links', [])
+        require(isinstance(links, list), f'{chapter_key}: emitted QuestLinks must be a list')
+        if not isinstance(links, list):
+            links = []
+        expected_targets = external_by_chapter.get(chapter_key, set())
+        source_links = {link['quest']: link for link in source_chapters.get(chapter_key, {}).get('links', [])
+                        if isinstance(link, dict) and isinstance(link.get('quest'), str)}
+        emitted_targets: list[str] = []
+        for link in links:
+            target = link.get('linked_quest') if isinstance(link, dict) else None
+            emitted_targets.append(target)
+            required_link_fields = {'id', 'linked_quest', 'x', 'y', 'shape', 'size'}
+            require(isinstance(link, dict) and set(link) == required_link_fields,
+                    f'{chapter_key}: malformed emitted QuestLink')
+            require(target in quest_map, f'{chapter_key}: QuestLink target does not resolve: {target}')
+            require(finite_number(link.get('x')) and finite_number(link.get('y')),
+                    f'{chapter_key}: emitted QuestLink coordinates must be finite')
+            require(link.get('shape') == 'diamond' and link.get('size') == 0.8,
+                    f'{chapter_key}: emitted QuestLink geometry is not verified diamond/0.8')
+            if isinstance(target, str) and target.startswith('6E26'):
+                target_key = next((key for key in source_quests
+                                   if ident('quest:' + key) == target), None)
+                if target_key in source_links:
+                    source_link = source_links[target_key]
+                    require(link.get('id') == ident(f'link:{chapter_key}:{target_key}'),
+                            f'{chapter_key}: QuestLink ID differs from source target')
+                    require(link.get('x') == float(source_link.get('x')) and
+                            link.get('y') == float(source_link.get('y')),
+                            f'{chapter_key}: QuestLink coordinates differ from source')
+        for dep in sorted(expected_targets):
+            target_id = ident('quest:' + dep)
+            require(emitted_targets.count(target_id) == 1,
+                    f'{chapter_key}: external prerequisite {dep} needs exactly one native QuestLink')
+        require(set(emitted_targets) == {ident('quest:' + dep) for dep in source_links},
+                f'{chapter_key}: emitted QuestLinks differ from source prerequisites')
     for q in manifest['quests']:
         emitted = quest_map.get(ident('quest:' + q['key']))
         require(emitted is not None, f'Missing quest {q["key"]}')
@@ -131,6 +352,17 @@ def audit(root: Path) -> dict[str, Any]:
             require(dep in source_quests, f'{q["key"]}: unknown source prerequisite {dep}')
         if emitted:
             require(emitted.get('optional') is True, f'{q["key"]}: new adventure must be optional')
+            require(emitted.get('progression_mode') == PROGRESSION_MODES.get(q['kind']),
+                    f'{q["key"]}: progression mode does not match quest kind')
+            expected_dependencies = {ident('quest:' + dep) for dep in q['deps']}
+            actual_dependencies = set(emitted.get('dependencies', []))
+            require(actual_dependencies == expected_dependencies,
+                    f'{q["key"]}: emitted dependencies differ from source')
+            for field in ('x', 'y', 'size', 'shape'):
+                require(emitted.get(field) == q.get(field),
+                        f'{q["key"]}: emitted {field} differs from source')
+            require(emitted.get('hide_dependency_lines') is not True,
+                    f'{q["key"]}: Frontier dependency lines must remain visible')
         for t in q['tasks']:
             require(t['type'] in ['advancement', 'item', 'kill', 'observation', 'checkmark'], f'{q["key"]}: unsupported task')
             if 'item' in t:references.add(('item', t['item']['id']))
@@ -169,8 +401,6 @@ def audit(root: Path) -> dict[str, Any]:
         if q['kind'] in ['contract', 'shop']:require(q['shared'] and q['repeat'] >= 60, f'{q["key"]}: repeat scope/cooldown missing')
         else:
             require(not q['repeat'], f'{q["key"]}: one-time reward made repeatable')
-            if q['kind'] != 'crew_confirmed':
-                require(not q['deps'], f'{q["key"]}: adventure unexpectedly gated')
         if q['kind'] == 'contract':
             require(q['repeat'] >= 21600, f'{q["key"]}: faucet cooldown too short')
             require(bool(q['deps']) and all(not source_quests.get(d, {}).get('repeat', 1) for d in q['deps']),
@@ -209,9 +439,19 @@ def audit(root: Path) -> dict[str, Any]:
     expected_files = source.outputs(root)
     for path, content in expected_files.items():
         if path.parent == base / 'chapters' and path.stem in new_names:
-            if not path.exists():
-                continue
-            require(Parser(path.read_text(), str(path)).parse() == Parser(content, str(path)).parse(), f'Frontier emitted file differs from source: {path.name}')
+            require(path.exists(), f'Frontier emitted file is missing: {path.name}')
+            if path.exists():
+                require(Parser(path.read_text(), str(path)).parse() == Parser(content, str(path)).parse(),
+                        f'Frontier emitted file differs from source: {path.name}')
+        if path == root / 'docs/frontier/render-manifest.json':
+            manifest_path = path
+            require(manifest_path.exists(), 'Frontier render manifest is missing')
+            if manifest_path.exists():
+                try:
+                    require(json.loads(manifest_path.read_text()) == json.loads(content),
+                            'Frontier render manifest differs from source')
+                except (OSError, ValueError):
+                    require(False, 'Frontier render manifest is invalid JSON')
     old_chapters, _ = source.build_campaign()
     expected_quests = {ident('quest:' + key) for key in source_quests}
     for ch in old_chapters:

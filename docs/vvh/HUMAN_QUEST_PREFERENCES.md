@@ -8,6 +8,8 @@ the validator should preserve.
 
 The owner explicitly requested a fresh, balanced adventure/machine/shared-project book that accounts for already-advanced players. The five-chapter architecture and its detailed layout/cooldown preferences now govern the **preserved archive**. The new nine-chapter Frontier surface is additive at the source level and becomes the primary player-facing book. Stable old quest IDs remain protected. See `docs/frontier/README.md`; the standard generator composes both layers.
 
+The owner's subsequent correction requires connected, deliberately shaped quest maps. Frontier now uses explicit coordinates, meaningful suggested milestone routes and native cross-chapter Quest Links. Flexible milestones credit existing achievements even when earlier route nodes are incomplete; crew projects, contracts and paid orders use linear progression to enforce their prerequisites. These modes follow the pinned FTB Quests implementation, not assumptions about dependency lines. The archive retains its protected geometry and hidden Market lines.
+
 ## Enforced archive preferences
 
 - Keep `scripts/vvh_campaign_v3.py` as the authoring source and port accepted

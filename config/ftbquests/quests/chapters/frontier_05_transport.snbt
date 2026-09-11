@@ -14,10 +14,10 @@
 			title: "A Flight Workshop"
 			description: ["Set up a Physics Assembler and Navigation Table. Inspect the installed blocks; existing installations count.", "Use the components' in-game Ponder scenes to plan your first craft. This milestone verifies workshop access, not a finished airship."]
 			icon: { id: "simulated:physics_assembler" }
-			x: 0.0d
+			x: -7.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "square"
 			optional: true
 			tasks: [
 				{
@@ -54,16 +54,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E2675BD33374B3C"
 			title: "Lift and Thrust"
 			description: ["Bring together a Hot Air Burner, a Propeller Bearing, and a Steering Wheel. Parts already owned count and are not consumed.", "Build a compact prototype before enlarging it. The separate crew flight challenge is about the actual journey."]
 			icon: { id: "aeronautics:andesite_propeller" }
-			x: 3.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: -10.0d
+			y: 3.0d
+			size: 1
+			shape: "gear"
 			optional: true
 			tasks: [
 				{
@@ -107,16 +108,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26820F0536F5C5"]
 		}
 		{
 			id: "6E266290ED70D30D"
 			title: "All Aboard"
 			description: ["Assemble a Create train and earn its native train advancement. Prior train building is credited.", "Connect places that people visit. The rails are for expanding the route after the first vehicle works."]
 			icon: { id: "create:track_station" }
-			x: 6.0d
+			x: 0.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1.1d
+			shape: "hexagon"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "create:train", criterion: "", id: "6E265B3D1E9AD417" }
@@ -148,16 +150,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E269D5583333DE8"
 			title: "A Useful Railway"
 			description: ["Complete Create's Long Travel advancement with a train journey. Check the native advancement for its exact distance requirement.", "A scenic or useful route is a better reason to travel than circling the same track."]
 			icon: { id: "create:green_seat" }
-			x: 9.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: 0.0d
+			y: 3.0d
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "create:long_travel", criterion: "", id: "6E26022B33ADFE02" }
@@ -181,16 +184,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E266290ED70D30D"]
 		}
 		{
 			id: "6E2654CF12083F88"
 			title: "The First Ferry"
 			description: ["Fly a working craft from a dock with a teammate aboard, travel at least 500 blocks, then land intact at a second landing place.", "Crew-confirmed challenge: the passenger confirms the trip before you tick it. One completion per team; one shared reward.", "First complete the flight-workshop and propulsion milestones. Keep the route available for another passenger, with clearly marked docks and permission to land."]
 			icon: { id: "simulated:steering_wheel" }
-			x: 0.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: -6.0d
+			y: 7.0d
+			size: 1.1d
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "checkmark", id: "6E267D8BC134E22C", title: "Our crew completed the flight and landing" }
@@ -205,7 +209,7 @@
 					id: "6E26C5DAE90E920B"
 				}
 			]
-			progression_mode: "flexible"
+			progression_mode: "linear"
 			dependencies: ["6E26820F0536F5C5", "6E2675BD33374B3C"]
 		}
 		{
@@ -213,10 +217,10 @@
 			title: "Freight That Matters"
 			description: ["Reach both Packager and Stock Ticker milestones. Use the system to move a useful supply between a workshop and a destination.", "The advancement checks recognize existing logistics equipment. Delivery design is your next project, not an invisible extra requirement."]
 			icon: { id: "create:packager" }
-			x: 3.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: 0.0d
+			y: 6.0d
+			size: 1.1d
+			shape: "gear"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "create:packager", criterion: "", id: "6E26704B746CC286" }
@@ -241,16 +245,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E269D5583333DE8"]
 		}
 		{
 			id: "6E262BB31BF0076D"
 			title: "Workshop Wings"
 			description: ["Obtain the pack's White Feathered Wings using its custom industrial recipe. The required HDPE Elytra connects this project to Mekanism.", "The wings are not consumed. Already have this exact item? Carry it briefly for detection; no recrafting needed."]
 			icon: { id: "icarus:white_feathered_wings" }
-			x: 6.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: -13.0d
+			y: 6.0d
+			size: 1.1d
+			shape: "heart"
 			optional: true
 			tasks: [
 				{
@@ -288,15 +293,16 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E2675BD33374B3C"]
 		}
 		{
 			id: "6E26B66A6926E5A8"
 			title: "A Road Home"
 			description: ["Use Via Romana to connect the world and earn its first road-charting advancement.", "Link real destinations and leave a clear entrance at each end. Existing charting credit counts."]
 			icon: { id: "via_romana:charting_map" }
-			x: 9.0d
+			x: 5.0d
 			y: 3.0d
-			size: 1.0d
+			size: 1
 			shape: "circle"
 			optional: true
 			tasks: [
@@ -321,6 +327,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E266290ED70D30D"]
+		}
+	]
+	quest_links: [
+		{
+			id: "6E26228C6D7E84BD"
+			linked_quest: "6E260819FC7E5947"
+			x: 0.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

@@ -6,7 +6,7 @@
 	group: "6E26B2BBC6593B6A"
 	icon: { id: "numismatics:bank_terminal" }
 	order_index: 8
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	quests: [
 		{
@@ -14,9 +14,9 @@
 			title: "Field Supplies"
 			description: ["Human travel supplies for a quick expedition. Vampires may prefer a spell or building order.", "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:golden_apple" }
-			x: 0.0d
+			x: -18.0d
 			y: 0.0d
-			size: 1.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -56,6 +56,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -64,9 +65,9 @@
 			title: "Build the Thing"
 			description: ["A bulk delivery for a real project: 512 stone, 256 oak logs, glass, scaffolding, and lights.", "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:scaffolding" }
-			x: 3.0d
-			y: 0.0d
-			size: 1.0d
+			x: -14.0d
+			y: 3.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -202,6 +203,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -210,9 +212,9 @@
 			title: "Finish the Interior"
 			description: ["Furniture and lighting for a guesthouse, tavern, viewing room, or finished base.", "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "handcrafted:oak_table" }
-			x: 6.0d
-			y: 0.0d
-			size: 1.0d
+			x: -10.0d
+			y: 5.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -260,6 +262,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -268,9 +271,9 @@
 			title: "More Film"
 			description: ["Supplies for recording the next adventure. No need to wait for a photography quest to repeat.", "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "exposure:color_film" }
-			x: 9.0d
-			y: 0.0d
-			size: 1.0d
+			x: -6.0d
+			y: 5.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -310,6 +313,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -318,9 +322,9 @@
 			title: "Airframe Materials"
 			description: ["Hull and envelope materials for a larger prototype. Core machinery and flight control still come from your workshop.", "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "aeronautics:white_envelope" }
-			x: 0.0d
-			y: 3.0d
-			size: 1.0d
+			x: -2.0d
+			y: 5.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -368,6 +372,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -376,9 +381,9 @@
 			title: "Extend the Line"
 			description: ["Extend an already working railway with rails, signals, and lighting.", "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "create:track" }
-			x: 3.0d
-			y: 3.0d
-			size: 1.0d
+			x: 20.0d
+			y: -1.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -427,9 +432,9 @@
 			title: "Spell Workshop Supplies"
 			description: ["Pursue a spell of your choice with ink and materials. No random reward roll.", "Price: 64 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:rare_ink" }
-			x: 6.0d
-			y: 3.0d
-			size: 1.0d
+			x: 13.0d
+			y: 7.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -486,9 +491,9 @@
 			title: "Advanced Spell Supplies"
 			description: ["An advanced spell-crafting supply order after your team reaches Legendary Ink.", "Price: 192 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:epic_ink" }
-			x: 9.0d
-			y: 3.0d
-			size: 1.0d
+			x: 4.0d
+			y: 23.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -529,9 +534,9 @@
 			title: "Keep Your Favorite"
 			description: ["One Mending book. Invest in something you use instead of receiving another disposable weapon.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:enchanted_book" }
-			x: 0.0d
-			y: 6.0d
-			size: 1.0d
+			x: -21.0d
+			y: 4.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -563,6 +568,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -571,9 +577,9 @@
 			title: "Fortune for Mining"
 			description: ["One Fortune III book for a tool you want to keep using. Apply it at an anvil before your next mining trip.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:enchanted_book" }
-			x: 3.0d
-			y: 6.0d
-			size: 1.0d
+			x: 1.0d
+			y: 0.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -605,6 +611,7 @@
 				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E260819FC7E5947"]
 			can_repeat: true
 			repeat_cooldown: 60
 		}
@@ -613,9 +620,9 @@
 			title: "Specialize: More Mana"
 			description: ["One Mana Upgrade Orb for compatible equipment. Check its upgrade limits in the Arcane Anvil.", "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:mana_upgrade_orb" }
-			x: 6.0d
-			y: 6.0d
-			size: 1.0d
+			x: 4.0d
+			y: 15.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -648,9 +655,9 @@
 			title: "Specialize: Faster Recovery"
 			description: ["One Cooldown Upgrade Orb for compatible equipment. Choose this instead of more mana if it fits your build.", "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:cooldown_upgrade_orb" }
-			x: 9.0d
-			y: 6.0d
-			size: 1.0d
+			x: 12.0d
+			y: 15.0d
+			size: 0.9d
 			shape: "square"
 			optional: true
 			tasks: [
@@ -683,9 +690,9 @@
 			title: "Your Signature Spell"
 			description: ["One Legendary Ink for your next spell, available after the Legendary Ink milestone.", "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:legendary_ink" }
-			x: 0.0d
-			y: 9.0d
-			size: 1.0d
+			x: 12.0d
+			y: 23.0d
+			size: 1
 			shape: "square"
 			optional: true
 			tasks: [
@@ -712,6 +719,56 @@
 			dependencies: ["6E26B41AA42A0D4F"]
 			can_repeat: true
 			repeat_cooldown: 60
+		}
+	]
+	quest_links: [
+		{
+			id: "6E263934AFD19746"
+			linked_quest: "6E260819FC7E5947"
+			x: -8.0d
+			y: -5.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E2694EE1EBEC6FC"
+			linked_quest: "6E266290ED70D30D"
+			x: 16.0d
+			y: -5.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26B1CF09064F04"
+			linked_quest: "6E2688BDF879CCED"
+			x: 8.0d
+			y: 3.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E2675BF6C4E320B"
+			linked_quest: "6E26C7687AA1253D"
+			x: 8.0d
+			y: 11.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26C59202D1A409"
+			linked_quest: "6E26B41AA42A0D4F"
+			x: 8.0d
+			y: 19.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E26CEE3B9E4C1C5"
+			linked_quest: "6E265455E4BA73EA"
+			x: 8.0d
+			y: -2.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

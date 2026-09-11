@@ -6,7 +6,7 @@
 	group: "6E26B2BBC6593B6A"
 	icon: { id: "numismatics:cog" }
 	order_index: 7
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
 	quests: [
 		{
@@ -14,10 +14,10 @@
 			title: "Catacombs Rematch"
 			description: ["Once the Catacombs milestone unlocks this contract, defeat a Dead King. Kills while the contract is available count automatically; old kills do not.", "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."]
 			icon: { id: "irons_spellbooks:rotten_spell_book" }
-			x: 0.0d
+			x: -6.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "kill", entity: "irons_spellbooks:dead_king", value: 1, id: "6E26E0B6FA722245" }
@@ -50,10 +50,10 @@
 			title: "Burning Arena Rematch"
 			description: ["Once the Ignis milestone unlocks this contract, defeat Ignis while the contract is available. Old kills do not count; no manual acceptance is needed.", "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."]
 			icon: { id: "cataclysm:burning_ashes" }
-			x: 3.0d
+			x: -2.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "kill", entity: "cataclysm:ignis", value: 1, id: "6E26CAE3D8CEB1C8" }
@@ -86,10 +86,10 @@
 			title: "Deep Water Rematch"
 			description: ["Defeat the Leviathan after unlocking this contract. This can fund the next group project.", "One shared payment. Six-hour cooldown begins after all rewards are collected."]
 			icon: { id: "cataclysm:altar_of_abyss" }
-			x: 6.0d
+			x: 2.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "kill", entity: "cataclysm:the_leviathan", value: 1, id: "6E26B51A359DB53E" }
@@ -122,10 +122,10 @@
 			title: "Supply the Galley"
 			description: ["After earning Dinner Together, submit eight Beef Stews and eight Vegetable Soups here. Submission consumes the meals; it does not put them in a shared chest.", "One shared payment of 32 Spurs and 16 Bottles o’ Enchanting for equipment repairs or anvil work. Claim both rewards to start the six-hour cooldown. Cook an extra batch if you also want meals for the crew."]
 			icon: { id: "farmersdelight:beef_stew" }
-			x: 9.0d
+			x: 6.0d
 			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{
@@ -167,6 +167,40 @@
 			dependencies: ["6E26C44B5FC97883"]
 			can_repeat: true
 			repeat_cooldown: 21600
+		}
+	]
+	quest_links: [
+		{
+			id: "6E264B6436EE01AA"
+			linked_quest: "6E26114622D37E7F"
+			x: -6.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E260EEBF71005E9"
+			linked_quest: "6E263C2F9B59EE37"
+			x: -2.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E2689CE6064174E"
+			linked_quest: "6E269A5A0A38EE19"
+			x: 2.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
+		}
+		{
+			id: "6E2684243C5BC922"
+			linked_quest: "6E26C44B5FC97883"
+			x: 6.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

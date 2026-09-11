@@ -1,0 +1,34 @@
+{
+  "metadata": "mods/ftb-quests-forge.pw.toml",
+  "metadata_sha256": "7baf8ef642d3c40608b344fbbfe3634c09b38f8670099b2f307df8f7a4143d99",
+  "artifact": "ftb-quests-neoforge-2101.1.33.jar",
+  "artifact_sha256": "e2e87e3ff029c09412f5e6484eff96a14c9ad6e026bc8872dff2a9fbef11ec9f",
+  "shapes": [
+    "circle",
+    "diamond",
+    "gear",
+    "heart",
+    "hexagon",
+    "none",
+    "octagon",
+    "pentagon",
+    "rsquare",
+    "square"
+  ],
+  "quest_links": {
+    "container": "quest_links",
+    "fields": [
+      "id",
+      "linked_quest",
+      "x",
+      "y",
+      "shape",
+      "size"
+    ],
+    "evidence": "BaseQuestFile.readQuestLinksFromNBT and QuestLink.readData/writeData; QuestButton.buildDependencies resolves visible QuestLinkButtons via underlying Quest IDs."
+  },
+  "progression": {
+    "flexible": "TeamData.canStartTasks bypasses dependency completion. Suitable for suggested routes with retrospective credit; not a prerequisite enforcement mechanism.",
+    "linear": "TeamData.canStartTasks requires areDependenciesComplete; used for paid orders, contracts, and crew-confirmed projects."
+  }
+}

@@ -6,6 +6,8 @@ Status: current and mandatory for VvH archive edits. The September 11 explicit r
 
 The owner requested a from-scratch engagement rebuild with balanced adventures, machines and shared projects, explicitly recognizing existing player progress. This authorizes nine new optional activity chapters alongside the preserved five-chapter archive; it supersedes the prior five-chapter-only presentation. Factions remain optional, consent and claims remain protected, and no wipe is implied. New purchases use 60-second delays and new boss/food contracts use six-hour shared cooldowns. Archive prices and cooldowns stay unchanged. Weak checkmarks issue no currency. Single-block observation may recognize existing workstations without recrafting. See `docs/frontier/README.md` for the decision, budgets, source ownership and remaining runtime checks.
 
+The owner's subsequent correction requires connected, deliberately shaped quest maps. Frontier now uses explicit coordinates, meaningful suggested milestone routes and native cross-chapter Quest Links. Flexible milestones credit existing achievements even when earlier route nodes are incomplete; crew projects, contracts and paid orders use linear progression to enforce their prerequisites. These modes follow the pinned FTB Quests implementation, not assumptions about dependency lines. The archive retains its protected geometry and hidden Market lines.
+
 This document records the persistent server contract that quest content must preserve. It is a design input, not player-facing copy.
 
 ## World model

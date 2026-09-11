@@ -16,7 +16,7 @@
 			icon: { id: "irons_spellbooks:iron_spell_book" }
 			x: 0.0d
 			y: 0.0d
-			size: 1.0d
+			size: 1
 			shape: "circle"
 			optional: true
 			tasks: [
@@ -41,16 +41,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E260819FC7E5947"]
 		}
 		{
 			id: "6E2688BDF879CCED"
 			title: "Choose Your Spell"
 			description: ["Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want.", "Already own the workshop achievement? Collect credit and continue. No duplicate workstation needed."]
 			icon: { id: "irons_spellbooks:scroll_forge" }
-			x: 3.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: 0.0d
+			y: 3.0d
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/make_scroll_forge", criterion: "", id: "6E26EC0149BC9FDC" }
@@ -82,16 +83,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E265455E4BA73EA"]
 		}
 		{
 			id: "6E26C7687AA1253D"
 			title: "Tune the Build"
 			description: ["Unlock the Arcane Anvil milestone. Use it to combine scrolls or improve a chosen equipment piece.", "The anvil milestone is checked automatically; this opens the specialist upgrades in the Quartermaster."]
 			icon: { id: "irons_spellbooks:arcane_anvil" }
-			x: 6.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: 0.0d
+			y: 6.0d
+			size: 1.1d
+			shape: "gear"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/make_arcane_anvil", criterion: "", id: "6E26F24136BD5C3E" }
@@ -115,16 +117,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E2688BDF879CCED"]
 		}
 		{
 			id: "6E26B41AA42A0D4F"
 			title: "Write Something Dangerous"
 			description: ["Obtain Legendary Ink. Choose the spell you want before spending it.", "Existing Legendary Ink advancement counts, including ink already used. This opens advanced spell supplies."]
 			icon: { id: "irons_spellbooks:legendary_ink" }
-			x: 9.0d
-			y: 0.0d
-			size: 1.0d
-			shape: "circle"
+			x: 0.0d
+			y: 9.0d
+			size: 1.2d
+			shape: "gear"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/ink_legendary", criterion: "", id: "6E26EA215AD10535" }
@@ -148,6 +151,7 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26C7687AA1253D"]
 		}
 		{
 			id: "6E262E1A327F4984"
@@ -155,9 +159,9 @@
 			description: ["Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage.", "Existing ownership advancement counts, so equipment you already earned is recognized without rebuilding it."]
 			icon: { id: "irons_spellbooks:dragonskin_spell_book" }
 			x: 0.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			y: 12.0d
+			size: 1.2d
+			shape: "hexagon"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/spell_book_dragon", criterion: "", id: "6E2621B8EF347DD3" }
@@ -189,16 +193,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26B41AA42A0D4F"]
 		}
 		{
 			id: "6E26ACC7A9335CB9"
 			title: "Own the Night"
 			description: ["Unlock Vampirism's Bat advancement. Use the mobility to scout a place worth visiting with your team.", "This is the vampire branch. Hunters can leave it alone; no chapter-wide completion is required."]
 			icon: { id: "vampirism:vampire_fang" }
-			x: 3.0d
+			x: -6.0d
 			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "vampirism:vampire/bat", criterion: "", id: "6E260E2B76C57C17" }
@@ -222,6 +227,7 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E265455E4BA73EA"]
 		}
 		{
 			id: "6E269AEB8D51E29B"
@@ -230,8 +236,8 @@
 			icon: { id: "vampirism:basic_crossbow" }
 			x: 6.0d
 			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1
+			shape: "diamond"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "vampirism:hunter/technology", criterion: "", id: "6E266282AAA983E9" }
@@ -255,16 +261,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E265455E4BA73EA"]
 		}
 		{
 			id: "6E268AA25B24480C"
 			title: "Vampire Level 14"
 			description: ["Reach vampire level 14 through the faction progression. This is a longer-term faction goal, not an opening chore.", "Your existing level-14 advancement counts if you already earned it."]
 			icon: { id: "vampirism:altar_infusion" }
-			x: 9.0d
-			y: 3.0d
-			size: 1.0d
-			shape: "circle"
+			x: -6.0d
+			y: 6.0d
+			size: 1.2d
+			shape: "heart"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "vampirism:vampire/max_level", criterion: "", id: "6E26B4A0D90BBE28" }
@@ -288,16 +295,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E26ACC7A9335CB9"]
 		}
 		{
 			id: "6E266425D5F4A5D0"
 			title: "Hunter Level 14"
 			description: ["Reach hunter level 14. Continue beyond basic hunting equipment into the faction's later progression.", "Continue your chosen role; no vampire conversion is required."]
 			icon: { id: "vampirism:weapon_table" }
-			x: 0.0d
+			x: 6.0d
 			y: 6.0d
-			size: 1.0d
-			shape: "circle"
+			size: 1.2d
+			shape: "heart"
 			optional: true
 			tasks: [
 				{ type: "advancement", advancement: "vampirism:hunter/max_level", criterion: "", id: "6E2699B2D3F6D44C" }
@@ -321,6 +329,17 @@
 				}
 			]
 			progression_mode: "flexible"
+			dependencies: ["6E269AEB8D51E29B"]
+		}
+	]
+	quest_links: [
+		{
+			id: "6E266398CA3F5733"
+			linked_quest: "6E260819FC7E5947"
+			x: 0.0d
+			y: -3.0d
+			shape: "diamond"
+			size: 0.8d
 		}
 	]
 }

@@ -39,6 +39,13 @@ def compose(root: Path, legacy: dict[Path, str], serialize) -> dict[Path, str]:
         chapter['group'] = ident('group:archive')
         chapter['title'] = 'Legacy · ' + chapter['title']
         chapter['order_index'] = 100 + chapter.get('order_index', 0)
+        local_ids = {q['id'] for q in chapter['quests']}
+        chapter['quest_links'] = [
+            {'id': ident(f'archive-link:{chapter["filename"]}:{dep}'),
+             'linked_quest': dep, 'x': float(q['x']), 'y': float(q['y']) - 4.0,
+             'shape': 'diamond', 'size': 0.8}
+            for q in chapter['quests'] for dep in q.get('dependencies', [])
+            if dep not in local_ids]
         result[path] = serialize(chapter) + '\n'
     groups = [('play', 'Pick an Adventure'), ('make', 'Make Something Matter'),
               ('trade', 'Contracts and Supplies'), ('archive', 'Previous Questbook')]
@@ -49,9 +56,15 @@ def compose(root: Path, legacy: dict[Path, str], serialize) -> dict[Path, str]:
         ch = {'id': ident('chapter:' + chapter['key']), 'filename': 'frontier_' + chapter['key'],
               'title': chapter['title'], 'subtitle': chapter['subtitle'],
               'group': ident('group:' + chapter['group']), 'icon': {'id': chapter['icon']},
-              'order_index': ci, 'default_hide_dependency_lines': chapter['group'] == 'trade',
+              'order_index': ci, 'default_hide_dependency_lines': False,
               'default_quest_shape': 'circle', 'quests': []}
-        for pos, source in enumerate(q for q in manifest['quests'] if q['chapter'] == chapter['key']):
+        ch['quest_links'] = [
+            {'id': ident(f'link:{chapter["key"]}:{link["quest"]}'),
+             'linked_quest': ident('quest:' + link['quest']),
+             'x': float(link['x']), 'y': float(link['y']),
+             'shape': 'diamond', 'size': 0.8}
+            for link in chapter.get('links', [])]
+        for source in (q for q in manifest['quests'] if q['chapter'] == chapter['key']):
             q = copy.deepcopy(source)
             tasks = []
             for ti, task in enumerate(q['tasks']):
@@ -65,10 +78,10 @@ def compose(root: Path, legacy: dict[Path, str], serialize) -> dict[Path, str]:
                 rewards.append(reward)
             out = {'id': ident('quest:' + q['key']), 'title': q['title'],
                    'description': q['description'], 'icon': {'id': q['icon']},
-                   'x': float(pos % 4 * 3), 'y': float(pos // 4 * 3), 'size': 1.0,
-                   'shape': 'hexagon' if q['kind'] == 'boss_milestone' else 'square' if q['kind'] == 'shop' else 'circle',
+                   'x': float(q['x']), 'y': float(q['y']), 'size': q['size'],
+                   'shape': q['shape'],
                    'optional': True, 'tasks': tasks, 'rewards': rewards,
-                   'progression_mode': 'linear' if q['kind'] in ['shop', 'contract'] else 'flexible'}
+                   'progression_mode': 'linear' if q['kind'] in ['shop', 'contract', 'crew_confirmed'] else 'flexible'}
             if q['deps']:
                 out['dependencies'] = [ident('quest:' + key) for key in q['deps']]
             if q['repeat']:

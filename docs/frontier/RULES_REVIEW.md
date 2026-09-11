@@ -1,5 +1,7 @@
 # Frontier quest rules review — September 11, 2026
 
+**Historical review of `bfc416a`.** The subsequent graph pass found that the uniform grid and independent milestones were poor route design, and that flexible progression bypassed the claimed ferry prerequisites. Its earlier clean layout metrics did not establish a useful connected graph. See `GRAPH_REVIEW.md` for the correction and current verification. The figures below describe the earlier review.
+
 Reviewed the 81 new quests against `skills/ftb-quest-authoring/SKILL.md`, both authoring references, `skills/snbt-validation/SKILL.md`, `docs/vvh/SERVER_RULES.md`, source authority, and the human quest preferences. The owner's balanced, progression-aware rebuild brief governs the new optional chapters; the preserved five-chapter faction campaign retains its existing rules and reviewed exceptions.
 
 ## Findings and fixes

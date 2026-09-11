@@ -6,6 +6,8 @@ Status: current for the archived VvH source.
 
 The explicit request to start the questbook afresh around balanced adventures, machines and shared projects, while recognizing existing progress, supersedes the five-chapter-only **live surface**. `docs/frontier/quest-source.json` now owns nine new chapters; `scripts/frontier_campaign.py` composes them with the unchanged VvH quest objects under Previous Questbook. The standard `vvh_campaign_v3.py` command and staged hash-ledger guard generate both sets. All old IDs remain stable.
 
+The owner's subsequent correction requires connected, deliberately shaped quest maps. Frontier now uses explicit coordinates, meaningful suggested milestone routes and native cross-chapter Quest Links. Flexible milestones credit existing achievements even when earlier route nodes are incomplete; crew projects, contracts and paid orders use linear progression to enforce their prerequisites. These modes follow the pinned FTB Quests implementation, not assumptions about dependency lines. The archive retains its protected geometry and hidden Market lines.
+
 The five-chapter source, catalog and economy checks below remain authoritative for **archived VvH content**. Frontier has its own integrated audit and exact-artifact evidence; see `docs/frontier/README.md`. No historical faction capstone or third-faction campaign has been restored.
 
 
