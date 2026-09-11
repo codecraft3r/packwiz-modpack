@@ -126,39 +126,39 @@ hash = "4ccd14fd3a089615240e03325a57273de301c8d44933f3925c8eacbbc5771033"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_00_tonight.snbt"
-hash = "f742c0b1e626687798ac75ee249af18e2f5b4986ee9253685109c54e432f2106"
+hash = "3e6060f4956a78307311277b5e13bb92d413758c3940eb37a20f4ddd99e40d16"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_01_expeditions.snbt"
-hash = "47af3b12099232adc262efca12aa8376caefb779de722def0df0a5870667cd8d"
+hash = "6b9106f76b8459d70dfb1d05bc84c4848fe35f3bb32ad9dd5ed9378d6011984b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_02_bosses.snbt"
-hash = "6816c10bb9542bc18e3a9dee7f6cc8a7b39f0ea492a841d504cf2451850b2bf8"
+hash = "2a71ec7299fa800bcb65e2e7d09900dd025ba2ee966515a8d1776ac9a1909eaa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_03_magic.snbt"
-hash = "5f9b40ba57466779a60644713dda6ce11fa00aed1e057d068fa4fb1fd4a197dc"
+hash = "5f35cc6498bb42d444956cf433b0d0e43cf93f462b7c36ddd456739df0229e3b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_04_engineering.snbt"
-hash = "f55ca53df3cd8795e687eb576a6f6e95b509a388c7df86d0fcd18d1453e5c2fd"
+hash = "80f30f175bf77c24535ba90e9b406651fcde1a224ff25a4f9d7c92e49c361c9c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_05_transport.snbt"
-hash = "88e385ad34e2bda7d243db1095d1ed3affdc8eb3e5742f9c6fbb443452e110d2"
+hash = "b29e5e8e703363580f8de3cfc8182ec6de3831df1e9a10687e6205eac5bffa84"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_06_places.snbt"
-hash = "466c7dd8229ec837b4c150f99f4eee519dd1c2e3dededcf946049cfd8261cb57"
+hash = "ca673f19b3833f844764d18651e9680fcfaac583be81e46734f6e330913d350e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_07_contracts.snbt"
-hash = "0602b9d69d4fb8e00dca0754cff0808f14422ea3716b179bfb7e23cb7ffcc189"
+hash = "cbd675283a06f686c926ab60108074610905230459016033a90f18d80cee80ab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_08_quartermaster.snbt"
-hash = "20cf2556cef702c7ec20472586aa88f6562c3f61d513f287ecf0031b3bfe86ad"
+hash = "9f817664955bdf61803d53ae2c3e847a4ebba82891c540d7abd5b326e4d4f307"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -316,6 +316,42 @@ hash = "a3daddb5586ae695aa949852b49680c68dc007d6d0bf6351783f110469a2733b"
 file = "datapacks/vampires-need-umbrellas-curios.pw.toml"
 hash = "c0a24c2c3e847e15acd99774581aad9ffb06cc1f4db5ffcf02c4c9e50be0c189"
 metafile = true
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/00_tonight.png"
+hash = "4a41120d75771dc8f8870e832d75528a4a7470cd55d2cfa2add33010736a84bb"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/01_expeditions.png"
+hash = "e09e7f4028a37032592bb7f4f73f036c3691244f467b1a314077d063db2cb4db"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/02_bosses.png"
+hash = "c96a9c0372fe4da87f803562d1fbaca4afcb29b27d003fc0840774b218e36f9f"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/03_magic.png"
+hash = "a9edad967140f848b75a482fe25467ee878f6bf6039418710a9787c2796be8ec"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/04_engineering.png"
+hash = "bc23aa3ce7cbadc251785a22dae53bbfe5730be375e9f859dbc43719d10fa871"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/05_transport.png"
+hash = "bcafbe6f674931b8a72517cc5ccb1875c1a9ce84014ee5ecd1208e2f49e5219f"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/06_places.png"
+hash = "c6d6e6e29743c218c9ad7989ef03f4b50c9ab0e7a28bacf4ca02c6005e03bc20"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/07_contracts.png"
+hash = "752d1afaffec27455e93a7e37360d1a9aed2e9ffc6d2ae603a7015c4794046e3"
+
+[[files]]
+file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/frontier/08_quartermaster.png"
+hash = "5a6c21b651174d98bc86e6817f373161e52642f0d486c27fc1a1e0292c8d9184"
 
 [[files]]
 file = "global_packs/required_resources/vvh_backgrounds/assets/poiesis/textures/questpics/vvh/free_company_mediator_panorama.png"

@@ -149,6 +149,21 @@ class RendererTests(unittest.TestCase):
             self.assertLess(right, width)
             self.assertLess(bottom, height)
 
+    def test_large_backdrop_expands_canvas_without_shrinking_quest_spacing(self):
+        quests = [{"id": "a", "title": "Alpha", "x": -4, "y": 0},
+                  {"id": "b", "title": "Beta", "x": 4, "y": 0}]
+        plain = {"quests": quests}
+        illustrated = {"quests": quests, "images": [
+            {"x": 20, "y": 0, "width": 24, "height": 16, "rotation": 0},
+        ]}
+        plain_width, plain_height, plain_scale, plain_point = renderer.chapter_viewport(plain)
+        art_width, art_height, art_scale, art_point = renderer.chapter_viewport(illustrated)
+        self.assertGreater(art_width, plain_width)
+        self.assertGreater(art_height, plain_height)
+        self.assertAlmostEqual(art_scale, plain_scale)
+        self.assertAlmostEqual(art_point(4, 0)[0] - art_point(-4, 0)[0],
+                               plain_point(4, 0)[0] - plain_point(-4, 0)[0])
+
     def test_chapter_default_and_explicit_false_override(self):
         chapter = {"default_hide_dependency_lines": True, "quests": [
             {"id": "a", "title": "A", "x": 0, "y": 0},

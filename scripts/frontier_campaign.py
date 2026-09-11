@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any
 
 SOURCE_REL = Path('docs/frontier/quest-source.json')
+ART_SOURCE_REL = Path('docs/frontier/art-source.json')
 
 def ident(key: str) -> str:
     return '6E26' + hashlib.sha256(('frontier-v1:' + key).encode()).hexdigest()[:12].upper()
@@ -19,6 +20,37 @@ def ident(key: str) -> str:
 def load(root: Path) -> dict[str, Any] | None:
     path = root / SOURCE_REL
     return json.loads(path.read_text()) if path.exists() else None
+
+
+def load_art_source(root: Path) -> dict[str, Any] | None:
+    """Load the reviewed chapter-background contract when it is available.
+
+    The art manifest is intentionally a separate source contract from the
+    quest graph.  This lets the asset owner update generated PNGs and their
+    provenance without asking the quest generator to infer image placement.
+    Validation owns the strict schema checks; composition only projects the
+    native FTB image fields into the emitted chapter.
+    """
+    path = root / ART_SOURCE_REL
+    return json.loads(path.read_text()) if path.exists() else None
+
+
+def chapter_image(root: Path, chapter_key: str) -> dict[str, Any] | None:
+    """Return one native FTB image entry for ``chapter_key`` if authored."""
+    art_source = load_art_source(root)
+    if not art_source:
+        return None
+    records = art_source.get('chapters')
+    if not isinstance(records, dict):
+        return None
+    record = records.get(chapter_key)
+    if not isinstance(record, dict):
+        return None
+    # sha256 and pixel dimensions are provenance fields, not FTB image
+    # properties.  Keep the emitted shape deliberately small and stable.
+    return {key: copy.deepcopy(record[key]) for key in (
+        'image', 'x', 'y', 'width', 'height', 'alpha', 'order', 'rotation'
+    ) if key in record}
 
 def chapter_names(root: Path) -> set[str]:
     manifest = load(root)
@@ -64,6 +96,9 @@ def compose(root: Path, legacy: dict[Path, str], serialize) -> dict[Path, str]:
              'x': float(link['x']), 'y': float(link['y']),
              'shape': 'diamond', 'size': 0.8}
             for link in chapter.get('links', [])]
+        background = chapter_image(root, chapter['key'])
+        if background is not None:
+            ch['images'] = [background]
         for source in (q for q in manifest['quests'] if q['chapter'] == chapter['key']):
             q = copy.deepcopy(source)
             tasks = []

@@ -1965,6 +1965,13 @@ def _write_ledger_atomic(root: Path, ledger: dict[str, Any]) -> None:
 
 
 def _stage_outputs(root: Path, expected: dict[Path, str]) -> Path:
+    # Keep asset paths and staged relative paths on the same absolute basis;
+    # callers of this helper (including tests) may pass ``Path('.')``.
+    root = root.resolve()
+    expected = {
+        (path if path.is_absolute() else root / path).resolve(): content
+        for path, content in expected.items()
+    }
     stage = Path(tempfile.mkdtemp(prefix="vvh-campaign-stage-", dir=root))
     try:
         for path, content in expected.items():
@@ -1985,6 +1992,31 @@ def _stage_outputs(root: Path, expected: dict[Path, str]) -> Path:
             import shutil
             (stage / "docs/frontier/evidence").mkdir(parents=True, exist_ok=True)
             shutil.copy2(root / "docs/frontier/quest-source.json", stage / "docs/frontier/quest-source.json")
+            # The Frontier chapter art contract is source data, while the
+            # generated images and pack metadata are distribution inputs.  A
+            # staged validation must see the same small asset closure that the
+            # client will receive; copying the entire resource pack would make
+            # the safety check needlessly expensive and obscure ownership.
+            from frontier_campaign import load_art_source
+            art_source = load_art_source(root)
+            if art_source:
+                art_source_path = root / "docs/frontier/art-source.json"
+                shutil.copy2(art_source_path, stage / "docs/frontier/art-source.json")
+                art_pack = root / "global_packs/required_resources/vvh_backgrounds"
+                staged_pack = stage / "global_packs/required_resources/vvh_backgrounds"
+                if (art_pack / "pack.mcmeta").is_file():
+                    staged_pack.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(art_pack / "pack.mcmeta", staged_pack / "pack.mcmeta")
+                from frontier_validate import _art_asset_path
+                for record in art_source.get("chapters", {}).values():
+                    if not isinstance(record, dict):
+                        continue
+                    asset = _art_asset_path(root, record.get("image"))
+                    if asset is None or not asset.is_file():
+                        continue
+                    target = stage / asset.relative_to(root)
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(asset, target)
             for evidence in (root / "docs/frontier/evidence").glob("*.json"):
                 shutil.copy2(evidence, stage / "docs/frontier/evidence" / evidence.name)
             overrides = json.loads((root / "docs/frontier/evidence/survival-paths.json").read_text())["pack_overrides"]

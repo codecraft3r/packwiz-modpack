@@ -133,4 +133,16 @@
 		}
 	]
 	quest_links: [ ]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/00_tonight.png"
+			x: 0.0d
+			y: 1.1d
+			width: 18.9d
+			height: 12.6d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

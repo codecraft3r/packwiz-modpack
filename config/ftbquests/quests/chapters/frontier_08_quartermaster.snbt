@@ -771,4 +771,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/08_quartermaster.png"
+			x: -0.5d
+			y: 7.6d
+			width: 71.1d
+			height: 47.4d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

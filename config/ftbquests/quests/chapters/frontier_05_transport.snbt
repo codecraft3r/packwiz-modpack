@@ -340,4 +340,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/05_transport.png"
+			x: -4.0d
+			y: 1.3d
+			width: 33.6d
+			height: 22.4d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

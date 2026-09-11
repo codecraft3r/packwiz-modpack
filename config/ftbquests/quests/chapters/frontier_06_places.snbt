@@ -430,4 +430,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/06_places.png"
+			x: 2.0d
+			y: 1.3d
+			width: 45.0d
+			height: 30.0d
+			alpha: 220
+			order: -100
+			rotation: 0
+		}
+	]
 }

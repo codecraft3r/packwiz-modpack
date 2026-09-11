@@ -38,6 +38,10 @@ Every bulk reward is checked against the item's verified stack limit, with 37 it
 
 The graph correction enforces the ferry's modest, shared 16-envelope reward behind its equipment milestones by changing crew projects to linear progression. The preceding rules pass added the ferry dependencies but left flexible mode enabled, which bypassed that gate. Cooking already uses linear progression and remains gated behind the feast. Friendship awards seating rather than MCA's romance-triggering bouquet. The QIO milestone supplies a Mending book, and automated crafting supplies a full stack of andesite alloy. Quest titles are at most four words, prices must match consumed coins, and unsupported book components or repeatable one-time milestones block validation. See `GRAPH_REVIEW.md` for the current graph findings and `RULES_REVIEW.md` for the preceding economy review.
 
+## Chapter artwork
+
+All nine Frontier chapters have generated, route-aware atlas backgrounds attached through native FTB images. Artwork occupies the outer areas while the real quest graph remains interactive above it. The existing required resource pack supplies the PNGs; see `BACKGROUNDS.md` for placement, asset budget and client acceptance checks.
+
 ## Source ownership
 
 1. `docs/frontier/quest-source.json` owns the 81 new quests.

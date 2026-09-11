@@ -1,0 +1,51 @@
+{
+  "scope": "Read-only raw texture sampling in 25-pixel squares around authored node/link centers, before native opacity. Not an in-client text contrast test.",
+  "art_source_sha256": "a827f5e508d3e56a4d0b807f4b5ae7ed2b08e362f6ead39029126cc5130a13c4",
+  "chapters": {
+    "00_tonight": {
+      "nodes_sampled": 3,
+      "max_mean_relative_luminance": 0.0132,
+      "max_p95_relative_luminance": 0.0231
+    },
+    "01_expeditions": {
+      "nodes_sampled": 10,
+      "max_mean_relative_luminance": 0.0061,
+      "max_p95_relative_luminance": 0.0068
+    },
+    "02_bosses": {
+      "nodes_sampled": 21,
+      "max_mean_relative_luminance": 0.018,
+      "max_p95_relative_luminance": 0.0494
+    },
+    "03_magic": {
+      "nodes_sampled": 10,
+      "max_mean_relative_luminance": 0.0077,
+      "max_p95_relative_luminance": 0.0197
+    },
+    "04_engineering": {
+      "nodes_sampled": 13,
+      "max_mean_relative_luminance": 0.0096,
+      "max_p95_relative_luminance": 0.0132
+    },
+    "05_transport": {
+      "nodes_sampled": 9,
+      "max_mean_relative_luminance": 0.0101,
+      "max_p95_relative_luminance": 0.0149
+    },
+    "06_places": {
+      "nodes_sampled": 12,
+      "max_mean_relative_luminance": 0.0099,
+      "max_p95_relative_luminance": 0.0309
+    },
+    "07_contracts": {
+      "nodes_sampled": 8,
+      "max_mean_relative_luminance": 0.0092,
+      "max_p95_relative_luminance": 0.0106
+    },
+    "08_quartermaster": {
+      "nodes_sampled": 19,
+      "max_mean_relative_luminance": 0.0181,
+      "max_p95_relative_luminance": 0.0627
+    }
+  }
+}

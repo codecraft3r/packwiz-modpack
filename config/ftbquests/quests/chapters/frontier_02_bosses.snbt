@@ -552,4 +552,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/02_bosses.png"
+			x: -1.0d
+			y: 4.9d
+			width: 54.3d
+			height: 36.2d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

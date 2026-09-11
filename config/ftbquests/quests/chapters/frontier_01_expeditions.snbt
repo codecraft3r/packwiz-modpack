@@ -342,4 +342,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/01_expeditions.png"
+			x: 0.0d
+			y: 0.9d
+			width: 31.5d
+			height: 21.0d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

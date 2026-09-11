@@ -484,4 +484,16 @@
 			size: 0.8d
 		}
 	]
+	images: [
+		{
+			image: "poiesis:textures/questpics/frontier/04_engineering.png"
+			x: -3.0d
+			y: 3.6d
+			width: 44.1d
+			height: 29.4d
+			alpha: 255
+			order: -100
+			rotation: 0
+		}
+	]
 }

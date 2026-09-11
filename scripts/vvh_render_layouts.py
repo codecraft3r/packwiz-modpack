@@ -372,8 +372,9 @@ def chapter_viewport(ch, detail=False, canvas_size=None):
     quests = render_quests(ch)
     xs = [float(q.get("x", 0)) for q in quests] or [0]
     ys = [float(q.get("y", 0)) for q in quests] or [0]
-    xmin, xmax = min(xs) - 3, max(xs) + 3
-    ymin, ymax = min(ys) - 3, max(ys) + 3
+    quest_xmin, quest_xmax = min(xs) - 3, max(xs) + 3
+    quest_ymin, quest_ymax = min(ys) - 3, max(ys) + 3
+    xmin, xmax, ymin, ymax = quest_xmin, quest_xmax, quest_ymin, quest_ymax
     # Chapter art is part of the authored composition, not disposable overflow.
     # Include its complete rotated rectangle with a small frame margin.
     for art in ch.get("images", []) or []:
@@ -392,8 +393,17 @@ def chapter_viewport(ch, detail=False, canvas_size=None):
         width, height = (2400, 1550) if detail else (1800, 1150)
         margin = 145 if detail else 110
         header = 70
-    scale = min((width - 2 * margin) / (xmax - xmin or 1),
-                (height - 2 * margin - header) / (ymax - ymin or 1))
+        # Establish readability from the quest composition alone.  Expanding
+        # the art bounds into this calculation would shrink every node on a
+        # chapter with a large backdrop, creating false label-collision noise.
+        quest_scale = min((width - 2 * margin) / (quest_xmax - quest_xmin or 1),
+                          (height - 2 * margin - header) / (quest_ymax - quest_ymin or 1))
+        width = max(width, math.ceil((xmax - xmin) * quest_scale + 2 * margin))
+        height = max(height, math.ceil((ymax - ymin) * quest_scale + 2 * margin + header))
+        scale = quest_scale
+    if canvas_size:
+        scale = min((width - 2 * margin) / (xmax - xmin or 1),
+                    (height - 2 * margin - header) / (ymax - ymin or 1))
     graph_width = (xmax - xmin) * scale
     graph_height = (ymax - ymin) * scale
     origin_x = (width - graph_width) / 2

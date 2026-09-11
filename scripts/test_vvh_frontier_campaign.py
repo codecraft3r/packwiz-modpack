@@ -17,6 +17,25 @@ class FrontierCampaignTests(unittest.TestCase):
         temp = tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup)
         root = Path(temp.name)
         shutil.copytree(ROOT / 'docs/frontier', root / 'docs/frontier')
+        art_source_path = ROOT / 'docs/frontier/art-source.json'
+        if art_source_path.is_file():
+            art_source = json.loads(art_source_path.read_text())
+            # Keep the fixture light: only the nine referenced PNGs and the
+            # resourcepack metadata are needed to exercise the art audit.
+            shutil.copy2(art_source_path, root / 'docs/frontier/art-source.json')
+            pack_root = ROOT / 'global_packs/required_resources/vvh_backgrounds'
+            staged_pack_root = root / 'global_packs/required_resources/vvh_backgrounds'
+            staged_pack_root.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(pack_root / 'pack.mcmeta', root / 'global_packs/required_resources/vvh_backgrounds/pack.mcmeta')
+            for record in art_source.get('chapters', {}).values():
+                image = record.get('image', '') if isinstance(record, dict) else ''
+                if ':' not in image:
+                    continue
+                namespace, relative = image.split(':', 1)
+                asset = pack_root / 'assets' / namespace / relative
+                target = staged_pack_root / 'assets' / namespace / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(asset, target)
         overrides = json.loads((root / 'docs/frontier/evidence/survival-paths.json').read_text())['pack_overrides']
         for relative in overrides:
             target = root / relative;target.parent.mkdir(parents=True, exist_ok=True)
@@ -188,5 +207,73 @@ class FrontierCampaignTests(unittest.TestCase):
         root = self.fixture()
         self.change_quest(root, 'hunter_master', lambda q: q.update(deps=['vampire_master']))
         self.assertTrue(any('faction cross-lock' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_each_frontier_chapter_emits_one_verified_background(self):
+        root = self.fixture()
+        report = frontier_validate.audit(root)
+        self.assertEqual(report['errors'], [])
+        chapters = list((root / 'config/ftbquests/quests/chapters').glob('frontier_*.snbt'))
+        self.assertEqual(len(chapters), 9)
+        for path in chapters:
+            emitted = Parser(path.read_text(), str(path)).parse()
+            self.assertEqual(len(emitted.get('images', [])), 1, path.name)
+
+    def test_missing_frontier_background_asset_fails_closed(self):
+        root = self.fixture()
+        art_path = root / 'docs/frontier/art-source.json'
+        art = json.loads(art_path.read_text())
+        chapter, record = next(iter(art['chapters'].items()))
+        namespace, relative = record['image'].split(':', 1)
+        (root / 'global_packs/required_resources/vvh_backgrounds/assets' / namespace / relative).unlink()
+        self.assertTrue(any(f'art-source:{chapter}: missing asset' in e
+                            for e in frontier_validate.audit(root)['errors']))
+
+    def test_changed_frontier_background_digest_fails_closed(self):
+        root = self.fixture()
+        art_path = root / 'docs/frontier/art-source.json'
+        art = json.loads(art_path.read_text())
+        art['chapters'][next(iter(art['chapters']))]['sha256'] = '0' * 64
+        art_path.write_text(json.dumps(art))
+        self.assertTrue(any('asset SHA256 differs from art-source' in e
+                            for e in frontier_validate.audit(root)['errors']))
+
+    def test_frontier_background_geometry_must_match_emitted_chapter(self):
+        root = self.fixture()
+        art_path = root / 'docs/frontier/art-source.json'
+        art = json.loads(art_path.read_text())
+        chapter = next(iter(art['chapters']))
+        art['chapters'][chapter]['width'] = -1
+        art_path.write_text(json.dumps(art))
+        errors = frontier_validate.audit(root)['errors']
+        self.assertTrue(any(f'art-source:{chapter}: width must be positive' in e for e in errors))
+        self.assertTrue(any(f'art-source:{chapter}: emitted width differs from art-source' in e for e in errors))
+
+    def test_frontier_background_manifest_is_required_even_without_emitted_images(self):
+        root = self.fixture()
+        (root / 'docs/frontier/art-source.json').unlink()
+        for path in (root / 'config/ftbquests/quests/chapters').glob('frontier_*.snbt'):
+            data = Parser(path.read_text(), str(path)).parse()
+            data.pop('images', None)
+            path.write_text(source.snbt(data))
+        self.assertTrue(any('art-source: manifest is required' in e
+                            for e in frontier_validate.audit(root)['errors']))
+
+    def test_frontier_background_aspect_ratio_is_verified(self):
+        root = self.fixture()
+        art_path = root / 'docs/frontier/art-source.json'
+        art = json.loads(art_path.read_text())
+        chapter = next(iter(art['chapters']))
+        art['chapters'][chapter]['width'] += 1.0
+        art_path.write_text(json.dumps(art))
+        self.assertTrue(any(f'art-source:{chapter}: native image aspect ratio' in e
+                            for e in frontier_validate.audit(root)['errors']))
+
+    def test_frontier_quest_task_drift_is_rejected(self):
+        root = self.fixture()
+        path = root / 'config/ftbquests/quests/chapters/frontier_00_tonight.snbt'
+        data = Parser(path.read_text(), str(path)).parse()
+        data['quests'][0]['tasks'][0]['title'] = 'Changed task'
+        path.write_text(source.snbt(data))
+        self.assertTrue(any('differs from source' in e for e in frontier_validate.audit(root)['errors']))
 
 if __name__ == '__main__':unittest.main()

@@ -7,6 +7,7 @@ import hashlib
 import json
 import math
 import re
+import struct
 import tomllib
 from pathlib import Path
 from typing import Any
@@ -30,6 +31,9 @@ PROGRESSION_MODES = {
     'contract': 'linear',
     'shop': 'linear',
 }
+ART_PACK_REL = Path('global_packs/required_resources/vvh_backgrounds')
+ART_IMAGE_FIELDS = ('image', 'x', 'y', 'width', 'height', 'alpha', 'order', 'rotation')
+ART_RECORD_FIELDS = set(ART_IMAGE_FIELDS) | {'sha256', 'pixel_width', 'pixel_height'}
 
 # This is loaded from the reviewed graph-runtime evidence below.  The fallback
 # is deliberately empty: a shape is valid only when the shipped-runtime proof
@@ -61,6 +65,58 @@ def positive_int(value: Any) -> bool:
 def currency(records: list[dict[str, Any]]) -> int:
     return sum(COINS.get(r.get('item', {}).get('id'), 0) * r.get('count', r.get('item', {}).get('count', 1)) for r in records)
 
+
+def _art_asset_path(root: Path, image: Any) -> Path | None:
+    """Resolve a resource location into the checked-in required-resource pack."""
+    if not isinstance(image, str) or image.count(':') != 1:
+        return None
+    namespace, relative = image.split(':', 1)
+    if not re.fullmatch(r'[a-z0-9_.-]+', namespace) or not relative or '\\' in relative:
+        return None
+    parts = Path(relative).parts
+    if any(part in ('', '.', '..') for part in parts):
+        return None
+    pack_root = (root / ART_PACK_REL).resolve()
+    candidate = (pack_root / 'assets' / namespace / Path(*parts)).resolve()
+    try:
+        candidate.relative_to(pack_root)
+    except ValueError:
+        return None
+    return candidate
+
+
+def _png_dimensions(path: Path) -> tuple[int, int] | None:
+    """Read PNG IHDR dimensions without Pillow or another image dependency."""
+    try:
+        with path.open('rb') as handle:
+            if handle.read(8) != b'\x89PNG\r\n\x1a\n':
+                return None
+            length_bytes = handle.read(4)
+            chunk_type = handle.read(4)
+            if len(length_bytes) != 4 or chunk_type != b'IHDR':
+                return None
+            length = struct.unpack('>I', length_bytes)[0]
+            if length < 8 or length > 1024:
+                return None
+            ihdr = handle.read(length)
+            if len(ihdr) < 8:
+                return None
+            width, height = struct.unpack('>II', ihdr[:8])
+            return width, height
+    except OSError:
+        return None
+
+
+def _file_sha256(path: Path) -> str | None:
+    try:
+        digest = hashlib.sha256()
+        with path.open('rb') as handle:
+            for chunk in iter(lambda: handle.read(1024 * 1024), b''):
+                digest.update(chunk)
+        return digest.hexdigest()
+    except OSError:
+        return None
+
 def audit(root: Path) -> dict[str, Any]:
     manifest = load(root)
     if manifest is None:
@@ -72,6 +128,8 @@ def audit(root: Path) -> dict[str, Any]:
     def read(relative: str):
         return json.loads((root / relative).read_text())
     try:
+        art_source = json.loads((root / 'docs/frontier/art-source.json').read_text()) \
+            if (root / 'docs/frontier/art-source.json').is_file() else None
         live = read('docs/frontier/evidence/live-registry.json')
         proof = read('docs/frontier/evidence/pack-provenance.json')
         advancements = read('docs/frontier/evidence/advancement-criteria.json')
@@ -301,6 +359,102 @@ def audit(root: Path) -> dict[str, Any]:
     actual_new_by_key = {c['filename'][len('frontier_'):]: c for c in actual_new}
     require(len(actual_new) == len(manifest['chapters']), 'Missing Frontier chapters')
     require(sum(len(c['quests']) for c in actual_new) == len(manifest['quests']), 'Frontier quest count differs from source')
+
+    # Frontier backgrounds are authored in a reviewable JSON contract and
+    # projected into native FTB ``images`` compounds by compose().  Keep the
+    # provenance (digest and source pixel dimensions) out of SNBT while
+    # checking it here against the exact emitted native fields and asset pack.
+    # Frontier is now an art-backed campaign.  Keep this fail-closed even if a
+    # caller deletes both the source contract and emitted image compounds:
+    # every active Frontier build must ship the reviewed art closure.
+    if art_source is None:
+        require(False, 'art-source: manifest is required for the active Frontier campaign')
+        art_source = {}
+    else:
+        require(art_source.get('schema') == 'frontier-art-v1', 'art-source: schema must be frontier-art-v1')
+        art_chapters = art_source.get('chapters')
+        require(isinstance(art_chapters, dict), 'art-source: chapters must be a mapping')
+        if not isinstance(art_chapters, dict):
+            art_chapters = {}
+        require(len(art_chapters) == 9, f'art-source: expected exactly 9 backgrounds, found {len(art_chapters)}')
+        expected_chapter_keys = {chapter.get('key') for chapter in manifest.get('chapters', [])}
+        require(len(expected_chapter_keys) == 9 and None not in expected_chapter_keys,
+                'Frontier source must define exactly 9 chapter keys for backgrounds')
+        require(set(art_chapters) == expected_chapter_keys,
+                'art-source: chapter keys differ from Frontier source chapters')
+        resourcepack_root = root / ART_PACK_REL
+        mcmeta = resourcepack_root / 'pack.mcmeta'
+        require(mcmeta.is_file(), 'art-source: resourcepack pack.mcmeta is missing')
+        if mcmeta.is_file():
+            try:
+                mcmeta_data = json.loads(mcmeta.read_text())
+                require(mcmeta_data.get('pack', {}).get('pack_format') == 34,
+                        'art-source: resourcepack pack.mcmeta must use format 34')
+            except (OSError, ValueError, AttributeError):
+                require(False, 'art-source: resourcepack pack.mcmeta is invalid JSON')
+        for chapter_key in sorted(expected_chapter_keys - {None}):
+            record = art_chapters.get(chapter_key)
+            owner = f'art-source:{chapter_key}'
+            require(isinstance(record, dict), f'{owner}: background record must be an object')
+            if not isinstance(record, dict):
+                continue
+            require(set(record) == ART_RECORD_FIELDS,
+                    f'{owner}: fields must be exactly {sorted(ART_RECORD_FIELDS)}')
+            for field in ('x', 'y', 'width', 'height', 'rotation'):
+                require(finite_number(record.get(field)), f'{owner}: {field} must be finite')
+            require(finite_number(record.get('width')) and record.get('width') > 0,
+                    f'{owner}: width must be positive')
+            require(finite_number(record.get('height')) and record.get('height') > 0,
+                    f'{owner}: height must be positive')
+            require(type(record.get('alpha')) is int and 1 <= record.get('alpha') <= 255,
+                    f'{owner}: alpha must be an integer from 1 through 255')
+            require(type(record.get('order')) is int and record.get('order') < 0,
+                    f'{owner}: order must be a negative native background order')
+            require(finite_number(record.get('rotation')) and record.get('rotation') == 0,
+                    f'{owner}: rotation must be native 0')
+            require(type(record.get('pixel_width')) is int and record.get('pixel_width') > 0,
+                    f'{owner}: pixel_width must be positive')
+            require(type(record.get('pixel_height')) is int and record.get('pixel_height') > 0,
+                    f'{owner}: pixel_height must be positive')
+            if (finite_number(record.get('width')) and finite_number(record.get('height')) and
+                    type(record.get('pixel_width')) is int and record.get('pixel_width') > 0 and
+                    type(record.get('pixel_height')) is int and record.get('pixel_height') > 0 and
+                    record.get('height') > 0):
+                require(math.isclose(
+                    record['width'] / record['height'],
+                    record['pixel_width'] / record['pixel_height'],
+                    rel_tol=1e-6,
+                    abs_tol=1e-6,
+                ), f'{owner}: native image aspect ratio differs from PNG pixel ratio')
+            require(isinstance(record.get('sha256'), str) and
+                    bool(re.fullmatch(r'[0-9a-fA-F]{64}', str(record.get('sha256')))),
+                    f'{owner}: sha256 must be a 64-character hex digest')
+            require(record.get('image') == f'poiesis:textures/questpics/frontier/{chapter_key}.png',
+                    f'{owner}: image path must use the Frontier chapter resource convention')
+            asset = _art_asset_path(root, record.get('image'))
+            require(asset is not None and asset.suffix.lower() == '.png',
+                    f'{owner}: image must be a safe PNG resource location')
+            if asset is None:
+                continue
+            require(asset.is_file(), f'{owner}: missing asset {record.get("image")}')
+            if asset.is_file():
+                digest = _file_sha256(asset)
+                require(digest is not None and digest.lower() == str(record.get('sha256', '')).lower(),
+                        f'{owner}: asset SHA256 differs from art-source')
+                dimensions = _png_dimensions(asset)
+                require(dimensions == (record.get('pixel_width'), record.get('pixel_height')),
+                        f'{owner}: PNG dimensions differ from art-source')
+            emitted = actual_new_by_key.get(chapter_key, {}).get('images')
+            require(isinstance(emitted, list) and len(emitted) == 1,
+                    f'{owner}: emitted chapter must contain exactly one background')
+            if isinstance(emitted, list) and len(emitted) == 1:
+                image = emitted[0]
+                require(isinstance(image, dict) and set(image) == set(ART_IMAGE_FIELDS),
+                        f'{owner}: emitted image has unexpected fields')
+                if isinstance(image, dict):
+                    for field in ART_IMAGE_FIELDS:
+                        require(image.get(field) == record.get(field),
+                                f'{owner}: emitted {field} differs from art-source')
     for chapter_key, emitted_chapter in actual_new_by_key.items():
         require(emitted_chapter.get('default_hide_dependency_lines') is False,
                 f'{chapter_key}: Frontier dependency lines must remain visible')

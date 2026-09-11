@@ -1,6 +1,6 @@
 {
-  "evidence_type": "Source geometry only; not a Minecraft client screenshot",
-  "manifest_sha256": "aa0a1ede159f08c5f209dba607c572f18d139df781904e7fef60214441665708",
+  "evidence_type": "Source geometry with generated backgrounds; not a Minecraft client screenshot",
+  "manifest_sha256": "2fc068bcfbb3f557b1f67db03cdc360fe305ab0163feae1a5e4901e1002e03ec",
   "chapters": {
     "frontier_00_tonight": {
       "node_overlaps": 0,

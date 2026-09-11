@@ -1,5 +1,7 @@
 # Unreleased — dev questbook rebuild
 
+- Add nine generated chapter backgrounds fitted to the connected Frontier routes, with local required-pack textures and native background-layer attachment.
+
 - Connect all Frontier quests with authored routes, meaningful native shapes and cross-chapter Quest Links; enforce project/contract/order gates while preserving veteran milestone credit.
 
 - Review quest rules: enforce verified stack sizes, paid orders and repeat gates; correct objectives, shorten titles, and improve stage-appropriate rewards.
