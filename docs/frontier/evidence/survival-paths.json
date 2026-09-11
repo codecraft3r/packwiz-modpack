@@ -2,7 +2,7 @@
   "schema_version": 1,
   "scope": "Recipe and native-interaction evidence for modded direct tasks, observations and rewards. Native advancement criteria are tracked separately. These are source receipts, not completed in-game crafts.",
   "pack_overrides": {
-    "kubejs/server_scripts/crafting.js": "82bd4d10da34b348cd9162f911fefa05e0594877b79a1f350db99fcccf0d292f"
+    "kubejs/server_scripts/crafting.js": "3b2b1796b5024b96f4b61f436b3808001e75e0dc6ed8f63c93b40f740b3dcc37"
   },
   "items": {
     "aeronautics:adjustable_burner": {

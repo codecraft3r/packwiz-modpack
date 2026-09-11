@@ -109,4 +109,11 @@ ServerEvents.recipes(event => {
     S: 'create:shaft',
     E: 'mekanism:hdpe_elytra'
   })
+
+  // --- Cataclysm: Spellbooks Modifications ---
+
+  // Custom smithing recipe for excelsius_power_chestplate (template: cataclysm:witherite_ingot, base: cataclysm_spellbooks:engineer_suit, addition: irons_spellbooks:mana_upgrade_orb)
+  event.remove({ output: 'cataclysm_spellbooks:excelsius_power_chestplate' })
+  event.smithing('cataclysm_spellbooks:excelsius_power_chestplate', 'cataclysm:witherite_ingot', 'cataclysm_spellbooks:engineer_suit', 'irons_spellbooks:mana_upgrade_orb')
 })
+

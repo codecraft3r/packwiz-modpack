@@ -68,6 +68,6 @@ packwiz refresh
 
 ## Runtime status
 
-This is a **dev-branch candidate**, not a production activation. The live server is configured to pull `master`. Its installed FTB Quests build rejects editor commands from non-player sources, so a previous direct RCON hot-reload attempt restored the original server files. An authorized operator can reload the installed definitions while logged in, or the owner can arrange a restart. This commit does neither.
+The owner requested publication to the production branch, `master`, for the next server restart. Publication does not restart the server or install client resources. The live server is configured to pull `master`. Its installed FTB Quests build rejects editor commands from non-player sources, so a previous direct RCON hot-reload attempt restored the original server files. An authorized operator can reload the installed definitions while logged in, or the owner can arrange a restart. This commit does neither.
 
 Static grammar, source synchronization, exact mod artifact matching and registry query evidence are distinct from playtesting. Still required before production promotion: open the new chapters in the real client; verify an existing advancement credits; claim one reward; test one order as payer and teammate; verify cooldown/reset behavior, team leave/rejoin claims and overflow; inspect the runtime logs. Source layout renders cannot prove client icons or text wrapping.

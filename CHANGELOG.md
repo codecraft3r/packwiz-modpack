@@ -1,4 +1,4 @@
-# Unreleased — dev questbook rebuild
+# Unreleased — questbook and artwork
 
 - Add nine generated chapter backgrounds fitted to the connected Frontier routes, with local required-pack textures and native background-layer attachment.
 

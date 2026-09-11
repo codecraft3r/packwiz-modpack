@@ -24,4 +24,4 @@ The semantic audit checks all nine files, exact case-sensitive references, PNG d
 
 Source previews resolve all nine custom textures. The renderer preserves the graph's diagnostic zoom when fitting larger background extents, so background margins do not squeeze the quest labels together. Full-book grammar, graph, identity and economy checks still apply. `evidence/art-readability.json` records a limited texture-brightness sample at node positions; it is not a runtime contrast certification.
 
-These previews are not Minecraft screenshots. In the pinned client, verify normal zoom, small-screen panning, resource reload, node/label readability, hover/click behavior and absence of missing textures before promoting to production. The dev changes do not activate the new art on the live server.
+These previews are not Minecraft screenshots. In the pinned client, verify normal zoom, small-screen panning, resource reload, node/label readability, hover/click behavior and absence of missing textures before promoting to production. Publishing the pack does not restart the live server or update already-running clients.
