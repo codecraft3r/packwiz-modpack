@@ -1,6 +1,13 @@
 # VvH Source Authority
 
-Status: current.
+Status: current for the archived VvH source.
+
+## September 11 progression-aware rebuild
+
+The explicit request to start the questbook afresh around balanced adventures, machines and shared projects, while recognizing existing progress, supersedes the five-chapter-only **live surface**. `docs/frontier/quest-source.json` now owns nine new chapters; `scripts/frontier_campaign.py` composes them with the unchanged VvH quest objects under Previous Questbook. The standard `vvh_campaign_v3.py` command and staged hash-ledger guard generate both sets. All old IDs remain stable.
+
+The five-chapter source, catalog and economy checks below remain authoritative for **archived VvH content**. Frontier has its own integrated audit and exact-artifact evidence; see `docs/frontier/README.md`. No historical faction capstone or third-faction campaign has been restored.
+
 
 The repository previously contained several incompatible campaign generations. This file makes ownership explicit so an old generator or handoff cannot silently restore retired architecture.
 
@@ -24,7 +31,7 @@ The installed pack wins over remembered IDs, display-name guesses, old prompts, 
 
 ## Generator ownership
 
-`scripts/vvh_campaign_v3.py` is authoritative despite its historical filename. It generates exactly:
+`scripts/vvh_campaign_v3.py` is authoritative despite its historical filename. Its legacy layer generates the following files; the Frontier composition layer adds nine chapters and its render manifest, and archives the five chapter containers:
 
 - `config/ftbquests/quests/chapter_groups.snbt`
 - `config/ftbquests/quests/data.snbt`
@@ -71,7 +78,7 @@ not require the retired ten-chapter file names.
 
 ## Live architecture
 
-The only live top-level chapters are:
+The preserved VvH archive chapters are:
 
 1. `01 · The Island Charter`
 2. `02 · Choose a Calling`

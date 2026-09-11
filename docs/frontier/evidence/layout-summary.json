@@ -1,0 +1,65 @@
+{
+  "evidence_type": "source geometry only; not a Minecraft client screenshot",
+  "manifest_sha256": "cfa457eb79b6837f08ec3d846ac84cf9871e8e87bf33cb2eb3143b6a7fd1242b",
+  "chapters": {
+    "frontier_00_tonight": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_01_expeditions": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_02_bosses": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_03_magic": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_04_engineering": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_05_transport": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_06_places": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_07_contracts": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    },
+    "frontier_08_quartermaster": {
+      "node_overlaps": 0,
+      "estimated_label_collisions": 0,
+      "visible_edge_crossings": 0,
+      "review_label_clipping": 0
+    }
+  },
+  "limitations": [
+    "No texture archives supplied to this diagnostic; icon rendering is not established.",
+    "Cross-chapter dependencies are checked by the full-book audit, not the individual chapter render.",
+    "Client wrapping, task completion and reward claims remain pending."
+  ]
+}

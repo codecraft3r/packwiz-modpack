@@ -1,0 +1,163 @@
+{
+	id: "6E264DBF3AA2C1F9"
+	filename: "frontier_07_contracts"
+	title: "Crew Contracts"
+	subtitle: "Optional repeat jobs. No streaks and no login calendar."
+	group: "6E26B2BBC6593B6A"
+	icon: { id: "numismatics:cog" }
+	order_index: 7
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E26B7F1F0811EDE"
+			title: "Catacombs Rematch"
+			description: ["Defeat a Dead King after taking this contract. This is fresh combat, so old kill statistics do not complete it.", "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."]
+			icon: { id: "irons_spellbooks:rotten_spell_book" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "kill", entity: "irons_spellbooks:dead_king", value: 1, id: "6E26E0B6FA722245" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26F527045DA263"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E269E4565EE8432"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E26114622D37E7F"]
+			can_repeat: true
+			repeat_cooldown: 21600
+		}
+		{
+			id: "6E26EB32F87A5BEC"
+			title: "Return to the Burning Arena"
+			description: ["Defeat Ignis again. The first-victory milestone and this fresh-kill contract are separate.", "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."]
+			icon: { id: "cataclysm:burning_ashes" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "kill", entity: "cataclysm:ignis", value: 1, id: "6E26CAE3D8CEB1C8" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260241D53CA620"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26E11C370D2F83"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E263C2F9B59EE37"]
+			can_repeat: true
+			repeat_cooldown: 21600
+		}
+		{
+			id: "6E266A2A5B8C5878"
+			title: "Deep Water Rematch"
+			description: ["Defeat the Leviathan after unlocking this contract. This can fund the next group project.", "One shared payment. Six-hour cooldown begins after all rewards are collected."]
+			icon: { id: "cataclysm:altar_of_abyss" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "kill", entity: "cataclysm:the_leviathan", value: 1, id: "6E26B51A359DB53E" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E263B4C00187B27"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260E692FB7DB8B"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E269A5A0A38EE19"]
+			can_repeat: true
+			repeat_cooldown: 21600
+		}
+		{
+			id: "6E26E9073FF8C06B"
+			title: "Supply the Galley"
+			description: ["Submit eight Beef Stews and eight Vegetable Soups for an expedition galley. The submitted meals are consumed.", "One shared 32-Spur payment, with a six-hour repeat cooldown. Pack the meals for your next crew departure."]
+			icon: { id: "farmersdelight:beef_stew" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "farmersdelight:beef_stew", count: 1 }
+					count: 8
+					consume_items: true
+					task_screen_only: true
+					id: "6E266B506CBC6926"
+				}
+				{
+					type: "item"
+					item: { id: "farmersdelight:vegetable_soup", count: 1 }
+					count: 8
+					consume_items: true
+					task_screen_only: true
+					id: "6E2637A54078954B"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2632AE3AD51D8E"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 21600
+		}
+	]
+}

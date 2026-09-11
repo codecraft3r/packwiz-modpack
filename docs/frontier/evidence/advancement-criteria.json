@@ -1,0 +1,1744 @@
+{
+  "block_factorys_bosses:kill_dragon": {
+    "parent": "block_factorys_bosses:die_boss",
+    "criteria": {
+      "kill": {
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "block_factorys_bosses:infernal_dragon"
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:player_killed_entity"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.kill_dragon.desc"
+      },
+      "icon": {
+        "components": {
+          "minecraft:custom_model_data": -1
+        },
+        "count": 1,
+        "id": "block_factorys_bosses:achievement_icons"
+      },
+      "title": {
+        "translate": "advancement.kill_dragon.title"
+      }
+    },
+    "requirements": [
+      [
+        "kill"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "block_factorys_bosses:kill_kraken": {
+    "parent": "block_factorys_bosses:die_boss",
+    "criteria": {
+      "kill": {
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "block_factorys_bosses:kraken"
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:player_killed_entity"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.kill_kraken.desc"
+      },
+      "icon": {
+        "components": {
+          "minecraft:custom_model_data": 11
+        },
+        "count": 1,
+        "id": "block_factorys_bosses:achievement_icons"
+      },
+      "title": {
+        "translate": "advancement.kill_kraken.title"
+      }
+    },
+    "requirements": [
+      [
+        "kill"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "block_factorys_bosses:kill_sandworm": {
+    "parent": "block_factorys_bosses:die_boss",
+    "criteria": {
+      "kill": {
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "block_factorys_bosses:sandworm"
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:player_killed_entity"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.kill_sandworm.desc"
+      },
+      "icon": {
+        "components": {
+          "minecraft:custom_model_data": 7
+        },
+        "count": 1,
+        "id": "block_factorys_bosses:achievement_icons"
+      },
+      "title": {
+        "translate": "advancement.kill_sandworm.title"
+      }
+    },
+    "requirements": [
+      [
+        "kill"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "block_factorys_bosses:kill_underworld_knight": {
+    "parent": "block_factorys_bosses:die_boss",
+    "criteria": {
+      "kill": {
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "block_factorys_bosses:underworld_knight"
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:player_killed_entity"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.kill_underworld_knight.desc"
+      },
+      "icon": {
+        "components": {
+          "minecraft:custom_model_data": 1
+        },
+        "count": 1,
+        "id": "block_factorys_bosses:achievement_icons"
+      },
+      "title": {
+        "translate": "advancement.kill_underworld_knight.title"
+      }
+    },
+    "requirements": [
+      [
+        "kill"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "cataclysm:find_acropolis": {
+    "parent": "cataclysm:root",
+    "criteria": {
+      "acropolis": {
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structures": "cataclysm:acropolis"
+                }
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:location"
+      }
+    },
+    "display": {
+      "announce_to_chat": true,
+      "description": {
+        "translate": "advancements.cataclysm.acropolis.description"
+      },
+      "frame": "task",
+      "hidden": false,
+      "icon": {
+        "id": "cataclysm:lacrima"
+      },
+      "show_toast": true,
+      "title": {
+        "translate": "advancements.cataclysm.acropolis.title"
+      }
+    },
+    "requirements": [
+      [
+        "acropolis"
+      ]
+    ]
+  },
+  "cataclysm:find_frosted_prison": {
+    "parent": "cataclysm:root",
+    "criteria": {
+      "prison": {
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structures": "cataclysm:frosted_prison"
+                }
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:location"
+      }
+    },
+    "display": {
+      "announce_to_chat": true,
+      "description": {
+        "translate": "advancements.cataclysm.frosted_prison.description"
+      },
+      "frame": "task",
+      "hidden": false,
+      "icon": {
+        "id": "cataclysm:door_of_seal"
+      },
+      "show_toast": true,
+      "title": {
+        "translate": "advancements.cataclysm.frosted_prison.title"
+      }
+    },
+    "requirements": [
+      [
+        "prison"
+      ]
+    ]
+  },
+  "cataclysm:find_sunken_city": {
+    "parent": "cataclysm:root",
+    "criteria": {
+      "factory": {
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structures": "cataclysm:sunken_city"
+                }
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:location"
+      }
+    },
+    "display": {
+      "announce_to_chat": true,
+      "description": {
+        "translate": "advancements.cataclysm.sunken_city.description"
+      },
+      "frame": "task",
+      "hidden": false,
+      "icon": {
+        "id": "cataclysm:stone_tiles"
+      },
+      "show_toast": true,
+      "title": {
+        "translate": "advancements.cataclysm.sunken_city.title"
+      }
+    },
+    "requirements": [
+      [
+        "factory"
+      ]
+    ]
+  },
+  "cataclysm:kill_clawdian": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:chitin_claw"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_clawdian.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_clawdian.description"
+      }
+    },
+    "parent": "cataclysm:root",
+    "criteria": {
+      "endergolem": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:clawdian"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_ender_guardian": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:gauntlet_of_guard"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_ender_guardian.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_ender_guardian.description"
+      },
+      "hidden": true,
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:kill_ender_golem",
+    "criteria": {
+      "enderguardian": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:ender_guardian"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_harbinger": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:witherite_ingot"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_harbinger.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_harbinger.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:find_ancient_factory",
+    "criteria": {
+      "theharbinger": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:the_harbinger"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_ignis": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:bulwark_of_the_flame"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_ignis.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_ignis.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:kill_revenant",
+    "criteria": {
+      "ignis": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:ignis"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_leviathan": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:tidal_claws"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_leviathan.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_leviathan.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:find_sunken_city",
+    "criteria": {
+      "ignis": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:the_leviathan"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_maledictus": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:cursed_tombstone"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_maledictus.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_maledictus.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:find_frosted_prison",
+    "criteria": {
+      "ignis": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:maledictus"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_monstrosity": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:infernal_forge"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_monstrosity.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_monstrosity.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:find_soul_black_smith",
+    "criteria": {
+      "netheritemonstrosity": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:netherite_monstrosity"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_remnant": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:remnant_skull"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_remnant.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_remnant.description"
+      },
+      "frame": "challenge"
+    },
+    "parent": "cataclysm:find_cursed_pyramid",
+    "criteria": {
+      "ignis": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:ancient_remnant"
+          }
+        }
+      }
+    }
+  },
+  "cataclysm:kill_scylla": {
+    "display": {
+      "icon": {
+        "id": "cataclysm:essence_of_the_storm"
+      },
+      "title": {
+        "translate": "advancements.cataclysm.kill_scylla.title"
+      },
+      "description": {
+        "translate": "advancements.cataclysm.kill_scylla.description"
+      }
+    },
+    "parent": "cataclysm:kill_clawdian",
+    "criteria": {
+      "endergolem": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "entity": {
+            "type": "cataclysm:scylla"
+          }
+        }
+      }
+    }
+  },
+  "create:brass": {
+    "parent": "create:diving_suit",
+    "criteria": {
+      "0": {
+        "conditions": {
+          "items": [
+            {
+              "items": "create:brass_ingot"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "announce_to_chat": false,
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.brass.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:brass_ingot"
+      },
+      "title": {
+        "translate": "advancement.create.brass"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:long_travel": {
+    "parent": "create:long_train",
+    "criteria": {
+      "0": {
+        "trigger": "create:long_travel_builtin"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.long_travel.desc"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "create:green_seat"
+      },
+      "title": {
+        "translate": "advancement.create.long_travel"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:packager": {
+    "parent": "create:cardboard",
+    "criteria": {
+      "0": {
+        "trigger": "create:packager_builtin"
+      }
+    },
+    "display": {
+      "announce_to_chat": false,
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.packager.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:packager"
+      },
+      "title": {
+        "translate": "advancement.create.packager"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:precision_mechanism": {
+    "parent": "create:deployer",
+    "criteria": {
+      "0": {
+        "conditions": {
+          "items": [
+            {
+              "items": "create:precision_mechanism"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.precision_mechanism.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:precision_mechanism"
+      },
+      "title": {
+        "translate": "advancement.create.precision_mechanism"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:steam_engine": {
+    "parent": "create:drain",
+    "criteria": {
+      "0": {
+        "trigger": "create:steam_engine_builtin"
+      }
+    },
+    "display": {
+      "announce_to_chat": false,
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.steam_engine.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:steam_engine"
+      },
+      "title": {
+        "translate": "advancement.create.steam_engine"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:steam_engine_maxed": {
+    "parent": "create:hose_pulley_lava",
+    "criteria": {
+      "0": {
+        "trigger": "create:steam_engine_maxed_builtin"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.steam_engine_maxed.desc"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "create:steam_engine"
+      },
+      "title": {
+        "translate": "advancement.create.steam_engine_maxed"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:stock_ticker": {
+    "parent": "create:packager",
+    "criteria": {
+      "0": {
+        "trigger": "create:stock_ticker_builtin"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.stock_ticker.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:stock_ticker"
+      },
+      "title": {
+        "translate": "advancement.create.stock_ticker"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:table_cloth_shop": {
+    "parent": "create:frogport",
+    "criteria": {
+      "0": {
+        "trigger": "create:table_cloth_shop_builtin"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.table_cloth_shop.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:red_table_cloth"
+      },
+      "title": {
+        "translate": "advancement.create.table_cloth_shop"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "create:train": {
+    "parent": "create:train_casing_00",
+    "criteria": {
+      "0": {
+        "trigger": "create:train_builtin"
+      }
+    },
+    "display": {
+      "description": {
+        "color": "#DBA213",
+        "translate": "advancement.create.train.desc"
+      },
+      "icon": {
+        "count": 1,
+        "id": "create:track_station"
+      },
+      "title": {
+        "translate": "advancement.create.train"
+      }
+    },
+    "requirements": [
+      [
+        "0"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "exposure:adventure/exposure": {
+    "parent": "minecraft:adventure/root",
+    "criteria": {
+      "expose_frame": {
+        "conditions": {},
+        "trigger": "exposure:frame_exposed"
+      }
+    },
+    "display": {
+      "frame": "task",
+      "hidden": false,
+      "show_toast": true,
+      "announce_to_chat": true,
+      "icon": {
+        "id": "exposure:camera",
+        "components": {
+          "exposure:camera_active": true
+        }
+      },
+      "title": {
+        "translate": "advancement.exposure.exposure.title"
+      },
+      "description": {
+        "translate": "advancement.exposure.exposure.description"
+      }
+    },
+    "requirements": [
+      [
+        "expose_frame"
+      ]
+    ]
+  },
+  "exposure:adventure/family_portrait": {
+    "parent": "exposure:adventure/exposure",
+    "criteria": {
+      "captured_entities": {
+        "conditions": {
+          "frame": {
+            "extra_data": "{on_stand:1b}"
+          },
+          "entities_in_frame": [
+            {
+              "type": "minecraft:player"
+            },
+            [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:cat",
+                  "type_specific": {
+                    "type": "exposure:tamed",
+                    "is_tamed": true
+                  }
+                }
+              }
+            ],
+            [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:wolf",
+                  "type_specific": {
+                    "type": "exposure:tamed",
+                    "is_tamed": true
+                  }
+                }
+              }
+            ]
+          ]
+        },
+        "trigger": "exposure:frame_exposed"
+      }
+    },
+    "display": {
+      "frame": "task",
+      "hidden": false,
+      "show_toast": true,
+      "announce_to_chat": true,
+      "icon": {
+        "id": "exposure:camera_stand"
+      },
+      "title": {
+        "translate": "advancement.exposure.family_portrait.title"
+      },
+      "description": {
+        "translate": "advancement.exposure.family_portrait.description"
+      }
+    }
+  },
+  "exposure:adventure/moment_in_time": {
+    "parent": "exposure:adventure/exposure",
+    "criteria": {
+      "print_photograph": {
+        "conditions": {
+          "item": {
+            "items": [
+              "exposure:photograph"
+            ]
+          }
+        },
+        "trigger": "exposure:frame_printed"
+      }
+    },
+    "display": {
+      "frame": "task",
+      "hidden": false,
+      "show_toast": true,
+      "announce_to_chat": true,
+      "icon": {
+        "id": "exposure:photograph"
+      },
+      "title": {
+        "translate": "advancement.exposure.moment_in_time.title"
+      },
+      "description": {
+        "translate": "advancement.exposure.moment_in_time.description"
+      }
+    },
+    "requirements": [
+      [
+        "print_photograph"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "exposure:adventure/void": {
+    "parent": "exposure:adventure/lights_up",
+    "criteria": {
+      "photograph_in_end": {
+        "conditions": {
+          "camera": {
+            "location": {
+              "dimension": "minecraft:the_end"
+            }
+          }
+        },
+        "trigger": "exposure:frame_exposed"
+      }
+    },
+    "display": {
+      "frame": "task",
+      "hidden": true,
+      "show_toast": true,
+      "announce_to_chat": true,
+      "icon": {
+        "id": "minecraft:end_stone_bricks"
+      },
+      "title": {
+        "translate": "advancement.exposure.void.title"
+      },
+      "description": {
+        "translate": "advancement.exposure.void.description"
+      }
+    },
+    "requirements": [
+      [
+        "photograph_in_end"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "farmersdelight:main/place_feast": {
+    "parent": "farmersdelight:main/eat_nourishing_food",
+    "criteria": {
+      "gleaming_salad": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:gleaming_salad_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      },
+      "honey_glazed_ham": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:honey_glazed_ham_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      },
+      "rice_roll_medley": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:rice_roll_medley_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      },
+      "roast_chicken": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:roast_chicken_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      },
+      "shepherds_pie": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:shepherds_pie_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      },
+      "stuffed_pumpkin": {
+        "conditions": {
+          "location": [
+            {
+              "block": "farmersdelight:stuffed_pumpkin_block",
+              "condition": "minecraft:block_state_property"
+            }
+          ]
+        },
+        "trigger": "minecraft:placed_block"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.farmersdelight.place_feast.description"
+      },
+      "icon": {
+        "count": 1,
+        "id": "farmersdelight:roast_chicken_block"
+      },
+      "title": {
+        "translate": "advancements.farmersdelight.place_feast.title"
+      }
+    },
+    "requirements": [
+      [
+        "roast_chicken",
+        "stuffed_pumpkin",
+        "honey_glazed_ham",
+        "shepherds_pie",
+        "gleaming_salad",
+        "rice_roll_medley"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "irons_spellbooks:irons_spellbooks/enter_catacombs": {
+    "display": {
+      "hidden": true,
+      "icon": {
+        "id": "minecraft:skeleton_skull"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.enter_catacombs.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.enter_catacombs.description"
+      },
+      "announce_to_chat": true,
+      "show_toast": true,
+      "frame": "task"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/make_wayward_compass",
+    "criteria": {
+      "in_catacombs": {
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structures": "irons_spellbooks:catacombs"
+                }
+              }
+            }
+          ]
+        },
+        "trigger": "minecraft:location"
+      }
+    }
+  },
+  "irons_spellbooks:irons_spellbooks/ink_legendary": {
+    "display": {
+      "icon": {
+        "id": "irons_spellbooks:legendary_ink"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.ink_legendary.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.ink_legendary.description"
+      },
+      "announce_to_chat": true,
+      "show_toast": true,
+      "frame": "challenge"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/ink_root",
+    "criteria": {
+      "requirement": {
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "irons_spellbooks:legendary_ink"
+              ]
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    }
+  },
+  "irons_spellbooks:irons_spellbooks/make_arcane_anvil": {
+    "display": {
+      "icon": {
+        "id": "irons_spellbooks:arcane_anvil"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.make_arcane_anvil.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.make_arcane_anvil.description"
+      },
+      "announce_to_chat": true,
+      "show_toast": true,
+      "frame": "challenge"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/make_scroll_forge",
+    "criteria": {
+      "arcane_anvil": {
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "irons_spellbooks:arcane_anvil"
+              ]
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    }
+  },
+  "irons_spellbooks:irons_spellbooks/make_scroll_forge": {
+    "display": {
+      "icon": {
+        "id": "irons_spellbooks:scroll_forge"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.make_scroll_forge.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.make_scroll_forge.description"
+      },
+      "announce_to_chat": true,
+      "show_toast": true,
+      "frame": "goal"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/make_inscription_table",
+    "criteria": {
+      "scroll_forge": {
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "irons_spellbooks:scroll_forge"
+              ]
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    }
+  },
+  "irons_spellbooks:irons_spellbooks/spell_book_dragon": {
+    "display": {
+      "icon": {
+        "id": "irons_spellbooks:dragonskin_spell_book"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.spell_book_dragon.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.spell_book_dragon.description"
+      },
+      "announce_to_chat": false,
+      "show_toast": true,
+      "frame": "challenge"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/spell_book_diamond",
+    "criteria": {
+      "requirement": {
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "irons_spellbooks:dragonskin_spell_book"
+              ]
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    }
+  },
+  "irons_spellbooks:irons_spellbooks/spell_book_equip": {
+    "display": {
+      "icon": {
+        "id": "irons_spellbooks:copper_spell_book"
+      },
+      "title": {
+        "translate": "advancements.irons_spellbooks.spell_book_equip.title"
+      },
+      "description": {
+        "translate": "advancements.irons_spellbooks.spell_book_equip.description"
+      },
+      "announce_to_chat": true,
+      "show_toast": true,
+      "frame": "task"
+    },
+    "parent": "irons_spellbooks:irons_spellbooks/root",
+    "criteria": {
+      "requirement": {
+        "conditions": {
+          "curios:slot": {
+            "slots": [
+              "spellbook"
+            ]
+          }
+        },
+        "trigger": "curios:equip_curio"
+      }
+    }
+  },
+  "mca:friend": {
+    "display": {
+      "title": {
+        "translate": "advancement.mca.friend"
+      },
+      "description": {
+        "translate": "advancement.mca.friend.description"
+      },
+      "icon": {
+        "id": "minecraft:emerald"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "mca:root",
+    "criteria": {
+      "baby": {
+        "trigger": "mca:hearts",
+        "conditions": {
+          "hearts": {
+            "min": 50
+          }
+        }
+      }
+    },
+    "rewards": {
+      "loot": [
+        "mca:books/infection"
+      ]
+    }
+  },
+  "mekanism:automated_crafting": {
+    "parent": "mekanism:steel_casing",
+    "criteria": {
+      "formulaic_assemblicator": {
+        "conditions": {
+          "items": [
+            {
+              "items": "mekanism:formulaic_assemblicator"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "announce_to_chat": false,
+      "description": {
+        "translate": "advancements.mekanism.automated_crafting.description"
+      },
+      "icon": {
+        "count": 1,
+        "id": "mekanism:formulaic_assemblicator"
+      },
+      "title": {
+        "translate": "advancements.mekanism.automated_crafting.title"
+      }
+    },
+    "requirements": [
+      [
+        "formulaic_assemblicator"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "mekanism:digital_miner": {
+    "parent": "mekanism:robit",
+    "criteria": {
+      "digital_miner": {
+        "conditions": {
+          "items": [
+            {
+              "items": "mekanism:digital_miner"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.mekanism.digital_miner.description"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "mekanism:digital_miner"
+      },
+      "title": {
+        "translate": "advancements.mekanism.digital_miner.title"
+      }
+    },
+    "requirements": [
+      [
+        "digital_miner"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "mekanism:factory": {
+    "parent": "mekanism:basic_control_circuit",
+    "criteria": {
+      "factory": {
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "mekanism:basic_smelting_factory",
+                "mekanism:basic_enriching_factory",
+                "mekanism:basic_crushing_factory",
+                "mekanism:basic_compressing_factory",
+                "mekanism:basic_combining_factory",
+                "mekanism:basic_purifying_factory",
+                "mekanism:basic_injecting_factory",
+                "mekanism:basic_infusing_factory",
+                "mekanism:basic_sawing_factory",
+                "mekanism:advanced_smelting_factory",
+                "mekanism:advanced_enriching_factory",
+                "mekanism:advanced_crushing_factory",
+                "mekanism:advanced_compressing_factory",
+                "mekanism:advanced_combining_factory",
+                "mekanism:advanced_purifying_factory",
+                "mekanism:advanced_injecting_factory",
+                "mekanism:advanced_infusing_factory",
+                "mekanism:advanced_sawing_factory",
+                "mekanism:elite_smelting_factory",
+                "mekanism:elite_enriching_factory",
+                "mekanism:elite_crushing_factory",
+                "mekanism:elite_compressing_factory",
+                "mekanism:elite_combining_factory",
+                "mekanism:elite_purifying_factory",
+                "mekanism:elite_injecting_factory",
+                "mekanism:elite_infusing_factory",
+                "mekanism:elite_sawing_factory",
+                "mekanism:ultimate_smelting_factory",
+                "mekanism:ultimate_enriching_factory",
+                "mekanism:ultimate_crushing_factory",
+                "mekanism:ultimate_compressing_factory",
+                "mekanism:ultimate_combining_factory",
+                "mekanism:ultimate_purifying_factory",
+                "mekanism:ultimate_injecting_factory",
+                "mekanism:ultimate_infusing_factory",
+                "mekanism:ultimate_sawing_factory"
+              ]
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      },
+      "tier_installer": {
+        "conditions": {
+          "action": "any"
+        },
+        "trigger": "mekanism:use_tier_installer"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.mekanism.factory.description"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "mekanism:basic_smelting_factory"
+      },
+      "title": {
+        "translate": "advancements.mekanism.factory.title"
+      }
+    },
+    "requirements": [
+      [
+        "factory",
+        "tier_installer"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "mekanism:portable_qio_dashboard": {
+    "parent": "mekanism:qio_dashboard",
+    "criteria": {
+      "portable_qio_dashboard": {
+        "conditions": {
+          "items": [
+            {
+              "items": "mekanism:portable_qio_dashboard"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.mekanism.portable_qio_dashboard.description"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "mekanism:portable_qio_dashboard"
+      },
+      "title": {
+        "translate": "advancements.mekanism.portable_qio_dashboard.title"
+      }
+    },
+    "requirements": [
+      [
+        "portable_qio_dashboard"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "mekanismgenerators:burn_the_gas": {
+    "parent": "mekanismgenerators:wind_generator",
+    "criteria": {
+      "gas_burning_generator": {
+        "conditions": {
+          "items": [
+            {
+              "items": "mekanismgenerators:gas_burning_generator"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancements.mekanismgenerators.burn_the_gas.description"
+      },
+      "frame": "goal",
+      "icon": {
+        "count": 1,
+        "id": "mekanismgenerators:gas_burning_generator"
+      },
+      "title": {
+        "translate": "advancements.mekanismgenerators.burn_the_gas.title"
+      }
+    },
+    "requirements": [
+      [
+        "gas_burning_generator"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "netherman:enter_maze": {
+    "display": {
+      "icon": {
+        "id": "netherman:chiseled_samsonit"
+      },
+      "title": {
+        "translate": "advancement.netherman.enter_maze.title"
+      },
+      "description": {
+        "translate": "advancement.netherman.enter_maze.description"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false,
+      "background": "minecraft:textures/block/polished_blackstone_bricks.png"
+    },
+    "criteria": {
+      "in_mansion": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "structures": "netherman:maze"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "netherman:kill_azazel": {
+    "parent": "netherman:enter_mansion",
+    "display": {
+      "icon": {
+        "id": "netherman:azazel_spawn_egg"
+      },
+      "title": {
+        "translate": "advancement.netherman.kill_azazel.title"
+      },
+      "description": {
+        "translate": "advancement.netherman.kill_azazel.description"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "got_stick": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "netherman:manipulator_stick"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "vampirism:hunter/max_level": {
+    "parent": "vampirism:hunter/stake",
+    "criteria": {
+      "level": {
+        "conditions": {
+          "type": "level",
+          "faction": {
+            "id": "vampirism:hunter"
+          },
+          "level": 14
+        },
+        "trigger": "vampirism:faction"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.vampirism.max_level_hunter.desc"
+      },
+      "frame": "goal",
+      "hidden": true,
+      "icon": {
+        "count": 1,
+        "id": "vampirism:garlic"
+      },
+      "title": {
+        "translate": "advancement.vampirism.max_level_hunter"
+      }
+    },
+    "requirements": [
+      [
+        "level"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "vampirism:hunter/technology": {
+    "parent": "vampirism:hunter/become_hunter",
+    "criteria": {
+      "advanced": {
+        "conditions": {
+          "items": [
+            {
+              "items": "vampirism:enhanced_tech_crossbow"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      },
+      "basic": {
+        "conditions": {
+          "items": [
+            {
+              "items": "vampirism:basic_tech_crossbow"
+            }
+          ]
+        },
+        "trigger": "minecraft:inventory_changed"
+      },
+      "main": {
+        "conditions": {
+          "type": "level",
+          "faction": {
+            "id": "vampirism:hunter"
+          },
+          "level": 1
+        },
+        "trigger": "vampirism:faction"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.vampirism.technology.desc"
+      },
+      "hidden": true,
+      "icon": {
+        "count": 1,
+        "id": "vampirism:basic_tech_crossbow"
+      },
+      "title": {
+        "translate": "advancement.vampirism.technology"
+      }
+    },
+    "requirements": [
+      [
+        "basic"
+      ],
+      [
+        "advanced"
+      ],
+      [
+        "main"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "vampirism:vampire/bat": {
+    "parent": "vampirism:vampire/become_vampire",
+    "criteria": {
+      "action": {
+        "conditions": {
+          "action": "bat"
+        },
+        "trigger": "vampirism:vampire_action"
+      },
+      "main": {
+        "conditions": {
+          "type": "level",
+          "faction": {
+            "id": "vampirism:vampire"
+          },
+          "level": 1
+        },
+        "trigger": "vampirism:faction"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.vampirism.bat.desc"
+      },
+      "hidden": true,
+      "icon": {
+        "count": 1,
+        "id": "minecraft:feather"
+      },
+      "title": {
+        "translate": "advancement.vampirism.bat"
+      }
+    },
+    "requirements": [
+      [
+        "action"
+      ],
+      [
+        "main"
+      ]
+    ],
+    "sends_telemetry_event": true
+  },
+  "vampirism:vampire/max_level": {
+    "parent": "vampirism:vampire/bat",
+    "criteria": {
+      "level": {
+        "conditions": {
+          "type": "level",
+          "faction": {
+            "id": "vampirism:vampire"
+          },
+          "level": 14
+        },
+        "trigger": "vampirism:faction"
+      }
+    },
+    "display": {
+      "description": {
+        "translate": "advancement.vampirism.max_level_vampire.desc"
+      },
+      "frame": "goal",
+      "hidden": true,
+      "icon": {
+        "count": 1,
+        "id": "vampirism:vampire_fang"
+      },
+      "title": {
+        "translate": "advancement.vampirism.max_level_vampire"
+      }
+    },
+    "requirements": [
+      [
+        "level"
+      ]
+    ],
+    "rewards": {
+      "experience": 100
+    },
+    "sends_telemetry_event": true
+  },
+  "via_romana:story/a_strand_type_game": {
+    "parent": "minecraft:story/root",
+    "display": {
+      "icon": {
+        "id": "minecraft:oak_sign"
+      },
+      "title": {
+        "translate": "advancements.via_romana.a_strand_type_game.title"
+      },
+      "description": {
+        "translate": "advancements.via_romana.a_strand_type_game.descr"
+      },
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+      "a_strand_type_game": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }
+}

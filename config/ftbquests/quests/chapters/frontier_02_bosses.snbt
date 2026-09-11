@@ -1,0 +1,483 @@
+{
+	id: "6E26C4F24FBEEB0A"
+	filename: "frontier_02_bosses"
+	title: "Boss Board"
+	subtitle: "Old wins count. Your next untouched boss is the real destination."
+	group: "6E26649C972655B5"
+	icon: { id: "cataclysm:burning_ashes" }
+	order_index: 2
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E2688DA25219A46"
+			title: "Kraken"
+			description: ["Take a boat or airship to the fight and make a plan for staying together.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "block_factorys_bosses:undying_tentacle" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "block_factorys_bosses:kill_kraken", criterion: "", id: "6E26A7F0966F1A4A" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2622026BB61D0D"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26475B8E07F3CB"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2630DCECD63DAB"
+			title: "Underworld Knight"
+			description: ["A good next target for a newly equipped fighter. Learn the openings instead of trading every hit.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "block_factorys_bosses:knight_sword" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "block_factorys_bosses:kill_underworld_knight", criterion: "", id: "6E2604B9B283FFC0" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266169D376B7BC"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D37F2E4659DE"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26B85654476589"
+			title: "Infernal Dragon"
+			description: ["A separate encounter from the Ender Dragon. Bring fire preparation and ranged options.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:dragon_breath" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "block_factorys_bosses:kill_dragon", criterion: "", id: "6E2615C791C268A9" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26395669F19438"
+				}
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E265063D0D28F60"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269A6854801575"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26503B6ACB5284"
+			title: "Sandworm"
+			description: ["Turn a desert expedition into a proper boss hunt.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "block_factorys_bosses:sandworm_gauntlet" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "block_factorys_bosses:kill_sandworm", criterion: "", id: "6E26360BD6D46A0A" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26A73263B61B92"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E262DF0C375C17D"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E263C2F9B59EE37"
+			title: "Ignis"
+			description: ["Coordinate your opening and recovery windows. Your existing Ignis victory already earns this credit.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "cataclysm:ignitium_ingot" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_ignis", criterion: "", id: "6E267AB780F89054" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26E1BC38503799"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26912556505C9C"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26459D86508DED"
+			title: "The Harbinger"
+			description: ["Take on the factory encounter. Use the rewards to improve a loadout, not to replace the fight with a free boss drop.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "cataclysm:witherite_ingot" }
+			x: 3.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_harbinger", criterion: "", id: "6E26B8E5C57F4D7F" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2642597A390AF7"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2623193CD8F369"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26ECFF5B20D03A"
+			title: "Ancient Remnant"
+			description: ["The desert raid continues inside the Cursed Pyramid. A previous win counts.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "cataclysm:ancient_metal_ingot" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_remnant", criterion: "", id: "6E265E34195061B4" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26A09B55FC003A"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26822712C65CB2"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E268C8F94E96C43"
+			title: "Ender Guardian"
+			description: ["A destination beyond simply reaching the End. Existing victories count.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "cataclysm:gauntlet_of_guard" }
+			x: 9.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_ender_guardian", criterion: "", id: "6E267848CB2CC9A0" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E260CAB3F212D9C"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266BFC46899B8D"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E263C80910AEB59"
+			title: "Netherite Monstrosity"
+			description: ["A fresh heavyweight target for the group. Prepare the arena approach before starting the encounter.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:netherite_scrap" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_monstrosity", criterion: "", id: "6E26FAE4597947EC" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26F9A7096A81BD"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E261607C98FD38F"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E269A5A0A38EE19"
+			title: "The Leviathan"
+			description: ["Your sea expedition culminates here. Bring a loadout designed for the environment.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "cataclysm:altar_of_abyss" }
+			x: 3.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_leviathan", criterion: "", id: "6E262D00855E58E1" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26219F363628A2"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26E28B72F6AE6F"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2636F2D969C506"
+			title: "Maledictus"
+			description: ["A new challenge for players who already cleared Ignis and the Harbinger.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:echo_shard" }
+			x: 6.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_maledictus", criterion: "", id: "6E26D3A53013DA4C" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E265641CA317F5A"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269F03E35227BD"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2600D391E9924E"
+			title: "Scylla"
+			description: ["The Acropolis raid is a reason to finish that airship, test a spell build, and gather the crew.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:lightning_rod" }
+			x: 9.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_scylla", criterion: "", id: "6E2691864B3192FB" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 4
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26B5AAEDCC71E9"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26018636BCB814"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26A7A44AE011AA"
+			title: "Clawdian"
+			description: ["Another untouched Cataclysm encounter. Use the in-game guide and Explorer's Compass to plan the expedition.", "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:nautilus_shell" }
+			x: 0.0d
+			y: 9.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:kill_clawdian", criterion: "", id: "6E26F80221612D23" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26F87991808134"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D3A2823A9302"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2604721322C227"
+			title: "Azazel's Relic"
+			description: ["Follow the Cult of Azazel progression to its Manipulator Stick relic. The native advancement checks possession of the relic, not a recorded kill.", "Verified by the native relic advancement; prior ownership counts. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."]
+			icon: { id: "minecraft:nether_star" }
+			x: 3.0d
+			y: 9.0d
+			size: 1.0d
+			shape: "hexagon"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "netherman:kill_azazel", criterion: "", id: "6E26FD339A21856C" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26C77BC99EDACF"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2621DFCFAA3250"
+				}
+			]
+			progression_mode: "flexible"
+		}
+	]
+}

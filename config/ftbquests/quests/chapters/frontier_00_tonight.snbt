@@ -1,0 +1,127 @@
+{
+	id: "6E261B7914EB3BE8"
+	filename: "frontier_00_tonight"
+	title: "Start Here"
+	subtitle: "Pick a route. Past achievements count. No charter gate."
+	group: "6E26649C972655B5"
+	icon: { id: "minecraft:compass" }
+	order_index: 0
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E260819FC7E5947"
+			title: "Your Next Good Evening"
+			description: ["Choose one adventure, one invention, or one place you want to make. Every route is open from the start.", "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.", "Mission coins are personal rewards for each teammate. Supply orders are one shared parcel. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."]
+			icon: { id: "numismatics:cog" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "checkmark", id: "6E26D0172F9D8F90", title: "Choose something you actually want to do" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismaticsutils:portable_bank_terminal", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D94B3FAD9BC7"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26CD3D300C8CAB"
+			title: "A Short Trip with Teeth"
+			description: ["New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons.", "This is an optional fresh-combat warm-up, not an entrance requirement for veterans. The book rewards can protect the armor you choose."]
+			icon: { id: "minecraft:shield" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "kill", entity: "minecraft:zombie", value: 3, id: "6E261AD7A999CA10" }
+				{ type: "kill", entity: "minecraft:skeleton", value: 3, id: "6E262238A597A754" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2645775F645639"
+				}
+				{
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						count: 1
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: { "minecraft:protection": 3 }
+							}
+						}
+					}
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E267147D24C781E"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 12
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E267674ADC33E4F"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26B89DD1523BD3"
+			title: "Use the Good Tools"
+			description: ["Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate.", "Use the bottles to start upgrading your own equipment. Looking at the block verifies workshop access, not a particular enchantment."]
+			icon: { id: "enchantinginfuser:enchanting_infuser" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{
+					type: "observation"
+					observation_type: "block"
+					to_observe: "enchantinginfuser:enchanting_infuser"
+					timer: 0
+					id: "6E26791671B2C29D"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26FA9BF1A3F6B9"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 24
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2625BB9355E730"
+				}
+			]
+			progression_mode: "flexible"
+		}
+	]
+}

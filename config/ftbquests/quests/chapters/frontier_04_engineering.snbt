@@ -1,0 +1,457 @@
+{
+	id: "6E264CFBC298391A"
+	filename: "frontier_04_engineering"
+	title: "Machines That Change the Server"
+	subtitle: "Credit for the factory you already built; challenges beyond the Digital Miner."
+	group: "6E26E94862BF9419"
+	icon: { id: "create:precision_mechanism" }
+	order_index: 4
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E26C4366AA57BC9"
+			title: "The Brass Workshop"
+			description: ["Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "create:brass_ingot" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "create:brass", criterion: "", id: "6E26ECC69650D4E1" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269F00344946D1"
+				}
+				{
+					type: "item"
+					item: { id: "create:andesite_alloy", count: 1 }
+					count: 16
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E260705A2519660"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26AE726B685FF5"
+			title: "Precision at Last"
+			description: ["Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "create:precision_mechanism" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "create:precision_mechanism", criterion: "", id: "6E2610DE9278B9AC" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26615032B6C511"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 8
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E268A1E8902B2F2"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26CB5FA755BAB4"
+			title: "Steam Power"
+			description: ["Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "create:steam_engine" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "create:steam_engine", criterion: "", id: "6E26B7C24FF139A8" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26192EB28B1307"
+				}
+				{
+					type: "item"
+					item: { id: "create:copper_sheet", count: 1 }
+					count: 16
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266A57E7775E31"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26903736497478"
+			title: "The Factory You Already Built"
+			description: ["Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "mekanism:basic_tier_installer" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "mekanism:factory", criterion: "", id: "6E26C4AB8029BE48" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2670B7E4AD2DA6"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 12
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2618100E4886AE"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2626E1826D2754"
+			title: "Automatic Extraction"
+			description: ["Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "mekanism:digital_miner" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "mekanism:digital_miner", criterion: "", id: "6E266891BF854606" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26808F1912F749"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 16
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26887A8ED49785"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2681B962288196"
+			title: "Feed the Power Plant"
+			description: ["Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "mekanismgenerators:gas_burning_generator" }
+			x: 3.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "mekanismgenerators:burn_the_gas", criterion: "", id: "6E26BBEEF0FE305D" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26323855965AFD"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:redstone", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E260841A5CA8352"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2649A7C32470D8"
+			title: "Build a Repeatable Production Line"
+			description: ["Reach automated crafting. Pick something the group actually keeps running out of, then automate that recipe.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "mekanism:formulaic_assemblicator" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "mekanism:automated_crafting", criterion: "", id: "6E26DA2C2AE7AF39" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E262AD647F9D784"
+				}
+				{
+					type: "item"
+					item: { id: "create:andesite_alloy", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26F1470E9EC9F8"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26C8872927CC3D"
+			title: "Put the Warehouse in Your Pocket"
+			description: ["Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "mekanism:portable_qio_dashboard" }
+			x: 9.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "mekanism:portable_qio_dashboard", criterion: "", id: "6E2622AE05F3B4FD" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26E8682D90DC73"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E263A7940145CDC"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2685D40D328648"
+			title: "Make the Boiler Earn Its Space"
+			description: ["Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup.", "The native advancement is checked automatically and gives credit for prior progress."]
+			icon: { id: "create:steam_engine" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "create:steam_engine_maxed", criterion: "", id: "6E263D0646186225" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2673968A48B510"
+				}
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26BD79DA43635A"
+				}
+				{
+					type: "item"
+					item: { id: "create:copper_sheet", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26A19FDDA729E2"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26DC99B2B9F37E"
+			title: "Try a Different Power Chain"
+			description: ["Build or visit an Energizing Orb and produce a Blazing Crystal. This opens Powah as an alternative project.", "Inspect the orb and carry the crystal for detection; neither item is consumed."]
+			icon: { id: "powah:energizing_orb" }
+			x: 3.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{
+					type: "observation"
+					observation_type: "block"
+					to_observe: "powah:energizing_orb"
+					timer: 0
+					id: "6E266FBAC486F08F"
+				}
+				{
+					type: "item"
+					item: { id: "powah:crystal_blazing", count: 1 }
+					count: 1
+					consume_items: false
+					id: "6E268A5ABA283B84"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E265B8B86D349DF"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 24
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E262AF54E1B2567"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E269465526DD79A"
+			title: "Power You Can Wire by Hand"
+			description: ["Build a Power Grid electric motor and connect it to a small useful mechanism.", "Inspect the placed motor to claim the equipment milestone. Electrical operation is a project goal, not something this block check can prove."]
+			icon: { id: "powergrid:electric_motor" }
+			x: 6.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{
+					type: "observation"
+					observation_type: "block"
+					to_observe: "powergrid:electric_motor"
+					timer: 0
+					id: "6E26EBF51A647428"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2628E65286C612"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:copper_ingot", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E268D350E1BB81B"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E263A31DC312F1D"
+			title: "Give the Crew a Control Panel"
+			description: ["Install an advanced ComputerCraft computer and a monitor for a shared machine, route board, or ship dashboard.", "Inspect both installed blocks. What the program does is up to you; a working display is the useful part of this project."]
+			icon: { id: "computercraft:computer_advanced" }
+			x: 9.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{
+					type: "observation"
+					observation_type: "block"
+					to_observe: "computercraft:computer_advanced"
+					timer: 0
+					id: "6E2623FC29A55536"
+				}
+				{
+					type: "observation"
+					observation_type: "block"
+					to_observe: "computercraft:monitor_advanced"
+					timer: 0
+					id: "6E2698613E6409A1"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E261E6B48CF7372"
+				}
+				{
+					type: "item"
+					item: { id: "computercraft:speaker", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269964FC197868"
+				}
+				{
+					type: "item"
+					item: { id: "computercraft:cable", count: 1 }
+					count: 16
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2674AEDD021E91"
+				}
+			]
+			progression_mode: "flexible"
+		}
+	]
+}

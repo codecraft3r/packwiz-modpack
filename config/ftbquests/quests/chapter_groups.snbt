@@ -1,7 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "7A11C4DF00100000", title: "The Charter" }
-		{ id: "7A11C4DF00200000", title: "Callings and Factions" }
-		{ id: "7A11C4DF00300000", title: "Markets and Services" }
+		{ id: "6E26649C972655B5", title: "Pick an Adventure" }
+		{ id: "6E26E94862BF9419", title: "Make Something Matter" }
+		{ id: "6E26B2BBC6593B6A", title: "Contracts and Supplies" }
+		{ id: "6E26AD9C0FAEB787", title: "Previous Questbook" }
 	]
 }

@@ -389,7 +389,12 @@ def collect_live_references(root: Path, *, from_source: bool = False) -> tuple[s
     if (iid := item_id(data.get("icon"))) is not None:
         items.add(iid)
 
+    from frontier_campaign import chapter_names
+    frontier_names = chapter_names(root)
     for path in paths("config/ftbquests/quests/chapters"):
+        # Frontier has its own exact-artifact and live registry evidence ledger.
+        if path.stem in frontier_names:
+            continue
         chapter = read(path)
         if (iid := item_id(chapter.get("icon"))) is not None:
             items.add(iid)

@@ -1,0 +1,717 @@
+{
+	id: "6E26365D16241FFE"
+	filename: "frontier_08_quartermaster"
+	title: "Spend It on Your Next Project"
+	subtitle: "Coins buy convenience and selected upgrades. Orders are one shared parcel."
+	group: "6E26B2BBC6593B6A"
+	icon: { id: "numismatics:bank_terminal" }
+	order_index: 8
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E2624F5C5738F71"
+			title: "Field Supplies"
+			description: ["Human travel supplies for a quick expedition. Vampires may prefer a spell or building order.", "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "minecraft:golden_apple" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					consume_items: true
+					task_screen_only: true
+					id: "6E2657F630C60CA5"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "minecraft:cooked_beef", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260E1C548D24AE"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:torch", count: 1 }
+					count: 32
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2659F60E1264C6"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:golden_apple", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260B1CBC27DD57"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26C9E554BDADAF"
+			title: "Build the Thing"
+			description: ["A bulk delivery for a real project: 512 stone, 256 oak logs, glass, scaffolding, and lights.", "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "minecraft:scaffolding" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					consume_items: true
+					task_screen_only: true
+					id: "6E2664D60FF563C0"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26F09DBB9469EB"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E267C89B360FD0F"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26A6A10DF96E06"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260E2802587701"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E264903980F58BE"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26DD455F872247"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2673DD3E355F7E"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:stone", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E264883C32D7C03"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:oak_log", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2642422208D81C"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:oak_log", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26E452039A336B"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:oak_log", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2654AE20980E93"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:oak_log", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E263449502487BC"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:glass", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26FDC5A3AEDBA1"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:scaffolding", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26A6C88269C4DE"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:lantern", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26098CF446136B"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E265AA0101A80B8"
+			title: "Finish the Interior"
+			description: ["Furniture and lighting for a guesthouse, tavern, viewing room, or finished base.", "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "handcrafted:oak_table" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					consume_items: true
+					task_screen_only: true
+					id: "6E267BD993C1716E"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "handcrafted:oak_table", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26409E9FFE85B2"
+				}
+				{
+					type: "item"
+					item: { id: "handcrafted:oak_chair", count: 1 }
+					count: 6
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E265442A8F0E5E9"
+				}
+				{
+					type: "item"
+					item: { id: "handcrafted:oak_shelf", count: 1 }
+					count: 4
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26FC382263DF0D"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:lantern", count: 1 }
+					count: 12
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26412DA45845EA"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E261FA35D1A3380"
+			title: "Another Roll of Film"
+			description: ["Supplies for recording the next adventure. No need to wait for a photography quest to repeat.", "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "exposure:color_film" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					consume_items: true
+					task_screen_only: true
+					id: "6E26B056A65A3135"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "exposure:color_film", count: 1 }
+					count: 4
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26D92D5FD21123"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:photograph_frame", count: 1 }
+					count: 8
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2656490306E64D"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:album", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E265CE35A1C76B5"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26AE1EEE19C54A"
+			title: "Airframe Materials"
+			description: ["Hull and envelope materials for a larger prototype. Core machinery and flight control still come from your workshop.", "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "aeronautics:white_envelope" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					consume_items: true
+					task_screen_only: true
+					id: "6E26C7135B812A10"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "aeronautics:white_envelope", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26A303AF0172D5"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:oak_log", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E269A992F94521D"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:iron_ingot", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26FFF7B6999908"
+				}
+				{
+					type: "item"
+					item: { id: "create:super_glue", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E260439384A2682"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26806766D22A27"
+			title: "Extend the Line"
+			description: ["Extend an already working railway with rails, signals, and lighting.", "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "create:track" }
+			x: 3.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 2
+					consume_items: true
+					task_screen_only: true
+					id: "6E26F0753770E3B2"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "create:track", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E263C59FEB96EAF"
+				}
+				{
+					type: "item"
+					item: { id: "create:track_signal", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E264103555E04E8"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:lantern", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26B806DFE5B2C6"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E266290ED70D30D"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E2672D7868DA5FE"
+			title: "Spell Workshop Supplies"
+			description: ["Pursue a spell of your choice with ink and materials. No random reward roll.", "Price: 64 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "irons_spellbooks:rare_ink" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					consume_items: true
+					task_screen_only: true
+					id: "6E2610405159687A"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E269743677BF668"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:arcane_essence", count: 1 }
+					count: 32
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E2652BBEA115547"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:paper", count: 1 }
+					count: 32
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E268D28B1AAAF5D"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26C7FCF1984F19"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E2688BDF879CCED"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26A72709AEAA8D"
+			title: "A More Ambitious Spell"
+			description: ["An advanced spell-crafting supply order after your team reaches Legendary Ink.", "Price: 192 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "irons_spellbooks:epic_ink" }
+			x: 9.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					consume_items: true
+					task_screen_only: true
+					id: "6E26DC23B060F306"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 2
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E269CC4011BA811"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:arcane_essence", count: 1 }
+					count: 64
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E269A803D136D05"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E26B41AA42A0D4F"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26D9DBE3453BDA"
+			title: "Keep Your Favorite Tool"
+			description: ["One Mending book. Invest in something you use instead of receiving another disposable weapon.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "minecraft:enchanted_book" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 4
+					consume_items: true
+					task_screen_only: true
+					id: "6E26E657625BA356"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						count: 1
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: { "minecraft:mending": 1 }
+							}
+						}
+					}
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E264D5E853A1496"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E26D83C4A316372"
+			title: "Make the Next Mining Trip Count"
+			description: ["One Fortune III book. The group already has diamonds; this is an optional convenience for another miner.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "minecraft:enchanted_book" }
+			x: 3.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 4
+					consume_items: true
+					task_screen_only: true
+					id: "6E26B528644C48CF"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_book"
+						count: 1
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: { "minecraft:fortune": 3 }
+							}
+						}
+					}
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26F57F45C40BE0"
+				}
+			]
+			progression_mode: "linear"
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E260CE6FD8E8E39"
+			title: "Specialize: More Mana"
+			description: ["One Mana Upgrade Orb for compatible equipment. Check its upgrade limits in the Arcane Anvil.", "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "irons_spellbooks:mana_upgrade_orb" }
+			x: 6.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 6
+					consume_items: true
+					task_screen_only: true
+					id: "6E260EC6BD6ACA13"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:mana_upgrade_orb", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26B20C0CFA3A2B"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E26C7687AA1253D"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E2631A0DF8B4EA0"
+			title: "Specialize: Faster Recovery"
+			description: ["One Cooldown Upgrade Orb for compatible equipment. Choose this instead of more mana if it fits your build.", "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "irons_spellbooks:cooldown_upgrade_orb" }
+			x: 9.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 6
+					consume_items: true
+					task_screen_only: true
+					id: "6E265B72AC47F659"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:cooldown_upgrade_orb", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26182D0595B3B6"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E26C7687AA1253D"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+		{
+			id: "6E260878D9DFB075"
+			title: "Write the Signature Spell"
+			description: ["One Legendary Ink for a specific spell project. This does not grant a completed boss spellbook or a boss weapon.", "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			icon: { id: "irons_spellbooks:legendary_ink" }
+			x: 0.0d
+			y: 9.0d
+			size: 1.0d
+			shape: "square"
+			optional: true
+			tasks: [
+				{
+					type: "item"
+					item: { id: "numismatics:crown", count: 1 }
+					count: 1
+					consume_items: true
+					task_screen_only: true
+					id: "6E26C0E73E81B4FF"
+				}
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E26CC3E28C1B47E"
+				}
+			]
+			progression_mode: "linear"
+			dependencies: ["6E26B41AA42A0D4F"]
+			can_repeat: true
+			repeat_cooldown: 60
+		}
+	]
+}

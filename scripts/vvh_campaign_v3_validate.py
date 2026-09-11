@@ -548,7 +548,11 @@ def validate_emitted_files(
     except (OSError, ValueError, TypeError) as exc:
         errors.append(f"could not parse emitted data.snbt: {exc}")
 
-    chapter_paths = sorted(chapter_dir.glob("*.snbt"))
+    from frontier_campaign import chapter_names
+    frontier_names = chapter_names(root)
+    # Validate the archived VvH definitions here; the integrated Frontier audit
+    # below checks new chapters and registry collisions across both sets.
+    chapter_paths = sorted(p for p in chapter_dir.glob("*.snbt") if p.stem not in frontier_names)
     present_names = {path.stem for path in chapter_paths}
     for missing in sorted(expected_names - present_names):
         errors.append(f"missing emitted chapter file {missing}.snbt")
@@ -877,6 +881,9 @@ def main() -> int:
             "catalog exact JAR proof is partial; metadata-only namespaces: "
             + ", ".join(catalog_details["unverified_namespaces"])
         )
+    from frontier_validate import audit as audit_frontier
+    frontier_report = audit_frontier(root)
+    errors.extend(frontier_report["errors"])
     approved_nonvanilla_items = VERIFIED_NONVANILLA_ITEMS | catalog_item_ids
     approved_nonvanilla_icons = VERIFIED_NONVANILLA_ICONS | catalog_item_ids
     used_items: set[str] = set()
@@ -1535,6 +1542,7 @@ def main() -> int:
     report = {
         "status": "pass" if not errors else "fail",
         "architecture": {
+            "frontier": frontier_report,
             "chapters": len(chapters),
             "quests": len(quest_by_id),
             "chapter_quest_counts": dict(zip(EXPECTED_FILES, counts)),
@@ -1607,6 +1615,7 @@ def main() -> int:
     output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({
         "status": report["status"],
+        "frontier": frontier_report,
         "chapters": len(chapters),
         "quests": len(quest_by_id),
         "errors": len(errors),

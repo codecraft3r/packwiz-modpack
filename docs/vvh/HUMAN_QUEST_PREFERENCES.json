@@ -12,6 +12,25 @@
   "evidence_policy": "Author names and commit messages are provenance only. A preference needs an explicit instruction or a deliberate corrective diff retained by later source edits.",
   "preferences": [
     {
+      "id": "progression-aware-frontier-rebuild",
+      "rule": "Add a new optional adventure, machine and shared-project questbook that recognizes existing progression. Preserve all current dev quest identities in the archive.",
+      "supporting_instructions": [
+        "start from scratch to maximize engagement",
+        "Balanced adventures, machines, and shared projects",
+        "quests need to account for how far ahead people already are",
+        "push to dev"
+      ],
+      "date": "2026-09-11",
+      "status": "current",
+      "scope": "new primary quest surface; prior five-chapter constraints remain archive-scoped",
+      "confidence": "high",
+      "enforcement": [
+        "combined source generator",
+        "Frontier semantic audit",
+        "legacy identity regression"
+      ]
+    },
+    {
       "id": "persistent-five-chapter-surface",
       "rule": "Keep the five-chapter persistent SMP campaign and do not restore retired chapters, deleted capstones, or a Neutral progression chapter.",
       "supporting_commits": ["fb48ad1", "3bf11f2", "b712dc6"],

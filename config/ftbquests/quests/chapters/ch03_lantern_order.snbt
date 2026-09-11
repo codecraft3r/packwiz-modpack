@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch03_lantern_order"
-	group: "7A11C4DF00200000"
+	group: "6E26AD9C0FAEB787"
 	icon: { id: "vampirism:hunter_table" }
 	id: "7A11C3DF00300000"
 	images: [
@@ -17,7 +17,7 @@
 			y: -2.5d
 		}
 	]
-	order_index: 1
+	order_index: 101
 	quest_links: [ ]
 	quests: [
 		{
@@ -1908,5 +1908,5 @@
 			y: 0
 		}
 	]
-	title: "03 · Lantern Order"
+	title: "Legacy · 03 · Lantern Order"
 }

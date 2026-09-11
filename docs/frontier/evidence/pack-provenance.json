@@ -1,0 +1,272 @@
+{
+  "aeronautics": {
+    "metadata": "mods/create-aeronautics.pw.toml",
+    "metadata_sha256": "d438d05c61167c95de2b282bb3839a290f819f70c9d313c5e61177d69a29c704",
+    "filename": "create-aeronautics-bundled-1.21.1-1.3.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "16ba7a2c8335443bdf6ad4777737b762f09452be2dd364f801fd20b35eb581473161763699ec37eb12d1aeaf8c18cf8299b2152e24334eedcc9fe662af5bbb27",
+    "nested_artifact": "create-aeronautics-bundled-1.21.1-1.3.1.jar!META-INF/jarjar/dev.eriksonn.aeronautics.aeronautics-neoforge-1.21.1-1.3.1.jar",
+    "live_jar_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+    "verified_date": "2026-09-11"
+  },
+  "block_factorys_bosses": {
+    "metadata": "mods/bossesrise.pw.toml",
+    "metadata_sha256": "d20e603af6e9156021a1b8db31edd187a089b2b21cd7f70fa7eb7507bf81dbf9",
+    "filename": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "9a2b58bd7c15c15f089d87bdd1ac5b8cccaeab6a28518b9a10336e811334aba7e42c9cae7733a5fd7125ebce28554b0dea530cb7f86ecb85617203d948590344",
+    "nested_artifact": null,
+    "live_jar_sha256": "9e230bd509e7aeb3af4c08125db0340734c0179d83483649a16e45c0ea085e8c",
+    "verified_date": "2026-09-11"
+  },
+  "cataclysm": {
+    "metadata": "mods/l_enders-cataclysm.pw.toml",
+    "metadata_sha256": "0a509504c937a398ccabc71d56029690d43806378c7121928776407083c669ef",
+    "filename": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "359ad3681aba479486519a79fd227afc608b66d2843afe1f6c7196da6807683792b4ecea761e824f15b03d13d6ff29380b439bdd5bb1d2472a065ae8e83743d9",
+    "nested_artifact": null,
+    "live_jar_sha256": "23921a268acc8b695291f12e89c5e4c261ee5f59a3b6d763793461efb3e7e1d6",
+    "verified_date": "2026-09-11"
+  },
+  "chipped": {
+    "metadata": "mods/chipped.pw.toml",
+    "metadata_sha256": "24c6c3fe917ffbcef04e788dec3e003d0ed03433bc00f9cf4f23fe9b85636aa7",
+    "filename": "chipped-neoforge-1.21.1-4.0.2.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "f3083b01267e7c674c4b42f45a317c93ee7723443cba2051fe5bc593638b533b0fe90699e2101661c934dff458eab693cce4e188533bfe977778c249563a2fa5",
+    "nested_artifact": null,
+    "live_jar_sha256": "18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291",
+    "verified_date": "2026-09-11"
+  },
+  "computercraft": {
+    "metadata": "mods/cc-tweaked.pw.toml",
+    "metadata_sha256": "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256",
+    "filename": "cc-tweaked-1.21.1-forge-1.120.2.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "009fcf48b7d123018a61b2c55f0fede7dd1f6a6325226bf9cc926342185ca8a7e059e13662816d24595aac243abf622b682583631cfe42c3757505b2e864ff73",
+    "nested_artifact": null,
+    "live_jar_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f",
+    "verified_date": "2026-09-11"
+  },
+  "create": {
+    "metadata": "mods/create.pw.toml",
+    "metadata_sha256": "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404",
+    "filename": "create-1.21.1-6.0.10.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
+    "nested_artifact": null,
+    "live_jar_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+    "verified_date": "2026-09-11"
+  },
+  "createbigcannons": {
+    "metadata": "mods/create-big-cannons.pw.toml",
+    "metadata_sha256": "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1",
+    "filename": "createbigcannons-5.11.7+mc.1.21.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "24f414dfbb973a0f4d9c9b2aa059edc7bed4d23b4f39eb1f7d23a1d6b437e3b5d64cca6e4b85ff7eb2815743fa711d54ad652bffe96d1eb1234544716006440d",
+    "nested_artifact": null,
+    "live_jar_sha256": "ea017ab94637032d039899d88404838d173fa0e6286657cae6a6c3af459e87ca",
+    "verified_date": "2026-09-11"
+  },
+  "enchantinginfuser": {
+    "metadata": "mods/enchanting-infuser.pw.toml",
+    "metadata_sha256": "d59b35ab8c8501db71b5c394fbfa9a76d9652171226018af255c886e64e2747f",
+    "filename": "EnchantingInfuser-v21.1.4-1.21.1-NeoForge.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "2f99f87e8ebfbbb19aeb3e92844e24cb0d6f88c5aadc146779963a1a3276f1212debfd7461c740f313991ee2fcfc5046f1199fc7611976d618c5b204ce60e295",
+    "nested_artifact": null,
+    "live_jar_sha256": "8f0d315de1e404e5760297b862ab13f1d0f16246f9e6ce1db612ac332c4a2089",
+    "verified_date": "2026-09-11"
+  },
+  "explorerscompass": {
+    "metadata": "mods/explorers-compass.pw.toml",
+    "metadata_sha256": "ced904bbdd11832f60d6f6080f500008adab40b1014aef5c41a1537c5469b4ec",
+    "filename": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "a1b2e385aaacb547763441fc23e9a33a0b1d67bd32094cd605ded3fbdd1c7a0e5fc4520fdfa090c29d2d3384b685e3ead91b32d20030e45632c94145ee3ec668",
+    "nested_artifact": null,
+    "live_jar_sha256": "71e7b47bd88c9c210d7c06fe5276736fc2e225e869778216537d584e6d1faf24",
+    "verified_date": "2026-09-11"
+  },
+  "exposure": {
+    "metadata": "mods/exposure.pw.toml",
+    "metadata_sha256": "d60c27ac7e5ede6e4edcbd2581f758f2f31506539970e3a0838039d847a6ebbe",
+    "filename": "exposure-neoforge-1.21.1-1.9.18.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "2c0310cfbc9abfcf9e589fdf1079829253e47eb3ac84684a643951ebc432536a4e6f6567a67fc8ba4f4d55036e513804ff0996adee6a8a11cf59c76399de5ef6",
+    "nested_artifact": null,
+    "live_jar_sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888",
+    "verified_date": "2026-09-11"
+  },
+  "farmersdelight": {
+    "metadata": "mods/farmers-delight.pw.toml",
+    "metadata_sha256": "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4",
+    "filename": "FarmersDelight-1.21.1-1.3.3.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "57978eb985131dd25a0d098362b4c6eabf9c607d8048b1a639e231c4fcee53c1a05453cedfe6a4a52da4ab8bf4190cdb520a6c3097e8e0993cf7360ad693dc15",
+    "nested_artifact": null,
+    "live_jar_sha256": "5dfe78ec57cfc793952611c77cb92d0d66765da5bd1ac326ba85faa4c236b78d",
+    "verified_date": "2026-09-11"
+  },
+  "handcrafted": {
+    "metadata": "mods/handcrafted.pw.toml",
+    "metadata_sha256": "9bea3782285e9dafcccd88d817ab4a6505400955b5343f1b6df16fa29122c410",
+    "filename": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "4ff5fb2aa9582b886d03f647fe9b8c12a828d29a1787e9c9b463be18192ea798e6a4ac83479623042791bce0bacbf6e3e2c2e9ef086640aeeb6970d3404e7ee4",
+    "nested_artifact": null,
+    "live_jar_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948",
+    "verified_date": "2026-09-11"
+  },
+  "icarus": {
+    "metadata": "mods/icarus.pw.toml",
+    "metadata_sha256": "adfbe1920966d02f9bcfb44d44f6aaa6c383deed419cd7c405c16b57aaf68fda",
+    "filename": "Icarus-NeoForge-4.7.8.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "bdbda097eeb7904844ed71904e724cd3a4e2716278685dc813dd181cad7a10b8c1ef359b5f9ae34aca47bbecfbd3e2ed0141fda6421f0943e9d163d8a1d0dec0",
+    "nested_artifact": null,
+    "live_jar_sha256": "209967fcce6e065ca68bfddd67a9a00ddddf7207b48bea08ffbc07befe69d253",
+    "verified_date": "2026-09-11"
+  },
+  "irons_spellbooks": {
+    "metadata": "mods/irons-spells-n-spellbooks.pw.toml",
+    "metadata_sha256": "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2",
+    "filename": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "fd782f98c6c59b193c4832f33775291d2a7e639e1e23dd47510bfb494d99d182bec1253566b9394f96c733a0d0108be34bd729614b82dc29e55e096fdeb96f5b",
+    "nested_artifact": null,
+    "live_jar_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+    "verified_date": "2026-09-11"
+  },
+  "mca": {
+    "metadata": "mods/minecraft-comes-alive-reborn.pw.toml",
+    "metadata_sha256": "21fd5aa24c3dcd3da912d6f0fd37df905c108bf613a18bafe9bb97ee2576b42c",
+    "filename": "mca-neoforge-7.7.36-beta.3+1.21.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "d001d10a3c0481cfe25fb22b89b11608bf3cf1290139edd119f3f9bf8d544c369a5a0ea57293eeac3e1390b97f8ece6d2c85f84b753f54db33c4218545356a01",
+    "nested_artifact": null,
+    "live_jar_sha256": "de4763d34a41cb84ffa392b87cdb23191beddda2323b56552a1a2fcd7c436fc3",
+    "verified_date": "2026-09-11"
+  },
+  "mekanism": {
+    "metadata": "mods/mekanism.pw.toml",
+    "metadata_sha256": "42061fd570a0b7a8063c0860056c6391593190caa0f12d3b49105e52a56817fe",
+    "filename": "Mekanism-1.21.1-10.7.19.85.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "66745825330a98f3e4a5ea3a44aff8b00870f715c144edc38dd2f61b4240589600b58ae89efac3b54dbb5aa430b1059dac1a28fd71cac5cc9002bbeb5ba3f22b",
+    "nested_artifact": null,
+    "live_jar_sha256": "004dbc9f3106f4d192aeaa1ee1190dd16ec9ca8059ed3d093b80034f4c574f43",
+    "verified_date": "2026-09-11"
+  },
+  "mekanismgenerators": {
+    "metadata": "mods/mekanism-generators.pw.toml",
+    "metadata_sha256": "2ccba41c76a7b860e97d8956319d5ad931baf29d66588386703130894fcd383c",
+    "filename": "MekanismGenerators-1.21.1-10.7.19.85.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "6c3d5b7ea2f67f43c3d169c97de2855a7085f38019cf426e015ccc8ca9bc4f66e96b1cdf4a9afdc92bef7b2e236f16c81415ed5e48736805d5961d29525316d6",
+    "nested_artifact": null,
+    "live_jar_sha256": "0e5783b111e756f27b48c62b2f0e02fff750c77f7985ff809bfadc5f444ba4ac",
+    "verified_date": "2026-09-11"
+  },
+  "netherman": {
+    "metadata": "mods/cult-of-azazel.pw.toml",
+    "metadata_sha256": "5ea62dbfefc70a6d547c580a166d98a92750bcc3adcdd581c1ea4524f6131b12",
+    "filename": "cultofazazelneoforge-1.1.4.12.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "2aeb0897ee87d68a585203fc5ec0392279721e01dbaabb2a53c6eaf0aaa8934d4ef2cc869b72c1b24e3adc1617f189af121053c69ee801874f5d79251de31f58",
+    "nested_artifact": null,
+    "live_jar_sha256": "e633ff5fd6ecf5dd36eccfdddb8ded606fbb33ba3ea9e5730f11446b18aa351a",
+    "verified_date": "2026-09-11"
+  },
+  "numismatics": {
+    "metadata": "mods/numismatics.pw.toml",
+    "metadata_sha256": "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f",
+    "filename": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "2b4ccd516865997735e1a3ec323615bd32d9388e15cc04097ac455f2b453423fccd21969782ecfd031b3de6ed85506ba5349da24c32f5e3eaaf558c5163cf203",
+    "nested_artifact": null,
+    "live_jar_sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b",
+    "verified_date": "2026-09-11"
+  },
+  "numismaticsutils": {
+    "metadata": "mods/create-numismatics-utils.pw.toml",
+    "metadata_sha256": "074ca95e8d18a331b47f2363b254392a3bb84adbedee69c53d7f103a7dd3f9e6",
+    "filename": "numismaticsutils-2.2-1.21.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "06b34f0fffe755d145b9fdd108f57cc35887a137a36ad32a12e344658d6658a5802d5e18f9b368e719f3af3a011b6153314fe0e584f02ca8d0adc439b5d2a51c",
+    "nested_artifact": null,
+    "live_jar_sha256": "27a2f7b249ef37507abddccae1c847ae9a85787683deb732edea0c2c10292f66",
+    "verified_date": "2026-09-11"
+  },
+  "powah": {
+    "metadata": "mods/powah.pw.toml",
+    "metadata_sha256": "dc9fec9f7c8410ed73c1d9dec65df90b83af5a62a86e6a33b55dec5641f49f17",
+    "filename": "Powah-6.2.10.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "41d616d3d944faaee2cde4d15b3fc35cdd154690169f43d8436e6432df50db90355ca5fef78bd0f7864d97d9a14039280c8fb78d8c3e1d407618c7ccff47d97f",
+    "nested_artifact": null,
+    "live_jar_sha256": "0e604a7356111c1dd44a00ea42fc1aa960d9faeb978261349df1138fcee4d0b4",
+    "verified_date": "2026-09-11"
+  },
+  "powergrid": {
+    "metadata": "mods/power-grid.pw.toml",
+    "metadata_sha256": "0a8751beba30f064c60e2baa923aa677ff2e885f065cff915a9e771190c47053",
+    "filename": "powergrid-mc1.21.1-0.6.0.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "947ac20357e5f1529973cff59e7e4d1de6f7ecc2c50adb18febc678017e81bc20d010c459eaddb23351689c9a7adb4329dc452dfa4b4ef535f0d3b608e51dd9c",
+    "nested_artifact": null,
+    "live_jar_sha256": "0c9918ac001634e69aee7c21a1d7b40289741c50a5291e5b6a6313b679879eff",
+    "verified_date": "2026-09-11"
+  },
+  "simulated": {
+    "metadata": "mods/create-aeronautics.pw.toml",
+    "metadata_sha256": "d438d05c61167c95de2b282bb3839a290f819f70c9d313c5e61177d69a29c704",
+    "filename": "create-aeronautics-bundled-1.21.1-1.3.1.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "16ba7a2c8335443bdf6ad4777737b762f09452be2dd364f801fd20b35eb581473161763699ec37eb12d1aeaf8c18cf8299b2152e24334eedcc9fe662af5bbb27",
+    "nested_artifact": "create-aeronautics-bundled-1.21.1-1.3.1.jar!META-INF/jarjar/dev.simulated_team.simulated.simulated-neoforge-1.21.1-1.3.1.jar",
+    "live_jar_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+    "verified_date": "2026-09-11"
+  },
+  "sophisticatedbackpacks": {
+    "metadata": "mods/sophisticated-backpacks.pw.toml",
+    "metadata_sha256": "2b3710eb891a5f6c8a0db46f2b51b1505794ab10244353d35357d269279bbc86",
+    "filename": "sophisticatedbackpacks-1.21.1-3.25.78.2107.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "c2c9bc314068eb4a216dc8cd0826e7763ffa49f948595c9454a42ac80b1d0bd8e83a40752c6ee374ca5cdaafbf34be0577105b77947d7c2e60e1e7695630f7b7",
+    "nested_artifact": null,
+    "live_jar_sha256": "2848ff4d01793268859d36263793bf042226a34efaf3a45e849833490b8cc4a1",
+    "verified_date": "2026-09-11"
+  },
+  "vampirism": {
+    "metadata": "mods/vampirism.pw.toml",
+    "metadata_sha256": "13818f3e8b154ae30007269b894bb854358fda820ae382a07b9ceb5817a05c00",
+    "filename": "Vampirism-1.21-1.10.12.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "b19aec3fb8abb2c83047b64d2497fa440e9295044919b546cfaedd417e604e2176e48c289745ed0a03ec57d032e7051e16de993ef3107d42f5b077187662c070",
+    "nested_artifact": null,
+    "live_jar_sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2",
+    "verified_date": "2026-09-11"
+  },
+  "via_romana": {
+    "metadata": "mods/via-romana.pw.toml",
+    "metadata_sha256": "9e26a9936491607f08239c18d8d41327172a401ae70dbce5c5277573f9c05be2",
+    "filename": "via_romana-2.2.3+1.21.1-neoforge.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "2a9b28661deedddfaf2d223fcb394b0df6bf58d4cc8db6ed10e00eb051e816d0c92c65c5462efb4186af62e498a9836f98f7f8d93d443f7e9711c88151c8e7a9",
+    "nested_artifact": null,
+    "live_jar_sha256": "6ae78318b55d20dd8dd0c7ab9058ea6290ecb6423bfd577192e152ca9ed9fc38",
+    "verified_date": "2026-09-11"
+  },
+  "vista": {
+    "metadata": "mods/vista_tv.pw.toml",
+    "metadata_sha256": "040b6ebf5597bc3fda75a00e0fc17644fb7853a08717249ae3da183a93e5075c",
+    "filename": "vista-1.21.1-5.4.4-neoforge.jar",
+    "download_hash_format": "sha512",
+    "download_hash": "a26106fb220f71a09e5b7817f757952f0b5ff277d2a29cfce07255d307a680bdde8158ccc0ffa9311356e70a125b26ed85216a9418aa195fd47dc48a4b15dd60",
+    "nested_artifact": null,
+    "live_jar_sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5",
+    "verified_date": "2026-09-11"
+  }
+}

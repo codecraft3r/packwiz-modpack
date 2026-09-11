@@ -1,1 +1,13 @@
 * binary
+
+# Keep byte-preserving storage while making quest changes reviewable.
+config/ftbquests/quests/** diff
+scripts/*.py diff
+docs/frontier/** diff
+docs/vvh/*.md diff
+docs/vvh/*.json diff
+README.md diff
+CHANGELOG.md diff
+index.toml diff
+pack.toml diff
+.gitattributes diff

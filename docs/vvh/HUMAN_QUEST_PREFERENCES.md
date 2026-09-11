@@ -4,7 +4,11 @@ Status: current review baseline. The generator, reviewed override record, and
 live Packwiz files are authoritative; this document records the preferences
 the validator should preserve.
 
-## Enforced preferences
+## September 11 scoped supersession
+
+The owner explicitly requested a fresh, balanced adventure/machine/shared-project book that accounts for already-advanced players. The five-chapter architecture and its detailed layout/cooldown preferences now govern the **preserved archive**. The new nine-chapter Frontier surface is additive at the source level and becomes the primary player-facing book. Stable old quest IDs remain protected. See `docs/frontier/README.md`; the standard generator composes both layers.
+
+## Enforced archive preferences
 
 - Keep `scripts/vvh_campaign_v3.py` as the authoring source and port accepted
   live edits into its explicit `vvh_campaign_overrides.py` record.

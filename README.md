@@ -45,3 +45,7 @@ Set `PACKWIZ_URL` to the raw `pack.toml` URL after publishing this repository.
 - Override files: `3226`
 
 See `agents.md` for migration state, validation notes, and update rules.
+
+## Dev questbook rebuild
+
+The `dev` branch includes **Your Next Good Evening**: 81 new quests that recognize existing progression, plus the 59 prior dev quests preserved in an archive. See [the design, source commands and runtime test checklist](docs/frontier/README.md). The new content is generated through the existing campaign command; do not copy old exports over it. Production remains a separate promotion from `dev` to `master`.

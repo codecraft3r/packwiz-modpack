@@ -1,0 +1,326 @@
+{
+	id: "6E26B1F3E4BAC235"
+	filename: "frontier_01_expeditions"
+	title: "Go Somewhere Worth Going"
+	subtitle: "Discovery, photography, dangerous places, and reasons to bring a friend."
+	group: "6E26649C972655B5"
+	icon: { id: "explorerscompass:explorerscompass" }
+	order_index: 1
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E261B9C11222B2A"
+			title: "Bring Back a Photograph"
+			description: ["Load an Exposure camera with film and take a photograph. Try your base from below, a strange mob, or your crew before a raid.", "Existing Exposure achievement counts. The reward supplies your next photographic trip and a basic spare backpack."]
+			icon: { id: "exposure:camera" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "exposure:adventure/exposure", criterion: "", id: "6E26745FE754CD69" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26007740D9F250"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:color_film", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266252EFA10561"
+				}
+				{
+					type: "item"
+					item: { id: "sophisticatedbackpacks:backpack", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26C0BF609DFDE8"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26B71ED45B0179"
+			title: "Put It on the Wall"
+			description: ["Develop and print an Exposure photograph. Turn something that happened on the server into something people can revisit.", "The printing achievement is checked automatically. Hang your favorite result somewhere public."]
+			icon: { id: "exposure:photograph_frame" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "exposure:adventure/moment_in_time", criterion: "", id: "6E265110D9260029" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26EACFC9B84104"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:photograph_frame", count: 1 }
+					count: 4
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2676AFF88F7C40"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26114622D37E7F"
+			title: "The Door Below"
+			description: ["Find and enter Iron's Catacombs. Pack a way home, collect magical materials, and remember where the route begins.", "The existing Catacombs advancement counts; veterans can collect this credit without another trip."]
+			icon: { id: "irons_spellbooks:bone_key" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/enter_catacombs", criterion: "", id: "6E269662D3780FC6" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26546E41247EF5"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D763377CC5AC"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E268B44A0C8789B"
+			title: "Beyond the Dragon"
+			description: ["Enter an End gateway and open the route to the outer islands. Already done it? Your existing advancement counts.", "Take someone who has not seen the outer End yet; this milestone does not require everyone to repeat the trip."]
+			icon: { id: "minecraft:ender_eye" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "minecraft:end/enter_end_gateway", criterion: "", id: "6E26AE23E95D3914" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26084CB3026013"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:ender_pearl", count: 1 }
+					count: 8
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E268FBE7CED7DC4"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26A5C076450596"
+			title: "Postcard from the Void"
+			description: ["Take an Exposure photograph in the End. Aim for something worth showing: a bridge, an End city, or the group against the void.", "Exposure verifies the dimension when the photograph is taken."]
+			icon: { id: "exposure:camera" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "exposure:adventure/void", criterion: "", id: "6E260C4ADD3E4FBB" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266480F2B78544"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:album", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E260A4430D34FF9"
+				}
+				{
+					type: "item"
+					item: { id: "exposure:color_film", count: 1 }
+					count: 4
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2685EBC833DB6B"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26596722B417C4"
+			title: "Find the Sunken City"
+			description: ["Use the Explorer's Compass to find a Sunken City. Scout a route, prepare for underwater travel, and locate the Leviathan encounter.", "Discovery earns its own reward. Defeating the boss is a separate goal in the Boss Board."]
+			icon: { id: "cataclysm:altar_of_abyss" }
+			x: 3.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:find_sunken_city", criterion: "", id: "6E2652C72757DD99" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26C8B76FAEAA88"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:prismarine_crystals", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2622349A427BBC"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26C7B60D14A1C6"
+			title: "Find the Frosted Prison"
+			description: ["Track down the Frosted Prison and scout the Maledictus encounter. Bring your best mobility and a retreat plan.", "An existing discovery counts, so a veteran can go directly to the boss objective."]
+			icon: { id: "minecraft:blue_ice" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:find_frosted_prison", criterion: "", id: "6E26302A64111693" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266FF7296CA5DB"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 24
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26434F6F0D843C"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E263A514ED1B351"
+			title: "Above the Clouds"
+			description: ["Locate the Acropolis, the next destination for a well-equipped party. Plan an arrival that you can also use to leave.", "The Acropolis discovery advancement counts automatically; the Scylla fight has its own reward."]
+			icon: { id: "minecraft:lightning_rod" }
+			x: 9.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "cataclysm:find_acropolis", criterion: "", id: "6E2644E001538C13" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E263661E3DC7E45"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:lightning_bottle", count: 1 }
+					count: 8
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26FEAE7A00ACD9"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26B609FD3DA0FD"
+			title: "Something Is Wrong Here"
+			description: ["Explore the Cult of Azazel maze. Mark your entrance and bring somebody who enjoys getting lost with you.", "Existing maze exploration is recognized. Killing Azazel is not required for this discovery reward."]
+			icon: { id: "minecraft:crying_obsidian" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "netherman:enter_maze", criterion: "", id: "6E2616647650AD30" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D5AAAC982D33"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:ender_pearl", count: 1 }
+					count: 8
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266935BEACED2D"
+				}
+			]
+			progression_mode: "flexible"
+		}
+	]
+}

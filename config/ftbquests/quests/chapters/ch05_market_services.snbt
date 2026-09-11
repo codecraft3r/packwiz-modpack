@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "ch05_market_services"
-	group: "7A11C4DF00300000"
+	group: "6E26AD9C0FAEB787"
 	icon: { id: "numismatics:sprocket" }
 	id: "7A11C3DF00500000"
 	images: [
@@ -17,7 +17,7 @@
 			y: 2.2d
 		}
 	]
-	order_index: 0
+	order_index: 100
 	quest_links: [ ]
 	quests: [
 		{
@@ -2180,5 +2180,5 @@
 			y: 5.5d
 		}
 	]
-	title: "05 · Market Services"
+	title: "Legacy · 05 · Market Services"
 }

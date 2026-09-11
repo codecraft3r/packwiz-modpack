@@ -1,0 +1,746 @@
+{
+  "item numismatics:cog": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item numismatics:sprocket": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item numismaticsutils:portable_bank_terminal": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:shield": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "entity minecraft:zombie": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "entity minecraft:skeleton": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:enchanted_book[minecraft:stored_enchantments={\"levels\":{\"minecraft:protection\":3}}]": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:experience_bottle": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item enchantinginfuser:enchanting_infuser": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block enchantinginfuser:enchanting_infuser": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item exposure:camera": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement exposure:adventure/exposure": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item exposure:color_film": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item sophisticatedbackpacks:backpack": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item exposure:photograph_frame": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement exposure:adventure/moment_in_time": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:bone_key": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/enter_catacombs": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:rare_ink": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:ender_eye": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement minecraft:end/enter_end_gateway": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:ender_pearl": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement exposure:adventure/void": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item exposure:album": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item cataclysm:altar_of_abyss": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:find_sunken_city": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:prismarine_crystals": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:blue_ice": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:find_frosted_prison": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:lightning_rod": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:find_acropolis": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:lightning_bottle": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:crying_obsidian": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement netherman:enter_maze": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item block_factorys_bosses:undying_tentacle": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement block_factorys_bosses:kill_kraken": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item block_factorys_bosses:knight_sword": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement block_factorys_bosses:kill_underworld_knight": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:dragon_breath": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement block_factorys_bosses:kill_dragon": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:epic_ink": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item block_factorys_bosses:sandworm_gauntlet": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement block_factorys_bosses:kill_sandworm": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item cataclysm:ignitium_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_ignis": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item cataclysm:witherite_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_harbinger": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item cataclysm:ancient_metal_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_remnant": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item cataclysm:gauntlet_of_guard": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_ender_guardian": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:netherite_scrap": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_monstrosity": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_leviathan": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:legendary_ink": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:echo_shard": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_maledictus": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_scylla": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:nautilus_shell": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement cataclysm:kill_clawdian": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:nether_star": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement netherman:kill_azazel": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:iron_spell_book": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/spell_book_equip": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:common_ink": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:scroll_forge": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/make_scroll_forge": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:paper": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:arcane_anvil": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/make_arcane_anvil": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/ink_legendary": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:dragonskin_spell_book": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement irons_spellbooks:irons_spellbooks/spell_book_dragon": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item vampirism:vampire_fang": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement vampirism:vampire/bat": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item vampirism:basic_crossbow": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement vampirism:hunter/technology": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item vampirism:crossbow_arrow_vampire_killer": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item vampirism:altar_infusion": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement vampirism:vampire/max_level": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item vampirism:weapon_table": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement vampirism:hunter/max_level": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:brass_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:brass": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:andesite_alloy": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:precision_mechanism": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:precision_mechanism": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:steam_engine": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:steam_engine": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:copper_sheet": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item mekanism:basic_tier_installer": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mekanism:factory": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item mekanism:digital_miner": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mekanism:digital_miner": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item mekanismgenerators:gas_burning_generator": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mekanismgenerators:burn_the_gas": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:redstone": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item mekanism:formulaic_assemblicator": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mekanism:automated_crafting": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item mekanism:portable_qio_dashboard": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mekanism:portable_qio_dashboard": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "advancement create:steam_engine_maxed": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item powah:energizing_orb": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block powah:energizing_orb": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item powah:crystal_blazing": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item powergrid:electric_motor": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block powergrid:electric_motor": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item minecraft:copper_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item computercraft:computer_advanced": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block computercraft:computer_advanced": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "block computercraft:monitor_advanced": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item computercraft:speaker": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item computercraft:cable": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item simulated:physics_assembler": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block simulated:physics_assembler": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "block simulated:navigation_table": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item aeronautics:white_envelope": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item aeronautics:andesite_propeller": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item aeronautics:adjustable_burner": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item aeronautics:propeller_bearing": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item simulated:steering_wheel": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:track_station": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:train": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:track": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:green_seat": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:long_travel": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:packager": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:packager": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "advancement create:stock_ticker": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item create:stock_link": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item icarus:white_feathered_wings": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:enchanted_book[minecraft:stored_enchantments={\"levels\":{\"minecraft:unbreaking\":3}}]": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item via_romana:charting_map": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement via_romana:story/a_strand_type_game": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:lantern": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item farmersdelight:cooking_pot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement farmersdelight:main/place_feast": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item handcrafted:oak_table": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item handcrafted:oak_chair": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item exposure:camera_stand": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement exposure:adventure/family_portrait": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:emerald": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement mca:friend": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item mca:bouquet": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item chipped:mason_table": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block chipped:mason_table": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "block chipped:carpenters_table": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item minecraft:stone": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:oak_log": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item numismatics:vendor": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block numismatics:vendor": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item minecraft:barrel": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:red_table_cloth": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "advancement create:table_cloth_shop": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item vista:television": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "block vista:television": {
+    "code": 0,
+    "response": "That position is not loaded\n\u001b[0m\n"
+  },
+  "item vista:viewfinder": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item vista:hollow_cassette": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item createbigcannons:cannon_carriage": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:target": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:rotten_spell_book": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "entity irons_spellbooks:dead_king": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item cataclysm:burning_ashes": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "entity cataclysm:ignis": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "entity cataclysm:the_leviathan": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item farmersdelight:beef_stew": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item farmersdelight:vegetable_soup": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:golden_apple": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:cooked_beef": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:torch": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:scaffolding": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:glass": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item handcrafted:oak_shelf": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:iron_ingot": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:super_glue": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item create:track_signal": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:arcane_essence": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:enchanted_book": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:enchanted_book[minecraft:stored_enchantments={\"levels\":{\"minecraft:mending\":1}}]": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item minecraft:enchanted_book[minecraft:stored_enchantments={\"levels\":{\"minecraft:fortune\":3}}]": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:mana_upgrade_orb": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item irons_spellbooks:cooldown_upgrade_orb": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item numismatics:crown": {
+    "code": 0,
+    "response": "No entity was found\n\u001b[0m\n"
+  },
+  "item explorerscompass:explorerscompass": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item minecraft:compass": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  },
+  "item numismatics:bank_terminal": {
+    "code": 0,
+    "response": "Test failed\n\u001b[0m\n"
+  }
+}

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ch02_callings"
-	group: "7A11C4DF00200000"
+	group: "6E26AD9C0FAEB787"
 	icon: { id: "minecraft:spyglass" }
 	id: "7A11C3DF00200000"
 	images: [
@@ -17,7 +17,7 @@
 			y: -1
 		}
 	]
-	order_index: 0
+	order_index: 100
 	quest_links: [ ]
 	quests: [
 		{
@@ -200,5 +200,5 @@
 			y: 3
 		}
 	]
-	title: "02 · Choose a Calling"
+	title: "Legacy · 02 · Choose a Calling"
 }

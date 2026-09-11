@@ -1,0 +1,4708 @@
+{
+  "chapters": [
+    {
+      "id": "6E261B7914EB3BE8",
+      "filename": "frontier_00_tonight",
+      "title": "Start Here",
+      "subtitle": "Pick a route. Past achievements count. No charter gate.",
+      "group": "6E26649C972655B5",
+      "icon": {
+        "id": "minecraft:compass"
+      },
+      "order_index": 0,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E260819FC7E5947",
+          "title": "Your Next Good Evening",
+          "description": [
+            "Choose one adventure, one invention, or one place you want to make. Every route is open from the start.",
+            "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.",
+            "Mission coins are personal rewards for each teammate. Supply orders are one shared parcel. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."
+          ],
+          "icon": {
+            "id": "numismatics:cog"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "checkmark",
+              "id": "6E26D0172F9D8F90",
+              "title": "Choose something you actually want to do"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismaticsutils:portable_bank_terminal",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D94B3FAD9BC7"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26CD3D300C8CAB",
+          "title": "A Short Trip with Teeth",
+          "description": [
+            "New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons.",
+            "This is an optional fresh-combat warm-up, not an entrance requirement for veterans. The book rewards can protect the armor you choose."
+          ],
+          "icon": {
+            "id": "minecraft:shield"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "minecraft:zombie",
+              "value": 3,
+              "id": "6E261AD7A999CA10"
+            },
+            {
+              "type": "kill",
+              "entity": "minecraft:skeleton",
+              "value": 3,
+              "id": "6E262238A597A754"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2645775F645639"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1,
+                "components": {
+                  "minecraft:stored_enchantments": {
+                    "levels": {
+                      "minecraft:protection": 3
+                    }
+                  }
+                }
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267147D24C781E"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 12,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267674ADC33E4F"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B89DD1523BD3",
+          "title": "Use the Good Tools",
+          "description": [
+            "Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate.",
+            "Use the bottles to start upgrading your own equipment. Looking at the block verifies workshop access, not a particular enchantment."
+          ],
+          "icon": {
+            "id": "enchantinginfuser:enchanting_infuser"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "enchantinginfuser:enchanting_infuser",
+              "timer": 0,
+              "id": "6E26791671B2C29D"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26FA9BF1A3F6B9"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 24,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2625BB9355E730"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E26B1F3E4BAC235",
+      "filename": "frontier_01_expeditions",
+      "title": "Go Somewhere Worth Going",
+      "subtitle": "Discovery, photography, dangerous places, and reasons to bring a friend.",
+      "group": "6E26649C972655B5",
+      "icon": {
+        "id": "explorerscompass:explorerscompass"
+      },
+      "order_index": 1,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E261B9C11222B2A",
+          "title": "Bring Back a Photograph",
+          "description": [
+            "Load an Exposure camera with film and take a photograph. Try your base from below, a strange mob, or your crew before a raid.",
+            "Existing Exposure achievement counts. The reward supplies your next photographic trip and a basic spare backpack."
+          ],
+          "icon": {
+            "id": "exposure:camera"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "exposure:adventure/exposure",
+              "criterion": "",
+              "id": "6E26745FE754CD69"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26007740D9F250"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:color_film",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266252EFA10561"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "sophisticatedbackpacks:backpack",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26C0BF609DFDE8"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B71ED45B0179",
+          "title": "Put It on the Wall",
+          "description": [
+            "Develop and print an Exposure photograph. Turn something that happened on the server into something people can revisit.",
+            "The printing achievement is checked automatically. Hang your favorite result somewhere public."
+          ],
+          "icon": {
+            "id": "exposure:photograph_frame"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "exposure:adventure/moment_in_time",
+              "criterion": "",
+              "id": "6E265110D9260029"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26EACFC9B84104"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:photograph_frame",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2676AFF88F7C40"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26114622D37E7F",
+          "title": "The Door Below",
+          "description": [
+            "Find and enter Iron's Catacombs. Pack a way home, collect magical materials, and remember where the route begins.",
+            "The existing Catacombs advancement counts; veterans can collect this credit without another trip."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:bone_key"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/enter_catacombs",
+              "criterion": "",
+              "id": "6E269662D3780FC6"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26546E41247EF5"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D763377CC5AC"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E268B44A0C8789B",
+          "title": "Beyond the Dragon",
+          "description": [
+            "Enter an End gateway and open the route to the outer islands. Already done it? Your existing advancement counts.",
+            "Take someone who has not seen the outer End yet; this milestone does not require everyone to repeat the trip."
+          ],
+          "icon": {
+            "id": "minecraft:ender_eye"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "minecraft:end/enter_end_gateway",
+              "criterion": "",
+              "id": "6E26AE23E95D3914"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26084CB3026013"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:ender_pearl",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E268FBE7CED7DC4"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26A5C076450596",
+          "title": "Postcard from the Void",
+          "description": [
+            "Take an Exposure photograph in the End. Aim for something worth showing: a bridge, an End city, or the group against the void.",
+            "Exposure verifies the dimension when the photograph is taken."
+          ],
+          "icon": {
+            "id": "exposure:camera"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "exposure:adventure/void",
+              "criterion": "",
+              "id": "6E260C4ADD3E4FBB"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266480F2B78544"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:album",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260A4430D34FF9"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:color_film",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2685EBC833DB6B"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26596722B417C4",
+          "title": "Find the Sunken City",
+          "description": [
+            "Use the Explorer's Compass to find a Sunken City. Scout a route, prepare for underwater travel, and locate the Leviathan encounter.",
+            "Discovery earns its own reward. Defeating the boss is a separate goal in the Boss Board."
+          ],
+          "icon": {
+            "id": "cataclysm:altar_of_abyss"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:find_sunken_city",
+              "criterion": "",
+              "id": "6E2652C72757DD99"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26C8B76FAEAA88"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:prismarine_crystals",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2622349A427BBC"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26C7B60D14A1C6",
+          "title": "Find the Frosted Prison",
+          "description": [
+            "Track down the Frosted Prison and scout the Maledictus encounter. Bring your best mobility and a retreat plan.",
+            "An existing discovery counts, so a veteran can go directly to the boss objective."
+          ],
+          "icon": {
+            "id": "minecraft:blue_ice"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:find_frosted_prison",
+              "criterion": "",
+              "id": "6E26302A64111693"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266FF7296CA5DB"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 24,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26434F6F0D843C"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E263A514ED1B351",
+          "title": "Above the Clouds",
+          "description": [
+            "Locate the Acropolis, the next destination for a well-equipped party. Plan an arrival that you can also use to leave.",
+            "The Acropolis discovery advancement counts automatically; the Scylla fight has its own reward."
+          ],
+          "icon": {
+            "id": "minecraft:lightning_rod"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:find_acropolis",
+              "criterion": "",
+              "id": "6E2644E001538C13"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E263661E3DC7E45"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:lightning_bottle",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26FEAE7A00ACD9"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B609FD3DA0FD",
+          "title": "Something Is Wrong Here",
+          "description": [
+            "Explore the Cult of Azazel maze. Mark your entrance and bring somebody who enjoys getting lost with you.",
+            "Existing maze exploration is recognized. Killing Azazel is not required for this discovery reward."
+          ],
+          "icon": {
+            "id": "minecraft:crying_obsidian"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "netherman:enter_maze",
+              "criterion": "",
+              "id": "6E2616647650AD30"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D5AAAC982D33"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:ender_pearl",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266935BEACED2D"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E26C4F24FBEEB0A",
+      "filename": "frontier_02_bosses",
+      "title": "Boss Board",
+      "subtitle": "Old wins count. Your next untouched boss is the real destination.",
+      "group": "6E26649C972655B5",
+      "icon": {
+        "id": "cataclysm:burning_ashes"
+      },
+      "order_index": 2,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E2688DA25219A46",
+          "title": "Kraken",
+          "description": [
+            "Take a boat or airship to the fight and make a plan for staying together.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "block_factorys_bosses:undying_tentacle"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "block_factorys_bosses:kill_kraken",
+              "criterion": "",
+              "id": "6E26A7F0966F1A4A"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2622026BB61D0D"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26475B8E07F3CB"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2630DCECD63DAB",
+          "title": "Underworld Knight",
+          "description": [
+            "A good next target for a newly equipped fighter. Learn the openings instead of trading every hit.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "block_factorys_bosses:knight_sword"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "block_factorys_bosses:kill_underworld_knight",
+              "criterion": "",
+              "id": "6E2604B9B283FFC0"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266169D376B7BC"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D37F2E4659DE"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B85654476589",
+          "title": "Infernal Dragon",
+          "description": [
+            "A separate encounter from the Ender Dragon. Bring fire preparation and ranged options.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:dragon_breath"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "block_factorys_bosses:kill_dragon",
+              "criterion": "",
+              "id": "6E2615C791C268A9"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26395669F19438"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E265063D0D28F60"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269A6854801575"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26503B6ACB5284",
+          "title": "Sandworm",
+          "description": [
+            "Turn a desert expedition into a proper boss hunt.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "block_factorys_bosses:sandworm_gauntlet"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "block_factorys_bosses:kill_sandworm",
+              "criterion": "",
+              "id": "6E26360BD6D46A0A"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26A73263B61B92"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262DF0C375C17D"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E263C2F9B59EE37",
+          "title": "Ignis",
+          "description": [
+            "Coordinate your opening and recovery windows. Your existing Ignis victory already earns this credit.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "cataclysm:ignitium_ingot"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_ignis",
+              "criterion": "",
+              "id": "6E267AB780F89054"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26E1BC38503799"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26912556505C9C"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26459D86508DED",
+          "title": "The Harbinger",
+          "description": [
+            "Take on the factory encounter. Use the rewards to improve a loadout, not to replace the fight with a free boss drop.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "cataclysm:witherite_ingot"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_harbinger",
+              "criterion": "",
+              "id": "6E26B8E5C57F4D7F"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2642597A390AF7"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2623193CD8F369"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26ECFF5B20D03A",
+          "title": "Ancient Remnant",
+          "description": [
+            "The desert raid continues inside the Cursed Pyramid. A previous win counts.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "cataclysm:ancient_metal_ingot"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_remnant",
+              "criterion": "",
+              "id": "6E265E34195061B4"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26A09B55FC003A"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26822712C65CB2"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E268C8F94E96C43",
+          "title": "Ender Guardian",
+          "description": [
+            "A destination beyond simply reaching the End. Existing victories count.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "cataclysm:gauntlet_of_guard"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_ender_guardian",
+              "criterion": "",
+              "id": "6E267848CB2CC9A0"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260CAB3F212D9C"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266BFC46899B8D"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E263C80910AEB59",
+          "title": "Netherite Monstrosity",
+          "description": [
+            "A fresh heavyweight target for the group. Prepare the arena approach before starting the encounter.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:netherite_scrap"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_monstrosity",
+              "criterion": "",
+              "id": "6E26FAE4597947EC"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F9A7096A81BD"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E261607C98FD38F"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E269A5A0A38EE19",
+          "title": "The Leviathan",
+          "description": [
+            "Your sea expedition culminates here. Bring a loadout designed for the environment.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "cataclysm:altar_of_abyss"
+          },
+          "x": 3.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_leviathan",
+              "criterion": "",
+              "id": "6E262D00855E58E1"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26219F363628A2"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26E28B72F6AE6F"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2636F2D969C506",
+          "title": "Maledictus",
+          "description": [
+            "A new challenge for players who already cleared Ignis and the Harbinger.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:echo_shard"
+          },
+          "x": 6.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_maledictus",
+              "criterion": "",
+              "id": "6E26D3A53013DA4C"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E265641CA317F5A"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269F03E35227BD"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2600D391E9924E",
+          "title": "Scylla",
+          "description": [
+            "The Acropolis raid is a reason to finish that airship, test a spell build, and gather the crew.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:lightning_rod"
+          },
+          "x": 9.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_scylla",
+              "criterion": "",
+              "id": "6E2691864B3192FB"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26B5AAEDCC71E9"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26018636BCB814"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26A7A44AE011AA",
+          "title": "Clawdian",
+          "description": [
+            "Another untouched Cataclysm encounter. Use the in-game guide and Explorer's Compass to plan the expedition.",
+            "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:nautilus_shell"
+          },
+          "x": 0.0,
+          "y": 9.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "cataclysm:kill_clawdian",
+              "criterion": "",
+              "id": "6E26F80221612D23"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F87991808134"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D3A2823A9302"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2604721322C227",
+          "title": "Azazel's Relic",
+          "description": [
+            "Follow the Cult of Azazel progression to its Manipulator Stick relic. The native advancement checks possession of the relic, not a recorded kill.",
+            "Verified by the native relic advancement; prior ownership counts. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+          ],
+          "icon": {
+            "id": "minecraft:nether_star"
+          },
+          "x": 3.0,
+          "y": 9.0,
+          "size": 1.0,
+          "shape": "hexagon",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "netherman:kill_azazel",
+              "criterion": "",
+              "id": "6E26FD339A21856C"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26C77BC99EDACF"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2621DFCFAA3250"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E263665E5F24DA6",
+      "filename": "frontier_03_magic",
+      "title": "Build a Spell Loadout",
+      "subtitle": "Make choices that change how you fight. Keep the faction you enjoy.",
+      "group": "6E26649C972655B5",
+      "icon": {
+        "id": "irons_spellbooks:arcane_anvil"
+      },
+      "order_index": 3,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E265455E4BA73EA",
+          "title": "Your First Real Spellbook",
+          "description": [
+            "Equip a spellbook. At an Inscription Table, give yourself a damage option and a spell that helps you move, survive, or support someone.",
+            "The equipped-book advancement is the automatic check; the spell choices are yours. Existing equipment milestones count."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:iron_spell_book"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/spell_book_equip",
+              "criterion": "",
+              "id": "6E2640708316827C"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E261A75263C58A1"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:common_ink",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E265C970653C89C"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2688BDF879CCED",
+          "title": "Stop Waiting for the Right Scroll",
+          "description": [
+            "Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want.",
+            "Already own the workshop achievement? Collect credit and continue. No duplicate workstation needed."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:scroll_forge"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/make_scroll_forge",
+              "criterion": "",
+              "id": "6E26EC0149BC9FDC"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26592F7359A409"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267A45BF492209"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:paper",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E264506C2B89BB8"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26C7687AA1253D",
+          "title": "Tune the Build",
+          "description": [
+            "Unlock the Arcane Anvil milestone. Use it to combine scrolls or improve a chosen equipment piece.",
+            "The anvil milestone is checked automatically; this opens the specialist upgrades in the Quartermaster."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:arcane_anvil"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/make_arcane_anvil",
+              "criterion": "",
+              "id": "6E26F24136BD5C3E"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F07260DABD62"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 24,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267CF9F0E0C9C3"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B41AA42A0D4F",
+          "title": "Write Something Dangerous",
+          "description": [
+            "Obtain Legendary Ink. Choose the spell you want before spending it.",
+            "Existing Legendary Ink advancement counts, including ink already used. This opens advanced spell supplies."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:legendary_ink"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/ink_legendary",
+              "criterion": "",
+              "id": "6E26EA215AD10535"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D4437FFD72CD"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E263A05F77D10A0"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E262E1A327F4984",
+          "title": "A Book with Room to Grow",
+          "description": [
+            "Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage.",
+            "Existing ownership advancement counts, so equipment you already earned is recognized without rebuilding it."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:dragonskin_spell_book"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "irons_spellbooks:irons_spellbooks/spell_book_dragon",
+              "criterion": "",
+              "id": "6E2621B8EF347DD3"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269FA270E00D9B"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266B43A9FCAA6B"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2630810B8C2BA4"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26ACC7A9335CB9",
+          "title": "Own the Night",
+          "description": [
+            "Unlock Vampirism's Bat advancement. Use the mobility to scout a place worth visiting with your team.",
+            "This is the vampire branch. Hunters can leave it alone; no chapter-wide completion is required."
+          ],
+          "icon": {
+            "id": "vampirism:vampire_fang"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "vampirism:vampire/bat",
+              "criterion": "",
+              "id": "6E260E2B76C57C17"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269689D063E0B4"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26DE428D6D66C9"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E269AEB8D51E29B",
+          "title": "Tools of the Hunt",
+          "description": [
+            "Reach the Hunter Technology advancement. Extend your hunting toolkit instead of repeating the starter faction checklist.",
+            "This is the hunter branch. Vampires have their own milestones."
+          ],
+          "icon": {
+            "id": "vampirism:basic_crossbow"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "vampirism:hunter/technology",
+              "criterion": "",
+              "id": "6E266282AAA983E9"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2639D27F9E8905"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vampirism:crossbow_arrow_vampire_killer",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26BD6612BCBF4D"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E268AA25B24480C",
+          "title": "Vampire Level 14",
+          "description": [
+            "Reach vampire level 14 through the faction progression. This is a longer-term faction goal, not an opening chore.",
+            "Your existing level-14 advancement counts if you already earned it."
+          ],
+          "icon": {
+            "id": "vampirism:altar_infusion"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "vampirism:vampire/max_level",
+              "criterion": "",
+              "id": "6E26B4A0D90BBE28"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26C06838288336"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260765D73B6957"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E266425D5F4A5D0",
+          "title": "Hunter Level 14",
+          "description": [
+            "Reach hunter level 14. Continue beyond basic hunting equipment into the faction's later progression.",
+            "Continue your chosen role; no vampire conversion is required."
+          ],
+          "icon": {
+            "id": "vampirism:weapon_table"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "vampirism:hunter/max_level",
+              "criterion": "",
+              "id": "6E2699B2D3F6D44C"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269CCC6D72D7A9"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E265B1FED5D262A"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E264CFBC298391A",
+      "filename": "frontier_04_engineering",
+      "title": "Machines That Change the Server",
+      "subtitle": "Credit for the factory you already built; challenges beyond the Digital Miner.",
+      "group": "6E26E94862BF9419",
+      "icon": {
+        "id": "create:precision_mechanism"
+      },
+      "order_index": 4,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E26C4366AA57BC9",
+          "title": "The Brass Workshop",
+          "description": [
+            "Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "create:brass_ingot"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:brass",
+              "criterion": "",
+              "id": "6E26ECC69650D4E1"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269F00344946D1"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:andesite_alloy",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260705A2519660"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26AE726B685FF5",
+          "title": "Precision at Last",
+          "description": [
+            "Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "create:precision_mechanism"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:precision_mechanism",
+              "criterion": "",
+              "id": "6E2610DE9278B9AC"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26615032B6C511"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E268A1E8902B2F2"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26CB5FA755BAB4",
+          "title": "Steam Power",
+          "description": [
+            "Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "create:steam_engine"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:steam_engine",
+              "criterion": "",
+              "id": "6E26B7C24FF139A8"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26192EB28B1307"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:copper_sheet",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266A57E7775E31"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26903736497478",
+          "title": "The Factory You Already Built",
+          "description": [
+            "Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "mekanism:basic_tier_installer"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mekanism:factory",
+              "criterion": "",
+              "id": "6E26C4AB8029BE48"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2670B7E4AD2DA6"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 12,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2618100E4886AE"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2626E1826D2754",
+          "title": "Automatic Extraction",
+          "description": [
+            "Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "mekanism:digital_miner"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mekanism:digital_miner",
+              "criterion": "",
+              "id": "6E266891BF854606"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26808F1912F749"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26887A8ED49785"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2681B962288196",
+          "title": "Feed the Power Plant",
+          "description": [
+            "Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "mekanismgenerators:gas_burning_generator"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mekanismgenerators:burn_the_gas",
+              "criterion": "",
+              "id": "6E26BBEEF0FE305D"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26323855965AFD"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:redstone",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260841A5CA8352"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2649A7C32470D8",
+          "title": "Build a Repeatable Production Line",
+          "description": [
+            "Reach automated crafting. Pick something the group actually keeps running out of, then automate that recipe.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "mekanism:formulaic_assemblicator"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mekanism:automated_crafting",
+              "criterion": "",
+              "id": "6E26DA2C2AE7AF39"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262AD647F9D784"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:andesite_alloy",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F1470E9EC9F8"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26C8872927CC3D",
+          "title": "Put the Warehouse in Your Pocket",
+          "description": [
+            "Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "mekanism:portable_qio_dashboard"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mekanism:portable_qio_dashboard",
+              "criterion": "",
+              "id": "6E2622AE05F3B4FD"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26E8682D90DC73"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E263A7940145CDC"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2685D40D328648",
+          "title": "Make the Boiler Earn Its Space",
+          "description": [
+            "Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup.",
+            "The native advancement is checked automatically and gives credit for prior progress."
+          ],
+          "icon": {
+            "id": "create:steam_engine"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:steam_engine_maxed",
+              "criterion": "",
+              "id": "6E263D0646186225"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2673968A48B510"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26BD79DA43635A"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:copper_sheet",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26A19FDDA729E2"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26DC99B2B9F37E",
+          "title": "Try a Different Power Chain",
+          "description": [
+            "Build or visit an Energizing Orb and produce a Blazing Crystal. This opens Powah as an alternative project.",
+            "Inspect the orb and carry the crystal for detection; neither item is consumed."
+          ],
+          "icon": {
+            "id": "powah:energizing_orb"
+          },
+          "x": 3.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "powah:energizing_orb",
+              "timer": 0,
+              "id": "6E266FBAC486F08F"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "powah:crystal_blazing",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E268A5ABA283B84"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E265B8B86D349DF"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 24,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262AF54E1B2567"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E269465526DD79A",
+          "title": "Power You Can Wire by Hand",
+          "description": [
+            "Build a Power Grid electric motor and connect it to a small useful mechanism.",
+            "Inspect the placed motor to claim the equipment milestone. Electrical operation is a project goal, not something this block check can prove."
+          ],
+          "icon": {
+            "id": "powergrid:electric_motor"
+          },
+          "x": 6.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "powergrid:electric_motor",
+              "timer": 0,
+              "id": "6E26EBF51A647428"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2628E65286C612"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:copper_ingot",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E268D350E1BB81B"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E263A31DC312F1D",
+          "title": "Give the Crew a Control Panel",
+          "description": [
+            "Install an advanced ComputerCraft computer and a monitor for a shared machine, route board, or ship dashboard.",
+            "Inspect both installed blocks. What the program does is up to you; a working display is the useful part of this project."
+          ],
+          "icon": {
+            "id": "computercraft:computer_advanced"
+          },
+          "x": 9.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "computercraft:computer_advanced",
+              "timer": 0,
+              "id": "6E2623FC29A55536"
+            },
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "computercraft:monitor_advanced",
+              "timer": 0,
+              "id": "6E2698613E6409A1"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E261E6B48CF7372"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "computercraft:speaker",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269964FC197868"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "computercraft:cable",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2674AEDD021E91"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E26F061E9BB7E6C",
+      "filename": "frontier_05_transport",
+      "title": "Flight, Freight, and Arrival",
+      "subtitle": "Build something people will actually ride.",
+      "group": "6E26E94862BF9419",
+      "icon": {
+        "id": "simulated:steering_wheel"
+      },
+      "order_index": 5,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E26820F0536F5C5",
+          "title": "A Flight Workshop",
+          "description": [
+            "Set up a Physics Assembler and Navigation Table. Inspect the installed blocks; existing installations count.",
+            "Use the components' in-game Ponder scenes to plan your first craft. This milestone verifies workshop access, not a finished airship."
+          ],
+          "icon": {
+            "id": "simulated:physics_assembler"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "simulated:physics_assembler",
+              "timer": 0,
+              "id": "6E26BCB90FA77DEC"
+            },
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "simulated:navigation_table",
+              "timer": 0,
+              "id": "6E26B1EF35783EEA"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E264D5C3696C520"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:white_envelope",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F029668B5DB2"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2675BD33374B3C",
+          "title": "Give It Lift and Thrust",
+          "description": [
+            "Bring together a Hot Air Burner, a Propeller Bearing, and a Steering Wheel. Parts already owned count and are not consumed.",
+            "Build a compact prototype before enlarging it. The separate crew flight challenge is about the actual journey."
+          ],
+          "icon": {
+            "id": "aeronautics:andesite_propeller"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:adjustable_burner",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E264E8F31F0D8FC"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:propeller_bearing",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E26015528F4A603"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "simulated:steering_wheel",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E26600111CFD62C"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E268418FA05958E"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:white_envelope",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26CD73B376DEF9"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2654CF12083F88",
+          "title": "A Ferry Worth Using",
+          "description": [
+            "Fly a working craft from a dock with a teammate aboard, travel at least 500 blocks, then land intact at a second landing place.",
+            "Crew-confirmed challenge: the passenger confirms the trip before you tick it. One completion per team; one shared reward.",
+            "The point is a usable ferry, not a larger machine for its own sake."
+          ],
+          "icon": {
+            "id": "simulated:steering_wheel"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "checkmark",
+              "id": "6E267D8BC134E22C",
+              "title": "Our crew completed the flight and landing"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:white_envelope",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26C5DAE90E920B"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E266290ED70D30D",
+          "title": "All Aboard",
+          "description": [
+            "Assemble a Create train and earn its native train advancement. Prior train building is credited.",
+            "Connect places that people visit. The rails are for expanding the route after the first vehicle works."
+          ],
+          "icon": {
+            "id": "create:track_station"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:train",
+              "criterion": "",
+              "id": "6E265B3D1E9AD417"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260DBD1A25999C"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2674C1A662C57F"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:track",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E260E807AC3AAAE"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E269D5583333DE8",
+          "title": "Make the Railway Useful",
+          "description": [
+            "Complete Create's Long Travel advancement with a train journey. Check the native advancement for its exact distance requirement.",
+            "A scenic or useful route is a better reason to travel than circling the same track."
+          ],
+          "icon": {
+            "id": "create:green_seat"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:long_travel",
+              "criterion": "",
+              "id": "6E26022B33ADFE02"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E263984AC867B28"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:track",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2631BEF5D817CF"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26D643D825326E",
+          "title": "Send Something Someone Needs",
+          "description": [
+            "Reach both Packager and Stock Ticker milestones. Use the system to move a useful supply between a workshop and a destination.",
+            "The advancement checks recognize existing logistics equipment. Delivery design is your next project, not an invisible extra requirement."
+          ],
+          "icon": {
+            "id": "create:packager"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:packager",
+              "criterion": "",
+              "id": "6E26704B746CC286"
+            },
+            {
+              "type": "advancement",
+              "advancement": "create:stock_ticker",
+              "criterion": "",
+              "id": "6E26E49CACBBF1F7"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E264BBBC515E397"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:stock_link",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26604536A3EA44"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E262BB31BF0076D",
+          "title": "Wings from Your Workshop",
+          "description": [
+            "Obtain the pack's White Feathered Wings using its custom industrial recipe. The required HDPE Elytra connects this project to Mekanism.",
+            "The wings are not consumed. Already have this exact item? Carry it briefly for detection; no recrafting needed."
+          ],
+          "icon": {
+            "id": "icarus:white_feathered_wings"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "icarus:white_feathered_wings",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E2603D277366BD0"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26B6CE4C2D67A8"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1,
+                "components": {
+                  "minecraft:stored_enchantments": {
+                    "levels": {
+                      "minecraft:unbreaking": 3
+                    }
+                  }
+                }
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26170FD81F043A"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26B66A6926E5A8",
+          "title": "A Road People Can Follow",
+          "description": [
+            "Use Via Romana to connect the world and earn its first road-charting advancement.",
+            "Link real destinations and leave a clear entrance at each end. Existing charting credit counts."
+          ],
+          "icon": {
+            "id": "via_romana:charting_map"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "via_romana:story/a_strand_type_game",
+              "criterion": "",
+              "id": "6E2652F32DB59D1A"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E264FB128334738"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26F6317C4F6566"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E26421AD40FDB9B",
+      "filename": "frontier_06_places",
+      "title": "Make This Place Yours",
+      "subtitle": "Food, photographs, markets, interiors, and shared stories.",
+      "group": "6E26E94862BF9419",
+      "icon": {
+        "id": "exposure:photograph_frame"
+      },
+      "order_index": 6,
+      "default_hide_dependency_lines": false,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E26C44B5FC97883",
+          "title": "Dinner Is a Server Event",
+          "description": [
+            "Place a Farmer's Delight feast and invite the crew. The native feast-placement advancement is the automatic check.",
+            "Make the meal a reason to gather before or after an expedition. Vampires can bring something suitable for themselves."
+          ],
+          "icon": {
+            "id": "farmersdelight:cooking_pot"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "farmersdelight:main/place_feast",
+              "criterion": "",
+              "id": "6E260267F3BB9870"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26378A394CEC11"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_table",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26BA47997E7077"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_chair",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26525E9A25F825"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26C8E1466128A7",
+          "title": "The Crew and the Pets",
+          "description": [
+            "Earn Exposure's Family Portrait: use a camera on a stand to capture a player, a tamed cat, and a tamed wolf in the frame.",
+            "The real Exposure advancement verifies the photograph. You keep the picture."
+          ],
+          "icon": {
+            "id": "exposure:camera_stand"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "exposure:adventure/family_portrait",
+              "criterion": "",
+              "id": "6E266177B6EFB7FE"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26924ACBF53489"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26984D492F9119"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:photograph_frame",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262ABFA521DE47"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2674666E4FF474",
+          "title": "A Neighbor with a Name",
+          "description": [
+            "Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine.",
+            "Existing friendship credit counts. This does not require marriage or a particular roleplay choice."
+          ],
+          "icon": {
+            "id": "minecraft:emerald"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "mca:friend",
+              "criterion": "",
+              "id": "6E26DEF9B406ACDB"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26B7B79F4EB162"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "mca:bouquet",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E2645259E9F01B8"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26E83442EC8F5A",
+          "title": "A Better Building Palette",
+          "description": [
+            "Set up a Chipped Mason Table and Carpenter's Table. Inspect the placed workstations; a shared existing workshop counts.",
+            "Use them to choose a palette for a build you want to finish. The reward supplies a small project without rewarding a stone-mining grind."
+          ],
+          "icon": {
+            "id": "chipped:mason_table"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "chipped:mason_table",
+              "timer": 0,
+              "id": "6E26B8FCB0F018EA"
+            },
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "chipped:carpenters_table",
+              "timer": 0,
+              "id": "6E26B63DA98E7A73"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266A2329D604EB"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262DB33A66352C"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26811E59760B39"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26ECCABBC759DF",
+          "title": "Open a Real Stall",
+          "description": [
+            "Place and inspect a Numismatics Vendor. Stock a useful offer and set a price someone might pay.",
+            "The automatic check proves a vendor is installed; it does not claim a sale happened. Invite another player to test it."
+          ],
+          "icon": {
+            "id": "numismatics:vendor"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "numismatics:vendor",
+              "timer": 0,
+              "id": "6E26E3D5A8B4E359"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E268EA37E546677"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:barrel",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267C7CE32D3C8C"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E267E65AB7653E4"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2614A8A7306DA3",
+          "title": "Your First Create Shop",
+          "description": [
+            "Earn Create's Table Cloth Shop advancement. Follow the in-game advancement and Ponder instructions for the actual shop interaction.",
+            "This opens a different trading route from Numismatics Vendors. Existing progress counts."
+          ],
+          "icon": {
+            "id": "create:red_table_cloth"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "advancement",
+              "advancement": "create:table_cloth_shop",
+              "criterion": "",
+              "id": "6E2626E9EA0CC53A"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E262E95141BCB2A"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26FA3F1688A1B7"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E2641C2297AFB51",
+          "title": "A Place to Show the Journey",
+          "description": [
+            "Install a Vista television and obtain a viewfinder. Capture something from the server you want other people to see.",
+            "The checks verify the equipment, not the contents of a recording. Make a small viewing area instead of leaving the screen in a chest."
+          ],
+          "icon": {
+            "id": "vista:television"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "observation",
+              "observation_type": "block",
+              "to_observe": "vista:television",
+              "timer": 0,
+              "id": "6E26908CE3A50221"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vista:viewfinder",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": false,
+              "id": "6E268A159CBE0ACB"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E269454B7122064"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vista:hollow_cassette",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26D87BDD1F2D1A"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vista:hollow_cassette",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E266DE3611735B0"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vista:hollow_cassette",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E263879ECE2C264"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "vista:hollow_cassette",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": false,
+              "autoclaim": "disabled",
+              "id": "6E26961040C381FD"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26F13410C8B481",
+          "title": "Someone Can Stay Here",
+          "description": [
+            "Finish a guest space with a bed or coffin appropriate for the guest, storage, lighting, and a clearly marked entrance. Invite a player outside your usual building crew to try it.",
+            "Guest-confirmed challenge: tick this after the visit. One completion and one shared reward per team."
+          ],
+          "icon": {
+            "id": "handcrafted:oak_table"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "checkmark",
+              "id": "6E26A3AC7E3DE63B",
+              "title": "A guest visited and used the space"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_chair",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26FE8A5E960C04"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:photograph_frame",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26F7DCBAE734AB"
+            }
+          ],
+          "progression_mode": "flexible"
+        },
+        {
+          "id": "6E26E1F13BA2672F",
+          "title": "Build a Place to Test the Big Ideas",
+          "description": [
+            "Build a marked cannon or spell-testing range away from other people's structures. Run a demonstration for one other player and repair the target area afterward.",
+            "Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."
+          ],
+          "icon": {
+            "id": "createbigcannons:cannon_carriage"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "checkmark",
+              "id": "6E26915E532C32CC",
+              "title": "Our witness saw the demonstration and the range is usable"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:target",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26131B343EAE34"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2612B6F4A656B4"
+            }
+          ],
+          "progression_mode": "flexible"
+        }
+      ]
+    },
+    {
+      "id": "6E264DBF3AA2C1F9",
+      "filename": "frontier_07_contracts",
+      "title": "Crew Contracts",
+      "subtitle": "Optional repeat jobs. No streaks and no login calendar.",
+      "group": "6E26B2BBC6593B6A",
+      "icon": {
+        "id": "numismatics:cog"
+      },
+      "order_index": 7,
+      "default_hide_dependency_lines": true,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E26B7F1F0811EDE",
+          "title": "Catacombs Rematch",
+          "description": [
+            "Defeat a Dead King after taking this contract. This is fresh combat, so old kill statistics do not complete it.",
+            "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:rotten_spell_book"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "irons_spellbooks:dead_king",
+              "value": 1,
+              "id": "6E26E0B6FA722245"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26F527045DA263"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E269E4565EE8432"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26114622D37E7F"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 21600
+        },
+        {
+          "id": "6E26EB32F87A5BEC",
+          "title": "Return to the Burning Arena",
+          "description": [
+            "Defeat Ignis again. The first-victory milestone and this fresh-kill contract are separate.",
+            "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."
+          ],
+          "icon": {
+            "id": "cataclysm:burning_ashes"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "cataclysm:ignis",
+              "value": 1,
+              "id": "6E26CAE3D8CEB1C8"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260241D53CA620"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26E11C370D2F83"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E263C2F9B59EE37"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 21600
+        },
+        {
+          "id": "6E266A2A5B8C5878",
+          "title": "Deep Water Rematch",
+          "description": [
+            "Defeat the Leviathan after unlocking this contract. This can fund the next group project.",
+            "One shared payment. Six-hour cooldown begins after all rewards are collected."
+          ],
+          "icon": {
+            "id": "cataclysm:altar_of_abyss"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "kill",
+              "entity": "cataclysm:the_leviathan",
+              "value": 1,
+              "id": "6E26B51A359DB53E"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E263B4C00187B27"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260E692FB7DB8B"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E269A5A0A38EE19"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 21600
+        },
+        {
+          "id": "6E26E9073FF8C06B",
+          "title": "Supply the Galley",
+          "description": [
+            "Submit eight Beef Stews and eight Vegetable Soups for an expedition galley. The submitted meals are consumed.",
+            "One shared 32-Spur payment, with a six-hour repeat cooldown. Pack the meals for your next crew departure."
+          ],
+          "icon": {
+            "id": "farmersdelight:beef_stew"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "circle",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "farmersdelight:beef_stew",
+                "count": 1
+              },
+              "count": 8,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E266B506CBC6926"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "farmersdelight:vegetable_soup",
+                "count": 1
+              },
+              "count": 8,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E2637A54078954B"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2632AE3AD51D8E"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 21600
+        }
+      ]
+    },
+    {
+      "id": "6E26365D16241FFE",
+      "filename": "frontier_08_quartermaster",
+      "title": "Spend It on Your Next Project",
+      "subtitle": "Coins buy convenience and selected upgrades. Orders are one shared parcel.",
+      "group": "6E26B2BBC6593B6A",
+      "icon": {
+        "id": "numismatics:bank_terminal"
+      },
+      "order_index": 8,
+      "default_hide_dependency_lines": true,
+      "default_quest_shape": "circle",
+      "quests": [
+        {
+          "id": "6E2624F5C5738F71",
+          "title": "Field Supplies",
+          "description": [
+            "Human travel supplies for a quick expedition. Vampires may prefer a spell or building order.",
+            "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "minecraft:golden_apple"
+          },
+          "x": 0.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E2657F630C60CA5"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:cooked_beef",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260E1C548D24AE"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:torch",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2659F60E1264C6"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:golden_apple",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260B1CBC27DD57"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26C9E554BDADAF",
+          "title": "Build the Thing",
+          "description": [
+            "A bulk delivery for a real project: 512 stone, 256 oak logs, glass, scaffolding, and lights.",
+            "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "minecraft:scaffolding"
+          },
+          "x": 3.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E2664D60FF563C0"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26F09DBB9469EB"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E267C89B360FD0F"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26A6A10DF96E06"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260E2802587701"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E264903980F58BE"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26DD455F872247"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2673DD3E355F7E"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:stone",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E264883C32D7C03"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2642422208D81C"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26E452039A336B"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2654AE20980E93"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E263449502487BC"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:glass",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26FDC5A3AEDBA1"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:scaffolding",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26A6C88269C4DE"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26098CF446136B"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E265AA0101A80B8",
+          "title": "Finish the Interior",
+          "description": [
+            "Furniture and lighting for a guesthouse, tavern, viewing room, or finished base.",
+            "Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "handcrafted:oak_table"
+          },
+          "x": 6.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 2,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E267BD993C1716E"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_table",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26409E9FFE85B2"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_chair",
+                "count": 1
+              },
+              "count": 6,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E265442A8F0E5E9"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "handcrafted:oak_shelf",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26FC382263DF0D"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 12,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26412DA45845EA"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E261FA35D1A3380",
+          "title": "Another Roll of Film",
+          "description": [
+            "Supplies for recording the next adventure. No need to wait for a photography quest to repeat.",
+            "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "exposure:color_film"
+          },
+          "x": 9.0,
+          "y": 0.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:sprocket",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26B056A65A3135"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:color_film",
+                "count": 1
+              },
+              "count": 4,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26D92D5FD21123"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:photograph_frame",
+                "count": 1
+              },
+              "count": 8,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2656490306E64D"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "exposure:album",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E265CE35A1C76B5"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26AE1EEE19C54A",
+          "title": "Airframe Materials",
+          "description": [
+            "Hull and envelope materials for a larger prototype. Core machinery and flight control still come from your workshop.",
+            "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "aeronautics:white_envelope"
+          },
+          "x": 0.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26C7135B812A10"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "aeronautics:white_envelope",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26A303AF0172D5"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:oak_log",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E269A992F94521D"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:iron_ingot",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26FFF7B6999908"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:super_glue",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E260439384A2682"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26806766D22A27",
+          "title": "Extend the Line",
+          "description": [
+            "Extend an already working railway with rails, signals, and lighting.",
+            "Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "create:track"
+          },
+          "x": 3.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 2,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26F0753770E3B2"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "create:track",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E263C59FEB96EAF"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "create:track_signal",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E264103555E04E8"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:lantern",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26B806DFE5B2C6"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E266290ED70D30D"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E2672D7868DA5FE",
+          "title": "Spell Workshop Supplies",
+          "description": [
+            "Pursue a spell of your choice with ink and materials. No random reward roll.",
+            "Price: 64 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:rare_ink"
+          },
+          "x": 6.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E2610405159687A"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:rare_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E269743677BF668"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:arcane_essence",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E2652BBEA115547"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:paper",
+                "count": 1
+              },
+              "count": 32,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E268D28B1AAAF5D"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:experience_bottle",
+                "count": 1
+              },
+              "count": 16,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26C7FCF1984F19"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E2688BDF879CCED"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26A72709AEAA8D",
+          "title": "A More Ambitious Spell",
+          "description": [
+            "An advanced spell-crafting supply order after your team reaches Legendary Ink.",
+            "Price: 192 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:epic_ink"
+          },
+          "x": 9.0,
+          "y": 3.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 3,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26DC23B060F306"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:epic_ink",
+                "count": 1
+              },
+              "count": 2,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E269CC4011BA811"
+            },
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:arcane_essence",
+                "count": 1
+              },
+              "count": 64,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E269A803D136D05"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26B41AA42A0D4F"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26D9DBE3453BDA",
+          "title": "Keep Your Favorite Tool",
+          "description": [
+            "One Mending book. Invest in something you use instead of receiving another disposable weapon.",
+            "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "minecraft:enchanted_book"
+          },
+          "x": 0.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 4,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26E657625BA356"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1,
+                "components": {
+                  "minecraft:stored_enchantments": {
+                    "levels": {
+                      "minecraft:mending": 1
+                    }
+                  }
+                }
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E264D5E853A1496"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E26D83C4A316372",
+          "title": "Make the Next Mining Trip Count",
+          "description": [
+            "One Fortune III book. The group already has diamonds; this is an optional convenience for another miner.",
+            "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "minecraft:enchanted_book"
+          },
+          "x": 3.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 4,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26B528644C48CF"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "minecraft:enchanted_book",
+                "count": 1,
+                "components": {
+                  "minecraft:stored_enchantments": {
+                    "levels": {
+                      "minecraft:fortune": 3
+                    }
+                  }
+                }
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26F57F45C40BE0"
+            }
+          ],
+          "progression_mode": "linear",
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E260CE6FD8E8E39",
+          "title": "Specialize: More Mana",
+          "description": [
+            "One Mana Upgrade Orb for compatible equipment. Check its upgrade limits in the Arcane Anvil.",
+            "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:mana_upgrade_orb"
+          },
+          "x": 6.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 6,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E260EC6BD6ACA13"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:mana_upgrade_orb",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26B20C0CFA3A2B"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26C7687AA1253D"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E2631A0DF8B4EA0",
+          "title": "Specialize: Faster Recovery",
+          "description": [
+            "One Cooldown Upgrade Orb for compatible equipment. Choose this instead of more mana if it fits your build.",
+            "Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:cooldown_upgrade_orb"
+          },
+          "x": 9.0,
+          "y": 6.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:cog",
+                "count": 1
+              },
+              "count": 6,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E265B72AC47F659"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:cooldown_upgrade_orb",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26182D0595B3B6"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26C7687AA1253D"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        },
+        {
+          "id": "6E260878D9DFB075",
+          "title": "Write the Signature Spell",
+          "description": [
+            "One Legendary Ink for a specific spell project. This does not grant a completed boss spellbook or a boss weapon.",
+            "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
+            "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+          ],
+          "icon": {
+            "id": "irons_spellbooks:legendary_ink"
+          },
+          "x": 0.0,
+          "y": 9.0,
+          "size": 1.0,
+          "shape": "square",
+          "optional": true,
+          "tasks": [
+            {
+              "type": "item",
+              "item": {
+                "id": "numismatics:crown",
+                "count": 1
+              },
+              "count": 1,
+              "consume_items": true,
+              "task_screen_only": true,
+              "id": "6E26C0E73E81B4FF"
+            }
+          ],
+          "rewards": [
+            {
+              "type": "item",
+              "item": {
+                "id": "irons_spellbooks:legendary_ink",
+                "count": 1
+              },
+              "count": 1,
+              "team_reward": true,
+              "autoclaim": "disabled",
+              "id": "6E26CC3E28C1B47E"
+            }
+          ],
+          "progression_mode": "linear",
+          "dependencies": [
+            "6E26B41AA42A0D4F"
+          ],
+          "can_repeat": true,
+          "repeat_cooldown": 60
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+	id: "6E263665E5F24DA6"
+	filename: "frontier_03_magic"
+	title: "Build a Spell Loadout"
+	subtitle: "Make choices that change how you fight. Keep the faction you enjoy."
+	group: "6E26649C972655B5"
+	icon: { id: "irons_spellbooks:arcane_anvil" }
+	order_index: 3
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "6E265455E4BA73EA"
+			title: "Your First Real Spellbook"
+			description: ["Equip a spellbook. At an Inscription Table, give yourself a damage option and a spell that helps you move, survive, or support someone.", "The equipped-book advancement is the automatic check; the spell choices are yours. Existing equipment milestones count."]
+			icon: { id: "irons_spellbooks:iron_spell_book" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/spell_book_equip", criterion: "", id: "6E2640708316827C" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E261A75263C58A1"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:common_ink", count: 1 }
+					count: 8
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E265C970653C89C"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E2688BDF879CCED"
+			title: "Stop Waiting for the Right Scroll"
+			description: ["Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want.", "Already own the workshop achievement? Collect credit and continue. No duplicate workstation needed."]
+			icon: { id: "irons_spellbooks:scroll_forge" }
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/make_scroll_forge", criterion: "", id: "6E26EC0149BC9FDC" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26592F7359A409"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:rare_ink", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E267A45BF492209"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:paper", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E264506C2B89BB8"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26C7687AA1253D"
+			title: "Tune the Build"
+			description: ["Unlock the Arcane Anvil milestone. Use it to combine scrolls or improve a chosen equipment piece.", "The anvil milestone is checked automatically; this opens the specialist upgrades in the Quartermaster."]
+			icon: { id: "irons_spellbooks:arcane_anvil" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/make_arcane_anvil", criterion: "", id: "6E26F24136BD5C3E" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26F07260DABD62"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 24
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E267CF9F0E0C9C3"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26B41AA42A0D4F"
+			title: "Write Something Dangerous"
+			description: ["Obtain Legendary Ink. Choose the spell you want before spending it.", "Existing Legendary Ink advancement counts, including ink already used. This opens advanced spell supplies."]
+			icon: { id: "irons_spellbooks:legendary_ink" }
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/ink_legendary", criterion: "", id: "6E26EA215AD10535" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26D4437FFD72CD"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:epic_ink", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E263A05F77D10A0"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E262E1A327F4984"
+			title: "A Book with Room to Grow"
+			description: ["Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage.", "Existing ownership advancement counts, so equipment you already earned is recognized without rebuilding it."]
+			icon: { id: "irons_spellbooks:dragonskin_spell_book" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "irons_spellbooks:irons_spellbooks/spell_book_dragon", criterion: "", id: "6E2621B8EF347DD3" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269FA270E00D9B"
+				}
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E266B43A9FCAA6B"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2630810B8C2BA4"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E26ACC7A9335CB9"
+			title: "Own the Night"
+			description: ["Unlock Vampirism's Bat advancement. Use the mobility to scout a place worth visiting with your team.", "This is the vampire branch. Hunters can leave it alone; no chapter-wide completion is required."]
+			icon: { id: "vampirism:vampire_fang" }
+			x: 3.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "vampirism:vampire/bat", criterion: "", id: "6E260E2B76C57C17" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:sprocket", count: 1 }
+					count: 2
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269689D063E0B4"
+				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 16
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26DE428D6D66C9"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E269AEB8D51E29B"
+			title: "Tools of the Hunt"
+			description: ["Reach the Hunter Technology advancement. Extend your hunting toolkit instead of repeating the starter faction checklist.", "This is the hunter branch. Vampires have their own milestones."]
+			icon: { id: "vampirism:basic_crossbow" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "vampirism:hunter/technology", criterion: "", id: "6E266282AAA983E9" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E2639D27F9E8905"
+				}
+				{
+					type: "item"
+					item: { id: "vampirism:crossbow_arrow_vampire_killer", count: 1 }
+					count: 32
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26BD6612BCBF4D"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E268AA25B24480C"
+			title: "Vampire Level 14"
+			description: ["Reach vampire level 14 through the faction progression. This is a longer-term faction goal, not an opening chore.", "Your existing level-14 advancement counts if you already earned it."]
+			icon: { id: "vampirism:altar_infusion" }
+			x: 9.0d
+			y: 3.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "vampirism:vampire/max_level", criterion: "", id: "6E26B4A0D90BBE28" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E26C06838288336"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E260765D73B6957"
+				}
+			]
+			progression_mode: "flexible"
+		}
+		{
+			id: "6E266425D5F4A5D0"
+			title: "Hunter Level 14"
+			description: ["Reach hunter level 14. Continue beyond basic hunting equipment into the faction's later progression.", "Continue your chosen role; no vampire conversion is required."]
+			icon: { id: "vampirism:weapon_table" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			shape: "circle"
+			optional: true
+			tasks: [
+				{ type: "advancement", advancement: "vampirism:hunter/max_level", criterion: "", id: "6E2699B2D3F6D44C" }
+			]
+			rewards: [
+				{
+					type: "item"
+					item: { id: "numismatics:cog", count: 1 }
+					count: 3
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E269CCC6D72D7A9"
+				}
+				{
+					type: "item"
+					item: { id: "irons_spellbooks:legendary_ink", count: 1 }
+					count: 1
+					team_reward: false
+					autoclaim: "disabled"
+					id: "6E265B1FED5D262A"
+				}
+			]
+			progression_mode: "flexible"
+		}
+	]
+}

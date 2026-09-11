@@ -1,3 +1,10 @@
+# Unreleased — dev questbook rebuild
+
+- Add 81 optional progression-aware quests across adventure, machines, magic, transport, shared places and a new supply board.
+- Credit existing advancements and installed workstations; preserve all 59 existing dev quests and their claim identities in Previous Questbook.
+- Integrate deterministic generation, full-book ID checks, exact pinned-mod evidence and economy checks into existing validation.
+- No player/world reset, mod version change, release tag or production restart. Client and two-account purchase testing remains pending.
+
 # Changelog
 
 All notable changes to the Poiesis 2 modpack will be documented in this file.

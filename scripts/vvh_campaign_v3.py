@@ -1979,7 +1979,22 @@ def _stage_outputs(root: Path, expected: dict[Path, str]) -> Path:
 
         _, catalog_errors, catalog_details = load_catalog_item_ids(root)
         stack_limits = catalog_details.get("stack_limits", {})
+        from frontier_campaign import load as load_frontier
+        frontier = load_frontier(root)
+        if frontier:
+            import shutil
+            (stage / "docs/frontier/evidence").mkdir(parents=True, exist_ok=True)
+            shutil.copy2(root / "docs/frontier/quest-source.json", stage / "docs/frontier/quest-source.json")
+            for evidence in (root / "docs/frontier/evidence").glob("*.json"):
+                shutil.copy2(evidence, stage / "docs/frontier/evidence" / evidence.name)
+            for proof in json.loads((root / "docs/frontier/evidence/pack-provenance.json").read_text()).values():
+                target = stage / proof["metadata"]
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(root / proof["metadata"], target)
         _, errors, warnings = validate_emitted_files(stage, stack_limits)
+        if frontier:
+            from frontier_validate import audit
+            errors.extend(audit(stage)["errors"])
         if catalog_errors:
             errors.extend(f"catalog: {error}" for error in catalog_errors)
         if errors:
@@ -2027,7 +2042,8 @@ def outputs(root: Path) -> dict[Path, str]:
         result[base / "chapters" / f"{chapter.filename}.snbt"] = render_chapter(chapter)
     for table in tables:
         result[base / "reward_tables" / f"{table.filename}.snbt"] = render_reward_table(table)
-    return result
+    from frontier_campaign import compose
+    return compose(root, result, snbt)
 
 
 def main() -> int:
@@ -2086,6 +2102,9 @@ def main() -> int:
             return 1
         chapter_count = len(expected_chapter_paths)
         quest_count = sum(len(chapter.quests) for chapter in build_campaign()[0])
+        from frontier_campaign import load as load_frontier
+        if frontier := load_frontier(root):
+            quest_count += len(frontier['quests'])
         print(f"campaign source is synchronized: {chapter_count} chapters, {quest_count} quests")
         return 0
 

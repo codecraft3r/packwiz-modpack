@@ -1,6 +1,10 @@
 # VvH Server Rules
 
-Status: current and mandatory for every VvH quest edit.
+Status: current and mandatory for VvH archive edits. The September 11 explicit rebuild decision below governs the new Frontier surface.
+
+## September 11 owner decision
+
+The owner requested a from-scratch engagement rebuild with balanced adventures, machines and shared projects, explicitly recognizing existing player progress. This authorizes nine new optional activity chapters alongside the preserved five-chapter archive; it supersedes the prior five-chapter-only presentation. Factions remain optional, consent and claims remain protected, and no wipe is implied. New purchases use 60-second delays and new boss/food contracts use six-hour shared cooldowns. Archive prices and cooldowns stay unchanged. Weak checkmarks issue no currency. Single-block observation may recognize existing workstations without recrafting. See `docs/frontier/README.md` for the decision, budgets, source ownership and remaining runtime checks.
 
 This document records the persistent server contract that quest content must preserve. It is a design input, not player-facing copy.
 
