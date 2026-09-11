@@ -11,7 +11,7 @@
 	quests: [
 		{
 			id: "6E261B9C11222B2A"
-			title: "Bring Back a Photograph"
+			title: "Bring Back Proof"
 			description: ["Load an Exposure camera with film and take a photograph. Try your base from below, a strange mob, or your crew before a raid.", "Existing Exposure achievement counts. The reward supplies your next photographic trip and a basic spare backpack."]
 			icon: { id: "exposure:camera" }
 			x: 0.0d
@@ -52,7 +52,7 @@
 		}
 		{
 			id: "6E26B71ED45B0179"
-			title: "Put It on the Wall"
+			title: "On the Wall"
 			description: ["Develop and print an Exposure photograph. Turn something that happened on the server into something people can revisit.", "The printing achievement is checked automatically. Hang your favorite result somewhere public."]
 			icon: { id: "exposure:photograph_frame" }
 			x: 3.0d
@@ -151,7 +151,7 @@
 		}
 		{
 			id: "6E26A5C076450596"
-			title: "Postcard from the Void"
+			title: "An End Postcard"
 			description: ["Take an Exposure photograph in the End. Aim for something worth showing: a bridge, an End city, or the group against the void.", "Exposure verifies the dimension when the photograph is taken."]
 			icon: { id: "exposure:camera" }
 			x: 0.0d
@@ -192,7 +192,7 @@
 		}
 		{
 			id: "6E26596722B417C4"
-			title: "Find the Sunken City"
+			title: "The Sunken City"
 			description: ["Use the Explorer's Compass to find a Sunken City. Scout a route, prepare for underwater travel, and locate the Leviathan encounter.", "Discovery earns its own reward. Defeating the boss is a separate goal in the Boss Board."]
 			icon: { id: "cataclysm:altar_of_abyss" }
 			x: 3.0d
@@ -225,7 +225,7 @@
 		}
 		{
 			id: "6E26C7B60D14A1C6"
-			title: "Find the Frosted Prison"
+			title: "The Frosted Prison"
 			description: ["Track down the Frosted Prison and scout the Maledictus encounter. Bring your best mobility and a retreat plan.", "An existing discovery counts, so a veteran can go directly to the boss objective."]
 			icon: { id: "minecraft:blue_ice" }
 			x: 6.0d
@@ -291,7 +291,7 @@
 		}
 		{
 			id: "6E26B609FD3DA0FD"
-			title: "Something Is Wrong Here"
+			title: "Into the Maze"
 			description: ["Explore the Cult of Azazel maze. Mark your entrance and bring somebody who enjoys getting lost with you.", "Existing maze exploration is recognized. Killing Azazel is not required for this discovery reward."]
 			icon: { id: "minecraft:crying_obsidian" }
 			x: 0.0d

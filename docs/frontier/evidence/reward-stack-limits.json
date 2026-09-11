@@ -1,0 +1,622 @@
+{
+  "schema_version": 1,
+  "kind": "reviewed_bulk_reward_stack_limits",
+  "minecraft": "1.21.1",
+  "runtime_artifact": "server-1.21.1-20240808.144430-srg.jar",
+  "runtime_sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71",
+  "single_item_policy": "Count 1 is valid for every registered nonempty item; no exact maximum is inferred for singleton-only rewards. Bulk rewards require an explicit receipt.",
+  "items": {
+    "aeronautics:white_envelope": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "dev/eriksonn/aeronautics/index/AeroBlocks",
+            "artifact": "create-aeronautics-bundled-1.21.1-1.3.1.jar!META-INF/jarjar/dev.eriksonn.aeronautics.aeronautics-neoforge-1.21.1-1.3.1.jar",
+            "sha256": "f59e484e29358e1eda02583fd58c700c1f971e108576840ce486d3c28c3521d2"
+          }
+        ],
+        "detail": "WHITE_ENVELOPE_BLOCK uses BlockBuilder.item() with tags only and ordinary BlockItem; no item properties override.",
+        "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84"
+      }
+    },
+    "computercraft:cable": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "dan200/computercraft/shared/ModRegistry$Items",
+            "artifact": "cc-tweaked-1.21.1-forge-1.120.2.jar",
+            "sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
+          },
+          {
+            "class": "dan200/computercraft/shared/peripheral/modem/wired/CableBlockItem$Cable",
+            "artifact": "cc-tweaked-1.21.1-forge-1.120.2.jar",
+            "sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
+          },
+          {
+            "class": "dan200/computercraft/shared/peripheral/modem/wired/CableBlockItem",
+            "artifact": "cc-tweaked-1.21.1-forge-1.120.2.jar",
+            "sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
+          }
+        ],
+        "detail": "Cable supplier calls properties() -> new Item.Properties(); CableBlockItem constructors forward properties to BlockItem without overrides.",
+        "parent_artifact_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f"
+      }
+    },
+    "create:andesite_alloy": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "com/simibubi/create/AllItems.class",
+        "classes": [
+          "com.simibubi.create.AllItems"
+        ],
+        "detail": "registry block field: com.simibubi.create.AllItems -> com.simibubi.create.AllItems.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "create-1.21.1-6.0.10.jar",
+        "jars": [
+          {
+            "name": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "create:copper_sheet": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "com/simibubi/create/AllItems",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "detail": "COPPER_SHEET uses taggedIngredient; builder uses ordinary Item constructor with no max-stack override.",
+        "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      }
+    },
+    "create:stock_link": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "com/simibubi/create/AllBlocks",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "detail": "AllBlocks item registration has no stack override; track uses TrackBlockItem, signal uses TrackTargetingBlockItem, stock link uses simpleItem. Custom item constructors forward properties to BlockItem.",
+        "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      }
+    },
+    "create:track": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "com/simibubi/create/AllBlocks",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          },
+          {
+            "class": "com/simibubi/create/content/trains/track/TrackBlockItem",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "detail": "AllBlocks item registration has no stack override; track uses TrackBlockItem, signal uses TrackTargetingBlockItem, stock link uses simpleItem. Custom item constructors forward properties to BlockItem.",
+        "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      }
+    },
+    "create:track_signal": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "com/simibubi/create/AllBlocks",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          },
+          {
+            "class": "com/simibubi/create/content/trains/track/TrackTargetingBlockItem",
+            "artifact": "create-1.21.1-6.0.10.jar",
+            "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+          }
+        ],
+        "detail": "AllBlocks item registration has no stack override; track uses TrackBlockItem, signal uses TrackTargetingBlockItem, stock link uses simpleItem. Custom item constructors forward properties to BlockItem.",
+        "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a"
+      }
+    },
+    "exposure:color_film": {
+      "max_stack_size": 16,
+      "evidence": {
+        "class": "io/github/mortuusars/exposure/Exposure$Items.class",
+        "classes": [
+          "io.github.mortuusars.exposure.Exposure$Items"
+        ],
+        "detail": "registry invokedynamic: io.github.mortuusars.exposure.Exposure$Items -> io/github/mortuusars/exposure/Exposure$Items.lambda$static$2 -> [(16, 'Item.Properties.stacksTo')]",
+        "jar": "exposure-neoforge-1.21.1-1.9.18.jar",
+        "jars": [
+          {
+            "name": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "exposure:photograph_frame": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "io/github/mortuusars/exposure/Exposure$Items",
+            "artifact": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          },
+          {
+            "class": "io/github/mortuusars/exposure/world/item/PhotographFrameItem",
+            "artifact": "exposure-neoforge-1.21.1-1.9.18.jar",
+            "sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+          }
+        ],
+        "detail": "Exposure.Items lambda$static$15 passes fresh Item.Properties; PhotographFrameItem forwards properties unchanged to Item.",
+        "parent_artifact_sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888"
+      }
+    },
+    "handcrafted:oak_chair": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "earth/terrarium/handcrafted/common/registry/ModItems",
+            "artifact": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+            "sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+          }
+        ],
+        "detail": "ModItems lambda$static$73 constructs ordinary BlockItem with new Item.Properties and no overrides.",
+        "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+      }
+    },
+    "handcrafted:oak_shelf": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "earth/terrarium/handcrafted/common/registry/ModItems",
+            "artifact": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+            "sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+          }
+        ],
+        "detail": "ModItems lambda$static$183 constructs ordinary BlockItem with new Item.Properties and no overrides.",
+        "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+      }
+    },
+    "handcrafted:oak_table": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "earth/terrarium/handcrafted/common/registry/ModItems",
+            "artifact": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+            "sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+          }
+        ],
+        "detail": "ModItems lambda$static$128 constructs ordinary BlockItem with new Item.Properties and no overrides.",
+        "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948"
+      }
+    },
+    "irons_spellbooks:arcane_essence": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry block field: io.redspace.ironsspellbooks.registries.ItemRegistry -> io.redspace.ironsspellbooks.registries.ItemRegistry.<registry field> has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "irons_spellbooks:common_ink": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$37 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "irons_spellbooks:epic_ink": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$40 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "irons_spellbooks:lightning_bottle": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "io/redspace/ironsspellbooks/registries/ItemRegistry",
+            "artifact": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "detail": "LIGHTNING_BOTTLE registration invokes lambda$static$71: ordinary Item, rarity(UNCOMMON) only; no stack override.",
+        "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      }
+    },
+    "irons_spellbooks:rare_ink": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "io/redspace/ironsspellbooks/registries/ItemRegistry.class",
+        "classes": [
+          "io.redspace.ironsspellbooks.registries.ItemRegistry"
+        ],
+        "detail": "registry invokedynamic: io.redspace.ironsspellbooks.registries.ItemRegistry -> io/redspace/ironsspellbooks/registries/ItemRegistry.lambda$static$39 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+        "jars": [
+          {
+            "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+            "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:barrel": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.BARREL registration and item type: max 64; default 64",
+        "field": "BARREL",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e68b690f91fc9211f4cdca7fa8bddc28a0b0c825d1a2e7056d0395597cc20d85",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:cooked_beef": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COOKED_BEEF registration and item type: max 64; default 64",
+        "field": "COOKED_BEEF",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "cc8b4807746075ecee62afa6b8acaebefdbf2894cf2136c1607ee4afba977ec5",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:copper_ingot": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.COPPER_INGOT registration and item type: max 64; default 64",
+        "field": "COPPER_INGOT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ca0ed78846c369cbf162f87c243499ca037b5187ae8c7467fba21aa025d0f1de",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:ender_pearl": {
+      "max_stack_size": 16,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "net/minecraft/world/item/Items",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          },
+          {
+            "class": "net/minecraft/core/component/DataComponents",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          }
+        ],
+        "detail": "Items registration: stacksTo(16) for pearls; default Item properties for XP bottles/prismarine crystals. DataComponents.COMMON_ITEM_COMPONENTS sets MAX_STACK_SIZE=64.",
+        "parent_artifact_sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      }
+    },
+    "minecraft:experience_bottle": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "net/minecraft/world/item/Items",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          },
+          {
+            "class": "net/minecraft/core/component/DataComponents",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          }
+        ],
+        "detail": "Items registration: stacksTo(16) for pearls; default Item properties for XP bottles/prismarine crystals. DataComponents.COMMON_ITEM_COMPONENTS sets MAX_STACK_SIZE=64.",
+        "parent_artifact_sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      }
+    },
+    "minecraft:glass": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GLASS registration and item type: max 64; default 64",
+        "field": "GLASS",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "c2ccb3b4a1a92a9e0e6a3d1fcbf46e32191efc54bacc6eed2577392b7b0917ed",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:golden_apple": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.GOLDEN_APPLE registration and item type: max 64; default 64",
+        "field": "GOLDEN_APPLE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "deed521a42cc2e17474b1384943eaa05c6fa9d563f4a35a4fd8cb34874542724",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:iron_ingot": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.IRON_INGOT registration and item type: max 64; default 64",
+        "field": "IRON_INGOT",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "96faf4fe8bce3de6e90d70a17a6e73a8aba60b989f0a274c13742c3e5652b412",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:lantern": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.LANTERN registration and item type: max 64; default 64",
+        "field": "LANTERN",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ede81d0d1c9083a2bde69aa2bfa3c8963a81115ec727c35a0f9ac2d18a350649",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:oak_log": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.OAK_LOG registration and item type: max 64; default 64",
+        "field": "OAK_LOG",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "e64c93aaae482c94035867f507730d8d8d4d1b860873b2bba6b888f5d3654796",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:paper": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.PAPER registration and item type: max 64; default 64",
+        "field": "PAPER",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "554a304a45ba170f049b9d0bc052e21db4e54df07c94e60b25aa39e8cecaf447",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:prismarine_crystals": {
+      "max_stack_size": 64,
+      "evidence": {
+        "kind": "pinned_bytecode",
+        "classes": [
+          {
+            "class": "net/minecraft/world/item/Items",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          },
+          {
+            "class": "net/minecraft/core/component/DataComponents",
+            "artifact": "server-1.21.1-20240808.144430-srg.jar",
+            "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+          }
+        ],
+        "detail": "Items registration: stacksTo(16) for pearls; default Item properties for XP bottles/prismarine crystals. DataComponents.COMMON_ITEM_COMPONENTS sets MAX_STACK_SIZE=64.",
+        "parent_artifact_sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      }
+    },
+    "minecraft:redstone": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.REDSTONE registration and item type: max 64; default 64",
+        "field": "REDSTONE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "ad60060e8d917706c07b8de5bb45283690130994e16030704b65071628de714c",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:scaffolding": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.SCAFFOLDING registration and item type: max 64; default 64",
+        "field": "SCAFFOLDING",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "6ca7269ad72b29629467cd8d7db4bb210976d8b2be5b632f14c198df751dfb91",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:stone": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.STONE registration and item type: max 64; default 64",
+        "field": "STONE",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "d375bb8c051ca8beb05cb1ba019138a9bc540b2ac8d9cc62c8a07168d5e6f908",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:target": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TARGET registration and item type: max 64; default 64",
+        "field": "TARGET",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "0b32c0e59305d47da8a4cefb03e410b67cca2201a497f033cd6cfb14aba25a0f",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "minecraft:torch": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "net/minecraft/world/item/Items.class",
+        "detail": "Items.TORCH registration and item type: max 64; default 64",
+        "field": "TORCH",
+        "jar": "C:\\Users\\Windows\\Documents\\Codex\\2026-07-10\\goa\\tmp\\vvh-campaign-server-20260823\\libraries\\net\\minecraft\\server\\1.21.1-20240808.144430\\server-1.21.1-20240808.144430-srg.jar",
+        "kind": "minecraft_mapped_runtime",
+        "registration_sha256": "52965b2bd58e7b11eb568798f7df0eb85ae4f1790a56c218260e0ecc5cb0fe0b",
+        "sha256": "26ca9c40d7e1681190b428583c38816852218e78df3f8bdb60a59a78503aec71"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "numismatics:cog": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "generated makeCoin registration: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.makeCoin has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "numismatics:sprocket": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "dev/ithundxr/createnumismatics/registry/NumismaticsItems.class",
+        "classes": [
+          "dev.ithundxr.createnumismatics.registry.NumismaticsItems"
+        ],
+        "detail": "generated makeCoin registration: dev.ithundxr.createnumismatics.registry.NumismaticsItems -> dev.ithundxr.createnumismatics.registry.NumismaticsItems.makeCoin has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+        "jars": [
+          {
+            "name": "CreateNumismatics-1.0.20+neoforge-mc1.21.1.jar",
+            "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    },
+    "vampirism:crossbow_arrow_vampire_killer": {
+      "max_stack_size": 64,
+      "evidence": {
+        "class": "de/teamlapen/vampirism/core/ModItems.class",
+        "classes": [
+          "de.teamlapen.vampirism.core.ModItems"
+        ],
+        "detail": "registry invokedynamic: de.teamlapen.vampirism.core.ModItems -> de/teamlapen/vampirism/core/ModItems.lambda$static$22 has no stack override; exact registry/factory path has no stacksTo or durability override; Item.DEFAULT_MAX_STACK_SIZE=64",
+        "jar": "Vampirism-1.21-1.10.12.jar",
+        "jars": [
+          {
+            "name": "Vampirism-1.21-1.10.12.jar",
+            "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+          }
+        ],
+        "kind": "pinned_bytecode",
+        "sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2"
+      },
+      "origin": "Existing reviewed VvH exact-artifact receipt"
+    }
+  }
+}

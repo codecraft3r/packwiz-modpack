@@ -126,39 +126,39 @@ hash = "fd7b4170b850585c008d80b4b0f505cda6f8c1f18efe419b777d616662be42c4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_00_tonight.snbt"
-hash = "61f4754e44563a9ba7eb398ea7ccd15955905e308c006aa59a4608599debe6ca"
+hash = "ca62c3b5f2bee040ec43286b47369e0bce1dca6f2e0e11c70b425b306c441d35"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_01_expeditions.snbt"
-hash = "34699b0ec0fb14b4af8a64bda38be1ab2c7bfab5b6f43f88c8e9f869506305a9"
+hash = "5958405f53931666896ac6af6071f72b4a9eb6cf91e5d84f7459145498bad64c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_02_bosses.snbt"
-hash = "b1f005fab89a35c9e6ebd2bb081317632b5d40d10c577d1c9b500004fb5a20c4"
+hash = "de1f9122bfde889d6f0cd9df05646ac21f4a3a88734bf46ec13f9e35cf68e3e1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_03_magic.snbt"
-hash = "c0de54a498cb8fa2fa889ddaaeded00596508eec0f98af8fc8ccc12f8a9f1560"
+hash = "85f5f3719a5e16894c37437722460a3ae23b652e60d3c1c7ff9e5c5df035a5fd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_04_engineering.snbt"
-hash = "abb12f883d5b2d0ef535ed6b3169d22f09de03ead7604c15cd2cbd7878199f46"
+hash = "af482ab2274fda6a2d77101b3a4d02fe651def4af782988bd69a498966317f88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_05_transport.snbt"
-hash = "57dd2cd8b4aa75a1f71d1d45138b62dc934488e605a3e53a569435b738992de7"
+hash = "586534b0f38d03da0e55cb46e228108c32d3f5d6adb3cfcaf50c5c9a9e09542f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_06_places.snbt"
-hash = "ee1a5925765e92b862abb2feaf0ca55d41228393d91fb22ac0d87e51385a06ea"
+hash = "30589129d9abe717f4d035e6a4833e3e2ffcda8404662d9ba9d4e37fd9cee77f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_07_contracts.snbt"
-hash = "b79c631a263a607653ada64caec413ca586f7b62ff982599499f6fa80221c418"
+hash = "2225e23a2c00a92d1612a81182edf513306cec149eb67c7db8dc59b07598ac12"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/frontier_08_quartermaster.snbt"
-hash = "8842fa6bdf923fc4b80e9ad871e48fd870e3ab7645e4affe25a97f0018d5f089"
+hash = "397a2569e1aa81d4a28c72252cd71a8399cdcda2324276874ba265067d7083ab"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

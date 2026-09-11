@@ -11,7 +11,7 @@
 	quests: [
 		{
 			id: "6E265455E4BA73EA"
-			title: "Your First Real Spellbook"
+			title: "A Real Spellbook"
 			description: ["Equip a spellbook. At an Inscription Table, give yourself a damage option and a spell that helps you move, survive, or support someone.", "The equipped-book advancement is the automatic check; the spell choices are yours. Existing equipment milestones count."]
 			icon: { id: "irons_spellbooks:iron_spell_book" }
 			x: 0.0d
@@ -44,7 +44,7 @@
 		}
 		{
 			id: "6E2688BDF879CCED"
-			title: "Stop Waiting for the Right Scroll"
+			title: "Choose Your Spell"
 			description: ["Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want.", "Already own the workshop achievement? Collect credit and continue. No duplicate workstation needed."]
 			icon: { id: "irons_spellbooks:scroll_forge" }
 			x: 3.0d
@@ -151,7 +151,7 @@
 		}
 		{
 			id: "6E262E1A327F4984"
-			title: "A Book with Room to Grow"
+			title: "Room for More"
 			description: ["Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage.", "Existing ownership advancement counts, so equipment you already earned is recognized without rebuilding it."]
 			icon: { id: "irons_spellbooks:dragonskin_spell_book" }
 			x: 0.0d
@@ -226,7 +226,7 @@
 		{
 			id: "6E269AEB8D51E29B"
 			title: "Tools of the Hunt"
-			description: ["Reach the Hunter Technology advancement. Extend your hunting toolkit instead of repeating the starter faction checklist.", "This is the hunter branch. Vampires have their own milestones."]
+			description: ["Earn Hunter Technology by obtaining both the Basic Tech Crossbow and the Enhanced Tech Crossbow as a hunter. Previously earned credit counts.", "This is the hunter branch. Vampires have their own milestones."]
 			icon: { id: "vampirism:basic_crossbow" }
 			x: 6.0d
 			y: 3.0d

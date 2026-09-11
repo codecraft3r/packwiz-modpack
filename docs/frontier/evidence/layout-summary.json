@@ -1,6 +1,6 @@
 {
   "evidence_type": "source geometry only; not a Minecraft client screenshot",
-  "manifest_sha256": "cfa457eb79b6837f08ec3d846ac84cf9871e8e87bf33cb2eb3143b6a7fd1242b",
+  "manifest_sha256": "dd9706d36f4c678fed4aee401003e829c47d4c0fd1ea95ee7fee386ec35e1e9a",
   "chapters": {
     "frontier_00_tonight": {
       "node_overlaps": 0,
@@ -56,10 +56,5 @@
       "visible_edge_crossings": 0,
       "review_label_clipping": 0
     }
-  },
-  "limitations": [
-    "No texture archives supplied to this diagnostic; icon rendering is not established.",
-    "Cross-chapter dependencies are checked by the full-book audit, not the individual chapter render.",
-    "Client wrapping, task completion and reward claims remain pending."
-  ]
+  }
 }

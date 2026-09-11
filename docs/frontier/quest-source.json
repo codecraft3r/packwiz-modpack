@@ -68,12 +68,13 @@
     {
       "key": "welcome",
       "chapter": "00_tonight",
-      "title": "Your Next Good Evening",
+      "title": "Your Next Adventure",
       "icon": "numismatics:cog",
       "description": [
-        "Choose one adventure, one invention, or one place you want to make. Every route is open from the start.",
+        "Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress.",
         "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.",
-        "Mission coins are personal rewards for each teammate. Supply orders are one shared parcel. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."
+        "Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group.",
+        "Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."
       ],
       "tasks": [
         {
@@ -103,7 +104,7 @@
     {
       "key": "field_test",
       "chapter": "00_tonight",
-      "title": "A Short Trip with Teeth",
+      "title": "A Short Fight",
       "icon": "minecraft:shield",
       "description": [
         "New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons.",
@@ -170,7 +171,7 @@
     {
       "key": "enchanting_access",
       "chapter": "00_tonight",
-      "title": "Use the Good Tools",
+      "title": "The Enchanting Workshop",
       "icon": "enchantinginfuser:enchanting_infuser",
       "description": [
         "Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate.",
@@ -216,7 +217,7 @@
     {
       "key": "first_photo",
       "chapter": "01_expeditions",
-      "title": "Bring Back a Photograph",
+      "title": "Bring Back Proof",
       "icon": "exposure:camera",
       "description": [
         "Load an Exposure camera with film and take a photograph. Try your base from below, a strange mob, or your crew before a raid.",
@@ -271,7 +272,7 @@
     {
       "key": "printed_photo",
       "chapter": "01_expeditions",
-      "title": "Put It on the Wall",
+      "title": "On the Wall",
       "icon": "exposure:photograph_frame",
       "description": [
         "Develop and print an Exposure photograph. Turn something that happened on the server into something people can revisit.",
@@ -406,7 +407,7 @@
     {
       "key": "end_photograph",
       "chapter": "01_expeditions",
-      "title": "Postcard from the Void",
+      "title": "An End Postcard",
       "icon": "exposure:camera",
       "description": [
         "Take an Exposure photograph in the End. Aim for something worth showing: a bridge, an End city, or the group against the void.",
@@ -461,7 +462,7 @@
     {
       "key": "sunken_city",
       "chapter": "01_expeditions",
-      "title": "Find the Sunken City",
+      "title": "The Sunken City",
       "icon": "cataclysm:altar_of_abyss",
       "description": [
         "Use the Explorer's Compass to find a Sunken City. Scout a route, prepare for underwater travel, and locate the Leviathan encounter.",
@@ -506,7 +507,7 @@
     {
       "key": "frosted_prison",
       "chapter": "01_expeditions",
-      "title": "Find the Frosted Prison",
+      "title": "The Frosted Prison",
       "icon": "minecraft:blue_ice",
       "description": [
         "Track down the Frosted Prison and scout the Maledictus encounter. Bring your best mobility and a retreat plan.",
@@ -596,7 +597,7 @@
     {
       "key": "azazel_maze",
       "chapter": "01_expeditions",
-      "title": "Something Is Wrong Here",
+      "title": "Into the Maze",
       "icon": "minecraft:crying_obsidian",
       "description": [
         "Explore the Cult of Azazel maze. Mark your entrance and bring somebody who enjoys getting lost with you.",
@@ -645,7 +646,7 @@
       "icon": "block_factorys_bosses:undying_tentacle",
       "description": [
         "Take a boat or airship to the fight and make a plan for staying together.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -690,7 +691,7 @@
       "icon": "block_factorys_bosses:knight_sword",
       "description": [
         "A good next target for a newly equipped fighter. Learn the openings instead of trading every hit.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -735,7 +736,7 @@
       "icon": "minecraft:dragon_breath",
       "description": [
         "A separate encounter from the Ender Dragon. Bring fire preparation and ranged options.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -790,7 +791,7 @@
       "icon": "block_factorys_bosses:sandworm_gauntlet",
       "description": [
         "Turn a desert expedition into a proper boss hunt.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -835,7 +836,7 @@
       "icon": "cataclysm:ignitium_ingot",
       "description": [
         "Coordinate your opening and recovery windows. Your existing Ignis victory already earns this credit.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -879,8 +880,8 @@
       "title": "The Harbinger",
       "icon": "cataclysm:witherite_ingot",
       "description": [
-        "Take on the factory encounter. Use the rewards to improve a loadout, not to replace the fight with a free boss drop.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Take on the factory encounter. Spend the reward on the next improvement to your loadout.",
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -925,7 +926,7 @@
       "icon": "cataclysm:ancient_metal_ingot",
       "description": [
         "The desert raid continues inside the Cursed Pyramid. A previous win counts.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -970,7 +971,7 @@
       "icon": "cataclysm:gauntlet_of_guard",
       "description": [
         "A destination beyond simply reaching the End. Existing victories count.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1015,7 +1016,7 @@
       "icon": "minecraft:netherite_scrap",
       "description": [
         "A fresh heavyweight target for the group. Prepare the arena approach before starting the encounter.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1060,7 +1061,7 @@
       "icon": "cataclysm:altar_of_abyss",
       "description": [
         "Your sea expedition culminates here. Bring a loadout designed for the environment.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1105,7 +1106,7 @@
       "icon": "minecraft:echo_shard",
       "description": [
         "A new challenge for players who already cleared Ignis and the Harbinger.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1150,7 +1151,7 @@
       "icon": "minecraft:lightning_rod",
       "description": [
         "The Acropolis raid is a reason to finish that airship, test a spell build, and gather the crew.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1195,7 +1196,7 @@
       "icon": "minecraft:nautilus_shell",
       "description": [
         "Another untouched Cataclysm encounter. Use the in-game guide and Explorer's Compass to plan the expedition.",
-        "Verified by the boss advancement. An existing victory is credited. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
       ],
       "tasks": [
         {
@@ -1239,8 +1240,8 @@
       "title": "Azazel's Relic",
       "icon": "minecraft:nether_star",
       "description": [
-        "Follow the Cult of Azazel progression to its Manipulator Stick relic. The native advancement checks possession of the relic, not a recorded kill.",
-        "Verified by the native relic advancement; prior ownership counts. The reward is available once per teammate. Repeat fights for income live in Crew Contracts."
+        "Follow the Cult of Azazel progression to its Manipulator Stick relic. Possessing the relic earns this milestone; a kill alone does not.",
+        "Previously earned the relic advancement? Your team can claim the reward once per teammate."
       ],
       "tasks": [
         {
@@ -1281,7 +1282,7 @@
     {
       "key": "book_ready",
       "chapter": "03_magic",
-      "title": "Your First Real Spellbook",
+      "title": "A Real Spellbook",
       "icon": "irons_spellbooks:iron_spell_book",
       "description": [
         "Equip a spellbook. At an Inscription Table, give yourself a damage option and a spell that helps you move, survive, or support someone.",
@@ -1326,7 +1327,7 @@
     {
       "key": "scroll_workshop",
       "chapter": "03_magic",
-      "title": "Stop Waiting for the Right Scroll",
+      "title": "Choose Your Spell",
       "icon": "irons_spellbooks:scroll_forge",
       "description": [
         "Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want.",
@@ -1471,7 +1472,7 @@
     {
       "key": "dragon_book",
       "chapter": "03_magic",
-      "title": "A Book with Room to Grow",
+      "title": "Room for More",
       "icon": "irons_spellbooks:dragonskin_spell_book",
       "description": [
         "Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage.",
@@ -1574,7 +1575,7 @@
       "title": "Tools of the Hunt",
       "icon": "vampirism:basic_crossbow",
       "description": [
-        "Reach the Hunter Technology advancement. Extend your hunting toolkit instead of repeating the starter faction checklist.",
+        "Earn Hunter Technology by obtaining both the Basic Tech Crossbow and the Enhanced Tech Crossbow as a hunter. Previously earned credit counts.",
         "This is the hunter branch. Vampires have their own milestones."
       ],
       "tasks": [
@@ -1710,7 +1711,7 @@
       "icon": "create:brass_ingot",
       "description": [
         "Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1755,7 +1756,7 @@
       "icon": "create:precision_mechanism",
       "description": [
         "Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1800,7 +1801,7 @@
       "icon": "create:steam_engine",
       "description": [
         "Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1841,11 +1842,11 @@
     {
       "key": "factory",
       "chapter": "04_engineering",
-      "title": "The Factory You Already Built",
+      "title": "Your Working Factory",
       "icon": "mekanism:basic_tier_installer",
       "description": [
         "Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1890,7 +1891,7 @@
       "icon": "mekanism:digital_miner",
       "description": [
         "Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1931,11 +1932,11 @@
     {
       "key": "gas_power",
       "chapter": "04_engineering",
-      "title": "Feed the Power Plant",
+      "title": "Feed the Plant",
       "icon": "mekanismgenerators:gas_burning_generator",
       "description": [
         "Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -1976,11 +1977,11 @@
     {
       "key": "automatic_crafting",
       "chapter": "04_engineering",
-      "title": "Build a Repeatable Production Line",
+      "title": "Automate the Essentials",
       "icon": "mekanism:formulaic_assemblicator",
       "description": [
-        "Reach automated crafting. Pick something the group actually keeps running out of, then automate that recipe.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Obtain a Formulaic Assemblicator to earn Automated Crafting. Then choose something the group keeps running out of and set up its recipe.",
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -2006,7 +2007,7 @@
             "id": "create:andesite_alloy",
             "count": 1
           },
-          "count": 32,
+          "count": 64,
           "team_reward": false,
           "autoclaim": "disabled"
         }
@@ -2021,11 +2022,12 @@
     {
       "key": "portable_qio",
       "chapter": "04_engineering",
-      "title": "Put the Warehouse in Your Pocket",
+      "title": "The Pocket Warehouse",
       "icon": "mekanism:portable_qio_dashboard",
       "description": [
         "Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it.",
+        "The Mending book helps preserve a favorite tool while you work on the storage network."
       ],
       "tasks": [
         {
@@ -2048,10 +2050,17 @@
         {
           "type": "item",
           "item": {
-            "id": "minecraft:experience_bottle",
-            "count": 1
+            "id": "minecraft:enchanted_book",
+            "count": 1,
+            "components": {
+              "minecraft:stored_enchantments": {
+                "levels": {
+                  "minecraft:mending": 1
+                }
+              }
+            }
           },
-          "count": 32,
+          "count": 1,
           "team_reward": false,
           "autoclaim": "disabled"
         }
@@ -2066,11 +2075,11 @@
     {
       "key": "steam_max",
       "chapter": "04_engineering",
-      "title": "Make the Boiler Earn Its Space",
+      "title": "Maximum Steam",
       "icon": "create:steam_engine",
       "description": [
         "Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup.",
-        "The native advancement is checked automatically and gives credit for prior progress."
+        "Already earned the advancement? Collect your reward; no need to repeat it."
       ],
       "tasks": [
         {
@@ -2121,7 +2130,7 @@
     {
       "key": "powah_energizing",
       "chapter": "04_engineering",
-      "title": "Try a Different Power Chain",
+      "title": "Blazing Power",
       "icon": "powah:energizing_orb",
       "description": [
         "Build or visit an Energizing Orb and produce a Blazing Crystal. This opens Powah as an alternative project.",
@@ -2176,7 +2185,7 @@
     {
       "key": "powergrid_motor",
       "chapter": "04_engineering",
-      "title": "Power You Can Wire by Hand",
+      "title": "Wire a Motor",
       "icon": "powergrid:electric_motor",
       "description": [
         "Build a Power Grid electric motor and connect it to a small useful mechanism.",
@@ -2222,7 +2231,7 @@
     {
       "key": "crew_dashboard",
       "chapter": "04_engineering",
-      "title": "Give the Crew a Control Panel",
+      "title": "A Crew Dashboard",
       "icon": "computercraft:computer_advanced",
       "description": [
         "Install an advanced ComputerCraft computer and a monitor for a shared machine, route board, or ship dashboard.",
@@ -2336,7 +2345,7 @@
     {
       "key": "propulsion",
       "chapter": "05_transport",
-      "title": "Give It Lift and Thrust",
+      "title": "Lift and Thrust",
       "icon": "aeronautics:andesite_propeller",
       "description": [
         "Bring together a Hot Air Burner, a Propeller Bearing, and a Steering Wheel. Parts already owned count and are not consumed.",
@@ -2401,41 +2410,6 @@
       "shared": false
     },
     {
-      "key": "flight_test",
-      "chapter": "05_transport",
-      "title": "A Ferry Worth Using",
-      "icon": "simulated:steering_wheel",
-      "description": [
-        "Fly a working craft from a dock with a teammate aboard, travel at least 500 blocks, then land intact at a second landing place.",
-        "Crew-confirmed challenge: the passenger confirms the trip before you tick it. One completion per team; one shared reward.",
-        "The point is a usable ferry, not a larger machine for its own sake."
-      ],
-      "tasks": [
-        {
-          "type": "checkmark",
-          "_title": "Our crew completed the flight and landing"
-        }
-      ],
-      "rewards": [
-        {
-          "type": "item",
-          "item": {
-            "id": "aeronautics:white_envelope",
-            "count": 1
-          },
-          "count": 64,
-          "team_reward": true,
-          "autoclaim": "disabled"
-        }
-      ],
-      "coins": 0,
-      "deps": [],
-      "kind": "crew_confirmed",
-      "tier": "frontier",
-      "repeat": 0,
-      "shared": true
-    },
-    {
       "key": "first_train",
       "chapter": "05_transport",
       "title": "All Aboard",
@@ -2493,7 +2467,7 @@
     {
       "key": "train_travel",
       "chapter": "05_transport",
-      "title": "Make the Railway Useful",
+      "title": "A Useful Railway",
       "icon": "create:green_seat",
       "description": [
         "Complete Create's Long Travel advancement with a train journey. Check the native advancement for its exact distance requirement.",
@@ -2536,9 +2510,47 @@
       "shared": false
     },
     {
+      "key": "flight_test",
+      "chapter": "05_transport",
+      "title": "The First Ferry",
+      "icon": "simulated:steering_wheel",
+      "description": [
+        "Fly a working craft from a dock with a teammate aboard, travel at least 500 blocks, then land intact at a second landing place.",
+        "Crew-confirmed challenge: the passenger confirms the trip before you tick it. One completion per team; one shared reward.",
+        "First complete the flight-workshop and propulsion milestones. Keep the route available for another passenger, with clearly marked docks and permission to land."
+      ],
+      "tasks": [
+        {
+          "type": "checkmark",
+          "_title": "Our crew completed the flight and landing"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": {
+            "id": "aeronautics:white_envelope",
+            "count": 1
+          },
+          "count": 16,
+          "team_reward": true,
+          "autoclaim": "disabled"
+        }
+      ],
+      "coins": 0,
+      "deps": [
+        "airframe",
+        "propulsion"
+      ],
+      "kind": "crew_confirmed",
+      "tier": "frontier",
+      "repeat": 0,
+      "shared": true
+    },
+    {
       "key": "freight",
       "chapter": "05_transport",
-      "title": "Send Something Someone Needs",
+      "title": "Freight That Matters",
       "icon": "create:packager",
       "description": [
         "Reach both Packager and Stock Ticker milestones. Use the system to move a useful supply between a workshop and a destination.",
@@ -2588,7 +2600,7 @@
     {
       "key": "personal_wings",
       "chapter": "05_transport",
-      "title": "Wings from Your Workshop",
+      "title": "Workshop Wings",
       "icon": "icarus:white_feathered_wings",
       "description": [
         "Obtain the pack's White Feathered Wings using its custom industrial recipe. The required HDPE Elytra connects this project to Mekanism.",
@@ -2644,7 +2656,7 @@
     {
       "key": "charted_road",
       "chapter": "05_transport",
-      "title": "A Road People Can Follow",
+      "title": "A Road Home",
       "icon": "via_romana:charting_map",
       "description": [
         "Use Via Romana to connect the world and earn its first road-charting advancement.",
@@ -2689,7 +2701,7 @@
     {
       "key": "feast",
       "chapter": "06_places",
-      "title": "Dinner Is a Server Event",
+      "title": "Dinner Together",
       "icon": "farmersdelight:cooking_pot",
       "description": [
         "Place a Farmer's Delight feast and invite the crew. The native feast-placement advancement is the automatic check.",
@@ -2744,7 +2756,7 @@
     {
       "key": "photo_portrait",
       "chapter": "06_places",
-      "title": "The Crew and the Pets",
+      "title": "Crew and Companions",
       "icon": "exposure:camera_stand",
       "description": [
         "Earn Exposure's Family Portrait: use a camera on a stand to capture a player, a tamed cat, and a tamed wolf in the frame.",
@@ -2799,11 +2811,12 @@
     {
       "key": "friend",
       "chapter": "06_places",
-      "title": "A Neighbor with a Name",
+      "title": "A Familiar Face",
       "icon": "minecraft:emerald",
       "description": [
         "Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine.",
-        "Existing friendship credit counts. This does not require marriage or a particular roleplay choice."
+        "Existing friendship credit counts. This does not require marriage or a particular roleplay choice.",
+        "Use the chairs to make a place to sit with the neighbors you have met."
       ],
       "tasks": [
         {
@@ -2826,7 +2839,7 @@
         {
           "type": "item",
           "item": {
-            "id": "mca:bouquet",
+            "id": "handcrafted:oak_chair",
             "count": 1
           },
           "count": 4,
@@ -2844,7 +2857,7 @@
     {
       "key": "palette",
       "chapter": "06_places",
-      "title": "A Better Building Palette",
+      "title": "A Better Palette",
       "icon": "chipped:mason_table",
       "description": [
         "Set up a Chipped Mason Table and Carpenter's Table. Inspect the placed workstations; a shared existing workshop counts.",
@@ -2906,7 +2919,7 @@
     {
       "key": "market_stall",
       "chapter": "06_places",
-      "title": "Open a Real Stall",
+      "title": "Open a Stall",
       "icon": "numismatics:vendor",
       "description": [
         "Place and inspect a Numismatics Vendor. Stock a useful offer and set a price someone might pay.",
@@ -2962,7 +2975,7 @@
     {
       "key": "shop_sale",
       "chapter": "06_places",
-      "title": "Your First Create Shop",
+      "title": "Your Create Shop",
       "icon": "create:red_table_cloth",
       "description": [
         "Earn Create's Table Cloth Shop advancement. Follow the in-game advancement and Ponder instructions for the actual shop interaction.",
@@ -3007,7 +3020,7 @@
     {
       "key": "cinema",
       "chapter": "06_places",
-      "title": "A Place to Show the Journey",
+      "title": "Show the Journey",
       "icon": "vista:television",
       "description": [
         "Install a Vista television and obtain a viewfinder. Capture something from the server you want other people to see.",
@@ -3092,7 +3105,7 @@
     {
       "key": "guesthouse",
       "chapter": "06_places",
-      "title": "Someone Can Stay Here",
+      "title": "A Welcome Guest",
       "icon": "handcrafted:oak_table",
       "description": [
         "Finish a guest space with a bed or coffin appropriate for the guest, storage, lighting, and a clearly marked entrance. Invite a player outside your usual building crew to try it.",
@@ -3136,10 +3149,10 @@
     {
       "key": "range",
       "chapter": "06_places",
-      "title": "Build a Place to Test the Big Ideas",
+      "title": "The Testing Grounds",
       "icon": "createbigcannons:cannon_carriage",
       "description": [
-        "Build a marked cannon or spell-testing range away from other people's structures. Run a demonstration for one other player and repair the target area afterward.",
+        "With permission to use the site, build a marked cannon or spell-testing range away from other people’s structures and claims. Demonstrate it for a willing spectator outside the firing area, then repair the target area.",
         "Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."
       ],
       "tasks": [
@@ -3183,7 +3196,7 @@
       "title": "Catacombs Rematch",
       "icon": "irons_spellbooks:rotten_spell_book",
       "description": [
-        "Defeat a Dead King after taking this contract. This is fresh combat, so old kill statistics do not complete it.",
+        "Once the Catacombs milestone unlocks this contract, defeat a Dead King. Kills while the contract is available count automatically; old kills do not.",
         "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."
       ],
       "tasks": [
@@ -3227,10 +3240,10 @@
     {
       "key": "ignis_contract",
       "chapter": "07_contracts",
-      "title": "Return to the Burning Arena",
+      "title": "Burning Arena Rematch",
       "icon": "cataclysm:burning_ashes",
       "description": [
-        "Defeat Ignis again. The first-victory milestone and this fresh-kill contract are separate.",
+        "Once the Ignis milestone unlocks this contract, defeat Ignis while the contract is available. Old kills do not count; no manual acceptance is needed.",
         "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."
       ],
       "tasks": [
@@ -3324,8 +3337,8 @@
       "title": "Supply the Galley",
       "icon": "farmersdelight:beef_stew",
       "description": [
-        "Submit eight Beef Stews and eight Vegetable Soups for an expedition galley. The submitted meals are consumed.",
-        "One shared 32-Spur payment, with a six-hour repeat cooldown. Pack the meals for your next crew departure."
+        "After earning Dinner Together, submit eight Beef Stews and eight Vegetable Soups here. Submission consumes the meals; it does not put them in a shared chest.",
+        "One shared payment of 32 Spurs and 16 Bottles o’ Enchanting for equipment repairs or anvil work. Claim both rewards to start the six-hour cooldown. Cook an extra batch if you also want meals for the crew."
       ],
       "tasks": [
         {
@@ -3359,10 +3372,22 @@
           "count": 2,
           "team_reward": true,
           "autoclaim": "disabled"
+        },
+        {
+          "type": "item",
+          "item": {
+            "id": "minecraft:experience_bottle",
+            "count": 1
+          },
+          "count": 16,
+          "team_reward": true,
+          "autoclaim": "disabled"
         }
       ],
       "coins": 32,
-      "deps": [],
+      "deps": [
+        "feast"
+      ],
       "kind": "contract",
       "tier": "entry",
       "repeat": 21600,
@@ -3684,7 +3709,7 @@
     {
       "key": "shop_film",
       "chapter": "08_quartermaster",
-      "title": "Another Roll of Film",
+      "title": "More Film",
       "icon": "exposure:color_film",
       "description": [
         "Supplies for recording the next adventure. No need to wait for a photography quest to repeat.",
@@ -3952,7 +3977,7 @@
     {
       "key": "shop_epic",
       "chapter": "08_quartermaster",
-      "title": "A More Ambitious Spell",
+      "title": "Advanced Spell Supplies",
       "icon": "irons_spellbooks:epic_ink",
       "description": [
         "An advanced spell-crafting supply order after your team reaches Legendary Ink.",
@@ -4005,7 +4030,7 @@
     {
       "key": "shop_mending",
       "chapter": "08_quartermaster",
-      "title": "Keep Your Favorite Tool",
+      "title": "Keep Your Favorite",
       "icon": "minecraft:enchanted_book",
       "description": [
         "One Mending book. Invest in something you use instead of receiving another disposable weapon.",
@@ -4053,10 +4078,10 @@
     {
       "key": "shop_fortune",
       "chapter": "08_quartermaster",
-      "title": "Make the Next Mining Trip Count",
+      "title": "Fortune for Mining",
       "icon": "minecraft:enchanted_book",
       "description": [
-        "One Fortune III book. The group already has diamonds; this is an optional convenience for another miner.",
+        "One Fortune III book for a tool you want to keep using. Apply it at an anvil before your next mining trip.",
         "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
         "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
       ],
@@ -4187,10 +4212,10 @@
     {
       "key": "shop_legendary",
       "chapter": "08_quartermaster",
-      "title": "Write the Signature Spell",
+      "title": "Your Signature Spell",
       "icon": "irons_spellbooks:legendary_ink",
       "description": [
-        "One Legendary Ink for a specific spell project. This does not grant a completed boss spellbook or a boss weapon.",
+        "One Legendary Ink for your next spell, available after the Legendary Ink milestone.",
         "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.",
         "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
       ],

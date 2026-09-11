@@ -17,6 +17,10 @@ class FrontierCampaignTests(unittest.TestCase):
         temp = tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup)
         root = Path(temp.name)
         shutil.copytree(ROOT / 'docs/frontier', root / 'docs/frontier')
+        overrides = json.loads((root / 'docs/frontier/evidence/survival-paths.json').read_text())['pack_overrides']
+        for relative in overrides:
+            target = root / relative;target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT / relative, target)
         proofs = json.loads((root / 'docs/frontier/evidence/pack-provenance.json').read_text())
         for proof in proofs.values():
             target = root / proof['metadata'];target.parent.mkdir(exist_ok=True)
@@ -66,5 +70,68 @@ class FrontierCampaignTests(unittest.TestCase):
                     self.assertFalse(q.get('dependencies'))
                     self.assertEqual(q['progression_mode'],'flexible')
                     self.assertTrue(all(t['criterion']=='' for t in q['tasks']))
+
+    def change_quest(self, root, key, change):
+        path = root / frontier.SOURCE_REL
+        manifest = json.loads(path.read_text())
+        change(next(q for q in manifest['quests'] if q['key'] == key))
+        path.write_text(json.dumps(manifest))
+        for path, content in source.outputs(root).items():
+            path.write_text(content)
+
+    def test_bulk_rewards_use_actual_limits_not_a_blanket_64(self):
+        for key, item, count in [('first_photo', 'exposure:color_film', 17),
+                                 ('cinema', 'vista:hollow_cassette', 2)]:
+            with self.subTest(item=item):
+                root = self.fixture()
+                def change(q):
+                    next(r for r in q['rewards'] if r['item']['id'] == item)['count'] = count
+                self.change_quest(root, key, change)
+                self.assertTrue(any('exceeds verified stack limit' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_missing_bulk_receipt_fails_closed(self):
+        root = self.fixture();path = root / 'docs/frontier/evidence/reward-stack-limits.json'
+        receipt = json.loads(path.read_text());del receipt['items']['exposure:color_film']
+        path.write_text(json.dumps(receipt))
+        self.assertTrue(any('exceeds verified stack limit' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_missing_survival_path_fails_closed(self):
+        root = self.fixture();path = root / 'docs/frontier/evidence/survival-paths.json'
+        receipt = json.loads(path.read_text());del receipt['items']['vista:hollow_cassette']
+        path.write_text(json.dumps(receipt))
+        self.assertTrue(any('missing survival obtainability' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_recipe_override_changes_invalidate_the_receipt(self):
+        root = self.fixture();path = root / 'kubejs/server_scripts/crafting.js'
+        path.write_text(path.read_text()+'\n// changed recipe needs renewed evidence\n')
+        self.assertTrue(any('survival recipe evidence is stale' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_purchases_cannot_become_free_inventory_checks(self):
+        root = self.fixture()
+        self.change_quest(root, 'shop_mending', lambda q: q['tasks'][0].update(consume_items=False))
+        self.assertTrue(any('positive manual coin payment' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_price_copy_must_match_payment(self):
+        root = self.fixture()
+        self.change_quest(root, 'shop_mending', lambda q: q['description'].__setitem__(1, 'Price: 16 Spurs.'))
+        self.assertTrue(any('advertised price differs' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_repeat_income_requires_progress_and_fresh_work(self):
+        for change, message in [(lambda q: q.update(deps=[]), 'one-time progression gate'),
+                                (lambda q: q['tasks'][0].update(consume_items=False), 'fresh work or consumed inputs')]:
+            with self.subTest(message=message):
+                root = self.fixture();self.change_quest(root, 'galley_contract', change)
+                self.assertTrue(any(message in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_milestones_cannot_become_repeatable_faucets(self):
+        root = self.fixture();self.change_quest(root, 'brass', lambda q: q.update(repeat=60))
+        self.assertTrue(any('one-time reward made repeatable' in e for e in frontier_validate.audit(root)['errors']))
+
+    def test_enchanted_book_cannot_gain_illegal_levels(self):
+        root = self.fixture()
+        def change(q):
+            q['rewards'][0]['item']['components']['minecraft:stored_enchantments']['levels']['minecraft:mending'] = 10
+        self.change_quest(root, 'shop_mending', change)
+        self.assertTrue(any('invalid enchanted-book component' in e for e in frontier_validate.audit(root)['errors']))
 
 if __name__ == '__main__':unittest.main()

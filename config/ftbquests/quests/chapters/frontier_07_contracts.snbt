@@ -12,7 +12,7 @@
 		{
 			id: "6E26B7F1F0811EDE"
 			title: "Catacombs Rematch"
-			description: ["Defeat a Dead King after taking this contract. This is fresh combat, so old kill statistics do not complete it.", "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."]
+			description: ["Once the Catacombs milestone unlocks this contract, defeat a Dead King. Kills while the contract is available count automatically; old kills do not.", "One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."]
 			icon: { id: "irons_spellbooks:rotten_spell_book" }
 			x: 0.0d
 			y: 0.0d
@@ -47,8 +47,8 @@
 		}
 		{
 			id: "6E26EB32F87A5BEC"
-			title: "Return to the Burning Arena"
-			description: ["Defeat Ignis again. The first-victory milestone and this fresh-kill contract are separate.", "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."]
+			title: "Burning Arena Rematch"
+			description: ["Once the Ignis milestone unlocks this contract, defeat Ignis while the contract is available. Old kills do not count; no manual acceptance is needed.", "One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."]
 			icon: { id: "cataclysm:burning_ashes" }
 			x: 3.0d
 			y: 0.0d
@@ -120,7 +120,7 @@
 		{
 			id: "6E26E9073FF8C06B"
 			title: "Supply the Galley"
-			description: ["Submit eight Beef Stews and eight Vegetable Soups for an expedition galley. The submitted meals are consumed.", "One shared 32-Spur payment, with a six-hour repeat cooldown. Pack the meals for your next crew departure."]
+			description: ["After earning Dinner Together, submit eight Beef Stews and eight Vegetable Soups here. Submission consumes the meals; it does not put them in a shared chest.", "One shared payment of 32 Spurs and 16 Bottles o’ Enchanting for equipment repairs or anvil work. Claim both rewards to start the six-hour cooldown. Cook an extra batch if you also want meals for the crew."]
 			icon: { id: "farmersdelight:beef_stew" }
 			x: 9.0d
 			y: 0.0d
@@ -154,8 +154,17 @@
 					autoclaim: "disabled"
 					id: "6E2632AE3AD51D8E"
 				}
+				{
+					type: "item"
+					item: { id: "minecraft:experience_bottle", count: 1 }
+					count: 16
+					team_reward: true
+					autoclaim: "disabled"
+					id: "6E268785265B4AFB"
+				}
 			]
 			progression_mode: "linear"
+			dependencies: ["6E26C44B5FC97883"]
 			can_repeat: true
 			repeat_cooldown: 21600
 		}

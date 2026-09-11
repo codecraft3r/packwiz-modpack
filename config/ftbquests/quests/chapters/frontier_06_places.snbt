@@ -11,7 +11,7 @@
 	quests: [
 		{
 			id: "6E26C44B5FC97883"
-			title: "Dinner Is a Server Event"
+			title: "Dinner Together"
 			description: ["Place a Farmer's Delight feast and invite the crew. The native feast-placement advancement is the automatic check.", "Make the meal a reason to gather before or after an expedition. Vampires can bring something suitable for themselves."]
 			icon: { id: "farmersdelight:cooking_pot" }
 			x: 0.0d
@@ -52,7 +52,7 @@
 		}
 		{
 			id: "6E26C8E1466128A7"
-			title: "The Crew and the Pets"
+			title: "Crew and Companions"
 			description: ["Earn Exposure's Family Portrait: use a camera on a stand to capture a player, a tamed cat, and a tamed wolf in the frame.", "The real Exposure advancement verifies the photograph. You keep the picture."]
 			icon: { id: "exposure:camera_stand" }
 			x: 3.0d
@@ -93,8 +93,8 @@
 		}
 		{
 			id: "6E2674666E4FF474"
-			title: "A Neighbor with a Name"
-			description: ["Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine.", "Existing friendship credit counts. This does not require marriage or a particular roleplay choice."]
+			title: "A Familiar Face"
+			description: ["Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine.", "Existing friendship credit counts. This does not require marriage or a particular roleplay choice.", "Use the chairs to make a place to sit with the neighbors you have met."]
 			icon: { id: "minecraft:emerald" }
 			x: 6.0d
 			y: 0.0d
@@ -115,7 +115,7 @@
 				}
 				{
 					type: "item"
-					item: { id: "mca:bouquet", count: 1 }
+					item: { id: "handcrafted:oak_chair", count: 1 }
 					count: 4
 					team_reward: false
 					autoclaim: "disabled"
@@ -126,7 +126,7 @@
 		}
 		{
 			id: "6E26E83442EC8F5A"
-			title: "A Better Building Palette"
+			title: "A Better Palette"
 			description: ["Set up a Chipped Mason Table and Carpenter's Table. Inspect the placed workstations; a shared existing workshop counts.", "Use them to choose a palette for a build you want to finish. The reward supplies a small project without rewarding a stone-mining grind."]
 			icon: { id: "chipped:mason_table" }
 			x: 9.0d
@@ -180,7 +180,7 @@
 		}
 		{
 			id: "6E26ECCABBC759DF"
-			title: "Open a Real Stall"
+			title: "Open a Stall"
 			description: ["Place and inspect a Numismatics Vendor. Stock a useful offer and set a price someone might pay.", "The automatic check proves a vendor is installed; it does not claim a sale happened. Invite another player to test it."]
 			icon: { id: "numismatics:vendor" }
 			x: 0.0d
@@ -227,7 +227,7 @@
 		}
 		{
 			id: "6E2614A8A7306DA3"
-			title: "Your First Create Shop"
+			title: "Your Create Shop"
 			description: ["Earn Create's Table Cloth Shop advancement. Follow the in-game advancement and Ponder instructions for the actual shop interaction.", "This opens a different trading route from Numismatics Vendors. Existing progress counts."]
 			icon: { id: "create:red_table_cloth" }
 			x: 3.0d
@@ -260,7 +260,7 @@
 		}
 		{
 			id: "6E2641C2297AFB51"
-			title: "A Place to Show the Journey"
+			title: "Show the Journey"
 			description: ["Install a Vista television and obtain a viewfinder. Capture something from the server you want other people to see.", "The checks verify the equipment, not the contents of a recording. Make a small viewing area instead of leaving the screen in a chest."]
 			icon: { id: "vista:television" }
 			x: 6.0d
@@ -330,7 +330,7 @@
 		}
 		{
 			id: "6E26F13410C8B481"
-			title: "Someone Can Stay Here"
+			title: "A Welcome Guest"
 			description: ["Finish a guest space with a bed or coffin appropriate for the guest, storage, lighting, and a clearly marked entrance. Invite a player outside your usual building crew to try it.", "Guest-confirmed challenge: tick this after the visit. One completion and one shared reward per team."]
 			icon: { id: "handcrafted:oak_table" }
 			x: 9.0d
@@ -363,8 +363,8 @@
 		}
 		{
 			id: "6E26E1F13BA2672F"
-			title: "Build a Place to Test the Big Ideas"
-			description: ["Build a marked cannon or spell-testing range away from other people's structures. Run a demonstration for one other player and repair the target area afterward.", "Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."]
+			title: "The Testing Grounds"
+			description: ["With permission to use the site, build a marked cannon or spell-testing range away from other people’s structures and claims. Demonstrate it for a willing spectator outside the firing area, then repair the target area.", "Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."]
 			icon: { id: "createbigcannons:cannon_carriage" }
 			x: 0.0d
 			y: 6.0d

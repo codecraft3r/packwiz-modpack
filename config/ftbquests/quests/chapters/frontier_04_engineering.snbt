@@ -12,7 +12,7 @@
 		{
 			id: "6E26C4366AA57BC9"
 			title: "The Brass Workshop"
-			description: ["Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism.", "The native advancement is checked automatically and gives credit for prior progress."]
+			description: ["Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "create:brass_ingot" }
 			x: 0.0d
 			y: 0.0d
@@ -45,7 +45,7 @@
 		{
 			id: "6E26AE726B685FF5"
 			title: "Precision at Last"
-			description: ["Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits.", "The native advancement is checked automatically and gives credit for prior progress."]
+			description: ["Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "create:precision_mechanism" }
 			x: 3.0d
 			y: 0.0d
@@ -78,7 +78,7 @@
 		{
 			id: "6E26CB5FA755BAB4"
 			title: "Steam Power"
-			description: ["Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online.", "The native advancement is checked automatically and gives credit for prior progress."]
+			description: ["Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "create:steam_engine" }
 			x: 6.0d
 			y: 0.0d
@@ -110,8 +110,8 @@
 		}
 		{
 			id: "6E26903736497478"
-			title: "The Factory You Already Built"
-			description: ["Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line.", "The native advancement is checked automatically and gives credit for prior progress."]
+			title: "Your Working Factory"
+			description: ["Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "mekanism:basic_tier_installer" }
 			x: 9.0d
 			y: 0.0d
@@ -144,7 +144,7 @@
 		{
 			id: "6E2626E1826D2754"
 			title: "Automatic Extraction"
-			description: ["Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation.", "The native advancement is checked automatically and gives credit for prior progress."]
+			description: ["Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "mekanism:digital_miner" }
 			x: 0.0d
 			y: 3.0d
@@ -176,8 +176,8 @@
 		}
 		{
 			id: "6E2681B962288196"
-			title: "Feed the Power Plant"
-			description: ["Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful.", "The native advancement is checked automatically and gives credit for prior progress."]
+			title: "Feed the Plant"
+			description: ["Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "mekanismgenerators:gas_burning_generator" }
 			x: 3.0d
 			y: 3.0d
@@ -209,8 +209,8 @@
 		}
 		{
 			id: "6E2649A7C32470D8"
-			title: "Build a Repeatable Production Line"
-			description: ["Reach automated crafting. Pick something the group actually keeps running out of, then automate that recipe.", "The native advancement is checked automatically and gives credit for prior progress."]
+			title: "Automate the Essentials"
+			description: ["Obtain a Formulaic Assemblicator to earn Automated Crafting. Then choose something the group keeps running out of and set up its recipe.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "mekanism:formulaic_assemblicator" }
 			x: 6.0d
 			y: 3.0d
@@ -232,7 +232,7 @@
 				{
 					type: "item"
 					item: { id: "create:andesite_alloy", count: 1 }
-					count: 32
+					count: 64
 					team_reward: false
 					autoclaim: "disabled"
 					id: "6E26F1470E9EC9F8"
@@ -242,8 +242,8 @@
 		}
 		{
 			id: "6E26C8872927CC3D"
-			title: "Put the Warehouse in Your Pocket"
-			description: ["Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share.", "The native advancement is checked automatically and gives credit for prior progress."]
+			title: "The Pocket Warehouse"
+			description: ["Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share.", "Already earned the advancement? Collect your reward; no need to repeat it.", "The Mending book helps preserve a favorite tool while you work on the storage network."]
 			icon: { id: "mekanism:portable_qio_dashboard" }
 			x: 9.0d
 			y: 3.0d
@@ -264,8 +264,16 @@
 				}
 				{
 					type: "item"
-					item: { id: "minecraft:experience_bottle", count: 1 }
-					count: 32
+					item: {
+						id: "minecraft:enchanted_book"
+						count: 1
+						components: {
+							"minecraft:stored_enchantments": {
+								levels: { "minecraft:mending": 1 }
+							}
+						}
+					}
+					count: 1
 					team_reward: false
 					autoclaim: "disabled"
 					id: "6E263A7940145CDC"
@@ -275,8 +283,8 @@
 		}
 		{
 			id: "6E2685D40D328648"
-			title: "Make the Boiler Earn Its Space"
-			description: ["Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup.", "The native advancement is checked automatically and gives credit for prior progress."]
+			title: "Maximum Steam"
+			description: ["Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup.", "Already earned the advancement? Collect your reward; no need to repeat it."]
 			icon: { id: "create:steam_engine" }
 			x: 0.0d
 			y: 6.0d
@@ -316,7 +324,7 @@
 		}
 		{
 			id: "6E26DC99B2B9F37E"
-			title: "Try a Different Power Chain"
+			title: "Blazing Power"
 			description: ["Build or visit an Energizing Orb and produce a Blazing Crystal. This opens Powah as an alternative project.", "Inspect the orb and carry the crystal for detection; neither item is consumed."]
 			icon: { id: "powah:energizing_orb" }
 			x: 3.0d
@@ -362,7 +370,7 @@
 		}
 		{
 			id: "6E269465526DD79A"
-			title: "Power You Can Wire by Hand"
+			title: "Wire a Motor"
 			description: ["Build a Power Grid electric motor and connect it to a small useful mechanism.", "Inspect the placed motor to claim the equipment milestone. Electrical operation is a project goal, not something this block check can prove."]
 			icon: { id: "powergrid:electric_motor" }
 			x: 6.0d
@@ -401,7 +409,7 @@
 		}
 		{
 			id: "6E263A31DC312F1D"
-			title: "Give the Crew a Control Panel"
+			title: "A Crew Dashboard"
 			description: ["Install an advanced ComputerCraft computer and a monitor for a shared machine, route board, or ship dashboard.", "Inspect both installed blocks. What the program does is up to you; a working display is the useful part of this project."]
 			icon: { id: "computercraft:computer_advanced" }
 			x: 9.0d

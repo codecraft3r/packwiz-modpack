@@ -1987,6 +1987,11 @@ def _stage_outputs(root: Path, expected: dict[Path, str]) -> Path:
             shutil.copy2(root / "docs/frontier/quest-source.json", stage / "docs/frontier/quest-source.json")
             for evidence in (root / "docs/frontier/evidence").glob("*.json"):
                 shutil.copy2(evidence, stage / "docs/frontier/evidence" / evidence.name)
+            overrides = json.loads((root / "docs/frontier/evidence/survival-paths.json").read_text())["pack_overrides"]
+            for relative in overrides:
+                target = stage / relative
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(root / relative, target)
             for proof in json.loads((root / "docs/frontier/evidence/pack-provenance.json").read_text()).values():
                 target = stage / proof["metadata"]
                 target.parent.mkdir(parents=True, exist_ok=True)

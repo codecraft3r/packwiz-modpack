@@ -14,6 +14,14 @@ from vvh_validate import Parser
 
 COINS = {'numismatics:spur': 1, 'numismatics:bevel': 8, 'numismatics:sprocket': 16,
          'numismatics:cog': 64, 'numismatics:crown': 512, 'numismatics:sun': 4096}
+ENCHANTMENT_CAPS = {'minecraft:mending': 1, 'minecraft:fortune': 3,
+                    'minecraft:unbreaking': 3, 'minecraft:protection': 4}
+DISABLED_EQUIPMENT = {'mekanism:mekasuit_helmet', 'mekanism:mekasuit_bodyarmor',
+                      'mekanism:mekasuit_pants', 'mekanism:mekasuit_boots',
+                      'mekanism:antiprotonic_nucleosynthesizer', 'mekanism:quantum_entangloporter'}
+
+def positive_int(value: Any) -> bool:
+    return type(value) is int and value > 0
 
 def currency(records: list[dict[str, Any]]) -> int:
     return sum(COINS.get(r.get('item', {}).get('id'), 0) * r.get('count', r.get('item', {}).get('count', 1)) for r in records)
@@ -32,6 +40,8 @@ def audit(root: Path) -> dict[str, Any]:
         live = read('docs/frontier/evidence/live-registry.json')
         proof = read('docs/frontier/evidence/pack-provenance.json')
         advancements = read('docs/frontier/evidence/advancement-criteria.json')
+        stacks = read('docs/frontier/evidence/reward-stack-limits.json')['items']
+        survival = read('docs/frontier/evidence/survival-paths.json')
         base = root / 'config/ftbquests/quests'
         chapters = [Parser(p.read_text(), str(p)).parse() for p in sorted((base / 'chapters').glob('*.snbt'))]
         tables = [Parser(p.read_text(), str(p)).parse() for p in sorted((base / 'reward_tables').glob('*.snbt'))]
@@ -77,6 +87,32 @@ def audit(root: Path) -> dict[str, Any]:
         require(metadata['filename'] == record['filename'] and metadata['download']['hash'] == record['download_hash'], f'{ns}: artifact pin changed')
         require(bool(record.get('live_jar_sha256')), f'{ns}: no live artifact hash')
     references: set[tuple[str, str]] = set()
+    for relative, digest in survival['pack_overrides'].items():
+        path = root / relative
+        require(path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == digest,
+                f'{relative}: survival recipe evidence is stale')
+    direct_items = {t['item']['id'] for q in manifest['quests'] for t in q['tasks'] + q['rewards'] if 'item' in t}
+    direct_items.update(t['to_observe'] for q in manifest['quests'] for t in q['tasks'] if t['type'] == 'observation')
+    for iid in sorted(direct_items):
+        ns = iid.split(':')[0]
+        if ns == 'minecraft' or iid in COINS:
+            continue  # Vanilla survival items and the deliberately server-issued currency.
+        receipt = survival['items'].get(iid)
+        require(receipt is not None, f'{iid}: missing survival obtainability evidence')
+        if receipt and receipt['kind'] != 'pack_override':
+            require(ns in proof and receipt.get('parent_artifact_sha256') == proof[ns]['live_jar_sha256'],
+                    f'{iid}: survival evidence does not match the pinned artifact')
+    source_quests = {q['key']: q for q in manifest['quests']}
+    require(len(source_quests) == len(manifest['quests']), 'Duplicate source quest keys')
+    for iid, record in stacks.items():
+        require(positive_int(record['max_stack_size']), f'{iid}: invalid stack receipt')
+        ns = iid.split(':')[0]
+        evidence = record['evidence']
+        hashes = {j['sha256'].lower() for j in evidence.get('jars', [])}
+        hashes.update(str(evidence.get(k, '')).lower() for k in ['sha256', 'parent_artifact_sha256'])
+        if ns != 'minecraft':
+            require(ns in proof and proof[ns]['live_jar_sha256'].lower() in hashes,
+                    f'{iid}: stack receipt does not match the pinned artifact')
     for ch in manifest['chapters']:references.add(('item', ch['icon']))
     new_names = chapter_names(root)
     actual_new = [c for c in chapters if c['filename'] in new_names]
@@ -88,11 +124,21 @@ def audit(root: Path) -> dict[str, Any]:
         references.add(('item', q['icon']))
         require(currency(q['rewards']) == q['coins'], f'{q["key"]}: displayed currency differs from rewards')
         require(bool(q['tasks']) and bool(q['rewards']), f'{q["key"]}: empty task or reward set')
+        require(q['kind'] in ['welcome', 'fresh', 'milestone', 'boss_milestone', 'crew_confirmed', 'contract', 'shop'],
+                f'{q["key"]}: unsupported quest kind')
+        require(len(q['title'].split()) <= 4, f'{q["key"]}: graph title exceeds four words')
+        for dep in q['deps']:
+            require(dep in source_quests, f'{q["key"]}: unknown source prerequisite {dep}')
         if emitted:
             require(emitted.get('optional') is True, f'{q["key"]}: new adventure must be optional')
         for t in q['tasks']:
             require(t['type'] in ['advancement', 'item', 'kill', 'observation', 'checkmark'], f'{q["key"]}: unsupported task')
             if 'item' in t:references.add(('item', t['item']['id']))
+            if t['type'] == 'item':
+                require(positive_int(t.get('count')) and type(t.get('consume_items')) is bool,
+                        f'{q["key"]}: item count/consumption must be explicit')
+            if t['type'] == 'kill':
+                require(positive_int(t.get('value')), f'{q["key"]}: invalid kill target')
             if t.get('consume_items'):require(t.get('task_screen_only') is True, f'{q["key"]}: automatic consumption')
             if t['type'] == 'observation':references.add(('block', t['to_observe']))
             if t['type'] == 'kill':references.add(('entity', t['entity']))
@@ -101,17 +147,47 @@ def audit(root: Path) -> dict[str, Any]:
                 require(t['advancement'] in advancements or t['advancement'] == 'minecraft:end/enter_end_gateway', f'Missing advancement criteria: {t["advancement"]}')
                 require(t.get('criterion') == '', f'{q["key"]}: whole advancement must be explicit')
         for r in q['rewards']:
-            references.add(('item', r['item']['id']))
-            require(r['type'] == 'item' and 0 < r['count'] <= 64, f'{q["key"]}: invalid reward quantity/type')
+            iid = r['item']['id']
+            references.add(('item', iid))
+            # One item fits any valid registered item. Bulk entries fail closed
+            # unless the maximum is backed by the pinned registry/constructor.
+            limit = stacks.get(iid, {}).get('max_stack_size', 1)
+            require(r['type'] == 'item' and positive_int(r['count']) and r['count'] <= limit,
+                    f'{q["key"]}: reward exceeds verified stack limit for {iid} ({limit})')
+            components = r['item'].get('components', {})
+            require(not components or (iid == 'minecraft:enchanted_book' and set(components) == {'minecraft:stored_enchantments'}),
+                    f'{q["key"]}: unreviewed reward components')
+            if 'minecraft:stored_enchantments' in components:
+                enchantments = components['minecraft:stored_enchantments']
+                levels = enchantments.get('levels', {})
+                require(set(enchantments) == {'levels'} and len(levels) == 1 and all(
+                    positive_int(level) and level <= ENCHANTMENT_CAPS.get(enchantment, 0)
+                    for enchantment, level in levels.items()), f'{q["key"]}: invalid enchanted-book component')
             require(r['team_reward'] == q['shared'], f'{q["key"]}: mixed personal/shared rewards')
             require(r.get('autoclaim') == 'disabled', f'{q["key"]}: automatic reward claim')
         if all(t['type'] == 'checkmark' for t in q['tasks']):require(q['coins'] == 0 and not q['repeat'], f'{q["key"]}: honor check issues currency or repeats')
         if q['kind'] in ['contract', 'shop']:require(q['shared'] and q['repeat'] >= 60, f'{q["key"]}: repeat scope/cooldown missing')
-        else:require(not q['deps'], f'{q["key"]}: adventure unexpectedly gated')
-        if q['kind'] == 'contract':require(q['repeat'] >= 21600, f'{q["key"]}: faucet cooldown too short')
+        else:
+            require(not q['repeat'], f'{q["key"]}: one-time reward made repeatable')
+            if q['kind'] != 'crew_confirmed':
+                require(not q['deps'], f'{q["key"]}: adventure unexpectedly gated')
+        if q['kind'] == 'contract':
+            require(q['repeat'] >= 21600, f'{q["key"]}: faucet cooldown too short')
+            require(bool(q['deps']) and all(not source_quests.get(d, {}).get('repeat', 1) for d in q['deps']),
+                    f'{q["key"]}: faucet needs a one-time progression gate')
+            require(all(t['type'] == 'kill' or (t['type'] == 'item' and t.get('consume_items') is True)
+                        for t in q['tasks']), f'{q["key"]}: contract lacks fresh work or consumed inputs')
+        if q['kind'] == 'shop':
+            price = currency(q['tasks'])
+            require(price > 0 and q['coins'] == 0 and all(
+                t['type'] == 'item' and t['item']['id'] in COINS and t.get('consume_items') is True
+                and t.get('task_screen_only') is True for t in q['tasks']), f'{q["key"]}: purchase must consume a positive manual coin payment')
+            prices = re.findall(r'Price: (\d+) Spurs\.', '\n'.join(q['description']))
+            require(prices == [str(price)], f'{q["key"]}: advertised price differs from consumed coins')
         text = '\n'.join([q['title']] + q['description'])
         require(not re.search(r'(?<!\\)&\s', text), f'{q["key"]}: invalid formatting code')
     for kind, value in sorted(references):
+        require(value not in DISABLED_EQUIPMENT, f'{value}: disabled equipment must not be required or awarded')
         require(value.split(':')[0] == 'minecraft' or value.split(':')[0] in proof, f'{value}: no artifact proof')
         result = live.get(kind + ' ' + value)
         require(result is not None, f'Missing live registry check: {kind} {value}')
@@ -122,6 +198,8 @@ def audit(root: Path) -> dict[str, Any]:
     faucets = [q for q in manifest['quests'] if q['kind'] == 'contract']
     board = sum(currency(q['tasks']) for q in manifest['quests'] if q['kind'] == 'shop')
     per_window = sum(q['coins'] for q in faucets)
+    require(personal <= 4704 and shared == 0, 'One-time currency exceeds the reviewed budget')
+    require(per_window <= 480, 'Repeatable currency exceeds the reviewed six-hour budget')
     require(per_window < board, 'One repeat window can finance the entire new board')
     sold = {r['item']['id'] for q in manifest['quests'] if q['kind'] == 'shop' for r in q['rewards']}
     bought = {t['item']['id'] for q in faucets for t in q['tasks'] if 'item' in t}
@@ -135,12 +213,18 @@ def audit(root: Path) -> dict[str, Any]:
                 continue
             require(Parser(path.read_text(), str(path)).parse() == Parser(content, str(path)).parse(), f'Frontier emitted file differs from source: {path.name}')
     old_chapters, _ = source.build_campaign()
+    expected_quests = {ident('quest:' + key) for key in source_quests}
     for ch in old_chapters:
         rendered_old = Parser(source.render_chapter(ch), ch.filename).parse()
-        for q in rendered_old['quests']:require(quest_map.get(q['id']) == q, f'Archived quest changed: {q["id"]}')
+        for q in rendered_old['quests']:
+            expected_quests.add(q['id'])
+            require(quest_map.get(q['id']) == q, f'Archived quest changed: {q["id"]}')
+    require(set(quest_map) == expected_quests, 'Loaded book contains unreviewed or missing quests')
     return {'active': True, 'errors': errors, 'new_quests': len(manifest['quests']),
             'archived_quests': sum(len(c.quests) for c in old_chapters), 'total_quests': len(quest_map),
             'unique_registry_ids': len(all_ids), 'resource_checks': len(references),
+            'verified_bulk_reward_items': len(stacks),
+            'modded_survival_paths': len(survival['items']),
             'economy_spurs': {'minimum_required_route': 0, 'personal_completionist': personal, 'team_one_time': shared,
                 'repeatable_per_team_per_six_hours': per_window, 'weekly_per_team_upper_bound': per_window * 28,
                 'weekly_five_solo_teams_upper_bound': per_window * 28 * 5, 'one_of_each_new_purchase': board},

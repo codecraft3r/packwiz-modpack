@@ -1,0 +1,1590 @@
+{
+  "schema_version": 1,
+  "scope": "Recipe and native-interaction evidence for modded direct tasks, observations and rewards. Native advancement criteria are tracked separately. These are source receipts, not completed in-game crafts.",
+  "pack_overrides": {
+    "kubejs/server_scripts/crafting.js": "82bd4d10da34b348cd9162f911fefa05e0594877b79a1f350db99fcccf0d292f"
+  },
+  "items": {
+    "aeronautics:adjustable_burner": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/aeronautics/recipe/adjustable_burner.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "A": {
+                "item": "create:andesite_alloy"
+              },
+              "C": {
+                "tag": "aeronautics:burner_fire"
+              },
+              "R": {
+                "tag": "c:dusts/redstone"
+              },
+              "S": {
+                "tag": "c:plates/iron"
+              }
+            },
+            "pattern": [
+              "S S",
+              "SCS",
+              "ARA"
+            ],
+            "result": {
+              "count": 1,
+              "id": "aeronautics:adjustable_burner"
+            }
+          }
+        }
+      ]
+    },
+    "aeronautics:propeller_bearing": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/aeronautics/recipe/propeller_bearing.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "A": {
+                "tag": "minecraft:wooden_slabs"
+              },
+              "B": {
+                "item": "create:brass_casing"
+              },
+              "S": {
+                "tag": "c:plates/iron"
+              }
+            },
+            "pattern": [
+              " A ",
+              " S ",
+              " B "
+            ],
+            "result": {
+              "count": 1,
+              "id": "aeronautics:propeller_bearing"
+            }
+          }
+        }
+      ]
+    },
+    "aeronautics:white_envelope": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/aeronautics/recipe/white_envelope.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "group": "aeronautics:envelope",
+            "key": {
+              "S": {
+                "item": "minecraft:stick"
+              },
+              "W": {
+                "item": "minecraft:white_wool"
+              }
+            },
+            "pattern": [
+              "WS",
+              "SW"
+            ],
+            "result": {
+              "count": 4,
+              "id": "aeronautics:white_envelope"
+            }
+          }
+        },
+        {
+          "path": "data/aeronautics/recipe/deploying/deploying_envelope_white.json",
+          "recipe": {
+            "type": "create:deploying",
+            "ingredients": [
+              {
+                "item": "minecraft:white_wool"
+              },
+              {
+                "item": "minecraft:stick"
+              }
+            ],
+            "results": [
+              {
+                "count": 3,
+                "id": "aeronautics:white_envelope"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "chipped:carpenters_table": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291",
+      "examples": [
+        {
+          "path": "data/minecraft/recipe/workbench/carpenters_table.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:crafting_table"
+              },
+              "A": {
+                "item": "minecraft:iron_axe"
+              },
+              "I": {
+                "item": "minecraft:iron_ingot"
+              },
+              "P": {
+                "tag": "minecraft:planks"
+              }
+            },
+            "pattern": [
+              "A I",
+              "P#P",
+              "PPP"
+            ],
+            "result": {
+              "count": 1,
+              "id": "chipped:carpenters_table"
+            }
+          }
+        }
+      ]
+    },
+    "chipped:mason_table": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "18ac6fd6b30db4922ccc6ee8bea5b113f69587505b7529834f37ace506427291",
+      "examples": [
+        {
+          "path": "data/minecraft/recipe/workbench/mason_table.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:crafting_table"
+              },
+              "B": {
+                "item": "minecraft:brick"
+              },
+              "I": {
+                "item": "minecraft:iron_ingot"
+              },
+              "L": {
+                "tag": "minecraft:logs"
+              }
+            },
+            "pattern": [
+              "BBB",
+              "I#I",
+              "LLL"
+            ],
+            "result": {
+              "count": 1,
+              "id": "chipped:mason_table"
+            }
+          }
+        }
+      ]
+    },
+    "computercraft:cable": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f",
+      "examples": [
+        {
+          "path": "data/computercraft/recipe/cable.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "redstone",
+            "key": {
+              "#": {
+                "item": "minecraft:stone"
+              },
+              "R": {
+                "tag": "c:dusts/redstone"
+              }
+            },
+            "pattern": [
+              " # ",
+              "#R#",
+              " # "
+            ],
+            "result": {
+              "count": 6,
+              "id": "computercraft:cable"
+            }
+          }
+        }
+      ]
+    },
+    "computercraft:computer_advanced": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f",
+      "examples": [
+        {
+          "path": "data/computercraft/recipe/computer_advanced.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "redstone",
+            "key": {
+              "#": {
+                "tag": "c:ingots/gold"
+              },
+              "G": {
+                "tag": "c:glass_panes"
+              },
+              "R": {
+                "tag": "c:dusts/redstone"
+              }
+            },
+            "pattern": [
+              "###",
+              "#R#",
+              "#G#"
+            ],
+            "result": {
+              "count": 1,
+              "id": "computercraft:computer_advanced"
+            }
+          }
+        },
+        {
+          "path": "data/computercraft/recipe/computer_advanced_upgrade.json",
+          "recipe": {
+            "type": "computercraft:transform_shaped",
+            "category": "redstone",
+            "function": [
+              {
+                "type": "computercraft:copy_components",
+                "from": {
+                  "item": "computercraft:computer_normal"
+                }
+              }
+            ],
+            "key": {
+              "#": {
+                "tag": "c:ingots/gold"
+              },
+              "C": {
+                "item": "computercraft:computer_normal"
+              }
+            },
+            "pattern": [
+              "###",
+              "#C#",
+              "# #"
+            ],
+            "result": {
+              "count": 1,
+              "id": "computercraft:computer_advanced"
+            }
+          }
+        }
+      ]
+    },
+    "computercraft:monitor_advanced": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f",
+      "examples": [
+        {
+          "path": "data/computercraft/recipe/monitor_advanced.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "redstone",
+            "key": {
+              "#": {
+                "tag": "c:ingots/gold"
+              },
+              "G": {
+                "tag": "c:glass_panes"
+              }
+            },
+            "pattern": [
+              "###",
+              "#G#",
+              "###"
+            ],
+            "result": {
+              "count": 4,
+              "id": "computercraft:monitor_advanced"
+            }
+          }
+        }
+      ]
+    },
+    "computercraft:speaker": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "e8651fe24b384e925e563c9ad077644744474e2e7c0adb8e6d5b4757598dce9f",
+      "examples": [
+        {
+          "path": "data/computercraft/recipe/speaker.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "redstone",
+            "key": {
+              "#": {
+                "item": "minecraft:stone"
+              },
+              "N": {
+                "item": "minecraft:note_block"
+              },
+              "R": {
+                "tag": "c:dusts/redstone"
+              }
+            },
+            "pattern": [
+              "###",
+              "#N#",
+              "#R#"
+            ],
+            "result": {
+              "count": 1,
+              "id": "computercraft:speaker"
+            }
+          }
+        }
+      ]
+    },
+    "create:andesite_alloy": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/mixing/andesite_alloy_from_zinc.json",
+          "recipe": {
+            "type": "create:mixing",
+            "ingredients": [
+              {
+                "item": "minecraft:andesite"
+              },
+              {
+                "tag": "c:nuggets/zinc"
+              }
+            ],
+            "results": [
+              {
+                "id": "create:andesite_alloy"
+              }
+            ]
+          }
+        },
+        {
+          "path": "data/create/recipe/mixing/andesite_alloy.json",
+          "recipe": {
+            "type": "create:mixing",
+            "ingredients": [
+              {
+                "item": "minecraft:andesite"
+              },
+              {
+                "tag": "c:nuggets/iron"
+              }
+            ],
+            "results": [
+              {
+                "id": "create:andesite_alloy"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "create:copper_sheet": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/pressing/copper_ingot.json",
+          "recipe": {
+            "type": "create:pressing",
+            "ingredients": [
+              {
+                "tag": "c:ingots/copper"
+              }
+            ],
+            "results": [
+              {
+                "id": "create:copper_sheet"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "create:stock_link": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/crafting/logistics/stock_link.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "B": {
+                "item": "create:item_vault"
+              },
+              "C": {
+                "item": "create:transmitter"
+              }
+            },
+            "pattern": [
+              "C",
+              "B"
+            ],
+            "result": {
+              "count": 1,
+              "id": "create:stock_link"
+            }
+          }
+        },
+        {
+          "path": "data/create/recipe/crafting/logistics/stock_link_clear.json",
+          "recipe": {
+            "type": "minecraft:crafting_shapeless",
+            "category": "misc",
+            "ingredients": [
+              {
+                "item": "create:stock_link"
+              }
+            ],
+            "result": {
+              "count": 1,
+              "id": "create:stock_link"
+            }
+          }
+        }
+      ]
+    },
+    "create:super_glue": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/crafting/kinetics/super_glue.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "A": {
+                "tag": "c:slimeballs"
+              },
+              "N": {
+                "tag": "c:nuggets/iron"
+              },
+              "S": {
+                "tag": "c:plates/iron"
+              }
+            },
+            "pattern": [
+              "AS",
+              "NA"
+            ],
+            "result": {
+              "count": 1,
+              "id": "create:super_glue"
+            }
+          }
+        }
+      ]
+    },
+    "create:track": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/sequenced_assembly/track.json",
+          "recipe": {
+            "type": "create:sequenced_assembly",
+            "ingredient": {
+              "tag": "create:sleepers"
+            },
+            "results": [
+              {
+                "id": "create:track"
+              }
+            ],
+            "sequence": [
+              {
+                "type": "create:deploying",
+                "ingredients": [
+                  {
+                    "item": "create:incomplete_track"
+                  },
+                  [
+                    {
+                      "tag": "c:nuggets/iron"
+                    },
+                    {
+                      "tag": "c:nuggets/zinc"
+                    }
+                  ]
+                ],
+                "results": [
+                  {
+                    "id": "create:incomplete_track"
+                  }
+                ]
+              },
+              {
+                "type": "create:deploying",
+                "ingredients": [
+                  {
+                    "item": "create:incomplete_track"
+                  },
+                  [
+                    {
+                      "tag": "c:nuggets/iron"
+                    },
+                    {
+                      "tag": "c:nuggets/zinc"
+                    }
+                  ]
+                ],
+                "results": [
+                  {
+                    "id": "create:incomplete_track"
+                  }
+                ]
+              },
+              {
+                "type": "create:pressing",
+                "ingredients": [
+                  {
+                    "item": "create:incomplete_track"
+                  }
+                ],
+                "results": [
+                  {
+                    "id": "create:incomplete_track"
+                  }
+                ]
+              }
+            ],
+            "transitional_item": {
+              "id": "create:incomplete_track"
+            }
+          }
+        }
+      ]
+    },
+    "create:track_signal": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
+      "examples": [
+        {
+          "path": "data/create/recipe/crafting/kinetics/track_signal.json",
+          "recipe": {
+            "type": "minecraft:crafting_shapeless",
+            "category": "misc",
+            "ingredients": [
+              {
+                "item": "create:railway_casing"
+              },
+              {
+                "item": "create:electron_tube"
+              }
+            ],
+            "result": {
+              "count": 4,
+              "id": "create:track_signal"
+            }
+          }
+        }
+      ]
+    },
+    "enchantinginfuser:enchanting_infuser": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "8f0d315de1e404e5760297b862ab13f1d0f16246f9e6ce1db612ac332c4a2089",
+      "examples": [
+        {
+          "path": "data/enchantinginfuser/recipe/enchanting_infuser.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:crying_obsidian"
+              },
+              "A": {
+                "item": "minecraft:amethyst_shard"
+              },
+              "B": {
+                "item": "minecraft:book"
+              },
+              "T": {
+                "item": "minecraft:enchanting_table"
+              }
+            },
+            "pattern": [
+              " B ",
+              "A#A",
+              "#T#"
+            ],
+            "result": {
+              "count": 1,
+              "id": "enchantinginfuser:enchanting_infuser"
+            }
+          }
+        }
+      ]
+    },
+    "exposure:album": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888",
+      "examples": [
+        {
+          "path": "data/exposure/recipe/album.json",
+          "recipe": {
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+              {
+                "item": "minecraft:writable_book"
+              },
+              {
+                "item": "minecraft:phantom_membrane"
+              }
+            ],
+            "result": {
+              "id": "exposure:album"
+            }
+          }
+        }
+      ]
+    },
+    "exposure:color_film": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888",
+      "examples": [
+        {
+          "path": "data/exposure/recipe/color_film.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "equipment",
+            "key": {
+              "G": {
+                "item": "minecraft:gunpowder"
+              },
+              "I": {
+                "tag": "c:ingots/gold"
+              },
+              "K": {
+                "item": "minecraft:dried_kelp"
+              },
+              "L": {
+                "item": "minecraft:lapis_lazuli"
+              },
+              "N": {
+                "tag": "c:nuggets/gold"
+              }
+            },
+            "pattern": [
+              "NLL",
+              "IGG",
+              "IKK"
+            ],
+            "result": {
+              "id": "exposure:color_film"
+            }
+          }
+        }
+      ]
+    },
+    "exposure:photograph_frame": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "674c537a99f69b2bae53521c95dae59bc5f4eb2eb15418eec0ecbaf36b53d888",
+      "examples": [
+        {
+          "path": "data/exposure/recipe/photograph_frame.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "key": {
+              "S": {
+                "item": "minecraft:stick"
+              },
+              "P": {
+                "tag": "minecraft:planks"
+              },
+              "F": {
+                "item": "minecraft:item_frame"
+              }
+            },
+            "pattern": [
+              "SPS",
+              "PFP",
+              "SPS"
+            ],
+            "result": {
+              "id": "exposure:photograph_frame"
+            }
+          }
+        }
+      ]
+    },
+    "farmersdelight:beef_stew": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "5dfe78ec57cfc793952611c77cb92d0d66765da5bd1ac326ba85faa4c236b78d",
+      "examples": [
+        {
+          "path": "data/farmersdelight/recipe/cooking/beef_stew.json",
+          "recipe": {
+            "type": "farmersdelight:cooking",
+            "experience": 1.0,
+            "ingredients": [
+              {
+                "tag": "c:foods/raw_beef"
+              },
+              {
+                "tag": "c:crops/carrot"
+              },
+              {
+                "tag": "c:crops/potato"
+              }
+            ],
+            "recipe_book_tab": "meals",
+            "result": {
+              "count": 1,
+              "id": "farmersdelight:beef_stew"
+            }
+          }
+        }
+      ]
+    },
+    "farmersdelight:vegetable_soup": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "5dfe78ec57cfc793952611c77cb92d0d66765da5bd1ac326ba85faa4c236b78d",
+      "examples": [
+        {
+          "path": "data/farmersdelight/recipe/cooking/vegetable_soup.json",
+          "recipe": {
+            "type": "farmersdelight:cooking",
+            "experience": 1.0,
+            "ingredients": [
+              {
+                "tag": "c:crops/carrot"
+              },
+              {
+                "tag": "c:crops/potato"
+              },
+              {
+                "tag": "c:crops/beetroot"
+              },
+              {
+                "tag": "c:foods/leafy_green"
+              }
+            ],
+            "recipe_book_tab": "meals",
+            "result": {
+              "count": 1,
+              "id": "farmersdelight:vegetable_soup"
+            }
+          }
+        }
+      ]
+    },
+    "handcrafted:oak_chair": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948",
+      "examples": [
+        {
+          "path": "data/handcrafted/recipe/oak_chair.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:oak_planks"
+              },
+              "-": {
+                "item": "minecraft:oak_slab"
+              },
+              "/": {
+                "item": "minecraft:stick"
+              }
+            },
+            "pattern": [
+              "- ",
+              "##",
+              "//"
+            ],
+            "result": {
+              "count": 2,
+              "id": "handcrafted:oak_chair"
+            }
+          }
+        }
+      ]
+    },
+    "handcrafted:oak_shelf": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948",
+      "examples": [
+        {
+          "path": "data/handcrafted/recipe/oak_shelf.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:oak_planks"
+              },
+              "-": {
+                "item": "minecraft:oak_slab"
+              },
+              "/": {
+                "tag": "handcrafted:chests"
+              }
+            },
+            "pattern": [
+              "---",
+              "#/#",
+              "---"
+            ],
+            "result": {
+              "count": 2,
+              "id": "handcrafted:oak_shelf"
+            }
+          }
+        }
+      ]
+    },
+    "handcrafted:oak_table": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "6f2a776fb28ed07d370899814e5e711fbeebe31396097d78a3b550439b364948",
+      "examples": [
+        {
+          "path": "data/handcrafted/recipe/oak_table.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "minecraft:oak_planks"
+              },
+              "/": {
+                "item": "minecraft:stick"
+              }
+            },
+            "pattern": [
+              "###",
+              "/ /"
+            ],
+            "result": {
+              "count": 2,
+              "id": "handcrafted:oak_table"
+            }
+          }
+        }
+      ]
+    },
+    "icarus:white_feathered_wings": {
+      "kind": "pack_override",
+      "path": "kubejs/server_scripts/crafting.js",
+      "detail": "2 Create cogwheels, 1 netherite ingot, 4 shafts and 1 HDPE Elytra; replaces the base mod recipe. HDPE Elytra itself requires 2 atomic alloy and 5 HDPE sheets."
+    },
+    "irons_spellbooks:common_ink": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/empty_common_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_empty",
+            "fluid": {
+              "amount": 250,
+              "id": "irons_spellbooks:common_ink"
+            },
+            "input": {
+              "item": "minecraft:glass_bottle"
+            },
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:common_ink"
+            }
+          }
+        },
+        {
+          "path": "data/irons_spellbooks/recipe/create_compat/create_empty_common_ink.json",
+          "recipe": {
+            "neoforge:conditions": [
+              {
+                "type": "neoforge:mod_loaded",
+                "modid": "create"
+              }
+            ],
+            "type": "create:emptying",
+            "ingredients": [
+              {
+                "item": "irons_spellbooks:common_ink"
+              }
+            ],
+            "results": [
+              {
+                "id": "minecraft:glass_bottle"
+              },
+              {
+                "id": "irons_spellbooks:common_ink",
+                "amount": 250
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:cooldown_upgrade_orb": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/cooldown_upgrade_orb.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "O": {
+                "item": "irons_spellbooks:upgrade_orb"
+              },
+              "R": {
+                "item": "irons_spellbooks:cooldown_rune"
+              }
+            },
+            "pattern": [
+              "RRR",
+              "ROR",
+              "RRR"
+            ],
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:cooldown_upgrade_orb"
+            }
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:epic_ink": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/brew_epic_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_brew",
+            "base_fluid": {
+              "amount": 1000,
+              "id": "irons_spellbooks:rare_ink"
+            },
+            "input": {
+              "tag": "c:ingots/gold"
+            },
+            "results": [
+              {
+                "amount": 250,
+                "id": "irons_spellbooks:epic_ink"
+              }
+            ]
+          }
+        },
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/empty_epic_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_empty",
+            "fluid": {
+              "amount": 250,
+              "id": "irons_spellbooks:epic_ink"
+            },
+            "input": {
+              "item": "minecraft:glass_bottle"
+            },
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:epic_ink"
+            }
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:legendary_ink": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/brew_legendary_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_brew",
+            "base_fluid": {
+              "amount": 1000,
+              "id": "irons_spellbooks:epic_ink"
+            },
+            "input": {
+              "tag": "c:gems/amethyst"
+            },
+            "results": [
+              {
+                "amount": 250,
+                "id": "irons_spellbooks:legendary_ink"
+              }
+            ]
+          }
+        },
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/empty_legendary_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_empty",
+            "fluid": {
+              "amount": 250,
+              "id": "irons_spellbooks:legendary_ink"
+            },
+            "input": {
+              "item": "minecraft:glass_bottle"
+            },
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:legendary_ink"
+            }
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:mana_upgrade_orb": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/mana_upgrade_orb.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "O": {
+                "item": "irons_spellbooks:upgrade_orb"
+              },
+              "R": {
+                "item": "irons_spellbooks:arcane_rune"
+              }
+            },
+            "pattern": [
+              "RRR",
+              "ROR",
+              "RRR"
+            ],
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:mana_upgrade_orb"
+            }
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:rare_ink": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "examples": [
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/brew_rare_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_brew",
+            "base_fluid": {
+              "amount": 1000,
+              "id": "irons_spellbooks:uncommon_ink"
+            },
+            "input": {
+              "tag": "c:ingots/iron"
+            },
+            "results": [
+              {
+                "amount": 250,
+                "id": "irons_spellbooks:rare_ink"
+              }
+            ]
+          }
+        },
+        {
+          "path": "data/irons_spellbooks/recipe/alchemist_cauldron/empty_rare_ink.json",
+          "recipe": {
+            "type": "irons_spellbooks:alchemist_cauldron_empty",
+            "fluid": {
+              "amount": 250,
+              "id": "irons_spellbooks:rare_ink"
+            },
+            "input": {
+              "item": "minecraft:glass_bottle"
+            },
+            "result": {
+              "count": 1,
+              "id": "irons_spellbooks:rare_ink"
+            }
+          }
+        }
+      ]
+    },
+    "numismaticsutils:portable_bank_terminal": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "27a2f7b249ef37507abddccae1c847ae9a85787683deb732edea0c2c10292f66",
+      "examples": [
+        {
+          "path": "data/numismaticsutils/recipe/portable_bank_terminal.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+              "sbs",
+              "sBs",
+              "sls"
+            ],
+            "key": {
+              "s": {
+                "item": "create:brass_sheet"
+              },
+              "B": {
+                "item": "numismatics:bank_terminal"
+              },
+              "b": {
+                "item": "create:redstone_link"
+              },
+              "l": {
+                "item": "create:linked_controller"
+              }
+            },
+            "result": {
+              "id": "numismaticsutils:portable_bank_terminal"
+            },
+            "show_notification": true
+          }
+        }
+      ]
+    },
+    "powah:crystal_blazing": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "0e604a7356111c1dd44a00ea42fc1aa960d9faeb978261349df1138fcee4d0b4",
+      "examples": [
+        {
+          "path": "data/powah/recipe/crafting/blazing_crystal.json",
+          "recipe": {
+            "type": "minecraft:crafting_shapeless",
+            "category": "misc",
+            "ingredients": [
+              {
+                "item": "powah:blazing_crystal_block"
+              }
+            ],
+            "result": {
+              "count": 9,
+              "id": "powah:crystal_blazing"
+            }
+          }
+        },
+        {
+          "path": "data/powah/recipe/energizing/blazing_crystal_2.json",
+          "recipe": {
+            "type": "powah:energizing",
+            "energy": 120000,
+            "ingredients": [
+              {
+                "tag": "c:rods/blaze"
+              }
+            ],
+            "result": {
+              "count": 1,
+              "id": "powah:crystal_blazing"
+            }
+          }
+        }
+      ]
+    },
+    "powah:energizing_orb": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "0e604a7356111c1dd44a00ea42fc1aa960d9faeb978261349df1138fcee4d0b4",
+      "examples": [
+        {
+          "path": "data/powah/recipe/crafting/energizing_orb.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "c": {
+                "item": "powah:dielectric_casing"
+              },
+              "g": {
+                "tag": "c:glass_blocks"
+              },
+              "r": {
+                "item": "powah:dielectric_rod_horizontal"
+              }
+            },
+            "pattern": [
+              "ggg",
+              "gcg",
+              "rrr"
+            ],
+            "result": {
+              "count": 1,
+              "id": "powah:energizing_orb"
+            }
+          }
+        }
+      ]
+    },
+    "powergrid:electric_motor": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "0c9918ac001634e69aee7c21a1d7b40289741c50a5291e5b6a6313b679879eff",
+      "examples": [
+        {
+          "path": "data/powergrid/recipe/mechanical_crafting/electric_motor.json",
+          "recipe": {
+            "type": "create:mechanical_crafting",
+            "accept_mirrored": true,
+            "category": "misc",
+            "key": {
+              "C": {
+                "tag": "c:copper_coils"
+              },
+              "E": {
+                "item": "powergrid:conductive_casing"
+              },
+              "I": {
+                "tag": "c:plates/iron"
+              },
+              "M": {
+                "item": "powergrid:magnet"
+              },
+              "S": {
+                "item": "create:shaft"
+              }
+            },
+            "pattern": [
+              " ICI ",
+              "CMSMC",
+              " ICI ",
+              "  E  "
+            ],
+            "result": {
+              "count": 1,
+              "id": "powergrid:electric_motor"
+            }
+          }
+        }
+      ]
+    },
+    "simulated:navigation_table": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/simulated/recipe/navigation_table.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "B": {
+                "item": "create:brass_casing"
+              },
+              "P": {
+                "item": "create:precision_mechanism"
+              },
+              "S": {
+                "item": "create:brass_sheet"
+              }
+            },
+            "pattern": [
+              "S",
+              "P",
+              "B"
+            ],
+            "result": {
+              "count": 1,
+              "id": "simulated:navigation_table"
+            }
+          }
+        }
+      ]
+    },
+    "simulated:physics_assembler": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/simulated/recipe/physics_assembler.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "A": {
+                "item": "create:andesite_alloy"
+              },
+              "N": {
+                "item": "minecraft:lever"
+              },
+              "R": {
+                "item": "create:andesite_casing"
+              }
+            },
+            "pattern": [
+              "   ",
+              " N ",
+              "ARA"
+            ],
+            "result": {
+              "count": 1,
+              "id": "simulated:physics_assembler"
+            }
+          }
+        }
+      ]
+    },
+    "simulated:steering_wheel": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "b531dbe1081ee354f6e47ba4e0443b9caa648dfb8c82013a591a20836245bd84",
+      "examples": [
+        {
+          "path": "data/simulated/recipe/steering_wheel.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "A": {
+                "item": "create:andesite_casing"
+              },
+              "C": {
+                "item": "create:large_cogwheel"
+              },
+              "S": {
+                "item": "create:shaft"
+              }
+            },
+            "pattern": [
+              "C",
+              "A",
+              "S"
+            ],
+            "result": {
+              "count": 1,
+              "id": "simulated:steering_wheel"
+            }
+          }
+        }
+      ]
+    },
+    "sophisticatedbackpacks:backpack": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "2848ff4d01793268859d36263793bf042226a34efaf3a45e849833490b8cc4a1",
+      "examples": [
+        {
+          "path": "data/sophisticatedbackpacks/recipe/backpack.json",
+          "recipe": {
+            "neoforge:conditions": [
+              {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:backpack"
+              }
+            ],
+            "type": "sophisticatedbackpacks:basic_backpack",
+            "category": "misc",
+            "key": {
+              "C": {
+                "tag": "c:chests/wooden"
+              },
+              "L": {
+                "tag": "c:leathers"
+              },
+              "S": {
+                "tag": "c:strings"
+              }
+            },
+            "pattern": [
+              "SLS",
+              "SCS",
+              "LLL"
+            ],
+            "result": {
+              "count": 1,
+              "id": "sophisticatedbackpacks:backpack"
+            }
+          }
+        }
+      ]
+    },
+    "vampirism:crossbow_arrow_vampire_killer": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "c6dcca1af24deca473a24470ccab66053d3aa3324e453b4e1697090ed6d16be2",
+      "examples": [
+        {
+          "path": "data/vampirism/recipe/crossbow_arrow_vampire_killer.json",
+          "recipe": {
+            "type": "vampirism:shaped_crafting_weapontable",
+            "category": "equipment",
+            "key": {
+              "W": {
+                "item": "minecraft:feather"
+              },
+              "X": {
+                "tag": "c:crops/garlic"
+              },
+              "Y": {
+                "tag": "c:ingots/gold"
+              },
+              "Z": {
+                "tag": "c:rods/wooden"
+              }
+            },
+            "lava": 1,
+            "pattern": [
+              " X ",
+              "XYX",
+              " Z ",
+              " W "
+            ],
+            "result": {
+              "count": 3,
+              "id": "vampirism:crossbow_arrow_vampire_killer"
+            }
+          }
+        }
+      ]
+    },
+    "vista:hollow_cassette": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5",
+      "examples": [
+        {
+          "path": "data/vista/recipe/hollow_cassette.json",
+          "recipe": {
+            "type": "minecraft:crafting_shapeless",
+            "ingredients": [
+              {
+                "item": "vista:cassette"
+              },
+              {
+                "item": "minecraft:echo_shard"
+              }
+            ],
+            "result": {
+              "id": "vista:hollow_cassette",
+              "count": 1
+            }
+          }
+        }
+      ]
+    },
+    "vista:television": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5",
+      "examples": [
+        {
+          "path": "data/vista/recipe/television.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+              "200",
+              "213",
+              "200"
+            ],
+            "key": {
+              "0": {
+                "tag": "minecraft:planks"
+              },
+              "1": {
+                "item": "minecraft:diamond"
+              },
+              "2": {
+                "item": "minecraft:tinted_glass"
+              },
+              "3": {
+                "item": "minecraft:redstone"
+              }
+            },
+            "result": {
+              "id": "vista:television",
+              "count": 1
+            }
+          }
+        }
+      ]
+    },
+    "vista:viewfinder": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "bdbbd8a860329edf61d0436ced832165f652c25ad1e02e6c24d1987d972667f5",
+      "examples": [
+        {
+          "path": "data/vista/recipe/viewfinder.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "pattern": [
+              "111",
+              "121",
+              "000"
+            ],
+            "key": {
+              "0": {
+                "tag": "minecraft:planks"
+              },
+              "1": {
+                "tag": "c:ingots/iron"
+              },
+              "2": {
+                "item": "minecraft:spyglass"
+              }
+            },
+            "result": {
+              "id": "vista:viewfinder",
+              "count": 1
+            }
+          }
+        }
+      ]
+    },
+    "irons_spellbooks:lightning_bottle": {
+      "kind": "pinned_survival_interaction",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "class": "io/redspace/ironsspellbooks/player/ServerPlayerEvents",
+      "method": "useOnEntityEvent",
+      "detail": "Interact with a powered Creeper while holding a Glass Bottle. Native handler damages the Creeper and uses ItemUtils.createFilledResult to return a Lightning Bottle. Used one per Netherite Spell Book or Twilight Gale craft, alongside their other ingredients."
+    },
+    "irons_spellbooks:arcane_essence": {
+      "kind": "pinned_loot",
+      "parent_artifact_sha256": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0",
+      "path": "data/irons_spellbooks/loot_table/chests/additional_ancient_city_loot.json",
+      "detail": "The ancient-city additional loot table has a minecraft:item entry awarding 1-7 arcane essence. This is an ordinary loot resource, not an internal item or a circular unpacking recipe."
+    },
+    "numismatics:vendor": {
+      "kind": "pinned_recipe",
+      "parent_artifact_sha256": "1375ba1b50e53fd09435029b5b2d5b94779ba397cca7e01180d07b0f624e5b9b",
+      "examples": [
+        {
+          "path": "data/numismatics/recipe/crafting/vendor.json",
+          "recipe": {
+            "type": "minecraft:crafting_shaped",
+            "category": "misc",
+            "key": {
+              "#": {
+                "item": "create:brass_casing"
+              },
+              "I": {
+                "item": "create:electron_tube"
+              },
+              "o": {
+                "item": "create:framed_glass"
+              }
+            },
+            "pattern": [
+              "o",
+              "#",
+              "I"
+            ],
+            "result": {
+              "count": 1,
+              "id": "numismatics:vendor"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

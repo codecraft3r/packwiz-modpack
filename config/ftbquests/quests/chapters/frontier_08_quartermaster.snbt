@@ -265,7 +265,7 @@
 		}
 		{
 			id: "6E261FA35D1A3380"
-			title: "Another Roll of Film"
+			title: "More Film"
 			description: ["Supplies for recording the next adventure. No need to wait for a photography quest to repeat.", "Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "exposure:color_film" }
 			x: 9.0d
@@ -483,7 +483,7 @@
 		}
 		{
 			id: "6E26A72709AEAA8D"
-			title: "A More Ambitious Spell"
+			title: "Advanced Spell Supplies"
 			description: ["An advanced spell-crafting supply order after your team reaches Legendary Ink.", "Price: 192 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:epic_ink" }
 			x: 9.0d
@@ -526,7 +526,7 @@
 		}
 		{
 			id: "6E26D9DBE3453BDA"
-			title: "Keep Your Favorite Tool"
+			title: "Keep Your Favorite"
 			description: ["One Mending book. Invest in something you use instead of receiving another disposable weapon.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:enchanted_book" }
 			x: 0.0d
@@ -568,8 +568,8 @@
 		}
 		{
 			id: "6E26D83C4A316372"
-			title: "Make the Next Mining Trip Count"
-			description: ["One Fortune III book. The group already has diamonds; this is an optional convenience for another miner.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			title: "Fortune for Mining"
+			description: ["One Fortune III book for a tool you want to keep using. Apply it at an anvil before your next mining trip.", "Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "minecraft:enchanted_book" }
 			x: 3.0d
 			y: 6.0d
@@ -680,8 +680,8 @@
 		}
 		{
 			id: "6E260878D9DFB075"
-			title: "Write the Signature Spell"
-			description: ["One Legendary Ink for a specific spell project. This does not grant a completed boss spellbook or a boss weapon.", "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
+			title: "Your Signature Spell"
+			description: ["One Legendary Ink for your next spell, available after the Legendary Ink milestone.", "Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them.", "One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."]
 			icon: { id: "irons_spellbooks:legendary_ink" }
 			x: 0.0d
 			y: 9.0d

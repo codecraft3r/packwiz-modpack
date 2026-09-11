@@ -1,5 +1,7 @@
 # Unreleased — dev questbook rebuild
 
+- Review quest rules: enforce verified stack sizes, paid orders and repeat gates; correct objectives, shorten titles, and improve stage-appropriate rewards.
+
 - Add 81 optional progression-aware quests across adventure, machines, magic, transport, shared places and a new supply board.
 - Credit existing advancements and installed workstations; preserve all 59 existing dev quests and their claim identities in Previous Questbook.
 - Integrate deterministic generation, full-book ID checks, exact pinned-mod evidence and economy checks into existing validation.

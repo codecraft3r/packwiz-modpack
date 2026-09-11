@@ -11,8 +11,8 @@
 	quests: [
 		{
 			id: "6E260819FC7E5947"
-			title: "Your Next Good Evening"
-			description: ["Choose one adventure, one invention, or one place you want to make. Every route is open from the start.", "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.", "Mission coins are personal rewards for each teammate. Supply orders are one shared parcel. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."]
+			title: "Your Next Adventure"
+			description: ["Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress.", "Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges.", "Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group.", "Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."]
 			icon: { id: "numismatics:cog" }
 			x: 0.0d
 			y: 0.0d
@@ -36,7 +36,7 @@
 		}
 		{
 			id: "6E26CD3D300C8CAB"
-			title: "A Short Trip with Teeth"
+			title: "A Short Fight"
 			description: ["New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons.", "This is an optional fresh-combat warm-up, not an entrance requirement for veterans. The book rewards can protect the armor you choose."]
 			icon: { id: "minecraft:shield" }
 			x: 3.0d
@@ -86,7 +86,7 @@
 		}
 		{
 			id: "6E26B89DD1523BD3"
-			title: "Use the Good Tools"
+			title: "The Enchanting Workshop"
 			description: ["Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate.", "Use the bottles to start upgrading your own equipment. Looking at the block verifies workshop access, not a particular enchantment."]
 			icon: { id: "enchantinginfuser:enchanting_infuser" }
 			x: 6.0d
