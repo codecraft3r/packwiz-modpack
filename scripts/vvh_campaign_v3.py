@@ -2084,7 +2084,72 @@ def outputs(root: Path) -> dict[Path, str]:
     for table in tables:
         result[base / "reward_tables" / f"{table.filename}.snbt"] = render_reward_table(table)
     from frontier_campaign import compose
-    return compose(root, result, snbt)
+    result = compose(root, result, snbt)
+    result[base / "lang/en_us.snbt"] = render_translations(result, base)
+    return result
+
+
+def render_translations(outputs: dict[Path, str], base: Path) -> str:
+    """Render FTB's explicit translation table from the final composed graph."""
+    from vvh_validate import Parser
+
+    def parse(path: Path) -> dict[str, Any]:
+        return Parser(outputs[path], str(path)).parse()
+
+    entries: dict[str, Any] = {}
+    data = parse(base / "data.snbt")
+    if "title" in data:
+        entries["file.1.title"] = data["title"]
+    groups = parse(base / "chapter_groups.snbt")
+    for group in groups.get("chapter_groups", []):
+        if "title" in group:
+            entries[f"chapter_group.{group['id']}.title"] = group["title"]
+
+    def visit_quest(quest: dict[str, Any]) -> None:
+        quest_id = quest.get("id")
+        if quest_id and ("tasks" in quest or "rewards" in quest or "dependencies" in quest):
+            for field, suffix in (("title", "title"), ("subtitle", "quest_subtitle"), ("description", "quest_desc")):
+                if field in quest:
+                    entries[f"quest.{quest_id}.{suffix}"] = quest[field]
+            for task in quest.get("tasks", []):
+                if task.get("id") and "title" in task:
+                    entries[f"task.{task['id']}.title"] = task["title"]
+            for reward in quest.get("rewards", []):
+                if reward.get("id") and "title" in reward:
+                    entries[f"reward.{reward['id']}.title"] = reward["title"]
+        for child in quest.get("quests", []):
+            visit_quest(child)
+
+    chapter_paths = sorted(path for path in outputs if path.parent == base / "chapters")
+    for path in chapter_paths:
+        chapter = parse(path)
+        chapter_id = chapter.get("id")
+        if not chapter_id:
+            continue
+        if "title" in chapter:
+            entries[f"chapter.{chapter_id}.title"] = chapter["title"]
+        if "subtitle" in chapter:
+            subtitle = chapter["subtitle"]
+            entries[f"chapter.{chapter_id}.chapter_subtitle"] = [subtitle] if isinstance(subtitle, str) else subtitle
+        for quest in chapter.get("quests", []):
+            visit_quest(quest)
+
+    table_paths = sorted(path for path in outputs if path.parent == base / "reward_tables")
+    for path in table_paths:
+        table = parse(path)
+        if table.get("id") and "title" in table:
+            entries[f"reward_table.{table['id']}.title"] = table["title"]
+
+    lines = ["{"]
+    for key, value in entries.items():
+        if isinstance(value, list):
+            lines.append(f"\t{json.dumps(key)}: [")
+            lines.extend(f"\t\t{json.dumps(line, ensure_ascii=False)}" for line in value)
+            lines.append("\t]")
+        else:
+            lines.append(f"\t{json.dumps(key)}: {json.dumps(value, ensure_ascii=False)}")
+    lines.append("}")
+    return "\n".join(lines) + "\n"
 
 
 def main() -> int:

@@ -276,4 +276,15 @@ class FrontierCampaignTests(unittest.TestCase):
         path.write_text(source.snbt(data))
         self.assertTrue(any('differs from source' in e for e in frontier_validate.audit(root)['errors']))
 
+    def test_generated_language_table_preserves_composed_titles(self):
+        root = self.fixture()
+        lang_path = root / 'config/ftbquests/quests/lang/en_us.snbt'
+        lang = Parser(lang_path.read_text(), str(lang_path)).parse()
+        quest_titles = [key for key in lang if key.startswith('quest.') and key.endswith('.title')]
+        self.assertEqual(len(quest_titles), 140)
+        self.assertEqual(lang['file.1.title'], 'VvH · The Concord')
+        self.assertTrue(lang)
+        self.assertTrue(all(isinstance(value, list) for key, value in lang.items()
+                            if key.endswith('.chapter_subtitle')))
+
 if __name__ == '__main__':unittest.main()

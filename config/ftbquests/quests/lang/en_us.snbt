@@ -1,2 +1,921 @@
 {
+	"file.1.title": "VvH · The Concord"
+	"chapter_group.6E26649C972655B5.title": "Pick an Adventure"
+	"chapter_group.6E26E94862BF9419.title": "Make Something Matter"
+	"chapter_group.6E26B2BBC6593B6A.title": "Contracts and Supplies"
+	"chapter_group.6E26AD9C0FAEB787.title": "Previous Questbook"
+	"chapter.7A11C3DF00100000.title": "Legacy · 01 · The Island Charter"
+	"quest.7A11C0DF00100001.title": "Island Charter"
+	"quest.7A11C0DF00100001.quest_subtitle": "Orientation · A persistent world"
+	"quest.7A11C0DF00100001.quest_desc": [
+		"This island is meant to accumulate useful places, not disposable victories. Read every promise below; the quest book opens only after the rules that protect lasting work are acknowledged."
+	]
+	"task.7A11C1DF00100001.title": "I have read the welcome"
+	"quest.7A11C0DF00100006.title": "Name Public Doors"
+	"quest.7A11C0DF00100006.quest_subtitle": "Required · Public access"
+	"quest.7A11C0DF00100006.quest_desc": [
+		"A public road, workshop, or refuge needs a named entrance and a responsible keeper. Claims remain inviolable; public access exists only where the owner clearly grants it. Ask a member to witness your understanding."
+	]
+	"task.7A11C1DF00100006.title": "I understand how public access is granted - witnessed by a member"
+	"quest.7A11C0DF00100003.title": "Consent First"
+	"quest.7A11C0DF00100003.quest_subtitle": "Required · PvP and social play"
+	"quest.7A11C0DF00100003.quest_desc": [
+		"PvP, pranks, and faction drama are opt-in. A request to stop ends the interaction immediately; silence, absence, or faction membership is not consent."
+	]
+	"task.7A11C1DF00100003.title": "I agree to stop on request - witnessed by a member"
+	"quest.7A11C0DF00100007.title": "Leave Work Standing"
+	"quest.7A11C0DF00100007.quest_subtitle": "Required · Rivalry boundaries"
+	"quest.7A11C0DF00100007.quest_desc": [
+		"Rivalry may use races, photography, markets, propaganda, and reversible jokes. It never requires theft, griefing, forced entry, destructive sabotage, or targeting Neutral players."
+	]
+	"task.7A11C1DF00100007.title": "I will keep rivalry claim-safe and reversible - witnessed by a member"
+	"quest.7A11C0DF00100005.title": "Sign the Charter"
+	"quest.7A11C0DF00100005.quest_subtitle": "Required · Any two promises, third vouched"
+	"quest.7A11C0DF00100005.quest_desc": [
+		"You have read the rules that keep a persistent world playable: name public access, obtain consent, and keep rivalry reversible. Event guests may sign with a sponsor member present and backfill the third promise later. The calling board is now open."
+	]
+	"task.7A11C1DF00100005.title": "I accept the Charter promises"
+	"chapter.7A11C3DF00200000.title": "Legacy · 02 · Choose a Calling"
+	"quest.7A11C0DF00200001.title": "Three Callings"
+	"quest.7A11C0DF00200001.quest_subtitle": "House · Neutral · Order"
+	"quest.7A11C0DF00200001.quest_desc": [
+		"Choose the role you want to maintain now. House and Order open faction campaigns; Neutral is a protected opt-out that supplies a practical start and exits faction progression without closing ordinary services."
+	]
+	"task.7A11C1DF00200001.title": "I reviewed all three callings"
+	"quest.7A11C0DF00200002.title": "Join the House"
+	"quest.7A11C0DF00200002.quest_subtitle": "Vampire · Nightbound route"
+	"quest.7A11C0DF00200002.quest_desc": [
+		"Become a Vampire through Vampirism and keep the fang that marks the transformation. The House campaign begins with shelter and blood logistics, then opens ritual, magic, transport, and hospitality specialties. Taking a second calling renounces the first: pass its mark on before you claim another."
+	]
+	"task.7A11C1DF00200002.title": "Offer a vampire fang"
+	"quest.7A11C0DF00200003.title": "Choose Neutral"
+	"quest.7A11C0DF00200003.quest_subtitle": "Protected opt-out · No faction tree"
+	"quest.7A11C0DF00200003.quest_desc": [
+		"Choose Neutral when you want ordinary survival, trade, infrastructure, and public services without faction obligations. This attestation is the entire civic route; it grants trade stock and record supplies instead of faction arms, and creates no hidden third faction. Claiming a faction calling later ends Neutral protection."
+	]
+	"task.7A11C1DF00200004.title": "I choose Neutral and opt out of faction rivalry"
+	"quest.7A11C0DF00200004.title": "Join the Order"
+	"quest.7A11C0DF00200004.quest_subtitle": "Hunter · Lantern route"
+	"quest.7A11C0DF00200004.quest_desc": [
+		"Become a Hunter through Vampirism and keep the garlic injection used to enter the profession. The Order campaign begins with field equipment, then opens medicine, wards, reconnaissance, construction, and holy support. Taking a second calling renounces the first: pass its mark on before you claim another."
+	]
+	"task.7A11C1DF00200007.title": "Offer a garlic injection"
+	"quest.7A11C0DF00200007.title": "Keep Doors Open"
+	"quest.7A11C0DF00200007.quest_subtitle": "Complete any one calling"
+	"quest.7A11C0DF00200007.quest_desc": [
+		"Your first calling determines which faction campaign, if any, you maintain. Market services remain open to House, Order, and Neutral teams, and later curiosity does not rewrite the protected opt-out. One calling per member - a second calling renounces the first. Complete it as a party - every member checks in."
+	]
+	"task.7A11C1DF00200009.title": "We confirm this calling as a party - each member checks in"
+	"chapter.7A11C3DF00300000.title": "Legacy · 03 · Lantern Order"
+	"quest.7A11C0DF00300001.title": "Salt and Steel"
+	"quest.7A11C0DF00300001.quest_subtitle": "Tier I · Foundation"
+	"quest.7A11C0DF00300001.quest_desc": [
+		"Build the field bench that makes Hunter work repeatable: a Hunter Table, stakes, and a normal Hunter Axe. The reward supplies a complete working coat so the route starts functional rather than fashionable."
+	]
+	"task.7A11C1DF00300001.title": "Inspect a Hunter Table"
+	"task.7A11C1DF00300002.title": "Carry four stakes"
+	"task.7A11C1DF00300003.title": "Inspect a normal Hunter Axe"
+	"quest.7A11C0DF00300002.title": "Building Supplies"
+	"quest.7A11C0DF00300002.quest_subtitle": "Tier II · Construction stock"
+	"quest.7A11C0DF00300002.quest_desc": [
+		"Gather an essential construction stock of stone bricks, logs, iron bars, and lanterns. Completing this foundation rewards a manageable starter building kit with two stacks of stone, a stack each of oak and spruce logs, iron, copper, and one Sprocket to spend at the Market."
+	]
+	"task.7A11C1DF00300004.title": "Inspect thirty-two Stone Bricks"
+	"task.7A11C1DF00300005.title": "Inspect sixteen Oak Logs"
+	"task.7A11C1DF00300006.title": "Inspect eight Iron Bars"
+	"task.7A11C1DF00300046.title": "Inspect four Lanterns"
+	"reward.7A11C2DF00300006.title": "1 Sprocket"
+	"quest.7A11C0DF00300003.title": "Long Watch"
+	"quest.7A11C0DF00300003.quest_subtitle": "Tier III · Logistics"
+	"quest.7A11C0DF00300003.quest_desc": [
+		"Add a Hunter Weapon Table, basic crossbow, and a real reserve of vampire-killer quarrels. The Order can now equip a second patrol instead of depending on one veteran's inventory."
+	]
+	"task.7A11C1DF00300007.title": "Inspect a Hunter Weapon Table"
+	"task.7A11C1DF00300008.title": "Carry a basic Hunter crossbow"
+	"task.7A11C1DF00300009.title": "Carry sixteen killer quarrels"
+	"quest.7A11C0DF0030000E.title": "Arcane Spire"
+	"quest.7A11C0DF0030000E.quest_subtitle": "Facility Hub · Arcane Study"
+	"quest.7A11C0DF0030000E.quest_desc": [
+		"Establish the physical study for the Lantern Order's arcane curriculum. Gathering deepslate, dark oak, and amethyst shards unlocks the holy magic branches and awards a compact starter cache of deepslate, dark oak, sand, scaffolding, lapis, an enchanting table, a lectern, and one Sprocket to spend on the Celestial Spire Crate at the Market."
+	]
+	"task.7A11C1DF0030004B.title": "Inspect sixteen Cobbled Deepslate"
+	"task.7A11C1DF0030004C.title": "Inspect sixteen Dark Oak Logs"
+	"task.7A11C1DF0030004E.title": "Inspect eight Amethyst Shards"
+	"reward.7A11C2DF0030004B.title": "1 Sprocket"
+	"quest.7A11C0DF0030000F.title": "Apothecary Lab"
+	"quest.7A11C0DF0030000F.quest_subtitle": "Construction · Holy brewery"
+	"quest.7A11C0DF0030000F.quest_desc": [
+		"Erect a specialized alchemical laboratory to distill holy tinctures, extracts, and draughts. Gather tuff stone, white wood timber, and laboratory glass bottles. The Order supplies bulk volcanic tuff, white wood logs, frosted glass, scaffolding, apothecary jars, liquid faucets, brewing stands, cauldrons, redstone, glowstone, and golden carrots."
+	]
+	"task.7A11C1DF0030004F.title": "Inspect thirty-two Tuff"
+	"task.7A11C1DF00300050.title": "Inspect thirty-two White Wood Logs"
+	"task.7A11C1DF00300051.title": "Inspect sixteen Glass Bottles"
+	"quest.7A11C0DF00300010.title": "Survey Outpost"
+	"quest.7A11C0DF00300010.quest_subtitle": "Construction · Frontier watch"
+	"quest.7A11C0DF00300010.quest_desc": [
+		"Establish an elevated reconnaissance hub and cartography outpost for surveying uncharted frontier routes. Gather stripped spruce logs, cobblestone, and coal. The Order outfits the station with bulk spruce logs, oak logs, cobblestone, scaffolding, torches, iron, coal, paper, and campfires."
+	]
+	"task.7A11C1DF00300053.title": "Inspect thirty-two Stripped Spruce Logs"
+	"task.7A11C1DF00300054.title": "Inspect thirty-two Cobblestone"
+	"task.7A11C1DF00300055.title": "Inspect sixteen Coal"
+	"quest.7A11C0DF00300011.title": "Garrison Armory"
+	"quest.7A11C0DF00300011.quest_subtitle": "Construction · Heavy bastion"
+	"quest.7A11C0DF00300011.quest_desc": [
+		"Construct a heavy watchtower, armory, and perimeter bastion to secure the frontier against vampire incursions. Gather foundation cobblestone, a blast furnace for the forge, and a sentry shield. The Order furnishes the bastion with eighteen stacks of stone, six stacks of andesite, five stacks of oak logs, scaffolding, lanterns, iron ingots, chains, iron blocks, an anvil, and a smithing table."
+	]
+	"task.7A11C1DF00300057.title": "Inspect sixty-four Cobblestone"
+	"task.7A11C1DF00300058.title": "Inspect a Blast Furnace"
+	"task.7A11C1DF00300059.title": "Carry a Shield"
+	"quest.7A11C0DF00300004.title": "Mercy Manual"
+	"quest.7A11C0DF00300004.quest_subtitle": "Specialty · Holy support"
+	"quest.7A11C0DF00300004.quest_desc": [
+		"Prepare an Inscription Table, an Apprentice's Spell Book, and an Alchemist Cauldron, then demonstrate one Holy spell. The Order equips the initiate with four Holy Runes, Rare and Epic inks, and holy scrolls for healing, divine smite, and recall."
+	]
+	"task.7A11C1DF0030000C.title": "Inspect an Inscription Table"
+	"task.7A11C1DF0030000D.title": "Carry an Apprentice's Spell Book"
+	"task.7A11C1DF00300061.title": "Craft an Alchemist Cauldron"
+	"task.7A11C1DF00300018.title": "I demonstrated one Holy spell"
+	"reward.7A11C2DF00300017.title": "Scroll of Heal"
+	"reward.7A11C2DF00300018.title": "Scroll of Divine Smite"
+	"reward.7A11C2DF00300019.title": "Scroll of Recall"
+	"quest.7A11C0DF00300005.title": "Pure Defense"
+	"quest.7A11C0DF00300005.quest_subtitle": "Specialty · Holy vestments"
+	"quest.7A11C0DF00300005.quest_desc": [
+		"Forge the holy armaments of the Lantern Order: construct an Arcane Anvil and a Scroll Forge, then don a full set of Priest's vestments. The Order rewards your devotion with a Villager Bible, your choice of an Artificer's Cane or Graybeard Staff, a stack of paper, four pots of Epic Ink, and a sprocket."
+	]
+	"task.7A11C1DF00300022.title": "Craft an Arcane Anvil"
+	"task.7A11C1DF00300023.title": "Craft a Scroll Forge"
+	"task.7A11C1DF00300024.title": "Equip a Priest Hood"
+	"task.7A11C1DF00300062.title": "Equip Priest Robes"
+	"task.7A11C1DF00300063.title": "Equip Priest Leggings"
+	"task.7A11C1DF00300064.title": "Equip Priest Boots"
+	"reward.7A11C2DF00300026.title": "Villager Bible"
+	"reward.7A11C2DF00300027.title": "Choice: Artificer's Cane or Graybeard Staff"
+	"quest.7A11C0DF00300006.title": "Consecrated Work"
+	"quest.7A11C0DF00300006.quest_subtitle": "Specialty · Workstations"
+	"quest.7A11C0DF00300006.quest_desc": [
+		"Establish a sanctified workshop: assemble an Alchemical Cauldron and an Altar of Cleansing, then prepare sixteen heads of Garlic and Pure Salt Water. The Order rewards your purification efforts with two sprockets, four bottles of Ultimate Holy Water, a Garlic Diffuser, and sixteen bottles of Alchemical Fire."
+	]
+	"task.7A11C1DF0030000F.title": "Craft an Alchemical Cauldron"
+	"task.7A11C1DF00300010.title": "Construct an Altar of Cleansing"
+	"task.7A11C1DF00300011.title": "Gather sixteen Garlic"
+	"task.7A11C1DF00300012.title": "Brew four bottles of Pure Salt Water"
+	"quest.7A11C0DF0030000C.title": "Refuge Stores"
+	"quest.7A11C0DF0030000C.quest_subtitle": "Specialty · Medicine"
+	"quest.7A11C0DF0030000C.quest_desc": [
+		"Craft a Potion Table and glass bottles to begin field medicine. The Order supplies a Brewing Stand, an Alchemy Table, and a substantial reserve of brewing ingredients."
+	]
+	"task.7A11C1DF00300028.title": "Craft a Potion Table"
+	"task.7A11C1DF00300029.title": "Craft sixteen Glass Bottles"
+	"quest.7A11C0DF00300008.title": "Field Ledger"
+	"quest.7A11C0DF00300008.quest_subtitle": "Specialty · Reconnaissance"
+	"quest.7A11C0DF00300008.quest_desc": [
+		"Use an Explorer's Compass and Exposure camera, then trigger the Moment in Time advancement. Photographs turn rumor into evidence without entering protected claims."
+	]
+	"task.7A11C1DF00300013.title": "Carry an Explorer's Compass"
+	"task.7A11C1DF00300014.title": "Carry a Camera"
+	"quest.7A11C0DF0030000D.title": "Patrol Transit"
+	"quest.7A11C0DF0030000D.quest_subtitle": "Specialty · Field logistics"
+	"quest.7A11C0DF0030000D.quest_desc": [
+		"Equip a patrol expedition with a backpack, clipboard, and spyglass for reconnaissance. The Order supplies a sprocket, leads, a Create toolbox, thirty-two rope arrows, hearty rabbit stew, Vampirism's strongest invisibility draught (80 minutes), and milk for emergency recovery."
+	]
+	"task.7A11C1DF0030002B.title": "Obtain a Backpack"
+	"task.7A11C1DF0030002C.title": "Obtain a Clipboard"
+	"task.7A11C1DF0030002D.title": "Carry a Spyglass"
+	"reward.7A11C2DF0030002E.title": "Brown Toolbox"
+	"reward.7A11C2DF0030005F.title": "Potion of Invisibility (01:20:00)"
+	"quest.7A11C0DF00300007.title": "Hunter Armament"
+	"quest.7A11C0DF00300007.quest_subtitle": "Specialty · Ammunition"
+	"quest.7A11C0DF00300007.quest_desc": [
+		"Set up archery targets, training mannequins, and test specialized quarrels. The Order equips the post with two sprockets, substantial reserves of spitfire and teleport quarrels, normal quarrels, bombs, and harming bamboo spikes."
+	]
+	"task.7A11C1DF00300030.title": "Carry three spitfire quarrels"
+	"task.7A11C1DF00300031.title": "Carry four teleport quarrels"
+	"task.7A11C1DF0030005C.title": "Inspect two Target Blocks"
+	"task.7A11C1DF0030005D.title": "Inspect two Mannequins"
+	"quest.7A11C0DF00300009.title": "Siege Artillery"
+	"quest.7A11C0DF00300009.quest_subtitle": "Specialty · Big cannons"
+	"quest.7A11C0DF00300009.quest_desc": [
+		"Construct heavy siege artillery with Create Big Cannons. Assemble a Cannon Carriage, two Wrought Iron Cannon Chambers, and a Wrought Iron Cannon End. The Order supplies a Ramrod, Worm, Create Wrench, sixty-four Powder Charges, and a stockpile of Mortar Stones."
+	]
+	"task.7A11C1DF0030000A.title": "Obtain a Cannon Carriage"
+	"task.7A11C1DF0030000B.title": "Obtain two Wrought Iron Cannon Chambers"
+	"task.7A11C1DF0030005B.title": "Obtain a Wrought Iron Cannon End"
+	"chapter.7A11C3DF00400000.title": "Legacy · 04 · House of Night"
+	"quest.7A11C0DF00400001.title": "First Thirst"
+	"quest.7A11C0DF00400001.quest_subtitle": "Tier I · Foundation"
+	"quest.7A11C0DF00400001.quest_desc": [
+		"Prepare an Altar of Inspiration, Blood Container, and four Blood Bottles. Visible reserves turn hunger from an emergency into a system another House member can maintain."
+	]
+	"task.7A11C1DF00400001.title": "Inspect an Altar of Inspiration"
+	"task.7A11C1DF00400002.title": "Inspect a Blood Container"
+	"task.7A11C1DF00400003.title": "Carry four Blood Bottles"
+	"quest.7A11C0DF00400002.title": "Red Measure"
+	"quest.7A11C0DF00400002.quest_subtitle": "Tier II · Altar ascent"
+	"quest.7A11C0DF00400002.quest_desc": [
+		"Prepare your ascent from Vampire level 4 to level 5. Bring an Altar of Infusion, eight Altar Pillars, four Altar Tips, eight Stone Bricks, five Human Hearts, and a Vampire Book. Build four two-pillar columns three blocks north, south, east, and west of the altar, with their bases at altar height. Fill each pillar with a Stone Brick and cap each column with a tip. This supplies the eight structure points for the night-time ritual; no pure blood is needed. These inventory checks record your supplies, so assemble and activate the altar yourself."
+	]
+	"task.7A11C1DF00404001.title": "Bring an Altar of Infusion"
+	"task.7A11C1DF00404002.title": "Bring eight Altar Pillars"
+	"task.7A11C1DF00404003.title": "Bring four Altar Tips"
+	"task.7A11C1DF00404004.title": "Bring eight Stone Bricks"
+	"task.7A11C1DF00404036.title": "Bring five Human Hearts"
+	"task.7A11C1DF00404037.title": "Bring a Vampire Book"
+	"quest.7A11C0DF00400003.title": "House Charter"
+	"quest.7A11C0DF00400003.quest_subtitle": "Tier III · Shared refuge"
+	"quest.7A11C0DF00400003.quest_desc": [
+		"Found the House: keep a real coffin at the daytime refuge, prepare a backpack and clipboard for its quartermaster, and sign a House plan naming the Dark Spire, Blood Foundry, Guest Hall, and Blood Vault services with their public-access boundaries. The plan is player-confirmed; the quest does not inspect private claims or book text."
+	]
+	"task.7A11C1DF00404005.title": "Bring a House Coffin"
+	"task.7A11C1DF00404006.title": "Bring a Quartermaster Backpack"
+	"task.7A11C1DF00404007.title": "Bring a House Clipboard"
+	"task.7A11C1DF00404008.title": "Carry the signed House Plan"
+	"task.7A11C1DF00404009.title": "Player-confirmed: I signed the House plan and marked its public boundaries"
+	"reward.7A11C2DF00405002.title": "House Route Compass"
+	"quest.7A11C0DF0040000E.title": "Dark Spire Commission"
+	"quest.7A11C0DF0040000E.quest_subtitle": "Commission · Observation and signalling"
+	"quest.7A11C0DF0040000E.quest_desc": [
+		"Establish the Dark Spire service: keep a spyglass for observation, a bell for local signalling, and a written signal register. State what the tower broadcasts and where its public boundary begins; the Market palette recommendation is Celestial Spire or another suitable tower palette. Television and Viewfinder belong to Nocturnal Broadcast later."
+	]
+	"task.7A11C1DF0040400A.title": "Bring a Spire Spyglass"
+	"task.7A11C1DF0040400B.title": "Bring a Signal Bell"
+	"task.7A11C1DF0040400C.title": "Bring eight Signal Register Pages"
+	"task.7A11C1DF0040400D.title": "Player-confirmed: I named the tower service and its public boundary"
+	"quest.7A11C0DF0040000F.title": "Blood Foundry Commission"
+	"quest.7A11C0DF0040000F.quest_subtitle": "Commission · Blood handling"
+	"quest.7A11C0DF0040000F.quest_desc": [
+		"Establish the Foundry service with a Blood Grinder and a small raw-blood input. Four Raw Beef provide 800 mB of impure blood when the grinder's lower fluid receiver accepts the batch; confirm that output at the service boundary. The recommended Market palette is Heavy Bastion or Create Builder. Sieve Extraction later teaches conversion of impure blood, while this commission establishes the input apparatus."
+	]
+	"task.7A11C1DF0040400E.title": "Bring a Blood Grinder"
+	"task.7A11C1DF0040400F.title": "Bring four Raw Beef"
+	"task.7A11C1DF00404012.title": "Player-confirmed: I ran the beef batch into a lower fluid receiver and marked the Foundry boundary"
+	"quest.7A11C0DF00400010.title": "Guest Hall Commission"
+	"quest.7A11C0DF00400010.quest_subtitle": "Commission · Reception service"
+	"quest.7A11C0DF00400010.quest_desc": [
+		"Establish the Guest Hall as a public reception service: prepare a lectern and visitor register, keep a barrel of welcome stock, and name the public entrance without granting access to private claimed areas. The Market palette recommendation is Frontier Watch or Village Timber."
+	]
+	"task.7A11C1DF00404013.title": "Bring a Visitor Register Lectern"
+	"task.7A11C1DF00404014.title": "Bring a Visitor Register"
+	"task.7A11C1DF00404015.title": "Bring a Welcome Barrel"
+	"task.7A11C1DF00404016.title": "Bring a Reception Hearth"
+	"task.7A11C1DF00404017.title": "Player-confirmed: I marked the public entrance and visitor service boundary"
+	"quest.7A11C0DF00400011.title": "Blood Vault Commission"
+	"quest.7A11C0DF00400011.quest_subtitle": "Commission · Archive and reserve records"
+	"quest.7A11C0DF00400011.quest_desc": [
+		"Establish the Blood Vault as an archive and reserve-management station: keep a lectern, written ledger, and labelled chest for reserve records. The recommended Market palette is Sanctified Brewery or Iron's Spells Arcanum. The commission documents the service; it does not require a completed blood-storage system or an advanced spell workshop."
+	]
+	"task.7A11C1DF00404018.title": "Bring an Archive Lectern"
+	"task.7A11C1DF00404019.title": "Bring the Reserve Ledger"
+	"task.7A11C1DF0040401A.title": "Bring a Reserve Chest"
+	"task.7A11C1DF0040401B.title": "Player-confirmed: I defined the archive and reserve-management service"
+	"quest.7A11C0DF00400009.title": "Dawn Watch"
+	"quest.7A11C0DF00400009.quest_subtitle": "Specialty · Dawn warning"
+	"quest.7A11C0DF00400009.quest_desc": [
+		"Build a dawn-warning relay for the public route: bring a Daylight Detector, repeaters, and a clearly labelled warning lamp. The wiring test is player-confirmed because an ordinary task cannot inspect live signal connectivity."
+	]
+	"task.7A11C1DF0040401C.title": "Bring a Daylight Detector"
+	"task.7A11C1DF0040401D.title": "Bring two Signal Repeaters"
+	"task.7A11C1DF0040401E.title": "Bring a Warning Lamp"
+	"task.7A11C1DF0040401F.title": "Player-confirmed: I tested the dawn warning circuit at first light"
+	"quest.7A11C0DF00400008.title": "Nocturnal Broadcast"
+	"quest.7A11C0DF00400008.quest_subtitle": "Specialty · Vista broadcast"
+	"quest.7A11C0DF00400008.quest_desc": [
+		"Bring a Television and Viewfinder to establish visual broadcast capabilities across the island. The House supplies two Sprockets and eight Hollow Cassettes for recording feeds."
+	]
+	"task.7A11C1DF00400013.title": "Bring a Television"
+	"task.7A11C1DF00400014.title": "Bring a Viewfinder"
+	"quest.7A11C0DF00400007.title": "Sieve Extraction"
+	"quest.7A11C0DF00400007.quest_subtitle": "Specialty · Blood processing"
+	"quest.7A11C0DF00400007.quest_desc": [
+		"Turn impure blood into a useful House supply. Place one Blood Container above the Blood Sieve to feed it and a second below to receive blood. Four parts of impure blood yield three parts of blood; run 1,200 mB through the Sieve for 900 mB, enough to fill one Blood Bottle. Its item task only proves that a Blood Bottle exists, so the player-confirmed note records the Sieve as its origin. Run a batch and check the receiving container before confirming the test yourself; the inventory tasks only check that you have the apparatus. Collecting blood from animals is a separate job."
+	]
+	"task.7A11C1DF00404020.title": "Bring a Blood Sieve"
+	"task.7A11C1DF00404021.title": "Bring an Input Blood Container"
+	"task.7A11C1DF00404022.title": "Bring an Output Blood Container"
+	"task.7A11C1DF00404038.title": "Bring a Processed Blood Bottle"
+	"task.7A11C1DF00404023.title": "Player-confirmed: I bottled processed blood from the Sieve output; the item task cannot prove its origin"
+	"quest.7A11C0DF0040000D.title": "Sunproof Transit"
+	"quest.7A11C0DF0040000D.quest_subtitle": "Specialty · Daytime survival"
+	"quest.7A11C0DF0040000D.quest_desc": [
+		"Plan a shaded daytime route to a refuge you can reach. Hold your Umbrella in your main hand to block vampire sun damage, and remember that switching to another item leaves you exposed. Travel the route and confirm the journey yourself. Shelter and ordinary precautions still matter along the way."
+	]
+	"task.7A11C1DF00404024.title": "Carry a Sunproof Umbrella"
+	"task.7A11C1DF00404025.title": "Player-confirmed: I completed the shaded route between refuges"
+	"quest.7A11C0DF0040000C.title": "Remedy Counter"
+	"quest.7A11C0DF0040000C.quest_subtitle": "Specialty · Visitor remedies"
+	"quest.7A11C0DF0040000C.quest_desc": [
+		"Keep a Remedy Counter for ordinary visitors. In an Alchemist Cauldron, combine 1,000 mB of strong Healing potion with an Amethyst Shard for Greater Healing, or 1,000 mB of long Invisibility potion with a Shriving Stone for Invisibility Elixir. Bottle the remedies in 250 mB portions. Bring one of each and confirm that the counter is stocked and labelled. These are visitor remedies; keep the House's blood supply and daytime protection services available separately."
+	]
+	"task.7A11C1DF00404026.title": "Bring an Alchemist Cauldron"
+	"task.7A11C1DF00404027.title": "Bring a Greater Healing Remedy"
+	"task.7A11C1DF00404028.title": "Bring an Invisibility Remedy"
+	"task.7A11C1DF00404029.title": "Player-confirmed: I labelled the visitor remedies and their faction limits"
+	"quest.7A11C0DF00400006.title": "Open House"
+	"quest.7A11C0DF00400006.quest_subtitle": "Specialty · Public wayfinding"
+	"quest.7A11C0DF00400006.quest_desc": [
+		"Publish a signed visitor guide, mark the public entrance, and show where private claimed areas begin. Test access to one designated public area only; this attestation does not grant unrestricted access to the claim."
+	]
+	"task.7A11C1DF0040402A.title": "Bring a Signed Visitor Guide"
+	"task.7A11C1DF0040402B.title": "Bring an Entrance Sign"
+	"task.7A11C1DF0040402C.title": "Player-confirmed: I tested the public entrance and private boundary"
+	"quest.7A11C0DF00400005.title": "Crimson Reserve"
+	"quest.7A11C0DF00400005.quest_subtitle": "Specialty · Blood supply"
+	"quest.7A11C0DF00400005.quest_desc": [
+		"Maintain an emergency reserve: carry eight Blood Bottles and two Blood Containers, then confirm that the reserve is filled and reachable. A Blood Container holds 12,600 mB, but the item tasks cannot read fluid level; the reward adds separate containers, feed, leads, and limited fencing without claiming automated storage."
+	]
+	"task.7A11C1DF0040402D.title": "Carry eight Blood Bottles"
+	"task.7A11C1DF0040402E.title": "Carry two Blood Containers"
+	"task.7A11C1DF0040402F.title": "Player-confirmed: I checked that the reserve is filled and reachable"
+	"quest.7A11C0DF00400004.title": "Scarlet Script"
+	"quest.7A11C0DF00400004.quest_subtitle": "Specialty · Blood-mage workshop"
+	"quest.7A11C0DF00400004.quest_desc": [
+		"Complete a blood-mage workshop with an Arcane Anvil, Scroll Forge, and the Cultist equipment set. The reward offers a Blood Staff with paper and controlled Rare and Epic Ink for the next script; it does not return the armour or hand out unrelated fixed scrolls."
+	]
+	"task.7A11C1DF00404030.title": "Bring an Arcane Anvil"
+	"task.7A11C1DF00404031.title": "Bring a Scroll Forge"
+	"task.7A11C1DF00404032.title": "Bring the Cultist Hood"
+	"task.7A11C1DF00404033.title": "Bring the Cultist Chestplate"
+	"task.7A11C1DF00404034.title": "Bring the Cultist Leggings"
+	"task.7A11C1DF00404035.title": "Bring the Cultist Boots"
+	"chapter.7A11C3DF00500000.title": "Legacy · 05 · Market Services"
+	"quest.7A11C0DF00500001.title": "Read the Board"
+	"quest.7A11C0DF00500001.quest_subtitle": "Catalogue guide · Shared team stock"
+	"quest.7A11C0DF00500001.quest_desc": [
+		"The board has two departments: building palettes on the left, progression and utility kits on the right. A purchase consumes the exact posted price, creates one shared set of team reward entitlements, and never returns currency. Claim each reward manually so a large order does not flood an occupied inventory. Building orders restock after 180 seconds; progression and utility orders restock after 300 seconds. The Rumour Ledger remains the only weekly currency source."
+	]
+	"task.7A11C1DF00500001.title": "I understand prices, cooldowns, and shared team claims"
+	"quest.7A11C0DF00500003.title": "Works Kit"
+	"quest.7A11C0DF00500003.quest_subtitle": "1 Sprocket · 180 s"
+	"quest.7A11C0DF00500003.quest_desc": [
+		"Submit and consume 1 Sprocket for one shared team order: 8 stacks of raw Stone, 4 stacks of Oak Logs, 2 stacks of Sand, 16 Glass, and 8 Lanterns. Claim each entry manually. Building stock for repairs, shelters, and civic rooms; no machines, Diamonds, or combat gear. Restocks after 180 seconds."
+	]
+	"task.7A11C1DF00500003.title": "Submit 1 Sprocket"
+	"quest.7A11C0DF0050000F.title": "Village Timber Kit"
+	"quest.7A11C0DF0050000F.quest_subtitle": "1 Sprocket · 180 s"
+	"quest.7A11C0DF0050000F.quest_desc": [
+		"Submit and consume 1 Sprocket for one shared team village palette: 4 stacks of raw Stone, 4 stacks of Spruce Logs, 2 stacks of Terracotta, 2 stacks of Sand, Glass, Lanterns, and 2 Campfires for homes, inns, and workshops. Claim each stack manually. Restocks after 180 seconds; this is a house-and-inn palette, not a fortress or machine kit."
+	]
+	"task.7A11C1DF0050000C.title": "Submit 1 Sprocket"
+	"quest.7A11C0DF00500016.title": "Fortress Kit"
+	"quest.7A11C0DF00500016.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500016.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team fortress palette: 6 stacks of raw Stone, 4 stacks of Deepslate, 2 stacks of Dark Oak Logs, 32 Iron Bars, 16 Chains, and 16 Lanterns. Claim entries manually. Restocks after 180 seconds; it supplies structure and lighting, never armour, weapons, or machinery."
+	]
+	"task.7A11C1DF00504010.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500011.title": "Celestial Spire Crate"
+	"quest.7A11C0DF00500011.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500011.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team dark observatory palette: Deepslate Tiles, Dark Oak Planks, Tinted Glass, Nether Brick Pillars, Wisewood Shelving, Amethyst Clusters, Bookshelves, and Sea Lanterns. Claim each entry manually. Restocks after 180 seconds. Arcane architecture only; no Enchanting Table or spell workstation."
+	]
+	"task.7A11C1DF00500021.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500012.title": "Sanctified Brewery Crate"
+	"quest.7A11C0DF00500012.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500012.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team light apothecary palette: Polished Tuff, Whitewood Planks, Frosted Glass, Jars, Faucets, and Lanterns. Claim each entry manually. Restocks after 180 seconds. Decorative service stock only; no progression ingredients or repeated workstations."
+	]
+	"task.7A11C1DF00500022.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500013.title": "Frontier Watch Crate"
+	"quest.7A11C0DF00500013.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500013.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team frontier palette: 3 stacks of raw Stone, Spruce Planks, Scaffolding, Timber Frames, Rope, Way Signs, Torches, and 2 Spyglasses for outposts and watchtowers. Claim each entry manually. Restocks after 180 seconds; route accents remain modest."
+	]
+	"task.7A11C1DF00500023.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500014.title": "Heavy Bastion Crate"
+	"quest.7A11C0DF00500014.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500014.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team industrial fortress palette: Create Deco Iron Catwalks, Sheet Metal, Supports, Mesh Fences, Chains, and Iron Bars. Claim each entry manually. Restocks after 180 seconds; structural stock only, never armour, weapons, or advanced machinery."
+	]
+	"task.7A11C1DF00500024.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500017.title": "Create Builder's Palette"
+	"quest.7A11C0DF00500017.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500017.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team Create architecture order: Stone, Andesite Casing, Copper Casing, Glass, Scaffolding, and façade stock for workshops and windows. Claim each stack manually. Restocks after 180 seconds; Precision Mechanisms, machines, and automation equipment stay out."
+	]
+	"task.7A11C1DF00504011.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500015.title": "Create Deco Palette"
+	"quest.7A11C0DF00500015.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500015.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team Create Deco masonry palette in the Pearl family: Pearl Bricks, Stairs, Walls, Slabs, Industrial Iron Windows, and Industrial Iron Bars. Claim each entry manually. Restocks after 180 seconds; this is decorative masonry, not machinery or progression parts."
+	]
+	"task.7A11C1DF0050000D.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500018.title": "Abyssal Deepworks Palette"
+	"quest.7A11C0DF00500018.quest_subtitle": "2 Sprockets · 180 s"
+	"quest.7A11C0DF00500018.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team Abyssal Decor construction order: Blackwood Planks, Black Pearl Bricks, Deepbronze Tiles, Blaze Glass, and Deepbronze Bars. Claim each stack manually. Restocks after 180 seconds; rare ingots and progression alloys are excluded."
+	]
+	"task.7A11C1DF00504012.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500002.title": "Field Kit"
+	"quest.7A11C0DF00500002.quest_subtitle": "1 Bevel · 300 s"
+	"quest.7A11C0DF00500002.quest_desc": [
+		"Submit and consume 1 Bevel for one shared team field refill: 16 Cooked Beef, 32 Torches, 4 Leads, and one Shield. Claim each entry manually. Restocks after 300 seconds; expedition convenience, not building stock or permanent combat power."
+	]
+	"task.7A11C1DF00500002.title": "Submit 1 Bevel"
+	"quest.7A11C0DF00500005.title": "Create Starter Kit"
+	"quest.7A11C0DF00500005.quest_subtitle": "2 Sprockets · 300 s"
+	"quest.7A11C0DF00500005.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team early-Create starter: Andesite Alloy, Shafts, Cogwheels, Large Cogwheels, Belt Connectors, a Wrench, and Copper. Claim entries manually. Restocks after 300 seconds; Precision Mechanisms and a functioning factory stay out."
+	]
+	"task.7A11C1DF00500005.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500004.title": "Iron's Spells Starter Kit"
+	"quest.7A11C0DF00500004.quest_subtitle": "1 Sprocket · 300 s"
+	"quest.7A11C0DF00500004.quest_desc": [
+		"Submit and consume 1 Sprocket for one shared team first-steps magic kit: Arcane Essence, Blank Runes, Common Ink, and Uncommon Ink. Claim each entry manually. Restocks after 300 seconds; no advanced armour, spellbook, random scrolls, or high-tier loadout."
+	]
+	"task.7A11C1DF00500004.title": "Submit 1 Sprocket"
+	"quest.7A11C0DF00500009.title": "Recovery Crate"
+	"quest.7A11C0DF00500009.quest_subtitle": "1 Sprocket · 300 s"
+	"quest.7A11C0DF00500009.quest_desc": [
+		"Submit and consume 1 Sprocket for one shared team recovery cache: cooked food, Torches, 16 Honey Bottles, and 4 Golden Apples. Claim entries manually after a failed expedition. Restocks after 300 seconds; no permanent combat upgrades, beds, shields, or mounts."
+	]
+	"task.7A11C1DF00500009.title": "Submit 1 Sprocket"
+	"quest.7A11C0DF0050000A.title": "Transit Crate"
+	"quest.7A11C0DF0050000A.quest_subtitle": "2 Sprockets · 300 s"
+	"quest.7A11C0DF0050000A.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team route kit: 2 Saddles, 16 Leads, 32 Firework Rockets, 4 Oak Boats, and 4 Compasses. Claim each entry manually; claim every saddle and boat separately. Restocks after 300 seconds; ordinary transport only—no Elytra, permanent flight, or advanced teleportation."
+	]
+	"task.7A11C1DF0050000A.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500007.title": "Concord Bond"
+	"quest.7A11C0DF00500007.quest_subtitle": "2 Sprockets · 300 s"
+	"quest.7A11C0DF00500007.quest_desc": [
+		"Submit and consume 2 Sprockets for one shared team civic roads-and-bridges order: 8 stacks of raw Stone, 4 stacks of Stone Slabs, 2 stacks of Stone Brick Slabs, 4 stacks of Oak Logs, 4 stacks of Scaffolding, 2 stacks of Oak Fences, 16 Chains, and 16 Lanterns. Claim entries manually for one named public road, bridge, or shared-stock project. Restocks after 300 seconds; no Diamonds, alloy, or combat gear."
+	]
+	"task.7A11C1DF00504013.title": "Submit 2 Sprockets"
+	"quest.7A11C0DF00500006.title": "Rumour Ledger"
+	"quest.7A11C0DF00500006.quest_subtitle": "Fallback · 1 team Bevel · 604800 s"
+	"quest.7A11C0DF00500006.quest_desc": [
+		"Submit and consume one Written Book naming a findable place, a real problem, and the person who will review the result. This is the board's sole currency faucet: one shared team Bevel entitlement every 604800 seconds. Claim it manually; purchases restock in minutes but never produce currency."
+	]
+	"task.7A11C1DF00500007.title": "Submit one written field ledger"
+	"task.7A11C1DF0050000B.title": "I named the place, problem, and reviewer"
+	"quest.7A11C0DF00500008.title": "Know the Coins"
+	"quest.7A11C0DF00500008.quest_subtitle": "Spur · Bevel · Sprocket · Cog"
+	"quest.7A11C0DF00500008.quest_desc": [
+		"Numismatics values are Spur 1, Bevel 8, Sprocket 16, and Cog 64. Purchases consume their displayed price and create one shared team reward set with manual claims: 180-second building restocks and 300-second progression or civic restocks. Only the Rumour Ledger is weekly."
+	]
+	"task.7A11C1DF00500008.title": "I understand the coin denominations"
+	"chapter.6E261B7914EB3BE8.title": "Start Here"
+	"chapter.6E261B7914EB3BE8.chapter_subtitle": [
+		"Pick a route. Past achievements count. No charter gate."
+	]
+	"quest.6E260819FC7E5947.title": "Your Next Adventure"
+	"quest.6E260819FC7E5947.quest_desc": [
+		"Choose an adventure, an invention, or a place you want to make. The milestone routes are open from the start; specialist orders and contracts unlock as you progress."
+		"Lines between milestones suggest a route; earlier milestones do not block credit for things you have already done. Crew projects, contracts, and paid orders require their connected prerequisites."
+		"Already ahead? Your team's existing advancements automatically earn milestone credit when a member with that achievement is online. Collect the rewards, then go straight to the unfinished challenges."
+		"Milestone coins are personal rewards for each teammate. Contracts and supply orders give one shared reward set. Withdraw bank money into your inventory before buying. Your old rewards remain in the Previous Questbook group."
+		"Respect claims and clearly mark public entrances. PvP and pranks require consent; stop when asked. Neutral players can skip faction rivalry, and shared projects never require opposing factions."
+	]
+	"task.6E26D0172F9D8F90.title": "Choose something you actually want to do"
+	"quest.6E26CD3D300C8CAB.title": "A Short Fight"
+	"quest.6E26CD3D300C8CAB.quest_desc": [
+		"New or under-equipped? Take a shield and a friend out for a short fight. Defeat three zombies and three skeletons."
+		"This is an optional fresh-combat warm-up, not an entrance requirement for veterans. The book rewards can protect the armor you choose."
+	]
+	"quest.6E26B89DD1523BD3.title": "The Enchanting Workshop"
+	"quest.6E26B89DD1523BD3.quest_desc": [
+		"Visit an existing Enchanting Infuser and inspect it. A teammate's working workshop counts; do not craft a duplicate."
+		"Use the bottles to start upgrading your own equipment. Looking at the block verifies workshop access, not a particular enchantment."
+	]
+	"chapter.6E26B1F3E4BAC235.title": "Go Somewhere Worth Going"
+	"chapter.6E26B1F3E4BAC235.chapter_subtitle": [
+		"Discovery, photography, dangerous places, and reasons to bring a friend."
+	]
+	"quest.6E261B9C11222B2A.title": "Bring Back Proof"
+	"quest.6E261B9C11222B2A.quest_desc": [
+		"Load an Exposure camera with film and take a photograph. Try your base from below, a strange mob, or your crew before a raid."
+		"Existing Exposure achievement counts. The reward supplies your next photographic trip and a basic spare backpack."
+	]
+	"quest.6E26B71ED45B0179.title": "On the Wall"
+	"quest.6E26B71ED45B0179.quest_desc": [
+		"Develop and print an Exposure photograph. Turn something that happened on the server into something people can revisit."
+		"The printing achievement is checked automatically. Hang your favorite result somewhere public."
+	]
+	"quest.6E26114622D37E7F.title": "The Door Below"
+	"quest.6E26114622D37E7F.quest_desc": [
+		"Find and enter Iron's Catacombs. Pack a way home, collect magical materials, and remember where the route begins."
+		"The existing Catacombs advancement counts; veterans can collect this credit without another trip."
+	]
+	"quest.6E268B44A0C8789B.title": "Beyond the Dragon"
+	"quest.6E268B44A0C8789B.quest_desc": [
+		"Enter an End gateway and open the route to the outer islands. Already done it? Your existing advancement counts."
+		"Take someone who has not seen the outer End yet; this milestone does not require everyone to repeat the trip."
+	]
+	"quest.6E26A5C076450596.title": "An End Postcard"
+	"quest.6E26A5C076450596.quest_desc": [
+		"Take an Exposure photograph in the End. Aim for something worth showing: a bridge, an End city, or the group against the void."
+		"Exposure verifies the dimension when the photograph is taken."
+	]
+	"quest.6E26596722B417C4.title": "The Sunken City"
+	"quest.6E26596722B417C4.quest_desc": [
+		"Use the Explorer's Compass to find a Sunken City. Scout a route, prepare for underwater travel, and locate the Leviathan encounter."
+		"Discovery earns its own reward. Defeating the boss is a separate goal in the Boss Board."
+	]
+	"quest.6E26C7B60D14A1C6.title": "The Frosted Prison"
+	"quest.6E26C7B60D14A1C6.quest_desc": [
+		"Track down the Frosted Prison and scout the Maledictus encounter. Bring your best mobility and a retreat plan."
+		"An existing discovery counts, so a veteran can go directly to the boss objective."
+	]
+	"quest.6E263A514ED1B351.title": "Above the Clouds"
+	"quest.6E263A514ED1B351.quest_desc": [
+		"Locate the Acropolis, the next destination for a well-equipped party. Plan an arrival that you can also use to leave."
+		"The Acropolis discovery advancement counts automatically; the Scylla fight has its own reward."
+	]
+	"quest.6E26B609FD3DA0FD.title": "Into the Maze"
+	"quest.6E26B609FD3DA0FD.quest_desc": [
+		"Explore the Cult of Azazel maze. Mark your entrance and bring somebody who enjoys getting lost with you."
+		"Existing maze exploration is recognized. Killing Azazel is not required for this discovery reward."
+	]
+	"chapter.6E26C4F24FBEEB0A.title": "Boss Board"
+	"chapter.6E26C4F24FBEEB0A.chapter_subtitle": [
+		"Old wins count. Your next untouched boss is the real destination."
+	]
+	"quest.6E2688DA25219A46.title": "Kraken"
+	"quest.6E2688DA25219A46.quest_desc": [
+		"Take a boat or airship to the fight and make a plan for staying together."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E2630DCECD63DAB.title": "Underworld Knight"
+	"quest.6E2630DCECD63DAB.quest_desc": [
+		"A good next target for a newly equipped fighter. Learn the openings instead of trading every hit."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E26B85654476589.title": "Infernal Dragon"
+	"quest.6E26B85654476589.quest_desc": [
+		"A separate encounter from the Ender Dragon. Bring fire preparation and ranged options."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E26503B6ACB5284.title": "Sandworm"
+	"quest.6E26503B6ACB5284.quest_desc": [
+		"Turn a desert expedition into a proper boss hunt."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E263C2F9B59EE37.title": "Ignis"
+	"quest.6E263C2F9B59EE37.quest_desc": [
+		"Coordinate your opening and recovery windows. Your existing Ignis victory already earns this credit."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E26459D86508DED.title": "The Harbinger"
+	"quest.6E26459D86508DED.quest_desc": [
+		"Take on the factory encounter. Spend the reward on the next improvement to your loadout."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E26ECFF5B20D03A.title": "Ancient Remnant"
+	"quest.6E26ECFF5B20D03A.quest_desc": [
+		"The desert raid continues inside the Cursed Pyramid. A previous win counts."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E268C8F94E96C43.title": "Ender Guardian"
+	"quest.6E268C8F94E96C43.quest_desc": [
+		"A destination beyond simply reaching the End. Existing victories count."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E263C80910AEB59.title": "Netherite Monstrosity"
+	"quest.6E263C80910AEB59.quest_desc": [
+		"A fresh heavyweight target for the group. Prepare the arena approach before starting the encounter."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E269A5A0A38EE19.title": "The Leviathan"
+	"quest.6E269A5A0A38EE19.quest_desc": [
+		"Your sea expedition culminates here. Bring a loadout designed for the environment."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E2636F2D969C506.title": "Maledictus"
+	"quest.6E2636F2D969C506.quest_desc": [
+		"A new challenge for players who already cleared Ignis and the Harbinger."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E2600D391E9924E.title": "Scylla"
+	"quest.6E2600D391E9924E.quest_desc": [
+		"The Acropolis raid is a reason to finish that airship, test a spell build, and gather the crew."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E26A7A44AE011AA.title": "Clawdian"
+	"quest.6E26A7A44AE011AA.quest_desc": [
+		"Another untouched Cataclysm encounter. Use the in-game guide and Explorer's Compass to plan the expedition."
+		"Your team’s existing victory advancement counts. Each teammate can claim this reward once. For paid Ignis and Leviathan rematches, visit Crew Contracts."
+	]
+	"quest.6E2604721322C227.title": "Azazel's Relic"
+	"quest.6E2604721322C227.quest_desc": [
+		"Follow the Cult of Azazel progression to its Manipulator Stick relic. Possessing the relic earns this milestone; a kill alone does not."
+		"Previously earned the relic advancement? Your team can claim the reward once per teammate."
+	]
+	"chapter.6E263665E5F24DA6.title": "Build a Spell Loadout"
+	"chapter.6E263665E5F24DA6.chapter_subtitle": [
+		"Make choices that change how you fight. Keep the faction you enjoy."
+	]
+	"quest.6E265455E4BA73EA.title": "A Real Spellbook"
+	"quest.6E265455E4BA73EA.quest_desc": [
+		"Equip a spellbook. At an Inscription Table, give yourself a damage option and a spell that helps you move, survive, or support someone."
+		"The equipped-book advancement is the automatic check; the spell choices are yours. Existing equipment milestones count."
+	]
+	"quest.6E2688BDF879CCED.title": "Choose Your Spell"
+	"quest.6E2688BDF879CCED.quest_desc": [
+		"Unlock the Scroll Forge milestone, then use ink, paper, and a school focus to pursue a spell you actually want."
+		"Already own the workshop achievement? Collect credit and continue. No duplicate workstation needed."
+	]
+	"quest.6E26C7687AA1253D.title": "Tune the Build"
+	"quest.6E26C7687AA1253D.quest_desc": [
+		"Unlock the Arcane Anvil milestone. Use it to combine scrolls or improve a chosen equipment piece."
+		"The anvil milestone is checked automatically; this opens the specialist upgrades in the Quartermaster."
+	]
+	"quest.6E26B41AA42A0D4F.title": "Write Something Dangerous"
+	"quest.6E26B41AA42A0D4F.quest_desc": [
+		"Obtain Legendary Ink. Choose the spell you want before spending it."
+		"Existing Legendary Ink advancement counts, including ink already used. This opens advanced spell supplies."
+	]
+	"quest.6E262E1A327F4984.title": "Room for More"
+	"quest.6E262E1A327F4984.quest_desc": [
+		"Reach the Dragonskin spellbook milestone. Try a loadout with movement, defense, and more than one way to deal damage."
+		"Existing ownership advancement counts, so equipment you already earned is recognized without rebuilding it."
+	]
+	"quest.6E26ACC7A9335CB9.title": "Own the Night"
+	"quest.6E26ACC7A9335CB9.quest_desc": [
+		"Unlock Vampirism's Bat advancement. Use the mobility to scout a place worth visiting with your team."
+		"This is the vampire branch. Hunters can leave it alone; no chapter-wide completion is required."
+	]
+	"quest.6E269AEB8D51E29B.title": "Tools of the Hunt"
+	"quest.6E269AEB8D51E29B.quest_desc": [
+		"Earn Hunter Technology by obtaining both the Basic Tech Crossbow and the Enhanced Tech Crossbow as a hunter. Previously earned credit counts."
+		"This is the hunter branch. Vampires have their own milestones."
+	]
+	"quest.6E268AA25B24480C.title": "Vampire Level 14"
+	"quest.6E268AA25B24480C.quest_desc": [
+		"Reach vampire level 14 through the faction progression. This is a longer-term faction goal, not an opening chore."
+		"Your existing level-14 advancement counts if you already earned it."
+	]
+	"quest.6E266425D5F4A5D0.title": "Hunter Level 14"
+	"quest.6E266425D5F4A5D0.quest_desc": [
+		"Reach hunter level 14. Continue beyond basic hunting equipment into the faction's later progression."
+		"Continue your chosen role; no vampire conversion is required."
+	]
+	"chapter.6E264CFBC298391A.title": "Machines That Change the Server"
+	"chapter.6E264CFBC298391A.chapter_subtitle": [
+		"Credit for the factory you already built; challenges beyond the Digital Miner."
+	]
+	"quest.6E26C4366AA57BC9.title": "The Brass Workshop"
+	"quest.6E26C4366AA57BC9.quest_desc": [
+		"Reach the Brass milestone. In this pack, brass is part of the bridge into Mekanism."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E26AE726B685FF5.title": "Precision at Last"
+	"quest.6E26AE726B685FF5.quest_desc": [
+		"Reach the Precision Mechanism milestone. Existing work counts; these mechanisms are required for the pack's control circuits."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E26CB5FA755BAB4.title": "Steam Power"
+	"quest.6E26CB5FA755BAB4.quest_desc": [
+		"Reach the Steam Engine milestone. An existing steam plant earns credit when a player with its advancement is online."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E26903736497478.title": "Your Working Factory"
+	"quest.6E26903736497478.quest_desc": [
+		"Reach the Mekanism Factory milestone. No dismantling or recrafting your installed processing line."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E2626E1826D2754.title": "Automatic Extraction"
+	"quest.6E2626E1826D2754.quest_desc": [
+		"Reach the Digital Miner milestone. Your existing miner counts. The next steps are useful infrastructure and new forms of automation."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E2681B962288196.title": "Feed the Plant"
+	"quest.6E2681B962288196.quest_desc": [
+		"Reach the Gas-Burning Generator milestone. Build a supply chain that keeps the generator useful."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E2649A7C32470D8.title": "Automate the Essentials"
+	"quest.6E2649A7C32470D8.quest_desc": [
+		"Obtain a Formulaic Assemblicator to earn Automated Crafting. Then choose something the group keeps running out of and set up its recipe."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E26C8872927CC3D.title": "The Pocket Warehouse"
+	"quest.6E26C8872927CC3D.quest_desc": [
+		"Reach the Portable QIO Dashboard milestone. Make stored resources easier to use and share."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+		"The Mending book helps preserve a favorite tool while you work on the storage network."
+	]
+	"quest.6E2685D40D328648.title": "Maximum Steam"
+	"quest.6E2685D40D328648.quest_desc": [
+		"Complete Create's maximum steam-engine challenge. Improve the existing plant rather than starting a second starter setup."
+		"Already earned the advancement? Collect your reward; no need to repeat it."
+	]
+	"quest.6E26DC99B2B9F37E.title": "Blazing Power"
+	"quest.6E26DC99B2B9F37E.quest_desc": [
+		"Build or visit an Energizing Orb and produce a Blazing Crystal. This opens Powah as an alternative project."
+		"Inspect the orb and carry the crystal for detection; neither item is consumed."
+	]
+	"quest.6E269465526DD79A.title": "Wire a Motor"
+	"quest.6E269465526DD79A.quest_desc": [
+		"Build a Power Grid electric motor and connect it to a small useful mechanism."
+		"Inspect the placed motor to claim the equipment milestone. Electrical operation is a project goal, not something this block check can prove."
+	]
+	"quest.6E263A31DC312F1D.title": "A Crew Dashboard"
+	"quest.6E263A31DC312F1D.quest_desc": [
+		"Install an advanced ComputerCraft computer and a monitor for a shared machine, route board, or ship dashboard."
+		"Inspect both installed blocks. What the program does is up to you; a working display is the useful part of this project."
+	]
+	"chapter.6E26F061E9BB7E6C.title": "Flight, Freight, and Arrival"
+	"chapter.6E26F061E9BB7E6C.chapter_subtitle": [
+		"Build something people will actually ride."
+	]
+	"quest.6E26820F0536F5C5.title": "A Flight Workshop"
+	"quest.6E26820F0536F5C5.quest_desc": [
+		"Set up a Physics Assembler and Navigation Table. Inspect the installed blocks; existing installations count."
+		"Use the components' in-game Ponder scenes to plan your first craft. This milestone verifies workshop access, not a finished airship."
+	]
+	"quest.6E2675BD33374B3C.title": "Lift and Thrust"
+	"quest.6E2675BD33374B3C.quest_desc": [
+		"Bring together a Hot Air Burner, a Propeller Bearing, and a Steering Wheel. Parts already owned count and are not consumed."
+		"Build a compact prototype before enlarging it. The separate crew flight challenge is about the actual journey."
+	]
+	"quest.6E266290ED70D30D.title": "All Aboard"
+	"quest.6E266290ED70D30D.quest_desc": [
+		"Assemble a Create train and earn its native train advancement. Prior train building is credited."
+		"Connect places that people visit. The rails are for expanding the route after the first vehicle works."
+	]
+	"quest.6E269D5583333DE8.title": "A Useful Railway"
+	"quest.6E269D5583333DE8.quest_desc": [
+		"Complete Create's Long Travel advancement with a train journey. Check the native advancement for its exact distance requirement."
+		"A scenic or useful route is a better reason to travel than circling the same track."
+	]
+	"quest.6E2654CF12083F88.title": "The First Ferry"
+	"quest.6E2654CF12083F88.quest_desc": [
+		"Fly a working craft from a dock with a teammate aboard, travel at least 500 blocks, then land intact at a second landing place."
+		"Crew-confirmed challenge: the passenger confirms the trip before you tick it. One completion per team; one shared reward."
+		"First complete the flight-workshop and propulsion milestones. Keep the route available for another passenger, with clearly marked docks and permission to land."
+	]
+	"task.6E267D8BC134E22C.title": "Our crew completed the flight and landing"
+	"quest.6E26D643D825326E.title": "Freight That Matters"
+	"quest.6E26D643D825326E.quest_desc": [
+		"Reach both Packager and Stock Ticker milestones. Use the system to move a useful supply between a workshop and a destination."
+		"The advancement checks recognize existing logistics equipment. Delivery design is your next project, not an invisible extra requirement."
+	]
+	"quest.6E262BB31BF0076D.title": "Workshop Wings"
+	"quest.6E262BB31BF0076D.quest_desc": [
+		"Obtain the pack's White Feathered Wings using its custom industrial recipe. The required HDPE Elytra connects this project to Mekanism."
+		"The wings are not consumed. Already have this exact item? Carry it briefly for detection; no recrafting needed."
+	]
+	"quest.6E26B66A6926E5A8.title": "A Road Home"
+	"quest.6E26B66A6926E5A8.quest_desc": [
+		"Use Via Romana to connect the world and earn its first road-charting advancement."
+		"Link real destinations and leave a clear entrance at each end. Existing charting credit counts."
+	]
+	"chapter.6E26421AD40FDB9B.title": "Make This Place Yours"
+	"chapter.6E26421AD40FDB9B.chapter_subtitle": [
+		"Food, photographs, markets, interiors, and shared stories."
+	]
+	"quest.6E26C44B5FC97883.title": "Dinner Together"
+	"quest.6E26C44B5FC97883.quest_desc": [
+		"Place a Farmer's Delight feast and invite the crew. The native feast-placement advancement is the automatic check."
+		"Make the meal a reason to gather before or after an expedition. Vampires can bring something suitable for themselves."
+	]
+	"quest.6E26C8E1466128A7.title": "Crew and Companions"
+	"quest.6E26C8E1466128A7.quest_desc": [
+		"Earn Exposure's Family Portrait: use a camera on a stand to capture a player, a tamed cat, and a tamed wolf in the frame."
+		"The real Exposure advancement verifies the photograph. You keep the picture."
+	]
+	"quest.6E2674666E4FF474.title": "A Familiar Face"
+	"quest.6E2674666E4FF474.quest_desc": [
+		"Befriend an MCA villager to earn the Friend advancement. Spend time on interactions and gifts rather than treating every villager as a vending machine."
+		"Existing friendship credit counts. This does not require marriage or a particular roleplay choice."
+		"Use the chairs to make a place to sit with the neighbors you have met."
+	]
+	"quest.6E26E83442EC8F5A.title": "A Better Palette"
+	"quest.6E26E83442EC8F5A.quest_desc": [
+		"Set up a Chipped Mason Table and Carpenter's Table. Inspect the placed workstations; a shared existing workshop counts."
+		"Use them to choose a palette for a build you want to finish. The reward supplies a small project without rewarding a stone-mining grind."
+	]
+	"quest.6E26ECCABBC759DF.title": "Open a Stall"
+	"quest.6E26ECCABBC759DF.quest_desc": [
+		"Place and inspect a Numismatics Vendor. Stock a useful offer and set a price someone might pay."
+		"The automatic check proves a vendor is installed; it does not claim a sale happened. Invite another player to test it."
+	]
+	"quest.6E2614A8A7306DA3.title": "Your Create Shop"
+	"quest.6E2614A8A7306DA3.quest_desc": [
+		"Earn Create's Table Cloth Shop advancement. Follow the in-game advancement and Ponder instructions for the actual shop interaction."
+		"This opens a different trading route from Numismatics Vendors. Existing progress counts."
+	]
+	"quest.6E2641C2297AFB51.title": "Show the Journey"
+	"quest.6E2641C2297AFB51.quest_desc": [
+		"Install a Vista television and obtain a viewfinder. Capture something from the server you want other people to see."
+		"The checks verify the equipment, not the contents of a recording. Make a small viewing area instead of leaving the screen in a chest."
+	]
+	"quest.6E26F13410C8B481.title": "A Welcome Guest"
+	"quest.6E26F13410C8B481.quest_desc": [
+		"Finish a guest space with a bed or coffin appropriate for the guest, storage, lighting, and a clearly marked entrance. Invite a player outside your usual building crew to try it."
+		"Guest-confirmed challenge: tick this after the visit. One completion and one shared reward per team."
+	]
+	"task.6E26A3AC7E3DE63B.title": "A guest visited and used the space"
+	"quest.6E26E1F13BA2672F.title": "The Testing Grounds"
+	"quest.6E26E1F13BA2672F.quest_desc": [
+		"With permission to use the site, build a marked cannon or spell-testing range away from other people’s structures and claims. Demonstrate it for a willing spectator outside the firing area, then repair the target area."
+		"Witness-confirmed challenge. Use Big Cannons, spellbooks, target blocks, or the training dummy; nobody has to be the target. One shared completion."
+	]
+	"task.6E26915E532C32CC.title": "Our witness saw the demonstration and the range is usable"
+	"chapter.6E264DBF3AA2C1F9.title": "Crew Contracts"
+	"chapter.6E264DBF3AA2C1F9.chapter_subtitle": [
+		"Optional repeat jobs. No streaks and no login calendar."
+	]
+	"quest.6E26B7F1F0811EDE.title": "Catacombs Rematch"
+	"quest.6E26B7F1F0811EDE.quest_desc": [
+		"Once the Catacombs milestone unlocks this contract, defeat a Dead King. Kills while the contract is available count automatically; old kills do not."
+		"One shared payment per team. After all rewards are collected, the contract can be repeated six hours later. There is no penalty for ignoring it."
+	]
+	"quest.6E26EB32F87A5BEC.title": "Burning Arena Rematch"
+	"quest.6E26EB32F87A5BEC.quest_desc": [
+		"Once the Ignis milestone unlocks this contract, defeat Ignis while the contract is available. Old kills do not count; no manual acceptance is needed."
+		"One shared payment, once per six-hour cooldown after rewards are claimed. Bring someone who wants practice; no artificial daily streak."
+	]
+	"quest.6E266A2A5B8C5878.title": "Deep Water Rematch"
+	"quest.6E266A2A5B8C5878.quest_desc": [
+		"Defeat the Leviathan after unlocking this contract. This can fund the next group project."
+		"One shared payment. Six-hour cooldown begins after all rewards are collected."
+	]
+	"quest.6E26E9073FF8C06B.title": "Supply the Galley"
+	"quest.6E26E9073FF8C06B.quest_desc": [
+		"After earning Dinner Together, submit eight Beef Stews and eight Vegetable Soups here. Submission consumes the meals; it does not put them in a shared chest."
+		"One shared payment of 32 Spurs and 16 Bottles o’ Enchanting for equipment repairs or anvil work. Claim both rewards to start the six-hour cooldown. Cook an extra batch if you also want meals for the crew."
+	]
+	"chapter.6E26365D16241FFE.title": "Spend It on Your Next Project"
+	"chapter.6E26365D16241FFE.chapter_subtitle": [
+		"Coins buy convenience and selected upgrades. Orders are one shared parcel."
+	]
+	"quest.6E2624F5C5738F71.title": "Field Supplies"
+	"quest.6E2624F5C5738F71.quest_desc": [
+		"Human travel supplies for a quick expedition. Vampires may prefer a spell or building order."
+		"Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26C9E554BDADAF.title": "Build the Thing"
+	"quest.6E26C9E554BDADAF.quest_desc": [
+		"A bulk delivery for a real project: 512 stone, 256 oak logs, glass, scaffolding, and lights."
+		"Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E265AA0101A80B8.title": "Finish the Interior"
+	"quest.6E265AA0101A80B8.quest_desc": [
+		"Furniture and lighting for a guesthouse, tavern, viewing room, or finished base."
+		"Price: 32 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E261FA35D1A3380.title": "More Film"
+	"quest.6E261FA35D1A3380.quest_desc": [
+		"Supplies for recording the next adventure. No need to wait for a photography quest to repeat."
+		"Price: 16 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26AE1EEE19C54A.title": "Airframe Materials"
+	"quest.6E26AE1EEE19C54A.quest_desc": [
+		"Hull and envelope materials for a larger prototype. Core machinery and flight control still come from your workshop."
+		"Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26806766D22A27.title": "Extend the Line"
+	"quest.6E26806766D22A27.quest_desc": [
+		"Extend an already working railway with rails, signals, and lighting."
+		"Price: 128 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E2672D7868DA5FE.title": "Spell Workshop Supplies"
+	"quest.6E2672D7868DA5FE.quest_desc": [
+		"Pursue a spell of your choice with ink and materials. No random reward roll."
+		"Price: 64 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26A72709AEAA8D.title": "Advanced Spell Supplies"
+	"quest.6E26A72709AEAA8D.quest_desc": [
+		"An advanced spell-crafting supply order after your team reaches Legendary Ink."
+		"Price: 192 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26D9DBE3453BDA.title": "Keep Your Favorite"
+	"quest.6E26D9DBE3453BDA.quest_desc": [
+		"One Mending book. Invest in something you use instead of receiving another disposable weapon."
+		"Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E26D83C4A316372.title": "Fortune for Mining"
+	"quest.6E26D83C4A316372.quest_desc": [
+		"One Fortune III book for a tool you want to keep using. Apply it at an anvil before your next mining trip."
+		"Price: 256 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E260CE6FD8E8E39.title": "Specialize: More Mana"
+	"quest.6E260CE6FD8E8E39.quest_desc": [
+		"One Mana Upgrade Orb for compatible equipment. Check its upgrade limits in the Arcane Anvil."
+		"Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E2631A0DF8B4EA0.title": "Specialize: Faster Recovery"
+	"quest.6E2631A0DF8B4EA0.quest_desc": [
+		"One Cooldown Upgrade Orb for compatible equipment. Choose this instead of more mana if it fits your build."
+		"Price: 384 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"quest.6E260878D9DFB075.title": "Your Signature Spell"
+	"quest.6E260878D9DFB075.quest_desc": [
+		"One Legendary Ink for your next spell, available after the Legendary Ink milestone."
+		"Price: 512 Spurs. Withdraw the requested denomination at your portable bank terminal, then submit it here. Coins are consumed only when you submit them."
+		"One team purchase gives one shared parcel: coordinate who collects it. Claim every reward before buying again. Repeat cooldown: one minute."
+	]
+	"reward_table.7A11C5DF00300001.title": "Holy Focus Choice"
 }

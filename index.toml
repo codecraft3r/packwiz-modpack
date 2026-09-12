@@ -166,7 +166,7 @@ hash = "d4583289e77fab3a95385993859e83a459f5aef8cb964ed975f782b2f2c9845d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "d914176fd50bd7f565700006a31aa97b79d3ad17cee20c8e5ff2061d5cb74817"
+hash = "ea92df6d44bbb1a22a84926490028d32c0c3306d1f0a3f2a269ab1f766d3d0a4"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/holy_focus_choice.snbt"
