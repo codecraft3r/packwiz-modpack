@@ -1,19 +1,20 @@
-# Unreleased — questbook and artwork
-
-- Add nine generated chapter backgrounds fitted to the connected Frontier routes, with local required-pack textures and native background-layer attachment.
-
-- Connect all Frontier quests with authored routes, meaningful native shapes and cross-chapter Quest Links; enforce project/contract/order gates while preserving veteran milestone credit.
-
-- Review quest rules: enforce verified stack sizes, paid orders and repeat gates; correct objectives, shorten titles, and improve stage-appropriate rewards.
-
-- Add 81 optional progression-aware quests across adventure, machines, magic, transport, shared places and a new supply board.
-- Credit existing advancements and installed workstations; preserve all 59 existing dev quests and their claim identities in Previous Questbook.
-- Integrate deterministic generation, full-book ID checks, exact pinned-mod evidence and economy checks into existing validation.
-- No player/world reset, mod version change, release tag or production restart. Client and two-account purchase testing remains pending.
-
 # Changelog
 
-All notable changes to the Poiesis 2 modpack will be documented in this file.
+All notable changes to the modpack will be documented in this file.
+
+## [4.0.0] - 2026-09-22
+
+### Changed
+- Major pack overhaul: Full pack transition to Create'a Colony (Minecraft 1.21.1, NeoForge 21.1.234).
+- Pinned CreateColonies v2.0.6 directly from upstream GitHub releases with SHA-256 integrity pinning.
+- Migrated 8 mods to Modrinth: Better Villages, Library Ferret, Copycats+ aeronautics weight, Create Aeronautics, Create: Linear Bearing, Middgard Foxed, 3D Skin Layers, and C2ME.
+- Removed incompatible mods without 3rd-party distribution (Aeronautics:No Horizon, Farmer's Sandwiches).
+
+### Added
+- FTB suite: FTB Chunks, FTB Teams, FTB Essentials, FTB Ranks, FTB Ultimine, FTB Library.
+- Automation and Scripting: KubeJS, KubeJS Create, Rhino, Better Advanced Tooltips.
+- World & Mechanics: Lootr, Keybind Atlas, Diagonal Leaves.
+- Weapons & Customization: Timeless and Classics: Zero (TaCZ) with TaCZ Pack Upgrader and ARIPS Content Expansion Pack (`./tacz`).
 
 ## [3.0.0] - 2026-09-04
 
