@@ -1,51 +1,44 @@
-# All the Mons Packwiz Modpack
+# Create'a Colony — Packwiz
 
-Auto-updating Minecraft modpack using [packwiz](https://packwiz.infra.link/).
+Packwiz conversion of [Create'a Colony 1.1](https://www.curseforge.com/minecraft/modpacks/createa-colony/files/8773452), prepared on branch `codex/createa-colony-1.1` in `codecraft3r/packwiz-modpack`.
 
-This repository was migrated from the CurseForge release `All the Mons-1.0.0-rc.6.zip` and is structured after `codecraft3r/packwiz-modpack`.
+| Setting | Value |
+| --- | --- |
+| Packwiz version | `4.0.0` |
+| Upstream release | `1.1` — CurseForge project `1026019`, file `8773452` |
+| Minecraft | `1.21.1` |
+| NeoForge | `21.1.234` |
+| Java | `21` |
+| Mods | `122`, all required on their supported sides |
 
-## MultiMC Installation
+Optional mods are included as required. Client-only mods remain client-only and are excluded from dedicated-server installation. This is a full replacement of the previous Poiesis pack: use a **fresh world and separate server data directory**. Existing-world compatibility is not established.
 
-1. Create a new MultiMC instance.
-   - Name: `All the Mons`
-   - Minecraft: `1.21.1`
-   - NeoForge: `21.1.229`
+## Install a client
 
-2. Download `packwiz-installer-bootstrap`.
-   - Download from: https://github.com/packwiz/packwiz-installer-bootstrap/releases
-   - Place `packwiz-installer-bootstrap.jar` in the instance `.minecraft` folder.
+Create a fresh Prism Launcher or MultiMC instance with the versions above. Place [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases) in its `.minecraft` directory and configure this pre-launch command:
 
-3. Set up the pre-launch command.
-   - Go to: Edit Instance -> Settings -> Custom Commands
-   - Check `Custom Commands`
-   - Set the pre-launch command to:
+```sh
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/codex/createa-colony-1.1/pack.toml
+```
 
-   ```sh
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/REPLACE_ME/all-the-mons-packwiz/main/pack.toml
-   ```
+For a reproducible deployment, replace the branch in that URL with the reviewed commit SHA, on both server and clients.
 
-4. Export or share the instance after replacing the `REPLACE_ME` URL with the published repository location.
+## Prepare a server
 
-## Server
+See [deployment instructions](docs/deployment-usage.md) for the isolated Docker staging setup, server installer command, and runtime acceptance checks. The branch preparation does not start or restart the hosted server. Static validation does not establish a successful client or dedicated-server boot.
 
-`docker-compose.yml` follows the upstream template and uses `itzg/minecraft-server`.
-Set `PACKWIZ_URL` to the raw `pack.toml` URL after publishing this repository.
+## Validate changes
 
-## Modpack Info
+With Python 3.11+ and [packwiz](https://packwiz.infra.link/tutorials/installing/) installed:
 
-- Minecraft: `1.21.1`
-- NeoForge: `21.1.229`
-- CurseForge project: `1356598`
-- CurseForge file: `8120591`
-- Pack version: `1.0.0-rc.6`
-- Packwiz metadata files: `395`
-- Mods: `389`
-- Resource packs: `2`
-- Shader metadata files at root: `4`
-- Override files: `3226`
+```sh
+python3 scripts/validate_colony.py
+python3 scripts/validate_snbt.py config/
+python3 scripts/test_validate_snbt.py
+packwiz refresh
+packwiz list
+packwiz refresh
+git diff --exit-code -- index.toml pack.toml
+```
 
-See `agents.md` for migration state, validation notes, and update rules.
-
-## Dev questbook rebuild
-
-The `dev` branch includes **Your Next Good Evening**: 81 new quests that recognize existing progression, plus the 59 prior dev quests preserved in an archive. See [the design, source commands and runtime test checklist](docs/frontier/README.md). The new content is generated through the existing campaign command; do not copy old exports over it. Production remains a separate promotion from `dev` to `master`.
+Enable local checks with `git config core.hooksPath .githooks`. CI validates this pack on pushes and pull requests; manual export workflows upload build artifacts without publishing a release or creating tags. The upstream file versions remain pinned: do not run a blanket mod update while preparing this release.

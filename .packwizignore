@@ -24,3 +24,9 @@ tmp-*.json
 tools/
 .gemini/
 .claude/
+
+# Build artifacts and repository documentation
+README.md
+dist/
+__pycache__/
+*.pyc

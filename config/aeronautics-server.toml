@@ -31,7 +31,7 @@
 	#Thrust scaling for Andesite Propellers
 	# Default: 1.0
 	# Range: 0.0 ~ 3.4028234663852886E38
-	andesitePropellerThrust = 1.0
+	andesitePropellerThrust = 32.0
 	#.
 	#Airflow scaling for Andesite Propellers
 	# Default: 0.10000000149011612

@@ -1,13 +1,13 @@
 name = "Create Aeronautics: Transmission & Linkage"
-filename = "create_aeronautics_transmission_linkage-0.2.6.jar"
+filename = "create_aeronautics_transmission_linkage-0.2.7.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/Y1dq5ioE/versions/i5cG7iGg/create_aeronautics_transmission_linkage-0.2.6.jar"
-hash-format = "sha512"
-hash = "1c041a1fe8acb3799047a1e23c5f9984df50d02cc19197a4ee03df5d49f3f9278e96fff20bb71bee61a76b8ae69bfca97b6b0b55cd7c15cb9f1344cfba7a4a24"
+hash-format = "sha1"
+hash = "dee7a9879b27db5be4831d140e39aba3a051e3ae"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "Y1dq5ioE"
-version = "i5cG7iGg"
+[update.curseforge]
+file-id = 8722967
+project-id = 1548056

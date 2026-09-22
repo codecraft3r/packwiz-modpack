@@ -1,0 +1,54 @@
+#Enhanced Celestials Shader Support — client configuration
+[general]
+	enabled = true
+	debugMode = false
+	testMode = false
+	testEvent = "blood_moon"
+
+[intensity]
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	colorIntensity = 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
+	glowIntensity = 1.0
+	# Default: 1.0
+	# Range: 0.1 ~ 5.0
+	transitionSpeed = 1.0
+
+[events]
+	bloodMoonEnabled = true
+	blueMoonEnabled = true
+	harvestMoonEnabled = true
+	eclipseEnabled = true
+	superMoonEnabled = true
+	#Lowered default addresses community flashbang reports
+	# Default: 0.5
+	# Range: 0.0 ~ 2.0
+	bloodMoonIntensity = 0.5
+	#Lowered default addresses community flashbang reports
+	# Default: 0.6
+	# Range: 0.0 ~ 2.0
+	blueMoonIntensity = 0.6
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	harvestMoonIntensity = 0.8
+	# Default: 0.9
+	# Range: 0.0 ~ 2.0
+	eclipseIntensity = 0.9
+	# Default: 0.8
+	# Range: 0.0 ~ 2.0
+	superMoonIntensity = 0.8
+	# Default: 0.6
+	# Range: 0.0 ~ 2.0
+	crimsonMoonIntensity = 0.6
+
+[network]
+	networkSyncEnabled = true
+	# Default: 10
+	# Range: 1 ~ 100
+	syncIntervalTicks = 10
+
+[advanced]
+	shaderDetectionEnabled = true
+	applyDuringDay = false

@@ -11,3 +11,19 @@ CHANGELOG.md diff
 index.toml diff
 pack.toml diff
 .gitattributes diff
+
+# Keep release imports byte-exact and text changes reviewable.
+mods/*.pw.toml diff
+config/** diff
+options.txt diff
+docs/createa-colony/** diff
+docs/deployment-usage.md diff
+.github/workflows/*.yml diff
+.githooks/pre-commit diff
+docker-compose.yml diff
+.packwizignore diff
+.gitignore diff
+
+# Upstream overrides intentionally retain original CRLF and whitespace.
+config/** -whitespace
+options.txt -whitespace

@@ -1,0 +1,11 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"railways:track_spruce_wide"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tacz:ammo","components":{"minecraft:max_stack_size":36,"minecraft:custom_data":{"AmmoId":"tacz:12g"}}},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:gunpowder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:cinder_flour"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:spider_eye"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:docking_connector"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"farmersdelight:tomato"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"farmersdelight:wheat_dough"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

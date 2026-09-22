@@ -1,95 +1,44 @@
-name: Release Modpack
+name: Build CurseForge Artifact
 
 on:
-  push:
-    tags:
-      - 'v*'
-      - '[0-9]*'
   workflow_dispatch:
-    inputs:
-      tag_name:
-        description: 'Tag to release'
-        required: false
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  release:
+  export:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-
-      - name: Validate SNBT grammar
-        run: python scripts/validate_snbt.py config/
-
-      - name: Run SNBT validator tests
-        run: python scripts/test_validate_snbt.py
-
-      - name: Install source-render dependencies
-        run: python -m pip install 'Pillow>=12,<13'
-
-      - name: Run campaign regression tests
-        run: python -m unittest discover -s scripts -p 'test_vvh*.py'
-
-      - name: Check campaign synchronization
-        run: python scripts/vvh_campaign_v3.py --root . --check
-
-      - name: Run campaign validation
-        run: python scripts/vvh_campaign_v3_validate.py --root . --output /tmp/vvh-campaign-validation.json
-
-      - name: Check campaign ID catalog provenance
-        run: python scripts/vvh_sync_catalog.py --check .
-
-      - name: Set up Go
-        uses: actions/setup-go@v5
+      - name: Validate pack and SNBT
+        run: |
+          python scripts/validate_colony.py
+          python scripts/validate_snbt.py config/
+          python scripts/test_validate_snbt.py
+      - uses: actions/setup-go@v5
         with:
-          go-version: '1.23'
-
+          go-version: stable
+          cache: false
       - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@v0.0.0-20260906154125-ef87d964f8cb
+      - name: Verify Packwiz index
         run: |
-          git clone --depth=1 https://github.com/packwiz/packwiz.git /tmp/packwiz
-          (cd /tmp/packwiz && go install .)
-
-      - name: Refresh Packwiz index
-        run: packwiz refresh
-
-      - name: Verify Packwiz refresh is stable
-        run: |
+          packwiz refresh
           git diff --exit-code -- index.toml pack.toml
           packwiz refresh
           git diff --exit-code -- index.toml pack.toml
-
-      - name: Prepare dist directory
-        run: mkdir -p dist
-
-      - name: Export Modrinth pack (.mrpack)
+      - name: Export CurseForge pack
         run: |
-          TAG="${{ github.event.inputs.tag_name || github.ref_name }}"
-          packwiz modrinth export -o "dist/Poiesis-2-${TAG}.mrpack"
-
-      - name: Export CurseForge pack (.zip)
-        continue-on-error: true
-        run: |
-          TAG="${{ github.event.inputs.tag_name || github.ref_name }}"
-          packwiz curseforge export -o "dist/Poiesis-2-${TAG}-CurseForge.zip"
+          mkdir -p dist
+          packwiz curseforge export -o dist/Createa-Colony-4.0.0-CurseForge.zip
         env:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_TOKEN }}
-
-      - name: Create GitHub Release and Upload Assets
-        uses: softprops/action-gh-release@v2
+      - uses: actions/upload-artifact@v4
         with:
-          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
-          name: Release ${{ github.event.inputs.tag_name || github.ref_name }}
-          files: |
-            dist/*.mrpack
-            dist/*.zip
-          generate_release_notes: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: Createa-Colony-4.0.0-CurseForge-${{ github.sha }}
+          path: dist/*.zip
+          if-no-files-found: error

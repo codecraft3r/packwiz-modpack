@@ -1,0 +1,86 @@
+#Disables Going Ballistic's velocity calculations.
+disableRealisticBallistics = false
+#Disables Going Ballistic's impact-energy (kg/m/s) block damage calculation.
+disableRealisticBlockDamage = false
+#Logs debug information whenever a shot is calculated.
+debugBallistics = false
+#Global multiplier applied after the physical muzzle velocity calculation.
+# Default: 1.0
+# Range: 0.01 ~ 100.0
+velocityMultiplier = 1.0
+#Mass used when a projectile has no datapack mass entry.
+# Default: 3519.5
+# Range: 0.001 ~ 1.0E9
+projectileMassFallback = 3519.5
+#Mass used when an autocannon projectile has no datapack mass entry.
+# Default: 33.0
+# Range: 0.001 ~ 1.0E9
+autocannonProjectileMassFallback = 33.0
+#Robins muzzle velocity constant, 1991 ft/s converted to m/s.
+# Default: 606.8568
+# Range: 1.0 ~ 10000.0
+robinsConstantMps = 606.8568
+#Gunpowder mass (kg) within a powder charge.
+# Default: 63.0151276
+# Range: 0.001 ~ 1.0E9
+powderChargeMass = 63.0151276
+#Diameter (m) of a powder charge.
+# Default: 0.16
+# Range: 1.0E-6 ~ 10000.0
+powderChargeDiameter = 0.16
+#Gunpowder mass (kg) within an autocannon cartridge.
+# Default: 11.8153364
+# Range: 0.001 ~ 1.0E9
+autocannonPowderMass = 11.8153364
+#Diameter (m) of an autocannon cartridge.
+# Default: 0.75
+# Range: 1.0E-6 ~ 10000.0
+autocannonChargeDiameter = 0.75
+#Chemical energy within black powder (J/kg)
+# Default: 3000000.0
+# Range: 1.0 ~ 1.0E12
+blackPowderEnergyJoulesPerKg = 3000000.0
+
+[projectilePhysics]
+	#Uses Earth gravity for cannon projectiles: -9.80665 m/s^2 converted to blocks/tick^2.
+	enableRealisticGravity = false
+	#Calculates projectile drag from NASA's drag equation instead of using CBC's static projectile drag value.
+	enableRealisticDrag = false
+	#Air density used for drag calculations, in kg/m^3. 1.225 is ISA sea-level density.
+	# Default: 1.225
+	# Range: 0.0 ~ 10000.0
+	airDensity = 1.225
+	#Projectile drag coefficient Cd. 0.47 is a reasonable blunt/spherical default; lower values are more streamlined.
+	# Default: 0.47
+	# Range: 0.0 ~ 10.0
+	dragCoefficient = 0.47
+	#Machine gun bullet radius in meters. Based off of a .308 / 7.62x51 round, with its width scaled up slightly
+	# Default: 0.004234088226380689
+	# Range: 1.0E-6 ~ 1.0
+	machineGunBulletRadiusMeters = 0.004234088226380689
+
+[blockDamage]
+	#Impact energy required per block toughness point for a projectile to penetrate a block.
+	# Default: 2000000.0
+	# Range: 1.0 ~ 1.0E12
+	joulesPerToughnessPoint = 2000000.0
+	#Impact energy required for autocannon rounds to impart a partial block damage point on a block.
+	# Default: 25000.0
+	# Range: 1.0 ~ 1.0E12
+	autocannonJoulesPerBlockDamagePoint = 25000.0
+	#Impact energy required for machine gun bullets to impart a partial block damage point on a block.
+	# Default: 12000.0
+	# Range: 1.0 ~ 1.0E12
+	machineGunJoulesPerBlockDamagePoint = 12000.0
+	#Minimum fraction of autocannon/machine gun block damage retained after block hardness vs projectile toughness attenuation.
+	# Default: 0.05
+	# Range: 0.0 ~ 1.0
+	minHardTargetDamageFactor = 0.05
+	#Block damage multiplier for AP-named projectiles.
+	# Default: 1.75
+	# Range: 0.0 ~ 1000.0
+	apProjectileBlockDamageMultiplier = 1.75
+	#Block damage multiplier for flak and machine gun projectiles.
+	# Default: 0.35
+	# Range: 0.0 ~ 1000.0
+	smallArmsBlockDamageMultiplier = 0.35

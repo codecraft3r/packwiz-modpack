@@ -1,0 +1,80 @@
+[
+  {
+    "project_id": 841890,
+    "name": "Athena",
+    "evidence_url": "https://api.modrinth.com/v2/project/athena-ctm",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported. Chipped 1.21.1 declares its Athena dependency side=CLIENT: https://raw.githubusercontent.com/terrarium-earth/Chipped/1.21.1/neoforge/src/main/resources/META-INF/neoforge.mods.toml"
+  },
+  {
+    "project_id": 250398,
+    "name": "Controlling",
+    "evidence_url": "https://api.modrinth.com/v2/project/controlling",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 463155,
+    "name": "Falling Leaves (NeoForge/Forge)",
+    "evidence_url": "https://www.curseforge.com/minecraft/mc-mods/falling-leaves-forge",
+    "reason": "CurseForge project declares Environment: Client."
+  },
+  {
+    "project_id": 557076,
+    "name": "Freecam",
+    "evidence_url": "https://api.modrinth.com/v2/project/freecam",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 854949,
+    "name": "Fusion (Connected Textures)",
+    "evidence_url": "https://api.modrinth.com/v2/project/fusion-connected-textures",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 455508,
+    "name": "Iris Shaders",
+    "evidence_url": "https://api.modrinth.com/v2/project/iris",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 561885,
+    "name": "Just Zoom",
+    "evidence_url": "https://api.modrinth.com/v2/project/just-zoom",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 393442,
+    "name": "LambDynamicLights",
+    "evidence_url": "https://api.modrinth.com/v2/project/lambdynamiclights",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 60089,
+    "name": "Mouse Tweaks",
+    "evidence_url": "https://api.modrinth.com/v2/project/mouse-tweaks",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 1093672,
+    "name": "Show My OptiFine Cape",
+    "evidence_url": "https://www.curseforge.com/minecraft/mc-mods/optifine-capes-neoforge",
+    "reason": "CurseForge project declares Environment: Client."
+  },
+  {
+    "project_id": 858542,
+    "name": "Searchables",
+    "evidence_url": "https://api.modrinth.com/v2/project/searchables",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 521480,
+    "name": "Skin Layers 3D",
+    "evidence_url": "https://api.modrinth.com/v2/project/3dskinlayers",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  },
+  {
+    "project_id": 394468,
+    "name": "Sodium",
+    "evidence_url": "https://api.modrinth.com/v2/project/sodium",
+    "reason": "Provider metadata declares client_side=required and server_side=unsupported."
+  }
+]

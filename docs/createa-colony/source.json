@@ -1,0 +1,18 @@
+{
+  "project_id": 1026019,
+  "file_id": 8773452,
+  "release": "1.1",
+  "pack_version": "4.0.0",
+  "url": "https://www.curseforge.com/minecraft/modpacks/createa-colony/files/8773452",
+  "archive_sha256": "73327e6fa4a91fc05fc416c4e8403f4efe627d341d8ef600117e7e0ed703cd52",
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.234",
+  "mods": 122,
+  "overrides": 488,
+  "promoted_to_required": [
+    "Born in Chaos",
+    "Born In Configuration",
+    "Chaos Moon",
+    "Enhanced Celestials Shader Support (Deprecated check description for updated version)"
+  ]
+}

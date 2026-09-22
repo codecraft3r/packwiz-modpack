@@ -1,16 +1,13 @@
-name = "Poiesis 2"
-author = "ATMTeam"
-version = "3.0.3"
+name = "Create'a Colony"
+author = "SbeevYT"
+version = "4.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "2fb062ac5526b9787ac08751576bf9bf3b19ff15e0626cf040a750e5508e5452"
+hash = "dfab97716599e19fb0492d28206b7b4bae275245d87787b0000191ed218e12d6"
 
 [versions]
 minecraft = "1.21.1"
-neoforge = "21.1.248"
-
-[options]
-datapack-folder = "datapacks"
+neoforge = "21.1.234"
