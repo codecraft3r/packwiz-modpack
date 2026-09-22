@@ -2004,8 +2004,8 @@ hash = "816ae53b09d3b3c2e3b4e74470bf2332fcde8a5ae322e1a39bd11656ef1fa8e6"
 metafile = true
 
 [[files]]
-file = "mods/c2me.pw.toml"
-hash = "65a5507210eb65784bf6abb87ba8a95bd69e76654a2ef999cb1a15e1a40d0af0"
+file = "mods/c2me-neoforge.pw.toml"
+hash = "b29065f7eb51b2fa53043366d0df737483b600c2f549d31c783fe52c4d72bfb5"
 metafile = true
 
 [[files]]
