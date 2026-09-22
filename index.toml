@@ -1980,7 +1980,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-village.pw.toml"
-hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
+hash = "e86098eaa2e7d9ae6602787711615a5c6ec7ecddd3dc36acbd36c2532ee95757"
 metafile = true
 
 [[files]]
@@ -2230,7 +2230,7 @@ metafile = true
 
 [[files]]
 file = "mods/diagonal-leaves.pw.toml"
-hash = "fd262df73bbf1364284dc4641596349667fc04ebea8b8767219bbbd33b11b658"
+hash = "8f53f3e2d27fb8fc59104f144f537116e412932e94d1890fc8fbb360cf5fe155"
 metafile = true
 
 [[files]]
@@ -2450,7 +2450,7 @@ metafile = true
 
 [[files]]
 file = "mods/oh-the-trees-youll-grow.pw.toml"
-hash = "156c0d34d5eb2cd6fdb07ee606770fc2f2a6867923ba4eed313e40042ca560ae"
+hash = "5a59ebe515dbf2b637ac23bedeb33e545675668a0a454c5d6edd4d207a458844"
 metafile = true
 
 [[files]]

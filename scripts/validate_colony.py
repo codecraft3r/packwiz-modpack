@@ -63,6 +63,7 @@ def validate():
         522351,   # Library Ferret (moved to Modrinth)
         1497043,  # Middgard (moved to Modrinth)
         521480,   # Skin Layers 3D (moved to Modrinth)
+        962544,   # Oh The Trees You'll Grow (updated on Modrinth for Middgard dependency)
     }
     expected = {
         (item["projectID"], item["fileID"])
