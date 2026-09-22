@@ -1974,6 +1974,11 @@ hash = "f1518b9325a7fa419cfb856774ab3065e12b3d6c467ae566a8e07d7cb9929857"
 metafile = true
 
 [[files]]
+file = "mods/better-advanced-tooltips.pw.toml"
+hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
+metafile = true
+
+[[files]]
 file = "mods/better-village-neoforge.pw.toml"
 hash = "14fc298432c296bfd4fbfd542290d305e9f58c8281310e681009de49f20f8c75"
 metafile = true
@@ -2289,6 +2294,36 @@ hash = "6cb0747f46236c96b3132b4d8bee0fd2b1409340dace5dc7b336a5534fa597f5"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "670df7985eec05c6a339d90ebbcfda0e5f1f5c63846ac65a441412f123471e14"
+metafile = true
+
+[[files]]
+file = "mods/ftb-essentials.pw.toml"
+hash = "6fa984dc1b5905ae909b417ed1cd92d6b536ba4832ed8c8d95aa9d424ad789df"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "2e72d40c6d7b128981b19b71c19d45eb6813f1af87ae1abe1cf92adfa5e8223f"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ranks-forge.pw.toml"
+hash = "f860732e050a8a317084ab8b23410a48c29d17f7e00fe8d7d31f11242fc6986d"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "a5864bfcb697649b40ff1d1c0dd0e66e480a53ca82f027899009f89601c4ba01"
 metafile = true
@@ -2324,8 +2359,23 @@ hash = "9cf35d5b0b7ab064ea54e393af17304e5264ee6a59f5224fb5b79ad3c45ea22f"
 metafile = true
 
 [[files]]
+file = "mods/keybind-atlas.pw.toml"
+hash = "84914fc3e4a0dc029068bc402fcd23c9c2059108b57de31b0bc7bbe7b2b10fa8"
+metafile = true
+
+[[files]]
 file = "mods/konkrete.pw.toml"
 hash = "e8ad4c0b1a01858f6d653672472641f24aeacf7d6fb3b63a4358157312381a76"
+metafile = true
+
+[[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "531aa276b74eabc24566c57412527767238c74ee16b9c646dff511f56dba990c"
+metafile = true
+
+[[files]]
+file = "mods/kubejs.pw.toml"
+hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
 
 [[files]]
@@ -2341,6 +2391,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "c4f815a21d72a50e59af2644e94246111042c4f820f9b9f7557120fbe3a4121f"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "86390b0fac4ae3a1f24f0723cab5dcd3b798cb0c9be579575ba93b0cc6a90212"
 metafile = true
 
 [[files]]
@@ -2421,6 +2476,11 @@ metafile = true
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "aa83553db30adc47f86010f6443340251323a62ee3f9415a0c4332cb6d502419"
+metafile = true
+
+[[files]]
+file = "mods/rhino.pw.toml"
+hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
@@ -2524,6 +2584,11 @@ hash = "daf2079bb11d6a2ed86bca3454dcb7034308f5cf521b6cd6b03a621f331ec400"
 metafile = true
 
 [[files]]
+file = "mods/tacz-pack-upgrader.pw.toml"
+hash = "4d4ce3197d8bd556afee26362180070066a6754c14da5ea1c400f7d588fef7e4"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "003fc4f0346ef9fc643692f85236055b820830a531bc284275c3cc7a4ce7c8b3"
 metafile = true
@@ -2561,3 +2626,8 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "33cbefb30926351d1a4b6d393e857dfa69eb3d66eabcd57116fbeee38222aa88"
+
+[[files]]
+file = "tacz/tacz-arips-pack-by-astrallin.pw.toml"
+hash = "fdf978c82fd3d0eb559367df690dde361878c2a8c4e996edf2821f397e4a0c8b"
+metafile = true
