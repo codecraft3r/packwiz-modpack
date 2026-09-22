@@ -1,0 +1,11 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"ihmt:bronze_tile_5"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:bronze_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_1"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_9"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_7"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_6"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_8"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"ihmt:cast_iron_tile_2"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

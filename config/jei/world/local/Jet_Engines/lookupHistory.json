@@ -1,0 +1,6 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"morepropulsion:kerosene_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"morepropulsion:kerosene"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"morepropulsion:small_compressor"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

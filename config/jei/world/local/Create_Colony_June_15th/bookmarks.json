@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"born_in_chaos_v1:eternal_candy"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:cinder_block"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

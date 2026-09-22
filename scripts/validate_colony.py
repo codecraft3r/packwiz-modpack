@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import sys
+import subprocess
 import tomllib
 
 
@@ -32,6 +33,9 @@ def validate():
     index_path = ROOT / pack["index"]["file"]
     assert digest(index_path, pack["index"]["hash-format"]) == pack["index"]["hash"], "Stale pack hash"
     index = tomllib.loads(index_path.read_text())
+    tracked = set(subprocess.check_output(
+        ["git", "ls-files", "-z"], cwd=ROOT
+    ).decode().split("\0"))
     indexed = set()
     metadata_paths = set()
     for entry in index["files"]:
@@ -41,6 +45,7 @@ def validate():
         assert name not in indexed, f"Duplicate index entry: {name}"
         indexed.add(name)
         assert path.is_file(), f"Missing indexed file: {name}"
+        assert name in tracked, f"Indexed file is not committed or staged: {name}"
         assert digest(path, entry.get("hash-format", index["hash-format"])) == entry["hash"], f"Stale hash: {name}"
         if entry.get("metafile"):
             metadata_paths.add(name)

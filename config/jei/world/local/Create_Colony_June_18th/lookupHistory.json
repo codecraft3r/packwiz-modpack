@@ -1,0 +1,20 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"create_enchantment_industry:super_experience_nugget"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_enchantment_industry:super_experience_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_enchantment_industry:super_enchanting_template"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:redstone_magnet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:honey_glue"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:velocity_sensor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:levitite_blend"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"framedblocks:framed_double_half_stairs"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:red_portable_engine"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:end_stone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:end_stone_powder"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:levitite_blend_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeronautics:levitite"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:oak_boat"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:oak_hanging_sign"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:oak_sign"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"midgard:aspen_planks"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

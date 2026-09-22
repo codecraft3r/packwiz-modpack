@@ -1,0 +1,8 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"cbc_at:unbored_bronze_twin_autocannon_muzzle_brake"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cbcmodernwarfare:incomplete_steel_mediumcannon_breech"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cbcmodernwarfare:steel_mediumcannon_breech"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"cbc_at:steel_muzzle_brake"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tracks:suspension_key"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

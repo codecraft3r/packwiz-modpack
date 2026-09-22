@@ -10,7 +10,7 @@ __pycache__/
 temp_cache/
 
 # Minecraft client-local data (FTB chunks maps, waypoints)
-local/
+/local/
 tmp/
 
 # OS metadata

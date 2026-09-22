@@ -1,0 +1,12 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"tfmg:cinder_block"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:cinderblock"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"framedblocks:framed_wrench"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:caramel_pepper"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:mint_candy"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:gummy_vampire_teeth"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:coffee_candy"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:transmuting_elixir"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:eternal_candy"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

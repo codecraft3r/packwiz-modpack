@@ -1,0 +1,13 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"create_the_air_wars:sc_250"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createpropulsion:tilt_adapter"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_the_air_wars:aim9x"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_radar:monitor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_radar:data_link"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"simulated:altitude_sensor"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"offroad:small_tire"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"sable_tournament:six_way_thruster"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create_the_air_wars:rim_7"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tfmg:transmission"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

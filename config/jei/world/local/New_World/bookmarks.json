@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"ingredient":{"id":"minecraft:string"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"born_in_chaos_v1:orbofthe_summoner"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -1,0 +1,12 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"create_aeronautics_toolgun:structure_tool"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeroengineering:hud_display"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"tracks:suspension_key"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeroengineering:engine_fan"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railways:diorite_riveted_locometal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"railways:gray_riveted_locometal"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeroengineering:aviation_kerosene_bucket"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeroengineering:aviation_kerosene"},"type":"fluid_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"aeroengineering:engine_gearbox"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]
