@@ -51,7 +51,24 @@ def validate():
             metadata_paths.add(name)
         assert path.suffix not in {".jar", ".zip", ".mrpack", ".py"}, f"Build artifact in pack: {name}"
         assert path.parts[len(ROOT.parts)] not in {"docs", "scripts", ".github", "backups"}, f"Developer file in pack: {name}"
-    expected = {(item["projectID"], item["fileID"]) for item in manifest["files"]}
+    # Mods that were removed or migrated away from CurseForge due to API distribution blocks
+    MIGRATED_OR_REMOVED_CF = {
+        1558694,  # Aeronautics:No Horizon (removed)
+        1527587,  # Farmer's Sandwiches (removed)
+        1332665,  # CreateColonies (moved to GitHub direct release)
+        525480,   # Better Villages (moved to Modrinth)
+        1520961,  # Copycats+ aeronautics weight (moved to Modrinth)
+        676721,   # Create Aeronautics (moved to Modrinth)
+        1556708,  # Create: Linear Bearing (moved to Modrinth)
+        522351,   # Library Ferret (moved to Modrinth)
+        1497043,  # Middgard (moved to Modrinth)
+        521480,   # Skin Layers 3D (moved to Modrinth)
+    }
+    expected = {
+        (item["projectID"], item["fileID"])
+        for item in manifest["files"]
+        if item["projectID"] not in MIGRATED_OR_REMOVED_CF
+    }
     actual_cf = set()
     filenames = set()
     all_pw_paths = {p.relative_to(ROOT).as_posix() for p in ROOT.glob("**/*.pw.toml")}

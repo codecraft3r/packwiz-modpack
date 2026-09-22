@@ -1949,8 +1949,8 @@ file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
-file = "mods/aeronautics-no-horizon.pw.toml"
-hash = "589b86bbd5133fa873b38697a5c03ccd33584f95364e81222adf235510ab0c40"
+file = "mods/3dskinlayers.pw.toml"
+hash = "82becc6910845ae1a68884e6f7a3dcdc861d79a087ae81b1d7e120e82884372d"
 metafile = true
 
 [[files]]
@@ -1979,8 +1979,8 @@ hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
 
 [[files]]
-file = "mods/better-village-neoforge.pw.toml"
-hash = "14fc298432c296bfd4fbfd542290d305e9f58c8281310e681009de49f20f8c75"
+file = "mods/better-village.pw.toml"
+hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
 metafile = true
 
 [[files]]
@@ -2054,8 +2054,8 @@ hash = "616036c38fafbcaf00c0720d947ec39f571d885a014f0c81b5eeeb4193784e0e"
 metafile = true
 
 [[files]]
-file = "mods/copycats-aeronautics-weight.pw.toml"
-hash = "5e3e1807657a50181a5001027c888474c3b2852623cdb3f72b71cf10f49a0208"
+file = "mods/copycats+-aeronautics-weight.pw.toml"
+hash = "a1e68ec75524eb10a4522c27e3429a43c22861ac3c081686bd948a06bc4cfc91"
 metafile = true
 
 [[files]]
@@ -2090,7 +2090,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "59beba57945e374108e22789e8fc32d2758174929ebd9bf17fc139956dc32e30"
+hash = "5fab8d2e412683dfd72f08cf6750e51b03cb43192e8eb783e962ba28d20978bc"
 metafile = true
 
 [[files]]
@@ -2174,11 +2174,6 @@ hash = "6cf57a4d0b0d2f7bc04196d22719ca676286d4c1d4435241b7fe9512313a7332"
 metafile = true
 
 [[files]]
-file = "mods/create-linear-bearing.pw.toml"
-hash = "386bb916f6ad29a4ccae107ae211ae8af79d589bd9b8c4d3876d997b0f077220"
-metafile = true
-
-[[files]]
 file = "mods/create-molten-vents.pw.toml"
 hash = "a997a99ed9988b4d88c1e9275860d6ad7fbef5f883a54d050f1d7aae91f5fd24"
 metafile = true
@@ -2220,7 +2215,7 @@ metafile = true
 
 [[files]]
 file = "mods/createcolonies.pw.toml"
-hash = "33eb75ac1ea99b6549952201c32ecfc6e4900356d6f35968e7c738e87f02382b"
+hash = "62922b1a4bfe4b0ee465fa0e6b5a9455bf70841d8c6ff93e1acc092ce8f3d213"
 metafile = true
 
 [[files]]
@@ -2231,6 +2226,11 @@ metafile = true
 [[files]]
 file = "mods/data-anchor.pw.toml"
 hash = "269ec2e84dda586fcc3bcf843c23357e3f9cc5bcb075fb7a04b7cbc50f5b6836"
+metafile = true
+
+[[files]]
+file = "mods/diagonal-leaves.pw.toml"
+hash = "fd262df73bbf1364284dc4641596349667fc04ebea8b8767219bbbd33b11b658"
 metafile = true
 
 [[files]]
@@ -2271,11 +2271,6 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "efc2c4fe9e2cc169aff61a6b7a41ea9bc7a22a90aadf0776b22de647ddf3cef6"
-metafile = true
-
-[[files]]
-file = "mods/farmers-sandwiches.pw.toml"
-hash = "11431baa8a1c9fb911e9d9b33a8d2daa041eade02e1101f8cd103c44a93229c8"
 metafile = true
 
 [[files]]
@@ -2384,8 +2379,13 @@ hash = "dd331e2defccb518233c14dd551cc7983b1b3004c290ded6b8da108b8d4e91bb"
 metafile = true
 
 [[files]]
-file = "mods/library-ferret-neoforge.pw.toml"
-hash = "6568975091d861763aac4c0fe03863e9659f9944308b2ab941472b887b023a05"
+file = "mods/library-ferret.pw.toml"
+hash = "599c8c37e60b9f1fbfb29d10eb9ede3d174b72287b9fbe407e90b6417a27a441"
+metafile = true
+
+[[files]]
+file = "mods/linear-bearing.pw.toml"
+hash = "6b735be640688182efad2278b2cb06f764a61f1b7d2afd03142d4e01d64ccbd8"
 metafile = true
 
 [[files]]
@@ -2404,8 +2404,8 @@ hash = "f5bba8e4957d5f6d549838d9997b04056d5b15182cccdcd5827c7ee8ae093917"
 metafile = true
 
 [[files]]
-file = "mods/middgard.pw.toml"
-hash = "9ea44b551c5d994ef298b9d7ac9e11b9be183a08390121ca78f66b3935bfa122"
+file = "mods/middgard-foxed.pw.toml"
+hash = "147a66b38365d683786c67db5d2fe6d24aa187a6d692fed22b950f18be8d5dac"
 metafile = true
 
 [[files]]
@@ -2516,11 +2516,6 @@ metafile = true
 [[files]]
 file = "mods/sinytra-connector.pw.toml"
 hash = "eff7ebd7bc65ef5d3ba8ac731bc3fb2fd9697566f53dcedbfc55d0b4bb55d60d"
-metafile = true
-
-[[files]]
-file = "mods/skin-layers-3d.pw.toml"
-hash = "2e732465d013826542bf992dee5046dc4b2feadc38971f27061d3e84479bf7b9"
 metafile = true
 
 [[files]]
