@@ -4,7 +4,7 @@ Packwiz conversion of [Create'a Colony 1.1](https://www.curseforge.com/minecraft
 
 | Setting | Value |
 | --- | --- |
-| Packwiz version | `4.1.0` |
+| Packwiz version | `4.1.1` |
 | Upstream release | `1.1` — CurseForge project `1026019`, file `8773452` |
 | Minecraft | `1.21.1` |
 | NeoForge | `21.1.234` |

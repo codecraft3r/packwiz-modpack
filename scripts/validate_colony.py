@@ -95,6 +95,8 @@ def validate():
         assert name in indexed, f"Unindexed upstream override: {name}"
         assert digest(ROOT / name, "sha256") == expected_hash, f"Modified upstream override: {name}"
     assert len(overrides) == source["overrides"], "Override count mismatch"
+    dh_entry = next((f for f in index["files"] if f["file"] == "config/DistantHorizons.toml"), None)
+    assert dh_entry and dh_entry.get("preserve") is True, "config/DistantHorizons.toml must have preserve = true"
     print(f"PASS: {len(all_pw_paths)} metadata files ({len(actual_cf)} CurseForge, {len(all_pw_paths)-len(actual_cf)} Modrinth/other), "
           f"{len(overrides)} unchanged upstream overrides, {len(indexed)} verified index hashes")
 

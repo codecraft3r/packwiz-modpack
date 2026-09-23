@@ -2,6 +2,11 @@
 
 All notable changes to the modpack will be documented in this file.
 
+## [4.1.1] - 2026-09-23
+
+### Fixed
+- Marked `config/DistantHorizons.toml` with `preserve = true` in Packwiz index so client configuration and graphics settings are not overwritten on relaunch.
+
 ## [4.1.0] - 2026-09-23
 
 ### Added
