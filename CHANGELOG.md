@@ -2,6 +2,11 @@
 
 All notable changes to the modpack will be documented in this file.
 
+## [4.1.0] - 2026-09-23
+
+### Added
+- Added `FTB Chunks x Xaero's Compat` (ftbxaerocompat) for seamless integration between FTB Chunks claim visualization and Xaero's Minimap/World Map.
+
 ## [4.0.0] - 2026-09-22
 
 ### Changed

@@ -4,12 +4,12 @@ Packwiz conversion of [Create'a Colony 1.1](https://www.curseforge.com/minecraft
 
 | Setting | Value |
 | --- | --- |
-| Packwiz version | `4.0.0` |
+| Packwiz version | `4.1.0` |
 | Upstream release | `1.1` — CurseForge project `1026019`, file `8773452` |
 | Minecraft | `1.21.1` |
 | NeoForge | `21.1.234` |
 | Java | `21` |
-| Mods | `122`, all required on their supported sides |
+| Mods | `123`, all required on their supported sides |
 
 Optional mods are included as required. Client-only mods remain client-only and are excluded from dedicated-server installation. This is a full replacement of the previous Poiesis pack: use a **fresh world and separate server data directory**. Existing-world compatibility is not established.
 

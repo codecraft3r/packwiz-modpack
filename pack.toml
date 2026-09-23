@@ -1,12 +1,12 @@
 name = "Create'a Colony"
 author = "SbeevYT"
-version = "4.0.0"
+version = "4.1.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ac8b02181ad84ff26c1f98bf5a8726bae91c31dd76d5c87b923b325686aed04f"
+hash = "68ae8cf5897835eb6c9cb5f9558b06439e1fc83e5fa71881ebc6bfd3023f46e8"
 
 [versions]
 minecraft = "1.21.1"
