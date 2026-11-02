@@ -1,9 +1,0 @@
-name = "CreateColonies"
-filename = "CreateColonies-1.21.1-2.0.6.jar"
-side = "both"
-pin = true
-
-[download]
-url = "https://github.com/MotionlessTrain/CreateColonies/releases/download/v2.0.6/CreateColonies-1.21.1-2.0.6.jar"
-hash-format = "sha256"
-hash = "3e901c7b385493990e984e898eea36225ad7c83b6929543b7dc1560a6fff9a17"
