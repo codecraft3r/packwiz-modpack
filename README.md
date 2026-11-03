@@ -19,7 +19,7 @@ A creative multiplayer experience designed in the spirit of a shared SMP world r
 * **Custom Dimension Spawning Rules & Datapacks**: Spawning configurations and custom datapacks decouple entity pressure from primary building areas, directing specialized spawns to appropriate dimensions and keeping creative spaces performant.
 
 ### Core Mod Highlights
-* **Management Wanted & Admin Infrastructure**: Robust server management, permission node structuring via LuckPerms, FTB Essentials, and team coordination tools.
+* **Management Wanted**: [Five Nights at Freddy's: Management Wanted](https://modrinth.com/mod/management-wanted) bringing interactive animatronics, pizzeria props, stage decorations, and custom themed mechanics.
 * **Cobblemon in a Dedicated World**: Full Cobblemon integration configured with dedicated world/dimension spawning rules, allowing Pokémon catching, battling, and training without cluttering mainline creative cities and builds.
 * **Create + Create Aeronautics**: Complete engineering contraption suite featuring Create, Create Aeronautics, Aeroworks, Big Cannons, Steam 'n Rails, and Simulated Propulsion for airships, trains, and moving structures.
 * **Mekanism Suite**: High-tier tech, processing, energy networks, and tools with Mekanism, Generators, Additions, and Applied Mekanistics.
