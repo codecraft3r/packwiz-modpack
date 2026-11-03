@@ -111,3 +111,6 @@ Always format releases according to the following SemVer guidelines:
 - **Phrasing**: Non-accusatory and strictly to the point. Avoid aggressive, punitive, or hostile wording (e.g. avoid words like "strictly", "forbidden", or exclamation-heavy warnings). State facts plainly and neutrally (e.g., `The Wither is disabled on this server.` rather than `Wither spawning is strictly disabled!`).
 - **Code Style**: Concise logic, clean string formatting, and early return patterns.
 
+### Proactive Global Learning & Preferences
+- Whenever the user expresses an enduring preference, behavioral correction, or general workflow rule that would typically warrant a `/learn` command, **proactively codify and save it directly into the relevant global and workspace rules** rather than asking or reminding the user to run `/learn`.
+
