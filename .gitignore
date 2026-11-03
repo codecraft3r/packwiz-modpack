@@ -3,6 +3,8 @@
 *.mrpack
 *.zip
 packwiz
+packwiz.json
+.agents/
 .cache/
 server-data/
 __pycache__/

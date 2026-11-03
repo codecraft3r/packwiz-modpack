@@ -1,19 +1,10 @@
 {
-  "id": "modpack:mirror_overworld_only",
+  "displayName": "Mirror Overworld Only",
   "enabled": true,
   "components": [
     {
-      "type": "filter",
-      "context": {
-        "anticonditions": [
-          {
-            "dimensions": [
-              "modpack:mirror_overworld"
-            ]
-          }
-        ]
-      },
-      "allow": "false"
+      "type": "location",
+      "allow": "v.world.is_of('modpack:mirror_overworld')"
     }
   ]
 }

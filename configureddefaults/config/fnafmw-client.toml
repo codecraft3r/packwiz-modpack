@@ -1,0 +1,35 @@
+#config.fnafmw.gui.tooltip
+[gui]
+	#config.fnafmw.custom_main_menu.tooltip
+	custom_main_menu = false
+	#config.fnafmw.show_social_icons.tooltip
+	show_social_icons = true
+	#config.fnafmw.show_bisect_button.tooltip
+	show_bisect_button = true
+	#config.fnafmw.custom_loading_screen.tooltip
+	custom_loading_screen = false
+	#config.fnafmw.custom_app_icon.tooltip
+	custom_app_icon = false
+	#config.fnafmw.item_group_icon_size.tooltip
+	# Default: 6
+	# Range: 2 ~ 10
+	item_group_icon_size = 6
+	#config.fnafmw.item_groups_in_search.tooltip
+	item_groups_in_search = false
+
+#config.fnafmw.accessibility.tooltip
+[accessibility]
+	#config.fnafmw.flashing_lights.tooltip
+	flashing_lights = false
+
+#config.fnafmw.sound.tooltip
+[sound]
+	#config.fnafmw.voicelines.tooltip
+	voicelines = true
+	#config.fnafmw.spotted_sound.tooltip
+	spotted_sound = true
+
+#config.fnafmw.integrations.tooltip
+[integrations]
+	#config.fnafmw.discord_rich_presence.tooltip
+	discord_rich_presence = false

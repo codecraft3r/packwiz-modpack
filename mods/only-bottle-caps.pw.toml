@@ -1,0 +1,13 @@
+name = "Only Bottle Caps"
+filename = "Only Bottle Caps-1.5.0-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tDRRddpZ/versions/2aWiTHfc/Only%20Bottle%20Caps-1.5.0-neoforge.jar"
+hash-format = "sha512"
+hash = "38e4895bac229e79b6258ef16adec9ac1c5108a7655d9b2787389a255a5ac0c90f3685f6ef9208bf829c30ad03f1f8e3126c8399ef7b28c2bc9193b6461854b4"
+
+[update]
+[update.modrinth]
+mod-id = "tDRRddpZ"
+version = "2aWiTHfc"

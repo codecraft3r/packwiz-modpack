@@ -122,36 +122,12 @@ file = "config/neoforge-server.toml"
 hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
 
 [[files]]
-file = "config/reeses_sodium_options.json"
-hash = "005862f79b1de8e06f10a69b7dbfcbef8ce1f3d7e7a3d2391ed3c9be3d6a3c67"
-
-[[files]]
 file = "config/simply-no-shading.json"
 hash = "08e01adaa36cce628422031934928f40cef93382e0b7de2ac7819bfc6cec927e"
 
 [[files]]
 file = "config/skinlayers.json"
 hash = "45162f45aa2db525a0edc483959f35b6d958ba2e54066a4f87e7f3c3f0f99166"
-
-[[files]]
-file = "config/sodium-fingerprint.json"
-hash = "dc52b3270f1236e47a03b60a1123ff2f9fac26ca5f3ccb30a95ce2d021bb68f2"
-
-[[files]]
-file = "config/sodium-mixins.properties"
-hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
-
-[[files]]
-file = "config/sodium-options.json"
-hash = "ef3242a314c4311b64b88ce016acea790d42a35f7c81f0a02934841e64efcda1"
-
-[[files]]
-file = "config/sodiumdynamiclights-client.toml"
-hash = "d8ebc5a26f6f4fc0d27c3746a3aa6ec8d2652873bd3cec6f254be1628f0472f7"
-
-[[files]]
-file = "config/sodiumextras-client.toml"
-hash = "6b7317a4d8094a270a1f9a3d2e76a1e9f609fe9f4f5bbe834d22c0ae4319f250"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -220,6 +196,42 @@ hash = "58c9270f258d0b224bb7d0f7c927544d5fbe5f1b8027c820e1e14ecbf48fb88c"
 [[files]]
 file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "configureddefaults/config/fnafmw-client.toml"
+hash = "c7ca30c447675822e697c8b151200be2882521aa73d03ab49f6e6cfa352e7900"
+
+[[files]]
+file = "configureddefaults/config/fnafmw_prefs.properties"
+hash = "b7ce688192f24a03adafa12627a7172a38a963af444ee32cbfeaee34bf0d637f"
+
+[[files]]
+file = "configureddefaults/config/reeses_sodium_options.json"
+hash = "005862f79b1de8e06f10a69b7dbfcbef8ce1f3d7e7a3d2391ed3c9be3d6a3c67"
+
+[[files]]
+file = "configureddefaults/config/sodium-mixins.properties"
+hash = "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
+
+[[files]]
+file = "configureddefaults/config/sodium-options.json"
+hash = "44478bef0973f1aa587c0493568a5cbc5426233b611f14bd2be489b5b862fa7f"
+
+[[files]]
+file = "configureddefaults/config/sodiumdynamiclights-client.toml"
+hash = "d8ebc5a26f6f4fc0d27c3746a3aa6ec8d2652873bd3cec6f254be1628f0472f7"
+
+[[files]]
+file = "configureddefaults/config/sodiumextras-client.toml"
+hash = "6b7317a4d8094a270a1f9a3d2e76a1e9f609fe9f4f5bbe834d22c0ae4319f250"
+
+[[files]]
+file = "configureddefaults/options.txt"
+hash = "76fb0e4fef14ff7375eabbfd00d17ef91a5b23d3b1ed57d37a211bbf946388e9"
+
+[[files]]
+file = "configureddefaults/servers.dat"
+hash = "3bd421e3d8fab775a9b9291754c2d528577cf2d6e0bd204295f0d6f1be1a019f"
 
 [[files]]
 file = "datapacks/README.txt"
@@ -291,7 +303,7 @@ hash = "da7f94f39b4f8ffb752831542c2b06569d2f601c613959d8477a4dd57f9b9b42"
 
 [[files]]
 file = "global_packs/required_data/modpack_dims/data/modpack/spawn_rules/mirror_overworld_only.json"
-hash = "ef02d35463f38274eb63d1a2ad4dbdb500e5983a7bf883348887ddd2109a88e7"
+hash = "8bce9c7750c22b76787694ad94522d6e91ee67767aae6ce794ddb32dd0463deb"
 
 [[files]]
 file = "global_packs/required_data/modpack_dims/data/modpack/worldgen/biome/superflat.json"
@@ -485,8 +497,13 @@ hash = "44925367c0bae557040f165930d0026911cdc1967bb8ac15b9d253d23aa0a221"
 metafile = true
 
 [[files]]
+file = "mods/configured-defaults.pw.toml"
+hash = "edccf044df3d6519c3f8cb35e1044687d1b5bdc676fdce919d0844a4d2515685"
+metafile = true
+
+[[files]]
 file = "mods/controlify.pw.toml"
-hash = "2b61d5100f1db31c7928ba7de237c5f863926c49a4bf53fcce27bf0371ec0575"
+hash = "e753411e53ae58f46754b5ef60e70af81a9ec6b5e31f99c47777cc59fbbc5fe4"
 metafile = true
 
 [[files]]
@@ -582,11 +599,6 @@ metafile = true
 [[files]]
 file = "mods/curios.pw.toml"
 hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
-metafile = true
-
-[[files]]
-file = "mods/default-options.pw.toml"
-hash = "a6967d761dde867ccc1af53dc9f4e530eb9917a9cb21d0fc15708e8cd2c0f2ba"
 metafile = true
 
 [[files]]
@@ -821,7 +833,7 @@ metafile = true
 
 [[files]]
 file = "mods/luckperms.pw.toml"
-hash = "30552c09591d589e0e0a681b1f5c5d6e0aaf23e3eb6bbd3c8bab49e1ea9ed28d"
+hash = "988b4a252cc940834c0762fdbea181f45cef2864b58a91ef0b9b29fbb38950be"
 metafile = true
 
 [[files]]
@@ -937,6 +949,11 @@ metafile = true
 [[files]]
 file = "mods/navas-zamega.pw.toml"
 hash = "0f1148ea2b643d8999ba0e96b62171e4925470518d874f9f13e213affaf4e968"
+metafile = true
+
+[[files]]
+file = "mods/only-bottle-caps.pw.toml"
+hash = "fc4564d1829aa06f0410c91e453739981ce8d839b91095e67f991b2b98ea834e"
 metafile = true
 
 [[files]]
@@ -1188,10 +1205,6 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "b24c213b8727e80ca559670e97971c735c4dc4be1d1a4bd637c41450e7654c1e"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "2cdbd7d517de268a5412723669c253372570f133793b406da56bbe3b05189bd6"
 
 [[files]]
 file = "packwiz.json"
