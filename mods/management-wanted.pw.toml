@@ -1,0 +1,13 @@
+name = "Five Nights at Freddy's: Management Wanted | FNAF MW"
+filename = "fnafmw-alpha-1.0.0-snapshot-1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AfaWrHwE/versions/UPSYv4qi/fnafmw-alpha-1.0.0-snapshot-1.jar"
+hash-format = "sha512"
+hash = "8f3393514c5f22ba63e178b3c1349438952397c1a88329f5a9bf82faf8f87a3b4e9d79e6b269cd683d60dfa3530ea58607d2bc5c9128460399e40836c3a33633"
+
+[update]
+[update.modrinth]
+mod-id = "AfaWrHwE"
+version = "UPSYv4qi"

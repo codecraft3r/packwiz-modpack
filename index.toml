@@ -343,8 +343,8 @@ hash = "3637f8c7e237525c908ef902ab13765be9b7c885e22a5ec0532561a13af7ba48"
 metafile = true
 
 [[files]]
-file = "mods/allthemons.pw.toml"
-hash = "1963c26567874a35937a3c139e5d6ba83c9a443a6f996ef27990f19e2a4d7d44"
+file = "mods/allthemons-x-mega-showdown-legacy.pw.toml"
+hash = "e076bf51bc6dc4ddc81efcaae6562146e24d2f9a5e11c3d097bbc210a6db40c9"
 metafile = true
 
 [[files]]
@@ -788,6 +788,11 @@ hash = "7211de0ddeab153fc2bf9588f5922de705006be507002ec03cb9f8e6b67ab4cf"
 metafile = true
 
 [[files]]
+file = "mods/ldlib.pw.toml"
+hash = "b5b6587e134af00d356d4e7c8d16f189540d778e2e214063e1cc7a5baffd5481"
+metafile = true
+
+[[files]]
 file = "mods/lets-do-beachparty.pw.toml"
 hash = "fd2a321d4abc440ff159e477dc75ebc9d32a9efa246e61ceeb6142391c55bfcf"
 metafile = true
@@ -895,6 +900,11 @@ metafile = true
 [[files]]
 file = "mods/macaws-windows.pw.toml"
 hash = "450ed5663bf1d12ffddc78eda5aa56cb7808cbdac6db8102d18461361aaa555f"
+metafile = true
+
+[[files]]
+file = "mods/management-wanted.pw.toml"
+hash = "dc4a1c9996a83195c4654d105d456d64e03f4be1ba079279707c151edc4dd66f"
 metafile = true
 
 [[files]]
@@ -1073,11 +1083,6 @@ hash = "b9ceb0fa4707ced2e0467f334ce8b6cb2fd60c729b47aee065e2bb0d5b905189"
 metafile = true
 
 [[files]]
-file = "mods/scalablelux.pw.toml"
-hash = "9d9330972174ff5c68779f15ecd7023b357eb2e0a5bdc99b63ca7768e90616f1"
-metafile = true
-
-[[files]]
 file = "mods/searchables.pw.toml"
 hash = "b210b54498abff891f524a0ce32b7b81bfc88043604065bd4ece9e71c36427f4"
 metafile = true
@@ -1158,6 +1163,11 @@ hash = "aef8922d29952bc613515e87e2baeee1e047b9ad7604df26dd257fe112215657"
 metafile = true
 
 [[files]]
+file = "mods/veil.pw.toml"
+hash = "475a240821a858455d59d6e703a209a18bc24d692b4a2716dc42b46c558ffc83"
+metafile = true
+
+[[files]]
 file = "mods/vista_tv.pw.toml"
 hash = "45846eb3dc676bae24a193bd93c0cd4c6aaadb71138885e23cfde057f1dd15b0"
 metafile = true
@@ -1200,6 +1210,10 @@ metafile = true
 [[files]]
 file = "options.txt"
 hash = "2cdbd7d517de268a5412723669c253372570f133793b406da56bbe3b05189bd6"
+
+[[files]]
+file = "packwiz.json"
+hash = "75628d044d24fff08549601aeff92d97f1721c515e1517f23f2c2482ac6c1748"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
