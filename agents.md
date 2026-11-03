@@ -101,13 +101,3 @@ Always format releases according to the following SemVer guidelines:
   git tag v1.0.1
   git push origin main --tags
   ```
-
----
-
-## 4. Coding & Communication Standards
-
-### Error and Notification Messaging
-- **Tone**: Always objective, calm, and matter-of-fact ("this is what happened and why").
-- **Phrasing**: Non-accusatory and strictly to the point. Avoid aggressive, punitive, or hostile wording (e.g. avoid words like "strictly", "forbidden", or exclamation-heavy warnings). State facts plainly and neutrally (e.g., `The Wither is disabled on this server.` rather than `Wither spawning is strictly disabled!`).
-- **Code Style**: Concise logic, clean string formatting, and early return patterns.
-
