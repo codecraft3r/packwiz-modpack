@@ -15,10 +15,15 @@ EntityEvents.spawned(event => {
     // Notify server/players when a blocked spawn is prevented
     if (event.server) {
       if (entityType === 'minecraft:wither') {
-        event.server.tell('§c[Server] Wither spawning is strictly disabled on this server.');
-      } else {
-        event.server.tell(`§c[Server] Spawning of ${entityType} is strictly disabled on this server.`);
+        event.server.tell('§c[Server] The Wither is disabled on this server.');
+        return;
       }
+      if (entityType === 'minecraft:ender_dragon') {
+        event.server.tell('§c[Server] The Ender Dragon is disabled on this server.');
+        return;
+      }
+      event.server.tell(`§c[Server] ${entityType} cannot spawn as it is disabled on this server.`);
+
     }
   }
 });
