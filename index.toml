@@ -42,14 +42,6 @@ file = "config/global_packs.toml"
 hash = "c94c49ca71c3ab8a98af36cb76f334e3e585d65ee8d984770265c1978dd4b32b"
 
 [[files]]
-file = "config/iris-excluded.json"
-hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
-
-[[files]]
-file = "config/iris.properties"
-hash = "c93b5139bb1882c3a9c7ec314f619eafdddbb4dc05f307ca6cd676bbfbf5ad2e"
-
-[[files]]
 file = "config/jade/hide-blocks.json"
 hash = "309df4ae96864c19eae41b646d58497c85a73b1fc3c584e772ef4d5822794baa"
 
@@ -653,11 +645,6 @@ hash = "426238488c9ffd843f661f8bc74aa8e585fa6b4d342c43c4ba4cb8451298b725"
 metafile = true
 
 [[files]]
-file = "mods/euphoria-patches.pw.toml"
-hash = "a245469cf91e7f3c8aec3b0f5ad3d79b1846ac0696543f892b426faea5f91cab"
-metafile = true
-
-[[files]]
 file = "mods/falling-leaves-forge.pw.toml"
 hash = "0df579e1b483cf7342b51b0367b69263ff37a36691f86c3f0bc5abcd6fbe31f8"
 metafile = true
@@ -745,11 +732,6 @@ metafile = true
 [[files]]
 file = "mods/interiors.pw.toml"
 hash = "e7e6b3effe3022cf1fdb900c857111fdcbfd6b385c2d5bd28c914efaed436ecb"
-metafile = true
-
-[[files]]
-file = "mods/irisshaders.pw.toml"
-hash = "bc0ed43619af3b5e453ccb36412d72aef8d066594946a927155d2fbd440e4b40"
 metafile = true
 
 [[files]]
@@ -1213,7 +1195,7 @@ hash = "2cdbd7d517de268a5412723669c253372570f133793b406da56bbe3b05189bd6"
 
 [[files]]
 file = "packwiz.json"
-hash = "c1cc288d8c7fc42fa59533725fbb88582aa63579327da4c45deb3adcb9bf1f42"
+hash = "86fb6df1eacefec32d87afb35ab0ae7a632ae9eda88b32d46ba5e489e10073de"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
@@ -1233,19 +1215,4 @@ metafile = true
 [[files]]
 file = "resourcepacks/unity-dark-edition.pw.toml"
 hash = "ee994291d6e319f2be45f9b46be2f03e6353141a2688c0aee318b893ff763d21"
-metafile = true
-
-[[files]]
-file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "4b3e1e043e7267a81cdc94429d0d87e6d23f8a6f03ec70caee086cd5d12d17c1"
-metafile = true
-
-[[files]]
-file = "shaderpacks/complementary-unbound.pw.toml"
-hash = "0a01697586fb287fb20c6afb9baaa5be31e508cbce137303e06797ba682dd608"
-metafile = true
-
-[[files]]
-file = "shaderpacks/photon-shader.pw.toml"
-hash = "956d79fbc7f482291d6b3a11b812ce3239ab590bac6efec0bea6cc1b1a4db67e"
 metafile = true
