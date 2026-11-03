@@ -15,6 +15,7 @@ This pack ships with project-scoped agent skills under [`skills/`](file:///c:/Us
 | --- | --- |
 | [`skills/snbt-validation/SKILL.md`](file:///c:/Users/nmitc/packwiz-modpack/skills/snbt-validation/SKILL.md) | Adding, editing, or reviewing any `*.snbt` file (FTB Quests, FTB Library / Chunks / Ultimine / Teams configs, KubeJS data files); debugging a blocked commit or a CI SNBT diagnostic. |
 | `skills/ftb-quest-authoring/SKILL.md` | Designing, implementing, balancing, validating, or releasing FTB Quests chapters; auditing quest graphs, layouts, reward economies, or art paths. |
+| [`skills/prism-launcher/SKILL.md`](file:///c:/Users/nmitc/packwiz-modpack/skills/prism-launcher/SKILL.md) | Interacting with, launching, exporting, importing, or debugging Minecraft instances via the Prism Launcher CLI (`prismlauncher`). |
 
 The validator the SNBT skill wraps lives at `scripts/validate_snbt.py` and runs on every commit via `.githooks/pre-commit` once `git config core.hooksPath .githooks` has been set in the clone.
 
@@ -69,7 +70,7 @@ To import from a raw folder structure or a Prism Launcher instance export ZIP:
 ## 2. Packwiz CLI Rules
 
 - **ALWAYS** use the packwiz CLI for creation, deletion, and interaction with packwiz `.toml` files. Do not edit `.pw.toml` files manually unless setting the `side` parameter or other settings that do not have CLI commands.
-- If you edit any non-packwiz override files (configs, scripts, etc.) manually, you **MUST** run `packwiz refresh` to regenerate file hashes in the `index.toml` before adding and committing them to Git.
+- **CRITICAL**: **ALWAYS** run `packwiz refresh` immediately before staging and committing files to Git. Any change to mods, dependencies, config files, custom datapacks, resourcepacks, or scripts modifies indexed files or index hashes — running `packwiz refresh` ensures `index.toml` and `pack.toml` file hashes are always accurate and synchronized in every single git commit.
 
 ---
 

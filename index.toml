@@ -1213,7 +1213,7 @@ hash = "2cdbd7d517de268a5412723669c253372570f133793b406da56bbe3b05189bd6"
 
 [[files]]
 file = "packwiz.json"
-hash = "c999bbe3f52979b37ac3fae3412f0193928496dcf2a5d59acce243fe8b92c868"
+hash = "c1cc288d8c7fc42fa59533725fbb88582aa63579327da4c45deb3adcb9bf1f42"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
