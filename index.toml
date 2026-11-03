@@ -26,6 +26,10 @@ file = "config/fml.toml"
 hash = "1ac1fd9694773ef1ec8af42c9cc8a908a1b618fa6fb6031c27305383e97f70c7"
 
 [[files]]
+file = "config/global_packs.toml"
+hash = "3ad89c9c5ac229563911af46280bc05b1350e32fe4bbb993979e9b5d939069ba"
+
+[[files]]
 file = "config/iris-excluded.json"
 hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
@@ -212,6 +216,24 @@ hash = "58c9270f258d0b224bb7d0f7c927544d5fbe5f1b8027c820e1e14ecbf48fb88c"
 [[files]]
 file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "global_packs/optional_data/README.txt"
+hash = "c4611cc7ea64ef55dcd33ad145549d64f4cd71ba487404b40d4daeaf8f79370a"
+
+[[files]]
+file = "global_packs/required_data/README.txt"
+hash = "c4f66b94a515bb8e1aa2d40b40cb99c868ea78173790fbea3f94e9ead68b06e6"
+
+[[files]]
+file = "global_packs/required_resources/e19_cobblemon_minimap_icons.pw.toml"
+hash = "c2b9ec0ff6fe4eff64e82efe5b506e0426af47b59edc5b0db66d4a7f7b7e1a1e"
+metafile = true
+
+[[files]]
+file = "global_packs/required_resources/fresh-animations.pw.toml"
+hash = "6d9842b52f988e6f4567f3dd8fe45aff43cf8003dccd0868d9f926d578d320e8"
+metafile = true
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -1065,21 +1087,11 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "0794d603426d52768584da366748c95b22280d9f81e2643d7935461fe9e1ec29"
+hash = "2cdbd7d517de268a5412723669c253372570f133793b406da56bbe3b05189bd6"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
 hash = "16c71ab69a181406c3b04887cd575386ac88400a296660917c295bc5cec08e14"
-metafile = true
-
-[[files]]
-file = "resourcepacks/e19_cobblemon_minimap_icons.pw.toml"
-hash = "c2b9ec0ff6fe4eff64e82efe5b506e0426af47b59edc5b0db66d4a7f7b7e1a1e"
-metafile = true
-
-[[files]]
-file = "resourcepacks/fresh-animations.pw.toml"
-hash = "6d9842b52f988e6f4567f3dd8fe45aff43cf8003dccd0868d9f926d578d320e8"
 metafile = true
 
 [[files]]
