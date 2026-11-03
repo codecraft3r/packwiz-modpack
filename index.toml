@@ -65,6 +65,10 @@ file = "config/mega_showdown/config.json"
 hash = "f025396282b488579aa89e179c0db20bf5d11e2224f2f36142ec1bdc44f09304"
 
 [[files]]
+file = "config/quark-common.toml"
+hash = "deb074ab25fecd7893438c410e95afff6145621d1344ce6123e4f17715b7b3da"
+
+[[files]]
 file = "configureddefaults/config/DistantHorizons.toml"
 hash = "be40ac729c22d257abe799561e0be28cf17eca99afff2862d52456af565ee7b9"
 
@@ -210,7 +214,7 @@ hash = "da1a49eace6292d25e0ec96ba0fff04db7edb36610e9d8de59f21da87433b9ff"
 
 [[files]]
 file = "kubejs/server_scripts/blocked_spawns.js"
-hash = "9ddaae4dab11e56da8595eaf864ab92da111b127c21ed69af10e7329b110f554"
+hash = "75c64151436ec4552bdaf1699615c73e0f4c39af2b9a7f92312f0b3bccbc48b1"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -883,6 +887,11 @@ hash = "84cb0dcad9ac46d22adba4fb7924951affa6ac5e46027a3b25fa9a0db8d91b2b"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "d7f360ebb9f009d6dc0b368cd8fa399bdff70c0f6ef931687b2a35137f72715d"
+metafile = true
+
+[[files]]
 file = "mods/pehkui.pw.toml"
 hash = "e5141bf653c820b9967b8be2e3d9d8e83f3b54d0450f0cabe812e00cce481fdf"
 metafile = true
@@ -895,6 +904,11 @@ metafile = true
 [[files]]
 file = "mods/power-grid.pw.toml"
 hash = "22cf5579fbc67af2ac84358af3c390c6235fabd6cd6cc3828021349b588f4bdb"
+metafile = true
+
+[[files]]
+file = "mods/psi.pw.toml"
+hash = "40c7f3e1346a776603fc6fc510709fc445a6084fc30c6817f64dd1a24651e7d8"
 metafile = true
 
 [[files]]

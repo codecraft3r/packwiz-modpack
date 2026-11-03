@@ -1,0 +1,13 @@
+name = "Psi"
+filename = "Psi-neoforge-1.21.1-110.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/pOeA0exL/versions/j9TFdTKC/Psi-neoforge-1.21.1-110.jar"
+hash-format = "sha512"
+hash = "2bbe6b40f230cd495a5342db61fb5a6c2a4d03fda0ee5fe0a21d8b7ccc8494d1d3e7fa5f54236d5f90cbe78a8bb75c27e3bb9cd9b85e4b6eed67aa976ffe857a"
+
+[update]
+[update.modrinth]
+mod-id = "pOeA0exL"
+version = "j9TFdTKC"

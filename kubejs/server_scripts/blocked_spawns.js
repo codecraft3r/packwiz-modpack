@@ -3,6 +3,7 @@
 // List of entity types to block from spawning (add more entity IDs here as needed)
 const BLOCKED_SPAWN_ENTITIES = [
   'minecraft:wither',
+  'minecraft:ender_dragon',
 ];
 
 EntityEvents.spawned(event => {
