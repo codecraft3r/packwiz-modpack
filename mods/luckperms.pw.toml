@@ -1,6 +1,6 @@
 name = "LuckPerms-NeoForge-5.4.140-patched"
 filename = "LuckPerms-NeoForge-5.4.140-patched.jar"
-side = "both"
+side = "server"
 
 [download]
 url = "https://github.com/codecraft3r/LuckPerms/releases/download/v5.4.140-patched/LuckPerms-NeoForge-5.4.140-patched.jar"
