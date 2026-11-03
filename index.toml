@@ -18,6 +18,18 @@ file = "config/c2me.toml"
 hash = "e1dfd10a4bfadd7eef8720815f58cd03591494a3104904ba2ec0dc543b13c6ed"
 
 [[files]]
+file = "config/cobblemon/main.json"
+hash = "2df26c8a004f8c50819c799fca923192bf4743f0360d8cc46f804e60219a3488"
+
+[[files]]
+file = "config/cobblemonraiddens.json5"
+hash = "6eb7f3c210b9512c8ef7c8b4801bbf661e8add407009e93312651c71e4b80446"
+
+[[files]]
+file = "config/cobblemonraiddens/common.json5"
+hash = "6eb7f3c210b9512c8ef7c8b4801bbf661e8add407009e93312651c71e4b80446"
+
+[[files]]
 file = "config/fallingleaves-client.toml"
 hash = "f42d9c8ad7daebca0b534e440f2863aabe554d498cb8dbb0c74212db6fdeb313"
 
@@ -228,6 +240,74 @@ hash = "c4611cc7ea64ef55dcd33ad145549d64f4cd71ba487404b40d4daeaf8f79370a"
 [[files]]
 file = "global_packs/required_data/README.txt"
 hash = "c4f66b94a515bb8e1aa2d40b40cb99c868ea78173790fbea3f94e9ead68b06e6"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/minecraft/tags/function/load.json"
+hash = "5eb3faffcf15b3de01ec64276e8add79e9efce1b6c6ca29e4d04706febceec27"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/dimension/mirror_overworld.json"
+hash = "6d3238be7ffe1f1f8229a617895e3024a21f36d16f33fb82fda625cbeb710575"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/dimension/superflat.json"
+hash = "420adac0d0ff26284e54fa9cab863d31f2bcb94356d8101379468ceb218e2cfb"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/dimension_type/superflat.json"
+hash = "170db14a7b8fe6a48c3596d930a00a20ae060685ab45ead9e6d6c30600de44ab"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/force_init.mcfunction"
+hash = "b34123deaaa768a23bcf2e8507d245df83d735fcdec548b186ce1b83520e5183"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/init.mcfunction"
+hash = "02452e792af17abff7b4c3794603d77ab3af6e8bef49bf51cda5057ebaccd14f"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/load.mcfunction"
+hash = "60f9dfc0f8c8070110e86c73996930219349d85a31b876fb0b9c84750285de8e"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/tp_mirror_overworld.mcfunction"
+hash = "d1a6a45963d3b64d2f16612091302da6922242e3a8ba06865be1c26f32ac9bbc"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/tp_overworld.mcfunction"
+hash = "fe1f60206595e8999ce1803d9ffe1f2938c026b48462df214858d3109fc9c74d"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/function/tp_superflat.mcfunction"
+hash = "bdd0b75b4045c3d42e069e3ecfc6750c3390aa5c0383218ce51d9fd8adcb5b92"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/lithostitched/biome_injector/mirror_disable_skylands_autumn.json"
+hash = "52b8547f0a32d2184cb069982fc502b67ae0d49dbd5c1361a4abf3d516ab9215"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/lithostitched/biome_injector/mirror_disable_skylands_spring.json"
+hash = "06651f779f66f3c5199f409e6fefc18910cb099970442f12ebb8b3a71805bd0c"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/lithostitched/biome_injector/mirror_disable_skylands_summer.json"
+hash = "9e24d04c966909a8f7dc9915281e693e59d9e4b9599c1e3d221787caa8097411"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/lithostitched/biome_injector/mirror_disable_skylands_winter.json"
+hash = "da7f94f39b4f8ffb752831542c2b06569d2f601c613959d8477a4dd57f9b9b42"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/spawn_rules/mirror_overworld_only.json"
+hash = "ef02d35463f38274eb63d1a2ad4dbdb500e5983a7bf883348887ddd2109a88e7"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/data/modpack/worldgen/biome/superflat.json"
+hash = "ea330711e6529e4a1f17447eebb644bd3f56e4d5df00cccff1b4e2e40082c8ee"
+
+[[files]]
+file = "global_packs/required_data/modpack_dims/pack.mcmeta"
+hash = "536979996107dd998a54a91773c60ae2238991f3eea9aae0ee42d4cee88aa2d7"
 
 [[files]]
 file = "global_packs/required_resources/README.txt"

@@ -1,0 +1,19 @@
+{
+  "id": "modpack:mirror_overworld_only",
+  "enabled": true,
+  "components": [
+    {
+      "type": "filter",
+      "context": {
+        "anticonditions": [
+          {
+            "dimensions": [
+              "modpack:mirror_overworld"
+            ]
+          }
+        ]
+      },
+      "allow": "false"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "terralith:config",
+      "key": "skylands",
+      "invert": true
+    }
+  ],
+  "type": "lithostitched:set_biomes",
+  "dimension": "modpack:mirror_overworld",
+  "biomes": {
+    "terralith:skylands_autumn": "terralith:sky_feature"
+  }
+}
