@@ -74,7 +74,7 @@ hash = "b1edb2f2195889ee630424f118af71f9b715a7c79e9eaa10782936b932b6ad70"
 
 [[files]]
 file = "configureddefaults/config/emi.css"
-hash = "e38a58415c67fbd0a2bd0cdd87f08653c27a471dd71b0f76bad15faf94b83c97"
+hash = "39cb28a61a31e864f1cbeb62a94f1cbe19985448b9439c98e858b95bec6f350e"
 
 [[files]]
 file = "configureddefaults/config/fnafmw-client.toml"
