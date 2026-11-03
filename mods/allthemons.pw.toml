@@ -1,0 +1,13 @@
+name = "Cobblemon: AllTheMons"
+filename = "AllTheMons [R5.0].jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/JV5dvqVX/versions/zBvjSFAA/AllTheMons%20%5BR5.0%5D.jar"
+hash-format = "sha512"
+hash = "05afc8f93faa4dce2753b2854b60e3bf97341b00df50f8c188f43b8555f26d3938462314f1760e4a69fae49471f93fa38071bebf0eb090f7a705ddb9e77a934c"
+
+[update]
+[update.modrinth]
+mod-id = "JV5dvqVX"
+version = "zBvjSFAA"
