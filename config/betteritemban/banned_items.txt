@@ -1,0 +1,26 @@
+# BetterItemBan banned items
+# One item ID per line.
+# Example:
+# minecraft:ender_pearl
+
+# -- Minecraft --
+minecraft:command_block
+minecraft:repeating_command_block
+minecraft:command_block_minecart
+minecraft:structure_block
+minecraft:structure_void
+
+## -- Cobblemon --
+cobblemon:cherish_ball
+cobblemon:cherish_rod
+cobblemon:ancient_origin_ball
+cobblemon:ancient_origin_rod
+
+## -- Create --
+create:handheld_worldshaper
+create:wand_of_symmetry
+
+## -- Aeronautics --
+createpropulsion:glued_contraption_cloner
+createpropulsion:glued_contraption_mover
+createpropulsion:contraption_remover

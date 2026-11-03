@@ -88,14 +88,14 @@ key_quark.keybind.lock_rotation:key.keyboard.unknown
 key_quark.keybind.narrator_readout:key.keyboard.unknown
 key_quark.keybind.narrator_full_readout:key.keyboard.unknown
 key_quark.keybind.variant_selector:key.keyboard.unknown
-key_key.curios.open.desc:key.keyboard.g
+key_key.curios.open.desc:key.keyboard.e:CONTROL
 key_key.cobblemon.hideparty:key.keyboard.o:CONTROL
 key_key.cobblemon.summary:key.keyboard.o
 key_key.cobblemon.downshiftparty:key.keyboard.left
 key_key.cobblemon.upshiftparty:key.keyboard.right
 key_key.cobblemon.throwpartypokemon:key.keyboard.r
 key_key.cobblemon.ridingfreelook:key.keyboard.left.alt
-key_accessories.key.open_accessories_screen:key.keyboard.h
+key_accessories.key.open_accessories_screen:key.keyboard.r:CONTROL
 key_create_tweaked_controllers.keybind.mouse_focus:key.keyboard.left.alt
 key_create_tweaked_controllers.keybind.mouse_reset:key.keyboard.r:CONTROL
 key_create_tweaked_controllers.keybind.controller_exit:key.keyboard.tab

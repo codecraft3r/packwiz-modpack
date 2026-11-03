@@ -1,0 +1,127 @@
+﻿{
+    "allowStarterOnJoin":  true,
+    "promptStarterOnceOnly":  true,
+    "useConfigStarters":  true,
+    "starters":  [
+                     {
+                         "name":  "Kanto",
+                         "order":  -110,
+                         "displayName":  "cobblemon.starterselection.category.kanto",
+                         "pokemon":  [
+                                         "Bulbasaur level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball",
+                                         "Charmander level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball",
+                                         "Squirtle level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Johto",
+                         "order":  -109,
+                         "displayName":  "cobblemon.starterselection.category.johto",
+                         "pokemon":  [
+                                         "Chikorita level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=bold pokeball=cherish_ball",
+                                         "Cyndaquil level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball",
+                                         "Totodile level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Hoenn",
+                         "order":  -108,
+                         "displayName":  "cobblemon.starterselection.category.hoenn",
+                         "pokemon":  [
+                                         "Treecko level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball",
+                                         "Torchic level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Mudkip level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Sinnoh",
+                         "order":  -107,
+                         "displayName":  "cobblemon.starterselection.category.sinnoh",
+                         "pokemon":  [
+                                         "Turtwig level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Chimchar level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=naive pokeball=cherish_ball",
+                                         "Piplup level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Unova",
+                         "order":  -106,
+                         "displayName":  "cobblemon.starterselection.category.unova",
+                         "pokemon":  [
+                                         "Snivy level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball",
+                                         "Tepig level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Oshawott level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Kalos",
+                         "order":  -105,
+                         "displayName":  "cobblemon.starterselection.category.kalos",
+                         "pokemon":  [
+                                         "Chespin level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Fennekin level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball",
+                                         "Froakie level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Alola",
+                         "order":  -104,
+                         "displayName":  "cobblemon.starterselection.category.alola",
+                         "pokemon":  [
+                                         "Rowlet level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Litten level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Popplio level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Galar",
+                         "order":  -103,
+                         "displayName":  "cobblemon.starterselection.category.galar",
+                         "pokemon":  [
+                                         "Grookey level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball",
+                                         "Scorbunny level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=jolly pokeball=cherish_ball",
+                                         "Sobble level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Hisui Bias",
+                         "order":  -102,
+                         "displayName":  "cobblemon.starterselection.category.hisui_bias",
+                         "pokemon":  [
+                                         "Rowlet region_bias=hisui level=10 pokeball=ancient_origin_ball hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant",
+                                         "Cyndaquil region_bias=hisui level=10 pokeball=ancient_origin_ball hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest",
+                                         "Oshawott region_bias=hisui level=10 pokeball=ancient_origin_ball hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Paldea",
+                         "order":  -101,
+                         "displayName":  "cobblemon.starterselection.category.paldea",
+                         "pokemon":  [
+                                         "Sprigatito level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=jolly pokeball=cherish_ball",
+                                         "Fuecoco level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=modest pokeball=cherish_ball",
+                                         "Quaxly level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=adamant pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  false
+                     },
+                     {
+                         "name":  "Special",
+                         "order":  -100,
+                         "displayName":  "cobblemon.starterselection.category.special",
+                         "pokemon":  [
+                                         "Pikachu level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=timid pokeball=cherish_ball",
+                                         "Eevee level=10 hp_iv=31 attack_iv=31 special_attack_iv=31 defence_iv=31 special_defence_iv=31 speed_iv=31 nature=quirky pokeball=cherish_ball"
+                                     ],
+                         "randomStarter":  true
+                     }
+                 ]
+}

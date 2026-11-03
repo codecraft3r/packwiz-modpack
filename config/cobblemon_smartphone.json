@@ -1,0 +1,99 @@
+{
+  "ignoreUpgrades": [],
+  "cooldowns": {
+    "healButton": 5,
+    "pcButton": 5,
+    "cloudButton": 5,
+    "waystoneButton": 5,
+    "tomsStorageButton": 3,
+    "refinedStorageButton": 3,
+    "ae2Button": 3,
+    "pokedexButton": 1,
+    "socialPost": 30,
+    "socialMessage": 1
+  },
+  "features": {
+    "enableHeal": true,
+    "enablePC": true,
+    "enableCloud": true,
+    "enablePokenav": true,
+    "enableFishingnav": true,
+    "enableCobbleDollars": true,
+    "enableWaystone": false,
+    "enableTomsStorage": true,
+    "enableRefinedStorage": true,
+    "enableAE2": true,
+    "enableRctTrainerCard": true,
+    "enablePokedex": true,
+    "enablePokeInfo": true,
+    "enableGps": true,
+    "enableStructureCompass": true,
+    "enableScanner": true,
+    "enableCrafting": true,
+    "enableQuickActions": true,
+    "enableSocial": false,
+    "enableCalls": false
+  },
+  "pokeInfo": {
+    "showBaseStats": true,
+    "showAbilities": true,
+    "showEvolution": true,
+    "showTraining": true,
+    "showSpawning": true,
+    "showBreeding": true,
+    "showTypeDefenses": true,
+    "showLevelMoves": true,
+    "showLearnableMoves": true
+  },
+  "gps": {
+    "maxSearchRadius": 10000
+  },
+  "structureCompass": {
+    "searchRadiusChunks": 100,
+    "skipKnownStructures": false
+  },
+  "social": {
+    "maxPosts": 1000,
+    "maxPostLength": 280,
+    "feedPageSize": 20,
+    "maxMessagesPerThread": 500,
+    "maxMessageLength": 280,
+    "messagePageSize": 30,
+    "threadPageSize": 30,
+    "callRingTimeoutSeconds": 30
+  },
+  "energy": {
+    "enableEnergy": false,
+    "baseCapacity": 1000,
+    "maxReceive": 100,
+    "defaultCost": 0,
+    "costs": [
+      {
+        "action": "cobblemon_smartphone:heal",
+        "cost": 250
+      },
+      {
+        "action": "cobblemon_smartphone:cloud",
+        "cost": 100
+      },
+      {
+        "action": "cobblemon_smartphone:pc",
+        "cost": 50
+      },
+      {
+        "action": "cobblemon_smartphone:gps",
+        "cost": 50
+      },
+      {
+        "action": "cobblemon_smartphone:structure_compass",
+        "cost": 100
+      }
+    ],
+    "enableElectricPokemonCharging": true,
+    "electricPokemonChargeRate": 10,
+    "electricPokemonChargeInterval": 20,
+    "requireElectricPokemonConscious": true,
+    "scaleRateWithElectricPokemonCount": false,
+    "chargeAllSmartphones": false
+  }
+}

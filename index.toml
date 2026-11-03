@@ -1,25 +1,24 @@
 hash-format = "sha256"
 
 [[files]]
-file = "config/DistantHorizons.toml"
-hash = "be40ac729c22d257abe799561e0be28cf17eca99afff2862d52456af565ee7b9"
-preserve = true
-
-[[files]]
-file = "config/MouseTweaks.cfg"
-hash = "4069ce1a439d8c37453c1b1e9f2037e0942674c7e48723a39b37eab245792ad4"
-
-[[files]]
-file = "config/appleskin-client.toml"
-hash = "7127a276c7305371397053cd8d0833e6825c828850626e4067b9fed1430ed217"
-
-[[files]]
-file = "config/c2me.toml"
-hash = "e1dfd10a4bfadd7eef8720815f58cd03591494a3104904ba2ec0dc543b13c6ed"
+file = "config/betteritemban/banned_items.txt"
+hash = "f54c86a76554b0c331a39e84437f148ecde735b297349817dc76604c1cc884df"
 
 [[files]]
 file = "config/cobblemon/main.json"
-hash = "2df26c8a004f8c50819c799fca923192bf4743f0360d8cc46f804e60219a3488"
+hash = "93756720c72983ea5d1802d79bd8f1f96aaaaed50c3a99f24539e099fec8a44b"
+
+[[files]]
+file = "config/cobblemon/spawning/best-spawner-config.json"
+hash = "e824365b06d804572b585d58ee4cb1b7322f64b54a3cb167304604dc84456658"
+
+[[files]]
+file = "config/cobblemon/starters.json"
+hash = "bb2822f18dd7879d14e847009b84511ef6d6eb93108c4e3c9eb97ce6b8b22bf1"
+
+[[files]]
+file = "config/cobblemon_smartphone.json"
+hash = "ec248372cc9f39a1908d4ad089e5c9f717f9fd5c19c6dae14269330ce1dfa61e"
 
 [[files]]
 file = "config/cobblemonraiddens.json5"
@@ -30,60 +29,12 @@ file = "config/cobblemonraiddens/common.json5"
 hash = "6eb7f3c210b9512c8ef7c8b4801bbf661e8add407009e93312651c71e4b80446"
 
 [[files]]
-file = "config/fallingleaves-client.toml"
-hash = "f42d9c8ad7daebca0b534e440f2863aabe554d498cb8dbb0c74212db6fdeb313"
-
-[[files]]
-file = "config/fml.toml"
-hash = "1ac1fd9694773ef1ec8af42c9cc8a908a1b618fa6fb6031c27305383e97f70c7"
+file = "config/ftbessentials.snbt"
+hash = "ab4c7cbdaf2f6f3118574bc0e7bf7a8580d163c8da467f0d8cceac942bff3bc4"
 
 [[files]]
 file = "config/global_packs.toml"
 hash = "c94c49ca71c3ab8a98af36cb76f334e3e585d65ee8d984770265c1978dd4b32b"
-
-[[files]]
-file = "config/jade/hide-blocks.json"
-hash = "309df4ae96864c19eae41b646d58497c85a73b1fc3c584e772ef4d5822794baa"
-
-[[files]]
-file = "config/jade/hide-entities.json"
-hash = "3741bb54a4535fb5a00fb0ee1f4386f3dd17834aebdf9e89c21fcd3307109709"
-
-[[files]]
-file = "config/jade/jade.json"
-hash = "f9f68a1557cdfab8394d2f4b54a2756d96451dcdddea4f5e04cb912b516ffa05"
-
-[[files]]
-file = "config/jade/plugins.json"
-hash = "b42e98f46050842f36eb6ce760586ea55dff0675c176bd327d4f507872ad7b5f"
-
-[[files]]
-file = "config/jade/sort-order.json"
-hash = "f1520af72665a85c154cc07ea9db81d916511b06d7f80d1603346b306753f87f"
-
-[[files]]
-file = "config/justzoom/config.txt"
-hash = "d0dcbc7c9c28a398ad2b81c1f6779f34beffbf45560c8c02c063077ab32ded45"
-
-[[files]]
-file = "config/konkrete/locals/de_de.local"
-hash = "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
-
-[[files]]
-file = "config/konkrete/locals/en_us.local"
-hash = "fdf1864fd049b3f1b9af1f8db6c5125a627be7d06a451c778da3329843d3c39a"
-
-[[files]]
-file = "config/konkrete/locals/pl_pl.local"
-hash = "d38a7776e362e4de6082078d803c1c9358d9d40526edfe4bdfd29c552aef76d8"
-
-[[files]]
-file = "config/konkrete/locals/pt_br.local"
-hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
-
-[[files]]
-file = "config/lambdynlights.toml"
-hash = "fdd6958ff17541c8d1c891bd1602088bb6888f41229e966387a07311f32ec6d9"
 
 [[files]]
 file = "config/luckperms/luckperms.conf"
@@ -110,92 +61,20 @@ file = "config/luckperms/yaml-storage/tracks/staff.yml"
 hash = "b92ae01d432f978e8576e1a294501b4cfc6a6fa3bf5d00222bacb4a61ab3dfe0"
 
 [[files]]
-file = "config/neoforge-client.toml"
-hash = "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0"
+file = "config/mega_showdown/config.json"
+hash = "f025396282b488579aa89e179c0db20bf5d11e2224f2f36142ec1bdc44f09304"
 
 [[files]]
-file = "config/neoforge-common.toml"
-hash = "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4"
+file = "configureddefaults/config/DistantHorizons.toml"
+hash = "be40ac729c22d257abe799561e0be28cf17eca99afff2862d52456af565ee7b9"
 
 [[files]]
-file = "config/neoforge-server.toml"
-hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
+file = "configureddefaults/config/accessories.json5"
+hash = "b1edb2f2195889ee630424f118af71f9b715a7c79e9eaa10782936b932b6ad70"
 
 [[files]]
-file = "config/simply-no-shading.json"
-hash = "08e01adaa36cce628422031934928f40cef93382e0b7de2ac7819bfc6cec927e"
-
-[[files]]
-file = "config/skinlayers.json"
-hash = "45162f45aa2db525a0edc483959f35b6d958ba2e54066a4f87e7f3c3f0f99166"
-
-[[files]]
-file = "config/xaero/lib/client.cfg"
-hash = "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336"
-
-[[files]]
-file = "config/xaero/lib/common.cfg"
-hash = "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2"
-
-[[files]]
-file = "config/xaero/lib/profiles/default.cfg"
-hash = "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907"
-
-[[files]]
-file = "config/xaero/lib/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
-
-[[files]]
-file = "config/xaero/minimap/client.cfg"
-hash = "d3157c542e7db308edbb212a7e7afde1832a9648771cdf7cee270d0b8cd0baf2"
-
-[[files]]
-file = "config/xaero/minimap/common.cfg"
-hash = "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0"
-
-[[files]]
-file = "config/xaero/minimap/default_radar_categories_client.json"
-hash = "94fc0e69a1754ef80c54e1f3c9193526c620b0ac646f94a4a0f560bcc58826a8"
-
-[[files]]
-file = "config/xaero/minimap/default_radar_categories_server.json"
-hash = "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd"
-
-[[files]]
-file = "config/xaero/minimap/profiles/default.cfg"
-hash = "db49c4dde15db318eb25e8a43fa06992778f0e17b3a963fff5cbee35da11fb81"
-
-[[files]]
-file = "config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
-hash = "184e654fa1fc8ad09943c97c4e65ab78acb5b3cfca22417a831513d1b6d9bbc6"
-
-[[files]]
-file = "config/xaero/minimap/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
-
-[[files]]
-file = "config/xaero/world-map/client.cfg"
-hash = "8e889b9765b1e993f711cb1b230ba3ffe12508b2ecf0b51d43e9ae6de733a685"
-
-[[files]]
-file = "config/xaero/world-map/common.cfg"
-hash = "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d"
-
-[[files]]
-file = "config/xaero/world-map/profiles/default.cfg"
-hash = "7b24c882801bcc7f0a8aedc625d419f661fa490fa0e9d5ebe39599a1ce2dcbd5"
-
-[[files]]
-file = "config/xaero/world-map/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
-
-[[files]]
-file = "config/xaerohud.txt"
-hash = "58c9270f258d0b224bb7d0f7c927544d5fbe5f1b8027c820e1e14ecbf48fb88c"
-
-[[files]]
-file = "config/xaeropatreon.txt"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+file = "configureddefaults/config/emi.css"
+hash = "e38a58415c67fbd0a2bd0cdd87f08653c27a471dd71b0f76bad15faf94b83c97"
 
 [[files]]
 file = "configureddefaults/config/fnafmw-client.toml"
@@ -206,8 +85,16 @@ file = "configureddefaults/config/fnafmw_prefs.properties"
 hash = "b7ce688192f24a03adafa12627a7172a38a963af444ee32cbfeaee34bf0d637f"
 
 [[files]]
+file = "configureddefaults/config/lambdynlights.toml"
+hash = "fdd6958ff17541c8d1c891bd1602088bb6888f41229e966387a07311f32ec6d9"
+
+[[files]]
 file = "configureddefaults/config/reeses_sodium_options.json"
 hash = "005862f79b1de8e06f10a69b7dbfcbef8ce1f3d7e7a3d2391ed3c9be3d6a3c67"
+
+[[files]]
+file = "configureddefaults/config/sidekick.ini"
+hash = "2d35d3650de4feea73c920f62661afed98ba2400cee3f13c148bc42a80fedf27"
 
 [[files]]
 file = "configureddefaults/config/sodium-mixins.properties"
@@ -226,8 +113,12 @@ file = "configureddefaults/config/sodiumextras-client.toml"
 hash = "6b7317a4d8094a270a1f9a3d2e76a1e9f609fe9f4f5bbe834d22c0ae4319f250"
 
 [[files]]
+file = "configureddefaults/config/xaerohud.txt"
+hash = "6de57f88c55043cfafb952219205e2080da514284c822a277cd9f1ef804f0def"
+
+[[files]]
 file = "configureddefaults/options.txt"
-hash = "76fb0e4fef14ff7375eabbfd00d17ef91a5b23d3b1ed57d37a211bbf946388e9"
+hash = "bc6e826b5701b3f342d36b8914c1d586a28d0e5e937c82f54c33fdc22d52079e"
 
 [[files]]
 file = "configureddefaults/servers.dat"
@@ -438,12 +329,17 @@ metafile = true
 
 [[files]]
 file = "mods/chunky.pw.toml"
-hash = "1d5cc2b6dcfd1fc3adba4566b1c29b57ff1175316678c1f22e63cbc3e28a5ba0"
+hash = "68cc51e721e993a8b7a2cbaf45369933b22b07a9c82327ab14757ee10684aa81"
 metafile = true
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
+metafile = true
+
+[[files]]
+file = "mods/cobbledex-rei-emi-jei.pw.toml"
+hash = "71085d4a45f55802294605111aa9cc4f376d10d74d7580adc2d7bc9e1550a2f6"
 metafile = true
 
 [[files]]
@@ -608,7 +504,7 @@ metafile = true
 
 [[files]]
 file = "mods/distant-horizons.pw.toml"
-hash = "657a415947ae7c99600b9e76cfadd72edca3f67482e99de7c03528e2b0e4c6e5"
+hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
 
 [[files]]
