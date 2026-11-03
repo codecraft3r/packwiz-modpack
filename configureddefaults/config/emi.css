@@ -404,22 +404,22 @@
 	/**
 	 * Cheat in one of an item into the inventory.
 	 */
-	cheat-one-to-inventory: "key.keyboard.unknown";
+	cheat-one-to-inventory: "shift key.mouse.right";
 
 	/**
 	 * Cheat in a stack of an item into the inventory.
 	 */
-	cheat-stack-to-inventory: "key.keyboard.unknown";
+	cheat-stack-to-inventory: "shift key.mouse.left";
 
 	/**
 	 * Cheat in one of an item into the cursor.
 	 */
-	cheat-one-to-cursor: "key.mouse.left";
+	cheat-one-to-cursor: "key.mouse.right";
 
 	/**
 	 * Cheat in a stack of an item into the cursor.
 	 */
-	cheat-stack-to-cursor: "key.mouse.right";
+	cheat-stack-to-cursor: "key.mouse.left";
 
 	/**
 	 * Delete the stack in the cursor when hovering the index
