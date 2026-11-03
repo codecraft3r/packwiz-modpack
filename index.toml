@@ -452,11 +452,6 @@ hash = "ea90ecdd3906af5a4707df5ae1ad368ffb8fb627d59bad86f5ca58f7eaa696ea"
 metafile = true
 
 [[files]]
-file = "mods/cobblemon-let-me-spawn.pw.toml"
-hash = "bad1ac75b1b28c67efbfd29c0b69d84a0063d401e0c4df2f81c5d8964d6a1b0d"
-metafile = true
-
-[[files]]
 file = "mods/cobblemon-mega-showdown.pw.toml"
 hash = "450920a4100688783500078850dde0ba777f790bdf5ac2d45c5938432ab75e50"
 metafile = true
@@ -494,6 +489,11 @@ metafile = true
 [[files]]
 file = "mods/cobblemonraiddens.pw.toml"
 hash = "44925367c0bae557040f165930d0026911cdc1967bb8ac15b9d253d23aa0a221"
+metafile = true
+
+[[files]]
+file = "mods/configurable.pw.toml"
+hash = "dcd40eb17aefa2335e200f44114967260f5b5bc3dbae4e426c19dabcc89a6019"
 metafile = true
 
 [[files]]
@@ -949,6 +949,11 @@ metafile = true
 [[files]]
 file = "mods/navas-zamega.pw.toml"
 hash = "0f1148ea2b643d8999ba0e96b62171e4925470518d874f9f13e213affaf4e968"
+metafile = true
+
+[[files]]
+file = "mods/neruina.pw.toml"
+hash = "2dec6835297e950b5df86d8a879e97e279b5698d14c599c5a2a192918312c5c8"
 metafile = true
 
 [[files]]
