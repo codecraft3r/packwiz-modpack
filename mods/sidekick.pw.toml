@@ -1,0 +1,13 @@
+name = "Sidekick"
+filename = "sidekick-neoforge-2.0.6+1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/goA2JoBi/versions/RtqkrsvL/sidekick-neoforge-2.0.6%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "172e4a025a45453a7af979bbeb23f04633cc26864864354a59d6a0464be76b52e5fd16b54fb07402ae9294841ac362611fe4f43e15d155166e9b1017f768837b"
+
+[update]
+[update.modrinth]
+mod-id = "goA2JoBi"
+version = "RtqkrsvL"

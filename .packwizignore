@@ -30,3 +30,22 @@ README.md
 dist/
 __pycache__/
 *.pyc
+
+# Permissions & player data privacy (prevent leaking usernames/UUIDs)
+**/luckperms/**/users/
+**/luckperms/users/
+**/luckperms/**/uuidcache.txt
+**/luckperms/**/actions.txt
+**/luckperms/**/actions.json
+**/luckperms/*.db*
+**/luckperms/*.mv.db
+**/luckperms/*.trace.db
+**/luckperms/luckperms-h2*
+**/luckperms/luckperms-sqlite*
+**/usercache.json
+**/usernamecache.json
+**/playerdata/
+**/stats/
+**/advancements/
+**/sessions/
+

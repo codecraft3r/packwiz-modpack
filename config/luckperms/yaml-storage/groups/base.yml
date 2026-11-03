@@ -1,0 +1,38 @@
+name: base
+permissions:
+- sidekick.power.instakill:
+    value: false
+- sidekick.instakill:
+    value: false
+- betteritemban.bypass:
+    value: false
+- itemban.bypass:
+    value: false
+- ftbessentials.home:
+    value: true
+- ftbessentials.spawn:
+    value: true
+- ftbessentials.tpa:
+    value: true
+- ftbessentials.tpahere:
+    value: true
+- ftbessentials.back:
+    value: true
+- ftbessentials.trashcan:
+    value: true
+- ftbessentials.rtp:
+    value: true
+- ftbessentials.warp:
+    value: true
+- ftbchunks.claim:
+    value: true
+- ftbchunks.chunk.claim:
+    value: true
+- ftbultimine.allow:
+    value: true
+- ftbteams.party:
+    value: true
+- spark.tps:
+    value: true
+- spark.ping:
+    value: true

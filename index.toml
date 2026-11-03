@@ -78,6 +78,30 @@ file = "config/lambdynlights.toml"
 hash = "fdd6958ff17541c8d1c891bd1602088bb6888f41229e966387a07311f32ec6d9"
 
 [[files]]
+file = "config/luckperms/luckperms.conf"
+hash = "5c24ea8fe47b51924d5310eb293d2bd6e798d84ed5d52ed799006312b5d5ed0e"
+
+[[files]]
+file = "config/luckperms/yaml-storage/groups/admin.yml"
+hash = "cb41515a78fb4d26715b31012107d46cd87e2321730d49c9a42a15fe6e334529"
+
+[[files]]
+file = "config/luckperms/yaml-storage/groups/base.yml"
+hash = "b3a930cae76d824f330834da17ef28749bdc6f74da676eaec03382f432878a98"
+
+[[files]]
+file = "config/luckperms/yaml-storage/groups/default.yml"
+hash = "327d2da420cfc76588ce352237f1ef412d0aeb79cde670ce1955c6b1f4c4c6a7"
+
+[[files]]
+file = "config/luckperms/yaml-storage/groups/manager.yml"
+hash = "daccb84ff99186d462c959cc5d7cec6cbeecbd0c05a048db874920ae744b60b5"
+
+[[files]]
+file = "config/luckperms/yaml-storage/tracks/staff.yml"
+hash = "b92ae01d432f978e8576e1a294501b4cfc6a6fa3bf5d00222bacb4a61ab3dfe0"
+
+[[files]]
 file = "config/neoforge-client.toml"
 hash = "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0"
 
@@ -200,6 +224,11 @@ hash = "3f910a2722d6884203aba5eee8f5c129ea3c2e0b78bc683b2d7b5604fec755f5"
 metafile = true
 
 [[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
+metafile = true
+
+[[files]]
 file = "mods/athena.pw.toml"
 hash = "682fd4aef38fca5a2dee7cb858d6f64f81637b25f3f251e70a2b04b1a70aea5c"
 metafile = true
@@ -207,6 +236,11 @@ metafile = true
 [[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
+metafile = true
+
+[[files]]
+file = "mods/better-item-ban.pw.toml"
+hash = "2921822011af42f16932c43ee37289c396ac25f8a3aa8a067cdf2809d940170b"
 metafile = true
 
 [[files]]
@@ -270,6 +304,31 @@ hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
 
 [[files]]
+file = "mods/ftb-chunks-forge.pw.toml"
+hash = "90d8290ba2c103b55eacba92ed0f08c77a3832795b99fb03e77f9dc3885c7fd9"
+metafile = true
+
+[[files]]
+file = "mods/ftb-essentials.pw.toml"
+hash = "6fa984dc1b5905ae909b417ed1cd92d6b536ba4832ed8c8d95aa9d424ad789df"
+metafile = true
+
+[[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "df64ca595f6f0f79e3a4a844fd0a887b44f5e007f5deb9ac011b5cf67b3a2127"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
+metafile = true
+
+[[files]]
+file = "mods/ftb-ultimine-forge.pw.toml"
+hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
+metafile = true
+
+[[files]]
 file = "mods/fusion-connected-textures.pw.toml"
 hash = "a5864bfcb697649b40ff1d1c0dd0e66e480a53ca82f027899009f89601c4ba01"
 metafile = true
@@ -315,6 +374,11 @@ hash = "7211de0ddeab153fc2bf9588f5922de705006be507002ec03cb9f8e6b67ab4cf"
 metafile = true
 
 [[files]]
+file = "mods/luckperms.pw.toml"
+hash = "30552c09591d589e0e0a681b1f5c5d6e0aaf23e3eb6bbd3c8bab49e1ea9ed28d"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "ef65836e005bd42a0f40df30a94eba1ad7ee5ed3194b11eafbeadc64edb44252"
 metafile = true
@@ -345,8 +409,18 @@ hash = "b210b54498abff891f524a0ce32b7b81bfc88043604065bd4ece9e71c36427f4"
 metafile = true
 
 [[files]]
+file = "mods/sidekick.pw.toml"
+hash = "bd8696b8c6d5100969f416bab80adf7cfbc321199a0f9389ff454bff23783433"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
 hash = "3fc6fd4a464740bd6cfe89571517cfda837dbad69f0218ef1159b527b1be45d6"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
 metafile = true
 
 [[files]]

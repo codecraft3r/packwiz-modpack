@@ -1,0 +1,66 @@
+name: manager
+parents:
+- base
+permissions:
+- betteritemban.bypass:
+    value: true
+- itemban.bypass:
+    value: true
+- command.itemban:
+    value: true
+- command.itemunban:
+    value: true
+- command.itembanlist:
+    value: true
+- command.itembanstatus:
+    value: true
+- command.itembanreload:
+    value: true
+- command.itembancleanupworld:
+    value: true
+- ftbchunks.admin:
+    value: true
+- ftbchunks.claim_bypass:
+    value: true
+- ftbessentials.kick:
+    value: true
+- ftbessentials.mute:
+    value: true
+- ftbessentials.teleport:
+    value: true
+- ftbessentials.tpa.silent:
+    value: true
+- ftbessentials.tp.offline:
+    value: true
+- ftbessentials.fly:
+    value: true
+- ftbessentials.heal:
+    value: true
+- ftbessentials.feed:
+    value: true
+- ftbessentials.invsee:
+    value: true
+- ftbessentials.speed:
+    value: true
+- ftbessentials.vanish:
+    value: true
+- ftbessentials.nickname.others:
+    value: true
+- sidekick.*:
+    value: true
+- sidekick.power.instakill:
+    value: false
+- sidekick.instakill:
+    value: false
+- spark:
+    value: true
+- spark.health:
+    value: true
+- spark.tps:
+    value: true
+- spark.ping:
+    value: true
+- spark.tickmonitor:
+    value: true
+- spark.gcmonitor:
+    value: true
