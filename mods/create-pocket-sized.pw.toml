@@ -1,0 +1,13 @@
+name = "Create: Pocket Sized"
+filename = "pocket-0.24.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KbwNRCY7/versions/IFl5sbrD/pocket-0.24.1.jar"
+hash-format = "sha512"
+hash = "002fc7ff5b5c462e6db374d540a9c5e6e13402a5eeaad6b07446523507d9f8a5d734537c70b1687d823bb42488cbedb43b3c4cacb6558fa940659e1f5fdafd86"
+
+[update]
+[update.modrinth]
+mod-id = "KbwNRCY7"
+version = "IFl5sbrD"

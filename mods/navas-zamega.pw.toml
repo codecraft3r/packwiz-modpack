@@ -1,0 +1,13 @@
+name = "Navas ZA Megas"
+filename = "zamega-neoforge-1.8.2+1.8.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/2V1Y86sc/versions/vqbkMrnN/zamega-neoforge-1.8.2%2B1.8.2.jar"
+hash-format = "sha512"
+hash = "1bddf2954dcf9e79aadea80711c98c07453a71dba84a9ec2df269b25c5bc4c332595a1cf16be73822d12636d6dcce491a42b853736ebf543e1033a61e7d2c126"
+
+[update]
+[update.modrinth]
+mod-id = "2V1Y86sc"
+version = "vqbkMrnN"

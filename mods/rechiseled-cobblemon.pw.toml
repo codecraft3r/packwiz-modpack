@@ -1,0 +1,13 @@
+name = "Rechiseled: Cobblemon"
+filename = "rechiseledcobblemon-1.0.2-neoforge-mc1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Mqaobp5i/versions/Ka20O0gT/rechiseledcobblemon-1.0.2-neoforge-mc1.21.1.jar"
+hash-format = "sha512"
+hash = "a8fb1e0b232cf5abb9d985ef0c8c47f496af624e889eaf02a8dfb2a1b3324352f87f82aabbd2576ebf9b3baa680d82a040247625dbc0a4b11302336c6da81aa8"
+
+[update]
+[update.modrinth]
+mod-id = "Mqaobp5i"
+version = "Ka20O0gT"

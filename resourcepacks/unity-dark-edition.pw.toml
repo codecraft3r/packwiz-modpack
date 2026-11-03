@@ -1,0 +1,13 @@
+name = "Unity: Dark Edition"
+filename = "Unity-1.20.1-Dark-1.1.0.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/EkrInWCl/versions/6d03yUhb/Unity-1.20.1-Dark-1.1.0.zip"
+hash-format = "sha512"
+hash = "e6471324333829ea9bb28aa6a646fea25cbfe5dbe1f1850fbbc7cc08f2050fc20cff7edbd05710a39735b5c850343c4c80af8d1662d1938e15c1ca39f447462b"
+
+[update]
+[update.modrinth]
+mod-id = "EkrInWCl"
+version = "6d03yUhb"

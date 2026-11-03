@@ -1,0 +1,13 @@
+name = "Lost Trinkets Renewed"
+filename = "LostTrinkets-21.1.4-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YXvTD5Ha/versions/nqGQumcm/LostTrinkets-21.1.4-mc1.21.1-neoforge.jar"
+hash-format = "sha512"
+hash = "bde38d62ea741efb904d5862be6538698112c9f2394bcb715bfa128e557f38600d252b10f726a7f3d504680fbf76c9372b1f30b44ff857c229251a99803919ae"
+
+[update]
+[update.modrinth]
+mod-id = "YXvTD5Ha"
+version = "nqGQumcm"

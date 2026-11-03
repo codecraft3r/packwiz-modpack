@@ -1,0 +1,13 @@
+name = "Rechiseled: Builder's Delight HANCED"
+filename = "rechiseledbuildersdelight-mod.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/bnBXt2ar/versions/yqzOSUpe/rechiseledbuildersdelight-mod.jar"
+hash-format = "sha512"
+hash = "0142ec6bf3db293ffc7989eb8d6ed81c8adc824d5f0e4ef92c09d05dc010500229194888183a53317870542e6d7c3eaef229bc94300cbfd32a82957d31b8fea9"
+
+[update]
+[update.modrinth]
+mod-id = "bnBXt2ar"
+version = "yqzOSUpe"

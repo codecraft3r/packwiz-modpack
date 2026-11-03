@@ -1,0 +1,13 @@
+name = "Builder's Delight"
+filename = "BuildersDelight-1.21.1-v.1.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/CAASGC7r/versions/WProUwr3/BuildersDelight-1.21.1-v.1.4.jar"
+hash-format = "sha512"
+hash = "4fa58ce18bf70ca52f08247c6e77797d76b9f14f512ceb4af4f37622b71e7b42130465762212a2017d9eca241b713e8193e45865ab8bcbdd4da57cf5b1af1422"
+
+[update]
+[update.modrinth]
+mod-id = "CAASGC7r"
+version = "WProUwr3"
