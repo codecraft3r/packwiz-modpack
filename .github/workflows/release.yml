@@ -1,44 +1,80 @@
-name: Build CurseForge Artifact
+name: Release Modpack
 
 on:
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]*'
   workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag to release'
+        required: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
-  export:
+  release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Validate pack and SNBT
+
+      - name: Validate SNBT
         run: |
-          python scripts/validate_colony.py
           python scripts/validate_snbt.py config/
           python scripts/test_validate_snbt.py
-      - uses: actions/setup-go@v5
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
         with:
           go-version: stable
           cache: false
+
       - name: Install packwiz
         run: go install github.com/packwiz/packwiz@v0.0.0-20260906154125-ef87d964f8cb
+
       - name: Verify Packwiz index
         run: |
           packwiz refresh
           git diff --exit-code -- index.toml pack.toml
           packwiz refresh
           git diff --exit-code -- index.toml pack.toml
-      - name: Export CurseForge pack
+
+      - name: Export CurseForge (.zip) and Modrinth (.mrpack) pack artifacts
         run: |
           mkdir -p dist
-          packwiz curseforge export -o dist/Createa-Colony-4.0.0-CurseForge.zip
+          RAW_TAG="${{ github.event.inputs.tag_name || github.ref_name }}"
+          VERSION="${RAW_TAG#v}"
+          packwiz modrinth export -y -o "dist/Poiesis-${VERSION}.mrpack"
+          packwiz curseforge export -y -o "dist/Poiesis-${VERSION}-CurseForge.zip"
         env:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_TOKEN }}
-      - uses: actions/upload-artifact@v4
+
+      - name: Upload workflow artifacts
+        uses: actions/upload-artifact@v4
         with:
-          name: Createa-Colony-4.0.0-CurseForge-${{ github.sha }}
-          path: dist/*.zip
+          name: Poiesis-${{ github.event.inputs.tag_name || github.ref_name }}
+          path: |
+            dist/*.mrpack
+            dist/*.zip
           if-no-files-found: error
+
+      - name: Create or Update GitHub Release and Upload Pack Artifacts
+        if: startsWith(github.ref, 'refs/tags/') || github.event.inputs.tag_name != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          name: Release ${{ github.event.inputs.tag_name || github.ref_name }}
+          files: |
+            dist/*.mrpack
+            dist/*.zip
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

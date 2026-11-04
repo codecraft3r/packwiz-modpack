@@ -1,4 +1,4 @@
-name: Validate Create'a Colony
+name: Validate Packwiz Modpack
 
 on:
   push:
@@ -15,8 +15,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Validate upstream coverage and required mods
-        run: python scripts/validate_colony.py
       - name: Validate SNBT grammar
         run: python scripts/validate_snbt.py config/
       - name: Run SNBT validator tests

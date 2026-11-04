@@ -7,7 +7,7 @@ A creative multiplayer experience designed in the spirit of a shared SMP world r
 | Minecraft | `1.21.1` |
 | NeoForge | `21.1.265` |
 | Java | `21` |
-| Tracked Branch | `creative-mp` |
+| Tracked Branch | `master` |
 
 ---
 
@@ -34,7 +34,7 @@ A creative multiplayer experience designed in the spirit of a shared SMP world r
 Create a fresh Prism Launcher or MultiMC instance with Minecraft **1.21.1** and NeoForge **21.1.265**. Place [packwiz-installer-bootstrap.jar](https://github.com/packwiz/packwiz-installer-bootstrap/releases) in its `.minecraft` directory and configure this pre-launch command:
 
 ```sh
-"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/creative-mp/pack.toml
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/master/pack.toml
 ```
 
 For reproducible deployments, you can replace the branch name in that URL with a specific commit SHA.

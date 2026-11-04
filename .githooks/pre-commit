@@ -18,8 +18,7 @@ for path in staged:
             sys.exit(1)
 PY
 
-printf '%s\n' "==> Refreshing Packwiz and validating Create'a Colony..."
+printf '%s\n' "==> Refreshing Packwiz and validating SNBT..."
 packwiz refresh
-python3 scripts/validate_colony.py
 python3 scripts/validate_snbt.py --no-color config/
 git add -- index.toml pack.toml
