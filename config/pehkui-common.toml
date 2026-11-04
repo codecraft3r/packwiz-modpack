@@ -1,0 +1,16 @@
+#General configuration settings
+[general]
+	scaledFallDamage = true
+	scaledMotion = false
+	scaledReach = true
+	scaledAttack = true
+	scaledDefense = true
+	scaledHealth = true
+	scaledItemDrops = false
+	scaledProjectiles = false
+	scaledExplosions = false
+	keepAllScalesOnRespawn = false
+	accurateNetherPortals = false
+	scalesKeptOnRespawn = []
+	enableCommands = true
+	enableDebugCommands = false

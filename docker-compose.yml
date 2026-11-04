@@ -12,6 +12,14 @@ services:
       PACKWIZ_URL: "${PACKWIZ_URL:-https://raw.githubusercontent.com/codecraft3r/packwiz-modpack/codex/createa-colony-1.1/pack.toml}"
       SERVER_NAME: "Create'a Colony"
       MEMORY: "${MINECRAFT_MEMORY:-8G}"
+      USE_AIKAR_FLAGS: "TRUE"
+      RAYON_NUM_THREADS: "2"
+      SYNC_CHUNK_WRITES: "false"
+      USE_NATIVE_TRANSPORT: "true"
+      VIEW_DISTANCE: "10"
+      SIMULATION_DISTANCE: "6"
+      SPAWN_PROTECTION: "0"
+      NETWORK_COMPRESSION_THRESHOLD: "512"
     volumes:
       - colony-data:/data
 

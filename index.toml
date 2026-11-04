@@ -5,6 +5,10 @@ file = "config/betteritemban/banned_items.txt"
 hash = "f54c86a76554b0c331a39e84437f148ecde735b297349817dc76604c1cc884df"
 
 [[files]]
+file = "config/c2me.toml"
+hash = "15559329454230199d0b19d418ee3e446746ce4926310479a123d00cd5fbc82c"
+
+[[files]]
 file = "config/cobblemon/main.json"
 hash = "93756720c72983ea5d1802d79bd8f1f96aaaaed50c3a99f24539e099fec8a44b"
 
@@ -37,6 +41,10 @@ file = "config/global_packs.toml"
 hash = "c94c49ca71c3ab8a98af36cb76f334e3e585d65ee8d984770265c1978dd4b32b"
 
 [[files]]
+file = "config/lootr-common.toml"
+hash = "1c8b5e2e19bb5b3c748121c459f3535b39ab95266aa31fe98226bef765120204"
+
+[[files]]
 file = "config/luckperms/luckperms.conf"
 hash = "5c24ea8fe47b51924d5310eb293d2bd6e798d84ed5d52ed799006312b5d5ed0e"
 
@@ -65,16 +73,32 @@ file = "config/mega_showdown/config.json"
 hash = "f025396282b488579aa89e179c0db20bf5d11e2224f2f36142ec1bdc44f09304"
 
 [[files]]
+file = "config/pehkui-common.toml"
+hash = "b66bbd154caa0ac1b10650af6d0a047abd52870b7d71eb3b186c1b8034ba7b22"
+
+[[files]]
+file = "config/pym-server.toml"
+hash = "a16237775c830f185a93afd0ffa19436837c8260f8f0f056831fdced82367ce2"
+
+[[files]]
 file = "config/quark-common.toml"
-hash = "deb074ab25fecd7893438c410e95afff6145621d1344ce6123e4f17715b7b3da"
+hash = "8ac66f547dfd092272f3531cc55f8b3d6327f2acae1621b01d1d8321ed644ee3"
+
+[[files]]
+file = "config/sable-common.toml"
+hash = "2907e5038e8e8824f7b23b0aa02aa17d086e822cf8fdb44b3dbcc7cd5bddfc6f"
+
+[[files]]
+file = "config/sable-server.toml"
+hash = "b56b169d0f244b32f0c9a9b58e70669c78f6a8b529b9f1e56fe2ffc028b8fa3f"
 
 [[files]]
 file = "configureddefaults/config/DistantHorizons.toml"
-hash = "be40ac729c22d257abe799561e0be28cf17eca99afff2862d52456af565ee7b9"
+hash = "fbb924268c35e669477dc3808cf3ffca7689d880cbbc43f36fa3413edfb810d9"
 
 [[files]]
 file = "configureddefaults/config/accessories.json5"
-hash = "b1edb2f2195889ee630424f118af71f9b715a7c79e9eaa10782936b932b6ad70"
+hash = "a8bdf2ba19e640c6f13cd8000c2a226854bb9500977ddedbba2d213f7f3f1d7a"
 
 [[files]]
 file = "configureddefaults/config/emi.css"
@@ -1150,10 +1174,6 @@ metafile = true
 file = "mods/zfastnoise.pw.toml"
 hash = "b24c213b8727e80ca559670e97971c735c4dc4be1d1a4bd637c41450e7654c1e"
 metafile = true
-
-[[files]]
-file = "packwiz.json"
-hash = "86fb6df1eacefec32d87afb35ab0ae7a632ae9eda88b32d46ba5e489e10073de"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
