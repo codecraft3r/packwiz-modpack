@@ -1,8 +1,8 @@
-name = "LuckPerms-NeoForge-5.4.140-patched"
-filename = "LuckPerms-NeoForge-5.4.140-patched.jar"
+name = "LuckPerms-NeoForge-5.4.143-patched"
+filename = "LuckPerms-NeoForge-5.4.143-patched.jar"
 side = "server"
 
 [download]
-url = "https://github.com/codecraft3r/LuckPerms/releases/download/v5.4.140-patched/LuckPerms-NeoForge-5.4.140-patched.jar"
+url = "https://github.com/codecraft3r/LuckPerms/releases/download/v5.4.143-patched/LuckPerms-NeoForge-5.4.143-patched.jar"
 hash-format = "sha256"
-hash = "7e7e6161c2aaa53c734209b251afc91f0879374917b13e35dc967c9521779681"
+hash = "868183b785ffe8d9e877087ba3d02eec4e1fa2cf8d0aa7c1a3efb29cd9c45976"
