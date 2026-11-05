@@ -253,11 +253,6 @@ file = "kubejs/server_scripts/blocked_spawns.js"
 hash = "9138483023adb14ebb6480baee541259f57cd0f7cc18f4bf3b2ee147a8b2fe06"
 
 [[files]]
-file = "mods/3dskinlayers.pw.toml"
-hash = "82becc6910845ae1a68884e6f7a3dcdc861d79a087ae81b1d7e120e82884372d"
-metafile = true
-
-[[files]]
 file = "mods/accessories.pw.toml"
 hash = "2017362c793d95887d38b3353abb7c77f212175e82ed848296575ea0e466b7d7"
 metafile = true
@@ -1123,6 +1118,11 @@ hash = "c7e7206384e1d5ab7caecc643dda50dae1886312e0aeca5aaef8852bb6b11b4e"
 metafile = true
 
 [[files]]
+file = "mods/tacz-1.21.1.pw.toml"
+hash = "71944dea59c3df21fd71d4ea2d75d3e34ab159c2c39f047269e14b203416afb5"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "dd46fad79cf33a00123be0a74c73581da72cd98503ef23822a624a08f4b10ff2"
 metafile = true
@@ -1205,11 +1205,6 @@ metafile = true
 [[files]]
 file = "resourcepacks/e19_cobblemon_minimap_icons.pw.toml"
 hash = "c2b9ec0ff6fe4eff64e82efe5b506e0426af47b59edc5b0db66d4a7f7b7e1a1e"
-metafile = true
-
-[[files]]
-file = "resourcepacks/fresh-animations.pw.toml"
-hash = "6d9842b52f988e6f4567f3dd8fe45aff43cf8003dccd0868d9f926d578d320e8"
 metafile = true
 
 [[files]]
