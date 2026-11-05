@@ -283,11 +283,6 @@ hash = "42413941c5bab46833498305fd78892cf6af8cb0fa3f2599619acf3b26f1a0aa"
 metafile = true
 
 [[files]]
-file = "mods/amendments.pw.toml"
-hash = "d6c2790cc195eb3620ef71248c0f30b747eb654b24e55ada7eb35af531594c5e"
-metafile = true
-
-[[files]]
 file = "mods/another-furniture.pw.toml"
 hash = "846290a7a2b0af86414001d097ddc694b58266f8e9f57e3d381fda3e64e81212"
 metafile = true
@@ -1095,11 +1090,6 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "5e8133fa52350f0b4a468c0db32aef9ab0abfdc88765c9a2baac4f9422e13493"
-metafile = true
-
-[[files]]
-file = "mods/supplementaries.pw.toml"
-hash = "c7e7206384e1d5ab7caecc643dda50dae1886312e0aeca5aaef8852bb6b11b4e"
 metafile = true
 
 [[files]]
