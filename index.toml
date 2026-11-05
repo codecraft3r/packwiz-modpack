@@ -6,7 +6,7 @@ hash = "f54c86a76554b0c331a39e84437f148ecde735b297349817dc76604c1cc884df"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "15559329454230199d0b19d418ee3e446746ce4926310479a123d00cd5fbc82c"
+hash = "4325aad9ecb3dc31701aa74fa3a0b91b057b2bbe7dbc4d0f593d7044942dfe44"
 
 [[files]]
 file = "config/cobblemon/main.json"
@@ -73,8 +73,12 @@ file = "config/mega_showdown/config.json"
 hash = "f025396282b488579aa89e179c0db20bf5d11e2224f2f36142ec1bdc44f09304"
 
 [[files]]
+file = "config/modernfix-mixins.properties"
+hash = "d9e54f39ea6958ef7243f5567d42b1148137ed184b9c4d640c2aa86ca85c0074"
+
+[[files]]
 file = "config/pehkui-common.toml"
-hash = "b66bbd154caa0ac1b10650af6d0a047abd52870b7d71eb3b186c1b8034ba7b22"
+hash = "4270a256810be9080890696fbda29f8019243f45623fc7c666a0111689b80aff"
 
 [[files]]
 file = "config/pym-server.toml"

@@ -1,11 +1,11 @@
 #General configuration settings
 [general]
-	scaledFallDamage = true
+	scaledFallDamage = false
 	scaledMotion = false
 	scaledReach = true
-	scaledAttack = true
-	scaledDefense = true
-	scaledHealth = true
+	scaledAttack = false
+	scaledDefense = false
+	scaledHealth = false
 	scaledItemDrops = false
 	scaledProjectiles = false
 	scaledExplosions = false
