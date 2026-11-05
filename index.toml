@@ -42,7 +42,7 @@ hash = "c94c49ca71c3ab8a98af36cb76f334e3e585d65ee8d984770265c1978dd4b32b"
 
 [[files]]
 file = "config/lootr-common.toml"
-hash = "1c8b5e2e19bb5b3c748121c459f3535b39ab95266aa31fe98226bef765120204"
+hash = "0b219c91b4495bddfcb7e59b145bf1754895bddd1c5699d11513221edcd731a3"
 
 [[files]]
 file = "config/luckperms/luckperms.conf"
@@ -93,8 +93,16 @@ file = "config/sable-server.toml"
 hash = "b56b169d0f244b32f0c9a9b58e70669c78f6a8b529b9f1e56fe2ffc028b8fa3f"
 
 [[files]]
+file = "config/sable_player_ragdoll-server.toml"
+hash = "67de73239f0c312eacada604b124aab89cdbe76f83b4eff79c77d85cce83bc95"
+
+[[files]]
+file = "config/tfmg-common.toml"
+hash = "3298978c76026ef4cadd0c949b7a222c0a8f0d6be8c92fed7c93a35a044ea234"
+
+[[files]]
 file = "configureddefaults/config/DistantHorizons.toml"
-hash = "fbb924268c35e669477dc3808cf3ffca7689d880cbbc43f36fa3413edfb810d9"
+hash = "147b6b959effc6c90aefb22472098610bf91d66065b0546c57dee6f8e91cd17c"
 
 [[files]]
 file = "configureddefaults/config/accessories.json5"

@@ -32,7 +32,7 @@
 	#the default delay between ticks. the higher this value, the slower it takes for containers to determine they should refresh, decay, or start refreshing or decaying
 	# Default: 20
 	# Range: > 0
-	tick_delay = 100
+	tick_delay = 1200
 
 [team]
 	#if true, instead of providing individual loot per player, loot will be assigned based on teams. by default, the entity's scoreboard team will be used. if the player is not in a team, their own uuid will be used instead. [default: false]
@@ -45,7 +45,7 @@
 	#list of dimensions (to the exclusion of all others) that loot chest should be replaced in (default: blank, allowing all dimensions, e.g., ["minecraft:overworld", "minecraft:the_end"])
 	dimension_whitelist = []
 	#list of dimensions that loot chests should not be replaced in (default: blank, allowing all dimensions, format e.g., ["minecraft:overworld", "minecraft:the_end"])
-	dimension_blacklist = []
+	dimension_blacklist = ["ae2:spatial_storage", "cobblemonraiddens:raid_dimension", "modpack:superflat"]
 	#list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
 	#othermod"])
 	modid_dimension_blacklist = []
