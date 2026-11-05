@@ -1,10 +1,10 @@
 {
-  "displayName": "Mirror Overworld Only",
+  "displayName": "Mirror Overworld, Nether, and End Only",
   "enabled": true,
   "components": [
     {
       "type": "location",
-      "allow": "v.world.is_of('modpack:mirror_overworld')"
+      "allow": "v.world.is_of('modpack:mirror_overworld') || v.world.is_of('minecraft:the_nether') || v.world.is_of('minecraft:the_end')"
     }
   ]
 }

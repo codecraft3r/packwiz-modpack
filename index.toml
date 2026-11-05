@@ -234,7 +234,7 @@ hash = "da7f94f39b4f8ffb752831542c2b06569d2f601c613959d8477a4dd57f9b9b42"
 
 [[files]]
 file = "global_packs/required_data/modpack_dims/data/modpack/spawn_rules/mirror_overworld_only.json"
-hash = "8bce9c7750c22b76787694ad94522d6e91ee67767aae6ce794ddb32dd0463deb"
+hash = "00d6ad6040e618e53aea0b2ec83b74807893872fdc326c771241bb0205cc53a2"
 
 [[files]]
 file = "global_packs/required_data/modpack_dims/data/modpack/worldgen/biome/superflat.json"
