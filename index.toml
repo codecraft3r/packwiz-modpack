@@ -246,7 +246,7 @@ hash = "da1a49eace6292d25e0ec96ba0fff04db7edb36610e9d8de59f21da87433b9ff"
 
 [[files]]
 file = "kubejs/server_scripts/blocked_spawns.js"
-hash = "ba70514fa6789fbc5bb7f921593158865921f8f7dc4d302ef9972636e11c9b22"
+hash = "9138483023adb14ebb6480baee541259f57cd0f7cc18f4bf3b2ee147a8b2fe06"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

@@ -6,24 +6,20 @@ const BLOCKED_SPAWN_ENTITIES = [
   'minecraft:ender_dragon',
 ];
 
-EntityEvents.spawned(event => {
+EntityEvents.spawned(BLOCKED_SPAWN_ENTITIES, event => {
   const entityType = event.entity.type;
+  event.cancel();
 
-  if (BLOCKED_SPAWN_ENTITIES.includes(entityType)) {
-    event.cancel();
-
-    // Notify server/players when a blocked spawn is prevented
-    if (event.server) {
-      if (entityType === 'minecraft:wither') {
-        event.server.tell('§c[Server] The Wither is disabled on this server.');
-        return;
-      }
-      if (entityType === 'minecraft:ender_dragon') {
-        event.server.tell('§c[Server] The Ender Dragon is disabled on this server.');
-        return;
-      }
-      event.server.tell(`§c[Server] ${entityType} cannot spawn as it is disabled on this server.`);
-
+  // Notify server/players when a blocked spawn is prevented
+  if (event.server) {
+    if (entityType === 'minecraft:wither') {
+      event.server.tell('§c[Server] The Wither is disabled on this server.');
+      return;
     }
+    if (entityType === 'minecraft:ender_dragon') {
+      event.server.tell('§c[Server] The Ender Dragon is disabled on this server.');
+      return;
+    }
+    event.server.tell(`§c[Server] ${entityType} cannot spawn as it is disabled on this server.`);
   }
 });
