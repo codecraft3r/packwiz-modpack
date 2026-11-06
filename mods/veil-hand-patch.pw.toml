@@ -1,13 +1,8 @@
-name = "Veil Hand Patch"
-filename = "veilhandfix-0.0.6-neoforge-1.21.1.jar"
+name = "Veil Hand Patch (Patched for Veil 4.5.2+)"
+filename = "veilhandfix-0.0.6-neoforge-1.21.1-patched.jar"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "c42d3d4046370624729beab0f3600dd68f25f9b3"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 8969503
-project-id = 1710841
+url = "https://github.com/codecraft3r/packwiz-modpack/releases/download/v5.1.2/veilhandfix-0.0.6-neoforge-1.21.1-patched.jar"
+hash-format = "sha256"
+hash = "773103fc55e789533d1f43403f4cac2f0562e90cf5abfd8b2d9e406f3d2b22d0"
