@@ -1,12 +1,12 @@
 name = "Poiesis Creative"
 author = "CodeCraft3r"
-version = "5.1.1"
+version = "5.1.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "c220a641dd0cfd1b9a31fb1c868346558344c5460e4484daf4a611bc34c83024"
+hash = "a6e61881388f3762bf8aadb9c63fb34fd08fe0706e35fa8bcd81bf97f018ee33"
 
 [versions]
 minecraft = "1.21.1"

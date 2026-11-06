@@ -1108,6 +1108,11 @@ hash = "aef8922d29952bc613515e87e2baeee1e047b9ad7604df26dd257fe112215657"
 metafile = true
 
 [[files]]
+file = "mods/veil-hand-patch.pw.toml"
+hash = "9c5c1513491d15a1cc1af69187f118208d8e883a5b95af379e6bf2b648e7ac31"
+metafile = true
+
+[[files]]
 file = "mods/veil.pw.toml"
 hash = "475a240821a858455d59d6e703a209a18bc24d692b4a2716dc42b46c558ffc83"
 metafile = true
